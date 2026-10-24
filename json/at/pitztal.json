@@ -1,0 +1,74 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "pitztal",
+  "country": "at",
+  "name": "Pitztaler Gletscher",
+  "status": "open",
+  "fetched_at": "2026-10-24T17:10:32.658786+02:00",
+  "snow": {
+    "mountain_cm": 15,
+    "valley_cm": 0,
+    "fresh_cm": 5,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Tirols höchste Aussicht 3440",
+        "elevation_m": null,
+        "depth_cm": 15,
+        "fresh_cm": 5,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergstation Gletscherexpress",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Talstation Gletscherexpress",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergstation Grubenkopf",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergstation Rifflseebahn",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 5,
+    "total": 13
+  },
+  "slopes": {
+    "open": 5,
+    "total": 29,
+    "open_km": 10.5,
+    "total_km": 71
+  },
+  "lifts_updated_at": "2026-10-23T11:18:06+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.pitztaler-gletscher.at/wetter",
+    "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en"
+  ],
+  "errors": []
+}

@@ -1,0 +1,2755 @@
+{
+  "$schema": "https://snow.miron.asia/schema/index.schema.json",
+  "generated_at": "2026-10-24T17:10:41+02:00",
+  "resorts": [
+    {
+      "id": "hintertux",
+      "country": "at",
+      "name": "Hintertuxer Gletscher",
+      "status": "open",
+      "fetched_at": "2026-10-24T17:10:32.656812+02:00",
+      "snow": {
+        "mountain_cm": 25,
+        "valley_cm": 20,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": "grippy/hard powder",
+        "stations": [
+          {
+            "name": "Gefrorene Wand",
+            "elevation_m": 3250,
+            "depth_cm": 25,
+            "fresh_cm": null,
+            "temperature_c": -10.7,
+            "condition": "grippy/hard powder"
+          },
+          {
+            "name": "Tuxer Fernerhaus",
+            "elevation_m": 2660,
+            "depth_cm": 20,
+            "fresh_cm": null,
+            "temperature_c": -6.9,
+            "condition": "grippy/hard powder"
+          },
+          {
+            "name": "Sommerbergalm",
+            "elevation_m": 2100,
+            "depth_cm": null,
+            "fresh_cm": null,
+            "temperature_c": -1.5,
+            "condition": null
+          }
+        ]
+      },
+      "lifts": {
+        "open": 12,
+        "total": 21
+      },
+      "slopes": {
+        "open": 9,
+        "total": 32,
+        "open_km": 22.0,
+        "total_km": 64
+      },
+      "lifts_updated_at": "2026-10-24T07:45:04+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.hintertuxergletscher.at/en/information/currently/weather/",
+        "https://winter.intermaps.com/hintertuxer_gletscher/data?lang=en"
+      ],
+      "errors": []
+    },
+    {
+      "id": "soelden",
+      "country": "at",
+      "name": "Sölden",
+      "status": "open",
+      "fetched_at": "2026-10-24T17:10:32.657717+02:00",
+      "snow": {
+        "mountain_cm": 49,
+        "valley_cm": 0,
+        "fresh_cm": 10,
+        "last_snowfall": "2026-10-24",
+        "condition": "Fresh snow",
+        "stations": [
+          {
+            "name": "Sölden",
+            "elevation_m": 1363,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": 5.7,
+            "condition": null
+          },
+          {
+            "name": "Gaislachkogl",
+            "elevation_m": 2110,
+            "depth_cm": 10,
+            "fresh_cm": 0,
+            "temperature_c": -2.8,
+            "condition": null
+          },
+          {
+            "name": "Giggijoch",
+            "elevation_m": 2525,
+            "depth_cm": 15,
+            "fresh_cm": 0,
+            "temperature_c": -6.3,
+            "condition": null
+          },
+          {
+            "name": "Glacier",
+            "elevation_m": 3000,
+            "depth_cm": 49,
+            "fresh_cm": 10,
+            "temperature_c": -9.5,
+            "condition": "Fresh snow"
+          }
+        ]
+      },
+      "lifts": {
+        "open": 9,
+        "total": 31
+      },
+      "slopes": {
+        "open": 6,
+        "total": 58,
+        "open_km": 30.9,
+        "total_km": 145
+      },
+      "lifts_updated_at": "2026-10-24T17:04:25+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.soelden.com/en/live-information/snow-report",
+        "https://winter.intermaps.com/soelden/data?lang=en"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kitzsteinhorn",
+      "country": "at",
+      "name": "Kitzsteinhorn",
+      "status": "open",
+      "fetched_at": "2026-10-24T17:10:32.658133+02:00",
+      "snow": {
+        "mountain_cm": 70,
+        "valley_cm": 0,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": [
+          {
+            "name": "Langwied",
+            "elevation_m": 1976,
+            "depth_cm": 0,
+            "fresh_cm": null,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Alpincenter",
+            "elevation_m": 2450,
+            "depth_cm": 40,
+            "fresh_cm": null,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Glacier",
+            "elevation_m": 3029,
+            "depth_cm": 70,
+            "fresh_cm": null,
+            "temperature_c": null,
+            "condition": null
+          }
+        ]
+      },
+      "lifts": {
+        "open": 13,
+        "total": 23
+      },
+      "slopes": {
+        "open": 6,
+        "total": 33,
+        "open_km": 7.3,
+        "total_km": 81
+      },
+      "lifts_updated_at": "2026-10-24T16:25:12+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.kitzsteinhorn.at/en/winter/information/weather-webcams",
+        "https://winter.intermaps.com/kitzsteinhorn/data?lang=en",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kaunertal",
+      "country": "at",
+      "name": "Kaunertaler Gletscher",
+      "status": "open",
+      "fetched_at": "2026-10-24T17:10:32.658452+02:00",
+      "snow": {
+        "mountain_cm": 15,
+        "valley_cm": 0,
+        "fresh_cm": 15,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": [
+          {
+            "name": "Bergstation Karlesjoch",
+            "elevation_m": null,
+            "depth_cm": 15,
+            "fresh_cm": 15,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Gletscherparkplatz",
+            "elevation_m": null,
+            "depth_cm": 15,
+            "fresh_cm": 15,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Talstation Ochsenalmbahn",
+            "elevation_m": null,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          }
+        ]
+      },
+      "lifts": {
+        "open": 3,
+        "total": 10
+      },
+      "slopes": {
+        "open": 5,
+        "total": 27,
+        "open_km": 2.9,
+        "total_km": 55
+      },
+      "lifts_updated_at": "2026-10-23T17:04:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.kaunertaler-gletscher.at/kaunertaler-gletscher/wetter.html",
+        "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/nowbox.html",
+        "https://www.openstreetmap.org/copyright"
+      ],
+      "errors": []
+    },
+    {
+      "id": "pitztal",
+      "country": "at",
+      "name": "Pitztaler Gletscher",
+      "status": "open",
+      "fetched_at": "2026-10-24T17:10:32.658786+02:00",
+      "snow": {
+        "mountain_cm": 15,
+        "valley_cm": 0,
+        "fresh_cm": 5,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": [
+          {
+            "name": "Tirols höchste Aussicht 3440",
+            "elevation_m": null,
+            "depth_cm": 15,
+            "fresh_cm": 5,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Bergstation Gletscherexpress",
+            "elevation_m": null,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Talstation Gletscherexpress",
+            "elevation_m": null,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Bergstation Grubenkopf",
+            "elevation_m": null,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Bergstation Rifflseebahn",
+            "elevation_m": null,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          }
+        ]
+      },
+      "lifts": {
+        "open": 5,
+        "total": 13
+      },
+      "slopes": {
+        "open": 5,
+        "total": 29,
+        "open_km": 10.5,
+        "total_km": 71
+      },
+      "lifts_updated_at": "2026-10-23T11:18:06+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.pitztaler-gletscher.at/wetter",
+        "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en"
+      ],
+      "errors": []
+    },
+    {
+      "id": "alpbachtal-ski-juwel",
+      "country": "at",
+      "name": "Alpbachtal (Ski Juwel)",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:34.422124+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": null,
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Alpbachtal%20-%20Ski%20Juwel%20Alpbachtal%20Wildsch%C3%B6nau_35"
+      ],
+      "errors": []
+    },
+    {
+      "id": "amberglift-walchsee",
+      "country": "at",
+      "name": "Amberglift Walchsee",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:34.409568+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-05-13T13:50:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Amberglift%20Walchsee_388"
+      ],
+      "errors": []
+    },
+    {
+      "id": "axamer-lizum",
+      "country": "at",
+      "name": "Axamer Lizum",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:34.430676+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 9
+      },
+      "slopes": {
+        "open": 0,
+        "total": 32,
+        "open_km": 0.0,
+        "total_km": 41
+      },
+      "lifts_updated_at": "2026-10-24T04:06:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Axamer%20Lizum_36"
+      ],
+      "errors": []
+    },
+    {
+      "id": "bergbahnen-pillersee-buchensteinwand-st-ulrich",
+      "country": "at",
+      "name": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:34.420125+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-21T12:33:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Bergbahnen%20Pillersee%20-%20Buchensteinwand%20-%20St.%20Ulrich_68"
+      ],
+      "errors": []
+    },
+    {
+      "id": "bergeralm",
+      "country": "at",
+      "name": "Bergeralm",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:34.995699+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-15",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 7
+      },
+      "slopes": {
+        "open": 0,
+        "total": 14,
+        "open_km": 0.0,
+        "total_km": 38
+      },
+      "lifts_updated_at": "2026-10-23T08:05:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Bergeralm_37"
+      ],
+      "errors": []
+    },
+    {
+      "id": "bergwelt-hahnenkamm",
+      "country": "at",
+      "name": "Bergwelt Hahnenkamm",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:35.262652+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-16",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 3
+      },
+      "slopes": {
+        "open": 0,
+        "total": 14,
+        "open_km": 0.0,
+        "total_km": 18
+      },
+      "lifts_updated_at": "2026-10-22T15:48:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Bergwelt%20Hahnenkamm_493"
+      ],
+      "errors": []
+    },
+    {
+      "id": "berwang",
+      "country": "at",
+      "name": "Berwang",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:35.528871+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "1900-01-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 12
+      },
+      "slopes": {
+        "open": 0,
+        "total": 34,
+        "open_km": 0.0,
+        "total_km": 36
+      },
+      "lifts_updated_at": "2026-10-24T00:00:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Berwang_164"
+      ],
+      "errors": []
+    },
+    {
+      "id": "bichllifte-praegraten",
+      "country": "at",
+      "name": "Bichllifte Prägraten",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:36.329671+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-05-19T09:04:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Bichllifte%20Pr%C3%A4graten_2557"
+      ],
+      "errors": []
+    },
+    {
+      "id": "brixen-im-thale-skiwelt",
+      "country": "at",
+      "name": "Brixen im Thale - SkiWelt",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:36.339443+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 83
+      },
+      "slopes": {
+        "open": 0,
+        "total": 231,
+        "open_km": 0.0,
+        "total_km": 271
+      },
+      "lifts_updated_at": "2026-10-24T15:32:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Brixen%20im%20Thale%20-%20SkiWelt_58"
+      ],
+      "errors": []
+    },
+    {
+      "id": "brixlegg",
+      "country": "at",
+      "name": "Brixlegg",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:36.365217+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-10-24T00:13:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Brixlegg_2969"
+      ],
+      "errors": []
+    },
+    {
+      "id": "dorfberg-kartitsch",
+      "country": "at",
+      "name": "Dorfberg Kartitsch",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:35.796024+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-07-01T09:33:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Dorfberg%20Kartitsch_71"
+      ],
+      "errors": []
+    },
+    {
+      "id": "eggalmbahnen",
+      "country": "at",
+      "name": "Eggalmbahnen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:36.350865+02:00",
+      "snow": {
+        "mountain_cm": 140,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 3,
+        "total": 43
+      },
+      "slopes": {
+        "open": 0,
+        "total": 58,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-24T07:37:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Eggalmbahnen_2950"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ehrwalder-alm",
+      "country": "at",
+      "name": "Ehrwalder Alm",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:36.852387+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-23T14:15:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Ehrwalder%20Alm_165"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ehrwalder-wettersteinbahnen",
+      "country": "at",
+      "name": "Ehrwalder Wettersteinbahnen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:36.595122+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2024-12-20",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 5
+      },
+      "slopes": {
+        "open": 0,
+        "total": 16,
+        "open_km": 0.0,
+        "total_km": 20
+      },
+      "lifts_updated_at": "2026-10-24T04:42:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Ehrwalder%20Wettersteinbahnen_166"
+      ],
+      "errors": []
+    },
+    {
+      "id": "elferbahnen-neustift",
+      "country": "at",
+      "name": "Elferbahnen Neustift",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.103479+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-18T10:51:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Elferbahnen%20Neustift_2278"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ellmau-going-skiwelt",
+      "country": "at",
+      "name": "Ellmau-Going - SkiWelt",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:37.340689+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 83
+      },
+      "slopes": {
+        "open": 0,
+        "total": 231,
+        "open_km": 0.0,
+        "total_km": 271
+      },
+      "lifts_updated_at": "2026-10-24T04:08:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Ellmau-Going%20-%20SkiWelt_61"
+      ],
+      "errors": []
+    },
+    {
+      "id": "fendels-ried-prutz",
+      "country": "at",
+      "name": "Fendels - Ried - Prutz",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:36.877558+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-10-05T14:47:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Fendels%20-%20Ried%20-%20Prutz_40"
+      ],
+      "errors": []
+    },
+    {
+      "id": "finkenberger-almbahnen",
+      "country": "at",
+      "name": "Finkenberger Almbahnen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:37.441153+02:00",
+      "snow": {
+        "mountain_cm": 140,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 3,
+        "total": 43
+      },
+      "slopes": {
+        "open": 0,
+        "total": 58,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-24T07:44:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Finkenberger%20Almbahnen_24"
+      ],
+      "errors": []
+    },
+    {
+      "id": "galtuer",
+      "country": "at",
+      "name": "Galtür",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:37.612553+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-10",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 8
+      },
+      "slopes": {
+        "open": 0,
+        "total": 24,
+        "open_km": 0.0,
+        "total_km": 42
+      },
+      "lifts_updated_at": "2026-10-22T17:17:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Galt%C3%BCr_2551"
+      ],
+      "errors": []
+    },
+    {
+      "id": "gerlos-zillertal-arena",
+      "country": "at",
+      "name": "Gerlos - Zillertal Arena",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.608442+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-02",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 52
+      },
+      "slopes": {
+        "open": 0,
+        "total": 89,
+        "open_km": 0.0,
+        "total_km": 151
+      },
+      "lifts_updated_at": "2026-10-22T16:17:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Gerlos_2908"
+      ],
+      "errors": []
+    },
+    {
+      "id": "gerlosstein-zillertal-arena",
+      "country": "at",
+      "name": "Gerlosstein - Zillertal Arena",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.897965+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-15T01:47:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Gerlosstein%20-%20Zillertal%20Arena_97"
+      ],
+      "errors": []
+    },
+    {
+      "id": "glungezer",
+      "country": "at",
+      "name": "Glungezer",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:36.601487+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 6
+      },
+      "slopes": {
+        "open": 0,
+        "total": 11,
+        "open_km": 0.0,
+        "total_km": 26
+      },
+      "lifts_updated_at": "2026-10-24T04:06:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Glungezer_42"
+      ],
+      "errors": []
+    },
+    {
+      "id": "grossglockner-resort-kals-matrei",
+      "country": "at",
+      "name": "Großglockner Resort Kals-Matrei",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.944002+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-22T10:41:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Gro%C3%9Fglockner%20Resort%20Kals-Matrei_72"
+      ],
+      "errors": []
+    },
+    {
+      "id": "gschwandtkopflifte",
+      "country": "at",
+      "name": "Gschwandtkopflifte",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:37.923333+02:00",
+      "snow": {
+        "mountain_cm": 39,
+        "valley_cm": 2,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-21",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 11
+      },
+      "slopes": {
+        "open": 0,
+        "total": 9,
+        "open_km": 0.0,
+        "total_km": 6
+      },
+      "lifts_updated_at": "2026-10-24T04:32:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Gschwandtkopflifte_78"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hochalmlifte-christlum-achenkirch",
+      "country": "at",
+      "name": "Hochalmlifte Christlum - Achenkirch",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.393256+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-17",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 10
+      },
+      "slopes": {
+        "open": 0,
+        "total": 9,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-22T11:34:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_38"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hochfuegen",
+      "country": "at",
+      "name": "Hochfügen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:36.612788+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 13
+      },
+      "slopes": {
+        "open": 0,
+        "total": 18,
+        "open_km": 0.0,
+        "total_km": 40
+      },
+      "lifts_updated_at": "2026-10-21T02:37:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hochf%C3%BCgen_2549"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hochkrimml-zillertal-arena",
+      "country": "at",
+      "name": "Hochkrimml - Zillertal Arena",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:37.915415+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-10",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 52
+      },
+      "slopes": {
+        "open": 0,
+        "total": 89,
+        "open_km": 0.0,
+        "total_km": 151
+      },
+      "lifts_updated_at": "2026-10-23T03:44:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hochkrimml_2910"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hochoetz-oetz",
+      "country": "at",
+      "name": "Hochoetz - Oetz",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.490732+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 15
+      },
+      "slopes": {
+        "open": 0,
+        "total": 20,
+        "open_km": 0.0,
+        "total_km": 41
+      },
+      "lifts_updated_at": "2026-10-18T17:05:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hochoetz%20-%20Oetz_2967"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hochzeiger-pitztal",
+      "country": "at",
+      "name": "Hochzeiger - Pitztal",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.674439+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "1900-01-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 9
+      },
+      "slopes": {
+        "open": 0,
+        "total": 21,
+        "open_km": 0.0,
+        "total_km": 54
+      },
+      "lifts_updated_at": "2026-10-19T15:03:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hochzeiger%20-%20Pitztal_2624"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hochzillertal-kaltenbach",
+      "country": "at",
+      "name": "Hochzillertal-Kaltenbach",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.680682+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 25
+      },
+      "slopes": {
+        "open": 0,
+        "total": 32,
+        "open_km": 0.0,
+        "total_km": 55
+      },
+      "lifts_updated_at": "2026-10-19T10:18:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hochzillertal-Kaltenbach_2179"
+      ],
+      "errors": []
+    },
+    {
+      "id": "hopfgarten-itter-skiwelt",
+      "country": "at",
+      "name": "Hopfgarten - Itter - SkiWelt",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.757851+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 83
+      },
+      "slopes": {
+        "open": 0,
+        "total": 231,
+        "open_km": 0.0,
+        "total_km": 271
+      },
+      "lifts_updated_at": "2026-10-24T04:08:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Hopfgarten%20-%20Itter%20-%20SkiWelt_1834"
+      ],
+      "errors": []
+    },
+    {
+      "id": "huettegglift-weerberg",
+      "country": "at",
+      "name": "Hüttegglift Weerberg",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:38.862537+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-14T11:16:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/H%C3%BCttegglift%20Weerberg_2559"
+      ],
+      "errors": []
+    },
+    {
+      "id": "imst",
+      "country": "at",
+      "name": "Imst",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:38.881549+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-07-27T08:30:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Imst_44"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ischgl-silvretta-arena",
+      "country": "at",
+      "name": "Ischgl - Silvretta Arena",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.921825+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-29",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 46
+      },
+      "slopes": {
+        "open": 0,
+        "total": 77,
+        "open_km": 0.0,
+        "total_km": 239
+      },
+      "lifts_updated_at": "2026-10-21T10:47:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Ischgl%20-%20Silvretta%20Arena_11"
+      ],
+      "errors": []
+    },
+    {
+      "id": "joechelspitze-lechtal",
+      "country": "at",
+      "name": "Jöchelspitze - Lechtal",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.008703+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-07-28T09:39:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/J%C3%B6chelspitze%20-%20Lechtal_2542"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kappl",
+      "country": "at",
+      "name": "Kappl",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.119890+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-10-04T16:23:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Kappl_31"
+      ],
+      "errors": []
+    },
+    {
+      "id": "karwendel-bergbahn-pertisau",
+      "country": "at",
+      "name": "Karwendel-Bergbahn - Pertisau",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:36.622899+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-07T14:30:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Karwendel-Bergbahn%20-%20Pertisau_74"
+      ],
+      "errors": []
+    },
+    {
+      "id": "katzenkopf-leutasch",
+      "country": "at",
+      "name": "Katzenkopf Leutasch",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.928178+02:00",
+      "snow": {
+        "mountain_cm": 78,
+        "valley_cm": 31,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-21",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 3
+      },
+      "slopes": {
+        "open": 0,
+        "total": 5,
+        "open_km": 0.0,
+        "total_km": 4
+      },
+      "lifts_updated_at": "2026-10-24T04:31:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Katzenkopf%20Leutasch_659"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kellerjochbahn-schwaz-pill",
+      "country": "at",
+      "name": "Kellerjochbahn Schwaz-Pill",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.125237+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 4
+      },
+      "slopes": {
+        "open": 0,
+        "total": 4,
+        "open_km": 0.0,
+        "total_km": 8
+      },
+      "lifts_updated_at": "2026-10-13T09:35:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Kellerjochbahn%20Schwaz-Pill_77"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kitzbuehel",
+      "country": "at",
+      "name": "Kitzbühel",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:37.198574+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-03",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 57
+      },
+      "slopes": {
+        "open": 0,
+        "total": 77,
+        "open_km": 0.0,
+        "total_km": 5
+      },
+      "lifts_updated_at": "2026-10-24T07:47:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Kitzb%C3%BChel_2541"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kolsassberg",
+      "country": "at",
+      "name": "Kolsassberg",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.163165+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-27T10:28:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Kolsassberg_85"
+      ],
+      "errors": []
+    },
+    {
+      "id": "koenigsleiten-zillertal-arena",
+      "country": "at",
+      "name": "Königsleiten - Zillertal Arena",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.379695+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-16T21:31:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten_2909"
+      ],
+      "errors": []
+    },
+    {
+      "id": "koessen",
+      "country": "at",
+      "name": "Kössen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.386402+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 11
+      },
+      "slopes": {
+        "open": 0,
+        "total": 14,
+        "open_km": 0.0,
+        "total_km": 22
+      },
+      "lifts_updated_at": "2026-10-21T16:09:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/K%C3%B6ssen_2545"
+      ],
+      "errors": []
+    },
+    {
+      "id": "kuehtai",
+      "country": "at",
+      "name": "Kühtai",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.177717+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-22T11:19:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/K%C3%BChtai_2553"
+      ],
+      "errors": []
+    },
+    {
+      "id": "landeck-zams-fliess-venet",
+      "country": "at",
+      "name": "Landeck - Zams - Fliess (Venet)",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.419376+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-27T16:54:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Landeck%20-%20Zams%20-%20Fliess%20%28Familienskigebiet%20Venet%29_75"
+      ],
+      "errors": []
+    },
+    {
+      "id": "lermoos-grubigstein",
+      "country": "at",
+      "name": "Lermoos-Grubigstein",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.462307+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "1900-01-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 8
+      },
+      "slopes": {
+        "open": 0,
+        "total": 18,
+        "open_km": 0.0,
+        "total_km": 29
+      },
+      "lifts_updated_at": "2026-10-24T00:00:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Lermoos-Grubigstein_23"
+      ],
+      "errors": []
+    },
+    {
+      "id": "lienz-zettersfeld-hochstein",
+      "country": "at",
+      "name": "Lienz Zettersfeld Hochstein",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.521651+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-07-24T14:41:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Lienz%20Zettersfeld_2907"
+      ],
+      "errors": []
+    },
+    {
+      "id": "mayrhofen",
+      "country": "at",
+      "name": "Mayrhofen",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.667356+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-06-23T16:05:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Mayrhofen-Finkenberg-Rastkogel-Eggalm_2913"
+      ],
+      "errors": []
+    },
+    {
+      "id": "mittersill-pass-thurn-kitzbuehel",
+      "country": "at",
+      "name": "Mittersill - Paß Thurn - Kitzbühel",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.714436+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 57
+      },
+      "slopes": {
+        "open": 0,
+        "total": 76,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-24T17:00:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Mittersill%20-%20Pa%C3%9F%20Thurn%20-%20Kitzb%C3%BChel_2970"
+      ],
+      "errors": []
+    },
+    {
+      "id": "muttereralm",
+      "country": "at",
+      "name": "Muttereralm",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.784002+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-25",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 5
+      },
+      "slopes": {
+        "open": 0,
+        "total": 10,
+        "open_km": 0.0,
+        "total_km": 17
+      },
+      "lifts_updated_at": "2026-10-24T08:15:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Muttereralm%20-%20Nockspitzbahn_49"
+      ],
+      "errors": []
+    },
+    {
+      "id": "nauders",
+      "country": "at",
+      "name": "Nauders",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.632306+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-16",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 15
+      },
+      "slopes": {
+        "open": 0,
+        "total": 32,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-22T13:40:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Nauders_82"
+      ],
+      "errors": []
+    },
+    {
+      "id": "nesselwaengle-im-tannheimer-tal",
+      "country": "at",
+      "name": "Nesselwängle im Tannheimer Tal",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.616907+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-20T11:45:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547"
+      ],
+      "errors": []
+    },
+    {
+      "id": "neukirchen-bramberg-wildkogel",
+      "country": "at",
+      "name": "Neukirchen - Bramberg - Wildkogel",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.900065+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-25T08:49:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Wildkogel-Arena_2951"
+      ],
+      "errors": []
+    },
+    {
+      "id": "neunerkoepfle-tannheim",
+      "country": "at",
+      "name": "Neunerköpfle - Tannheim",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.906165+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-20T11:44:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Neunerk%C3%B6pfle%20-%20Tannheim_2561"
+      ],
+      "errors": []
+    },
+    {
+      "id": "niederthai",
+      "country": "at",
+      "name": "Niederthai",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.912846+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": null,
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Niederthai_89"
+      ],
+      "errors": []
+    },
+    {
+      "id": "nordkette-innsbruck",
+      "country": "at",
+      "name": "Nordkette - Innsbruck",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.956731+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-05-03T14:58:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Innsbruck%20Nordkettenbahnen_2933"
+      ],
+      "errors": []
+    },
+    {
+      "id": "obergurgl-hochgurgl",
+      "country": "at",
+      "name": "Obergurgl-Hochgurgl",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.031745+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-22T12:14:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Obergurgl-Hochgurgl_14"
+      ],
+      "errors": []
+    },
+    {
+      "id": "obertilliacher-bergbahnen",
+      "country": "at",
+      "name": "Obertilliacher Bergbahnen",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.115598+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-26T20:56:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Obertilliacher%20Bergbahnen_52"
+      ],
+      "errors": []
+    },
+    {
+      "id": "patscherkofel",
+      "country": "at",
+      "name": "Patscherkofel",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.146064+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 7
+      },
+      "slopes": {
+        "open": 0,
+        "total": 12,
+        "open_km": 0.0,
+        "total_km": 19
+      },
+      "lifts_updated_at": "2026-10-24T04:06:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Patscherkofel_34"
+      ],
+      "errors": []
+    },
+    {
+      "id": "rangger-koepfl",
+      "country": "at",
+      "name": "Rangger Köpfl",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.190369+02:00",
+      "snow": {
+        "mountain_cm": 30,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-14",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 3,
+        "total": 5
+      },
+      "slopes": {
+        "open": 0,
+        "total": 9,
+        "open_km": 0.0,
+        "total_km": 17
+      },
+      "lifts_updated_at": "2026-10-24T04:08:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Rangger%20K%C3%B6pfl_2555"
+      ],
+      "errors": []
+    },
+    {
+      "id": "rastkogelbahnen",
+      "country": "at",
+      "name": "Rastkogelbahnen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.206928+02:00",
+      "snow": {
+        "mountain_cm": 140,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-31",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 3,
+        "total": 43
+      },
+      "slopes": {
+        "open": 0,
+        "total": 58,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-24T07:37:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Rastkogelbahnen_25"
+      ],
+      "errors": []
+    },
+    {
+      "id": "rofanseilbahn-maurach",
+      "country": "at",
+      "name": "Rofanseilbahn - Maurach",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.123681+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2024-11-07T03:38:00+01:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Rofanseilbahn%20-%20Maurach_76"
+      ],
+      "errors": []
+    },
+    {
+      "id": "rosshuette-seefeld-in-tirol",
+      "country": "at",
+      "name": "Rosshütte - Seefeld in Tirol",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.152085+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-21",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 12
+      },
+      "slopes": {
+        "open": 0,
+        "total": 13,
+        "open_km": 0.0,
+        "total_km": 15
+      },
+      "lifts_updated_at": "2026-10-24T04:32:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Rossh%C3%BCtte%20-%20Seefeld%20in%20Tirol_2571"
+      ],
+      "errors": []
+    },
+    {
+      "id": "schattwald-zoeblen-im-tannheimertal",
+      "country": "at",
+      "name": "Schattwald - Zöblen im Tannheimertal",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.274251+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 4
+      },
+      "slopes": {
+        "open": 0,
+        "total": 6,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-24T07:58:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Schattwald%20-%20Z%C3%B6blen%20im%20Tannheimertal_2554"
+      ],
+      "errors": []
+    },
+    {
+      "id": "scheffau-skiwelt",
+      "country": "at",
+      "name": "Scheffau - SkiWelt",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.168880+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 83
+      },
+      "slopes": {
+        "open": 0,
+        "total": 231,
+        "open_km": 0.0,
+        "total_km": 271
+      },
+      "lifts_updated_at": "2026-10-24T04:08:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Scheffau%20-%20SkiWelt_62"
+      ],
+      "errors": []
+    },
+    {
+      "id": "schlick-2000",
+      "country": "at",
+      "name": "Schlick 2000",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.402928+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-03-29",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 11
+      },
+      "slopes": {
+        "open": 0,
+        "total": 21,
+        "open_km": 0.0,
+        "total_km": 23
+      },
+      "lifts_updated_at": "2026-10-24T15:16:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Schlick%202000_56"
+      ],
+      "errors": []
+    },
+    {
+      "id": "schneeberglifte-thiersee",
+      "country": "at",
+      "name": "Schneeberglifte Thiersee",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.438517+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-13T10:59:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Schneeberglifte%20Thiersee_87"
+      ],
+      "errors": []
+    },
+    {
+      "id": "schwannerlifte-in-weerberg",
+      "country": "at",
+      "name": "Schwannerlifte in Weerberg",
+      "status": null,
+      "fetched_at": "2026-10-24T17:10:40.477110+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 3
+      },
+      "slopes": {
+        "open": 0,
+        "total": 1,
+        "open_km": 0.0,
+        "total_km": 1
+      },
+      "lifts_updated_at": "2026-10-21T13:35:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Schwannerlifte%20in%20Weerberg_2605"
+      ],
+      "errors": []
+    },
+    {
+      "id": "see-im-paznauntal",
+      "country": "at",
+      "name": "See im Paznauntal",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.532158+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-10-04T17:28:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/See%20i.%20Paznauntal_32"
+      ],
+      "errors": []
+    },
+    {
+      "id": "serfaus-fiss-ladis",
+      "country": "at",
+      "name": "Serfaus-Fiss-Ladis",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.684628+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "1900-01-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 68
+      },
+      "slopes": {
+        "open": 0,
+        "total": 103,
+        "open_km": 0.0,
+        "total_km": 215
+      },
+      "lifts_updated_at": "2026-10-23T08:17:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Serfaus-Fiss-Ladis_2914"
+      ],
+      "errors": []
+    },
+    {
+      "id": "serlesbahnen-mieders",
+      "country": "at",
+      "name": "Serlesbahnen Mieders",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.694998+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-20T15:31:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Serlesbahnen%20Mieders_80"
+      ],
+      "errors": []
+    },
+    {
+      "id": "skilifte-kirchdorf",
+      "country": "at",
+      "name": "Skilifte Kirchdorf",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:38.238725+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-13T11:03:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Skilifte%20Kirchdorf_83"
+      ],
+      "errors": []
+    },
+    {
+      "id": "skilifte-knittel",
+      "country": "at",
+      "name": "Skilifte Knittel",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.690080+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-06-05T13:35:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Skilifte%20Knittel_93"
+      ],
+      "errors": []
+    },
+    {
+      "id": "skilifte-laerchenhof",
+      "country": "at",
+      "name": "Skilifte Lärchenhof",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.747398+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-06-05T13:37:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Skilifte%20L%C3%A4rchenhof_2560"
+      ],
+      "errors": []
+    },
+    {
+      "id": "skizentrum-sillian-hochpustertal",
+      "country": "at",
+      "name": "Skizentrum Sillian - Hochpustertal",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.785829+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-31T07:33:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Skizentrum%20Sillian/%20Hochpustertal_57"
+      ],
+      "errors": []
+    },
+    {
+      "id": "skizentrum-st-jakob",
+      "country": "at",
+      "name": "Skizentrum St. Jakob",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:37.623203+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-07-21T15:20:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Skizentrum%20St.%20Jakob_70"
+      ],
+      "errors": []
+    },
+    {
+      "id": "soell-skiwelt",
+      "country": "at",
+      "name": "Söll - SkiWelt",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.945804+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 83
+      },
+      "slopes": {
+        "open": 0,
+        "total": 231,
+        "open_km": 0.0,
+        "total_km": 271
+      },
+      "lifts_updated_at": "2026-10-24T04:08:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/S%C3%B6ll%20-%20SkiWelt_2548"
+      ],
+      "errors": []
+    },
+    {
+      "id": "spieljochbahn-fuegen",
+      "country": "at",
+      "name": "Spieljochbahn Fügen",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.986192+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-10-09T09:39:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Spieljochbahn%20F%C3%BCgen_2550"
+      ],
+      "errors": []
+    },
+    {
+      "id": "st-johann-in-tirol",
+      "country": "at",
+      "name": "St. Johann in Tirol",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.697784+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-02-24",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 9
+      },
+      "slopes": {
+        "open": 0,
+        "total": 18,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-19T09:19:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/St.%20Johann%20in%20Tirol_1048"
+      ],
+      "errors": []
+    },
+    {
+      "id": "steinplatte-winklmoosalm",
+      "country": "at",
+      "name": "Steinplatte - Winklmoosalm",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.958179+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-17T21:04:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Steinplatte%20-%20Winklmoosalm_2945"
+      ],
+      "errors": []
+    },
+    {
+      "id": "stubaier-gletscher",
+      "country": "at",
+      "name": "Stubaier Gletscher",
+      "status": "open",
+      "fetched_at": "2026-10-24T17:10:37.648957+02:00",
+      "snow": {
+        "mountain_cm": 20,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-10-24",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 12,
+        "total": 26
+      },
+      "slopes": {
+        "open": 7,
+        "total": 36,
+        "open_km": 17.3,
+        "total_km": 96
+      },
+      "lifts_updated_at": "2026-10-24T16:31:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Stubaier%20Gletscher_27"
+      ],
+      "errors": []
+    },
+    {
+      "id": "tiroler-zugspitzbahn",
+      "country": "at",
+      "name": "Tiroler Zugspitzbahn",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.438339+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "1900-01-01",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 2,
+        "total": 8
+      },
+      "slopes": {
+        "open": 0,
+        "total": 13,
+        "open_km": 0.0,
+        "total_km": 11
+      },
+      "lifts_updated_at": "2026-10-24T00:21:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Tiroler%20Zugspitzbahn_22"
+      ],
+      "errors": []
+    },
+    {
+      "id": "tirolina-thiersee",
+      "country": "at",
+      "name": "Tirolina Thiersee",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:40.181414+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 2
+      },
+      "slopes": {
+        "open": 0,
+        "total": 3,
+        "open_km": 0.0,
+        "total_km": null
+      },
+      "lifts_updated_at": "2026-10-24T01:32:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Tirolina%20-%20Ski-%2CSport-%2C%20und%20Aktivberg%20Thiersee_96"
+      ],
+      "errors": []
+    },
+    {
+      "id": "umhausen",
+      "country": "at",
+      "name": "Umhausen",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:40.992526+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-19T17:13:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Umhausen_1617"
+      ],
+      "errors": []
+    },
+    {
+      "id": "venter-seilbahnen",
+      "country": "at",
+      "name": "Venter Seilbahnen",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:38.193837+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2024-12-03",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 4
+      },
+      "slopes": {
+        "open": 0,
+        "total": 8,
+        "open_km": 0.0,
+        "total_km": 15
+      },
+      "lifts_updated_at": "2026-10-24T05:58:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Venter%20Seilbahnen_2606"
+      ],
+      "errors": []
+    },
+    {
+      "id": "voegelsberg-aktivpark",
+      "country": "at",
+      "name": "Vögelsberg Aktivpark",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:41.027052+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-06-05T15:39:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/V%C3%B6gelsberg%20Aktivpark_2543"
+      ],
+      "errors": []
+    },
+    {
+      "id": "westendorf-skiwelt",
+      "country": "at",
+      "name": "Westendorf - SkiWelt",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:39.425731+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": "2026-04-04",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 0,
+        "total": 83
+      },
+      "slopes": {
+        "open": 0,
+        "total": 231,
+        "open_km": 0.0,
+        "total_km": 271
+      },
+      "lifts_updated_at": "2026-10-24T04:08:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Westendorf%20-%20SkiWelt_63"
+      ],
+      "errors": []
+    },
+    {
+      "id": "wildschoenau-ski-juwel",
+      "country": "at",
+      "name": "Wildschönau (Ski Juwel)",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:39.209759+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-08-04T09:25:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Wildsch%C3%B6nau%20-%20Ski%20Juwel%20Alpbachtal%20Wildsch%C3%B6nau_2546"
+      ],
+      "errors": []
+    },
+    {
+      "id": "zahmer-kaiser-walchsee",
+      "country": "at",
+      "name": "Zahmer Kaiser - Walchsee",
+      "status": "no_report",
+      "fetched_at": "2026-10-24T17:10:41.048027+02:00",
+      "snow": {
+        "mountain_cm": null,
+        "valley_cm": null,
+        "fresh_cm": null,
+        "last_snowfall": null,
+        "condition": null,
+        "stations": []
+      },
+      "lifts": null,
+      "slopes": null,
+      "lifts_updated_at": "2026-09-19T17:14:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Zahmer%20Kaiser%20-%20Walchsee_10"
+      ],
+      "errors": []
+    },
+    {
+      "id": "zell-am-ziller-zillertal-arena",
+      "country": "at",
+      "name": "Zell am Ziller - Zillertal Arena",
+      "status": "closed",
+      "fetched_at": "2026-10-24T17:10:41.226293+02:00",
+      "snow": {
+        "mountain_cm": 50,
+        "valley_cm": 10,
+        "fresh_cm": null,
+        "last_snowfall": "2026-01-29",
+        "condition": null,
+        "stations": []
+      },
+      "lifts": {
+        "open": 1,
+        "total": 52
+      },
+      "slopes": {
+        "open": 0,
+        "total": 88,
+        "open_km": 0.0,
+        "total_km": 151
+      },
+      "lifts_updated_at": "2026-10-24T16:32:00+02:00",
+      "avalanche": null,
+      "sources": [
+        "https://www.snowcard.tirol.at/skigebiet/Zell%20am%20Ziller%20-%20Zillertal%20Arena_86"
+      ],
+      "errors": []
+    }
+  ]
+}

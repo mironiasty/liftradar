@@ -1,0 +1,538 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://snow.miron.asia/schema/index.schema.json",
+  "$defs": {
+    "Avalanche": {
+      "additionalProperties": false,
+      "description": "The avalanche bulletin for the resort's warning region (micro-region).",
+      "properties": {
+        "region_id": {
+          "pattern": "^[A-Z]{2}-\\d{2}(-[A-Z0-9]+)*$",
+          "title": "Region Id",
+          "type": "string"
+        },
+        "region": {
+          "minLength": 1,
+          "title": "Region",
+          "type": "string"
+        },
+        "danger_level": {
+          "anyOf": [
+            {
+              "maximum": 5,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Danger Level"
+        },
+        "danger": {
+          "anyOf": [
+            {
+              "enum": [
+                "low",
+                "moderate",
+                "considerable",
+                "high",
+                "very_high"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Danger"
+        },
+        "ratings": {
+          "items": {
+            "$ref": "#/$defs/DangerRating"
+          },
+          "title": "Ratings",
+          "type": "array"
+        },
+        "problems": {
+          "items": {
+            "pattern": "^[a-z_]+$",
+            "type": "string"
+          },
+          "title": "Problems",
+          "type": "array"
+        },
+        "published_at": {
+          "format": "date-time",
+          "title": "Published At",
+          "type": "string"
+        },
+        "valid_from": {
+          "format": "date-time",
+          "title": "Valid From",
+          "type": "string"
+        },
+        "valid_until": {
+          "format": "date-time",
+          "title": "Valid Until",
+          "type": "string"
+        }
+      },
+      "required": [
+        "region_id",
+        "region",
+        "published_at",
+        "valid_from",
+        "valid_until"
+      ],
+      "title": "Avalanche",
+      "type": "object"
+    },
+    "Counts": {
+      "additionalProperties": false,
+      "properties": {
+        "open": {
+          "minimum": 0,
+          "title": "Open",
+          "type": "integer"
+        },
+        "total": {
+          "minimum": 0,
+          "title": "Total",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "open",
+        "total"
+      ],
+      "title": "Counts",
+      "type": "object"
+    },
+    "DangerRating": {
+      "additionalProperties": false,
+      "description": "One rating of a bulletin, for part of the day and/or an elevation band.",
+      "properties": {
+        "level": {
+          "enum": [
+            "low",
+            "moderate",
+            "considerable",
+            "high",
+            "very_high",
+            "no_snow",
+            "no_rating"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "lower_bound": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "const": "treeline",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound"
+        },
+        "upper_bound": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "const": "treeline",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound"
+        },
+        "period": {
+          "default": "all_day",
+          "enum": [
+            "all_day",
+            "earlier",
+            "later"
+          ],
+          "title": "Period",
+          "type": "string"
+        }
+      },
+      "required": [
+        "level"
+      ],
+      "title": "DangerRating",
+      "type": "object"
+    },
+    "ResortReport": {
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "const": "https://snow.miron.asia/schema/resort.schema.json",
+          "default": "https://snow.miron.asia/schema/resort.schema.json",
+          "title": "$Schema",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[a-z0-9-]+$",
+          "title": "Id",
+          "type": "string"
+        },
+        "country": {
+          "description": "ISO 3166-1 alpha-2 code, lowercase",
+          "pattern": "^[a-z]{2}$",
+          "title": "Country",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "enum": [
+                "open",
+                "closed",
+                "no_report"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        },
+        "fetched_at": {
+          "format": "date-time",
+          "title": "Fetched At",
+          "type": "string"
+        },
+        "snow": {
+          "$ref": "#/$defs/Snow"
+        },
+        "lifts": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Counts"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "slopes": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SlopeCounts"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "lifts_updated_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lifts Updated At"
+        },
+        "avalanche": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Avalanche"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sources": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "errors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Errors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "country",
+        "name",
+        "fetched_at"
+      ],
+      "title": "ResortReport",
+      "type": "object"
+    },
+    "SlopeCounts": {
+      "additionalProperties": false,
+      "description": "Slope counts plus kilometres, when the resort publishes every slope's length.\n\nopen_km is rounded to 0.1 km and total_km up to a whole km, so the\nrounded open km never exceeds the rounded total.",
+      "properties": {
+        "open": {
+          "minimum": 0,
+          "title": "Open",
+          "type": "integer"
+        },
+        "total": {
+          "minimum": 0,
+          "title": "Total",
+          "type": "integer"
+        },
+        "open_km": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Open Km"
+        },
+        "total_km": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Km"
+        }
+      },
+      "required": [
+        "open",
+        "total"
+      ],
+      "title": "SlopeCounts",
+      "type": "object"
+    },
+    "Snow": {
+      "additionalProperties": false,
+      "properties": {
+        "mountain_cm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mountain Cm"
+        },
+        "valley_cm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Valley Cm"
+        },
+        "fresh_cm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fresh Cm"
+        },
+        "last_snowfall": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Snowfall"
+        },
+        "condition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Condition"
+        },
+        "stations": {
+          "items": {
+            "$ref": "#/$defs/Station"
+          },
+          "title": "Stations",
+          "type": "array"
+        }
+      },
+      "title": "Snow",
+      "type": "object"
+    },
+    "Station": {
+      "additionalProperties": false,
+      "description": "A snow measuring point published by the resort.",
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "elevation_m": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Elevation M"
+        },
+        "depth_cm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Depth Cm"
+        },
+        "fresh_cm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fresh Cm"
+        },
+        "temperature_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temperature C"
+        },
+        "condition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Condition"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Station",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "const": "https://snow.miron.asia/schema/index.schema.json",
+      "default": "https://snow.miron.asia/schema/index.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "resorts": {
+      "items": {
+        "$ref": "#/$defs/ResortReport"
+      },
+      "title": "Resorts",
+      "type": "array"
+    }
+  },
+  "required": [
+    "generated_at",
+    "resorts"
+  ],
+  "title": "Snow conditions for all resorts",
+  "type": "object"
+}
