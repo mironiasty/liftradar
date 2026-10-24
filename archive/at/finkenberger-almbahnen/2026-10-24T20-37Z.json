@@ -1,0 +1,32 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "finkenberger-almbahnen",
+  "country": "at",
+  "name": "Finkenberger Almbahnen",
+  "status": "closed",
+  "fetched_at": "2026-10-24T22:37:52.720509+02:00",
+  "snow": {
+    "mountain_cm": 140,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-31",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 43
+  },
+  "slopes": {
+    "open": 0,
+    "total": 58,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_updated_at": "2026-10-24T07:44:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Finkenberger%20Almbahnen_24"
+  ],
+  "errors": []
+}

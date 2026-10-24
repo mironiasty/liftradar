@@ -1,0 +1,32 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "gerlos-zillertal-arena",
+  "country": "at",
+  "name": "Gerlos - Zillertal Arena",
+  "status": "closed",
+  "fetched_at": "2026-10-24T22:37:52.879270+02:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-04-02",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 52
+  },
+  "slopes": {
+    "open": 0,
+    "total": 89,
+    "open_km": 0.0,
+    "total_km": 151
+  },
+  "lifts_updated_at": "2026-10-22T16:17:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Gerlos_2908"
+  ],
+  "errors": []
+}

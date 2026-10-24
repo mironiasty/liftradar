@@ -1,0 +1,32 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "stubaier-gletscher",
+  "country": "at",
+  "name": "Stubaier Gletscher",
+  "status": "open",
+  "fetched_at": "2026-10-24T22:37:52.493736+02:00",
+  "snow": {
+    "mountain_cm": 20,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-10-24",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 12,
+    "total": 26
+  },
+  "slopes": {
+    "open": 7,
+    "total": 36,
+    "open_km": 17.3,
+    "total_km": 96
+  },
+  "lifts_updated_at": "2026-10-24T16:31:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Stubaier%20Gletscher_27"
+  ],
+  "errors": []
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "bergwelt-hahnenkamm",
+  "country": "at",
+  "name": "Bergwelt Hahnenkamm",
+  "status": "closed",
+  "fetched_at": "2026-10-24T22:37:51.294492+02:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-02-16",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": 0,
+    "total": 14,
+    "open_km": 0.0,
+    "total_km": 18
+  },
+  "lifts_updated_at": "2026-10-22T15:48:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Bergwelt%20Hahnenkamm_493"
+  ],
+  "errors": []
+}
