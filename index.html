@@ -25,6 +25,10 @@
   th button.sorted.asc::after { content: " \2191"; }
   th .sub { display: block; text-transform: none; letter-spacing: 0; font-weight: 400; }
   th .sub button + button::before { content: "/"; color: var(--muted); padding: 0 2px; }
+  footer { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 8px; }
+  footer h2 { font-size: 1rem; margin: 20px 0 4px; }
+  footer ul { margin: 0; padding-left: 20px; }
+  footer li { margin: 4px 0; }
 </style>
 </head>
 <body>
@@ -54,13 +58,27 @@
     <tbody></tbody>
   </table>
   </div>
-  <p>All resorts in one file: <a href="json/index.json"><code>json/index.json</code></a></p>
-  <p class="muted">Kitzsteinhorn and Kaunertal open km are summed from slope lengths
-    &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
-    Avalanche danger (Tirol): <a href="https://avalanche.report">Avalanche.report</a>,
-    Euregio Tirol &ndash; South Tyrol &ndash; Trentino.</p>
-  <p>JSON Schema: <a href="schema/resort.schema.json"><code>resort.schema.json</code></a>
-    &middot; <a href="schema/index.schema.json"><code>index.schema.json</code></a></p>
+  <footer>
+    <p>All resorts in one file: <a href="json/index.json"><code>json/index.json</code></a>
+      &middot; JSON Schema: <a href="schema/resort.schema.json"><code>resort.schema.json</code></a>,
+      <a href="schema/index.schema.json"><code>index.schema.json</code></a>,
+      <a href="schema/archive.schema.json"><code>archive.schema.json</code></a></p>
+    <p><a href="sources.html">Data sources and credits</a></p>
+    <h2>How to read the numbers</h2>
+    <ul class="muted">
+      <li>Updated twice a day, at about 07:40 and 12:40 Vienna time (an hour later in summer); runs can start late.</li>
+      <li>Villages of one ski area (e.g. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) each show the whole area's numbers: don't add them up.</li>
+      <li>Closed resorts show nothing open and no snow depths: their reports often still carry last season's values.
+        &ldquo;No report yet&rdquo; means the resort hasn't reported for 14 days.</li>
+      <li>Total slope km of the bigger areas is the official size advertised by the resort. Elsewhere it's the sum of the
+        slope lengths the resort reports, which can be too low.</li>
+      <li>Open km are summed from slope lengths (the resort's slope map, or OpenStreetMap for Kitzsteinhorn and Kaunertal,
+        which runs low); lift and slope counts from slope maps include practice lifts and carpets.</li>
+      <li>Avalanche danger (Tirol only) is the highest level of the day in the resort's warning region.</li>
+    </ul>
+    <p class="muted">All details and caveats: <a href="https://github.com/mironiasty/snow-conditions#about-the-data">About the data</a>.
+      Contact: <a href="mailto:trail.jewel8860@eagereverest.com">trail.jewel8860@eagereverest.com</a></p>
+  </footer>
 </main>
 <script src="assets/common.js"></script>
 <script src="assets/table.js"></script>

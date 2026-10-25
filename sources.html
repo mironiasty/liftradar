@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Sources</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+  h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; }
+  dt { font-weight: 600; margin-top: 12px; }
+  dd { margin: 2px 0 0; }
+  ul.urls { padding-left: 20px; margin: 4px 0 0; word-break: break-all; }
+  ul.urls li { margin: 2px 0; }
+  details { margin: 8px 0; }
+  summary { cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Data Sources</h1>
+  <p class="muted"><a href="index.html">Table</a> &middot; <a href="map.html">Map</a></p>
+
+  <h2>Snow and resort status</h2>
+  <dl>
+    <dt>Resorts' own websites</dt>
+    <dd>Snow measuring stations of Hintertuxer Gletscher, Sölden, Kitzsteinhorn, Kaunertaler Gletscher and
+      Pitztaler Gletscher.</dd>
+    <dt><a href="https://www.snowcard.tirol.at/skigebiete">Tirol Snow Card</a></dt>
+    <dd>Daily reports of the other Tirol resorts (snow depth, lifts, slopes, open/closed), as the resorts submit them
+      to iSKI.</dd>
+    <dt><a href="https://www.salzburgerland.com/de/schneebericht/">SalzburgerLand snow report</a></dt>
+    <dd>The same kind of report for the other Salzburg resorts, from the regional tourism board.</dd>
+  </dl>
+
+  <h2>Lifts and slopes</h2>
+  <dl>
+    <dt>Resorts' slope maps (<a href="https://www.intermaps.com">Intermaps</a>)</dt>
+    <dd>Live status of every lift and slope, with lift types and slope difficulties, for the bigger areas.</dd>
+    <dt>Resorts' own websites</dt>
+    <dd>The official size of the bigger ski areas (total slope km), and Hintertux's live open km.</dd>
+    <dt><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</dt>
+    <dd>Slope lengths for the open km of Kitzsteinhorn and Kaunertal (ODbL).</dd>
+  </dl>
+
+  <h2>Avalanche danger</h2>
+  <dl>
+    <dt><a href="https://avalanche.report">avalanche.report</a></dt>
+    <dd>Avalanche bulletin of the Euregio Tirol &ndash; South Tyrol &ndash; Trentino, for Tirol resorts.</dd>
+    <dt><a href="https://gitlab.com/eaws/eaws-regions">EAWS warning regions</a></dt>
+    <dd>Region boundaries (CC0), to find each resort's warning region.</dd>
+  </dl>
+
+  <h2>Map</h2>
+  <dl>
+    <dt><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</dt>
+    <dd>Map tiles, and the location of Salzburg resorts' villages (Nominatim).</dd>
+    <dt><a href="https://leafletjs.com">Leaflet</a></dt>
+    <dd>The interactive map.</dd>
+  </dl>
+
+  <h2>Every page in the current data</h2>
+  <p class="muted" id="status">Loading…</p>
+  <div id="urls"></div>
+
+  <p class="muted">Bergfex is not used. How values are calculated, and their caveats:
+    <a href="https://github.com/mironiasty/snow-conditions#about-the-data">About the data</a>.
+    Contact: <a href="mailto:trail.jewel8860@eagereverest.com">trail.jewel8860@eagereverest.com</a></p>
+</main>
+<script src="assets/common.js"></script>
+<script src="assets/sources.js"></script>
+</body>
+</html>

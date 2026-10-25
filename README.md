@@ -9,7 +9,8 @@ Snow conditions for ski resorts in Tirol and Salzburg, published at
   - `archive/<country>/<resort>/index.json` lists every run (oldest first) with the
     snapshot holding that run's full report, e.g. `2026-10-25T09-00Z.json` (UTC). Runs
     without changes share the earlier snapshot.
-- **Website** (branch `main`, this): `index.html` (table) and `map.html` (map), plain
+- **Website** (branch `main`, this): `index.html` (table), `map.html` (map) and
+  `sources.html` (data sources, incl. every URL in the current data), plain
   static pages that load `json/index.json` in the browser. No build step.
 
 `.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
