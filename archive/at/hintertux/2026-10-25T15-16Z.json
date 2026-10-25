@@ -1,0 +1,108 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hintertux",
+  "country": "at",
+  "name": "Hintertuxer Gletscher",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.057,
+    "lon": 11.658
+  },
+  "status": "open",
+  "fetched_at": "2026-10-25T16:15:33.467477+01:00",
+  "snow": {
+    "mountain_cm": 25,
+    "valley_cm": 20,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": "grippy/hard powder",
+    "stations": [
+      {
+        "name": "Gefrorene Wand",
+        "elevation_m": 3250,
+        "depth_cm": 25,
+        "fresh_cm": null,
+        "temperature_c": -1.1,
+        "condition": "grippy/hard powder"
+      },
+      {
+        "name": "Tuxer Fernerhaus",
+        "elevation_m": 2660,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": 3.0,
+        "condition": "grippy/hard powder"
+      },
+      {
+        "name": "Sommerbergalm",
+        "elevation_m": 2100,
+        "depth_cm": null,
+        "fresh_cm": null,
+        "temperature_c": 1.1,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 12,
+    "total": 21
+  },
+  "slopes": {
+    "open": 9,
+    "total": 32,
+    "open_km": 22.0,
+    "total_km": 64
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 3,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 1,
+      "total": 6
+    },
+    "drag_lift": {
+      "open": 5,
+      "total": 9
+    },
+    "gondola": {
+      "open": 3,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 16
+    },
+    "easy": {
+      "open": 3,
+      "total": 11,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 6,
+      "total": 12,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-25T09:17:55+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.hintertuxergletscher.at/en/information/currently/weather/",
+    "https://winter.intermaps.com/hintertuxer_gletscher/data?lang=en",
+    "https://www.hintertuxergletscher.at/en/information/about-us/interesting-facts/"
+  ],
+  "errors": []
+}

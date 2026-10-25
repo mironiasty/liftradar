@@ -1,0 +1,73 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "engstligenalp",
+  "country": "ch",
+  "name": "Engstligenalp",
+  "region": "Bern",
+  "location": {
+    "lat": 46.4592,
+    "lon": 7.5664
+  },
+  "status": null,
+  "fetched_at": "2026-10-25T16:15:33.470277+01:00",
+  "snow": {
+    "mountain_cm": 3,
+    "valley_cm": 0,
+    "fresh_cm": 6,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Engstligenalp (SLF)",
+        "elevation_m": 2304,
+        "depth_cm": 3,
+        "fresh_cm": 6,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Adelboden (SLF)",
+        "elevation_m": 1325,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": {
+    "region_id": "CH-1227",
+    "region": "Engstligen",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "considerable",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "new_snow",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": [
+    "infosnow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=113&saison=1&ref=contentBox'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  ]
+}

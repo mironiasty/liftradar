@@ -1,0 +1,99 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hoch-ybrig",
+  "country": "ch",
+  "name": "Hoch Ybrig",
+  "region": "Schwyz",
+  "location": {
+    "lat": 47.0201,
+    "lon": 8.8089
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T16:15:33.470402+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Wanne (SLF)",
+        "elevation_m": 1701,
+        "depth_cm": 8,
+        "fresh_cm": 3,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": 0,
+    "total": 22,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 19
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 14
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-25T16:15:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=75&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

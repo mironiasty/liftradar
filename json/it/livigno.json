@@ -1,15 +1,15 @@
 {
   "$schema": "https://snow.miron.asia/schema/resort.schema.json",
-  "id": "cima-piazzi-san-colombano",
+  "id": "livigno",
   "country": "it",
-  "name": "Cima Piazzi - San Colombano",
+  "name": "Livigno",
   "region": "Lombardia",
   "location": {
-    "lat": 46.4891,
-    "lon": 10.2951
+    "lat": 46.5382,
+    "lon": 10.136
   },
-  "status": null,
-  "fetched_at": "2026-10-25T16:02:46.106163+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-25T16:15:33.471903+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -24,8 +24,8 @@
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
-  "errors": [
-    "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.bormioski.eu/info-impianti-e-piste/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-  ]
+  "sources": [
+    "https://www.livigno.eu/en/lifts"
+  ],
+  "errors": []
 }
