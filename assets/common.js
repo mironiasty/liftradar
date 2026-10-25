@@ -2,6 +2,7 @@
 // The data is published by snow-fetcher (json/, history/, archive/, schema/).
 
 const INDEX_URL = "json/index.json";
+const AREAS_URL = "assets/areas.geojson";
 
 async function loadIndex() {
   const response = await fetch(INDEX_URL, { cache: "no-cache" });

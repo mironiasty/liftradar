@@ -12,13 +12,42 @@
   header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
   h1 { margin: 0; font-size: 1.2rem; }
   .muted { font-size: .85rem; }
-  .filters { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-left: auto; }
-  .filters label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: .9rem; }
-  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
-  #map { flex: 1; min-height: 300px; }
+  .map-wrap { flex: 1; position: relative; min-height: 300px; }
+  #map { position: absolute; inset: 0; }
+
+  /* Options panel over the map; collapsed to its title on small screens. */
+  .panel { position: absolute; top: 10px; right: 10px; z-index: 1000; width: min(300px, calc(100% - 70px));
+    background: var(--bg); color: var(--fg); border-radius: 12px; box-shadow: 0 2px 14px rgba(0,0,0,.22); font-size: .85rem; }
+  .panel:not([open]) { width: auto; }
+  .panel summary { display: flex; align-items: center; justify-content: space-between; padding: 9px 12px;
+    cursor: pointer; font-weight: 600; list-style: none; user-select: none; }
+  .panel summary::-webkit-details-marker { display: none; }
+  .panel summary::after { content: ""; width: 7px; height: 7px; border: solid var(--muted); border-width: 0 2px 2px 0;
+    transform: rotate(45deg); margin: -3px 2px 0 14px; transition: transform .15s; }
+  .panel[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
+  .panel-body { padding: 0 12px 12px; }
+  .panel h2 { margin: 4px 0 6px; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .panel h2:not(:first-child) { margin-top: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--line);
+    border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+  .chip:hover { border-color: var(--muted); }
+  .chip[aria-pressed="true"] { background: var(--chip); border-color: transparent; color: var(--fg); font-weight: 500; }
+  .chip:focus-visible, .seg button:focus-visible, .panel summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--c); }
+  .chip[aria-pressed="true"] .dot { background: var(--c); }
+  #metrics .chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+  .seg { display: inline-flex; margin-top: 8px; padding: 2px; border-radius: 8px; background: var(--chip); }
+  .seg button { padding: 3px 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+  .seg button:disabled { cursor: default; opacity: .45; }
+  .hint { margin: 6px 0 0; color: var(--muted); font-size: .78rem; }
+  :root { --chip: #eef1f4; }
+  @media (prefers-color-scheme: dark) { :root { --chip: #262a2f; } }
   .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
     min-width: 22px; padding: 0 5px; box-sizing: border-box; color: #fff; font: 600 11px/1 system-ui, sans-serif;
-    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; }
+    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; transform: translate(-50%, -50%); }
   .leaflet-popup-content { margin: 12px 14px; font: 14px/1.45 system-ui, sans-serif; }
   .popup h3 { margin: 0 0 4px; font-size: 1rem; }
   .popup table { border-collapse: collapse; margin: 6px 0; }
@@ -30,10 +59,22 @@
 <body>
 <header>
   <h1>Snow Map</h1>
-  <span class="muted"><span id="updated">Loading…</span> &middot; <a href="index.html">Table</a> &middot; <a href="sources.html">Sources</a> &middot; label: open lifts</span>
-  <div class="filters" id="filters"></div>
+  <span class="muted"><span id="updated">Loading…</span> &middot; <a href="index.html">Table</a> &middot; <a href="sources.html">Sources</a></span>
 </header>
-<div id="map" role="region" aria-label="Map of ski resorts"></div>
+<div class="map-wrap">
+  <div id="map" role="region" aria-label="Map of ski resorts"></div>
+  <details class="panel" id="panel" open>
+    <summary>Map options</summary>
+    <div class="panel-body">
+      <h2 id="status-title">Resorts</h2>
+      <div class="chips" id="filters" role="group" aria-labelledby="status-title"></div>
+      <h2 id="label-title">Number on markers</h2>
+      <div class="chips" id="metrics" role="group" aria-labelledby="label-title"></div>
+      <div class="seg" id="mode" role="group" aria-label="Open or total"></div>
+      <p class="hint" id="hint"></p>
+    </div>
+  </details>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="assets/common.js"></script>
 <script src="assets/map.js"></script>

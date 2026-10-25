@@ -12,6 +12,7 @@ Snow conditions for ski resorts in Austria, Switzerland and Italy, published at
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map) and
   `sources.html` (data sources, incl. every URL in the current data), plain
   static pages that load `json/index.json` in the browser. No build step.
+  `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
 
 `.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
 to `main` and after every data update.
@@ -46,6 +47,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Avalanche danger, South Tyrol and Trentino | [avalanche.report](https://avalanche.report) (Euregio) |
 | Avalanche danger, other Italian regions | [AINEVA](https://bollettini.aineva.it) joint bulletin |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
+| Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI. Bergfex
 is not used. Each file's `sources` lists the URLs used for that report.
@@ -148,6 +150,22 @@ and Italian resorts, Andermatt and Engelberg. It marks the area on a map, not a 
 OpenStreetMap; the table filters by it and by `country`. An area spanning a border is listed
 under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
+### Areas
+
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 282 of the 309
+resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
+village lifts, are only a marker on the map. Each feature has the resort's `id` and the
+`osm` ids it was made from. It isn't updated automatically: run
+`scripts/resort_areas.py` now and then (e.g. after adding resorts) and check the map:
+
+```sh
+uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-conditions-data/json/index.json assets/areas.geojson
+```
+
+An area within 1 km of several resorts (SkiWelt, Zillertal Arena) is split between them by
+nearest resort point, so the villages' parts are approximate. Wrong matches are fixed by hand
+in the script's `SHARED` and `EXCLUDE`.
+
 ### Archive
 
 - Collected since 24 October 2026; earlier data doesn't exist.
@@ -193,4 +211,4 @@ python3 -m http.server 8000                     # http://localhost:8000
 
 (The links are git-ignored.)
 
-Map tiles and data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
+Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles © [OpenTopoMap](https://opentopomap.org) (CC-BY-SA), pistes and lifts from [OpenSnowMap](https://www.opensnowmap.org).
