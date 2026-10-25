@@ -35,8 +35,9 @@
 <main>
   <h1>Snow Conditions</h1>
   <p class="muted"><span id="updated">Loading…</span> &middot; data from the resorts' official websites and the resort reports of the
-    <a href="https://www.snowcard.tirol.at/skigebiete">Tirol Snow Card</a> and
-    <a href="https://www.salzburgerland.com/de/schneebericht/">SalzburgerLand</a>
+    <a href="https://www.snowcard.tirol.at/skigebiete">Tirol Snow Card</a>,
+    <a href="https://www.salzburgerland.com/de/schneebericht/">SalzburgerLand</a> and
+    <a href="https://infosnow.ch/portal/">infosnow.ch</a> (Switzerland)
     &middot; <a href="map.html">Map</a></p>
   <div class="tools">
     <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
@@ -68,9 +69,11 @@
         &ldquo;No report yet&rdquo; means the resort hasn't reported for 14 days.</li>
       <li>Total slope km of the bigger areas is the official size advertised by the resort. Elsewhere it's the sum of the
         slope lengths the resort reports, which can be too low.</li>
-      <li>Open km are summed from slope lengths (the resort's slope map, or OpenStreetMap for Kitzsteinhorn and Kaunertal,
-        which runs low); lift and slope counts from slope maps include practice lifts and carpets.</li>
-      <li>Avalanche danger (Tirol only) is the highest level of the day in the resort's warning region.</li>
+      <li>Open km are summed from slope lengths (the resort's slope map or infosnow, or OpenStreetMap for Kitzsteinhorn and
+        Kaunertal, which runs low); lift and slope counts from slope maps include practice lifts and carpets.</li>
+      <li>Most Swiss resorts don't report snow depths: theirs are measured at the nearest SLF stations (open ground, not
+        pistes), so they can differ from what the resort would report.</li>
+      <li>Avalanche danger (Tirol and Switzerland) is the highest level of the day in the resort's warning region.</li>
     </ul>
     <p class="muted">All details and caveats: <a href="https://github.com/mironiasty/snow-conditions#about-the-data">About the data</a>.
       Contact: <a href="mailto:trail.jewel8860@eagereverest.com">trail.jewel8860@eagereverest.com</a></p>

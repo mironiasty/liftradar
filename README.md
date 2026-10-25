@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Tirol and Salzburg, published at
+Snow conditions for ski resorts in Tirol, Salzburg and Switzerland, published at
 [snow.miron.asia](https://snow.miron.asia).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -28,9 +28,12 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Hintertux, Sölden, Kitzsteinhorn, Kaunertal, Pitztal | The resorts' own websites (snow stations) |
 | Other Tirol resorts | [Tirol Snow Card](https://www.snowcard.tirol.at/skigebiete) resort reports |
 | Other Salzburg resorts | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
-| Lift/slope status of the bigger areas | The resort's own Intermaps slope map |
+| Swiss resorts | [infosnow.ch](https://infosnow.ch/portal/): live lift and slope status as the lift companies publish it |
+| Snow depth of Swiss resorts that don't report it | Nearest [SLF](https://www.slf.ch/en/services-and-products/slf-data-service) stations (WSL Institute for Snow and Avalanche Research, CC BY 4.0) |
+| Lift/slope status of the bigger Austrian areas, Andermatt and Engelberg | The resort's own Intermaps slope map |
 | Total slope km of the bigger areas | The official size on the resort's own website |
-| Avalanche danger (Tirol only) | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
+| Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
+| Avalanche danger, Switzerland | [SLF avalanche bulletin](https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/) |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 
 The Snow Card and SalzburgerLand pages show the report each resort submits to iSKI. Bergfex
@@ -44,11 +47,12 @@ is not used. Each file's `sources` lists the URLs used for that report.
 - `fetched_at` is when we read the data; `lifts_updated_at` is the resort's own report time
   (or its slope map's update time). The resort's report time can move forward without its
   numbers changing: reporting systems refresh it daily.
-- Times are ISO 8601 with the Vienna offset (`+01:00` / `+02:00`); archive file names are UTC.
+- Times are ISO 8601 with the Vienna offset (`+01:00` / `+02:00`, the same as Swiss time); archive file names are UTC.
 
 ### Status
 
-- `open` / `closed`: from the resort's report, or `open` when its slope map shows open slopes.
+- `open` / `closed`: from the resort's report, or `open` when its slope map shows open slopes. Swiss resorts are
+  `open` when infosnow (or the slope map) shows an open slope: lifts also run for hikers outside the season.
 - `no_report`: the resort hasn't reported for 14 days (e.g. before the season). No values are
   published then, so last season's numbers never show up as current.
 - `null`: unknown, usually because fetching failed; see `errors`.
@@ -61,6 +65,11 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 - `mountain_cm` / `valley_cm`: the highest / lowest measuring station (own-website resorts),
   or the report's max / min depth (Snow Card, SalzburgerLand).
+- Swiss resorts: the resort's own measuring points where it enters them in infosnow (e.g. Verbier).
+  Most don't, and then the depths come from the nearest SLF stations, listed in `snow.stations`
+  as "<name> (SLF)": an automatic station on the mountain (about 2000–2900 m) and an observer's
+  study plot near the village (read each morning, mostly from November). They're measured on
+  open ground, not on pistes, and the station can be a few km from the ski area.
 - Regional reports keep a resort's old values until it clears them; check `last_snowfall`.
   SalzburgerLand reports often have no `last_snowfall`.
 - Any value can be `null` when the resort doesn't publish it.
@@ -89,11 +98,13 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Lift types and slope difficulties
 
 `lifts_by_type` and `slopes_by_difficulty` are only set for resorts with their own slope map
-(the bigger areas).
+(the bigger areas) and for Swiss resorts (from infosnow).
 
 - Lift types (`gondola`, `cable_car`, `chairlift`, `drag_lift`, `carpet`, `funicular`,
   `other`) and difficulties (`easy`, `intermediate`, `difficult`, `ski_route`, `other`) are
-  read from the map's display text, so an unusual label can land in `other`.
+  read from the map's display text, so an unusual label can land in `other`. For Swiss resorts
+  they come from infosnow's type icons; yellow and orange runs are `ski_route`, mixed
+  colours (blue/red) `other`, and rack railways (e.g. Gornergrat) `other`.
 - km per difficulty are only given when every slope of that difficulty has a length in the
   map, and they don't add up to `slopes.total_km` (the official size, counted differently;
   each difficulty is also rounded up). Some maps have no lengths at all.
@@ -102,9 +113,11 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Avalanche danger
 
-- Tirol resorts only. Salzburg has no machine-readable bulletin, so `avalanche` is `null`
-  for all Salzburg resorts, including the Snow Card ones in Salzburg (Hochkrimml,
+- Tirol and Swiss resorts only. Salzburg has no machine-readable bulletin, so `avalanche` is
+  `null` for all Salzburg resorts, including the Snow Card ones in Salzburg (Hochkrimml,
   Königsleiten, Mittersill, Wildkogel).
+- Early and late in the season the SLF only rates the alpine regions, so Swiss resorts in the
+  Prealps (and e.g. Arosa) can have `null` while others have a rating.
 - `null` outside the season and when no bulletin is valid at the time of the run.
 - `danger_level` (1–5) is the highest level of the day in the resort's warning region;
   `ratings` has the split by elevation and time of day. The region is found from one point
@@ -112,8 +125,9 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Locations
 
-`location` is one point per resort: the Snow Card location, a point in the ski area for the
-glacier resorts, or the main village (looked up on OpenStreetMap) for Salzburg resorts. It
+`location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
+for the glacier resorts, or the main village (looked up on OpenStreetMap) for Salzburg
+resorts, Andermatt and Engelberg. It
 marks the area on a map, not a lift station.
 
 ### Archive
