@@ -65,8 +65,9 @@ is not used. Each file's `sources` lists the URLs used for that report.
 - `open` / `closed`: from the resort's report, or `open` when its slope map shows open slopes. Swiss resorts are
   `open` when infosnow (or the slope map) shows an open slope: lifts also run for hikers outside the season.
 - `no_report`: the resort hasn't reported for 14 days (e.g. before the season). Only the
-  totals of its last report (lifts, slopes, km: the area's size) are kept, with `open` null,
-  so last season's open counts and snow never show up as current.
+  totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts
+  and `slopes.open` null, so last season's open counts and snow never show up as current.
+  The 0 means "not reported", not that every lift is closed.
 - `null`: unknown, usually because fetching failed; see `errors`.
 - A **closed** resort always shows 0 open lifts, slopes and km (outside the season some
   resorts count lifts running for hikers), and **no snow depths** (`mountain_cm`,
