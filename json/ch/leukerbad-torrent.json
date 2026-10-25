@@ -9,7 +9,7 @@
     "lon": 7.629
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T16:15:33.470645+01:00",
+  "fetched_at": "2026-10-25T18:04:26.167394+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -81,34 +81,13 @@
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-10-25T16:15:00+01:00",
-  "avalanche": {
-    "region_id": "CH-4211",
-    "region": "Leukerbad - Lötschental",
-    "danger_level": 3,
-    "danger": "considerable",
-    "ratings": [
-      {
-        "level": "considerable",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "new_snow",
-      "wet_snow"
-    ],
-    "published_at": "2026-10-24T17:00:00+02:00",
-    "valid_from": "2026-10-24T17:00:00+02:00",
-    "valid_until": "2026-10-25T17:00:00+01:00"
-  },
+  "lifts_updated_at": "2026-10-25T18:00:00+01:00",
+  "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=135&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "errors": []
 }

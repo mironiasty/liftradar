@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "ankogel-mallnitz",
+  "country": "at",
+  "name": "Ankogel - Mallnitz",
+  "region": "Kärnten",
+  "location": {
+    "lat": 46.9887,
+    "lon": 13.1706
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:05:05.922390+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 13
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-22T12:25:05+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
+  ],
+  "errors": []
+}

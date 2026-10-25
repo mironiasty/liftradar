@@ -9,7 +9,7 @@
     "lon": 8.2684
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T16:15:33.470692+01:00",
+  "fetched_at": "2026-10-25T18:04:26.167448+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -70,31 +70,10 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-10-25T16:15:00+01:00",
-  "avalanche": {
-    "region_id": "CH-2123",
-    "region": "Melchtal",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "wind_slab",
-      "wet_snow"
-    ],
-    "published_at": "2026-10-24T17:00:00+02:00",
-    "valid_from": "2026-10-24T17:00:00+02:00",
-    "valid_until": "2026-10-25T17:00:00+01:00"
-  },
+  "lifts_updated_at": "2026-10-25T18:00:00+01:00",
+  "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=117&saison=1&ref=contentBox",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=117&saison=1&ref=contentBox"
   ],
   "errors": []
 }

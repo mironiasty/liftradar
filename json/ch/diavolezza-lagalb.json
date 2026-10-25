@@ -8,10 +8,10 @@
     "lat": 46.4412,
     "lon": 9.9836
   },
-  "status": "open",
-  "fetched_at": "2026-10-25T16:15:33.470203+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:04:26.167095+01:00",
   "snow": {
-    "mountain_cm": 15,
+    "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": "2026-10-22",
@@ -28,18 +28,18 @@
     ]
   },
   "lifts": {
-    "open": 2,
+    "open": 0,
     "total": 5
   },
   "slopes": {
-    "open": 1,
+    "open": 0,
     "total": 13,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": null
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 0,
       "total": 2
     },
     "carpet": {
@@ -47,7 +47,7 @@
       "total": 1
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 1
     },
     "drag_lift": {
@@ -57,21 +57,21 @@
   },
   "slopes_by_difficulty": {
     "intermediate": {
-      "open": 1,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "other": {
@@ -81,31 +81,10 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-10-25T16:00:00+01:00",
-  "avalanche": {
-    "region_id": "CH-7112",
-    "region": "Bernina",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "wind_slab",
-      "persistent_weak_layers"
-    ],
-    "published_at": "2026-10-24T17:00:00+02:00",
-    "valid_from": "2026-10-24T17:00:00+02:00",
-    "valid_until": "2026-10-25T17:00:00+01:00"
-  },
+  "lifts_updated_at": "2026-10-25T18:00:00+01:00",
+  "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox"
   ],
   "errors": []
 }

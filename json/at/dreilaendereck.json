@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "dreilaendereck",
+  "country": "at",
+  "name": "Dreiländereck - Arnoldstein",
+  "region": "Kärnten",
+  "location": {
+    "lat": 46.5321,
+    "lon": 13.718
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:05:07.091769+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 14
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-23T10:29:59+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
+  ],
+  "errors": []
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "visperterminen",
+  "country": "ch",
+  "name": "Visperterminen",
+  "region": "Valais",
+  "location": {
+    "lat": 46.2583,
+    "lon": 7.9043
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:04:26.167719+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Chiematte (SLF)",
+        "elevation_m": 2205,
+        "depth_cm": 3,
+        "fresh_cm": 13,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": 0,
+    "total": 13,
+    "open_km": 0.0,
+    "total_km": 20
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 17
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-23T10:00:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=229&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

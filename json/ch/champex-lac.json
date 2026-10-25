@@ -9,7 +9,7 @@
     "lon": 7.1067
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T16:15:33.470102+01:00",
+  "fetched_at": "2026-10-25T18:04:26.167050+01:00",
   "snow": {
     "mountain_cm": 13,
     "valley_cm": null,
@@ -32,33 +32,12 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-10-04T20:07:00+02:00",
-  "avalanche": {
-    "region_id": "CH-4113",
-    "region": "Val d'Entremont - Val Ferret",
-    "danger_level": 3,
-    "danger": "considerable",
-    "ratings": [
-      {
-        "level": "considerable",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "new_snow",
-      "wet_snow"
-    ],
-    "published_at": "2026-10-24T17:00:00+02:00",
-    "valid_from": "2026-10-24T17:00:00+02:00",
-    "valid_until": "2026-10-25T17:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=82&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "errors": []
 }

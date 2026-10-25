@@ -1,0 +1,97 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "laax",
+  "country": "ch",
+  "name": "Laax (Flims Laax Falera)",
+  "region": "Graubünden",
+  "location": {
+    "lat": 46.8251,
+    "lon": 9.2718
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:04:26.167315+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "La Fuorcla (SLF)",
+        "elevation_m": 2325,
+        "depth_cm": 10,
+        "fresh_cm": 6,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 31
+  },
+  "slopes": {
+    "open": 0,
+    "total": 144,
+    "open_km": 0.0,
+    "total_km": 209
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 7
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    },
+    "funicular": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 13
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 81,
+      "open_km": 0.0,
+      "total_km": 84
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 43,
+      "open_km": 0.0,
+      "total_km": 75
+    },
+    "difficult": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 17
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 12,
+      "open_km": 0.0,
+      "total_km": 34
+    }
+  },
+  "lifts_updated_at": "2026-10-25T18:03:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=200&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

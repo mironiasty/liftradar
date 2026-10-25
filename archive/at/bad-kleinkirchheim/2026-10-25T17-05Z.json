@@ -1,0 +1,82 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "bad-kleinkirchheim",
+  "country": "at",
+  "name": "Bad Kleinkirchheim",
+  "region": "Kärnten",
+  "location": {
+    "lat": 46.8144,
+    "lon": 13.7984
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:05:05.062934+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 24
+  },
+  "slopes": {
+    "open": 0,
+    "total": 39,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 8
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 10
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 20,
+      "open_km": 0.0,
+      "total_km": 52
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 8
+    }
+  },
+  "lifts_updated_at": "2026-10-24T17:57:09+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+    "https://winter.intermaps.com/bad_kleinkirchheim/data?lang=en"
+  ],
+  "errors": []
+}

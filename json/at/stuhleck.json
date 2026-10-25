@@ -1,0 +1,65 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "stuhleck",
+  "country": "at",
+  "name": "Stuhleck",
+  "region": "Steiermark",
+  "location": {
+    "lat": 47.5742,
+    "lon": 15.79
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T18:04:26.166757+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 12
+  },
+  "slopes": {
+    "open": 0,
+    "total": 21,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 17,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
+  "lifts_updated_at": "2026-10-22T11:45:09+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/stuhleck/data?lang=en"
+  ],
+  "errors": []
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "vicheres-liddes",
+  "country": "ch",
+  "name": "Vichères-Liddes",
+  "region": "Valais",
+  "location": {
+    "lat": 45.9916,
+    "lon": 7.186
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T18:04:26.167699+01:00",
+  "snow": {
+    "mountain_cm": 1,
+    "valley_cm": null,
+    "fresh_cm": 0,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Bourg-St-Pierre (SLF)",
+        "elevation_m": 1670,
+        "depth_cm": 1,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-04-09T17:16:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}
