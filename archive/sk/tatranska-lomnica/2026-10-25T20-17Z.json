@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "tatranska-lomnica",
+  "country": "sk",
+  "name": "Tatranská Lomnica",
+  "region": "Prešovský kraj",
+  "location": {
+    "lat": 49.1646,
+    "lon": 20.2806
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:15:57.235608+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": {
+    "open": null,
+    "total": 15,
+    "open_km": null,
+    "total_km": 15
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk"
+  ],
+  "errors": []
+}

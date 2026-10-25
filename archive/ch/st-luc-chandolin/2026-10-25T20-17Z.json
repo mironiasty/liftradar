@@ -1,0 +1,99 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "st-luc-chandolin",
+  "country": "ch",
+  "name": "St-Luc Chandolin",
+  "region": "Valais",
+  "location": {
+    "lat": 46.2373,
+    "lon": 7.6144
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T21:15:57.232228+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Orzival (SLF)",
+        "elevation_m": 2640,
+        "depth_cm": 24,
+        "fresh_cm": 8,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 16
+  },
+  "slopes": {
+    "open": 0,
+    "total": 39,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 9
+    },
+    "funicular": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": 23
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 12,
+      "open_km": 0.0,
+      "total_km": 23
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "other": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
+  "lifts_updated_at": "2026-10-25T21:15:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=176&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

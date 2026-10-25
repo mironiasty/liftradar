@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "schnalstal",
+  "country": "it",
+  "name": "Schnalstal - Val Senales",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.7565,
+    "lon": 10.7827
+  },
+  "status": null,
+  "fetched_at": "2026-10-25T21:15:57.232858+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [],
+  "errors": [
+    "suedtirol: ReadTimeout: "
+  ]
+}

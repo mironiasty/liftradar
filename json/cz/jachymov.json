@@ -1,0 +1,41 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "jachymov",
+  "country": "cz",
+  "name": "Jáchymov",
+  "region": "Karlovarský kraj",
+  "location": {
+    "lat": 50.363,
+    "lon": 12.9299
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:15:57.233981+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": 8,
+    "open_km": null,
+    "total_km": 5
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-03-20T08:05:25+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/jachymov",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=18",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=18"
+  ],
+  "errors": []
+}

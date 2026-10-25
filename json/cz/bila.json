@@ -1,0 +1,67 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "bila",
+  "country": "cz",
+  "name": "Bílá",
+  "region": "Moravskoslezský kraj",
+  "location": {
+    "lat": 49.432,
+    "lon": 18.4224
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T21:15:57.233896+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
+    "total_km": 6
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-19T07:24:58+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/bila",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=5&loc=3",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=5&loc=3"
+  ],
+  "errors": []
+}

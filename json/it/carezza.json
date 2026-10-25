@@ -9,7 +9,7 @@
     "lon": 11.5712
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T18:22:33.222210+01:00",
+  "fetched_at": "2026-10-25T21:15:57.232582+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -76,5 +76,7 @@
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
     "https://www.dolomitisuperski.com"
   ],
-  "errors": []
+  "errors": [
+    "snow: ReadTimeout: "
+  ]
 }

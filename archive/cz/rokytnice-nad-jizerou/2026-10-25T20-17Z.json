@@ -1,0 +1,73 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "rokytnice-nad-jizerou",
+  "country": "cz",
+  "name": "Rokytnice nad Jizerou",
+  "region": "Liberecký kraj",
+  "location": {
+    "lat": 50.7272,
+    "lon": 15.4639
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T21:15:57.233581+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
+    "total_km": 12
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 7
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-23T08:18:54+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/rokytnicenj",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=2",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=2"
+  ],
+  "errors": []
+}
