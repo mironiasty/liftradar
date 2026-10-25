@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://snow.miron.asia/schema/archive.schema.json",
+  "$defs": {
+    "ArchiveRun": {
+      "additionalProperties": false,
+      "properties": {
+        "time": {
+          "format": "date-time",
+          "title": "Time",
+          "type": "string"
+        },
+        "snapshot": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}Z\\.json$",
+          "title": "Snapshot",
+          "type": "string"
+        }
+      },
+      "required": [
+        "time",
+        "snapshot"
+      ],
+      "title": "ArchiveRun",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Every run for one resort, oldest first, with the snapshot holding its report.",
+  "properties": {
+    "$schema": {
+      "const": "https://snow.miron.asia/schema/archive.schema.json",
+      "default": "https://snow.miron.asia/schema/archive.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9-]+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "country": {
+      "pattern": "^[a-z]{2}$",
+      "title": "Country",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "runs": {
+      "items": {
+        "$ref": "#/$defs/ArchiveRun"
+      },
+      "title": "Runs",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "country",
+    "name"
+  ],
+  "title": "Archived snow reports for one resort",
+  "type": "object"
+}
