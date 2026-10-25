@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "grossglockner-resort-kals-matrei",
+  "country": "at",
+  "name": "Großglockner Resort Kals-Matrei",
+  "region": "Tirol",
+  "location": {
+    "lat": 46.9915,
+    "lon": 12.5972
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T12:01:36.633677+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-22T10:41:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Gro%C3%9Fglockner%20Resort%20Kals-Matrei_72"
+  ],
+  "errors": []
+}

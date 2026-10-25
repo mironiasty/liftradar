@@ -1,17 +1,18 @@
 {
   "$schema": "https://snow.miron.asia/schema/index.schema.json",
-  "generated_at": "2026-10-25T11:50:12+01:00",
+  "generated_at": "2026-10-25T12:01:57+01:00",
   "resorts": [
     {
       "id": "hintertux",
       "country": "at",
       "name": "Hintertuxer Gletscher",
+      "region": "Tirol",
       "location": {
         "lat": 47.057,
         "lon": 11.658
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:49:43.280257+01:00",
+      "fetched_at": "2026-10-25T12:01:26.744547+01:00",
       "snow": {
         "mountain_cm": 25,
         "valley_cm": 20,
@@ -24,7 +25,7 @@
             "elevation_m": 3250,
             "depth_cm": 25,
             "fresh_cm": null,
-            "temperature_c": -0.9,
+            "temperature_c": -0.6,
             "condition": "grippy/hard powder"
           },
           {
@@ -32,7 +33,7 @@
             "elevation_m": 2660,
             "depth_cm": 20,
             "fresh_cm": null,
-            "temperature_c": 4.3,
+            "temperature_c": 4.1,
             "condition": "grippy/hard powder"
           },
           {
@@ -40,7 +41,7 @@
             "elevation_m": 2100,
             "depth_cm": null,
             "fresh_cm": null,
-            "temperature_c": -0.2,
+            "temperature_c": 0.6,
             "condition": null
           }
         ]
@@ -112,14 +113,15 @@
       "id": "soelden",
       "country": "at",
       "name": "Sölden",
+      "region": "Tirol",
       "location": {
         "lat": 46.95,
         "lon": 10.98
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:49:43.280335+01:00",
+      "fetched_at": "2026-10-25T12:01:26.744608+01:00",
       "snow": {
-        "mountain_cm": 48,
+        "mountain_cm": 49,
         "valley_cm": 0,
         "fresh_cm": 3,
         "last_snowfall": "2026-10-25",
@@ -130,7 +132,7 @@
             "elevation_m": 1363,
             "depth_cm": 0,
             "fresh_cm": 0,
-            "temperature_c": 8.9,
+            "temperature_c": 9.0,
             "condition": null
           },
           {
@@ -146,13 +148,13 @@
             "elevation_m": 2525,
             "depth_cm": 11,
             "fresh_cm": 0,
-            "temperature_c": 4.8,
+            "temperature_c": 5.2,
             "condition": null
           },
           {
             "name": "Glacier",
             "elevation_m": 3000,
-            "depth_cm": 48,
+            "depth_cm": 49,
             "fresh_cm": 3,
             "temperature_c": 0.9,
             "condition": "Fresh snow"
@@ -217,7 +219,7 @@
           "total_km": 23
         }
       },
-      "lifts_updated_at": "2026-10-25T11:49:38+01:00",
+      "lifts_updated_at": "2026-10-25T11:59:35+01:00",
       "avalanche": null,
       "sources": [
         "https://www.soelden.com/en/live-information/snow-report",
@@ -230,12 +232,13 @@
       "id": "kitzsteinhorn",
       "country": "at",
       "name": "Kitzsteinhorn",
+      "region": "Salzburg",
       "location": {
         "lat": 47.19,
         "lon": 12.69
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:49:43.280354+01:00",
+      "fetched_at": "2026-10-25T12:01:26.744622+01:00",
       "snow": {
         "mountain_cm": 70,
         "valley_cm": 0,
@@ -337,12 +340,13 @@
       "id": "kaunertal",
       "country": "at",
       "name": "Kaunertaler Gletscher",
+      "region": "Tirol",
       "location": {
         "lat": 46.87,
         "lon": 10.71
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:49:43.280368+01:00",
+      "fetched_at": "2026-10-25T12:01:26.744633+01:00",
       "snow": {
         "mountain_cm": 18,
         "valley_cm": 0,
@@ -402,12 +406,13 @@
       "id": "pitztal",
       "country": "at",
       "name": "Pitztaler Gletscher",
+      "region": "Tirol",
       "location": {
         "lat": 46.92,
         "lon": 10.87
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:49:43.280380+01:00",
+      "fetched_at": "2026-10-25T12:01:26.744642+01:00",
       "snow": {
         "mountain_cm": 15,
         "valley_cm": 0,
@@ -522,12 +527,13 @@
       "id": "alpbachtal-ski-juwel",
       "country": "at",
       "name": "Alpbachtal (Ski Juwel)",
+      "region": "Tirol",
       "location": {
         "lat": 47.3963,
         "lon": 11.9244
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:45.339648+01:00",
+      "fetched_at": "2026-10-25T12:01:28.813183+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -557,12 +563,13 @@
       "id": "amberglift-walchsee",
       "country": "at",
       "name": "Amberglift Walchsee",
+      "region": "Tirol",
       "location": {
         "lat": 47.6277,
         "lon": 12.2853
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:45.353997+01:00",
+      "fetched_at": "2026-10-25T12:01:29.721681+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -586,12 +593,13 @@
       "id": "axamer-lizum",
       "country": "at",
       "name": "Axamer Lizum",
+      "region": "Tirol",
       "location": {
         "lat": 47.1939,
         "lon": 11.303
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:45.890317+01:00",
+      "fetched_at": "2026-10-25T12:01:29.714382+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -623,12 +631,13 @@
       "id": "bergbahnen-pillersee-buchensteinwand-st-ulrich",
       "country": "at",
       "name": "Bergbahnen Pillersee - Buchensteinwand - St. Ulrich",
+      "region": "Tirol",
       "location": {
         "lat": 47.4843,
         "lon": 12.5802
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:45.879658+01:00",
+      "fetched_at": "2026-10-25T12:01:29.701879+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -652,12 +661,13 @@
       "id": "bergeralm",
       "country": "at",
       "name": "Bergeralm",
+      "region": "Tirol",
       "location": {
         "lat": 47.0578,
         "lon": 11.4411
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.951468+01:00",
+      "fetched_at": "2026-10-25T12:01:30.963261+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -689,12 +699,13 @@
       "id": "bergwelt-hahnenkamm",
       "country": "at",
       "name": "Bergwelt Hahnenkamm",
+      "region": "Tirol",
       "location": {
         "lat": 47.4773,
         "lon": 10.6421
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.966282+01:00",
+      "fetched_at": "2026-10-25T12:01:30.955292+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -726,12 +737,13 @@
       "id": "berwang",
       "country": "at",
       "name": "Berwang",
+      "region": "Tirol",
       "location": {
         "lat": 47.4097,
         "lon": 10.7523
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.935204+01:00",
+      "fetched_at": "2026-10-25T12:01:31.472206+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -763,12 +775,13 @@
       "id": "bichllifte-praegraten",
       "country": "at",
       "name": "Bichllifte Prägraten",
+      "region": "Tirol",
       "location": {
         "lat": 47.0183,
         "lon": 12.3629
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:47.655658+01:00",
+      "fetched_at": "2026-10-25T12:01:31.467671+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -792,12 +805,13 @@
       "id": "brixen-im-thale-skiwelt",
       "country": "at",
       "name": "Brixen im Thale - SkiWelt",
+      "region": "Tirol",
       "location": {
         "lat": 47.4496,
         "lon": 12.2433
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:47.674045+01:00",
+      "fetched_at": "2026-10-25T12:01:32.161287+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -864,7 +878,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:32:44+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:46+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Brixen%20im%20Thale%20-%20SkiWelt_58",
@@ -877,12 +891,13 @@
       "id": "brixlegg",
       "country": "at",
       "name": "Brixlegg",
+      "region": "Tirol",
       "location": {
         "lat": 47.43,
         "lon": 11.8785
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:47.795517+01:00",
+      "fetched_at": "2026-10-25T12:01:32.143959+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -911,12 +926,13 @@
       "id": "dorfberg-kartitsch",
       "country": "at",
       "name": "Dorfberg Kartitsch",
+      "region": "Tirol",
       "location": {
         "lat": 46.7335,
         "lon": 12.5074
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:48.555360+01:00",
+      "fetched_at": "2026-10-25T12:01:33.018272+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -940,12 +956,13 @@
       "id": "eggalmbahnen",
       "country": "at",
       "name": "Eggalmbahnen",
+      "region": "Tirol",
       "location": {
         "lat": 47.157,
         "lon": 11.7286
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:49.049955+01:00",
+      "fetched_at": "2026-10-25T12:01:33.578454+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1021,12 +1038,13 @@
       "id": "ehrwalder-alm",
       "country": "at",
       "name": "Ehrwalder Alm",
+      "region": "Tirol",
       "location": {
         "lat": 47.3853,
         "lon": 10.9681
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:49.058618+01:00",
+      "fetched_at": "2026-10-25T12:01:33.557203+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1050,12 +1068,13 @@
       "id": "ehrwalder-wettersteinbahnen",
       "country": "at",
       "name": "Ehrwalder Wettersteinbahnen",
+      "region": "Tirol",
       "location": {
         "lat": 47.4068,
         "lon": 10.9484
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:49.063220+01:00",
+      "fetched_at": "2026-10-25T12:01:33.566646+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1087,12 +1106,13 @@
       "id": "elferbahnen-neustift",
       "country": "at",
       "name": "Elferbahnen Neustift",
+      "region": "Tirol",
       "location": {
         "lat": 47.0931,
         "lon": 11.3189
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:49.027178+01:00",
+      "fetched_at": "2026-10-25T12:01:34.144311+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1116,12 +1136,13 @@
       "id": "ellmau-going-skiwelt",
       "country": "at",
       "name": "Ellmau-Going - SkiWelt",
+      "region": "Tirol",
       "location": {
         "lat": 47.5118,
         "lon": 12.3178
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:50.238508+01:00",
+      "fetched_at": "2026-10-25T12:01:35.128817+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1188,7 +1209,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:32:44+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:46+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Ellmau-Going%20-%20SkiWelt_61",
@@ -1201,12 +1222,13 @@
       "id": "fendels-ried-prutz",
       "country": "at",
       "name": "Fendels - Ried - Prutz",
+      "region": "Tirol",
       "location": {
         "lat": 47.0404,
         "lon": 10.709
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:50.232205+01:00",
+      "fetched_at": "2026-10-25T12:01:35.117842+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1230,12 +1252,13 @@
       "id": "finkenberger-almbahnen",
       "country": "at",
       "name": "Finkenberger Almbahnen",
+      "region": "Tirol",
       "location": {
         "lat": 47.1524,
         "lon": 11.8222
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:50.247972+01:00",
+      "fetched_at": "2026-10-25T12:01:35.125603+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1311,12 +1334,13 @@
       "id": "galtuer",
       "country": "at",
       "name": "Galtür",
+      "region": "Tirol",
       "location": {
         "lat": 46.9584,
         "lon": 10.1388
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:50.299399+01:00",
+      "fetched_at": "2026-10-25T12:01:35.121050+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1348,12 +1372,13 @@
       "id": "gerlos-zillertal-arena",
       "country": "at",
       "name": "Gerlos - Zillertal Arena",
+      "region": "Tirol",
       "location": {
         "lat": 47.2297,
         "lon": 12.0489
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:51.299524+01:00",
+      "fetched_at": "2026-10-25T12:01:35.606482+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1416,7 +1441,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T11:48:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:11+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Gerlos_2908",
@@ -1429,12 +1454,13 @@
       "id": "gerlosstein-zillertal-arena",
       "country": "at",
       "name": "Gerlosstein - Zillertal Arena",
+      "region": "Tirol",
       "location": {
         "lat": 47.2015,
         "lon": 11.9151
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:51.733851+01:00",
+      "fetched_at": "2026-10-25T12:01:36.546548+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1458,12 +1484,13 @@
       "id": "glungezer",
       "country": "at",
       "name": "Glungezer",
+      "region": "Tirol",
       "location": {
         "lat": 47.2077,
         "lon": 11.5285
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:51.783826+01:00",
+      "fetched_at": "2026-10-25T12:01:36.611484+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1495,12 +1522,13 @@
       "id": "grossglockner-resort-kals-matrei",
       "country": "at",
       "name": "Großglockner Resort Kals-Matrei",
+      "region": "Tirol",
       "location": {
         "lat": 46.9915,
         "lon": 12.5972
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:51.744547+01:00",
+      "fetched_at": "2026-10-25T12:01:36.633677+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1524,12 +1552,13 @@
       "id": "gschwandtkopflifte",
       "country": "at",
       "name": "Gschwandtkopflifte",
+      "region": "Tirol",
       "location": {
         "lat": 47.3248,
         "lon": 11.1798
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:52.115665+01:00",
+      "fetched_at": "2026-10-25T12:01:37.180169+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1561,12 +1590,13 @@
       "id": "hochalmlifte-christlum-achenkirch",
       "country": "at",
       "name": "Hochalmlifte Christlum - Achenkirch",
+      "region": "Tirol",
       "location": {
         "lat": 47.5264,
         "lon": 11.703
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:53.190330+01:00",
+      "fetched_at": "2026-10-25T12:01:38.259670+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1598,12 +1628,13 @@
       "id": "hochfuegen",
       "country": "at",
       "name": "Hochfügen",
+      "region": "Tirol",
       "location": {
         "lat": 47.2431,
         "lon": 11.7531
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:53.178235+01:00",
+      "fetched_at": "2026-10-25T12:01:38.227844+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1635,12 +1666,13 @@
       "id": "hochkrimml-zillertal-arena",
       "country": "at",
       "name": "Hochkrimml - Zillertal Arena",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2414,
         "lon": 12.1154
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:54.191317+01:00",
+      "fetched_at": "2026-10-25T12:01:38.579150+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1703,7 +1735,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T11:48:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:11+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Hochkrimml_2910",
@@ -1716,12 +1748,13 @@
       "id": "hochoetz-oetz",
       "country": "at",
       "name": "Hochoetz - Oetz",
+      "region": "Tirol",
       "location": {
         "lat": 47.2042,
         "lon": 10.8927
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:54.688250+01:00",
+      "fetched_at": "2026-10-25T12:01:39.307892+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1753,12 +1786,13 @@
       "id": "hochzeiger-pitztal",
       "country": "at",
       "name": "Hochzeiger - Pitztal",
+      "region": "Tirol",
       "location": {
         "lat": 47.1522,
         "lon": 10.7582
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:54.698133+01:00",
+      "fetched_at": "2026-10-25T12:01:39.725561+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1790,12 +1824,13 @@
       "id": "hochzillertal-kaltenbach",
       "country": "at",
       "name": "Hochzillertal-Kaltenbach",
+      "region": "Tirol",
       "location": {
         "lat": 47.2572,
         "lon": 11.8072
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:56.032975+01:00",
+      "fetched_at": "2026-10-25T12:01:40.526801+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1827,12 +1862,13 @@
       "id": "hopfgarten-itter-skiwelt",
       "country": "at",
       "name": "Hopfgarten - Itter - SkiWelt",
+      "region": "Tirol",
       "location": {
         "lat": 47.4463,
         "lon": 12.1611
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:56.041083+01:00",
+      "fetched_at": "2026-10-25T12:01:40.546789+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1899,7 +1935,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:32:44+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:46+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Hopfgarten%20-%20Itter%20-%20SkiWelt_1834",
@@ -1912,12 +1948,13 @@
       "id": "huettegglift-weerberg",
       "country": "at",
       "name": "Hüttegglift Weerberg",
+      "region": "Tirol",
       "location": {
         "lat": 47.2886,
         "lon": 11.6926
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:56.048424+01:00",
+      "fetched_at": "2026-10-25T12:01:40.559880+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1941,12 +1978,13 @@
       "id": "imst",
       "country": "at",
       "name": "Imst",
+      "region": "Tirol",
       "location": {
         "lat": 47.2567,
         "lon": 10.6753
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:56.288925+01:00",
+      "fetched_at": "2026-10-25T12:01:40.700938+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1970,12 +2008,13 @@
       "id": "ischgl-silvretta-arena",
       "country": "at",
       "name": "Ischgl - Silvretta Arena",
+      "region": "Tirol",
       "location": {
         "lat": 46.95,
         "lon": 10.3094
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:57.127019+01:00",
+      "fetched_at": "2026-10-25T12:01:41.351077+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2038,7 +2077,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:44:38+01:00",
+      "lifts_updated_at": "2026-10-25T11:53:57+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Ischgl%20-%20Silvretta%20Arena_11",
@@ -2051,12 +2090,13 @@
       "id": "joechelspitze-lechtal",
       "country": "at",
       "name": "Jöchelspitze - Lechtal",
+      "region": "Tirol",
       "location": {
         "lat": 47.2748,
         "lon": 10.3649
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:57.461437+01:00",
+      "fetched_at": "2026-10-25T12:01:42.463566+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2080,12 +2120,13 @@
       "id": "kappl",
       "country": "at",
       "name": "Kappl",
+      "region": "Tirol",
       "location": {
         "lat": 47.0847,
         "lon": 10.3385
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:57.793213+01:00",
+      "fetched_at": "2026-10-25T12:01:42.501387+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2109,12 +2150,13 @@
       "id": "karwendel-bergbahn-pertisau",
       "country": "at",
       "name": "Karwendel-Bergbahn - Pertisau",
+      "region": "Tirol",
       "location": {
         "lat": 47.4273,
         "lon": 11.6959
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:58.593423+01:00",
+      "fetched_at": "2026-10-25T12:01:42.641679+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2138,12 +2180,13 @@
       "id": "katzenkopf-leutasch",
       "country": "at",
       "name": "Katzenkopf Leutasch",
+      "region": "Tirol",
       "location": {
         "lat": 47.3701,
         "lon": 11.1427
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:58.575260+01:00",
+      "fetched_at": "2026-10-25T12:01:43.124987+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2175,12 +2218,13 @@
       "id": "kellerjochbahn-schwaz-pill",
       "country": "at",
       "name": "Kellerjochbahn Schwaz-Pill",
+      "region": "Tirol",
       "location": {
         "lat": 47.3232,
         "lon": 11.7645
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:58.585413+01:00",
+      "fetched_at": "2026-10-25T12:01:43.278826+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2212,12 +2256,13 @@
       "id": "kitzbuehel",
       "country": "at",
       "name": "Kitzbühel",
+      "region": "Tirol",
       "location": {
         "lat": 47.4765,
         "lon": 12.4293
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:58.894423+01:00",
+      "fetched_at": "2026-10-25T12:01:43.764736+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2293,12 +2338,13 @@
       "id": "kolsassberg",
       "country": "at",
       "name": "Kolsassberg",
+      "region": "Tirol",
       "location": {
         "lat": 47.2862,
         "lon": 11.6435
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:58.953650+01:00",
+      "fetched_at": "2026-10-25T12:01:43.791587+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2322,12 +2368,13 @@
       "id": "koenigsleiten-zillertal-arena",
       "country": "at",
       "name": "Königsleiten - Zillertal Arena",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2509,
         "lon": 12.1221
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:00.259716+01:00",
+      "fetched_at": "2026-10-25T12:01:44.063859+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2390,7 +2437,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T11:48:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:11+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten_2909",
@@ -2403,12 +2450,13 @@
       "id": "koessen",
       "country": "at",
       "name": "Kössen",
+      "region": "Tirol",
       "location": {
         "lat": 47.6207,
         "lon": 12.4362
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:00.247398+01:00",
+      "fetched_at": "2026-10-25T12:01:44.919400+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2440,12 +2488,13 @@
       "id": "kuehtai",
       "country": "at",
       "name": "Kühtai",
+      "region": "Tirol",
       "location": {
         "lat": 47.2049,
         "lon": 11.0391
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:00.266289+01:00",
+      "fetched_at": "2026-10-25T12:01:44.912229+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2469,12 +2518,13 @@
       "id": "landeck-zams-fliess-venet",
       "country": "at",
       "name": "Landeck - Zams - Fliess (Venet)",
+      "region": "Tirol",
       "location": {
         "lat": 47.1484,
         "lon": 10.6246
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:00.541401+01:00",
+      "fetched_at": "2026-10-25T12:01:45.278041+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2498,12 +2548,13 @@
       "id": "lermoos-grubigstein",
       "country": "at",
       "name": "Lermoos-Grubigstein",
+      "region": "Tirol",
       "location": {
         "lat": 47.3856,
         "lon": 10.8469
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:01.078412+01:00",
+      "fetched_at": "2026-10-25T12:01:45.348672+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2535,12 +2586,13 @@
       "id": "lienz-zettersfeld-hochstein",
       "country": "at",
       "name": "Lienz Zettersfeld Hochstein",
+      "region": "Tirol",
       "location": {
         "lat": 46.8295,
         "lon": 12.7689
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:01.787660+01:00",
+      "fetched_at": "2026-10-25T12:01:45.838475+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2564,12 +2616,13 @@
       "id": "mayrhofen",
       "country": "at",
       "name": "Mayrhofen",
+      "region": "Tirol",
       "location": {
         "lat": 47.1635,
         "lon": 11.8603
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:02.024107+01:00",
+      "fetched_at": "2026-10-25T12:01:46.683317+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2645,12 +2698,13 @@
       "id": "mittersill-pass-thurn-kitzbuehel",
       "country": "at",
       "name": "Mittersill - Paß Thurn - Kitzbühel",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2813,
         "lon": 12.4816
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:03.022802+01:00",
+      "fetched_at": "2026-10-25T12:01:46.720928+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2726,12 +2780,13 @@
       "id": "muttereralm",
       "country": "at",
       "name": "Muttereralm",
+      "region": "Tirol",
       "location": {
         "lat": 47.227,
         "lon": 11.3775
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:03.051353+01:00",
+      "fetched_at": "2026-10-25T12:01:46.993738+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2763,12 +2818,13 @@
       "id": "nauders",
       "country": "at",
       "name": "Nauders",
+      "region": "Tirol",
       "location": {
         "lat": 46.8531,
         "lon": 10.5468
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:03.637600+01:00",
+      "fetched_at": "2026-10-25T12:01:47.806398+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2844,12 +2900,13 @@
       "id": "nesselwaengle-im-tannheimer-tal",
       "country": "at",
       "name": "Nesselwängle im Tannheimer Tal",
+      "region": "Tirol",
       "location": {
         "lat": 47.4958,
         "lon": 10.6196
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:03.619650+01:00",
+      "fetched_at": "2026-10-25T12:01:47.999264+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2873,12 +2930,13 @@
       "id": "neukirchen-bramberg-wildkogel",
       "country": "at",
       "name": "Neukirchen - Bramberg - Wildkogel",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2724,
         "lon": 12.3447
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:04.329254+01:00",
+      "fetched_at": "2026-10-25T12:01:48.217655+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2950,12 +3008,13 @@
       "id": "neunerkoepfle-tannheim",
       "country": "at",
       "name": "Neunerköpfle - Tannheim",
+      "region": "Tirol",
       "location": {
         "lat": 47.483,
         "lon": 10.5422
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:04.986226+01:00",
+      "fetched_at": "2026-10-25T12:01:48.314540+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2987,12 +3046,13 @@
       "id": "niederthai",
       "country": "at",
       "name": "Niederthai",
+      "region": "Tirol",
       "location": {
         "lat": 47.1261,
         "lon": 10.9692
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:04.970558+01:00",
+      "fetched_at": "2026-10-25T12:01:48.523454+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3016,12 +3076,13 @@
       "id": "nordkette-innsbruck",
       "country": "at",
       "name": "Nordkette - Innsbruck",
+      "region": "Tirol",
       "location": {
         "lat": 47.2864,
         "lon": 11.399
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:04.958111+01:00",
+      "fetched_at": "2026-10-25T12:01:49.546132+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3045,12 +3106,13 @@
       "id": "obergurgl-hochgurgl",
       "country": "at",
       "name": "Obergurgl-Hochgurgl",
+      "region": "Tirol",
       "location": {
         "lat": 46.8797,
         "lon": 11.0862
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:05.594946+01:00",
+      "fetched_at": "2026-10-25T12:01:49.745215+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3126,12 +3188,13 @@
       "id": "obertilliacher-bergbahnen",
       "country": "at",
       "name": "Obertilliacher Bergbahnen",
+      "region": "Tirol",
       "location": {
         "lat": 46.7317,
         "lon": 12.6169
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:06.373655+01:00",
+      "fetched_at": "2026-10-25T12:01:49.795682+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3155,12 +3218,13 @@
       "id": "patscherkofel",
       "country": "at",
       "name": "Patscherkofel",
+      "region": "Tirol",
       "location": {
         "lat": 47.2308,
         "lon": 11.4107
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:06.351913+01:00",
+      "fetched_at": "2026-10-25T12:01:49.786042+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3192,12 +3256,13 @@
       "id": "rangger-koepfl",
       "country": "at",
       "name": "Rangger Köpfl",
+      "region": "Tirol",
       "location": {
         "lat": 47.2575,
         "lon": 11.2105
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:06.361275+01:00",
+      "fetched_at": "2026-10-25T12:01:50.118975+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3229,12 +3294,13 @@
       "id": "rastkogelbahnen",
       "country": "at",
       "name": "Rastkogelbahnen",
+      "region": "Tirol",
       "location": {
         "lat": 47.1639,
         "lon": 11.7433
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:06.345646+01:00",
+      "fetched_at": "2026-10-25T12:01:50.696695+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3310,12 +3376,13 @@
       "id": "rofanseilbahn-maurach",
       "country": "at",
       "name": "Rofanseilbahn - Maurach",
+      "region": "Tirol",
       "location": {
         "lat": 47.4241,
         "lon": 11.7513
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:06.378126+01:00",
+      "fetched_at": "2026-10-25T12:01:50.982736+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3339,12 +3406,13 @@
       "id": "rosshuette-seefeld-in-tirol",
       "country": "at",
       "name": "Rosshütte - Seefeld in Tirol",
+      "region": "Tirol",
       "location": {
         "lat": 47.3312,
         "lon": 11.2
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:06.740029+01:00",
+      "fetched_at": "2026-10-25T12:01:51.003491+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3376,12 +3444,13 @@
       "id": "schattwald-zoeblen-im-tannheimertal",
       "country": "at",
       "name": "Schattwald - Zöblen im Tannheimertal",
+      "region": "Tirol",
       "location": {
         "lat": 47.5068,
         "lon": 10.4427
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:07.338847+01:00",
+      "fetched_at": "2026-10-25T12:01:51.016301+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3413,12 +3482,13 @@
       "id": "scheffau-skiwelt",
       "country": "at",
       "name": "Scheffau - SkiWelt",
+      "region": "Tirol",
       "location": {
         "lat": 47.5286,
         "lon": 12.2501
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:07.507134+01:00",
+      "fetched_at": "2026-10-25T12:01:51.096868+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3485,7 +3555,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:32:44+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:46+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Scheffau%20-%20SkiWelt_62",
@@ -3498,12 +3568,13 @@
       "id": "schlick-2000",
       "country": "at",
       "name": "Schlick 2000",
+      "region": "Tirol",
       "location": {
         "lat": 47.1554,
         "lon": 11.3455
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:08.043883+01:00",
+      "fetched_at": "2026-10-25T12:01:51.285225+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3524,7 +3595,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-25T09:49:00+01:00",
+      "lifts_updated_at": "2026-10-25T10:52:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Schlick%202000_56"
@@ -3535,12 +3606,13 @@
       "id": "schneeberglifte-thiersee",
       "country": "at",
       "name": "Schneeberglifte Thiersee",
+      "region": "Tirol",
       "location": {
         "lat": 47.5768,
         "lon": 12.0923
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:08.023588+01:00",
+      "fetched_at": "2026-10-25T12:01:51.846392+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3564,12 +3636,13 @@
       "id": "schwannerlifte-in-weerberg",
       "country": "at",
       "name": "Schwannerlifte in Weerberg",
+      "region": "Tirol",
       "location": {
         "lat": 47.3021,
         "lon": 11.6747
       },
       "status": null,
-      "fetched_at": "2026-10-25T11:50:08.037176+01:00",
+      "fetched_at": "2026-10-25T12:01:52.871769+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3601,12 +3674,13 @@
       "id": "see-im-paznauntal",
       "country": "at",
       "name": "See im Paznauntal",
+      "region": "Tirol",
       "location": {
         "lat": 47.0574,
         "lon": 10.5046
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:08.846236+01:00",
+      "fetched_at": "2026-10-25T12:01:52.878831+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3630,12 +3704,13 @@
       "id": "serfaus-fiss-ladis",
       "country": "at",
       "name": "Serfaus-Fiss-Ladis",
+      "region": "Tirol",
       "location": {
         "lat": 47.0402,
         "lon": 10.5973
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:09.655025+01:00",
+      "fetched_at": "2026-10-25T12:01:53.461754+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3668,12 +3743,13 @@
       "id": "serlesbahnen-mieders",
       "country": "at",
       "name": "Serlesbahnen Mieders",
+      "region": "Tirol",
       "location": {
         "lat": 47.1637,
         "lon": 11.38
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:09.633873+01:00",
+      "fetched_at": "2026-10-25T12:01:54.365856+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3697,12 +3773,13 @@
       "id": "skilifte-kirchdorf",
       "country": "at",
       "name": "Skilifte Kirchdorf",
+      "region": "Tirol",
       "location": {
         "lat": 47.5509,
         "lon": 12.4586
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:09.665057+01:00",
+      "fetched_at": "2026-10-25T12:01:54.465968+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3726,12 +3803,13 @@
       "id": "skilifte-knittel",
       "country": "at",
       "name": "Skilifte Knittel",
+      "region": "Tirol",
       "location": {
         "lat": 47.2846,
         "lon": 10.4155
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:10.091516+01:00",
+      "fetched_at": "2026-10-25T12:01:54.491768+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3755,12 +3833,13 @@
       "id": "skilifte-laerchenhof",
       "country": "at",
       "name": "Skilifte Lärchenhof",
+      "region": "Tirol",
       "location": {
         "lat": 47.5766,
         "lon": 12.506
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:10.165279+01:00",
+      "fetched_at": "2026-10-25T12:01:54.498876+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3784,12 +3863,13 @@
       "id": "skizentrum-sillian-hochpustertal",
       "country": "at",
       "name": "Skizentrum Sillian - Hochpustertal",
+      "region": "Tirol",
       "location": {
         "lat": 46.775,
         "lon": 12.3837
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:10.639113+01:00",
+      "fetched_at": "2026-10-25T12:01:54.746464+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3813,12 +3893,13 @@
       "id": "skizentrum-st-jakob",
       "country": "at",
       "name": "Skizentrum St. Jakob",
+      "region": "Tirol",
       "location": {
         "lat": 46.8847,
         "lon": 12.3787
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:10.628769+01:00",
+      "fetched_at": "2026-10-25T12:01:55.572043+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3842,12 +3923,13 @@
       "id": "soell-skiwelt",
       "country": "at",
       "name": "Söll - SkiWelt",
+      "region": "Tirol",
       "location": {
         "lat": 47.5022,
         "lon": 12.193
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:11.084137+01:00",
+      "fetched_at": "2026-10-25T12:01:55.632103+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3914,7 +3996,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:32:44+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:46+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/S%C3%B6ll%20-%20SkiWelt_2548",
@@ -3927,12 +4009,13 @@
       "id": "spieljochbahn-fuegen",
       "country": "at",
       "name": "Spieljochbahn Fügen",
+      "region": "Tirol",
       "location": {
         "lat": 47.3249,
         "lon": 11.7906
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:11.064725+01:00",
+      "fetched_at": "2026-10-25T12:01:55.784966+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3956,12 +4039,13 @@
       "id": "st-johann-in-tirol",
       "country": "at",
       "name": "St. Johann in Tirol",
+      "region": "Tirol",
       "location": {
         "lat": 47.4825,
         "lon": 12.4276
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:11.076243+01:00",
+      "fetched_at": "2026-10-25T12:01:55.805621+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3994,12 +4078,13 @@
       "id": "steinplatte-winklmoosalm",
       "country": "at",
       "name": "Steinplatte - Winklmoosalm",
+      "region": "Tirol",
       "location": {
         "lat": 47.5844,
         "lon": 12.5702
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:11.518394+01:00",
+      "fetched_at": "2026-10-25T12:01:56.224244+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4029,12 +4114,13 @@
       "id": "stubaier-gletscher",
       "country": "at",
       "name": "Stubaier Gletscher",
+      "region": "Tirol",
       "location": {
         "lat": 46.9777,
         "lon": 11.1087
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:50:11.763055+01:00",
+      "fetched_at": "2026-10-25T12:01:56.374747+01:00",
       "snow": {
         "mountain_cm": 20,
         "valley_cm": null,
@@ -4110,12 +4196,13 @@
       "id": "tiroler-zugspitzbahn",
       "country": "at",
       "name": "Tiroler Zugspitzbahn",
+      "region": "Tirol",
       "location": {
         "lat": 47.4265,
         "lon": 10.9427
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:12.215912+01:00",
+      "fetched_at": "2026-10-25T12:01:56.469624+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4136,7 +4223,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-25T10:52:00+01:00",
+      "lifts_updated_at": "2026-10-25T11:02:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Tiroler%20Zugspitzbahn_22"
@@ -4147,12 +4234,13 @@
       "id": "tirolina-thiersee",
       "country": "at",
       "name": "Tirolina Thiersee",
+      "region": "Tirol",
       "location": {
         "lat": 47.5832,
         "lon": 12.0658
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:11.745987+01:00",
+      "fetched_at": "2026-10-25T12:01:56.724807+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4184,12 +4272,13 @@
       "id": "umhausen",
       "country": "at",
       "name": "Umhausen",
+      "region": "Tirol",
       "location": {
         "lat": 47.1218,
         "lon": 10.9565
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:12.226583+01:00",
+      "fetched_at": "2026-10-25T12:01:56.609456+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4213,12 +4302,13 @@
       "id": "venter-seilbahnen",
       "country": "at",
       "name": "Venter Seilbahnen",
+      "region": "Tirol",
       "location": {
         "lat": 46.8668,
         "lon": 10.8927
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:12.222056+01:00",
+      "fetched_at": "2026-10-25T12:01:56.990123+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4250,12 +4340,13 @@
       "id": "voegelsberg-aktivpark",
       "country": "at",
       "name": "Vögelsberg Aktivpark",
+      "region": "Tirol",
       "location": {
         "lat": 47.273,
         "lon": 11.5898
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:12.231364+01:00",
+      "fetched_at": "2026-10-25T12:01:57.099046+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4279,12 +4370,13 @@
       "id": "westendorf-skiwelt",
       "country": "at",
       "name": "Westendorf - SkiWelt",
+      "region": "Tirol",
       "location": {
         "lat": 47.4275,
         "lon": 12.2138
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:11.965511+01:00",
+      "fetched_at": "2026-10-25T12:01:56.839723+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4351,7 +4443,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:32:44+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:46+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Westendorf%20-%20SkiWelt_63",
@@ -4364,12 +4456,13 @@
       "id": "wildschoenau-ski-juwel",
       "country": "at",
       "name": "Wildschönau (Ski Juwel)",
+      "region": "Tirol",
       "location": {
         "lat": 47.4312,
         "lon": 12.0824
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:11.974893+01:00",
+      "fetched_at": "2026-10-25T12:01:56.968179+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4399,12 +4492,13 @@
       "id": "zahmer-kaiser-walchsee",
       "country": "at",
       "name": "Zahmer Kaiser - Walchsee",
+      "region": "Tirol",
       "location": {
         "lat": 47.6274,
         "lon": 12.2852
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:50:12.182042+01:00",
+      "fetched_at": "2026-10-25T12:01:57.321052+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4428,12 +4522,13 @@
       "id": "zell-am-ziller-zillertal-arena",
       "country": "at",
       "name": "Zell am Ziller - Zillertal Arena",
+      "region": "Tirol",
       "location": {
         "lat": 47.2372,
         "lon": 11.8992
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:50:12.422775+01:00",
+      "fetched_at": "2026-10-25T12:01:57.221626+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4496,7 +4591,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T11:48:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:11+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Zell%20am%20Ziller%20-%20Zillertal%20Arena_86",
@@ -4509,12 +4604,13 @@
       "id": "abtenau-karkogel",
       "country": "at",
       "name": "Abtenau - Karkogel",
+      "region": "Salzburg",
       "location": {
         "lat": 47.5642,
         "lon": 13.346
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.518365+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720454+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4538,12 +4634,13 @@
       "id": "annaberg-dachstein-west",
       "country": "at",
       "name": "Annaberg - Dachstein West",
+      "region": "Salzburg",
       "location": {
         "lat": 47.5167,
         "lon": 13.4333
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518453+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720523+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4622,12 +4719,13 @@
       "id": "bad-duerrnberg-zinkenlifte",
       "country": "at",
       "name": "Bad Dürrnberg - Zinkenlifte",
+      "region": "Salzburg",
       "location": {
         "lat": 47.6599,
         "lon": 13.0951
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.518535+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720579+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4651,12 +4749,13 @@
       "id": "bad-gastein-bad-hofgastein",
       "country": "at",
       "name": "Bad Gastein - Bad Hofgastein",
+      "region": "Salzburg",
       "location": {
         "lat": 47.1602,
         "lon": 13.0952
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518560+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720597+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4688,12 +4787,13 @@
       "id": "dienten-hochkoenig",
       "country": "at",
       "name": "Dienten - Hochkönig",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3819,
         "lon": 13.0023
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518641+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720659+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4726,12 +4826,13 @@
       "id": "dorfgastein-grossarltal",
       "country": "at",
       "name": "Dorfgastein - Großarltal",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2406,
         "lon": 13.0986
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518684+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720689+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4764,12 +4865,13 @@
       "id": "eben-monte-popolo",
       "country": "at",
       "name": "Eben - Monte Popolo",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4283,
         "lon": 13.3976
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518721+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720713+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4796,12 +4898,13 @@
       "id": "fageralm",
       "country": "at",
       "name": "Fageralm",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3306,
         "lon": 13.5709
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518778+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720734+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4833,12 +4936,13 @@
       "id": "faistenau",
       "country": "at",
       "name": "Faistenau",
+      "region": "Salzburg",
       "location": {
         "lat": 47.7781,
         "lon": 13.2338
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.518827+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720763+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4862,12 +4966,13 @@
       "id": "filzmoos",
       "country": "at",
       "name": "Filzmoos",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4512,
         "lon": 13.5137
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518846+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720775+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4894,12 +4999,13 @@
       "id": "flachau-snow-space-salzburg",
       "country": "at",
       "name": "Flachau - Snow Space Salzburg",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3034,
         "lon": 13.3842
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518873+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720793+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4932,12 +5038,13 @@
       "id": "gaissau-hintersee",
       "country": "at",
       "name": "Gaißau - Hintersee",
+      "region": "Salzburg",
       "location": {
         "lat": 47.7115,
         "lon": 13.1953
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518922+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720830+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4969,12 +5076,13 @@
       "id": "goldegg",
       "country": "at",
       "name": "Goldegg",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3187,
         "lon": 13.1029
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.518965+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720855+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4998,12 +5106,13 @@
       "id": "graukogel-bad-gastein",
       "country": "at",
       "name": "Graukogel - Bad Gastein",
+      "region": "Salzburg",
       "location": {
         "lat": 47.0871,
         "lon": 13.1609
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.518983+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720865+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5035,12 +5144,13 @@
       "id": "groedig-untersberg",
       "country": "at",
       "name": "Grödig - Untersberg",
+      "region": "Salzburg",
       "location": {
         "lat": 47.7382,
         "lon": 13.0395
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519023+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720890+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5064,12 +5174,13 @@
       "id": "grossarltal-dorfgastein",
       "country": "at",
       "name": "Großarltal - Dorfgastein",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2374,
         "lon": 13.2014
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519039+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720899+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5102,12 +5213,13 @@
       "id": "hollersbach",
       "country": "at",
       "name": "Hollersbach",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2752,
         "lon": 12.4195
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519085+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720928+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5131,12 +5243,13 @@
       "id": "katschberg-aineck",
       "country": "at",
       "name": "Katschberg - Aineck",
+      "region": "Kärnten",
       "location": {
         "lat": 47.0591,
         "lon": 13.6157
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519110+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720944+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5202,12 +5315,13 @@
       "id": "lofer",
       "country": "at",
       "name": "Lofer",
+      "region": "Salzburg",
       "location": {
         "lat": 47.5867,
         "lon": 12.6934
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519143+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720966+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5231,12 +5345,13 @@
       "id": "lungoetz",
       "country": "at",
       "name": "Lungötz",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4948,
         "lon": 13.4007
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519160+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720977+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5260,12 +5375,13 @@
       "id": "maria-alm-hochkoenig",
       "country": "at",
       "name": "Maria Alm - Hochkönig",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4053,
         "lon": 12.9027
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519184+01:00",
+      "fetched_at": "2026-10-25T12:01:30.720993+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5298,12 +5414,13 @@
       "id": "mariapfarr-fanningberg",
       "country": "at",
       "name": "Mariapfarr - Fanningberg",
+      "region": "Salzburg",
       "location": {
         "lat": 47.1472,
         "lon": 13.6937
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519214+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721013+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5327,12 +5444,13 @@
       "id": "mauterndorf-grosseck-speiereck",
       "country": "at",
       "name": "Mauterndorf - Grosseck - Speiereck",
+      "region": "Salzburg",
       "location": {
         "lat": 47.1339,
         "lon": 13.6797
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519228+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721023+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5359,12 +5477,13 @@
       "id": "muehlbach-hochkoenig",
       "country": "at",
       "name": "Mühlbach am Hochkönig",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3762,
         "lon": 13.1249
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519254+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721041+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5397,12 +5516,13 @@
       "id": "obertauern",
       "country": "at",
       "name": "Obertauern",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2494,
         "lon": 13.557
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519282+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721059+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5484,12 +5604,13 @@
       "id": "postalm",
       "country": "at",
       "name": "Postalm Strobl - Abtenau",
+      "region": "Salzburg",
       "location": {
         "lat": 47.656,
         "lon": 13.4
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519305+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721074+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5521,12 +5642,13 @@
       "id": "radstadt-altenmarkt",
       "country": "at",
       "name": "Radstadt - Altenmarkt",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3385,
         "lon": 13.4417
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519349+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721102+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5553,12 +5675,13 @@
       "id": "rauris",
       "country": "at",
       "name": "Rauris",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2286,
         "lon": 12.9941
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519375+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721120+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5629,12 +5752,13 @@
       "id": "russbach-dachstein-west",
       "country": "at",
       "name": "Russbach - Dachstein West",
+      "region": "Salzburg",
       "location": {
         "lat": 47.5875,
         "lon": 13.4608
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519404+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721138+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5713,12 +5837,13 @@
       "id": "saalfelden",
       "country": "at",
       "name": "Saalfelden",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4266,
         "lon": 12.8481
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519429+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721154+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5745,12 +5870,13 @@
       "id": "schmittenhoehe",
       "country": "at",
       "name": "Schmittenhöhe - Zell am See",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3294,
         "lon": 12.7376
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519458+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721184+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5782,12 +5908,13 @@
       "id": "shuttleberg-flachauwinkl-kleinarl",
       "country": "at",
       "name": "Shuttleberg Flachauwinkl - Kleinarl",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3008,
         "lon": 13.3966
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519497+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721214+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5820,12 +5947,13 @@
       "id": "skicircus-saalbach",
       "country": "at",
       "name": "Skicircus Saalbach Hinterglemm Leogang Fieberbrunn",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3915,
         "lon": 12.6364
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519528+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721235+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5907,12 +6035,13 @@
       "id": "sportgastein",
       "country": "at",
       "name": "Sportgastein",
+      "region": "Salzburg",
       "location": {
         "lat": 47.0609,
         "lon": 13.0586
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519558+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721252+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5942,12 +6071,13 @@
       "id": "st-johann-snow-space-salzburg",
       "country": "at",
       "name": "St. Johann - Snow Space Salzburg",
+      "region": "Salzburg",
       "location": {
         "lat": 47.349,
         "lon": 13.201
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519577+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721266+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5980,12 +6110,13 @@
       "id": "st-martin-tennengebirge",
       "country": "at",
       "name": "St. Martin am Tennengebirge",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4783,
         "lon": 13.3652
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519622+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721296+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6009,12 +6140,13 @@
       "id": "unken-heutal",
       "country": "at",
       "name": "Unken - Heutal",
+      "region": "Salzburg",
       "location": {
         "lat": 47.6511,
         "lon": 12.7303
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519637+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721305+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6038,12 +6170,13 @@
       "id": "uttendorf-weisssee",
       "country": "at",
       "name": "Uttendorf - Weißsee",
+      "region": "Salzburg",
       "location": {
         "lat": 47.1715,
         "lon": 12.6261
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:46.519649+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721314+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6067,12 +6200,13 @@
       "id": "wagrain-snow-space-salzburg",
       "country": "at",
       "name": "Wagrain - Snow Space Salzburg",
+      "region": "Salzburg",
       "location": {
         "lat": 47.3336,
         "lon": 13.3032
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519663+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721324+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6105,12 +6239,13 @@
       "id": "werfenweng",
       "country": "at",
       "name": "Werfenweng",
+      "region": "Salzburg",
       "location": {
         "lat": 47.4864,
         "lon": 13.2725
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519706+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721353+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6142,12 +6277,13 @@
       "id": "zauchensee-flachauwinkl",
       "country": "at",
       "name": "Zauchensee - Flachauwinkl",
+      "region": "Salzburg",
       "location": {
         "lat": 47.2906,
         "lon": 13.4525
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:46.519767+01:00",
+      "fetched_at": "2026-10-25T12:01:30.721377+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6174,12 +6310,13 @@
       "id": "adelboden",
       "country": "ch",
       "name": "Adelboden",
+      "region": "Bern",
       "location": {
         "lat": 46.4879,
         "lon": 7.5604
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282508+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746082+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6255,7 +6392,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-1226",
         "region": "Adelboden",
@@ -6289,12 +6426,13 @@
       "id": "airolo-pesciuem",
       "country": "ch",
       "name": "Airolo Pesciüm",
+      "region": "Ticino",
       "location": {
         "lat": 46.5144,
         "lon": 8.6067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.282539+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746109+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -6352,12 +6490,13 @@
       "id": "anzere",
       "country": "ch",
       "name": "Anzère",
+      "region": "Valais",
       "location": {
         "lat": 46.2947,
         "lon": 7.3947
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282565+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746126+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6478,12 +6617,13 @@
       "id": "arolla",
       "country": "ch",
       "name": "Arolla",
+      "region": "Valais",
       "location": {
         "lat": 46.0234,
         "lon": 7.4818
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282621+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746183+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6578,12 +6718,13 @@
       "id": "arosa",
       "country": "ch",
       "name": "Arosa",
+      "region": "Graubünden",
       "location": {
         "lat": 46.7824,
         "lon": 9.6799
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282637+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746195+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6669,7 +6810,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-25T11:43:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=67&saison=1&ref=contentBox",
@@ -6683,12 +6824,13 @@
       "id": "belalp",
       "country": "ch",
       "name": "Belalp",
+      "region": "Valais",
       "location": {
         "lat": 46.3586,
         "lon": 7.9844
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282653+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746205+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6770,7 +6912,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4214",
         "region": "Riederalp",
@@ -6805,12 +6947,13 @@
       "id": "bellwald",
       "country": "ch",
       "name": "Bellwald",
+      "region": "Valais",
       "location": {
         "lat": 46.4275,
         "lon": 8.1611
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282668+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746215+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6913,12 +7056,13 @@
       "id": "bosco-gurin",
       "country": "ch",
       "name": "Bosco Gurin",
+      "region": "Ticino",
       "location": {
         "lat": 46.3164,
         "lon": 8.4927
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.282682+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746227+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -6954,12 +7098,13 @@
       "id": "cari",
       "country": "ch",
       "name": "Carì",
+      "region": "Ticino",
       "location": {
         "lat": 46.4936,
         "lon": 8.8197
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.282697+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746237+01:00",
       "snow": {
         "mountain_cm": 2,
         "valley_cm": null,
@@ -6995,12 +7140,13 @@
       "id": "chaeserrugg",
       "country": "ch",
       "name": "Chäserrugg",
+      "region": "St. Gallen",
       "location": {
         "lat": 47.1953,
         "lon": 9.3093
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282709+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746246+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7082,12 +7228,13 @@
       "id": "champery",
       "country": "ch",
       "name": "Champéry",
+      "region": "Valais",
       "location": {
         "lat": 46.1749,
         "lon": 6.8712
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282724+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746256+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7159,7 +7306,7 @@
           "total_km": 4
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-1312",
         "region": "Monthey - Val d'Illiez",
@@ -7194,12 +7341,13 @@
       "id": "champex-lac",
       "country": "ch",
       "name": "Champex-Lac",
+      "region": "Valais",
       "location": {
         "lat": 46.0314,
         "lon": 7.1067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.282760+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746265+01:00",
       "snow": {
         "mountain_cm": 13,
         "valley_cm": null,
@@ -7256,12 +7404,13 @@
       "id": "charmey",
       "country": "ch",
       "name": "Charmey",
+      "region": "Fribourg",
       "location": {
         "lat": 46.6187,
         "lon": 7.1687
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282778+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746274+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7347,12 +7496,13 @@
       "id": "corvatsch",
       "country": "ch",
       "name": "Corvatsch",
+      "region": "Graubünden",
       "location": {
         "lat": 46.4083,
         "lon": 9.8161
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282791+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746283+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7414,7 +7564,7 @@
           "total_km": 19
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-7111",
         "region": "Corvatsch",
@@ -7449,12 +7599,13 @@
       "id": "crans-montana",
       "country": "ch",
       "name": "Crans-Montana",
+      "region": "Valais",
       "location": {
         "lat": 46.3088,
         "lon": 7.4808
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282805+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746292+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7538,7 +7689,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4121",
         "region": "Montana",
@@ -7573,12 +7724,13 @@
       "id": "diavolezza-lagalb",
       "country": "ch",
       "name": "Diavolezza Lagalb",
+      "region": "Graubünden",
       "location": {
         "lat": 46.4412,
         "lon": 9.9836
       },
       "status": "open",
-      "fetched_at": "2026-10-25T11:49:43.282820+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746302+01:00",
       "snow": {
         "mountain_cm": 15,
         "valley_cm": null,
@@ -7650,7 +7802,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-7112",
         "region": "Bernina",
@@ -7682,12 +7834,13 @@
       "id": "diemtigtal-wiriehorn",
       "country": "ch",
       "name": "Diemtigtal Wiriehorn",
+      "region": "Bern",
       "location": {
         "lat": 46.6122,
         "lon": 7.5326
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282838+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746316+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7751,7 +7904,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-1228",
         "region": "Obersimmental",
@@ -7785,12 +7938,13 @@
       "id": "eischoll",
       "country": "ch",
       "name": "Eischoll",
+      "region": "Valais",
       "location": {
         "lat": 46.2933,
         "lon": 7.7806
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282852+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746326+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7887,12 +8041,13 @@
       "id": "elm",
       "country": "ch",
       "name": "Elm",
+      "region": "Glarus",
       "location": {
         "lat": 46.9198,
         "lon": 9.1723
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282866+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746334+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7993,12 +8148,13 @@
       "id": "elsigen-metsch",
       "country": "ch",
       "name": "Elsigen-Metsch",
+      "region": "Bern",
       "location": {
         "lat": 46.5291,
         "lon": 7.6063
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282877+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746344+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8098,12 +8254,13 @@
       "id": "engstligenalp",
       "country": "ch",
       "name": "Engstligenalp",
+      "region": "Bern",
       "location": {
         "lat": 46.4592,
         "lon": 7.5664
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282891+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746352+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8210,12 +8367,13 @@
       "id": "evolene",
       "country": "ch",
       "name": "Evolène",
+      "region": "Valais",
       "location": {
         "lat": 46.1214,
         "lon": 7.4784
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.282905+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746360+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -8272,12 +8430,13 @@
       "id": "flumserberg",
       "country": "ch",
       "name": "Flumserberg",
+      "region": "St. Gallen",
       "location": {
         "lat": 47.0923,
         "lon": 9.2803
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282919+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746370+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8336,7 +8495,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=37&saison=1&ref=contentBox"
@@ -8347,12 +8506,13 @@
       "id": "glacier-3000",
       "country": "ch",
       "name": "Glacier 3000",
+      "region": "Vaud",
       "location": {
         "lat": 46.3541,
         "lon": 7.2056
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.282931+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746380+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8455,12 +8615,13 @@
       "id": "goldingen",
       "country": "ch",
       "name": "Goldingen (Atzmännig)",
+      "region": "St. Gallen",
       "location": {
         "lat": 47.2629,
         "lon": 8.9664
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.282987+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746415+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8484,12 +8645,13 @@
       "id": "graechen",
       "country": "ch",
       "name": "Grächen",
+      "region": "Valais",
       "location": {
         "lat": 46.1967,
         "lon": 7.8415
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283002+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746424+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8555,7 +8717,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4221",
         "region": "Lower Visp valleys",
@@ -8590,12 +8752,13 @@
       "id": "grimentz-zinal",
       "country": "ch",
       "name": "Grimentz-Zinal",
+      "region": "Valais",
       "location": {
         "lat": 46.1762,
         "lon": 7.5736
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283014+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746434+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8671,7 +8834,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4124",
         "region": "Val d'Anniviers",
@@ -8706,12 +8869,13 @@
       "id": "gryon",
       "country": "ch",
       "name": "Gryon",
+      "region": "Vaud",
       "location": {
         "lat": 46.2836,
         "lon": 7.0767
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283029+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746443+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8818,12 +8982,13 @@
       "id": "gstaad",
       "country": "ch",
       "name": "Gstaad",
+      "region": "Bern",
       "location": {
         "lat": 46.4754,
         "lon": 7.2838
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283044+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746453+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8931,12 +9096,13 @@
       "id": "hoch-ybrig",
       "country": "ch",
       "name": "Hoch Ybrig",
+      "region": "Schwyz",
       "location": {
         "lat": 47.0201,
         "lon": 8.8089
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283060+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746461+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9014,7 +9180,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=75&saison=1&ref=contentBox",
@@ -9028,12 +9194,13 @@
       "id": "hochwang",
       "country": "ch",
       "name": "Hochwang",
+      "region": "Graubünden",
       "location": {
         "lat": 46.8403,
         "lon": 9.6534
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283076+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746472+01:00",
       "snow": {
         "mountain_cm": 5,
         "valley_cm": 6,
@@ -9077,12 +9244,13 @@
       "id": "jaun",
       "country": "ch",
       "name": "Jaun",
+      "region": "Fribourg",
       "location": {
         "lat": 46.6087,
         "lon": 7.2896
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283089+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746480+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9160,12 +9328,13 @@
       "id": "klewenalp-stockhuette",
       "country": "ch",
       "name": "Klewenalp-Stockhütte",
+      "region": "Nidwalden",
       "location": {
         "lat": 46.9358,
         "lon": 8.4829
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283105+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746492+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9235,7 +9404,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=64&saison=1&ref=contentBox",
@@ -9249,12 +9418,13 @@
       "id": "la-berra",
       "country": "ch",
       "name": "La Berra",
+      "region": "Fribourg",
       "location": {
         "lat": 46.6868,
         "lon": 7.155
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283120+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746503+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9324,12 +9494,13 @@
       "id": "la-fouly",
       "country": "ch",
       "name": "La Fouly",
+      "region": "Valais",
       "location": {
         "lat": 45.9319,
         "lon": 7.0994
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283131+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746511+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9397,7 +9568,7 @@
           "total_km": 4
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4113",
         "region": "Val d'Entremont - Val Ferret",
@@ -9432,12 +9603,13 @@
       "id": "la-tzoumaz",
       "country": "ch",
       "name": "La Tzoumaz (Savoleyres)",
+      "region": "Valais",
       "location": {
         "lat": 46.1223,
         "lon": 7.219
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283145+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746521+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9532,12 +9704,13 @@
       "id": "laax",
       "country": "ch",
       "name": "Laax (Flims Laax Falera)",
+      "region": "Graubünden",
       "location": {
         "lat": 46.8251,
         "lon": 9.2718
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283159+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746530+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9613,7 +9786,7 @@
           "total_km": 34
         }
       },
-      "lifts_updated_at": "2026-10-25T11:30:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-5124",
         "region": "Flims",
@@ -9647,12 +9820,13 @@
       "id": "lauchernalp",
       "country": "ch",
       "name": "Lauchernalp",
+      "region": "Valais",
       "location": {
         "lat": 46.4019,
         "lon": 7.7778
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283175+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746539+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9730,7 +9904,7 @@
           "total_km": 8
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4211",
         "region": "Leukerbad - Lötschental",
@@ -9765,12 +9939,13 @@
       "id": "lenk",
       "country": "ch",
       "name": "Lenk",
+      "region": "Bern",
       "location": {
         "lat": 46.4531,
         "lon": 7.437
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283189+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746549+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9842,7 +10017,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-1224",
         "region": "Lenk",
@@ -9876,12 +10051,13 @@
       "id": "lenzerheide",
       "country": "ch",
       "name": "Lenzerheide",
+      "region": "Graubünden",
       "location": {
         "lat": 46.726,
         "lon": 9.5577
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283200+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746557+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9953,7 +10129,7 @@
           "total_km": 2
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=57&saison=1&ref=contentBox",
@@ -9967,12 +10143,13 @@
       "id": "les-diablerets",
       "country": "ch",
       "name": "Les Diablerets",
+      "region": "Vaud",
       "location": {
         "lat": 46.3464,
         "lon": 7.1515
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283214+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746565+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10073,12 +10250,13 @@
       "id": "les-marecottes",
       "country": "ch",
       "name": "Les Marécottes",
+      "region": "Valais",
       "location": {
         "lat": 46.1113,
         "lon": 7.0064
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283226+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746574+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10185,12 +10363,13 @@
       "id": "les-mosses",
       "country": "ch",
       "name": "Les Mosses",
+      "region": "Vaud",
       "location": {
         "lat": 46.397,
         "lon": 7.0972
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283242+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746584+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10282,12 +10461,13 @@
       "id": "les-paccots",
       "country": "ch",
       "name": "Les Paccots",
+      "region": "Fribourg",
       "location": {
         "lat": 46.5223,
         "lon": 6.9447
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283254+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746592+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10355,12 +10535,13 @@
       "id": "leukerbad-torrent",
       "country": "ch",
       "name": "Leukerbad Torrent",
+      "region": "Valais",
       "location": {
         "lat": 46.374,
         "lon": 7.629
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283268+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746601+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10432,7 +10613,7 @@
           "total_km": 9
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": {
         "region_id": "CH-4211",
         "region": "Leukerbad - Lötschental",
@@ -10467,12 +10648,13 @@
       "id": "leysin",
       "country": "ch",
       "name": "Leysin",
+      "region": "Vaud",
       "location": {
         "lat": 46.3476,
         "lon": 7.0176
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283313+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746633+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10542,7 +10724,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-1113",
         "region": "Aigle - Leysin",
@@ -10576,12 +10758,13 @@
       "id": "meiringen-hasliberg",
       "country": "ch",
       "name": "Meiringen-Hasliberg",
+      "region": "Bern",
       "location": {
         "lat": 46.7452,
         "lon": 8.1955
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283328+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746645+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10647,7 +10830,7 @@
           "total_km": 11
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-1244",
         "region": "Hasliberg - Rosenlaui",
@@ -10682,12 +10865,13 @@
       "id": "melchsee-frutt",
       "country": "ch",
       "name": "Melchsee-Frutt",
+      "region": "Obwalden",
       "location": {
         "lat": 46.7738,
         "lon": 8.2684
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283343+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746657+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10748,7 +10932,7 @@
           "total_km": 8
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-2123",
         "region": "Melchtal",
@@ -10780,12 +10964,13 @@
       "id": "moosalp",
       "country": "ch",
       "name": "Moosalp",
+      "region": "Valais",
       "location": {
         "lat": 46.2712,
         "lon": 7.8265
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283357+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746665+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10878,12 +11063,13 @@
       "id": "morgins",
       "country": "ch",
       "name": "Morgins",
+      "region": "Valais",
       "location": {
         "lat": 46.2368,
         "lon": 6.8581
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283372+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746674+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10984,12 +11170,13 @@
       "id": "nendaz",
       "country": "ch",
       "name": "Nendaz",
+      "region": "Valais",
       "location": {
         "lat": 46.1801,
         "lon": 7.2914
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283383+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746682+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11069,7 +11256,7 @@
           "total_km": 6
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4115",
         "region": "Martigny - Verbier",
@@ -11104,12 +11291,13 @@
       "id": "obersaxen-mundaun",
       "country": "ch",
       "name": "Obersaxen-Mundaun",
+      "region": "Graubünden",
       "location": {
         "lat": 46.7485,
         "lon": 9.1022
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283397+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746691+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11209,12 +11397,13 @@
       "id": "ovronnaz",
       "country": "ch",
       "name": "Ovronnaz",
+      "region": "Valais",
       "location": {
         "lat": 46.2047,
         "lon": 7.1606
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283418+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746700+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11278,7 +11467,7 @@
           "total_km": 1
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4114",
         "region": "Conthey - Fully",
@@ -11313,12 +11502,13 @@
       "id": "pizol",
       "country": "ch",
       "name": "Pizol",
+      "region": "St. Gallen",
       "location": {
         "lat": 46.9591,
         "lon": 9.3868
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283432+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746712+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11390,7 +11580,7 @@
           "total_km": 7
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=47&saison=1&ref=contentBox",
@@ -11404,12 +11594,13 @@
       "id": "saas-fee",
       "country": "ch",
       "name": "Saas-Fee",
+      "region": "Valais",
       "location": {
         "lat": 46.1092,
         "lon": 7.9291
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283444+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746721+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11485,7 +11676,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4223",
         "region": "Saas Fee",
@@ -11520,12 +11711,13 @@
       "id": "saas-grund",
       "country": "ch",
       "name": "Saas-Grund",
+      "region": "Valais",
       "location": {
         "lat": 46.1282,
         "lon": 7.9387
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283455+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746729+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11587,7 +11779,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": {
         "region_id": "CH-4223",
         "region": "Saas Fee",
@@ -11622,12 +11814,13 @@
       "id": "sarn",
       "country": "ch",
       "name": "Sarn (Heinzenberg)",
+      "region": "Graubünden",
       "location": {
         "lat": 46.7197,
         "lon": 9.4099
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283465+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746737+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -11663,12 +11856,13 @@
       "id": "schwarzsee",
       "country": "ch",
       "name": "Schwarzsee",
+      "region": "Fribourg",
       "location": {
         "lat": 46.6692,
         "lon": 7.2884
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283479+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746748+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11730,7 +11924,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=228&saison=1&ref=contentBox",
@@ -11744,12 +11938,13 @@
       "id": "scuol",
       "country": "ch",
       "name": "Scuol",
+      "region": "Graubünden",
       "location": {
         "lat": 46.7992,
         "lon": 10.2974
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283495+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746757+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11837,12 +12032,13 @@
       "id": "soerenberg",
       "country": "ch",
       "name": "Sörenberg",
+      "region": "Luzern",
       "location": {
         "lat": 46.8208,
         "lon": 8.0341
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283506+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746768+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11908,7 +12104,7 @@
           "total_km": 7
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=177&saison=1&ref=contentBox",
@@ -11922,12 +12118,13 @@
       "id": "spluegen",
       "country": "ch",
       "name": "Splügen",
+      "region": "Graubünden",
       "location": {
         "lat": 46.5528,
         "lon": 9.3234
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283522+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746776+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12034,12 +12231,13 @@
       "id": "st-luc-chandolin",
       "country": "ch",
       "name": "St-Luc Chandolin",
+      "region": "Valais",
       "location": {
         "lat": 46.2373,
         "lon": 7.6144
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283535+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746785+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12117,7 +12315,7 @@
           "total_km": 6
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": {
         "region_id": "CH-4124",
         "region": "Val d'Anniviers",
@@ -12152,12 +12350,13 @@
       "id": "st-moritz-corviglia",
       "country": "ch",
       "name": "St. Moritz Corviglia",
+      "region": "Graubünden",
       "location": {
         "lat": 46.5076,
         "lon": 9.819
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283549+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746795+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12279,12 +12478,13 @@
       "id": "thyon",
       "country": "ch",
       "name": "Thyon",
+      "region": "Valais",
       "location": {
         "lat": 46.1799,
         "lon": 7.3661
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283560+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746805+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12346,7 +12546,7 @@
           "total_km": 10
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": {
         "region_id": "CH-4115",
         "region": "Martigny - Verbier",
@@ -12381,12 +12581,13 @@
       "id": "tschappina",
       "country": "ch",
       "name": "Tschappina",
+      "region": "Graubünden",
       "location": {
         "lat": 46.6921,
         "lon": 9.3605
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283571+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746813+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -12442,12 +12643,13 @@
       "id": "tschiertschen",
       "country": "ch",
       "name": "Tschiertschen",
+      "region": "Graubünden",
       "location": {
         "lat": 46.8178,
         "lon": 9.6067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283582+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746821+01:00",
       "snow": {
         "mountain_cm": 2,
         "valley_cm": 6,
@@ -12491,12 +12693,13 @@
       "id": "unterbaech",
       "country": "ch",
       "name": "Unterbäch",
+      "region": "Valais",
       "location": {
         "lat": 46.284,
         "lon": 7.8014
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283592+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746829+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12603,12 +12806,13 @@
       "id": "val-muestair",
       "country": "ch",
       "name": "Val Müstair",
+      "region": "Graubünden",
       "location": {
         "lat": 46.6267,
         "lon": 10.3354
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283637+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746963+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -12644,12 +12848,13 @@
       "id": "verbier",
       "country": "ch",
       "name": "Verbier",
+      "region": "Valais",
       "location": {
         "lat": 46.0936,
         "lon": 7.2338
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283655+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746973+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12729,7 +12934,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:50:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": {
         "region_id": "CH-4115",
         "region": "Martigny - Verbier",
@@ -12761,12 +12966,13 @@
       "id": "vercorin",
       "country": "ch",
       "name": "Vercorin",
+      "region": "Valais",
       "location": {
         "lat": 46.2541,
         "lon": 7.5342
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283673+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746983+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12885,12 +13091,13 @@
       "id": "vicheres-liddes",
       "country": "ch",
       "name": "Vichères-Liddes",
+      "region": "Valais",
       "location": {
         "lat": 45.9916,
         "lon": 7.186
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283684+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746991+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -12947,12 +13154,13 @@
       "id": "villars",
       "country": "ch",
       "name": "Villars",
+      "region": "Vaud",
       "location": {
         "lat": 46.3036,
         "lon": 7.0549
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283698+01:00",
+      "fetched_at": "2026-10-25T12:01:26.746999+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13028,7 +13236,7 @@
           "total_km": 15
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": {
         "region_id": "CH-1114",
         "region": "Bex - Villars",
@@ -13063,12 +13271,13 @@
       "id": "visperterminen",
       "country": "ch",
       "name": "Visperterminen",
+      "region": "Valais",
       "location": {
         "lat": 46.2583,
         "lon": 7.9043
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283713+01:00",
+      "fetched_at": "2026-10-25T12:01:26.747010+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13161,12 +13370,13 @@
       "id": "wildhaus",
       "country": "ch",
       "name": "Wildhaus",
+      "region": "St. Gallen",
       "location": {
         "lat": 47.1989,
         "lon": 9.3421
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283725+01:00",
+      "fetched_at": "2026-10-25T12:01:26.747018+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13225,7 +13435,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=76&saison=1&ref=contentBox"
@@ -13236,12 +13446,13 @@
       "id": "zermatt",
       "country": "ch",
       "name": "Zermatt (Matterhorn Ski Paradise)",
+      "region": "Valais",
       "location": {
         "lat": 46.0149,
         "lon": 7.7428
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283758+01:00",
+      "fetched_at": "2026-10-25T12:01:26.747029+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13321,7 +13532,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:46:00+01:00",
+      "lifts_updated_at": "2026-10-25T12:01:00+01:00",
       "avalanche": {
         "region_id": "CH-4222",
         "region": "Zermatt",
@@ -13358,12 +13569,13 @@
       "id": "zuoz",
       "country": "ch",
       "name": "Zuoz",
+      "region": "Graubünden",
       "location": {
         "lat": 46.6029,
         "lon": 9.96
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T11:49:43.283778+01:00",
+      "fetched_at": "2026-10-25T12:01:26.747043+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -13419,12 +13631,13 @@
       "id": "andermatt-sedrun-disentis",
       "country": "ch",
       "name": "Andermatt Sedrun Disentis",
+      "region": "Uri",
       "location": {
         "lat": 46.6356,
         "lon": 8.5939
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283797+01:00",
+      "fetched_at": "2026-10-25T12:01:26.747052+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13490,7 +13703,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T11:49:04+01:00",
+      "lifts_updated_at": "2026-10-25T11:50:30+01:00",
       "avalanche": {
         "region_id": "CH-2223",
         "region": "Northern Urseren",
@@ -13525,12 +13738,13 @@
       "id": "engelberg-titlis",
       "country": "ch",
       "name": "Engelberg-Titlis",
+      "region": "Obwalden",
       "location": {
         "lat": 46.8211,
         "lon": 8.4013
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T11:49:43.283928+01:00",
+      "fetched_at": "2026-10-25T12:01:26.747164+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,

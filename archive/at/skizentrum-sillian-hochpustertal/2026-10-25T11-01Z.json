@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "skizentrum-sillian-hochpustertal",
+  "country": "at",
+  "name": "Skizentrum Sillian - Hochpustertal",
+  "region": "Tirol",
+  "location": {
+    "lat": 46.775,
+    "lon": 12.3837
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T12:01:54.746464+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-08-31T07:33:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Skizentrum%20Sillian/%20Hochpustertal_57"
+  ],
+  "errors": []
+}

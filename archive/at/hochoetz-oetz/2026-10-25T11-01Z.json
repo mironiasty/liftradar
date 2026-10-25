@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hochoetz-oetz",
+  "country": "at",
+  "name": "Hochoetz - Oetz",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.2042,
+    "lon": 10.8927
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T12:01:39.307892+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 15
+  },
+  "slopes": {
+    "open": 0,
+    "total": 20,
+    "open_km": 0.0,
+    "total_km": 41
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-18T17:05:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Hochoetz%20-%20Oetz_2967"
+  ],
+  "errors": []
+}

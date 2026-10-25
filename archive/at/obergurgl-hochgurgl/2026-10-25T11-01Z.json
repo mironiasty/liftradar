@@ -1,0 +1,83 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "obergurgl-hochgurgl",
+  "country": "at",
+  "name": "Obergurgl-Hochgurgl",
+  "region": "Tirol",
+  "location": {
+    "lat": 46.8797,
+    "lon": 11.0862
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T12:01:49.745215+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 26
+  },
+  "slopes": {
+    "open": 0,
+    "total": 50,
+    "open_km": 0.0,
+    "total_km": 112
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 6
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    },
+    "gondola": {
+      "open": 0,
+      "total": 11
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "easy": {
+      "open": 0,
+      "total": 24,
+      "open_km": 0.0,
+      "total_km": 61
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 12,
+      "open_km": 0.0,
+      "total_km": 33
+    },
+    "difficult": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 15
+    }
+  },
+  "lifts_updated_at": "2026-10-20T06:03:56+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Obergurgl-Hochgurgl_14",
+    "https://winter.intermaps.com/obergurgl_hochgurgl/data?lang=en",
+    "https://www.gurgl.com/en/activities/winter/skiing-snowboarding/ski-area-information"
+  ],
+  "errors": []
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "vicheres-liddes",
+  "country": "ch",
+  "name": "Vichères-Liddes",
+  "region": "Valais",
+  "location": {
+    "lat": 45.9916,
+    "lon": 7.186
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T12:01:26.746991+01:00",
+  "snow": {
+    "mountain_cm": 1,
+    "valley_cm": null,
+    "fresh_cm": 0,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Bourg-St-Pierre (SLF)",
+        "elevation_m": 1670,
+        "depth_cm": 1,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-04-09T17:16:00+02:00",
+  "avalanche": {
+    "region_id": "CH-4113",
+    "region": "Val d'Entremont - Val Ferret",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "considerable",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "new_snow",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}

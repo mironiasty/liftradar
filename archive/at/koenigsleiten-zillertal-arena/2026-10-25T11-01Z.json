@@ -1,0 +1,83 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "koenigsleiten-zillertal-arena",
+  "country": "at",
+  "name": "Königsleiten - Zillertal Arena",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.2509,
+    "lon": 12.1221
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T12:01:44.063859+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 1,
+    "total": 52
+  },
+  "slopes": {
+    "open": 0,
+    "total": 86,
+    "open_km": null,
+    "total_km": 150
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 1,
+      "total": 15
+    },
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 19
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 15
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 26,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 46,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 12,
+      "open_km": 0.0,
+      "total_km": 12
+    }
+  },
+  "lifts_updated_at": "2026-10-25T12:01:11+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten_2909",
+    "https://winter.intermaps.com/zillertalarena/data?lang=en",
+    "https://www.zillertalarena.com/uploads/tx_webxbookingemo/ImageStorage/Winter-26-_2cb5cae422ee7ae8215c9edac98ba67c.pdf"
+  ],
+  "errors": []
+}

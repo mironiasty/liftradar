@@ -1,0 +1,126 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "vercorin",
+  "country": "ch",
+  "name": "Vercorin",
+  "region": "Valais",
+  "location": {
+    "lat": 46.2541,
+    "lon": 7.5342
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T12:01:26.746983+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Orzival (SLF)",
+        "elevation_m": 2640,
+        "depth_cm": 24,
+        "fresh_cm": 8,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Montana (SLF)",
+        "elevation_m": 1590,
+        "depth_cm": 2,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": 0,
+    "total": 14,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 14
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 12
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-25T08:33:00+01:00",
+  "avalanche": {
+    "region_id": "CH-4122",
+    "region": "Val d'Hérens",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=169&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}

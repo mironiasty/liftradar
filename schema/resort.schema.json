@@ -448,6 +448,20 @@
       "title": "Name",
       "type": "string"
     },
+    "region": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "State or canton, e.g. Tirol, Valais",
+      "title": "Region"
+    },
     "location": {
       "anyOf": [
         {

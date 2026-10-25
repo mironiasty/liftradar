@@ -1,0 +1,89 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "obertauern",
+  "country": "at",
+  "name": "Obertauern",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.2494,
+    "lon": 13.557
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T12:01:30.721059+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 26
+  },
+  "slopes": {
+    "open": 0,
+    "total": 86,
+    "open_km": 0.0,
+    "total_km": 100
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 19
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 41,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 34,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-21T02:38:54+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://winter.intermaps.com/obertauern/data?lang=en",
+    "https://info.obertauern.com/skigebiet"
+  ],
+  "errors": []
+}

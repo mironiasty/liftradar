@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "gerlosstein-zillertal-arena",
+  "country": "at",
+  "name": "Gerlosstein - Zillertal Arena",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.2015,
+    "lon": 11.9151
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T12:01:36.546548+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-15T01:47:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Gerlosstein%20-%20Zillertal%20Arena_97"
+  ],
+  "errors": []
+}
