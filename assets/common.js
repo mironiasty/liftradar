@@ -24,7 +24,7 @@ function pair(a, b, unit = "") {
 
 const STATUS_LABELS = { open: "open", closed: "closed", no_report: "no report yet" };
 
-const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland" };
+const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy" };
 const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();
 
 function updatedText(index) {

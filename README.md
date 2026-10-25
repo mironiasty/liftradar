@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Tirol, Salzburg and Switzerland, published at
+Snow conditions for ski resorts in Tirol, Salzburg, Switzerland and Italy, published at
 [snow.miron.asia](https://snow.miron.asia).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -30,10 +30,17 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Other Salzburg resorts | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
 | Swiss resorts | [infosnow.ch](https://infosnow.ch/portal/): live lift and slope status as the lift companies publish it |
 | Snow depth of Swiss resorts that don't report it | Nearest [SLF](https://www.slf.ch/en/services-and-products/slf-data-service) stations (WSL Institute for Snow and Avalanche Research, CC BY 4.0) |
-| Lift/slope status of the bigger Austrian areas, Andermatt and Engelberg | The resort's own Intermaps slope map |
+| Dolomiti Superski areas | [Open Data Hub South Tyrol](https://opendatahub.com): every lift and slope as Dolomiti Superski publishes it (CC0) |
+| Valle d'Aosta (and Alagna) | [lovevda.it snow bulletin](https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa) |
+| Trentino | [visittrentino.info snow bulletin](https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino) |
+| South Tyrol outside Dolomiti Superski; snow of the South Tyrol DSS areas | [Open Data Hub](https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en) snow report (province's tourism database) |
+| Bormio, Cima Piazzi - San Colombano | [bormioski.eu](https://www.bormioski.eu/info-impianti-e-piste/) (lifts only) |
+| Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
 | Total slope km of the bigger areas | The official size on the resort's own website |
 | Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
 | Avalanche danger, Switzerland | [SLF avalanche bulletin](https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/) |
+| Avalanche danger, South Tyrol and Trentino | [avalanche.report](https://avalanche.report) (Euregio) |
+| Avalanche danger, other Italian regions | [AINEVA](https://bollettini.aineva.it) joint bulletin |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 
 The Snow Card and SalzburgerLand pages show the report each resort submits to iSKI. Bergfex
@@ -113,7 +120,7 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Avalanche danger
 
-- Tirol and Swiss resorts only. Salzburg has no machine-readable bulletin, so `avalanche` is
+- Tirol, Swiss and Italian resorts. Salzburg has no machine-readable bulletin, so `avalanche` is
   `null` for all Salzburg resorts, including the Snow Card ones in Salzburg (Hochkrimml,
   Königsleiten, Mittersill, Wildkogel).
 - Early and late in the season the SLF only rates the alpine regions, so Swiss resorts in the
@@ -126,10 +133,11 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Locations
 
 `location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
-for the glacier resorts, or the main village (looked up on OpenStreetMap) for Salzburg
-resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
+for the glacier resorts, or the main village (looked up on OpenStreetMap) for Salzburg and
+Italian resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
 
-`region` is the state or canton that point lies in (e.g. `Tirol`, `Valais`), looked up on
+`region` is the state, canton or Italian region that point lies in (e.g. `Tirol`, `Valais`,
+`Valle d'Aosta`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
 OpenStreetMap; the table filters by it and by `country`. An area spanning a border is listed
 under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
