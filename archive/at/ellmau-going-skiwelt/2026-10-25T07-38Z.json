@@ -1,0 +1,32 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "ellmau-going-skiwelt",
+  "country": "at",
+  "name": "Ellmau-Going - SkiWelt",
+  "status": "closed",
+  "fetched_at": "2026-10-25T08:37:59.614050+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-04-01",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 83
+  },
+  "slopes": {
+    "open": 0,
+    "total": 231,
+    "open_km": 0.0,
+    "total_km": 271
+  },
+  "lifts_updated_at": "2026-10-25T04:09:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Ellmau-Going%20-%20SkiWelt_61"
+  ],
+  "errors": []
+}

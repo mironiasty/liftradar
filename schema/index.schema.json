@@ -303,17 +303,33 @@
     },
     "SlopeCounts": {
       "additionalProperties": false,
-      "description": "Slope counts plus kilometres, when the resort publishes every slope's length.\n\nopen_km is rounded to 0.1 km and total_km up to a whole km, so the\nrounded open km never exceeds the rounded total.",
+      "description": "Slope counts plus kilometres, when the resort publishes every slope's length.\n\nCounts can be missing where only kilometres are published (SalzburgerLand).\nopen_km is rounded to 0.1 km and total_km up to a whole km, so the\nrounded open km never exceeds the rounded total.",
       "properties": {
         "open": {
-          "minimum": 0,
-          "title": "Open",
-          "type": "integer"
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Open"
         },
         "total": {
-          "minimum": 0,
-          "title": "Total",
-          "type": "integer"
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total"
         },
         "open_km": {
           "anyOf": [
@@ -342,10 +358,6 @@
           "title": "Total Km"
         }
       },
-      "required": [
-        "open",
-        "total"
-      ],
       "title": "SlopeCounts",
       "type": "object"
     },

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hintertux",
+  "country": "at",
+  "name": "Hintertuxer Gletscher",
+  "status": "open",
+  "fetched_at": "2026-10-25T08:37:54.798863+01:00",
+  "snow": {
+    "mountain_cm": 25,
+    "valley_cm": 20,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": "grippy/hard powder",
+    "stations": [
+      {
+        "name": "Gefrorene Wand",
+        "elevation_m": 3250,
+        "depth_cm": 25,
+        "fresh_cm": null,
+        "temperature_c": -3.0,
+        "condition": "grippy/hard powder"
+      },
+      {
+        "name": "Tuxer Fernerhaus",
+        "elevation_m": 2660,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": 3.0,
+        "condition": "grippy/hard powder"
+      },
+      {
+        "name": "Sommerbergalm",
+        "elevation_m": 2100,
+        "depth_cm": null,
+        "fresh_cm": null,
+        "temperature_c": -0.5,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 6,
+    "total": 21
+  },
+  "slopes": {
+    "open": 3,
+    "total": 32,
+    "open_km": 22.0,
+    "total_km": 64
+  },
+  "lifts_updated_at": "2026-10-25T07:48:27+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.hintertuxergletscher.at/en/information/currently/weather/",
+    "https://winter.intermaps.com/hintertuxer_gletscher/data?lang=en"
+  ],
+  "errors": []
+}

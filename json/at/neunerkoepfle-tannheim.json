@@ -3,19 +3,27 @@
   "id": "neunerkoepfle-tannheim",
   "country": "at",
   "name": "Neunerköpfle - Tannheim",
-  "status": "no_report",
-  "fetched_at": "2026-10-24T22:37:55.513435+02:00",
+  "status": "closed",
+  "fetched_at": "2026-10-25T08:38:01.048494+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2025-01-31",
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
-  "lifts_updated_at": "2026-08-20T11:44:00+02:00",
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": 0,
+    "total": 5,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_updated_at": "2026-10-25T07:46:00+01:00",
   "avalanche": null,
   "sources": [
     "https://www.snowcard.tirol.at/skigebiet/Neunerk%C3%B6pfle%20-%20Tannheim_2561"
