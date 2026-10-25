@@ -1,14 +1,27 @@
 // index.html: one row per resort from json/index.json, with a name search,
-// country and region filters, and sortable columns. Rows start sorted by name.
+// country, region and status filters, and sortable columns. Rows start sorted by name.
 
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
-const countrySelect = document.getElementById("country");
+const countryGroup = document.getElementById("country");
 const regionSelect = document.getElementById("region");
+const statusGroup = document.getElementById("status");
 const count = document.getElementById("count");
+const empty = document.getElementById("empty");
 let rows = [];
 const values = new Map();
 let key = "name", ascending = true;
+let country = "";
+const hiddenStatuses = new Set();
+
+// Same colours as the map.
+const STATUS = {
+  open: { label: "Open", color: "var(--open)" },
+  closed: { label: "Closed", color: "var(--closed)" },
+  no_report: { label: "No report yet", color: "var(--none)" },
+  unknown: { label: "Unknown", color: "var(--err)" },
+};
+const statusOf = (r) => (STATUS[r.status] ? r.status : "unknown");
 
 function sortValues(r) {
   const lifts = r.lifts || {}, slopes = r.slopes || {}, snow = r.snow;
@@ -18,6 +31,7 @@ function sortValues(r) {
     region: fold(`${countryName(r.country)} ${r.region ?? ""}`),
     country: r.country,
     regionName: r.region ?? null,
+    status: statusOf(r),
     mountain: snow.mountain_cm,
     valley: snow.valley_cm,
     fresh: snow.fresh_cm,
@@ -32,63 +46,92 @@ function sortValues(r) {
 }
 
 function nameCell(r) {
-  const cell = el("td", {}, r.name);
-  if (STATUS_LABELS[r.status] && r.status !== "open") cell.append(el("div", { class: "muted" }, STATUS_LABELS[r.status]));
-  if (r.errors.length) cell.append(el("div", { class: "err" }, r.errors.join("; ")));
+  const status = statusOf(r);
+  const text = el("div", {}, el("a", { class: "name", href: resortPage(r) }, r.name));
+  if (status !== "open") text.append(el("div", { class: "sub-line" }, STATUS[status].label));
+  if (r.errors.length) text.append(el("div", { class: "err" }, r.errors.join("; ")));
+  return el("td", {}, el("div", { class: "resort" },
+    el("span", { class: "dot", style: `--c:${STATUS[status].color}`, title: STATUS[status].label }), text));
+}
+
+// "open/total" with a bar for the open share, for open resorts: elsewhere open
+// counts are 0 or not reported.
+function meter(open, total, active) {
+  const cell = el("div", {}, pair(open, total));
+  if (active && open !== null && open !== undefined && total) {
+    const bar = el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` });
+    cell.append(el("div", { class: "meter", title: `${Math.round((100 * open) / total)}% open` }, bar));
+  }
   return cell;
 }
 
-function slopesCell(slopes) {
-  const cell = el("td", { class: "num" }, pair(slopes?.open, slopes?.total));
-  if (slopes && (slopes.open_km !== null || slopes.total_km !== null)) {
-    cell.append(el("div", { class: "muted" }, pair(slopes.open_km, slopes.total_km, " km")));
-  }
+function slopesCell(slopes, active) {
+  const km = pair(slopes?.open_km, slopes?.total_km, " km");
+  const counts = pair(slopes?.open, slopes?.total);
+  const cell = value("Slopes", counts === "–" ? km : counts, meter(slopes?.open, slopes?.total, active));
+  if (km !== "–") cell.append(el("div", { class: "sub-line" }, km));
   return cell;
 }
 
 function avalancheCell(bulletin) {
-  if (!bulletin || bulletin.danger_level === null) return el("td", { class: "num" }, "–");
-  return el("td", { class: "num" }, String(bulletin.danger_level),
-    el("div", { class: "muted" }, bulletin.danger.replace("_", " ")));
+  if (!bulletin || bulletin.danger_level === null) return el("td", { class: "c-value nil", "data-label": "Avalanche" }, "–");
+  return el("td", { class: "c-value", "data-label": "Avalanche" }, el("span", { class: "danger" },
+    el("span", { class: `badge lvl${bulletin.danger_level}` }, String(bulletin.danger_level)),
+    el("span", { class: "danger-text" }, bulletin.danger.replace("_", " "))));
+}
+
+// A number cell; labelled for the phone layout, which also leaves out empty ones ("–").
+function value(label, text, content = text) {
+  return el("td", { class: `num c-value${text === "–" ? " nil" : ""}`, "data-label": label }, content);
 }
 
 function row(r) {
-  const path = resortPath(r);
-  // Short link text: full file paths (up to ~60 chars) would push the column out of view.
-  const link = el("a", { href: path, title: path }, "JSON");
-  return el("tr", {},
+  const { mountain_cm: mountain, valley_cm: valley, fresh_cm: fresh } = r.snow;
+  const active = statusOf(r) === "open";
+  const tr = el("tr", { class: active ? "" : "inactive" },
     nameCell(r),
-    el("td", {}, r.region ?? "–", el("div", { class: "muted" }, countryName(r.country))),
-    el("td", { class: "num" }, dash(r.snow.mountain_cm, " cm")),
-    el("td", { class: "num" }, dash(r.snow.valley_cm, " cm")),
-    el("td", { class: "num" }, dash(r.snow.fresh_cm, " cm")),
-    el("td", { class: "num" }, pair(r.lifts?.open, r.lifts?.total)),
-    slopesCell(r.slopes),
+    el("td", { class: "c-region" }, r.region ?? "–", el("div", { class: "sub-line" }, countryName(r.country))),
+    value("Mountain", dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
+    value("Valley", dash(valley, " cm")),
+    value("Fresh", dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
+    value("Lifts", pair(r.lifts?.open, r.lifts?.total), meter(r.lifts?.open, r.lifts?.total, active)),
+    slopesCell(r.slopes, active),
     avalancheCell(r.avalanche),
-    el("td", { class: "num" }, link),
   );
+  // The whole row opens the resort's page; the name is the link for keyboards and new tabs.
+  tr.addEventListener("click", (event) => {
+    if (!event.target.closest("a") && !getSelection().toString()) location.href = resortPage(r);
+  });
+  return tr;
 }
 
 function filter() {
   const query = fold(search.value.trim());
-  const country = countrySelect.value, region = regionSelect.value;
+  const region = regionSelect.value;
   let shown = 0;
   for (const tr of rows) {
     const v = values.get(tr);
-    tr.hidden = !v.name.includes(query) || (country && v.country !== country) || (region && v.regionName !== region);
+    tr.hidden = !v.name.includes(query) || (country && v.country !== country) || (region && v.regionName !== region)
+      || hiddenStatuses.has(v.status);
     if (!tr.hidden) shown++;
   }
-  const filtered = query || country || region;
+  const filtered = query || country || region || hiddenStatuses.size;
   count.textContent = filtered ? `${shown} of ${rows.length} resorts` : `${rows.length} resorts`;
+  empty.hidden = shown > 0;
 }
 
 function option(value, label) {
   return el("option", { value }, label);
 }
 
+function button(className, text, onClick) {
+  const node = el("button", { type: "button", class: className }, text);
+  node.addEventListener("click", onClick);
+  return node;
+}
+
 // The region list only offers regions of the chosen country (all of them when none is).
 function fillRegions(resorts) {
-  const country = countrySelect.value;
   const chosen = regionSelect.value;
   const names = [...new Set(resorts.filter((r) => r.region && (!country || r.country === country)).map((r) => r.region))]
     .sort((a, b) => a.localeCompare(b));
@@ -98,14 +141,57 @@ function fillRegions(resorts) {
 
 function fillFilters(resorts) {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) => countryName(a).localeCompare(countryName(b)));
-  countrySelect.append(...countries.map((code) => option(code, countryName(code))));
-  fillRegions(resorts);
-  countrySelect.addEventListener("change", () => {
+  const choices = [["", "All"], ...countries.map((code) => [code, countryName(code)])];
+  const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
+  countryGroup.append(...countryButtons);
+  const chooseCountry = (code) => {
+    country = code;
+    choices.forEach(([c], i) => countryButtons[i].setAttribute("aria-pressed", c === country));
     fillRegions(resorts);
     filter();
-  });
+  };
+  chooseCountry("");
   regionSelect.addEventListener("change", filter);
+
+  for (const [status, { label, color }] of Object.entries(STATUS)) {
+    const total = resorts.filter((r) => statusOf(r) === status).length;
+    if (!total) continue;
+    const chip = button("chip", "", () => {
+      hiddenStatuses.has(status) ? hiddenStatuses.delete(status) : hiddenStatuses.add(status);
+      chip.setAttribute("aria-pressed", !hiddenStatuses.has(status));
+      filter();
+    });
+    chip.setAttribute("aria-pressed", true);
+    chip.append(el("span", { class: "dot", style: `--c:${color}` }), label, el("span", { class: "count" }, String(total)));
+    statusGroup.append(chip);
+  }
+
+  document.getElementById("reset").addEventListener("click", () => {
+    search.value = "";
+    regionSelect.value = "";
+    hiddenStatuses.clear();
+    for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", true);
+    chooseCountry("");
+  });
 }
+
+// The phone layout has no column headers: a select offers the useful orders.
+const SORTS = [
+  ["name", true, "Name A–Z"],
+  ["lifts_open", false, "Most open lifts"],
+  ["slopes_open", false, "Most open slopes"],
+  ["km_open", false, "Most open km"],
+  ["mountain", false, "Most snow"],
+  ["fresh", false, "Most fresh snow"],
+  ["km_total", false, "Biggest areas"],
+  ["avalanche", false, "Highest avalanche danger"],
+];
+const sortSelect = document.getElementById("sort");
+sortSelect.append(...SORTS.map(([k, , label], i) => option(String(i), label)));
+sortSelect.addEventListener("change", () => {
+  [key, ascending] = SORTS[sortSelect.value];
+  sort();
+});
 
 function sort() {
   const byName = (a, b) => values.get(a).name.localeCompare(values.get(b).name);
@@ -122,6 +208,8 @@ function sort() {
     button.classList.toggle("sorted", button.dataset.key === key);
     button.classList.toggle("asc", button.dataset.key === key && ascending);
   }
+  const chosen = SORTS.findIndex(([k, asc]) => k === key && asc === ascending);
+  if (chosen >= 0) sortSelect.value = String(chosen);
 }
 
 for (const button of document.querySelectorAll("th button")) {
@@ -137,12 +225,12 @@ search.addEventListener("input", filter);
 loadIndex()
   .then((index) => {
     document.getElementById("updated").textContent = updatedText(index);
-    fillFilters(index.resorts);
     rows = index.resorts.map((r) => {
       const tr = row(r);
       values.set(tr, sortValues(r));
       return tr;
     });
+    fillFilters(index.resorts);
     sort();
     filter();
   })

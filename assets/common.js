@@ -12,6 +12,9 @@ async function loadIndex() {
 
 // Same path layout as snow-fetcher's models.resort_path().
 const resortPath = (r) => `json/${r.country}/${r.id}.json`;
+const archivePath = (r) => `archive/${r.country}/${r.id}/`;
+// The resort's page (resort.html), e.g. resort.html?r=at/soelden.
+const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;
 
 // Lowercase without accents, so "Sölden" sorts and matches like "solden".
 const fold = (text) => text.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -24,6 +27,13 @@ function pair(a, b, unit = "") {
 }
 
 const STATUS_LABELS = { open: "open", closed: "closed", no_report: "no report yet" };
+
+// Same as the table and the map.
+const STATUS_COLORS = { open: "var(--open)", closed: "var(--closed)", no_report: "var(--none)", unknown: "var(--err)" };
+const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "unknown");
+
+const viennaTime = (iso, options = { dateStyle: "medium", timeStyle: "short" }) =>
+  new Date(iso).toLocaleString("de-AT", { timeZone: "Europe/Vienna", ...options });
 
 const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy" };
 const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();

@@ -71,11 +71,11 @@ function popup(r, status) {
     ["Report", dash(updated)],
   ];
   const content = el("div", { class: "popup" },
-    el("h3", {}, r.name),
+    el("h3", {}, el("a", { href: resortPage(r) }, r.name)),
     el("table", {}, ...rows.map(([label, value]) => el("tr", {}, el("td", {}, label), el("td", {}, value)))),
   );
   if (r.errors.length) content.append(el("div", { class: "err" }, r.errors.join("; ")));
-  content.append(el("a", { href: resortPath(r) }, "JSON"));
+  content.append(el("a", { href: resortPage(r) }, "Details, history and JSON →"));
   return content;
 }
 

@@ -9,9 +9,10 @@ Snow conditions for ski resorts in Austria, Switzerland and Italy, published at
   - `archive/<country>/<resort>/index.json` lists every run (oldest first) with the
     snapshot holding that run's full report, e.g. `2026-10-25T09-00Z.json` (UTC). Runs
     without changes share the earlier snapshot.
-- **Website** (branch `main`, this): `index.html` (table), `map.html` (map) and
-  `sources.html` (data sources, incl. every URL in the current data), plain
-  static pages that load `json/index.json` in the browser. No build step.
+- **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
+  `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
+  its history from the archive) and `sources.html` (data sources, incl. every URL in the
+  current data), plain static pages that load the JSON in the browser. No build step.
   `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
 
 `.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
@@ -188,7 +189,7 @@ custom_fields:
   field_type: string
   description: The JSON link of your ski resort on snow.miron.asia.
   help_text: Open <a href="https://snow.miron.asia" target="_blank">snow.miron.asia</a>, search for your
-    resort, right-click its <strong>JSON</strong> link and choose <strong>Copy link address</strong>.
+    resort and open it, then press <strong>Copy</strong> next to its JSON link.
     It looks like <code>https://snow.miron.asia/json/at/soelden.json</code>.
   placeholder: https://snow.miron.asia/json/at/soelden.json
 ```

@@ -38,7 +38,7 @@ jobs:
       - name: Combine site and data
         run: |
           mkdir _site
-          cp -R site/index.html site/map.html site/sources.html site/assets _site/
+          cp -R site/index.html site/map.html site/resort.html site/sources.html site/assets _site/
           for part in json archive schema; do cp -R "data/$part" _site/; done
 
       # Resort list for a TRMNL plugin's xhrSelect field (see README).

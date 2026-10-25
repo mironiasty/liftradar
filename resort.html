@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snow Conditions</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 40px; }
+  nav { font-size: .9rem; }
+  nav a { text-decoration: none; }
+  h1 { display: flex; align-items: center; gap: 12px; margin: 16px 0 2px; font-size: 1.8rem; line-height: 1.2; }
+  h1 .dot { width: 12px; height: 12px; }
+  h2 { margin: 0 0 10px; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .dot { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .status { display: inline-flex; align-items: center; gap: 6px; padding: 1px 10px; border-radius: 999px; background: var(--chip);
+    color: var(--fg); font-size: .85rem; font-weight: 500; }
+
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 24px; margin-top: 24px; align-items: start; }
+  .side { position: sticky; top: 16px; display: grid; gap: 16px; }
+  .card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  /* Narrow screens: one column of everything, the map right after the key numbers and the data last. */
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .stack, .side { display: contents; }
+    .layout section, .layout .charts-card { order: 3; }
+    .tiles { order: 1; }
+    .map-box { order: 2; }
+    .layout .data { order: 4; }
+  }
+
+  /* Key numbers. */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .tile { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  .tile .label { color: var(--muted); font-size: .75rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+  .tile .value { margin-top: 2px; font-size: 1.6rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tile .value small { font-size: .9rem; font-weight: 500; color: var(--muted); }
+  .tile .note { color: var(--muted); font-size: .8rem; }
+  .tile .meter { width: 100%; margin: 6px 0 2px; }
+  .tile .badge { width: 30px; height: 30px; font-size: 1rem; margin-right: 6px; vertical-align: 3px; }
+  .fresh { color: var(--accent); }
+
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { padding: 7px 8px; border-bottom: 1px solid var(--line); text-align: left; }
+  tr:last-child td { border-bottom: 0; }
+  th { color: var(--muted); font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .scroll { overflow-x: auto; }
+
+  /* Lifts by type and slopes by difficulty. */
+  .breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .bars { display: grid; grid-template-columns: minmax(0, 1fr) auto 70px; gap: 8px 12px; align-items: center; font-size: .9rem; }
+  .bars .meter { width: 100%; }
+  .bars .n { font-variant-numeric: tabular-nums; text-align: right; }
+  .bars .km { color: var(--muted); font-size: .8rem; }
+  .diff { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 2px; background: var(--c); }
+
+  .ratings { display: grid; gap: 6px; margin-top: 10px; font-size: .9rem; }
+  .ratings div { display: flex; align-items: center; gap: 8px; }
+
+  /* History charts. */
+  .charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .chart { position: relative; }
+  .chart h3 { margin: 0 0 4px; font-size: .9rem; font-weight: 600; }
+  .chart svg { display: block; width: 100%; height: 150px; overflow: visible; }
+  .chart .grid { stroke: var(--line); stroke-width: 1; }
+  .chart .axis { fill: var(--muted); font-size: 10px; }
+  .chart .tip { position: absolute; pointer-events: none; padding: 4px 8px; border-radius: 6px; background: var(--fg); color: var(--bg);
+    font-size: .78rem; white-space: nowrap; transform: translate(-50%, -100%); }
+
+  #map { height: 360px; border-radius: 12px; border: 1px solid var(--line); }
+  @media (max-width: 860px) { #map { height: 280px; } }
+  .map-link { display: inline-block; margin-top: 6px; font-size: .85rem; text-decoration: none; }
+  .map-link:hover { text-decoration: underline; }
+  .pin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-sizing: border-box; transform: translate(-50%, -50%); }
+  .url { display: flex; gap: 8px; margin-top: 6px; }
+  .url input { flex: 1; min-width: 0; height: 32px; padding: 0 8px; font: .8rem ui-monospace, monospace; color: var(--fg);
+    background: var(--chip); border: 0; border-radius: 6px; }
+  .url button, .url a { flex: none; display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border: 1px solid var(--line);
+    border-radius: 6px; background: var(--bg); color: var(--fg); font: inherit; font-size: .85rem; cursor: pointer; text-decoration: none; }
+  .url button:hover, .url a:hover { border-color: var(--accent); color: var(--accent); }
+  button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .sources { margin: 8px 0 0; padding-left: 18px; font-size: .85rem; word-break: break-all; }
+  .empty { color: var(--muted); font-size: .9rem; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">&larr; All resorts</a></nav>
+  <div id="page"><p class="muted">Loading…</p></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/resort.js"></script>
+</body>
+</html>

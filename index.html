@@ -6,19 +6,46 @@
 <title>Snow Conditions</title>
 <link rel="stylesheet" href="assets/style.css">
 <style>
-  main { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
   h1 { margin: 0 0 4px; font-size: 1.6rem; }
-  .table { overflow-x: auto; margin: 24px 0; }
-  table { border-collapse: collapse; width: 100%; }
-  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
-  td.num { font-variant-numeric: tabular-nums; }
-  /* Long resort names wrap so the JSON column stays in view. */
-  td:first-child { white-space: normal; min-width: 10rem; }
-  input[type=search], select { width: 100%; max-width: 20rem; box-sizing: border-box; padding: 8px 10px; font: inherit;
-    color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
-  select { width: auto; }
-  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 20px; }
+
+  /* Toolbar: search, country and status chips, region. */
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 24px; font-size: .9rem; }
+  .search { position: relative; flex: 1 1 16rem; max-width: 22rem; }
+  .search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 10px; font: inherit; color: var(--fg);
+    background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+  input[type=search] { width: 100%; padding-left: 32px; }
+  select { padding-right: 28px; appearance: none; cursor: pointer;
+    background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center; }
+  input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
+  .seg { display: inline-flex; padding: 2px; border-radius: 8px; background: var(--chip); }
+  .seg button { height: 30px; padding: 0 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line);
+    border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+  .chip:hover { border-color: var(--muted); }
+  .chip[aria-pressed="true"] { background: var(--chip); border-color: transparent; color: var(--fg); font-weight: 500; }
+  .chip .dot { box-shadow: inset 0 0 0 1.5px var(--c); }
+  .chip[aria-pressed="true"] .dot { background: var(--c); }
+  .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+  button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #count { margin-left: auto; }
+
+  /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
+     table scrolls sideways and the resort column sticks. */
+  .table { margin: 16px 0 24px; overflow-x: auto; }
+  @media (min-width: 1000px) { .table { overflow: visible; } }
+  table { border-collapse: separate; border-spacing: 0; width: 100%; }
+  th, td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: top; }
+  thead th { position: sticky; top: 0; z-index: 2; background: var(--bg); vertical-align: bottom;
+    font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
+  th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td:first-child, th:first-child { position: sticky; left: 0; z-index: 1; background: var(--bg); }
+  thead th:first-child { z-index: 3; }
+  td:first-child { white-space: normal; min-width: 11rem; }
+  tbody tr:hover td { background: var(--row-hover); }
   th button { font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; background: none;
     border: 0; padding: 0; cursor: pointer; }
   th button:hover, th button.sorted { color: var(--fg); }
@@ -26,9 +53,54 @@
   th button.sorted.asc::after { content: " \2191"; }
   th .sub { display: block; text-transform: none; letter-spacing: 0; font-weight: 400; }
   th .sub button + button::before { content: "/"; color: var(--muted); padding: 0 2px; }
-  footer { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 8px; }
-  footer h2 { font-size: 1rem; margin: 20px 0 4px; }
-  footer ul { margin: 0; padding-left: 20px; }
+
+  .resort { display: flex; gap: 8px; align-items: baseline; }
+  .resort .name { font-weight: 500; }
+  .dot { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+  .resort .dot { position: relative; top: -1px; }
+  .sub-line { color: var(--muted); font-size: .8rem; margin-top: 2px; }
+  tr.inactive td:not(:first-child) { color: var(--muted); }
+  tr.inactive .name { color: var(--muted); font-weight: 400; }
+  .big { font-weight: 600; }
+  .fresh { color: var(--accent); font-weight: 600; }
+  td .meter { margin: 6px 0 0 auto; }
+  .danger { display: inline-flex; align-items: center; gap: 6px; }
+  .danger-text { color: var(--muted); font-size: .8rem; }
+  tbody tr { cursor: pointer; }
+  a.name { color: inherit; text-decoration: none; }
+  tr:hover a.name { color: var(--accent); text-decoration: underline; }
+  .mobile-only { display: none; }
+
+  /* Phones: each resort as a card, empty values left out; a select sorts instead of the headers. */
+  @media (max-width: 640px) {
+    .mobile-only { display: inline-block; }
+    .search { flex-basis: 100%; max-width: none; }
+    #region, #sort { flex: 1 1 40%; min-width: 0; }
+    .table { overflow: visible; }
+    thead { display: none; }
+    table, tbody { display: block; }
+    tr { display: flex; flex-wrap: wrap; gap: 10px 0; padding: 14px 0 14px 17px; border-bottom: 1px solid var(--line); }
+    .resort { margin-left: -17px; }
+    tr[hidden] { display: none; }
+    td { position: static; display: block; padding: 0; border: 0; background: none; }
+    td.num { text-align: left; }
+    td.nil { display: none; }
+    td:first-child { flex: 1; min-width: 0; }
+    td.c-region { flex-basis: 100%; order: 1; margin-top: -8px; color: var(--muted); font-size: .85rem; }
+    td.c-region .sub-line { display: inline; font-size: inherit; }
+    td.c-region .sub-line::before { content: " · "; }
+    td.c-value { flex: 0 0 33.33%; order: 2; }
+    td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 2px; color: var(--muted);
+      font-size: .7rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+    .meter { margin-left: 0; }
+    tbody tr:hover td { background: none; }
+  }
+  .empty { padding: 32px 0; text-align: center; color: var(--muted); }
+
+  footer { margin-top: 8px; }
+  footer details { border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; }
+  footer summary { padding: 12px 0; cursor: pointer; font-weight: 600; }
+  footer ul { margin: 0 0 16px; padding-left: 20px; }
   footer li { margin: 4px 0; }
 </style>
 </head>
@@ -43,9 +115,14 @@
     (<a href="sources.html">all sources</a>)
     &middot; <a href="map.html">Map</a></p>
   <div class="tools">
-    <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
-    <select id="country" aria-label="Country"><option value="">All countries</option></select>
+    <div class="search">
+      <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
+    </div>
+    <div class="seg" id="country" role="group" aria-label="Country"></div>
     <select id="region" aria-label="Region"><option value="">All regions</option></select>
+    <select id="sort" class="mobile-only" aria-label="Sort by"></select>
+    <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
   <div class="table">
@@ -53,21 +130,21 @@
     <thead><tr>
       <th><button type="button" data-key="name" class="sorted asc">Resort</button></th>
       <th><button type="button" data-key="region">Region</button></th>
-      <th><button type="button" data-key="mountain">Mountain</button></th>
-      <th><button type="button" data-key="valley">Valley</button></th>
-      <th><button type="button" data-key="fresh">Fresh</button></th>
-      <th>Lifts<span class="sub"><button type="button" data-key="lifts_open">open</button><button type="button" data-key="lifts_total">total</button></span></th>
-      <th>Slopes<span class="sub"><button type="button" data-key="slopes_open">open</button><button type="button" data-key="slopes_total">total</button></span>
+      <th class="num"><button type="button" data-key="mountain">Mountain</button></th>
+      <th class="num"><button type="button" data-key="valley">Valley</button></th>
+      <th class="num"><button type="button" data-key="fresh">Fresh</button></th>
+      <th class="num">Lifts<span class="sub"><button type="button" data-key="lifts_open">open</button><button type="button" data-key="lifts_total">total</button></span></th>
+      <th class="num">Slopes<span class="sub"><button type="button" data-key="slopes_open">open</button><button type="button" data-key="slopes_total">total</button></span>
         <span class="sub">km <button type="button" data-key="km_open">open</button><button type="button" data-key="km_total">total</button></span></th>
       <th><button type="button" data-key="avalanche">Avalanche</button></th>
-      <th>JSON</th>
     </tr></thead>
     <tbody></tbody>
   </table>
+  <p class="empty" id="empty" hidden>No resorts match. <button type="button" id="reset" class="chip">Show all</button></p>
   </div>
   <footer>
-    <p><a href="sources.html">Data sources and credits</a></p>
-    <h2>How to read the numbers</h2>
+    <details>
+    <summary>How to read the numbers</summary>
     <ul class="muted">
       <li>Updated twice a day, at about 07:40 and 12:40 Vienna time (an hour later in summer); runs can start late.</li>
       <li>Villages of one ski area (e.g. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) each show the whole area's numbers: don't add them up.</li>
@@ -84,7 +161,8 @@
         Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.</li>
       <li>Avalanche danger (Tirol, Switzerland and Italy; not other Austrian states) is the highest level of the day in the resort's warning region.</li>
     </ul>
-    <p class="muted">All details and caveats: <a href="https://github.com/mironiasty/snow-conditions#about-the-data">About the data</a>.
+    </details>
+    <p class="muted"><a href="sources.html">Data sources and credits</a> &middot; All details and caveats: <a href="https://github.com/mironiasty/snow-conditions#about-the-data">About the data</a>.
       Contact: <a href="mailto:trail.jewel8860@eagereverest.com">trail.jewel8860@eagereverest.com</a></p>
   </footer>
 </main>
