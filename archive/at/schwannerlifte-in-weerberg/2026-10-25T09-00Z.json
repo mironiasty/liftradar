@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "schwannerlifte-in-weerberg",
+  "country": "at",
+  "name": "Schwannerlifte in Weerberg",
+  "location": {
+    "lat": 47.3021,
+    "lon": 11.6747
+  },
+  "status": null,
+  "fetched_at": "2026-10-25T10:00:55.508106+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": 0,
+    "total": 1,
+    "open_km": 0.0,
+    "total_km": 1
+  },
+  "lifts_updated_at": "2026-10-21T13:35:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Schwannerlifte%20in%20Weerberg_2605"
+  ],
+  "errors": []
+}

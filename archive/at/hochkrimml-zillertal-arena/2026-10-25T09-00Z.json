@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hochkrimml-zillertal-arena",
+  "country": "at",
+  "name": "Hochkrimml - Zillertal Arena",
+  "location": {
+    "lat": 47.2414,
+    "lon": 12.1154
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T10:00:52.643130+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-04-10",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 52
+  },
+  "slopes": {
+    "open": 0,
+    "total": 89,
+    "open_km": 0.0,
+    "total_km": 151
+  },
+  "lifts_updated_at": "2026-10-23T03:44:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Hochkrimml_2910"
+  ],
+  "errors": []
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "kuehtai",
+  "country": "at",
+  "name": "Kühtai",
+  "location": {
+    "lat": 47.2049,
+    "lon": 11.0391
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T10:00:53.970752+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_updated_at": "2026-09-22T11:19:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/K%C3%BChtai_2553"
+  ],
+  "errors": []
+}

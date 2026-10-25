@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hochzillertal-kaltenbach",
+  "country": "at",
+  "name": "Hochzillertal-Kaltenbach",
+  "location": {
+    "lat": 47.2572,
+    "lon": 11.8072
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T10:00:52.967654+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-31",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 25
+  },
+  "slopes": {
+    "open": 0,
+    "total": 32,
+    "open_km": 0.0,
+    "total_km": 55
+  },
+  "lifts_updated_at": "2026-10-19T10:18:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Hochzillertal-Kaltenbach_2179"
+  ],
+  "errors": []
+}

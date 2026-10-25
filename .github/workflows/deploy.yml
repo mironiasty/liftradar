@@ -1,0 +1,21 @@
+# Published with the data to the snow-conditions "data" branch (from
+# snow-fetcher/deploy/). A push only runs workflows of the pushed branch,
+# so this asks main's Pages workflow to rebuild the site with the new data.
+# (workflow_dispatch is one of the events GITHUB_TOKEN is allowed to start.)
+name: Deploy site after data update
+
+on:
+  push:
+    branches: [data]
+
+permissions:
+  actions: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - run: gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

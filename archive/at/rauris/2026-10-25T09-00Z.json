@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "rauris",
+  "country": "at",
+  "name": "Rauris",
+  "location": {
+    "lat": 47.2286,
+    "lon": 12.9941
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T10:00:49.340096+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 33
+  },
+  "lifts_updated_at": "2026-10-23T19:06:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "grossarltal-dorfgastein",
+  "country": "at",
+  "name": "Großarltal - Dorfgastein",
+  "location": {
+    "lat": 47.2374,
+    "lon": 13.2014
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T10:00:49.339765+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 17
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 73
+  },
+  "lifts_updated_at": "2026-10-25T08:41:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/"
+  ],
+  "errors": []
+}

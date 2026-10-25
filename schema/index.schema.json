@@ -181,6 +181,30 @@
       "title": "DangerRating",
       "type": "object"
     },
+    "Location": {
+      "additionalProperties": false,
+      "description": "A point in the ski area (or its main village), for maps.",
+      "properties": {
+        "lat": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Lon",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ],
+      "title": "Location",
+      "type": "object"
+    },
     "ResortReport": {
       "additionalProperties": false,
       "properties": {
@@ -205,6 +229,17 @@
           "minLength": 1,
           "title": "Name",
           "type": "string"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Location"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         },
         "status": {
           "anyOf": [

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "hochzeiger-pitztal",
+  "country": "at",
+  "name": "Hochzeiger - Pitztal",
+  "location": {
+    "lat": 47.1522,
+    "lon": 10.7582
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T10:00:52.893816+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "1900-01-01",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": 0,
+    "total": 21,
+    "open_km": 0.0,
+    "total_km": 54
+  },
+  "lifts_updated_at": "2026-10-19T15:03:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Hochzeiger%20-%20Pitztal_2624"
+  ],
+  "errors": []
+}

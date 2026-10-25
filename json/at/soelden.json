@@ -3,8 +3,12 @@
   "id": "soelden",
   "country": "at",
   "name": "Sölden",
+  "location": {
+    "lat": 46.95,
+    "lon": 10.98
+  },
   "status": "open",
-  "fetched_at": "2026-10-25T08:37:54.798956+01:00",
+  "fetched_at": "2026-10-25T10:00:45.756223+01:00",
   "snow": {
     "mountain_cm": 49,
     "valley_cm": 0,
@@ -17,23 +21,23 @@
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": 4.8,
+        "temperature_c": 7.6,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
-        "depth_cm": 16,
+        "depth_cm": 14,
         "fresh_cm": 0,
-        "temperature_c": -0.1,
+        "temperature_c": 3.9,
         "condition": null
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 14,
+        "depth_cm": 13,
         "fresh_cm": 0,
-        "temperature_c": 3.5,
+        "temperature_c": 4.4,
         "condition": null
       },
       {
@@ -41,7 +45,7 @@
         "elevation_m": 3000,
         "depth_cm": 49,
         "fresh_cm": 3,
-        "temperature_c": -0.9,
+        "temperature_c": -0.2,
         "condition": "Fresh snow"
       }
     ]
@@ -56,7 +60,7 @@
     "open_km": 30.9,
     "total_km": 145
   },
-  "lifts_updated_at": "2026-10-25T08:37:57+01:00",
+  "lifts_updated_at": "2026-10-25T09:56:33+01:00",
   "avalanche": null,
   "sources": [
     "https://www.soelden.com/en/live-information/snow-report",

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "serfaus-fiss-ladis",
+  "country": "at",
+  "name": "Serfaus-Fiss-Ladis",
+  "location": {
+    "lat": 47.0402,
+    "lon": 10.5973
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T10:00:55.716962+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "1900-01-01",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 68
+  },
+  "slopes": {
+    "open": 0,
+    "total": 103,
+    "open_km": 0.0,
+    "total_km": 215
+  },
+  "lifts_updated_at": "2026-10-23T08:17:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Serfaus-Fiss-Ladis_2914"
+  ],
+  "errors": []
+}
