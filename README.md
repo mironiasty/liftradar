@@ -151,26 +151,29 @@ under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 - Until 25 October 2026 the runs were listed in `history/<country>/<resort>.json`; those files
   remain in the `data` branch's git history.
 
-## TRMNL resort list
+## Using it in a TRMNL plugin
 
-`https://snow.miron.asia/trmnl/resorts.json` lists every resort for a TRMNL plugin's
-`xhrSelect` field, generated on each deploy from `json/index.json`
-(`scripts/trmnl_resorts.py`): `[{"Sölden (Tirol, Austria)": "at/soelden"}, …]`, sorted by
-name. The label is shown in the plugin settings; the value is the resort's path.
-
-GitHub Pages only answers GET (POST gets 405) and doesn't handle the CORS preflight the
-CSRF header triggers, so set both options:
+Let the user paste the resort's JSON URL into a text field, and poll that URL:
 
 ```yaml
-- keyname: resort
-  name: Ski resort
-  field_type: xhrSelect
-  endpoint: https://snow.miron.asia/trmnl/resorts.json
-  http_verb: GET
-  exclude_csrf_token: true
+polling_verb: get
+polling_url: "{{ resort_url }}"
+custom_fields:
+- keyname: resort_url
+  name: Resort
+  field_type: string
+  description: The JSON link of your ski resort on snow.miron.asia.
+  help_text: Open <a href="https://snow.miron.asia" target="_blank">snow.miron.asia</a>, search for your
+    resort, right-click its <strong>JSON</strong> link and choose <strong>Copy link address</strong>.
+    It looks like <code>https://snow.miron.asia/json/at/soelden.json</code>.
+  placeholder: https://snow.miron.asia/json/at/soelden.json
 ```
 
-Then poll `https://snow.miron.asia/json/{{ resort }}.json`.
+A dropdown (`xhrSelect`) doesn't work with GitHub Pages: TRMNL loads its options from the
+browser with request headers that need a CORS preflight, which GitHub Pages answers with 405
+(POST too). `trmnl/resorts.json` (generated on deploy by `scripts/trmnl_resorts.py`, in the
+`xhrSelect` format `[{"Sölden (Tirol, Austria)": "at/soelden"}, …]`) is kept for a host that
+can answer the preflight, e.g. a Cloudflare proxy in front of the site.
 
 ## Running locally
 
