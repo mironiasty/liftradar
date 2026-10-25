@@ -34,7 +34,8 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Valle d'Aosta (and Alagna) | [lovevda.it snow bulletin](https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa) |
 | Trentino | [visittrentino.info snow bulletin](https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino) |
 | South Tyrol outside Dolomiti Superski; snow of the South Tyrol DSS areas | [Open Data Hub](https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en) snow report (province's tourism database) |
-| Bormio, Cima Piazzi - San Colombano | [bormioski.eu](https://www.bormioski.eu/info-impianti-e-piste/) (lifts only) |
+| Bormio (with San Colombano), Santa Caterina, Stelvio | [bormio.eu](https://www.bormio.eu/it/live-info/impianti-e-piste) (tourism board) |
+| Livigno | [livigno.eu](https://www.livigno.eu/en/lifts) (tourism board, lifts only) |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
 | Total slope km of the bigger areas | The official size on the resort's own website |
 | Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
