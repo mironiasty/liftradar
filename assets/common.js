@@ -35,7 +35,7 @@ const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "unknown");
 const viennaTime = (iso, options = { dateStyle: "medium", timeStyle: "short" }) =>
   new Date(iso).toLocaleString("de-AT", { timeZone: "Europe/Vienna", ...options });
 
-const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy" };
+const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", cz: "Czechia" };
 const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();
 
 function updatedText(index) {

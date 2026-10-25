@@ -13,7 +13,7 @@ import unicodedata
 from pathlib import Path
 
 # Same names as assets/common.js.
-COUNTRY_NAMES = {"at": "Austria", "ch": "Switzerland", "it": "Italy"}
+COUNTRY_NAMES = {"at": "Austria", "ch": "Switzerland", "it": "Italy", "cz": "Czechia"}
 
 
 def fold(text: str) -> str:

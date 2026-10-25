@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Austria, Switzerland and Italy, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy and Czechia, published at
 [snow.miron.asia](https://snow.miron.asia).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -41,16 +41,19 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | South Tyrol outside Dolomiti Superski; snow of the South Tyrol DSS areas | [Open Data Hub](https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en) snow report (province's tourism database) |
 | Bormio (with San Colombano), Santa Caterina, Stelvio | [bormio.eu](https://www.bormio.eu/it/live-info/impianti-e-piste) (tourism board) |
 | Livigno | [livigno.eu](https://www.livigno.eu/en/lifts) (tourism board, lifts only) |
+| Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
 | Total slope km of the bigger areas | The official size on the resort's own website |
 | Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
 | Avalanche danger, Switzerland | [SLF avalanche bulletin](https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/) |
 | Avalanche danger, South Tyrol and Trentino | [avalanche.report](https://avalanche.report) (Euregio) |
 | Avalanche danger, other Italian regions | [AINEVA](https://bollettini.aineva.it) joint bulletin |
+| Avalanche danger, Krkonoše and Jeseníky (Czechia) | [Horská služba ČR](https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved) (Czech Mountain Rescue), from the EAWS bulletin files on [avalanche.report](https://avalanche.report) |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 | Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
 
-The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI. Bergfex
+The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
+holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI network). Bergfex
 is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Timing
@@ -80,7 +83,8 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Snow
 
 - `mountain_cm` / `valley_cm`: the highest / lowest measuring station (own-website resorts),
-  or the report's max / min depth (Snow Card, SalzburgerLand).
+  or the report's max / min depth (Snow Card, SalzburgerLand, holidayinfo: depth on the slopes).
+- `condition` is in the source's language (e.g. `griffig`, `technický`).
 - Swiss resorts: the resort's own measuring points where it enters them in infosnow (e.g. Verbier).
   Most don't, and then the depths come from the nearest SLF stations, listed in `snow.stations`
   as "<name> (SLF)": an automatic station on the mountain (about 2000–2900 m) and an observer's
@@ -114,13 +118,15 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Lift types and slope difficulties
 
 `lifts_by_type` and `slopes_by_difficulty` are only set for resorts with their own slope map
-(the bigger areas) and for Swiss resorts (from infosnow).
+(the bigger areas), for Swiss resorts (from infosnow) and for Czech resorts (from holidayinfo).
 
 - Lift types (`gondola`, `cable_car`, `chairlift`, `drag_lift`, `carpet`, `funicular`,
   `other`) and difficulties (`easy`, `intermediate`, `difficult`, `ski_route`, `other`) are
   read from the map's display text, so an unusual label can land in `other`. For Swiss resorts
   they come from infosnow's type icons; yellow and orange runs are `ski_route`, mixed
-  colours (blue/red) `other`, and rack railways (e.g. Gornergrat) `other`.
+  colours (blue/red) `other`, and rack railways (e.g. Gornergrat) `other`. For Czech resorts they
+  come from holidayinfo's codes: two-colour and white slopes are `other`; a lift or slope open only
+  on some days (e.g. Wednesday to Sunday) counts as open on those days.
 - km per difficulty are only given when every slope of that difficulty has a length in the
   map, and they don't add up to `slopes.total_km` (the official size, counted differently;
   each difficulty is also rounded up). Some maps have no lengths at all.
@@ -129,7 +135,8 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Avalanche danger
 
-- Tirol, Swiss and Italian resorts. Salzburg and the other Austrian states have no
+- Tirol, Swiss and Italian resorts, and Czech resorts in Krkonoše and Jeseníky (the only
+  regions the Czech Mountain Rescue rates; other Czech areas have `null`). Salzburg and the other Austrian states have no
   machine-readable bulletin, so `avalanche` is `null` for all resorts there (including Lech Zürs
   and Warth-Schröcken in Vorarlberg), and the Snow Card ones in Salzburg (Hochkrimml,
   Königsleiten, Mittersill, Wildkogel).
@@ -143,17 +150,17 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Locations
 
 `location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
-for the glacier resorts, or the main village (looked up on OpenStreetMap) for other Austrian
-and Italian resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
+for the glacier resorts, or the main village (looked up on OpenStreetMap) for other Austrian,
+Italian and Czech resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
 
-`region` is the state, canton or Italian region that point lies in (e.g. `Tirol`, `Valais`,
-`Valle d'Aosta`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
+`region` is the state, canton, Italian region or Czech kraj that point lies in (e.g. `Tirol`, `Valais`,
+`Valle d'Aosta`, `Liberecký kraj`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
 OpenStreetMap; the table filters by it and by `country`. An area spanning a border is listed
 under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 282 of the 309
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 302 of the 346
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run

@@ -1,6 +1,6 @@
 """Write the ski-area outlines shown on the map, from OpenStreetMap.
 
-Reads every `landuse=winter_sports` area in the region from the Overpass API and
+Reads every `landuse=winter_sports` area in the regions from the Overpass API and
 gives each to a resort: an area within 1 km of several resorts' points (SkiWelt,
 Zillertal Arena) is split between them, each getting the part nearest to its
 point; any other area goes to the nearest resort within 2.5 km, or 8 km when the
@@ -26,7 +26,11 @@ from shapely.geometry import LineString, MultiPoint, Point, Polygon, mapping
 from shapely.ops import polygonize, unary_union
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
-BBOX = (45.4, 6.7, 48.9, 16.0)  # south, west, north, east: all resorts with some margin
+# South, west, north, east: all resorts with some margin.
+BBOXES = [
+    (45.4, 6.7, 48.9, 16.0),  # the Alps
+    (48.5, 12.0, 51.1, 18.9),  # Czechia
+]
 
 # Areas split between the given resorts, however far their points are.
 SHARED = {
@@ -43,7 +47,7 @@ MAX_KM = 2.5
 MAX_KM_SAME_NAME = 8.0
 SIMPLIFY_DEG = 0.0002  # about 20 m
 
-# Local equirectangular projection in km, good enough for distances in the Alps.
+# Local equirectangular projection in km, good enough for distances in Central Europe.
 KM_PER_DEG = (111.32 * math.cos(math.radians(47)), 111.32)
 
 
@@ -68,10 +72,10 @@ def words(text: str) -> set[str]:
 
 
 def download() -> list[dict]:
-    south, west, north, east = BBOX
+    boxes = [",".join(map(str, box)) for box in BBOXES]
+    selectors = "".join(f'way["landuse"="winter_sports"]({b});relation["landuse"="winter_sports"]({b});' for b in boxes)
     query = f"""[out:json][timeout:240];
-(way["landuse"="winter_sports"]({south},{west},{north},{east});
- relation["landuse"="winter_sports"]({south},{west},{north},{east}););
+({selectors});
 out geom;"""
     request = urllib.request.Request(
         OVERPASS_URL,
