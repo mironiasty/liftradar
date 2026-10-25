@@ -8,8 +8,8 @@
     "lat": 46.766,
     "lon": 10.5319
   },
-  "status": null,
-  "fetched_at": "2026-10-25T21:15:57.232875+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:22:15.599749+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -69,9 +69,8 @@
   "lifts_updated_at": "2026-10-21T22:47:57+02:00",
   "avalanche": null,
   "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en"
   ],
-  "errors": [
-    "suedtirol: ReadTimeout: "
-  ]
+  "errors": []
 }

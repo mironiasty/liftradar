@@ -1,0 +1,56 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "ladurns",
+  "country": "it",
+  "name": "Ladurns",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.9633,
+    "lon": 11.3537
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T21:22:15.600140+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Montain Station Ladurns",
+        "elevation_m": null,
+        "depth_cm": null,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Vally Station Ladurns",
+        "elevation_m": null,
+        "depth_cm": null,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": 0,
+    "total": 10,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-25T08:33:24.990000+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+  ],
+  "errors": []
+}

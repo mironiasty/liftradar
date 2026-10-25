@@ -1,0 +1,41 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "severak",
+  "country": "cz",
+  "name": "Severák",
+  "region": "Liberecký kraj",
+  "location": {
+    "lat": 50.7836,
+    "lon": 15.17
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:22:15.600275+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": null,
+    "total": 12,
+    "open_km": null,
+    "total_km": 5
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-05T15:04:39+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/severak",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=1&loc=3",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=1&loc=3"
+  ],
+  "errors": []
+}

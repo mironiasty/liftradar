@@ -8,8 +8,8 @@
     "lat": 50.3386,
     "lon": 16.3844
   },
-  "status": null,
-  "fetched_at": "2026-10-25T21:15:57.234058+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:22:31.574866+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,14 +18,22 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 31
+  },
+  "slopes": {
+    "open": null,
+    "total": 47,
+    "open_km": null,
+    "total_km": 27
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
-  "errors": [
-    "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-  ]
+  "sources": [
+    "https://zieleniec.pl/zima/aktualne-warunki"
+  ],
+  "errors": []
 }

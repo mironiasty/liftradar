@@ -1,0 +1,97 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "meran-2000",
+  "country": "it",
+  "name": "Meran 2000",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.6658,
+    "lon": 11.2412
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T21:22:15.599755+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "2.300 m - Kesselberg",
+        "elevation_m": 2300,
+        "depth_cm": 50,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "1.600 m - Falzeben in Avelengo",
+        "elevation_m": 1600,
+        "depth_cm": 42,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "2.000 m - Summit station Piffing",
+        "elevation_m": 2000,
+        "depth_cm": 49,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-25T16:20:58+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+    "https://winter.intermaps.com/meran/data?lang=en"
+  ],
+  "errors": []
+}

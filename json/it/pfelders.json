@@ -8,8 +8,8 @@
     "lat": 46.7953,
     "lon": 11.0895
   },
-  "status": null,
-  "fetched_at": "2026-10-25T21:15:57.233374+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:22:15.600145+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,14 +18,22 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": 13,
+    "open_km": null,
+    "total_km": null
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_updated_at": "2026-09-27T08:41:04.167000+02:00",
   "avalanche": null,
-  "sources": [],
-  "errors": [
-    "suedtirol: ReadTimeout: "
-  ]
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+  ],
+  "errors": []
 }

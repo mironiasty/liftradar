@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "klausberg",
+  "country": "it",
+  "name": "Klausberg",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.996,
+    "lon": 11.9812
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T21:22:15.599720+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": null,
+    "total": 36,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-04-27T23:57:06.367000+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+  ],
+  "errors": []
+}
