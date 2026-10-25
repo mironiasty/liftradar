@@ -9,7 +9,7 @@
     "lon": 7.7428
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T18:16:54.662214+01:00",
+  "fetched_at": "2026-10-25T18:22:33.222059+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -89,12 +89,12 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-25T18:16:00+01:00",
+  "lifts_updated_at": "2026-10-25T18:21:00+01:00",
   "avalanche": null,
   "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",

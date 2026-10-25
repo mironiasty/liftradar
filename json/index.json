@@ -1,6 +1,6 @@
 {
   "$schema": "https://snow.miron.asia/schema/index.schema.json",
-  "generated_at": "2026-10-25T18:17:32+01:00",
+  "generated_at": "2026-10-25T18:23:11+01:00",
   "resorts": [
     {
       "id": "hintertux",
@@ -12,7 +12,7 @@
         "lon": 11.658
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.658944+01:00",
+      "fetched_at": "2026-10-25T18:22:33.218802+01:00",
       "snow": {
         "mountain_cm": 25,
         "valley_cm": 20,
@@ -25,7 +25,7 @@
             "elevation_m": 3250,
             "depth_cm": 25,
             "fresh_cm": null,
-            "temperature_c": -1.5,
+            "temperature_c": -1.7,
             "condition": "grippy/hard powder"
           },
           {
@@ -33,7 +33,7 @@
             "elevation_m": 2660,
             "depth_cm": 20,
             "fresh_cm": null,
-            "temperature_c": 2.7,
+            "temperature_c": 1.6,
             "condition": "grippy/hard powder"
           },
           {
@@ -119,7 +119,7 @@
         "lon": 10.98
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.659027+01:00",
+      "fetched_at": "2026-10-25T18:22:33.218883+01:00",
       "snow": {
         "mountain_cm": 49,
         "valley_cm": 0,
@@ -238,7 +238,7 @@
         "lon": 12.69
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.659046+01:00",
+      "fetched_at": "2026-10-25T18:22:33.218903+01:00",
       "snow": {
         "mountain_cm": 70,
         "valley_cm": 0,
@@ -346,7 +346,7 @@
         "lon": 10.71
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.659063+01:00",
+      "fetched_at": "2026-10-25T18:22:33.218920+01:00",
       "snow": {
         "mountain_cm": 18,
         "valley_cm": 0,
@@ -412,7 +412,7 @@
         "lon": 10.87
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.659075+01:00",
+      "fetched_at": "2026-10-25T18:22:33.218932+01:00",
       "snow": {
         "mountain_cm": 15,
         "valley_cm": 0,
@@ -533,7 +533,7 @@
         "lon": 11.9244
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:00.116602+01:00",
+      "fetched_at": "2026-10-25T18:22:38.800421+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -569,7 +569,7 @@
         "lon": 12.2853
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:00.129543+01:00",
+      "fetched_at": "2026-10-25T18:22:39.534406+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -579,7 +579,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 2
       },
       "slopes": {
@@ -607,7 +607,7 @@
         "lon": 11.303
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:00.134550+01:00",
+      "fetched_at": "2026-10-25T18:22:39.521848+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -645,7 +645,7 @@
         "lon": 12.5802
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:00.124113+01:00",
+      "fetched_at": "2026-10-25T18:22:39.530099+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -655,7 +655,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 9
       },
       "slopes": {
@@ -683,7 +683,7 @@
         "lon": 11.4411
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:01.633325+01:00",
+      "fetched_at": "2026-10-25T18:22:40.087784+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -721,7 +721,7 @@
         "lon": 10.6421
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:01.502494+01:00",
+      "fetched_at": "2026-10-25T18:22:40.902779+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -759,7 +759,7 @@
         "lon": 10.7523
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:01.526459+01:00",
+      "fetched_at": "2026-10-25T18:22:40.861081+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -797,7 +797,7 @@
         "lon": 12.3629
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:01.520772+01:00",
+      "fetched_at": "2026-10-25T18:22:40.892596+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -807,7 +807,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 2
       },
       "slopes": {
@@ -835,7 +835,7 @@
         "lon": 12.2433
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:01.531720+01:00",
+      "fetched_at": "2026-10-25T18:22:40.852783+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -921,7 +921,7 @@
         "lon": 11.8785
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:01.542298+01:00",
+      "fetched_at": "2026-10-25T18:22:40.879350+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -956,7 +956,7 @@
         "lon": 12.5074
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:03.299320+01:00",
+      "fetched_at": "2026-10-25T18:22:41.842634+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -966,7 +966,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 2
       },
       "slopes": {
@@ -994,7 +994,7 @@
         "lon": 11.7286
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:03.311082+01:00",
+      "fetched_at": "2026-10-25T18:22:41.876887+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1076,7 +1076,7 @@
         "lon": 10.9681
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:03.261707+01:00",
+      "fetched_at": "2026-10-25T18:22:41.864642+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1086,7 +1086,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 8
       },
       "slopes": {
@@ -1114,7 +1114,7 @@
         "lon": 10.9484
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:03.290321+01:00",
+      "fetched_at": "2026-10-25T18:22:42.639382+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1152,7 +1152,7 @@
         "lon": 11.3189
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:03.266119+01:00",
+      "fetched_at": "2026-10-25T18:22:42.618227+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1162,7 +1162,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -1190,7 +1190,7 @@
         "lon": 12.3178
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:04.124141+01:00",
+      "fetched_at": "2026-10-25T18:22:43.161016+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1276,7 +1276,7 @@
         "lon": 10.709
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:04.374069+01:00",
+      "fetched_at": "2026-10-25T18:22:43.168830+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1286,7 +1286,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": {
@@ -1314,7 +1314,7 @@
         "lon": 11.8222
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:04.365501+01:00",
+      "fetched_at": "2026-10-25T18:22:43.182916+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1396,7 +1396,7 @@
         "lon": 10.1388
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:04.384112+01:00",
+      "fetched_at": "2026-10-25T18:22:43.278700+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1434,7 +1434,7 @@
         "lon": 12.0489
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:04.396550+01:00",
+      "fetched_at": "2026-10-25T18:22:44.151405+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1497,7 +1497,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T18:17:14+01:00",
+      "lifts_updated_at": "2026-10-25T18:21:32+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Gerlos_2908",
@@ -1516,7 +1516,7 @@
         "lon": 11.9151
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:05.688116+01:00",
+      "fetched_at": "2026-10-25T18:22:44.132651+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1526,7 +1526,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 52
       },
       "slopes": {
@@ -1554,7 +1554,7 @@
         "lon": 11.5285
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:05.704512+01:00",
+      "fetched_at": "2026-10-25T18:22:44.140063+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1592,7 +1592,7 @@
         "lon": 12.5972
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:05.695888+01:00",
+      "fetched_at": "2026-10-25T18:22:44.597064+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1602,7 +1602,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 17
       },
       "slopes": {
@@ -1631,7 +1631,7 @@
         "lon": 11.1798
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:06.142830+01:00",
+      "fetched_at": "2026-10-25T18:22:45.159685+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1669,7 +1669,7 @@
         "lon": 11.703
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:06.526215+01:00",
+      "fetched_at": "2026-10-25T18:22:45.982732+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1707,7 +1707,7 @@
         "lon": 11.7531
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:07.126480+01:00",
+      "fetched_at": "2026-10-25T18:22:46.020191+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1745,7 +1745,7 @@
         "lon": 12.1154
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:07.117527+01:00",
+      "fetched_at": "2026-10-25T18:22:46.002787+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1808,7 +1808,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T18:17:14+01:00",
+      "lifts_updated_at": "2026-10-25T18:21:32+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Hochkrimml_2910",
@@ -1827,7 +1827,7 @@
         "lon": 10.8927
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:07.758015+01:00",
+      "fetched_at": "2026-10-25T18:22:47.089882+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1865,7 +1865,7 @@
         "lon": 10.7582
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:08.423906+01:00",
+      "fetched_at": "2026-10-25T18:22:48.052556+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1903,7 +1903,7 @@
         "lon": 11.8072
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:08.769610+01:00",
+      "fetched_at": "2026-10-25T18:22:48.010340+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1941,7 +1941,7 @@
         "lon": 12.1611
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:08.961656+01:00",
+      "fetched_at": "2026-10-25T18:22:47.997587+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2027,7 +2027,7 @@
         "lon": 11.6926
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:09.323951+01:00",
+      "fetched_at": "2026-10-25T18:22:48.681102+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2037,7 +2037,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 2
       },
       "slopes": {
@@ -2065,7 +2065,7 @@
         "lon": 10.6753
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:09.319770+01:00",
+      "fetched_at": "2026-10-25T18:22:48.670397+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2075,7 +2075,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -2103,7 +2103,7 @@
         "lon": 10.3094
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:09.741382+01:00",
+      "fetched_at": "2026-10-25T18:22:49.212728+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2185,7 +2185,7 @@
         "lon": 10.3649
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:10.300192+01:00",
+      "fetched_at": "2026-10-25T18:22:49.366105+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2195,7 +2195,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 1
       },
       "slopes": {
@@ -2223,7 +2223,7 @@
         "lon": 10.3385
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:11.089858+01:00",
+      "fetched_at": "2026-10-25T18:22:49.987827+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2233,7 +2233,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 10
       },
       "slopes": {
@@ -2261,7 +2261,7 @@
         "lon": 11.6959
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:11.064915+01:00",
+      "fetched_at": "2026-10-25T18:22:50.161361+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2271,7 +2271,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 5
       },
       "slopes": {
@@ -2299,7 +2299,7 @@
         "lon": 11.1427
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:11.594302+01:00",
+      "fetched_at": "2026-10-25T18:22:50.579522+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2337,7 +2337,7 @@
         "lon": 11.7645
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:11.601785+01:00",
+      "fetched_at": "2026-10-25T18:22:50.635157+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2375,7 +2375,7 @@
         "lon": 12.4293
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:12.239386+01:00",
+      "fetched_at": "2026-10-25T18:22:51.306337+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2457,7 +2457,7 @@
         "lon": 11.6435
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:12.486246+01:00",
+      "fetched_at": "2026-10-25T18:22:51.333935+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2467,7 +2467,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 2
       },
       "slopes": {
@@ -2495,7 +2495,7 @@
         "lon": 12.1221
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:12.900136+01:00",
+      "fetched_at": "2026-10-25T18:22:52.127569+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2558,7 +2558,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T18:17:14+01:00",
+      "lifts_updated_at": "2026-10-25T18:21:32+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten_2909",
@@ -2577,7 +2577,7 @@
         "lon": 12.4362
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:12.923556+01:00",
+      "fetched_at": "2026-10-25T18:22:52.105273+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2615,7 +2615,7 @@
         "lon": 11.0391
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:13.527776+01:00",
+      "fetched_at": "2026-10-25T18:22:52.111755+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2625,7 +2625,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 12
       },
       "slopes": {
@@ -2653,7 +2653,7 @@
         "lon": 10.6246
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:13.632369+01:00",
+      "fetched_at": "2026-10-25T18:22:52.650079+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2663,7 +2663,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 7
       },
       "slopes": {
@@ -2691,7 +2691,7 @@
         "lon": 10.8469
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:13.707352+01:00",
+      "fetched_at": "2026-10-25T18:22:52.800427+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2729,7 +2729,7 @@
         "lon": 12.7689
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:14.320239+01:00",
+      "fetched_at": "2026-10-25T18:22:53.359026+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2800,7 +2800,7 @@
         "lon": 11.8603
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:15.073621+01:00",
+      "fetched_at": "2026-10-25T18:22:53.674217+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2882,7 +2882,7 @@
         "lon": 12.4816
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:16.195076+01:00",
+      "fetched_at": "2026-10-25T18:22:54.416627+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2964,7 +2964,7 @@
         "lon": 11.3775
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:16.182709+01:00",
+      "fetched_at": "2026-10-25T18:22:55.181204+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3002,7 +3002,7 @@
         "lon": 10.5468
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:16.331293+01:00",
+      "fetched_at": "2026-10-25T18:22:55.163752+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3084,7 +3084,7 @@
         "lon": 10.6196
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:11.070870+01:00",
+      "fetched_at": "2026-10-25T18:22:55.379323+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3094,7 +3094,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 5
       },
       "slopes": {
@@ -3122,7 +3122,7 @@
         "lon": 12.3447
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:17.963911+01:00",
+      "fetched_at": "2026-10-25T18:22:55.735895+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3200,7 +3200,7 @@
         "lon": 10.5422
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:17.947838+01:00",
+      "fetched_at": "2026-10-25T18:22:56.365611+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3238,7 +3238,7 @@
         "lon": 10.9692
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:17.933993+01:00",
+      "fetched_at": "2026-10-25T18:22:56.726981+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3268,7 +3268,7 @@
         "lon": 11.399
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:18.862309+01:00",
+      "fetched_at": "2026-10-25T18:22:57.206623+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3298,7 +3298,7 @@
         "lon": 11.0862
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:19.326935+01:00",
+      "fetched_at": "2026-10-25T18:22:57.626453+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3380,7 +3380,7 @@
         "lon": 12.6169
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:19.780428+01:00",
+      "fetched_at": "2026-10-25T18:22:57.762083+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3390,7 +3390,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 5
       },
       "slopes": {
@@ -3418,7 +3418,7 @@
         "lon": 11.4107
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:19.784836+01:00",
+      "fetched_at": "2026-10-25T18:22:57.920747+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3456,7 +3456,7 @@
         "lon": 11.2105
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:20.109041+01:00",
+      "fetched_at": "2026-10-25T18:22:58.008188+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3494,7 +3494,7 @@
         "lon": 11.7433
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:20.296300+01:00",
+      "fetched_at": "2026-10-25T18:22:58.563378+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3576,7 +3576,7 @@
         "lon": 11.7513
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:20.851813+01:00",
+      "fetched_at": "2026-10-25T18:22:58.866452+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3586,7 +3586,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -3614,7 +3614,7 @@
         "lon": 11.2
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:20.889980+01:00",
+      "fetched_at": "2026-10-25T18:22:58.948722+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3652,7 +3652,7 @@
         "lon": 10.4427
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:21.112498+01:00",
+      "fetched_at": "2026-10-25T18:22:59.181823+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3690,7 +3690,7 @@
         "lon": 12.2501
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:21.269997+01:00",
+      "fetched_at": "2026-10-25T18:22:59.388847+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3776,7 +3776,7 @@
         "lon": 11.3455
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:21.441064+01:00",
+      "fetched_at": "2026-10-25T18:22:59.659203+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3814,7 +3814,7 @@
         "lon": 12.0923
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:21.565244+01:00",
+      "fetched_at": "2026-10-25T18:22:59.955159+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3824,7 +3824,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -3852,7 +3852,7 @@
         "lon": 11.6747
       },
       "status": null,
-      "fetched_at": "2026-10-25T18:17:22.441255+01:00",
+      "fetched_at": "2026-10-25T18:23:00.502591+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3890,7 +3890,7 @@
         "lon": 10.5046
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:22.452071+01:00",
+      "fetched_at": "2026-10-25T18:23:00.557300+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3900,7 +3900,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 10
       },
       "slopes": {
@@ -3928,7 +3928,7 @@
         "lon": 10.5973
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:22.884176+01:00",
+      "fetched_at": "2026-10-25T18:23:01.123705+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3967,7 +3967,7 @@
         "lon": 11.38
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:23.222213+01:00",
+      "fetched_at": "2026-10-25T18:23:01.367065+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4028,7 +4028,7 @@
         "lon": 12.4586
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:23.585965+01:00",
+      "fetched_at": "2026-10-25T18:23:01.865661+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4038,7 +4038,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 3
       },
       "slopes": {
@@ -4066,7 +4066,7 @@
         "lon": 10.4155
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:23.832139+01:00",
+      "fetched_at": "2026-10-25T18:23:01.853245+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4076,7 +4076,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -4104,7 +4104,7 @@
         "lon": 12.506
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:24.339988+01:00",
+      "fetched_at": "2026-10-25T18:23:02.175468+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4114,7 +4114,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 1
       },
       "slopes": {
@@ -4142,7 +4142,7 @@
         "lon": 12.3837
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:24.367714+01:00",
+      "fetched_at": "2026-10-25T18:23:02.180040+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4152,7 +4152,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 7
       },
       "slopes": {
@@ -4180,7 +4180,7 @@
         "lon": 12.3787
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:24.329627+01:00",
+      "fetched_at": "2026-10-25T18:23:02.479084+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4190,7 +4190,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 7
       },
       "slopes": {
@@ -4218,7 +4218,7 @@
         "lon": 12.193
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:24.630639+01:00",
+      "fetched_at": "2026-10-25T18:23:03.050771+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4304,7 +4304,7 @@
         "lon": 11.7906
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:25.180164+01:00",
+      "fetched_at": "2026-10-25T18:23:03.347453+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4314,7 +4314,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 10
       },
       "slopes": {
@@ -4342,7 +4342,7 @@
         "lon": 12.4276
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:25.338582+01:00",
+      "fetched_at": "2026-10-25T18:23:03.538924+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4381,7 +4381,7 @@
         "lon": 12.5702
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:25.636486+01:00",
+      "fetched_at": "2026-10-25T18:23:03.611791+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4391,7 +4391,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 14
       },
       "slopes": {
@@ -4420,7 +4420,7 @@
         "lon": 11.1087
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:17:26.080631+01:00",
+      "fetched_at": "2026-10-25T18:23:03.623647+01:00",
       "snow": {
         "mountain_cm": 20,
         "valley_cm": null,
@@ -4502,7 +4502,7 @@
         "lon": 10.9427
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:26.326072+01:00",
+      "fetched_at": "2026-10-25T18:23:04.438217+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4540,7 +4540,7 @@
         "lon": 12.0658
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:26.492537+01:00",
+      "fetched_at": "2026-10-25T18:23:04.450337+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4578,7 +4578,7 @@
         "lon": 10.9565
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:27.055158+01:00",
+      "fetched_at": "2026-10-25T18:23:04.709717+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4588,7 +4588,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 3
       },
       "slopes": {
@@ -4616,7 +4616,7 @@
         "lon": 10.8927
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:27.047814+01:00",
+      "fetched_at": "2026-10-25T18:23:04.735863+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4654,7 +4654,7 @@
         "lon": 11.5898
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:27.039660+01:00",
+      "fetched_at": "2026-10-25T18:23:04.777916+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4664,7 +4664,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 1
       },
       "slopes": {
@@ -4692,7 +4692,7 @@
         "lon": 12.2138
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:27.106353+01:00",
+      "fetched_at": "2026-10-25T18:23:04.834312+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4778,7 +4778,7 @@
         "lon": 12.0824
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:27.353590+01:00",
+      "fetched_at": "2026-10-25T18:23:05.521047+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4788,7 +4788,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 45
       },
       "slopes": {
@@ -4817,7 +4817,7 @@
         "lon": 12.2852
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:17:28.231230+01:00",
+      "fetched_at": "2026-10-25T18:23:05.799494+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4827,7 +4827,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 3
       },
       "slopes": {
@@ -4855,7 +4855,7 @@
         "lon": 11.8992
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:28.224641+01:00",
+      "fetched_at": "2026-10-25T18:23:05.920463+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4918,7 +4918,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-25T18:17:14+01:00",
+      "lifts_updated_at": "2026-10-25T18:21:32+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Zell%20am%20Ziller%20-%20Zillertal%20Arena_86",
@@ -4937,7 +4937,7 @@
         "lon": 13.346
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307087+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260419+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4947,7 +4947,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": null,
@@ -4970,7 +4970,7 @@
         "lon": 13.4333
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307189+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260510+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5055,7 +5055,7 @@
         "lon": 13.0951
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307264+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260579+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5065,7 +5065,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -5093,7 +5093,7 @@
         "lon": 13.0952
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307299+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260613+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5103,7 +5103,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 18
       },
       "slopes": {
@@ -5131,7 +5131,7 @@
         "lon": 13.0023
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307327+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260640+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5170,7 +5170,7 @@
         "lon": 13.0986
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307380+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260688+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5209,7 +5209,7 @@
         "lon": 13.3976
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307445+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260728+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5242,7 +5242,7 @@
         "lon": 13.5709
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307479+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260758+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5280,7 +5280,7 @@
         "lon": 13.2338
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307536+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260813+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5290,7 +5290,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -5318,7 +5318,7 @@
         "lon": 13.5137
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307562+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260840+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5351,7 +5351,7 @@
         "lon": 13.3842
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307595+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260869+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5390,7 +5390,7 @@
         "lon": 13.1953
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307659+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260920+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5428,7 +5428,7 @@
         "lon": 13.1029
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307707+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260962+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5438,7 +5438,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 1
       },
       "slopes": {
@@ -5466,7 +5466,7 @@
         "lon": 13.1609
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307733+01:00",
+      "fetched_at": "2026-10-25T18:22:37.260986+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5504,7 +5504,7 @@
         "lon": 13.0395
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307774+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261037+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5514,7 +5514,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 1
       },
       "slopes": {
@@ -5542,7 +5542,7 @@
         "lon": 13.2014
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307798+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261062+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5581,7 +5581,7 @@
         "lon": 12.4195
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307846+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261110+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5611,7 +5611,7 @@
         "lon": 13.6157
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307872+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261162+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5683,7 +5683,7 @@
         "lon": 12.6934
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307905+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261196+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5693,7 +5693,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 10
       },
       "slopes": null,
@@ -5716,7 +5716,7 @@
         "lon": 13.4007
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307927+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261223+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5746,7 +5746,7 @@
         "lon": 12.9027
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.307952+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261249+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5785,7 +5785,7 @@
         "lon": 13.6937
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.307984+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261280+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5795,7 +5795,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": null,
@@ -5818,7 +5818,7 @@
         "lon": 13.6797
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308004+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261299+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5851,7 +5851,7 @@
         "lon": 13.1249
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308032+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261327+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5890,7 +5890,7 @@
         "lon": 13.557
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308063+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261357+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5978,7 +5978,7 @@
         "lon": 13.4
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308086+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261385+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6016,7 +6016,7 @@
         "lon": 13.4417
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308130+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261432+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6049,7 +6049,7 @@
         "lon": 12.9941
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308160+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261462+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6126,7 +6126,7 @@
         "lon": 13.4608
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308190+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261490+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6211,7 +6211,7 @@
         "lon": 12.8481
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308216+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261514+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6244,7 +6244,7 @@
         "lon": 12.7376
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308331+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261543+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6282,7 +6282,7 @@
         "lon": 13.3966
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308377+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261588+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6321,7 +6321,7 @@
         "lon": 12.6364
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308433+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261621+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6409,7 +6409,7 @@
         "lon": 13.0586
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.308466+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261648+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6419,7 +6419,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 3
       },
       "slopes": {
@@ -6448,7 +6448,7 @@
         "lon": 13.201
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308500+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261680+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6487,7 +6487,7 @@
         "lon": 13.3652
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.308551+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261727+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6497,7 +6497,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 3
       },
       "slopes": null,
@@ -6520,7 +6520,7 @@
         "lon": 12.7303
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.308571+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261748+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6530,7 +6530,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -6558,7 +6558,7 @@
         "lon": 12.6261
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:58.308593+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261769+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6568,7 +6568,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 8
       },
       "slopes": null,
@@ -6591,7 +6591,7 @@
         "lon": 13.3032
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308611+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261787+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6630,7 +6630,7 @@
         "lon": 13.2725
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308659+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261834+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6668,7 +6668,7 @@
         "lon": 13.4525
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308699+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261874+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6701,7 +6701,7 @@
         "lon": 13.7264
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308728+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261902+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6739,7 +6739,7 @@
         "lon": 13.6179
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308766+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261940+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6777,7 +6777,7 @@
         "lon": 13.7223
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:58.308805+01:00",
+      "fetched_at": "2026-10-25T18:22:37.261978+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6815,7 +6815,7 @@
         "lon": 13.7984
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:27.612176+01:00",
+      "fetched_at": "2026-10-25T18:23:05.338644+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6896,7 +6896,7 @@
         "lon": 13.9143
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:27.658104+01:00",
+      "fetched_at": "2026-10-25T18:23:05.449664+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6977,7 +6977,7 @@
         "lon": 13.2745
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:27.950867+01:00",
+      "fetched_at": "2026-10-25T18:23:05.451583+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7052,7 +7052,7 @@
         "lon": 13.8765
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:28.355589+01:00",
+      "fetched_at": "2026-10-25T18:23:06.169235+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7135,7 +7135,7 @@
         "lon": 13.1706
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:28.405560+01:00",
+      "fetched_at": "2026-10-25T18:23:06.394599+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7173,7 +7173,7 @@
         "lon": 13.4589
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:28.810647+01:00",
+      "fetched_at": "2026-10-25T18:23:06.512369+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7254,7 +7254,7 @@
         "lon": 13.0145
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:28.803854+01:00",
+      "fetched_at": "2026-10-25T18:23:06.524487+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7335,7 +7335,7 @@
         "lon": 14.9564
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:28.776207+01:00",
+      "fetched_at": "2026-10-25T18:23:06.578971+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7373,7 +7373,7 @@
         "lon": 13.718
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:29.169321+01:00",
+      "fetched_at": "2026-10-25T18:23:06.967482+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7440,7 +7440,7 @@
         "lon": 13.2902
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:17:30.019242+01:00",
+      "fetched_at": "2026-10-25T18:23:07.182016+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7511,7 +7511,7 @@
         "lon": 9.9197
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660426+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220256+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7591,7 +7591,7 @@
         "lon": 9.8711
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660624+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220444+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7667,7 +7667,7 @@
         "lon": 9.9187
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660650+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220472+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7743,7 +7743,7 @@
         "lon": 9.7379
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660664+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220490+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7827,7 +7827,7 @@
         "lon": 10.0589
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660675+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220503+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7903,7 +7903,7 @@
         "lon": 10.0256
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660689+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220517+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7983,7 +7983,7 @@
         "lon": 9.891
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660702+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220530+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8066,7 +8066,7 @@
         "lon": 14.0571
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660714+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220542+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8147,7 +8147,7 @@
         "lon": 14.3682
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660727+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220555+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8223,7 +8223,7 @@
         "lon": 14.1196
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660738+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220566+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8293,7 +8293,7 @@
         "lon": 14.2045
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660750+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220578+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8363,7 +8363,7 @@
         "lon": 14.0066
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660763+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220591+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8440,7 +8440,7 @@
         "lon": 15.79
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660775+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220603+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8504,7 +8504,7 @@
         "lon": 13.921
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660786+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220613+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8584,7 +8584,7 @@
         "lon": 13.9982
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660798+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220622+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8658,7 +8658,7 @@
         "lon": 14.9183
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660810+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220635+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8730,7 +8730,7 @@
         "lon": 15.1516
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660822+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220649+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8800,7 +8800,7 @@
         "lon": 15.3756
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660835+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220661+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8870,7 +8870,7 @@
         "lon": 12.8408
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660846+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220672+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8947,7 +8947,7 @@
         "lon": 13.7264
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660855+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220681+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9019,7 +9019,7 @@
         "lon": 14.6741
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660865+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220691+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9089,7 +9089,7 @@
         "lon": 14.7244
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660877+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220704+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9165,7 +9165,7 @@
         "lon": 14.1712
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660889+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220714+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9221,7 +9221,7 @@
         "lon": 10.2664
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660904+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220730+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9299,7 +9299,7 @@
         "lon": 10.1401
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660928+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220754+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9377,7 +9377,7 @@
         "lon": 10.1833
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660950+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220776+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9454,7 +9454,7 @@
         "lon": 7.5604
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.660969+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220793+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9550,7 +9550,7 @@
         "lon": 8.6067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.660987+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220813+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -9569,7 +9569,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 9
       },
       "slopes": {
@@ -9600,7 +9600,7 @@
         "lon": 7.3947
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661002+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220829+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9706,7 +9706,7 @@
         "lon": 7.4818
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661015+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220842+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9786,7 +9786,7 @@
         "lon": 9.6799
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661070+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220895+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9892,7 +9892,7 @@
         "lon": 7.9844
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661089+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220917+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9994,7 +9994,7 @@
         "lon": 8.1611
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661106+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220931+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10082,7 +10082,7 @@
         "lon": 8.4927
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661125+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220948+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -10165,7 +10165,7 @@
         "lon": 8.8197
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661149+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220968+01:00",
       "snow": {
         "mountain_cm": 2,
         "valley_cm": null,
@@ -10232,7 +10232,7 @@
         "lon": 9.3093
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661161+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220981+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10320,7 +10320,7 @@
         "lon": 6.8712
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661173+01:00",
+      "fetched_at": "2026-10-25T18:22:33.220993+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10412,7 +10412,7 @@
         "lon": 7.1067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661193+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221014+01:00",
       "snow": {
         "mountain_cm": 13,
         "valley_cm": null,
@@ -10431,7 +10431,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -10462,7 +10462,7 @@
         "lon": 7.1687
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661206+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221026+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10554,7 +10554,7 @@
         "lon": 9.8161
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661222+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221041+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10636,7 +10636,7 @@
         "lon": 7.4808
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661236+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221058+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10741,7 +10741,7 @@
         "lon": 9.9836
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661251+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221071+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10830,7 +10830,7 @@
         "lon": 7.5326
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661264+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221082+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10914,7 +10914,7 @@
         "lon": 7.7806
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661280+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221097+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10996,7 +10996,7 @@
         "lon": 9.1723
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661292+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221109+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11082,7 +11082,7 @@
         "lon": 7.6063
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661306+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221161+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11168,7 +11168,7 @@
         "lon": 7.5664
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661322+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221180+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11260,7 +11260,7 @@
         "lon": 7.4784
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661336+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221196+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -11279,7 +11279,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 5
       },
       "slopes": {
@@ -11310,7 +11310,7 @@
         "lon": 9.2803
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661348+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221212+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11387,7 +11387,7 @@
         "lon": 7.2056
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661361+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221226+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11475,7 +11475,7 @@
         "lon": 8.9664
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661378+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221241+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11485,7 +11485,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": {
@@ -11513,7 +11513,7 @@
         "lon": 7.8415
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661411+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221254+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11599,7 +11599,7 @@
         "lon": 7.5736
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661459+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221310+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11696,7 +11696,7 @@
         "lon": 7.0767
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661480+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221328+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11788,7 +11788,7 @@
         "lon": 7.2838
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661497+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221347+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11882,7 +11882,7 @@
         "lon": 8.8089
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661512+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221371+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11980,7 +11980,7 @@
         "lon": 9.6534
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661523+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221383+01:00",
       "snow": {
         "mountain_cm": 5,
         "valley_cm": 6,
@@ -12007,7 +12007,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -12038,7 +12038,7 @@
         "lon": 7.2896
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661538+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221394+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12122,7 +12122,7 @@
         "lon": 8.4829
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661552+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221411+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12212,7 +12212,7 @@
         "lon": 7.155
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661566+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221424+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12288,7 +12288,7 @@
         "lon": 7.0994
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661581+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221439+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12376,7 +12376,7 @@
         "lon": 7.219
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661593+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221450+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12456,7 +12456,7 @@
         "lon": 9.2718
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661607+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221464+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12552,7 +12552,7 @@
         "lon": 7.7778
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661624+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221481+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12650,7 +12650,7 @@
         "lon": 7.437
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661635+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221493+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12742,7 +12742,7 @@
         "lon": 9.5577
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661647+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221508+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12834,7 +12834,7 @@
         "lon": 7.1515
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661664+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221522+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12920,7 +12920,7 @@
         "lon": 7.0064
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661678+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221536+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13012,7 +13012,7 @@
         "lon": 7.0972
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661694+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221552+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13090,7 +13090,7 @@
         "lon": 6.9447
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661708+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221564+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13164,7 +13164,7 @@
         "lon": 7.629
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661720+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221579+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13256,7 +13256,7 @@
         "lon": 7.0176
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661736+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221593+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13346,7 +13346,7 @@
         "lon": 8.1955
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661750+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221604+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13432,7 +13432,7 @@
         "lon": 8.2684
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661768+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221624+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13510,7 +13510,7 @@
         "lon": 7.8265
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661810+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221666+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13588,7 +13588,7 @@
         "lon": 6.8581
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661822+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221678+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13674,7 +13674,7 @@
         "lon": 7.2914
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661839+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221697+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13774,7 +13774,7 @@
         "lon": 9.1022
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661856+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221709+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13860,7 +13860,7 @@
         "lon": 7.1606
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661869+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221725+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13944,7 +13944,7 @@
         "lon": 9.3868
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661881+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221737+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14036,7 +14036,7 @@
         "lon": 7.9291
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661893+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221749+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14129,7 +14129,7 @@
         "lon": 7.9387
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661907+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221765+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14211,7 +14211,7 @@
         "lon": 9.4099
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.661923+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221778+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -14230,7 +14230,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -14261,7 +14261,7 @@
         "lon": 7.2884
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661937+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221792+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14343,7 +14343,7 @@
         "lon": 10.2974
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661952+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221806+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14437,7 +14437,7 @@
         "lon": 8.0341
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661966+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221822+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14523,7 +14523,7 @@
         "lon": 9.3234
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661980+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221836+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14615,7 +14615,7 @@
         "lon": 7.6144
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.661994+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221847+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14713,7 +14713,7 @@
         "lon": 9.819
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662013+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221864+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14821,7 +14821,7 @@
         "lon": 7.3661
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662025+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221876+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14903,7 +14903,7 @@
         "lon": 9.3605
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662037+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221887+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -14922,7 +14922,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -14953,7 +14953,7 @@
         "lon": 9.6067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662048+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221898+01:00",
       "snow": {
         "mountain_cm": 2,
         "valley_cm": 6,
@@ -14980,7 +14980,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": {
@@ -15011,7 +15011,7 @@
         "lon": 7.8014
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662065+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221911+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15103,7 +15103,7 @@
         "lon": 10.3354
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662082+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221929+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -15122,7 +15122,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -15153,7 +15153,7 @@
         "lon": 7.2338
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662093+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221942+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15233,7 +15233,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T18:17:00+01:00",
+      "lifts_updated_at": "2026-10-25T18:22:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox"
@@ -15250,7 +15250,7 @@
         "lon": 7.5342
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662136+01:00",
+      "fetched_at": "2026-10-25T18:22:33.221983+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15343,7 +15343,7 @@
         "lon": 7.186
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662154+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222000+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -15362,7 +15362,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 5
       },
       "slopes": {
@@ -15393,7 +15393,7 @@
         "lon": 7.0549
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662171+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222018+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15489,7 +15489,7 @@
         "lon": 7.9043
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662188+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222033+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15567,7 +15567,7 @@
         "lon": 9.3421
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662200+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222047+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15643,7 +15643,7 @@
         "lon": 7.7428
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662214+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222059+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15723,12 +15723,12 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T18:16:00+01:00",
+      "lifts_updated_at": "2026-10-25T18:21:00+01:00",
       "avalanche": null,
       "sources": [
+        "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
-        "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
         "https://measurement-api.slf.ch/public/api/imis/daily-snow",
         "https://measurement-api.slf.ch/public/api/study-plot/measurements",
         "https://www.slf.ch/en/services-and-products/slf-data-service",
@@ -15746,7 +15746,7 @@
         "lon": 9.96
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662232+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222080+01:00",
       "snow": {
         "mountain_cm": 3,
         "valley_cm": null,
@@ -15765,7 +15765,7 @@
         ]
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": {
@@ -15796,7 +15796,7 @@
         "lon": 8.5939
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662248+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222096+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15882,7 +15882,7 @@
         "lon": 8.4013
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662269+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222136+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15977,7 +15977,7 @@
         "lon": 12.1323
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662284+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222154+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16053,7 +16053,7 @@
         "lon": 11.9583
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662295+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222167+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16135,7 +16135,7 @@
         "lon": 11.874
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662303+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222175+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16211,7 +16211,7 @@
         "lon": 11.7601
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662312+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222185+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16328,7 +16328,7 @@
         "lon": 11.6179
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662318+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222193+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16433,7 +16433,7 @@
         "lon": 11.7711
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662325+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222203+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16513,7 +16513,7 @@
         "lon": 11.5712
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662337+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222210+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16592,7 +16592,7 @@
         "lon": 11.8741
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662347+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222220+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16667,7 +16667,7 @@
         "lon": 12.3871
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662353+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222228+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16761,7 +16761,7 @@
         "lon": 11.4605
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662362+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222237+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16837,7 +16837,7 @@
         "lon": 11.526
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662369+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222244+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16936,7 +16936,7 @@
         "lon": 11.8028
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662375+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222252+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17016,7 +17016,7 @@
         "lon": 11.6757
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662383+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222258+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17097,7 +17097,7 @@
         "lon": 11.662
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662406+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222264+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17178,7 +17178,7 @@
         "lon": 11.7917
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662414+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222272+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17254,7 +17254,7 @@
         "lon": 12.0437
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662424+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222278+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17325,7 +17325,7 @@
         "lon": 7.6304
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662432+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222286+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17403,7 +17403,7 @@
         "lon": 6.9462
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662446+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222300+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17413,7 +17413,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 18
       },
       "slopes": {
@@ -17441,7 +17441,7 @@
         "lon": 6.9183
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662457+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222310+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17515,7 +17515,7 @@
         "lon": 7.3108
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662465+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222320+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17525,7 +17525,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 15
       },
       "slopes": {
@@ -17553,7 +17553,7 @@
         "lon": 7.726
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662473+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222328+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17635,7 +17635,7 @@
         "lon": 7.5657
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662479+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222335+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17645,7 +17645,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 6
       },
       "slopes": {
@@ -17673,7 +17673,7 @@
         "lon": 7.572
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662485+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222341+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17747,7 +17747,7 @@
         "lon": 7.1822
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662493+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222350+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17757,7 +17757,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 3
       },
       "slopes": {
@@ -17785,7 +17785,7 @@
         "lon": 7.1182
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662537+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222394+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17795,7 +17795,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 5
       },
       "slopes": {
@@ -17823,7 +17823,7 @@
         "lon": 10.827
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662545+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222402+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17897,7 +17897,7 @@
         "lon": 10.7894
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662557+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222418+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17967,7 +17967,7 @@
         "lon": 10.8656
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662569+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222425+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18037,7 +18037,7 @@
         "lon": 10.5818
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662576+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222434+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18111,7 +18111,7 @@
         "lon": 10.6629
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662586+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222444+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18185,7 +18185,7 @@
         "lon": 11.0076
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662592+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222450+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18255,7 +18255,7 @@
         "lon": 11.1866
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662598+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222458+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18329,7 +18329,7 @@
         "lon": 11.288
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662608+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222468+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18399,7 +18399,7 @@
         "lon": 10.9441
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662617+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222474+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18465,7 +18465,7 @@
         "lon": 11.0575
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662623+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222480+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18531,7 +18531,7 @@
         "lon": 11.9812
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662629+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222487+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18541,7 +18541,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 11
       },
       "slopes": {
@@ -18569,7 +18569,7 @@
         "lon": 11.9212
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662641+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222498+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18632,7 +18632,7 @@
         "lon": 10.7827
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.662648+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222506+01:00",
       "snow": {
         "mountain_cm": 0,
         "valley_cm": null,
@@ -18679,7 +18679,7 @@
         "lon": 10.5843
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662657+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222515+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18759,7 +18759,7 @@
         "lon": 10.5319
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662667+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222524+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18834,7 +18834,7 @@
         "lon": 11.2412
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662673+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222534+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18930,7 +18930,7 @@
         "lon": 11.3651
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662681+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222540+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19002,7 +19002,7 @@
         "lon": 11.3537
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662693+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222552+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19057,7 +19057,7 @@
         "lon": 11.0895
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662698+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222558+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19067,7 +19067,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 4
       },
       "slopes": {
@@ -19095,7 +19095,7 @@
         "lon": 10.9593
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662704+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222564+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19105,7 +19105,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 8
       },
       "slopes": {
@@ -19133,7 +19133,7 @@
         "lon": 10.3775
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662713+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222572+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19211,7 +19211,7 @@
         "lon": 10.4952
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662727+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222583+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19221,7 +19221,7 @@
         "stations": []
       },
       "lifts": {
-        "open": null,
+        "open": 0,
         "total": 8
       },
       "slopes": {
@@ -19249,7 +19249,7 @@
         "lon": 10.4544
       },
       "status": "open",
-      "fetched_at": "2026-10-25T18:16:54.662738+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222598+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19309,7 +19309,7 @@
         "lon": 10.136
       },
       "status": "no_report",
-      "fetched_at": "2026-10-25T18:16:54.662745+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222606+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19339,7 +19339,7 @@
         "lon": 13.5784
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662761+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222621+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19386,7 +19386,7 @@
         "lon": 13.4741
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662773+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222634+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19460,7 +19460,7 @@
         "lon": 12.9221
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662784+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222645+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19534,7 +19534,7 @@
         "lon": 12.5856
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662794+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222655+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19604,7 +19604,7 @@
         "lon": 12.6803
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662804+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222668+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19674,7 +19674,7 @@
         "lon": 12.5191
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662834+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222678+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19740,7 +19740,7 @@
         "lon": 9.3584
       },
       "status": "closed",
-      "fetched_at": "2026-10-25T18:16:54.662846+01:00",
+      "fetched_at": "2026-10-25T18:22:33.222703+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,

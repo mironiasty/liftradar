@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "nesselwaengle-im-tannheimer-tal",
+  "country": "at",
+  "name": "Nesselwängle im Tannheimer Tal",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.4958,
+    "lon": 10.6196
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T18:22:55.379323+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": 6,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-08-20T11:45:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547"
+  ],
+  "errors": []
+}

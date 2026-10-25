@@ -1,0 +1,51 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "airolo-pesciuem",
+  "country": "ch",
+  "name": "Airolo Pesciüm",
+  "region": "Ticino",
+  "location": {
+    "lat": 46.5144,
+    "lon": 8.6067
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T18:22:33.220813+01:00",
+  "snow": {
+    "mountain_cm": 1,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Vallascia (SLF)",
+        "elevation_m": 2268,
+        "depth_cm": 1,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": null,
+    "total": 21,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-03-29T14:45:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=147&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

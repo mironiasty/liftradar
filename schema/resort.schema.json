@@ -94,16 +94,9 @@
       "additionalProperties": false,
       "properties": {
         "open": {
-          "anyOf": [
-            {
-              "minimum": 0,
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "title": "Open"
+          "minimum": 0,
+          "title": "Open",
+          "type": "integer"
         },
         "total": {
           "minimum": 0,
