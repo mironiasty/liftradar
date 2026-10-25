@@ -9,7 +9,7 @@
     "lon": 12.3871
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T18:04:26.167848+01:00",
+  "fetched_at": "2026-10-25T18:16:54.662353+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -43,7 +43,7 @@
     "open": 0,
     "total": 86,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 115
   },
   "lifts_by_type": {
     "carpet": {
@@ -88,7 +88,8 @@
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
     "https://www.dolomitisuperski.com",
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+    "https://www.dreizinnen.com/en/skiing/skiing/ski-resort"
   ],
   "errors": []
 }

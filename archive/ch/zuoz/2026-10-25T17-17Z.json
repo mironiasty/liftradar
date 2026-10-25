@@ -1,0 +1,51 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "zuoz",
+  "country": "ch",
+  "name": "Zuoz",
+  "region": "Graubünden",
+  "location": {
+    "lat": 46.6029,
+    "lon": 9.96
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T18:16:54.662232+01:00",
+  "snow": {
+    "mountain_cm": 3,
+    "valley_cm": null,
+    "fresh_cm": 2,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Porta d'Es-cha (SLF)",
+        "elevation_m": 2727,
+        "depth_cm": 3,
+        "fresh_cm": 2,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": null,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": 12,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-05-01T20:16:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=40&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

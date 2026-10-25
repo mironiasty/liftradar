@@ -9,7 +9,7 @@
     "lon": 12.1323
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T18:04:26.167789+01:00",
+  "fetched_at": "2026-10-25T18:16:54.662284+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,7 +26,7 @@
     "open": 0,
     "total": 89,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 120
   },
   "lifts_by_type": {
     "cable_car": {
@@ -70,7 +70,8 @@
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-    "https://www.dolomitisuperski.com"
+    "https://www.dolomitisuperski.com",
+    "https://skipasscortina.com/EN/page8-the-consortium"
   ],
   "errors": []
 }

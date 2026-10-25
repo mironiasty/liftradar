@@ -9,7 +9,7 @@
     "lon": 9.2803
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T18:04:26.167157+01:00",
+  "fetched_at": "2026-10-25T18:16:54.661348+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,7 +26,7 @@
     "open": 0,
     "total": 54,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 65
   },
   "lifts_by_type": {
     "chairlift": {
@@ -68,10 +68,11 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-25T18:00:00+01:00",
+  "lifts_updated_at": "2026-10-25T18:15:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=37&saison=1&ref=contentBox"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=37&saison=1&ref=contentBox",
+    "https://www.flumserberg.ch/en/Experience-winter/Slope-map"
   ],
   "errors": []
 }

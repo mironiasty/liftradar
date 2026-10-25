@@ -9,7 +9,7 @@
     "lon": 10.3649
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T18:04:45.794237+01:00",
+  "fetched_at": "2026-10-25T18:17:10.300192+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,8 +18,16 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": null,
+    "total": 1
+  },
+  "slopes": {
+    "open": null,
+    "total": 4,
+    "open_km": null,
+    "total_km": null
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-07-28T09:39:00+02:00",

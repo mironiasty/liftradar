@@ -9,7 +9,7 @@
     "lon": 13.718
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T18:05:07.091769+01:00",
+  "fetched_at": "2026-10-25T18:17:29.169321+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,17 +23,46 @@
     "total": 7
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 11,
     "open_km": 0.0,
     "total_km": 14
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-23T10:29:59+02:00",
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-21T06:06:40+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+    "https://winter.intermaps.com/dreilaendereck/data?lang=en"
   ],
   "errors": []
 }

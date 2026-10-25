@@ -9,7 +9,7 @@
     "lon": 8.4927
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T18:04:26.167013+01:00",
+  "fetched_at": "2026-10-25T18:16:54.661125+01:00",
   "snow": {
     "mountain_cm": 1,
     "valley_cm": null,
@@ -27,14 +27,55 @@
       }
     ]
   },
-  "lifts": null,
-  "slopes": null,
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-09-28T10:10:00+02:00",
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 13,
+    "open_km": null,
+    "total_km": 30
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 1,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-22T06:01:47+02:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=148&saison=1&ref=contentBox",
+    "https://winter.intermaps.com/bosco_gurin/data?lang=en",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service"
