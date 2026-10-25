@@ -41,6 +41,10 @@ jobs:
           cp -R site/index.html site/map.html site/sources.html site/assets _site/
           for part in json archive schema; do cp -R "data/$part" _site/; done
 
+      # Resort list for a TRMNL plugin's xhrSelect field (see README).
+      - name: TRMNL resort list
+        run: python3 site/scripts/trmnl_resorts.py data/json/index.json _site/trmnl/resorts.json
+
       # Pages lets browsers cache files for 10 minutes; without a version in the
       # URL, a new page can run with the previous version's scripts.
       - name: Version the asset links

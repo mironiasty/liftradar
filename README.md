@@ -150,6 +150,27 @@ under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 - Until 25 October 2026 the runs were listed in `history/<country>/<resort>.json`; those files
   remain in the `data` branch's git history.
 
+## TRMNL resort list
+
+`https://snow.miron.asia/trmnl/resorts.json` lists every resort for a TRMNL plugin's
+`xhrSelect` field, generated on each deploy from `json/index.json`
+(`scripts/trmnl_resorts.py`): `[{"Sölden (Tirol, Austria)": "at/soelden"}, …]`, sorted by
+name. The label is shown in the plugin settings; the value is the resort's path.
+
+GitHub Pages only answers GET (POST gets 405) and doesn't handle the CORS preflight the
+CSRF header triggers, so set both options:
+
+```yaml
+- keyname: resort
+  name: Ski resort
+  field_type: xhrSelect
+  endpoint: https://snow.miron.asia/trmnl/resorts.json
+  http_verb: GET
+  exclude_csrf_token: true
+```
+
+Then poll `https://snow.miron.asia/json/{{ resort }}.json`.
+
 ## Running locally
 
 Put the data next to the pages and serve the folder:
