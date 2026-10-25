@@ -8,9 +8,9 @@
     "lon": 10.98
   },
   "status": "open",
-  "fetched_at": "2026-10-25T10:28:37.988182+01:00",
+  "fetched_at": "2026-10-25T11:49:43.280335+01:00",
   "snow": {
-    "mountain_cm": 49,
+    "mountain_cm": 48,
     "valley_cm": 0,
     "fresh_cm": 3,
     "last_snowfall": "2026-10-25",
@@ -21,50 +21,99 @@
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": 8.3,
+        "temperature_c": 8.9,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
-        "depth_cm": 14,
+        "depth_cm": 10,
         "fresh_cm": 0,
-        "temperature_c": 6.0,
+        "temperature_c": 7.2,
         "condition": null
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 12,
+        "depth_cm": 11,
         "fresh_cm": 0,
-        "temperature_c": 4.3,
+        "temperature_c": 4.8,
         "condition": null
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
-        "depth_cm": 49,
+        "depth_cm": 48,
         "fresh_cm": 3,
-        "temperature_c": 0.0,
+        "temperature_c": 0.9,
         "condition": "Fresh snow"
       }
     ]
   },
   "lifts": {
-    "open": 7,
+    "open": 6,
     "total": 31
   },
   "slopes": {
     "open": 6,
     "total": 58,
     "open_km": 30.9,
-    "total_km": 145
+    "total_km": 147
   },
-  "lifts_updated_at": "2026-10-25T10:27:27+01:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 1,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 13
+    },
+    "drag_lift": {
+      "open": 2,
+      "total": 7
+    },
+    "funicular": {
+      "open": 1,
+      "total": 1
+    },
+    "gondola": {
+      "open": 2,
+      "total": 8
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": 7
+    },
+    "easy": {
+      "open": 5,
+      "total": 21,
+      "open_km": 28.5,
+      "total_km": 78
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 15,
+      "open_km": 0.0,
+      "total_km": 37
+    },
+    "difficult": {
+      "open": 1,
+      "total": 9,
+      "open_km": 2.4,
+      "total_km": 23
+    }
+  },
+  "lifts_updated_at": "2026-10-25T11:49:38+01:00",
   "avalanche": null,
   "sources": [
     "https://www.soelden.com/en/live-information/snow-report",
-    "https://winter.intermaps.com/soelden/data?lang=en"
+    "https://winter.intermaps.com/soelden/data?lang=en",
+    "https://www.soelden.com/en/activities/winter/skiing-snowboarding/ski-area-information"
   ],
   "errors": []
 }

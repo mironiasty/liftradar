@@ -8,7 +8,7 @@
     "lon": 12.69
   },
   "status": "open",
-  "fetched_at": "2026-10-25T10:28:37.988197+01:00",
+  "fetched_at": "2026-10-25T11:49:43.280354+01:00",
   "snow": {
     "mountain_cm": 70,
     "valley_cm": 0,
@@ -52,12 +52,57 @@
     "open_km": 7.3,
     "total_km": 81
   },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 2,
+      "total": 7
+    },
+    "drag_lift": {
+      "open": 4,
+      "total": 8
+    },
+    "funicular": {
+      "open": 1,
+      "total": 1
+    },
+    "gondola": {
+      "open": 6,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "easy": {
+      "open": 4,
+      "total": 12,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 2,
+      "total": 10,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": "2026-10-24T16:25:12+02:00",
   "avalanche": null,
   "sources": [
     "https://www.kitzsteinhorn.at/en/winter/information/weather-webcams",
     "https://winter.intermaps.com/kitzsteinhorn/data?lang=en",
-    "https://www.openstreetmap.org/copyright"
+    "https://www.openstreetmap.org/copyright",
+    "https://www.kitzsteinhorn.at/en/winter/kitzsteinhorn-ski-board"
   ],
   "errors": []
 }

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "engelberg-titlis",
+  "country": "ch",
+  "name": "Engelberg-Titlis",
+  "location": {
+    "lat": 46.8211,
+    "lon": 8.4013
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T11:49:43.283928+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Titlisboden (SLF)",
+        "elevation_m": 2149,
+        "depth_cm": 11,
+        "fresh_cm": 5,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 24
+  },
+  "slopes": {
+    "open": 0,
+    "total": 17,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 7
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "funicular": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    },
+    "other": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 9
+    }
+  },
+  "lifts_updated_at": "2026-10-22T05:32:47+02:00",
+  "avalanche": {
+    "region_id": "CH-2122",
+    "region": "Engelberg",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://winter.intermaps.com/engelberg/data?lang=en",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}

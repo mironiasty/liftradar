@@ -1,0 +1,30 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "voegelsberg-aktivpark",
+  "country": "at",
+  "name": "Vögelsberg Aktivpark",
+  "location": {
+    "lat": 47.273,
+    "lon": 11.5898
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T11:50:12.231364+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-06-05T15:39:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/V%C3%B6gelsberg%20Aktivpark_2543"
+  ],
+  "errors": []
+}

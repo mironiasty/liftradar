@@ -1,0 +1,30 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "kolsassberg",
+  "country": "at",
+  "name": "Kolsassberg",
+  "location": {
+    "lat": 47.2862,
+    "lon": 11.6435
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T11:49:58.953650+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-08-27T10:28:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Kolsassberg_85"
+  ],
+  "errors": []
+}

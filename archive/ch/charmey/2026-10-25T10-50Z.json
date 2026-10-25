@@ -1,0 +1,92 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "charmey",
+  "country": "ch",
+  "name": "Charmey",
+  "location": {
+    "lat": 46.6187,
+    "lon": 7.1687
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T11:49:43.282778+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Fochsen (SLF)",
+        "elevation_m": 1707,
+        "depth_cm": 6,
+        "fresh_cm": 4,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 13,
+    "open_km": 0.0,
+    "total_km": 31
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 14
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 11
+    }
+  },
+  "lifts_updated_at": "2026-10-25T06:02:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=247&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

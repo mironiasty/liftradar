@@ -1,0 +1,63 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "evolene",
+  "country": "ch",
+  "name": "Evolène",
+  "location": {
+    "lat": 46.1214,
+    "lon": 7.4784
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T11:49:43.282905+01:00",
+  "snow": {
+    "mountain_cm": 1,
+    "valley_cm": null,
+    "fresh_cm": 4,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Bréona (SLF)",
+        "elevation_m": 2602,
+        "depth_cm": 1,
+        "fresh_cm": 4,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-23T17:20:00+02:00",
+  "avalanche": {
+    "region_id": "CH-4122",
+    "region": "Val d'Hérens",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=63&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "goldegg",
+  "country": "at",
+  "name": "Goldegg",
+  "location": {
+    "lat": 47.3187,
+    "lon": 13.1029
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T11:49:46.518965+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-05-21T14:09:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/"
+  ],
+  "errors": []
+}

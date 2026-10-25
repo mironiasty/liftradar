@@ -1,0 +1,107 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "les-diablerets",
+  "country": "ch",
+  "name": "Les Diablerets",
+  "location": {
+    "lat": 46.3464,
+    "lon": 7.1515
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T11:49:43.283214+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Pierres Fendues (SLF)",
+        "elevation_m": 2218,
+        "depth_cm": 8,
+        "fresh_cm": 11,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
+    "total_km": 25
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 17
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-23T09:05:00+02:00",
+  "avalanche": {
+    "region_id": "CH-1114",
+    "region": "Bex - Villars",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "considerable",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "new_snow",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=50&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}

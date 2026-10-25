@@ -8,7 +8,7 @@
     "lon": 11.1087
   },
   "status": "open",
-  "fetched_at": "2026-10-25T10:28:46.559463+01:00",
+  "fetched_at": "2026-10-25T11:50:11.763055+01:00",
   "snow": {
     "mountain_cm": 20,
     "valley_cm": null,
@@ -19,18 +19,64 @@
   },
   "lifts": {
     "open": 12,
-    "total": 26
+    "total": 25
   },
   "slopes": {
     "open": 7,
     "total": 36,
     "open_km": 17.3,
-    "total_km": 96
+    "total_km": 108
   },
-  "lifts_updated_at": "2026-10-25T08:54:00+01:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 1,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 2,
+      "total": 7
+    },
+    "drag_lift": {
+      "open": 4,
+      "total": 10
+    },
+    "gondola": {
+      "open": 5,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 31
+    },
+    "easy": {
+      "open": 5,
+      "total": 17,
+      "open_km": 15.0,
+      "total_km": 39
+    },
+    "intermediate": {
+      "open": 2,
+      "total": 11,
+      "open_km": 2.3,
+      "total_km": 24
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-25T10:36:12+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Stubaier%20Gletscher_27"
+    "https://www.snowcard.tirol.at/skigebiet/Stubaier%20Gletscher_27",
+    "https://winter.intermaps.com/stubaier_gletscher/data?lang=en",
+    "https://www.stubaier-gletscher.com/en/ski-area/ski-area-in-numbers/"
   ],
   "errors": []
 }

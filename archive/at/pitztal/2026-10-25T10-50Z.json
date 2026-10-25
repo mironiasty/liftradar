@@ -1,0 +1,121 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "pitztal",
+  "country": "at",
+  "name": "Pitztaler Gletscher",
+  "location": {
+    "lat": 46.92,
+    "lon": 10.87
+  },
+  "status": "open",
+  "fetched_at": "2026-10-25T11:49:43.280380+01:00",
+  "snow": {
+    "mountain_cm": 15,
+    "valley_cm": 0,
+    "fresh_cm": 5,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Tirols höchste Aussicht 3440",
+        "elevation_m": null,
+        "depth_cm": 15,
+        "fresh_cm": 5,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergstation Gletscherexpress",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Talstation Gletscherexpress",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergstation Grubenkopf",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergstation Rifflseebahn",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 4,
+    "total": 13
+  },
+  "slopes": {
+    "open": 3,
+    "total": 29,
+    "open_km": 6.9,
+    "total_km": 67
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 1,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 1,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 1,
+      "total": 4
+    },
+    "funicular": {
+      "open": 1,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 3,
+      "total": 9,
+      "open_km": 6.9,
+      "total_km": 18
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 45
+    },
+    "difficult": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 9
+    }
+  },
+  "lifts_updated_at": "2026-10-25T08:58:48+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.pitztaler-gletscher.at/wetter",
+    "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
+    "https://www.pitztaler-gletscher.at/en/winter/one-ski-area"
+  ],
+  "errors": []
+}

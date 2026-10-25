@@ -1,0 +1,112 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "lenk",
+  "country": "ch",
+  "name": "Lenk",
+  "location": {
+    "lat": 46.4531,
+    "lon": 7.437
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T11:49:43.283189+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Trüttlisbergpass (SLF)",
+        "elevation_m": 1970,
+        "depth_cm": 11,
+        "fresh_cm": 2,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 18
+  },
+  "slopes": {
+    "open": 0,
+    "total": 39,
+    "open_km": 0.0,
+    "total_km": 73
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 19,
+      "open_km": 0.0,
+      "total_km": 41
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 26
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-10-25T11:45:00+01:00",
+  "avalanche": {
+    "region_id": "CH-1224",
+    "region": "Lenk",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wet_snow"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=59&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}

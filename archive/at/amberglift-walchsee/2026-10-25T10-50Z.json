@@ -1,0 +1,30 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "amberglift-walchsee",
+  "country": "at",
+  "name": "Amberglift Walchsee",
+  "location": {
+    "lat": 47.6277,
+    "lon": 12.2853
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T11:49:45.353997+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-05-13T13:50:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Amberglift%20Walchsee_388"
+  ],
+  "errors": []
+}

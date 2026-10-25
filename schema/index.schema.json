@@ -7,7 +7,7 @@
       "description": "The avalanche bulletin for the resort's warning region (micro-region).",
       "properties": {
         "region_id": {
-          "pattern": "^[A-Z]{2}-\\d{2}(-[A-Z0-9]+)*$",
+          "pattern": "^[A-Z]{2}-\\d{2,4}(-[A-Z0-9]+)*$",
           "title": "Region Id",
           "type": "string"
         },
@@ -287,6 +287,56 @@
             }
           ],
           "default": null
+        },
+        "lifts_by_type": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "$ref": "#/$defs/Counts"
+              },
+              "propertyNames": {
+                "enum": [
+                  "gondola",
+                  "cable_car",
+                  "chairlift",
+                  "drag_lift",
+                  "carpet",
+                  "funicular",
+                  "other"
+                ]
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lifts By Type"
+        },
+        "slopes_by_difficulty": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "$ref": "#/$defs/SlopeCounts"
+              },
+              "propertyNames": {
+                "enum": [
+                  "easy",
+                  "intermediate",
+                  "difficult",
+                  "ski_route",
+                  "other"
+                ]
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slopes By Difficulty"
         },
         "lifts_updated_at": {
           "anyOf": [

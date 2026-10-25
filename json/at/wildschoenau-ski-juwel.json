@@ -8,7 +8,7 @@
     "lon": 12.0824
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T10:28:46.656252+01:00",
+  "fetched_at": "2026-10-25T11:50:11.974893+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,11 +18,19 @@
     "stations": []
   },
   "lifts": null,
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 114
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-08-04T09:25:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Wildsch%C3%B6nau%20-%20Ski%20Juwel%20Alpbachtal%20Wildsch%C3%B6nau_2546"
+    "https://www.snowcard.tirol.at/skigebiet/Wildsch%C3%B6nau%20-%20Ski%20Juwel%20Alpbachtal%20Wildsch%C3%B6nau_2546",
+    "https://www.skijuwel.com/en/winter/lifts-and-pistes"
   ],
   "errors": []
 }

@@ -8,7 +8,7 @@
     "lon": 13.0586
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T10:28:40.914497+01:00",
+  "fetched_at": "2026-10-25T11:49:46.519558+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,11 +18,19 @@
     "stations": []
   },
   "lifts": null,
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 24
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-08-09T16:50:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skigastein.com/en/experiences-mountains/winter/ski-areas-in-skigastein/"
   ],
   "errors": []
 }

@@ -8,7 +8,7 @@
     "lon": 12.9941
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T10:28:40.914391+01:00",
+  "fetched_at": "2026-10-25T11:49:46.519375+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -22,15 +22,56 @@
     "total": 10
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 15,
     "open_km": 0.0,
     "total_km": 33
   },
-  "lifts_updated_at": "2026-10-23T19:06:00+02:00",
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 18
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 9
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-10-23T19:07:56+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://winter.intermaps.com/rauris/data?lang=en"
   ],
   "errors": []
 }

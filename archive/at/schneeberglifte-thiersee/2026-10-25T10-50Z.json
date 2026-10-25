@@ -1,0 +1,30 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "schneeberglifte-thiersee",
+  "country": "at",
+  "name": "Schneeberglifte Thiersee",
+  "location": {
+    "lat": 47.5768,
+    "lon": 12.0923
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-25T11:50:08.023588+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-13T10:59:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Schneeberglifte%20Thiersee_87"
+  ],
+  "errors": []
+}

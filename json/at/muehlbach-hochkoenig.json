@@ -8,7 +8,7 @@
     "lon": 13.1249
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T10:28:40.914330+01:00",
+  "fetched_at": "2026-10-25T11:49:46.519254+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -21,11 +21,19 @@
     "open": 0,
     "total": 34
   },
-  "slopes": null,
-  "lifts_updated_at": "2026-10-25T09:34:00+01:00",
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 120
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-25T11:35:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.hochkoenig.at/de/winter/skigebiet/skifahren-am-gipfel-der-gefuehle.html"
   ],
   "errors": []
 }

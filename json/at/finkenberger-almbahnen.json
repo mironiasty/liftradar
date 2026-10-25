@@ -8,7 +8,7 @@
     "lon": 11.8222
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T10:28:42.794135+01:00",
+  "fetched_at": "2026-10-25T11:49:50.247972+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -19,18 +19,64 @@
   },
   "lifts": {
     "open": 0,
-    "total": 43
+    "total": 47
   },
   "slopes": {
     "open": 0,
-    "total": 58,
+    "total": 62,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 142
   },
-  "lifts_updated_at": "2026-10-25T07:49:00+01:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 6
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 18
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 14
+    },
+    "gondola": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 24,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 27,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-24T08:00:03+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Finkenberger%20Almbahnen_24"
+    "https://www.snowcard.tirol.at/skigebiet/Finkenberger%20Almbahnen_24",
+    "https://winter.intermaps.com/mayrhofen/data?lang=en",
+    "https://www.mayrhofen.at/en/mountopolis/winter/our-mountains"
   ],
   "errors": []
 }

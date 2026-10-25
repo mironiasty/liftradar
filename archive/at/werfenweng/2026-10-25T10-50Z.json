@@ -1,0 +1,38 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "werfenweng",
+  "country": "at",
+  "name": "Werfenweng",
+  "location": {
+    "lat": 47.4864,
+    "lon": 13.2725
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T11:49:46.519706+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 29
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-22T07:39:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/"
+  ],
+  "errors": []
+}
