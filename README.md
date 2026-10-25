@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, Czechia and Poland, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, Czechia, Slovakia and Poland, published at
 [snow.miron.asia](https://snow.miron.asia).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -44,6 +44,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time) |
+| Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk (TMR); Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists ([TMR slope tables](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk), the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
 | Total slope km of the bigger areas | The official size on the resort's own website |
 | Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
@@ -51,6 +52,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Avalanche danger, South Tyrol and Trentino | [avalanche.report](https://avalanche.report) (Euregio) |
 | Avalanche danger, other Italian regions | [AINEVA](https://bollettini.aineva.it) joint bulletin |
 | Avalanche danger, Krkonoše and Jeseníky (Czechia) | [Horská služba ČR](https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved) (Czech Mountain Rescue), from the EAWS bulletin files on [avalanche.report](https://avalanche.report) |
+| Avalanche danger, Jasná, Tatranská Lomnica, Štrbské Pleso | [Slovak Avalanche Prevention Centre](https://www.laviny.sk) (HZS), from the same EAWS bulletin files |
 | Avalanche danger, Kasprowy Wierch (Polish Tatras) | [TOPR](https://lawiny.topr.pl) (Tatra Volunteer Rescue), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 | Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
@@ -76,7 +78,9 @@ is not used. Each file's `sources` lists the URLs used for that report.
 - `no_report`: the resort hasn't reported for 14 days (e.g. before the season). Only the
   totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts
   and `slopes.open` null, so last season's open counts and snow never show up as current.
-  The 0 means "not reported", not that every lift is closed.
+  The 0 means "not reported", not that every lift is closed. Some Slovak and Polish areas (TMR's,
+  Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko) are always `no_report` for now: we list
+  them with their size only, from the operators' lists, until we read a live status for them.
 - `null`: unknown, usually because fetching failed; see `errors`.
 - A **closed** resort always shows 0 open lifts, slopes and km (outside the season some
   resorts count lifts running for hikers), and **no snow depths** (`mountain_cm`,
@@ -144,7 +148,9 @@ the Polish ones (PKL, Zieleniec).
 
 - Tirol, Swiss and Italian resorts, and Czech resorts in Krkonoše and Jeseníky (the only
   regions the Czech Mountain Rescue rates; other Czech areas have `null`), and Kasprowy Wierch
-  (TOPR, the Polish Tatras; the other Polish areas have no bulletin). Salzburg and the other Austrian states have no
+  (TOPR, the Polish Tatras; the other Polish areas have no bulletin), and Jasná, Tatranská
+  Lomnica and Štrbské Pleso (Slovak HZS; found from a point in the ski area, since the villages lie
+  below the warning regions). Salzburg and the other Austrian states have no
   machine-readable bulletin, so `avalanche` is `null` for all resorts there (including Lech Zürs
   and Warth-Schröcken in Vorarlberg), and the Snow Card ones in Salzburg (Hochkrimml,
   Königsleiten, Mittersill, Wildkogel).
@@ -159,16 +165,16 @@ the Polish ones (PKL, Zieleniec).
 
 `location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
 for the glacier resorts, or the main village (looked up on OpenStreetMap) for other Austrian,
-Italian, Czech and Polish resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
+Italian, Czech, Slovak and Polish resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
 
 `region` is the state, canton, Italian region, Czech kraj or Polish voivodeship that point lies in (e.g.
-`Tirol`, `Valais`, `Valle d'Aosta`, `Liberecký kraj`, `Małopolskie`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
+`Tirol`, `Valais`, `Valle d'Aosta`, `Liberecký kraj`, `Žilinský kraj`, `Małopolskie`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
 OpenStreetMap; the table filters by it and by `country`. An area spanning a border is listed
 under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 306 of the 351
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 314 of the 361
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run

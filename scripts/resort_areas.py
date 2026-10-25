@@ -30,7 +30,7 @@ OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 BBOXES = [
     (45.4, 6.7, 48.9, 16.0),  # the Alps
     (48.5, 12.0, 51.1, 18.9),  # Czechia, and the Sudetes in Poland
-    (49.0, 18.9, 49.9, 23.0),  # the Polish Carpathians
+    (48.7, 18.9, 49.9, 23.0),  # the Polish and Slovak Carpathians
 ]
 
 # Areas split between the given resorts, however far their points are.
