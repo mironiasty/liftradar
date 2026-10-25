@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Tirol, Salzburg, Switzerland and Italy, published at
+Snow conditions for ski resorts in Austria, Switzerland and Italy, published at
 [snow.miron.asia](https://snow.miron.asia).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -27,7 +27,10 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 |---|---|
 | Hintertux, Sölden, Kitzsteinhorn, Kaunertal, Pitztal | The resorts' own websites (snow stations) |
 | Other Tirol resorts | [Tirol Snow Card](https://www.snowcard.tirol.at/skigebiete) resort reports |
-| Other Salzburg resorts | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
+| Other Salzburg resorts; Planai, Dachstein Gletscher, Feuerkogel | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
+| Carinthia | [Kärnten snow report](https://www.kaernten.at/golf/service/wetter/schneeberichte) (Kärnten Werbung, tourism board) |
+| St. Anton, Lech Zürs, Warth-Schröcken | [skiarlberg.at](https://www.skiarlberg.at/de/live-infos/anlagen): every lift and slope, the lift companies' live info (no report time, no km; no snow depth for Warth-Schröcken) |
+| Other resorts in Vorarlberg, Styria, Upper and Lower Austria, some in Carinthia | Their Intermaps slope map only (lifts and slopes, no snow depth) |
 | Swiss resorts | [infosnow.ch](https://infosnow.ch/portal/): live lift and slope status as the lift companies publish it |
 | Snow depth of Swiss resorts that don't report it | Nearest [SLF](https://www.slf.ch/en/services-and-products/slf-data-service) stations (WSL Institute for Snow and Avalanche Research, CC BY 4.0) |
 | Dolomiti Superski areas | [Open Data Hub South Tyrol](https://opendatahub.com): every lift and slope as Dolomiti Superski publishes it (CC0) |
@@ -44,7 +47,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Avalanche danger, other Italian regions | [AINEVA](https://bollettini.aineva.it) joint bulletin |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 
-The Snow Card and SalzburgerLand pages show the report each resort submits to iSKI. Bergfex
+The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI. Bergfex
 is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Timing
@@ -121,8 +124,9 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Avalanche danger
 
-- Tirol, Swiss and Italian resorts. Salzburg has no machine-readable bulletin, so `avalanche` is
-  `null` for all Salzburg resorts, including the Snow Card ones in Salzburg (Hochkrimml,
+- Tirol, Swiss and Italian resorts. Salzburg and the other Austrian states have no
+  machine-readable bulletin, so `avalanche` is `null` for all resorts there (including Lech Zürs
+  and Warth-Schröcken in Vorarlberg), and the Snow Card ones in Salzburg (Hochkrimml,
   Königsleiten, Mittersill, Wildkogel).
 - Early and late in the season the SLF only rates the alpine regions, so Swiss resorts in the
   Prealps (and e.g. Arosa) can have `null` while others have a rating.
@@ -134,8 +138,8 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Locations
 
 `location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
-for the glacier resorts, or the main village (looked up on OpenStreetMap) for Salzburg and
-Italian resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
+for the glacier resorts, or the main village (looked up on OpenStreetMap) for other Austrian
+and Italian resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
 
 `region` is the state, canton or Italian region that point lies in (e.g. `Tirol`, `Valais`,
 `Valle d'Aosta`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
