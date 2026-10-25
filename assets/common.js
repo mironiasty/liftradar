@@ -24,6 +24,9 @@ function pair(a, b, unit = "") {
 
 const STATUS_LABELS = { open: "open", closed: "closed", no_report: "no report yet" };
 
+const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland" };
+const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();
+
 function updatedText(index) {
   const time = new Date(index.generated_at);
   const formatted = time.toLocaleString("de-AT", { timeZone: "Europe/Vienna", dateStyle: "medium", timeStyle: "short" });

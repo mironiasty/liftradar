@@ -127,8 +127,11 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 `location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
 for the glacier resorts, or the main village (looked up on OpenStreetMap) for Salzburg
-resorts, Andermatt and Engelberg. It
-marks the area on a map, not a lift station.
+resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
+
+`region` is the state or canton that point lies in (e.g. `Tirol`, `Valais`), looked up on
+OpenStreetMap; the table filters by it and by `country`. An area spanning a border is listed
+under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 ### Archive
 

@@ -15,8 +15,9 @@
   td.num { font-variant-numeric: tabular-nums; }
   /* Long resort names wrap so the JSON column stays in view. */
   td:first-child { white-space: normal; min-width: 10rem; }
-  input[type=search] { width: 100%; max-width: 20rem; box-sizing: border-box; padding: 8px 10px; font: inherit;
+  input[type=search], select { width: 100%; max-width: 20rem; box-sizing: border-box; padding: 8px 10px; font: inherit;
     color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+  select { width: auto; }
   .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 20px; }
   th button { font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; background: none;
     border: 0; padding: 0; cursor: pointer; }
@@ -41,12 +42,15 @@
     &middot; <a href="map.html">Map</a></p>
   <div class="tools">
     <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
+    <select id="country" aria-label="Country"><option value="">All countries</option></select>
+    <select id="region" aria-label="Region"><option value="">All regions</option></select>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
   <div class="table">
   <table>
     <thead><tr>
       <th><button type="button" data-key="name" class="sorted asc">Resort</button></th>
+      <th><button type="button" data-key="region">Region</button></th>
       <th><button type="button" data-key="mountain">Mountain</button></th>
       <th><button type="button" data-key="valley">Valley</button></th>
       <th><button type="button" data-key="fresh">Fresh</button></th>
