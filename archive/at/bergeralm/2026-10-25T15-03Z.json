@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "bergeralm",
+  "country": "at",
+  "name": "Bergeralm",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.0578,
+    "lon": 11.4411
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T16:02:51.091220+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-15",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 14,
+    "open_km": 0.0,
+    "total_km": 38
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-25T15:55:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Bergeralm_37"
+  ],
+  "errors": []
+}

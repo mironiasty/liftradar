@@ -1,0 +1,111 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "diavolezza-lagalb",
+  "country": "ch",
+  "name": "Diavolezza Lagalb",
+  "region": "Graubünden",
+  "location": {
+    "lat": 46.4412,
+    "lon": 9.9836
+  },
+  "status": "open",
+  "fetched_at": "2026-10-25T16:02:46.105058+01:00",
+  "snow": {
+    "mountain_cm": 15,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-10-22",
+    "condition": null,
+    "stations": [
+      {
+        "name": "Diavolezza Berg",
+        "elevation_m": 2978,
+        "depth_cm": 15,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 2,
+    "total": 5
+  },
+  "slopes": {
+    "open": 1,
+    "total": 13,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 1,
+      "total": 2
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 1,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "intermediate": {
+      "open": 1,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-25T16:00:00+01:00",
+  "avalanche": {
+    "region_id": "CH-7112",
+    "region": "Bernina",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-10-24T17:00:00+02:00",
+    "valid_from": "2026-10-24T17:00:00+02:00",
+    "valid_until": "2026-10-25T17:00:00+01:00"
+  },
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "errors": []
+}
