@@ -43,7 +43,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Livigno | [livigno.eu](https://www.livigno.eu/en/lifts) (tourism board, lifts only) |
 | Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
-| Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time) |
+| Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk (TMR); Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists ([TMR slope tables](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk), the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
 | Total slope km of the bigger areas | The official size on the resort's own website |
@@ -79,7 +79,7 @@ is not used. Each file's `sources` lists the URLs used for that report.
   totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts
   and `slopes.open` null, so last season's open counts and snow never show up as current.
   The 0 means "not reported", not that every lift is closed. Some Slovak and Polish areas (TMR's,
-  Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko) are always `no_report` for now: we list
+  Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko; Zieleniec while its site refuses us) are always `no_report` for now: we list
   them with their size only, from the operators' lists, until we read a live status for them.
 - `null`: unknown, usually because fetching failed; see `errors`.
 - A **closed** resort always shows 0 open lifts, slopes and km (outside the season some
