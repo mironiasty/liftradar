@@ -9,27 +9,19 @@
     "lon": 7.5342
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T12:01:26.746983+01:00",
+  "fetched_at": "2026-10-25T15:59:28.125357+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-31",
     "condition": null,
     "stations": [
       {
-        "name": "Orzival (SLF)",
-        "elevation_m": 2640,
-        "depth_cm": 24,
-        "fresh_cm": 8,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Montana (SLF)",
-        "elevation_m": 1590,
-        "depth_cm": 2,
-        "fresh_cm": 0,
+        "name": "In the ski area above",
+        "elevation_m": null,
+        "depth_cm": 1,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -93,7 +85,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-25T08:33:00+01:00",
+  "lifts_updated_at": "2026-10-25T13:13:00+01:00",
   "avalanche": {
     "region_id": "CH-4122",
     "region": "Val d'Hérens",
@@ -117,9 +109,6 @@
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=169&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
     "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "errors": []

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "bormio",
+  "country": "it",
+  "name": "Bormio",
+  "region": "Lombardia",
+  "location": {
+    "lat": 46.4677,
+    "lon": 10.3775
+  },
+  "status": null,
+  "fetched_at": "2026-10-25T15:59:28.125749+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [],
+  "errors": [
+    "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.bormioski.eu/info-impianti-e-piste/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  ]
+}

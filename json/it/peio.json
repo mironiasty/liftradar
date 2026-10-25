@@ -1,0 +1,75 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "peio",
+  "country": "it",
+  "name": "Peio",
+  "region": "Trentino",
+  "location": {
+    "lat": 46.3547,
+    "lon": 10.6629
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T15:59:28.125652+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-15",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 21
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    },
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 13
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino"
+  ],
+  "errors": []
+}

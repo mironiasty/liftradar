@@ -1,0 +1,64 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "speikboden",
+  "country": "it",
+  "name": "Speikboden",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.9511,
+    "lon": 11.9212
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T15:59:28.125680+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Valley station Speikboden",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": 5.0,
+        "condition": null
+      },
+      {
+        "name": "Speikboden Alm",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": 3.0,
+        "condition": null
+      },
+      {
+        "name": "Sonnklar Speikboden",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": 2.0,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 19,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-25T08:33:24.990000+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+  ],
+  "errors": []
+}

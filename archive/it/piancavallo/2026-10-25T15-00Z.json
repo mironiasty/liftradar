@@ -1,0 +1,67 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "piancavallo",
+  "country": "it",
+  "name": "Piancavallo",
+  "region": "Friuli Venezia Giulia",
+  "location": {
+    "lat": 46.1093,
+    "lon": 12.5191
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-25T15:59:28.125794+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 12
+  },
+  "slopes": {
+    "open": 0,
+    "total": 22,
+    "open_km": 0.0,
+    "total_km": 14
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 6
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 14,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-21T06:04:39+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/piancavallo/data?lang=en"
+  ],
+  "errors": []
+}
