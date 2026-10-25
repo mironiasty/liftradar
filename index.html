@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snow Conditions</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
+  h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  .table { overflow-x: auto; margin: 24px 0; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; }
+  /* Long resort names wrap so the JSON column stays in view. */
+  td:first-child { white-space: normal; min-width: 10rem; }
+  input[type=search] { width: 100%; max-width: 20rem; box-sizing: border-box; padding: 8px 10px; font: inherit;
+    color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; }
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 20px; }
+  th button { font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; background: none;
+    border: 0; padding: 0; cursor: pointer; }
+  th button:hover, th button.sorted { color: var(--fg); }
+  th button.sorted::after { content: " \2193"; }
+  th button.sorted.asc::after { content: " \2191"; }
+  th .sub { display: block; text-transform: none; letter-spacing: 0; font-weight: 400; }
+  th .sub button + button::before { content: "/"; color: var(--muted); padding: 0 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Snow Conditions</h1>
+  <p class="muted"><span id="updated">Loading…</span> &middot; data from the resorts' official websites and the resort reports of the
+    <a href="https://www.snowcard.tirol.at/skigebiete">Tirol Snow Card</a> and
+    <a href="https://www.salzburgerland.com/de/schneebericht/">SalzburgerLand</a>
+    &middot; <a href="map.html">Map</a></p>
+  <div class="tools">
+    <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
+    <span class="muted" id="count" aria-live="polite"></span>
+  </div>
+  <div class="table">
+  <table>
+    <thead><tr>
+      <th><button type="button" data-key="name" class="sorted asc">Resort</button></th>
+      <th><button type="button" data-key="mountain">Mountain</button></th>
+      <th><button type="button" data-key="valley">Valley</button></th>
+      <th><button type="button" data-key="fresh">Fresh</button></th>
+      <th>Lifts<span class="sub"><button type="button" data-key="lifts_open">open</button><button type="button" data-key="lifts_total">total</button></span></th>
+      <th>Slopes<span class="sub"><button type="button" data-key="slopes_open">open</button><button type="button" data-key="slopes_total">total</button></span>
+        <span class="sub">km <button type="button" data-key="km_open">open</button><button type="button" data-key="km_total">total</button></span></th>
+      <th><button type="button" data-key="avalanche">Avalanche</button></th>
+      <th>JSON</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+  <p>All resorts in one file: <a href="json/index.json"><code>json/index.json</code></a></p>
+  <p class="muted">Kitzsteinhorn and Kaunertal open km are summed from slope lengths
+    &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+    Avalanche danger (Tirol): <a href="https://avalanche.report">Avalanche.report</a>,
+    Euregio Tirol &ndash; South Tyrol &ndash; Trentino.</p>
+  <p>JSON Schema: <a href="schema/resort.schema.json"><code>resort.schema.json</code></a>
+    &middot; <a href="schema/index.schema.json"><code>index.schema.json</code></a></p>
+</main>
+<script src="assets/common.js"></script>
+<script src="assets/table.js"></script>
+</body>
+</html>

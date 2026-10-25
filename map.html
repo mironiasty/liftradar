@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snow Map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  html, body { height: 100%; }
+  body { font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; }
+  header { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+  h1 { margin: 0; font-size: 1.2rem; }
+  .muted { font-size: .85rem; }
+  .filters { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-left: auto; }
+  .filters label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: .9rem; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+  #map { flex: 1; min-height: 300px; }
+  .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
+    min-width: 22px; padding: 0 5px; box-sizing: border-box; color: #fff; font: 600 11px/1 system-ui, sans-serif;
+    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; }
+  .leaflet-popup-content { margin: 12px 14px; font: 14px/1.45 system-ui, sans-serif; }
+  .popup h3 { margin: 0 0 4px; font-size: 1rem; }
+  .popup table { border-collapse: collapse; margin: 6px 0; }
+  .popup td { padding: 1px 10px 1px 0; vertical-align: top; }
+  .popup td:first-child { color: #666; }
+  .popup .err { color: #b3261e; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Snow Map</h1>
+  <span class="muted"><span id="updated">Loading…</span> &middot; <a href="index.html">Table</a> &middot; label: open lifts</span>
+  <div class="filters" id="filters"></div>
+</header>
+<div id="map" role="region" aria-label="Map of ski resorts"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/map.js"></script>
+</body>
+</html>
