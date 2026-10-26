@@ -9,10 +9,10 @@
     "lon": 10.3354
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T09:06:47.289636+01:00",
+  "fetched_at": "2026-10-26T14:31:44.736473+01:00",
   "snow": {
     "mountain_cm": 4,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
@@ -21,6 +21,14 @@
         "name": "Murtaröl (SLF)",
         "elevation_m": 2359,
         "depth_cm": 4,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Sta.Maria (SLF)",
+        "elevation_m": 1387,
+        "depth_cm": 0,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null

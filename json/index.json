@@ -1,6 +1,6 @@
 {
   "$schema": "https://snow.miron.asia/schema/index.schema.json",
-  "generated_at": "2026-10-26T09:07:59+01:00",
+  "generated_at": "2026-10-26T14:33:15+01:00",
   "resorts": [
     {
       "id": "hintertux",
@@ -12,7 +12,7 @@
         "lon": 11.658
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.287350+01:00",
+      "fetched_at": "2026-10-26T14:31:44.734061+01:00",
       "snow": {
         "mountain_cm": 25,
         "valley_cm": 20,
@@ -25,7 +25,7 @@
             "elevation_m": 3250,
             "depth_cm": 25,
             "fresh_cm": null,
-            "temperature_c": -6.8,
+            "temperature_c": -4.9,
             "condition": "grippy/hard powder"
           },
           {
@@ -33,7 +33,7 @@
             "elevation_m": 2660,
             "depth_cm": 20,
             "fresh_cm": null,
-            "temperature_c": -2.2,
+            "temperature_c": 1.4,
             "condition": "grippy/hard powder"
           },
           {
@@ -41,17 +41,17 @@
             "elevation_m": 2100,
             "depth_cm": null,
             "fresh_cm": null,
-            "temperature_c": 2.9,
+            "temperature_c": 5.3,
             "condition": null
           }
         ]
       },
       "lifts": {
-        "open": 11,
+        "open": 13,
         "total": 21
       },
       "slopes": {
-        "open": 9,
+        "open": 10,
         "total": 32,
         "open_km": 22.0,
         "total_km": 64
@@ -62,11 +62,11 @@
           "total": 3
         },
         "chairlift": {
-          "open": 0,
+          "open": 1,
           "total": 6
         },
         "drag_lift": {
-          "open": 5,
+          "open": 6,
           "total": 9
         },
         "gondola": {
@@ -82,7 +82,7 @@
           "total_km": 16
         },
         "easy": {
-          "open": 3,
+          "open": 4,
           "total": 11,
           "open_km": null,
           "total_km": null
@@ -100,7 +100,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T08:44:39+01:00",
+      "lifts_updated_at": "2026-10-26T13:04:37+01:00",
       "avalanche": null,
       "sources": [
         "https://www.hintertuxergletscher.at/en/information/currently/weather/",
@@ -119,7 +119,7 @@
         "lon": 10.98
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.287426+01:00",
+      "fetched_at": "2026-10-26T14:31:44.734140+01:00",
       "snow": {
         "mountain_cm": 51,
         "valley_cm": 0,
@@ -132,7 +132,7 @@
             "elevation_m": 1363,
             "depth_cm": 0,
             "fresh_cm": 0,
-            "temperature_c": 2.3,
+            "temperature_c": 7.7,
             "condition": null
           },
           {
@@ -162,7 +162,7 @@
         ]
       },
       "lifts": {
-        "open": 9,
+        "open": 8,
         "total": 31
       },
       "slopes": {
@@ -189,7 +189,7 @@
           "total": 1
         },
         "gondola": {
-          "open": 3,
+          "open": 2,
           "total": 8
         }
       },
@@ -219,7 +219,7 @@
           "total_km": 23
         }
       },
-      "lifts_updated_at": "2026-10-26T09:02:39+01:00",
+      "lifts_updated_at": "2026-10-26T14:29:51+01:00",
       "avalanche": null,
       "sources": [
         "https://www.soelden.com/en/live-information/snow-report",
@@ -238,7 +238,7 @@
         "lon": 12.69
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.287443+01:00",
+      "fetched_at": "2026-10-26T14:31:44.734157+01:00",
       "snow": {
         "mountain_cm": 70,
         "valley_cm": 0,
@@ -346,27 +346,27 @@
         "lon": 10.71
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.287456+01:00",
+      "fetched_at": "2026-10-26T14:31:44.734170+01:00",
       "snow": {
-        "mountain_cm": 18,
+        "mountain_cm": 20,
         "valley_cm": 0,
-        "fresh_cm": 3,
+        "fresh_cm": 0,
         "last_snowfall": null,
         "condition": null,
         "stations": [
           {
             "name": "Bergstation Karlesjoch",
             "elevation_m": null,
-            "depth_cm": 18,
-            "fresh_cm": 3,
+            "depth_cm": 20,
+            "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
           },
           {
             "name": "Gletscherparkplatz",
             "elevation_m": null,
-            "depth_cm": 18,
-            "fresh_cm": 3,
+            "depth_cm": 20,
+            "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
           },
@@ -392,7 +392,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-25T18:50:00+01:00",
+      "lifts_updated_at": "2026-10-26T09:57:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.kaunertaler-gletscher.at/kaunertaler-gletscher/wetter.html",
@@ -412,7 +412,7 @@
         "lon": 10.87
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.287466+01:00",
+      "fetched_at": "2026-10-26T14:31:44.734180+01:00",
       "snow": {
         "mountain_cm": 15,
         "valley_cm": 0,
@@ -533,7 +533,7 @@
         "lon": 11.9244
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:05.708836+01:00",
+      "fetched_at": "2026-10-26T14:32:10.388571+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -572,7 +572,7 @@
         "lon": 12.2853
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:05.703252+01:00",
+      "fetched_at": "2026-10-26T14:32:10.395216+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -611,7 +611,7 @@
         "lon": 11.303
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:06.690852+01:00",
+      "fetched_at": "2026-10-26T14:32:10.566180+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -632,7 +632,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T04:06:00+01:00",
+      "lifts_updated_at": "2026-10-26T08:15:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Axamer%20Lizum_36"
@@ -649,7 +649,7 @@
         "lon": 12.5802
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:06.687187+01:00",
+      "fetched_at": "2026-10-26T14:32:10.402348+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -688,7 +688,7 @@
         "lon": 11.4411
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:07.839927+01:00",
+      "fetched_at": "2026-10-26T14:32:10.379622+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -726,7 +726,7 @@
         "lon": 10.6421
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:07.848078+01:00",
+      "fetched_at": "2026-10-26T14:32:12.120534+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -764,7 +764,7 @@
         "lon": 10.7523
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:07.817532+01:00",
+      "fetched_at": "2026-10-26T14:32:12.061090+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -802,7 +802,7 @@
         "lon": 12.3629
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:07.826444+01:00",
+      "fetched_at": "2026-10-26T14:32:12.139263+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -840,7 +840,7 @@
         "lon": 12.193
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:10.411129+01:00",
+      "fetched_at": "2026-10-26T14:32:15.638536+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -907,7 +907,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T08:33:35+01:00",
+      "lifts_updated_at": "2026-10-26T13:33:20+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Brixen%20im%20Thale%20-%20SkiWelt_58",
@@ -926,7 +926,7 @@
         "lon": 11.8785
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:10.384075+01:00",
+      "fetched_at": "2026-10-26T14:32:15.566824+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -961,7 +961,7 @@
         "lon": 12.5074
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:10.420447+01:00",
+      "fetched_at": "2026-10-26T14:32:15.581288+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1000,7 +1000,7 @@
         "lon": 11.8603
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:12.578677+01:00",
+      "fetched_at": "2026-10-26T14:32:19.050500+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1082,7 +1082,7 @@
         "lon": 10.9681
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:13.132357+01:00",
+      "fetched_at": "2026-10-26T14:32:19.009651+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1120,7 +1120,7 @@
         "lon": 10.9484
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:13.143189+01:00",
+      "fetched_at": "2026-10-26T14:32:19.377874+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1158,7 +1158,7 @@
         "lon": 11.3189
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:13.148795+01:00",
+      "fetched_at": "2026-10-26T14:32:20.356687+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1196,7 +1196,7 @@
         "lon": 10.709
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:13.249545+01:00",
+      "fetched_at": "2026-10-26T14:32:20.377012+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1235,7 +1235,7 @@
         "lon": 10.1388
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:13.471816+01:00",
+      "fetched_at": "2026-10-26T14:32:20.371971+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1273,7 +1273,7 @@
         "lon": 12.0489
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:16.870652+01:00",
+      "fetched_at": "2026-10-26T14:32:24.104467+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1336,7 +1336,7 @@
           "total_km": 12
         }
       },
-      "lifts_updated_at": "2026-10-26T09:05:35+01:00",
+      "lifts_updated_at": "2026-10-26T14:32:32+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Zell%20am%20Ziller%20-%20Zillertal%20Arena_86",
@@ -1355,7 +1355,7 @@
         "lon": 11.5285
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:16.879045+01:00",
+      "fetched_at": "2026-10-26T14:32:24.228265+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1393,7 +1393,7 @@
         "lon": 12.5972
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:16.840940+01:00",
+      "fetched_at": "2026-10-26T14:32:24.619504+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1432,7 +1432,7 @@
         "lon": 11.1798
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:16.882095+01:00",
+      "fetched_at": "2026-10-26T14:32:25.226079+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1470,7 +1470,7 @@
         "lon": 11.703
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:17.402826+01:00",
+      "fetched_at": "2026-10-26T14:32:25.236932+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1509,7 +1509,7 @@
         "lon": 11.7531
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:17.920641+01:00",
+      "fetched_at": "2026-10-26T14:32:25.342255+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1547,7 +1547,7 @@
         "lon": 10.8927
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:18.878749+01:00",
+      "fetched_at": "2026-10-26T14:32:25.776558+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1585,7 +1585,7 @@
         "lon": 10.7582
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:19.062417+01:00",
+      "fetched_at": "2026-10-26T14:32:26.345638+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1623,7 +1623,7 @@
         "lon": 11.8072
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:19.564509+01:00",
+      "fetched_at": "2026-10-26T14:32:26.443386+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1661,7 +1661,7 @@
         "lon": 11.6926
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:19.544036+01:00",
+      "fetched_at": "2026-10-26T14:32:26.447746+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1699,7 +1699,7 @@
         "lon": 10.6753
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:19.696622+01:00",
+      "fetched_at": "2026-10-26T14:32:27.039886+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1737,7 +1737,7 @@
         "lon": 10.3094
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:20.747830+01:00",
+      "fetched_at": "2026-10-26T14:32:27.575537+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1800,7 +1800,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:04:13+01:00",
+      "lifts_updated_at": "2026-10-26T14:23:12+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Ischgl%20-%20Silvretta%20Arena_11",
@@ -1819,7 +1819,7 @@
         "lon": 10.3649
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:20.731121+01:00",
+      "fetched_at": "2026-10-26T14:32:27.792148+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1858,7 +1858,7 @@
         "lon": 10.3385
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:20.760344+01:00",
+      "fetched_at": "2026-10-26T14:32:28.642574+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1896,7 +1896,7 @@
         "lon": 11.6959
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:21.353799+01:00",
+      "fetched_at": "2026-10-26T14:32:28.738293+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1934,7 +1934,7 @@
         "lon": 11.1427
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:21.942609+01:00",
+      "fetched_at": "2026-10-26T14:32:29.446411+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -1972,7 +1972,7 @@
         "lon": 11.7645
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:22.475933+01:00",
+      "fetched_at": "2026-10-26T14:32:29.537130+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2010,7 +2010,7 @@
         "lon": 12.4293
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:22.526053+01:00",
+      "fetched_at": "2026-10-26T14:32:30.532810+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2092,7 +2092,7 @@
         "lon": 11.6435
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:23.260865+01:00",
+      "fetched_at": "2026-10-26T14:32:30.779976+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2130,7 +2130,7 @@
         "lon": 12.4362
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:23.251461+01:00",
+      "fetched_at": "2026-10-26T14:32:30.862182+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2168,7 +2168,7 @@
         "lon": 11.0391
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:23.940553+01:00",
+      "fetched_at": "2026-10-26T14:32:31.131384+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2206,7 +2206,7 @@
         "lon": 10.6246
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:23.947304+01:00",
+      "fetched_at": "2026-10-26T14:32:31.250339+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2245,7 +2245,7 @@
         "lon": 10.8469
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:24.108767+01:00",
+      "fetched_at": "2026-10-26T14:32:31.373598+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2283,7 +2283,7 @@
         "lon": 12.7689
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:24.539177+01:00",
+      "fetched_at": "2026-10-26T14:32:32.454005+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2354,7 +2354,7 @@
         "lon": 11.3775
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:25.589652+01:00",
+      "fetched_at": "2026-10-26T14:32:32.730209+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2375,7 +2375,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T08:14:00+01:00",
+      "lifts_updated_at": "2026-10-26T12:01:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Muttereralm%20-%20Nockspitzbahn_49"
@@ -2392,7 +2392,7 @@
         "lon": 10.5468
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:25.599140+01:00",
+      "fetched_at": "2026-10-26T14:32:33.348632+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2474,7 +2474,7 @@
         "lon": 10.6196
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:25.606467+01:00",
+      "fetched_at": "2026-10-26T14:32:33.318678+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2513,7 +2513,7 @@
         "lon": 12.3447
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:26.001011+01:00",
+      "fetched_at": "2026-10-26T14:32:34.545817+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2572,7 +2572,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T07:15:10+01:00",
+      "lifts_updated_at": "2026-10-26T11:30:10+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Wildkogel-Arena_2951",
@@ -2591,7 +2591,7 @@
         "lon": 10.5422
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:26.746138+01:00",
+      "fetched_at": "2026-10-26T14:32:34.589517+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2630,7 +2630,7 @@
         "lon": 10.9692
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:27.106101+01:00",
+      "fetched_at": "2026-10-26T14:32:34.514073+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2669,7 +2669,7 @@
         "lon": 11.399
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:27.244750+01:00",
+      "fetched_at": "2026-10-26T14:32:35.014399+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2709,7 +2709,7 @@
         "lon": 11.0862
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:27.885705+01:00",
+      "fetched_at": "2026-10-26T14:32:36.049055+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2791,7 +2791,7 @@
         "lon": 12.6169
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:28.388232+01:00",
+      "fetched_at": "2026-10-26T14:32:36.032729+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2829,7 +2829,7 @@
         "lon": 11.4107
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:28.729706+01:00",
+      "fetched_at": "2026-10-26T14:32:36.292833+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2867,7 +2867,7 @@
         "lon": 11.2105
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:28.804274+01:00",
+      "fetched_at": "2026-10-26T14:32:36.492495+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2888,7 +2888,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T04:08:00+01:00",
+      "lifts_updated_at": "2026-10-26T13:40:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Rangger%20K%C3%B6pfl_2555"
@@ -2905,7 +2905,7 @@
         "lon": 11.7513
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:28.781194+01:00",
+      "fetched_at": "2026-10-26T14:32:36.526074+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2944,7 +2944,7 @@
         "lon": 11.2
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:28.828041+01:00",
+      "fetched_at": "2026-10-26T14:32:37.588506+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -2982,7 +2982,7 @@
         "lon": 10.4427
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:29.574927+01:00",
+      "fetched_at": "2026-10-26T14:32:37.631936+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3021,7 +3021,7 @@
         "lon": 11.3455
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:29.865451+01:00",
+      "fetched_at": "2026-10-26T14:32:37.682389+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3042,7 +3042,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T08:22:00+01:00",
+      "lifts_updated_at": "2026-10-26T12:41:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Schlick%202000_56"
@@ -3059,7 +3059,7 @@
         "lon": 12.0923
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:30.295554+01:00",
+      "fetched_at": "2026-10-26T14:32:37.756647+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3097,7 +3097,7 @@
         "lon": 10.5046
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:30.381385+01:00",
+      "fetched_at": "2026-10-26T14:32:37.890337+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3135,7 +3135,7 @@
         "lon": 10.5973
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:31.103346+01:00",
+      "fetched_at": "2026-10-26T14:32:39.285118+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3174,7 +3174,7 @@
         "lon": 11.38
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:31.397756+01:00",
+      "fetched_at": "2026-10-26T14:32:39.336714+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3235,7 +3235,7 @@
         "lon": 12.4586
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:31.520409+01:00",
+      "fetched_at": "2026-10-26T14:32:39.601436+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3274,7 +3274,7 @@
         "lon": 10.4155
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:31.822837+01:00",
+      "fetched_at": "2026-10-26T14:32:39.958758+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3312,7 +3312,7 @@
         "lon": 12.506
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:31.943518+01:00",
+      "fetched_at": "2026-10-26T14:32:40.564659+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3350,7 +3350,7 @@
         "lon": 12.3837
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:32.116313+01:00",
+      "fetched_at": "2026-10-26T14:32:40.619734+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3389,7 +3389,7 @@
         "lon": 12.3787
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:32.476860+01:00",
+      "fetched_at": "2026-10-26T14:32:40.796428+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3428,7 +3428,7 @@
         "lon": 11.7906
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:32.744322+01:00",
+      "fetched_at": "2026-10-26T14:32:40.874856+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3466,7 +3466,7 @@
         "lon": 12.4276
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:33.059482+01:00",
+      "fetched_at": "2026-10-26T14:32:40.992491+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3505,7 +3505,7 @@
         "lon": 12.5702
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:34.084602+01:00",
+      "fetched_at": "2026-10-26T14:32:42.410955+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3544,7 +3544,7 @@
         "lon": 11.1087
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:07:34.222069+01:00",
+      "fetched_at": "2026-10-26T14:32:42.666828+01:00",
       "snow": {
         "mountain_cm": 20,
         "valley_cm": null,
@@ -3607,7 +3607,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T08:22:01+01:00",
+      "lifts_updated_at": "2026-10-26T11:46:32+01:00",
       "avalanche": null,
       "sources": [
         "https://www.snowcard.tirol.at/skigebiet/Stubaier%20Gletscher_27",
@@ -3626,7 +3626,7 @@
         "lon": 10.9427
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:34.387138+01:00",
+      "fetched_at": "2026-10-26T14:32:42.806192+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3664,7 +3664,7 @@
         "lon": 12.0658
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:34.505289+01:00",
+      "fetched_at": "2026-10-26T14:32:43.163213+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3703,7 +3703,7 @@
         "lon": 10.9565
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:34.595082+01:00",
+      "fetched_at": "2026-10-26T14:32:43.381463+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3741,7 +3741,7 @@
         "lon": 10.8927
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:35.006187+01:00",
+      "fetched_at": "2026-10-26T14:32:43.771282+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3779,7 +3779,7 @@
         "lon": 11.5898
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:35.286221+01:00",
+      "fetched_at": "2026-10-26T14:32:43.799072+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3817,7 +3817,7 @@
         "lon": 12.2852
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:07:35.450524+01:00",
+      "fetched_at": "2026-10-26T14:32:44.256181+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3856,7 +3856,7 @@
         "lon": 13.346
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.104657+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464131+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3895,7 +3895,7 @@
         "lon": 13.4333
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.104787+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464236+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -3962,7 +3962,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T09:56:42+01:00",
+      "lifts_updated_at": "2026-10-25T10:39:27+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -3980,7 +3980,7 @@
         "lon": 13.0951
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.104850+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464288+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4018,7 +4018,7 @@
         "lon": 13.0952
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.104879+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464312+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4056,7 +4056,7 @@
         "lon": 13.0023
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.104903+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464334+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4077,7 +4077,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T08:37:00+01:00",
+      "lifts_updated_at": "2026-10-26T13:37:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -4095,7 +4095,7 @@
         "lon": 13.2014
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.104947+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464377+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4134,7 +4134,7 @@
         "lon": 13.3976
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.104975+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464403+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4155,7 +4155,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T08:37:00+01:00",
+      "lifts_updated_at": "2026-10-26T12:37:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -4173,7 +4173,7 @@
         "lon": 13.5709
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105001+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464425+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4211,7 +4211,7 @@
         "lon": 13.2338
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105048+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464467+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4249,7 +4249,7 @@
         "lon": 13.5137
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105066+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464483+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4270,7 +4270,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T04:29:00+01:00",
+      "lifts_updated_at": "2026-10-26T12:24:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -4288,7 +4288,7 @@
         "lon": 13.3842
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105091+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464509+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4309,7 +4309,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T08:37:00+01:00",
+      "lifts_updated_at": "2026-10-26T12:37:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -4327,7 +4327,7 @@
         "lon": 13.1953
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105126+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464546+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4365,7 +4365,7 @@
         "lon": 13.1029
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105154+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464571+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4403,7 +4403,7 @@
         "lon": 13.1609
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105173+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464587+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4441,7 +4441,7 @@
         "lon": 13.0395
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105200+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464611+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4479,7 +4479,7 @@
         "lon": 12.4195
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105215+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464626+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4509,7 +4509,7 @@
         "lon": 13.6157
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105231+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464641+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4581,7 +4581,7 @@
         "lon": 12.6934
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105253+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464661+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4620,7 +4620,7 @@
         "lon": 13.4007
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105271+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464678+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4650,7 +4650,7 @@
         "lon": 13.6937
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105287+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464693+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4689,7 +4689,7 @@
         "lon": 13.6797
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105304+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464708+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4728,7 +4728,7 @@
         "lon": 13.557
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105327+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464727+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4816,7 +4816,7 @@
         "lon": 13.4
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105342+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464817+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4854,7 +4854,7 @@
         "lon": 13.4417
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105372+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464848+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4875,7 +4875,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T00:36:00+01:00",
+      "lifts_updated_at": "2026-10-26T10:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -4893,7 +4893,7 @@
         "lon": 12.9941
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105395+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464870+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -4970,7 +4970,7 @@
         "lon": 12.8481
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105416+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464887+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5003,7 +5003,7 @@
         "lon": 12.7376
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105513+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464905+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5024,7 +5024,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T08:37:00+01:00",
+      "lifts_updated_at": "2026-10-26T13:28:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/"
@@ -5041,7 +5041,7 @@
         "lon": 13.3966
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105541+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464930+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5080,7 +5080,7 @@
         "lon": 12.6364
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105576+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464949+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5149,7 +5149,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:03:20+01:00",
+      "lifts_updated_at": "2026-10-26T09:18:59+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/",
@@ -5168,7 +5168,7 @@
         "lon": 13.0586
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105596+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464967+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5207,7 +5207,7 @@
         "lon": 13.3652
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105618+01:00",
+      "fetched_at": "2026-10-26T14:31:49.464987+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5246,7 +5246,7 @@
         "lon": 12.7303
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105634+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465002+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5284,7 +5284,7 @@
         "lon": 12.6261
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:51.105648+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465017+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5323,7 +5323,7 @@
         "lon": 13.2725
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105662+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465031+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5361,7 +5361,7 @@
         "lon": 13.4525
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105688+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465055+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5400,7 +5400,7 @@
         "lon": 13.7264
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105709+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465074+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5421,7 +5421,7 @@
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-25T08:55:00+01:00",
+      "lifts_updated_at": "2026-10-26T08:53:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.salzburgerland.com/de/schneebericht/"
@@ -5438,7 +5438,7 @@
         "lon": 13.6179
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105732+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465098+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5476,7 +5476,7 @@
         "lon": 13.7223
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:51.105756+01:00",
+      "fetched_at": "2026-10-26T14:31:49.465121+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5514,7 +5514,7 @@
         "lon": 13.7984
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:39.432104+01:00",
+      "fetched_at": "2026-10-26T14:32:48.613012+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5595,7 +5595,7 @@
         "lon": 13.9143
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:39.881347+01:00",
+      "fetched_at": "2026-10-26T14:32:48.934240+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5676,7 +5676,7 @@
         "lon": 13.2745
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:40.046417+01:00",
+      "fetched_at": "2026-10-26T14:32:49.261198+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5751,7 +5751,7 @@
         "lon": 13.8765
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:40.182831+01:00",
+      "fetched_at": "2026-10-26T14:32:49.384319+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5834,7 +5834,7 @@
         "lon": 13.1706
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:40.553857+01:00",
+      "fetched_at": "2026-10-26T14:32:49.495075+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5872,7 +5872,7 @@
         "lon": 13.4589
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:40.734704+01:00",
+      "fetched_at": "2026-10-26T14:32:49.762753+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -5953,7 +5953,7 @@
         "lon": 13.0145
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:40.890988+01:00",
+      "fetched_at": "2026-10-26T14:32:50.331168+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6034,7 +6034,7 @@
         "lon": 14.9564
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:41.082927+01:00",
+      "fetched_at": "2026-10-26T14:32:50.435472+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6072,7 +6072,7 @@
         "lon": 13.718
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:41.309284+01:00",
+      "fetched_at": "2026-10-26T14:32:50.657333+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6139,7 +6139,7 @@
         "lon": 13.2902
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:07:41.966815+01:00",
+      "fetched_at": "2026-10-26T14:32:50.788681+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6210,7 +6210,7 @@
         "lon": 9.9197
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288389+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735234+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6273,7 +6273,7 @@
           "total_km": 17
         }
       },
-      "lifts_updated_at": "2026-10-26T06:14:57+01:00",
+      "lifts_updated_at": "2026-10-26T12:25:00+01:00",
       "avalanche": null,
       "sources": [
         "https://winter.intermaps.com/silvretta_montafon/data?lang=en"
@@ -6290,7 +6290,7 @@
         "lon": 9.8711
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288527+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735382+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6366,7 +6366,7 @@
         "lon": 9.9187
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288542+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735399+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6443,7 +6443,7 @@
         "lon": 9.7379
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288557+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735413+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6528,7 +6528,7 @@
         "lon": 10.0589
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288579+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735421+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6604,7 +6604,7 @@
         "lon": 10.0256
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288587+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735429+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6684,7 +6684,7 @@
         "lon": 9.891
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288600+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735441+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6767,7 +6767,7 @@
         "lon": 14.0571
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288609+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735450+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6848,7 +6848,7 @@
         "lon": 14.3682
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288653+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735494+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6925,7 +6925,7 @@
         "lon": 14.1196
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288660+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735503+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -6996,7 +6996,7 @@
         "lon": 14.2045
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288672+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735514+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7067,7 +7067,7 @@
         "lon": 14.0066
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288679+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735522+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7144,7 +7144,7 @@
         "lon": 15.79
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288689+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735531+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7209,7 +7209,7 @@
         "lon": 13.921
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288696+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735538+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7289,7 +7289,7 @@
         "lon": 13.9982
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288703+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735545+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7346,7 +7346,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-25T09:56:36+01:00",
+      "lifts_updated_at": "2026-10-26T10:07:30+01:00",
       "avalanche": null,
       "sources": [
         "https://winter.intermaps.com/kasberg_gruenau/data?lang=en",
@@ -7364,7 +7364,7 @@
         "lon": 14.9183
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288711+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735553+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7436,7 +7436,7 @@
         "lon": 15.1516
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288719+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735560+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7506,7 +7506,7 @@
         "lon": 15.3756
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288731+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735569+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7577,7 +7577,7 @@
         "lon": 12.8408
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288743+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735581+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7654,7 +7654,7 @@
         "lon": 13.7264
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288754+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735594+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7727,7 +7727,7 @@
         "lon": 14.6741
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288761+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735601+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7798,7 +7798,7 @@
         "lon": 14.7244
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288774+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735614+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7875,7 +7875,7 @@
         "lon": 14.1712
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288781+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735621+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -7931,7 +7931,7 @@
         "lon": 10.2664
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288789+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735629+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8009,7 +8009,7 @@
         "lon": 10.1401
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288809+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735647+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8087,7 +8087,7 @@
         "lon": 10.1833
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288821+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735661+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8164,7 +8164,7 @@
         "lon": 7.5604
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288833+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735672+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8176,7 +8176,7 @@
             "name": "Ottere (SLF)",
             "elevation_m": 2017,
             "depth_cm": 2,
-            "fresh_cm": null,
+            "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
           }
@@ -8232,7 +8232,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=62&saison=1&ref=contentBox",
@@ -8252,7 +8252,7 @@
         "lon": 8.6067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.288845+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735685+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -8303,7 +8303,7 @@
         "lon": 7.3947
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288855+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735695+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8410,7 +8410,7 @@
         "lon": 7.4818
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288869+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735706+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8490,7 +8490,7 @@
         "lon": 9.6799
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288880+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735719+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8576,7 +8576,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:02:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=67&saison=1&ref=contentBox",
@@ -8596,7 +8596,7 @@
         "lon": 7.9844
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288893+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735732+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8678,7 +8678,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=54&saison=1&ref=contentBox",
@@ -8698,7 +8698,7 @@
         "lon": 8.1611
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288903+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735742+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -8766,7 +8766,7 @@
           "total_km": 8
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=184&saison=1&ref=contentBox",
@@ -8786,11 +8786,11 @@
         "lon": 8.4927
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.288911+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735750+01:00",
       "snow": {
         "mountain_cm": 1,
-        "valley_cm": null,
-        "fresh_cm": null,
+        "valley_cm": 0,
+        "fresh_cm": 2,
         "last_snowfall": null,
         "condition": null,
         "stations": [
@@ -8798,7 +8798,15 @@
             "name": "Hendar Furggu (SLF)",
             "elevation_m": 2299,
             "depth_cm": 1,
-            "fresh_cm": null,
+            "fresh_cm": 2,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Bosco Gurin (SLF)",
+            "elevation_m": 1525,
+            "depth_cm": 0,
+            "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
           }
@@ -8869,7 +8877,7 @@
         "lon": 8.8197
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.288919+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735758+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -8936,7 +8944,7 @@
         "lon": 9.3093
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288966+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735831+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9024,7 +9032,7 @@
         "lon": 6.8712
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288978+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735845+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9096,7 +9104,7 @@
           "total_km": 4
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:15:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=183&saison=1&ref=contentBox",
@@ -9116,7 +9124,7 @@
         "lon": 7.1067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.288988+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735855+01:00",
       "snow": {
         "mountain_cm": 7,
         "valley_cm": null,
@@ -9167,7 +9175,7 @@
         "lon": 7.1687
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.288996+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735864+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9259,7 +9267,7 @@
         "lon": 9.8161
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289005+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735872+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9329,7 +9337,7 @@
           "total_km": 19
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=42&saison=1&ref=contentBox",
@@ -9349,7 +9357,7 @@
         "lon": 7.4808
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289016+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735883+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9433,7 +9441,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=141&saison=1&ref=contentBox",
@@ -9454,7 +9462,7 @@
         "lon": 9.9836
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289029+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735895+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9526,7 +9534,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",
@@ -9544,7 +9552,7 @@
         "lon": 7.5326
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289037+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735902+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9608,7 +9616,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=214&saison=1&ref=contentBox",
@@ -9628,7 +9636,7 @@
         "lon": 7.7806
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289045+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735910+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9690,7 +9698,7 @@
           "total_km": 2
         }
       },
-      "lifts_updated_at": "2026-10-25T18:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T10:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=258&saison=1&ref=contentBox",
@@ -9711,7 +9719,7 @@
         "lon": 9.1723
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289056+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735918+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9797,7 +9805,7 @@
         "lon": 7.6063
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289064+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735928+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9875,7 +9883,7 @@
         "lon": 7.5664
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289072+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735937+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -9959,7 +9967,7 @@
         "lon": 7.4784
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289082+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735947+01:00",
       "snow": {
         "mountain_cm": 1,
         "valley_cm": null,
@@ -10010,7 +10018,7 @@
         "lon": 9.2803
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289092+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735957+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10069,7 +10077,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=37&saison=1&ref=contentBox",
@@ -10087,7 +10095,7 @@
         "lon": 7.2056
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289105+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735969+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10175,7 +10183,7 @@
         "lon": 8.9664
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289118+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735981+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10214,7 +10222,7 @@
         "lon": 7.8415
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289130+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735991+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10280,7 +10288,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=52&saison=1&ref=contentBox",
@@ -10300,7 +10308,7 @@
         "lon": 7.5736
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289141+01:00",
+      "fetched_at": "2026-10-26T14:31:44.735998+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10376,7 +10384,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=56&saison=1&ref=contentBox",
@@ -10397,7 +10405,7 @@
         "lon": 7.0767
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289149+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736011+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10489,7 +10497,7 @@
         "lon": 7.2838
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289157+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736019+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10563,7 +10571,7 @@
           "total_km": 14
         }
       },
-      "lifts_updated_at": "2026-10-26T08:31:00+01:00",
+      "lifts_updated_at": "2026-10-26T13:41:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=39&saison=1&ref=contentBox",
@@ -10583,7 +10591,7 @@
         "lon": 8.8089
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289166+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736026+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10594,7 +10602,7 @@
           {
             "name": "Wanne (SLF)",
             "elevation_m": 1701,
-            "depth_cm": 1,
+            "depth_cm": 0,
             "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
@@ -10661,7 +10669,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=75&saison=1&ref=contentBox",
@@ -10682,7 +10690,7 @@
         "lon": 9.6534
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289174+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736034+01:00",
       "snow": {
         "mountain_cm": 6,
         "valley_cm": 1,
@@ -10740,7 +10748,7 @@
         "lon": 7.2896
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289212+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736070+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10825,7 +10833,7 @@
         "lon": 8.4829
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289222+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736082+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10886,7 +10894,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=64&saison=1&ref=contentBox",
@@ -10904,7 +10912,7 @@
         "lon": 7.155
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289233+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736092+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -10980,7 +10988,7 @@
         "lon": 7.0994
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289250+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736106+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11048,7 +11056,7 @@
           "total_km": 4
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=83&saison=1&ref=contentBox",
@@ -11068,7 +11076,7 @@
         "lon": 7.219
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289262+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736120+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11128,7 +11136,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-24T08:32:00+02:00",
+      "lifts_updated_at": "2026-10-26T13:41:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=101&saison=1&ref=contentBox",
@@ -11149,7 +11157,7 @@
         "lon": 9.2718
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289272+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736128+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11225,7 +11233,7 @@
           "total_km": 34
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=200&saison=1&ref=contentBox",
@@ -11245,7 +11253,7 @@
         "lon": 7.7778
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289285+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736141+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11323,7 +11331,7 @@
           "total_km": 8
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=43&saison=1&ref=contentBox",
@@ -11343,7 +11351,7 @@
         "lon": 7.437
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289293+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736149+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11354,7 +11362,7 @@
           {
             "name": "Trüttlisbergpass (SLF)",
             "elevation_m": 1970,
-            "depth_cm": 1,
+            "depth_cm": 3,
             "fresh_cm": 2,
             "temperature_c": null,
             "condition": null
@@ -11415,7 +11423,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=59&saison=1&ref=contentBox",
@@ -11435,7 +11443,7 @@
         "lon": 9.5577
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289301+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736156+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11496,7 +11504,7 @@
         },
         "difficult": {
           "open": 0,
-          "total": 8,
+          "total": 7,
           "open_km": 0.0,
           "total_km": null
         },
@@ -11505,9 +11513,15 @@
           "total": 2,
           "open_km": 0.0,
           "total_km": 2
+        },
+        "other": {
+          "open": 0,
+          "total": 1,
+          "open_km": 0.0,
+          "total_km": 1
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=57&saison=1&ref=contentBox",
@@ -11527,7 +11541,7 @@
         "lon": 7.1515
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289309+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736164+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11613,7 +11627,7 @@
         "lon": 7.0064
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289319+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736172+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11685,7 +11699,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=80&saison=1&ref=contentBox",
@@ -11706,7 +11720,7 @@
         "lon": 7.0972
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289334+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736185+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11785,7 +11799,7 @@
         "lon": 6.9447
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289342+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736195+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11796,7 +11810,7 @@
           {
             "name": "Chenau (SLF)",
             "elevation_m": 1708,
-            "depth_cm": 1,
+            "depth_cm": 0,
             "fresh_cm": 17,
             "temperature_c": null,
             "condition": null
@@ -11859,7 +11873,7 @@
         "lon": 7.629
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289350+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736203+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -11931,7 +11945,7 @@
           "total_km": 9
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=135&saison=1&ref=contentBox",
@@ -11951,7 +11965,7 @@
         "lon": 7.0176
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289362+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736232+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12021,7 +12035,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-26T09:03:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=32&saison=1&ref=contentBox",
@@ -12041,7 +12055,7 @@
         "lon": 8.1955
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289370+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736240+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12107,7 +12121,7 @@
           "total_km": 11
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=188&saison=1&ref=contentBox",
@@ -12127,7 +12141,7 @@
         "lon": 8.2684
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289395+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736247+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12188,7 +12202,7 @@
           "total_km": 8
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=117&saison=1&ref=contentBox"
@@ -12205,7 +12219,7 @@
         "lon": 7.8265
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289405+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736259+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12263,7 +12277,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-26T08:50:00+01:00",
+      "lifts_updated_at": "2026-10-26T09:17:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=268&saison=1&ref=contentBox",
@@ -12283,7 +12297,7 @@
         "lon": 6.8581
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289415+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736267+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12349,7 +12363,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T07:44:00+01:00",
+      "lifts_updated_at": "2026-10-26T10:26:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=209&saison=1&ref=contentBox",
@@ -12369,7 +12383,7 @@
         "lon": 7.2914
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289424+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736276+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12449,7 +12463,7 @@
           "total_km": 6
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=36&saison=1&ref=contentBox",
@@ -12469,7 +12483,7 @@
         "lon": 9.1022
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289436+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736288+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12556,7 +12570,7 @@
         "lon": 7.1606
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289469+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736319+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12620,7 +12634,7 @@
           "total_km": 1
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=180&saison=1&ref=contentBox",
@@ -12641,7 +12655,7 @@
         "lon": 9.3868
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289482+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736333+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12713,7 +12727,7 @@
           "total_km": 7
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=47&saison=1&ref=contentBox",
@@ -12733,17 +12747,26 @@
         "lon": 7.9291
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.289490+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736341+01:00",
       "snow": {
-        "mountain_cm": null,
+        "mountain_cm": 0,
         "valley_cm": null,
-        "fresh_cm": null,
+        "fresh_cm": 0,
         "last_snowfall": null,
         "condition": null,
-        "stations": []
+        "stations": [
+          {
+            "name": "Saas Fee (SLF)",
+            "elevation_m": 1790,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          }
+        ]
       },
       "lifts": {
-        "open": 3,
+        "open": 5,
         "total": 23
       },
       "slopes": {
@@ -12758,7 +12781,7 @@
           "total": 2
         },
         "drag_lift": {
-          "open": 0,
+          "open": 2,
           "total": 12
         },
         "funicular": {
@@ -12796,11 +12819,14 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-26T08:45:07+01:00",
+      "lifts_updated_at": "2026-10-26T13:37:07+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=252&saison=1&ref=contentBox",
-        "https://winter.intermaps.com/saas_fee/data?lang=en"
+        "https://winter.intermaps.com/saas_fee/data?lang=en",
+        "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+        "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "https://www.slf.ch/en/services-and-products/slf-data-service"
       ],
       "errors": []
     },
@@ -12814,14 +12840,23 @@
         "lon": 7.9387
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289502+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736353+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": []
+        "stations": [
+          {
+            "name": "Saas Fee (SLF)",
+            "elevation_m": 1790,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          }
+        ]
       },
       "lifts": {
         "open": 0,
@@ -12867,10 +12902,13 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=206&saison=1&ref=contentBox",
+        "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+        "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "https://www.slf.ch/en/services-and-products/slf-data-service",
         "https://www.skiresort.info/ski-resort/hohsaas-saas-grund/"
       ],
       "errors": []
@@ -12885,7 +12923,7 @@
         "lon": 9.4099
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289511+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736361+01:00",
       "snow": {
         "mountain_cm": 0,
         "valley_cm": null,
@@ -12936,7 +12974,7 @@
         "lon": 7.2884
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289523+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736369+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -12998,7 +13036,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=228&saison=1&ref=contentBox",
@@ -13018,7 +13056,7 @@
         "lon": 10.2974
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289531+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736379+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13112,7 +13150,7 @@
         "lon": 8.0341
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289539+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736389+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13123,7 +13161,7 @@
           {
             "name": "Rotschalp (SLF)",
             "elevation_m": 1875,
-            "depth_cm": 1,
+            "depth_cm": 0,
             "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
@@ -13178,7 +13216,7 @@
           "total_km": 7
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:30:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=177&saison=1&ref=contentBox",
@@ -13198,7 +13236,7 @@
         "lon": 9.3234
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289554+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736402+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13210,6 +13248,14 @@
             "name": "Unter Surettasee (SLF)",
             "elevation_m": 2200,
             "depth_cm": 1,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Splügen (SLF)",
+            "elevation_m": 1470,
+            "depth_cm": 0,
             "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
@@ -13290,7 +13336,7 @@
         "lon": 7.6144
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289562+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736410+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13368,7 +13414,7 @@
           "total_km": 6
         }
       },
-      "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=176&saison=1&ref=contentBox",
@@ -13389,7 +13435,7 @@
         "lon": 9.819
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289585+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736421+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13477,7 +13523,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-25T23:59:00+01:00",
+      "lifts_updated_at": "2026-10-26T13:57:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=41&saison=1&ref=contentBox",
@@ -13497,7 +13543,7 @@
         "lon": 7.3661
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289593+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736429+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13559,7 +13605,7 @@
           "total_km": 10
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox",
@@ -13579,7 +13625,7 @@
         "lon": 9.3605
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289601+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736438+01:00",
       "snow": {
         "mountain_cm": 0,
         "valley_cm": null,
@@ -13629,7 +13675,7 @@
         "lon": 9.6067
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289620+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736455+01:00",
       "snow": {
         "mountain_cm": 4,
         "valley_cm": 1,
@@ -13688,7 +13734,7 @@
         "lon": 7.8014
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289628+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736465+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13780,10 +13826,10 @@
         "lon": 10.3354
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289636+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736473+01:00",
       "snow": {
         "mountain_cm": 4,
-        "valley_cm": null,
+        "valley_cm": 0,
         "fresh_cm": 0,
         "last_snowfall": null,
         "condition": null,
@@ -13792,6 +13838,14 @@
             "name": "Murtaröl (SLF)",
             "elevation_m": 2359,
             "depth_cm": 4,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Sta.Maria (SLF)",
+            "elevation_m": 1387,
+            "depth_cm": 0,
             "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
@@ -13831,7 +13885,7 @@
         "lon": 7.2338
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289648+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736482+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -13911,7 +13965,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:07:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:32:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox"
@@ -13928,7 +13982,7 @@
         "lon": 7.5342
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289658+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736492+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14004,7 +14058,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T08:32:00+01:00",
+      "lifts_updated_at": "2026-10-26T09:42:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=169&saison=1&ref=contentBox",
@@ -14022,7 +14076,7 @@
         "lon": 7.186
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289667+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736502+01:00",
       "snow": {
         "mountain_cm": 0,
         "valley_cm": null,
@@ -14072,7 +14126,7 @@
         "lon": 7.0549
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289675+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736510+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14148,7 +14202,7 @@
           "total_km": 15
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=60&saison=1&ref=contentBox",
@@ -14168,7 +14222,7 @@
         "lon": 7.9043
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289687+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736519+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14246,7 +14300,7 @@
         "lon": 9.3421
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289722+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736553+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14305,7 +14359,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=76&saison=1&ref=contentBox"
@@ -14322,10 +14376,10 @@
         "lon": 7.7428
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.289732+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736565+01:00",
       "snow": {
         "mountain_cm": 7,
-        "valley_cm": null,
+        "valley_cm": 0,
         "fresh_cm": 0,
         "last_snowfall": null,
         "condition": null,
@@ -14337,15 +14391,23 @@
             "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
+          },
+          {
+            "name": "Zermatt (SLF)",
+            "elevation_m": 1600,
+            "depth_cm": 0,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
           }
         ]
       },
       "lifts": {
-        "open": 9,
+        "open": 10,
         "total": 36
       },
       "slopes": {
-        "open": 2,
+        "open": 9,
         "total": 84,
         "open_km": null,
         "total_km": 200
@@ -14360,7 +14422,7 @@
           "total": 10
         },
         "drag_lift": {
-          "open": 0,
+          "open": 1,
           "total": 5
         },
         "funicular": {
@@ -14378,15 +14440,15 @@
       },
       "slopes_by_difficulty": {
         "easy": {
-          "open": 0,
+          "open": 2,
           "total": 12,
           "open_km": null,
           "total_km": null
         },
         "intermediate": {
-          "open": 2,
+          "open": 7,
           "total": 48,
-          "open_km": 3.9,
+          "open_km": 14.8,
           "total_km": 99
         },
         "difficult": {
@@ -14402,12 +14464,12 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:05:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:31:00+01:00",
       "avalanche": null,
       "sources": [
-        "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
         "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+        "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
         "https://measurement-api.slf.ch/public/api/imis/daily-snow",
         "https://measurement-api.slf.ch/public/api/study-plot/measurements",
         "https://www.slf.ch/en/services-and-products/slf-data-service",
@@ -14425,7 +14487,7 @@
         "lon": 9.96
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289749+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736582+01:00",
       "snow": {
         "mountain_cm": 5,
         "valley_cm": null,
@@ -14476,7 +14538,7 @@
         "lon": 8.5939
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289758+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736590+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14542,7 +14604,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T09:01:45+01:00",
+      "lifts_updated_at": "2026-10-26T13:01:35+01:00",
       "avalanche": null,
       "sources": [
         "https://winter.intermaps.com/andermatt_sedrun_disentis/data?lang=en",
@@ -14563,7 +14625,7 @@
         "lon": 8.4013
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289767+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736599+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14575,6 +14637,14 @@
             "name": "Titlisboden (SLF)",
             "elevation_m": 2149,
             "depth_cm": 1,
+            "fresh_cm": 0,
+            "temperature_c": null,
+            "condition": null
+          },
+          {
+            "name": "Engelberg (SLF)",
+            "elevation_m": 1023,
+            "depth_cm": 0,
             "fresh_cm": 0,
             "temperature_c": null,
             "condition": null
@@ -14658,7 +14728,7 @@
         "lon": 12.1323
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289781+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736611+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14734,23 +14804,14 @@
         "lon": 11.9583
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289790+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736620+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
-        "last_snowfall": "2026-10-23",
+        "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 5,
-            "fresh_cm": 5,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -14801,10 +14862,11 @@
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
         "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.kronplatz.com/en/the-kronplatz/skilifts-slopes/ski-slopes"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "alta-badia",
@@ -14816,7 +14878,7 @@
         "lon": 11.874
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289795+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736628+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -14880,7 +14942,9 @@
         "https://www.dolomitisuperski.com",
         "https://www.altabadia.org/en/skiing-alta-badia-dolomites"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "val-gardena",
@@ -14892,47 +14956,14 @@
         "lon": 11.7601
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289803+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736635+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -14990,14 +15021,15 @@
           "total_km": 18
         }
       },
-      "lifts_updated_at": "2026-10-23T14:25:12.358135+02:00",
+      "lifts_updated_at": "2026-10-26T13:00:48.731706+01:00",
       "avalanche": null,
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-        "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+        "https://www.dolomitisuperski.com"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "seiser-alm",
@@ -15009,47 +15041,14 @@
         "lon": 11.6179
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289810+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736642+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -15095,14 +15094,15 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-23T14:25:12.759404+02:00",
+      "lifts_updated_at": "2026-10-26T13:00:57.100299+01:00",
       "avalanche": null,
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-        "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+        "https://www.dolomitisuperski.com"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "val-di-fassa",
@@ -15114,7 +15114,7 @@
         "lon": 11.7711
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289815+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736647+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15194,7 +15194,7 @@
         "lon": 11.5712
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289821+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736654+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15261,7 +15261,9 @@
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
         "https://www.dolomitisuperski.com"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "arabba-marmolada",
@@ -15273,7 +15275,7 @@
         "lon": 11.8741
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289828+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736661+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15348,31 +15350,14 @@
         "lon": 12.3871
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289833+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736666+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -15427,10 +15412,11 @@
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
         "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.dreizinnen.com/en/skiing/skiing/ski-resort"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "val-di-fiemme",
@@ -15442,7 +15428,7 @@
         "lon": 11.4605
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289840+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736671+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15518,47 +15504,14 @@
         "lon": 11.526
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289845+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736676+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Valley station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -15602,10 +15555,11 @@
       "avalanche": null,
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-        "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+        "https://www.dolomitisuperski.com"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "san-martino-di-castrozza",
@@ -15617,7 +15571,7 @@
         "lon": 11.8028
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289852+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736683+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15697,23 +15651,14 @@
         "lon": 11.6757
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289861+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736691+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -15763,10 +15708,11 @@
       "avalanche": null,
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-        "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+        "https://www.dolomitisuperski.com"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "gitschberg-jochtal",
@@ -15778,23 +15724,14 @@
         "lon": 11.662
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289865+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736696+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Mountain station",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -15845,10 +15782,11 @@
       "sources": [
         "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
         "https://www.dolomitisuperski.com",
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/gitschberg-jochtal/"
       ],
-      "errors": []
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
     },
     {
       "id": "alpe-lusia-san-pellegrino",
@@ -15860,7 +15798,7 @@
         "lon": 11.7917
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289872+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736705+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -15936,7 +15874,7 @@
         "lon": 12.0437
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289877+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736710+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16007,7 +15945,7 @@
         "lon": 7.6304
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289881+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736715+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16068,7 +16006,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T07:58:00+01:00",
+      "lifts_updated_at": "2026-10-26T13:53:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
@@ -16086,7 +16024,7 @@
         "lon": 6.9462
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289891+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736723+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16125,7 +16063,7 @@
         "lon": 6.9183
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289900+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736730+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16136,7 +16074,7 @@
       },
       "lifts": {
         "open": 0,
-        "total": 19
+        "total": 17
       },
       "slopes": {
         "open": 0,
@@ -16151,7 +16089,7 @@
         },
         "chairlift": {
           "open": 0,
-          "total": 11
+          "total": 9
         },
         "drag_lift": {
           "open": 0,
@@ -16182,7 +16120,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T07:45:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa"
@@ -16199,7 +16137,7 @@
         "lon": 7.3108
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289907+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736737+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16238,7 +16176,7 @@
         "lon": 7.726
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289912+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736744+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16303,7 +16241,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-23T08:00:00+02:00",
+      "lifts_updated_at": "2026-10-26T08:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
@@ -16321,7 +16259,7 @@
         "lon": 7.5657
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289917+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736749+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16360,7 +16298,7 @@
         "lon": 7.572
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289921+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736753+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16417,7 +16355,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-23T08:00:00+02:00",
+      "lifts_updated_at": "2026-10-26T08:00:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
@@ -16435,7 +16373,7 @@
         "lon": 7.1822
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289928+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736759+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16474,7 +16412,7 @@
         "lon": 7.1182
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.289933+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736764+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16513,7 +16451,7 @@
         "lon": 10.827
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289938+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736769+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16587,7 +16525,7 @@
         "lon": 10.7894
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289949+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736788+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16657,7 +16595,7 @@
         "lon": 10.8656
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289963+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736801+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16727,7 +16665,7 @@
         "lon": 10.5818
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289970+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736810+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16801,7 +16739,7 @@
         "lon": 10.6629
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289976+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736816+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16875,7 +16813,7 @@
         "lon": 11.0076
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289981+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736821+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -16945,7 +16883,7 @@
         "lon": 11.1866
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289986+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736825+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17019,7 +16957,7 @@
         "lon": 11.288
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.289990+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736829+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17089,7 +17027,7 @@
         "lon": 10.9441
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290032+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736868+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17155,7 +17093,7 @@
         "lon": 11.0575
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290037+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736873+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17220,8 +17158,8 @@
         "lat": 46.996,
         "lon": 11.9812
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290044+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736878+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17230,25 +17168,23 @@
         "condition": null,
         "stations": []
       },
-      "lifts": {
-        "open": 0,
-        "total": 11
-      },
+      "lifts": null,
       "slopes": {
         "open": null,
-        "total": 36,
+        "total": null,
         "open_km": null,
         "total_km": 41
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-04-27T23:57:06.367000+02:00",
+      "lifts_updated_at": null,
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/klausberg-skiworld-ahrntal/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "speikboden",
@@ -17259,60 +17195,33 @@
         "lat": 46.9511,
         "lon": 11.9212
       },
-      "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290053+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736885+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Valley station Speikboden",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": 5.0,
-            "condition": null
-          },
-          {
-            "name": "Speikboden Alm",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": 3.0,
-            "condition": null
-          },
-          {
-            "name": "Sonnklar Speikboden",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": 2.0,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
-      "lifts": {
-        "open": 0,
-        "total": 8
-      },
+      "lifts": null,
       "slopes": {
-        "open": 0,
-        "total": 19,
-        "open_km": 0.0,
+        "open": null,
+        "total": null,
+        "open_km": null,
         "total_km": 42
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T00:18:25.093000+01:00",
+      "lifts_updated_at": null,
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/speikboden-skiworld-ahrntal/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "schnalstal",
@@ -17323,44 +17232,33 @@
         "lat": 46.7565,
         "lon": 10.7827
       },
-      "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.290060+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736894+01:00",
       "snow": {
-        "mountain_cm": 0,
+        "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Kurzras - Maso Corto",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": -4.0,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
-      "lifts": {
-        "open": 2,
-        "total": 11
-      },
+      "lifts": null,
       "slopes": {
-        "open": 2,
-        "total": 22,
+        "open": null,
+        "total": null,
         "open_km": null,
         "total_km": 42
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T00:18:25.093000+01:00",
+      "lifts_updated_at": null,
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/val-senales-glacier-schnalstaler-gletscher/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "sulden",
@@ -17371,24 +17269,15 @@
         "lat": 46.528,
         "lon": 10.5843
       },
-      "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290069+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736901+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Solda Madriccio",
-            "elevation_m": null,
-            "depth_cm": 100,
-            "fresh_cm": null,
-            "temperature_c": -6.5,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -17437,10 +17326,11 @@
       "lifts_updated_at": "2026-10-23T06:02:41+02:00",
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://winter.intermaps.com/sulden/data?lang=en"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "schoeneben-haideralm",
@@ -17451,8 +17341,8 @@
         "lat": 46.766,
         "lon": 10.5319
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290074+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736906+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17512,11 +17402,12 @@
       "lifts_updated_at": "2026-10-21T22:47:57+02:00",
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en",
         "https://www.skiresort.info/ski-resort/belpiano-schoeneben-malga-san-valentino-haideralm/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "meran-2000",
@@ -17527,49 +17418,24 @@
         "lat": 46.6658,
         "lon": 11.2412
       },
-      "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290079+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736910+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "2.300 m - Kesselberg",
-            "elevation_m": 2300,
-            "depth_cm": 50,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "1.600 m - Falzeben in Avelengo",
-            "elevation_m": 1600,
-            "depth_cm": 42,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "2.000 m - Summit station Piffing",
-            "elevation_m": 2000,
-            "depth_cm": 49,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
-        "open": 0,
+        "open": 3,
         "total": 8
       },
       "slopes": {
         "open": 0,
         "total": 11,
-        "open_km": 0.0,
+        "open_km": null,
         "total_km": 40
       },
       "lifts_by_type": {
@@ -17582,7 +17448,7 @@
           "total": 4
         },
         "gondola": {
-          "open": 0,
+          "open": 3,
           "total": 3
         }
       },
@@ -17590,30 +17456,31 @@
         "easy": {
           "open": 0,
           "total": 4,
-          "open_km": 0.0,
+          "open_km": null,
           "total_km": null
         },
         "intermediate": {
           "open": 0,
           "total": 5,
-          "open_km": 0.0,
+          "open_km": null,
           "total_km": null
         },
         "difficult": {
           "open": 0,
           "total": 2,
-          "open_km": 0.0,
+          "open_km": null,
           "total_km": null
         }
       },
       "lifts_updated_at": "2026-10-25T16:20:58+01:00",
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://winter.intermaps.com/meran/data?lang=en",
         "https://www.skiresort.info/ski-resort/meran-2000/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "ratschings-jaufen",
@@ -17624,32 +17491,15 @@
         "lat": 46.8681,
         "lon": 11.3651
       },
-      "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290084+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736917+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Racines-Giovo/Ratschings-Jaufen Valley",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": 0.0,
-            "condition": null
-          },
-          {
-            "name": "Racines-Giovo/Ratschings-Jaufen Mountain",
-            "elevation_m": null,
-            "depth_cm": 0,
-            "fresh_cm": null,
-            "temperature_c": 0.0,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
       "lifts": {
         "open": 0,
@@ -17658,7 +17508,7 @@
       "slopes": {
         "open": 0,
         "total": 24,
-        "open_km": 0.0,
+        "open_km": null,
         "total_km": 29
       },
       "lifts_by_type": {
@@ -17675,18 +17525,19 @@
         "other": {
           "open": 0,
           "total": 24,
-          "open_km": 0.0,
+          "open_km": null,
           "total_km": null
         }
       },
       "lifts_updated_at": "2026-10-23T04:20:13+02:00",
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://winter.intermaps.com/ratschings_jaufen/data?lang=en",
         "https://www.skiresort.info/ski-resort/racines-giovo-ratschings-jaufen-malga-calice-kalcheralm/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "ladurns",
@@ -17697,52 +17548,33 @@
         "lat": 46.9633,
         "lon": 11.3537
       },
-      "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290093+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736926+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
         "fresh_cm": null,
         "last_snowfall": null,
         "condition": null,
-        "stations": [
-          {
-            "name": "Montain Station Ladurns",
-            "elevation_m": null,
-            "depth_cm": null,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          },
-          {
-            "name": "Vally Station Ladurns",
-            "elevation_m": null,
-            "depth_cm": null,
-            "fresh_cm": null,
-            "temperature_c": null,
-            "condition": null
-          }
-        ]
+        "stations": []
       },
-      "lifts": {
-        "open": 0,
-        "total": 3
-      },
+      "lifts": null,
       "slopes": {
-        "open": 0,
-        "total": 10,
-        "open_km": 0.0,
+        "open": null,
+        "total": null,
+        "open_km": null,
         "total_km": 18
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-26T00:18:25.093000+01:00",
+      "lifts_updated_at": null,
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/ladurns/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "pfelders",
@@ -17753,8 +17585,8 @@
         "lat": 46.7953,
         "lon": 11.0895
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290100+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736932+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17763,25 +17595,23 @@
         "condition": null,
         "stations": []
       },
-      "lifts": {
-        "open": 0,
-        "total": 4
-      },
+      "lifts": null,
       "slopes": {
         "open": null,
-        "total": 13,
+        "total": null,
         "open_km": null,
         "total_km": 18
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-09-27T08:41:04.167000+02:00",
+      "lifts_updated_at": null,
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/pfelders-moos-in-passeier/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "schwemmalm",
@@ -17792,8 +17622,8 @@
         "lat": 46.5311,
         "lon": 10.9593
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290108+01:00",
+      "status": null,
+      "fetched_at": "2026-10-26T14:31:44.736938+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17802,13 +17632,10 @@
         "condition": null,
         "stations": []
       },
-      "lifts": {
-        "open": 0,
-        "total": 8
-      },
+      "lifts": null,
       "slopes": {
         "open": null,
-        "total": 15,
+        "total": null,
         "open_km": null,
         "total_km": 28
       },
@@ -17817,10 +17644,11 @@
       "lifts_updated_at": null,
       "avalanche": null,
       "sources": [
-        "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
         "https://www.skiresort.info/ski-resort/schwemmalm/"
       ],
-      "errors": []
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
     },
     {
       "id": "bormio",
@@ -17832,7 +17660,7 @@
         "lon": 10.3775
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290115+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736945+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17893,7 +17721,7 @@
           "total_km": null
         }
       },
-      "lifts_updated_at": "2026-10-26T08:54:00+01:00",
+      "lifts_updated_at": "2026-10-26T14:24:00+01:00",
       "avalanche": null,
       "sources": [
         "https://www.bormio.eu/it/live-info/impianti-e-piste",
@@ -17912,7 +17740,7 @@
         "lon": 10.4952
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290122+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736956+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -17951,7 +17779,7 @@
         "lon": 10.4544
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.290129+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736962+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18012,7 +17840,7 @@
         "lon": 10.136
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290136+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736969+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18051,7 +17879,7 @@
         "lon": 13.5784
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290148+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736980+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18098,7 +17926,7 @@
         "lon": 13.4741
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290156+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736988+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18172,7 +18000,7 @@
         "lon": 12.9221
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290163+01:00",
+      "fetched_at": "2026-10-26T14:31:44.736995+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18246,7 +18074,7 @@
         "lon": 12.5856
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290173+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737002+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18316,7 +18144,7 @@
         "lon": 12.6803
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290180+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737011+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18386,7 +18214,7 @@
         "lon": 12.5191
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290190+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737021+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18452,7 +18280,7 @@
         "lon": 9.3584
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290200+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737031+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18531,7 +18359,7 @@
         "lon": 14.9839
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290207+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737038+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18590,7 +18418,7 @@
           "total_km": 1
         }
       },
-      "lifts_updated_at": "2026-10-25T16:12:52+01:00",
+      "lifts_updated_at": "2026-10-26T13:15:43+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/jested",
@@ -18608,8 +18436,8 @@
         "lat": 50.7515,
         "lon": 15.2823
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290218+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737048+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18623,14 +18451,46 @@
         "total": 9
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 10,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 10
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-09-28T22:38:58+02:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 2
+        },
+        "chairlift": {
+          "open": 0,
+          "total": 2
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 5
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 4,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 3,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "other": {
+          "open": 0,
+          "total": 3,
+          "open_km": 0.0,
+          "total_km": 4
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:16:08+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/tspicak",
@@ -18648,8 +18508,8 @@
         "lat": 50.7836,
         "lon": 15.17
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290231+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737062+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18663,14 +18523,36 @@
         "total": 11
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 12,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 5
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-05T15:04:39+02:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 1
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 10
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 10,
+          "open_km": 0.0,
+          "total_km": 4
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 2
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:16:00+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/severak",
@@ -18688,8 +18570,8 @@
         "lat": 50.772,
         "lon": 15.4315
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290240+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737068+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18703,19 +18585,47 @@
         "total": 5
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 7,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 8
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-09-16T11:40:29+02:00",
+      "lifts_by_type": {
+        "chairlift": {
+          "open": 0,
+          "total": 2
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 3
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 4,
+          "open_km": 0.0,
+          "total_km": 5
+        },
+        "difficult": {
+          "open": 0,
+          "total": 1,
+          "open_km": 0.0,
+          "total_km": 2
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:16:31+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/harr",
-        "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=1",
-        "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=1"
+        "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=1",
+        "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=1"
       ],
       "errors": []
     },
@@ -18729,7 +18639,7 @@
         "lon": 15.3937
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290246+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737078+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18769,7 +18679,7 @@
         "lon": 15.4639
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290253+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737084+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18841,7 +18751,7 @@
         "lon": 15.4296
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290266+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737095+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18881,7 +18791,7 @@
         "lon": 15.4015
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290272+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737101+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18920,7 +18830,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-13T11:44:13+02:00",
+      "lifts_updated_at": "2026-10-26T13:16:47+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/vysokenj",
@@ -18938,8 +18848,8 @@
         "lat": 50.6542,
         "lon": 15.5536
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290279+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737110+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -18953,14 +18863,46 @@
         "total": 13
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 15,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 5
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-09-29T00:00:29+02:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 4
+        },
+        "chairlift": {
+          "open": 0,
+          "total": 1
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 8
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 11,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 2
+        },
+        "other": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 1
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:16:56+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/benecko",
@@ -18979,7 +18921,7 @@
         "lon": 15.6068
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290289+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737121+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19019,7 +18961,7 @@
         "lon": 15.5958
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290298+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737127+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19072,7 +19014,7 @@
           "total_km": 4
         }
       },
-      "lifts_updated_at": "2026-10-24T00:00:30+02:00",
+      "lifts_updated_at": "2026-10-26T13:17:12+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/herlik",
@@ -19091,7 +19033,7 @@
         "lon": 15.5868
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290309+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737138+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19116,8 +19058,8 @@
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/knez_vrch",
-        "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=28",
-        "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=28"
+        "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=28",
+        "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=28"
       ],
       "errors": []
     },
@@ -19131,7 +19073,7 @@
         "lon": 15.7807
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290316+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737146+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19188,7 +19130,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-26T00:00:16+01:00",
+      "lifts_updated_at": "2026-10-26T13:31:57+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/chora",
@@ -19207,7 +19149,7 @@
         "lon": 15.7336
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290763+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737568+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19278,8 +19220,8 @@
         "lat": 50.6351,
         "lon": 15.7096
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290773+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737576+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19293,14 +19235,46 @@
         "total": 7
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 12,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 9
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-10T19:16:25+02:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 2
+        },
+        "chairlift": {
+          "open": 0,
+          "total": 2
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 3
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 7,
+          "open_km": 0.0,
+          "total_km": 4
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 3,
+          "open_km": 0.0,
+          "total_km": 4
+        },
+        "other": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 2
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:17:37+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/cdul",
@@ -19319,7 +19293,7 @@
         "lon": 15.8137
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290785+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737587+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19359,7 +19333,7 @@
         "lon": 15.9059
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290791+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737593+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19399,7 +19373,7 @@
         "lon": 16.3506
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290800+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737600+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19470,8 +19444,8 @@
         "lat": 50.2161,
         "lon": 16.471
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290808+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737608+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19485,14 +19459,46 @@
         "total": 4
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 5,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 5
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-09-28T21:13:03+02:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 1
+        },
+        "chairlift": {
+          "open": 0,
+          "total": 1
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 2
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 2
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 2
+        },
+        "difficult": {
+          "open": 0,
+          "total": 1,
+          "open_km": 0.0,
+          "total_km": 1
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:18:10+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/ricky_voh",
@@ -19511,7 +19517,7 @@
         "lon": 16.7429
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290815+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737617+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19551,7 +19557,7 @@
         "lon": 16.8173
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290822+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737623+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19623,7 +19629,7 @@
         "lon": 16.9016
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290831+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737631+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19663,7 +19669,7 @@
         "lon": 16.9413
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290837+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737638+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19703,7 +19709,7 @@
         "lon": 17.1324
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290844+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737645+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19758,7 +19764,7 @@
           "total_km": 5
         }
       },
-      "lifts_updated_at": "2026-10-25T15:28:31+01:00",
+      "lifts_updated_at": "2026-10-26T13:19:08+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/kouty_nd",
@@ -19777,7 +19783,7 @@
         "lon": 17.2839
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290856+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737656+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19817,7 +19823,7 @@
         "lon": 17.229
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290868+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737668+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19857,7 +19863,7 @@
         "lon": 17.1547
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290877+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737678+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19919,7 +19925,7 @@
         "lon": 17.0648
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290888+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737686+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -19993,7 +19999,7 @@
         "lon": 18.4224
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290896+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737695+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20040,7 +20046,7 @@
           "total_km": 3
         }
       },
-      "lifts_updated_at": "2026-10-19T07:24:58+02:00",
+      "lifts_updated_at": "2026-10-26T13:20:00+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/bila",
@@ -20058,8 +20064,8 @@
         "lat": 49.2948,
         "lon": 18.23
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290902+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737703+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20073,14 +20079,46 @@
         "total": 7
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 10,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 7
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-03-08T18:41:18+01:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 1
+        },
+        "chairlift": {
+          "open": 0,
+          "total": 1
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 5
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 5,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 4,
+          "open_km": 0.0,
+          "total_km": 4
+        },
+        "difficult": {
+          "open": 0,
+          "total": 1,
+          "open_km": 0.0,
+          "total_km": 1
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:20:56+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/kohutka",
@@ -20099,7 +20137,7 @@
         "lon": 14.2296
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290909+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737709+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20166,8 +20204,8 @@
         "lat": 49.0719,
         "lon": 13.6268
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290920+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737718+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20181,14 +20219,40 @@
         "total": 7
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 8,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 5
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-10-01T09:50:47+02:00",
+      "lifts_by_type": {
+        "carpet": {
+          "open": 0,
+          "total": 1
+        },
+        "chairlift": {
+          "open": 0,
+          "total": 2
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 4
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 5,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 3,
+          "open_km": 0.0,
+          "total_km": 3
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:21:11+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/zadov",
@@ -20207,7 +20271,7 @@
         "lon": 13.2266
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290926+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737724+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20279,7 +20343,7 @@
         "lon": 12.968
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290935+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737735+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20332,12 +20396,12 @@
           "total_km": 4
         }
       },
-      "lifts_updated_at": "2026-10-26T08:10:27+01:00",
+      "lifts_updated_at": "2026-10-26T13:22:08+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/klinovec",
-        "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=2",
-        "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=2"
+        "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=2",
+        "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=2"
       ],
       "errors": []
     },
@@ -20350,8 +20414,8 @@
         "lat": 50.733,
         "lon": 13.9578
       },
-      "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290943+01:00",
+      "status": "closed",
+      "fetched_at": "2026-10-26T14:31:44.737743+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20365,14 +20429,42 @@
         "total": 5
       },
       "slopes": {
-        "open": null,
+        "open": 0,
         "total": 8,
-        "open_km": null,
+        "open_km": 0.0,
         "total_km": 7
       },
-      "lifts_by_type": null,
-      "slopes_by_difficulty": null,
-      "lifts_updated_at": "2026-03-09T08:08:48+01:00",
+      "lifts_by_type": {
+        "chairlift": {
+          "open": 0,
+          "total": 1
+        },
+        "drag_lift": {
+          "open": 0,
+          "total": 4
+        }
+      },
+      "slopes_by_difficulty": {
+        "easy": {
+          "open": 0,
+          "total": 5,
+          "open_km": 0.0,
+          "total_km": 4
+        },
+        "intermediate": {
+          "open": 0,
+          "total": 2,
+          "open_km": 0.0,
+          "total_km": 3
+        },
+        "difficult": {
+          "open": 0,
+          "total": 1,
+          "open_km": 0.0,
+          "total_km": 1
+        }
+      },
+      "lifts_updated_at": "2026-10-26T13:22:19+01:00",
       "avalanche": null,
       "sources": [
         "https://zima.holidayinfo.cz/cs/locinfo/telnice",
@@ -20391,7 +20483,7 @@
         "lon": 12.8183
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290950+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737749+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20459,7 +20551,7 @@
         "lon": 12.9299
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.290956+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737755+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20499,7 +20591,7 @@
         "lon": 19.9817
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290963+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737762+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20560,7 +20652,7 @@
         "lon": 20.8983
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290978+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737783+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20635,7 +20727,7 @@
         "lon": 20.4768
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.290989+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737796+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20700,7 +20792,7 @@
         "lon": 19.5579
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.291001+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737808+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20757,7 +20849,7 @@
         "lon": 16.3844
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:57.133585+01:00",
+      "fetched_at": "2026-10-26T14:31:59.324263+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20795,7 +20887,7 @@
         "lon": 6.635
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291057+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737860+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20836,7 +20928,7 @@
         "lon": 6.566
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291074+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737871+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20877,7 +20969,7 @@
         "lon": 6.5823
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291085+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737886+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20918,7 +21010,7 @@
         "lon": 6.5389
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291095+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737898+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -20959,7 +21051,7 @@
         "lon": 6.6744
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291102+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737905+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21000,7 +21092,7 @@
         "lon": 6.7788
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291112+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737914+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21041,7 +21133,7 @@
         "lon": 6.9076
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291119+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737921+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21082,7 +21174,7 @@
         "lon": 6.9787
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291125+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737927+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21112,7 +21204,7 @@
         "lon": 6.8849
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291137+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737936+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21152,7 +21244,7 @@
         "lon": 6.8478
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291149+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737948+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21182,7 +21274,7 @@
         "lon": 6.5394
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291156+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737957+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21223,7 +21315,7 @@
         "lon": 6.5023
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291162+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737964+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21264,7 +21356,7 @@
         "lon": 6.5172
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291169+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737971+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21305,7 +21397,7 @@
         "lon": 6.5705
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291179+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737979+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21346,7 +21438,7 @@
         "lon": 6.5624
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291186+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737987+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21376,7 +21468,7 @@
         "lon": 6.4562
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291195+01:00",
+      "fetched_at": "2026-10-26T14:31:44.737993+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21401,8 +21493,8 @@
       "avalanche": null,
       "sources": [
         "https://public.lumiplay.link/interactive-map/v1/map/name/saint-francois-valmorel",
-        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/staticPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/staticPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -21416,7 +21508,7 @@
         "lon": 6.3621
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291203+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738001+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21442,8 +21534,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-francois-longchamp&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/saint-francois-valmorel",
-        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/staticPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/staticPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -21457,7 +21549,7 @@
         "lon": 6.272
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291214+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738013+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21498,7 +21590,7 @@
         "lon": 6.2627
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291220+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738020+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21539,7 +21631,7 @@
         "lon": 6.229
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291231+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738031+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21580,7 +21672,7 @@
         "lon": 6.4296
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291240+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738040+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21621,7 +21713,7 @@
         "lon": 6.4935
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291251+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738051+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21662,7 +21754,7 @@
         "lon": 6.6572
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291264+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738060+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21692,7 +21784,7 @@
         "lon": 6.7127
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291271+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738067+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21730,7 +21822,7 @@
         "lon": 6.7414
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291278+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738078+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21756,8 +21848,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=aussois&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/Aussois",
-        "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -21771,7 +21863,7 @@
         "lon": 6.3345
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291287+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738086+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21809,7 +21901,7 @@
         "lon": 7.0468
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291294+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738093+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21839,7 +21931,7 @@
         "lon": 6.4239
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.291301+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738099+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21930,8 +22022,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=la-clusaz&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/La-Clusaz-Manigod",
-        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -21945,7 +22037,7 @@
         "lon": 6.4169
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291308+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738106+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -21971,8 +22063,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=manigod&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/La-Clusaz-Manigod",
-        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -21986,7 +22078,7 @@
         "lon": 6.4271
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291322+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738118+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22012,8 +22104,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=grandbornand&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/le-grand-bornand",
-        "https://public.lumiplay.link/interactive-map/v1/map/9f2083ec-a12b-4d9b-b6ad-21ffbbabc1d6/staticPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/9f2083ec-a12b-4d9b-b6ad-21ffbbabc1d6/dynamicPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/9f2083ec-a12b-4d9b-b6ad-21ffbbabc1d6/dynamicPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/9f2083ec-a12b-4d9b-b6ad-21ffbbabc1d6/staticPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -22027,7 +22119,7 @@
         "lon": 6.6179
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291329+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738125+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22053,8 +22145,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=megeve&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -22068,7 +22160,7 @@
         "lon": 6.7113
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291336+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738134+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22094,8 +22186,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-gervais&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -22109,7 +22201,7 @@
         "lon": 6.7275
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.291374+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738171+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22166,8 +22258,8 @@
       "avalanche": null,
       "sources": [
         "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -22181,7 +22273,7 @@
         "lon": 6.6448
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291381+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738178+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22207,8 +22299,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=portes-du-mont-blanc&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -22222,7 +22314,7 @@
         "lon": 6.87
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291390+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738187+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22252,7 +22344,7 @@
         "lon": 6.6904
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291401+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738197+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22282,7 +22374,7 @@
         "lon": 6.7269
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291415+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738206+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22312,7 +22404,7 @@
         "lon": 6.6384
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291422+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738213+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22342,7 +22434,7 @@
         "lon": 6.6773
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291429+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738224+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22372,7 +22464,7 @@
         "lon": 6.6633
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291438+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738233+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22402,7 +22494,7 @@
         "lon": 6.8413
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291445+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738240+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22432,7 +22524,7 @@
         "lon": 6.7091
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291456+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738251+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22462,7 +22554,7 @@
         "lon": 6.7199
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291466+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738261+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22492,7 +22584,7 @@
         "lon": 6.601
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291481+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738271+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22533,7 +22625,7 @@
         "lon": 6.1238
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.291488+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738278+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22627,7 +22719,7 @@
         "lon": 5.9954
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.291495+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738289+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22699,7 +22791,7 @@
         "lon": 6.1313
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.291502+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738296+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22771,7 +22863,7 @@
         "lon": 5.5513
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291509+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738303+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22801,7 +22893,7 @@
         "lon": 5.5442
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291518+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738312+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22831,7 +22923,7 @@
         "lon": 5.5885
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291527+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738321+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22861,7 +22953,7 @@
         "lon": 6.5926
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291536+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738330+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22891,7 +22983,7 @@
         "lon": 6.6899
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291547+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738338+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22932,7 +23024,7 @@
         "lon": 6.6358
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291554+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738347+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -22973,7 +23065,7 @@
         "lon": 6.4926
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291583+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738357+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23011,7 +23103,7 @@
         "lon": 5.9296
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291596+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738363+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23037,8 +23129,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=super-devoluy&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/devoluy",
-        "https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -23052,7 +23144,7 @@
         "lon": 6.8448
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291608+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738370+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23082,7 +23174,7 @@
         "lon": 6.6028
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291616+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738377+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23108,8 +23200,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=praloup&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/espace-lumiere",
-        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -23123,7 +23215,7 @@
         "lon": 6.5691
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291623+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738383+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23149,8 +23241,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-d-allos&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/espace-lumiere",
-        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -23164,7 +23256,7 @@
         "lon": 6.6817
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291634+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738392+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23205,7 +23297,7 @@
         "lon": 7.1454
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291645+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738403+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23235,7 +23327,7 @@
         "lon": 6.9301
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291656+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738415+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23276,7 +23368,7 @@
         "lon": 0.1777
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291663+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738422+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23306,7 +23398,7 @@
         "lon": 0.4574
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291670+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738429+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23336,7 +23428,7 @@
         "lon": 0.1585
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291677+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738435+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23366,7 +23458,7 @@
         "lon": -0.1145
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291721+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738473+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23396,7 +23488,7 @@
         "lon": -0.3291
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291733+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738482+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23426,7 +23518,7 @@
         "lon": -0.0588
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291742+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738492+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23456,7 +23548,7 @@
         "lon": -0.7395
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291749+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738502+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23494,7 +23586,7 @@
         "lon": 0.3825
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291758+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738510+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23524,7 +23616,7 @@
         "lon": -0.0094
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291766+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738519+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23554,7 +23646,7 @@
         "lon": 2.0727
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291775+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738528+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23595,7 +23687,7 @@
         "lon": 1.8335
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291782+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738534+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23625,7 +23717,7 @@
         "lon": 2.1029
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291794+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738541+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23655,7 +23747,7 @@
         "lon": 2.8562
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291804+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738554+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23696,7 +23788,7 @@
         "lon": 2.811
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291811+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738563+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23737,7 +23829,7 @@
         "lon": 2.7492
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291819+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738569+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23767,7 +23859,7 @@
         "lon": 6.3505
       },
       "status": "closed",
-      "fetched_at": "2026-10-26T09:06:47.291828+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738578+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23861,7 +23953,7 @@
         "lon": 5.9407
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291839+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738588+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23902,7 +23994,7 @@
         "lon": 6.0603
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291846+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738595+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23913,13 +24005,13 @@
       },
       "lifts": {
         "open": 0,
-        "total": 24
+        "total": 18
       },
       "slopes": {
         "open": null,
-        "total": 33,
+        "total": 26,
         "open_km": null,
-        "total_km": null
+        "total_km": 25
       },
       "lifts_by_type": null,
       "slopes_by_difficulty": null,
@@ -23943,7 +24035,7 @@
         "lon": 6.8767
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291857+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738603+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -23969,8 +24061,8 @@
       "sources": [
         "https://bulletinv3.lumiplan.pro/bulletin.php?station=bresse&lang=fr&isSoir=false",
         "https://public.lumiplay.link/interactive-map/v1/map/name/la-bresse-hohneck",
-        "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/dynamicPoiData?lang=fr",
-        "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/staticPoiData?lang=fr"
+        "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/staticPoiData?lang=fr",
+        "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/dynamicPoiData?lang=fr"
       ],
       "errors": []
     },
@@ -23984,7 +24076,7 @@
         "lon": 6.8777
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291866+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738612+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24014,7 +24106,7 @@
         "lon": 6.0699
       },
       "status": "open",
-      "fetched_at": "2026-10-26T09:06:47.291872+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738621+01:00",
       "snow": {
         "mountain_cm": 20,
         "valley_cm": 0,
@@ -24143,7 +24235,7 @@
         "lon": 19.585
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.291885+01:00",
+      "fetched_at": "2026-10-26T14:31:44.738632+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24182,7 +24274,7 @@
         "lon": 20.2806
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293602+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740192+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24221,7 +24313,7 @@
         "lon": 20.064
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293667+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740256+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24260,7 +24352,7 @@
         "lon": 20.2221
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293691+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740278+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24299,7 +24391,7 @@
         "lon": 19.0255
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293711+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740297+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24334,7 +24426,7 @@
         "lon": 20.1051
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293730+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740310+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24372,7 +24464,7 @@
         "lon": 16.8432
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293743+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740323+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24410,7 +24502,7 @@
         "lon": 15.4545
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293757+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740336+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24449,7 +24541,7 @@
         "lon": 15.7452
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293770+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740348+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,
@@ -24487,7 +24579,7 @@
         "lon": 19.343
       },
       "status": "no_report",
-      "fetched_at": "2026-10-26T09:06:47.293786+01:00",
+      "fetched_at": "2026-10-26T14:31:44.740361+01:00",
       "snow": {
         "mountain_cm": null,
         "valley_cm": null,

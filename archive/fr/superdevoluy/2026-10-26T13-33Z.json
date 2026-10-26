@@ -1,0 +1,42 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "superdevoluy",
+  "country": "fr",
+  "name": "SuperDévoluy",
+  "region": "Hautes-Alpes",
+  "location": {
+    "lat": 44.6765,
+    "lon": 5.9296
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T14:31:44.738363+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 22
+  },
+  "slopes": {
+    "open": null,
+    "total": 52,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=super-devoluy&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/devoluy",
+    "https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/dynamicPoiData?lang=fr"
+  ],
+  "errors": []
+}

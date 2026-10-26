@@ -1,0 +1,75 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "les-paccots",
+  "country": "ch",
+  "name": "Les Paccots",
+  "region": "Fribourg",
+  "location": {
+    "lat": 46.5223,
+    "lon": 6.9447
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T14:31:44.736195+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Chenau (SLF)",
+        "elevation_m": 1708,
+        "depth_cm": 0,
+        "fresh_cm": 17,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": {
+    "open": 0,
+    "total": 10,
+    "open_km": 0.0,
+    "total_km": 16
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 10
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 11
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-12T14:57:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=313&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

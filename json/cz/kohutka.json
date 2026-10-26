@@ -8,8 +8,8 @@
     "lat": 49.2948,
     "lon": 18.23
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-26T09:06:47.290902+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-26T14:31:44.737703+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,14 +23,46 @@
     "total": 7
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 10,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 7
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-03-08T18:41:18+01:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-26T13:20:56+01:00",
   "avalanche": null,
   "sources": [
     "https://zima.holidayinfo.cz/cs/locinfo/kohutka",

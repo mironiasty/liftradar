@@ -8,8 +8,8 @@
     "lat": 50.772,
     "lon": 15.4315
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-26T09:06:47.290240+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-26T14:31:44.737068+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,19 +23,47 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 7,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 8
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-09-16T11:40:29+02:00",
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-26T13:16:31+01:00",
   "avalanche": null,
   "sources": [
     "https://zima.holidayinfo.cz/cs/locinfo/harr",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=1",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=1"
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=1",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=1"
   ],
   "errors": []
 }

@@ -9,11 +9,11 @@
     "lon": 8.4927
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T09:06:47.288911+01:00",
+  "fetched_at": "2026-10-26T14:31:44.735750+01:00",
   "snow": {
     "mountain_cm": 1,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "valley_cm": 0,
+    "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -21,7 +21,15 @@
         "name": "Hendar Furggu (SLF)",
         "elevation_m": 2299,
         "depth_cm": 1,
-        "fresh_cm": null,
+        "fresh_cm": 2,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bosco Gurin (SLF)",
+        "elevation_m": 1525,
+        "depth_cm": 0,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }

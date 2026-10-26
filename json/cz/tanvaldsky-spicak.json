@@ -8,8 +8,8 @@
     "lat": 50.7515,
     "lon": 15.2823
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-26T09:06:47.290218+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-26T14:31:44.737048+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,14 +23,46 @@
     "total": 9
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 10,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 10
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-09-28T22:38:58+02:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "other": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-10-26T13:16:08+01:00",
   "avalanche": null,
   "sources": [
     "https://zima.holidayinfo.cz/cs/locinfo/tspicak",

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "gitschberg-jochtal",
+  "country": "it",
+  "name": "Gitschberg Jochtal",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.8134,
+    "lon": 11.662
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T14:31:44.736696+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 14
+  },
+  "slopes": {
+    "open": 0,
+    "total": 31,
+    "open_km": 0.0,
+    "total_km": 55
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 15,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": 29
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 8
+    }
+  },
+  "lifts_updated_at": "2026-10-09T22:23:20.863400+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+    "https://www.dolomitisuperski.com",
+    "https://www.skiresort.info/ski-resort/gitschberg-jochtal/"
+  ],
+  "errors": [
+    "snow: ReadTimeout: "
+  ]
+}
