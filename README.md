@@ -192,7 +192,7 @@ under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 341
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 419
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. The French resorts (added 26 October 2026) have no
 outlines yet: the script now covers France, but Overpass refused the queries that day. Each feature has the resort's `id` and the
