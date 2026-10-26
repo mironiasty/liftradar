@@ -9,7 +9,7 @@
     "lon": 6.4926
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738357+01:00",
+  "fetched_at": "2026-10-26T19:08:53.217048+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,14 +26,47 @@
     "open": null,
     "total": 34,
     "open_km": null,
-    "total_km": null
+    "total_km": 76
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 8
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 20,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 11,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=puy-saint-vincent&lang=fr&isSoir=false"
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=puy-saint-vincent&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/alpes-du-sud/puy-saint-vincent/station-de-ski"
   ],
   "errors": []
 }

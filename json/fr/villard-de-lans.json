@@ -9,7 +9,7 @@
     "lon": 5.5513
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738303+01:00",
+  "fetched_at": "2026-10-26T19:08:53.216975+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,14 +18,23 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 18
+  },
+  "slopes": {
+    "open": null,
+    "total": 41,
+    "open_km": null,
+    "total_km": 125
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=villard-de-lans&lang=fr&isSoir=false"
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=villard-de-lans&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/alpes-du-nord/villard-de-lans/station-de-ski"
   ],
   "errors": []
 }

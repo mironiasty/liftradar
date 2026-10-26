@@ -9,7 +9,7 @@
     "lon": 10.2664
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:44.735629+01:00",
+  "fetched_at": "2026-10-26T19:08:53.213432+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,7 +26,7 @@
     "open": 0,
     "total": 81,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 116
   },
   "lifts_by_type": {
     "chairlift": {
@@ -47,25 +47,25 @@
       "open": 0,
       "total": 35,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 51
     },
     "intermediate": {
       "open": 0,
       "total": 20,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 34
     },
     "difficult": {
       "open": 0,
       "total": 6,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 10
     },
     "ski_route": {
       "open": 0,
       "total": 20,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 22
     }
   },
   "lifts_updated_at": null,
@@ -73,7 +73,8 @@
   "sources": [
     "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=164&loadMore=1&orderState=ASC",
     "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=164&loadMore=1&orderState=ASC&orderDifficulty=ASC",
-    "https://www.skiarlberg.at/de/st-anton/live-infos/schnee-lawinenwarnbericht"
+    "https://www.skiarlberg.at/de/st-anton/live-infos/schnee-lawinenwarnbericht",
+    "https://winter.intermaps.com/skiarlberg/data?lang=en"
   ],
   "errors": []
 }

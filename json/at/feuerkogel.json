@@ -9,7 +9,7 @@
     "lon": 13.7223
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:49.465121+01:00",
+  "fetched_at": "2026-10-26T19:08:57.595312+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -29,11 +29,31 @@
     "total_km": 11
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 7
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
   "lifts_updated_at": "2026-10-26T04:07:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiresort.com/en/ski-resort/feuerkogel-ebensee/"
   ],
   "errors": []
 }

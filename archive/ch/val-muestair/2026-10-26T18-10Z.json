@@ -1,0 +1,90 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "val-muestair",
+  "country": "ch",
+  "name": "Val Müstair",
+  "region": "Graubünden",
+  "location": {
+    "lat": 46.6267,
+    "lon": 10.3354
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T19:08:53.214664+01:00",
+  "snow": {
+    "mountain_cm": 4,
+    "valley_cm": 0,
+    "fresh_cm": 0,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Murtaröl (SLF)",
+        "elevation_m": 2359,
+        "depth_cm": 4,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Sta.Maria (SLF)",
+        "elevation_m": 1387,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": 17,
+    "open_km": null,
+    "total_km": 18
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 7,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    },
+    "ski_route": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-05-18T11:27:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=403&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://www.skiresort.info/ski-resort/minschuns-val-muestair-tschierv/"
+  ],
+  "errors": []
+}

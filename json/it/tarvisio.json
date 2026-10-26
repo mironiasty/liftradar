@@ -9,7 +9,7 @@
     "lon": 13.5784
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:44.736980+01:00",
+  "fetched_at": "2026-10-26T19:08:53.215311+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -24,9 +24,9 @@
   },
   "slopes": {
     "open": 0,
-    "total": 0,
+    "total": 25,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 24
   },
   "lifts_by_type": {
     "chairlift": {
@@ -42,7 +42,8 @@
   "lifts_updated_at": "2026-10-22T04:24:34+02:00",
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/tarvisio/data?lang=en"
+    "https://winter.intermaps.com/tarvisio/data?lang=en",
+    "https://www.skiinfo.fr/frioul/tarvisio/station-de-ski"
   ],
   "errors": []
 }

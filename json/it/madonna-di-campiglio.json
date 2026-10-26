@@ -9,7 +9,7 @@
     "lon": 10.827
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:44.736769+01:00",
+  "fetched_at": "2026-10-26T19:08:53.215064+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,8 +23,8 @@
     "total": 21
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 41,
     "open_km": 0.0,
     "total_km": 44
   },
@@ -69,7 +69,8 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino"
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+    "https://www.skiinfo.fr/trentin/madonna-di-campiglio/station-de-ski"
   ],
   "errors": []
 }

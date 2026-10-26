@@ -9,7 +9,7 @@
     "lon": 6.7113
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738134+01:00",
+  "fetched_at": "2026-10-26T19:08:53.216758+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,17 +26,53 @@
     "open": null,
     "total": 56,
     "open_km": null,
-    "total_km": null
+    "total_km": 53
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 11
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 14
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 29,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 18,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 9,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-gervais&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr"
+    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
+    "https://www.skiinfo.fr/alpes-du-nord/saint-gervais-mont-blanc/station-de-ski"
   ],
   "errors": []
 }

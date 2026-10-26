@@ -9,7 +9,7 @@
     "lon": 11.0076
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:44.736821+01:00",
+  "fetched_at": "2026-10-26T19:08:53.215111+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,8 +23,8 @@
     "total": 20
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 31,
     "open_km": 0.0,
     "total_km": 40
   },
@@ -44,20 +44,20 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
-      "total": null,
+      "open": 0,
+      "total": 11,
       "open_km": 0.0,
       "total_km": 13
     },
     "intermediate": {
-      "open": null,
-      "total": null,
+      "open": 0,
+      "total": 19,
       "open_km": 0.0,
       "total_km": 25
     },
     "difficult": {
-      "open": null,
-      "total": null,
+      "open": 0,
+      "total": 1,
       "open_km": 0.0,
       "total_km": 2
     }
@@ -65,7 +65,8 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino"
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+    "https://www.trentino.com/it/sport-e-tempo-libero/sport-invernali/aree-sciistiche-nel-trentino/paganella-ski/"
   ],
   "errors": []
 }

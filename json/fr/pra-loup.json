@@ -9,7 +9,7 @@
     "lon": 6.6028
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738377+01:00",
+  "fetched_at": "2026-10-26T19:08:53.217075+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,17 +26,54 @@
     "open": null,
     "total": 57,
     "open_km": null,
-    "total_km": null
+    "total_km": 90
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 9
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 28,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 25,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=praloup&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-lumiere",
+    "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr"
+    "https://www.skiinfo.fr/alpes-du-sud/praloup/station-de-ski"
   ],
   "errors": []
 }

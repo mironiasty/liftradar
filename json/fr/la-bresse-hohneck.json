@@ -9,7 +9,7 @@
     "lon": 6.8767
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738603+01:00",
+  "fetched_at": "2026-10-26T19:08:53.217371+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,17 +26,50 @@
     "open": null,
     "total": 33,
     "open_km": null,
-    "total_km": null
+    "total_km": 21
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 6
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 19,
+      "open_km": null,
+      "total_km": 13
+    },
+    "intermediate": {
+      "open": null,
+      "total": 13,
+      "open_km": null,
+      "total_km": 7
+    },
+    "difficult": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": 1
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=bresse&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/la-bresse-hohneck",
     "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/dynamicPoiData?lang=fr"
+    "https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/dynamicPoiData?lang=fr",
+    "https://www.skiresort.com/en/ski-resort/la-bresse-hohneck/"
   ],
   "errors": []
 }

@@ -9,7 +9,7 @@
     "lon": 13.5137
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:49.464483+01:00",
+  "fetched_at": "2026-10-26T19:08:57.594076+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,18 +23,39 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 14,
     "open_km": null,
     "total_km": 20
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-26T12:24:00+01:00",
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 9
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-26T18:37:00+01:00",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/de/schneebericht/",
-    "https://www.skiresort.info/ski-resort/filzmoos/"
+    "https://www.skiresort.info/ski-resort/filzmoos/",
+    "https://www.skiinfo.fr/salzbourg/filzmoos/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/filzmoos/"
   ],
   "errors": []
 }

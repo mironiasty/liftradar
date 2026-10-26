@@ -9,7 +9,7 @@
     "lon": 10.1833
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:44.735661+01:00",
+  "fetched_at": "2026-10-26T19:08:53.213472+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,7 +26,7 @@
     "open": 0,
     "total": 45,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 63
   },
   "lifts_by_type": {
     "chairlift": {
@@ -47,32 +47,33 @@
       "open": 0,
       "total": 17,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 29
     },
     "intermediate": {
       "open": 0,
       "total": 8,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 11
     },
     "difficult": {
       "open": 0,
       "total": 11,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 11
     },
     "ski_route": {
       "open": 0,
       "total": 9,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 13
     }
   },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=327&loadMore=1&orderState=ASC",
-    "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=327&loadMore=1&orderState=ASC&orderDifficulty=ASC"
+    "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=327&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+    "https://winter.intermaps.com/skiarlberg/data?lang=en"
   ],
   "errors": []
 }

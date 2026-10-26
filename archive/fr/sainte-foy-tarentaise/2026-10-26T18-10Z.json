@@ -1,0 +1,70 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "sainte-foy-tarentaise",
+  "country": "fr",
+  "name": "Sainte Foy Tarentaise",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.5904,
+    "lon": 6.8849
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T19:08:53.216476+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": 25,
+    "open_km": null,
+    "total_km": 43
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 9,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 12,
+      "open_km": null,
+      "total_km": 14
+    },
+    "difficult": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://public.lumiplay.link/interactive-map/v1/map/name/Sainte-Foy",
+    "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/dynamicPoiData?lang=fr",
+    "https://www.skiinfo.fr/alpes-du-nord/sainte-foy-tarentaise/station-de-ski"
+  ],
+  "errors": []
+}

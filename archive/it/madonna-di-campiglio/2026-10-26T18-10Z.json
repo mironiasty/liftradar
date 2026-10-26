@@ -1,0 +1,76 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "madonna-di-campiglio",
+  "country": "it",
+  "name": "Madonna di Campiglio",
+  "region": "Trentino",
+  "location": {
+    "lat": 46.227,
+    "lon": 10.827
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T19:08:53.215064+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-15",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 21
+  },
+  "slopes": {
+    "open": 0,
+    "total": 41,
+    "open_km": 0.0,
+    "total_km": 44
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 11
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 7
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 22
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 16
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+    "https://www.skiinfo.fr/trentin/madonna-di-campiglio/station-de-ski"
+  ],
+  "errors": []
+}

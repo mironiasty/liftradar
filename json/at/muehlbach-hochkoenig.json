@@ -9,7 +9,7 @@
     "lon": 13.0023
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:49.464334+01:00",
+  "fetched_at": "2026-10-26T19:08:57.593754+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,18 +23,39 @@
     "total": 34
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 63,
     "open_km": null,
     "total_km": 120
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-26T13:37:00+01:00",
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 52
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 41
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 27
+    }
+  },
+  "lifts_updated_at": "2026-10-26T18:38:00+01:00",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/de/schneebericht/",
-    "https://www.hochkoenig.at/de/winter/skigebiet/skifahren-am-gipfel-der-gefuehle.html"
+    "https://www.hochkoenig.at/de/winter/skigebiet/skifahren-am-gipfel-der-gefuehle.html",
+    "https://www.skiinfo.fr/salzbourg/hochkoenig/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/hochkoenig-maria-alm-dienten-muehlbach/"
   ],
   "errors": []
 }

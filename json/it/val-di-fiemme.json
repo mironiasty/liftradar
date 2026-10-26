@@ -9,7 +9,7 @@
     "lon": 11.4605
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:44.736671+01:00",
+  "fetched_at": "2026-10-26T19:08:53.214939+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,7 +26,7 @@
     "open": 0,
     "total": 68,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 71
   },
   "lifts_by_type": {
     "carpet": {
@@ -71,7 +71,8 @@
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
     "https://www.dolomitisuperski.com",
-    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino"
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate"
   ],
   "errors": []
 }

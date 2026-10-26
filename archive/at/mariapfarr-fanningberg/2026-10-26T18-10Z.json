@@ -1,0 +1,41 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "mariapfarr-fanningberg",
+  "country": "at",
+  "name": "Mariapfarr - Fanningberg",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.1472,
+    "lon": 13.6937
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T19:08:57.594474+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": 16,
+    "open_km": null,
+    "total_km": 24
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-17T20:58:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiresort.info/ski-resort/fanningberg/",
+    "https://www.skiinfo.fr/salzbourg/fanningberg/station-de-ski"
+  ],
+  "errors": []
+}

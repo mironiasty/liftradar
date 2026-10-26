@@ -1,0 +1,87 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "soerenberg",
+  "country": "ch",
+  "name": "Sörenberg",
+  "region": "Luzern",
+  "location": {
+    "lat": 46.8208,
+    "lon": 8.0341
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T19:08:53.214525+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Rotschalp (SLF)",
+        "elevation_m": 1875,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 12
+  },
+  "slopes": {
+    "open": 0,
+    "total": 25,
+    "open_km": 0.0,
+    "total_km": 43
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 20
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 18
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 7
+    }
+  },
+  "lifts_updated_at": "2026-10-26T19:00:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=177&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

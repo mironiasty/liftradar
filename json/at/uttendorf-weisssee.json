@@ -9,7 +9,7 @@
     "lon": 12.6261
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:49.465017+01:00",
+  "fetched_at": "2026-10-26T19:08:57.594985+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -29,12 +29,32 @@
     "total_km": 23
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 6
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 15
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": "2026-09-13T11:05:00+02:00",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/de/schneebericht/",
-    "https://www.skiresort.info/ski-resort/weissee-gletscherwelt-uttendorf/"
+    "https://www.skiresort.info/ski-resort/weissee-gletscherwelt-uttendorf/",
+    "https://www.skiresort.com/en/ski-resort/weissee-gletscherwelt-uttendorf/"
   ],
   "errors": []
 }

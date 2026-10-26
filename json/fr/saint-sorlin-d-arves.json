@@ -9,7 +9,7 @@
     "lon": 6.229
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738031+01:00",
+  "fetched_at": "2026-10-26T19:08:53.216625+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,17 +26,50 @@
     "open": null,
     "total": 37,
     "open_km": null,
-    "total_km": null
+    "total_km": 120
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 9
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 22,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 8,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 7,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-sorlin&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/les-sybelles",
     "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/dynamicPoiData?lang=fr"
+    "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/dynamicPoiData?lang=fr",
+    "https://www.skiinfo.fr/alpes-du-nord/saint-sorlin-darves/station-de-ski"
   ],
   "errors": []
 }

@@ -9,7 +9,7 @@
     "lon": 5.9407
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T14:31:44.738588+01:00",
+  "fetched_at": "2026-10-26T19:08:53.217349+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -28,8 +28,44 @@
     "open_km": null,
     "total_km": 36
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 12
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 23,
+      "open_km": null,
+      "total_km": 24
+    },
+    "intermediate": {
+      "open": null,
+      "total": 10,
+      "open_km": null,
+      "total_km": 11
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [

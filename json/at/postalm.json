@@ -9,7 +9,7 @@
     "lon": 13.4
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T14:31:49.464817+01:00",
+  "fetched_at": "2026-10-26T19:08:57.594588+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -23,8 +23,8 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 11,
     "open_km": 0.0,
     "total_km": 5
   },
@@ -33,7 +33,8 @@
   "lifts_updated_at": "2026-10-26T00:08:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiinfo.fr/salzbourg/postalm/station-de-ski"
   ],
   "errors": []
 }
