@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, Czechia, Slovakia and Poland, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Czechia, Slovakia and Poland, published at
 [snow.miron.asia](https://snow.miron.asia).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -41,6 +41,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | South Tyrol outside Dolomiti Superski; snow of the South Tyrol DSS areas | [Open Data Hub](https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en) snow report (province's tourism database) |
 | Bormio (with San Colombano), Santa Caterina, Stelvio | [bormio.eu](https://www.bormio.eu/it/live-info/impianti-e-piste) (tourism board) |
 | Livigno | [livigno.eu](https://www.livigno.eu/en/lifts) (tourism board, lifts only) |
+| French resorts | [Lumiplan](https://www.lumiplan.com), where French resorts enter their daily report: the station's snow bulletin (`bulletinv3.lumiplan.pro`: measuring points, every lift and slope) and, where the resort embeds one, its interactive slope map (`lumiplay.link`: every lift and slope with lengths). No report time |
 | Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
@@ -54,12 +55,13 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Avalanche danger, Krkonoše and Jeseníky (Czechia) | [Horská služba ČR](https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved) (Czech Mountain Rescue), from the EAWS bulletin files on [avalanche.report](https://avalanche.report) |
 | Avalanche danger, Jasná, Tatranská Lomnica, Štrbské Pleso | [Slovak Avalanche Prevention Centre](https://www.laviny.sk) (HZS), from the same EAWS bulletin files |
 | Avalanche danger, Kasprowy Wierch (Polish Tatras) | [TOPR](https://lawiny.topr.pl) (Tatra Volunteer Rescue), from the same EAWS bulletin files |
+| Avalanche danger, French Alps and Pyrenees | [Météo-France](https://meteofrance.com/meteo-montagne) mountain bulletin (by massif), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 | Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
-holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI network). Bergfex
-is not used. Each file's `sources` lists the URLs used for that report.
+holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI network), Lumiplan
+where French resorts do. Bergfex (and aggregators such as SkiRadar) is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Timing
 
@@ -67,7 +69,7 @@ is not used. Each file's `sources` lists the URLs used for that report.
   summer time). GitHub starts scheduled runs late at busy times, sometimes by hours, and can
   skip one.
 - `fetched_at` is when we read the data; `lifts_updated_at` is the resort's own report time
-  (or its slope map's update time). The resort's report time can move forward without its
+  (or its slope map's update time; `null` for French resorts, whose sources have none). The resort's report time can move forward without its
   numbers changing: reporting systems refresh it daily.
 - Times are ISO 8601 with the Vienna offset (`+01:00` / `+02:00`, the same as Swiss time); archive file names are UTC.
 
@@ -75,12 +77,18 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 - `open` / `closed`: from the resort's report, or `open` when its slope map shows open slopes. Swiss resorts are
   `open` when infosnow (or the slope map) shows an open slope: lifts also run for hikers outside the season.
+  French resorts likewise, from Lumiplan; a lift or slope "scheduled" to open later that day (as
+  the 07:40 run sees them) counts as open, as in Lumiplan's own totals. Some French resorts show
+  everything closed overnight, so they can read `closed` in the morning and `open` at midday.
 - `no_report`: the resort hasn't reported for 14 days (e.g. before the season). Only the
   totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts
   and `slopes.open` null, so last season's open counts and snow never show up as current.
   The 0 means "not reported", not that every lift is closed. Some Slovak and Polish areas (TMR's,
   Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko; Zieleniec while its site refuses us) are always `no_report` for now: we list
   them with their size only, from the operators' lists, until we read a live status for them.
+  French resorts are `no_report` while all their slopes are "hors période" (outside the season),
+  with the area's totals; before the season many French bulletins list nothing, and then there
+  are no totals either.
 - `null`: unknown, usually because fetching failed; see `errors`.
 - A **closed** resort always shows 0 open lifts, slopes and km (outside the season some
   resorts count lifts running for hikers), and **no snow depths** (`mountain_cm`,
@@ -92,6 +100,10 @@ is not used. Each file's `sources` lists the URLs used for that report.
 - `mountain_cm` / `valley_cm`: the highest / lowest measuring station (own-website resorts),
   or the report's max / min depth (Snow Card, SalzburgerLand, holidayinfo: depth on the slopes).
 - PKL and Zieleniec: the lowest / highest snow cover of the open slopes.
+- French resorts: the measuring points of the resort's Lumiplan bulletin (e.g. "Col Balme",
+  2500 m), each with depth and snow quality (`condition`, e.g. `Douce`); `fresh_cm` is the last
+  snowfall's amount when it fell today or yesterday. Resorts without a bulletin (Sainte Foy,
+  Valmorel, Les Contamines, Les 2 Alpes, Les 7 Laux, Le Collet) have no snow depth.
 - `condition` is in the source's language (e.g. `griffig`, `technický`).
 - Swiss resorts: the resort's own measuring points where it enters them in infosnow (e.g. Verbier).
   Most don't, and then the depths come from the nearest SLF stations, listed in `snow.stations`
@@ -127,8 +139,8 @@ is not used. Each file's `sources` lists the URLs used for that report.
 ### Lift types and slope difficulties
 
 `lifts_by_type` and `slopes_by_difficulty` are only set for resorts with their own slope map
-(the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo) and for
-the Polish ones (PKL, Zieleniec).
+(the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo), for
+French resorts (from Lumiplan) and for the Polish ones (PKL, Zieleniec).
 
 - Lift types (`gondola`, `cable_car`, `chairlift`, `drag_lift`, `carpet`, `funicular`,
   `other`) and difficulties (`easy`, `intermediate`, `difficult`, `ski_route`, `other`) are
@@ -138,7 +150,9 @@ the Polish ones (PKL, Zieleniec).
   come from holidayinfo's codes: two-colour and white slopes are `other`; a lift or slope open only
   on some days (e.g. Wednesday to Sunday) counts as open on those days. Polish slopes follow
   the Polish colours: "łatwa" (blue) `easy`, PKL's "trudna" and Zieleniec's "średnia" (red)
-  `intermediate`, "bardzo trudna" / Zieleniec's "trudna" (black) `difficult`.
+  `intermediate`, "bardzo trudna" / Zieleniec's "trudna" (black) `difficult`. French slopes follow
+  the French colours: green (very easy) and blue are both `easy`, red `intermediate`, black
+  `difficult`; only alpine slopes count (no snowparks, cross-country or sledding).
 - km per difficulty are only given when every slope of that difficulty has a length in the
   map, and they don't add up to `slopes.total_km` (the official size, counted differently;
   each difficulty is also rounded up). Some maps have no lengths at all.
@@ -149,7 +163,9 @@ the Polish ones (PKL, Zieleniec).
 
 - Tirol, Swiss and Italian resorts, and Czech resorts in Krkonoše and Jeseníky (the only
   regions the Czech Mountain Rescue rates; other Czech areas have `null`), and Kasprowy Wierch
-  (TOPR, the Polish Tatras; the other Polish areas have no bulletin), and Jasná, Tatranská
+  (TOPR, the Polish Tatras; the other Polish areas have no bulletin), French resorts in the Alps
+  and Pyrenees (Météo-France, by massif, e.g. Vanoise; the Jura, Vosges and Massif Central have
+  none), and Jasná, Tatranská
   Lomnica and Štrbské Pleso (Slovak HZS; found from a point in the ski area, since the villages lie
   below the warning regions). Salzburg and the other Austrian states have no
   machine-readable bulletin, so `avalanche` is `null` for all resorts there (including Lech Zürs
@@ -165,11 +181,12 @@ the Polish ones (PKL, Zieleniec).
 ### Locations
 
 `location` is one point per resort: the Snow Card or infosnow location, a point in the ski area
-for the glacier resorts, or the main village (looked up on OpenStreetMap) for other Austrian,
-Italian, Czech, Slovak and Polish resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
+for the glacier resorts, or the main village or ski station (looked up on OpenStreetMap) for other
+Austrian, Italian, French, Czech, Slovak and Polish resorts, Andermatt and Engelberg. It marks the area on a map, not a lift station.
 
-`region` is the state, canton, Italian region, Czech kraj or Polish voivodeship that point lies in (e.g.
-`Tirol`, `Valais`, `Valle d'Aosta`, `Liberecký kraj`, `Žilinský kraj`, `Małopolskie`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
+`region` is the state, canton, Italian region, Czech kraj, Polish voivodeship or French département that
+point lies in (e.g. `Tirol`, `Valais`, `Valle d'Aosta`, `Liberecký kraj`, `Žilinský kraj`, `Małopolskie`,
+`Savoie`; Trentino-Alto Adige by province: `Südtirol`, `Trentino`), looked up on
 OpenStreetMap; the table filters by it and by `country`. An area spanning a border is listed
 under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
@@ -177,7 +194,8 @@ under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 `assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 341
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
-village lifts, are only a marker on the map. Each feature has the resort's `id` and the
+village lifts, are only a marker on the map. The French resorts (added 26 October 2026) have no
+outlines yet: the script now covers France, but Overpass refused the queries that day. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run
 `scripts/resort_areas.py` now and then (e.g. after adding resorts) and check the map:
 

@@ -31,6 +31,10 @@ BBOXES = [
     (45.4, 6.7, 48.9, 16.0),  # the Alps
     (48.5, 12.0, 51.1, 18.9),  # Czechia, and the Sudetes in Poland
     (48.7, 18.9, 49.9, 23.0),  # the Polish and Slovak Carpathians
+    (43.9, 5.4, 46.9, 7.3),  # the French Alps and the Jura
+    (42.4, -1.0, 43.1, 2.3),  # the Pyrenees
+    (44.9, 2.6, 45.7, 3.0),  # the Massif Central
+    (47.9, 6.7, 48.2, 7.2),  # the Vosges
 ]
 
 # Areas split between the given resorts (or given to the one), however far their points are.
@@ -73,18 +77,21 @@ def words(text: str) -> set[str]:
 
 
 def download() -> list[dict]:
-    boxes = [",".join(map(str, box)) for box in BBOXES]
-    selectors = "".join(f'way["landuse"="winter_sports"]({b});relation["landuse"="winter_sports"]({b});' for b in boxes)
-    query = f"""[out:json][timeout:240];
-({selectors});
+    """One query per box (all of them at once times out), without the areas boxes share."""
+    elements = {}
+    for box in BBOXES:
+        b = ",".join(map(str, box))
+        query = f"""[out:json][timeout:240];
+(way["landuse"="winter_sports"]({b});relation["landuse"="winter_sports"]({b}););
 out geom;"""
-    request = urllib.request.Request(
-        OVERPASS_URL,
-        data=urllib.parse.urlencode({"data": query}).encode(),
-        headers={"User-Agent": "snow-conditions (https://snow.miron.asia)"},
-    )
-    with urllib.request.urlopen(request, timeout=300) as response:
-        return json.load(response)["elements"]
+        request = urllib.request.Request(
+            OVERPASS_URL,
+            data=urllib.parse.urlencode({"data": query}).encode(),
+            headers={"User-Agent": "snow-conditions (https://snow.miron.asia)"},
+        )
+        with urllib.request.urlopen(request, timeout=300) as response:
+            elements |= {(e["type"], e["id"]): e for e in json.load(response)["elements"]}
+    return list(elements.values())
 
 
 def outline(element: dict):
