@@ -334,7 +334,7 @@ async function show() {
   if (response.status === 404) return fail("There's no such resort.");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const r = await response.json();
-  document.title = `${r.name} – Liftboard`;
+  document.title = `${r.name} – Liftradar`;
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": `Map of ${r.name}` });
   const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, "Loading…"));
