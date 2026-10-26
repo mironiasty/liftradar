@@ -173,7 +173,8 @@ function data(r) {
     setTimeout(() => (copy.textContent = "Copy"), 2000);
   });
   const section = el("section", { class: "card data" }, el("h2", {}, "Data"),
-    el("div", { class: "meta" }, "This resort's JSON, e.g. for a TRMNL plugin:"),
+    el("div", { class: "meta" }, "This resort's JSON, e.g. for the ",
+      el("a", { href: "https://trmnl.com/recipes/ski-resort-snow-report-219253" }, "TRMNL plugin"), ": paste it as its Resort."),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, "Open")));
   if (r.errors.length) section.append(el("p", { class: "err" }, r.errors.join("; ")));
   section.append(el("div", { class: "meta", style: "margin-top:12px" }, "Sources"),

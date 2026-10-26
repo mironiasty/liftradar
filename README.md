@@ -244,7 +244,9 @@ their parts are approximate. Wrong matches are fixed by hand in the script's `SH
 
 ## Using it in a TRMNL plugin
 
-Let the user paste the resort's JSON URL into a text field, and poll that URL:
+The ready-made plugin is the [Ski Resort Snow Report](https://trmnl.com/recipes/ski-resort-snow-report-219253)
+recipe on TRMNL; the site links to it from the index and every resort page. To build your own:
+let the user paste the resort's JSON URL into a text field, and poll that URL:
 
 (Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
 `json/at/soell-skiwelt.json`, as copies of the area's report with its `id`; new plugins should
