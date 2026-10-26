@@ -12,7 +12,8 @@ let rows = [];
 const values = new Map();
 let key = "name", ascending = true;
 let country = "";
-const hiddenStatuses = new Set();
+// Statuses chosen with the chips; none chosen shows every resort.
+const shownStatuses = new Set();
 
 // Same colours as the map.
 const STATUS = {
@@ -112,10 +113,10 @@ function filter() {
   for (const tr of rows) {
     const v = values.get(tr);
     tr.hidden = !v.name.includes(query) || (country && v.country !== country) || (region && v.regionName !== region)
-      || hiddenStatuses.has(v.status);
+      || (shownStatuses.size && !shownStatuses.has(v.status));
     if (!tr.hidden) shown++;
   }
-  const filtered = query || country || region || hiddenStatuses.size;
+  const filtered = query || country || region || shownStatuses.size;
   count.textContent = filtered ? `${shown} of ${rows.length} resorts` : `${rows.length} resorts`;
   empty.hidden = shown > 0;
 }
@@ -157,11 +158,11 @@ function fillFilters(resorts) {
     const total = resorts.filter((r) => statusOf(r) === status).length;
     if (!total) continue;
     const chip = button("chip", "", () => {
-      hiddenStatuses.has(status) ? hiddenStatuses.delete(status) : hiddenStatuses.add(status);
-      chip.setAttribute("aria-pressed", !hiddenStatuses.has(status));
+      shownStatuses.has(status) ? shownStatuses.delete(status) : shownStatuses.add(status);
+      chip.setAttribute("aria-pressed", shownStatuses.has(status));
       filter();
     });
-    chip.setAttribute("aria-pressed", true);
+    chip.setAttribute("aria-pressed", false);
     chip.append(el("span", { class: "dot", style: `--c:${color}` }), label, el("span", { class: "count" }, String(total)));
     statusGroup.append(chip);
   }
@@ -169,8 +170,8 @@ function fillFilters(resorts) {
   document.getElementById("reset").addEventListener("click", () => {
     search.value = "";
     regionSelect.value = "";
-    hiddenStatuses.clear();
-    for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", true);
+    shownStatuses.clear();
+    for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", false);
     chooseCountry("");
   });
 }
@@ -222,6 +223,32 @@ for (const button of document.querySelectorAll("th button")) {
 }
 search.addEventListener("input", filter);
 
+// The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
+// resort as a dot in its status colour; the tile links to map.html.
+async function miniMap(resorts) {
+  const response = await fetch("assets/mini-map.svg");
+  if (!response.ok) return;
+  const box = document.getElementById("mini-map");
+  box.innerHTML = await response.text();
+  const svg = box.querySelector("svg");
+  svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+  svg.setAttribute("aria-hidden", "true");
+  const { west, north, k, scale } = Object.fromEntries(Object.entries(svg.dataset).map(([key, value]) => [key, Number(value)]));
+  const countries = new Set(resorts.map((r) => r.country));
+  for (const path of svg.querySelectorAll("path")) path.classList.toggle("covered", countries.has(path.dataset.country));
+  // Open resorts last, so they are drawn on top.
+  const order = { open: 2, closed: 1 };
+  const located = resorts.filter((r) => r.location).sort((a, b) => (order[a.status] ?? 0) - (order[b.status] ?? 0));
+  for (const r of located) {
+    const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    dot.setAttribute("cx", ((r.location.lon - west) * k * scale).toFixed(1));
+    dot.setAttribute("cy", ((north - r.location.lat) * scale).toFixed(1));
+    dot.setAttribute("r", "7");
+    dot.style.fill = STATUS_COLORS[statusKey(r)];
+    svg.append(dot);
+  }
+}
+
 loadIndex()
   .then((index) => {
     document.getElementById("updated").textContent = updatedText(index);
@@ -233,6 +260,7 @@ loadIndex()
     fillFilters(index.resorts);
     sort();
     filter();
+    miniMap(index.resorts).catch(() => {});
   })
   .catch((error) => {
     document.getElementById("updated").textContent = `Could not load the data (${error.message})`;

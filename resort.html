@@ -3,19 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snow Conditions</title>
+<title>Liftboard</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="assets/style.css">
 <style>
   main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 40px; }
-  nav { font-size: .9rem; }
-  nav a { text-decoration: none; }
-  h1 { display: flex; align-items: center; gap: 12px; margin: 16px 0 2px; font-size: 1.8rem; line-height: 1.2; }
-  h1 .dot { width: 12px; height: 12px; }
+  /* Resort name and what's known about the report, under a link back to the list. */
+  .resort-head { display: grid; gap: 8px; margin-top: 20px; }
+  .back { justify-self: start; margin-bottom: 6px; }
+  h1 { display: flex; align-items: center; gap: 12px; margin: 0; font-size: 1.8rem; line-height: 1.2; text-wrap: balance; }
+  .facts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+  .resort-head h1 { margin-bottom: 4px; }
+  .resort-head p { margin: 0; max-width: 70ch; }
   h2 { margin: 0 0 10px; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   .dot { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
   .meta { color: var(--muted); font-size: .9rem; }
-  .status { display: inline-flex; align-items: center; gap: 6px; padding: 1px 10px; border-radius: 999px; background: var(--chip);
+  .status { display: inline-flex; align-items: center; gap: 6px; padding: 3px 11px; border-radius: 999px; background: var(--chip);
     color: var(--fg); font-size: .85rem; font-weight: 500; }
 
   .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 24px; margin-top: 24px; align-items: start; }
@@ -90,7 +94,28 @@
 </head>
 <body>
 <main>
-  <nav><a href="index.html">&larr; All resorts</a></nav>
+  <header class="site-header">
+    <a class="brand compact" href="index.html">
+    <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+      <mask id="logo-window"><rect width="32" height="32" fill="#fff"/><rect x="10.5" y="15" width="11" height="5.5" rx="1.3" fill="#000"/></mask>
+      <path d="M2 9 L30 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="16" cy="7" r="1.8" fill="currentColor"/>
+      <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
+      <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
+    </svg>
+    <span class="name"><b>Liftboard</b><small>Ski resort status</small></span>
+    </a>
+    <nav>
+    <a class="pill" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
+      Table
+    </a>
+    <a class="pill" href="map.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
+      Map
+    </a>
+    </nav>
+  </header>
   <div id="page"><p class="muted">Loading…</p></div>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>

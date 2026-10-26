@@ -146,16 +146,23 @@ function show([index, areas]) {
   choose({});
   map.fitBounds(resorts.map((r) => [r.location.lat, r.location.lon]), { padding: [30, 30] });
 
+  // Statuses chosen with the chips; none chosen shows every resort.
   const filters = document.getElementById("filters");
+  const shown = new Set();
+  const showLayers = () => {
+    for (const [status, layer] of Object.entries(layers)) {
+      shown.size && !shown.has(status) ? layer.remove() : layer.addTo(map);
+    }
+  };
   for (const [status, { label }] of Object.entries(STATUS)) {
     const total = resorts.filter((r) => (STATUS[r.status] ? r.status : "unknown") === status).length;
     if (!total) continue;
     const chip = button("chip", "", () => {
-      const on = chip.getAttribute("aria-pressed") !== "true";
-      chip.setAttribute("aria-pressed", on);
-      on ? layers[status].addTo(map) : layers[status].remove();
+      shown.has(status) ? shown.delete(status) : shown.add(status);
+      chip.setAttribute("aria-pressed", shown.has(status));
+      showLayers();
     });
-    chip.setAttribute("aria-pressed", true);
+    chip.setAttribute("aria-pressed", false);
     const name = label[0].toUpperCase() + label.slice(1);
     chip.append(el("span", { class: "dot", style: `--c:${color(status)}` }), name, el("span", { class: "count" }, String(total)));
     filters.append(chip);

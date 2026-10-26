@@ -14,6 +14,10 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Czechia,
   its history from the archive) and `sources.html` (data sources, incl. every URL in the
   current data), plain static pages that load the JSON in the browser. No build step.
   `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
+  `assets/mini-map-light.webp`, `mini-map-dark.webp` and `mini-map.svg` are the shaded relief
+  and country borders of the small map in the table page's header, drawn by
+  `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
+  resort dots from the data. Redraw them only if resorts appear outside their frame.
 
 `.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
 to `main` and after every data update.

@@ -78,13 +78,23 @@ function header(r) {
     `Fetched ${viennaTime(r.fetched_at)}`,
   ].filter(Boolean).join(" · ");
   const note = statusNote(r);
-  return el("header", {},
-    el("h1", {}, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), r.name),
-    el("div", { class: "meta" }, el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }),
-      STATUS_LABELS[status] ?? "unknown"), " ", meta),
-    el("div", { class: "meta" }, times),
+  return el("header", { class: "resort-head" },
+    backLink(),
+    el("h1", {}, r.name),
+    el("div", { class: "facts" },
+      el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status] ?? "unknown"),
+      el("span", {}, meta)),
+    el("p", { class: "meta" }, times),
     note ? el("p", { class: "meta" }, note) : "",
   );
+}
+
+// Back to the list of all resorts.
+function backLink() {
+  const link = el("a", { class: "pill back", href: "index.html" });
+  link.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"'
+    + ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All resorts';
+  return link;
 }
 
 function stations(list) {
@@ -323,7 +333,7 @@ async function show() {
   if (response.status === 404) return fail("There's no such resort.");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const r = await response.json();
-  document.title = `${r.name} – Snow Conditions`;
+  document.title = `${r.name} – Liftboard`;
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": `Map of ${r.name}` });
   const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, "Loading…"));
