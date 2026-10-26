@@ -105,14 +105,14 @@
     td { position: static; display: block; padding: 0; border: 0; background: none; }
     td.num { text-align: left; }
     td.nil { display: none; }
-    td:first-child { flex: 1; min-width: 0; }
+    td:first-child { flex: 1 1 100%; min-width: 0; }
     td.c-region { flex-basis: 100%; order: 1; margin-top: -8px; color: var(--muted); font-size: .85rem; }
     td.c-region .sub-line { display: inline; font-size: inherit; }
     td.c-region .sub-line::before { content: " · "; }
     td.c-value { flex: 0 0 33.33%; order: 2; }
     td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 2px; color: var(--muted);
       font-size: .7rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
-    .meter { margin-left: 0; }
+    td .meter { margin-left: 0; }
     tbody tr:hover td { background: none; }
   }
   .empty { padding: 32px 0; text-align: center; color: var(--muted); }
@@ -187,7 +187,7 @@
         &ldquo;No report yet&rdquo; means the resort hasn't reported for 14 days. Trentino, Dolomiti Superski,
         Livigno, Ski Arlberg, PKL, Zieleniec and French (Lumiplan, ATEN) reports carry no report time, so their open/closed is always taken as current;
         French resorts count lifts and slopes scheduled to open later that day as open, and show &ldquo;No report yet&rdquo; while their slopes are outside the season.
-        TMR's areas (Jasná, the High Tatras, Szczyrk) and some other Polish ones are listed with their size only for now.</li>
+        TMR's areas (Jasná, the High Tatras, Szczyrk), some other Polish ones and a few small Austrian ones are listed with their size only for now.</li>
       <li>Total slope km is the ski area's size: the one advertised by the resort, otherwise OnTheSnow's or skiresort.com's,
         and for sectors of a linked area (e.g. St. Anton, Verbier) the sum of the operator's slope lengths. For about 20
         resorts without one it's the sum of the slope lengths the resort reports, which can be too low.</li>

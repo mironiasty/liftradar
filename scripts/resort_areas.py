@@ -40,11 +40,66 @@ BBOXES = [
 # Areas split between the given resorts (or given to the one), however far their points are.
 SHARED = {
     "relation/10938000": ["kitzbuehel"],  # KitzSki, reaching Pass Thurn far from the Kitzbühel point
+    # Areas near another resort's point that belong to one resort only (not split between them).
+    "way/342015965": ["zahmer-kaiser-walchsee"],  # not Amberglift, whose point is the same village
+    "way/341994406": ["shuttleberg-flachauwinkl-kleinarl"],  # not Snow Space Salzburg (Flachau)
+    "way/461926159": ["zauchensee-flachauwinkl"],  # not Shuttleberg, which starts in Flachauwinkl too
+    "way/660590648": ["ehrwalder-wettersteinbahnen"],  # not Tiroler Zugspitzbahn or Ehrwalder Alm
+    "way/665167529": ["birkenlift-geigenbuehel-seefeld"],  # not Gschwandtkopf or Rosshütte
+    "way/1011845654": ["slotwiny-arena"],  # Słotwiny Arena and Słotwiny are 0.5 km apart
+    "way/1354997224": ["slotwiny"],
+    "way/253071356": ["nosal"],  # not Kasprowy Wierch (Kuźnice)
+    "way/341898611": ["hauser-kaibling"],  # not Planai
+    "way/660162742": ["ramsau-am-dachstein"],  # not Dachstein Gletscher, whose point is in Ramsau
+    "way/1013572562": ["strazne"],
+    "way/1011094044": ["korenov-rejdice"],
+    "way/1280389295": ["mala-moravka-koprivna"],
+    "way/1172779587": ["ostruzna"],
+    "way/1125475308": ["grapa-czarna-gora"],
+    "way/961996791": ["beskid-sport-arena"],
+    "way/539446463": ["fuessener-joechle-graen"],
+    "way/1445279089": ["oberholz-farner"],
 }
 # Areas never used.
 EXCLUDE = {
     "way/642259707",  # Aiguille du Midi (Chamonix), near Courmayeur's point
     "relation/7768194",  # Stubai: the whole valley, would go to Serlesbahnen Mieders
+    # Ski passes grouping separate areas: cut up between their resorts, they'd add the areas we
+    # don't cover. Each resort has its own area too.
+    "relation/13798382",  # Dolomiti Superski
+    "relation/8896547",  # Ski amadé
+    "relation/8896546",  # Schladming Dachstein
+    "relation/19457834",  # Les Portes du Soleil
+    "relation/20949265",  # Espace Liberté
+    "relation/7751891",  # Klausberg Skiarena (Klausberg, Speikboden)
+    "relation/7718003",  # Hochoetz-Kühtai
+    # Areas next to a resort that aren't part of it and have one lift (or none): not covered.
+    # Neighbours with more lifts are resorts of their own; German areas aren't covered yet.
+    "way/1560648156",  # Beskidek (Szczyrk)
+    "way/389968311",  # Skalite ski jumps (Szczyrk)
+    "way/1220968908",  # COS OPO Zakopane: the ski jumps' chairlifts
+    "way/1158672530",  # Bania (Białka): a children's area, no published size
+    "way/1029327305",  # Żółwik (Karpacz)
+    "way/391762114",  # Karpatka Panorama (Karpacz)
+    "way/392212792",  # Stok Karpatka (Karpacz)
+    "way/391767435",  # Stok Relaks (Karpacz)
+    "way/391768061",  # Pod Wangiem (Karpacz)
+    "way/460412448",  # Winterpol (Karpacz)
+    "way/1013756087",  # Cypisek (Korbielów)
+    "way/1013756090",  # Andiamo (Korbielów)
+    "way/1561819655",  # Kolej Baba (Korbielów)
+    "way/1010774426",  # U Lišáka (Klínovec)
+    "way/104293575",  # Start (Deštné)
+    "way/310924064",  # Světlý vrch (Albrechtice): two village lifts, no source
+    "way/1463727384",  # Schollenwiesenlift Höfen
+    "way/362231433",  # Toni Seelos ski jumps (Seefeld)
+    "relation/10356622",  # Gföllberglift (Lechtal)
+    "way/664675357",  # Hausberglift Waidring
+    "way/1016830386",  # Bergisel ski jump (Innsbruck)
+    "way/53183839",  # Oberwiesenthal (Germany)
+    "way/599440616",  # Rossfeld (Germany)
+    "way/538959833",  # Zugspitze glacier (Germany)
+    "relation/10356629",  # Bad Hindelang Oberjoch (Germany)
 }
 
 NEAR_KM = 1.0  # an area this close to several resorts is split between them
