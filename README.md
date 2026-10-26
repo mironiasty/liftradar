@@ -48,7 +48,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk (TMR); Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists ([TMR slope tables](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk), the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
-| Total slope km of the bigger areas | The official size on the resort's own website |
+| Ski-area sizes (total slope km, and lift and slope totals a report lacks) | The size on the resort's own website; otherwise [OnTheSnow](https://www.skiinfo.fr/) (the figures resorts enter there) or [skiresort.com](https://www.skiresort.com/) (km, and km by difficulty for some bigger areas); for a sector of a linked area, the sum of the operator's own slope lengths (Ski Arlberg's slope map, infosnow, Dolomiti Superski) |
 | Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
 | Avalanche danger, Switzerland | [SLF avalanche bulletin](https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/) |
 | Avalanche danger, South Tyrol and Trentino | [avalanche.report](https://avalanche.report) (Euregio) |
@@ -88,6 +88,8 @@ and Les Orres (no source we can read). Bergfex (and aggregators such as SkiRadar
 - `no_report`: the resort hasn't reported for 14 days (e.g. before the season). Only the
   totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts
   and `slopes.open` null, so last season's open counts and snow never show up as current.
+  Where the report lists every lift and slope, the totals of `lifts_by_type` and
+  `slopes_by_difficulty` are kept the same way.
   The 0 means "not reported", not that every lift is closed. Some Slovak and Polish areas (TMR's,
   Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko; Zieleniec while its site refuses us) are always `no_report` for now: we list
   them with their size only, from the operators' lists, until we read a live status for them.
@@ -127,17 +129,27 @@ and Les Orres (no source we can read). Bergfex (and aggregators such as SkiRadar
   Snow Space Salzburg, Hochkönig, Dachstein West, Großarltal - Dorfgastein): they're published
   once, under the area's name, from the village report updated last. Snow depths are that
   village's.
-- **`slopes.total_km`** is the official, advertised ski-area size for the bigger areas. For
-  other resorts it's the reported value, which is only the sum of the slope lengths the
-  resort has entered in its reporting system and can be far too low (Kitzbühel reported 4.7 of 233 km). Advertised sizes are counted in different ways, some
-  with ski routes, and Stubai's 108 km is its "effective route distance" (65 km by fall line).
-  Rounded up to a whole km.
+- **`slopes.total_km`** is the ski area's size for all but about 20 resorts: the size
+  advertised on the resort's own site, otherwise OnTheSnow's or skiresort.com's figure. Sectors
+  of a linked area with no figure of their own (St. Anton, Lech Zürs and Warth-Schröcken;
+  Gstaad, Lenzerheide, Verbier, Thyon, Champéry, Morgins; Val di Fassa, Val di Fiemme) get the
+  sum of the operator's own slope lengths, ski routes included where the map has them; slopes
+  without a length (mostly links and practice slopes) are left out, so these can be a little
+  low. For the rest it's the reported value, which is only the sum of the slope lengths the
+  resort has entered in its reporting system and can be far too low (Kitzbühel reported 4.7 of
+  233 km). Advertised sizes are counted in different ways, some with ski routes, and Stubai's
+  108 km is its "effective route distance" (65 km by fall line). Rounded up to a whole km.
+  Not covered yet: Megève, Crest-Voland, Notre-Dame-de-Bellecombe, Valloire, Valmeinier, La
+  Thuile, Val d'Allos, Samoëns and Autrans-Méaudre km, La Rosière and Queyras, and a few
+  village lifts nobody publishes a size for.
 - **`slopes.open_km`** (0.1 km): summed from the slope map's lengths where complete; from
   the resort's live infobox (Hintertux); from OpenStreetMap lengths of the open slopes
   (Kitzsteinhorn, Kaunertal), which leans low because OSM lines are shorter than official
   lengths; otherwise as reported.
-- SalzburgerLand reports have slope km but no slope counts, so `slopes.open` / `total` can be
-  `null` while the km are set.
+- SalzburgerLand reports and the Trentino bulletin have slope km but no slope counts: the slope
+  total comes from the area's size, and `slopes.open` stays `null` (0 when closed). A few small
+  areas (Planai, Dachstein Gletscher, Feuerkogel, Uttendorf and some village lifts) still have
+  no slope total.
 - Lift and slope totals from different sources don't always match the advertised ones:
   slope maps include practice lifts and magic carpets (the SkiWelt map lists 147 lifts, the
   area advertises 81).
@@ -146,7 +158,11 @@ and Les Orres (no source we can read). Bergfex (and aggregators such as SkiRadar
 
 `lifts_by_type` and `slopes_by_difficulty` are only set for resorts with their own slope map
 (the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo), for
-French resorts (from Lumiplan) and for the Polish ones (PKL, Zieleniec).
+French resorts (from Lumiplan) and for the Polish ones (PKL, Zieleniec). Some bigger areas
+without one (Hochkönig, Snow Space Salzburg, Schmittenhöhe, Zauchensee, Serre Chevalier, ...)
+get `slopes_by_difficulty` from the area's size instead: km per difficulty (skiresort.com),
+or slope counts (Paganella, Folgaria), with `open` null (0 when closed). Ski Arlberg's
+breakdowns get their km per difficulty the same way, summed from its slope map.
 
 - Lift types (`gondola`, `cable_car`, `chairlift`, `drag_lift`, `carpet`, `funicular`,
   `other`) and difficulties (`easy`, `intermediate`, `difficult`, `ski_route`, `other`) are
