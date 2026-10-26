@@ -54,12 +54,26 @@
   .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
     min-width: 22px; padding: 0 5px; box-sizing: border-box; color: #fff; font: 600 11px/1 system-ui, sans-serif;
     border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; transform: translate(-50%, -50%); }
-  .leaflet-popup-content { margin: 12px 14px; font: 14px/1.45 system-ui, sans-serif; }
-  .popup h3 { margin: 0 0 4px; font-size: 1rem; }
-  .popup table { border-collapse: collapse; margin: 6px 0; }
-  .popup td { padding: 1px 10px 1px 0; vertical-align: top; }
-  .popup td:first-child { color: #666; }
-  .popup .err { color: #b3261e; }
+  /* Resort popup: laid out like a resort card in the phone table. */
+  .leaflet-popup-content { width: 264px; margin: 14px 16px; font: 14px/1.4 system-ui, sans-serif; }
+  .popup .head { display: flex; align-items: baseline; gap: 8px; padding-right: 14px; }
+  .popup .name { flex: 1; min-width: 0; color: var(--fg); font-size: 1rem; font-weight: 600; text-decoration: none; }
+  .popup .name:hover { color: var(--accent); text-decoration: underline; }
+  .popup .where { margin-top: 2px; color: var(--muted); font-size: .82rem; }
+  .status-pill { display: inline-flex; flex: none; align-items: center; gap: 5px; height: 20px; padding: 0 8px; border-radius: 999px;
+    background: color-mix(in srgb, var(--c) 16%, transparent); color: var(--fg); font-size: .72rem; font-weight: 500; white-space: nowrap; }
+  .status-pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c); }
+  .popup .values { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 8px; margin-top: 12px;
+    font-variant-numeric: tabular-nums; }
+  .popup .label { margin-bottom: 2px; color: var(--muted); font-size: .66rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+  .popup .sub { color: var(--muted); font-size: .78rem; }
+  .popup .fresh { color: var(--accent); font-weight: 600; }
+  .popup .meter { width: 100%; max-width: 64px; margin-top: 5px; }
+  .popup .danger { display: flex; align-items: center; gap: 6px; }
+  .popup .err { margin-top: 10px; }
+  .popup .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 10px; margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
+  .popup .foot a { margin-left: auto; font-weight: 500; }
 </style>
 </head>
 <body>

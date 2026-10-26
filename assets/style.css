@@ -37,3 +37,21 @@ a.brand:focus-visible, .pill:focus-visible { outline: 2px solid var(--accent); o
 /* The bar at the top of the sources and resort pages. */
 .site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 8px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .site-header nav { display: flex; gap: 8px; margin-left: auto; }
+
+/* Leaflet's popups, tooltips and controls (map and resort pages) in the page's colours, so they follow dark mode. */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip, .leaflet-tooltip { background: var(--bg); color: var(--fg);
+  box-shadow: 0 2px 14px rgba(0,0,0,.22); }
+.leaflet-popup-content-wrapper { border-radius: 12px; }
+.leaflet-tooltip { border-color: var(--line); }
+.leaflet-tooltip-top::before { border-top-color: var(--bg); }
+.leaflet-tooltip-bottom::before { border-bottom-color: var(--bg); }
+.leaflet-tooltip-left::before { border-left-color: var(--bg); }
+.leaflet-tooltip-right::before { border-right-color: var(--bg); }
+.leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+.leaflet-container a.leaflet-popup-close-button:hover { color: var(--fg); }
+.leaflet-bar a, .leaflet-bar a:hover { background-color: var(--bg); color: var(--fg); border-bottom-color: var(--line); }
+.leaflet-bar a:hover { background-color: var(--chip); }
+.leaflet-bar a.leaflet-disabled { background-color: var(--bg); color: var(--muted); }
+.leaflet-touch .leaflet-bar { border-color: var(--line); }
+.leaflet-container .leaflet-control-attribution { background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--muted); }
+.leaflet-container .leaflet-control-attribution a { color: var(--accent); }
