@@ -127,11 +127,10 @@
   }
   .empty { padding: 32px 0; text-align: center; color: var(--muted); }
 
-  footer { margin-top: 8px; }
-  footer details { border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; }
-  footer summary { padding: 12px 0; cursor: pointer; font-weight: 600; }
-  footer ul { margin: 0 0 16px; padding-left: 20px; }
-  footer li { margin: 4px 0; }
+  .notes { margin-top: 8px; border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; }
+  .notes summary { padding: 12px 0; cursor: pointer; font-weight: 600; }
+  .notes ul { margin: 0 0 16px; padding-left: 20px; }
+  .notes li { margin: 4px 0; }
 </style>
 </head>
 <body>
@@ -188,8 +187,7 @@
   </table>
   <p class="empty" id="empty" hidden>No resorts match. <button type="button" id="reset" class="chip">Show all</button></p>
   </div>
-  <footer>
-    <details>
+  <details class="notes">
     <summary>How to read the numbers</summary>
     <ul class="muted">
       <li>Updated twice a day, at about 07:40 and 12:40 Vienna time (an hour later in summer); runs can start late.</li>
@@ -210,9 +208,15 @@
         Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.</li>
       <li>Avalanche danger (Tirol, Switzerland, Italy, the French Alps and Pyrenees, Krkonoše and Jeseníky in Czechia, Jasná and the Slovak and Polish Tatras; not other Austrian states) is the highest level of the day in the resort's warning region.</li>
     </ul>
-    </details>
-    <p class="muted"><a href="sources.html">Data sources and credits</a> &middot; All details and caveats: <a href="https://github.com/mironiasty/snow-conditions#about-the-data">About the data</a>.
-      Contact: <a href="mailto:trail.jewel8860@eagereverest.com">trail.jewel8860@eagereverest.com</a></p>
+  </details>
+  <footer class="site-footer">
+    <nav>
+      <a href="sources.html">Data sources</a>
+      <a href="about.html">About the data</a>
+      <a href="mailto:trail.jewel8860@eagereverest.com">Contact</a>
+    </nav>
+    <a class="made-by" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+      <span>Made by <b>Miron Pawlik</b></span></a>
   </footer>
 </main>
 <script src="assets/common.js"></script>
