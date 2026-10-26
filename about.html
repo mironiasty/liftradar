@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About the Data – Liftboard</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+  h1 { margin: 28px 0 4px; font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; margin: 32px 0 6px; scroll-margin-top: 16px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 16px 0 0; padding: 0; list-style: none; font-size: .9rem; }
+  .toc li { margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <header class="site-header">
+    <a class="brand compact" href="index.html">
+    <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+      <mask id="logo-window"><rect width="32" height="32" fill="#fff"/><rect x="10.5" y="15" width="11" height="5.5" rx="1.3" fill="#000"/></mask>
+      <path d="M2 9 L30 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="16" cy="7" r="1.8" fill="currentColor"/>
+      <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
+      <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
+    </svg>
+    <span class="name"><b>Liftboard</b><small>Ski resort status</small></span>
+    </a>
+    <nav>
+    <a class="pill" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
+      Table
+    </a>
+    <a class="pill" href="map.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
+      Map
+    </a>
+    </nav>
+  </header>
+  <h1>About the data</h1>
+  <p>Read this before relying on a number. Field names are those of each resort's JSON file; the format is defined by
+    the JSON Schema: <a href="schema/resort.schema.json">resort</a>, <a href="schema/index.schema.json">index</a>,
+    <a href="schema/archive.schema.json">archive</a>.</p>
+  <ul class="toc">
+    <li><a href="#sources">Sources</a></li>
+    <li><a href="#timing">Timing</a></li>
+    <li><a href="#status">Status</a></li>
+    <li><a href="#snow">Snow</a></li>
+    <li><a href="#lifts-and-slopes">Lifts and slopes</a></li>
+    <li><a href="#lift-types-and-slope-difficulties">Lift types and slope difficulties</a></li>
+    <li><a href="#avalanche-danger">Avalanche danger</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#areas">Areas on the map</a></li>
+    <li><a href="#archive">Archive</a></li>
+  </ul>
+
+  <h2 id="sources">Sources</h2>
+  <p>Every source, and what it gives, is listed on <a href="sources.html">Data sources</a>; each file's
+    <code>sources</code> lists the URLs used for that report. The Snow Card, SalzburgerLand and Kärnten pages show the
+    report each resort submits to iSKI; holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI
+    network), Lumiplan where French resorts do (Alpe d'Huez uses ATEN Altitude instead). Not covered yet in France:
+    Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse and Les Orres
+    (no source we can read).</p>
+
+  <h2 id="timing">Timing</h2>
+  <ul>
+    <li>Updated twice a day, at about 07:40 and 12:40 Vienna time in winter (08:40 / 13:40 in summer time). Scheduled
+      runs can start late at busy times, sometimes by hours, and one can be skipped.</li>
+    <li><code>fetched_at</code> is when we read the data; <code>lifts_updated_at</code> is the resort's own report time
+      (or its slope map's update time; <code>null</code> for French resorts, whose sources have none). The resort's
+      report time can move forward without its numbers changing: reporting systems refresh it daily.</li>
+    <li>Times are ISO 8601 with the Vienna offset (<code>+01:00</code> / <code>+02:00</code>, the same as Swiss time);
+      archive file names are UTC.</li>
+  </ul>
+
+  <h2 id="status">Status</h2>
+  <ul>
+    <li><b>Open / closed</b> (<code>open</code> / <code>closed</code>): from the resort's report, or open when its slope
+      map shows open slopes. Swiss resorts are open when infosnow (or the slope map) shows an open slope: lifts also run
+      for hikers outside the season. French resorts likewise, from Lumiplan; a lift or slope &ldquo;scheduled&rdquo; to
+      open later that day (as the 07:40 run sees them) counts as open, as in Lumiplan's own totals. Some French resorts
+      show everything closed overnight, so they can read closed in the morning and open at midday. Alpe d'Huez (ATEN
+      Altitude) follows the same rules; in October 2026 its page still showed a chairlift and two slopes as open, so it
+      reads open until its season data replaces them.</li>
+    <li><b>No report yet</b> (<code>no_report</code>): the resort hasn't reported for 14 days (e.g. before the season).
+      Only the totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts and
+      <code>slopes.open</code> null, so last season's open counts and snow never show up as current. Where the report
+      lists every lift and slope, the totals of <code>lifts_by_type</code> and <code>slopes_by_difficulty</code> are kept
+      the same way. The 0 means &ldquo;not reported&rdquo;, not that every lift is closed. Some Slovak and Polish areas
+      (TMR's, Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko; Zieleniec while its site refuses us) are always
+      &ldquo;no report yet&rdquo; for now: we list them with their size only, from the operators' lists, until we read a
+      live status for them. French resorts are &ldquo;no report yet&rdquo; while all their slopes are &ldquo;hors
+      période&rdquo; (outside the season), with the area's totals; before the season many French bulletins list nothing,
+      and then there are no totals either.</li>
+    <li><b>Unknown</b> (<code>null</code>): usually because fetching failed; see <code>errors</code>.</li>
+    <li>A <b>closed</b> resort always shows 0 open lifts, slopes and km (outside the season some resorts count lifts
+      running for hikers), and <b>no snow depths</b> (<code>mountain_cm</code>, <code>valley_cm</code>,
+      <code>fresh_cm</code>, <code>condition</code> are <code>null</code>): closed resorts' reports typically still carry
+      last season's depths. <code>last_snowfall</code> and station measurements are kept.</li>
+  </ul>
+
+  <h2 id="snow">Snow</h2>
+  <ul>
+    <li><b>Mountain / valley</b> (<code>mountain_cm</code> / <code>valley_cm</code>): the highest / lowest measuring
+      station (Hintertux, Sölden, Kitzsteinhorn, Kaunertal, Pitztal, from their own websites), or the report's max / min
+      depth (Snow Card, SalzburgerLand, holidayinfo: depth on the slopes).</li>
+    <li>PKL and Zieleniec: the lowest / highest snow cover of the open slopes.</li>
+    <li>French resorts: the measuring points of the resort's Lumiplan bulletin (e.g. &ldquo;Col Balme&rdquo;, 2500 m),
+      each with depth and snow quality (<code>condition</code>, e.g. <code>Douce</code>); fresh snow is the last
+      snowfall's amount when it fell today or yesterday. Resorts without a bulletin (Sainte Foy, Valmorel, Les
+      Contamines, Les 2 Alpes, Les 7 Laux, Le Collet) have no snow depth. Alpe d'Huez: the measuring points of its ATEN
+      Altitude page (e.g. &ldquo;Pic Blanc&rdquo;, 3300 m), the same way.</li>
+    <li><code>condition</code> is in the source's language (e.g. <code>griffig</code>, <code>technický</code>).</li>
+    <li>Swiss resorts: the resort's own measuring points where it enters them in infosnow (e.g. Verbier). Most don't,
+      and then the depths come from the nearest SLF stations, listed in <code>snow.stations</code> as &ldquo;&lt;name&gt;
+      (SLF)&rdquo;: an automatic station on the mountain (about 2000–2900 m) and an observer's study plot near the
+      village (read each morning, mostly from November). They're measured on open ground, not on pistes, and the station
+      can be a few km from the ski area.</li>
+    <li>Regional reports keep a resort's old values until it clears them; check <code>last_snowfall</code>.
+      SalzburgerLand reports often have no <code>last_snowfall</code>.</li>
+    <li>Any value can be <code>null</code> when the resort doesn't publish it.</li>
+  </ul>
+
+  <h2 id="lifts-and-slopes">Lifts and slopes</h2>
+  <ul>
+    <li><b>One ski area is one resort.</b> The reports list some areas per village, each with the whole area's lift and
+      slope counts (SkiWelt, KitzSki, Zillertal Arena, Mayrhofen, Ski Juwel, Snow Space Salzburg, Hochkönig, Dachstein
+      West, Großarltal - Dorfgastein): they're published once, under the area's name, from the village report updated
+      last. Snow depths are that village's.</li>
+    <li><b>Total slope km</b> (<code>slopes.total_km</code>) is the ski area's size for all but about 20 resorts: the
+      size advertised on the resort's own site, otherwise OnTheSnow's or skiresort.com's figure. Sectors of a linked area
+      with no figure of their own (St. Anton, Lech Zürs and Warth-Schröcken; Gstaad, Lenzerheide, Verbier, Thyon,
+      Champéry, Morgins; Val di Fassa, Val di Fiemme) get the sum of the operator's own slope lengths, ski routes included
+      where the map has them; slopes without a length (mostly links and practice slopes) are left out, so these can be a
+      little low. For the rest it's the reported value, which is only the sum of the slope lengths the resort has entered
+      in its reporting system and can be far too low (Kitzbühel reported 4.7 of 233 km). Advertised sizes are counted in
+      different ways, some with ski routes, and Stubai's 108 km is its &ldquo;effective route distance&rdquo; (65 km by
+      fall line). Rounded up to a whole km. Not covered yet: Megève, Crest-Voland, Notre-Dame-de-Bellecombe, Valloire,
+      Valmeinier, La Thuile, Val d'Allos, Samoëns and Autrans-Méaudre km, La Rosière and Queyras, and a few village lifts
+      nobody publishes a size for.</li>
+    <li><b>Open km</b> (<code>slopes.open_km</code>, 0.1 km): summed from the slope map's lengths where complete; from
+      the resort's live infobox (Hintertux); from OpenStreetMap lengths of the open slopes (Kitzsteinhorn, Kaunertal),
+      which leans low because OSM lines are shorter than official lengths; otherwise as reported.</li>
+    <li>SalzburgerLand reports and the Trentino bulletin have slope km but no slope counts: the slope total comes from
+      the area's size, and open slopes stay <code>null</code> (0 when closed). A few small areas (Planai, Dachstein
+      Gletscher, Feuerkogel, Uttendorf and some village lifts) still have no slope total.</li>
+    <li>Lift and slope totals from different sources don't always match the advertised ones: slope maps include practice
+      lifts and magic carpets (the SkiWelt map lists 147 lifts, the area advertises 81).</li>
+  </ul>
+
+  <h2 id="lift-types-and-slope-difficulties">Lift types and slope difficulties</h2>
+  <p><code>lifts_by_type</code> and <code>slopes_by_difficulty</code> are only set for resorts with their own slope map
+    (the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo), for French resorts (from
+    Lumiplan) and for the Polish ones (PKL, Zieleniec). Some bigger areas without one (Hochkönig, Snow Space Salzburg,
+    Schmittenhöhe, Zauchensee, Serre Chevalier, ...) get <code>slopes_by_difficulty</code> from the area's size instead:
+    km per difficulty (skiresort.com), or slope counts (Paganella, Folgaria), with <code>open</code> null (0 when
+    closed). Ski Arlberg's breakdowns get their km per difficulty the same way, summed from its slope map.</p>
+  <ul>
+    <li>Lift types (<code>gondola</code>, <code>cable_car</code>, <code>chairlift</code>, <code>drag_lift</code>,
+      <code>carpet</code>, <code>funicular</code>, <code>other</code>) and difficulties (<code>easy</code>,
+      <code>intermediate</code>, <code>difficult</code>, <code>ski_route</code>, <code>other</code>) are read from the
+      map's display text, so an unusual label can land in <code>other</code>. For Swiss resorts they come from
+      infosnow's type icons; yellow and orange runs are <code>ski_route</code>, mixed colours (blue/red)
+      <code>other</code>, and rack railways (e.g. Gornergrat) <code>other</code>. For Czech resorts they come from
+      holidayinfo's codes: two-colour and white slopes are <code>other</code>; a lift or slope open only on some days
+      (e.g. Wednesday to Sunday) counts as open on those days. Polish slopes follow the Polish colours: &ldquo;łatwa&rdquo;
+      (blue) <code>easy</code>, PKL's &ldquo;trudna&rdquo; and Zieleniec's &ldquo;średnia&rdquo; (red)
+      <code>intermediate</code>, &ldquo;bardzo trudna&rdquo; / Zieleniec's &ldquo;trudna&rdquo; (black)
+      <code>difficult</code>. French slopes follow the French colours: green (very easy) and blue are both
+      <code>easy</code>, red <code>intermediate</code>, black <code>difficult</code>; only alpine slopes count (no
+      snowparks, cross-country or sledding).</li>
+    <li>km per difficulty are only given when every slope of that difficulty has a length in the map, and they don't add
+      up to the total slope km (the official size, counted differently; each difficulty is also rounded up). Some maps
+      have no lengths at all.</li>
+    <li>A map not updated for 14 days is ignored. Maps covering several of our resorts (Gastein, Salzburger Sportwelt)
+      aren't used, since they don't say which area a lift belongs to.</li>
+  </ul>
+
+  <h2 id="avalanche-danger">Avalanche danger</h2>
+  <ul>
+    <li>Given for Tirol, Swiss and Italian resorts; Czech resorts in Krkonoše and Jeseníky (the only regions the Czech
+      Mountain Rescue rates; other Czech areas have none); Kasprowy Wierch (TOPR, the Polish Tatras; the other Polish
+      areas have no bulletin); French resorts in the Alps and Pyrenees (Météo-France, by massif, e.g. Vanoise; the Jura,
+      Vosges and Massif Central have none); and Jasná, Tatranská Lomnica and Štrbské Pleso (Slovak HZS; found from a
+      point in the ski area, since the villages lie below the warning regions). Salzburg and the other Austrian states
+      have no machine-readable bulletin, so <code>avalanche</code> is <code>null</code> for all resorts there (including
+      Lech Zürs and Warth-Schröcken in Vorarlberg), and the Snow Card ones in Salzburg (Hochkrimml, Königsleiten,
+      Mittersill, Wildkogel).</li>
+    <li>Early and late in the season the SLF only rates the alpine regions, so Swiss resorts in the Prealps (and e.g.
+      Arosa) can have none while others have a rating.</li>
+    <li><code>null</code> outside the season and when no bulletin is valid at the time of the run.</li>
+    <li>The level (<code>danger_level</code>, 1–5) is the highest of the day in the resort's warning region;
+      <code>ratings</code> has the split by elevation and time of day. The region is found from one point per resort, so
+      a resort spanning two regions shows only one.</li>
+  </ul>
+
+  <h2 id="locations">Locations</h2>
+  <p><code>location</code> is one point per resort: the Snow Card or infosnow location, a point in the ski area for the
+    glacier resorts, or the main village or ski station (looked up on OpenStreetMap) for other Austrian, Italian,
+    French, Czech, Slovak and Polish resorts, Andermatt and Engelberg. It marks the area on a map, not a lift
+    station.</p>
+  <p><code>region</code> is the state, canton, Italian region, Czech kraj, Polish voivodeship or French département that
+    point lies in (e.g. Tirol, Valais, Valle d'Aosta, Liberecký kraj, Žilinský kraj, Małopolskie, Savoie;
+    Trentino-Alto Adige by province: Südtirol, Trentino), looked up on OpenStreetMap; the table filters by it and by
+    country. An area spanning a border is listed under one of them (Katschberg under Kärnten, Glacier 3000 under
+    Vaud).</p>
+
+  <h2 id="areas">Areas on the map</h2>
+  <p>The map shows the outline of 295 of the 422 resorts, from OpenStreetMap's ski areas
+    (<code>landuse=winter_sports</code>); the others, mostly small village lifts, are only a marker. The French resorts
+    have no outlines yet. An area within 1 km of several resorts is split between them by nearest resort point, so their
+    parts are approximate. The outlines are updated now and then, not with every data update.</p>
+
+  <h2 id="archive">Archive</h2>
+  <ul>
+    <li>Collected since 24 October 2026; earlier data doesn't exist.</li>
+    <li>A snapshot is only written when a report changed (apart from <code>fetched_at</code>), and the archive index
+      (<code>archive/&lt;country&gt;/&lt;resort&gt;/index.json</code>) lists every run. Snapshots keep the format of
+      their time, so older ones may lack newer fields.</li>
+  </ul>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="sources.html">Data sources</a>
+      <a href="about.html">About the data</a>
+      <a href="mailto:trail.jewel8860@eagereverest.com">Contact</a>
+    </nav>
+    <a class="made-by" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+      <span>Made by <b>Miron Pawlik</b></span></a>
+  </footer>
+</main>
+</body>
+</html>
