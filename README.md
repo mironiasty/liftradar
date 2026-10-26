@@ -42,6 +42,7 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 | Bormio (with San Colombano), Santa Caterina, Stelvio | [bormio.eu](https://www.bormio.eu/it/live-info/impianti-e-piste) (tourism board) |
 | Livigno | [livigno.eu](https://www.livigno.eu/en/lifts) (tourism board, lifts only) |
 | French resorts | [Lumiplan](https://www.lumiplan.com), where French resorts enter their daily report: the station's snow bulletin (`bulletinv3.lumiplan.pro`: measuring points, every lift and slope) and, where the resort embeds one, its interactive slope map (`lumiplay.link`: every lift and slope with lengths). No report time |
+| Alpe d'Huez | [ATEN Altitude](https://live.aten-altitude.com/alpehuez/) live page the resort embeds: every lift and slope with its state, snow per measuring point. No report time, no lengths |
 | Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
@@ -61,7 +62,9 @@ Read this before relying on a number. The format is defined by the JSON Schema i
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
 holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI network), Lumiplan
-where French resorts do. Bergfex (and aggregators such as SkiRadar) is not used. Each file's `sources` lists the URLs used for that report.
+where French resorts do (Alpe d'Huez uses ATEN Altitude instead). Not covered yet in France:
+Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse
+and Les Orres (no source we can read). Bergfex (and aggregators such as SkiRadar) is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Timing
 
@@ -80,6 +83,8 @@ where French resorts do. Bergfex (and aggregators such as SkiRadar) is not used.
   French resorts likewise, from Lumiplan; a lift or slope "scheduled" to open later that day (as
   the 07:40 run sees them) counts as open, as in Lumiplan's own totals. Some French resorts show
   everything closed overnight, so they can read `closed` in the morning and `open` at midday.
+  Alpe d'Huez (ATEN Altitude) follows the same rules; in October 2026 its page still showed a
+  chairlift and two slopes as open, so it reads `open` until its season data replaces them.
 - `no_report`: the resort hasn't reported for 14 days (e.g. before the season). Only the
   totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts
   and `slopes.open` null, so last season's open counts and snow never show up as current.
@@ -103,7 +108,8 @@ where French resorts do. Bergfex (and aggregators such as SkiRadar) is not used.
 - French resorts: the measuring points of the resort's Lumiplan bulletin (e.g. "Col Balme",
   2500 m), each with depth and snow quality (`condition`, e.g. `Douce`); `fresh_cm` is the last
   snowfall's amount when it fell today or yesterday. Resorts without a bulletin (Sainte Foy,
-  Valmorel, Les Contamines, Les 2 Alpes, Les 7 Laux, Le Collet) have no snow depth.
+  Valmorel, Les Contamines, Les 2 Alpes, Les 7 Laux, Le Collet) have no snow depth. Alpe d'Huez:
+  the measuring points of its ATEN Altitude page (e.g. "Pic Blanc", 3300 m), the same way.
 - `condition` is in the source's language (e.g. `griffig`, `technický`).
 - Swiss resorts: the resort's own measuring points where it enters them in infosnow (e.g. Verbier).
   Most don't, and then the depths come from the nearest SLF stations, listed in `snow.stations`
@@ -192,7 +198,7 @@ under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 419
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 422
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. The French resorts (added 26 October 2026) have no
 outlines yet: the script now covers France, but Overpass refused the queries that day. Each feature has the resort's `id` and the
