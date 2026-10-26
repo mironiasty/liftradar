@@ -1,0 +1,72 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "saas-grund",
+  "country": "ch",
+  "name": "Saas-Grund",
+  "region": "Valais",
+  "location": {
+    "lat": 46.1282,
+    "lon": 7.9387
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T09:06:47.289502+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": 0,
+    "total": 13,
+    "open_km": 0.0,
+    "total_km": 27
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 20
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-26T09:00:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=206&saison=1&ref=contentBox",
+    "https://www.skiresort.info/ski-resort/hohsaas-saas-grund/"
+  ],
+  "errors": []
+}

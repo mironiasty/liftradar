@@ -9,7 +9,7 @@
     "lon": 6.7113
   },
   "status": "no_report",
-  "fetched_at": "2026-10-26T08:25:27.967569+01:00",
+  "fetched_at": "2026-10-26T09:06:47.291336+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -33,9 +33,10 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-gervais&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr"
+    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr"
   ],
   "errors": []
 }

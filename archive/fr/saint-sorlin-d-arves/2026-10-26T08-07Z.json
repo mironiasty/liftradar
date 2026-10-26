@@ -1,0 +1,42 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "saint-sorlin-d-arves",
+  "country": "fr",
+  "name": "Saint-Sorlin-d'Arves",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.2214,
+    "lon": 6.229
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T09:06:47.291231+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 17
+  },
+  "slopes": {
+    "open": null,
+    "total": 37,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-sorlin&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/les-sybelles",
+    "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/dynamicPoiData?lang=fr"
+  ],
+  "errors": []
+}
