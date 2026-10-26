@@ -48,11 +48,14 @@ function sortValues(r) {
 
 function nameCell(r) {
   const status = statusOf(r);
-  const text = el("div", {}, el("a", { class: "name", href: resortPage(r) }, r.name));
-  if (status !== "open") text.append(el("div", { class: "sub-line" }, STATUS[status].label));
+  const { label, color } = STATUS[status];
+  // The phone layout shows the status as a pill after the name instead of the dot and the line below.
+  const text = el("div", {}, el("a", { class: "name", href: resortPage(r) }, r.name), " ",
+    el("span", { class: "status-pill", style: `--c:${color}` }, label));
+  if (status !== "open") text.append(el("div", { class: "sub-line status-line" }, label));
   if (r.errors.length) text.append(el("div", { class: "err" }, r.errors.join("; ")));
   return el("td", {}, el("div", { class: "resort" },
-    el("span", { class: "dot", style: `--c:${STATUS[status].color}`, title: STATUS[status].label }), text));
+    el("span", { class: "dot", style: `--c:${color}`, title: label }), text));
 }
 
 // "open/total" with a bar for the open share, for open resorts: elsewhere open
@@ -131,13 +134,14 @@ function button(className, text, onClick) {
   return node;
 }
 
-// The region list only offers regions of the chosen country (all of them when none is).
+// The region list only offers regions of the chosen country, and is hidden until one is chosen.
 function fillRegions(resorts) {
   const chosen = regionSelect.value;
-  const names = [...new Set(resorts.filter((r) => r.region && (!country || r.country === country)).map((r) => r.region))]
+  const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))]
     .sort((a, b) => a.localeCompare(b));
   regionSelect.replaceChildren(option("", "All regions"), ...names.map((name) => option(name, name)));
   regionSelect.value = names.includes(chosen) ? chosen : "";
+  regionSelect.hidden = !country;
 }
 
 function fillFilters(resorts) {
