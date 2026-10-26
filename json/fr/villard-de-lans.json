@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "villard-de-lans",
+  "country": "fr",
+  "name": "Villard-de-Lans - Corrençon",
+  "region": "Isère",
+  "location": {
+    "lat": 45.0706,
+    "lon": 5.5513
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.967996+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=villard-de-lans&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

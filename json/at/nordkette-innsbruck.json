@@ -9,7 +9,7 @@
     "lon": 11.399
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:55.530639+01:00",
+  "fetched_at": "2026-10-26T08:26:18.660667+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,14 +18,24 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 11
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-05-03T14:58:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Innsbruck%20Nordkettenbahnen_2933"
+    "https://www.snowcard.tirol.at/skigebiet/Innsbruck%20Nordkettenbahnen_2933",
+    "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-nordkettenbahn",
+    "https://www.skiresort.info/ski-resort/nordkette-innsbruck/"
   ],
   "errors": []
 }

@@ -9,7 +9,7 @@
     "lon": 10.5319
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:15.599749+01:00",
+  "fetched_at": "2026-10-26T08:25:27.965412+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -26,7 +26,7 @@
     "open": 0,
     "total": 15,
     "open_km": null,
-    "total_km": null
+    "total_km": 65
   },
   "lifts_by_type": {
     "carpet": {
@@ -70,7 +70,8 @@
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
-    "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en"
+    "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en",
+    "https://www.skiresort.info/ski-resort/belpiano-schoeneben-malga-san-valentino-haideralm/"
   ],
   "errors": []
 }

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "luz-ardiden",
+  "country": "fr",
+  "name": "Luz Ardiden",
+  "region": "Hautes-Pyrénées",
+  "location": {
+    "lat": 42.8851,
+    "lon": -0.0588
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.968572+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=luz-ardiden&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

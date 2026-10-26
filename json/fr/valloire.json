@@ -1,0 +1,42 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "valloire",
+  "country": "fr",
+  "name": "Valloire",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.165,
+    "lon": 6.4296
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.967279+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 15
+  },
+  "slopes": {
+    "open": null,
+    "total": 47,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=valloire&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/valmeinier-valloire",
+    "https://public.lumiplay.link/interactive-map/v1/map/7faeba8c-3285-422a-86b0-0f8d37c81c2e/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/7faeba8c-3285-422a-86b0-0f8d37c81c2e/dynamicPoiData?lang=fr"
+  ],
+  "errors": []
+}

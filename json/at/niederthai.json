@@ -9,7 +9,7 @@
     "lon": 10.9692
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:55.206209+01:00",
+  "fetched_at": "2026-10-26T08:26:18.634551+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,14 +18,23 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 4
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Niederthai_89"
+    "https://www.snowcard.tirol.at/skigebiet/Niederthai_89",
+    "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-umhausen-niederthai"
   ],
   "errors": []
 }

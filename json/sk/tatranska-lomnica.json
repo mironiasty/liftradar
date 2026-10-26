@@ -9,7 +9,7 @@
     "lon": 20.2806
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:15.601933+01:00",
+  "fetched_at": "2026-10-26T08:25:27.972355+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,7 +18,10 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
   "slopes": {
     "open": null,
     "total": 15,
@@ -30,7 +33,8 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk"
+    "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
+    "https://www.skiresort.info/ski-resort/tatranska-lomnica/"
   ],
   "errors": []
 }

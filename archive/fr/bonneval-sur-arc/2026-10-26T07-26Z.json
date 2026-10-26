@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "bonneval-sur-arc",
+  "country": "fr",
+  "name": "Bonneval-sur-Arc",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.3717,
+    "lon": 7.0468
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.967395+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=bonneval-sur-arc&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

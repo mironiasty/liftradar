@@ -1,0 +1,77 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "cerna-hora",
+  "country": "cz",
+  "name": "Černá hora (Janské Lázně)",
+  "region": "Královéhradecký kraj",
+  "location": {
+    "lat": 50.6306,
+    "lon": 15.7807
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T08:25:27.966059+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": 0,
+    "total": 18,
+    "open_km": 0.0,
+    "total_km": 18
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-26T00:00:16+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/chora",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=4",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=4"
+  ],
+  "errors": []
+}

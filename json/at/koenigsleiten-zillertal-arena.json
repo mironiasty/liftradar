@@ -1,36 +1,36 @@
 {
   "$schema": "https://snow.miron.asia/schema/resort.schema.json",
-  "id": "koenigsleiten-zillertal-arena",
+  "id": "zillertal-arena",
   "country": "at",
-  "name": "Königsleiten - Zillertal Arena",
-  "region": "Salzburg",
+  "name": "Zillertal Arena",
+  "region": "Tirol",
   "location": {
-    "lat": 47.2509,
-    "lon": 12.1221
+    "lat": 47.2297,
+    "lon": 12.0489
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:49.600434+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-26T08:26:04.670257+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-01-29",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 1,
+    "open": 0,
     "total": 52
   },
   "slopes": {
     "open": 0,
     "total": 86,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 150
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 0,
       "total": 15
     },
     "carpet": {
@@ -50,19 +50,19 @@
     "ski_route": {
       "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "easy": {
       "open": 0,
       "total": 26,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
       "open": 0,
       "total": 46,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
@@ -72,10 +72,10 @@
       "total_km": 12
     }
   },
-  "lifts_updated_at": "2026-10-25T21:22:40+01:00",
+  "lifts_updated_at": "2026-10-26T08:26:34+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten_2909",
+    "https://www.snowcard.tirol.at/skigebiet/Zell%20am%20Ziller%20-%20Zillertal%20Arena_86",
     "https://winter.intermaps.com/zillertalarena/data?lang=en",
     "https://www.zillertalarena.com/uploads/tx_webxbookingemo/ImageStorage/Winter-26-_2cb5cae422ee7ae8215c9edac98ba67c.pdf"
   ],

@@ -9,7 +9,7 @@
     "lon": 11.2412
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T21:22:15.599755+01:00",
+  "fetched_at": "2026-10-26T08:25:27.965423+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -51,7 +51,7 @@
     "open": 0,
     "total": 11,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 40
   },
   "lifts_by_type": {
     "carpet": {
@@ -91,7 +91,8 @@
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
-    "https://winter.intermaps.com/meran/data?lang=en"
+    "https://winter.intermaps.com/meran/data?lang=en",
+    "https://www.skiresort.info/ski-resort/meran-2000/"
   ],
   "errors": []
 }

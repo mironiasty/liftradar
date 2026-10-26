@@ -1,0 +1,89 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "glacier-3000",
+  "country": "ch",
+  "name": "Glacier 3000",
+  "region": "Vaud",
+  "location": {
+    "lat": 46.3541,
+    "lon": 7.2056
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T08:25:27.962131+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Pierres Fendues (SLF)",
+        "elevation_m": 2218,
+        "depth_cm": 1,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": 0,
+    "total": 17,
+    "open_km": 0.0,
+    "total_km": 32
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
+  "lifts_updated_at": "2026-10-23T06:57:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=104&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

@@ -9,7 +9,7 @@
     "lon": 9.9836
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T21:22:15.598746+01:00",
+  "fetched_at": "2026-10-26T08:25:27.961882+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -35,7 +35,7 @@
     "open": 0,
     "total": 13,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 35
   },
   "lifts_by_type": {
     "cable_car": {
@@ -81,10 +81,11 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-10-25T21:15:00+01:00",
+  "lifts_updated_at": "2026-10-26T08:16:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",
+    "https://www.skiresort.info/ski-resort/diavolezza-lagalb/"
   ],
   "errors": []
 }

@@ -9,7 +9,7 @@
     "lon": 10.7827
   },
   "status": "open",
-  "fetched_at": "2026-10-25T21:22:15.599735+01:00",
+  "fetched_at": "2026-10-26T08:25:27.965384+01:00",
   "snow": {
     "mountain_cm": 0,
     "valley_cm": null,
@@ -35,14 +35,15 @@
     "open": 2,
     "total": 22,
     "open_km": null,
-    "total_km": null
+    "total_km": 42
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-25T00:29:25.917000+02:00",
+  "lifts_updated_at": "2026-10-26T00:18:25.093000+01:00",
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+    "https://www.skiresort.info/ski-resort/val-senales-glacier-schnalstaler-gletscher/"
   ],
   "errors": []
 }

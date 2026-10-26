@@ -9,7 +9,7 @@
     "lon": 7.7806
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T21:22:15.598769+01:00",
+  "fetched_at": "2026-10-26T08:25:27.961946+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,8 +20,8 @@
       {
         "name": "Chiematte (SLF)",
         "elevation_m": 2205,
-        "depth_cm": 3,
-        "fresh_cm": 13,
+        "depth_cm": 1,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -35,7 +35,7 @@
     "open": 0,
     "total": 13,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 15
   },
   "lifts_by_type": {
     "cable_car": {
@@ -77,7 +77,8 @@
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=258&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://www.skiresort.info/ski-resort/eischoll/"
   ],
   "errors": []
 }

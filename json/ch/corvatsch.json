@@ -9,7 +9,7 @@
     "lon": 9.8161
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T21:22:15.598728+01:00",
+  "fetched_at": "2026-10-26T08:25:27.961832+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,8 +20,16 @@
       {
         "name": "Tscheppa (SLF)",
         "elevation_m": 2730,
-        "depth_cm": 6,
-        "fresh_cm": 6,
+        "depth_cm": 4,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Corvatsch (SLF)",
+        "elevation_m": 2690,
+        "depth_cm": 12,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -71,7 +79,7 @@
       "total_km": 19
     }
   },
-  "lifts_updated_at": "2026-10-25T21:15:00+01:00",
+  "lifts_updated_at": "2026-10-26T08:16:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=42&saison=1&ref=contentBox",

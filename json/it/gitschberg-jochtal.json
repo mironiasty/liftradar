@@ -9,7 +9,7 @@
     "lon": 11.662
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T21:22:15.599576+01:00",
+  "fetched_at": "2026-10-26T08:25:27.964387+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -35,7 +35,7 @@
     "open": 0,
     "total": 31,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 55
   },
   "lifts_by_type": {
     "chairlift": {
@@ -76,7 +76,8 @@
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
     "https://www.dolomitisuperski.com",
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+    "https://www.skiresort.info/ski-resort/gitschberg-jochtal/"
   ],
   "errors": []
 }

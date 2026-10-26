@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "la-norma",
+  "country": "fr",
+  "name": "La Norma",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.1913,
+    "lon": 6.7127
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.967341+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": null,
+    "total": 30,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=la-norma&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

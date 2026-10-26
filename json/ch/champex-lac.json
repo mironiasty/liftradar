@@ -9,9 +9,9 @@
     "lon": 7.1067
   },
   "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:15.598676+01:00",
+  "fetched_at": "2026-10-26T08:25:27.961767+01:00",
   "snow": {
-    "mountain_cm": 13,
+    "mountain_cm": 7,
     "valley_cm": null,
     "fresh_cm": 0,
     "last_snowfall": null,
@@ -20,7 +20,7 @@
       {
         "name": "Glacier de l'Evole (SLF)",
         "elevation_m": 2800,
-        "depth_cm": 13,
+        "depth_cm": 7,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -35,7 +35,7 @@
     "open": null,
     "total": 11,
     "open_km": null,
-    "total_km": null
+    "total_km": 15
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
@@ -45,7 +45,8 @@
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=82&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://www.skiresort.info/ski-resort/champex-lac-orsieres/"
   ],
   "errors": []
 }

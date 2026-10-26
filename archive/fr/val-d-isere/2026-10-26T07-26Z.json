@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "val-d-isere",
+  "country": "fr",
+  "name": "Val d'Isère",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.4496,
+    "lon": 6.9787
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.966980+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-d-isere&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

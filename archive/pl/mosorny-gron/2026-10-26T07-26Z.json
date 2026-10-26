@@ -1,0 +1,58 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "mosorny-gron",
+  "country": "pl",
+  "name": "Mosorny Groń",
+  "region": "Małopolskie",
+  "location": {
+    "lat": 49.66,
+    "lon": 19.5579
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-26T08:25:27.966666+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 1
+  },
+  "slopes": {
+    "open": 0,
+    "total": 3,
+    "open_km": 0.0,
+    "total_km": 7
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 7
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.pkl.pl/trasy-narciarskie.html",
+    "https://www.pkl.pl/koleje-i-wyciagi.html"
+  ],
+  "errors": []
+}

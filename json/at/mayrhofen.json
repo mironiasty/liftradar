@@ -8,24 +8,24 @@
     "lat": 47.1635,
     "lon": 11.8603
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-25T21:22:52.495468+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-26T08:25:55.853817+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-31",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 3,
+    "open": 0,
     "total": 47
   },
   "slopes": {
     "open": 0,
     "total": 62,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 142
   },
   "lifts_by_type": {
@@ -42,7 +42,7 @@
       "total": 14
     },
     "gondola": {
-      "open": 3,
+      "open": 0,
       "total": 9
     }
   },
@@ -50,32 +50,32 @@
     "ski_route": {
       "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "easy": {
       "open": 0,
       "total": 24,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
       "open": 0,
       "total": 27,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 8,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-10-24T08:00:03+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Mayrhofen-Finkenberg-Rastkogel-Eggalm_2913",
+    "https://www.snowcard.tirol.at/skigebiet/Finkenberger%20Almbahnen_24",
     "https://winter.intermaps.com/mayrhofen/data?lang=en",
     "https://www.mayrhofen.at/en/mountopolis/winter/our-mountains"
   ],

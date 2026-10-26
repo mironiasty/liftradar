@@ -2,19 +2,19 @@
   "$schema": "https://snow.miron.asia/schema/resort.schema.json",
   "id": "kitzbuehel",
   "country": "at",
-  "name": "Kitzbühel",
+  "name": "KitzSki Kitzbühel",
   "region": "Tirol",
   "location": {
     "lat": 47.4765,
     "lon": 12.4293
   },
   "status": "closed",
-  "fetched_at": "2026-10-25T21:22:48.722927+01:00",
+  "fetched_at": "2026-10-26T08:26:14.293815+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-04-03",
+    "last_snowfall": null,
     "condition": null,
     "stations": []
   },
@@ -75,7 +75,7 @@
   "lifts_updated_at": "2026-10-24T07:49:51+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Kitzb%C3%BChel_2541",
+    "https://www.snowcard.tirol.at/skigebiet/Mittersill%20-%20Pa%C3%9F%20Thurn%20-%20Kitzb%C3%BChel_2970",
     "https://winter.intermaps.com/kitzski/data?lang=en",
     "https://press.kitzski.at/media/daten-fakten-winter20-21-de-1.pdf"
   ],

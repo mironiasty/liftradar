@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "formigueres",
+  "country": "fr",
+  "name": "Formiguères",
+  "region": "Pyrénées-Orientales",
+  "location": {
+    "lat": 42.6141,
+    "lon": 2.1029
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.968770+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=formigueres&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

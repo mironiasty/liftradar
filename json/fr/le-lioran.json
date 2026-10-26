@@ -1,0 +1,31 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "le-lioran",
+  "country": "fr",
+  "name": "Le Lioran",
+  "region": "Cantal",
+  "location": {
+    "lat": 45.0831,
+    "lon": 2.7492
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-26T08:25:27.968853+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=le-lioran&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}
