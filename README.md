@@ -104,13 +104,14 @@ is not used. Each file's `sources` lists the URLs used for that report.
 
 ### Lifts and slopes
 
-- **Villages of one ski area share its numbers.** SkiWelt, Zillertal Arena, KitzSki,
-  Mayrhofen, Hochkönig, Snow Space Salzburg and Dachstein West are listed per village, each
-  with the whole area's lift and slope counts (and, mostly, km). Don't add them up.
-- **`slopes.total_km`** is the official, advertised ski-area size for the bigger areas, the
-  same for all its villages. For other resorts it's the reported value, which is only the sum
-  of the slope lengths the resort has entered in its reporting system and can be far too low
-  (Kitzbühel reported 4.7 of 233 km). Advertised sizes are counted in different ways, some
+- **One ski area is one resort.** The reports list some areas per village, each with the
+  whole area's lift and slope counts (SkiWelt, KitzSki, Zillertal Arena, Mayrhofen, Ski Juwel,
+  Snow Space Salzburg, Hochkönig, Dachstein West, Großarltal - Dorfgastein): they're published
+  once, under the area's name, from the village report updated last. Snow depths are that
+  village's.
+- **`slopes.total_km`** is the official, advertised ski-area size for the bigger areas. For
+  other resorts it's the reported value, which is only the sum of the slope lengths the
+  resort has entered in its reporting system and can be far too low (Kitzbühel reported 4.7 of 233 km). Advertised sizes are counted in different ways, some
   with ski routes, and Stubai's 108 km is its "effective route distance" (65 km by fall line).
   Rounded up to a whole km.
 - **`slopes.open_km`** (0.1 km): summed from the slope map's lengths where complete; from
@@ -174,7 +175,7 @@ under one of them (Katschberg under Kärnten, Glacier 3000 under Vaud).
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 314 of the 361
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 341
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run
@@ -184,9 +185,9 @@ village lifts, are only a marker on the map. Each feature has the resort's `id` 
 uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-conditions-data/json/index.json assets/areas.geojson
 ```
 
-An area within 1 km of several resorts (SkiWelt, Zillertal Arena) is split between them by
-nearest resort point, so the villages' parts are approximate. Wrong matches are fixed by hand
-in the script's `SHARED` and `EXCLUDE`.
+An area within 1 km of several resorts is split between them by nearest resort point, so
+their parts are approximate. Wrong matches are fixed by hand in the script's `SHARED` and
+`EXCLUDE`.
 
 ### Archive
 
@@ -200,6 +201,10 @@ in the script's `SHARED` and `EXCLUDE`.
 ## Using it in a TRMNL plugin
 
 Let the user paste the resort's JSON URL into a text field, and poll that URL:
+
+(Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
+`json/at/soell-skiwelt.json`, as copies of the area's report with its `id`; new plugins should
+use the area's link, `json/at/skiwelt.json`. Their archives stop at that date.)
 
 ```yaml
 polling_verb: get

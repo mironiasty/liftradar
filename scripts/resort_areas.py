@@ -1,8 +1,8 @@
 """Write the ski-area outlines shown on the map, from OpenStreetMap.
 
 Reads every `landuse=winter_sports` area in the regions from the Overpass API and
-gives each to a resort: an area within 1 km of several resorts' points (SkiWelt,
-Zillertal Arena) is split between them, each getting the part nearest to its
+gives each to a resort: an area within 1 km of several resorts' points is split
+between them, each getting the part nearest to its
 point; any other area goes to the nearest resort within 2.5 km, or 8 km when the
 names share a word. Resorts without an area stay a marker only. Run it by hand
 now and then, e.g. after adding resorts, and check the map:
@@ -33,9 +33,9 @@ BBOXES = [
     (48.7, 18.9, 49.9, 23.0),  # the Polish and Slovak Carpathians
 ]
 
-# Areas split between the given resorts, however far their points are.
+# Areas split between the given resorts (or given to the one), however far their points are.
 SHARED = {
-    "relation/10938000": ["kitzbuehel", "mittersill-pass-thurn-kitzbuehel"],  # KitzSki
+    "relation/10938000": ["kitzbuehel"],  # KitzSki, reaching Pass Thurn far from the Kitzbühel point
 }
 # Areas never used.
 EXCLUDE = {
