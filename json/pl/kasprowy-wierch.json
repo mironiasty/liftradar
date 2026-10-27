@@ -9,7 +9,7 @@
     "lon": 19.9817
   },
   "status": "closed",
-  "fetched_at": "2026-10-26T19:08:53.216258+01:00",
+  "fetched_at": "2026-10-27T07:52:37.167664+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -53,10 +53,36 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "PL-12",
+    "region": "Polskie Tatry",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": 1800,
+        "upper_bound": null,
+        "period": "all_day"
+      },
+      {
+        "level": "no_snow",
+        "lower_bound": null,
+        "upper_bound": 1800,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "no_distinct_avalanche_problem"
+    ],
+    "published_at": "2026-10-26T17:07:00+01:00",
+    "valid_from": "2026-10-26T17:07:00+01:00",
+    "valid_until": "2026-10-27T20:00:00+01:00"
+  },
   "sources": [
     "https://www.pkl.pl/koleje-i-wyciagi.html",
-    "https://www.pkl.pl/trasy-narciarskie.html"
+    "https://www.pkl.pl/trasy-narciarskie.html",
+    "https://static.avalanche.report/eaws_bulletins/2026-10-27/2026-10-27-PL-12.json"
   ],
   "errors": []
 }

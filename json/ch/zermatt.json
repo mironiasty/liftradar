@@ -8,10 +8,10 @@
     "lat": 46.0149,
     "lon": 7.7428
   },
-  "status": "closed",
-  "fetched_at": "2026-10-26T19:08:53.214792+01:00",
+  "status": "open",
+  "fetched_at": "2026-10-27T07:52:37.166748+01:00",
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 4,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
@@ -20,29 +20,21 @@
       {
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
-        "depth_cm": 7,
-        "fresh_cm": 0,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Zermatt (SLF)",
-        "elevation_m": 1600,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 4,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 5,
     "total": 36
   },
   "slopes": {
-    "open": 0,
+    "open": 9,
     "total": 84,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 200
   },
   "lifts_by_type": {
@@ -51,7 +43,7 @@
       "total": 6
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 10
     },
     "drag_lift": {
@@ -67,21 +59,21 @@
       "total": 9
     },
     "other": {
-      "open": 0,
+      "open": 4,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 12,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 7,
       "total": 48,
-      "open_km": 0.0,
+      "open_km": 14.8,
       "total_km": 99
     },
     "difficult": {
@@ -93,11 +85,11 @@
     "ski_route": {
       "open": 0,
       "total": 16,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-26T19:07:00+01:00",
+  "lifts_updated_at": "2026-10-27T07:51:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",

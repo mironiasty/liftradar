@@ -1,0 +1,61 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "strbske-pleso",
+  "country": "sk",
+  "name": "Štrbské Pleso",
+  "region": "Prešovský kraj",
+  "location": {
+    "lat": 49.1192,
+    "lon": 20.064
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T07:52:37.169856+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": null,
+    "total": 9,
+    "open_km": null,
+    "total_km": 8
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": {
+    "region_id": "SK-02",
+    "region": "Vysoké Tatry - západ",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "gliding_snow",
+      "wet_snow"
+    ],
+    "published_at": "2026-10-26T17:00:00+01:00",
+    "valid_from": "2026-10-27T00:00:00+01:00",
+    "valid_until": "2026-10-28T00:00:00+01:00"
+  },
+  "sources": [
+    "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
+    "https://www.skiresort.info/ski-resort/strbske-pleso/",
+    "https://static.avalanche.report/eaws_bulletins/2026-10-27/2026-10-27-SK.json"
+  ],
+  "errors": []
+}
