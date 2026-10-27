@@ -1,0 +1,39 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "zieleniec",
+  "country": "pl",
+  "name": "Zieleniec",
+  "region": "Dolnośląskie",
+  "location": {
+    "lat": 50.3386,
+    "lon": 16.3844
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:58.857406+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 31
+  },
+  "slopes": {
+    "open": null,
+    "total": 47,
+    "open_km": null,
+    "total_km": 27
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://zieleniec.pl/zima/aktualne-warunki"
+  ],
+  "errors": []
+}

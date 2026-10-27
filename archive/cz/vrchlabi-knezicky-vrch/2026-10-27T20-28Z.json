@@ -1,0 +1,67 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "vrchlabi-knezicky-vrch",
+  "country": "cz",
+  "name": "Vrchlabí - Kněžický vrch",
+  "region": "Královéhradecký kraj",
+  "location": {
+    "lat": 50.6367,
+    "lon": 15.5868
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:45.570490+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": 9,
+    "open_km": null,
+    "total_km": 6
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-03-06T08:17:18+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/knez_vrch",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=28",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=28"
+  ],
+  "errors": []
+}

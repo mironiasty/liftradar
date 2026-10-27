@@ -1,0 +1,68 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "vuokatti",
+  "country": "fi",
+  "name": "Vuokatti",
+  "region": "Kainuu",
+  "location": {
+    "lat": 64.1312,
+    "lon": 28.2689
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:45.572768+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Sotkamo Kuolaniemi (FMI)",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": {
+    "open": 0,
+    "total": 17,
+    "open_km": 0.0,
+    "total_km": 11
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://ski.fi/hiihtokeskukset/vuokatti/",
+    "https://vuokatti.fi/vuokatinrinteet/rinteiden-aukioloajat/",
+    "https://opendata.fmi.fi/wfs",
+    "https://en.ilmatieteenlaitos.fi/open-data"
+  ],
+  "errors": []
+}

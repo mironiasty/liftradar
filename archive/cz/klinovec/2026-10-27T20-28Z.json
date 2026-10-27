@@ -1,0 +1,73 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "klinovec",
+  "country": "cz",
+  "name": "Klínovec",
+  "region": "Karlovarský kraj",
+  "location": {
+    "lat": 50.3962,
+    "lon": 12.968
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:45.570779+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 18
+  },
+  "slopes": {
+    "open": 0,
+    "total": 31,
+    "open_km": 0.0,
+    "total_km": 32
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 5
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 18,
+      "open_km": 0.0,
+      "total_km": 18
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 11
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-10-26T13:22:08+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/klinovec",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=2",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=2"
+  ],
+  "errors": []
+}

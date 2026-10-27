@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "la-berra",
   "country": "ch",
   "name": "La Berra",
@@ -9,7 +9,7 @@
     "lon": 7.155
   },
   "status": "closed",
-  "fetched_at": "2026-10-27T13:39:40.965307+01:00",
+  "fetched_at": "2026-10-27T21:26:45.568920+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,7 +20,7 @@
       {
         "name": "Fochsen (SLF)",
         "elevation_m": 1707,
-        "depth_cm": 8,
+        "depth_cm": 9,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -65,7 +65,7 @@
       "total_km": 12
     }
   },
-  "lifts_updated_at": "2026-10-27T04:01:00+01:00",
+  "lifts_updated_at": "2026-10-27T15:39:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=213&saison=1&ref=contentBox",

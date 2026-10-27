@@ -1,0 +1,85 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "mont-dore",
+  "country": "fr",
+  "name": "Mont-Dore",
+  "region": "Puy-de-Dôme",
+  "location": {
+    "lat": 45.565,
+    "lon": 2.811
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:45.572377+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 14
+  },
+  "slopes": {
+    "open": null,
+    "total": 36,
+    "open_km": null,
+    "total_km": 33
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 26,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": 5
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    },
+    "other": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=mont-dore&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/Mont-Dore",
+    "https://public.lumiplay.link/interactive-map/v1/map/bd58ff03-33ec-4343-85ee-010558b0d2f4/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/bd58ff03-33ec-4343-85ee-010558b0d2f4/dynamicPoiData?lang=fr",
+    "https://www.skiinfo.fr/massif-central/le-mont-dore/station-de-ski"
+  ],
+  "errors": []
+}

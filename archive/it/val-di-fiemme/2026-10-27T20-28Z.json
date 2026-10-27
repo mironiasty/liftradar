@@ -1,0 +1,78 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "val-di-fiemme",
+  "country": "it",
+  "name": "Val di Fiemme",
+  "region": "Trentino",
+  "location": {
+    "lat": 46.2912,
+    "lon": 11.4605
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:45.569781+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-02-19",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 26
+  },
+  "slopes": {
+    "open": 0,
+    "total": 68,
+    "open_km": 0.0,
+    "total_km": 71
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 13
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 25,
+      "open_km": 0.0,
+      "total_km": 25
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 33,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 10
+    }
+  },
+  "lifts_updated_at": "2026-10-09T22:25:31.428220+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+    "https://www.dolomitisuperski.com",
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate"
+  ],
+  "errors": []
+}

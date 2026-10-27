@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "pitztal",
   "country": "at",
   "name": "Pitztaler Gletscher",
@@ -9,7 +9,7 @@
     "lon": 10.87
   },
   "status": "open",
-  "fetched_at": "2026-10-27T13:39:40.962874+01:00",
+  "fetched_at": "2026-10-27T21:26:45.563287+01:00",
   "snow": {
     "mountain_cm": 15,
     "valley_cm": 0,
@@ -60,13 +60,13 @@
     ]
   },
   "lifts": {
-    "open": 6,
+    "open": 7,
     "total": 13
   },
   "slopes": {
-    "open": 6,
+    "open": 7,
     "total": 29,
-    "open_km": 13.9,
+    "open_km": 19.2,
     "total_km": 67
   },
   "lifts_by_type": {
@@ -87,7 +87,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 1,
+      "open": 2,
       "total": 3
     }
   },
@@ -99,9 +99,9 @@
       "total_km": 18
     },
     "intermediate": {
-      "open": 1,
+      "open": 2,
       "total": 11,
-      "open_km": 2.2,
+      "open_km": 7.5,
       "total_km": 45
     },
     "difficult": {
@@ -111,7 +111,7 @@
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-10-26T07:03:06+01:00",
+  "lifts_updated_at": "2026-10-27T15:58:16+01:00",
   "avalanche": null,
   "sources": [
     "https://www.pitztaler-gletscher.at/wetter",

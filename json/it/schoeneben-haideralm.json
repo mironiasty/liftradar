@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "schoeneben-haideralm",
   "country": "it",
   "name": "Schöneben - Haideralm",
@@ -8,8 +8,8 @@
     "lat": 46.766,
     "lon": 10.5319
   },
-  "status": null,
-  "fetched_at": "2026-10-27T13:39:40.966441+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:45.570126+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -69,10 +69,9 @@
   "lifts_updated_at": "2026-10-27T09:58:12+01:00",
   "avalanche": null,
   "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en",
     "https://www.skiresort.info/ski-resort/belpiano-schoeneben-malga-san-valentino-haideralm/"
   ],
-  "errors": [
-    "suedtirol: ReadTimeout: "
-  ]
+  "errors": []
 }

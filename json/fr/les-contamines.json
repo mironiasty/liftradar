@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "les-contamines",
   "country": "fr",
   "name": "Les Contamines-Montjoie",
@@ -9,7 +9,7 @@
     "lon": 6.7275
   },
   "status": "closed",
-  "fetched_at": "2026-10-27T13:39:40.968161+01:00",
+  "fetched_at": "2026-10-27T21:26:45.571706+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -66,8 +66,8 @@
   "avalanche": null,
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-contamines-montjoie/station-de-ski"
   ],
   "errors": []

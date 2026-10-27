@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "landeck-zams-fliess-venet",
+  "country": "at",
+  "name": "Landeck - Zams - Fliess (Venet)",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.1484,
+    "lon": 10.6246
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:28:00.480435+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": 12,
+    "open_km": null,
+    "total_km": 22
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-27T16:54:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Landeck%20-%20Zams%20-%20Fliess%20%28Familienskigebiet%20Venet%29_75",
+    "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-venet-bergbahnen"
+  ],
+  "errors": []
+}

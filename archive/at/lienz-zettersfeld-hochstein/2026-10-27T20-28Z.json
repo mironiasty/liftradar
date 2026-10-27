@@ -1,0 +1,72 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "lienz-zettersfeld-hochstein",
+  "country": "at",
+  "name": "Lienz Zettersfeld Hochstein",
+  "region": "Tirol",
+  "location": {
+    "lat": 46.8295,
+    "lon": 12.7689
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:28:00.889425+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-02-19",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 15,
+    "open_km": 0.0,
+    "total_km": 21
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-27T15:13:12+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Lienz%20Zettersfeld_2907",
+    "https://winter.intermaps.com/lienz_zettersfeld/data?lang=en"
+  ],
+  "errors": []
+}

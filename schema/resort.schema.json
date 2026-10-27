@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://snow.miron.asia/schema/resort.schema.json",
+  "$id": "https://liftradar.eu/schema/resort.schema.json",
   "$defs": {
     "Avalanche": {
       "additionalProperties": false,
@@ -427,8 +427,8 @@
   "additionalProperties": false,
   "properties": {
     "$schema": {
-      "const": "https://snow.miron.asia/schema/resort.schema.json",
-      "default": "https://snow.miron.asia/schema/resort.schema.json",
+      "const": "https://liftradar.eu/schema/resort.schema.json",
+      "default": "https://liftradar.eu/schema/resort.schema.json",
       "title": "$Schema",
       "type": "string"
     },

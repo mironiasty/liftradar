@@ -1,0 +1,61 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "grossarltal-dorfgastein",
+  "country": "at",
+  "name": "Großarltal - Dorfgastein",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.2374,
+    "lon": 13.2014
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:50.106002+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 17
+  },
+  "slopes": {
+    "open": 0,
+    "total": 35,
+    "open_km": 0.0,
+    "total_km": 70
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 31
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 35
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-27T07:33:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skigastein.com/en/experiences-mountains/winter/ski-areas-in-skigastein/dorfgastein-grossarltal/",
+    "https://www.skiinfo.fr/salzbourg/grossarltal-dorfgastein/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/dorfgastein-grossarltal/"
+  ],
+  "errors": []
+}

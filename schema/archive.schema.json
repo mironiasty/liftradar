@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://snow.miron.asia/schema/archive.schema.json",
+  "$id": "https://liftradar.eu/schema/archive.schema.json",
   "$defs": {
     "ArchiveRun": {
       "additionalProperties": false,
@@ -28,8 +28,8 @@
   "description": "Every run for one resort, oldest first, with the snapshot holding its report.",
   "properties": {
     "$schema": {
-      "const": "https://snow.miron.asia/schema/archive.schema.json",
-      "default": "https://snow.miron.asia/schema/archive.schema.json",
+      "const": "https://liftradar.eu/schema/archive.schema.json",
+      "default": "https://liftradar.eu/schema/archive.schema.json",
       "title": "$Schema",
       "type": "string"
     },

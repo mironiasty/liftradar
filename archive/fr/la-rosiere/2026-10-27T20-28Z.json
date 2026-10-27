@@ -1,0 +1,31 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "la-rosiere",
+  "country": "fr",
+  "name": "La Rosière",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.6286,
+    "lon": 6.8478
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:45.571439+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=la-rosiere&lang=fr&isSoir=false"
+  ],
+  "errors": []
+}

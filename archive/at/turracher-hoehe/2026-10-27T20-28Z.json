@@ -1,0 +1,84 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "turracher-hoehe",
+  "country": "at",
+  "name": "Turracher Höhe",
+  "region": "Kärnten",
+  "location": {
+    "lat": 46.9132,
+    "lon": 13.8765
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:28:15.749901+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 16
+  },
+  "slopes": {
+    "open": 0,
+    "total": 40,
+    "open_km": 0.0,
+    "total_km": 43
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 7
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "easy": {
+      "open": 0,
+      "total": 16,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 17,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "other": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-25T08:20:10+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+    "https://winter.intermaps.com/turracher_hoehe/data?lang=en"
+  ],
+  "errors": []
+}

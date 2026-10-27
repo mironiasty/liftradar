@@ -1,0 +1,84 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "damuels-mellau-faschina",
+  "country": "at",
+  "name": "Damüls Mellau Faschina",
+  "region": "Vorarlberg",
+  "location": {
+    "lat": 47.2804,
+    "lon": 9.891
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:45.564886+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 28
+  },
+  "slopes": {
+    "open": 0,
+    "total": 64,
+    "open_km": 0.0,
+    "total_km": 109
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 15
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 11
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 14,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 27,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 18,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-27T13:47:26+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/damuels_mellau_faschina/data?lang=en",
+    "https://www.damuels.travel/de/skigebiet"
+  ],
+  "errors": []
+}

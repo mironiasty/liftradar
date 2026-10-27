@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "soelden",
   "country": "at",
   "name": "Sölden",
@@ -9,9 +9,9 @@
     "lon": 10.98
   },
   "status": "open",
-  "fetched_at": "2026-10-27T13:39:40.962830+01:00",
+  "fetched_at": "2026-10-27T21:26:45.563230+01:00",
   "snow": {
-    "mountain_cm": 48,
+    "mountain_cm": 50,
     "valley_cm": 0,
     "fresh_cm": 0,
     "last_snowfall": "2026-10-25",
@@ -22,7 +22,7 @@
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": 13.9,
+        "temperature_c": 7.9,
         "condition": null
       },
       {
@@ -30,23 +30,23 @@
         "elevation_m": 2110,
         "depth_cm": 4,
         "fresh_cm": 0,
-        "temperature_c": 10.2,
+        "temperature_c": 7.0,
         "condition": null
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 6,
+        "depth_cm": 5,
         "fresh_cm": 0,
-        "temperature_c": 7.9,
+        "temperature_c": 4.6,
         "condition": null
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
-        "depth_cm": 48,
+        "depth_cm": 50,
         "fresh_cm": 0,
-        "temperature_c": 3.9,
+        "temperature_c": 2.0,
         "condition": "Powder - grippy"
       }
     ]
@@ -109,7 +109,7 @@
       "total_km": 23
     }
   },
-  "lifts_updated_at": "2026-10-27T13:33:46+01:00",
+  "lifts_updated_at": "2026-10-27T21:24:32+01:00",
   "avalanche": null,
   "sources": [
     "https://www.soelden.com/en/live-information/snow-report",

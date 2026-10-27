@@ -1,0 +1,69 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "plesivec",
+  "country": "cz",
+  "name": "Plešivec - Abertamy",
+  "region": "Karlovarský kraj",
+  "location": {
+    "lat": 50.3687,
+    "lon": 12.8183
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:45.570799+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 15,
+    "open_km": 0.0,
+    "total_km": 9
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-10-25T09:47:47+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/plesivec",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=22",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=22"
+  ],
+  "errors": []
+}

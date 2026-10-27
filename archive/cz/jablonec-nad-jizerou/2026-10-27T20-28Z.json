@@ -1,0 +1,59 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "jablonec-nad-jizerou",
+  "country": "cz",
+  "name": "Jablonec nad Jizerou",
+  "region": "Liberecký kraj",
+  "location": {
+    "lat": 50.7034,
+    "lon": 15.4296
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:45.570432+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": 6,
+    "open_km": null,
+    "total_km": 5
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": 2
+    },
+    "intermediate": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-03-16T13:55:53+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/jablonecnj",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=17",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=17"
+  ],
+  "errors": []
+}

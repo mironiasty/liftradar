@@ -1,0 +1,42 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "nordkette-innsbruck",
+  "country": "at",
+  "name": "Nordkette - Innsbruck",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.2864,
+    "lon": 11.399
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:28:04.324256+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": 6,
+    "open_km": null,
+    "total_km": 11
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-05-03T14:58:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Innsbruck%20Nordkettenbahnen_2933",
+    "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-nordkettenbahn",
+    "https://www.skiresort.info/ski-resort/nordkette-innsbruck/",
+    "https://www.skiinfo.fr/tyrol/innsbrucker-nordkettenbahnen/station-de-ski"
+  ],
+  "errors": []
+}

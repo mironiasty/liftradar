@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "super-besse",
   "country": "fr",
   "name": "Super-Besse",
@@ -9,7 +9,7 @@
     "lon": 2.8562
   },
   "status": "no_report",
-  "fetched_at": "2026-10-27T13:39:40.968685+01:00",
+  "fetched_at": "2026-10-27T21:26:45.572365+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -71,8 +71,8 @@
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=super-besse&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/Super-Besse",
-    "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/massif-central/besse-super-besse/station-de-ski"
   ],
   "errors": []

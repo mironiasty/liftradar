@@ -1,5 +1,5 @@
 {
-  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "seiser-alm",
   "country": "it",
   "name": "Seiser Alm - Alpe di Siusi",
@@ -9,14 +9,31 @@
     "lon": 11.6179
   },
   "status": "closed",
-  "fetched_at": "2026-10-27T13:39:40.966107+01:00",
+  "fetched_at": "2026-10-27T21:26:45.569731+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Valley station",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Mountain station",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
@@ -66,9 +83,8 @@
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-    "https://www.dolomitisuperski.com"
+    "https://www.dolomitisuperski.com",
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
   ],
-  "errors": [
-    "snow: ReadTimeout: "
-  ]
+  "errors": []
 }

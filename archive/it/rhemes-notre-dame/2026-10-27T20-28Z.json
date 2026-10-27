@@ -1,0 +1,68 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "rhemes-notre-dame",
+  "country": "it",
+  "name": "Rhêmes-Notre-Dame",
+  "region": "Valle d'Aosta",
+  "location": {
+    "lat": 45.5689,
+    "lon": 7.1182
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:45.569984+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": 10,
+    "open_km": null,
+    "total_km": 10
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-04-07T08:20:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+    "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/rhemes-notre-dame/stazione-di-chanavey/3573"
+  ],
+  "errors": []
+}

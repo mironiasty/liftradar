@@ -1,0 +1,82 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "kreischberg",
+  "country": "at",
+  "name": "Kreischberg",
+  "region": "Steiermark",
+  "location": {
+    "lat": 47.0774,
+    "lon": 14.0571
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:26:45.564903+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": 0,
+    "total": 33,
+    "open_km": 0.0,
+    "total_km": 42
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 14,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-20T06:03:55+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/kreischberg/data?lang=en",
+    "https://www.kreischberg.at/en/"
+  ],
+  "errors": []
+}

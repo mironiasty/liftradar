@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "unken-heutal",
+  "country": "at",
+  "name": "Unken - Heutal",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.6511,
+    "lon": 12.7303
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:26:50.107020+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": 7,
+    "open_km": null,
+    "total_km": 14
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-08-19T09:31:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiinfo.fr/salzbourg/heutal/station-de-ski"
+  ],
+  "errors": []
+}
