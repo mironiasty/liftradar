@@ -35,6 +35,7 @@ BBOXES = [
     (42.4, -1.0, 43.1, 2.3),  # the Pyrenees
     (44.9, 2.6, 45.7, 3.0),  # the Massif Central
     (47.9, 6.7, 48.2, 7.2),  # the Vosges
+    (59.9, 21.0, 68.6, 30.0),  # Finland
 ]
 
 # Areas split between the given resorts (or given to the one), however far their points are.

@@ -63,14 +63,17 @@
     report each resort submits to iSKI; holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI
     network), Lumiplan where French resorts do (Alpe d'Huez uses ATEN Altitude instead). Not covered yet in France:
     Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse and Les Orres
-    (no source we can read).</p>
+    (no source we can read). Finnish resorts come from ski.fi, the Finnish Ski Area Association's site, where each
+    resort fills in a daily block, or from the resort's own page or slope map where it shows a live status. Not covered
+    yet in Finland: Levi's own lift list (its ski.fi block is used), Paljakka, Koli and the smaller hills.</p>
 
   <h2 id="timing">Timing</h2>
   <ul>
     <li>Updated twice a day, at about 07:40 and 12:40 Vienna time in winter (08:40 / 13:40 in summer time). Scheduled
       runs can start late at busy times, sometimes by hours, and one can be skipped.</li>
     <li><code>fetched_at</code> is when we read the data; <code>lifts_updated_at</code> is the resort's own report time
-      (or its slope map's update time; <code>null</code> for French resorts, whose sources have none). The resort's
+      (or its slope map's update time; <code>null</code> for French and Finnish resorts, whose sources have none: ski.fi
+      dates its block by the day only). The resort's
       report time can move forward without its numbers changing: reporting systems refresh it daily.</li>
     <li>Times are ISO 8601 with the Vienna offset (<code>+01:00</code> / <code>+02:00</code>, the same as Swiss time);
       archive file names are UTC.</li>
@@ -85,6 +88,12 @@
       show everything closed overnight, so they can read closed in the morning and open at midday. Alpe d'Huez (ATEN
       Altitude) follows the same rules; in October 2026 its page still showed a chairlift and two slopes as open, so it
       reads open until its season data replaces them.</li>
+    <li>Finnish resorts: from the resort's own counters, slope list or slope map where it has one (Ylläs, Ruka, Tahko,
+      Himos, Salla, Ukkohalla, Iso-Syöte, Vuokatti, Laajis, Messilä, Ounasvaara, Riihivuori, Suomutunturi, Kasurila),
+      open when a slope is, with no report time, so always taken as current. The others come from the block they fill
+      in on ski.fi (open slopes and lifts, and the day it was updated): open when a slope is open, &ldquo;no report
+      yet&rdquo; when the block is more than 14 days old, and closed when ski.fi's list of resorts flags the resort
+      closed, even if its block still counts open slopes.</li>
     <li><b>No report yet</b> (<code>no_report</code>): the resort hasn't reported for 14 days (e.g. before the season).
       Only the totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts and
       <code>slopes.open</code> null, so last season's open counts and snow never show up as current. Where the report
@@ -119,6 +128,11 @@
       (SLF)&rdquo;: an automatic station on the mountain (about 2000–2900 m) and an observer's study plot near the
       village (read each morning, mostly from November). They're measured on open ground, not on pistes, and the station
       can be a few km from the ski area.</li>
+    <li>Finnish resorts: the depth at the nearest weather station of the Finnish Meteorological Institute that measures
+      snow (within 40 km), as <code>valley_cm</code> and a station &ldquo;&lt;name&gt; (FMI)&rdquo;: natural snow on
+      open ground in the lowlands, often an airport or village, not on the slopes (Häkärinteet and Suomutunturi have
+      none nearby). Ruka's natural snow on the fell, from its slope map, is <code>mountain_cm</code>. No resort reports
+      its piste depth.</li>
     <li>Regional reports keep a resort's old values until it clears them; check <code>last_snowfall</code>.
       SalzburgerLand reports often have no <code>last_snowfall</code>.</li>
     <li>Any value can be <code>null</code> when the resort doesn't publish it.</li>
@@ -154,7 +168,10 @@
   <h2 id="lift-types-and-slope-difficulties">Lift types and slope difficulties</h2>
   <p><code>lifts_by_type</code> and <code>slopes_by_difficulty</code> are only set for resorts with their own slope map
     (the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo), for French resorts (from
-    Lumiplan) and for the Polish ones (PKL, Zieleniec). Some bigger areas without one (Hochkönig, Snow Space Salzburg,
+    Lumiplan), for the Polish ones (PKL, Zieleniec) and for the Finnish resorts that list their lifts and slopes
+    (Iso-Syöte, Vuokatti and Laajis; Messilä its slopes only. Finnish lift types are read from the lift's name; slopes
+    without a colour give no difficulties). Other Finnish resorts get <code>slopes_by_difficulty</code> from ski.fi's slope colours
+    (counts only, <code>open</code> null) when they add up to the slopes counted. Some bigger areas without one (Hochkönig, Snow Space Salzburg,
     Schmittenhöhe, Zauchensee, Serre Chevalier, ...) get <code>slopes_by_difficulty</code> from the area's size instead:
     km per difficulty (skiresort.com), or slope counts (Paganella, Folgaria), with <code>open</code> null (0 when
     closed). Ski Arlberg's breakdowns get their km per difficulty the same way, summed from its slope map.</p>
@@ -171,7 +188,8 @@
       <code>intermediate</code>, &ldquo;bardzo trudna&rdquo; / Zieleniec's &ldquo;trudna&rdquo; (black)
       <code>difficult</code>. French slopes follow the French colours: green (very easy) and blue are both
       <code>easy</code>, red <code>intermediate</code>, black <code>difficult</code>; only alpine slopes count (no
-      snowparks, cross-country or sledding).</li>
+      snowparks, cross-country or sledding). Finnish slopes likewise: green (very easy) and blue <code>easy</code>, red
+      <code>intermediate</code>, black <code>difficult</code>; some Finnish resorts list their snow parks as slopes.</li>
     <li>km per difficulty are only given when every slope of that difficulty has a length in the map, and they don't add
       up to the total slope km (the official size, counted differently; each difficulty is also rounded up). Some maps
       have no lengths at all.</li>
@@ -188,7 +206,8 @@
       point in the ski area, since the villages lie below the warning regions). Salzburg and the other Austrian states
       have no machine-readable bulletin, so <code>avalanche</code> is <code>null</code> for all resorts there (including
       Lech Zürs and Warth-Schröcken in Vorarlberg), and the Snow Card ones in Salzburg (Hochkrimml, Königsleiten,
-      Mittersill, Wildkogel).</li>
+      Mittersill, Wildkogel). Finnish resorts have none: the Finnish Meteorological Institute's forecasts for six fell
+      areas aren't published in a form we can read.</li>
     <li>Early and late in the season the SLF only rates the alpine regions, so Swiss resorts in the Prealps (and e.g.
       Arosa) can have none while others have a rating.</li>
     <li><code>null</code> outside the season and when no bulletin is valid at the time of the run.</li>
@@ -200,18 +219,19 @@
   <h2 id="locations">Locations</h2>
   <p><code>location</code> is one point per resort: the Snow Card or infosnow location, a point in the ski area for the
     glacier resorts, or the main village or ski station (looked up on OpenStreetMap) for other Austrian, Italian,
-    French, Czech, Slovak and Polish resorts, Andermatt and Engelberg. It marks the area on a map, not a lift
-    station.</p>
-  <p><code>region</code> is the state, canton, Italian region, Czech kraj, Polish voivodeship or French département that
-    point lies in (e.g. Tirol, Valais, Valle d'Aosta, Liberecký kraj, Žilinský kraj, Małopolskie, Savoie;
+    French, Czech, Slovak and Polish resorts, Andermatt and Engelberg, and the fell or hill of Finnish resorts. It
+    marks the area on a map, not a lift station.</p>
+  <p><code>region</code> is the state, canton, Italian region, Czech kraj, Polish voivodeship, French département or
+    Finnish region (maakunta) that point lies in (e.g. Tirol, Valais, Valle d'Aosta, Liberecký kraj, Žilinský kraj,
+    Małopolskie, Savoie, Lappi;
     Trentino-Alto Adige by province: Südtirol, Trentino), looked up on OpenStreetMap; the table filters by it and by
     country. An area spanning a border is listed under one of them (Katschberg under Kärnten, Glacier 3000 under
     Vaud).</p>
 
   <h2 id="areas">Areas on the map</h2>
   <p>The map shows the outline of 295 of the 422 resorts, from OpenStreetMap's ski areas
-    (<code>landuse=winter_sports</code>); the others, mostly small village lifts, are only a marker. The French resorts
-    have no outlines yet. An area within 1 km of several resorts is split between them by nearest resort point, so their
+    (<code>landuse=winter_sports</code>); the others, mostly small village lifts, are only a marker. The French and
+    Finnish resorts have no outlines yet. An area within 1 km of several resorts is split between them by nearest resort point, so their
     parts are approximate. The outlines are updated now and then, not with every data update.</p>
 
   <h2 id="archive">Archive</h2>
