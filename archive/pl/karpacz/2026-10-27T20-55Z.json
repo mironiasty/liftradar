@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "karpacz",
+  "country": "pl",
+  "name": "Karpacz Ski Arena",
+  "region": "Dolnośląskie",
+  "location": {
+    "lat": 50.764,
+    "lon": 15.7452
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.860098+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": null,
+    "total": 7,
+    "open_km": null,
+    "total_km": 6
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://karpaczskiarena.pl/routes-and-lifts/"
+  ],
+  "errors": []
+}

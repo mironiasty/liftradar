@@ -1,0 +1,78 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "schoeneben-haideralm",
+  "country": "it",
+  "name": "Schöneben - Haideralm",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.766,
+    "lon": 10.5319
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.859280+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": 0,
+    "total": 15,
+    "open_km": null,
+    "total_km": 65
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-27T09:58:12+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+    "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en",
+    "https://www.skiresort.info/ski-resort/belpiano-schoeneben-malga-san-valentino-haideralm/"
+  ],
+  "errors": []
+}

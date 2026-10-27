@@ -474,13 +474,23 @@
       "default": null
     },
     "status": {
+      "enum": [
+        "open",
+        "closed",
+        "no_report"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "fetched_at": {
+      "format": "date-time",
+      "title": "Fetched At",
+      "type": "string"
+    },
+    "status_from": {
       "anyOf": [
         {
-          "enum": [
-            "open",
-            "closed",
-            "no_report"
-          ],
+          "format": "date-time",
           "type": "string"
         },
         {
@@ -488,12 +498,7 @@
         }
       ],
       "default": null,
-      "title": "Status"
-    },
-    "fetched_at": {
-      "format": "date-time",
-      "title": "Fetched At",
-      "type": "string"
+      "title": "Status From"
     },
     "snow": {
       "$ref": "#/$defs/Snow"

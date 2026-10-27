@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "skilifte-knittel",
+  "country": "at",
+  "name": "Skilifte Knittel",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.2846,
+    "lon": 10.4155
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:54:43.381779+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": 2,
+    "open_km": null,
+    "total_km": 3
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-06-05T13:35:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Skilifte%20Knittel_93"
+  ],
+  "errors": []
+}

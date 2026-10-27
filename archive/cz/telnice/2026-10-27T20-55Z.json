@@ -1,0 +1,70 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "telnice",
+  "country": "cz",
+  "name": "Telnice",
+  "region": "Ústecký kraj",
+  "location": {
+    "lat": 50.733,
+    "lon": 13.9578
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.859869+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": 0,
+    "total": 8,
+    "open_km": 0.0,
+    "total_km": 7
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-26T13:22:19+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/telnice",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=4",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=4"
+  ],
+  "errors": []
+}

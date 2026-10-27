@@ -1,0 +1,61 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "gaissau-hintersee",
+  "country": "at",
+  "name": "Gaißau - Hintersee",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.7115,
+    "lon": 13.1953
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:38.610740+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 17,
+    "open_km": 0.0,
+    "total_km": 30
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 20
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 9
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-27T00:08:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiinfo.fr/salzbourg/gaissau-hintersee/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/gaissau-hintersee/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "champorcher",
+  "country": "it",
+  "name": "Champorcher",
+  "region": "Valle d'Aosta",
+  "location": {
+    "lat": 45.6042,
+    "lon": 7.572
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.859146+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 15,
+    "open_km": 0.0,
+    "total_km": 12
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-27T08:00:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+    "https://lovevda.it/it/sport/sci-discesa/champorcher"
+  ],
+  "errors": []
+}

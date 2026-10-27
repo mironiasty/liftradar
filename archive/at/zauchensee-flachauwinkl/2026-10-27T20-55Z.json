@@ -1,0 +1,62 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "zauchensee-flachauwinkl",
+  "country": "at",
+  "name": "Zauchensee - Flachauwinkl",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.2906,
+    "lon": 13.4525
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:38.612084+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 16
+  },
+  "slopes": {
+    "open": 0,
+    "total": 29,
+    "open_km": null,
+    "total_km": 45
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 24
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 18
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-10-27T17:40:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiresort.info/ski-resort/zauchensee-flachauwinkl/",
+    "https://www.skiinfo.fr/salzbourg/zauchensee/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/zauchensee-flachauwinkl/"
+  ],
+  "errors": []
+}

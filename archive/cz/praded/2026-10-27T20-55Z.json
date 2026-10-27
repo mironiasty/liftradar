@@ -1,0 +1,66 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "praded",
+  "country": "cz",
+  "name": "Praděd",
+  "region": "Olomoucký kraj",
+  "location": {
+    "lat": 50.076,
+    "lon": 17.229
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.859747+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": 9,
+    "open_km": null,
+    "total_km": 5
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": 2
+    },
+    "difficult": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-04-15T14:28:15+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/praded",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=4&loc=3",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=4&loc=3"
+  ],
+  "errors": []
+}

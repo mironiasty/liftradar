@@ -1,0 +1,52 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "himos",
+  "country": "fi",
+  "name": "Himos",
+  "region": "Keski-Suomi",
+  "location": {
+    "lat": 61.8808,
+    "lon": 25.2996
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.861378+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Halli lentoasema (FMI)",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 17
+  },
+  "slopes": {
+    "open": 0,
+    "total": 26,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://ski.fi/hiihtokeskukset/himos/",
+    "https://himos.fi/",
+    "https://opendata.fmi.fi/wfs",
+    "https://en.ilmatieteenlaitos.fi/open-data"
+  ],
+  "errors": []
+}

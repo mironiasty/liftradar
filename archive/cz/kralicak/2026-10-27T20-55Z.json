@@ -1,0 +1,68 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "kralicak",
+  "country": "cz",
+  "name": "Kraličák",
+  "region": "Olomoucký kraj",
+  "location": {
+    "lat": 50.1588,
+    "lon": 16.9016
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.859695+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": 9,
+    "open_km": null,
+    "total_km": 7
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": 2
+    },
+    "other": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-09-28T17:10:30+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/kralicak",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=17&loc=17",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=17&loc=17"
+  ],
+  "errors": []
+}

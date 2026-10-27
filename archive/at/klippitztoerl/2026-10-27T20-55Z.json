@@ -1,0 +1,73 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "klippitztoerl",
+  "country": "at",
+  "name": "Klippitztörl",
+  "region": "Kärnten",
+  "location": {
+    "lat": 46.9367,
+    "lon": 14.6741
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.854915+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": 0,
+    "total": 13,
+    "open_km": 0.0,
+    "total_km": 28
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "easy": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
+  "lifts_updated_at": "2026-10-20T06:04:07+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/klippitztoerl/data?lang=en",
+    "https://www.skiresort.info/ski-resort/klippitztoerl/"
+  ],
+  "errors": []
+}

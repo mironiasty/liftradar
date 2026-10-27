@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "kotelnica-bialczanska",
+  "country": "pl",
+  "name": "Kotelnica Białczańska (Białka Tatrzańska)",
+  "region": "Małopolskie",
+  "location": {
+    "lat": 49.3946,
+    "lon": 20.1051
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.860044+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": {
+    "open": null,
+    "total": 10,
+    "open_km": null,
+    "total_km": 14
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska"
+  ],
+  "errors": []
+}

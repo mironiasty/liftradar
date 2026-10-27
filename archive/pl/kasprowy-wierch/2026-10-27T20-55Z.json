@@ -1,0 +1,63 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "kasprowy-wierch",
+  "country": "pl",
+  "name": "Kasprowy Wierch",
+  "region": "Małopolskie",
+  "location": {
+    "lat": 49.2701,
+    "lon": 19.9817
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.859939+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": 0,
+    "total": 3,
+    "open_km": 0.0,
+    "total_km": 7
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.pkl.pl/trasy-narciarskie.html",
+    "https://www.pkl.pl/koleje-i-wyciagi.html"
+  ],
+  "errors": []
+}

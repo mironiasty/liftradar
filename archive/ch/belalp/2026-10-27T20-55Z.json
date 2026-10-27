@@ -1,0 +1,104 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "belalp",
+  "country": "ch",
+  "name": "Belalp",
+  "region": "Valais",
+  "location": {
+    "lat": 46.3586,
+    "lon": 7.9844
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.857825+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Belalp (SLF)",
+        "elevation_m": 2554,
+        "depth_cm": 1,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": {
+    "open": 0,
+    "total": 33,
+    "open_km": 0.0,
+    "total_km": 45
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 16
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "difficult": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 11
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 7
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-27T21:45:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=54&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

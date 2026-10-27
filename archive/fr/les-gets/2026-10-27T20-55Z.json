@@ -1,0 +1,41 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "les-gets",
+  "country": "fr",
+  "name": "Les Gets",
+  "region": "Haute-Savoie",
+  "location": {
+    "lat": 46.1551,
+    "lon": 6.6633
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.860696+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 47
+  },
+  "slopes": {
+    "open": null,
+    "total": 75,
+    "open_km": null,
+    "total_km": 117
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=les-gets&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/alpes-du-nord/les-gets/station-de-ski"
+  ],
+  "errors": []
+}

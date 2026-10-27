@@ -1,0 +1,41 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "jasna",
+  "country": "sk",
+  "name": "Jasná Nízke Tatry",
+  "region": "Žilinský kraj",
+  "location": {
+    "lat": 48.96,
+    "lon": 19.585
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.861191+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 20
+  },
+  "slopes": {
+    "open": null,
+    "total": 38,
+    "open_km": null,
+    "total_km": 51
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk",
+    "https://web.archive.org/web/20260210100143/https://laravel.jasna.sk/api/jasna/lanovky?lang=hu"
+  ],
+  "errors": []
+}

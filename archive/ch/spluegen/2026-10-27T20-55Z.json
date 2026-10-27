@@ -1,0 +1,94 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "spluegen",
+  "country": "ch",
+  "name": "Splügen",
+  "region": "Graubünden",
+  "location": {
+    "lat": 46.5528,
+    "lon": 9.3234
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.858605+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": 2,
+    "valley_cm": null,
+    "fresh_cm": 0,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Unter Surettasee (SLF)",
+        "elevation_m": 2200,
+        "depth_cm": 2,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": 16,
+    "open_km": null,
+    "total_km": 28
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 8,
+      "open_km": null,
+      "total_km": 14
+    },
+    "intermediate": {
+      "open": null,
+      "total": 5,
+      "open_km": null,
+      "total_km": 10
+    },
+    "difficult": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": 3
+    },
+    "ski_route": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-12T17:19:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=86&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

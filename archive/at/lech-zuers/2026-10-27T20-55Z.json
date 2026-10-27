@@ -1,0 +1,81 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "lech-zuers",
+  "country": "at",
+  "name": "Lech Zürs am Arlberg",
+  "region": "Vorarlberg",
+  "location": {
+    "lat": 47.2091,
+    "lon": 10.1401
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T21:53:33.854968+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 32
+  },
+  "slopes": {
+    "open": 0,
+    "total": 77,
+    "open_km": 0.0,
+    "total_km": 115
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 16
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    },
+    "gondola": {
+      "open": 0,
+      "total": 8
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 25,
+      "open_km": 0.0,
+      "total_km": 45
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 26,
+      "open_km": 0.0,
+      "total_km": 33
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 24,
+      "open_km": 0.0,
+      "total_km": 32
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=4&loadMore=1&orderState=ASC",
+    "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=4&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+    "https://www.skiarlberg.at/de/lech-zuers/live-infos/schnee-lawinenwarnbericht",
+    "https://winter.intermaps.com/skiarlberg/data?lang=en"
+  ],
+  "errors": []
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "beskid-sport-arena",
+  "country": "pl",
+  "name": "Beskid Sport Arena (Szczyrk)",
+  "region": "Śląskie",
+  "location": {
+    "lat": 49.7189,
+    "lon": 18.9991
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.860191+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": 4,
+    "open_km": null,
+    "total_km": 4
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://slaskie.travel/en-US/Poi/Pokaz/656766/7667/beskid-sport-arena",
+    "https://www.skiinfo.fr/silesie/beskid-sport-arena/station-de-ski"
+  ],
+  "errors": []
+}

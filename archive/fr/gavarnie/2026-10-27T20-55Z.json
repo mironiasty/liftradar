@@ -1,0 +1,41 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "gavarnie",
+  "country": "fr",
+  "name": "Gavarnie-Gèdre",
+  "region": "Hautes-Pyrénées",
+  "location": {
+    "lat": 42.7322,
+    "lon": -0.0094
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T21:53:33.861056+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": null,
+    "total": 27,
+    "open_km": null,
+    "total_km": 32
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=gavarnie&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/pyrenees/gavarnie-gedre/station-de-ski"
+  ],
+  "errors": []
+}
