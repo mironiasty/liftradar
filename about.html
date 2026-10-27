@@ -94,17 +94,23 @@
       in on ski.fi (open slopes and lifts, and the day it was updated): open when a slope is open, &ldquo;no report
       yet&rdquo; when the block is more than 14 days old, and closed when ski.fi's list of resorts flags the resort
       closed, even if its block still counts open slopes.</li>
-    <li><b>No report yet</b> (<code>no_report</code>): the resort hasn't reported for 14 days (e.g. before the season).
+    <li><b>No report</b> (<code>no_report</code>): the resort hasn't reported for 14 days (e.g. before the season), or we
+      couldn't read its report for over 2 days (see below).
       Only the totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts and
       <code>slopes.open</code> null, so last season's open counts and snow never show up as current. Where the report
       lists every lift and slope, the totals of <code>lifts_by_type</code> and <code>slopes_by_difficulty</code> are kept
       the same way. The 0 means &ldquo;not reported&rdquo;, not that every lift is closed. Some Slovak and Polish areas
       (TMR's, Kotelnica, Czarna Góra, Szrenica, Karpacz, Pilsko; Zieleniec while its site refuses us) are always
-      &ldquo;no report yet&rdquo; for now: we list them with their size only, from the operators' lists, until we read a
-      live status for them. French resorts are &ldquo;no report yet&rdquo; while all their slopes are &ldquo;hors
+      &ldquo;no report&rdquo; for now: we list them with their size only, from the operators' lists, until we read a
+      live status for them. French resorts are &ldquo;no report&rdquo; while all their slopes are &ldquo;hors
       période&rdquo; (outside the season), with the area's totals; before the season many French bulletins list nothing,
       and then there are no totals either.</li>
-    <li><b>Unknown</b> (<code>null</code>): usually because fetching failed; see <code>errors</code>.</li>
+    <li>The status is never <code>null</code>. When a run can't read a resort's report (its site is down or changed),
+      the resort keeps the status, lifts and slopes of the last run that could, and <code>status_from</code> gives that
+      run's time (it's <code>null</code> when the report was read this time). After 2 days without a report it turns
+      &ldquo;no report&rdquo;, with only the area's size kept. What failed is in <code>errors</code>, which the site doesn't
+      show, and in each run's log, kept for 30 days in <code>logs/</code> on the
+      <a href="https://github.com/mironiasty/snow-conditions/tree/data/logs">data branch</a>.</li>
     <li>A <b>closed</b> resort always shows 0 open lifts, slopes and km (outside the season some resorts count lifts
       running for hikers), and <b>no snow depths</b> (<code>mountain_cm</code>, <code>valley_cm</code>,
       <code>fresh_cm</code>, <code>condition</code> are <code>null</code>): closed resorts' reports typically still carry

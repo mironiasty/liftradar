@@ -10,6 +10,8 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Czechia,
     snapshot holding that run's full report, e.g. `2026-10-25T09-00Z.json` (UTC). Runs
     without changes share the earlier snapshot. Until 25 October 2026 the runs were listed in
     `history/<country>/<resort>.json`; those files remain in the `data` branch's git history.
+  - `logs/<YYYY-MM-DDTHH-MMZ>.json`: each run's log (UTC), what failed for which resort and the
+    run's warnings, kept for 30 days. Not served by the site (the site doesn't show errors).
   - Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
     `json/at/soell-skiwelt.json`, as copies of the area's report with its `id` (not in
     `index.json`); new links should use the area's, `json/at/skiwelt.json`. Their archives

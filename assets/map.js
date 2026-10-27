@@ -6,8 +6,7 @@
 const STATUS = {
   open: { label: "open", color: "--open" },
   closed: { label: "closed", color: "--closed" },
-  no_report: { label: "no report yet", color: "--none" },
-  unknown: { label: "unknown / error", color: "--err" },
+  no_report: { label: "no report", color: "--none" },
 };
 // Values a marker can show: open or total, or a single value. Open counts are
 // only shown for open resorts: closed ones are 0, and resorts without a recent
@@ -91,7 +90,6 @@ function popup(r, status) {
     el("div", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
   );
   if (values.length) content.append(el("div", { class: "values" }, ...values));
-  if (r.errors.length) content.append(el("div", { class: "err" }, r.errors.join("; ")));
   const foot = el("div", { class: "foot" });
   if (r.lifts_updated_at) foot.append(el("span", {}, `Report ${viennaTime(r.lifts_updated_at)}`));
   foot.append(el("a", { href: resortPage(r) }, "Details and history →"));
@@ -115,7 +113,7 @@ function show([index, areas]) {
   const areaOf = new Map((areas?.features ?? []).map((f) => [f.properties.id, f]));
 
   for (const r of resorts) {
-    const status = STATUS[r.status] ? r.status : "unknown";
+    const status = statusKey(r);
     const area = areaOf.get(r.id);
     let areaLayer = null;
     if (area) {
@@ -184,7 +182,7 @@ function show([index, areas]) {
     }
   };
   for (const [status, { label }] of Object.entries(STATUS)) {
-    const total = resorts.filter((r) => (STATUS[r.status] ? r.status : "unknown") === status).length;
+    const total = resorts.filter((r) => statusKey(r) === status).length;
     if (!total) continue;
     const chip = button("chip", "", () => {
       shown.has(status) ? shown.delete(status) : shown.add(status);

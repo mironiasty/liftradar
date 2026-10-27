@@ -109,7 +109,6 @@
     .resort .dot, .status-line { display: none; }
     .resort > div { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
     .resort .name { flex: 1; min-width: 0; }
-    .resort .err { flex-basis: 100%; }
     .status-pill { display: inline-flex; }
     tr[hidden] { display: none; }
     td { position: static; display: block; padding: 0; border: 0; background: none; }
@@ -193,10 +192,11 @@
       <li>Updated twice a day, at about 07:40 and 12:40 Vienna time (an hour later in summer); runs can start late.</li>
       <li>Ski areas spanning several villages (e.g. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) are listed once; their snow depths are from the village that reported last.</li>
       <li>Closed resorts show nothing open and no snow depths: their reports often still carry last season's values.
-        &ldquo;No report yet&rdquo; means the resort hasn't reported for 14 days. Trentino, Dolomiti Superski,
+        &ldquo;No report&rdquo; means the resort hasn't reported for 14 days, or we couldn't read its report for over 2 days
+        (until then, a resort whose report couldn't be read keeps its last status and numbers). Trentino, Dolomiti Superski,
         Livigno, Ski Arlberg, PKL, Zieleniec, French (Lumiplan, ATEN) and Finnish reports carry no report time, so their open/closed is always taken as current
         (Finnish resorts without a live status of their own use the block they fill in on ski.fi, dated by the day);
-        French resorts count lifts and slopes scheduled to open later that day as open, and show &ldquo;No report yet&rdquo; while their slopes are outside the season.
+        French resorts count lifts and slopes scheduled to open later that day as open, and show &ldquo;No report&rdquo; while their slopes are outside the season.
         TMR's areas (Jasná, the High Tatras, Szczyrk), some other Polish ones and a few small Austrian ones are listed with their size only for now.</li>
       <li>Total slope km is the ski area's size: the one advertised by the resort, otherwise OnTheSnow's or skiresort.com's,
         and for sectors of a linked area (e.g. St. Anton, Verbier) the sum of the operator's slope lengths. For about 20

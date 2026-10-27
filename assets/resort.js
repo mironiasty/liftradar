@@ -64,10 +64,14 @@ function tiles(r) {
 
 // Why numbers are missing, from the README's "Status".
 function statusNote(r) {
-  if (r.status === "closed") return "Closed: no snow depths are shown, since closed resorts' reports often still carry last season's.";
-  if (r.status === "no_report") return "No report for 14 days: only the area's size (lifts, slopes, km) is kept; the 0 open lifts means not reported.";
-  if (!STATUS_LABELS[r.status]) return "Status unknown, usually because fetching failed (see Data below).";
-  return null;
+  // status_from: this run couldn't read the status, kept from that run's (for 2 days, then no report).
+  const since = r.status_from && viennaTime(r.status_from);
+  if (since && new Date(r.fetched_at) - new Date(r.status_from) > 2 * 864e5)
+    return `No report: the resort's report couldn't be read since ${since}; only the area's size (lifts, slopes, km) is kept.`;
+  const kept = since ? ` Status, lifts and slopes as read ${since}: the latest report couldn't be read.` : "";
+  if (r.status === "closed") return `Closed: no snow depths are shown, since closed resorts' reports often still carry last season's.${kept}`;
+  if (statusKey(r) === "no_report") return `No report for 14 days: only the area's size (lifts, slopes, km) is kept; the 0 open lifts means not reported.${kept}`;
+  return kept.trim() || null;
 }
 
 function header(r) {
@@ -82,7 +86,7 @@ function header(r) {
     backLink(),
     el("h1", {}, r.name),
     el("div", { class: "facts" },
-      el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status] ?? "unknown"),
+      el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status]),
       el("span", {}, meta)),
     el("p", { class: "meta" }, times),
     note ? el("p", { class: "meta" }, note) : "",
@@ -176,7 +180,6 @@ function data(r) {
     el("div", { class: "meta" }, "This resort's JSON, e.g. for the ",
       el("a", { href: "https://trmnl.com/recipes/ski-resort-snow-report-219253" }, "TRMNL plugin"), ": paste it as its Resort."),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, "Open")));
-  if (r.errors.length) section.append(el("p", { class: "err" }, r.errors.join("; ")));
   section.append(el("div", { class: "meta", style: "margin-top:12px" }, "Sources"),
     el("ul", { class: "sources" }, ...r.sources.map((source) => el("li", {}, el("a", { href: source }, source)))));
   return section;

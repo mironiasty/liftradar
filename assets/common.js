@@ -1,5 +1,5 @@
 // Shared by the table and the map: loading the data and formatting values.
-// The data is published by snow-fetcher (json/, history/, archive/, schema/).
+// The data is published by snow-fetcher (json/, archive/, schema/; also logs/, not served).
 
 const INDEX_URL = "json/index.json";
 const AREAS_URL = "assets/areas.geojson";
@@ -28,11 +28,12 @@ function pair(a, b, unit = "") {
   return missing(a) && missing(b) ? "–" : `${dash(a)}/${dash(b)}${unit}`;
 }
 
-const STATUS_LABELS = { open: "open", closed: "closed", no_report: "no report yet" };
+const STATUS_LABELS = { open: "open", closed: "closed", no_report: "no report" };
 
 // Same as the table and the map.
-const STATUS_COLORS = { open: "var(--open)", closed: "var(--closed)", no_report: "var(--none)", unknown: "var(--err)" };
-const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "unknown");
+const STATUS_COLORS = { open: "var(--open)", closed: "var(--closed)", no_report: "var(--none)" };
+// Data published before 27.10.2026 can have a null status (fetching failed): shown as no report.
+const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "no_report");
 
 const viennaTime = (iso, options = { dateStyle: "medium", timeStyle: "short" }) =>
   new Date(iso).toLocaleString("de-AT", { timeZone: "Europe/Vienna", ...options });

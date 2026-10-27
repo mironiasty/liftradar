@@ -19,10 +19,9 @@ const shownStatuses = new Set();
 const STATUS = {
   open: { label: "Open", color: "var(--open)" },
   closed: { label: "Closed", color: "var(--closed)" },
-  no_report: { label: "No report yet", color: "var(--none)" },
-  unknown: { label: "Unknown", color: "var(--err)" },
+  no_report: { label: "No report", color: "var(--none)" },
 };
-const statusOf = (r) => (STATUS[r.status] ? r.status : "unknown");
+const statusOf = statusKey;
 
 function sortValues(r) {
   const lifts = r.lifts || {}, slopes = r.slopes || {}, snow = r.snow;
@@ -53,7 +52,6 @@ function nameCell(r) {
   const text = el("div", {}, el("a", { class: "name", href: resortPage(r) }, r.name), " ",
     el("span", { class: "status-pill", style: `--c:${color}` }, label));
   if (status !== "open") text.append(el("div", { class: "sub-line status-line" }, label));
-  if (r.errors.length) text.append(el("div", { class: "err" }, r.errors.join("; ")));
   return el("td", {}, el("div", { class: "resort" },
     el("span", { class: "dot", style: `--c:${color}`, title: label }), text));
 }
