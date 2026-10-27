@@ -1,7 +1,7 @@
 # snow-conditions
 
 Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Czechia, Slovakia and Poland, published at
-[snow.miron.asia](https://snow.miron.asia).
+[liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
   `archive/<country>/<resort>/` and `schema/…`, published by the fetcher twice a day.
@@ -28,7 +28,7 @@ to `main` and after every data update.
 
 How every value is computed, what `null` and 0 mean, and the caveats (timing, status, snow,
 lifts and slopes, lift types and slope difficulties, avalanche danger, locations, map areas,
-archive) are on the site: [About the data](https://snow.miron.asia/about.html) (`about.html`).
+archive) are on the site: [About the data](https://liftradar.eu/about.html) (`about.html`).
 Keep it up to date with the fetcher. The format is defined by the JSON Schema in `schema/`
 (`resort.schema.json`, `index.schema.json`, `archive.schema.json`).
 
@@ -109,11 +109,11 @@ custom_fields:
 - keyname: resort_url
   name: Resort
   field_type: string
-  description: The JSON link of your ski resort on snow.miron.asia.
-  help_text: Open <a href="https://snow.miron.asia" target="_blank">snow.miron.asia</a>, search for your
+  description: The JSON link of your ski resort on liftradar.eu.
+  help_text: Open <a href="https://liftradar.eu" target="_blank">liftradar.eu</a>, search for your
     resort and open it, then press <strong>Copy</strong> next to its JSON link.
-    It looks like <code>https://snow.miron.asia/json/at/soelden.json</code>.
-  placeholder: https://snow.miron.asia/json/at/soelden.json
+    It looks like <code>https://liftradar.eu/json/at/soelden.json</code>.
+  placeholder: https://liftradar.eu/json/at/soelden.json
 ```
 
 A dropdown (`xhrSelect`) doesn't work with GitHub Pages: TRMNL loads its options from the
