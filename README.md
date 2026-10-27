@@ -10,6 +10,10 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Czechia,
     snapshot holding that run's full report, e.g. `2026-10-25T09-00Z.json` (UTC). Runs
     without changes share the earlier snapshot. Until 25 October 2026 the runs were listed in
     `history/<country>/<resort>.json`; those files remain in the `data` branch's git history.
+  - Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
+    `json/at/soell-skiwelt.json`, as copies of the area's report with its `id` (not in
+    `index.json`); new links should use the area's, `json/at/skiwelt.json`. Their archives
+    stop at that date.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
   its history from the archive), `sources.html` (data sources, incl. every URL in the
@@ -91,36 +95,6 @@ uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-condi
 An area within 1 km of several resorts is split between them by nearest resort point, so
 their parts are approximate. Wrong matches are fixed by hand in the script's `SHARED` and
 `EXCLUDE`.
-
-## Using it in a TRMNL plugin
-
-The ready-made plugin is the [Ski Resort Snow Report](https://trmnl.com/recipes/ski-resort-snow-report-219253)
-recipe on TRMNL; the site links to it from the index and every resort page. To build your own:
-let the user paste the resort's JSON URL into a text field, and poll that URL:
-
-(Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
-`json/at/soell-skiwelt.json`, as copies of the area's report with its `id`; new plugins should
-use the area's link, `json/at/skiwelt.json`. Their archives stop at that date.)
-
-```yaml
-polling_verb: get
-polling_url: "{{ resort_url }}"
-custom_fields:
-- keyname: resort_url
-  name: Resort
-  field_type: string
-  description: The JSON link of your ski resort on liftradar.eu.
-  help_text: Open <a href="https://liftradar.eu" target="_blank">liftradar.eu</a>, search for your
-    resort and open it, then press <strong>Copy</strong> next to its JSON link.
-    It looks like <code>https://liftradar.eu/json/at/soelden.json</code>.
-  placeholder: https://liftradar.eu/json/at/soelden.json
-```
-
-A dropdown (`xhrSelect`) doesn't work with GitHub Pages: TRMNL loads its options from the
-browser with request headers that need a CORS preflight, which GitHub Pages answers with 405
-(POST too). `trmnl/resorts.json` (generated on deploy by `scripts/trmnl_resorts.py`, in the
-`xhrSelect` format `[{"Sölden (Tirol, Austria)": "at/soelden"}, …]`) is kept for a host that
-can answer the preflight, e.g. a Cloudflare proxy in front of the site.
 
 ## Running locally
 

@@ -11,7 +11,5 @@ README documents every source in detail.
   `../snow-fetcher/README.md` and the code there.
 - `../snow-fetcher/CLAUDE.md` has the full checklist of what to update here after a fetcher
   change, and which fields each page reads.
-- `COUNTRY_NAMES` is duplicated in `assets/common.js` and `scripts/trmnl_resorts.py`; change
-  both.
-- Users' TRMNL plugins poll `json/<country>/<id>.json` directly: those URLs are a public
+- Users poll `json/<country>/<id>.json` directly: those URLs are a public
   contract.
