@@ -108,9 +108,10 @@
     <li>The status is never <code>null</code>. When a run can't read a resort's report (its site is down or changed),
       the resort keeps the status, lifts and slopes of the last run that could, and <code>status_from</code> gives that
       run's time (it's <code>null</code> when the report was read this time). After 2 days without a report it turns
-      &ldquo;no report&rdquo;, with only the area's size kept. What failed is in <code>errors</code>, which the site doesn't
-      show, and in each run's log, kept for 30 days in <code>logs/</code> on the
-      <a href="https://github.com/mironiasty/snow-conditions/tree/data/logs">data branch</a>.</li>
+      &ldquo;no report&rdquo;, with only the area's size kept. What failed is in each run's log, kept for 30 days in
+      <code>logs/</code> on the <a href="https://github.com/mironiasty/snow-conditions/tree/data/logs">data branch</a>.
+      Reports still list it in <code>errors</code>, which the site doesn't show; that field is deprecated (optional in
+      the schema) and will be removed.</li>
     <li>A <b>closed</b> resort always shows 0 open lifts, slopes and km (outside the season some resorts count lifts
       running for hikers), and <b>no snow depths</b> (<code>mountain_cm</code>, <code>valley_cm</code>,
       <code>fresh_cm</code>, <code>condition</code> are <code>null</code>): closed resorts' reports typically still carry
