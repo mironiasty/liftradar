@@ -15,6 +15,8 @@ const resortPath = (r) => `json/${r.country}/${r.id}.json`;
 const archivePath = (r) => `archive/${r.country}/${r.id}/`;
 // The resort's page (resort.html), e.g. resort.html?r=at/soelden.
 const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;
+// The map zoomed in on the resort (map.html), e.g. map.html?r=at/soelden.
+const resortOnMap = (r) => `map.html?r=${r.country}/${r.id}`;
 
 // Lowercase without accents, so "Sölden" sorts and matches like "solden".
 const fold = (text) => text.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();

@@ -2,7 +2,7 @@
 
 TRMNL expects a JSON array of one-entry objects, `{"<label>": "<value>"}`:
 the label is shown in the plugin settings, the value is stored. The value is
-the resort's path, so the plugin can poll https://snow.miron.asia/json/<value>.json.
+the resort's path, so the plugin can poll https://liftradar.eu/json/<value>.json.
 
     python3 scripts/trmnl_resorts.py data/json/index.json _site/trmnl/resorts.json
 """

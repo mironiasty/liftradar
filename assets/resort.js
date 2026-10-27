@@ -19,7 +19,7 @@ const label = (text) => text.replaceAll("_", " ");
 const present = (v) => v !== null && v !== undefined;
 
 function fail(message) {
-  page.replaceChildren(el("p", {}, message, " ", el("a", { href: "index.html" }, "See all resorts")));
+  page.replaceChildren(el("p", {}, message, " ", el("a", { href: "./" }, "See all resorts")));
 }
 
 // ?r=at/soelden; anything else isn't a resort path.
@@ -91,7 +91,7 @@ function header(r) {
 
 // Back to the list of all resorts.
 function backLink() {
-  const link = el("a", { class: "pill back", href: "index.html" });
+  const link = el("a", { class: "pill back", href: "./" });
   link.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"'
     + ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All resorts';
   return link;
@@ -182,7 +182,7 @@ function data(r) {
   return section;
 }
 
-// Resort map: this resort's area (or point), the others around it faded.
+// Resort map: only this resort's area (or point); "Map of all resorts" shows the others.
 function resortMap(r, container) {
   const map = L.map(container, { zoomSnap: 0.5, scrollWheelZoom: false });
   L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
@@ -202,20 +202,10 @@ function resortMap(r, container) {
   const pin = (status) => L.divIcon({ className: "", html: el("div", { class: "pin", style: `background:${colour(status)}` }),
     iconSize: null, iconAnchor: [0, 0] });
 
-  Promise.all([loadIndex(), fetch(AREAS_URL).then((response) => (response.ok ? response.json() : null)).catch(() => null)])
-    .then(([index, areas]) => {
-      const areaOf = new Map((areas?.features ?? []).map((f) => [f.properties.id, f]));
-      for (const other of index.resorts) {
-        if (!other.location || (other.id === r.id && other.country === r.country)) continue;
-        const go = () => (location.href = resortPage(other));
-        const area = areaOf.get(other.id);
-        if (area) L.geoJSON(area, { style: { color: "#777", weight: 1, fillOpacity: 0.08, dashArray: "3 3" } })
-          .bindTooltip(other.name, { sticky: true }).on("click", go).addTo(map);
-        L.marker([other.location.lat, other.location.lon], { icon: pin(statusKey(other)), opacity: 0.6, title: other.name })
-          .on("click", go).addTo(map);
-      }
+  fetch(AREAS_URL).then((response) => (response.ok ? response.json() : null)).catch(() => null)
+    .then((areas) => {
       const status = statusKey(r);
-      const area = areaOf.get(r.id);
+      const area = areas?.features.find((f) => f.properties.id === r.id);
       if (area) {
         const accent = css.getPropertyValue("--accent").trim();
         const layer = L.geoJSON(area, { style: { color: accent, weight: 3, fillOpacity: 0.12 } }).addTo(map);
@@ -334,7 +324,7 @@ async function show() {
   if (response.status === 404) return fail("There's no such resort.");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const r = await response.json();
-  document.title = `${r.name} – Liftradar`;
+  document.title = `${r.name} – LiftRadar`;
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": `Map of ${r.name}` });
   const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, "Loading…"));
@@ -345,7 +335,7 @@ async function show() {
       el("p", { class: "meta", style: "margin:10px 0 0" }, "From the archive, collected since 24 October 2026.")),
   );
   page.replaceChildren(header(r), el("div", { class: "layout" }, main, el("aside", { class: "side" },
-    el("div", { class: "map-box" }, mapBox, el("a", { class: "map-link", href: "map.html" }, "Map of all resorts →")), data(r))));
+    el("div", { class: "map-box" }, mapBox, el("a", { class: "map-link", href: resortOnMap(r) }, "Map of all resorts →")), data(r))));
   resortMap(r, mapBox);
   history(r, historyBox).catch((error) => historyBox.replaceChildren(el("p", { class: "empty" }, `No history (${error.message}).`)));
 }

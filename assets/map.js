@@ -117,9 +117,10 @@ function show([index, areas]) {
   for (const r of resorts) {
     const status = STATUS[r.status] ? r.status : "unknown";
     const area = areaOf.get(r.id);
+    let areaLayer = null;
     if (area) {
       const style = { color: color(status), weight: 1.5, fillOpacity: 0.25 };
-      L.geoJSON(area, { style, interactive: true })
+      areaLayer = L.geoJSON(area, { style, interactive: true })
         .on("mouseover", (e) => e.layer.setStyle({ weight: 3, fillOpacity: 0.45 }))
         .on("mouseout", (e) => e.layer.setStyle(style))
         .bindTooltip(r.name, { sticky: true })
@@ -129,7 +130,7 @@ function show([index, areas]) {
     const marker = L.marker([r.location.lat, r.location.lon], { title: r.name, riseOnHover: true })
       .bindPopup(() => popup(r, status))
       .addTo(layers[status]);
-    markers.push({ marker, r, status });
+    markers.push({ marker, r, status, areaLayer });
   }
 
   const setLabels = (choice) => {
@@ -165,6 +166,14 @@ function show([index, areas]) {
   };
   choose({});
   map.fitBounds(resorts.map((r) => [r.location.lat, r.location.lon]), { padding: [30, 30] });
+  // map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort, with its report open.
+  const wanted = new URLSearchParams(location.search).get("r");
+  const focus = markers.find(({ r }) => `${r.country}/${r.id}` === wanted);
+  if (focus) {
+    if (focus.areaLayer) map.fitBounds(focus.areaLayer.getBounds(), { padding: [30, 30], maxZoom: 12 });
+    else map.setView(focus.marker.getLatLng(), 12);
+    focus.marker.openPopup();
+  }
 
   // Statuses chosen with the chips; none chosen shows every resort.
   const filters = document.getElementById("filters");

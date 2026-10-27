@@ -142,7 +142,7 @@ out geom;"""
         request = urllib.request.Request(
             OVERPASS_URL,
             data=urllib.parse.urlencode({"data": query}).encode(),
-            headers={"User-Agent": "snow-conditions (https://snow.miron.asia)"},
+            headers={"User-Agent": "liftradar (https://liftradar.eu)"},
         )
         with urllib.request.urlopen(request, timeout=300) as response:
             elements |= {(e["type"], e["id"]): e for e in json.load(response)["elements"]}
