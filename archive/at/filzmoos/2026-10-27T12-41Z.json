@@ -1,0 +1,61 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "filzmoos",
+  "country": "at",
+  "name": "Filzmoos",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.4512,
+    "lon": 13.5137
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T13:39:44.988833+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 14,
+    "open_km": null,
+    "total_km": 20
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 9
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-27T12:24:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiresort.info/ski-resort/filzmoos/",
+    "https://www.skiinfo.fr/salzbourg/filzmoos/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/filzmoos/"
+  ],
+  "errors": []
+}

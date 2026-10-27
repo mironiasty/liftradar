@@ -1,0 +1,74 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "meran-2000",
+  "country": "it",
+  "name": "Meran 2000",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.6658,
+    "lon": 11.2412
+  },
+  "status": null,
+  "fetched_at": "2026-10-27T13:39:40.966447+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 3,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": null,
+    "total_km": 40
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 3,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-26T16:21:06+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/meran/data?lang=en",
+    "https://www.skiresort.info/ski-resort/meran-2000/"
+  ],
+  "errors": [
+    "suedtirol: ReadTimeout: "
+  ]
+}

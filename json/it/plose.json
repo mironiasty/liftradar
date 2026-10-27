@@ -9,23 +9,14 @@
     "lon": 11.6757
   },
   "status": "closed",
-  "fetched_at": "2026-10-27T07:52:37.166846+01:00",
+  "fetched_at": "2026-10-27T13:39:40.966170+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Mountain station",
-        "elevation_m": null,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
     "open": 0,
@@ -75,8 +66,9 @@
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-    "https://www.dolomitisuperski.com",
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+    "https://www.dolomitisuperski.com"
   ],
-  "errors": []
+  "errors": [
+    "snow: ReadTimeout: "
+  ]
 }

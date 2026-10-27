@@ -8,42 +8,31 @@
     "lat": 46.7565,
     "lon": 10.7827
   },
-  "status": "open",
-  "fetched_at": "2026-10-27T07:52:37.166988+01:00",
+  "status": null,
+  "fetched_at": "2026-10-27T13:39:40.966426+01:00",
   "snow": {
-    "mountain_cm": 0,
+    "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Kurzras - Maso Corto",
-        "elevation_m": null,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": -4.0,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
-  "lifts": {
-    "open": 2,
-    "total": 11
-  },
+  "lifts": null,
   "slopes": {
-    "open": 2,
-    "total": 22,
+    "open": null,
+    "total": null,
     "open_km": null,
     "total_km": 42
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-27T00:10:39.713000+01:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://www.skiresort.info/ski-resort/val-senales-glacier-schnalstaler-gletscher/"
   ],
-  "errors": []
+  "errors": [
+    "suedtirol: ReadTimeout: "
+  ]
 }

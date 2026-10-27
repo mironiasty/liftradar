@@ -1,0 +1,100 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "lenzerheide",
+  "country": "ch",
+  "name": "Lenzerheide",
+  "region": "Graubünden",
+  "location": {
+    "lat": 46.726,
+    "lon": 9.5577
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T13:39:40.965411+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Plang Bi (SLF)",
+        "elevation_m": 2495,
+        "depth_cm": 4,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 29
+  },
+  "slopes": {
+    "open": 0,
+    "total": 91,
+    "open_km": 0.0,
+    "total_km": 163
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 13
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 13
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 50,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 31,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-27T13:30:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=57&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=57&saison=1&ref=contentBox"
+  ],
+  "errors": []
+}

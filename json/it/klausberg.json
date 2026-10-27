@@ -8,8 +8,8 @@
     "lat": 46.996,
     "lon": 11.9812
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-27T07:52:37.166978+01:00",
+  "status": null,
+  "fetched_at": "2026-10-27T13:39:40.966403+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -18,23 +18,21 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 11
-  },
+  "lifts": null,
   "slopes": {
     "open": null,
-    "total": 36,
+    "total": null,
     "open_km": null,
     "total_km": 41
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-04-27T23:57:06.367000+02:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://www.skiresort.info/ski-resort/klausberg-skiworld-ahrntal/"
   ],
-  "errors": []
+  "errors": [
+    "suedtirol: ReadTimeout: "
+  ]
 }

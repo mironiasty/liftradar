@@ -1,0 +1,99 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "verbier",
+  "country": "ch",
+  "name": "Verbier",
+  "region": "Valais",
+  "location": {
+    "lat": 46.0936,
+    "lon": 7.2338
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T13:39:40.965872+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-10-25",
+    "condition": null,
+    "stations": [
+      {
+        "name": "Lac des Vaux",
+        "elevation_m": 2550,
+        "depth_cm": 9,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 17
+  },
+  "slopes": {
+    "open": 0,
+    "total": 28,
+    "open_km": 0.0,
+    "total_km": 103
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 6
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    },
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-27T13:40:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox"
+  ],
+  "errors": []
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "les-angles",
+  "country": "fr",
+  "name": "Les Angles",
+  "region": "Pyrénées-Orientales",
+  "location": {
+    "lat": 42.5777,
+    "lon": 2.0727
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T13:39:40.968651+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 23
+  },
+  "slopes": {
+    "open": null,
+    "total": 45,
+    "open_km": null,
+    "total_km": 55
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 5
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 13
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 23,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 14,
+      "open_km": null,
+      "total_km": 14
+    },
+    "difficult": {
+      "open": null,
+      "total": 8,
+      "open_km": null,
+      "total_km": 8
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=les-angles&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/les-angles",
+    "https://public.lumiplay.link/interactive-map/v1/map/88c0c7a4-6510-4deb-afb1-72657afdd735/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/88c0c7a4-6510-4deb-afb1-72657afdd735/dynamicPoiData?lang=fr",
+    "https://www.skiinfo.fr/pyrenees/les-angles/station-de-ski"
+  ],
+  "errors": []
+}

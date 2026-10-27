@@ -1,0 +1,39 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "kellerjochbahn-schwaz-pill",
+  "country": "at",
+  "name": "Kellerjochbahn Schwaz-Pill",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.3232,
+    "lon": 11.7645
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-27T13:40:28.764039+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": 4,
+    "open_km": null,
+    "total_km": 8
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-13T09:35:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Kellerjochbahn%20Schwaz-Pill_77"
+  ],
+  "errors": []
+}

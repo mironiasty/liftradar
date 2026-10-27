@@ -1,0 +1,93 @@
+{
+  "$schema": "https://snow.miron.asia/schema/resort.schema.json",
+  "id": "lenk",
+  "country": "ch",
+  "name": "Lenk",
+  "region": "Bern",
+  "location": {
+    "lat": 46.4531,
+    "lon": 7.437
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-27T13:39:40.965376+01:00",
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Trüttlisbergpass (SLF)",
+        "elevation_m": 1970,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 18
+  },
+  "slopes": {
+    "open": 0,
+    "total": 39,
+    "open_km": 0.0,
+    "total_km": 73
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 19,
+      "open_km": 0.0,
+      "total_km": 41
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 26
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-10-27T13:30:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=59&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}
