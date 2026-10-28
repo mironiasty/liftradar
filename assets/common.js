@@ -52,7 +52,7 @@ function reportTimes(r) {
   return { checked, changed, days, stale };
 }
 
-const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland" };
+const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland", de: "Germany" };
 const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();
 
 function updatedText(index) {

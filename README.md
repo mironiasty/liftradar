@@ -1,6 +1,6 @@
 # snow-conditions
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Czechia, Slovakia, Poland and Finland, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland and Finland, published at
 [liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -61,6 +61,8 @@ Keep it up to date with the fetcher. The format is defined by the JSON Schema in
 | Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Finnish resorts | [ski.fi](https://ski.fi/hiihtokeskukset/) (Finnish Ski Area Association): the "today" block each resort fills in (open slopes and lifts, dated by the day only) and the area's slopes by colour; used while at most 14 days old, and a resort its list flags closed is closed |
 | Ylläs, Ruka, Tahko, Himos, Salla, Ukkohalla, Iso-Syöte, Vuokatti, Laajis, Messilä, Ounasvaara, Riihivuori, Suomutunturi, Kasurila | Live status from the resort itself, instead of ski.fi's block: open/total counters on its own page, a list of its slopes and lifts (Vuokatti, Laajis, Messilä), or its slope map's data on [Panoraama](https://www.panoraama.com/) (Ruka: counters and natural snow; Iso-Syöte: every slope and lift). No report time |
+| German resorts | [Outdooractive](https://www.outdooractive.com/de/skiresorts/): the snow report each resort (or its tourism board) enters on its Outdooractive page, which the Sauerland's [Wintersport-Arena](https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen) also publishes: snow in the valley and on the mountain, lifts open/total, slope km open/total. Dated by the day only, no slope counts; used while at most 14 days old |
+| Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze; Hohenbogen | Their Intermaps slope map (lifts and slopes), instead of the Outdooractive counts; Hohenbogen has only its map |
 | Snow depth of Finnish resorts | Nearest [FMI](https://en.ilmatieteenlaitos.fi/open-data) weather station measuring snow depth (Finnish Meteorological Institute, CC BY 4.0), as the valley depth |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
@@ -74,6 +76,7 @@ Keep it up to date with the fetcher. The format is defined by the JSON Schema in
 | Avalanche danger, Krkonoše and Jeseníky (Czechia) | [Horská služba ČR](https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved) (Czech Mountain Rescue), from the EAWS bulletin files on [avalanche.report](https://avalanche.report) |
 | Avalanche danger, Jasná, Tatranská Lomnica, Štrbské Pleso | [Slovak Avalanche Prevention Centre](https://www.laviny.sk) (HZS), from the same EAWS bulletin files |
 | Avalanche danger, Kasprowy Wierch (Polish Tatras) | [TOPR](https://lawiny.topr.pl) (Tatra Volunteer Rescue), from the same EAWS bulletin files |
+| Avalanche danger, Bavarian Alps | [Lawinenwarndienst Bayern](https://www.lawinenwarndienst.bayern.de) (Bavarian Avalanche Warning Service), from the same EAWS bulletin files |
 | Avalanche danger, French Alps and Pyrenees | [Météo-France](https://meteofrance.com/meteo-montagne) mountain bulletin (by massif), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 | Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
@@ -83,16 +86,19 @@ holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI
 where French resorts do (Alpe d'Huez uses ATEN Altitude instead). Not covered yet in France:
 Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse
 and Les Orres (no source we can read). Not covered yet in Finland: Levi's own lift list (ski.fi's
-block is used), Paljakka, Koli and the smaller hills; Finland has no avalanche ratings to read. Each
+block is used), Paljakka, Koli and the smaller hills; Finland has no avalanche ratings to read. Not
+covered yet in Germany: areas without an Outdooractive page or a status of their own (St. Englmar,
+Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf) and
+single-lift areas; the German uplands have no avalanche service. Each
 file's `sources` lists the URLs used for that report.
 
 ### Areas
 
 `assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 422
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
-village lifts, are only a marker on the map. The French resorts (added 26 October 2026) and the
-Finnish ones (27 October 2026) have no outlines yet: the script now covers both, but Overpass
-refused or didn't answer the queries on those days. Each feature has the resort's `id` and the
+village lifts, are only a marker on the map. The French resorts (added 26 October 2026), the
+Finnish ones (27 October 2026) and the German ones (28 October 2026) have no outlines yet: the
+script now covers them, but Overpass refused or didn't answer the queries when they were added. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run
 `scripts/resort_areas.py` now and then (e.g. after adding resorts) and check the map:
 

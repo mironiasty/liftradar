@@ -36,6 +36,7 @@ BBOXES = [
     (44.9, 2.6, 45.7, 3.0),  # the Massif Central
     (47.9, 6.7, 48.2, 7.2),  # the Vosges
     (59.9, 21.0, 68.6, 30.0),  # Finland
+    (47.6, 7.5, 51.9, 13.0),  # the German uplands (Black Forest to the Harz and the Ore Mountains)
 ]
 
 # Areas split between the given resorts (or given to the one), however far their points are.
@@ -75,7 +76,7 @@ EXCLUDE = {
     "relation/7751891",  # Klausberg Skiarena (Klausberg, Speikboden)
     "relation/7718003",  # Hochoetz-Kühtai
     # Areas next to a resort that aren't part of it and have one lift (or none): not covered.
-    # Neighbours with more lifts are resorts of their own; German areas aren't covered yet.
+    # Neighbours with more lifts are resorts of their own.
     "way/1560648156",  # Beskidek (Szczyrk)
     "way/389968311",  # Skalite ski jumps (Szczyrk)
     "way/1220968908",  # COS OPO Zakopane: the ski jumps' chairlifts
@@ -97,10 +98,6 @@ EXCLUDE = {
     "relation/10356622",  # Gföllberglift (Lechtal)
     "way/664675357",  # Hausberglift Waidring
     "way/1016830386",  # Bergisel ski jump (Innsbruck)
-    "way/53183839",  # Oberwiesenthal (Germany)
-    "way/599440616",  # Rossfeld (Germany)
-    "way/538959833",  # Zugspitze glacier (Germany)
-    "relation/10356629",  # Bad Hindelang Oberjoch (Germany)
 }
 
 NEAR_KM = 1.0  # an area this close to several resorts is split between them
