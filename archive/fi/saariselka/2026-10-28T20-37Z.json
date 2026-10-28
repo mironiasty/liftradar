@@ -1,0 +1,72 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "saariselka",
+  "country": "fi",
+  "name": "Saariselkä",
+  "region": "Lappi",
+  "location": {
+    "lat": 68.4341,
+    "lon": 27.444
+  },
+  "website": "https://skisaariselka.com",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.430605+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": 0,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Inari Saariselkä matkailukeskus (FMI)",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": 23,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 16,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://ski.fi/hiihtokeskukset/saariselka-ski-sport-resort/",
+    "https://ski.fi/hiihtokeskukset/",
+    "https://opendata.fmi.fi/wfs",
+    "https://en.ilmatieteenlaitos.fi/open-data"
+  ],
+  "errors": []
+}

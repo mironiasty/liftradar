@@ -1,0 +1,105 @@
+{
+  "time": "2026-10-28T21:37:31+01:00",
+  "resorts": [
+    {
+      "id": "weissensee",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-10-27T21:53:37.998735+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Weissensee"
+      ]
+    },
+    {
+      "id": "breuil-cervinia",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-28T14:30:24.955778+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "courmayeur",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-27T21:53:33.859103+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "la-thuile",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-28T14:30:24.955790+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "pila",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-27T21:53:33.859117+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "monterosa-ski",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-28T14:30:24.955802+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "torgnon",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-27T21:53:33.859139+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "champorcher",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-28T14:30:24.955812+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "crevacol",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-27T21:53:33.859154+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "rhemes-notre-dame",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-27T21:53:33.859160+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "ski-juwel: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Alpbachtal%20-%20Ski%20Juwel%20Alpbachtal%20Wildsch%C3%B6nau_35'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "lumiplan bulletin saint-gervais: ReadTimeout: ; no snow",
+    "mayrhofen: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Eggalmbahnen_2950'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "hochalmlifte-christlum-achenkirch: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_2973'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "hochoetz-oetz: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochoetz%20-%20Oetz_15'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "kitzbuehel: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Mittersill%20-%20Pa%C3%9F%20Thurn%20-%20Kitzb%C3%BChel_2970'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "muttereralm: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Muttereralmbahn_2971'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ]
+}

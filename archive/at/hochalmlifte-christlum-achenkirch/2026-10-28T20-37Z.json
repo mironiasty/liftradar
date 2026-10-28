@@ -1,0 +1,42 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "hochalmlifte-christlum-achenkirch",
+  "country": "at",
+  "name": "Hochalmlifte Christlum - Achenkirch",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.5264,
+    "lon": 11.703
+  },
+  "website": "https://www.christlum.at",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:36:43.686411+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-17",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": {
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
+    "total_km": 27
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-22T11:34:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_38",
+    "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-hochalmlifte-christlum-achenkirch"
+  ],
+  "errors": []
+}

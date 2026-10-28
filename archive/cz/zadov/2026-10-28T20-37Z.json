@@ -1,0 +1,67 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "zadov",
+  "country": "cz",
+  "name": "Zadov - Churáňov",
+  "region": "Jihočeský kraj",
+  "location": {
+    "lat": 49.0719,
+    "lon": 13.6268
+  },
+  "website": "https://www.lazadov.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428322+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 8,
+    "open_km": 0.0,
+    "total_km": 5
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.kudyznudy.cz/aktivity/lyzovani-na-zadove"
+  ],
+  "errors": []
+}

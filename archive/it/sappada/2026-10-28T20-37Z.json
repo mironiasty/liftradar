@@ -1,0 +1,73 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "sappada",
+  "country": "it",
+  "name": "Sappada",
+  "region": "Friuli Venezia Giulia",
+  "location": {
+    "lat": 46.5655,
+    "lon": 12.6803
+  },
+  "website": "https://www.sappadaski.it",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.427768+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": 0,
+    "total": 16,
+    "open_km": 0.0,
+    "total_km": 15
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-20T01:50:07+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/sappada/data?lang=en"
+  ],
+  "errors": []
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "tarvisio",
+  "country": "it",
+  "name": "Tarvisio",
+  "region": "Friuli Venezia Giulia",
+  "location": {
+    "lat": 46.5053,
+    "lon": 13.5784
+  },
+  "website": "https://www.turismofvg.it/en/mountain365/ski-area-tarvisio",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.427650+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": 0,
+    "total": 25,
+    "open_km": 0.0,
+    "total_km": 24
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {},
+  "lifts_updated_at": "2026-10-22T04:24:34+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/tarvisio/data?lang=en",
+    "https://www.skiinfo.fr/frioul/tarvisio/station-de-ski"
+  ],
+  "errors": []
+}

@@ -8,8 +8,9 @@
     "lat": 50.363,
     "lon": 12.9299
   },
+  "website": "https://www.klinovec.cz",
   "status": "no_report",
-  "fetched_at": "2026-10-28T19:08:23.680028+01:00",
+  "fetched_at": "2026-10-28T21:35:31.428887+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -19,54 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 3
-  },
-  "slopes": {
-    "open": null,
-    "total": 8,
-    "open_km": null,
-    "total_km": 5
-  },
-  "lifts_by_type": {
-    "drag_lift": {
-      "open": 0,
-      "total": 3
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": 1,
-      "open_km": null,
-      "total_km": 1
-    },
-    "intermediate": {
-      "open": null,
-      "total": 4,
-      "open_km": null,
-      "total_km": 3
-    },
-    "difficult": {
-      "open": null,
-      "total": 1,
-      "open_km": null,
-      "total_km": 1
-    },
-    "other": {
-      "open": null,
-      "total": 2,
-      "open_km": null,
-      "total_km": 2
-    }
-  },
-  "lifts_updated_at": "2026-03-20T08:05:25+01:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://zima.holidayinfo.cz/cs/locinfo/jachymov",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=18",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=18"
-  ],
+  "sources": [],
   "errors": []
 }

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "cervena-voda",
+  "country": "cz",
+  "name": "Červená Voda",
+  "region": "Pardubický kraj",
+  "location": {
+    "lat": 50.0403,
+    "lon": 16.7429
+  },
+  "website": "https://www.skibukovka.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428145+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": 0,
+    "total": 6,
+    "open_km": 0.0,
+    "total_km": 6
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.kudyznudy.cz/aktivity/skipark-cervena-voda"
+  ],
+  "errors": []
+}

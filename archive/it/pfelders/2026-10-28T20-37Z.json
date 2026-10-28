@@ -1,0 +1,42 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "pfelders",
+  "country": "it",
+  "name": "Pfelders",
+  "region": "Südtirol",
+  "location": {
+    "lat": 46.7953,
+    "lon": 11.0895
+  },
+  "website": "https://www.pfelders.info",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.427586+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": 13,
+    "open_km": null,
+    "total_km": 18
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-09-27T08:41:04.167000+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+    "https://www.skiresort.info/ski-resort/pfelders-moos-in-passeier/"
+  ],
+  "errors": []
+}

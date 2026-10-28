@@ -1,0 +1,85 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "courchevel",
+  "country": "fr",
+  "name": "Courchevel",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.4141,
+    "lon": 6.635
+  },
+  "website": "https://www.courchevel.com",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.429213+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 57
+  },
+  "slopes": {
+    "open": null,
+    "total": 114,
+    "open_km": null,
+    "total_km": 150
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 11
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 16
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 20
+    },
+    "gondola": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 62,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 40,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 12,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=courchevel&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/les-3-vallees",
+    "https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr",
+    "https://www.skiinfo.fr/alpes-du-nord/courchevel/station-de-ski"
+  ],
+  "errors": []
+}

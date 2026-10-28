@@ -1,0 +1,36 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "postwiese-neuastenberg",
+  "country": "de",
+  "name": "Postwiese - Neuastenberg",
+  "region": "Nordrhein-Westfalen",
+  "location": {
+    "lat": 51.165,
+    "lon": 8.4851
+  },
+  "website": "https://www.postwiese.de",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.431014+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen"
+  ],
+  "errors": []
+}

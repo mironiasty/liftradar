@@ -1,0 +1,95 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "gryon",
+  "country": "ch",
+  "name": "Gryon",
+  "region": "Vaud",
+  "location": {
+    "lat": 46.2836,
+    "lon": 7.0767
+  },
+  "website": "https://www.tvgd.ch",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.426205+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Col de Bretaye (SLF)",
+        "elevation_m": 1780,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": 0,
+    "total": 12,
+    "open_km": 0.0,
+    "total_km": 18
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-28T14:58:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=105&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
+  ],
+  "errors": []
+}

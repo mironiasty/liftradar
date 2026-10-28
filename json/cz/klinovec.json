@@ -8,8 +8,9 @@
     "lat": 50.3962,
     "lon": 12.968
   },
+  "website": "https://klinovec.cz",
   "status": "closed",
-  "fetched_at": "2026-10-28T19:08:23.680007+01:00",
+  "fetched_at": "2026-10-28T21:35:31.428349+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,18 +22,18 @@
   },
   "lifts": {
     "open": 0,
-    "total": 18
+    "total": 14
   },
   "slopes": {
     "open": 0,
-    "total": 31,
+    "total": 27,
     "open_km": 0.0,
-    "total_km": 32
+    "total_km": 30
   },
   "lifts_by_type": {
     "carpet": {
       "open": 0,
-      "total": 5
+      "total": 4
     },
     "chairlift": {
       "open": 0,
@@ -40,15 +41,15 @@
     },
     "drag_lift": {
       "open": 0,
-      "total": 8
+      "total": 5
     }
   },
   "slopes_by_difficulty": {
     "easy": {
       "open": 0,
-      "total": 18,
+      "total": 14,
       "open_km": 0.0,
-      "total_km": 18
+      "total_km": 16
     },
     "intermediate": {
       "open": 0,
@@ -63,12 +64,10 @@
       "total_km": 4
     }
   },
-  "lifts_updated_at": "2026-10-26T13:22:08+01:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://zima.holidayinfo.cz/cs/locinfo/klinovec",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=7&loc=2",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=7&loc=2"
+    "https://www.kudyznudy.cz/aktivity/skiareal-klinovec"
   ],
   "errors": []
 }

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "sportgastein",
+  "country": "at",
+  "name": "Sportgastein",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.0609,
+    "lon": 13.0586
+  },
+  "website": "https://www.skigastein.com",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:36.130829+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": 10,
+    "open_km": null,
+    "total_km": 24
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-08-09T16:50:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skigastein.com/en/experiences-mountains/winter/ski-areas-in-skigastein/",
+    "https://www.skiinfo.fr/salzbourg/sportgastein/station-de-ski"
+  ],
+  "errors": []
+}

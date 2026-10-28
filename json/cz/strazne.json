@@ -8,8 +8,9 @@
     "lat": 50.6651,
     "lon": 15.6164
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-28T19:08:23.680034+01:00",
+  "website": "https://www.strazne.eu",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428395+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,9 +25,9 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 4,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 2
   },
   "lifts_by_type": {
@@ -37,30 +38,28 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-03-15T16:51:19+01:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://zima.holidayinfo.cz/cs/locinfo/strazne",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=25",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=25"
+    "https://www.kudyznudy.cz/aktivity/skiareal-strazne"
   ],
   "errors": []
 }

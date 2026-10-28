@@ -8,8 +8,9 @@
     "lat": 50.7355,
     "lon": 15.3648
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-28T19:08:23.680046+01:00",
+  "website": "https://www.rejdice.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428410+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,9 +25,9 @@
     "total": 3
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 3,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 3
   },
   "lifts_by_type": {
@@ -41,24 +42,22 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 2
     }
   },
-  "lifts_updated_at": "2026-03-16T08:07:26+01:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://zima.holidayinfo.cz/cs/locinfo/rejdice",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=1&loc=9",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=1&loc=9"
+    "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-rejdice-korenov"
   ],
   "errors": []
 }

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "katschberg-aineck",
+  "country": "at",
+  "name": "Katschberg - Aineck",
+  "region": "Kärnten",
+  "location": {
+    "lat": 47.0591,
+    "lon": 13.6157
+  },
+  "website": "https://www.katschi.at",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:36.129927+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 16
+  },
+  "slopes": {
+    "open": 0,
+    "total": 36,
+    "open_km": 0.0,
+    "total_km": 80
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 22,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 12
+    }
+  },
+  "lifts_updated_at": "2026-10-25T09:11:28+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://winter.intermaps.com/katschberg/data?lang=en",
+    "https://www.katschberg.at/en/skiing.html"
+  ],
+  "errors": []
+}

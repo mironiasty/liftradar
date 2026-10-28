@@ -1,0 +1,33 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "lungoetz",
+  "country": "at",
+  "name": "Lungötz",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.4948,
+    "lon": 13.4007
+  },
+  "website": "https://www.annaberg-lungoetz.com",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:36.130024+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-28T00:08:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/"
+  ],
+  "errors": []
+}

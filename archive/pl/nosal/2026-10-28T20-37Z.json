@@ -1,0 +1,41 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "nosal",
+  "country": "pl",
+  "name": "Nosal (Zakopane)",
+  "region": "Małopolskie",
+  "location": {
+    "lat": 49.2819,
+    "lon": 19.9862
+  },
+  "website": "https://nosal.pl",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.429163+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 2
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiresort.com/en/ski-resort/nosal-bystre/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "warth-schroecken",
+  "country": "at",
+  "name": "Warth-Schröcken",
+  "region": "Vorarlberg",
+  "location": {
+    "lat": 47.2582,
+    "lon": 10.1833
+  },
+  "website": "https://www.warth-schroecken.at",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.422793+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 15
+  },
+  "slopes": {
+    "open": 0,
+    "total": 45,
+    "open_km": 0.0,
+    "total_km": 63
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 12
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 17,
+      "open_km": 0.0,
+      "total_km": 29
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 11
+    },
+    "difficult": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 11
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 13
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=327&loadMore=1&orderState=ASC",
+    "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=327&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+    "https://winter.intermaps.com/skiarlberg/data?lang=en"
+  ],
+  "errors": []
+}

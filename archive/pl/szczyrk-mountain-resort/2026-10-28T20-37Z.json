@@ -1,0 +1,38 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "szczyrk-mountain-resort",
+  "country": "pl",
+  "name": "Szczyrk Mountain Resort (with COS Skrzyczne)",
+  "region": "Śląskie",
+  "location": {
+    "lat": 49.7166,
+    "lon": 19.0255
+  },
+  "website": "https://www.szczyrkowski.pl",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.428992+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": {
+    "open": null,
+    "total": 21,
+    "open_km": null,
+    "total_km": 32
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://laravel.jasna.sk/api/szczyrkowski/snehove-zjazdovky?lang=pl"
+  ],
+  "errors": []
+}

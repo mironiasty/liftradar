@@ -1,0 +1,64 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "serlesbahnen-mieders",
+  "country": "at",
+  "name": "Serlesbahnen Mieders",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.1637,
+    "lon": 11.38
+  },
+  "website": "https://www.serlesbahnen.at",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:36:57.143630+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 1,
+    "total": 5
+  },
+  "slopes": {
+    "open": 0,
+    "total": 7,
+    "open_km": null,
+    "total_km": 6
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 1,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-23T06:06:50+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Serlesbahnen%20Mieders_80",
+    "https://winter.intermaps.com/serlesbahnen/data?lang=en"
+  ],
+  "errors": []
+}

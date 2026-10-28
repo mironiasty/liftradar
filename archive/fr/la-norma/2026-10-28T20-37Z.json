@@ -1,0 +1,78 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "la-norma",
+  "country": "fr",
+  "name": "La Norma",
+  "region": "Savoie",
+  "location": {
+    "lat": 45.1913,
+    "lon": 6.7127
+  },
+  "website": "https://www.la-norma.fr",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.429559+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": null,
+    "total": 30,
+    "open_km": null,
+    "total_km": 65
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 15,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 13,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=la-norma&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/alpes-du-nord/la-norma/station-de-ski"
+  ],
+  "errors": []
+}

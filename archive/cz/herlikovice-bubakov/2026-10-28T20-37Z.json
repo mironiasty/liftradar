@@ -1,0 +1,73 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "herlikovice-bubakov",
+  "country": "cz",
+  "name": "Herlíkovice - Bubákov",
+  "region": "Královéhradecký kraj",
+  "location": {
+    "lat": 50.6621,
+    "lon": 15.5958
+  },
+  "website": "https://www.herlikovice.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.427978+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 10,
+    "open_km": 0.0,
+    "total_km": 11
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "other": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.kudyznudy.cz/aktivity/ski-areal-herlikovice-bubakov"
+  ],
+  "errors": []
+}

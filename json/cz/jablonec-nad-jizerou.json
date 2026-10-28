@@ -8,8 +8,9 @@
     "lat": 50.7034,
     "lon": 15.4296
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-28T19:08:23.679733+01:00",
+  "website": "https://skikamenec.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.427918+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,9 +25,9 @@
     "total": 3
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 6,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 5
   },
   "lifts_by_type": {
@@ -37,24 +38,22 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 2
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-03-16T13:55:53+01:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://zima.holidayinfo.cz/cs/locinfo/jablonecnj",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=17",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=17"
+    "https://www.kudyznudy.cz/aktivity/ski-areal-kamenec-jablonec-nad-jizerou"
   ],
   "errors": []
 }

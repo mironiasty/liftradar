@@ -1,0 +1,70 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "dreilaendereck",
+  "country": "at",
+  "name": "Dreiländereck - Arnoldstein",
+  "region": "Kärnten",
+  "location": {
+    "lat": 46.5321,
+    "lon": 13.718
+  },
+  "website": "https://www.3laendereck.at",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:37:11.011459+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
+    "total_km": 14
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-10-21T06:06:40+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+    "https://winter.intermaps.com/dreilaendereck/data?lang=en"
+  ],
+  "errors": []
+}

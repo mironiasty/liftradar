@@ -1,0 +1,42 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "villard-de-lans",
+  "country": "fr",
+  "name": "Villard-de-Lans - Corrençon",
+  "region": "Isère",
+  "location": {
+    "lat": 45.0706,
+    "lon": 5.5513
+  },
+  "website": "https://www.villarddelans.com",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T21:35:31.429918+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 18
+  },
+  "slopes": {
+    "open": null,
+    "total": 41,
+    "open_km": null,
+    "total_km": 125
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=villard-de-lans&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/alpes-du-nord/villard-de-lans/station-de-ski"
+  ],
+  "errors": []
+}

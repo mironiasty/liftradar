@@ -1,0 +1,41 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "schlick-2000",
+  "country": "at",
+  "name": "Schlick 2000",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.1554,
+    "lon": 11.3455
+  },
+  "website": "https://www.stubai.at/skigebiete/schlick2000/",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:36:55.695930+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-29",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": 0,
+    "total": 21,
+    "open_km": 0.0,
+    "total_km": 23
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-28T19:54:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Schlick%202000_56"
+  ],
+  "errors": []
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "kohutka",
+  "country": "cz",
+  "name": "Kohútka",
+  "region": "Zlínský kraj",
+  "location": {
+    "lat": 49.2948,
+    "lon": 18.23
+  },
+  "website": "https://www.kohutka.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428294+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 10,
+    "open_km": 0.0,
+    "total_km": 7
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.kudyznudy.cz/aktivity/ski-centrum-kohutka"
+  ],
+  "errors": []
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "praded",
+  "country": "cz",
+  "name": "Praděd",
+  "region": "Olomoucký kraj",
+  "location": {
+    "lat": 50.076,
+    "lon": 17.229
+  },
+  "website": "https://www.figura.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428237+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
+    "total_km": 5
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.kudyznudy.cz/aktivity/lyzovani-na-pradedu"
+  ],
+  "errors": []
+}

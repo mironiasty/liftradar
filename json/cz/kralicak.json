@@ -8,8 +8,9 @@
     "lat": 50.1588,
     "lon": 16.9016
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-28T19:08:23.679870+01:00",
+  "website": "https://mujkralicak.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428183+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,9 +25,9 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 9,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 7
   },
   "lifts_by_type": {
@@ -45,24 +46,22 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 2
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-09-28T17:10:30+02:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://zima.holidayinfo.cz/cs/locinfo/kralicak",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=17&loc=17",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=17&loc=17"
+    "https://www.kudyznudy.cz/aktivity/sjezdove-lyzovani-snowboarding-bezecke-lyzovani"
   ],
   "errors": []
 }

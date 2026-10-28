@@ -1,0 +1,63 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "korenov-rejdice",
+  "country": "cz",
+  "name": "Kořenov - Rejdice",
+  "region": "Liberecký kraj",
+  "location": {
+    "lat": 50.7355,
+    "lon": 15.3648
+  },
+  "website": "https://www.rejdice.cz",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.428410+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": 0,
+    "total": 3,
+    "open_km": 0.0,
+    "total_km": 3
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-rejdice-korenov"
+  ],
+  "errors": []
+}

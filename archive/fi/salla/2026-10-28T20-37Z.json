@@ -1,0 +1,53 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "salla",
+  "country": "fi",
+  "name": "Salla",
+  "region": "Lappi",
+  "location": {
+    "lat": 66.7622,
+    "lon": 28.7886
+  },
+  "website": "https://salla.fi",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.430633+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "Salla kirkonkylä (FMI)",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 15,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://ski.fi/hiihtokeskukset/salla/",
+    "https://ski.salla.fi/aukioloajat-talvi/",
+    "https://opendata.fmi.fi/wfs",
+    "https://en.ilmatieteenlaitos.fi/open-data"
+  ],
+  "errors": []
+}

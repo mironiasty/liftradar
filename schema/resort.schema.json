@@ -473,6 +473,20 @@
       ],
       "default": null
     },
+    "website": {
+      "anyOf": [
+        {
+          "pattern": "^https?://\\S+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The resort's official website",
+      "title": "Website"
+    },
     "status": {
       "enum": [
         "open",

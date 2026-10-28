@@ -1,0 +1,80 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "winterberg",
+  "country": "de",
+  "name": "Winterberg (Skiliftkarussell)",
+  "region": "Nordrhein-Westfalen",
+  "location": {
+    "lat": 51.1894,
+    "lon": 8.498
+  },
+  "website": "https://www.skiliftkarussell.de",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.431089+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 43
+  },
+  "slopes": {
+    "open": 0,
+    "total": 66,
+    "open_km": 0.0,
+    "total_km": 35
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 7
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 16
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 20
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "easy": {
+      "open": 0,
+      "total": 31,
+      "open_km": 0.0,
+      "total_km": 17
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 23,
+      "open_km": 0.0,
+      "total_km": 13
+    },
+    "difficult": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-10-28T21:01:43+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen",
+    "https://winter.intermaps.com/winterberg/data?lang=en"
+  ],
+  "errors": []
+}

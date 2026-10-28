@@ -1,0 +1,63 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "snow-space-salzburg",
+  "country": "at",
+  "name": "Snow Space Salzburg",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.3034,
+    "lon": 13.3842
+  },
+  "website": "https://www.snow-space.com",
+  "status": "open",
+  "fetched_at": "2026-10-28T21:35:36.129562+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 2,
+    "total": 45
+  },
+  "slopes": {
+    "open": null,
+    "total": 64,
+    "open_km": null,
+    "total_km": 120
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 34
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 83
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-10-28T21:13:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.snow-space.com/en/winter/ski-resort-salzburg",
+    "https://www.skiinfo.fr/salzbourg/flachau/station-de-ski",
+    "https://www.skiresort.com/en/ski-resort/snow-space-salzburg-flachau-wagrain-st-johann-alpendorf/"
+  ],
+  "errors": []
+}

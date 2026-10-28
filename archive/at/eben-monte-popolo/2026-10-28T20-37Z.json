@@ -1,0 +1,43 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "eben-monte-popolo",
+  "country": "at",
+  "name": "Eben - Monte Popolo",
+  "region": "Salzburg",
+  "location": {
+    "lat": 47.4283,
+    "lon": 13.3976
+  },
+  "website": "https://www.montepopolo.at",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:36.129327+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": 0,
+    "total": 9,
+    "open_km": null,
+    "total_km": 6
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-28T21:13:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.skiresort.info/ski-resort/monte-popolo-eben-im-pongau/",
+    "https://www.skiinfo.fr/salzbourg/eben/station-de-ski"
+  ],
+  "errors": []
+}

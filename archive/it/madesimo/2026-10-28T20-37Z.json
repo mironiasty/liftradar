@@ -1,0 +1,82 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "madesimo",
+  "country": "it",
+  "name": "Madesimo",
+  "region": "Lombardia",
+  "location": {
+    "lat": 46.4363,
+    "lon": 9.3584
+  },
+  "website": "https://www.madesimo.eu",
+  "status": "closed",
+  "fetched_at": "2026-10-28T21:35:31.427795+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": 0,
+    "total": 39,
+    "open_km": 0.0,
+    "total_km": 40
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 9
+    },
+    "funicular": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 20,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 16,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-10-21T04:40:00+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/valchiavenna/data?lang=en",
+    "https://www.madesimo.eu/app/uploads/2026/02/Madesimo_Inverno25-26_Brochure_IT.pdf"
+  ],
+  "errors": []
+}
