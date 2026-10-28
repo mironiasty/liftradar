@@ -1,0 +1,75 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "val-d-allos",
+  "country": "fr",
+  "name": "Val d'Allos",
+  "region": "Alpes-de-Haute-Provence",
+  "location": {
+    "lat": 44.2901,
+    "lon": 6.5691
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-28T19:08:23.681244+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 17
+  },
+  "slopes": {
+    "open": null,
+    "total": 42,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 8
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 25,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 14,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-d-allos&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/espace-lumiere",
+    "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr"
+  ],
+  "errors": []
+}

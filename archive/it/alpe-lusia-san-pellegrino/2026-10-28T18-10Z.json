@@ -1,0 +1,78 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "alpe-lusia-san-pellegrino",
+  "country": "it",
+  "name": "Alpe Lusia - San Pellegrino",
+  "region": "Trentino",
+  "location": {
+    "lat": 46.3784,
+    "lon": 11.7917
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T19:08:23.679289+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-22",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 21
+  },
+  "slopes": {
+    "open": 0,
+    "total": 64,
+    "open_km": 0.0,
+    "total_km": 88
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 12
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 27,
+      "open_km": 0.0,
+      "total_km": 30
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 30,
+      "open_km": 0.0,
+      "total_km": 48
+    },
+    "difficult": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 10
+    }
+  },
+  "lifts_updated_at": "2026-10-28T17:20:42.094469+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+    "https://www.dolomitisuperski.com",
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino"
+  ],
+  "errors": []
+}

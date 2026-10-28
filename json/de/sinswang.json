@@ -5,11 +5,11 @@
   "name": "Sinswang",
   "region": "Bayern",
   "location": {
-    "lat": 47.5661,
-    "lon": 10.0083
+    "lat": 47.5667,
+    "lon": 10.0087
   },
-  "status": "closed",
-  "fetched_at": "2026-10-28T17:09:24.861636+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-28T19:08:23.682197+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -19,27 +19,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 4
-  },
-  "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": 0.0,
-    "total_km": 1
-  },
-  "lifts_by_type": {
-    "drag_lift": {
-      "open": 0,
-      "total": 4
-    }
-  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://www.outdooractive.com/de/skiresort/allgaeu/sinswang/1636668/"
-  ],
+  "sources": [],
   "errors": []
 }
