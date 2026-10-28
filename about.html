@@ -74,7 +74,13 @@
     <li><code>fetched_at</code> is when we read the data; <code>lifts_updated_at</code> is the resort's own report time
       (or its slope map's update time; <code>null</code> for French and Finnish resorts, whose sources have none: ski.fi
       dates its block by the day only). The resort's
-      report time can move forward without its numbers changing: reporting systems refresh it daily.</li>
+      report time can move forward without its numbers changing: reporting systems refresh it daily. Slope maps
+      (Intermaps) instead keep it until a lift or slope opens or closes, so a resort that opens the same lifts every day
+      can show a report time days old although we read it in the latest run.</li>
+    <li>The map and the resort pages show &ldquo;Checked&rdquo; (when we last read the report: <code>fetched_at</code>, or
+      <code>status_from</code> when the latest run couldn't read it) and the resort's last change
+      (<code>lifts_updated_at</code>). Both are highlighted for an open resort whose report the latest run couldn't read,
+      or whose report time is more than 7 days old.</li>
     <li>Times are ISO 8601 with the Vienna offset (<code>+01:00</code> / <code>+02:00</code>, the same as Swiss time);
       archive file names are UTC.</li>
   </ul>

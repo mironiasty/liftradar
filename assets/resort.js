@@ -77,10 +77,12 @@ function statusNote(r) {
 function header(r) {
   const status = statusKey(r);
   const meta = [r.region, countryName(r.country)].filter(Boolean).join(" · ");
+  const { checked, changed, days, stale } = reportTimes(r);
   const times = [
-    r.lifts_updated_at && `Resort report ${viennaTime(r.lifts_updated_at)}`,
-    `Fetched ${viennaTime(r.fetched_at)}`,
+    `Checked ${viennaTime(checked)}`,
+    changed && `resort's last change ${viennaTime(changed)}`,
   ].filter(Boolean).join(" · ");
+  const unchanged = stale && !r.status_from ? ` The resort hasn't changed its report for ${days} days: check its own page.` : "";
   const note = statusNote(r);
   return el("header", { class: "resort-head" },
     backLink(),
@@ -88,7 +90,7 @@ function header(r) {
     el("div", { class: "facts" },
       el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status]),
       el("span", {}, meta)),
-    el("p", { class: "meta" }, times),
+    el("p", { class: stale ? "meta stale" : "meta" }, times + unchanged),
     note ? el("p", { class: "meta" }, note) : "",
   );
 }

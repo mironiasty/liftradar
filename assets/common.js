@@ -38,6 +38,18 @@ const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "no_report");
 const viennaTime = (iso, options = { dateStyle: "medium", timeStyle: "short" }) =>
   new Date(iso).toLocaleString("de-AT", { timeZone: "Europe/Vienna", ...options });
 
+// When we last read the resort's report (status_from when the latest run couldn't) and when the
+// resort last changed it. Stale: an open resort whose report the latest run couldn't read, or that
+// hasn't changed for STALE_DAYS (slope maps keep their time while nothing opens or closes).
+const STALE_DAYS = 7;
+function reportTimes(r) {
+  const checked = r.status_from ?? r.fetched_at;
+  const changed = r.lifts_updated_at;
+  const days = changed ? Math.floor((new Date(r.fetched_at) - new Date(changed)) / 864e5) : 0;
+  const stale = statusKey(r) === "open" && (Boolean(r.status_from) || days > STALE_DAYS);
+  return { checked, changed, days, stale };
+}
+
 const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland" };
 const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();
 
