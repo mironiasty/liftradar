@@ -95,9 +95,13 @@ function header(r) {
   );
 }
 
-// Back to the list of all resorts.
+// Back to the list of all resorts, with the filters and order it had in this tab.
 function backLink() {
-  const link = el("a", { class: "pill back", href: "./" });
+  let list = "";
+  try {
+    list = sessionStorage.getItem(LIST_KEY) ?? "";
+  } catch {}
+  const link = el("a", { class: "pill back", href: `./${list}` });
   link.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"'
     + ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All resorts';
   return link;

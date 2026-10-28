@@ -15,6 +15,8 @@ const resortPath = (r) => `json/${r.country}/${r.id}.json`;
 const archivePath = (r) => `archive/${r.country}/${r.id}/`;
 // The resort's page (resort.html), e.g. resort.html?r=at/soelden.
 const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;
+// sessionStorage key of the resort list's last filters and order (its query string), set by table.js.
+const LIST_KEY = "resort-list";
 // The map zoomed in on the resort (map.html), e.g. map.html?r=at/soelden.
 const resortOnMap = (r) => `map.html?r=${r.country}/${r.id}`;
 

@@ -14,6 +14,9 @@ let key = "name", ascending = true;
 let country = "";
 // Statuses chosen with the chips; none chosen shows every resort.
 const shownStatuses = new Set();
+// The filters and order are kept in the address (?q=&country=&region=&status=open,closed&sort=-lifts_open),
+// so going back to the list keeps them; resort.js's "All resorts" link reuses the last one (LIST_KEY).
+const saved = new URLSearchParams(location.search);
 
 // Same colours as the map.
 const STATUS = {
@@ -120,6 +123,21 @@ function filter() {
   const filtered = query || country || region || shownStatuses.size;
   count.textContent = filtered ? `${shown} of ${rows.length} resorts` : `${rows.length} resorts`;
   empty.hidden = shown > 0;
+  saveState();
+}
+
+function saveState() {
+  const params = new URLSearchParams();
+  if (search.value.trim()) params.set("q", search.value.trim());
+  if (country) params.set("country", country);
+  if (regionSelect.value) params.set("region", regionSelect.value);
+  if (shownStatuses.size) params.set("status", [...shownStatuses].join(","));
+  if (key !== "name" || !ascending) params.set("sort", (ascending ? "" : "-") + key);
+  const query = params.toString() ? `?${params}` : "";
+  history.replaceState(null, "", location.pathname + query + location.hash);
+  try {
+    sessionStorage.setItem(LIST_KEY, query);
+  } catch {}
 }
 
 function option(value, label) {
@@ -133,8 +151,7 @@ function button(className, text, onClick) {
 }
 
 // The region list only offers regions of the chosen country, and is hidden until one is chosen.
-function fillRegions(resorts) {
-  const chosen = regionSelect.value;
+function fillRegions(resorts, chosen = regionSelect.value) {
   const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))]
     .sort((a, b) => a.localeCompare(b));
   regionSelect.replaceChildren(option("", "All regions"), ...names.map((name) => option(name, name)));
@@ -147,13 +164,13 @@ function fillFilters(resorts) {
   const choices = [["", "All"], ...countries.map((code) => [code, countryName(code)])];
   const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
   countryGroup.append(...countryButtons);
-  const chooseCountry = (code) => {
+  const chooseCountry = (code, region) => {
     country = code;
     choices.forEach(([c], i) => countryButtons[i].setAttribute("aria-pressed", c === country));
-    fillRegions(resorts);
+    fillRegions(resorts, region);
     filter();
   };
-  chooseCountry("");
+  const savedStatuses = (saved.get("status") ?? "").split(",");
   regionSelect.addEventListener("change", filter);
 
   for (const [status, { label, color }] of Object.entries(STATUS)) {
@@ -164,7 +181,8 @@ function fillFilters(resorts) {
       chip.setAttribute("aria-pressed", shownStatuses.has(status));
       filter();
     });
-    chip.setAttribute("aria-pressed", false);
+    if (savedStatuses.includes(status)) shownStatuses.add(status);
+    chip.setAttribute("aria-pressed", shownStatuses.has(status));
     chip.append(el("span", { class: "dot", style: `--c:${color}` }), label, el("span", { class: "count" }, String(total)));
     statusGroup.append(chip);
   }
@@ -176,6 +194,8 @@ function fillFilters(resorts) {
     for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", false);
     chooseCountry("");
   });
+  search.value = saved.get("q") ?? "";
+  chooseCountry(countries.includes(saved.get("country")) ? saved.get("country") : "", saved.get("region") ?? "");
 }
 
 // The phone layout has no column headers: a select offers the useful orders.
@@ -213,6 +233,7 @@ function sort() {
   }
   const chosen = SORTS.findIndex(([k, asc]) => k === key && asc === ascending);
   if (chosen >= 0) sortSelect.value = String(chosen);
+  saveState();
 }
 
 for (const button of document.querySelectorAll("th button")) {
@@ -259,6 +280,11 @@ loadIndex()
       values.set(tr, sortValues(r));
       return tr;
     });
+    const savedSort = saved.get("sort") ?? "";
+    if (rows.length && savedSort.replace(/^-/, "") in values.get(rows[0])) {
+      key = savedSort.replace(/^-/, "");
+      ascending = !savedSort.startsWith("-");
+    }
     fillFilters(index.resorts);
     sort();
     filter();
