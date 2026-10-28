@@ -66,10 +66,12 @@
     (no source we can read). Finnish resorts come from ski.fi, the Finnish Ski Area Association's site, where each
     resort fills in a daily block, or from the resort's own page or slope map where it shows a live status. Not covered
     yet in Finland: Levi's own lift list (its ski.fi block is used), Paljakka, Koli and the smaller hills. German
-    resorts come from Outdooractive, where each resort (or its tourism board) enters its snow report; the Sauerland's
-    Wintersport-Arena publishes its lift overview from it. Not covered yet in Germany: areas without an Outdooractive
-    page or a status of their own (St. Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe,
-    Erbeskopf, Hoherodskopf) and single-lift areas.</p>
+    resorts in the Sauerland come from the lift overview of the Wintersport-Arena Sauerland, the lift operators'
+    association, and the bigger Bavarian and Saxon areas from their slope maps. Not covered yet in Germany: a live
+    status for the other 83 areas (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia),
+    which are listed with &ldquo;no report&rdquo; for now; Outdooractive, where many of them enter their snow report,
+    allows private use only. Nor St. Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe,
+    Erbeskopf, Hoherodskopf and single-lift areas.</p>
 
   <h2 id="timing">Timing</h2>
   <ul>
@@ -77,7 +79,7 @@
       runs can start late at busy times, sometimes by hours, and one can be skipped.</li>
     <li><code>fetched_at</code> is when we read the data; <code>lifts_updated_at</code> is the resort's own report time
       (or its slope map's update time; <code>null</code> for French, Finnish and German resorts, whose sources have none: ski.fi
-      and Outdooractive date their reports by the day only). The resort's
+      dates its blocks by the day only, the Wintersport-Arena not at all). The resort's
       report time can move forward without its numbers changing: reporting systems refresh it daily. Slope maps
       (Intermaps) instead keep it until a lift or slope opens or closes, so a resort that opens the same lifts every day
       can show a report time days old although we read it in the latest run.</li>
@@ -104,14 +106,12 @@
       in on ski.fi (open slopes and lifts, and the day it was updated): open when a slope is open, &ldquo;no report
       yet&rdquo; when the block is more than 14 days old, and closed when ski.fi's list of resorts flags the resort
       closed, even if its block still counts open slopes.</li>
-    <li>German resorts: from the report the resort enters on Outdooractive, dated by the day, &ldquo;no report&rdquo;
-      when it's more than 14 days old (many resorts last reported in March or April). Some resorts leave lifts counted
-      open in summer (Garmisch-Classic and the Allgäu areas in October 2026, with no snow), and some enter open lifts but
-      no slope km in the season, so a German resort is open when its report has something open (a lift or slope km)
-      and snow: a depth above 0, or open slope km where it reports no depth. Where the resort's slope map is current
-      (Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze),
-      it's open when a slope on the map is. A resort that leaves stale numbers in its report shows them until it's 14
-      days old.</li>
+    <li>German resorts: a Sauerland area is open when the Wintersport-Arena's lift icon says so, lifts are open and
+      its snow depth, where it gives one, isn't 0. It has no report time, so its open/closed is always taken as
+      current. Where the resort's slope map is current (Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber,
+      Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze, Hohenbogen), it's open when a slope on the map is, and
+      &ldquo;no report&rdquo; when the map is more than 14 days old. The other German areas have no source yet and
+      are always &ldquo;no report&rdquo;.</li>
     <li><b>No report</b> (<code>no_report</code>): the resort hasn't reported for 14 days (e.g. before the season), or we
       couldn't read its report for over 2 days (see below).
       Only the totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts and
@@ -158,8 +158,9 @@
       open ground in the lowlands, often an airport or village, not on the slopes (Häkärinteet and Suomutunturi have
       none nearby). Ruka's natural snow on the fell, from its slope map, is <code>mountain_cm</code>. No resort reports
       its piste depth.</li>
-    <li>German resorts: the depth, new snow and <code>condition</code> the resort reports for the valley and the
-      mountain on Outdooractive (no measuring stations), e.g. <code>Grobkörniger Schnee</code>.</li>
+    <li>German resorts: the one depth each Sauerland area enters on the Wintersport-Arena's overview, as
+      <code>mountain_cm</code> (no measuring stations, no new snow or condition). Resorts read from their slope maps
+      have no snow depth.</li>
     <li>Regional reports keep a resort's old values until it clears them; check <code>last_snowfall</code>.
       SalzburgerLand reports often have no <code>last_snowfall</code>.</li>
     <li>Any value can be <code>null</code> when the resort doesn't publish it.</li>
@@ -177,8 +178,8 @@
       Champéry, Morgins; Val di Fassa, Val di Fiemme) get the sum of the operator's own slope lengths, ski routes included
       where the map has them; slopes without a length (mostly links and practice slopes) are left out, so these can be a
       little low. For the rest it's the reported value, which is only the sum of the slope lengths the resort has entered
-      in its reporting system and can be far too low (Kitzbühel reported 4.7 of 233 km); German resorts' km are what they
-      enter on Outdooractive. Advertised sizes are counted in
+      in its reporting system and can be far too low (Kitzbühel reported 4.7 of 233 km); German resorts have km only where
+      their slope map gives lengths. Advertised sizes are counted in
       different ways, some with ski routes, and Stubai's 108 km is its &ldquo;effective route distance&rdquo; (65 km by
       fall line). Rounded up to a whole km. Not covered yet: Megève, Crest-Voland, Notre-Dame-de-Bellecombe, Valloire,
       Valmeinier, La Thuile, Val d'Allos, Samoëns and Autrans-Méaudre km, La Rosière and Queyras, and a few village lifts
@@ -188,8 +189,8 @@
       which leans low because OSM lines are shorter than official lengths; otherwise as reported.</li>
     <li>SalzburgerLand reports and the Trentino bulletin have slope km but no slope counts: the slope total comes from
       the area's size, and open slopes stay <code>null</code> (0 when closed). A few small areas (Planai, Dachstein
-      Gletscher, Feuerkogel, Uttendorf and some village lifts) still have no slope total. German reports on Outdooractive
-      have km only, never slope counts: slopes are counted only where the resort's slope map is used.</li>
+      Gletscher, Feuerkogel, Uttendorf and some village lifts) still have no slope total. German resorts have no slopes
+      outside their slope maps.</li>
     <li>Lift and slope totals from different sources don't always match the advertised ones: slope maps include practice
       lifts and magic carpets (the SkiWelt map lists 147 lifts, the area advertises 81).</li>
   </ul>
@@ -199,9 +200,7 @@
     (the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo), for French resorts (from
     Lumiplan), for the Polish ones (PKL, Zieleniec) and for the Finnish resorts that list their lifts and slopes
     (Iso-Syöte, Vuokatti and Laajis; Messilä its slopes only. Finnish lift types are read from the lift's name; slopes
-    without a colour give no difficulties). German resorts' Outdooractive reports list lifts by type and km by
-    difficulty, but often not in step with their totals (every type 0 open while 10 lifts run), so they're only used when
-    they add up to the report's totals. Other Finnish resorts get <code>slopes_by_difficulty</code> from ski.fi's slope colours
+    without a colour give no difficulties). Other Finnish resorts get <code>slopes_by_difficulty</code> from ski.fi's slope colours
     (counts only, <code>open</code> null) when they add up to the slopes counted. Some bigger areas without one (Hochkönig, Snow Space Salzburg,
     Schmittenhöhe, Zauchensee, Serre Chevalier, ...) get <code>slopes_by_difficulty</code> from the area's size instead:
     km per difficulty (skiresort.com), or slope counts (Paganella, Folgaria), with <code>open</code> null (0 when
@@ -252,7 +251,7 @@
   <p><code>location</code> is one point per resort: the Snow Card or infosnow location, a point in the ski area for the
     glacier resorts, or the main village or ski station (looked up on OpenStreetMap) for other Austrian, Italian,
     French, Czech, Slovak and Polish resorts, Andermatt and Engelberg, the fell or hill of Finnish resorts, and the
-    point on the Outdooractive page of German resorts. It
+    ski area or its village for German resorts. It
     marks the area on a map, not a lift station.</p>
   <p><code>region</code> is the state, canton, Italian region, Czech kraj, Polish voivodeship, French département,
     Finnish region (maakunta) or German Land that point lies in (e.g. Tirol, Valais, Valle d'Aosta, Liberecký kraj, Žilinský kraj,

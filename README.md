@@ -61,8 +61,9 @@ Keep it up to date with the fetcher. The format is defined by the JSON Schema in
 | Czech resorts | [holidayinfo.cz](https://zima.holidayinfo.cz/cs/snowinfo): every lift and slope and the snow report, as the resorts enter it (Sitour CZ; the same data as CzechTourism's [snow report](https://www.kudyznudy.cz/nahory)) |
 | Finnish resorts | [ski.fi](https://ski.fi/hiihtokeskukset/) (Finnish Ski Area Association): the "today" block each resort fills in (open slopes and lifts, dated by the day only) and the area's slopes by colour; used while at most 14 days old, and a resort its list flags closed is closed |
 | Ylläs, Ruka, Tahko, Himos, Salla, Ukkohalla, Iso-Syöte, Vuokatti, Laajis, Messilä, Ounasvaara, Riihivuori, Suomutunturi, Kasurila | Live status from the resort itself, instead of ski.fi's block: open/total counters on its own page, a list of its slopes and lifts (Vuokatti, Laajis, Messilä), or its slope map's data on [Panoraama](https://www.panoraama.com/) (Ruka: counters and natural snow; Iso-Syöte: every slope and lift). No report time |
-| German resorts | [Outdooractive](https://www.outdooractive.com/de/skiresorts/): the snow report each resort (or its tourism board) enters on its Outdooractive page, which the Sauerland's [Wintersport-Arena](https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen) also publishes: snow in the valley and on the mountain, lifts open/total, slope km open/total. Dated by the day only, no slope counts; used while at most 14 days old |
-| Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze; Hohenbogen | Their Intermaps slope map (lifts and slopes), instead of the Outdooractive counts; Hohenbogen has only its map |
+| Sauerland resorts (Germany) | The [Wintersport-Arena Sauerland](https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen)'s lift overview (the lift operators' association): lifts open/total, one snow depth and an open/closed icon per area. No report time, no slopes or km |
+| Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze, Hohenbogen | Their Intermaps slope map (lifts and slopes); Winterberg's replaces the Wintersport-Arena's counts, the others have only their map (no snow depth) |
+| Other German resorts (83) | No source yet: listed as "no report", without a size. Outdooractive, where many of them enter their report, isn't used: its terms allow private use only |
 | Snow depth of Finnish resorts | Nearest [FMI](https://en.ilmatieteenlaitos.fi/open-data) weather station measuring snow depth (Finnish Meteorological Institute, CC BY 4.0), as the valley depth |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
@@ -87,9 +88,10 @@ where French resorts do (Alpe d'Huez uses ATEN Altitude instead). Not covered ye
 Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse
 and Les Orres (no source we can read). Not covered yet in Finland: Levi's own lift list (ski.fi's
 block is used), Paljakka, Koli and the smaller hills; Finland has no avalanche ratings to read. Not
-covered yet in Germany: areas without an Outdooractive page or a status of their own (St. Englmar,
-Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf) and
-single-lift areas; the German uplands have no avalanche service. Each
+covered yet in Germany: a live status for the 83 areas outside the Sauerland without a current
+slope map (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
+Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf
+and single-lift areas; the German uplands have no avalanche service. Each
 file's `sources` lists the URLs used for that report.
 
 ### Areas
