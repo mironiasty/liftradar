@@ -87,6 +87,7 @@ function header(r) {
   return el("header", { class: "resort-head" },
     backLink(),
     el("h1", {}, r.name),
+    ...(r.website ? [el("div", { class: "meta" }, el("a", { href: r.website, rel: "noopener" }, "Official website"))] : []),
     el("div", { class: "facts" },
       el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status]),
       el("span", {}, meta)),
