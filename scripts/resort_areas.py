@@ -9,6 +9,9 @@ now and then, e.g. after adding resorts, and check the map:
 
     uv run --no-project --with shapely python3 scripts/resort_areas.py data/json/index.json assets/areas.geojson
 
+When Overpass is down or at capacity, read the areas from OpenStreetMap extracts instead
+(scripts/osm_ski_areas.py) and pass its file as a third argument, `elements.json`.
+
 Fix wrong matches in SHARED and EXCLUDE below.
 """
 
@@ -61,6 +64,10 @@ SHARED = {
     "way/961996791": ["beskid-sport-arena"],
     "way/539446463": ["fuessener-joechle-graen"],
     "way/1445279089": ["oberholz-farner"],
+    "way/665166827": ["sudelfeld"],  # not Wendelstein, whose point is in Bayrischzell
+    "way/1059016836": ["winterberg"],  # not Sahnehang
+    "way/1465730346": ["hundseck"],  # not Mehliskopf
+    "way/1210934062": ["wurmberg-braunlage"],  # not the Skiwiese in Braunlage
 }
 # Areas never used.
 EXCLUDE = {
@@ -98,6 +105,14 @@ EXCLUDE = {
     "relation/10356622",  # Gföllberglift (Lechtal)
     "way/664675357",  # Hausberglift Waidring
     "way/1016830386",  # Bergisel ski jump (Innsbruck)
+    "way/404378976",  # Pyhätunturi - Luosto, both resorts and the fells between them
+    "relation/7772597",  # Kleinwalsertal-Oberstdorf, around Fellhorn, Nebelhorn and Söllereck
+    "way/1223310721",  # Heini-Klopfer ski-flying hill (Oberstdorf)
+    "way/1132486323",  # Nordic Zentrum Oberstdorf
+    "way/25094717",  # Orlen Arena ski jumps (Oberstdorf)
+    "way/1017065576",  # Olympiaschanzen ski jumps (Garmisch-Partenkirchen)
+    "way/777486417",  # Eckbauer (Garmisch-Partenkirchen): never reports
+    "way/1021712181",  # Steckenberg (Unterammergau), not Kolbensattel
 }
 
 NEAR_KM = 1.0  # an area this close to several resorts is split between them
@@ -145,6 +160,12 @@ out geom;"""
         with urllib.request.urlopen(request, timeout=300) as response:
             elements |= {(e["type"], e["id"]): e for e in json.load(response)["elements"]}
     return list(elements.values())
+
+
+def in_boxes(element: dict) -> bool:
+    """Whether the element has a point in one of BBOXES (what Overpass would have returned)."""
+    points = element.get("geometry") or [p for m in element.get("members", []) for p in m.get("geometry", [])]
+    return any(s <= p["lat"] <= n and w <= p["lon"] <= e for p in points for s, w, n, e in BBOXES)
 
 
 def outline(element: dict):
@@ -215,7 +236,11 @@ def areas(index: dict, elements: list[dict]) -> dict:
 def main() -> None:
     source, target = Path(sys.argv[1]), Path(sys.argv[2])
     index = json.loads(source.read_text(encoding="utf-8"))
-    collection = areas(index, download())
+    if len(sys.argv) > 3:  # read from extracts (scripts/osm_ski_areas.py)
+        elements = [e for e in json.loads(Path(sys.argv[3]).read_text(encoding="utf-8")) if in_boxes(e)]
+    else:
+        elements = download()
+    collection = areas(index, elements)
     target.write_text(json.dumps(collection, separators=(",", ":")) + "\n", encoding="utf-8")
     found = {f["properties"]["id"] for f in collection["features"]}
     missing = sorted(r["name"] for r in index["resorts"] if r["id"] not in found)

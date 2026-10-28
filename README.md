@@ -96,17 +96,28 @@ file's `sources` lists the URLs used for that report.
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 295 of the 422
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 436 of the 574
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
-village lifts, are only a marker on the map. The French resorts (added 26 October 2026), the
-Finnish ones (27 October 2026) and the German ones (28 October 2026) have no outlines yet: the
-script now covers them, but Overpass refused or didn't answer the queries when they were added. Each feature has the resort's `id` and the
+village lifts, are only a marker on the map. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run
 `scripts/resort_areas.py` now and then (e.g. after adding resorts) and check the map:
 
 ```sh
 uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-conditions-data/json/index.json assets/areas.geojson
 ```
+
+The script queries Overpass. When Overpass is down or at capacity (it was from 26 to 28 October
+2026), read the areas from Geofabrik's OpenStreetMap extracts instead (the countries, or for Italy,
+France, Poland and Germany the regions, covering the script's `BBOXES`; about 11 GB) and pass the
+result as a third argument:
+
+```sh
+uv run --no-project --with osmium python3 scripts/osm_ski_areas.py elements.json extracts/*.osm.pbf
+uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-conditions-data/json/index.json assets/areas.geojson elements.json
+```
+
+The outlines of 28 October 2026 were made that way (extracts of that day), the first to include the
+French, Finnish and German resorts.
 
 An area within 1 km of several resorts is split between them by nearest resort point, so
 their parts are approximate. Wrong matches are fixed by hand in the script's `SHARED` and
