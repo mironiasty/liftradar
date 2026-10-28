@@ -87,7 +87,6 @@ function header(r) {
   return el("header", { class: "resort-head" },
     backLink(),
     el("h1", {}, r.name),
-    ...(r.website ? [el("div", { class: "meta" }, el("a", { href: r.website, rel: "noopener" }, "Official website"))] : []),
     el("div", { class: "facts" },
       el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status]),
       el("span", {}, meta)),
@@ -345,7 +344,10 @@ async function show() {
       el("p", { class: "meta", style: "margin:10px 0 0" }, "From the archive, collected since 24 October 2026.")),
   );
   page.replaceChildren(header(r), el("div", { class: "layout" }, main, el("aside", { class: "side" },
-    el("div", { class: "map-box" }, mapBox, el("a", { class: "map-link", href: resortOnMap(r) }, "Map of all resorts →")), data(r))));
+    el("div", { class: "map-box" }, mapBox, el("a", { class: "map-link", href: resortOnMap(r) }, "Map of all resorts →")),
+    ...(r.website ? [el("section", { class: "card" }, el("h2", {}, "Official website"),
+      el("a", { href: r.website, rel: "noopener", style: "word-break:break-all" }, r.website))] : []),
+    data(r))));
   resortMap(r, mapBox);
   history(r, historyBox).catch((error) => historyBox.replaceChildren(el("p", { class: "empty" }, `No history (${error.message}).`)));
 }
