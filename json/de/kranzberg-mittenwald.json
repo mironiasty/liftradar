@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "kranzberg-mittenwald",
+  "country": "de",
+  "name": "Kranzberg - Mittenwald",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.4523,
+    "lon": 11.2408
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.864267+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 15
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/wetterstein-gebirge-und-mieminger-kette/kranzberg/1631583/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "fichtelberg-oberwiesenthal",
+  "country": "de",
+  "name": "Fichtelberg - Oberwiesenthal",
+  "region": "Sachsen",
+  "location": {
+    "lat": 50.4211,
+    "lon": 12.968
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.862582+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
+    "total_km": 15
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-27T08:11:36+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/erzgebirge/kurort-oberwiesenthal-fichtelberg/4707029/",
+    "https://winter.intermaps.com/fichtelberg/data?lang=en"
+  ],
+  "errors": []
+}

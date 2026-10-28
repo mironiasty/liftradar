@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "breitenberg-pfronten",
+  "country": "de",
+  "name": "Breitenberg - Pfronten",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.5599,
+    "lon": 10.5547
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.861782+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 10
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/allgaeuer-alpen/breitenberg/1706680/"
+  ],
+  "errors": []
+}

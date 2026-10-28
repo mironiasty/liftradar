@@ -1,0 +1,35 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "mehlmeisel",
+  "country": "de",
+  "name": "Mehlmeisel (Klausenlift)",
+  "region": "Bayern",
+  "location": {
+    "lat": 49.9681,
+    "lon": 11.8474
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-28T17:09:24.862609+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/fichtelgebirge/mehlmeisel/1737741/"
+  ],
+  "errors": []
+}

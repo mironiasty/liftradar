@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "thalerhoehe",
+  "country": "de",
+  "name": "Thalerhöhe",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.5878,
+    "lon": 10.1103
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-28T17:09:24.861657+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 4
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/allgaeu/thalerhoehe-skilifte/4137087/"
+  ],
+  "errors": []
+}

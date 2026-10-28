@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "ochsenkopf",
+  "country": "de",
+  "name": "Ochsenkopf",
+  "region": "Bayern",
+  "location": {
+    "lat": 50.0304,
+    "lon": 11.8081
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.862651+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 12
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 8
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/fichtelgebirge/ochsenkopf/1737729/"
+  ],
+  "errors": []
+}

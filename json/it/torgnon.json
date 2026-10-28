@@ -9,8 +9,8 @@
     "lon": 7.5657
   },
   "status": "no_report",
-  "fetched_at": "2026-10-28T14:30:24.955807+01:00",
-  "status_from": null,
+  "fetched_at": "2026-10-28T17:09:24.857276+01:00",
+  "status_from": "2026-10-27T21:53:33.859139+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -66,8 +66,9 @@
   "lifts_updated_at": "2026-04-06T17:30:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.skiresort.info/ski-resort/torgnon/"
   ],
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

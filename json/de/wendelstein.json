@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "wendelstein",
+  "country": "de",
+  "name": "Wendelstein",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.6968,
+    "lon": 12.0125
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-28T17:09:24.862309+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 11
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/bayerische-voralpen/wendelstein/1646342/"
+  ],
+  "errors": []
+}

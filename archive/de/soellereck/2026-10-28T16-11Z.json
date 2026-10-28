@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "soellereck",
+  "country": "de",
+  "name": "Söllereck",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.3831,
+    "lon": 10.241
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-28T17:09:24.862072+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 14
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/allgaeuer-alpen/soellereck/1646345/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "rimberg",
+  "country": "de",
+  "name": "Rimberg",
+  "region": "Nordrhein-Westfalen",
+  "location": {
+    "lat": 51.2174,
+    "lon": 8.3482
+  },
+  "status": "no_report",
+  "fetched_at": "2026-10-28T17:09:24.862505+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/deutsche-mittelgebirge/skigebiet-rimberg/15785495/"
+  ],
+  "errors": []
+}

@@ -9,8 +9,8 @@
     "lon": 6.9183
   },
   "status": "closed",
-  "fetched_at": "2026-10-28T14:30:24.955790+01:00",
-  "status_from": null,
+  "fetched_at": "2026-10-28T17:09:24.857255+01:00",
+  "status_from": "2026-10-28T14:30:24.955790+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -69,8 +69,8 @@
   },
   "lifts_updated_at": "2026-10-28T13:45:00+01:00",
   "avalanche": null,
-  "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa"
-  ],
-  "errors": []
+  "sources": [],
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "oedberg",
+  "country": "de",
+  "name": "Oedberg - Gmund",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.7418,
+    "lon": 11.7742
+  },
+  "status": "open",
+  "fetched_at": "2026-10-28T17:09:24.864066+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": 30,
+    "valley_cm": 20,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 5,
+    "total": 5
+  },
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/tegernsee-schliersee/gmund-oedberg/1661963/"
+  ],
+  "errors": []
+}

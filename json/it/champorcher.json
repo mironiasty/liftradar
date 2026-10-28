@@ -9,8 +9,8 @@
     "lon": 7.572
   },
   "status": "closed",
-  "fetched_at": "2026-10-28T14:30:24.955812+01:00",
-  "status_from": null,
+  "fetched_at": "2026-10-28T17:09:24.857284+01:00",
+  "status_from": "2026-10-28T14:30:24.955812+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -70,8 +70,9 @@
   "lifts_updated_at": "2026-10-28T08:00:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://lovevda.it/it/sport/sci-discesa/champorcher"
   ],
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

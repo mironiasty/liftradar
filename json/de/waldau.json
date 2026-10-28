@@ -1,0 +1,45 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "waldau",
+  "country": "de",
+  "name": "Waldau (Schneeberglifte)",
+  "region": "Baden-Württemberg",
+  "location": {
+    "lat": 47.9776,
+    "lon": 8.1744
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.863650+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 3
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/schwarzwald/schneeberglifte-waldau/2077042/"
+  ],
+  "errors": []
+}

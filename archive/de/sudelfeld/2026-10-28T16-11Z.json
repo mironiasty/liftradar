@@ -1,0 +1,79 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "sudelfeld",
+  "country": "de",
+  "name": "Sudelfeld",
+  "region": "Bayern",
+  "location": {
+    "lat": 47.6731,
+    "lon": 12.0392
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.862270+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": 0,
+    "total": 27,
+    "open_km": 0.0,
+    "total_km": 32
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": 17
+    },
+    "difficult": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 5
+    }
+  },
+  "lifts_updated_at": "2026-10-28T11:13:06+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/bayerische-voralpen/skiparadies-sudelfeld/1631575/",
+    "https://winter.intermaps.com/sudelfeld/data?lang=en"
+  ],
+  "errors": []
+}

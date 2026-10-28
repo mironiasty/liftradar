@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "geisskopf",
+  "country": "de",
+  "name": "Geißkopf",
+  "region": "Bayern",
+  "location": {
+    "lat": 48.9291,
+    "lon": 13.0397
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T17:09:24.862330+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 7
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.outdooractive.com/de/skiresort/bayerischer-wald/geisskopf/1737759/"
+  ],
+  "errors": []
+}
