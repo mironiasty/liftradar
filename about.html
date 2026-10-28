@@ -60,9 +60,8 @@
   <h2 id="sources">Sources</h2>
   <p>Every source, and what it gives, is listed on <a href="sources.html">Data sources</a>; each file's
     <code>sources</code> lists the URLs used for that report. The Snow Card, SalzburgerLand and Kärnten pages show the
-    report each resort submits to iSKI; holidayinfo.cz is where Czech resorts submit theirs (Sitour CZ, part of the iSKI
-    network), Lumiplan where French resorts do (Alpe d'Huez uses ATEN Altitude instead). Not covered yet in France:
-    Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse and Les Orres
+    report each resort submits to iSKI; Lumiplan is where French resorts submit theirs
+    (Alpe d'Huez uses ATEN Altitude instead). Not covered yet in France: Avoriaz, Val Cenis, Montgenèvre, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse and Les Orres
     (no source we can read). Finnish resorts come from ski.fi, the Finnish Ski Area Association's site, where each
     resort fills in a daily block, or from the resort's own page or slope map where it shows a live status. Not covered
     yet in Finland: Levi's own lift list (its ski.fi block is used), Paljakka, Koli and the smaller hills. German
@@ -71,7 +70,9 @@
     status for the other 83 areas (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia),
     which are listed with &ldquo;no report&rdquo; for now; Outdooractive, where many of them enter their snow report,
     allows private use only. Nor St. Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe,
-    Erbeskopf, Hoherodskopf and single-lift areas.</p>
+    Erbeskopf, Hoherodskopf and single-lift areas. Not covered yet in Czechia: a live status for any of its 41 areas,
+    which are listed with &ldquo;no report&rdquo; for now; holidayinfo.cz, where many of them enter their snow report,
+    is a commercial aggregator and isn't used.</p>
 
   <h2 id="timing">Timing</h2>
   <ul>
@@ -112,6 +113,7 @@
       Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze, Hohenbogen), it's open when a slope on the map is, and
       &ldquo;no report&rdquo; when the map is more than 14 days old. The other German areas have no source yet and
       are always &ldquo;no report&rdquo;.</li>
+    <li>Czech resorts have no source yet and are always &ldquo;no report&rdquo;.</li>
     <li><b>No report</b> (<code>no_report</code>): the resort hasn't reported for 14 days (e.g. before the season), or we
       couldn't read its report for over 2 days (see below).
       Only the totals of its last report (lifts, slopes, km: the area's size) are kept, with 0 open lifts and
@@ -139,7 +141,7 @@
   <h2 id="snow">Snow</h2>
   <ul>
     <li><b>Mountain / valley</b> (<code>mountain_cm</code> / <code>valley_cm</code>): the report's max / min depth
-      (Snow Card, SalzburgerLand, holidayinfo: depth on the slopes), or the highest / lowest measuring station where a
+      (Snow Card, SalzburgerLand: depth on the slopes), or the highest / lowest measuring station where a
       resort publishes its stations (Hintertux, Sölden, Kitzsteinhorn, Kaunertal, Pitztal).</li>
     <li>PKL and Zieleniec: the lowest / highest snow cover of the open slopes.</li>
     <li>French resorts: the measuring points of the resort's Lumiplan bulletin (e.g. &ldquo;Col Balme&rdquo;, 2500 m),
@@ -197,7 +199,7 @@
 
   <h2 id="lift-types-and-slope-difficulties">Lift types and slope difficulties</h2>
   <p><code>lifts_by_type</code> and <code>slopes_by_difficulty</code> are only set for resorts with their own slope map
-    (the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from holidayinfo), for French resorts (from
+    (the bigger areas), for Swiss resorts (from infosnow), for French resorts (from
     Lumiplan), for the Polish ones (PKL, Zieleniec) and for the Finnish resorts that list their lifts and slopes
     (Iso-Syöte, Vuokatti and Laajis; Messilä its slopes only. Finnish lift types are read from the lift's name; slopes
     without a colour give no difficulties). Other Finnish resorts get <code>slopes_by_difficulty</code> from ski.fi's slope colours
@@ -211,9 +213,7 @@
       <code>intermediate</code>, <code>difficult</code>, <code>ski_route</code>, <code>other</code>) are read from the
       map's display text, so an unusual label can land in <code>other</code>. For Swiss resorts they come from
       infosnow's type icons; yellow and orange runs are <code>ski_route</code>, mixed colours (blue/red)
-      <code>other</code>, and rack railways (e.g. Gornergrat) <code>other</code>. For Czech resorts they come from
-      holidayinfo's codes: two-colour and white slopes are <code>other</code>; a lift or slope open only on some days
-      (e.g. Wednesday to Sunday) counts as open on those days. Polish slopes follow the Polish colours: &ldquo;łatwa&rdquo;
+      <code>other</code>, and rack railways (e.g. Gornergrat) <code>other</code>. Polish slopes follow the Polish colours: &ldquo;łatwa&rdquo;
       (blue) <code>easy</code>, PKL's &ldquo;trudna&rdquo; and Zieleniec's &ldquo;średnia&rdquo; (red)
       <code>intermediate</code>, &ldquo;bardzo trudna&rdquo; / Zieleniec's &ldquo;trudna&rdquo; (black)
       <code>difficult</code>. French slopes follow the French colours: green (very easy) and blue are both
