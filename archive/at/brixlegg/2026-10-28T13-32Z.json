@@ -1,0 +1,37 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "brixlegg",
+  "country": "at",
+  "name": "Brixlegg",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.43,
+    "lon": 11.8785
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T14:31:56.371914+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-28T00:13:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Brixlegg_2969"
+  ],
+  "errors": []
+}

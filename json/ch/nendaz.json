@@ -9,20 +9,36 @@
     "lon": 7.2914
   },
   "status": "closed",
-  "fetched_at": "2026-10-27T21:53:33.858484+01:00",
+  "fetched_at": "2026-10-28T14:30:24.955416+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-30",
     "condition": null,
     "stations": [
       {
-        "name": "Combatzeline (SLF)",
-        "elevation_m": 2203,
-        "depth_cm": 1,
-        "fresh_cm": 0,
+        "name": "in place",
+        "elevation_m": null,
+        "depth_cm": 50,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "In the ski area below",
+        "elevation_m": null,
+        "depth_cm": 65,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "In the ski area above",
+        "elevation_m": null,
+        "depth_cm": 80,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -90,13 +106,10 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-10-27T21:45:00+01:00",
+  "lifts_updated_at": "2026-10-28T14:30:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=36&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=36&saison=1&ref=contentBox"
   ],
   "errors": []
 }

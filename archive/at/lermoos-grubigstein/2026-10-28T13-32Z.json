@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "lermoos-grubigstein",
+  "country": "at",
+  "name": "Lermoos-Grubigstein",
+  "region": "Tirol",
+  "location": {
+    "lat": 47.3856,
+    "lon": 10.8469
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T14:32:11.476054+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "1900-01-01",
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": 0,
+    "total": 18,
+    "open_km": 0.0,
+    "total_km": 29
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-10-28T00:00:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Lermoos-Grubigstein_23"
+  ],
+  "errors": []
+}

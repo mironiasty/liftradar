@@ -1,0 +1,81 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "klewenalp-stockhuette",
+  "country": "ch",
+  "name": "Klewenalp-Stockhütte",
+  "region": "Nidwalden",
+  "location": {
+    "lat": 46.9358,
+    "lon": 8.4829
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T14:30:24.955269+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 15
+  },
+  "slopes": {
+    "open": 0,
+    "total": 14,
+    "open_km": 0.0,
+    "total_km": 40
+  },
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-28T14:30:00+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=64&saison=1&ref=contentBox",
+    "https://www.skiresort.info/ski-resort/klewenalp-stockhuette-beckenried-emmetten/"
+  ],
+  "errors": []
+}

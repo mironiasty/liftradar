@@ -1,0 +1,73 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "annaberg-niederoesterreich",
+  "country": "at",
+  "name": "Annaberg (Niederösterreich)",
+  "region": "Niederösterreich",
+  "location": {
+    "lat": 47.8717,
+    "lon": 15.3756
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T14:30:24.953198+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
+  "slopes": {
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
+    "total_km": 13
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-28T09:30:02+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://winter.intermaps.com/annaberg/data?lang=en",
+    "https://www.skiresort.info/ski-resort/annaberg/"
+  ],
+  "errors": []
+}

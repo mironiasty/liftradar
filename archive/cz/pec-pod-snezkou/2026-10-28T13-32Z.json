@@ -1,0 +1,74 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "pec-pod-snezkou",
+  "country": "cz",
+  "name": "Pec pod Sněžkou",
+  "region": "Královéhradecký kraj",
+  "location": {
+    "lat": 50.6936,
+    "lon": 15.7336
+  },
+  "status": "closed",
+  "fetched_at": "2026-10-28T14:30:24.956100+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 14
+  },
+  "slopes": {
+    "open": 0,
+    "total": 20,
+    "open_km": 0.0,
+    "total_km": 15
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 10
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": "2026-10-28T00:00:17+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://zima.holidayinfo.cz/cs/locinfo/pec",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=2&loc=5",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=2&loc=5"
+  ],
+  "errors": []
+}

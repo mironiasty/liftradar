@@ -8,11 +8,11 @@
     "lat": 46.4412,
     "lon": 9.9836
   },
-  "status": "closed",
-  "fetched_at": "2026-10-27T21:53:33.857950+01:00",
+  "status": "open",
+  "fetched_at": "2026-10-28T14:30:24.955119+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 15,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": "2026-10-22",
@@ -29,18 +29,18 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 5
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 13,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 35
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 0,
+      "open": 1,
       "total": 2
     },
     "carpet": {
@@ -48,7 +48,7 @@
       "total": 1
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "drag_lift": {
@@ -58,21 +58,21 @@
   },
   "slopes_by_difficulty": {
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
@@ -82,7 +82,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-10-27T21:45:00+01:00",
+  "lifts_updated_at": "2026-10-28T14:30:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",

@@ -8,8 +8,8 @@
     "lat": 50.076,
     "lon": 17.229
   },
-  "status": "no_report",
-  "fetched_at": "2026-10-27T21:53:33.859747+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-28T14:30:24.956171+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,9 +24,9 @@
     "total": 7
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 9,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 5
   },
   "lifts_by_type": {
@@ -37,30 +37,30 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 2
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-04-15T14:28:15+02:00",
+  "lifts_updated_at": "2026-10-28T10:34:12+01:00",
   "avalanche": null,
   "sources": [
     "https://zima.holidayinfo.cz/cs/locinfo/praded",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=4&loc=3",
-    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=4&loc=3"
+    "https://zima.holidayinfo.cz/hol3_data.php?type=loclifts_data&cntry=1&reg=4&loc=3",
+    "https://zima.holidayinfo.cz/hol3_data.php?type=locslopes_data&cntry=1&reg=4&loc=3"
   ],
   "errors": []
 }

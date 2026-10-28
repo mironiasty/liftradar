@@ -389,6 +389,8 @@
           "type": "array"
         },
         "errors": {
+          "deprecated": true,
+          "description": "Deprecated, to be removed: what failed in this run. See the run logs in logs/ on the data branch.",
           "items": {
             "type": "string"
           },
