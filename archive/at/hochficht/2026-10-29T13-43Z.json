@@ -1,0 +1,33 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "hochficht",
+  "country": "at",
+  "name": "Hochficht",
+  "region": "Oberösterreich",
+  "location": {
+    "lat": 48.7366,
+    "lon": 13.921
+  },
+  "website": "https://skisport.com/hochficht/de/",
+  "status": "no_report",
+  "fetched_at": "2026-10-29T14:42:09.444264+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [],
+  "errors": [
+    "map: HTTPStatusError: Server error '502 Bad Gateway' for url 'https://winter.intermaps.com/hochficht/data?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+  ]
+}

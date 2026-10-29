@@ -1,0 +1,33 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "silvretta-montafon",
+  "country": "at",
+  "name": "Silvretta Montafon",
+  "region": "Vorarlberg",
+  "location": {
+    "lat": 47.0802,
+    "lon": 9.9197
+  },
+  "website": "https://www.silvretta-montafon.at",
+  "status": "no_report",
+  "fetched_at": "2026-10-29T14:42:09.443845+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [],
+  "errors": [
+    "map: HTTPStatusError: Server error '502 Bad Gateway' for url 'https://winter.intermaps.com/silvretta_montafon/data?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+  ]
+}

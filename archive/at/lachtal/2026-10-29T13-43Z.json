@@ -1,0 +1,40 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "lachtal",
+  "country": "at",
+  "name": "Lachtal",
+  "region": "Steiermark",
+  "location": {
+    "lat": 47.2525,
+    "lon": 14.3682
+  },
+  "website": "https://www.lachtal.at",
+  "status": "no_report",
+  "fetched_at": "2026-10-29T14:42:09.444194+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 27
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiresort.info/ski-resort/lachtal/"
+  ],
+  "errors": [
+    "map: HTTPStatusError: Server error '502 Bad Gateway' for url 'https://winter.intermaps.com/lachtal/data?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+  ]
+}

@@ -9,8 +9,8 @@
     "lon": 13.9982
   },
   "website": "https://www.kasberg.at",
-  "status": "closed",
-  "fetched_at": "2026-10-29T14:10:05.917793+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-29T14:42:09.444276+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,59 +20,21 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 11
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
-    "total": 20,
-    "open_km": 0.0,
+    "open": null,
+    "total": null,
+    "open_km": null,
     "total_km": 23
   },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 2
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 1
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 6
-    },
-    "gondola": {
-      "open": 0,
-      "total": 2
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 9,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 8,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-10-29T10:35:56+01:00",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/kasberg_gruenau/data?lang=en",
     "https://www.skiresort.info/ski-resort/kasberg-gruenau-im-almtal/"
   ],
-  "errors": []
+  "errors": [
+    "map: HTTPStatusError: Server error '502 Bad Gateway' for url 'https://winter.intermaps.com/kasberg_gruenau/data?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+  ]
 }

@@ -10,15 +10,24 @@
   },
   "website": "https://www.vicheres.ch",
   "status": "no_report",
-  "fetched_at": "2026-10-29T14:10:05.925251+01:00",
+  "fetched_at": "2026-10-29T14:42:09.448755+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 2,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Pointe de Toules (SLF)",
+        "elevation_m": 2687,
+        "depth_cm": 2,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
@@ -63,7 +72,10 @@
   "lifts_updated_at": "2026-04-09T17:16:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",
+    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "errors": []
 }
