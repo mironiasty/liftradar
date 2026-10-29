@@ -2,7 +2,7 @@ name: Deploy site
 
 # The site (this branch) and the data (the "data" branch, published by
 # snow-fetcher) are combined and deployed to GitHub Pages and, while
-# liftradar.eu moves there, to Cloudflare Pages (project "liftradar"). Runs when the site
+# liftradar.eu moves there, to Cloudflare (the Worker "liftradar"). Runs when the site
 # changes, and after every data update (dispatched by the data branch's
 # deploy.yml).
 on:
@@ -61,12 +61,14 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v5
 
-      # Direct upload: the site is combined from two branches, so Cloudflare's own
-      # Git builds can't make it. Skipped until the repo has the Cloudflare secrets.
-      - name: Deploy to Cloudflare Pages
+      # An assets-only Worker (wrangler.jsonc), uploaded from here: the site is combined
+      # from two branches, so Cloudflare's own Git builds can't make it. Skipped until
+      # the repo has the Cloudflare secrets.
+      - name: Deploy to Cloudflare
         if: env.CLOUDFLARE_ACCOUNT_ID != ''
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=liftradar --branch=main --commit-dirty=true
+          wranglerVersion: "4.155.0"
+          command: deploy --config site/wrangler.jsonc --assets _site

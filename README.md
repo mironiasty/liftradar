@@ -32,10 +32,11 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
 
 `.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
 to `main` and after every data update; while liftradar.eu moves to Cloudflare, also to the
-Cloudflare Pages project `liftradar` (direct upload with `wrangler`, skipped without the
-`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets). `_headers` lets any origin read
-`json/`, `history/` and `schema/` there (GitHub Pages did so by default), and `404.html` keeps
-missing files a 404 (Cloudflare would otherwise answer with `index.html`).
+Worker `liftradar` there (static assets only, `wrangler.jsonc`; skipped without the
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets), at
+<https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`, `history/`
+and `schema/` there (GitHub Pages did so by default), and `404.html` is served for missing
+files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
 
 ## About the data
 

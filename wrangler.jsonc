@@ -1,0 +1,12 @@
+// Cloudflare: an assets-only Worker (no script) serving the site combined with
+// the data, as .github/workflows/pages.yml builds it in _site/ (passed there
+// with --assets, as the directory is relative to this file).
+{
+  "name": "liftradar",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./_site",
+    // 404.html for missing files, rather than index.html with status 200.
+    "not_found_handling": "404-page"
+  }
+}
