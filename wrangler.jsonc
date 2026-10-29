@@ -4,6 +4,10 @@
 {
   "name": "liftradar",
   "compatibility_date": "2026-10-01",
+  // The zone is proxied by Cloudflare: this route answers every request to
+  // liftradar.eu (its DNS records still point at GitHub Pages, now unused).
+  "routes": [{ "pattern": "liftradar.eu/*", "zone_name": "liftradar.eu" }],
+  "workers_dev": true,  // liftradar.liftradar.workers.dev, to test a version
   "assets": {
     "directory": "./_site",
     // 404.html for missing files, rather than index.html with status 200.
