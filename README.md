@@ -4,21 +4,24 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
 [liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
-  `archive/<country>/<resort>/` and `schema/…`, published by the fetcher twice a day.
-  Don't edit it by hand: every publish replaces it.
-  - `archive/<country>/<resort>/index.json` lists every run (oldest first) with the
-    snapshot holding that run's full report, e.g. `2026-10-25T09-00Z.json` (UTC). Runs
-    without changes share the earlier snapshot. Until 25 October 2026 the runs were listed in
-    `history/<country>/<resort>.json`; those files remain in the `data` branch's git history.
+  `history/<country>/<resort>.json` and `schema/…`, published by the fetcher twice a day, plus
+  `archive/` and `logs/`, which aren't served by the site. Don't edit it by hand: every publish
+  replaces it.
+  - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
+    (open lifts and slopes, snow, status), one list per value, for the resort page's graphs.
+  - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every
+    run, one JSON object per line, with the full report when it changed. Until 29 October
+    2026 the archive was a file per changed report plus an `index.json` per resort, served by
+    the site; those files remain in the `data` branch's git history.
   - `logs/<YYYY-MM-DDTHH-MMZ>.json`: each run's log (UTC), what failed for which resort and the
     run's warnings, kept for 30 days. Not served by the site (the site doesn't show errors).
   - Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
     `json/at/soell-skiwelt.json`, as copies of the area's report with its `id` (not in
     `index.json`); new links should use the area's, `json/at/skiwelt.json`. Their archives
-    stop at that date.
+    stop at that date, and they have no history.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
-  its history from the archive), `sources.html` (data sources, incl. every URL in the
+  its history), `sources.html` (data sources, incl. every URL in the
   current data) and `about.html` (how the values are computed, and their caveats), plain
   static pages that load the JSON in the browser. No build step.
   `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
@@ -36,7 +39,7 @@ How every value is computed, what `null` and 0 mean, and the caveats (timing, st
 lifts and slopes, lift types and slope difficulties, avalanche danger, locations, map areas,
 archive) are on the site: [About the data](https://liftradar.eu/about.html) (`about.html`).
 Keep it up to date with the fetcher. The format is defined by the JSON Schema in `schema/`
-(`resort.schema.json`, `index.schema.json`, `archive.schema.json`).
+(`resort.schema.json`, `index.schema.json`, `history.schema.json`).
 
 ### Sources
 
@@ -129,7 +132,7 @@ Put the data next to the pages and serve the folder:
 
 ```sh
 git worktree add ../snow-conditions-data data   # once
-for part in json archive schema; do ln -sfn ../snow-conditions-data/$part .; done
+for part in json history schema; do ln -sfn ../snow-conditions-data/$part .; done
 python3 -m http.server 8000                     # http://localhost:8000
 ```
 

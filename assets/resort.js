@@ -1,5 +1,5 @@
 // resort.html?r=<country>/<id>: everything in one resort's JSON, its area on the
-// map (with the resorts around it) and its history from the archive.
+// map (with the resorts around it) and its history (key numbers of past runs).
 
 const LIFT_TYPES = {
   gondola: "Gondolas", cable_car: "Cable cars", chairlift: "Chairlifts", drag_lift: "Drag lifts",
@@ -224,24 +224,19 @@ function resortMap(r, container) {
     });
 }
 
-// History: the latest HISTORY_DAYS of runs, from the archive's snapshots.
+// History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
 async function history(r, container) {
-  const response = await fetch(`${archivePath(r)}index.json`, { cache: "no-cache" });
+  const response = await fetch(historyPath(r), { cache: "no-cache" });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const runs = (await response.json()).runs;
   const since = Date.now() - HISTORY_DAYS * 864e5;
-  const runs = (await response.json()).runs.filter((run) => new Date(run.time) >= since);
-  const files = [...new Set(runs.map((run) => run.snapshot))];
-  const snapshots = new Map(await Promise.all(files.map(async (file) => {
-    const snapshot = await fetch(archivePath(r) + file).then((res) => (res.ok ? res.json() : null)).catch(() => null);
-    return [file, snapshot];
-  })));
-  const series = (value) => runs.map((run) => {
-    const snapshot = snapshots.get(run.snapshot);
-    return { t: new Date(run.time), v: snapshot ? value(snapshot) ?? null : null };
-  });
+  const recent = runs.time.map((time, i) => ({ t: new Date(time), i })).filter((run) => run.t >= since);
+  const series = (key) => recent.map(({ t, i }) => ({ t, v: runs[key][i] }));
   container.replaceChildren(
-    chart("Snow on the mountain", "cm", "var(--accent)", series((s) => s.snow?.mountain_cm)),
-    chart("Open lifts", "", "var(--open)", series((s) => s.lifts?.open)),
+    chart("Snow on the mountain", "cm", "var(--accent)", series("mountain_cm")),
+    chart("Fresh snow", "cm", "var(--accent)", series("fresh_cm")),
+    chart("Open lifts", "", "var(--open)", series("lifts_open")),
+    chart("Open slopes", "", "var(--open)", series("slopes_open")),
   );
 }
 
@@ -341,7 +336,7 @@ async function show() {
     tiles(r),
     ...[stations(r.snow.stations), breakdown(r), avalanche(r.avalanche)].filter(Boolean),
     el("section", { class: "card" }, el("h2", {}, `Last ${HISTORY_DAYS} days`), historyBox,
-      el("p", { class: "meta", style: "margin:10px 0 0" }, "From the archive, collected since 24 October 2026.")),
+      el("p", { class: "meta", style: "margin:10px 0 0" }, "Collected since 24 October 2026.")),
   );
   page.replaceChildren(header(r), el("div", { class: "layout" }, main, el("aside", { class: "side" },
     el("div", { class: "map-box" }, mapBox, el("a", { class: "map-link", href: resortOnMap(r) }, "Map of all resorts →")),

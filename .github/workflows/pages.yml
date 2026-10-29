@@ -39,7 +39,7 @@ jobs:
         run: |
           mkdir _site
           cp -R site/index.html site/about.html site/map.html site/resort.html site/sources.html site/assets _site/
-          for part in json archive schema; do cp -R "data/$part" _site/; done
+          for part in json history schema; do cp -R "data/$part" _site/; done
 
       # Pages lets browsers cache files for 10 minutes; without a version in the
       # URL, a new page can run with the previous version's scripts.
