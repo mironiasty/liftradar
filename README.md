@@ -31,7 +31,11 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
 `.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
-to `main` and after every data update.
+to `main` and after every data update; while liftradar.eu moves to Cloudflare, also to the
+Cloudflare Pages project `liftradar` (direct upload with `wrangler`, skipped without the
+`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets). `_headers` lets any origin read
+`json/`, `history/` and `schema/` there (GitHub Pages did so by default), and `404.html` keeps
+missing files a 404 (Cloudflare would otherwise answer with `index.html`).
 
 ## About the data
 
