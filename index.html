@@ -43,8 +43,13 @@
   .seg { display: inline-flex; flex-wrap: wrap; gap: 2px; max-width: 100%; padding: 2px; border-radius: 8px; background: var(--chip); }
   .seg button { height: 30px; padding: 0 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
   .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
-  /* Eight countries no longer fit beside the search box: the country control gets its own row. */
-  @media (min-width: 641px) { .seg { order: 1; flex-basis: 100%; justify-content: flex-start; } }
+  /* Eight countries no longer fit beside the search box: the country control gets its own
+     full-width row with the buttons spread evenly, and the status chips go on the row below. */
+  @media (min-width: 641px) {
+    .seg { order: 1; flex-basis: 100%; box-sizing: border-box; }
+    .seg button { flex: 1 0 auto; }
+    .chips, #count { order: 2; }
+  }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line);
     border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
