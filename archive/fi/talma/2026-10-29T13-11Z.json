@@ -1,0 +1,37 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "talma",
+  "country": "fi",
+  "name": "Talma",
+  "region": "Uusimaa",
+  "location": {
+    "lat": 60.4078,
+    "lon": 25.1797
+  },
+  "website": "https://talmaski.fi",
+  "status": "no_report",
+  "fetched_at": "2026-10-29T14:10:05.932638+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://ski.fi/hiihtokeskukset/talma-ski/",
+    "https://ski.fi/hiihtokeskukset/"
+  ],
+  "errors": []
+}

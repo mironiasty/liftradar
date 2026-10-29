@@ -10,24 +10,15 @@
   },
   "website": "https://talmaski.fi",
   "status": "no_report",
-  "fetched_at": "2026-10-28T21:35:31.430901+01:00",
+  "fetched_at": "2026-10-29T14:10:05.932638+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 0,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Helsinki-Vantaa lentoasema (FMI)",
-        "elevation_m": null,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
     "open": 0,
@@ -40,9 +31,7 @@
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/talma-ski/",
-    "https://ski.fi/hiihtokeskukset/",
-    "https://opendata.fmi.fi/wfs",
-    "https://en.ilmatieteenlaitos.fi/open-data"
+    "https://ski.fi/hiihtokeskukset/"
   ],
   "errors": []
 }
