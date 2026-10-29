@@ -9,13 +9,13 @@
     "lon": 7.7428
   },
   "website": "https://www.matterhornparadise.ch",
-  "status": "open",
-  "fetched_at": "2026-10-29T14:42:09.448813+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-29T18:39:27.625872+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 1,
+    "mountain_cm": null,
     "valley_cm": null,
-    "fresh_cm": 0,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -30,26 +30,26 @@
     ]
   },
   "lifts": {
-    "open": 11,
+    "open": 0,
     "total": 36
   },
   "slopes": {
-    "open": 9,
+    "open": 0,
     "total": 84,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 200
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 3,
+      "open": 0,
       "total": 6
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 10
     },
     "drag_lift": {
-      "open": 2,
+      "open": 0,
       "total": 5
     },
     "funicular": {
@@ -57,25 +57,25 @@
       "total": 2
     },
     "gondola": {
-      "open": 1,
+      "open": 0,
       "total": 9
     },
     "other": {
-      "open": 4,
+      "open": 0,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 2,
+      "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 7,
+      "open": 0,
       "total": 48,
-      "open_km": 14.8,
+      "open_km": 0.0,
       "total_km": 99
     },
     "difficult": {
@@ -87,16 +87,16 @@
     "ski_route": {
       "open": 0,
       "total": 16,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-29T14:40:00+01:00",
+  "lifts_updated_at": "2026-10-29T18:40:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",

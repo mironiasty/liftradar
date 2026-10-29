@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liftradar.eu/schema/history.schema.json",
+  "$defs": {
+    "HistoryRuns": {
+      "additionalProperties": false,
+      "description": "One list per value with an entry per run, oldest first; null where that run's report had no value.",
+      "properties": {
+        "time": {
+          "items": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "title": "Time",
+          "type": "array"
+        },
+        "status": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Status",
+          "type": "array"
+        },
+        "lifts_open": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Lifts Open",
+          "type": "array"
+        },
+        "lifts_total": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Lifts Total",
+          "type": "array"
+        },
+        "slopes_open": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Slopes Open",
+          "type": "array"
+        },
+        "slopes_total": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Slopes Total",
+          "type": "array"
+        },
+        "slopes_open_km": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Slopes Open Km",
+          "type": "array"
+        },
+        "mountain_cm": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Mountain Cm",
+          "type": "array"
+        },
+        "valley_cm": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Valley Cm",
+          "type": "array"
+        },
+        "fresh_cm": {
+          "items": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Fresh Cm",
+          "type": "array"
+        }
+      },
+      "required": [
+        "time",
+        "status",
+        "lifts_open",
+        "lifts_total",
+        "slopes_open",
+        "slopes_total",
+        "slopes_open_km",
+        "mountain_cm",
+        "valley_cm",
+        "fresh_cm"
+      ],
+      "title": "HistoryRuns",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Key numbers of one resort's runs over the last year, for graphs; built from the archive.",
+  "properties": {
+    "$schema": {
+      "const": "https://liftradar.eu/schema/history.schema.json",
+      "default": "https://liftradar.eu/schema/history.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9-]+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "country": {
+      "pattern": "^[a-z]{2}$",
+      "title": "Country",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "runs": {
+      "$ref": "#/$defs/HistoryRuns"
+    }
+  },
+  "required": [
+    "id",
+    "country",
+    "name",
+    "runs"
+  ],
+  "title": "Past runs of one resort, for graphs",
+  "type": "object"
+}
