@@ -113,7 +113,7 @@ file's `sources` lists the URLs used for that report.
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 531 of the 706
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 553 of the 731
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run
@@ -137,6 +137,8 @@ The outlines of 28 October 2026 were made that way (extracts of that day), the f
 French, Finnish and German resorts.
 The Norwegian outlines were added on 30 October 2026 from Overpass, merged into that file (run
 for Norway only, so the others stayed as they were).
+The Spanish outlines were added the same way on 30 October 2026 (22 of 25 resorts; Baqueira Beret,
+Puerto de Navacerrada and Vall de Núria have no OpenStreetMap area there).
 
 An area within 1 km of several resorts is split between them by nearest resort point, so
 their parts are approximate. Wrong matches are fixed by hand in the script's `SHARED` and

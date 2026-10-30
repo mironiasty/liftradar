@@ -41,6 +41,11 @@ BBOXES = [
     (59.9, 21.0, 68.6, 30.0),  # Finland
     (47.6, 7.5, 51.9, 13.0),  # the German uplands (Black Forest to the Harz and the Ore Mountains)
     (58.0, 4.9, 70.5, 25.0),  # Norway
+    (42.2, -1.0, 42.9, 2.4),  # the Spanish side of the Pyrenees
+    (42.2, -7.4, 43.2, -2.8),  # the Cantabrian range and La Rioja
+    (40.3, -5.9, 40.9, -3.9),  # the Sistema Central
+    (40.0, -1.2, 40.5, -0.5),  # Teruel
+    (37.0, -3.5, 37.2, -3.3),  # Sierra Nevada
 ]
 
 # Areas split between the given resorts (or given to the one), however far their points are.
