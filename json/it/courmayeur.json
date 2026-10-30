@@ -9,9 +9,9 @@
     "lon": 6.9462
   },
   "website": "https://www.courmayeur-montblanc.com",
-  "status": "no_report",
-  "fetched_at": "2026-10-30T13:27:24.153558+01:00",
-  "status_from": "2026-10-29T14:10:05.925964+01:00",
+  "status": "closed",
+  "fetched_at": "2026-10-30T14:31:06.765470+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 18
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 45,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 43
   },
   "lifts_by_type": {
@@ -54,30 +54,29 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 13,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 26,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-08-30T06:00:00+02:00",
+  "lifts_updated_at": "2026-10-30T08:00:00+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/courmayeur/comprensorio-courmayeur-mont-blanc/4360"
   ],
-  "errors": [
-    "status: ConnectTimeout: "
-  ]
+  "errors": []
 }
