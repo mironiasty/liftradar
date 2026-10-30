@@ -1,10 +1,9 @@
 name: Deploy site
 
 # The site (this branch) and the data (the "data" branch, published by
-# snow-fetcher) are combined and deployed to GitHub Pages and, while
-# liftradar.eu moves there, to Cloudflare (the Worker "liftradar"). Runs when the site
-# changes, and after every data update (dispatched by the data branch's
-# deploy.yml).
+# snow-fetcher) are combined and deployed to Cloudflare (the Worker "liftradar").
+# Runs when the site changes, and after every data update (dispatched by the data
+# branch's deploy.yml).
 on:
   push:
     branches: [main]
@@ -12,8 +11,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -23,11 +20,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}  # unset: no Cloudflare deploy
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -44,28 +36,17 @@ jobs:
           cp -R site/index.html site/about.html site/map.html site/resort.html site/sources.html site/404.html site/_headers site/assets _site/
           for part in json history schema; do cp -R "data/$part" _site/; done
 
-      # Pages lets browsers cache files for 10 minutes; without a version in the
-      # URL, a new page can run with the previous version's scripts.
+      # Without a version in the URL, a new page can run with the previous version's
+      # scripts from a cache on the way.
       - name: Version the asset links
         run: |
           version=$(git -C site rev-parse --short HEAD)
           sed -i -E "s#(assets/[a-z]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html
           grep -o 'assets/[^"]*' _site/*.html
 
-      - uses: actions/configure-pages@v6
-
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: _site
-
-      - id: deployment
-        uses: actions/deploy-pages@v5
-
       # An assets-only Worker (wrangler.jsonc), uploaded from here: the site is combined
-      # from two branches, so Cloudflare's own Git builds can't make it. Skipped until
-      # the repo has the Cloudflare secrets.
+      # from two branches, so Cloudflare's own Git builds can't make it.
       - name: Deploy to Cloudflare
-        if: env.CLOUDFLARE_ACCOUNT_ID != ''
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -30,13 +30,11 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
-`.github/workflows/pages.yml` combines both and deploys to GitHub Pages, on every push
-to `main` and after every data update; while liftradar.eu moves to Cloudflare, also to the
-Worker `liftradar` there (static assets only, `wrangler.jsonc`; skipped without the
-`CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets), at
-<https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`, `history/`
-and `schema/` there (GitHub Pages did so by default), and `404.html` is served for missing
-files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
+`.github/workflows/pages.yml` combines both and deploys to the Cloudflare Worker `liftradar`
+(static assets only, `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
+`CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
+also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
+`history/` and `schema/`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
 
 ## About the data
 

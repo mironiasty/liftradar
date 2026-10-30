@@ -1,6 +1,5 @@
-# Response headers on Cloudflare Pages (GitHub Pages ignores this file).
-# The data is read by other sites and devices too: allow it from any origin,
-# as GitHub Pages did.
+# Response headers on Cloudflare.
+# The data is read by other sites and devices too: allow it from any origin.
 /json/*
   Access-Control-Allow-Origin: *
 /history/*
