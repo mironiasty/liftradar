@@ -9,12 +9,12 @@
     "lon": 25.6863
   },
   "website": "https://laajis.fi",
-  "status": "closed",
-  "fetched_at": "2026-10-29T18:39:27.629616+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-30T13:27:24.156074+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -31,51 +31,44 @@
   },
   "lifts": {
     "open": 0,
-    "total": 6
+    "total": 5
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 12,
-    "open_km": 0.0,
-    "total_km": 7
+    "open_km": null,
+    "total_km": null
   },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 1
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 5
-    }
-  },
+  "lifts_by_type": null,
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 7,
-      "open_km": 0.0,
-      "total_km": 4
+      "open_km": null,
+      "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 4,
-      "open_km": 0.0,
-      "total_km": 3
+      "open_km": null,
+      "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
-      "total_km": 1
+      "open_km": null,
+      "total_km": null
     }
   },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/laajavuori/",
-    "https://laajis.fi/rinneinfo/",
+    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
-  "errors": []
+  "errors": [
+    "status: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'laajis.fi'. (_ssl.c:1000)"
+  ]
 }

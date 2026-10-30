@@ -10,15 +10,72 @@
   },
   "website": "https://www.alpedhuez.com",
   "status": "open",
-  "fetched_at": "2026-10-29T18:39:27.629269+01:00",
-  "status_from": "2026-10-28T21:35:31.430386+01:00",
+  "fetched_at": "2026-10-30T13:27:24.155837+01:00",
+  "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 20,
+    "valley_cm": 0,
     "fresh_cm": null,
-    "last_snowfall": null,
-    "condition": null,
-    "stations": []
+    "last_snowfall": "2026-10-08",
+    "condition": "Dure",
+    "stations": [
+      {
+        "name": "Alpe d'Huez",
+        "elevation_m": 1800,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Pas de neige"
+      },
+      {
+        "name": "Pic Blanc",
+        "elevation_m": 3300,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Dure"
+      },
+      {
+        "name": "Villard",
+        "elevation_m": 1650,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Pas de neige"
+      },
+      {
+        "name": "Auris",
+        "elevation_m": 1600,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Pas de neige"
+      },
+      {
+        "name": "Oz",
+        "elevation_m": 1350,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Pas de neige"
+      },
+      {
+        "name": "Vaujany – Montfrais",
+        "elevation_m": 1250,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Pas de neige"
+      },
+      {
+        "name": "Dôme des Rousses",
+        "elevation_m": 2810,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Pas de neige"
+      }
+    ]
   },
   "lifts": {
     "open": 1,
@@ -69,9 +126,8 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://live.aten-altitude.com/alpehuez/",
     "https://www.skiinfo.fr/alpes-du-nord/alpe-dhuez/station-de-ski"
   ],
-  "errors": [
-    "status: ReadTimeout: "
-  ]
+  "errors": []
 }

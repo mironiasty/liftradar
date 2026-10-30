@@ -10,13 +10,13 @@
   },
   "website": "https://www.fassa.com",
   "status": "closed",
-  "fetched_at": "2026-10-29T18:39:27.626024+01:00",
+  "fetched_at": "2026-10-30T13:27:24.153423+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-03-26",
+    "last_snowfall": null,
     "condition": null,
     "stations": []
   },
@@ -72,7 +72,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-10-21T14:00:29.865016+02:00",
+  "lifts_updated_at": "2026-10-30T13:20:17.332468+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
