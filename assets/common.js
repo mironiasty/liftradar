@@ -52,7 +52,7 @@ function reportTimes(r) {
   return { checked, changed, days, stale };
 }
 
-const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland", de: "Germany", no: "Norway" };
+const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland", de: "Germany", no: "Norway", es: "Spain" };
 
 // Fnugg's terms: a visible credit next to its data, linking to the resort's page there.
 function fnuggCredit(r) {

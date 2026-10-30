@@ -1,6 +1,6 @@
 # liftradar
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland and Norway, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway and Spain, published at
 [liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -76,6 +76,11 @@ Keep it up to date with the fetcher. The format is defined by the JSON Schema in
 | Snow depth of Finnish resorts | Nearest [FMI](https://en.ilmatieteenlaitos.fi/open-data) weather station measuring snow depth (Finnish Meteorological Institute, CC BY 4.0), as the valley depth |
 | Norwegian resorts | [Fnugg](https://fnugg.no) (the Norwegian ski resorts' association, Norske Alpinanlegg og Fjelldestinasjoner): every lift and slope with its state, and the report each resort enters (snow depth, new snow, conditions). No slope lengths; km from skiresort.com. Fnugg's weather (from Yr) isn't used. Its terms ask for a credit and link next to the data, which the resort pages, map and table show |
 | Tryvann, Kongsberg, Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia | Not on Fnugg: listed as "no report", with their size from skiresort.com |
+| La Molina, Vall de Núria, Vallter, Espot, Port Ainé, Boí Taüll | [Pirineu365](https://pirineu365.cat/infoneu-pirineu365/) (FGC, the Catalan government's railways): every lift and slope with its state, snow min/max |
+| Baqueira Beret | [baqueira.es](https://www.baqueira.es/es/estado-de-la-estacion), which refuses automated clients: listed as "no report" with its size for now |
+| Formigal-Panticosa, Sierra Nevada | Their Intermaps slope map; Formigal is open only with a lift running |
+| Valdezcaray, Manzaneda, Valgrande-Pajares, Fuentes de Invierno | The resorts' own snow report pages |
+| Astún-Candanchú, Cerler, Javalambre, Valdelinares, Masella, Puerto de Navacerrada, Valdesquí, Alto Campoo, Leitariegos, La Covatilla, San Isidro, Tavascán | No status read yet: listed as "no report", with the operator's size where it publishes one. ATUDEM, the resorts' association, has a national report, but its terms require written permission for any use, so it isn't read |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk (TMR); Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko, Słotwiny Arena, Słotwiny, Nosal, Grapa (Czarna Góra), Beskid Sport Arena; Hauser Kaibling, Ramsau am Dachstein, Füssener Jöchle, Birkenlift & Geigenbühel (Seefeld) | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists (for the small neighbours of covered areas also OnTheSnow and skiresort.com) ([TMR slope tables](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk), the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
@@ -103,7 +108,7 @@ covered yet in Germany: a live status for the 83 areas outside the Sauerland wit
 slope map (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
 Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf
 and single-lift areas; the German uplands have no avalanche service. Not covered yet in Czechia:
-Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Each
+Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 12 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Each
 file's `sources` lists the URLs used for that report.
 
 ### Areas

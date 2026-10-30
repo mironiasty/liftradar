@@ -66,7 +66,7 @@
     resort fills in a daily block, or from the resort's own page or slope map where it shows a live status. Not covered
     yet in Finland: Levi's own lift list (its ski.fi block is used), Paljakka, Koli and the smaller hills. German
     resorts in the Sauerland come from the lift overview of the Wintersport-Arena Sauerland, the lift operators'
-    association, and the bigger Bavarian and Saxon areas from their slope maps. Norwegian resorts come from Fnugg, the service of the resorts' association, where each resort enters its report; areas that aren't on Fnugg (Tryvann, Kongsberg, Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia) are listed with their size only. Not covered yet in Germany: a live
+    association, and the bigger Bavarian and Saxon areas from their slope maps. Spanish resorts come from each operator: Pirineu365 (FGC) for its six Catalan stations, the slope maps of Formigal-Panticosa and Sierra Nevada, and the report pages of Valdezcaray, Manzaneda, Valgrande-Pajares and Fuentes de Invierno. Baqueira Beret refuses automated clients and the other 12 areas aren't read yet, so they're listed with &ldquo;no report&rdquo;; ATUDEM, the resorts' association, has a national report, but its terms require written permission for any use. Norwegian resorts come from Fnugg, the service of the resorts' association, where each resort enters its report; areas that aren't on Fnugg (Tryvann, Kongsberg, Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia) are listed with their size only. Not covered yet in Germany: a live
     status for the other 83 areas (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia),
     which are listed with &ldquo;no report&rdquo; for now; Outdooractive, where many of them enter their snow report,
     allows private use only. Nor St. Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe,
@@ -101,6 +101,7 @@
       show everything closed overnight, so they can read closed in the morning and open at midday. Alpe d'Huez (ATEN
       Altitude) follows the same rules; in October 2026 its page still showed a chairlift and two slopes as open, so it
       reads open until its season data replaces them.</li>
+    <li>Spanish resorts: open when a slope is. Pirineu365's reports list no slopes outside the winter, which reads &ldquo;no report yet&rdquo; with the area's size, and Sierra Nevada's map before the season likewise. Formigal-Panticosa also needs a lift running (its map showed a slope open in October 2026 with every lift closed). None of these sources has a report time.</li>
     <li>Norwegian resorts: Fnugg lists every lift and slope with its state. Open when a slope is, while Fnugg flags the resort open, or its report is at most 14 days old and a lift runs (lifts and slopes can show last season's state until then). Otherwise &ldquo;no report yet&rdquo; with the area's size. Lift types are read from the lift's name, so many are <code>other</code>.</li>
     <li>Finnish resorts: from the resort's own counters, slope list or slope map where it has one (Ylläs, Ruka, Tahko,
       Himos, Salla, Ukkohalla, Iso-Syöte, Vuokatti, Laajis, Messilä, Ounasvaara, Riihivuori, Suomutunturi, Kasurila),
@@ -158,6 +159,7 @@
       (SLF)&rdquo;: an automatic station on the mountain (about 2000–2900 m) and an observer's study plot near the
       village (read each morning, mostly from November). They're measured on open ground, not on pistes, and the station
       can be a few km from the ski area.</li>
+    <li>Spanish resorts: the lowest and highest depth the resort reports (<code>valley_cm</code> / <code>mountain_cm</code>). Formigal-Panticosa and Sierra Nevada have no depth.</li>
     <li>Norwegian resorts: the depth on the slopes that the resort enters on Fnugg, at the top (<code>mountain_cm</code>) and, where it reports one, the bottom (<code>valley_cm</code>), and the new snow of the day. Fnugg's weather isn't used.</li>
     <li>Finnish resorts: the depth at the nearest weather station of the Finnish Meteorological Institute that measures
       snow (within 40 km), as <code>valley_cm</code> and a station &ldquo;&lt;name&gt; (FMI)&rdquo;: natural snow on
@@ -202,6 +204,7 @@
   </ul>
 
   <h2 id="lift-types-and-slope-difficulties">Lift types and slope difficulties</h2>
+  <p>Spanish resorts: green and blue slopes are <code>easy</code>, red <code>intermediate</code>, black and double black <code>difficult</code>, Baqueira's itineraries <code>ski_route</code>; Valdezcaray publishes no colours (<code>other</code>).</p>
   <p><code>lifts_by_type</code> and <code>slopes_by_difficulty</code> are only set for resorts with their own slope map
     (the bigger areas), for Swiss resorts (from infosnow), for Czech resorts (from Kudy z nudy), for French resorts (from
     Lumiplan), for the Polish ones (PKL, Zieleniec) and for the Finnish resorts that list their lifts and slopes
@@ -242,7 +245,7 @@
       point in the ski area, since the villages lie below the warning regions). Salzburg and the other Austrian states
       have no machine-readable bulletin, so <code>avalanche</code> is <code>null</code> for all resorts there (including
       Lech Zürs and Warth-Schröcken in Vorarlberg), and the Snow Card ones in Salzburg (Hochkrimml, Königsleiten,
-      Mittersill, Wildkogel). Norwegian resorts in a region rated by NVE (Varsom) have its danger; 70 resorts are, and the lowland ones (mostly in Østlandet) aren't. Finnish resorts have none: the Finnish Meteorological Institute's forecasts for six fell
+      Mittersill, Wildkogel). Spanish resorts in rated regions have the bulletin of AEMET (Pyrenees of Aragón, Guadarrama, part of the Cantabrian range), the ICGC (Catalan Pyrenees) or the Val d'Aran's Lauegi centre (Baqueira Beret); the others have none. Norwegian resorts in a region rated by NVE (Varsom) have its danger; 70 resorts are, and the lowland ones (mostly in Østlandet) aren't. Finnish resorts have none: the Finnish Meteorological Institute's forecasts for six fell
       areas aren't published in a form we can read.</li>
     <li>Early and late in the season the SLF only rates the alpine regions, so Swiss resorts in the Prealps (and e.g.
       Arosa) can have none while others have a rating.</li>
@@ -256,12 +259,12 @@
   <p><code>location</code> is one point per resort: the Snow Card or infosnow location, a point in the ski area for the
     glacier resorts, or the main village or ski station (looked up on OpenStreetMap) for other Austrian, Italian,
     French, Czech, Slovak and Polish resorts, Andermatt and Engelberg, the fell or hill of Finnish resorts, the
-    ski area or its village for German resorts, and the point Fnugg gives for Norwegian ones. It
+    ski area or its village for German and Spanish resorts, and the point Fnugg gives for Norwegian ones. It
     marks the area on a map, not a lift station.</p>
   <p><code>website</code> is the resort's official website (optional), listed by hand for every resort. It is
     not one of the report's <code>sources</code>; the resort page links to it between the map and the data sources.</p>
   <p><code>region</code> is the state, canton, Italian region, Czech kraj, Polish voivodeship, French département,
-    Finnish region (maakunta), German Land or Norwegian county (fylke) that point lies in (e.g. Tirol, Valais, Valle d'Aosta, Liberecký kraj, Žilinský kraj,
+    Finnish region (maakunta), German Land, Norwegian county (fylke) or Spanish autonomous community that point lies in (e.g. Tirol, Valais, Valle d'Aosta, Liberecký kraj, Žilinský kraj,
     Małopolskie, Savoie, Lappi, Bayern;
     Trentino-Alto Adige by province: Südtirol, Trentino), looked up on OpenStreetMap; the table filters by it and by
     country. An area spanning a border is listed under one of them (Katschberg under Kärnten, Glacier 3000 under
