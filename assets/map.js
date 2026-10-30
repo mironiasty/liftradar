@@ -8,6 +8,9 @@ const STATUS = {
   closed: { label: "closed", color: "--closed" },
   no_report: { label: "no report", color: "--none" },
 };
+// Leaflet stacks markers by latitude: this lifts open resorts above all others,
+// and a hovered marker above those.
+const OPEN_ON_TOP = 1e6;
 // Values a marker can show: open or total, or a single value. Open counts are
 // only shown for open resorts: closed ones are 0, and resorts without a recent
 // report have no open counts.
@@ -128,7 +131,12 @@ function show([index, areas]) {
         .bindPopup(() => popup(r, status))
         .addTo(layers[status]);
     }
-    const marker = L.marker([r.location.lat, r.location.lon], { title: r.name, riseOnHover: true })
+    const marker = L.marker([r.location.lat, r.location.lon], {
+      title: r.name,
+      zIndexOffset: status === "open" ? OPEN_ON_TOP : 0,
+      riseOnHover: true,
+      riseOffset: 2 * OPEN_ON_TOP,
+    })
       .bindPopup(() => popup(r, status))
       .addTo(layers[status]);
     markers.push({ marker, r, status, areaLayer });
