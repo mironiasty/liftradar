@@ -67,3 +67,5 @@ a.brand:focus-visible, .pill:focus-visible { outline: 2px solid var(--accent); o
 .made-by b { color: var(--fg); font-weight: 600; }
 .made-by:hover b { color: var(--accent); }
 .site-footer a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.credit { font-size: 0.8125rem; color: var(--muted); margin-top: 4px; }

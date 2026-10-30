@@ -90,6 +90,7 @@ function popup(r, status) {
     el("div", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
   );
   if (values.length) content.append(el("div", { class: "values" }, ...values));
+  content.append(fnuggCredit(r));
   const foot = el("div", { class: "foot" });
   const { checked, changed, stale } = reportTimes(r);
   const short = (iso) => viennaTime(iso, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });

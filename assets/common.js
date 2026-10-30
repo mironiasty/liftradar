@@ -52,7 +52,13 @@ function reportTimes(r) {
   return { checked, changed, days, stale };
 }
 
-const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland", de: "Germany" };
+const COUNTRY_NAMES = { at: "Austria", ch: "Switzerland", it: "Italy", fr: "France", cz: "Czechia", sk: "Slovakia", pl: "Poland", fi: "Finland", de: "Germany", no: "Norway" };
+
+// Fnugg's terms: a visible credit next to its data, linking to the resort's page there.
+function fnuggCredit(r) {
+  const page = r.country === "no" && r.sources.find((source) => source.startsWith("https://fnugg.no/"));
+  return page ? el("div", { class: "credit" }, "Snow and lift data provided by ", el("a", { href: page }, "fnugg")) : "";
+}
 const countryName = (code) => COUNTRY_NAMES[code] ?? code.toUpperCase();
 
 function updatedText(index) {

@@ -1,6 +1,6 @@
 # liftradar
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland and Finland, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland and Norway, published at
 [liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
@@ -71,6 +71,8 @@ Keep it up to date with the fetcher. The format is defined by the JSON Schema in
 | Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze, Hohenbogen | Their Intermaps slope map (lifts and slopes); Winterberg's replaces the Wintersport-Arena's counts, the others have only their map (no snow depth) |
 | Other German resorts (83) | No source yet: listed as "no report", without a size. Outdooractive, where many of them enter their report, isn't used: its terms allow private use only |
 | Snow depth of Finnish resorts | Nearest [FMI](https://en.ilmatieteenlaitos.fi/open-data) weather station measuring snow depth (Finnish Meteorological Institute, CC BY 4.0), as the valley depth |
+| Norwegian resorts | [Fnugg](https://fnugg.no) (the Norwegian ski resorts' association, Norske Alpinanlegg og Fjelldestinasjoner): every lift and slope with its state, and the report each resort enters (snow depth, new snow, conditions). No slope lengths; km from skiresort.com. Fnugg's weather (from Yr) isn't used. Its terms ask for a credit and link next to the data, which the resort pages, map and table show |
+| Tryvann, Kongsberg, Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia | Not on Fnugg: listed as "no report", with their size from skiresort.com |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk (TMR); Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko, Słotwiny Arena, Słotwiny, Nosal, Grapa (Czarna Góra), Beskid Sport Arena; Hauser Kaibling, Ramsau am Dachstein, Füssener Jöchle, Birkenlift & Geigenbühel (Seefeld) | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists (for the small neighbours of covered areas also OnTheSnow and skiresort.com) ([TMR slope tables](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk), the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
@@ -84,6 +86,7 @@ Keep it up to date with the fetcher. The format is defined by the JSON Schema in
 | Avalanche danger, Jasná, Tatranská Lomnica, Štrbské Pleso | [Slovak Avalanche Prevention Centre](https://www.laviny.sk) (HZS), from the same EAWS bulletin files |
 | Avalanche danger, Kasprowy Wierch (Polish Tatras) | [TOPR](https://lawiny.topr.pl) (Tatra Volunteer Rescue), from the same EAWS bulletin files |
 | Avalanche danger, Bavarian Alps | [Lawinenwarndienst Bayern](https://www.lawinenwarndienst.bayern.de) (Bavarian Avalanche Warning Service), from the same EAWS bulletin files |
+| Avalanche danger, Norwegian mountain regions | [NVE](https://www.varsom.no/en/avalanches/avalanche-warnings/) (Varsom, the Norwegian Water Resources and Energy Directorate), from the same EAWS bulletin files |
 | Avalanche danger, French Alps and Pyrenees | [Météo-France](https://meteofrance.com/meteo-montagne) mountain bulletin (by massif), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 | Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
@@ -97,12 +100,12 @@ covered yet in Germany: a live status for the 83 areas outside the Sauerland wit
 slope map (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
 Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf
 and single-lift areas; the German uplands have no avalanche service. Not covered yet in Czechia:
-Jáchymov, Světlý vrch and the areas under 4 km of slopes. Each
+Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Each
 file's `sources` lists the URLs used for that report.
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 436 of the 574
+`assets/areas.geojson` (in this branch, not in the data) has the outline of 531 of the 706
 resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
 village lifts, are only a marker on the map. Each feature has the resort's `id` and the
 `osm` ids it was made from. It isn't updated automatically: run
@@ -124,6 +127,8 @@ uv run --no-project --with shapely python3 scripts/resort_areas.py ../liftradar-
 
 The outlines of 28 October 2026 were made that way (extracts of that day), the first to include the
 French, Finnish and German resorts.
+The Norwegian outlines were added on 30 October 2026 from Overpass, merged into that file (run
+for Norway only, so the others stayed as they were).
 
 An area within 1 km of several resorts is split between them by nearest resort point, so
 their parts are approximate. Wrong matches are fixed by hand in the script's `SHARED` and

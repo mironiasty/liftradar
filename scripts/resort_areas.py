@@ -40,6 +40,7 @@ BBOXES = [
     (47.9, 6.7, 48.2, 7.2),  # the Vosges
     (59.9, 21.0, 68.6, 30.0),  # Finland
     (47.6, 7.5, 51.9, 13.0),  # the German uplands (Black Forest to the Harz and the Ore Mountains)
+    (58.0, 4.9, 70.5, 25.0),  # Norway
 ]
 
 # Areas split between the given resorts (or given to the one), however far their points are.

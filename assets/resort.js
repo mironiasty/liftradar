@@ -90,6 +90,7 @@ function header(r) {
     el("div", { class: "facts" },
       el("span", { class: "status" }, el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }), STATUS_LABELS[status]),
       el("span", {}, meta)),
+    fnuggCredit(r),
     el("p", { class: stale ? "meta stale" : "meta" }, times + unchanged),
     note ? el("p", { class: "meta" }, note) : "",
   );
