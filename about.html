@@ -84,10 +84,10 @@
       report time can move forward without its numbers changing: reporting systems refresh it daily. Slope maps
       (Intermaps) instead keep it until a lift or slope opens or closes, so a resort that opens the same lifts every day
       can show a report time days old although we read it in the latest run.</li>
-    <li>The map and the resort pages show &ldquo;Checked&rdquo; (when we last read the report: <code>fetched_at</code>, or
+    <li>The resort pages show &ldquo;Checked&rdquo; (when we last read the report: <code>fetched_at</code>, or
       <code>status_from</code> when the latest run couldn't read it) and the resort's last change
       (<code>lifts_updated_at</code>). Both are highlighted for an open resort whose report the latest run couldn't read,
-      or whose report time is more than 7 days old.</li>
+      or whose report time is more than 7 days old. The map's popups show only &ldquo;Checked&rdquo;.</li>
     <li>Times are ISO 8601 with the Vienna offset (<code>+01:00</code> / <code>+02:00</code>, the same as Swiss time);
       log file names are UTC.</li>
   </ul>

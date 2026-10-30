@@ -7,6 +7,9 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `history/<country>/<resort>.json` and `schema/…`, published by the fetcher twice a day, plus
   `archive/` and `logs/`, which aren't served by the site. Don't edit it by hand: every publish
   replaces it.
+  - `json/index.json`: all resorts, with only what the table, map and sources pages read; the
+    full report (stations, lift and slope breakdowns, avalanche bulletin, ...) is in
+    `json/<country>/<resort>.json`.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
     (open lifts and slopes, snow, status), one list per value, for the resort page's graphs.
   - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every

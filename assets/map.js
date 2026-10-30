@@ -92,11 +92,9 @@ function popup(r, status) {
   if (values.length) content.append(el("div", { class: "values" }, ...values));
   content.append(fnuggCredit(r));
   const foot = el("div", { class: "foot" });
-  const { checked, changed, stale } = reportTimes(r);
-  const short = (iso) => viennaTime(iso, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
-  const why = r.status_from ? "The latest run couldn't read this report" : "Not changed for over a week: check the resort's own page";
-  foot.append(el("span", stale ? { class: "stale", title: why } : {},
-    `Checked ${short(checked)}`, changed ? ` · resort changed ${short(changed)}` : ""));
+  // fetched_at: an index published before checked_at was added.
+  const checked = r.checked_at ?? r.fetched_at;
+  foot.append(el("span", {}, `Checked ${viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}`));
   foot.append(el("a", { href: resortPage(r) }, "Details and history →"));
   content.append(foot);
   return content;
