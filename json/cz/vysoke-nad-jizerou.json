@@ -10,8 +10,8 @@
   },
   "website": "https://www.skisachty.cz",
   "status": "closed",
-  "fetched_at": "2026-10-30T14:31:06.765898+01:00",
-  "status_from": null,
+  "fetched_at": "2026-10-30T15:08:55.044141+01:00",
+  "status_from": "2026-10-28T21:35:31.427931+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -52,8 +52,8 @@
   },
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://www.kudyznudy.cz/aktivity/ski-areal-sachty"
-  ],
-  "errors": []
+  "sources": [],
+  "errors": [
+    "status: ReadTimeout: "
+  ]
 }
