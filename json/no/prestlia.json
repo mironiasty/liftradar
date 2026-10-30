@@ -1,0 +1,60 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "prestlia",
+  "country": "no",
+  "name": "Prestlia",
+  "region": "Trøndelag",
+  "location": {
+    "lat": 63.8791,
+    "lon": 11.2844
+  },
+  "website": "https://www.prestlia.com/",
+  "status": "no_report",
+  "fetched_at": "2026-10-30T16:15:30.015687+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": null,
+    "total": 3,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-01-31T10:28:09+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/prestlia/"
+  ],
+  "errors": []
+}

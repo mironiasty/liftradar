@@ -1,0 +1,60 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "fefor",
+  "country": "no",
+  "name": "Fefor",
+  "region": "Innlandet",
+  "location": {
+    "lat": 61.5387,
+    "lon": 9.6412
+  },
+  "website": "http://www.facebook.com/FeforSkisenter",
+  "status": "closed",
+  "fetched_at": "2026-10-30T16:15:30.015715+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 1
+  },
+  "slopes": {
+    "open": 0,
+    "total": 7,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-25T11:14:22+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/feforbakken/"
+  ],
+  "errors": []
+}

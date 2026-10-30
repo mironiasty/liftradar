@@ -1,0 +1,67 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "hurdal",
+  "country": "no",
+  "name": "SkiHurdal",
+  "region": "Akershus",
+  "location": {
+    "lat": 60.4636,
+    "lon": 11.0643
+  },
+  "website": "https://www.skihurdal.no/",
+  "status": "no_report",
+  "fetched_at": "2026-10-30T16:15:30.015324+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": 11,
+    "open_km": null,
+    "total_km": 8
+  },
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-03-29T08:18:54+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/hurdal/",
+    "https://www.skiresort.com/en/ski-resort/hurdal/"
+  ],
+  "errors": []
+}

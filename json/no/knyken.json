@@ -1,0 +1,55 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "knyken",
+  "country": "no",
+  "name": "Knyken skisenter",
+  "region": "Trøndelag",
+  "location": {
+    "lat": 63.2626,
+    "lon": 9.7465
+  },
+  "website": "https://knyken.no",
+  "status": "no_report",
+  "fetched_at": "2026-10-30T16:15:30.015492+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": 4,
+    "open_km": null,
+    "total_km": 3
+  },
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-14T22:10:17+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/knyken/",
+    "https://www.skiresort.com/en/ski-resort/knyken/"
+  ],
+  "errors": []
+}

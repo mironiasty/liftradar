@@ -1,0 +1,71 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "sjusjoen",
+  "country": "no",
+  "name": "Sjusjøen Skisenter",
+  "region": "Innlandet",
+  "location": {
+    "lat": 61.1156,
+    "lon": 10.7417
+  },
+  "website": "http://www.sjusjoen-skisenter.no/",
+  "status": "closed",
+  "fetched_at": "2026-10-30T16:15:30.015248+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
+  "slopes": {
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
+    "total_km": 7
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-10-30T04:40:35+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/sjusjoen/",
+    "https://www.skiresort.com/en/ski-resort/sjusjoeen/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "lommedalen",
+  "country": "no",
+  "name": "Lommedalen Skisenter",
+  "region": "Akershus",
+  "location": {
+    "lat": 59.9554,
+    "lon": 10.4813
+  },
+  "website": "http://www.lommedalenskisenter.no",
+  "status": "no_report",
+  "fetched_at": "2026-10-30T16:15:30.015611+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": null,
+    "total": 5,
+    "open_km": null,
+    "total_km": 1
+  },
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-09-29T16:25:24+02:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/lommedalen/",
+    "https://www.skiresort.com/en/ski-resort/lommedalen/"
+  ],
+  "errors": []
+}

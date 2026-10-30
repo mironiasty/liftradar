@@ -1,0 +1,71 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "vassfjellet",
+  "country": "no",
+  "name": "Vassfjellet",
+  "region": "Trøndelag",
+  "location": {
+    "lat": 63.2652,
+    "lon": 10.4021
+  },
+  "website": "https://vassfjellet.no/",
+  "status": "no_report",
+  "fetched_at": "2026-10-30T16:15:30.015020+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
+  "slopes": {
+    "open": null,
+    "total": 12,
+    "open_km": null,
+    "total_km": 15
+  },
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 1,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-03-25T13:30:08+01:00",
+  "avalanche": null,
+  "sources": [
+    "https://api.fnugg.no/search?size=200",
+    "https://fnugg.no/vassfjellet/",
+    "https://www.skiresort.com/en/ski-resort/vassfjellet-klaebu-trondheim/"
+  ],
+  "errors": []
+}
