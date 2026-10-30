@@ -1,7 +1,7 @@
 name: Deploy site
 
 # The site (this branch) and the data (the "data" branch, published by
-# snow-fetcher) are combined and deployed to Cloudflare (the Worker "liftradar").
+# liftradar-fetcher) are combined and deployed to Cloudflare (the Worker "liftradar").
 # Runs when the site changes, and after every data update (dispatched by the data
 # branch's deploy.yml).
 on:

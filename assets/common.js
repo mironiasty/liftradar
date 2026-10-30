@@ -1,5 +1,5 @@
 // Shared by the table and the map: loading the data and formatting values.
-// The data is published by snow-fetcher (json/, history/, schema/; also archive/ and logs/, not served).
+// The data is published by liftradar-fetcher (json/, history/, schema/; also archive/ and logs/, not served).
 
 const INDEX_URL = "json/index.json";
 const AREAS_URL = "assets/areas.geojson";
@@ -10,7 +10,7 @@ async function loadIndex() {
   return response.json();
 }
 
-// Same path layout as snow-fetcher's models.resort_path() and history_path().
+// Same path layout as liftradar-fetcher's models.resort_path() and history_path().
 const resortPath = (r) => `json/${r.country}/${r.id}.json`;
 const historyPath = (r) => `history/${r.country}/${r.id}.json`;
 // The resort's page (resort.html), e.g. resort.html?r=at/soelden.

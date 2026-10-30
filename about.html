@@ -132,7 +132,7 @@
       the resort keeps the status, lifts and slopes of the last run that could, and <code>status_from</code> gives that
       run's time (it's <code>null</code> when the report was read this time). After 2 days without a report it turns
       &ldquo;no report&rdquo;, with only the area's size kept. What failed is in each run's log, kept for 30 days in
-      <code>logs/</code> on the <a href="https://github.com/mironiasty/snow-conditions/tree/data/logs">data branch</a>.
+      <code>logs/</code> on the <a href="https://github.com/mironiasty/liftradar/tree/data/logs">data branch</a>.
       Reports still list it in <code>errors</code>, which the site doesn't show; that field is deprecated (optional in
       the schema) and will be removed.</li>
     <li>A <b>closed</b> resort always shows 0 open lifts, slopes and km (outside the season some resorts count lifts
@@ -278,7 +278,7 @@
       every run over the last 365 days (status, open and total lifts and slopes, open km, snow on the mountain and in
       the valley, fresh snow), one list per value with an entry per run, <code>null</code> where that run's report had
       no value.</li>
-    <li>Every run's full report is kept in the <a href="https://github.com/mironiasty/snow-conditions/tree/data/archive">archive
+    <li>Every run's full report is kept in the <a href="https://github.com/mironiasty/liftradar/tree/data/archive">archive
       on GitHub</a> (not on this site): <code>archive/&lt;country&gt;/&lt;resort&gt;/&lt;season&gt;.jsonl</code>, a season
       from 1 July, one JSON object per line, with the report only when it changed (apart from <code>fetched_at</code>).
       Reports keep the format of their time, so older ones may lack newer fields.</li>

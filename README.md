@@ -1,4 +1,4 @@
-# snow-conditions
+# liftradar
 
 Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland and Finland, published at
 [liftradar.eu](https://liftradar.eu).
@@ -109,7 +109,7 @@ village lifts, are only a marker on the map. Each feature has the resort's `id` 
 `scripts/resort_areas.py` now and then (e.g. after adding resorts) and check the map:
 
 ```sh
-uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-conditions-data/json/index.json assets/areas.geojson
+uv run --no-project --with shapely python3 scripts/resort_areas.py ../liftradar-data/json/index.json assets/areas.geojson
 ```
 
 The script queries Overpass. When Overpass is down or at capacity (it was from 26 to 28 October
@@ -119,7 +119,7 @@ result as a third argument:
 
 ```sh
 uv run --no-project --with osmium python3 scripts/osm_ski_areas.py elements.json extracts/*.osm.pbf
-uv run --no-project --with shapely python3 scripts/resort_areas.py ../snow-conditions-data/json/index.json assets/areas.geojson elements.json
+uv run --no-project --with shapely python3 scripts/resort_areas.py ../liftradar-data/json/index.json assets/areas.geojson elements.json
 ```
 
 The outlines of 28 October 2026 were made that way (extracts of that day), the first to include the
@@ -134,8 +134,8 @@ their parts are approximate. Wrong matches are fixed by hand in the script's `SH
 Put the data next to the pages and serve the folder:
 
 ```sh
-git worktree add ../snow-conditions-data data   # once
-for part in json history schema; do ln -sfn ../snow-conditions-data/$part .; done
+git worktree add ../liftradar-data data   # once
+for part in json history schema; do ln -sfn ../liftradar-data/$part .; done
 python3 -m http.server 8000                     # http://localhost:8000
 ```
 
