@@ -10,8 +10,8 @@
   },
   "website": "https://monterosaski.eu",
   "status": "closed",
-  "fetched_at": "2026-10-30T16:40:48.862666+01:00",
-  "status_from": null,
+  "fetched_at": "2026-10-30T18:46:54.122282+01:00",
+  "status_from": "2026-10-30T14:31:06.765507+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -71,8 +71,9 @@
   "lifts_updated_at": "2026-10-30T08:00:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://lovevda.it/it/sport/sci-discesa/champorcher"
   ],
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

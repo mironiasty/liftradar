@@ -10,8 +10,8 @@
   },
   "website": "https://www.cervinia.it",
   "status": "closed",
-  "fetched_at": "2026-10-30T16:40:48.862612+01:00",
-  "status_from": null,
+  "fetched_at": "2026-10-30T18:46:54.122228+01:00",
+  "status_from": "2026-10-30T16:40:48.862612+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -75,8 +75,9 @@
   "lifts_updated_at": "2026-10-30T03:29:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/breuil-cervinia/comprensorio-di-breuil-cervinia-valtournenche-zermatt/2612"
   ],
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }
