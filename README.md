@@ -35,7 +35,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
-`.github/workflows/pages.yml` combines both and deploys to the Cloudflare Worker `liftradar`
+`.github/workflows/pages.yml` combines both, minifies `assets/*.js` and `*.css` with esbuild, and deploys to the Cloudflare Worker `liftradar`
 (static assets only, `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
