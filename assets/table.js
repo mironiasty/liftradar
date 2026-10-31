@@ -3,6 +3,7 @@
 
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
+const searchClear = document.getElementById("search-clear");
 const countryGroup = document.getElementById("country");
 const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
@@ -14,6 +15,8 @@ let key = "name", ascending = true;
 let country = "";
 // Statuses chosen with the chips; none chosen shows every resort.
 const shownStatuses = new Set();
+// Each status chip's count element, by status.
+const statusCounts = new Map();
 // The filters and order are kept in the address (?q=&country=&region=&status=open,closed&sort=-lifts_open),
 // so going back to the list keeps them; resort.js's "All resorts" link reuses the last one (LIST_KEY).
 const saved = new URLSearchParams(location.search);
@@ -114,12 +117,17 @@ function filter() {
   const query = fold(search.value.trim());
   const region = regionSelect.value;
   let shown = 0;
+  // A chip counts the resorts the other filters leave, whichever statuses are chosen.
+  const totals = {};
   for (const tr of rows) {
     const v = values.get(tr);
-    tr.hidden = !v.name.includes(query) || (country && v.country !== country) || (region && v.regionName !== region)
-      || (shownStatuses.size && !shownStatuses.has(v.status));
+    const matches = v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
+    if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
+    tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
     if (!tr.hidden) shown++;
   }
+  for (const [status, node] of statusCounts) node.textContent = String(totals[status] ?? 0);
+  searchClear.hidden = !search.value;
   const filtered = query || country || region || shownStatuses.size;
   count.textContent = filtered ? `${shown} of ${rows.length} resorts` : `${rows.length} resorts`;
   empty.hidden = shown > 0;
@@ -174,8 +182,7 @@ function fillFilters(resorts) {
   regionSelect.addEventListener("change", filter);
 
   for (const [status, { label, color }] of Object.entries(STATUS)) {
-    const total = resorts.filter((r) => statusOf(r) === status).length;
-    if (!total) continue;
+    if (!resorts.some((r) => statusOf(r) === status)) continue;
     const chip = button("chip", "", () => {
       shownStatuses.has(status) ? shownStatuses.delete(status) : shownStatuses.add(status);
       chip.setAttribute("aria-pressed", shownStatuses.has(status));
@@ -183,7 +190,9 @@ function fillFilters(resorts) {
     });
     if (savedStatuses.includes(status)) shownStatuses.add(status);
     chip.setAttribute("aria-pressed", shownStatuses.has(status));
-    chip.append(el("span", { class: "dot", style: `--c:${color}` }), label, el("span", { class: "count" }, String(total)));
+    const total = el("span", { class: "count" });
+    statusCounts.set(status, total);
+    chip.append(el("span", { class: "dot", style: `--c:${color}` }), label, total);
     statusGroup.append(chip);
   }
 
@@ -245,6 +254,11 @@ for (const button of document.querySelectorAll("th button")) {
   });
 }
 search.addEventListener("input", filter);
+searchClear.addEventListener("click", () => {
+  search.value = "";
+  filter();
+  search.focus();
+});
 
 // The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
 // resort as a dot in its status colour; the tile links to map.html.
