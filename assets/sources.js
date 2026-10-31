@@ -19,11 +19,15 @@ function show(index) {
   const container = document.getElementById("urls");
   const hosts = [...byHost.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
   for (const [host, urls] of hosts) {
-    const list = el("ul", { class: "urls" }, ...urls.map((url) => {
-      const names = resortsByUrl.get(url);
-      const used = names.length === 1 ? names[0] : `${names.length} resorts`;
-      return el("li", {}, el("a", { href: url, rel: "nofollow" }, url), el("span", { class: "muted" }, ` (${used})`));
-    }));
+    const list = el(
+      "ul",
+      { class: "urls" },
+      ...urls.map((url) => {
+        const names = resortsByUrl.get(url);
+        const used = names.length === 1 ? names[0] : `${names.length} resorts`;
+        return el("li", {}, el("a", { href: url, rel: "nofollow" }, url), el("span", { class: "muted" }, ` (${used})`));
+      }),
+    );
     container.append(el("h3", {}, host, el("span", { class: "muted" }, ` (${urls.length})`)), list);
   }
   document.getElementById("status").textContent =
