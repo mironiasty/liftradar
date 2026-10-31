@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="assets/style.css">
 <style>
-  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 40px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 40px; }
   /* Resort name and what's known about the report, under a link back to the list. */
   .resort-head { display: grid; gap: 8px; margin-top: 20px; }
   .back { justify-self: start; margin-bottom: 6px; }
@@ -114,6 +114,14 @@
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
       Map
     </a>
+    <a class="pill" href="stats.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
+      Stats
+    </a>
+    <a class="pill" href="about.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      About the data
+    </a>
     </nav>
   </header>
   <div id="page"><p class="muted">Loading…</p></div>
@@ -121,10 +129,10 @@
     <nav>
       <a href="sources.html">Data sources</a>
       <a href="about.html">About the data</a>
-      <a href="mailto:trail.jewel8860@eagereverest.com">Contact</a>
+      <span>Contact: miron [at] liftradar.eu</span>
     </nav>
-    <a class="made-by" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span>Made by <b>Miron Pawlik</b></span></a>
+    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+      <span>Made by <b>Miron</b></span></span>
   </footer>
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>

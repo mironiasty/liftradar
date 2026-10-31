@@ -3,13 +3,15 @@
 Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway and Spain, published at
 [liftradar.eu](https://liftradar.eu).
 
-- **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`,
+- **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`, `json/stats.json`,
   `history/<country>/<resort>.json` and `schema/…`, published by the fetcher twice a day, plus
   `archive/` and `logs/`, which aren't served by the site. Don't edit it by hand: every publish
   replaces it.
   - `json/index.json`: all resorts, with only what the table, map and sources pages read; the
     full report (stations, lift and slope breakdowns, avalanche bulletin, ...) is in
     `json/<country>/<resort>.json`.
+  - `json/stats.json`: daily totals per country and region over the last 365 days (resorts
+    tracked and open; open lifts, slopes and km, of open resorts only), for `stats.html`.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
     (open lifts and slopes, snow, status), one list per value, for the resort page's graphs.
   - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every
@@ -25,7 +27,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
   its history), `sources.html` (data sources, incl. every URL in the
-  current data) and `about.html` (how the values are computed, and their caveats), plain
+  current data) and `about.html` (what the values mean, and their caveats), plain
   static pages that load the JSON in the browser. No build step.
   `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
   `assets/mini-map-light.webp`, `mini-map-dark.webp` and `mini-map.svg` are the shaded relief
@@ -41,11 +43,11 @@ also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin re
 
 ## About the data
 
-How every value is computed, what `null` and 0 mean, and the caveats (timing, status, snow,
-lifts and slopes, lift types and slope difficulties, avalanche danger, locations, map areas,
-archive) are on the site: [About the data](https://liftradar.eu/about.html) (`about.html`).
-Keep it up to date with the fetcher. The format is defined by the JSON Schema in `schema/`
-(`resort.schema.json`, `index.schema.json`, `history.schema.json`).
+What readers need to know (timing, status, snow, lifts and slopes, avalanche danger, the map,
+history, and a section for developers) is on the site: [About the data](https://liftradar.eu/about.html)
+(`about.html`). It keeps to what matters to a reader: how each value is computed per source is in
+`../liftradar-fetcher/README.md`, "Data details". Keep both up to date with the fetcher. The format is defined by the JSON Schema in `schema/`
+(`resort.schema.json`, `index.schema.json`, `history.schema.json`, `stats.schema.json`).
 
 ### Sources
 

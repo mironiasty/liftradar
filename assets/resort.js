@@ -188,7 +188,7 @@ function data(r) {
       el("a", { href: "https://trmnl.com/recipes/ski-resort-snow-report-219253" }, "TRMNL plugin"), ": paste it as its Resort."),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, "Open")));
   section.append(el("div", { class: "meta", style: "margin-top:12px" }, "Sources"),
-    el("ul", { class: "sources" }, ...r.sources.map((source) => el("li", {}, el("a", { href: source }, source)))));
+    el("ul", { class: "sources" }, ...r.sources.map((source) => el("li", {}, el("a", { href: source, rel: "nofollow" }, source)))));
   return section;
 }
 

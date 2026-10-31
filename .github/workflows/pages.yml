@@ -33,7 +33,7 @@ jobs:
       - name: Combine site and data
         run: |
           mkdir _site
-          cp -R site/index.html site/about.html site/map.html site/resort.html site/sources.html site/404.html site/_headers site/assets _site/
+          cp -R site/index.html site/about.html site/map.html site/resort.html site/sources.html site/stats.html site/404.html site/_headers site/assets _site/
           for part in json history schema; do cp -R "data/$part" _site/; done
 
       # Without a version in the URL, a new page can run with the previous version's

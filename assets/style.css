@@ -23,7 +23,7 @@ code { font-size: .9em; }
 .brand { display: flex; align-items: center; gap: 11px; margin: 0; color: var(--fg); text-decoration: none; }
 .brand svg { flex: none; }
 .brand .name { display: grid; gap: 4px; }
-.brand b { font-size: 1.6rem; line-height: 1; letter-spacing: -.015em; }
+.brand b { font-size: 1.6rem; font-weight: 700; line-height: 1; letter-spacing: -.015em; }
 .brand small { font-size: .7rem; line-height: 1; font-weight: 500; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
 .brand.compact { gap: 9px; }
 .brand.compact .name { gap: 3px; }
@@ -34,9 +34,30 @@ code { font-size: .9em; }
 .pill svg { flex: none; color: var(--accent); }
 .pill:hover { border-color: var(--accent); color: var(--accent); }
 a.brand:focus-visible, .pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-/* The bar at the top of the sources and resort pages. */
-.site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 8px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
-.site-header nav { display: flex; gap: 8px; margin-left: auto; }
+/* The bar at the top of every page, as wide as the table page's content (1100px) even where the page's own text
+   column is narrower. */
+.site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 8px; padding-bottom: 14px; border-bottom: 1px solid var(--line);
+  margin-inline: calc(50% - min(550px, 50vw - 16px)); }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+/* Phones: one row on every page, with smaller links, and only their icons where labels don't fit.
+   The text stays for screen readers. */
+@media (max-width: 720px) {
+  .site-header { flex-wrap: nowrap; justify-content: space-between; padding-bottom: 10px; }
+  .site-header nav { flex: none; flex-wrap: nowrap; gap: 4px; }
+  .site-header .pill { height: 28px; gap: 4px; padding: 0 8px 0 6px; font-size: .78rem; }
+  .site-header .pill svg { width: 14px; height: 14px; }
+  .site-header .brand { gap: 7px; }
+  .site-header .brand svg { width: 28px; height: 28px; }
+  .site-header .brand b { font-size: 1.05rem; }
+  .site-header .brand small { font-size: .55rem; white-space: nowrap; }
+}
+@media (max-width: 560px) {
+  .site-header .pill { justify-content: center; width: 32px; height: 32px; padding: 0; gap: 0; font-size: 0; }
+  .site-header .pill svg { width: 16px; height: 16px; }
+}
+@media (max-width: 340px) {
+  .site-header .brand small { display: none; }
+}
 
 /* Leaflet's popups, tooltips and controls (map and resort pages) in the page's colours, so they follow dark mode. */
 .leaflet-popup-content-wrapper, .leaflet-popup-tip, .leaflet-tooltip { background: var(--bg); color: var(--fg);
@@ -56,16 +77,15 @@ a.brand:focus-visible, .pill:focus-visible { outline: 2px solid var(--accent); o
 .leaflet-container .leaflet-control-attribution { background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--muted); }
 .leaflet-container .leaflet-control-attribution a { color: var(--accent); }
 
-/* The footer of every page but the map: links, and who made the site. */
+/* The footer of every page but the map: links, contact, and who made the site. */
 .site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;
   margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
 .site-footer nav a { color: var(--muted); text-decoration: none; }
 .site-footer nav a:hover { color: var(--accent); text-decoration: underline; }
-.made-by { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; }
+.made-by { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
 .made-by img { flex: none; border-radius: 50%; background: var(--chip); }
 .made-by b { color: var(--fg); font-weight: 600; }
-.made-by:hover b { color: var(--accent); }
 .site-footer a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .credit { font-size: 0.8125rem; color: var(--muted); margin-top: 4px; }

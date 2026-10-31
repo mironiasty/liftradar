@@ -1,6 +1,6 @@
-// stats.html (prototype): totals per day for the resorts the country and region filters leave.
-// Reads json/index.json and every resort's history/<country>/<id>.json, so it makes one request per
-// resort; a real page would want a daily summary published by liftradar-fetcher instead.
+// stats.html (prototype): totals per day for the country and region the filters choose, from
+// json/stats.json (daily totals per region, published by liftradar-fetcher), and the latest open
+// lifts per resort from json/index.json.
 //
 // A day is each resort's last run of that day. Lifts, slopes and km count open resorts only,
 // as the table's meters do; a few closed resorts still report an old lift count.
@@ -12,19 +12,19 @@ const METRICS = [
   { key: "km", title: "Open slopes", unit: " km" },
   { key: "tracked", title: "Resorts tracked" },
 ];
-const FETCH_AT_ONCE = 24;
+const STATS_URL = "json/stats.json";
 const TOP_BARS = 8;
 
 const countryGroup = document.getElementById("country");
 const regionSelect = document.getElementById("region");
 const charts = document.getElementById("charts");
 const count = document.getElementById("count");
-const notice = document.getElementById("notice");
 const barsCard = el("section", { class: "card" });
 const tableBody = document.querySelector("#daily tbody");
 
 const saved = new URLSearchParams(location.search);
 let resorts = [];
+let stats;
 let country = "";
 const number = new Intl.NumberFormat("en", { maximumFractionDigits: 1 });
 const shortDay = (day) => new Date(`${day}T12:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
@@ -34,56 +34,24 @@ const svgEl = (tag, attributes = {}) => {
   return node;
 };
 
-// Each resort's last run of every day, by the Vienna date the time is written in.
-function dailyRuns({ runs }) {
-  const days = new Map();
-  runs.time.forEach((time, i) => {
-    days.set(time.slice(0, 10), {
-      open: runs.status[i] === "open",
-      lifts: runs.lifts_open[i] ?? 0,
-      slopes: runs.slopes_open[i] ?? 0,
-      km: runs.slopes_open_km[i] ?? 0,
-    });
-  });
-  return days;
+async function loadStats() {
+  const response = await fetch(STATS_URL, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`${STATS_URL}: HTTP ${response.status}`);
+  return response.json();
 }
 
-async function loadHistories(list) {
-  let next = 0, done = 0, failed = 0;
-  const worker = async () => {
-    while (next < list.length) {
-      const r = list[next++];
-      try {
-        const response = await fetch(historyPath(r));
-        if (!response.ok) throw new Error(response.status);
-        r.days = dailyRuns(await response.json());
-      } catch {
-        failed++;
-      }
-      count.textContent = `Loading ${++done} of ${list.length}…`;
-    }
-  };
-  await Promise.all(Array.from({ length: FETCH_AT_ONCE }, worker));
-  return failed;
-}
-
-const inScope = (region) => resorts.filter((r) => r.days && (!country || r.country === country) && (!region || r.region === region));
-
-function totals(scope) {
-  const days = new Map();
-  for (const r of scope) {
-    for (const [day, run] of r.days) {
-      if (!days.has(day)) days.set(day, { day, tracked: 0, open: 0, lifts: 0, slopes: 0, km: 0 });
-      const total = days.get(day);
-      total.tracked++;
-      if (!run.open) continue;
-      total.open++;
-      total.lifts += run.lifts;
-      total.slopes += run.slopes;
-      total.km += run.km;
-    }
-  }
-  return [...days.values()].sort((a, b) => a.day.localeCompare(b.day));
+// The days any resort in the chosen country and region was tracked, with their totals.
+function totals(region) {
+  const rows = stats.regions.filter((r) => (!country || r.country === country) && (!region || r.region === region));
+  const sum = (key, i) => rows.reduce((total, row) => total + row[key][i], 0);
+  return stats.days.map((day, i) => ({
+    day,
+    tracked: sum("tracked", i),
+    open: sum("open", i),
+    lifts: sum("lifts_open", i),
+    slopes: sum("slopes_open", i),
+    km: sum("slopes_open_km", i),
+  })).filter((d) => d.tracked);
 }
 
 // A round axis top and step, about three gridlines; counts never step below 1.
@@ -180,14 +148,13 @@ function card(days, metric) {
   return { node, draw: () => lineChart(plot, days, metric) };
 }
 
-// Open lifts on the latest day, largest first: per country, per region inside a country, per resort inside a region.
+// Open lifts now, largest first: per country, per region inside a country, per resort inside a region.
 function bars(scope, latestDay, region) {
   const [noun, group] = region ? ["resort", (r) => r.name]
     : country ? ["region", (r) => r.region ?? "No region"] : ["country", (r) => countryName(r.country)];
   const sums = new Map();
   for (const r of scope) {
-    const run = r.days.get(latestDay);
-    if (run?.open) sums.set(group(r), (sums.get(group(r)) ?? 0) + run.lifts);
+    if (r.status === "open") sums.set(group(r), (sums.get(group(r)) ?? 0) + (r.lifts?.open ?? 0));
   }
   const ranked = [...sums].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   const shown = ranked.slice(0, TOP_BARS);
@@ -209,8 +176,8 @@ function table(days) {
 
 function render() {
   const region = regionSelect.value;
-  const scope = inScope(region);
-  const days = totals(scope);
+  const scope = resorts.filter((r) => (!country || r.country === country) && (!region || r.region === region));
+  const days = totals(region);
   const params = new URLSearchParams();
   if (country) params.set("country", country);
   if (region) params.set("region", region);
@@ -259,8 +226,7 @@ loadIndex()
   .then(async (index) => {
     document.getElementById("updated").textContent = updatedText(index);
     resorts = index.resorts;
-    const failed = await loadHistories(resorts);
-    if (failed) notice.textContent = `The history of ${failed} resorts could not be loaded: they are left out.`;
+    stats = await loadStats();
     fillFilters();
     // Redraws when the page's width changes, not when redrawing changes its height.
     let width = charts.clientWidth;

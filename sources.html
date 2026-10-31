@@ -12,10 +12,13 @@
   h2 { font-size: 1.1rem; margin: 28px 0 6px; }
   dt { font-weight: 600; margin-top: 12px; }
   dd { margin: 2px 0 0; }
+  /* The source's website, written out next to its name. */
+  a.site { margin-left: 6px; font-size: .85rem; font-weight: 400; white-space: nowrap; }
+  a.site::after { content: " \2197"; }
   ul.urls { padding-left: 20px; margin: 4px 0 0; word-break: break-all; }
   ul.urls li { margin: 2px 0; }
-  details { margin: 8px 0; }
-  summary { cursor: pointer; }
+  h3 { margin: 16px 0 0; font-size: 1rem; }
+  h3 .muted { font-weight: 400; }
 </style>
 </head>
 <body>
@@ -40,64 +43,71 @@
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
       Map
     </a>
+    <a class="pill" href="stats.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
+      Stats
+    </a>
+    <a class="pill" href="about.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      About the data
+    </a>
     </nav>
   </header>
   <h1>Data sources</h1>
 
   <h2>Snow and resort status</h2>
   <dl>
-    <dt><a href="https://www.snowcard.tirol.at/skigebiete">Tirol Snow Card</a></dt>
+    <dt>Tirol Snow Card <a class="site" href="https://www.snowcard.tirol.at/skigebiete">snowcard.tirol.at</a></dt>
     <dd>Daily reports of the Tirol resorts (snow depth, lifts, slopes, open/closed), as the resorts submit them
       to iSKI.</dd>
-    <dt><a href="https://www.salzburgerland.com/de/schneebericht/">SalzburgerLand snow report</a></dt>
+    <dt>SalzburgerLand snow report <a class="site" href="https://www.salzburgerland.com/de/schneebericht/">salzburgerland.com</a></dt>
     <dd>The same kind of report for the Salzburg resorts, from the regional tourism board (also Planai,
       Dachstein Gletscher and Feuerkogel).</dd>
-    <dt><a href="https://www.kaernten.at/golf/service/wetter/schneeberichte">Kärnten snow report</a></dt>
+    <dt>Kärnten snow report <a class="site" href="https://www.kaernten.at/golf/service/wetter/schneeberichte">kaernten.at</a></dt>
     <dd>The same kind of report for the Carinthian resorts, from Kärnten Werbung, the regional tourism board.</dd>
     <dt>Resorts' own websites</dt>
     <dd>Snow measuring stations of Hintertuxer Gletscher, Sölden, Kitzsteinhorn, Kaunertaler Gletscher and
       Pitztaler Gletscher, used instead of their regional report.</dd>
-    <dt><a href="https://www.skiarlberg.at/de/live-infos/anlagen">Ski Arlberg</a></dt>
+    <dt>Ski Arlberg <a class="site" href="https://www.skiarlberg.at/de/live-infos/anlagen">skiarlberg.at</a></dt>
     <dd>Every lift and slope of St. Anton, Lech Zürs and Warth-Schröcken, and the snow depth of St. Anton and Lech
       Zürs, from the lift companies' live info.</dd>
-    <dt><a href="https://infosnow.ch/portal/">infosnow.ch</a> (APG|SGA)</dt>
+    <dt>infosnow (APG|SGA) <a class="site" href="https://infosnow.ch/portal/">infosnow.ch</a></dt>
     <dd>Live status of Swiss ski areas, as the lift companies publish it: every lift and slope with its type,
       difficulty and length, plus snow depths where the resort enters them.</dd>
-    <dt><a href="https://www.slf.ch/en/services-and-products/slf-data-service">SLF</a>, WSL Institute for Snow and
-      Avalanche Research</dt>
+    <dt>SLF, WSL Institute for Snow and Avalanche Research <a class="site" href="https://www.slf.ch/en/services-and-products/slf-data-service">slf.ch</a></dt>
     <dd>Measured snow depth and new snow at the stations nearest to Swiss resorts that don't report depths (automatic
       IMIS stations and observers' study plots), CC BY 4.0.</dd>
-    <dt><a href="https://opendatahub.com">Open Data Hub South Tyrol</a></dt>
+    <dt>Open Data Hub South Tyrol <a class="site" href="https://opendatahub.com">opendatahub.com</a></dt>
     <dd>Live status of every lift and slope of the Dolomiti Superski areas, as
       <a href="https://www.dolomitisuperski.com">Dolomiti Superski</a> publishes it (CC0), and the South Tyrol snow
       report (lifts, slopes, snow measuring points) from the province's tourism database.</dd>
-    <dt><a href="https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa">Valle d'Aosta snow bulletin</a></dt>
+    <dt>Valle d'Aosta snow bulletin <a class="site" href="https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa">lovevda.it</a></dt>
     <dd>Every lift and slope of the Aosta Valley areas (and Alagna), with snow depth, from the regional tourism board.</dd>
-    <dt><a href="https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino">Trentino snow bulletin</a></dt>
+    <dt>Trentino snow bulletin <a class="site" href="https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino">visittrentino.info</a></dt>
     <dd>Lifts, slope km, snow depth and last snowfall of the Trentino areas, from the provincial tourism board.</dd>
-    <dt><a href="https://www.bormio.eu/it/live-info/impianti-e-piste">Valtellina di Bormio</a></dt>
+    <dt>Valtellina di Bormio <a class="site" href="https://www.bormio.eu/it/live-info/impianti-e-piste">bormio.eu</a></dt>
     <dd>Every lift and slope of Bormio (with San Colombano), Santa Caterina and the Stelvio glacier, from the tourism
       board.</dd>
-    <dt><a href="https://www.livigno.eu/en/lifts">Livigno</a></dt>
+    <dt>Livigno <a class="site" href="https://www.livigno.eu/en/lifts">livigno.eu</a></dt>
     <dd>Lift status of Livigno's three lift companies, from the tourism board.</dd>
-    <dt><a href="https://www.kudyznudy.cz/nahory">Kudy z nudy</a> (CzechTourism)</dt>
+    <dt>Kudy z nudy (CzechTourism) <a class="site" href="https://www.kudyznudy.cz/nahory">kudyznudy.cz</a></dt>
     <dd>The snow report of the Czech state tourism agency, from each ski area's page: every lift and slope with its
       type, difficulty and length, snow depth on the slopes and new snow, as the resorts enter them. No report time.</dd>
-    <dt><a href="https://www.pkl.pl/trasy-narciarskie.html">Polskie Koleje Linowe</a> (PKL)</dt>
+    <dt>Polskie Koleje Linowe (PKL) <a class="site" href="https://www.pkl.pl/trasy-narciarskie.html">pkl.pl</a></dt>
     <dd>Every lift and slope of Kasprowy Wierch, Jaworzyna Krynicka, Palenica and Mosorny Groń, with snow cover, from
       the lift company.</dd>
-    <dt><a href="https://zieleniec.pl/zima/aktualne-warunki">Zieleniec</a></dt>
+    <dt>Zieleniec <a class="site" href="https://zieleniec.pl/zima/aktualne-warunki">zieleniec.pl</a></dt>
     <dd>Every lift and slope of Zieleniec, with snow cover, from Zieleniec Sport Arena. The site refuses the fetcher's
       servers for now, so only the area's size is shown.</dd>
-    <dt><a href="https://www.lumiplan.com">Lumiplan</a> snow bulletins</dt>
+    <dt>Lumiplan snow bulletins <a class="site" href="https://www.lumiplan.com">lumiplan.com</a></dt>
     <dd>The daily report French resorts enter in Lumiplan, from each station's bulletin
       (<a href="https://bulletinv3.lumiplan.pro/bulletin.php?station=la-clusaz&amp;lang=fr&amp;isSoir=false">e.g. La Clusaz</a>):
       snow depth, snow quality and the last snowfall at the resort's measuring points, and every lift and slope with its
       state. No report time.</dd>
-    <dt><a href="https://live.aten-altitude.com/alpehuez/">ATEN Altitude</a></dt>
+    <dt>ATEN Altitude <a class="site" href="https://live.aten-altitude.com/alpehuez/">live.aten-altitude.com</a></dt>
     <dd>Alpe d'Huez's live page: every lift and slope with its state, and snow depth, snow quality and the last snowfall
       at its measuring points. No report time.</dd>
-    <dt><a href="https://ski.fi/hiihtokeskukset/">ski.fi</a> (Suomen Hiihtokeskusyhdistys)</dt>
+    <dt>Suomen Hiihtokeskusyhdistys <a class="site" href="https://ski.fi/hiihtokeskukset/">ski.fi</a></dt>
     <dd>The Finnish Ski Area Association's resort pages: the block each resort fills in (open slopes and lifts, and the
       day it was updated), the area's slopes by colour and lifts by type, and the list flagging each resort open or
       closed. No snow depth and no report time.</dd>
@@ -105,22 +115,22 @@
     <dd>Open/total slopes and lifts on the sites of Ylläs, Tahko, Himos, Salla, Ukkohalla, Ounasvaara, Riihivuori,
       Suomutunturi and Kasurila, and every slope (and lift) with its state on Vuokatti's, Laajis' and Messilä's. No report
       time.</dd>
-    <dt><a href="https://www.panoraama.com/">Panoraama</a> (HS-visual Art)</dt>
+    <dt>Panoraama (HS-visual Art) <a class="site" href="https://www.panoraama.com/">panoraama.com</a></dt>
     <dd>The slope maps' live data: Ruka's open slopes and lifts and natural snow depth, and every slope and lift of
       Iso-Syöte with its state. No report time.</dd>
-    <dt><a href="https://en.ilmatieteenlaitos.fi/open-data">Finnish Meteorological Institute</a> (FMI)</dt>
+    <dt>Finnish Meteorological Institute (FMI) <a class="site" href="https://en.ilmatieteenlaitos.fi/open-data">en.ilmatieteenlaitos.fi</a></dt>
     <dd>Measured snow depth at the weather station nearest to each Finnish resort, CC BY 4.0.</dd>
-    <dt><a href="https://fnugg.no">Fnugg</a> (Norske Alpinanlegg og Fjelldestinasjoner)</dt>
+    <dt>Fnugg (Norske Alpinanlegg og Fjelldestinasjoner) <a class="site" href="https://fnugg.no">fnugg.no</a></dt>
     <dd>The Norwegian ski resorts' association's service: every lift and slope of a resort with its state, and the report the resort enters (snow depth, new snow, conditions, dated). No slope lengths. Snow and lift data provided by fnugg; its weather, from Yr, isn't used.</dd>
-    <dt><a href="https://pirineu365.cat/infoneu-pirineu365/">Pirineu365</a> (FGC)</dt>
+    <dt>Pirineu365 (FGC) <a class="site" href="https://pirineu365.cat/infoneu-pirineu365/">pirineu365.cat</a></dt>
     <dd>The Catalan government's railway company's report of La Molina, Vall de Núria, Vallter, Espot, Port Ainé and Boí Taüll: every lift and slope with its state, snow min/max and quality. No report time.</dd>
     <dt>Spanish resorts' own sites</dt>
     <dd>Every lift and slope with its state on the report pages of <a href="https://www.valdezcaray.es/parte-de-nieve/">Valdezcaray</a>, <a href="https://www.manzaneda.com/parte-de-nieve-webcams">Manzaneda</a>, <a href="https://www.valgrande-pajares.com/parte-de-nieve-meteo/">Valgrande-Pajares</a> and <a href="https://www.fuentesdeinvierno.com/es/parte-meteorologico.html">Fuentes de Invierno</a>; Formigal-Panticosa and Sierra Nevada from their slope maps. Baqueira Beret (which refuses automated clients) and 12 other areas are listed with their size only, from the operators' sites and skiresort.com. No report time.</dd>
-    <dt><a href="https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen">Wintersport-Arena Sauerland</a></dt>
+    <dt>Wintersport-Arena Sauerland <a class="site" href="https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen">wintersport-arena.de</a></dt>
     <dd>The lift overview of the Sauerland's lift operators: lifts open/total, one snow depth and an open/closed icon
       for each area. No report time, no slopes or km. Other German resorts are read from their slope maps, or have no
       source yet.</dd>
-    <dt>Size only: <a href="https://www.jasna.sk">TMR</a> and other Slovak, Polish and Austrian areas</dt>
+    <dt>Size only: TMR and other Slovak, Polish and Austrian areas <a class="site" href="https://www.jasna.sk">jasna.sk</a></dt>
     <dd>Lift and slope totals and km of Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec and Szczyrk (TMR's slope
       tables), Kotelnica Białczańska (<a href="https://visitmalopolska.pl">visitmalopolska.pl</a>), Czarna Góra, Ski Arena
       Szrenica, Karpacz Ski Arena and Pilsko (their own sites), and of small areas next to covered ones (Słotwiny Arena,
@@ -130,67 +140,67 @@
 
   <h2>Lifts and slopes</h2>
   <dl>
-    <dt>Resorts' slope maps (<a href="https://www.intermaps.com">Intermaps</a>)</dt>
+    <dt>Resorts' slope maps (Intermaps) <a class="site" href="https://www.intermaps.com">intermaps.com</a></dt>
     <dd>Live status of every lift and slope, with lift types and slope difficulties, for the bigger Austrian areas (the only
       source for most resorts in Vorarlberg, Styria, Upper and Lower Austria) and for Andermatt Sedrun Disentis,
       Engelberg-Titlis, the Friuli Venezia Giulia areas, Madesimo and the German areas with a current map (Winterberg,
       Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze, Hohenbogen).</dd>
-    <dt>Resorts' slope maps (<a href="https://www.lumiplan.com">Lumiplan</a>)</dt>
+    <dt>Resorts' slope maps (Lumiplan) <a class="site" href="https://www.lumiplan.com">lumiplan.com</a></dt>
     <dd>Live status of every lift and slope, with lift types, slope difficulties and lengths, for the French resorts
       whose sites embed a Lumiplan map (e.g. Les 3 Vallées, Paradiski, Évasion Mont-Blanc), split by resort.</dd>
     <dt>Resorts' own websites</dt>
     <dd>The size of most ski areas (total slope km, and lift and slope totals the reports lack), and Hintertux's live
       open km.</dd>
-    <dt><a href="https://www.skiinfo.fr/">OnTheSnow</a> (skiinfo.fr) and <a href="https://www.skiresort.com/">skiresort.com</a></dt>
+    <dt>OnTheSnow and skiresort <a class="site" href="https://www.skiinfo.fr/">skiinfo.fr</a> <a class="site" href="https://www.skiresort.com/">skiresort.com</a></dt>
     <dd>The size of ski areas whose own sites give none: lifts, slopes and km as resorts enter them on OnTheSnow, and
       skiresort.com's km and km by difficulty for some bigger areas.</dd>
-    <dt><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</dt>
+    <dt>OpenStreetMap contributors <a class="site" href="https://www.openstreetmap.org/copyright">openstreetmap.org</a></dt>
     <dd>Slope lengths for the open km of Kitzsteinhorn and Kaunertal (ODbL).</dd>
   </dl>
 
   <h2>Avalanche danger</h2>
   <dl>
-    <dt><a href="https://avalanche.report">avalanche.report</a></dt>
+    <dt>Euregio avalanche bulletin <a class="site" href="https://avalanche.report">avalanche.report</a></dt>
     <dd>Avalanche bulletin of the Euregio Tirol &ndash; South Tyrol &ndash; Trentino, for Tirol, South Tyrol and
       Trentino resorts.</dd>
-    <dt><a href="https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/">SLF avalanche bulletin</a></dt>
+    <dt>SLF avalanche bulletin <a class="site" href="https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/">slf.ch</a></dt>
     <dd>The Swiss avalanche bulletin, for Swiss resorts.</dd>
-    <dt><a href="https://bollettini.aineva.it">AINEVA</a></dt>
+    <dt>AINEVA <a class="site" href="https://bollettini.aineva.it">bollettini.aineva.it</a></dt>
     <dd>The joint avalanche bulletin of the Italian regions, for Italian resorts outside South Tyrol and Trentino
       (those use the Euregio's).</dd>
-    <dt><a href="https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved">Horská služba ČR</a></dt>
+    <dt>Horská služba ČR <a class="site" href="https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved">horskasluzba.cz</a></dt>
     <dd>The Czech Mountain Rescue's avalanche bulletin, for Czech resorts in Krkonoše and Jeseníky, read from the EAWS
       bulletin files that <a href="https://avalanche.report">avalanche.report</a> publishes.</dd>
-    <dt><a href="https://www.laviny.sk">Lavínové stredisko HZS</a></dt>
+    <dt>Lavínové stredisko HZS <a class="site" href="https://www.laviny.sk">laviny.sk</a></dt>
     <dd>The Slovak avalanche bulletin, for Jasná, Tatranská Lomnica and Štrbské Pleso, from the same EAWS files.</dd>
-    <dt><a href="https://lawiny.topr.pl">TOPR</a></dt>
+    <dt>TOPR <a class="site" href="https://lawiny.topr.pl">lawiny.topr.pl</a></dt>
     <dd>The Tatra Volunteer Rescue's avalanche bulletin for the Polish Tatras, for Kasprowy Wierch, from the same
       EAWS files.</dd>
-    <dt><a href="https://meteofrance.com/meteo-montagne">Météo-France</a></dt>
+    <dt>Météo-France <a class="site" href="https://meteofrance.com/meteo-montagne">meteofrance.com</a></dt>
     <dd>The French avalanche bulletin (bulletin d'estimation du risque d'avalanche), by massif, for French resorts in the
       Alps and Pyrenees, from the same EAWS files.</dd>
-    <dt><a href="https://www.varsom.no/en/avalanches/avalanche-warnings/">NVE</a> (Varsom)</dt>
+    <dt>NVE (Varsom) <a class="site" href="https://www.varsom.no/en/avalanches/avalanche-warnings/">varsom.no</a></dt>
     <dd>The Norwegian Water Resources and Energy Directorate's avalanche warnings, for Norway's mountain regions.</dd>
-    <dt><a href="https://www.aemet.es/es/eltiempo/prediccion/montana">AEMET</a>, <a href="https://www.icgc.cat">ICGC</a> and the <a href="https://lauegi.report">Centre de Lauegi d'Aran</a></dt>
+    <dt>AEMET, ICGC and the Centre de Lauegi d'Aran <a class="site" href="https://www.aemet.es/es/eltiempo/prediccion/montana">aemet.es</a> <a class="site" href="https://www.icgc.cat">icgc.cat</a> <a class="site" href="https://lauegi.report">lauegi.report</a></dt>
     <dd>Spain's avalanche bulletins, for Spanish resorts in Aragón, Madrid, Cantabria, Catalonia and the Val d'Aran, from the same EAWS files.</dd>
-    <dt><a href="https://www.lawinenwarndienst.bayern.de">Lawinenwarndienst Bayern</a></dt>
+    <dt>Lawinenwarndienst Bayern <a class="site" href="https://www.lawinenwarndienst.bayern.de">lawinenwarndienst.bayern.de</a></dt>
     <dd>The Bavarian Avalanche Warning Service's bulletin, for German resorts in the Bavarian Alps, from the same EAWS
       files.</dd>
-    <dt><a href="https://gitlab.com/eaws/eaws-regions">EAWS warning regions</a></dt>
+    <dt>EAWS warning regions <a class="site" href="https://gitlab.com/eaws/eaws-regions">gitlab.com</a></dt>
     <dd>Region boundaries (CC0), to find each resort's warning region.</dd>
   </dl>
 
   <h2>Map</h2>
   <dl>
-    <dt><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</dt>
+    <dt>OpenStreetMap contributors <a class="site" href="https://www.openstreetmap.org/copyright">openstreetmap.org</a></dt>
     <dd>Map tiles, and the location of the villages of Italian, Czech, Slovak, Polish and French resorts, of Austrian ones outside the Snow Card
       and of the Finnish resorts' fells and hills and the German ski areas (Nominatim). Swiss resorts are placed at
       their infosnow location.</dd>
-    <dt><a href="https://leafletjs.com">Leaflet</a></dt>
+    <dt>Leaflet <a class="site" href="https://leafletjs.com">leafletjs.com</a></dt>
     <dd>The interactive map.</dd>
-    <dt><a href="https://www.naturalearthdata.com">Natural Earth</a></dt>
+    <dt>Natural Earth <a class="site" href="https://www.naturalearthdata.com">naturalearthdata.com</a></dt>
     <dd>Country borders on the small map at the top of the table page (public domain).</dd>
-    <dt><a href="https://registry.opendata.aws/terrain-tiles/">Terrain Tiles</a> (Mapzen, on AWS Open Data)</dt>
+    <dt>Terrain Tiles (Mapzen, on AWS Open Data) <a class="site" href="https://registry.opendata.aws/terrain-tiles/">registry.opendata.aws</a></dt>
     <dd>Elevation for the shaded relief on that map.</dd>
   </dl>
 
@@ -204,10 +214,10 @@
     <nav>
       <a href="sources.html">Data sources</a>
       <a href="about.html">About the data</a>
-      <a href="mailto:trail.jewel8860@eagereverest.com">Contact</a>
+      <span>Contact: miron [at] liftradar.eu</span>
     </nav>
-    <a class="made-by" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span>Made by <b>Miron Pawlik</b></span></a>
+    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+      <span>Made by <b>Miron</b></span></span>
   </footer>
 </main>
 <script src="assets/common.js"></script>

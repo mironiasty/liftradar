@@ -10,9 +10,8 @@
 <style>
   main { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
   /* Header: the name and intro, and a small map of all resorts on the right. */
-  .top { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; }
+  .top { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; margin-top: 20px; }
   .top > div { min-width: 0; }
-  h1.brand { margin-bottom: 12px; }
   .map-tile { position: relative; display: flex; align-items: flex-end; height: 160px; padding: 10px; box-sizing: border-box;
     border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--chip); color: var(--fg); text-decoration: none; }
   #mini-map { position: absolute; inset: 0; background: var(--chip); pointer-events: none; }
@@ -149,10 +148,9 @@
 </head>
 <body>
 <main>
-  <div class="top">
-  <div>
-    <h1 class="brand">
-      <svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true">
+  <header class="site-header">
+    <h1 class="brand compact">
+      <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
         <mask id="logo-window"><rect width="32" height="32" fill="#fff"/><rect x="10.5" y="15" width="11" height="5.5" rx="1.3" fill="#000"/></mask>
         <path d="M2 9 L30 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
         <circle cx="16" cy="7" r="1.8" fill="currentColor"/>
@@ -161,11 +159,23 @@
       </svg>
       <span class="name"><b>LiftRadar</b><small>Status of ski resorts</small></span>
     </h1>
+    <nav>
+    <a class="pill" href="stats.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
+      Stats
+    </a>
+    <a class="pill" href="about.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      About the data
+    </a>
+    </nav>
+  </header>
+  <div class="top">
+  <div>
     <p class="intro">Open lifts and slopes, snow depth and avalanche danger for ski resorts across Europe, from the
       resorts' own reports.</p>
     <p class="intro muted">LiftRadar is not an official source. Reports can be late or wrong, so check the resort's own
       website before you go.</p>
-    <p class="muted"><a href="sources.html">Sources</a></p>
   </div>
   <a class="map-tile" href="map.html">
     <div id="mini-map"></div>
@@ -237,10 +247,10 @@
     <nav>
       <a href="sources.html">Data sources</a>
       <a href="about.html">About the data</a>
-      <a href="mailto:trail.jewel8860@eagereverest.com">Contact</a>
+      <span>Contact: miron [at] liftradar.eu</span>
     </nav>
-    <a class="made-by" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span>Made by <b>Miron Pawlik</b></span></a>
+    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+      <span>Made by <b>Miron</b></span></span>
   </footer>
 </main>
 <script src="assets/common.js"></script>

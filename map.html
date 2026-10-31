@@ -10,14 +10,16 @@
 <style>
   html, body { height: 100%; }
   body { font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; }
-  header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
-  /* Same name and logo as index.html, a size smaller; they link back to the table. */
+  /* The same header as the other pages, across the full width, with the update time after the name. */
+  .site-header { margin-inline: 0; padding: 10px 16px; }
+  .site-header > .muted { margin-left: 12px; }
   h1 { margin: 0; }
-  header .pill { margin-left: auto; }
-  /* Phones: the table link next to the name, the update time underneath. */
-  @media (max-width: 640px) {
-    header > .muted { order: 1; flex-basis: 100%; }
-    .pill .long { display: none; }
+  /* Phones: one compact row, so the map keeps the height. The update time takes the tagline's place under the name. */
+  @media (max-width: 760px) {
+    .site-header { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0 8px; padding: 6px 12px; }
+    .site-header .brand small { display: none; }
+    .site-header > .muted { grid-area: 2 / 1; margin: 0 0 0 35px; font-size: .68rem; line-height: 1.2; white-space: nowrap; }
+    .site-header nav { grid-area: 1 / 2 / 3 / 3; margin: 0; }
   }
   .muted { font-size: .85rem; }
   .map-wrap { flex: 1; position: relative; min-height: 300px; }
@@ -76,7 +78,7 @@
 </style>
 </head>
 <body>
-<header>
+<header class="site-header">
   <h1><a class="brand compact" href="./">
     <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
       <mask id="logo-window"><rect width="32" height="32" fill="#fff"/><rect x="10.5" y="15" width="11" height="5.5" rx="1.3" fill="#000"/></mask>
@@ -87,11 +89,21 @@
     </svg>
     <span class="name"><b>LiftRadar</b><small>Status of ski resorts</small></span>
   </a></h1>
-  <span class="muted"><span id="updated">Loading…</span> &middot; <a href="sources.html">Sources</a></span>
+  <span class="muted"><span id="updated">Loading…</span></span>
+  <nav>
   <a class="pill" href="./">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
-    <span>Table<span class="long"> of all resorts</span></span>
+    Table
   </a>
+  <a class="pill" href="stats.html">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
+    Stats
+  </a>
+  <a class="pill" href="about.html">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+    About the data
+  </a>
+  </nav>
 </header>
 <div class="map-wrap">
   <div id="map" role="region" aria-label="Map of ski resorts"></div>
