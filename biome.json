@@ -1,0 +1,58 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
+  "files": {
+    "includes": ["assets/*.js", "assets/*.css"]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "javascript": {
+    "globals": [
+      "L",
+      "AREAS_URL",
+      "COUNTRY_NAMES",
+      "LIST_KEY",
+      "STALE_DAYS",
+      "STATUS_COLORS",
+      "STATUS_LABELS",
+      "countryName",
+      "dash",
+      "el",
+      "fnuggCredit",
+      "fold",
+      "historyPath",
+      "loadIndex",
+      "pair",
+      "reportTimes",
+      "resortOnMap",
+      "resortPage",
+      "resortPath",
+      "statusKey",
+      "updatedText",
+      "viennaTime"
+    ]
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUndeclaredVariables": "error"
+      },
+      "style": {
+        "noDescendingSpecificity": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["assets/common.js"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "off"
+          }
+        }
+      }
+    }
+  ]
+}

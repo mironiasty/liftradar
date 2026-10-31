@@ -42,10 +42,24 @@ EXAGGERATION = 3
 
 # Elevation (m) to colour, per theme; the first entry is the sea.
 PALETTES = {
-    "light": [(None, (196, 218, 234)), (0, (222, 230, 216)), (600, (214, 222, 200)), (1200, (226, 220, 200)),
-              (1900, (234, 231, 226)), (2500, (247, 249, 251)), (3500, (255, 255, 255))],
-    "dark": [(None, (24, 33, 44)), (0, (33, 37, 35)), (600, (40, 44, 40)), (1200, (52, 52, 50)),
-             (1900, (78, 82, 88)), (2500, (118, 126, 136)), (3500, (150, 158, 168))],
+    "light": [
+        (None, (196, 218, 234)),
+        (0, (222, 230, 216)),
+        (600, (214, 222, 200)),
+        (1200, (226, 220, 200)),
+        (1900, (234, 231, 226)),
+        (2500, (247, 249, 251)),
+        (3500, (255, 255, 255)),
+    ],
+    "dark": [
+        (None, (24, 33, 44)),
+        (0, (33, 37, 35)),
+        (600, (40, 44, 40)),
+        (1200, (52, 52, 50)),
+        (1900, (78, 82, 88)),
+        (2500, (118, 126, 136)),
+        (3500, (150, 158, 168)),
+    ],
 }
 
 
@@ -77,7 +91,8 @@ def borders(countries: Path) -> str:
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" '
         f'data-west="{WEST}" data-north="{NORTH}" data-k="{K:.5f}" data-scale="{SCALE}">\n'
-        + "\n".join(sorted(paths)) + "\n</svg>\n"
+        + "\n".join(sorted(paths))
+        + "\n</svg>\n"
     )
 
 
@@ -102,7 +117,7 @@ def elevation() -> np.ndarray:
             with urllib.request.urlopen(TILES.format(z=ZOOM, x=tx, y=ty), timeout=30) as response:
                 rgb = np.asarray(Image.open(io.BytesIO(response.read())).convert("RGB"), dtype=float)
             tile = rgb[..., 0] * 256 + rgb[..., 1] + rgb[..., 2] / 256 - 32768
-            mosaic[(ty - y0) * 256:(ty - y0 + 1) * 256, (tx - x0) * 256:(tx - x0 + 1) * 256] = tile
+            mosaic[(ty - y0) * 256 : (ty - y0 + 1) * 256, (tx - x0) * 256 : (tx - x0 + 1) * 256] = tile
     # Bilinear sampling of the mosaic.
     mx, my = x - x0 * 256 - 0.5, y - y0 * 256 - 0.5
     ix, iy = np.clip(mx.astype(int), 0, mosaic.shape[1] - 2), np.clip(my.astype(int), 0, mosaic.shape[0] - 2)

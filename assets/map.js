@@ -36,7 +36,9 @@ function labelText(r, status, { metric, mode }) {
 function hintText({ metric, mode }) {
   const m = METRICS[metric];
   if (m.hint) return m.hint;
-  return mode === "open" ? `Open ${m.label.toLowerCase()}, shown for open resorts.` : `All ${m.label.toLowerCase()} of the area.`;
+  return mode === "open"
+    ? `Open ${m.label.toLowerCase()}, shown for open resorts.`
+    : `All ${m.label.toLowerCase()} of the area.`;
 }
 
 const css = getComputedStyle(document.documentElement);
@@ -45,8 +47,9 @@ const color = (status) => css.getPropertyValue(STATUS[status].color).trim();
 const map = L.map("map", { zoomSnap: 0.5 });
 L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
   maxZoom: 17,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (map and ski areas), '
-    + '<a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (map and ski areas), ' +
+    '<a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
 }).addTo(map);
 // Pistes and lifts over the map; hidden when zoomed out, where they're only clutter.
 L.tileLayer("https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png", {
@@ -69,27 +72,52 @@ function popup(r, status) {
   const active = status === "open";
   const values = [];
   const add = (title, text, ...content) => {
-    if (text !== "–") values.push(el("div", {}, el("div", { class: "label" }, title), ...(content.length ? content : [text])));
+    if (text !== "–")
+      values.push(el("div", {}, el("div", { class: "label" }, title), ...(content.length ? content : [text])));
   };
   const mountain = dash(snow.mountain_cm, " cm");
   add("Mountain", mountain, el("b", {}, mountain));
   add("Valley", dash(snow.valley_cm, " cm"));
-  add("Fresh", dash(snow.fresh_cm, " cm"), snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm} cm`) : `${snow.fresh_cm} cm`);
+  add(
+    "Fresh",
+    dash(snow.fresh_cm, " cm"),
+    snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm} cm`) : `${snow.fresh_cm} cm`,
+  );
   const liftCount = pair(lifts?.open, lifts?.total);
   add("Lifts", liftCount, liftCount, ...meter(lifts?.open, lifts?.total, active));
   const counts = pair(slopes?.open, slopes?.total);
   const km = pair(slopes?.open_km, slopes?.total_km, " km");
   if (counts === "–") add("Slopes", km);
-  else add("Slopes", counts, counts, ...meter(slopes.open, slopes.total, active), ...(km === "–" ? [] : [el("div", { class: "sub" }, km)]));
-  if (avalanche?.danger_level) add("Avalanche", "", el("div", { class: "danger" },
-    el("span", { class: `badge lvl${avalanche.danger_level}` }, String(avalanche.danger_level)),
-    el("span", { class: "sub" }, avalanche.danger.replace("_", " "))));
+  else
+    add(
+      "Slopes",
+      counts,
+      counts,
+      ...meter(slopes.open, slopes.total, active),
+      ...(km === "–" ? [] : [el("div", { class: "sub" }, km)]),
+    );
+  if (avalanche?.danger_level)
+    add(
+      "Avalanche",
+      "",
+      el(
+        "div",
+        { class: "danger" },
+        el("span", { class: `badge lvl${avalanche.danger_level}` }, String(avalanche.danger_level)),
+        el("span", { class: "sub" }, avalanche.danger.replace("_", " ")),
+      ),
+    );
 
   const label = STATUS[status].label;
-  const content = el("div", { class: "popup" },
-    el("div", { class: "head" },
+  const content = el(
+    "div",
+    { class: "popup" },
+    el(
+      "div",
+      { class: "head" },
       el("a", { class: "name", href: resortPage(r) }, r.name),
-      el("span", { class: "status-pill", style: `--c:${color(status)}` }, label[0].toUpperCase() + label.slice(1))),
+      el("span", { class: "status-pill", style: `--c:${color(status)}` }, label[0].toUpperCase() + label.slice(1)),
+    ),
     el("div", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
   );
   if (values.length) content.append(el("div", { class: "values" }, ...values));
@@ -97,7 +125,13 @@ function popup(r, status) {
   const foot = el("div", { class: "foot" });
   // fetched_at: an index published before checked_at was added.
   const checked = r.checked_at ?? r.fetched_at;
-  foot.append(el("span", {}, `Checked ${viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}`));
+  foot.append(
+    el(
+      "span",
+      {},
+      `Checked ${viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}`,
+    ),
+  );
   foot.append(el("a", { href: resortPage(r) }, "Details and history →"));
   content.append(foot);
   return content;
@@ -161,7 +195,9 @@ function show([index, areas]) {
   document.getElementById("mode").append(...modeButtons);
   const choose = (change) => {
     choice = { ...choice, ...change };
-    Object.keys(METRICS).forEach((metric, i) => metricButtons[i].setAttribute("aria-pressed", metric === choice.metric));
+    Object.keys(METRICS).forEach((metric, i) => {
+      metricButtons[i].setAttribute("aria-pressed", metric === choice.metric);
+    });
     const single = Boolean(METRICS[choice.metric].value);
     Object.keys(MODES).forEach((mode, i) => {
       modeButtons[i].setAttribute("aria-pressed", !single && mode === choice.mode);
@@ -174,7 +210,10 @@ function show([index, areas]) {
     } catch {}
   };
   choose({});
-  map.fitBounds(resorts.map((r) => [r.location.lat, r.location.lon]), { padding: [30, 30] });
+  map.fitBounds(
+    resorts.map((r) => [r.location.lat, r.location.lon]),
+    { padding: [30, 30] },
+  );
   // map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort, with its report open.
   const wanted = new URLSearchParams(location.search).get("r");
   const focus = markers.find(({ r }) => `${r.country}/${r.id}` === wanted);
@@ -202,7 +241,11 @@ function show([index, areas]) {
     });
     chip.setAttribute("aria-pressed", false);
     const name = label[0].toUpperCase() + label.slice(1);
-    chip.append(el("span", { class: "dot", style: `--c:${color(status)}` }), name, el("span", { class: "count" }, String(total)));
+    chip.append(
+      el("span", { class: "dot", style: `--c:${color(status)}` }),
+      name,
+      el("span", { class: "count" }, String(total)),
+    );
     filters.append(chip);
   }
 }

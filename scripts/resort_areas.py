@@ -143,7 +143,20 @@ def fold(text: str) -> str:
     return "".join(c for c in unicodedata.normalize("NFD", text) if not unicodedata.combining(c)).casefold()
 
 
-GENERIC = {"ski", "skigebiet", "area", "sci", "comprensorio", "bergbahnen", "der", "und", "and", "san", "skiarena", "skiregion"}
+GENERIC = {
+    "ski",
+    "skigebiet",
+    "area",
+    "sci",
+    "comprensorio",
+    "bergbahnen",
+    "der",
+    "und",
+    "and",
+    "san",
+    "skiarena",
+    "skiregion",
+}
 
 
 def words(text: str) -> set[str]:
@@ -184,7 +197,9 @@ def outline(element: dict):
         geom = Polygon([(p["lon"], p["lat"]) for p in points])
     else:
         members = [m for m in element["members"] if m.get("geometry")]
-        rings = lambda role: unary_union(list(polygonize(unary_union([line(m["geometry"]) for m in members if m.get("role") == role]))))
+        rings = lambda role: unary_union(
+            list(polygonize(unary_union([line(m["geometry"]) for m in members if m.get("role") == role])))
+        )
         geom = rings("outer").difference(rings("inner"))
     geom = geom if geom.is_valid else geom.buffer(0)
     return None if geom.is_empty else geom
@@ -232,7 +247,9 @@ def areas(index: dict, elements: list[dict]) -> dict:
 
     features = []
     for resort_id in sorted(parts, key=lambda i: (resorts[i]["country"], i)):
-        geom = to_deg(unary_union([area for _, area in parts[resort_id]])).simplify(SIMPLIFY_DEG, preserve_topology=True)
+        geom = to_deg(unary_union([area for _, area in parts[resort_id]])).simplify(
+            SIMPLIFY_DEG, preserve_topology=True
+        )
         geom = json.loads(json.dumps(mapping(geom)), parse_float=lambda f: round(float(f), 5))
         osm = sorted({osm_id for osm_id, _ in parts[resort_id]})
         features.append({"type": "Feature", "properties": {"id": resort_id, "osm": osm}, "geometry": geom})

@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "description": "Static checks, and minifying on deploy: pages work unbuilt, as they are in the repo.",
+  "scripts": {
+    "check": "biome check && html-validate '*.html' && uvx ruff@0.17.3 check scripts && uvx ruff@0.17.3 format --check scripts",
+    "format": "biome format --write && uvx ruff@0.17.3 format scripts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.4",
+    "esbuild": "0.28.2",
+    "html-validate": "11.17.0"
+  }
+}

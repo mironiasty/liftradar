@@ -35,7 +35,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
-`.github/workflows/pages.yml` combines both and deploys to the Cloudflare Worker `liftradar`
+`.github/workflows/pages.yml` combines both, minifies `assets/*.js` and `*.css` with esbuild, compacts `json/index.json` with jq, and deploys to the Cloudflare Worker `liftradar`
 (static assets only, `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
@@ -157,5 +157,16 @@ python3 -m http.server 8000                     # http://localhost:8000
 ```
 
 (The links are git-ignored.)
+
+Static checks, also run on every push (`.github/workflows/checks.yml`):
+
+```sh
+npm install        # once
+npm run check      # Biome (JS, CSS), html-validate, ruff (scripts/)
+npm run format     # format the JS, the CSS and scripts/; HTML is validated but not formatted
+```
+
+The pages load `assets/common.js` and then their own script, sharing its top-level names: a
+name that's new there also goes in `javascript.globals` in `biome.json`.
 
 Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles © [OpenTopoMap](https://opentopomap.org) (CC-BY-SA), pistes and lifts from [OpenSnowMap](https://www.opensnowmap.org).

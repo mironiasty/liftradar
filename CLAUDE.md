@@ -13,3 +13,6 @@ README documents every source in detail.
   change, and which fields each page reads.
 - Users poll `json/<country>/<id>.json` directly: those URLs are a public
   contract.
+- Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
+  these checks and for minifying `assets/*.js` and `*.css` on deploy (`pages.yml`): the pages load no npm
+  package and work as they are, with no build step locally.

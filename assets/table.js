@@ -11,7 +11,8 @@ const count = document.getElementById("count");
 const empty = document.getElementById("empty");
 let rows = [];
 const values = new Map();
-let key = "name", ascending = true;
+let key = "name",
+  ascending = true;
 let country = "";
 // Statuses chosen with the chips; none chosen shows every resort.
 const shownStatuses = new Set();
@@ -30,7 +31,9 @@ const STATUS = {
 const statusOf = statusKey;
 
 function sortValues(r) {
-  const lifts = r.lifts || {}, slopes = r.slopes || {}, snow = r.snow;
+  const lifts = r.lifts || {},
+    slopes = r.slopes || {},
+    snow = r.snow;
   return {
     name: fold(r.name),
     // Sorts by country, then region; also what the filters compare.
@@ -55,11 +58,19 @@ function nameCell(r) {
   const status = statusOf(r);
   const { label, color } = STATUS[status];
   // The phone layout shows the status as a pill after the name instead of the dot and the line below.
-  const text = el("div", {}, el("a", { class: "name", href: resortPage(r) }, r.name), " ",
-    el("span", { class: "status-pill", style: `--c:${color}` }, label));
+  const text = el(
+    "div",
+    {},
+    el("a", { class: "name", href: resortPage(r) }, r.name),
+    " ",
+    el("span", { class: "status-pill", style: `--c:${color}` }, label),
+  );
   if (status !== "open") text.append(el("div", { class: "sub-line status-line" }, label));
-  return el("td", {}, el("div", { class: "resort" },
-    el("span", { class: "dot", style: `--c:${color}`, title: label }), text));
+  return el(
+    "td",
+    {},
+    el("div", { class: "resort" }, el("span", { class: "dot", style: `--c:${color}`, title: label }), text),
+  );
 }
 
 // "open/total" with a bar for the open share, for open resorts: elsewhere open
@@ -82,10 +93,18 @@ function slopesCell(slopes, active) {
 }
 
 function avalancheCell(bulletin) {
-  if (!bulletin || bulletin.danger_level === null) return el("td", { class: "c-value nil", "data-label": "Avalanche" }, "–");
-  return el("td", { class: "c-value", "data-label": "Avalanche" }, el("span", { class: "danger" },
-    el("span", { class: `badge lvl${bulletin.danger_level}` }, String(bulletin.danger_level)),
-    el("span", { class: "danger-text" }, bulletin.danger.replace("_", " "))));
+  if (!bulletin || bulletin.danger_level === null)
+    return el("td", { class: "c-value nil", "data-label": "Avalanche" }, "–");
+  return el(
+    "td",
+    { class: "c-value", "data-label": "Avalanche" },
+    el(
+      "span",
+      { class: "danger" },
+      el("span", { class: `badge lvl${bulletin.danger_level}` }, String(bulletin.danger_level)),
+      el("span", { class: "danger-text" }, bulletin.danger.replace("_", " ")),
+    ),
+  );
 }
 
 // A number cell; labelled for the phone layout, which also leaves out empty ones ("–").
@@ -96,7 +115,9 @@ function value(label, text, content = text) {
 function row(r) {
   const { mountain_cm: mountain, valley_cm: valley, fresh_cm: fresh } = r.snow;
   const active = statusOf(r) === "open";
-  const tr = el("tr", { class: active ? "" : "inactive" },
+  const tr = el(
+    "tr",
+    { class: active ? "" : "inactive" },
     nameCell(r),
     el("td", { class: "c-region" }, r.region ?? "–", el("div", { class: "sub-line" }, countryName(r.country))),
     value("Mountain", dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
@@ -121,7 +142,8 @@ function filter() {
   const totals = {};
   for (const tr of rows) {
     const v = values.get(tr);
-    const matches = v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
+    const matches =
+      v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
     if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
     tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
     if (!tr.hidden) shown++;
@@ -160,21 +182,26 @@ function button(className, text, onClick) {
 
 // The region list only offers regions of the chosen country, and is hidden until one is chosen.
 function fillRegions(resorts, chosen = regionSelect.value) {
-  const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))]
-    .sort((a, b) => a.localeCompare(b));
+  const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))].sort(
+    (a, b) => a.localeCompare(b),
+  );
   regionSelect.replaceChildren(option("", "All regions"), ...names.map((name) => option(name, name)));
   regionSelect.value = names.includes(chosen) ? chosen : "";
   regionSelect.hidden = !country;
 }
 
 function fillFilters(resorts) {
-  const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) => countryName(a).localeCompare(countryName(b)));
+  const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
+    countryName(a).localeCompare(countryName(b)),
+  );
   const choices = [["", "All"], ...countries.map((code) => [code, countryName(code)])];
   const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
   countryGroup.append(...countryButtons);
   const chooseCountry = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => countryButtons[i].setAttribute("aria-pressed", c === country));
+    choices.forEach(([c], i) => {
+      countryButtons[i].setAttribute("aria-pressed", c === country);
+    });
     fillRegions(resorts, region);
     filter();
   };
@@ -219,7 +246,7 @@ const SORTS = [
   ["avalanche", false, "Highest avalanche danger"],
 ];
 const sortSelect = document.getElementById("sort");
-sortSelect.append(...SORTS.map(([k, , label], i) => option(String(i), label)));
+sortSelect.append(...SORTS.map(([, , label], i) => option(String(i), label)));
 sortSelect.addEventListener("change", () => {
   [key, ascending] = SORTS[sortSelect.value];
   sort();
@@ -228,7 +255,8 @@ sortSelect.addEventListener("change", () => {
 function sort() {
   const byName = (a, b) => values.get(a).name.localeCompare(values.get(b).name);
   rows.sort((a, b) => {
-    const x = values.get(a)[key], y = values.get(b)[key];
+    const x = values.get(a)[key],
+      y = values.get(b)[key];
     if (x === y) return byName(a, b);
     if (x === null) return 1; // missing values last, whichever the direction
     if (y === null) return -1;
@@ -270,9 +298,12 @@ async function miniMap(resorts) {
   const svg = box.querySelector("svg");
   svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
   svg.setAttribute("aria-hidden", "true");
-  const { west, north, k, scale } = Object.fromEntries(Object.entries(svg.dataset).map(([key, value]) => [key, Number(value)]));
+  const { west, north, k, scale } = Object.fromEntries(
+    Object.entries(svg.dataset).map(([key, value]) => [key, Number(value)]),
+  );
   const countries = new Set(resorts.map((r) => r.country));
-  for (const path of svg.querySelectorAll("path")) path.classList.toggle("covered", countries.has(path.dataset.country));
+  for (const path of svg.querySelectorAll("path"))
+    path.classList.toggle("covered", countries.has(path.dataset.country));
   // Open resorts last, so they are drawn on top.
   const order = { open: 2, closed: 1 };
   const located = resorts.filter((r) => r.location).sort((a, b) => (order[a.status] ?? 0) - (order[b.status] ?? 0));
