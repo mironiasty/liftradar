@@ -65,7 +65,7 @@
   .chip[aria-pressed="true"] .dot { background: var(--c); }
   .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
   button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  #count { margin-left: auto; }
+  #count, #updated { margin-left: auto; }
 
   /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
      table scrolls sideways and the resort column sticks. */
@@ -111,7 +111,8 @@
   /* Phones: each resort as a card, empty values left out; a select sorts instead of the headers. */
   @media (max-width: 640px) {
     .mobile-only { display: inline-block; }
-    .search { flex-basis: 100%; max-width: none; }
+    .search { order: -2; flex-basis: 100%; max-width: none; }
+    #updated { order: -1; }
     .seg { flex-wrap: wrap; flex-basis: 100%; box-sizing: border-box; }
     .seg button { flex: 1 0 auto; }
     #region, #sort { flex: 1 1 40%; min-width: 0; }
@@ -164,7 +165,7 @@
       resorts' own reports.</p>
     <p class="intro muted">LiftRadar is not an official source. Reports can be late or wrong, so check the resort's own
       website before you go.</p>
-    <p class="muted"><span id="updated">Loading…</span> &middot; <a href="sources.html">Sources</a></p>
+    <p class="muted"><a href="sources.html">Sources</a></p>
   </div>
   <a class="map-tile" href="map.html">
     <div id="mini-map"></div>
@@ -180,6 +181,7 @@
     <div class="seg" id="country" role="group" aria-label="Country"></div>
     <select id="region" aria-label="Region"><option value="">All regions</option></select>
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
+    <span class="muted" id="updated">Loading…</span>
     <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
