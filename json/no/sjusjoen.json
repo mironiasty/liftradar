@@ -9,8 +9,8 @@
     "lon": 10.7417
   },
   "website": "http://www.sjusjoen-skisenter.no/",
-  "status": "closed",
-  "fetched_at": "2026-10-30T18:46:54.126976+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-31T08:41:16.410581+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 4
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 9,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 7
   },
   "lifts_by_type": {
@@ -42,25 +42,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-30T04:40:35+01:00",
+  "lifts_updated_at": "2026-05-12T13:27:54+02:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

@@ -1,0 +1,90 @@
+{
+  "time": "2026-10-31T08:42:51+01:00",
+  "resorts": [
+    {
+      "id": "breuil-cervinia",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-30T16:40:48.862612+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "courmayeur",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-30T14:31:06.765470+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "la-thuile",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-30T16:40:48.862635+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "pila",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-30T14:31:06.765483+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "monterosa-ski",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-30T14:31:06.765490+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "torgnon",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-30T16:40:48.862660+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "champorcher",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-10-30T14:31:06.765507+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "crevacol",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-30T14:31:06.765512+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    },
+    {
+      "id": "rhemes-notre-dame",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-30T14:31:06.765519+01:00",
+      "errors": [
+        "status: ConnectTimeout: "
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only"
+  ]
+}

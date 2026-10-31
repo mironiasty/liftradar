@@ -9,120 +9,26 @@
     "lon": 6.0699
   },
   "website": "https://www.alpedhuez.com",
-  "status": "open",
-  "fetched_at": "2026-10-30T18:46:54.124795+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-10-31T08:41:16.408306+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 20,
-    "valley_cm": 0,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-10-08",
-    "condition": "Dure",
-    "stations": [
-      {
-        "name": "Alpe d'Huez",
-        "elevation_m": 1800,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Pas de neige"
-      },
-      {
-        "name": "Pic Blanc",
-        "elevation_m": 3300,
-        "depth_cm": 20,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Dure"
-      },
-      {
-        "name": "Villard",
-        "elevation_m": 1650,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Pas de neige"
-      },
-      {
-        "name": "Auris",
-        "elevation_m": 1600,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Pas de neige"
-      },
-      {
-        "name": "Oz",
-        "elevation_m": 1350,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Pas de neige"
-      },
-      {
-        "name": "Vaujany – Montfrais",
-        "elevation_m": 1250,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Pas de neige"
-      },
-      {
-        "name": "Dôme des Rousses",
-        "elevation_m": 2810,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": "Pas de neige"
-      }
-    ]
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
   },
-  "lifts": {
-    "open": 1,
-    "total": 29
-  },
+  "lifts": null,
   "slopes": {
-    "open": 2,
-    "total": 5,
+    "open": null,
+    "total": null,
     "open_km": null,
     "total_km": 250
   },
-  "lifts_by_type": {
-    "cable_car": {
-      "open": 0,
-      "total": 3
-    },
-    "carpet": {
-      "open": 0,
-      "total": 4
-    },
-    "chairlift": {
-      "open": 1,
-      "total": 8
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 3
-    },
-    "gondola": {
-      "open": 0,
-      "total": 11
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 1,
-      "total": 2,
-      "open_km": null,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 1,
-      "total": 3,
-      "open_km": null,
-      "total_km": null
-    }
-  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
