@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liftradar.eu/schema/stats.schema.json",
+  "$defs": {
+    "StatsRegion": {
+      "additionalProperties": false,
+      "description": "Daily totals of one region's resorts, one list per value with an entry per day of `Stats.days`.\nLifts, slopes and km count open resorts only; `tracked` is how many resorts have a run that day.",
+      "properties": {
+        "country": {
+          "pattern": "^[a-z]{2}$",
+          "title": "Country",
+          "type": "string"
+        },
+        "region": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Region"
+        },
+        "tracked": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "title": "Tracked",
+          "type": "array"
+        },
+        "open": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "title": "Open",
+          "type": "array"
+        },
+        "lifts_open": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "title": "Lifts Open",
+          "type": "array"
+        },
+        "slopes_open": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "title": "Slopes Open",
+          "type": "array"
+        },
+        "slopes_open_km": {
+          "items": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "title": "Slopes Open Km",
+          "type": "array"
+        }
+      },
+      "required": [
+        "country",
+        "region",
+        "tracked",
+        "open",
+        "lifts_open",
+        "slopes_open",
+        "slopes_open_km"
+      ],
+      "title": "StatsRegion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Totals per day and region over the last year, each resort counted once, by its day's last run; built from the histories.",
+  "properties": {
+    "$schema": {
+      "const": "https://liftradar.eu/schema/stats.schema.json",
+      "default": "https://liftradar.eu/schema/stats.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "days": {
+      "items": {
+        "format": "date",
+        "type": "string"
+      },
+      "title": "Days",
+      "type": "array"
+    },
+    "regions": {
+      "items": {
+        "$ref": "#/$defs/StatsRegion"
+      },
+      "title": "Regions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "generated_at",
+    "days",
+    "regions"
+  ],
+  "title": "Daily totals per country and region",
+  "type": "object"
+}
