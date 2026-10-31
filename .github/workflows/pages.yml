@@ -45,6 +45,14 @@ jobs:
           npm ci --prefix site
           site/node_modules/.bin/esbuild _site/assets/*.js _site/assets/*.css --minify --outdir=_site/assets --allow-overwrite
 
+      # The same data without its indentation; only the deployed copy, the data branch
+      # stays readable. A failure leaves the file as it was.
+      - name: Compact the resort index
+        continue-on-error: true
+        run: |
+          jq -c . _site/json/index.json > index.min.json
+          mv index.min.json _site/json/index.json
+
       # Without a version in the URL, a new page can run with the previous version's
       # scripts from a cache on the way.
       - name: Version the asset links
