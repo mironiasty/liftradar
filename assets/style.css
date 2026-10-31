@@ -179,6 +179,92 @@ a.brand:focus-visible,
   gap: 8px;
   margin-left: auto;
 }
+/* The language menu: over the page, and over the map's controls. */
+.lang-menu {
+  position: relative;
+}
+.pill.lang {
+  padding: 0 11px;
+  cursor: pointer;
+  list-style: none;
+}
+.pill.lang::-webkit-details-marker {
+  display: none;
+}
+.pill.lang::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  margin: -3px 1px 0 0;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+.lang-menu[open] .pill.lang::after {
+  margin-top: 3px;
+  transform: rotate(-135deg);
+}
+.lang-menu > div {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 1100;
+  display: grid;
+  min-width: 130px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
+}
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: var(--fg);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.lang-menu a:hover {
+  background: var(--chip);
+  color: var(--accent);
+}
+.lang-menu a[aria-current] {
+  font-weight: 600;
+}
+/* Drawn here rather than as emoji, which Windows shows as letters. The ring keeps white stripes visible. */
+.pill.lang::before,
+.lang-menu a::before {
+  content: "";
+  flex: none;
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  background: center / 100% 100% no-repeat;
+  box-shadow: 0 0 0 1px var(--line);
+}
+:root[lang="en"] .pill.lang::before,
+.lang-menu a[hreflang="en"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30' preserveAspectRatio='xMidYMid slice'%3E%3CclipPath id='t'%3E%3Cpath d='M30 15h30v15zv15H0zH0V0zV0h30z'/%3E%3C/clipPath%3E%3Cpath fill='%23012169' d='M0 0h60v30H0z'/%3E%3Cpath stroke='%23fff' stroke-width='6' d='M0 0l60 30m0-30L0 30'/%3E%3Cpath stroke='%23c8102e' stroke-width='4' clip-path='url(%23t)' d='M0 0l60 30m0-30L0 30'/%3E%3Cpath stroke='%23fff' stroke-width='10' d='M30 0v30M0 15h60'/%3E%3Cpath stroke='%23c8102e' stroke-width='6' d='M30 0v30M0 15h60'/%3E%3C/svg%3E");
+}
+:root[lang="de"] .pill.lang::before,
+.lang-menu a[hreflang="de"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M0 0h3v1H0z'/%3E%3Cpath fill='%23d00' d='M0 1h3v1H0z'/%3E%3Cpath fill='%23ffce00' d='M0 2h3v1H0z'/%3E%3C/svg%3E");
+}
+:root[lang="fr"] .pill.lang::before,
+.lang-menu a[hreflang="fr"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23002395' d='M0 0h1v3H0z'/%3E%3Cpath fill='%23fff' d='M1 0h1v3H1z'/%3E%3Cpath fill='%23ed2939' d='M2 0h1v3H2z'/%3E%3C/svg%3E");
+}
+:root[lang="it"] .pill.lang::before,
+.lang-menu a[hreflang="it"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23008c45' d='M0 0h1v3H0z'/%3E%3Cpath fill='%23f4f5f0' d='M1 0h1v3H1z'/%3E%3Cpath fill='%23cd212a' d='M2 0h1v3H2z'/%3E%3C/svg%3E");
+}
+:root[lang="pl"] .pill.lang::before,
+.lang-menu a[hreflang="pl"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h2v1H0z'/%3E%3Cpath fill='%23dc143c' d='M0 1h2v1H0z'/%3E%3C/svg%3E");
+}
 /* Phones: one row on every page, with smaller links, and only their icons where labels don't fit.
    The text stays for screen readers. */
 @media (max-width: 720px) {
@@ -203,6 +289,7 @@ a.brand:focus-visible,
     height: 14px;
   }
   .site-header .brand {
+    min-width: 0;
     gap: 7px;
   }
   .site-header .brand svg {
@@ -212,9 +299,9 @@ a.brand:focus-visible,
   .site-header .brand b {
     font-size: 1.05rem;
   }
+  /* It wraps where the links leave too little room. */
   .site-header .brand small {
     font-size: 0.55rem;
-    white-space: nowrap;
   }
 }
 @media (max-width: 560px) {
@@ -229,6 +316,12 @@ a.brand:focus-visible,
   .site-header .pill svg {
     width: 16px;
     height: 16px;
+  }
+  /* Its flag is its icon. */
+  .site-header .pill.lang {
+    width: auto;
+    gap: 5px;
+    padding: 0 8px;
   }
 }
 @media (max-width: 340px) {

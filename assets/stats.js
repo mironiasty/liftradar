@@ -6,13 +6,13 @@
 // as the table's meters do; a few closed resorts still report an old lift count.
 
 const METRICS = [
-  { key: "open", title: "Open resorts" },
-  { key: "lifts", title: "Open lifts" },
-  { key: "slopes", title: "Open slopes" },
-  { key: "km", title: "Open slopes", unit: " km" },
-  { key: "tracked", title: "Resorts tracked" },
+  { key: "open", title: t("Open resorts") },
+  { key: "lifts", title: t("Open lifts") },
+  { key: "slopes", title: t("Open slopes") },
+  { key: "km", title: t("Open slopes"), unit: " km" },
+  { key: "tracked", title: t("Resorts tracked") },
 ];
-const STATS_URL = "json/stats.json";
+const STATS_URL = "/json/stats.json";
 const TOP_BARS = 8;
 
 const countryGroup = document.getElementById("country");
@@ -26,9 +26,13 @@ const saved = new URLSearchParams(location.search);
 let resorts = [];
 let stats;
 let country = "";
-const number = new Intl.NumberFormat("en", { maximumFractionDigits: 1 });
+const number = new Intl.NumberFormat(LANG, { maximumFractionDigits: 1 });
 const shortDay = (day) =>
-  new Date(`${day}T12:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
+  new Date(`${day}T12:00Z`).toLocaleDateString(LANG === "en" ? "en-GB" : LANG, {
+    day: "numeric",
+    month: "short",
+    timeZone: "UTC",
+  });
 const svgEl = (tag, attributes = {}) => {
   const node = document.createElementNS("http://www.w3.org/2000/svg", tag);
   for (const [name, value] of Object.entries(attributes)) node.setAttribute(name, value);
@@ -81,7 +85,12 @@ function lineChart(host, days, metric) {
     height,
     role: "img",
     tabindex: 0,
-    "aria-label": `${metric.title}${metric.unit ?? ""} per day, ${shortDay(days[0].day)} to ${shortDay(days.at(-1).day)}, latest ${number.format(values.at(-1))}`,
+    "aria-label": t("{title} per day, {from} to {to}, latest {latest}", {
+      title: `${metric.title}${metric.unit ?? ""}`,
+      from: shortDay(days[0].day),
+      to: shortDay(days.at(-1).day),
+      latest: number.format(values.at(-1)),
+    }),
   });
   for (let v = 0; v <= top; v += step) {
     svg.append(svgEl("line", { class: "grid", x1: margin.left, x2: width - margin.right, y1: y(v), y2: y(v) }));
@@ -130,7 +139,7 @@ function lineChart(host, days, metric) {
       el("b", {}, `${number.format(values[i])}${metric.unit ?? ""}`),
       el("span", {}, shortDay(days[i].day)),
     ];
-    if (metric.key !== "tracked") lines.push(el("span", {}, `${days[i].tracked} resorts tracked`));
+    if (metric.key !== "tracked") lines.push(el("span", {}, t("{n} resorts tracked", { n: days[i].tracked })));
     tip.replaceChildren(...lines);
     tip.hidden = false;
     // Beside the crosshair, on whichever side has room.
@@ -166,7 +175,10 @@ function card(days, metric) {
   const delta =
     change === null
       ? ""
-      : `${change > 0 ? "+" : change < 0 ? "−" : "±"}${number.format(Math.abs(change))} since ${shortDay(previous.day)}`;
+      : t("{change} since {day}", {
+          change: `${change > 0 ? "+" : change < 0 ? "−" : "±"}${number.format(Math.abs(change))}`,
+          day: shortDay(previous.day),
+        });
   const plot = el("div", { class: "plot" });
   const node = el(
     "section",
@@ -180,11 +192,12 @@ function card(days, metric) {
 
 // Open lifts now, largest first: per country, per region inside a country, per resort inside a region.
 function bars(scope, latestDay, region) {
-  const [noun, group] = region
-    ? ["resort", (r) => r.name]
+  const day = shortDay(latestDay);
+  const [title, group] = region
+    ? [t("Open lifts by resort, {day}", { day }), (r) => r.name]
     : country
-      ? ["region", (r) => r.region ?? "No region"]
-      : ["country", (r) => countryName(r.country)];
+      ? [t("Open lifts by region, {day}", { day }), (r) => r.region ?? t("No region")]
+      : [t("Open lifts by country, {day}", { day }), (r) => countryName(r.country)];
   const sums = new Map();
   for (const r of scope) {
     if (r.status === "open") sums.set(group(r), (sums.get(group(r)) ?? 0) + (r.lifts?.open ?? 0));
@@ -192,7 +205,10 @@ function bars(scope, latestDay, region) {
   const ranked = [...sums].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   const shown = ranked.slice(0, TOP_BARS);
   if (ranked.length > TOP_BARS)
-    shown.push([`${ranked.length - TOP_BARS} more`, ranked.slice(TOP_BARS).reduce((sum, [, n]) => sum + n, 0)]);
+    shown.push([
+      t("{n} more", { n: ranked.length - TOP_BARS }),
+      ranked.slice(TOP_BARS).reduce((sum, [, n]) => sum + n, 0),
+    ]);
   const top = Math.max(1, ...shown.map(([, n]) => n));
   const rows = shown.map(([name, n]) =>
     el(
@@ -204,8 +220,8 @@ function bars(scope, latestDay, region) {
     ),
   );
   barsCard.replaceChildren(
-    el("h2", {}, `Open lifts by ${noun}, ${shortDay(latestDay)}`),
-    ...(rows.length ? rows : [el("p", { class: "muted" }, "Nothing is open here.")]),
+    el("h2", {}, title),
+    ...(rows.length ? rows : [el("p", { class: "muted" }, t("Nothing is open here."))]),
   );
 }
 
@@ -232,7 +248,7 @@ function render() {
   if (country) params.set("country", country);
   if (region) params.set("region", region);
   history.replaceState(null, "", location.pathname + (params.size ? `?${params}` : ""));
-  count.textContent = `${scope.length} resorts`;
+  count.textContent = t("{n} resorts", { n: scope.length });
   if (!days.length) {
     charts.replaceChildren();
     tableBody.replaceChildren();
@@ -251,7 +267,7 @@ function fillRegions(chosen = "") {
     (a, b) => a.localeCompare(b),
   );
   regionSelect.replaceChildren(
-    el("option", { value: "" }, "All regions"),
+    el("option", { value: "" }, t("All regions")),
     ...names.map((name) => el("option", { value: name }, name)),
   );
   regionSelect.value = names.includes(chosen) ? chosen : "";
@@ -260,9 +276,9 @@ function fillRegions(chosen = "") {
 
 function fillFilters() {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
-    countryName(a).localeCompare(countryName(b)),
+    countryName(a).localeCompare(countryName(b), LANG),
   );
-  const choices = [["", "All"], ...countries.map((code) => [code, countryName(code)])];
+  const choices = [["", t("All")], ...countries.map((code) => [code, countryName(code)])];
   const choose = (code, region) => {
     country = code;
     choices.forEach(([c], i) => {
@@ -295,5 +311,5 @@ loadIndex()
     }).observe(charts);
   })
   .catch((error) => {
-    document.getElementById("updated").textContent = `Could not load the data (${error.message})`;
+    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
   });

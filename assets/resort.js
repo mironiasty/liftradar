@@ -2,32 +2,44 @@
 // map (with the resorts around it) and its history (key numbers of past runs).
 
 const LIFT_TYPES = {
-  gondola: "Gondolas",
-  cable_car: "Cable cars",
-  chairlift: "Chairlifts",
-  drag_lift: "Drag lifts",
-  carpet: "Carpets",
-  funicular: "Funiculars",
-  other: "Other",
+  gondola: t("Gondolas"),
+  cable_car: t("Cable cars"),
+  chairlift: t("Chairlifts"),
+  drag_lift: t("Drag lifts"),
+  carpet: t("Carpets"),
+  funicular: t("Funiculars"),
+  other: t("Other"),
 };
 // Piste colours as on slope maps; ski routes yellow.
 const DIFFICULTIES = {
-  easy: ["Easy", "#2a6fdb"],
-  intermediate: ["Intermediate", "#d62828"],
-  difficult: ["Difficult", "var(--fg)"],
-  ski_route: ["Ski routes", "#f2b705"],
-  other: ["Other", "var(--muted)"],
+  easy: [t("Easy"), "#2a6fdb"],
+  intermediate: [t("Intermediate"), "#d62828"],
+  difficult: [t("Difficult"), "var(--fg)"],
+  ski_route: [t("Ski routes"), "#f2b705"],
+  other: [t("Other"), "var(--muted)"],
 };
 const DANGER_LEVELS = { low: 1, moderate: 2, considerable: 3, high: 4, very_high: 5 };
-const PERIODS = { all_day: "", earlier: "morning", later: "afternoon" };
+const PERIODS = { all_day: "", earlier: t("morning"), later: t("afternoon") };
+// The EAWS problem names, as the bulletins publish them; unknown ones are shown as they are.
+const PROBLEMS = {
+  new_snow: t("new snow"),
+  wind_slab: t("wind slab"),
+  persistent_weak_layers: t("persistent weak layers"),
+  wet_snow: t("wet snow"),
+  gliding_snow: t("gliding snow"),
+  favourable_situation: t("favourable situation"),
+  no_distinct_avalanche_problem: t("no distinct avalanche problem"),
+};
 const HISTORY_DAYS = 30;
+
+L.Control.Zoom.mergeOptions({ zoomInTitle: t("Zoom in"), zoomOutTitle: t("Zoom out") });
 
 const page = document.getElementById("page");
 const label = (text) => text.replaceAll("_", " ");
 const present = (v) => v !== null && v !== undefined;
 
 function fail(message) {
-  page.replaceChildren(el("p", {}, message, " ", el("a", { href: "./" }, "See all resorts")));
+  page.replaceChildren(el("p", {}, message, " ", el("a", { href: "./" }, t("See all resorts"))));
 }
 
 // ?r=at/soelden; anything else isn't a resort path.
@@ -59,34 +71,34 @@ function tiles(r) {
   // Bars and shares only for open resorts: elsewhere open counts are 0 or not reported.
   const active = statusKey(r) === "open";
   const share = (open, total) =>
-    active && present(open) && total ? `${Math.round((100 * open) / total)}% open` : null;
+    active && present(open) && total ? t("{share}% open", { share: Math.round((100 * open) / total) }) : null;
   const lastSnowfall = snow.last_snowfall
-    ? `Last snowfall ${viennaTime(snow.last_snowfall, { dateStyle: "medium" })}`
+    ? t("Last snowfall {date}", { date: viennaTime(snow.last_snowfall, { dateStyle: "medium" }) })
     : null;
   const danger = avalanche?.danger_level
     ? [
         el("span", { class: `badge lvl${avalanche.danger_level}` }, String(avalanche.danger_level)),
-        label(avalanche.danger),
+        dangerName(avalanche.danger),
       ]
     : "–";
   return el(
     "div",
     { class: "tiles" },
-    tile("Mountain", cm(snow.mountain_cm), snow.condition),
-    tile("Valley", cm(snow.valley_cm)),
+    tile(t("Mountain"), cm(snow.mountain_cm), snow.condition),
+    tile(t("Valley"), cm(snow.valley_cm)),
     tile(
-      "Fresh snow",
+      t("Fresh snow"),
       snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm}`, el("small", {}, " cm")) : cm(snow.fresh_cm),
       lastSnowfall,
     ),
     tile(
-      "Lifts",
+      t("Lifts"),
       pair(lifts?.open, lifts?.total),
       active && lifts?.total ? meter(lifts.open, lifts.total) : null,
       share(lifts?.open, lifts?.total),
     ),
     tile(
-      "Slopes",
+      t("Slopes"),
       present(slopes?.open) || present(slopes?.total)
         ? pair(slopes.open, slopes.total)
         : pair(slopes?.open_km, slopes?.total_km, " km"),
@@ -97,7 +109,7 @@ function tiles(r) {
           : null
         : null,
     ),
-    tile("Avalanche", danger, avalanche?.region),
+    tile(t("Avalanche danger"), danger, avalanche?.region),
   );
 }
 
@@ -106,24 +118,43 @@ function statusNote(r) {
   // status_from: this run couldn't read the status, kept from that run's (for 2 days, then no report).
   const since = r.status_from && viennaTime(r.status_from);
   if (since && new Date(r.fetched_at) - new Date(r.status_from) > 2 * 864e5)
-    return `No report: the resort's report couldn't be read since ${since}; only the area's size (lifts, slopes, km) is kept.`;
-  const kept = since ? ` Status, lifts and slopes as read ${since}: the latest report couldn't be read.` : "";
+    return t(
+      "No report: the resort's report couldn't be read since {since}; only the area's size (lifts, slopes, km) is kept.",
+      { since },
+    );
+  const kept = since
+    ? t("Status, lifts and slopes as read {since}: the latest report couldn't be read.", { since })
+    : "";
   if (r.status === "closed")
-    return `Closed: no snow depths are shown, since closed resorts' reports often still carry last season's.${kept}`;
+    return [t("Closed: no snow depths are shown, since closed resorts' reports often still carry last season's."), kept]
+      .join(" ")
+      .trim();
   if (statusKey(r) === "no_report")
-    return `No report for 14 days: only the area's size (lifts, slopes, km) is kept; the 0 open lifts means not reported.${kept}`;
-  return kept.trim() || null;
+    return [
+      t(
+        "No report for 14 days: only the area's size (lifts, slopes, km) is kept; the 0 open lifts means not reported.",
+      ),
+      kept,
+    ]
+      .join(" ")
+      .trim();
+  return kept || null;
 }
 
 function header(r) {
   const status = statusKey(r);
   const meta = [r.region, countryName(r.country)].filter(Boolean).join(" · ");
   const { checked, changed, days, stale } = reportTimes(r);
-  const times = [`Checked ${viennaTime(checked)}`, changed && `resort's last change ${viennaTime(changed)}`]
+  const times = [
+    t("Checked {time}", { time: viennaTime(checked) }),
+    changed && t("resort's last change {time}", { time: viennaTime(changed) }),
+  ]
     .filter(Boolean)
     .join(" · ");
   const unchanged =
-    stale && !r.status_from ? ` The resort hasn't changed its report for ${days} days: check its own page.` : "";
+    stale && !r.status_from
+      ? ` ${t("The resort hasn't changed its report for {n} days: check its own page.", { n: days })}`
+      : "";
   const note = statusNote(r);
   return el(
     "header",
@@ -156,7 +187,8 @@ function backLink() {
   const link = el("a", { class: "pill back", href: `./${list}` });
   link.innerHTML =
     '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"' +
-    ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All resorts';
+    ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>' +
+    t("All resorts");
   return link;
 }
 
@@ -177,7 +209,7 @@ function stations(list) {
   return el(
     "section",
     { class: "card" },
-    el("h2", {}, "Measuring points"),
+    el("h2", {}, t("Measuring points")),
     el(
       "div",
       { class: "scroll" },
@@ -190,7 +222,7 @@ function stations(list) {
           el(
             "tr",
             {},
-            ...["Station", "Elevation", "Depth", "Fresh", "Temp.", "Condition"].map((h, i) =>
+            ...[t("Station"), t("Elevation"), t("Depth"), t("Fresh"), t("Temp."), t("Condition")].map((h, i) =>
               el("th", { class: i && i < 5 ? "num" : "" }, h),
             ),
           ),
@@ -209,7 +241,7 @@ function breakdown(r) {
       el("span", { class: "n" }, pair(c.open, c.total)),
       meter(c.open, c.total),
     ]);
-    parts.push(el("div", {}, el("h2", {}, "Lifts by type"), el("div", { class: "bars" }, ...rows)));
+    parts.push(el("div", {}, el("h2", {}, t("Lifts by type")), el("div", { class: "bars" }, ...rows)));
   }
   if (r.slopes_by_difficulty) {
     const rows = Object.entries(r.slopes_by_difficulty).flatMap(([difficulty, c]) => {
@@ -222,18 +254,20 @@ function breakdown(r) {
         meter(c.open, c.total),
       ];
     });
-    parts.push(el("div", {}, el("h2", {}, "Slopes by difficulty"), el("div", { class: "bars" }, ...rows)));
+    parts.push(el("div", {}, el("h2", {}, t("Slopes by difficulty")), el("div", { class: "bars" }, ...rows)));
   }
   return parts.length ? el("section", { class: "card breakdown" }, ...parts) : null;
 }
 
 function elevation(rating) {
-  const bound = (b) => (b === "treeline" ? "the treeline" : `${b} m`);
-  if (present(rating.lower_bound) && present(rating.upper_bound))
-    return `${bound(rating.lower_bound)} – ${bound(rating.upper_bound)}`;
-  if (present(rating.lower_bound)) return `above ${bound(rating.lower_bound)}`;
-  if (present(rating.upper_bound)) return `below ${bound(rating.upper_bound)}`;
-  return "all elevations";
+  const { lower_bound: lower, upper_bound: upper } = rating;
+  const bound = (b) => (b === "treeline" ? t("the treeline") : `${b} m`);
+  if (present(lower) && present(upper)) return `${bound(lower)} – ${bound(upper)}`;
+  if (lower === "treeline") return t("above the treeline");
+  if (upper === "treeline") return t("below the treeline");
+  if (present(lower)) return t("above {m} m", { m: lower });
+  if (present(upper)) return t("below {m} m", { m: upper });
+  return t("all elevations");
 }
 
 function avalanche(bulletin) {
@@ -245,53 +279,61 @@ function avalanche(bulletin) {
       "div",
       {},
       level ? el("span", { class: `badge lvl${level}` }, String(level)) : el("span", { class: "badge" }, "–"),
-      `${label(rating.level)}: ${elevation(rating)}${period}`,
+      `${dangerName(rating.level)}: ${elevation(rating)}${period}`,
     );
   });
   const problems = bulletin.problems.length
-    ? el("p", { class: "meta" }, `Problems: ${bulletin.problems.map(label).join(", ")}`)
+    ? el(
+        "p",
+        { class: "meta" },
+        t("Problems: {list}", { list: bulletin.problems.map((p) => PROBLEMS[p] ?? label(p)).join(", ") }),
+      )
     : "";
   return el(
     "section",
     { class: "card" },
-    el("h2", {}, "Avalanche bulletin"),
+    el("h2", {}, t("Avalanche bulletin")),
     el("div", {}, el("strong", {}, bulletin.region), el("span", { class: "meta" }, ` (${bulletin.region_id})`)),
     el("div", { class: "ratings" }, ...ratings),
     problems,
-    el("p", { class: "meta" }, `Valid ${viennaTime(bulletin.valid_from)} – ${viennaTime(bulletin.valid_until)}`),
+    el(
+      "p",
+      { class: "meta" },
+      t("Valid {from} – {until}", { from: viennaTime(bulletin.valid_from), until: viennaTime(bulletin.valid_until) }),
+    ),
   );
 }
 
 function data(r) {
   const url = new URL(resortPath(r), location.href).href;
-  const input = el("input", { type: "text", readonly: "", value: url, "aria-label": "JSON URL" });
+  const input = el("input", { type: "text", readonly: "", value: url, "aria-label": t("JSON URL") });
   input.addEventListener("focus", () => input.select());
-  const copy = el("button", { type: "button" }, "Copy");
+  const copy = el("button", { type: "button" }, t("Copy"));
   copy.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(url);
-      copy.textContent = "Copied";
+      copy.textContent = t("Copied");
     } catch {
       input.select();
-      copy.textContent = "Press ⌘C";
+      copy.textContent = t("Press ⌘C");
     }
-    setTimeout(() => (copy.textContent = "Copy"), 2000);
+    setTimeout(() => (copy.textContent = t("Copy")), 2000);
   });
   const section = el(
     "section",
     { class: "card data" },
-    el("h2", {}, "Data"),
+    el("h2", {}, t("Data")),
     el(
       "div",
       { class: "meta" },
-      "This resort's JSON, e.g. for the ",
-      el("a", { href: "https://trmnl.com/recipes/ski-resort-snow-report-219253" }, "TRMNL plugin"),
-      ": paste it as its Resort.",
+      t("This resort's JSON, e.g. for the "),
+      el("a", { href: "https://trmnl.com/recipes/ski-resort-snow-report-219253" }, t("TRMNL plugin")),
+      t(": paste it as its Resort."),
     ),
-    el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, "Open")),
+    el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, t("Open|file"))),
   );
   section.append(
-    el("div", { class: "meta", style: "margin-top:12px" }, "Sources"),
+    el("div", { class: "meta", style: "margin-top:12px" }, t("Sources")),
     el(
       "ul",
       { class: "sources" },
@@ -354,10 +396,10 @@ async function history(r, container) {
   const recent = runs.time.map((time, i) => ({ t: new Date(time), i })).filter((run) => run.t >= since);
   const series = (key) => recent.map(({ t, i }) => ({ t, v: runs[key][i] }));
   container.replaceChildren(
-    chart("Snow on the mountain", "cm", "var(--accent)", series("mountain_cm")),
-    chart("Fresh snow", "cm", "var(--accent)", series("fresh_cm")),
-    chart("Open lifts", "", "var(--open)", series("lifts_open")),
-    chart("Open slopes", "", "var(--open)", series("slopes_open")),
+    chart(t("Snow on the mountain"), "cm", "var(--accent)", series("mountain_cm")),
+    chart(t("Fresh snow"), "cm", "var(--accent)", series("fresh_cm")),
+    chart(t("Open lifts"), "", "var(--open)", series("lifts_open")),
+    chart(t("Open slopes"), "", "var(--open)", series("slopes_open")),
   );
 }
 
@@ -373,7 +415,7 @@ function chart(title, unit, colour, points) {
   const box = el("div", { class: "chart" }, el("h3", {}, title));
   const known = points.filter((p) => present(p.v));
   if (known.length < 2) {
-    box.append(el("p", { class: "empty" }, "Not enough runs yet."));
+    box.append(el("p", { class: "empty" }, t("Not enough runs yet.")));
     return box;
   }
   const svgNS = "http://www.w3.org/2000/svg";
@@ -413,7 +455,11 @@ function chart(title, unit, colour, points) {
       [points.at(-1).t, "end"],
     ]) {
       const text = node("text", { class: "axis", x: x(t), y: H - 4, "text-anchor": anchor });
-      text.textContent = t.toLocaleDateString("de-AT", { timeZone: "Europe/Vienna", day: "numeric", month: "short" });
+      text.textContent = t.toLocaleDateString(DATE_LOCALE, {
+        timeZone: "Europe/Vienna",
+        day: "numeric",
+        month: "short",
+      });
       svg.append(text);
     }
     let d = "",
@@ -476,15 +522,15 @@ function chart(title, unit, colour, points) {
 
 async function show() {
   const wanted = requested();
-  if (!wanted) return fail("No resort given.");
+  if (!wanted) return fail(t("No resort given."));
   const response = await fetch(resortPath(wanted), { cache: "no-cache" });
-  if (response.status === 404) return fail("There's no such resort.");
+  if (response.status === 404) return fail(t("There's no such resort."));
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const r = await response.json();
   document.title = `${r.name} – LiftRadar`;
 
-  const mapBox = el("div", { id: "map", role: "region", "aria-label": `Map of ${r.name}` });
-  const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, "Loading…"));
+  const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
+  const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, t("Loading…")));
   const main = el(
     "div",
     { class: "stack" },
@@ -493,9 +539,9 @@ async function show() {
     el(
       "section",
       { class: "card" },
-      el("h2", {}, `Last ${HISTORY_DAYS} days`),
+      el("h2", {}, t("Last {n} days", { n: HISTORY_DAYS })),
       historyBox,
-      el("p", { class: "meta", style: "margin:10px 0 0" }, "Collected since 24 October 2026."),
+      el("p", { class: "meta", style: "margin:10px 0 0" }, t("Collected since 24 October 2026.")),
     ),
   );
   page.replaceChildren(
@@ -511,14 +557,14 @@ async function show() {
           "div",
           { class: "map-box" },
           mapBox,
-          el("a", { class: "map-link", href: resortOnMap(r) }, "Map of all resorts →"),
+          el("a", { class: "map-link", href: resortOnMap(r) }, t("Map of all resorts →")),
         ),
         ...(r.website
           ? [
               el(
                 "section",
                 { class: "card" },
-                el("h2", {}, "Official website"),
+                el("h2", {}, t("Official website")),
                 el("a", { href: r.website, rel: "noopener", style: "word-break:break-all" }, r.website),
               ),
             ]
@@ -529,8 +575,8 @@ async function show() {
   );
   resortMap(r, mapBox);
   history(r, historyBox).catch((error) =>
-    historyBox.replaceChildren(el("p", { class: "empty" }, `No history (${error.message}).`)),
+    historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );
 }
 
-show().catch((error) => fail(`Could not load the resort (${error.message}).`));
+show().catch((error) => fail(t("Could not load the resort ({message}).", error)));

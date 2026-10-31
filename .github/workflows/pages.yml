@@ -36,6 +36,10 @@ jobs:
           cp -R site/index.html site/about.html site/map.html site/resort.html site/sources.html site/stats.html site/404.html site/_headers site/assets _site/
           for part in json history schema; do cp -R "data/$part" _site/; done
 
+      # Before the asset links are versioned: these pages have the same links.
+      - name: Generate the translated pages
+        run: node site/scripts/translate.mjs _site
+
       # Scripts keep their top-level names (esbuild leaves them alone when not bundling):
       # the pages share them from common.js. A failure here only costs a few kilobytes,
       # so it doesn't hold back new data: the unminified files stay valid.
@@ -58,8 +62,8 @@ jobs:
       - name: Version the asset links
         run: |
           version=$(git -C site rev-parse --short HEAD)
-          sed -i -E "s#(assets/[a-z]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html
-          grep -o 'assets/[^"]*' _site/*.html
+          sed -i -E "s#(assets/[a-z]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html _site/*/*.html
+          grep -o 'assets/[^"]*' _site/*.html _site/*/*.html
 
       # An assets-only Worker (wrangler.jsonc), uploaded from here: the site is combined
       # from two branches, so Cloudflare's own Git builds can't make it.

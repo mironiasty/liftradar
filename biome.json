@@ -1,7 +1,7 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
   "files": {
-    "includes": ["assets/*.js", "assets/*.css"]
+    "includes": ["assets/*.js", "assets/*.css", "scripts/*.mjs"]
   },
   "formatter": {
     "indentStyle": "space",
@@ -11,12 +11,15 @@
     "globals": [
       "L",
       "AREAS_URL",
-      "COUNTRY_NAMES",
+      "DATE_LOCALE",
+      "LANG",
       "LIST_KEY",
       "STALE_DAYS",
       "STATUS_COLORS",
       "STATUS_LABELS",
+      "capitalized",
       "countryName",
+      "dangerName",
       "dash",
       "el",
       "fnuggCredit",
@@ -29,6 +32,7 @@
       "resortPage",
       "resortPath",
       "statusKey",
+      "t",
       "updatedText",
       "viennaTime"
     ]

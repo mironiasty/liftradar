@@ -3,10 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LiftRadar – Status of ski resorts</title>
+<script src="/assets/lang.js"></script>
+<title data-i18n>LiftRadar – Status of ski resorts</title>
 <link rel="canonical" href="https://liftradar.eu/">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://liftradar.eu/">
+<link rel="alternate" hreflang="de" href="https://liftradar.eu/de/">
+<link rel="alternate" hreflang="fr" href="https://liftradar.eu/fr/">
+<link rel="alternate" hreflang="it" href="https://liftradar.eu/it/">
+<link rel="alternate" hreflang="pl" href="https://liftradar.eu/pl/">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   main { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
   /* Header: the name and intro, and a small map of all resorts on the right. */
@@ -21,8 +27,8 @@
   .map-tile:hover span { color: var(--accent); }
   .map-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   #mini-map svg { display: block; width: 100%; height: 100%; }
-  #mini-map { background: var(--chip) url("assets/mini-map-light.webp") center / cover; }
-  @media (prefers-color-scheme: dark) { #mini-map { background-image: url("assets/mini-map-dark.webp"); } }
+  #mini-map { background: var(--chip) url("/assets/mini-map-light.webp") center / cover; }
+  @media (prefers-color-scheme: dark) { #mini-map { background-image: url("/assets/mini-map-dark.webp"); } }
   #mini-map path { fill: none; stroke: var(--fg); stroke-opacity: .22; stroke-width: 1.2; stroke-linejoin: round; }
   #mini-map path.covered { stroke-opacity: .4; }
   #mini-map circle { stroke: var(--bg); stroke-width: 1.5; }
@@ -133,7 +139,7 @@
     td.c-region .sub-line::before { content: " · "; }
     td.c-value { flex: 0 0 25%; order: 2; min-width: 0; }
     td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 2px; color: var(--muted);
-      font-size: .7rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+      font-size: .7rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; white-space: normal; }
     td .meter { margin-left: 0; }
     .danger { flex-wrap: wrap; gap: 2px 6px; }
     tbody tr:hover td { background: none; }
@@ -157,29 +163,39 @@
         <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
         <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
       </svg>
-      <span class="name"><b>LiftRadar</b><small>Status of ski resorts</small></span>
+      <span class="name"><b>LiftRadar</b><small data-i18n>Status of ski resorts</small></span>
     </h1>
     <nav aria-label="Main">
     <a class="pill" href="stats.html">
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
-      Stats
+      <span data-i18n>Stats</span>
     </a>
     <a class="pill" href="about.html">
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
-      About the data
+      <span data-i18n>About the data</span>
     </a>
+    <details class="lang-menu">
+      <summary class="pill lang" aria-label="Language">EN</summary>
+      <div>
+        <a href="/" hreflang="en" lang="en" aria-current="true">English</a>
+        <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+        <a href="/it/" hreflang="it" lang="it">Italiano</a>
+        <a href="/pl/" hreflang="pl" lang="pl">Polski</a>
+      </div>
+    </details>
     </nav>
   </header>
   <div class="top">
   <div>
-    <p class="intro">Open lifts and slopes, snow depth and avalanche danger for ski resorts across Europe, from the
+    <p class="intro" data-i18n>Open lifts and slopes, snow depth and avalanche danger for ski resorts across Europe, from the
       resorts' own reports.</p>
-    <p class="intro muted">LiftRadar is not an official source. Reports can be late or wrong, so check the resort's own
+    <p class="intro muted" data-i18n>LiftRadar is not an official source. Reports can be late or wrong, so check the resort's own
       website before you go.</p>
   </div>
   <a class="map-tile" href="map.html">
     <div id="mini-map"></div>
-    <span>Map of all resorts &rarr;</span>
+    <span data-i18n>Map of all resorts &rarr;</span>
   </a>
   </div>
   <div class="tools">
@@ -189,38 +205,38 @@
       <button type="button" id="search-clear" aria-label="Clear search" hidden><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
     </div>
     <div class="seg" id="country" role="group" aria-label="Country"></div>
-    <select id="region" aria-label="Region"><option value="">All regions</option></select>
+    <select id="region" aria-label="Region"><option value="" data-i18n>All regions</option></select>
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
-    <span class="muted" id="updated">Loading…</span>
+    <span class="muted" id="updated" data-i18n>Loading…</span>
     <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
   <div class="table">
   <table>
     <thead><tr>
-      <th><button type="button" data-key="name" class="sorted asc">Resort</button></th>
-      <th><button type="button" data-key="region">Region</button></th>
-      <th class="num"><button type="button" data-key="mountain">Mountain</button></th>
-      <th class="num"><button type="button" data-key="valley">Valley</button></th>
-      <th class="num"><button type="button" data-key="fresh">Fresh</button></th>
-      <th class="num">Lifts<span class="sub"><button type="button" data-key="lifts_open">open</button><button type="button" data-key="lifts_total">total</button></span></th>
-      <th class="num">Slopes<span class="sub"><button type="button" data-key="slopes_open">open</button><button type="button" data-key="slopes_total">total</button></span>
-        <span class="sub">km <button type="button" data-key="km_open">open</button><button type="button" data-key="km_total">total</button></span></th>
-      <th><button type="button" data-key="avalanche">Avalanche</button></th>
+      <th><button type="button" data-key="name" class="sorted asc" data-i18n>Resort</button></th>
+      <th><button type="button" data-key="region" data-i18n>Region</button></th>
+      <th class="num"><button type="button" data-key="mountain" data-i18n>Mountain</button></th>
+      <th class="num"><button type="button" data-key="valley" data-i18n>Valley</button></th>
+      <th class="num"><button type="button" data-key="fresh" data-i18n>Fresh</button></th>
+      <th class="num"><span data-i18n>Lifts</span><span class="sub"><button type="button" data-key="lifts_open" data-i18n="open|count">open</button><button type="button" data-key="lifts_total" data-i18n>total</button></span></th>
+      <th class="num"><span data-i18n>Slopes</span><span class="sub"><button type="button" data-key="slopes_open" data-i18n="open|count">open</button><button type="button" data-key="slopes_total" data-i18n>total</button></span>
+        <span class="sub">km <button type="button" data-key="km_open" data-i18n="open|count">open</button><button type="button" data-key="km_total" data-i18n>total</button></span></th>
+      <th><button type="button" data-key="avalanche" data-i18n>Avalanche<br>danger</button></th>
     </tr></thead>
     <tbody></tbody>
   </table>
-  <p class="credit">Norwegian snow and lift data provided by <a href="https://fnugg.no">fnugg</a>.</p>
-  <p class="empty" id="empty" hidden>No resorts match. <button type="button" id="reset" class="chip">Show all</button></p>
+  <p class="credit" data-i18n>Norwegian snow and lift data provided by <a href="https://fnugg.no">fnugg</a>.</p>
+  <p class="empty" id="empty" hidden><span data-i18n>No resorts match.</span> <button type="button" id="reset" class="chip" data-i18n>Show all</button></p>
   </div>
   <details class="notes">
-    <summary>How to read the numbers</summary>
+    <summary data-i18n>How to read the numbers</summary>
     <ul class="muted">
-      <li>Updated twice a day, at about 08:40 and 13:40 Vienna time.
+      <li data-i18n>Updated twice a day, at about 08:40 and 13:40 Vienna time.
         &ldquo;Checked&rdquo; on the map and resort pages is when we last read a report; the resort's last change can be
         days older while nothing opens or closes, and is highlighted after 7 days.</li>
-      <li>Ski areas spanning several villages (e.g. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) are listed once; their snow depths are from the village that reported last.</li>
-      <li>Closed resorts show nothing open and no snow depths: their reports often still carry last season's values.
+      <li data-i18n>Ski areas spanning several villages (e.g. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) are listed once; their snow depths are from the village that reported last.</li>
+      <li data-i18n>Closed resorts show nothing open and no snow depths: their reports often still carry last season's values.
         &ldquo;No report&rdquo; means the resort hasn't reported for 14 days, or we couldn't read its report for over 2 days
         (until then, a resort whose report couldn't be read keeps its last status and numbers). Trentino, Dolomiti Superski,
         Livigno, Ski Arlberg, PKL, Zieleniec, French (Lumiplan, ATEN), Czech and Finnish reports carry no report time, so their open/closed is always taken as current
@@ -230,30 +246,30 @@
         French resorts count lifts and slopes scheduled to open later that day as open, and show &ldquo;No report&rdquo; while their slopes are outside the season.
         TMR's areas (Jasná, the High Tatras, Szczyrk), some other Polish ones, a few small Austrian ones the 13 Spanish ones we don't read yet (Baqueira Beret, which refuses automated clients, and others) and eight Norwegian ones (Tryvann, Kongsberg, Drammen ...) are listed with their size only for now,
         and most German areas outside the Sauerland without even that.</li>
-      <li>Total slope km is the ski area's size: the one advertised by the resort, otherwise OnTheSnow's or skiresort.com's,
+      <li data-i18n>Total slope km is the ski area's size: the one advertised by the resort, otherwise OnTheSnow's or skiresort.com's,
         and for sectors of a linked area (e.g. St. Anton, Verbier) the sum of the operator's slope lengths. For about 20
         resorts without one, and the German ones, it's the sum of the slope lengths the resort reports, which can be too low.</li>
-      <li>Open km are summed from slope lengths (the resort's slope map or infosnow, or OpenStreetMap for Kitzsteinhorn and
+      <li data-i18n>Open km are summed from slope lengths (the resort's slope map or infosnow, or OpenStreetMap for Kitzsteinhorn and
         Kaunertal, which runs low); lift and slope counts from slope maps include practice lifts and carpets.</li>
-      <li>Most Swiss resorts don't report snow depths: theirs are measured at the nearest SLF stations (open ground, not
+      <li data-i18n>Most Swiss resorts don't report snow depths: theirs are measured at the nearest SLF stations (open ground, not
         pistes), so they can differ from what the resort would report. Finnish resorts' valley depth is the nearest FMI
         weather station's natural snow, not the depth on the slopes.</li>
-      <li>Slope counts of SalzburgerLand and Trentino resorts are the area's size, not reported; Livigno shows lifts only. Most resorts in Vorarlberg,
+      <li data-i18n>Slope counts of SalzburgerLand and Trentino resorts are the area's size, not reported; Livigno shows lifts only. Most resorts in Vorarlberg,
         Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.</li>
-      <li>Avalanche danger (Tirol, Switzerland, Italy, the French Alps and Pyrenees, Krkonoše and Jeseníky in Czechia, Jasná and the Slovak and Polish Tatras, the Bavarian Alps, the Norwegian mountain regions, the Spanish Pyrenees, Guadarrama and part of the Cantabrian range; not other Austrian states, the German uplands or Finland) is the highest level of the day in the resort's warning region.</li>
+      <li data-i18n>Avalanche danger (Tirol, Switzerland, Italy, the French Alps and Pyrenees, Krkonoše and Jeseníky in Czechia, Jasná and the Slovak and Polish Tatras, the Bavarian Alps, the Norwegian mountain regions, the Spanish Pyrenees, Guadarrama and part of the Cantabrian range; not other Austrian states, the German uplands or Finland) is the highest level of the day in the resort's warning region.</li>
     </ul>
   </details>
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="sources.html">Data sources</a>
-      <a href="about.html">About the data</a>
-      <span>Contact: miron [at] liftradar.eu</span>
+      <a href="sources.html" data-i18n>Data sources</a>
+      <a href="about.html" data-i18n>About the data</a>
+      <span data-i18n>Contact: miron [at] liftradar.eu</span>
     </nav>
     <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span>Made by <b>Miron</b></span></span>
+      <span data-i18n>Made by <b>Miron</b></span></span>
   </footer>
 </main>
-<script src="assets/common.js"></script>
-<script src="assets/table.js"></script>
+<script src="/assets/common.js"></script>
+<script src="/assets/table.js"></script>
 </body>
 </html>

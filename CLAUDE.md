@@ -11,6 +11,10 @@ README documents every source in detail.
   there. `about.html` keeps to what a reader needs: per-source detail goes in that README's "Data details".
 - `../liftradar-fetcher/CLAUDE.md` has the full checklist of what to update here after a fetcher
   change, and which fields each page reads.
+- `/de/`, `/fr/`, `/it/` and `/pl/` are generated on deploy from the English pages and `i18n/<language>.json`
+  (README "Translations"). Always edit the English, and translate in the same change: after editing text marked
+  `data-i18n` or in `t("…")`, including `about.html`, `npm run check` lists what's missing in each language and the
+  old entries to replace.
 - Users poll `json/<country>/<id>.json` directly: those URLs are a public
   contract.
 - Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for

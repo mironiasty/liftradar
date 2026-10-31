@@ -24,18 +24,18 @@ function show(index) {
       { class: "urls" },
       ...urls.map((url) => {
         const names = resortsByUrl.get(url);
-        const used = names.length === 1 ? names[0] : `${names.length} resorts`;
+        const used = names.length === 1 ? names[0] : t("{n} resorts", { n: names.length });
         return el("li", {}, el("a", { href: url, rel: "nofollow" }, url), el("span", { class: "muted" }, ` (${used})`));
       }),
     );
     container.append(el("h3", {}, host, el("span", { class: "muted" }, ` (${urls.length})`)), list);
   }
   document.getElementById("status").textContent =
-    `${resortsByUrl.size} pages on ${byHost.size} websites, used for ${index.resorts.length} resorts. ${updatedText(index)}.`;
+    `${t("{pages} pages on {sites} websites, used for {n} resorts.", { pages: resortsByUrl.size, sites: byHost.size, n: index.resorts.length })} ${updatedText(index)}.`;
 }
 
 loadIndex()
   .then(show)
   .catch((error) => {
-    document.getElementById("status").textContent = `Could not load the data (${error.message})`;
+    document.getElementById("status").textContent = t("Could not load the data ({message})", error);
   });

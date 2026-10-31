@@ -3,10 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Map – LiftRadar</title>
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<script src="/assets/lang.js"></script>
+<title data-i18n>Map – LiftRadar</title>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://liftradar.eu/map">
+<link rel="alternate" hreflang="de" href="https://liftradar.eu/de/map">
+<link rel="alternate" hreflang="fr" href="https://liftradar.eu/fr/map">
+<link rel="alternate" hreflang="it" href="https://liftradar.eu/it/map">
+<link rel="alternate" hreflang="pl" href="https://liftradar.eu/pl/map">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   html, body { height: 100%; }
   body { font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; }
@@ -16,9 +22,9 @@
   h1 { margin: 0; }
   /* Phones: one compact row, so the map keeps the height. The update time takes the tagline's place under the name. */
   @media (max-width: 760px) {
-    .site-header { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0 8px; padding: 6px 12px; }
+    .site-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0 8px; padding: 6px 12px; }
     .site-header .brand small { display: none; }
-    .site-header > .muted { grid-area: 2 / 1; margin: 0 0 0 35px; font-size: .68rem; line-height: 1.2; white-space: nowrap; }
+    .site-header > .muted { grid-area: 2 / 1; margin: 0 0 0 35px; font-size: .68rem; line-height: 1.2; }
     .site-header nav { grid-area: 1 / 2 / 3 / 3; margin: 0; }
   }
   .muted { font-size: .85rem; }
@@ -87,32 +93,42 @@
       <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
       <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
     </svg>
-    <span class="name"><b>LiftRadar</b><small>Status of ski resorts</small></span>
+    <span class="name"><b>LiftRadar</b><small data-i18n>Status of ski resorts</small></span>
   </a></h1>
-  <span class="muted"><span id="updated">Loading…</span></span>
+  <span class="muted"><span id="updated" data-i18n>Loading…</span></span>
   <nav aria-label="Main">
   <a class="pill" href="./">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
-    Table
+    <span data-i18n>Table</span>
   </a>
   <a class="pill" href="stats.html">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
-    Stats
+    <span data-i18n>Stats</span>
   </a>
   <a class="pill" href="about.html">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
-    About the data
+    <span data-i18n>About the data</span>
   </a>
+  <details class="lang-menu">
+    <summary class="pill lang" aria-label="Language">EN</summary>
+    <div>
+      <a href="/map.html" hreflang="en" lang="en" aria-current="true">English</a>
+      <a href="/de/map.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="/fr/map.html" hreflang="fr" lang="fr">Français</a>
+      <a href="/it/map.html" hreflang="it" lang="it">Italiano</a>
+      <a href="/pl/map.html" hreflang="pl" lang="pl">Polski</a>
+    </div>
+  </details>
   </nav>
 </header>
 <div class="map-wrap">
   <section id="map" aria-label="Map of ski resorts"></section>
   <details class="panel" id="panel" open>
-    <summary>Map options</summary>
+    <summary data-i18n>Map options</summary>
     <div class="panel-body">
-      <h2 id="status-title">Resorts</h2>
+      <h2 id="status-title" data-i18n>Resorts</h2>
       <div class="chips" id="filters" role="group" aria-labelledby="status-title"></div>
-      <h2 id="label-title">Number on markers</h2>
+      <h2 id="label-title" data-i18n>Number on markers</h2>
       <div class="chips" id="metrics" role="group" aria-labelledby="label-title"></div>
       <div class="seg" id="mode" role="group" aria-label="Open or total"></div>
       <p class="hint" id="hint"></p>
@@ -120,7 +136,7 @@
   </details>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="assets/common.js"></script>
-<script src="assets/map.js"></script>
+<script src="/assets/common.js"></script>
+<script src="/assets/map.js"></script>
 </body>
 </html>

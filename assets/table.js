@@ -24,9 +24,9 @@ const saved = new URLSearchParams(location.search);
 
 // Same colours as the map.
 const STATUS = {
-  open: { label: "Open", color: "var(--open)" },
-  closed: { label: "Closed", color: "var(--closed)" },
-  no_report: { label: "No report", color: "var(--none)" },
+  open: { label: capitalized(STATUS_LABELS.open), color: "var(--open)" },
+  closed: { label: capitalized(STATUS_LABELS.closed), color: "var(--closed)" },
+  no_report: { label: capitalized(STATUS_LABELS.no_report), color: "var(--none)" },
 };
 const statusOf = statusKey;
 
@@ -79,7 +79,9 @@ function meter(open, total, active) {
   const cell = el("div", {}, pair(open, total));
   if (active && open !== null && open !== undefined && total) {
     const bar = el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` });
-    cell.append(el("div", { class: "meter", title: `${Math.round((100 * open) / total)}% open` }, bar));
+    cell.append(
+      el("div", { class: "meter", title: t("{share}% open", { share: Math.round((100 * open) / total) }) }, bar),
+    );
   }
   return cell;
 }
@@ -87,22 +89,22 @@ function meter(open, total, active) {
 function slopesCell(slopes, active) {
   const km = pair(slopes?.open_km, slopes?.total_km, " km");
   const counts = pair(slopes?.open, slopes?.total);
-  const cell = value("Slopes", counts === "–" ? km : counts, meter(slopes?.open, slopes?.total, active));
+  const cell = value(t("Slopes"), counts === "–" ? km : counts, meter(slopes?.open, slopes?.total, active));
   if (km !== "–") cell.append(el("div", { class: "sub-line" }, km));
   return cell;
 }
 
 function avalancheCell(bulletin) {
   if (!bulletin || bulletin.danger_level === null)
-    return el("td", { class: "c-value nil", "data-label": "Avalanche" }, "–");
+    return el("td", { class: "c-value nil", "data-label": t("Avalanche danger") }, "–");
   return el(
     "td",
-    { class: "c-value", "data-label": "Avalanche" },
+    { class: "c-value", "data-label": t("Avalanche danger") },
     el(
       "span",
       { class: "danger" },
       el("span", { class: `badge lvl${bulletin.danger_level}` }, String(bulletin.danger_level)),
-      el("span", { class: "danger-text" }, bulletin.danger.replace("_", " ")),
+      el("span", { class: "danger-text" }, dangerName(bulletin.danger)),
     ),
   );
 }
@@ -120,10 +122,10 @@ function row(r) {
     { class: active ? "" : "inactive" },
     nameCell(r),
     el("td", { class: "c-region" }, r.region ?? "–", el("div", { class: "sub-line" }, countryName(r.country))),
-    value("Mountain", dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
-    value("Valley", dash(valley, " cm")),
-    value("Fresh", dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
-    value("Lifts", pair(r.lifts?.open, r.lifts?.total), meter(r.lifts?.open, r.lifts?.total, active)),
+    value(t("Mountain"), dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
+    value(t("Valley"), dash(valley, " cm")),
+    value(t("Fresh"), dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
+    value(t("Lifts"), pair(r.lifts?.open, r.lifts?.total), meter(r.lifts?.open, r.lifts?.total, active)),
     slopesCell(r.slopes, active),
     avalancheCell(r.avalanche),
   );
@@ -151,7 +153,8 @@ function filter() {
   for (const [status, node] of statusCounts) node.textContent = String(totals[status] ?? 0);
   searchClear.hidden = !search.value;
   const filtered = query || country || region || shownStatuses.size;
-  count.textContent = filtered ? `${shown} of ${rows.length} resorts` : `${rows.length} resorts`;
+  const n = rows.length;
+  count.textContent = filtered ? t("{shown} of {n} resorts", { shown, n }) : t("{n} resorts", { n });
   empty.hidden = shown > 0;
   saveState();
 }
@@ -185,16 +188,16 @@ function fillRegions(resorts, chosen = regionSelect.value) {
   const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))].sort(
     (a, b) => a.localeCompare(b),
   );
-  regionSelect.replaceChildren(option("", "All regions"), ...names.map((name) => option(name, name)));
+  regionSelect.replaceChildren(option("", t("All regions")), ...names.map((name) => option(name, name)));
   regionSelect.value = names.includes(chosen) ? chosen : "";
   regionSelect.hidden = !country;
 }
 
 function fillFilters(resorts) {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
-    countryName(a).localeCompare(countryName(b)),
+    countryName(a).localeCompare(countryName(b), LANG),
   );
-  const choices = [["", "All"], ...countries.map((code) => [code, countryName(code)])];
+  const choices = [["", t("All")], ...countries.map((code) => [code, countryName(code)])];
   const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
   countryGroup.append(...countryButtons);
   const chooseCountry = (code, region) => {
@@ -236,14 +239,14 @@ function fillFilters(resorts) {
 
 // The phone layout has no column headers: a select offers the useful orders.
 const SORTS = [
-  ["name", true, "Name A–Z"],
-  ["lifts_open", false, "Most open lifts"],
-  ["slopes_open", false, "Most open slopes"],
-  ["km_open", false, "Most open km"],
-  ["mountain", false, "Most snow"],
-  ["fresh", false, "Most fresh snow"],
-  ["km_total", false, "Biggest areas"],
-  ["avalanche", false, "Highest avalanche danger"],
+  ["name", true, t("Name A–Z")],
+  ["lifts_open", false, t("Most open lifts")],
+  ["slopes_open", false, t("Most open slopes")],
+  ["km_open", false, t("Most open km")],
+  ["mountain", false, t("Most snow")],
+  ["fresh", false, t("Most fresh snow")],
+  ["km_total", false, t("Biggest areas")],
+  ["avalanche", false, t("Highest avalanche danger")],
 ];
 const sortSelect = document.getElementById("sort");
 sortSelect.append(...SORTS.map(([, , label], i) => option(String(i), label)));
@@ -291,7 +294,7 @@ searchClear.addEventListener("click", () => {
 // The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
 // resort as a dot in its status colour; the tile links to map.html.
 async function miniMap(resorts) {
-  const response = await fetch("assets/mini-map.svg");
+  const response = await fetch("/assets/mini-map.svg");
   if (!response.ok) return;
   const box = document.getElementById("mini-map");
   box.innerHTML = await response.text();
@@ -336,5 +339,5 @@ loadIndex()
     miniMap(index.resorts).catch(() => {});
   })
   .catch((error) => {
-    document.getElementById("updated").textContent = `Could not load the data (${error.message})`;
+    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
   });

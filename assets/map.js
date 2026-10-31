@@ -4,9 +4,9 @@
 // Resorts with an area (assets/areas.geojson, from OpenStreetMap) also show it.
 
 const STATUS = {
-  open: { label: "open", color: "--open" },
-  closed: { label: "closed", color: "--closed" },
-  no_report: { label: "no report", color: "--none" },
+  open: { label: STATUS_LABELS.open, color: "--open" },
+  closed: { label: STATUS_LABELS.closed, color: "--closed" },
+  no_report: { label: STATUS_LABELS.no_report, color: "--none" },
 };
 // Leaflet stacks markers by latitude: this lifts open resorts above all others,
 // and a hovered marker above those.
@@ -15,14 +15,33 @@ const OPEN_ON_TOP = 1e6;
 // only shown for open resorts: closed ones are 0, and resorts without a recent
 // report have no open counts.
 const METRICS = {
-  lifts: { label: "Lifts", open: (r) => r.lifts?.open, total: (r) => r.lifts?.total },
-  slopes: { label: "Slopes", open: (r) => r.slopes?.open, total: (r) => r.slopes?.total },
-  km: { label: "Slope km", open: (r) => r.slopes?.open_km, total: (r) => r.slopes?.total_km },
-  snow: { label: "Snow", value: (r) => r.snow.mountain_cm, hint: "Snow depth on the mountain, cm." },
-  fresh: { label: "Fresh snow", value: (r) => r.snow.fresh_cm, hint: "Fresh snow, cm." },
-  avalanche: { label: "Avalanche", value: (r) => r.avalanche?.danger_level, hint: "Avalanche danger level, 1–5." },
+  lifts: {
+    label: t("Lifts"),
+    open: (r) => r.lifts?.open,
+    total: (r) => r.lifts?.total,
+    hints: { open: t("Open lifts, shown for open resorts."), total: t("All lifts of the area.") },
+  },
+  slopes: {
+    label: t("Slopes"),
+    open: (r) => r.slopes?.open,
+    total: (r) => r.slopes?.total,
+    hints: { open: t("Open slopes, shown for open resorts."), total: t("All slopes of the area.") },
+  },
+  km: {
+    label: t("Slope km"),
+    open: (r) => r.slopes?.open_km,
+    total: (r) => r.slopes?.total_km,
+    hints: { open: t("Open slope km, shown for open resorts."), total: t("All slope km of the area.") },
+  },
+  snow: { label: t("Snow"), value: (r) => r.snow.mountain_cm, hint: t("Snow depth on the mountain, cm.") },
+  fresh: { label: t("Fresh snow"), value: (r) => r.snow.fresh_cm, hint: t("Fresh snow, cm.") },
+  avalanche: {
+    label: t("Avalanche danger"),
+    value: (r) => r.avalanche?.danger_level,
+    hint: t("Avalanche danger level, 1–5."),
+  },
 };
-const MODES = { open: "Open", total: "Total" };
+const MODES = { open: t("Open"), total: t("Total") };
 const LABEL_KEY = "map-label";
 
 function labelText(r, status, { metric, mode }) {
@@ -35,13 +54,11 @@ function labelText(r, status, { metric, mode }) {
 
 function hintText({ metric, mode }) {
   const m = METRICS[metric];
-  if (m.hint) return m.hint;
-  return mode === "open"
-    ? `Open ${m.label.toLowerCase()}, shown for open resorts.`
-    : `All ${m.label.toLowerCase()} of the area.`;
+  return m.hint ?? m.hints[mode];
 }
 
 const css = getComputedStyle(document.documentElement);
+L.Control.Zoom.mergeOptions({ zoomInTitle: t("Zoom in"), zoomOutTitle: t("Zoom out") });
 const color = (status) => css.getPropertyValue(STATUS[status].color).trim();
 
 const map = L.map("map", { zoomSnap: 0.5 });
@@ -62,7 +79,7 @@ L.tileLayer("https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png", {
 function meter(open, total, active) {
   if (!active || open === null || open === undefined || !total) return [];
   const bar = el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` });
-  return [el("div", { class: "meter", title: `${Math.round((100 * open) / total)}% open` }, bar)];
+  return [el("div", { class: "meter", title: t("{share}% open", { share: Math.round((100 * open) / total) }) }, bar)];
 }
 
 // The report like a resort card on the phone table: name and status pill, region,
@@ -76,21 +93,21 @@ function popup(r, status) {
       values.push(el("div", {}, el("div", { class: "label" }, title), ...(content.length ? content : [text])));
   };
   const mountain = dash(snow.mountain_cm, " cm");
-  add("Mountain", mountain, el("b", {}, mountain));
-  add("Valley", dash(snow.valley_cm, " cm"));
+  add(t("Mountain"), mountain, el("b", {}, mountain));
+  add(t("Valley"), dash(snow.valley_cm, " cm"));
   add(
-    "Fresh",
+    t("Fresh"),
     dash(snow.fresh_cm, " cm"),
     snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm} cm`) : `${snow.fresh_cm} cm`,
   );
   const liftCount = pair(lifts?.open, lifts?.total);
-  add("Lifts", liftCount, liftCount, ...meter(lifts?.open, lifts?.total, active));
+  add(t("Lifts"), liftCount, liftCount, ...meter(lifts?.open, lifts?.total, active));
   const counts = pair(slopes?.open, slopes?.total);
   const km = pair(slopes?.open_km, slopes?.total_km, " km");
-  if (counts === "–") add("Slopes", km);
+  if (counts === "–") add(t("Slopes"), km);
   else
     add(
-      "Slopes",
+      t("Slopes"),
       counts,
       counts,
       ...meter(slopes.open, slopes.total, active),
@@ -98,13 +115,13 @@ function popup(r, status) {
     );
   if (avalanche?.danger_level)
     add(
-      "Avalanche",
+      t("Avalanche danger"),
       "",
       el(
         "div",
         { class: "danger" },
         el("span", { class: `badge lvl${avalanche.danger_level}` }, String(avalanche.danger_level)),
-        el("span", { class: "sub" }, avalanche.danger.replace("_", " ")),
+        el("span", { class: "sub" }, dangerName(avalanche.danger)),
       ),
     );
 
@@ -116,7 +133,7 @@ function popup(r, status) {
       "div",
       { class: "head" },
       el("a", { class: "name", href: resortPage(r) }, r.name),
-      el("span", { class: "status-pill", style: `--c:${color(status)}` }, label[0].toUpperCase() + label.slice(1)),
+      el("span", { class: "status-pill", style: `--c:${color(status)}` }, capitalized(label)),
     ),
     el("div", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
   );
@@ -129,10 +146,12 @@ function popup(r, status) {
     el(
       "span",
       {},
-      `Checked ${viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}`,
+      t("Checked {time}", {
+        time: viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" }),
+      }),
     ),
   );
-  foot.append(el("a", { href: resortPage(r) }, "Details and history →"));
+  foot.append(el("a", { href: resortPage(r) }, t("Details and history →")));
   content.append(foot);
   return content;
 }
@@ -240,10 +259,9 @@ function show([index, areas]) {
       showLayers();
     });
     chip.setAttribute("aria-pressed", false);
-    const name = label[0].toUpperCase() + label.slice(1);
     chip.append(
       el("span", { class: "dot", style: `--c:${color(status)}` }),
-      name,
+      capitalized(label),
       el("span", { class: "count" }, String(total)),
     );
     filters.append(chip);
@@ -265,6 +283,6 @@ L.DomEvent.disableScrollPropagation(panel);
 Promise.all([loadIndex(), loadAreas()])
   .then(show)
   .catch((error) => {
-    document.getElementById("updated").textContent = `Could not load the data (${error.message})`;
+    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
     map.setView([47.25, 11.9], 8);
   });

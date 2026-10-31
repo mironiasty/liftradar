@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stats – LiftRadar</title>
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css">
+<script src="/assets/lang.js"></script>
+<title data-i18n>Stats – LiftRadar</title>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://liftradar.eu/stats">
+<link rel="alternate" hreflang="de" href="https://liftradar.eu/de/stats">
+<link rel="alternate" hreflang="fr" href="https://liftradar.eu/fr/stats">
+<link rel="alternate" hreflang="it" href="https://liftradar.eu/it/stats">
+<link rel="alternate" hreflang="pl" href="https://liftradar.eu/pl/stats">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   main { max-width: 1100px; margin: 0 auto; padding: 32px 16px; }
   h1.page { margin: 20px 0 4px; font-size: 1.5rem; }
@@ -69,25 +75,35 @@
       <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
       <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
     </svg>
-    <span class="name"><b>LiftRadar</b><small>Status of ski resorts</small></span>
+    <span class="name"><b>LiftRadar</b><small data-i18n>Status of ski resorts</small></span>
     </a>
     <nav aria-label="Main">
     <a class="pill" href="./">
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
-      Table
+      <span data-i18n>Table</span>
     </a>
     <a class="pill" href="map.html">
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
-      Map
+      <span data-i18n>Map</span>
     </a>
     <a class="pill" href="about.html">
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
-      About the data
+      <span data-i18n>About the data</span>
     </a>
+    <details class="lang-menu">
+      <summary class="pill lang" aria-label="Language">EN</summary>
+      <div>
+        <a href="/stats.html" hreflang="en" lang="en" aria-current="true">English</a>
+        <a href="/de/stats.html" hreflang="de" lang="de">Deutsch</a>
+        <a href="/fr/stats.html" hreflang="fr" lang="fr">Français</a>
+        <a href="/it/stats.html" hreflang="it" lang="it">Italiano</a>
+        <a href="/pl/stats.html" hreflang="pl" lang="pl">Polski</a>
+      </div>
+    </details>
     </nav>
   </header>
-  <h1 class="page">Stats</h1>
-  <p class="muted"><span id="updated">Loading…</span></p>
+  <h1 class="page" data-i18n>Stats</h1>
+  <p class="muted"><span id="updated" data-i18n>Loading…</span></p>
   <div class="tools">
     <div class="seg" id="country" role="group" aria-label="Country"></div>
     <select id="region" aria-label="Region" hidden></select>
@@ -95,34 +111,34 @@
   </div>
   <div id="charts"></div>
   <section class="card lower">
-    <h2>How to read these</h2>
+    <h2 data-i18n>How to read these</h2>
     <ul class="notes">
-      <li>Each day is every resort's last report of that day, so today can still change.</li>
-      <li>Lifts, slopes and km count open resorts only.</li>
-      <li>Coverage grew while history was collected: Resorts tracked shows it. A rise can come from a newly added country rather than from resorts opening.</li>
-      <li>Some open resorts report no km, so Open slopes (km) runs low.</li>
+      <li data-i18n>Each day is every resort's last report of that day, so today can still change.</li>
+      <li data-i18n>Lifts, slopes and km count open resorts only.</li>
+      <li data-i18n>Coverage grew while history was collected: Resorts tracked shows it. A rise can come from a newly added country rather than from resorts opening.</li>
+      <li data-i18n>Some open resorts report no km, so Open slopes (km) runs low.</li>
     </ul>
   </section>
   <details class="card">
-    <summary>Daily numbers</summary>
+    <summary data-i18n>Daily numbers</summary>
     <div class="daily-wrap">
       <table id="daily">
-        <thead><tr><th scope="col">Day</th><th scope="col">Tracked</th><th scope="col">Open resorts</th><th scope="col">Open lifts</th><th scope="col">Open slopes</th><th scope="col">Open km</th></tr></thead>
+        <thead><tr><th scope="col" data-i18n>Day</th><th scope="col" data-i18n>Tracked</th><th scope="col" data-i18n>Open resorts</th><th scope="col" data-i18n>Open lifts</th><th scope="col" data-i18n>Open slopes</th><th scope="col" data-i18n>Open km</th></tr></thead>
         <tbody></tbody>
       </table>
     </div>
   </details>
   <footer class="site-footer">
     <nav aria-label="Footer">
-      <a href="sources.html">Data sources</a>
-      <a href="about.html">About the data</a>
-      <span>Contact: miron [at] liftradar.eu</span>
+      <a href="sources.html" data-i18n>Data sources</a>
+      <a href="about.html" data-i18n>About the data</a>
+      <span data-i18n>Contact: miron [at] liftradar.eu</span>
     </nav>
     <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span>Made by <b>Miron</b></span></span>
+      <span data-i18n>Made by <b>Miron</b></span></span>
   </footer>
 </main>
-<script src="assets/common.js"></script>
-<script src="assets/stats.js"></script>
+<script src="/assets/common.js"></script>
+<script src="/assets/stats.js"></script>
 </body>
 </html>

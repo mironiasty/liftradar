@@ -28,14 +28,14 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
   its history), `sources.html` (data sources, incl. every URL in the
   current data) and `about.html` (what the values mean, and their caveats), plain
-  static pages that load the JSON in the browser. No build step.
+  static pages that load the JSON in the browser. No build step locally.
   `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
   `assets/mini-map-light.webp`, `mini-map-dark.webp` and `mini-map.svg` are the shaded relief
   and country borders of the small map in the table page's header, drawn by
   `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
-`.github/workflows/pages.yml` combines both, minifies `assets/*.js` and `*.css` with esbuild, compacts `json/index.json` with jq, and deploys to the Cloudflare Worker `liftradar`
+`.github/workflows/pages.yml` combines both, generates the translated pages (see [Translations](#translations)), minifies `assets/*.js` and `*.css` with esbuild, compacts `json/index.json` with jq, and deploys to the Cloudflare Worker `liftradar`
 (static assets only, `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
@@ -158,6 +158,12 @@ python3 -m http.server 8000                     # http://localhost:8000
 
 (The links are git-ignored.)
 
+To see the translated pages too, generate them (git-ignored) and open e.g. <http://localhost:8000/pl/>:
+
+```sh
+node scripts/translate.mjs .
+```
+
 Static checks, also run on every push (`.github/workflows/checks.yml`):
 
 ```sh
@@ -165,6 +171,33 @@ npm install        # once
 npm run check      # Biome (JS, CSS), html-validate, ruff (scripts/)
 npm run format     # format the JS, the CSS and scripts/; HTML is validated but not formatted
 ```
+
+## Translations
+
+The site is written in English; `/de/`, `/fr/`, `/it/` and `/pl/` are generated from it on deploy by
+`scripts/translate.mjs`, from `i18n/<language>.json`, which map English to each language. The data stays at the root, and isn't translated (`condition`
+is in the source's language). What can be translated:
+
+- In the HTML, an element marked `data-i18n` (its inner HTML is the key), and `aria-label`, `placeholder`,
+  `title` and `alt`.
+- In the scripts, `t("…")`, with a literal string, `{names}` for values, and an object of plural forms in the
+  dictionary. Text after a `|` isn't shown in English: it tells apart words that need two translations.
+- `<div lang="en">` marks what stays English for now (the source lists in `sources.html`).
+
+Always edit the English; never the generated pages. Each marked block's English text is its key in the
+dictionary, so a changed block shows in English until it's translated, and can't show an outdated translation.
+`npm run check` lists what's missing and what's no longer used (the old text's entry, to replace), and fails
+if a translation loses a `{name}` or a tag.
+
+`assets/lang.js` sends visitors arriving on an English page to the translation their browser prefers. The
+language menu in the header overrides that, and the choice is remembered in `localStorage`. Links to a
+translation always stay there.
+
+Another language needs its own `i18n/<language>.json`, an entry in `LANGUAGES` in `assets/lang.js`, a link in
+the language menu of each page's header, its `hreflang` alternates, and a line in `.gitignore`; `<html lang>` then
+sets the dates, numbers and country names.
+
+## Scripts
 
 The pages load `assets/common.js` and then their own script, sharing its top-level names: a
 name that's new there also goes in `javascript.globals` in `biome.json`.
