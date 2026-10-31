@@ -13,3 +13,5 @@ README documents every source in detail.
   change, and which fields each page reads.
 - Users poll `json/<country>/<id>.json` directly: those URLs are a public
   contract.
+- Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
+  these checks only: nothing from npm reaches the site.

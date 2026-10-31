@@ -158,4 +158,15 @@ python3 -m http.server 8000                     # http://localhost:8000
 
 (The links are git-ignored.)
 
+Static checks, also run on every push (`.github/workflows/checks.yml`):
+
+```sh
+npm install        # once
+npm run check      # Biome (JS, CSS), html-validate, ruff (scripts/)
+npm run format     # format the JS and scripts/; the CSS is linted but keeps its compact layout
+```
+
+The pages load `assets/common.js` and then their own script, sharing its top-level names: a
+name that's new there also goes in `javascript.globals` in `biome.json`.
+
 Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles © [OpenTopoMap](https://opentopomap.org) (CC-BY-SA), pistes and lifts from [OpenSnowMap](https://www.opensnowmap.org).

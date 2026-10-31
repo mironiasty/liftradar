@@ -199,7 +199,9 @@ function fillFilters(resorts) {
   countryGroup.append(...countryButtons);
   const chooseCountry = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => countryButtons[i].setAttribute("aria-pressed", c === country));
+    choices.forEach(([c], i) => {
+      countryButtons[i].setAttribute("aria-pressed", c === country);
+    });
     fillRegions(resorts, region);
     filter();
   };
@@ -244,7 +246,7 @@ const SORTS = [
   ["avalanche", false, "Highest avalanche danger"],
 ];
 const sortSelect = document.getElementById("sort");
-sortSelect.append(...SORTS.map(([k, , label], i) => option(String(i), label)));
+sortSelect.append(...SORTS.map(([, , label], i) => option(String(i), label)));
 sortSelect.addEventListener("change", () => {
   [key, ascending] = SORTS[sortSelect.value];
   sort();

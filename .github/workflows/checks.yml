@@ -1,0 +1,29 @@
+name: Static checks
+
+# Lint and formatting only, and on its own: a failure here doesn't hold back a deploy.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      # setup-uv no longer publishes floating major tags, so pin the release.
+      - uses: astral-sh/setup-uv@v10.3.2
+
+      - run: npm ci
+
+      - run: npm run check

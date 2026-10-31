@@ -195,9 +195,9 @@ function show([index, areas]) {
   document.getElementById("mode").append(...modeButtons);
   const choose = (change) => {
     choice = { ...choice, ...change };
-    Object.keys(METRICS).forEach((metric, i) =>
-      metricButtons[i].setAttribute("aria-pressed", metric === choice.metric),
-    );
+    Object.keys(METRICS).forEach((metric, i) => {
+      metricButtons[i].setAttribute("aria-pressed", metric === choice.metric);
+    });
     const single = Boolean(METRICS[choice.metric].value);
     Object.keys(MODES).forEach((mode, i) => {
       modeButtons[i].setAttribute("aria-pressed", !single && mode === choice.mode);

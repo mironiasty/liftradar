@@ -265,7 +265,9 @@ function fillFilters() {
   const choices = [["", "All"], ...countries.map((code) => [code, countryName(code)])];
   const choose = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => countryGroup.children[i].setAttribute("aria-pressed", c === country));
+    choices.forEach(([c], i) => {
+      countryGroup.children[i].setAttribute("aria-pressed", c === country);
+    });
     fillRegions(region);
     render();
   };
