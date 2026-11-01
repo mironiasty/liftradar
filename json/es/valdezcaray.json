@@ -10,8 +10,8 @@
   },
   "website": "https://www.valdezcaray.es",
   "status": "closed",
-  "fetched_at": "2026-10-31T13:41:20.885696+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-01T08:41:18.670774+01:00",
+  "status_from": "2026-10-30T18:46:54.128454+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -51,8 +51,9 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.valdezcaray.es/parte-de-nieve/",
     "https://www.skiresort.com/en/ski-resort/valdezcaray/"
   ],
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

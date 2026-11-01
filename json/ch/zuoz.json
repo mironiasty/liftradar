@@ -10,11 +10,11 @@
   },
   "website": "https://www.zuozski.ch",
   "status": "no_report",
-  "fetched_at": "2026-10-31T13:41:20.880288+01:00",
+  "fetched_at": "2026-11-01T08:41:18.665721+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 1,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
@@ -23,6 +23,14 @@
         "name": "Porta d'Es-cha (SLF)",
         "elevation_m": 2727,
         "depth_cm": 1,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Zuoz (SLF)",
+        "elevation_m": 1710,
+        "depth_cm": 0,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
