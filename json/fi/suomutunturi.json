@@ -9,8 +9,8 @@
     "lon": 28.0121
   },
   "website": "https://www.suomutunturi.fi",
-  "status": "no_report",
-  "fetched_at": "2026-11-01T13:41:19.626176+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-02T08:41:19.939701+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,39 +25,18 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
-    "total": 10,
-    "open_km": null,
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
     "total_km": null
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": 3,
-      "open_km": null,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": null,
-      "total": 4,
-      "open_km": null,
-      "total_km": null
-    },
-    "difficult": {
-      "open": null,
-      "total": 3,
-      "open_km": null,
-      "total_km": null
-    }
-  },
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/suomutunturi/",
-    "https://ski.fi/hiihtokeskukset/"
+    "https://www.suomutunturi.fi/"
   ],
-  "errors": [
-    "status: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://www.suomutunturi.fi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }
