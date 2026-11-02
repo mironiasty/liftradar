@@ -9,8 +9,8 @@
     "lon": 10.1378
   },
   "website": "https://www.alpinco.com/no/kvitfjell",
-  "status": "no_report",
-  "fetched_at": "2026-11-02T08:41:19.942413+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-02T13:41:20.126107+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 14
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 36,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 39
   },
   "lifts_by_type": {
@@ -46,25 +46,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 26,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-19T09:16:04+02:00",
+  "lifts_updated_at": "2026-11-02T10:11:58+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",
