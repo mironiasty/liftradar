@@ -9,8 +9,8 @@
     "lon": 10.4482
   },
   "website": "https://www.alpinco.com/no/hafjell",
-  "status": "no_report",
-  "fetched_at": "2026-11-03T08:41:17.321919+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-03T13:41:19.882543+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 18
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 67,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 50
   },
   "lifts_by_type": {
@@ -42,25 +42,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 48,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 15,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 4,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-12T08:26:22+02:00",
+  "lifts_updated_at": "2026-11-03T11:38:38+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",
