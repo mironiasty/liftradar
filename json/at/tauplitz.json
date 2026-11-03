@@ -9,8 +9,8 @@
     "lon": 14.0066
   },
   "website": "https://www.dietauplitz.com",
-  "status": "closed",
-  "fetched_at": "2026-11-02T13:41:20.114950+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-03T08:41:17.311068+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,60 +20,18 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 16
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
-    "total": 38,
-    "open_km": 0.0,
+    "open": null,
+    "total": null,
+    "open_km": null,
     "total_km": 43
   },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 4
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 11
-    },
-    "gondola": {
-      "open": 0,
-      "total": 1
-    }
-  },
-  "slopes_by_difficulty": {
-    "ski_route": {
-      "open": 0,
-      "total": 1,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "easy": {
-      "open": 0,
-      "total": 19,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 15,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": 4
-    }
-  },
-  "lifts_updated_at": "2026-10-20T06:03:51+02:00",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/tauplitz/data?lang=en",
     "https://www.dietauplitz.com/en/ski/"
   ],
   "errors": []

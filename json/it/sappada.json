@@ -9,8 +9,8 @@
     "lon": 12.6803
   },
   "website": "https://www.sappadaski.it",
-  "status": "closed",
-  "fetched_at": "2026-11-02T13:41:20.121330+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-03T08:41:17.317534+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,54 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 9
-  },
-  "slopes": {
-    "open": 0,
-    "total": 16,
-    "open_km": 0.0,
-    "total_km": 15
-  },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 1
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 5
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 3
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 6,
-      "open_km": 0.0,
-      "total_km": 4
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 8,
-      "open_km": 0.0,
-      "total_km": 10
-    },
-    "difficult": {
-      "open": 0,
-      "total": 2,
-      "open_km": 0.0,
-      "total_km": 2
-    }
-  },
-  "lifts_updated_at": "2026-10-20T01:50:07+02:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/sappada/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }

@@ -9,8 +9,8 @@
     "lon": 14.1712
   },
   "website": "https://www.simonhoehe.at",
-  "status": "closed",
-  "fetched_at": "2026-11-02T13:41:20.115075+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-03T08:41:17.311196+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,40 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 6
-  },
-  "slopes": {
-    "open": 0,
-    "total": 8,
-    "open_km": 0.0,
-    "total_km": 7
-  },
-  "lifts_by_type": {
-    "drag_lift": {
-      "open": 0,
-      "total": 6
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 4,
-      "open_km": 0.0,
-      "total_km": 4
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 4,
-      "open_km": 0.0,
-      "total_km": 3
-    }
-  },
-  "lifts_updated_at": "2026-10-20T00:13:11+02:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/simonhoehe/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }

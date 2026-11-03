@@ -10,11 +10,11 @@
   },
   "website": "https://www.matterhornparadise.ch",
   "status": "open",
-  "fetched_at": "2026-11-02T13:41:20.120590+01:00",
+  "fetched_at": "2026-11-03T08:41:17.316773+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 1,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
@@ -26,11 +26,19 @@
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
+      },
+      {
+        "name": "Zermatt (SLF)",
+        "elevation_m": 1600,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 8,
+    "open": 5,
     "total": 36
   },
   "slopes": {
@@ -49,7 +57,7 @@
       "total": 10
     },
     "drag_lift": {
-      "open": 3,
+      "open": 0,
       "total": 5
     },
     "funicular": {
@@ -91,7 +99,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-02T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-03T08:40:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",

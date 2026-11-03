@@ -9,9 +9,9 @@
     "lon": -5.3939
   },
   "website": "https://www.fuentesdeinvierno.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-02T13:41:20.128029+01:00",
-  "status_from": "2026-10-30T18:46:54.128489+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-03T08:41:17.323959+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 15,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 9
   },
   "lifts_by_type": {
@@ -46,30 +46,29 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://www.fuentesdeinvierno.com/es/parte-meteorologico.html",
     "https://www.skiresort.com/en/ski-resort/fuentes-de-invierno/"
   ],
-  "errors": [
-    "status: ReadTimeout: "
-  ]
+  "errors": []
 }

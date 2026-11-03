@@ -10,29 +10,29 @@
   },
   "website": "https://www.hintertuxergletscher.at",
   "status": "open",
-  "fetched_at": "2026-11-02T13:41:20.113289+01:00",
+  "fetched_at": "2026-11-03T08:41:17.309342+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 45,
     "valley_cm": 40,
-    "fresh_cm": 15,
-    "last_snowfall": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-11-01",
     "condition": "grippy/hard powder",
     "stations": [
       {
         "name": "Gefrorene Wand",
         "elevation_m": 3250,
         "depth_cm": 45,
-        "fresh_cm": 15,
-        "temperature_c": 0.5,
+        "fresh_cm": null,
+        "temperature_c": -6.0,
         "condition": "grippy/hard powder"
       },
       {
         "name": "Tuxer Fernerhaus",
         "elevation_m": 2660,
         "depth_cm": 40,
-        "fresh_cm": 15,
-        "temperature_c": -2.2,
+        "fresh_cm": null,
+        "temperature_c": -6.2,
         "condition": "grippy/hard powder"
       },
       {
@@ -40,7 +40,7 @@
         "elevation_m": 2100,
         "depth_cm": null,
         "fresh_cm": null,
-        "temperature_c": -1.5,
+        "temperature_c": -3.6,
         "condition": null
       }
     ]
@@ -103,6 +103,7 @@
   "avalanche": null,
   "sources": [
     "https://www.hintertuxergletscher.at/en/information/currently/weather/",
+    "https://www.hintertuxergletscher.at/fileadmin/livevalues.php",
     "https://winter.intermaps.com/hintertuxer_gletscher/data?lang=en",
     "https://www.hintertuxergletscher.at/en/information/about-us/interesting-facts/"
   ],

@@ -9,8 +9,8 @@
     "lon": 12.9221
   },
   "website": "https://www.turismofvg.it/it/montagna365/ski-area-zoncolan",
-  "status": "closed",
-  "fetched_at": "2026-11-02T13:41:20.121302+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-03T08:41:17.317505+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,58 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 11
-  },
-  "slopes": {
-    "open": 0,
-    "total": 32,
-    "open_km": 0.0,
-    "total_km": 25
-  },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 4
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 5
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 1
-    },
-    "gondola": {
-      "open": 0,
-      "total": 1
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 13,
-      "open_km": 0.0,
-      "total_km": 9
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 13,
-      "open_km": 0.0,
-      "total_km": 11
-    },
-    "difficult": {
-      "open": 0,
-      "total": 6,
-      "open_km": 0.0,
-      "total_km": 5
-    }
-  },
-  "lifts_updated_at": "2026-10-20T04:27:34+02:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/ravascletto_zoncolan/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }
