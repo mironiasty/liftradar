@@ -9,11 +9,11 @@
     "lon": 10.5843
   },
   "website": "https://www.seilbahnensulden.it",
-  "status": "open",
-  "fetched_at": "2026-11-04T08:41:15.100175+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-04T13:41:20.302558+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 100,
+    "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
@@ -30,18 +30,18 @@
     ]
   },
   "lifts": {
-    "open": 5,
+    "open": 0,
     "total": 11
   },
   "slopes": {
-    "open": 5,
+    "open": 0,
     "total": 18,
-    "open_km": 7.2,
+    "open_km": 0.0,
     "total_km": 36
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 3,
+      "open": 0,
       "total": 5
     },
     "drag_lift": {
@@ -49,31 +49,31 @@
       "total": 2
     },
     "gondola": {
-      "open": 2,
+      "open": 0,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 1,
+      "open": 0,
       "total": 6,
-      "open_km": 2.1,
+      "open_km": 0.0,
       "total_km": 14
     },
     "intermediate": {
-      "open": 3,
+      "open": 0,
       "total": 8,
-      "open_km": 4.3,
+      "open_km": 0.0,
       "total_km": 15
     },
     "difficult": {
-      "open": 1,
+      "open": 0,
       "total": 4,
-      "open_km": 0.8,
+      "open_km": 0.0,
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-04T08:05:53+01:00",
+  "lifts_updated_at": "2026-11-04T09:45:10+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",

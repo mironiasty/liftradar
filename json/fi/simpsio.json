@@ -9,12 +9,12 @@
     "lon": 22.9565
   },
   "website": "https://www.simpsio.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-04T08:41:15.102338+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-04T13:41:20.308366+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 0,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -33,7 +33,12 @@
     "open": 0,
     "total": 5
   },
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": null
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,

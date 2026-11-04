@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-04T13:43:21+01:00",
+  "resorts": [
+    {
+      "id": "alpe-d-huez",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-04T08:41:15.101947+01:00",
+      "errors": [
+        "status: ReadTimeout: "
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only"
+  ]
+}

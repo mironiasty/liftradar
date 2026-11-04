@@ -9,8 +9,8 @@
     "lon": 6.1238
   },
   "website": "https://www.les2alpes.com",
-  "status": "open",
-  "fetched_at": "2026-11-04T08:41:15.101559+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-04T13:41:20.306447+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,11 +21,11 @@
     "stations": []
   },
   "lifts": {
-    "open": 2,
+    "open": 0,
     "total": 43
   },
   "slopes": {
-    "open": 2,
+    "open": null,
     "total": 93,
     "open_km": null,
     "total_km": 220
@@ -40,7 +40,7 @@
       "total": 4
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 16
     },
     "drag_lift": {
@@ -52,7 +52,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 1,
+      "open": 0,
       "total": 3
     },
     "other": {
@@ -62,25 +62,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 2,
+      "open": null,
       "total": 63,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 16,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 11,
       "open_km": null,
       "total_km": null
     },
     "other": {
-      "open": 0,
+      "open": null,
       "total": 3,
       "open_km": null,
       "total_km": null
@@ -107,8 +107,8 @@
   },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/deux-alpes",
-    "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski",
     "https://static.avalanche.report/eaws_bulletins/2026-11-04/2026-11-04-FR.json"
   ],
