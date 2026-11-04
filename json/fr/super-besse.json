@@ -9,77 +9,60 @@
     "lon": 2.8562
   },
   "website": "https://www.sancy.com",
-  "status": "open",
-  "fetched_at": "2026-11-03T13:41:19.880546+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-04T08:41:15.101846+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 0,
-    "valley_cm": 0,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-03-14",
+    "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Station",
-        "elevation_m": 1300,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Sommet",
-        "elevation_m": 1800,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
-    "open": 19,
-    "total": 21
+    "open": 0,
+    "total": 19
   },
   "slopes": {
-    "open": 7,
+    "open": null,
     "total": 34,
     "open_km": null,
     "total_km": 40
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 0,
       "total": 1
     },
     "carpet": {
-      "open": 2,
-      "total": 4
+      "open": 0,
+      "total": 2
     },
     "chairlift": {
-      "open": 4,
+      "open": 0,
       "total": 4
     },
     "drag_lift": {
-      "open": 12,
+      "open": 0,
       "total": 12
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 7,
+      "open": null,
       "total": 19,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 9,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 6,
       "open_km": null,
       "total_km": null

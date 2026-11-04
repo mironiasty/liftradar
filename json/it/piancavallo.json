@@ -9,8 +9,8 @@
     "lon": 12.5191
   },
   "website": "https://www.turismofvg.it/en/mountain365/ski-area-piancavallo",
-  "status": "closed",
-  "fetched_at": "2026-11-03T13:41:19.878474+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-04T08:41:15.100337+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,50 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 12
-  },
-  "slopes": {
-    "open": 0,
-    "total": 22,
-    "open_km": 0.0,
-    "total_km": 14
-  },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 6
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 6
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 7,
-      "open_km": 0.0,
-      "total_km": 3
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 14,
-      "open_km": 0.0,
-      "total_km": 10
-    },
-    "difficult": {
-      "open": 0,
-      "total": 1,
-      "open_km": 0.0,
-      "total_km": 2
-    }
-  },
-  "lifts_updated_at": "2026-10-21T06:04:39+02:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/piancavallo/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }

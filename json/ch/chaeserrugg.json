@@ -10,7 +10,7 @@
   },
   "website": "https://www.chaeserrugg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-03T13:41:19.876222+01:00",
+  "fetched_at": "2026-11-04T08:41:15.098347+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -18,16 +18,7 @@
     "fresh_cm": null,
     "last_snowfall": "2026-03-31",
     "condition": null,
-    "stations": [
-      {
-        "name": "Unterwasser Iltios (SLF)",
-        "elevation_m": 1340,
-        "depth_cm": 0,
-        "fresh_cm": 0,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
     "open": 0,
@@ -91,13 +82,10 @@
       "total_km": 7
     }
   },
-  "lifts_updated_at": "2026-11-02T12:45:00+01:00",
+  "lifts_updated_at": "2026-11-03T14:42:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=78&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=78&saison=1&ref=contentBox"
   ],
   "errors": []
 }
