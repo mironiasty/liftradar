@@ -9,13 +9,13 @@
     "lon": 8.4013
   },
   "website": "https://www.titlis.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-04T13:41:20.302089+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-05T08:41:17.016035+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 1,
+    "valley_cm": 0,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -37,66 +37,18 @@
       }
     ]
   },
-  "lifts": {
-    "open": 0,
-    "total": 24
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
-    "total": 17,
-    "open_km": 0.0,
+    "open": null,
+    "total": null,
+    "open_km": null,
     "total_km": 82
   },
-  "lifts_by_type": {
-    "cable_car": {
-      "open": 0,
-      "total": 3
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 7
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 7
-    },
-    "funicular": {
-      "open": 0,
-      "total": 1
-    },
-    "gondola": {
-      "open": 0,
-      "total": 4
-    },
-    "other": {
-      "open": 0,
-      "total": 2
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 6,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 8,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": 9
-    }
-  },
-  "lifts_updated_at": "2026-10-22T05:32:47+02:00",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/engelberg/data?lang=en",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",

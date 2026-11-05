@@ -10,7 +10,7 @@
   },
   "website": "https://www.plose.org",
   "status": "closed",
-  "fetched_at": "2026-11-04T13:41:20.302310+01:00",
+  "fetched_at": "2026-11-05T08:41:17.016236+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -18,16 +18,7 @@
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Mountain station",
-        "elevation_m": null,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
     "open": 0,
@@ -35,9 +26,9 @@
   },
   "slopes": {
     "open": 0,
-    "total": 18,
+    "total": 19,
     "open_km": 0.0,
-    "total_km": 38
+    "total_km": 40
   },
   "lifts_by_type": {
     "chairlift": {
@@ -56,9 +47,9 @@
   "slopes_by_difficulty": {
     "easy": {
       "open": 0,
-      "total": 8,
+      "total": 9,
       "open_km": 0.0,
-      "total_km": 17
+      "total_km": 19
     },
     "intermediate": {
       "open": 0,
@@ -73,12 +64,11 @@
       "total_km": 10
     }
   },
-  "lifts_updated_at": "2026-11-01T22:00:08.676581+01:00",
+  "lifts_updated_at": "2026-11-04T17:20:13.339728+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-    "https://www.dolomitisuperski.com",
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en"
+    "https://www.dolomitisuperski.com"
   ],
   "errors": []
 }

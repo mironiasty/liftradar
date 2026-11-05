@@ -9,8 +9,8 @@
     "lon": 13.1362
   },
   "website": "https://www.arber.de",
-  "status": "closed",
-  "fetched_at": "2026-11-04T13:41:20.308757+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-05T08:41:17.019784+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,58 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 7
-  },
-  "slopes": {
-    "open": 0,
-    "total": 11,
-    "open_km": 0.0,
-    "total_km": null
-  },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 2
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 2
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 2
-    },
-    "gondola": {
-      "open": 0,
-      "total": 1
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 4,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 4,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-10-22T00:36:28+02:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/arber/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }

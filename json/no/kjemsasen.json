@@ -9,8 +9,8 @@
     "lon": 13.358
   },
   "website": "https://www.facebook.com/Kjemsasen",
-  "status": "closed",
-  "fetched_at": "2026-11-04T13:41:20.312118+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-05T08:41:17.021540+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 3
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 8,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 5
   },
   "lifts_by_type": {
@@ -38,21 +38,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
@@ -71,15 +71,15 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-04T00:00:00+01:00",
-    "valid_from": "2026-11-04T00:00:00+01:00",
-    "valid_until": "2026-11-04T23:59:59+01:00"
+    "published_at": "2026-11-05T00:00:00+01:00",
+    "valid_from": "2026-11-05T00:00:00+01:00",
+    "valid_until": "2026-11-05T23:59:59+01:00"
   },
   "sources": [
     "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/kjemsaasen/",
     "https://www.skiresort.com/en/ski-resort/kjemsaasen/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-04/2026-11-04-NO.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-05/2026-11-05-NO.json"
   ],
   "errors": []
 }
