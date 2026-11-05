@@ -9,15 +9,15 @@
     "lon": 7.0468
   },
   "website": "https://www.bonneval-sur-arc.com",
-  "status": "open",
-  "fetched_at": "2026-11-05T08:41:17.018206+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-05T13:41:17.742845+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 192,
-    "valley_cm": 75,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": "2026-04-14",
-    "condition": "Neige damée",
+    "condition": null,
     "stations": [
       {
         "name": "Station Village",
@@ -38,42 +38,42 @@
     ]
   },
   "lifts": {
-    "open": 10,
+    "open": 0,
     "total": 10
   },
   "slopes": {
-    "open": 26,
+    "open": 0,
     "total": 26,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 32
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 3,
+      "open": 0,
       "total": 3
     },
     "drag_lift": {
-      "open": 7,
+      "open": 0,
       "total": 7
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 16,
+      "open": 0,
       "total": 16,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 7,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": 3,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
