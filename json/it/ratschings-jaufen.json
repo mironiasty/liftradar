@@ -10,7 +10,7 @@
   },
   "website": "https://www.ratschings-jaufen.it",
   "status": "closed",
-  "fetched_at": "2026-11-05T13:41:17.741131+01:00",
+  "fetched_at": "2026-11-06T08:41:20.351144+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -43,33 +43,16 @@
   },
   "slopes": {
     "open": 0,
-    "total": 24,
+    "total": 25,
     "open_km": 0.0,
     "total_km": 29
   },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 6
-    },
-    "other": {
-      "open": 0,
-      "total": 2
-    }
-  },
-  "slopes_by_difficulty": {
-    "other": {
-      "open": 0,
-      "total": 24,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-10-23T04:20:13+02:00",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-11-06T08:24:01.530000+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
-    "https://winter.intermaps.com/ratschings_jaufen/data?lang=en",
     "https://www.skiresort.info/ski-resort/racines-giovo-ratschings-jaufen-malga-calice-kalcheralm/"
   ],
   "errors": []

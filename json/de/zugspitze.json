@@ -9,8 +9,8 @@
     "lon": 10.9903
   },
   "website": "https://zugspitze.de",
-  "status": "closed",
-  "fetched_at": "2026-11-05T13:41:17.744479+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-06T08:41:20.354292+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,52 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 7
-  },
-  "slopes": {
-    "open": 0,
-    "total": 13,
-    "open_km": 0.0,
-    "total_km": null
-  },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 2
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 2
-    },
-    "funicular": {
-      "open": 0,
-      "total": 1
-    },
-    "gondola": {
-      "open": 0,
-      "total": 2
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 6,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 7,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-10-22T15:56:24+02:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/zugspitzplatt/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }

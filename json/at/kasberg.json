@@ -10,7 +10,7 @@
   },
   "website": "https://www.kasberg.at",
   "status": "closed",
-  "fetched_at": "2026-11-05T13:41:17.734677+01:00",
+  "fetched_at": "2026-11-06T08:41:20.344259+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +22,7 @@
   },
   "lifts": {
     "open": 0,
-    "total": 11
+    "total": 10
   },
   "slopes": {
     "open": 0,
@@ -33,7 +33,7 @@
   "lifts_by_type": {
     "carpet": {
       "open": 0,
-      "total": 2
+      "total": 1
     },
     "chairlift": {
       "open": 0,
@@ -45,7 +45,11 @@
     },
     "gondola": {
       "open": 0,
-      "total": 2
+      "total": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 1
     }
   },
   "slopes_by_difficulty": {
@@ -53,22 +57,22 @@
       "open": 0,
       "total": 9,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 13
     },
     "intermediate": {
       "open": 0,
       "total": 8,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 8
     },
     "difficult": {
       "open": 0,
       "total": 3,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-05T00:10:05+01:00",
+  "lifts_updated_at": "2026-11-05T17:00:06+01:00",
   "avalanche": null,
   "sources": [
     "https://winter.intermaps.com/kasberg_gruenau/data?lang=en",

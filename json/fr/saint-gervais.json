@@ -10,7 +10,7 @@
   },
   "website": "https://www.ski-saintgervais.com",
   "status": "no_report",
-  "fetched_at": "2026-11-05T13:41:17.742898+01:00",
+  "fetched_at": "2026-11-06T08:41:20.352799+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -69,31 +69,13 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-03",
-    "region": "Mont-Blanc",
-    "danger_level": 1,
-    "danger": "low",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-04T16:00:00+01:00",
-    "valid_from": "2026-11-04T16:00:00+01:00",
-    "valid_until": "2026-11-05T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=saint-gervais&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-    "https://www.skiinfo.fr/alpes-du-nord/saint-gervais-mont-blanc/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-05/2026-11-05-FR.json"
+    "https://www.skiinfo.fr/alpes-du-nord/saint-gervais-mont-blanc/station-de-ski"
   ],
   "errors": []
 }

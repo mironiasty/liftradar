@@ -10,12 +10,12 @@
   },
   "website": "https://www.saas-fee.ch",
   "status": "open",
-  "fetched_at": "2026-11-05T13:41:17.739730+01:00",
+  "fetched_at": "2026-11-06T08:41:20.349608+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 1,
-    "valley_cm": null,
-    "fresh_cm": 0,
+    "valley_cm": 0,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,6 +23,14 @@
         "name": "Gibidum (SLF)",
         "elevation_m": 2680,
         "depth_cm": 1,
+        "fresh_cm": 7,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Saas Fee (SLF)",
+        "elevation_m": 1790,
+        "depth_cm": 0,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -30,13 +38,13 @@
     ]
   },
   "lifts": {
-    "open": 8,
+    "open": 5,
     "total": 23
   },
   "slopes": {
-    "open": 6,
+    "open": 5,
     "total": 34,
-    "open_km": 23.8,
+    "open_km": 17.8,
     "total_km": 100
   },
   "lifts_by_type": {
@@ -45,7 +53,7 @@
       "total": 2
     },
     "drag_lift": {
-      "open": 4,
+      "open": 2,
       "total": 12
     },
     "funicular": {
@@ -53,7 +61,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 3,
+      "open": 2,
       "total": 8
     }
   },
@@ -71,9 +79,9 @@
       "total_km": 32
     },
     "intermediate": {
-      "open": 6,
+      "open": 5,
       "total": 16,
-      "open_km": 23.8,
+      "open_km": 17.8,
       "total_km": 55
     },
     "difficult": {
@@ -83,7 +91,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-05T13:00:05+01:00",
+  "lifts_updated_at": "2026-11-06T08:28:31+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=252&saison=1&ref=contentBox",

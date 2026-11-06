@@ -9,12 +9,12 @@
     "lon": 24.3685
   },
   "website": "https://vihtiski.fi",
-  "status": "closed",
-  "fetched_at": "2026-11-05T13:41:17.743987+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-06T08:41:20.353794+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -30,33 +30,33 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 9
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 15,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": null
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 12,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
