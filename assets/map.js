@@ -1,7 +1,8 @@
 // map.html: every resort with a location as a marker, coloured by status;
 // the number on a marker is the value chosen in the options panel (open lifts
 // by default). A click shows the report.
-// Resorts with an area (assets/areas.geojson, from OpenStreetMap) also show it.
+// Resorts with a ski area in the ski tiles (assets/ski.js) also show it, and the pistes and lifts
+// appear when zoomed in.
 
 const STATUS = {
   open: { label: STATUS_LABELS.open, color: "--open" },
@@ -65,14 +66,8 @@ const map = L.map("map", { zoomSnap: 0.5 });
 L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
   maxZoom: 17,
   attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (map and ski areas), ' +
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
     '<a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
-}).addTo(map);
-// Pistes and lifts over the map; hidden when zoomed out, where they're only clutter.
-L.tileLayer("https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png", {
-  minZoom: 10,
-  maxZoom: 17,
-  attribution: '<a href="https://www.opensnowmap.org">OpenSnowMap</a>',
 }).addTo(map);
 
 // A bar for the open share, for open resorts: elsewhere open counts are 0 or not reported.
@@ -156,35 +151,33 @@ function popup(r, status) {
   return content;
 }
 
-// The resort areas are optional: without them the map shows only the markers.
-const loadAreas = () =>
-  fetch(AREAS_URL, { cache: "no-cache" })
-    .then((response) => (response.ok ? response.json() : null))
-    .catch(() => null);
-
-function show([index, areas]) {
+// The ski tiles are optional (loadSki() is null without them): the map then shows the markers
+// at the resorts' locations, and OpenSnowMap's pistes.
+function show([index, ski]) {
+  const pistesShown = () => Boolean(ski) && map.getZoom() >= SKI_MIN_ZOOM;
   document.getElementById("updated").textContent = updatedText(index);
-  const resorts = index.resorts.filter((r) => r.location);
+  const resorts = index.resorts.filter((r) => skiPoint(r, ski));
+  addPistes(map, ski, { names: new Map(index.resorts.map((r) => [skiKey(r), r.name])) });
   const layers = {};
   for (const status of Object.keys(STATUS)) layers[status] = L.layerGroup().addTo(map);
 
   const markers = [];
-  const areaOf = new Map((areas?.features ?? []).map((f) => [f.properties.id, f]));
-
   for (const r of resorts) {
     const status = statusKey(r);
-    const area = areaOf.get(r.id);
+    const area = ski?.resorts.get(skiKey(r));
     let areaLayer = null;
     if (area) {
-      const style = { color: color(status), weight: 1.5, fillOpacity: 0.25 };
+      // Zoomed in, where the pistes show, the area is only an outline: they stay visible and
+      // their tooltips reachable.
+      const style = () => ({ color: color(status), weight: 1.5, fillOpacity: 0.25, fill: !pistesShown() });
       areaLayer = L.geoJSON(area, { style, interactive: true })
         .on("mouseover", (e) => e.layer.setStyle({ weight: 3, fillOpacity: 0.45 }))
-        .on("mouseout", (e) => e.layer.setStyle(style))
+        .on("mouseout", (e) => e.layer.setStyle(style()))
         .bindTooltip(r.name, { sticky: true })
         .bindPopup(() => popup(r, status))
         .addTo(layers[status]);
     }
-    const marker = L.marker([r.location.lat, r.location.lon], {
+    const marker = L.marker(skiPoint(r, ski), {
       title: r.name,
       zIndexOffset: status === "open" ? OPEN_ON_TOP : 0,
       riseOnHover: true,
@@ -194,6 +187,9 @@ function show([index, areas]) {
       .addTo(layers[status]);
     markers.push({ marker, r, status, areaLayer });
   }
+  map.on("zoomend", () => {
+    for (const { areaLayer } of markers) areaLayer?.resetStyle();
+  });
 
   const setLabels = (choice) => {
     for (const { marker, r, status } of markers) {
@@ -230,7 +226,7 @@ function show([index, areas]) {
   };
   choose({});
   map.fitBounds(
-    resorts.map((r) => [r.location.lat, r.location.lon]),
+    resorts.map((r) => skiPoint(r, ski)),
     { padding: [30, 30] },
   );
   // map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort, with its report open.
@@ -280,9 +276,10 @@ if (matchMedia("(max-width: 640px)").matches) panel.open = false;
 L.DomEvent.disableClickPropagation(panel);
 L.DomEvent.disableScrollPropagation(panel);
 
-Promise.all([loadIndex(), loadAreas()])
+Promise.all([loadIndex(), loadSki()])
   .then(show)
   .catch((error) => {
     document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
     map.setView([47.25, 11.9], 8);
+    addPistes(map, null);
   });

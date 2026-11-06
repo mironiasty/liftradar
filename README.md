@@ -29,7 +29,8 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   its history), `sources.html` (data sources, incl. every URL in the
   current data) and `about.html` (what the values mean, and their caveats), plain
   static pages that load the JSON in the browser. No build step locally.
-  `assets/areas.geojson` holds the ski-area outlines shown on the map; see [Areas](#areas).
+  The ski-area outlines, the resorts' points and the pistes and lifts on the map come from the ski
+  tiles at `/ski/`, built weekly and not kept in git; see [Ski tiles](#ski-tiles).
   `assets/mini-map-light.webp`, `mini-map-dark.webp` and `mini-map.svg` are the shaded relief
   and country borders of the small map in the table page's header, drawn by
   `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
@@ -99,7 +100,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Avalanche danger, Norwegian mountain regions | [NVE](https://www.varsom.no/en/avalanches/avalanche-warnings/) (Varsom, the Norwegian Water Resources and Energy Directorate), from the same EAWS bulletin files |
 | Avalanche danger, French Alps and Pyrenees | [Météo-France](https://meteofrance.com/meteo-montagne) mountain bulletin (by massif), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
-| Ski-area outlines on the map | `landuse=winter_sports` areas © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (this branch, not the data) |
+| Ski-area outlines, pistes and lifts on the map | [OpenSkiData](https://openskidata.org) (ODbL), © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (the ski tiles, not the data) |
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
 Lumiplan is where French resorts submit theirs (Alpe d'Huez uses ATEN Altitude instead). Not
@@ -115,36 +116,10 @@ file's `sources` lists the URLs used for that report.
 
 ### Areas
 
-`assets/areas.geojson` (in this branch, not in the data) has the outline of 553 of the 731
-resorts, from OpenStreetMap's ski areas (`landuse=winter_sports`); the others, mostly small
-village lifts, are only a marker on the map. Each feature has the resort's `id` and the
-`osm` ids it was made from. It isn't updated automatically: run
-`scripts/resort_areas.py` now and then (e.g. after adding resorts) and check the map:
-
-```sh
-uv run --no-project --with shapely python3 scripts/resort_areas.py ../liftradar-data/json/index.json assets/areas.geojson
-```
-
-The script queries Overpass. When Overpass is down or at capacity (it was from 26 to 28 October
-2026), read the areas from Geofabrik's OpenStreetMap extracts instead (the countries, or for Italy,
-France, Poland and Germany the regions, covering the script's `BBOXES`; about 11 GB) and pass the
-result as a third argument:
-
-```sh
-uv run --no-project --with osmium python3 scripts/osm_ski_areas.py elements.json extracts/*.osm.pbf
-uv run --no-project --with shapely python3 scripts/resort_areas.py ../liftradar-data/json/index.json assets/areas.geojson elements.json
-```
-
-The outlines of 28 October 2026 were made that way (extracts of that day), the first to include the
-French, Finnish and German resorts.
-The Norwegian outlines were added on 30 October 2026 from Overpass, merged into that file (run
-for Norway only, so the others stayed as they were).
-The Spanish outlines were added the same way on 30 October 2026 (22 of 25 resorts; Baqueira Beret,
-Puerto de Navacerrada and Vall de Núria have no OpenStreetMap area there).
-
-An area within 1 km of several resorts is split between them by nearest resort point, so
-their parts are approximate. Wrong matches are fixed by hand in the script's `SHARED` and
-`EXCLUDE`.
+Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
+(see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
+running `ski.yml` by hand. 720 of the 731 resorts have one in November 2026; the others are a
+marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
 
@@ -153,6 +128,7 @@ Put the data next to the pages and serve the folder:
 ```sh
 git worktree add ../liftradar-data data   # once
 for part in json history schema; do ln -sfn ../liftradar-data/$part .; done
+# optional: the ski tiles, built as in "Ski tiles" (or unpacked from the release ski-latest)
 python3 -m http.server 8000                     # http://localhost:8000
 ```
 
@@ -197,9 +173,74 @@ Another language needs its own `i18n/<language>.json`, an entry in `LANGUAGES` i
 the language menu of each page's header, its `hreflang` alternates, and a line in `.gitignore`; `<html lang>` then
 sets the dates, numbers and country names.
 
+## Ski tiles
+
+`/ski/` has the lifts, pistes and ski areas of [OpenSkiData](https://openskidata.org) cut into static
+tiles, and each resort's outline and map point. The map and resort pages draw them (`assets/ski.js`),
+and apps use the tiles to recognise lifts in a GPS track (TrailRider). They aren't in git:
+`.github/workflows/ski.yml` builds them on Mondays (and when the scripts or their fixes change) with
+`scripts/ski_tiles.py`, and publishes one archive, `ski.tar.gz`, on the release `ski-latest`; every
+deploy unpacks it into the site. The build id is a hash of the files, so a week without changes
+publishes nothing. OpenSkiData may be downloaded at most once a day; its own vector tiles may not be
+used directly.
+
+- `ski/v1/meta.json`: `build` (add `?b=<build>` to the other URLs, to skip stale caches), `built_at`,
+  `data_time` (OpenSkiData's build), `zoom`, `resorts` (the file below), the counts, the attribution
+  and the license.
+- `ski/v1/resorts.geojson`: a feature per liftradar resort with lifts there, `id` `<country>/<id>`:
+  its outline (the geometry), `point` (`[lon, lat]`, its marker), and `lifts`, `runs` (downhill),
+  `km` (of downhill runs drawn as lines) and `areas` (the OpenSkiData areas' names) as OpenSkiData
+  has them, which may differ from the resort's own counts.
+- `ski/v1/10/{x}/{y}.json`: XYZ tiles at zoom 10 (about 25–40 km), only those with something in them
+  (a 404 means nothing). `areas`: the OpenSkiData areas touching the tile (`name`, `lr`: the liftradar
+  resort most of its lifts belong to, `osm`, `wd`, `p`: a point in it, `outline`). `lifts`: all but
+  proposed, planned and under construction (disused and abandoned ones stay, for old tracks), with
+  `type`, `name`, `ref`, `status`, `capacity`, `duration`, `occupancy`, `heating`, `bubble`, `osm`,
+  `lr`, `areas` (indexes in this tile's `areas`) and `c`, the line simplified to 5 m as
+  `[lon, lat, elevation]`. `runs`: every piste and trail, with `uses` (downhill, nordic, skitour,
+  sled…), `difficulty`, `conv` (the colour convention when not European: `north_america`, `japan`),
+  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `osm`, `lr`, `areas`, and `c`
+  (`[lon, lat]`) or, for a piste drawn as an area, `poly` (polygon rings). Empty values are left out.
+  The schema is `ski/v1/tile.schema.json` (`scripts/ski-tile.schema.json`).
+
+`scripts/ski_resorts.py` gives OpenSkiData's areas to liftradar's resorts. A resort claims the areas
+within 8 km whose name matches its own best (and other matching ones within 3 km), and the nearest
+area with a lift within 3 km unless another resort claimed that one by name. A lift or piste then goes
+to the smallest of its areas that a resort claimed, so a sector keeps its own resort inside a bigger
+linked area, and an area grouping a ski pass (Ski amadé, Les Portes du Soleil) only counts when a
+resort claims it. An area claimed by several resorts is split between them by nearest point (lifts)
+and nearest lift (pistes). A lift without an area goes to a resort within 1 km. The outline is the
+resort's lifts and downhill pistes widened, merged and smoothed, without strips narrower than 140 m
+(a lone cable car across a valley) or pieces under 0.05 km²; the point is the resort's `location`
+when that's inside, and otherwise the bottom station nearest to it. Wrong matches are fixed in
+`scripts/ski_overrides.json`: `claims` and `ignore` add or remove a resort's areas (by an OSM id of
+their sources, Wikidata id or exact name), and `points` move the point a shared area is split by
+(Samoëns: its ski area, not its village). Check a change on the map, with the tiles built locally.
+
+The script fails, keeping the last tiles, if the lifts, runs, areas or assigned lifts or runs drop by
+more than 15%. To build the tiles locally (about 290 MB to download, a minute and 3.5 GB of memory)
+and see them on the map:
+
+```sh
+mkdir -p ../osd
+for f in lifts runs ski_areas; do
+  curl --compressed -o ../osd/$f.geojson https://tiles.openskimap.org/geojson/$f.geojson
+done
+uv run --no-project --with shapely --with ijson python3 scripts/ski_tiles.py ../osd/ski_areas.geojson \
+  ../osd/lifts.geojson ../osd/runs.geojson ../liftradar-data/json/index.json ../osd/ski
+ln -sfn ../osd/ski .   # git-ignored, like the data links
+```
+
+Without `ski/`, the pages show the markers at the resorts' locations, without outlines, and
+OpenSnowMap's pistes instead.
+
+Lifts, pistes and ski areas: data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL),
+Skimap.org, Who's On First, © Mapterhorn. The tiles are a derived database under the
+[ODbL](https://opendatacommons.org/licenses/odbl/), as public as the rest of the data.
+
 ## Scripts
 
 The pages load `assets/common.js` and then their own script, sharing its top-level names: a
 name that's new there also goes in `javascript.globals` in `biome.json`.
 
-Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles © [OpenTopoMap](https://opentopomap.org) (CC-BY-SA), pistes and lifts from [OpenSnowMap](https://www.opensnowmap.org).
+Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles © [OpenTopoMap](https://opentopomap.org) (CC-BY-SA); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).

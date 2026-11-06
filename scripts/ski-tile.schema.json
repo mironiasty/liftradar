@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liftradar.eu/ski/v1/tile.schema.json",
+  "title": "liftradar ski tile",
+  "description": "Lifts, runs and ski areas from OpenSkiData in one XYZ tile at zoom 10 (ski/v1/10/{x}/{y}.json). Data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL).",
+  "type": "object",
+  "required": [
+    "v",
+    "areas",
+    "lifts",
+    "runs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "v": {
+      "const": 1
+    },
+    "areas": {
+      "description": "OpenSkiData ski areas whose outline, point or lifts touch the tile.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "p"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "lr": {
+            "description": "The liftradar resort most of the area's lifts belong to.",
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z]{2}/[a-z0-9-]+$"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "osm": {
+            "description": "OpenStreetMap id, e.g. way/123.",
+            "type": "string"
+          },
+          "wd": {
+            "description": "Wikidata id.",
+            "type": "string"
+          },
+          "p": {
+            "description": "A point in the area: [lon, lat].",
+            "$ref": "#/$defs/position"
+          },
+          "outline": {
+            "description": "Simplified outline (about 25 m), outer rings only: one ring per polygon.",
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/position"
+              }
+            }
+          }
+        }
+      }
+    },
+    "lifts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "areas",
+          "c"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "description": "OpenSkiData liftType, e.g. chair_lift, gondola, t-bar.",
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "operating",
+              "disused",
+              "abandoned"
+            ]
+          },
+          "capacity": {
+            "description": "People per hour.",
+            "type": "number"
+          },
+          "duration": {
+            "description": "Ride time, seconds.",
+            "type": "number"
+          },
+          "occupancy": {
+            "description": "People per chair or cabin.",
+            "type": "number"
+          },
+          "heating": {
+            "type": "boolean"
+          },
+          "bubble": {
+            "type": "boolean"
+          },
+          "osm": {
+            "type": "string"
+          },
+          "lr": {
+            "description": "liftradar resort, <country>/<id>.",
+            "type": "string",
+            "pattern": "^[a-z]{2}/[a-z0-9-]+$"
+          },
+          "areas": {
+            "description": "Indexes in this tile's areas.",
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "c": {
+            "description": "The line, simplified (about 5 m), bottom station first as in OpenStreetMap: [lon, lat, elevation m].",
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "$ref": "#/$defs/position"
+            }
+          }
+        }
+      }
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "areas"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "uses": {
+            "description": "downhill, nordic, skitour, sled, hike, snow_park, connection, …",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "difficulty": {
+            "enum": [
+              "novice",
+              "easy",
+              "intermediate",
+              "advanced",
+              "expert",
+              "freeride",
+              "extreme"
+            ]
+          },
+          "conv": {
+            "description": "The colour convention of difficulty when not europe.",
+            "enum": [
+              "north_america",
+              "japan"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "grooming": {
+            "description": "classic, skating, classic+skating, mogul, backcountry, scooter, …",
+            "type": "string"
+          },
+          "lit": {
+            "type": "boolean"
+          },
+          "oneway": {
+            "type": "boolean"
+          },
+          "gladed": {
+            "type": "boolean"
+          },
+          "patrolled": {
+            "type": "boolean"
+          },
+          "osm": {
+            "type": "string"
+          },
+          "lr": {
+            "description": "liftradar resort, <country>/<id>.",
+            "type": "string",
+            "pattern": "^[a-z]{2}/[a-z0-9-]+$"
+          },
+          "areas": {
+            "description": "Indexes in this tile's areas.",
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "c": {
+            "description": "The run as a line, simplified (about 5 m): [lon, lat].",
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "$ref": "#/$defs/position"
+            }
+          },
+          "poly": {
+            "description": "A run that is an area: GeoJSON polygon rings.",
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/position"
+              }
+            }
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "c"
+            ]
+          },
+          {
+            "required": [
+              "poly"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "position": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "number"
+      }
+    }
+  }
+}

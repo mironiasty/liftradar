@@ -19,7 +19,6 @@ const DATE_LOCALE = LANG === "en" ? "de-AT" : LANG;
 
 // Absolute: the translated pages are one level down, and share the assets and data.
 const INDEX_URL = "/json/index.json";
-const AREAS_URL = "/assets/areas.geojson";
 
 async function loadIndex() {
   const response = await fetch(INDEX_URL, { cache: "no-cache" });

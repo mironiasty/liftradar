@@ -343,7 +343,8 @@ function data(r) {
   return section;
 }
 
-// Resort map: only this resort's area (or point); "Map of all resorts" shows the others.
+// Resort map: only this resort's area (or point), with its pistes and lifts strong and the
+// neighbours' faded; "Map of all resorts" shows the other resorts.
 function resortMap(r, container) {
   const map = L.map(container, { zoomSnap: 0.5, scrollWheelZoom: false });
   L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
@@ -351,11 +352,6 @@ function resortMap(r, container) {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
       '<a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
-  }).addTo(map);
-  L.tileLayer("https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png", {
-    minZoom: 10,
-    maxZoom: 17,
-    attribution: '<a href="https://www.opensnowmap.org">OpenSnowMap</a>',
   }).addTo(map);
   if (r.location) map.setView([r.location.lat, r.location.lon], 12);
   else map.setView([47.25, 11.9], 7);
@@ -371,20 +367,20 @@ function resortMap(r, container) {
       iconAnchor: [0, 0],
     });
 
-  fetch(AREAS_URL)
-    .then((response) => (response.ok ? response.json() : null))
-    .catch(() => null)
-    .then((areas) => {
-      const status = statusKey(r);
-      const area = areas?.features.find((f) => f.properties.id === r.id);
-      if (area) {
-        const accent = css.getPropertyValue("--accent").trim();
-        const layer = L.geoJSON(area, { style: { color: accent, weight: 3, fillOpacity: 0.12 } }).addTo(map);
-        map.fitBounds(layer.getBounds(), { padding: [20, 20], maxZoom: 13 });
-      }
-      if (r.location)
-        L.marker([r.location.lat, r.location.lon], { icon: pin(status), title: r.name, zIndexOffset: 1000 }).addTo(map);
-    });
+  loadSki().then((ski) => {
+    const area = ski?.resorts.get(skiKey(r));
+    if (area) {
+      // An outline only: the pistes inside stay visible.
+      const accent = css.getPropertyValue("--accent").trim();
+      const layer = L.geoJSON(area, { style: { color: accent, weight: 3, fill: false }, interactive: false }).addTo(
+        map,
+      );
+      map.fitBounds(layer.getBounds(), { padding: [20, 20], maxZoom: 14 });
+    }
+    addPistes(map, ski, { highlight: skiKey(r), names: new Map([[skiKey(r), r.name]]) });
+    const point = skiPoint(r, ski);
+    if (point) L.marker(point, { icon: pin(statusKey(r)), title: r.name, zIndexOffset: 1000 }).addTo(map);
+  });
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).

@@ -10,13 +10,14 @@
   "javascript": {
     "globals": [
       "L",
-      "AREAS_URL",
       "DATE_LOCALE",
       "LANG",
       "LIST_KEY",
+      "SKI_MIN_ZOOM",
       "STALE_DAYS",
       "STATUS_COLORS",
       "STATUS_LABELS",
+      "addPistes",
       "capitalized",
       "countryName",
       "dangerName",
@@ -26,11 +27,14 @@
       "fold",
       "historyPath",
       "loadIndex",
+      "loadSki",
       "pair",
       "reportTimes",
       "resortOnMap",
       "resortPage",
       "resortPath",
+      "skiKey",
+      "skiPoint",
       "statusKey",
       "t",
       "updatedText",
@@ -49,7 +53,7 @@
   },
   "overrides": [
     {
-      "includes": ["assets/common.js"],
+      "includes": ["assets/common.js", "assets/ski.js"],
       "linter": {
         "rules": {
           "correctness": {

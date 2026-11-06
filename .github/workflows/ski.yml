@@ -1,0 +1,95 @@
+name: Ski tiles
+
+# Lifts, runs and ski areas from OpenSkiData, cut into the static tiles at /ski/, with each
+# resort's outline and map point (README "Ski tiles").
+# Built weekly (lifts change little, and OpenSkiData may be downloaded at most once a day), and
+# when the scripts or their fixes change. The tiles are published as one archive on the release
+# "ski-latest", which every deploy (pages.yml) unpacks into the site: no tiles in git.
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Mondays; OpenSkiData's files are rebuilt about 01:00 UTC
+  push:
+    branches: [main]
+    paths:
+      - scripts/ski_tiles.py
+      - scripts/ski_resorts.py
+      - scripts/ski_overrides.json
+      - scripts/ski-tile.schema.json
+      - .github/workflows/ski.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write # the release asset
+  actions: write # starting pages.yml
+
+concurrency:
+  group: ski
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: site
+
+      - uses: actions/checkout@v7
+        with:
+          ref: data
+          path: data
+
+      - uses: astral-sh/setup-uv@v10.3.2
+
+      # At most one download a day, however often this runs: the day's files are cached.
+      - name: Date
+        id: date
+        run: echo "day=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v6
+        id: cache
+        with:
+          path: osd
+          key: openskidata-${{ steps.date.outputs.day }}
+
+      - name: Download OpenSkiData
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p osd
+          for f in lifts runs ski_areas; do
+            curl -fsS --compressed --retry 3 -D "osd/$f.headers" -o "osd/$f.geojson" \
+              "https://tiles.openskimap.org/geojson/$f.geojson"
+          done
+
+      - name: Previous build
+        id: previous
+        run: |
+          if gh release download ski-latest -R "$GITHUB_REPOSITORY" -p ski.tar.gz -D previous; then
+            tar xzf previous/ski.tar.gz -C previous ski/v1/meta.json
+            echo "build=$(jq -r .build previous/ski/v1/meta.json)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build the tiles
+        id: tiles
+        run: |
+          modified=$(grep -i '^last-modified:' osd/lifts.headers | cut -d' ' -f2- | tr -d '\r')
+          previous=()
+          if [ -f previous/ski/v1/meta.json ]; then previous=(--previous previous/ski/v1/meta.json); fi
+          uv run --no-project --with shapely==2.2.0 --with ijson==3.4.0 python3 site/scripts/ski_tiles.py \
+            osd/ski_areas.geojson osd/lifts.geojson osd/runs.geojson data/json/index.json ski \
+            --data-time "$(date -u -d "$modified" +%FT%TZ)" "${previous[@]}"
+          echo "build=$(jq -r .build ski/v1/meta.json)" >> "$GITHUB_OUTPUT"
+
+      # The build id is a hash of the tiles: unchanged tiles keep it, and apps their cache.
+      - name: Publish
+        if: steps.tiles.outputs.build != steps.previous.outputs.build
+        run: |
+          tar czf ski.tar.gz ski
+          gh release view ski-latest -R "$GITHUB_REPOSITORY" > /dev/null 2>&1 ||
+            gh release create ski-latest -R "$GITHUB_REPOSITORY" --latest=false --title "Ski tiles" \
+              --notes "The tiles at liftradar.eu/ski/, rebuilt by ski.yml. Data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL)."
+          gh release upload ski-latest ski.tar.gz -R "$GITHUB_REPOSITORY" --clobber
+          gh workflow run pages.yml -R "$GITHUB_REPOSITORY" --ref main

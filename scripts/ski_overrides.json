@@ -1,0 +1,12 @@
+{
+  "about": "Fixes to how ski_resorts.py gives OpenSkiData's ski areas to liftradar's resorts (README, 'Ski tiles'). An area is named by an OSM id of its sources, its Wikidata id, or its exact name in OpenSkiData. claims: areas a resort also takes. ignore: areas it doesn't take. points: [lon, lat] used instead of the resort's location when an area shared by several resorts is split between them (the sector's ski area rather than its village).",
+  "claims": {
+    "fr/chamonix": ["way/642251577", "way/642252996"]
+  },
+  "ignore": {
+    "ch/st-moritz-corviglia": ["Muottas Muragl (St Moritz, Engadin)"]
+  },
+  "points": {
+    "fr/samoens": [6.7, 46.05]
+  }
+}

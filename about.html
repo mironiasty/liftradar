@@ -151,9 +151,10 @@
   <h2 id="locations" data-i18n>Map</h2>
   <p data-i18n>Each resort is one point, which marks the area, not a lift station. Its region is the one that point lies in, so an
     area spanning a border is listed under one side.</p>
-  <p data-i18n>The map shows the outline of 553 of the 731 resorts, from OpenStreetMap's ski areas. The others, mostly small village
-    lifts, are only a marker. Where neighbouring resorts share an area, the split between them is approximate. Outlines
-    are updated now and then, not with every data update.</p>
+  <p data-i18n>On the map, a resort's outline and marker come from its lifts and pistes in OpenSkiData, rebuilt every week: the
+    marker is at the resort's point when that's in its area, and otherwise at the bottom station nearest to it. 720 of the
+    731 resorts have an outline; the others are only a marker. Where neighbouring resorts share a linked area, the split
+    between them is approximate. Zoomed in, the map shows the pistes and lifts.</p>
 
   <h2 id="archive" data-i18n>History</h2>
   <p data-i18n>Data has been collected since 24 October 2026, and nothing earlier exists. Resort pages show the key numbers of the
@@ -168,6 +169,11 @@
     <li data-i18n><code>json/&lt;country&gt;/&lt;id&gt;.json</code>: one resort's full report (<a href="/schema/resort.schema.json">schema</a>).</li>
     <li data-i18n><code>history/&lt;country&gt;/&lt;id&gt;.json</code>: the key numbers of every run over the last 365 days, one list
       per value (<a href="/schema/history.schema.json">schema</a>).</li>
+    <li data-i18n><code>ski/v1/10/&lt;x&gt;/&lt;y&gt;.json</code>: the lifts, pistes and ski areas of OpenSkiData in map tiles (XYZ,
+      zoom 10), each with its resort here when it has one (<a href="/ski/v1/tile.schema.json">schema</a>), and
+      <code>ski/v1/resorts.geojson</code>: each resort's outline and point on the map. The build and counts are in
+      <code>ski/v1/meta.json</code>. Rebuilt weekly, under the
+      <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>: data from OpenSkiData, © OpenStreetMap contributors.</li>
   </ul>
   <p data-i18n>Worth knowing when you read them:</p>
   <ul>

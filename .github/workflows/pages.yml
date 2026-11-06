@@ -36,6 +36,17 @@ jobs:
           cp -R site/index.html site/about.html site/map.html site/resort.html site/sources.html site/stats.html site/404.html site/_headers site/assets _site/
           for part in json history schema; do cp -R "data/$part" _site/; done
 
+      # The ski tiles (README "Ski tiles"), built weekly by ski.yml into a release asset. Without
+      # it (not built yet, or GitHub failing) the site goes out without /ski/, which apps handle.
+      - name: Add the ski tiles
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download ski-latest -R "$GITHUB_REPOSITORY" -p ski.tar.gz -D ski-archive
+          tar xzf ski-archive/ski.tar.gz -C _site
+          jq -c '{build, counts}' _site/ski/v1/meta.json
+
       # Before the asset links are versioned: these pages have the same links.
       - name: Generate the translated pages
         run: node site/scripts/translate.mjs _site

@@ -6,3 +6,11 @@
   Access-Control-Allow-Origin: *
 /schema/*
   Access-Control-Allow-Origin: *
+/ski/*
+  Access-Control-Allow-Origin: *
+# Ski tiles change at most weekly, and apps add ?b=<build> from meta.json, which they check
+# more often. (Rules that match the same path add up, so each path gets one Cache-Control.)
+/ski/v1/10/*
+  Cache-Control: public, max-age=604800
+/ski/v1/meta.json
+  Cache-Control: public, max-age=3600
