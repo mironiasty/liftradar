@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-06T13:43:11+01:00",
+  "resorts": [
+    {
+      "id": "laajis",
+      "country": "fi",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no slope or lift table (layout changed?)"
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only"
+  ]
+}
