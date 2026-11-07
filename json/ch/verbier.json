@@ -9,34 +9,50 @@
     "lon": 7.2338
   },
   "website": "https://www.verbier.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-06T13:41:21.498347+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-07T08:41:16.576145+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": "2026-11-06",
-    "condition": null,
+    "mountain_cm": 20,
+    "valley_cm": 10,
+    "fresh_cm": 6,
+    "last_snowfall": "2026-11-07",
+    "condition": "mainly: spring snow / partially: wet",
     "stations": [
+      {
+        "name": "Les Ruinettes",
+        "elevation_m": 2200,
+        "depth_cm": 10,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 13,
-        "fresh_cm": 7,
+        "depth_cm": 20,
+        "fresh_cm": 6,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Col des Gentianes",
+        "elevation_m": 2894,
+        "depth_cm": 20,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 28,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -49,7 +65,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 6
     },
     "drag_lift": {
@@ -57,41 +73,41 @@
       "total": 3
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 4
     },
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 1
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-06T13:42:00+01:00",
+  "lifts_updated_at": "2026-11-07T08:42:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
