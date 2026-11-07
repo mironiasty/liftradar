@@ -79,6 +79,27 @@ function tileOf([lon, lat]) {
   return [Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.asinh(Math.tan(rad)) / Math.PI) / 2) * n)];
 }
 
+const HARDER = ["novice", "easy", "intermediate", "advanced", "expert"];
+const refsOf = (run) => (run.ref ?? "").split(/\s*[,;]\s*/).filter(Boolean);
+const apartM = (a, b) => Math.hypot((a[0] - b[0]) * Math.cos((a[1] * Math.PI) / 180), a[1] - b[1]) * 111320;
+
+// OpenSkiData makes a stretch two pistes share a run of its own, numbered for both ("22, 19") and as
+// hard as the easier, so the harder one seems to stop there. Its colour edges the stretch instead:
+// the hardest piste with one of those numbers that starts or ends within 30 m of it.
+function sharedColor(run, runs) {
+  const refs = refsOf(run);
+  if (refs.length < 2 || !run.c) return null;
+  const ends = [run.c[0], run.c.at(-1)];
+  let hardest = run.difficulty;
+  for (const other of runs) {
+    const theirs = refsOf(other);
+    if (theirs.length !== 1 || !refs.includes(theirs[0]) || !other.c) continue;
+    if (HARDER.indexOf(other.difficulty) <= HARDER.indexOf(hardest)) continue;
+    if ([other.c[0], other.c.at(-1)].some((a) => ends.some((b) => apartM(a, b) <= 30))) hardest = other.difficulty;
+  }
+  return hardest === run.difficulty ? null : (PISTE_COLORS[run.conv ?? "europe"][hardest] ?? null);
+}
+
 // A tile's runs and lifts as GeoJSON features, with what the layers and tooltips need.
 function skiFeatures(tile, highlight, names) {
   for (const area of tile.areas) if (area.lr && !names.has(area.lr.id)) names.set(area.lr.id, area.lr.name);
@@ -109,6 +130,7 @@ function skiFeatures(tile, highlight, names) {
             ? OFF_PISTE
             : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777"),
         dashed: offPiste || !downhill,
+        shared: downhill && !offPiste ? sharedColor(run, tile.runs) : null,
         width: downhill ? 2.5 : 1.5,
         opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7),
         name: run.name ?? "",
@@ -182,6 +204,11 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
     before,
   );
   const isLine = ["==", ["geometry-type"], "LineString"];
+  // Under a stretch two pistes share, the harder one's colour as its edges (sharedColor).
+  line("ski-runs-shared", "ski-runs", ["all", isLine, ["has", "shared"], ["!=", ["get", "shared"], null]], {
+    "line-color": ["get", "shared"],
+    "line-width": 5.5,
+  });
   line("ski-runs", "ski-runs", ["all", isLine, ["!", ["get", "dashed"]]]);
   line("ski-runs-dashed", "ski-runs", ["all", isLine, ["get", "dashed"]], { "line-dasharray": [2, 2] });
   line("ski-lifts", "ski-lifts", ["!", ["get", "dashed"]]);
@@ -224,8 +251,10 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
   const add = (tile) => {
     for (const [key, list] of Object.entries(skiFeatures(tile, highlight, names))) {
       for (const f of list) {
-        // A line crossing tiles is in each of them.
-        const id = `${key}:${f.id ?? JSON.stringify(f.geometry.coordinates[0])}`;
+        // A line crossing tiles is in each of them, whole. Its OSM id alone isn't enough:
+        // OpenSkiData splits some ways into several runs, which share it.
+        const line = f.geometry.type === "Polygon" ? f.geometry.coordinates[0] : f.geometry.coordinates;
+        const id = `${key}:${f.id}:${line[0]}:${line.length}`;
         if (drawn.has(id)) continue;
         drawn.add(id);
         data[key].push(f);

@@ -200,7 +200,8 @@ once a day; its own vector tiles may not be used directly.
   `lr`, `areas` (indexes in this tile's `areas`) and `c`, the line simplified to 5 m as
   `[lon, lat, elevation]`. `runs`: every piste and trail, with `uses` (downhill, nordic, skitour,
   sled…), `difficulty`, `conv` (the colour convention when not European: `north_america`, `japan`),
-  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `osm`, `lr`, `areas`, and `c`
+  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `osm` (not unique: OpenSkiData
+  splits some ways into several runs), `lr`, `areas`, and `c`
   (`[lon, lat]`) or, for a piste drawn as an area, `poly` (polygon rings). Empty values are left out.
   The schema is `ski/v1/tile.schema.json` (`scripts/ski-tile.schema.json`).
 
