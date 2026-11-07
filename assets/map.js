@@ -59,7 +59,9 @@ function hintText({ metric, mode }) {
 }
 
 const color = (status) => cssColor(STATUS[status].color);
-const ALPS = { center: [11.9, 47.25], zoom: 6 };
+// Where the map opens: every resort, from Sierra Nevada to Lapland. Fixed rather than taken from
+// the data, so the map draws at once; widen it if resorts appear outside.
+const ALL_RESORTS = { bounds: [-7.3, 37.1, 29.2, 70.1], fitBoundsOptions: { padding: 30 } };
 
 // A bar for the open share, for open resorts: elsewhere open counts are 0 or not reported.
 function meter(open, total, active) {
@@ -143,7 +145,7 @@ function popup(r, status) {
 }
 
 // The ski tiles are optional (loadSki() is null without them): the map then shows the markers
-// at the resorts' locations, and OpenSnowMap's pistes.
+// at the resorts' locations, without areas, pistes or lifts.
 function show(map, [index, ski]) {
   document.getElementById("updated").textContent = updatedText(index);
   const resorts = index.resorts.filter((r) => skiPoint(r, ski));
@@ -258,18 +260,9 @@ function show(map, [index, ski]) {
     } catch {}
   };
   choose({});
-  const all = new maplibregl.LngLatBounds();
-  for (const { marker } of markers) all.extend(marker.getLngLat());
-  if (!all.isEmpty()) map.fitBounds(all, { padding: 30, animate: false });
-  // map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort, with its report open.
-  const wanted = new URLSearchParams(location.search).get("r");
-  const focus = markers.find(({ r }) => skiKey(r) === wanted);
-  if (focus) {
-    const area = ski?.resorts.get(wanted);
-    if (area) map.fitBounds(geometryBounds(area.geometry), { padding: 30, maxZoom: 12, animate: false });
-    else map.jumpTo({ center: focus.marker.getLngLat(), zoom: 12 });
-    openPopup(focus.r, focus.marker.getLngLat());
-  }
+  // map.html?r=at/soelden: the map opened there (startView), with the resort's report open.
+  const focus = markers.find(({ r }) => skiKey(r) === WANTED);
+  if (focus) openPopup(focus.r, focus.marker.getLngLat());
 
   // Statuses chosen with the chips; none chosen shows every resort.
   const filters = document.getElementById("filters");
@@ -309,11 +302,23 @@ function button(className, text, onClick) {
 const panel = document.getElementById("panel");
 if (matchMedia("(max-width: 640px)").matches) panel.open = false;
 
-baseMap("map", ALPS).then((map) =>
-  Promise.all([loadIndex(), loadSki()])
-    .then((data) => show(map, data))
+// map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort.
+const WANTED = new URLSearchParams(location.search).get("r");
+
+// With ?r=, the resort asked for: its area, or its point. That needs the data, so the map waits
+// for it rather than drawing all resorts first and then moving.
+function resortView([index, ski]) {
+  const area = ski?.resorts.get(WANTED);
+  if (area) return { bounds: geometryBounds(area.geometry), fitBoundsOptions: { padding: 30, maxZoom: 12 } };
+  const wanted = index.resorts.find((r) => skiKey(r) === WANTED);
+  return wanted && skiPoint(wanted, ski) ? { center: skiPoint(wanted, ski), zoom: 12 } : ALL_RESORTS;
+}
+
+const data = Promise.all([loadIndex(), loadSki()]);
+baseMap("map", WANTED ? data.then(resortView).catch(() => ALL_RESORTS) : ALL_RESORTS).then((map) =>
+  data
+    .then((loaded) => show(map, loaded))
     .catch((error) => {
       document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
-      addPistes(map, null);
     }),
 );

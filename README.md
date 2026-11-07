@@ -232,8 +232,8 @@ uv run --no-project --with shapely --with ijson python3 scripts/ski_tiles.py ../
 ln -sfn ../osd/ski .   # git-ignored, like the data links
 ```
 
-Without `ski/`, the pages show the markers at the resorts' locations, without outlines, and
-OpenSnowMap's pistes instead.
+Without `ski/`, the pages show the markers at the resorts' locations, without outlines, pistes or
+lifts.
 
 Lifts, pistes and ski areas: data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL),
 Skimap.org, Who's On First, © Mapterhorn. The tiles are a derived database under the

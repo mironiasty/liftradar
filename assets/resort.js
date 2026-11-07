@@ -348,7 +348,20 @@ async function resortMap(r, container) {
   const start = r.location
     ? { center: [r.location.lon, r.location.lat], zoom: 12 }
     : { center: [11.9, 47.25], zoom: 6 };
-  const [map, ski] = await Promise.all([baseMap(container, { ...start, scrollZoom: false }), loadSki()]);
+  const loading = loadSki();
+  // Opened on the area when there is one, rather than moving there once it's known.
+  const view = loading.then((ski) => {
+    const area = ski?.resorts.get(skiKey(r));
+    if (!area) return start;
+    return { bounds: geometryBounds(area.geometry), fitBoundsOptions: { padding: 20, maxZoom: 14 } };
+  });
+  const [map, ski] = await Promise.all([
+    baseMap(
+      container,
+      view.then((v) => ({ ...v, scrollZoom: false })),
+    ),
+    loading,
+  ]);
   map.once("click", () => map.scrollZoom.enable());
   const area = ski?.resorts.get(skiKey(r));
   if (area) {
@@ -363,7 +376,6 @@ async function resortMap(r, container) {
       },
       firstLabel(map),
     );
-    map.fitBounds(geometryBounds(area.geometry), { padding: 20, maxZoom: 14, animate: false });
   }
   addPistes(map, ski, { highlight: skiKey(r), names: new Map([[skiKey(r), r.name]]) });
   const point = skiPoint(r, ski);

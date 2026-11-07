@@ -1,7 +1,7 @@
 // Shared by the map and the resort page: each resort's outline and map point, and the pistes and
 // lifts drawn over the map, from the ski tiles (/ski/v1/, built weekly from OpenSkiData by
 // .github/workflows/ski.yml; README "Ski tiles"). Without them (not built yet, or locally) the
-// pages fall back to the resort's location and OpenSnowMap's pistes.
+// pages show the resorts at their location, without outlines, pistes or lifts.
 
 const SKI_URL = "/ski/v1";
 const SKI_ATTRIBUTION =
@@ -253,16 +253,7 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
   update();
 }
 
-// The pistes over the map: ours from the tiles, or OpenSnowMap's without them.
+// The pistes and lifts over the map, when there are ski tiles.
 function addPistes(map, ski, options = {}) {
-  if (ski) return skiLayers(map, ski, options);
-  map.addSource("opensnowmap", {
-    type: "raster",
-    tiles: ["https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png"],
-    tileSize: 256,
-    minzoom: 10,
-    maxzoom: 17,
-    attribution: '<a href="https://www.opensnowmap.org">OpenSnowMap</a>',
-  });
-  map.addLayer({ id: "opensnowmap", type: "raster", source: "opensnowmap", minzoom: 10 }, firstLabel(map));
+  if (ski) skiLayers(map, ski, options);
 }

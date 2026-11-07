@@ -136,9 +136,11 @@ function withRelief(style) {
 // The first label layer: what the pistes, lifts and areas go under.
 const firstLabel = (map) => map.getStyle().layers.find((l) => l.type === "symbol")?.id;
 
-// A map in container, resolved once its style has loaded. options go to maplibregl.Map.
+// A map in container, resolved once its style has loaded. options go to maplibregl.Map; they may
+// be a promise (the view, from the page's data), fetched alongside the style, so the map draws
+// nothing before it knows where to look.
 async function baseMap(container, options = {}) {
-  const response = await fetch(BASE_STYLES[darkMode() ? "dark" : "light"]);
+  const [response, view] = await Promise.all([fetch(BASE_STYLES[darkMode() ? "dark" : "light"]), options]);
   const style = withRelief(withLanguage(await response.json()));
   const map = new maplibregl.Map({
     container,
@@ -152,7 +154,7 @@ async function baseMap(container, options = {}) {
     },
     dragRotate: false,
     pitchWithRotate: false,
-    ...options,
+    ...view,
   });
   map.touchZoomRotate.disableRotation();
   // Icons a style names but its sprite lacks: drawn as nothing, rather than a warning each.
