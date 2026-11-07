@@ -119,6 +119,8 @@ function skiFeatures(tile, highlight, names) {
         : uses.includes("skitour")
           ? t("Ski touring route")
           : t("Sledding run");
+    // A run in a tunnel is drawn faint and dashed, as tunnels are on maps: it doesn't go over the hill.
+    const tunnel = Boolean(run.tunnel);
     runs.push({
       type: "Feature",
       id: run.osm,
@@ -129,27 +131,31 @@ function skiFeatures(tile, highlight, names) {
           : offPiste
             ? OFF_PISTE
             : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777"),
-        dashed: offPiste || !downhill,
-        shared: downhill && !offPiste ? sharedColor(run, tile.runs) : null,
+        dashed: offPiste || !downhill || tunnel,
+        shared: downhill && !offPiste && !tunnel ? sharedColor(run, tile.runs) : null,
         width: downhill ? 2.5 : 1.5,
-        opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7),
+        opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
         name: run.name ?? "",
         lr: run.lr ?? "",
-        kind,
+        tunnel,
+        kind: tunnel ? `${kind}, ${t("in a tunnel")}` : kind,
         resort: names.get(run.lr) ?? "",
       },
     });
   }
   for (const lift of tile.lifts) {
     const gone = Boolean(lift.status && lift.status !== "operating");
+    const tunnel = Boolean(lift.tunnel);
     const properties = {
       type: lift.type ?? "",
       lr: lift.lr ?? "",
       color: gone ? "#888" : INK,
-      dashed: gone,
-      opacity: faded(lift) ? 0.35 : 1,
+      dashed: gone || tunnel,
+      opacity: (faded(lift) ? 0.35 : 1) * (tunnel ? 0.55 : 1),
       name: lift.name ?? "",
-      kind: [SKI_LIFT_TYPES[lift.type] ?? t("Lift"), gone ? t("out of service") : ""].filter(Boolean).join(", "),
+      kind: [SKI_LIFT_TYPES[lift.type] ?? t("Lift"), gone ? t("out of service") : "", tunnel ? t("in a tunnel") : ""]
+        .filter(Boolean)
+        .join(", "),
       resort: names.get(lift.lr) ?? "",
     };
     lifts.push({ type: "Feature", id: lift.osm, geometry: { type: "LineString", coordinates: lift.c }, properties });

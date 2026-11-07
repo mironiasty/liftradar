@@ -161,8 +161,9 @@ def compact(properties: dict, fields: dict) -> dict:
 
 LIFT_FIELDS = {"liftType": "type", "name": "name", "ref": "ref", "status": "status", "capacity": "capacity"}
 LIFT_FIELDS |= {"duration": "duration", "occupancy": "occupancy", "heating": "heating", "bubble": "bubble"}
+LIFT_FIELDS |= {"tunnel": "tunnel"}
 RUN_FIELDS = {"uses": "uses", "difficulty": "difficulty", "name": "name", "ref": "ref", "grooming": "grooming"}
-RUN_FIELDS |= {"lit": "lit", "oneway": "oneway", "gladed": "gladed", "patrolled": "patrolled"}
+RUN_FIELDS |= {"lit": "lit", "oneway": "oneway", "gladed": "gladed", "patrolled": "patrolled", "tunnel": "tunnel"}
 KEEP = {"sources", "skiAreas", "status", "difficultyConvention"} | set(LIFT_FIELDS) | set(RUN_FIELDS)
 
 

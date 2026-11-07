@@ -11,8 +11,8 @@ const DEM = "mapterhorn";
 
 // Per lift type: pylon height and the longest span (m), the clearance the cable keeps over the
 // ground, the gap between the two tracks, the carrier with its usual seats, spacing (m) and speed
-// (m/s) when the data has no capacity or ride time, how far it hangs below the cable, and the
-// station [width, height, length].
+// (m/s) when the data has no capacity or ride time, and how far it hangs below the cable. The
+// stations are in stationDesign.
 const GONDOLA = {
   pylon: 20,
   every: 350,
@@ -23,7 +23,6 @@ const GONDOLA = {
   spacing: 60,
   speed: 5,
   hang: 3.6,
-  station: [14, 10, 22],
 };
 const DRAG = {
   pylon: 7,
@@ -35,7 +34,6 @@ const DRAG = {
   spacing: 14,
   speed: 2.8,
   hang: 4.5,
-  station: [5, 3.5, 6],
 };
 const KINDS = {
   gondola: GONDOLA,
@@ -50,7 +48,6 @@ const KINDS = {
     seats: 80,
     speed: 9,
     hang: 5,
-    station: [18, 15, 24],
   },
   chair_lift: {
     pylon: 12,
@@ -62,13 +59,12 @@ const KINDS = {
     spacing: 18,
     speed: 3,
     hang: 2.6,
-    station: [12, 7, 16],
   },
   "t-bar": DRAG,
   "j-bar": DRAG,
   platter: DRAG,
   drag_lift: DRAG,
-  rope_tow: { pylon: 2.5, every: 80, clearance: 1, gauge: 0.8, carrier: null, station: [3, 2, 3] },
+  rope_tow: { pylon: 2.5, every: 80, clearance: 1, gauge: 0.8, carrier: null },
 };
 // Lifts on the ground stay lines on the map: funiculars, railways and magic carpets.
 const AERIAL = Object.keys(KINDS);
@@ -81,11 +77,13 @@ const STEEL = darkMode() ? 0xb8bec6 : 0x7d838b;
 const GLASS = 0x2c3846;
 const CONCRETE = darkMode() ? 0x9a958c : 0xd4cfc4;
 const CABLE = darkMode() ? 0xe6e6e6 : 0x2a2a2a;
+const CABLE_GREY = 0x3a3d42;
+const SHELL = darkMode() ? 0xc9cdd2 : 0xeef0f2;
 
 const info = document.getElementById("info");
 const showInfo = (...content) => info.replaceChildren(...content);
 
-// The tiles' lifts within bounds, each once.
+// The tiles' lifts within bounds, each once, and the runs through tunnels.
 async function liftsIn(ski, bounds) {
   const [x0, y0] = tileOf([bounds.getWest(), bounds.getNorth()]);
   const [x1, y1] = tileOf([bounds.getEast(), bounds.getSouth()]);
@@ -99,13 +97,17 @@ async function liftsIn(ski, bounds) {
     ),
   );
   const lifts = new Map();
+  const tunnels = new Map();
   for (const tile of loaded) {
     for (const lift of tile?.lifts ?? []) {
       const inside = lift.c.some(([lon, lat]) => bounds.contains([lon, lat]));
       if (inside && KINDS[lift.type]) lifts.set(lift.osm ?? JSON.stringify(lift.c[0]), lift);
     }
+    for (const run of tile?.runs ?? []) {
+      if (run.tunnel && run.c) tunnels.set(`${run.osm}:${run.c[0]}:${run.c.length}`, run);
+    }
   }
-  return [...lifts.values()];
+  return { lifts: [...lifts.values()], tunnels: [...tunnels.values()] };
 }
 
 // Metres east and north of a point, flat: fine across a ski area.
@@ -334,9 +336,10 @@ function buildLifts(lifts, origin, elevation) {
     const groundAt = (d) => profile[Math.round((d / total) * steps)].ground;
     // Supports: the stations, the bends, then pylons where the cable would come too close to the
     // ground, or a span would be too long.
+    const design = stationDesign(lift, kind);
     const support = (d, kindOf) => {
       const g = groundAt(d);
-      const height = kindOf === "station" ? kind.station[1] * 0.8 : kind.pylon;
+      const height = kindOf === "station" ? design.cable : kind.pylon;
       return { d, ground: g, top: g + height, kind: kindOf };
     };
     const supports = [support(0, "station"), support(total, "station")];
@@ -392,8 +395,10 @@ function buildLifts(lifts, origin, elevation) {
       p.side = new THREE.Vector3(direction.z, 0, -direction.x).multiplyScalar(kind.gauge / 2);
       p.base = local(here, p.ground);
       p.head = local(here, p.top);
-      if (p.kind === "station") stations.push({ position: p.base, heading: p.heading, kind, top: p.d > 0 });
-      else pylons.push({ position: p.base, height: p.top - p.ground, heading: p.heading, kind });
+      // A station faces its line: the top one looks back down it.
+      if (p.kind === "station") {
+        stations.push({ position: p.base, heading: p.d > 0 ? p.heading + Math.PI : p.heading, design, kind });
+      } else pylons.push({ position: p.base, height: p.top - p.ground, heading: p.heading, kind });
     }
     // Two tracks, sagging between supports: up on the right, down on the left.
     const track = (sign) => {
@@ -415,11 +420,30 @@ function buildLifts(lifts, origin, elevation) {
       points.push(last.head.clone().addScaledVector(last.side, sign));
       return points;
     };
+    // Round the bullwheels: half a turn behind each station, from one track to the other.
+    const turn = (p, from, behind) => {
+      const back = new THREE.Vector3(Math.sin(p.heading), 0, Math.cos(p.heading)).multiplyScalar(
+        behind * (kind.gauge / 2),
+      );
+      const points = [];
+      for (let k = 1; k < 16; k++) {
+        const a = (k / 16) * Math.PI;
+        points.push(
+          p.head
+            .clone()
+            .addScaledVector(p.side, from * Math.cos(a))
+            .addScaledVector(back, Math.sin(a)),
+        );
+      }
+      return points;
+    };
     const up = track(1);
     const down = track(-1).reverse();
-    cables.push(up, down);
+    const top = turn(supports[supports.length - 1], 1, 1);
+    const bottom = turn(supports[0], -1, -1);
+    cables.push(up, [up[up.length - 1], ...top, down[0]], down, [down[down.length - 1], ...bottom, up[0]]);
     if (kind.carrier) {
-      const loop = path([...up, ...down]);
+      const loop = path([...up, ...top, ...down, ...bottom]);
       // Speed from the ride time, spacing from the capacity: as the lift runs, when the data has them.
       const speed = lift.duration ? Math.min(12, Math.max(1, total / lift.duration)) : kind.speed;
       const seats = lift.occupancy ?? kind.seats ?? 1;
@@ -431,6 +455,40 @@ function buildLifts(lifts, origin, elevation) {
     }
   }
   return { pylons, stations, cables, carriers };
+}
+
+// The mouths of the runs' tunnels: at each end, the portal on the ground, facing away from the
+// tunnel (+z out).
+function tunnelPortals(tunnels, origin, elevation) {
+  const o = maplibregl.MercatorCoordinate.fromLngLat(origin, 0);
+  const s = o.meterInMercatorCoordinateUnits();
+  const local = ([lon, lat], alt) => {
+    const m = maplibregl.MercatorCoordinate.fromLngLat([lon, lat], 0);
+    return new THREE.Vector3((m.x - o.x) / s, alt, (m.y - o.y) / s);
+  };
+  const portals = [];
+  for (const run of tunnels) {
+    const c = run.c;
+    for (const [end, inside] of [
+      [c[0], c[1]],
+      [c[c.length - 1], c[c.length - 2]],
+    ]) {
+      const out = local(end, 0).sub(local(inside, 0));
+      portals.push({ position: local(end, elevation(end) ?? 0), heading: Math.atan2(out.x, out.z) });
+    }
+  }
+  return portals;
+}
+
+// A tunnel portal: a concrete face sunk a little into the slope, with the dark mouth.
+let portal = null;
+function portalModel() {
+  portal ??= merge([
+    [box(8, 6.5, 4, 0, 2.25, -1.2), CONCRETE],
+    [box(8.6, 0.6, 4.4, 0, 5.6, -1.2), CONCRETE],
+    [box(5, 3.8, 0.4, 0, 2.1, 0.85), GLASS],
+  ]);
+  return portal;
 }
 
 // Parts of a model in one geometry: [geometry, colour] pairs, coloured per vertex.
@@ -453,112 +511,297 @@ function merge(parts) {
   return merged;
 }
 const box = (w, h, d, x = 0, y = 0, z = 0) => new THREE.BoxGeometry(w, h, d).translate(x, y, z);
+// A vertical tube from y up h, tapering from bottom to top radius.
 const tube = (top, bottom, h, x = 0, y = 0, z = 0) =>
-  new THREE.CylinderGeometry(top, bottom, h, 10).translate(x, y + h / 2, z);
-// A horizontal wheel (a bullwheel, a sheave) of radius r at y.
-const wheel = (r, y, x = 0, z = 0) => new THREE.CylinderGeometry(r, r, 0.35, 24).translate(x, y, z);
+  new THREE.CylinderGeometry(top, bottom, h, 12).translate(x, y + h / 2, z);
+// A horizontal wheel (a bullwheel) of radius r at y.
+const wheel = (r, y, x = 0, z = 0) => new THREE.CylinderGeometry(r, r, 0.3, 32).translate(x, y, z);
+// A small vertical wheel turning along z (a sheave), at x, y, z.
+const sheave = (r, x, y, z) => new THREE.CylinderGeometry(r, r, 0.1, 12).rotateZ(Math.PI / 2).translate(x, y, z);
+// A round bar from a to b ([x, y, z]).
+function beam(a, b, r) {
+  const from = new THREE.Vector3(...a);
+  const to = new THREE.Vector3(...b);
+  const along = to.clone().sub(from);
+  const geometry = new THREE.CylinderGeometry(r, r, along.length(), 6);
+  geometry.applyQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), along.normalize()));
+  return geometry.translate((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2);
+}
+// A plan (a THREE.Shape in x and -z) raised into a solid from y to y + h.
+function raise(shape, h, y = 0, bevel = 0) {
+  const geometry = new THREE.ExtrudeGeometry(shape, {
+    depth: h,
+    curveSegments: 8,
+    bevelEnabled: bevel > 0,
+    bevelThickness: bevel,
+    bevelSize: bevel,
+    bevelSegments: 2,
+  });
+  return geometry.rotateX(-Math.PI / 2).translate(0, y, 0);
+}
+// A rectangle w by d with corners rounded by r, centred.
+function roundedRect(w, d, r) {
+  const s = new THREE.Shape();
+  const x = w / 2;
+  const z = d / 2;
+  s.moveTo(-x + r, -z);
+  s.lineTo(x - r, -z);
+  s.quadraticCurveTo(x, -z, x, -z + r);
+  s.lineTo(x, z - r);
+  s.quadraticCurveTo(x, z, x - r, z);
+  s.lineTo(-x + r, z);
+  s.quadraticCurveTo(-x, z, -x, z - r);
+  s.lineTo(-x, -z + r);
+  s.quadraticCurveTo(-x, -z, -x + r, -z);
+  return s;
+}
+// A box with rounded vertical edges, centred on x, y, z.
+const roundedBox = (w, h, d, r, x = 0, y = 0, z = 0) => raise(roundedRect(w, d, r), h, y - h / 2).translate(x, 0, z);
+// A terminal's plan: as wide as w, from the bullwheel's round end behind (-z) to length in front
+// (+z, towards the line).
+function terminalPlan(w, length) {
+  const s = new THREE.Shape();
+  s.moveTo(-w / 2, -length);
+  s.lineTo(w / 2, -length);
+  s.lineTo(w / 2, 0);
+  s.absarc(0, 0, w / 2, 0, Math.PI, false);
+  s.lineTo(-w / 2, -length);
+  return s;
+}
+
+// What a lift's stations look like: detachable lifts (gondolas, and chairlifts of four seats or
+// more, which mostly are) have a long housing over the bullwheel and the slow section; fixed-grip
+// chairlifts show their bullwheel on a column; drag lifts a small wheel on a post; cable cars a
+// hall the car drives into. `cable`: the cable's height at the station.
+function stationDesign(lift, kind) {
+  const seats = lift.occupancy ?? kind.seats ?? 1;
+  if (lift.type === "cable_car") return { name: "tram", cable: 14 };
+  if (kind.carrier === "cabin") return { name: "gondola", cable: 7 };
+  if (kind.carrier === "chair") return { name: seats >= 4 ? "detachable" : "fixed", cable: 4.4 };
+  if (lift.type === "rope_tow") return { name: "tow", cable: 1.2 };
+  return { name: "drag", cable: 3.5 };
+}
+
+// A small operator's cabin beside a station, at x, z, on a floor at y.
+const cabin = (x, y, z) => [
+  [box(3, 2.6, 3, x, y + 1.3, z), SHELL],
+  [box(3.05, 1, 3.05, x, y + 1.7, z), GLASS],
+  [box(3.5, 0.3, 3.5, x, y + 2.75, z), OWN],
+];
+
+// The station models, the bullwheel at the origin, the line towards +z.
+const stationModels = new Map();
+function stationModel(design, kind) {
+  const key = `${design.name}:${kind.gauge}`;
+  if (stationModels.has(key)) return stationModels.get(key);
+  const g = kind.gauge;
+  const h = design.cable;
+  let parts;
+  if (design.name === "gondola" || design.name === "detachable") {
+    // The housing over the cable, open below for the carriers, on four columns, over a platform.
+    const w = g + (design.name === "gondola" ? 5 : 4);
+    const length = design.name === "gondola" ? 26 : 20;
+    const floor = design.name === "gondola" ? 1 : 1.2;
+    const shell = design.name === "gondola" ? 3.4 : 2.6;
+    const bottom = h - shell / 2;
+    const columns = [-1, 1].flatMap((x) =>
+      [0.15, 0.85].map((t) => [tube(0.35, 0.45, bottom - floor, (x * w) / 2.6, floor, length * t), STEEL]),
+    );
+    parts = [
+      [box(w + 3, floor, length + w / 2 + 3, 0, floor / 2, (length - w / 2) / 2), CONCRETE],
+      ...columns,
+      [raise(terminalPlan(w, length), shell, bottom, 0.3), SHELL],
+      [raise(terminalPlan(w + 0.9, length + 0.45), shell * 0.22, h - 0.1), OWN],
+      [wheel(g / 2, h), STEEL],
+      ...cabin(w / 2 + 3.5, floor, length * 0.75),
+    ];
+  } else if (design.name === "fixed") {
+    // The bullwheel on a column, the drive above it, a loading platform and a hut.
+    parts = [
+      [tube(0.45, 0.6, h - 0.15), STEEL],
+      [box(1.4, 0.4, 1.4, 0, h - 0.35, 0), STEEL],
+      [wheel(g / 2, h), STEEL],
+      [box(2.2, 1.4, 2.4, 0, h + 0.9, -0.3), OWN],
+      [box(g + 3, 1.2, 7, 0, 0.6, 4.5), CONCRETE],
+      ...cabin(g / 2 + 3, 0, 4),
+    ];
+  } else if (design.name === "drag") {
+    parts = [
+      [tube(0.2, 0.28, h), STEEL],
+      [wheel(g / 2 + 0.1, h), STEEL],
+      [box(1.2, 0.9, 1.4, 0, h + 0.6, -0.2), OWN],
+      [box(2.2, 2.3, 2.6, g / 2 + 2.2, 1.15, 1.5), SHELL],
+      [box(2.25, 0.8, 2.65, g / 2 + 2.2, 1.6, 1.5), GLASS],
+      [box(2.6, 0.25, 3, g / 2 + 2.2, 2.4, 1.5), OWN],
+    ];
+  } else if (design.name === "tow") {
+    parts = [
+      [tube(0.1, 0.12, h), STEEL],
+      [wheel(g / 2 + 0.1, h), STEEL],
+    ];
+  } else {
+    // A cable car's hall, the car driving into it; the beam carrying the ropes in front.
+    parts = [
+      [box(18, 17, 24, 0, 8.5, -6), CONCRETE],
+      [box(11, 9, 0.6, 0, 9.5, 6.05), GLASS],
+      [box(19, 0.8, 25, 0, 17.4, -6), OWN],
+      [box(g + 3, 1.2, 4, 0, h, 7.5), STEEL],
+      [box(2, h - 0.6, 2, 0, (h - 0.6) / 2, 8), CONCRETE],
+    ];
+  }
+  const model = merge(parts);
+  stationModels.set(key, model);
+  return model;
+}
+
+// A pylon's shaft, of height 1 (scaled to the pylon's): a tube for chairlifts and gondolas, a
+// lattice tower for cable cars, a pole for drag lifts.
+const shaftModels = new Map();
+function shaftModel(kind) {
+  const name = kind.pylon >= 30 ? "lattice" : kind.pylon > 6 ? "tube" : "pole";
+  if (shaftModels.has(name)) return shaftModels.get(name);
+  let parts;
+  if (name === "lattice") {
+    const corners = [
+      [-1, -1],
+      [1, -1],
+      [1, 1],
+      [-1, 1],
+    ];
+    const at = (c, y) => [c[0] * (2.2 - 1.4 * y), y, c[1] * (2.2 - 1.4 * y)];
+    parts = [];
+    for (let i = 0; i < 4; i++) {
+      const a = corners[i];
+      const b = corners[(i + 1) % 4];
+      parts.push([beam(at(a, 0), at(a, 1), 0.18), STEEL]);
+      for (let k = 0; k < 4; k++) {
+        const y0 = k / 4;
+        const y1 = (k + 1) / 4;
+        parts.push([beam(at(a, y0), at(b, y1), 0.06), STEEL]);
+        parts.push([beam(at(a, y1), at(b, y1), 0.06), STEEL]);
+      }
+    }
+  } else if (name === "tube") {
+    parts = [[tube(0.32, 0.5, 1), STEEL]];
+  } else {
+    parts = [[tube(0.14, 0.2, 1), STEEL]];
+  }
+  const model = merge(parts);
+  shaftModels.set(name, model);
+  return model;
+}
+
+// A pylon's head, at its top: the cross arm, a train of sheaves under each track, and a catwalk
+// with a railing along the arm.
+const headModels = new Map();
+function pylonHead(kind) {
+  if (headModels.has(kind)) return headModels.get(kind);
+  const g = kind.gauge;
+  const small = kind.pylon <= 6;
+  const train = small ? 0.8 : Math.min(5, 1.6 + kind.pylon / 10);
+  const wheels = small ? 2 : Math.max(4, Math.round(train / 0.6));
+  const r = small ? 0.12 : 0.22;
+  const parts = [
+    [box(g + (small ? 0.5 : 1.6), small ? 0.2 : 0.5, small ? 0.2 : 0.5, 0, 0.3, 0), STEEL],
+    [box(small ? 0.3 : 0.7, 0.25, small ? 0.3 : 0.7, 0, 0.62, 0), STEEL],
+  ];
+  for (const x of [-g / 2, g / 2]) {
+    parts.push([box(0.12, 0.25, train, x, -0.05, 0), STEEL]);
+    for (let i = 0; i < wheels; i++) {
+      parts.push([sheave(r, x, -0.2 - r, -train / 2 + (train * (i + 0.5)) / wheels), CABLE_GREY]);
+    }
+  }
+  if (!small) {
+    parts.push([box(g + 1.6, 0.06, 0.9, 0, 0.1, 0.75), STEEL]);
+    parts.push([box(g + 1.6, 0.05, 0.05, 0, 1.1, 1.18), STEEL]);
+  }
+  const model = merge(parts);
+  headModels.set(kind, model);
+  return model;
+}
 
 // The carriers, hanging from the cable at their origin (the grip), facing +z, the way they go.
 const models = new Map();
 function carrierModel(kind, seats, lift) {
-  const key = `${kind.carrier}:${seats}:${kind.hang}:${lift.bubble ? 1 : 0}`;
+  const key = `${kind.carrier}:${seats}:${kind.hang}:${lift.type}:${lift.bubble ? 1 : 0}`;
   if (models.has(key)) return key;
   const h = kind.hang;
   let parts;
   if (kind.carrier === "cabin") {
-    // A gondola cabin sized by its seats: body, a band of windows, a roof, the hanger.
+    // A gondola cabin sized by its seats: grip, hanger, roof, windows, body and floor.
     const w = 1.5 + 0.09 * seats;
     const body = 2.1 + 0.02 * seats;
-    const top = -h;
+    const top = -h - 0.25;
     parts = [
-      [box(0.5, 0.35, 0.8, 0, -0.2, 0), STEEL],
-      [box(0.12, h - 0.4, 0.12, 0, -h / 2 - 0.2, -0.25), STEEL],
-      [box(0.12, h - 0.4, 0.12, 0, -h / 2 - 0.2, 0.25), STEEL],
-      [box(w * 0.8, 0.22, w * 0.8, 0, top - 0.1, 0), STEEL],
-      [box(w, body * 0.45, w, 0, top - 0.2 - body * 0.225, 0), GLASS],
-      [box(w, body * 0.55, w, 0, top - 0.2 - body * 0.45 - body * 0.275, 0), OWN],
-      [box(w * 0.92, 0.12, w * 0.92, 0, top - 0.2 - body - 0.06, 0), STEEL],
+      [box(0.45, 0.45, 1.1, 0, -0.2, 0), STEEL],
+      [box(0.14, h - 0.4, 0.14, 0, -h / 2 - 0.15, 0), STEEL],
+      [box(0.9, 0.15, 0.9, 0, -h + 0.05, 0), STEEL],
+      [roundedBox(w * 0.88, 0.28, w * 0.84, 0.35, 0, top + 0.1, 0), STEEL],
+      [roundedBox(w, body * 0.45, w * 0.94, 0.4, 0, top - body * 0.225, 0), GLASS],
+      [roundedBox(w, body * 0.55, w * 0.94, 0.4, 0, top - body * 0.45 - body * 0.275, 0), OWN],
+      [roundedBox(w * 0.9, 0.12, w * 0.85, 0.35, 0, top - body - 0.06, 0), STEEL],
     ];
   } else if (kind.carrier === "tram") {
-    // A cable car: the carriage on the track ropes, a long hanger, a big cabin.
+    // A cable car: the carriage on the ropes, the hanger, a big rounded cabin.
     const length = Math.min(12, 4 + seats * 0.06);
     parts = [
-      [box(1.2, 0.8, 4.5, 0, -0.3, 0), STEEL],
-      [box(0.35, h, 0.35, 0, -h / 2 - 0.5, 0), STEEL],
-      [box(3.2, 0.3, length * 0.7, 0, -h - 0.5, 0), STEEL],
-      [box(3.4, 1.3, length, 0, -h - 1.3, 0), GLASS],
-      [box(3.4, 1.7, length, 0, -h - 2.8, 0), OWN],
+      [box(1.4, 0.7, 4.5, 0, -0.3, 0), STEEL],
+      ...[-1.6, -0.5, 0.5, 1.6].map((z) => [sheave(0.3, 0, 0.1, z), CABLE_GREY]),
+      [box(0.3, h, 0.3, 0, -h / 2 - 0.5, -0.6), STEEL],
+      [box(0.3, h, 0.3, 0, -h / 2 - 0.5, 0.6), STEEL],
+      [roundedBox(3.2, 0.35, length * 0.75, 0.6, 0, -h - 0.6, 0), STEEL],
+      [roundedBox(3.4, 1.3, length, 0.9, 0, -h - 1.4, 0), GLASS],
+      [roundedBox(3.4, 1.8, length, 0.9, 0, -h - 2.95, 0), OWN],
     ];
   } else if (kind.carrier === "chair") {
-    // A chair as wide as its seats: hanger, seat, back, armrests and the safety bar.
-    const w = 0.15 + 0.6 * seats;
+    // A chair as wide as its seats: grip, hanger, the bar behind the back and the side posts,
+    // seat, sloping back, armrests, the safety bar and its footrest.
+    const w = 0.2 + 0.6 * seats;
     const y = -h;
     parts = [
-      [box(0.3, 0.3, 0.5, 0, -0.15, 0), STEEL],
-      [box(0.1, h - 0.3, 0.1, 0, -h / 2 - 0.15, -0.35), STEEL],
-      [box(w, 0.08, 0.08, 0, y + 0.85, -0.35), STEEL],
-      [box(w, 0.12, 0.6, 0, y, 0), OWN],
-      [box(w, 0.7, 0.1, 0, y + 0.4, -0.32), OWN],
-      [box(0.06, 0.3, 0.55, -w / 2, y + 0.2, 0), STEEL],
-      [box(0.06, 0.3, 0.55, w / 2, y + 0.2, 0), STEEL],
-      [box(w, 0.05, 0.05, 0, y + 0.95, 0.45), STEEL],
-      [box(0.05, 0.6, 0.05, -w / 2, y + 0.65, 0.45), STEEL],
-      [box(0.05, 0.6, 0.05, w / 2, y + 0.65, 0.45), STEEL],
+      [box(0.35, 0.35, 0.6, 0, -0.15, 0), STEEL],
+      [box(0.12, h - 0.75, 0.12, 0, -h / 2 + 0.1, -0.35), STEEL],
+      [box(w, 0.1, 0.1, 0, y + 0.95, -0.35), STEEL],
+      [box(0.08, 0.95, 0.08, -w / 2, y + 0.5, -0.35), STEEL],
+      [box(0.08, 0.95, 0.08, w / 2, y + 0.5, -0.35), STEEL],
+      [roundedBox(w, 0.18, 0.6, 0.06, 0, y, 0.05), OWN],
+      [roundedBox(w, 0.75, 0.12, 0.05, 0, y + 0.45, -0.25).rotateX(-0.18), OWN],
+      [box(0.07, 0.07, 0.65, -w / 2, y + 0.35, 0.05), STEEL],
+      [box(0.07, 0.07, 0.65, w / 2, y + 0.35, 0.05), STEEL],
+      [box(w, 0.06, 0.06, 0, y + 0.85, 0.55), STEEL],
+      [box(0.06, 0.06, 0.95, -w / 2 + 0.05, y + 0.85, 0.1), STEEL],
+      [box(w * 0.9, 0.06, 0.06, 0, y - 0.45, 0.6), STEEL],
+      [box(0.05, 1.3, 0.05, 0, y + 0.2, 0.58), STEEL],
     ];
-    if (lift.bubble) parts.push([box(w + 0.1, 0.9, 0.5, 0, y + 1.2, 0.3), GLASS]);
+    if (lift.bubble) parts.push([roundedBox(w + 0.1, 0.95, 0.65, 0.25, 0, y + 1.2, 0.35), GLASS]);
   } else if (lift.type === "platter") {
     parts = [
       [box(0.25, 0.5, 0.25, 0, -0.25, 0), STEEL],
-      [box(0.04, h, 0.04, 0, -h / 2 - 0.5, 0), STEEL],
+      [box(0.03, h, 0.03, 0, -h / 2 - 0.5, 0), STEEL],
       [new THREE.CylinderGeometry(0.22, 0.22, 0.05, 16).translate(0, -h - 0.5, 0), OWN],
     ];
   } else {
+    const half = lift.type === "j-bar";
     parts = [
       [box(0.25, 0.5, 0.25, 0, -0.25, 0), STEEL],
-      [box(0.04, h, 0.04, 0, -h / 2 - 0.5, 0), STEEL],
-      [box(lift.type === "j-bar" ? 0.55 : 1.1, 0.07, 0.07, lift.type === "j-bar" ? 0.27 : 0, -h - 0.5, 0), OWN],
+      [box(0.03, h, 0.03, 0, -h / 2 - 0.5, 0), STEEL],
+      [box(0.05, 0.4, 0.05, 0, -h - 0.7, 0), STEEL],
+      [box(half ? 0.55 : 1.1, 0.07, 0.07, half ? 0.27 : 0, -h - 0.9, 0), OWN],
     ];
   }
   models.set(key, merge(parts));
   return key;
 }
 
-// A pylon's head, at its top: the cross arm, and a train of sheaves under each track.
-function pylonHead(kind) {
-  const g = kind.gauge;
-  const train = Math.min(4, 1.2 + kind.pylon / 12);
-  return merge([
-    [box(g + 1.2, 0.45, 0.45, 0, 0.35, 0), STEEL],
-    [box(0.35, 0.35, train, -g / 2, -0.1, 0), STEEL],
-    [box(0.35, 0.35, train, g / 2, -0.1, 0), STEEL],
-    [box(0.6, 0.1, 0.6, 0, 0.62, 0), STEEL],
-  ]);
-}
-
-// A station: a base, four posts, a roof in the resort's colour, and the bullwheel under it,
-// at the cable's height (0.8 of the station's).
-function stationModel(kind) {
-  const [w, h, l] = kind.station;
-  const posts = [-1, 1].flatMap((x) =>
-    [-1, 1].map((z) => [box(0.4, h * 0.45, 0.4, (x * w) / 2.4, h * 0.775, (z * l) / 2.4), STEEL]),
-  );
-  return merge([
-    [box(w, h * 0.55, l, 0, h * 0.275, 0), CONCRETE],
-    ...posts,
-    [box(w + 0.8, 0.45, l + 0.8, 0, h + 0.2, 0), OWN],
-    [wheel(kind.gauge / 2, h * 0.8), STEEL],
-  ]);
-}
-
 // three.js in MapLibre's WebGL context, sharing its depth with the terrain.
-function liftLayer(map, lifts, origin, elevation) {
+function liftLayer(map, lifts, origin, elevation, tunnels = []) {
   let scene;
   let camera;
   let renderer;
   let moving = [];
   let transform;
   const animate = { on: true };
-  const material = () => new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.6, metalness: 0.25 });
+  const material = () => new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.65, metalness: 0.05 });
   const layer = {
     id: "lifts-3d",
     type: "custom",
@@ -581,6 +824,7 @@ function liftLayer(map, lifts, origin, elevation) {
         .scale(new THREE.Vector3(s, -s, s))
         .multiply(new THREE.Matrix4().makeRotationX(Math.PI / 2));
       const model = buildLifts(lifts, origin, elevation);
+      model.portals = tunnelPortals(tunnels, origin, elevation);
       const q = new THREE.Quaternion();
       const yAxis = new THREE.Vector3(0, 1, 0);
       const one = new THREE.Vector3(1, 1, 1);
@@ -600,19 +844,20 @@ function liftLayer(map, lifts, origin, elevation) {
         }
         return groups;
       };
-      const shaftGeometry = merge([[tube(0.32, 0.55, 1), STEEL]]);
       const footing = merge([[box(1.8, 0.5, 1.8, 0, 0.2, 0), CONCRETE]]);
       for (const [kind, pylons] of byKind(model.pylons)) {
-        instanced(shaftGeometry, pylons, (p) =>
+        instanced(shaftModel(kind), pylons, (p) =>
           new THREE.Matrix4().compose(
             p.position,
             q.setFromAxisAngle(yAxis, p.heading),
-            new THREE.Vector3(kind.pylon > 6 ? 1 : 0.4, p.height, kind.pylon > 6 ? 1 : 0.4),
+            new THREE.Vector3(1, p.height, 1),
           ),
         );
-        instanced(footing, pylons, (p) =>
-          new THREE.Matrix4().compose(p.position, q.setFromAxisAngle(yAxis, p.heading), one),
-        );
+        if (kind.pylon > 6) {
+          instanced(footing, pylons, (p) =>
+            new THREE.Matrix4().compose(p.position, q.setFromAxisAngle(yAxis, p.heading), one),
+          );
+        }
         instanced(pylonHead(kind), pylons, (p) =>
           new THREE.Matrix4().compose(
             p.position.clone().setY(p.position.y + p.height),
@@ -621,11 +866,21 @@ function liftLayer(map, lifts, origin, elevation) {
           ),
         );
       }
-      for (const [kind, stations] of byKind(model.stations)) {
-        instanced(stationModel(kind), stations, (p) =>
+      const designs = new Map();
+      for (const station of model.stations) {
+        const geometry = stationModel(station.design, station.kind);
+        if (!designs.has(geometry)) designs.set(geometry, []);
+        designs.get(geometry).push(station);
+      }
+      for (const [geometry, stations] of designs) {
+        instanced(geometry, stations, (p) =>
           new THREE.Matrix4().compose(p.position, q.setFromAxisAngle(yAxis, p.heading), one),
         );
       }
+      // The tunnels' mouths, facing out.
+      instanced(portalModel(), model.portals, (p) =>
+        new THREE.Matrix4().compose(p.position, q.setFromAxisAngle(yAxis, p.heading), one),
+      );
       const segments = [];
       for (const line of model.cables) {
         for (let i = 1; i < line.length; i++) segments.push(line[i - 1], line[i]);
@@ -789,7 +1044,7 @@ async function show() {
   const sw = bounds.getSouthWest();
   const ne = bounds.getNorthEast();
   const margin = new maplibregl.LngLatBounds([sw.lng - 0.03, sw.lat - 0.02], [ne.lng + 0.03, ne.lat + 0.02]);
-  const lifts = await liftsIn(ski, margin);
+  const { lifts, tunnels: allTunnels } = await liftsIn(ski, margin);
   const own = lifts.filter((l) => l.lr === KEY);
 
   document.getElementById("updated").textContent = updatedText(index);
@@ -848,7 +1103,8 @@ async function show() {
   const shown = lifts.filter((lift) => lift.lr === KEY && lift.c.every(inBox));
   const lowest = Math.min(...shown.flatMap((lift) => lift.c.map((c) => c[2] ?? Infinity)));
   registerDiorama(box, Math.max(0, (Number.isFinite(lowest) ? lowest : 1000) - 400));
-  const elevation = groundAlong(shown);
+  const tunnels = allTunnels.filter((run) => run.lr === KEY && run.c.every(inBox));
+  const elevation = groundAlong([...shown, ...tunnels]);
   const corners = [
     [box[0], box[1]],
     [box[2], box[1]],
@@ -947,7 +1203,7 @@ async function show() {
   }
   // Pistes drawn as areas: "within" only takes points and lines, so by resort alone.
   map.setFilter("ski-run-areas", ["all", map.getFilter("ski-run-areas"), ["==", ["get", "lr"], KEY]]);
-  const layer = liftLayer(map, shown, middle, await elevation);
+  const layer = liftLayer(map, shown, middle, await elevation, tunnels);
   map.addLayer(layer, firstLabel(map));
   animate.addEventListener("change", () => {
     layer.animate.on = animate.checked;

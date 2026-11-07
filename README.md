@@ -196,11 +196,11 @@ once a day; its own vector tiles may not be used directly.
   (a 404 means nothing). `areas`: the OpenSkiData areas touching the tile (`name`, `lr`: the liftradar
   resort most of its lifts belong to, `osm`, `wd`, `p`: a point in it, `outline`). `lifts`: all but
   proposed, planned and under construction (disused and abandoned ones stay, for old tracks), with
-  `type`, `name`, `ref`, `status`, `capacity`, `duration`, `occupancy`, `heating`, `bubble`, `osm`,
+  `type`, `name`, `ref`, `status`, `capacity`, `duration`, `occupancy`, `heating`, `bubble`, `tunnel`, `osm`,
   `lr`, `areas` (indexes in this tile's `areas`) and `c`, the line simplified to 5 m as
   `[lon, lat, elevation]`. `runs`: every piste and trail, with `uses` (downhill, nordic, skitour,
   sled…), `difficulty`, `conv` (the colour convention when not European: `north_america`, `japan`),
-  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `osm` (not unique: OpenSkiData
+  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `tunnel`, `osm` (not unique: OpenSkiData
   splits some ways into several runs), `lr`, `areas`, and `c`
   (`[lon, lat]`) or, for a piste drawn as an area, `poly` (polygon rings). Empty values are left out.
   The schema is `ski/v1/tile.schema.json` (`scripts/ski-tile.schema.json`).

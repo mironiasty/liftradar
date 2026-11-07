@@ -116,6 +116,10 @@
           "bubble": {
             "type": "boolean"
           },
+          "tunnel": {
+            "description": "The lift runs in a tunnel.",
+            "type": "boolean"
+          },
           "osm": {
             "type": "string"
           },
@@ -197,6 +201,10 @@
             "type": "boolean"
           },
           "patrolled": {
+            "type": "boolean"
+          },
+          "tunnel": {
+            "description": "The run goes through a tunnel.",
             "type": "boolean"
           },
           "osm": {
