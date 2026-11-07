@@ -23,7 +23,9 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   - Villages merged into one ski area on 26 October 2026 keep their old links, e.g.
     `json/at/soell-skiwelt.json`, as copies of the area's report with its `id` (not in
     `index.json`); new links should use the area's, `json/at/skiwelt.json`. Their archives
-    stop at that date, and they have no history.
+    stop at that date, and they have no history. Ski Arlberg's three areas became one resort
+    on 7 November 2026, `json/at/ski-arlberg.json`, before their season opened: the old files
+    (`st-anton-am-arlberg`, `lech-zuers`, `warth-schroecken`) are gone.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
   its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `sources.html` (data sources, incl. every URL in the
@@ -118,7 +120,7 @@ file's `sources` lists the URLs used for that report.
 
 Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
 (see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
-running `ski.yml` by hand. 720 of the 731 resorts have one in November 2026; the others are a
+running `ski.yml` by hand. 718 of the 729 resorts have one in November 2026; the others are a
 marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
