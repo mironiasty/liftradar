@@ -10,7 +10,7 @@
   },
   "website": "https://www.puysaintvincent.com",
   "status": "no_report",
-  "fetched_at": "2026-11-07T08:41:16.580820+01:00",
+  "fetched_at": "2026-11-07T13:40:36.331446+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -68,19 +68,25 @@
   "avalanche": {
     "region_id": "FR-16",
     "region": "Pelvoux",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2500,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-06T16:00:00+01:00",
-    "valid_from": "2026-11-06T16:00:00+01:00",
+    "published_at": "2026-11-07T09:00:00+01:00",
+    "valid_from": "2026-11-07T09:00:00+01:00",
     "valid_until": "2026-11-07T18:00:00+01:00"
   },
   "sources": [
