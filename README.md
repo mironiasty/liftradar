@@ -26,7 +26,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
     stop at that date, and they have no history.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
-  its history), `sources.html` (data sources, incl. every URL in the
+  its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `sources.html` (data sources, incl. every URL in the
   current data) and `about.html` (what the values mean, and their caveats), plain
   static pages that load the JSON in the browser. No build step locally.
   The ski-area outlines, the resorts' points and the pistes and lifts on the map come from the ski
@@ -248,4 +248,16 @@ also load MapLibre GL JS 5 (from cdnjs; version 6 is only an ES module there), m
 labels in the page's language, peaks, and hillshading and contours from Terrain Tiles) and
 `assets/ski.js` (outlines, points, pistes and lifts from the ski tiles).
 
-Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles from [OpenFreeMap](https://openfreemap.org) © [OpenMapTiles](https://openmaptiles.org); relief from [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).
+`3d.html` also loads `assets/scene.js`, an ES module (it still sees the shared names) with three.js
+(cdnjs). It cuts a box around the resort out of [Mapterhorn](https://mapterhorn.com)'s terrain
+(0.5–10 m in the Alps; the elevation tiles go through a MapLibre protocol that flattens everything
+outside the box, and the sky, base and the cut's slopes are in the page's background colour, so
+the box floats). Only the resort's own pistes and lifts are drawn (`lr`). The lifts are models in a
+three.js custom layer, in the map's WebGL context so the terrain hides them: pylons placed where the
+cable, sagging 1.5% of its span, would come closer to the ground (read every 10 m from Mapterhorn
+at zoom 13) than the lift type allows, or where a span would be too long; stations, the cable on
+two tracks, and carriers sized by `occupancy`, moving at the speed from `duration` and spaced by
+`capacity` when the data has them. The camera starts over the box, looking the way the lifts go
+up; `#view=zoom/lat/lon/bearing/pitch` in the URL keeps a view.
+
+Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles from [OpenFreeMap](https://openfreemap.org) © [OpenMapTiles](https://openmaptiles.org); relief from [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen); the 3D terrain from [Mapterhorn](https://mapterhorn.com/attribution/); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).

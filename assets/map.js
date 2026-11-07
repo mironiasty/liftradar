@@ -182,7 +182,7 @@ function show(map, [index, ski]) {
       type: "line",
       source: "areas",
       paint: {
-        "line-color": ["get", "color"],
+        "line-color": cssColor("--boundary"),
         "line-width": ["case", ["boolean", ["feature-state", "hover"], false], 3, 1.5],
         // Dashed: a boundary, not one more piste.
         "line-dasharray": [3, 2],

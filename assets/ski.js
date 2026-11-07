@@ -112,6 +112,7 @@ function skiFeatures(tile, highlight, names) {
         width: downhill ? 2.5 : 1.5,
         opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7),
         name: run.name ?? "",
+        lr: run.lr ?? "",
         kind,
         resort: names.get(run.lr) ?? "",
       },
@@ -120,6 +121,8 @@ function skiFeatures(tile, highlight, names) {
   for (const lift of tile.lifts) {
     const gone = Boolean(lift.status && lift.status !== "operating");
     const properties = {
+      type: lift.type ?? "",
+      lr: lift.lr ?? "",
       color: gone ? "#888" : INK,
       dashed: gone,
       opacity: faded(lift) ? 0.35 : 1,

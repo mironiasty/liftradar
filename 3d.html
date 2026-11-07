@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/lang.js"></script>
+<title data-i18n>3D map – LiftRadar</title>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://liftradar.eu/3d">
+<link rel="alternate" hreflang="de" href="https://liftradar.eu/de/3d">
+<link rel="alternate" hreflang="fr" href="https://liftradar.eu/fr/3d">
+<link rel="alternate" hreflang="it" href="https://liftradar.eu/it/3d">
+<link rel="alternate" hreflang="pl" href="https://liftradar.eu/pl/3d">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.css">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  html, body { height: 100%; }
+  body { font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; }
+  /* The same header as the other pages, across the full width, with the update time after the name. */
+  .site-header { margin-inline: 0; padding: 10px 16px; }
+  .site-header > .muted { margin-left: 12px; }
+  h1 { margin: 0; }
+  /* Phones: one compact row, so the map keeps the height. The update time takes the tagline's place under the name. */
+  @media (max-width: 760px) {
+    .site-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0 8px; padding: 6px 12px; }
+    .site-header .brand small { display: none; }
+    .site-header > .muted { grid-area: 2 / 1; margin: 0 0 0 35px; font-size: .68rem; line-height: 1.2; }
+    .site-header nav { grid-area: 1 / 2 / 3 / 3; margin: 0; }
+  }
+  .muted { font-size: .85rem; }
+  .map-wrap { flex: 1; position: relative; min-height: 300px; }
+  #map { position: absolute; inset: 0; }
+
+  /* Options panel over the map; collapsed to its title on small screens. */
+  .panel { position: absolute; top: 10px; right: 10px; z-index: 1000; width: min(300px, calc(100% - 70px));
+    background: var(--bg); color: var(--fg); border-radius: 12px; box-shadow: 0 2px 14px rgba(0,0,0,.22); font-size: .85rem; }
+  .panel:not([open]) { width: auto; }
+  .panel summary { display: flex; align-items: center; justify-content: space-between; padding: 9px 12px;
+    cursor: pointer; font-weight: 600; list-style: none; user-select: none; }
+  .panel summary::-webkit-details-marker { display: none; }
+  .panel summary::after { content: ""; width: 7px; height: 7px; border: solid var(--muted); border-width: 0 2px 2px 0;
+    transform: rotate(45deg); margin: -3px 2px 0 14px; transition: transform .15s; }
+  .panel[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
+  .panel-body { padding: 0 12px 12px; }
+  .panel h2 { margin: 4px 0 6px; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .panel h2:not(:first-child) { margin-top: 12px; }
+  .panel .name { font-size: 1rem; font-weight: 600; }
+  .panel .where { color: var(--muted); }
+  .panel p { margin: 8px 0 0; }
+  .panel .links { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 10px; }
+  .hint { margin: 8px 0 0; color: var(--muted); font-size: .78rem; }
+  .status-pill { display: inline-flex; align-items: center; gap: 5px; height: 20px; padding: 0 8px; border-radius: 999px;
+    background: color-mix(in srgb, var(--c) 16%, transparent); font-size: .72rem; font-weight: 500; }
+  .status-pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c); }
+  .panel label { display: flex; align-items: center; gap: 6px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1><a class="brand compact" href="./">
+    <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+      <mask id="logo-window"><rect width="32" height="32" fill="#fff"/><rect x="10.5" y="15" width="11" height="5.5" rx="1.3" fill="#000"/></mask>
+      <path d="M2 9 L30 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="16" cy="7" r="1.8" fill="currentColor"/>
+      <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
+      <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
+    </svg>
+    <span class="name"><b>LiftRadar</b><small data-i18n>Status of ski resorts</small></span>
+  </a></h1>
+  <span class="muted"><span id="updated" data-i18n>Loading…</span></span>
+  <nav aria-label="Main">
+  <a class="pill" href="./">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
+    <span data-i18n>Table</span>
+  </a>
+  <a class="pill" href="stats.html">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
+    <span data-i18n>Stats</span>
+  </a>
+  <a class="pill" href="about.html">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+    <span data-i18n>About the data</span>
+  </a>
+  <details class="lang-menu">
+    <summary class="pill lang" aria-label="Language">EN</summary>
+    <div>
+      <a href="/3d.html" hreflang="en" lang="en" aria-current="true">English</a>
+      <a href="/de/3d.html" hreflang="de" lang="de">Deutsch</a>
+      <a href="/fr/3d.html" hreflang="fr" lang="fr">Français</a>
+      <a href="/it/3d.html" hreflang="it" lang="it">Italiano</a>
+      <a href="/pl/3d.html" hreflang="pl" lang="pl">Polski</a>
+    </div>
+  </details>
+  </nav>
+</header>
+<div class="map-wrap">
+  <section id="map" aria-label="3D map of the resort"></section>
+  <details class="panel" id="panel" open>
+    <summary id="title" data-i18n>3D map</summary>
+    <div class="panel-body" id="info">
+      <p class="hint" data-i18n>Loading…</p>
+    </div>
+  </details>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.js"></script>
+<script src="/assets/common.js"></script>
+<script src="/assets/basemap.js"></script>
+<script src="/assets/ski.js"></script>
+<script type="module" src="/assets/scene.js"></script>
+</body>
+</html>

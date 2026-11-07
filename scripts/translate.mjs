@@ -17,7 +17,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PAGES = ["index", "map", "resort", "stats", "about", "sources", "404"].map((name) => `${name}.html`);
+const PAGES = ["index", "map", "3d", "resort", "stats", "about", "sources", "404"].map((name) => `${name}.html`);
 const ENGLISH_ONLY = "This part of the page is available in English only.";
 
 const read = (...path) => readFileSync(join(root, ...path), "utf8");

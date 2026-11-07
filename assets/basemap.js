@@ -9,6 +9,17 @@ const BASE_STYLES = {
 };
 const DEM_TILES = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png";
 const DEM_ATTRIBUTION = '<a href="https://registry.opendata.aws/terrain-tiles/">Terrain Tiles</a> (Mapzen)';
+// Elevation without the contours (the 3D page): Terrain Tiles, or Mapterhorn's much finer
+// terrain (0.5 to 10 m in the Alps, from the national surveys), both Terrarium-encoded.
+const DEMS = {
+  aws: { tiles: [DEM_TILES], tileSize: 256, maxzoom: 15, attribution: DEM_ATTRIBUTION },
+  mapterhorn: {
+    tiles: ["https://tiles.mapterhorn.com/{z}/{x}/{y}.webp"],
+    tileSize: 512,
+    maxzoom: 16,
+    attribution: '<a href="https://mapterhorn.com/attribution/">© Mapterhorn</a>',
+  },
+};
 const MAP_FONT = ["Noto Sans Regular"];
 const darkMode = () => matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -22,8 +33,10 @@ function dem() {
   return demSource;
 }
 
-// Labels in the page's language where OpenStreetMap has it, otherwise the local name.
+// Labels in the page's language where OpenStreetMap has it, otherwise the local name; no road
+// numbers, which are only noise on a ski map.
 function withLanguage(style) {
+  style.layers = style.layers.filter((l) => !/shield|highway_ref/.test(l.id));
   const name = LANG === "en" ? "name_en" : `name:${LANG}`;
   for (const layer of style.layers) {
     const field = layer.layout?.["text-field"];
@@ -34,31 +47,36 @@ function withLanguage(style) {
   return style;
 }
 
-// Hillshading and contours under the water and roads; peaks with the other labels.
-function withRelief(style) {
+// Hillshading and contours under the water and roads; peaks with the other labels. With
+// relief.dem (a key of DEMS), hillshading from that source and no contours.
+function withRelief(style, relief = {}) {
   const dark = darkMode();
   const ink = dark ? "rgba(255,255,255,0.28)" : "rgba(90,70,40,0.38)";
-  style.sources.dem = {
-    type: "raster-dem",
-    tiles: [dem().sharedDemProtocolUrl],
-    encoding: "terrarium",
-    tileSize: 256,
-    maxzoom: 13,
-    attribution: DEM_ATTRIBUTION,
-  };
-  style.sources.contours = {
-    type: "vector",
-    tiles: [
-      dem().contourProtocolUrl({
-        thresholds: { 11: [200, 1000], 12: [100, 500], 13: [50, 250], 14: [20, 100] },
-        contourLayer: "contours",
-        elevationKey: "ele",
-        levelKey: "level",
-      }),
-    ],
-    maxzoom: 15,
-  };
-  const relief = [
+  const contours = !relief.dem;
+  style.sources.dem = contours
+    ? {
+        type: "raster-dem",
+        tiles: [dem().sharedDemProtocolUrl],
+        encoding: "terrarium",
+        tileSize: 256,
+        maxzoom: 13,
+        attribution: DEM_ATTRIBUTION,
+      }
+    : { type: "raster-dem", encoding: "terrarium", ...DEMS[relief.dem] };
+  if (contours)
+    style.sources.contours = {
+      type: "vector",
+      tiles: [
+        dem().contourProtocolUrl({
+          thresholds: { 11: [200, 1000], 12: [100, 500], 13: [50, 250], 14: [20, 100] },
+          contourLayer: "contours",
+          elevationKey: "ele",
+          levelKey: "level",
+        }),
+      ],
+      maxzoom: 15,
+    };
+  const layers = [
     {
       id: "hillshade",
       type: "hillshade",
@@ -123,7 +141,7 @@ function withRelief(style) {
   style.layers.splice(
     at((l) => l.id === "waterway"),
     0,
-    ...relief,
+    ...(contours ? layers : layers.slice(0, 1)),
   );
   style.layers.splice(
     at((l) => /^(label|place)_/.test(l.id)),
@@ -133,15 +151,22 @@ function withRelief(style) {
   return style;
 }
 
-// The first label layer: what the pistes, lifts and areas go under.
-const firstLabel = (map) => map.getStyle().layers.find((l) => l.type === "symbol")?.id;
+// What the pistes, lifts and areas go under: the labels at the top of the style, above every
+// road and border (Fiord has some labels lower down, under its roads).
+function firstLabel(map) {
+  const layers = map.getStyle().layers;
+  let i = layers.length;
+  while (i > 0 && layers[i - 1].type === "symbol") i--;
+  return layers[i]?.id;
+}
 
 // A map in container, resolved once its style has loaded. options go to maplibregl.Map; they may
 // be a promise (the view, from the page's data), fetched alongside the style, so the map draws
-// nothing before it knows where to look.
-async function baseMap(container, options = {}) {
+// nothing before it knows where to look. relief: see withRelief; relief.controls, where the zoom
+// buttons go (top-left by default).
+async function baseMap(container, options = {}, relief = {}) {
   const [response, view] = await Promise.all([fetch(BASE_STYLES[darkMode() ? "dark" : "light"]), options]);
-  const style = withRelief(withLanguage(await response.json()));
+  const style = withRelief(withLanguage(await response.json()), relief);
   const map = new maplibregl.Map({
     container,
     style,
@@ -161,7 +186,7 @@ async function baseMap(container, options = {}) {
   map.on("styleimagemissing", (e) => {
     if (!map.hasImage(e.id)) map.addImage(e.id, { width: 1, height: 1, data: new Uint8Array(4) });
   });
-  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), relief.controls ?? "top-left");
   await new Promise((resolve) => map.once("load", resolve));
   // The attribution starts folded: it would cover much of a small map.
   map.getContainer().querySelector(".maplibregl-ctrl-attrib")?.classList.remove("maplibregl-compact-show");

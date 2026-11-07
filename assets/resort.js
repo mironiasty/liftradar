@@ -359,6 +359,8 @@ async function resortMap(r, container) {
     baseMap(
       container,
       view.then((v) => ({ ...v, scrollZoom: false })),
+      // The zoom buttons on the right: the way to the 3D map is on the left.
+      { controls: "top-right" },
     ),
     loading,
   ]);
@@ -372,10 +374,15 @@ async function resortMap(r, container) {
         type: "line",
         source: "area",
         // Dashed: a boundary, not one more piste.
-        paint: { "line-color": cssColor("--accent"), "line-width": 2, "line-dasharray": [3, 2] },
+        paint: { "line-color": cssColor("--boundary"), "line-width": 2, "line-dasharray": [3, 2] },
       },
       firstLabel(map),
     );
+    // The 3D map needs the area, which the resorts without one lack.
+    const cube = el("span", { class: "cube", "aria-hidden": "true" });
+    cube.innerHTML =
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>';
+    container.append(el("a", { class: "map-3d", href: `3d.html?r=${skiKey(r)}` }, cube, t("See the resort in 3D")));
   }
   addPistes(map, ski, { highlight: skiKey(r), names: new Map([[skiKey(r), r.name]]) });
   const point = skiPoint(r, ski);

@@ -10,6 +10,8 @@
   --chip: #eef1f4;
   --row-hover: #f6f8fa;
   --warn: #9a5b00;
+  /* A ski area's boundary on the maps: brown, unlike any piste colour. */
+  --boundary: #8a5a2b;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -24,6 +26,7 @@
     --chip: #262a2f;
     --row-hover: #1b1e22;
     --warn: #e0a64a;
+    --boundary: #c79a6b;
   }
 }
 body {
