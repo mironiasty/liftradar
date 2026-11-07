@@ -10,7 +10,7 @@
   },
   "website": "https://www.aussois.com",
   "status": "no_report",
-  "fetched_at": "2026-11-07T13:40:36.331138+01:00",
+  "fetched_at": "2026-11-07T23:13:56.146685+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -61,30 +61,12 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-11",
-    "region": "Haute-Maurienne",
-    "danger_level": 1,
-    "danger": "low",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-06T16:00:00+01:00",
-    "valid_from": "2026-11-06T16:00:00+01:00",
-    "valid_until": "2026-11-07T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=aussois&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/Aussois",
     "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-07/2026-11-07-FR.json"
+    "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr"
   ],
   "errors": []
 }

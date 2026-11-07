@@ -10,7 +10,7 @@
   },
   "website": "https://www.les2alpes.com",
   "status": "no_report",
-  "fetched_at": "2026-11-07T13:40:36.331333+01:00",
+  "fetched_at": "2026-11-07T23:13:56.146949+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -87,30 +87,12 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-15",
-    "region": "Oisans",
-    "danger_level": 1,
-    "danger": "low",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-06T15:00:00+01:00",
-    "valid_from": "2026-11-06T15:00:00+01:00",
-    "valid_until": "2026-11-07T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/deux-alpes",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/staticPoiData?lang=fr",
-    "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-07/2026-11-07-FR.json"
+    "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski"
   ],
   "errors": []
 }

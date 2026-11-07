@@ -1,16 +1,16 @@
 {
   "$schema": "https://liftradar.eu/schema/resort.schema.json",
-  "id": "warth-schroecken",
+  "id": "ski-arlberg",
   "country": "at",
-  "name": "Warth-Schröcken",
-  "region": "Vorarlberg",
+  "name": "Ski Arlberg (St. Anton, Lech Zürs, Warth-Schröcken)",
+  "region": "Tirol",
   "location": {
-    "lat": 47.2582,
-    "lon": 10.1833
+    "lat": 47.1306,
+    "lon": 10.1958
   },
-  "website": "https://www.warth-schroecken.at",
+  "website": "https://www.skiarlberg.at",
   "status": "closed",
-  "fetched_at": "2026-11-07T13:40:36.324729+01:00",
+  "fetched_at": "2026-11-07T23:13:56.138969+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,59 +22,65 @@
   },
   "lifts": {
     "open": 0,
-    "total": 15
+    "total": 80
   },
   "slopes": {
     "open": 0,
-    "total": 45,
+    "total": 203,
     "open_km": 0.0,
-    "total_km": 63
+    "total_km": 293
   },
   "lifts_by_type": {
     "chairlift": {
       "open": 0,
-      "total": 12
+      "total": 39
     },
     "drag_lift": {
       "open": 0,
-      "total": 2
+      "total": 24
     },
     "gondola": {
       "open": 0,
-      "total": 1
+      "total": 17
     }
   },
   "slopes_by_difficulty": {
     "easy": {
       "open": 0,
-      "total": 17,
+      "total": 77,
       "open_km": 0.0,
-      "total_km": 29
+      "total_km": 124
     },
     "intermediate": {
       "open": 0,
-      "total": 8,
+      "total": 54,
       "open_km": 0.0,
-      "total_km": 11
+      "total_km": 78
     },
     "difficult": {
       "open": 0,
-      "total": 11,
+      "total": 19,
       "open_km": 0.0,
-      "total_km": 11
+      "total_km": 26
     },
     "ski_route": {
       "open": 0,
-      "total": 9,
+      "total": 53,
       "open_km": 0.0,
-      "total_km": 13
+      "total_km": 66
     }
   },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=164&loadMore=1&orderState=ASC",
+    "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=164&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+    "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=4&loadMore=1&orderState=ASC",
     "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=327&loadMore=1&orderState=ASC",
+    "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=4&loadMore=1&orderState=ASC&orderDifficulty=ASC",
     "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=327&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+    "https://www.skiarlberg.at/de/lech-zuers/live-infos/schnee-lawinenwarnbericht",
+    "https://www.skiarlberg.at/de/st-anton/live-infos/schnee-lawinenwarnbericht",
     "https://winter.intermaps.com/skiarlberg/data?lang=en"
   ],
   "errors": []

@@ -9,13 +9,13 @@
     "lon": 7.7428
   },
   "website": "https://www.matterhornparadise.ch",
-  "status": "open",
-  "fetched_at": "2026-11-07T13:40:36.329435+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-07T23:13:56.144461+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 13,
-    "valley_cm": 0,
-    "fresh_cm": 0,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -38,13 +38,13 @@
     ]
   },
   "lifts": {
-    "open": 9,
+    "open": 0,
     "total": 36
   },
   "slopes": {
-    "open": 9,
+    "open": 0,
     "total": 84,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 200
   },
   "lifts_by_type": {
@@ -53,11 +53,11 @@
       "total": 6
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 10
     },
     "drag_lift": {
-      "open": 2,
+      "open": 0,
       "total": 5
     },
     "funicular": {
@@ -65,7 +65,7 @@
       "total": 2
     },
     "gondola": {
-      "open": 6,
+      "open": 0,
       "total": 9
     },
     "other": {
@@ -75,15 +75,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 2,
+      "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 7,
+      "open": 0,
       "total": 48,
-      "open_km": 14.8,
+      "open_km": 0.0,
       "total_km": 99
     },
     "difficult": {
@@ -95,11 +95,11 @@
     "ski_route": {
       "open": 0,
       "total": 16,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-07T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-07T23:10:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
