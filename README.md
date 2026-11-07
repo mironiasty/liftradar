@@ -242,6 +242,10 @@ Skimap.org, Who's On First, © Mapterhorn. The tiles are a derived database unde
 ## Scripts
 
 The pages load `assets/common.js` and then their own script, sharing its top-level names: a
-name that's new there also goes in `javascript.globals` in `biome.json`.
+name that's new there also goes in `javascript.globals` in `biome.json`. The map and resort pages
+also load MapLibre GL JS 5 (from cdnjs; version 6 is only an ES module there), maplibre-contour
+(jsDelivr), `assets/basemap.js` (the base map: OpenFreeMap's Positron, or Fiord in dark mode, with
+labels in the page's language, peaks, and hillshading and contours from Terrain Tiles) and
+`assets/ski.js` (outlines, points, pistes and lifts from the ski tiles).
 
-Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles © [OpenTopoMap](https://opentopomap.org) (CC-BY-SA); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).
+Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles from [OpenFreeMap](https://openfreemap.org) © [OpenMapTiles](https://openmaptiles.org); relief from [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).

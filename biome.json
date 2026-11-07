@@ -9,23 +9,31 @@
   },
   "javascript": {
     "globals": [
-      "L",
+      "maplibregl",
+      "mlcontour",
       "DATE_LOCALE",
       "LANG",
       "LIST_KEY",
+      "MAP_FONT",
       "SKI_MIN_ZOOM",
       "STALE_DAYS",
       "STATUS_COLORS",
       "STATUS_LABELS",
       "addPistes",
+      "baseMap",
       "capitalized",
       "countryName",
+      "cssColor",
       "dangerName",
+      "darkMode",
       "dash",
       "el",
+      "firstLabel",
       "fnuggCredit",
       "fold",
+      "geometryBounds",
       "historyPath",
+      "hoverTip",
       "loadIndex",
       "loadSki",
       "pair",
@@ -53,7 +61,7 @@
   },
   "overrides": [
     {
-      "includes": ["assets/common.js", "assets/ski.js"],
+      "includes": ["assets/common.js", "assets/ski.js", "assets/basemap.js"],
       "linter": {
         "rules": {
           "correctness": {

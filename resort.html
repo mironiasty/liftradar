@@ -6,7 +6,7 @@
 <script src="/assets/lang.js"></script>
 <title>LiftRadar</title>
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.css">
 <link rel="stylesheet" href="/assets/style.css">
 <style>
   main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 40px; }
@@ -81,7 +81,7 @@
   .map-link { display: inline-block; margin-top: 6px; font-size: .85rem; text-decoration: none; }
   .map-link:hover { text-decoration: underline; }
   .pin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4);
-    box-sizing: border-box; transform: translate(-50%, -50%); }
+    box-sizing: border-box; }
   .url { display: flex; gap: 8px; margin-top: 6px; }
   .url input { flex: 1; min-width: 0; height: 32px; padding: 0 8px; font: .8rem ui-monospace, monospace; color: var(--fg);
     background: var(--chip); border: 0; border-radius: 6px; }
@@ -146,8 +146,10 @@
       <span data-i18n>Made by <b>Miron</b></span></span>
   </footer>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-contour@0.1.1/dist/index.min.js"></script>
 <script src="/assets/common.js"></script>
+<script src="/assets/basemap.js"></script>
 <script src="/assets/ski.js"></script>
 <script src="/assets/resort.js"></script>
 </body>

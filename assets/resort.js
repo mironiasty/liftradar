@@ -32,8 +32,6 @@ const PROBLEMS = {
 };
 const HISTORY_DAYS = 30;
 
-L.Control.Zoom.mergeOptions({ zoomInTitle: t("Zoom in"), zoomOutTitle: t("Zoom out") });
-
 const page = document.getElementById("page");
 const label = (text) => text.replaceAll("_", " ");
 const present = (v) => v !== null && v !== undefined;
@@ -344,43 +342,39 @@ function data(r) {
 }
 
 // Resort map: only this resort's area (or point), with its pistes and lifts strong and the
-// neighbours' faded; "Map of all resorts" shows the other resorts.
-function resortMap(r, container) {
-  const map = L.map(container, { zoomSnap: 0.5, scrollWheelZoom: false });
-  L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
-    maxZoom: 17,
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-      '<a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
-  }).addTo(map);
-  if (r.location) map.setView([r.location.lat, r.location.lon], 12);
-  else map.setView([47.25, 11.9], 7);
-  map.once("focus", () => map.scrollWheelZoom.enable());
-
-  const css = getComputedStyle(document.documentElement);
-  const colour = (status) => css.getPropertyValue(STATUS_COLORS[status].slice(4, -1)).trim();
-  const pin = (status) =>
-    L.divIcon({
-      className: "",
-      html: el("div", { class: "pin", style: `background:${colour(status)}` }),
-      iconSize: null,
-      iconAnchor: [0, 0],
+// neighbours' faded; "Map of all resorts" shows the other resorts. The wheel zooms it only
+// once it has been clicked, so the page scrolls past it.
+async function resortMap(r, container) {
+  const start = r.location
+    ? { center: [r.location.lon, r.location.lat], zoom: 12 }
+    : { center: [11.9, 47.25], zoom: 6 };
+  const [map, ski] = await Promise.all([baseMap(container, { ...start, scrollZoom: false }), loadSki()]);
+  map.once("click", () => map.scrollZoom.enable());
+  const area = ski?.resorts.get(skiKey(r));
+  if (area) {
+    map.addSource("area", { type: "geojson", data: area });
+    map.addLayer(
+      {
+        id: "area",
+        type: "line",
+        source: "area",
+        // Dashed: a boundary, not one more piste.
+        paint: { "line-color": cssColor("--accent"), "line-width": 2, "line-dasharray": [3, 2] },
+      },
+      firstLabel(map),
+    );
+    map.fitBounds(geometryBounds(area.geometry), { padding: 20, maxZoom: 14, animate: false });
+  }
+  addPistes(map, ski, { highlight: skiKey(r), names: new Map([[skiKey(r), r.name]]) });
+  const point = skiPoint(r, ski);
+  if (point) {
+    const pin = el("div", {
+      class: "pin",
+      title: r.name,
+      style: `background:${cssColor(STATUS_COLORS[statusKey(r)].slice(4, -1))}`,
     });
-
-  loadSki().then((ski) => {
-    const area = ski?.resorts.get(skiKey(r));
-    if (area) {
-      // An outline only: the pistes inside stay visible.
-      const accent = css.getPropertyValue("--accent").trim();
-      const layer = L.geoJSON(area, { style: { color: accent, weight: 3, fill: false }, interactive: false }).addTo(
-        map,
-      );
-      map.fitBounds(layer.getBounds(), { padding: [20, 20], maxZoom: 14 });
-    }
-    addPistes(map, ski, { highlight: skiKey(r), names: new Map([[skiKey(r), r.name]]) });
-    const point = skiPoint(r, ski);
-    if (point) L.marker(point, { icon: pin(statusKey(r)), title: r.name, zIndexOffset: 1000 }).addTo(map);
-  });
+    new maplibregl.Marker({ element: pin }).setLngLat(point).addTo(map);
+  }
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
@@ -569,7 +563,7 @@ async function show() {
       ),
     ),
   );
-  resortMap(r, mapBox);
+  resortMap(r, mapBox).catch(() => mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load."))));
   history(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );

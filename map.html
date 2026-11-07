@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="fr" href="https://liftradar.eu/fr/map">
 <link rel="alternate" hreflang="it" href="https://liftradar.eu/it/map">
 <link rel="alternate" hreflang="pl" href="https://liftradar.eu/pl/map">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.css">
 <link rel="stylesheet" href="/assets/style.css">
 <style>
   html, body { height: 100%; }
@@ -61,9 +61,10 @@
   .hint { margin: 6px 0 0; color: var(--muted); font-size: .78rem; }
   .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
     min-width: 22px; padding: 0 5px; box-sizing: border-box; color: #fff; font: 600 11px/1 system-ui, sans-serif;
-    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; transform: translate(-50%, -50%); }
+    border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; }
   /* Resort popup: laid out like a resort card in the phone table. */
-  .leaflet-popup-content { width: 264px; margin: 14px 16px; font: 14px/1.4 system-ui, sans-serif; }
+  .maplibregl-popup:not(.map-tip) .maplibregl-popup-content { width: 264px; padding: 14px 16px; font: 14px/1.4 system-ui, sans-serif; }
+  .pin { cursor: pointer; }
   .popup .head { display: flex; align-items: baseline; gap: 8px; padding-right: 14px; }
   .popup .name { flex: 1; min-width: 0; color: var(--fg); font-size: 1rem; font-weight: 600; text-decoration: none; }
   .popup .name:hover { color: var(--accent); text-decoration: underline; }
@@ -135,8 +136,10 @@
     </div>
   </details>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-contour@0.1.1/dist/index.min.js"></script>
 <script src="/assets/common.js"></script>
+<script src="/assets/basemap.js"></script>
 <script src="/assets/ski.js"></script>
 <script src="/assets/map.js"></script>
 </body>

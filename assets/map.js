@@ -9,9 +9,9 @@ const STATUS = {
   closed: { label: STATUS_LABELS.closed, color: "--closed" },
   no_report: { label: STATUS_LABELS.no_report, color: "--none" },
 };
-// Leaflet stacks markers by latitude: this lifts open resorts above all others,
-// and a hovered marker above those.
-const OPEN_ON_TOP = 1e6;
+// Markers stack in the order they're added: open resorts go above all others (z-index), and a
+// hovered marker above those.
+const OPEN_ON_TOP = 1;
 // Values a marker can show: open or total, or a single value. Open counts are
 // only shown for open resorts: closed ones are 0, and resorts without a recent
 // report have no open counts.
@@ -58,17 +58,8 @@ function hintText({ metric, mode }) {
   return m.hint ?? m.hints[mode];
 }
 
-const css = getComputedStyle(document.documentElement);
-L.Control.Zoom.mergeOptions({ zoomInTitle: t("Zoom in"), zoomOutTitle: t("Zoom out") });
-const color = (status) => css.getPropertyValue(STATUS[status].color).trim();
-
-const map = L.map("map", { zoomSnap: 0.5 });
-L.tileLayer("https://tile.opentopomap.org/{z}/{x}/{y}.png", {
-  maxZoom: 17,
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-    '<a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
-}).addTo(map);
+const color = (status) => cssColor(STATUS[status].color);
+const ALPS = { center: [11.9, 47.25], zoom: 6 };
 
 // A bar for the open share, for open resorts: elsewhere open counts are 0 or not reported.
 function meter(open, total, active) {
@@ -153,49 +144,91 @@ function popup(r, status) {
 
 // The ski tiles are optional (loadSki() is null without them): the map then shows the markers
 // at the resorts' locations, and OpenSnowMap's pistes.
-function show([index, ski]) {
-  const pistesShown = () => Boolean(ski) && map.getZoom() >= SKI_MIN_ZOOM;
+function show(map, [index, ski]) {
   document.getElementById("updated").textContent = updatedText(index);
   const resorts = index.resorts.filter((r) => skiPoint(r, ski));
+  const byKey = new Map(resorts.map((r) => [skiKey(r), r]));
   addPistes(map, ski, { names: new Map(index.resorts.map((r) => [skiKey(r), r.name])) });
-  const layers = {};
-  for (const status of Object.keys(STATUS)) layers[status] = L.layerGroup().addTo(map);
+
+  // The areas, in their resort's status colour: filled when zoomed out, only an outline where
+  // the pistes show, so they stay visible and their tooltips reachable.
+  const areas = resorts
+    .map((r) => ski?.resorts.get(skiKey(r)))
+    .filter(Boolean)
+    .map((f, i) => {
+      const r = byKey.get(f.properties.id);
+      return { ...f, id: i, properties: { key: f.properties.id, status: statusKey(r), color: color(statusKey(r)) } };
+    });
+  map.addSource("areas", { type: "geojson", data: { type: "FeatureCollection", features: areas } });
+  const before = firstLabel(map);
+  map.addLayer(
+    {
+      id: "areas-fill",
+      type: "fill",
+      source: "areas",
+      maxzoom: ski ? SKI_MIN_ZOOM : 24,
+      paint: {
+        "fill-color": ["get", "color"],
+        "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.45, 0.25],
+      },
+    },
+    before,
+  );
+  map.addLayer(
+    {
+      id: "areas-line",
+      type: "line",
+      source: "areas",
+      paint: {
+        "line-color": ["get", "color"],
+        "line-width": ["case", ["boolean", ["feature-state", "hover"], false], 3, 1.5],
+        // Dashed: a boundary, not one more piste.
+        "line-dasharray": [3, 2],
+      },
+    },
+    before,
+  );
+  let hovered = null;
+  const tip = hoverTip(map, ["areas-fill"], (f) => el("b", {}, byKey.get(f.properties.key).name));
+  map.on("mousemove", "areas-fill", (e) => {
+    if (hovered !== null) map.setFeatureState({ source: "areas", id: hovered }, { hover: false });
+    hovered = e.features[0].id;
+    map.setFeatureState({ source: "areas", id: hovered }, { hover: true });
+  });
+  map.on("mouseleave", "areas-fill", () => {
+    if (hovered !== null) map.setFeatureState({ source: "areas", id: hovered }, { hover: false });
+    hovered = null;
+  });
+  const openPopup = (r, at) => {
+    // A narrow map has no room beside the marker: centre it, with the popup above.
+    if (map.getContainer().clientWidth < 500) map.jumpTo({ center: at, offset: [0, 120] });
+    return new maplibregl.Popup({ maxWidth: "296px", offset: 14 })
+      .setLngLat(at)
+      .setDOMContent(popup(r, statusKey(r)))
+      .addTo(map);
+  };
+  map.on("click", "areas-fill", (e) => {
+    tip.remove();
+    openPopup(byKey.get(e.features[0].properties.key), e.lngLat);
+  });
 
   const markers = [];
   for (const r of resorts) {
     const status = statusKey(r);
-    const area = ski?.resorts.get(skiKey(r));
-    let areaLayer = null;
-    if (area) {
-      // Zoomed in, where the pistes show, the area is only an outline: they stay visible and
-      // their tooltips reachable.
-      const style = () => ({ color: color(status), weight: 1.5, fillOpacity: 0.25, fill: !pistesShown() });
-      areaLayer = L.geoJSON(area, { style, interactive: true })
-        .on("mouseover", (e) => e.layer.setStyle({ weight: 3, fillOpacity: 0.45 }))
-        .on("mouseout", (e) => e.layer.setStyle(style()))
-        .bindTooltip(r.name, { sticky: true })
-        .bindPopup(() => popup(r, status))
-        .addTo(layers[status]);
-    }
-    const marker = L.marker(skiPoint(r, ski), {
-      title: r.name,
-      zIndexOffset: status === "open" ? OPEN_ON_TOP : 0,
-      riseOnHover: true,
-      riseOffset: 2 * OPEN_ON_TOP,
-    })
-      .bindPopup(() => popup(r, status))
-      .addTo(layers[status]);
-    markers.push({ marker, r, status, areaLayer });
+    const element = el("div", { class: "pin", title: r.name, style: `background:${color(status)}` });
+    element.style.zIndex = status === "open" ? OPEN_ON_TOP : 0;
+    element.addEventListener("mouseenter", () => (element.style.zIndex = OPEN_ON_TOP + 1));
+    element.addEventListener("mouseleave", () => (element.style.zIndex = status === "open" ? OPEN_ON_TOP : 0));
+    const marker = new maplibregl.Marker({ element }).setLngLat(skiPoint(r, ski)).addTo(map);
+    element.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openPopup(r, marker.getLngLat());
+    });
+    markers.push({ marker, element, r, status });
   }
-  map.on("zoomend", () => {
-    for (const { areaLayer } of markers) areaLayer?.resetStyle();
-  });
 
   const setLabels = (choice) => {
-    for (const { marker, r, status } of markers) {
-      const pin = el("div", { class: "pin", style: `background:${color(status)}` }, labelText(r, status, choice));
-      marker.setIcon(L.divIcon({ className: "", html: pin, iconSize: null, iconAnchor: [0, 0] }));
-    }
+    for (const { element, r, status } of markers) element.textContent = labelText(r, status, choice);
   };
   let choice = { metric: "lifts", mode: "open" };
   try {
@@ -225,26 +258,28 @@ function show([index, ski]) {
     } catch {}
   };
   choose({});
-  map.fitBounds(
-    resorts.map((r) => skiPoint(r, ski)),
-    { padding: [30, 30] },
-  );
+  const all = new maplibregl.LngLatBounds();
+  for (const { marker } of markers) all.extend(marker.getLngLat());
+  if (!all.isEmpty()) map.fitBounds(all, { padding: 30, animate: false });
   // map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort, with its report open.
   const wanted = new URLSearchParams(location.search).get("r");
-  const focus = markers.find(({ r }) => `${r.country}/${r.id}` === wanted);
+  const focus = markers.find(({ r }) => skiKey(r) === wanted);
   if (focus) {
-    if (focus.areaLayer) map.fitBounds(focus.areaLayer.getBounds(), { padding: [30, 30], maxZoom: 12 });
-    else map.setView(focus.marker.getLatLng(), 12);
-    focus.marker.openPopup();
+    const area = ski?.resorts.get(wanted);
+    if (area) map.fitBounds(geometryBounds(area.geometry), { padding: 30, maxZoom: 12, animate: false });
+    else map.jumpTo({ center: focus.marker.getLngLat(), zoom: 12 });
+    openPopup(focus.r, focus.marker.getLngLat());
   }
 
   // Statuses chosen with the chips; none chosen shows every resort.
   const filters = document.getElementById("filters");
   const shown = new Set();
-  const showLayers = () => {
-    for (const [status, layer] of Object.entries(layers)) {
-      shown.size && !shown.has(status) ? layer.remove() : layer.addTo(map);
-    }
+  const showStatuses = () => {
+    const visible = (status) => !shown.size || shown.has(status);
+    for (const { element, status } of markers) element.style.display = visible(status) ? "" : "none";
+    const filter = shown.size ? ["in", ["get", "status"], ["literal", [...shown]]] : null;
+    map.setFilter("areas-fill", filter);
+    map.setFilter("areas-line", filter);
   };
   for (const [status, { label }] of Object.entries(STATUS)) {
     const total = resorts.filter((r) => statusKey(r) === status).length;
@@ -252,7 +287,7 @@ function show([index, ski]) {
     const chip = button("chip", "", () => {
       shown.has(status) ? shown.delete(status) : shown.add(status);
       chip.setAttribute("aria-pressed", shown.has(status));
-      showLayers();
+      showStatuses();
     });
     chip.setAttribute("aria-pressed", false);
     chip.append(
@@ -270,16 +305,15 @@ function button(className, text, onClick) {
   return node;
 }
 
-// The panel starts collapsed on small screens, and doesn't pan or zoom the map.
+// The panel starts collapsed on small screens.
 const panel = document.getElementById("panel");
 if (matchMedia("(max-width: 640px)").matches) panel.open = false;
-L.DomEvent.disableClickPropagation(panel);
-L.DomEvent.disableScrollPropagation(panel);
 
-Promise.all([loadIndex(), loadSki()])
-  .then(show)
-  .catch((error) => {
-    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
-    map.setView([47.25, 11.9], 8);
-    addPistes(map, null);
-  });
+baseMap("map", ALPS).then((map) =>
+  Promise.all([loadIndex(), loadSki()])
+    .then((data) => show(map, data))
+    .catch((error) => {
+      document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
+      addPistes(map, null);
+    }),
+);

@@ -23,11 +23,19 @@ async function loadSki() {
 
 const skiKey = (r) => `${r.country}/${r.id}`;
 
-// The resort's point on the map, [lat, lon]: in its ski area when the tiles have one.
+// The resort's point on the map, [lon, lat]: in its ski area when the tiles have one.
 function skiPoint(r, ski) {
   const point = ski?.resorts.get(skiKey(r))?.properties.point;
-  if (point) return [point[1], point[0]];
-  return r.location ? [r.location.lat, r.location.lon] : null;
+  if (point) return point;
+  return r.location ? [r.location.lon, r.location.lat] : null;
+}
+
+// The bounds of a GeoJSON geometry, for fitBounds.
+function geometryBounds(geometry) {
+  const bounds = new maplibregl.LngLatBounds();
+  const walk = (c) => (typeof c[0] === "number" ? bounds.extend(c) : c.forEach(walk));
+  walk(geometry.coordinates);
+  return bounds;
 }
 
 const SKI_LIFT_TYPES = {
@@ -59,47 +67,30 @@ const PISTE_COLORS = {
   north_america: { novice: "#2e9e3f", easy: "#2e9e3f", intermediate: "#1f6fd1", advanced: "#111", expert: "#111" },
   japan: { novice: "#2e9e3f", easy: "#2e9e3f", intermediate: "#d62828", advanced: "#111", expert: "#111" },
 };
+// Black pistes and lifts are light on the dark map.
+const INK = darkMode() ? "#eee" : "#222";
+if (darkMode()) for (const colors of Object.values(PISTE_COLORS)) colors.advanced = colors.expert = INK;
 const OFF_PISTE = "#ef8a00";
 const NORDIC = "#7a5cc7";
 
-function tileOf(latlng) {
+function tileOf([lon, lat]) {
   const n = 1024; // zoom 10
-  const lat = (latlng.lat * Math.PI) / 180;
-  return [Math.floor(((latlng.lng + 180) / 360) * n), Math.floor(((1 - Math.asinh(Math.tan(lat)) / Math.PI) / 2) * n)];
+  const rad = (lat * Math.PI) / 180;
+  return [Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.asinh(Math.tan(rad)) / Math.PI) / 2) * n)];
 }
 
-const toLatLngs = (coords) => coords.map(([lon, lat]) => [lat, lon]);
-
-// Pistes and lifts of the tiles in view, on a canvas under the markers. With highlight (a resort's
-// key), that resort's are drawn strong and the others faded; names maps resort keys to the names
-// shown in the tooltips (otherwise those the tiles give). Returns the layer, already on the map.
-function skiLayer(map, ski, { highlight = null, names = new Map() } = {}) {
-  const layer = L.layerGroup().addTo(map);
-  // Under the resort areas and markers (the overlay pane is 400).
-  if (!map.getPane("pistes")) map.createPane("pistes").style.zIndex = 350;
-  const renderer = L.canvas({ padding: 0.5, pane: "pistes" });
-  const loaded = new Set();
-  const drawn = new Set();
-  const opacity = (f) => (!highlight || f.lr === highlight ? 1 : 0.35);
-  const resortName = (key) => (key && names.get(key)) || "";
-
-  function piste(run) {
+// A tile's runs and lifts as GeoJSON features, with what the layers and tooltips need.
+function skiFeatures(tile, highlight, names) {
+  for (const area of tile.areas) if (area.lr && !names.has(area.lr.id)) names.set(area.lr.id, area.lr.name);
+  const runs = [];
+  const lifts = [];
+  const stations = [];
+  const faded = (f) => highlight && f.lr !== highlight;
+  for (const run of tile.runs) {
     const uses = run.uses ?? [];
     const downhill = uses.includes("downhill");
-    if (!downhill && !uses.includes("nordic") && !uses.includes("skitour") && !uses.includes("sled")) return;
+    if (!downhill && !uses.includes("nordic") && !uses.includes("skitour") && !uses.includes("sled")) continue;
     const offPiste = run.difficulty === "freeride" || run.difficulty === "extreme";
-    const color = downhill
-      ? offPiste
-        ? OFF_PISTE
-        : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777")
-      : NORDIC;
-    const style = {
-      renderer,
-      color,
-      weight: downhill ? 2.5 : 1.5,
-      opacity: opacity(run) * (downhill ? 0.9 : 0.7),
-      dashArray: offPiste || !downhill ? "4 4" : null,
-    };
     const kind = downhill
       ? [t("Piste"), SKI_DIFFICULTIES[run.difficulty]].filter(Boolean).join(", ")
       : uses.includes("nordic")
@@ -107,63 +98,143 @@ function skiLayer(map, ski, { highlight = null, names = new Map() } = {}) {
         : uses.includes("skitour")
           ? t("Ski touring route")
           : t("Sledding run");
-    const shape = run.c
-      ? L.polyline(toLatLngs(run.c), style)
-      : L.polygon(run.poly.map(toLatLngs), { ...style, weight: 1, fillOpacity: 0.2 * opacity(run) });
-    return shape.bindTooltip(label(run.name, kind, resortName(run.lr)), { sticky: true });
+    runs.push({
+      type: "Feature",
+      id: run.osm,
+      geometry: run.c ? { type: "LineString", coordinates: run.c } : { type: "Polygon", coordinates: run.poly },
+      properties: {
+        color: !downhill
+          ? NORDIC
+          : offPiste
+            ? OFF_PISTE
+            : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777"),
+        dashed: offPiste || !downhill,
+        width: downhill ? 2.5 : 1.5,
+        opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7),
+        name: run.name ?? "",
+        kind,
+        resort: names.get(run.lr) ?? "",
+      },
+    });
   }
-
-  function lift(l) {
-    const gone = l.status && l.status !== "operating";
-    const line = toLatLngs(l.c);
-    const style = {
-      renderer,
-      color: gone ? "#888" : "#222",
-      weight: 2.5,
-      opacity: opacity(l),
-      dashArray: gone ? "3 5" : null,
+  for (const lift of tile.lifts) {
+    const gone = Boolean(lift.status && lift.status !== "operating");
+    const properties = {
+      color: gone ? "#888" : INK,
+      dashed: gone,
+      opacity: faded(lift) ? 0.35 : 1,
+      name: lift.name ?? "",
+      kind: [SKI_LIFT_TYPES[lift.type] ?? t("Lift"), gone ? t("out of service") : ""].filter(Boolean).join(", "),
+      resort: names.get(lift.lr) ?? "",
     };
-    const kind = [SKI_LIFT_TYPES[l.type] ?? t("Lift"), gone ? t("out of service") : ""].filter(Boolean).join(", ");
-    return L.featureGroup([
-      L.polyline(line, style),
-      L.circleMarker(line[0], {
-        renderer,
-        radius: 2.5,
-        color: style.color,
-        opacity: opacity(l),
-        fillOpacity: opacity(l),
-      }),
-    ]).bindTooltip(label(l.name, kind, resortName(l.lr)), { sticky: true });
+    lifts.push({ type: "Feature", id: lift.osm, geometry: { type: "LineString", coordinates: lift.c }, properties });
+    stations.push({ type: "Feature", id: lift.osm, geometry: { type: "Point", coordinates: lift.c[0] }, properties });
   }
+  return { runs, lifts, stations };
+}
 
-  function label(name, kind, resort) {
-    const box = el("div", {}, el("b", {}, name ?? kind));
-    if (name) box.append(el("div", {}, kind));
-    if (resort) box.append(el("div", {}, resort));
-    return box;
-  }
+function skiLabel({ properties: p }) {
+  const box = el("div", {}, el("b", {}, p.name || p.kind));
+  if (p.name) box.append(el("div", {}, p.kind));
+  if (p.resort) box.append(el("div", { class: "sub" }, p.resort));
+  return box;
+}
 
-  function add(tile) {
-    for (const [list, draw] of [
-      [tile.runs, piste],
-      [tile.lifts, lift],
-    ]) {
+// Pistes and lifts of the tiles in view, under the labels. With highlight (a resort's key), that
+// resort's are drawn strong and the others faded; names maps resort keys to the names shown in the
+// tooltips (otherwise those the tiles give).
+function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
+  const empty = { type: "FeatureCollection", features: [] };
+  map.addSource("ski-runs", { type: "geojson", data: empty, attribution: SKI_ATTRIBUTION });
+  map.addSource("ski-lifts", { type: "geojson", data: empty });
+  map.addSource("ski-stations", { type: "geojson", data: empty });
+  const before = firstLabel(map);
+  const line = (id, source, filter, extra = {}) =>
+    map.addLayer(
+      {
+        id,
+        type: "line",
+        source,
+        minzoom: SKI_MIN_ZOOM,
+        filter,
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: {
+          "line-color": ["get", "color"],
+          "line-opacity": ["get", "opacity"],
+          "line-width": ["coalesce", ["get", "width"], 2.5],
+          ...extra,
+        },
+      },
+      before,
+    );
+  map.addLayer(
+    {
+      id: "ski-run-areas",
+      type: "fill",
+      source: "ski-runs",
+      minzoom: SKI_MIN_ZOOM,
+      filter: ["==", ["geometry-type"], "Polygon"],
+      paint: { "fill-color": ["get", "color"], "fill-opacity": ["*", ["get", "opacity"], 0.2] },
+    },
+    before,
+  );
+  const isLine = ["==", ["geometry-type"], "LineString"];
+  line("ski-runs", "ski-runs", ["all", isLine, ["!", ["get", "dashed"]]]);
+  line("ski-runs-dashed", "ski-runs", ["all", isLine, ["get", "dashed"]], { "line-dasharray": [2, 2] });
+  line("ski-lifts", "ski-lifts", ["!", ["get", "dashed"]]);
+  line("ski-lifts-dashed", "ski-lifts", ["get", "dashed"], { "line-dasharray": [1.5, 2] });
+  map.addLayer(
+    {
+      id: "ski-stations",
+      type: "circle",
+      source: "ski-stations",
+      minzoom: SKI_MIN_ZOOM,
+      paint: { "circle-radius": 2.5, "circle-color": ["get", "color"], "circle-opacity": ["get", "opacity"] },
+    },
+    before,
+  );
+  map.addLayer({
+    id: "ski-lift-names",
+    type: "symbol",
+    source: "ski-lifts",
+    minzoom: 13,
+    layout: {
+      "symbol-placement": "line",
+      "text-field": ["get", "name"],
+      "text-font": MAP_FONT,
+      "text-size": 11,
+      "text-offset": [0, -0.8],
+    },
+    paint: {
+      "text-color": INK,
+      "text-halo-color": darkMode() ? "#000" : "#fff",
+      "text-halo-width": 1.2,
+      "text-opacity": ["get", "opacity"],
+    },
+  });
+  hoverTip(map, ["ski-runs", "ski-runs-dashed", "ski-run-areas", "ski-lifts", "ski-lifts-dashed"], skiLabel);
+
+  const data = { runs: [], lifts: [], stations: [] };
+  const sources = { runs: "ski-runs", lifts: "ski-lifts", stations: "ski-stations" };
+  const loaded = new Set();
+  const drawn = new Set();
+  const add = (tile) => {
+    for (const [key, list] of Object.entries(skiFeatures(tile, highlight, names))) {
       for (const f of list) {
         // A line crossing tiles is in each of them.
-        const id = f.osm ?? JSON.stringify(f.c?.[0] ?? f.poly[0][0]);
+        const id = `${key}:${f.id ?? JSON.stringify(f.geometry.coordinates[0])}`;
         if (drawn.has(id)) continue;
         drawn.add(id);
-        draw(f)?.addTo(layer);
+        data[key].push(f);
       }
+      map.getSource(sources[key]).setData({ type: "FeatureCollection", features: data[key] });
     }
-    for (const area of tile.areas) if (area.lr && !names.has(area.lr.id)) names.set(area.lr.id, area.lr.name);
-  }
-
-  function update() {
+  };
+  const update = () => {
     if (map.getZoom() < SKI_MIN_ZOOM) return;
     const bounds = map.getBounds();
-    const [x0, y0] = tileOf(bounds.getNorthWest());
-    const [x1, y1] = tileOf(bounds.getSouthEast());
+    const [x0, y0] = tileOf([bounds.getWest(), bounds.getNorth()]);
+    const [x1, y1] = tileOf([bounds.getEast(), bounds.getSouth()]);
     if ((x1 - x0 + 1) * (y1 - y0 + 1) > 16) return;
     for (let x = x0; x <= x1; x++) {
       for (let y = y0; y <= y1; y++) {
@@ -177,27 +248,21 @@ function skiLayer(map, ski, { highlight = null, names = new Map() } = {}) {
           .catch(() => loaded.delete(path));
       }
     }
-  }
-  const showAtZoom = () => (map.getZoom() < SKI_MIN_ZOOM ? layer.remove() : layer.addTo(map));
+  };
   map.on("moveend", update);
-  map.on("zoomend", showAtZoom);
-  // Once the map has a view: the pages set it after adding this.
-  map.whenReady(() => {
-    showAtZoom();
-    update();
-  });
-  return layer;
+  update();
 }
 
 // The pistes over the map: ours from the tiles, or OpenSnowMap's without them.
 function addPistes(map, ski, options = {}) {
-  if (ski) {
-    map.attributionControl.addAttribution(SKI_ATTRIBUTION);
-    return skiLayer(map, ski, options);
-  }
-  return L.tileLayer("https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png", {
-    minZoom: 10,
-    maxZoom: 17,
+  if (ski) return skiLayers(map, ski, options);
+  map.addSource("opensnowmap", {
+    type: "raster",
+    tiles: ["https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png"],
+    tileSize: 256,
+    minzoom: 10,
+    maxzoom: 17,
     attribution: '<a href="https://www.opensnowmap.org">OpenSnowMap</a>',
-  }).addTo(map);
+  });
+  map.addLayer({ id: "opensnowmap", type: "raster", source: "opensnowmap", minzoom: 10 }, firstLabel(map));
 }
