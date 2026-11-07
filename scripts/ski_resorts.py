@@ -20,6 +20,8 @@ NEAR_NAMED_M = 8000  # or the ones within this whose name matches its own best
 SECTOR_M = 6000  # in an area shared by several resorts, a lift goes to the nearest (within this for a resort
 # that claimed the area only as its nearest)
 LONE_M = 1000  # a lift without a ski area goes to a resort whose point is within this
+ADOPT_LIFT_M = 200  # a lift in no claimed area joins the resort with a lift station within this,
+ADOPT_RUN_M = 50  # and a run the one with a run or lift end within this
 LIFT_BUFFER_M = 60  # the outline: lifts and downhill runs widened by these,
 RUN_BUFFER_M = 50
 CLOSE_M = 150  # the gaps between them closed,
@@ -173,7 +175,53 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
             if a not in trees:
                 trees[a] = shapely.STRtree([lines[i] for i in lifts_in[a]])
             run_lr[j] = lift_lr[lifts_in[a][int(trees[a].nearest(f["_geom"].centroid))]]
+    adopt(lifts, runs, lift_lr, run_lr)
     return lift_lr, run_lr
+
+
+def adopt(lifts: list, runs: list, lift_lr: dict, run_lr: dict) -> None:
+    """Lifts and runs in ski areas none of which a resort claimed (a wider area only, such as
+    "Stubai" around the Stubaier Gletscher, for a lift its outline leaves out) join the resort whose
+    lift stations are next to theirs (for a run: its lifts' or runs' ends), in two rounds, for a run
+    leading to another; not further, or a wider area's other resorts would join too."""
+
+    def orphans(features, assigned):
+        return [i for i, f in enumerate(features) if i not in assigned and f["_areas"] and f["_home"] is None]
+
+    def ends(f):
+        coords = (
+            f["_coords"]
+            if "_coords" in f
+            else list(f["_geom"].exterior.coords if f["_geom"].geom_type == "Polygon" else f["_geom"].coords)
+        )
+        return [coords[0][:2], coords[-1][:2]]
+
+    def join(features, assigned, sources, reach):
+        points = []
+        keys = []
+        for others, done in sources:
+            for i, k in done.items():
+                for end in ends(others[i]):
+                    points.append(Point(end))
+                    keys.append(k)
+        if not points:
+            return
+        tree = shapely.STRtree(points)
+        found = {}
+        for i in orphans(features, assigned):
+            best = None
+            for end in ends(features[i]):
+                for j in tree.query(around(end, reach)):
+                    d = distance(end, points[int(j)])
+                    if d <= reach and (best is None or d < best[0]):
+                        best = (d, keys[int(j)])
+            if best:
+                found[i] = best[1]
+        assigned.update(found)
+
+    join(lifts, lift_lr, [(lifts, lift_lr)], ADOPT_LIFT_M)
+    for _ in range(2):
+        join(runs, run_lr, [(lifts, lift_lr), (runs, run_lr)], ADOPT_RUN_M)
 
 
 def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict, areas: dict) -> list:
