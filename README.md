@@ -178,11 +178,12 @@ sets the dates, numbers and country names.
 `/ski/` has the lifts, pistes and ski areas of [OpenSkiData](https://openskidata.org) cut into static
 tiles, and each resort's outline and map point. The map and resort pages draw them (`assets/ski.js`),
 and apps use the tiles to recognise lifts in a GPS track (TrailRider). They aren't in git:
-`.github/workflows/ski.yml` builds them on Mondays (and when the scripts or their fixes change) with
-`scripts/ski_tiles.py`, and publishes one archive, `ski.tar.gz`, on the release `ski-latest`; every
-deploy unpacks it into the site. The build id is a hash of the files, so a week without changes
-publishes nothing. OpenSkiData may be downloaded at most once a day; its own vector tiles may not be
-used directly.
+`.github/workflows/ski.yml` builds them on Mondays at 03:00 UTC (started by the Cloudflare Worker
+`liftradar-trigger`, in liftradar-fetcher's `deploy/trigger/`, as GitHub's own schedule skips runs),
+and when the scripts or their fixes change, with `scripts/ski_tiles.py`, and publishes one archive,
+`ski.tar.gz`, on the release `ski-latest`; every deploy unpacks it into the site. The build id is a
+hash of the files, so a week without changes publishes nothing. OpenSkiData may be downloaded at most
+once a day; its own vector tiles may not be used directly.
 
 - `ski/v1/meta.json`: `build` (add `?b=<build>` to the other URLs, to skip stale caches), `built_at`,
   `data_time` (OpenSkiData's build), `zoom`, `resorts` (the file below), the counts, the attribution
