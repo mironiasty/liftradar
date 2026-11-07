@@ -682,6 +682,98 @@ function liftLayer(map, lifts, origin, elevation) {
   return layer;
 }
 
+// Turning a model, as model viewers do (three.js's OrbitControls, <model-viewer>, Sketchfab), in
+// place of the map's gestures: drag to orbit around the middle of the view (sideways turns it,
+// up and down tilts it), right-drag or Shift-drag to move it, the wheel or a pinch to zoom.
+// On a touch screen one finger orbits and two move, zoom and twist it. Double-click and the
+// keyboard stay the map's.
+function orbitControls(map) {
+  map.dragPan.disable();
+  map.dragRotate.disable();
+  map.touchZoomRotate.disable();
+  map.touchPitch.disable();
+  const target = map.getCanvasContainer();
+  target.style.cursor = "grab";
+  target.style.touchAction = "none";
+  target.addEventListener("contextmenu", (e) => e.preventDefault());
+  const pointers = new Map();
+  let gesture = null;
+  // Moving keeps the ground under the pointer under it, as grabbing it would; not by screen
+  // pixels, which near the horizon of a tilted view are kilometres.
+  const box = () => target.getBoundingClientRect();
+  const grab = (fromX, fromY, toX, toY) => {
+    const { left, top } = box();
+    const from = map.unproject([fromX - left, fromY - top]);
+    const to = map.unproject([toX - left, toY - top]);
+    if (!from || !to) return;
+    const center = map.getCenter();
+    map.jumpTo({ center: [center.lng + from.lng - to.lng, center.lat + from.lat - to.lat] });
+  };
+  const centroid = () => {
+    const all = [...pointers.values()];
+    return [all.reduce((a, p) => a + p.x, 0) / all.length, all.reduce((a, p) => a + p.y, 0) / all.length];
+  };
+  const spread = () => {
+    const [a, b] = [...pointers.values()];
+    return { distance: Math.hypot(b.x - a.x, b.y - a.y), angle: Math.atan2(b.y - a.y, b.x - a.x) };
+  };
+  const start = (e) => {
+    const touches = [...pointers.values()].filter((p) => p.touch).length;
+    if (touches >= 2) {
+      const [x, y] = centroid();
+      gesture = { kind: "touch", x, y, ...spread(), zoom: map.getZoom(), bearing: map.getBearing() };
+    } else {
+      const move = e.button === 2 || e.button === 1 || e.shiftKey || e.ctrlKey || e.metaKey;
+      gesture = { kind: move ? "pan" : "orbit", x: e.clientX, y: e.clientY };
+    }
+    target.style.cursor = "grabbing";
+  };
+  target.addEventListener("pointerdown", (e) => {
+    if (e.target.closest(".maplibregl-ctrl, .maplibregl-popup")) return;
+    target.setPointerCapture(e.pointerId);
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY, touch: e.pointerType === "touch" });
+    map.stop();
+    start(e);
+  });
+  target.addEventListener("pointermove", (e) => {
+    if (!pointers.has(e.pointerId) || !gesture) return;
+    pointers.set(e.pointerId, { ...pointers.get(e.pointerId), x: e.clientX, y: e.clientY });
+    if (gesture.kind === "orbit") {
+      const dx = e.clientX - gesture.x;
+      const dy = e.clientY - gesture.y;
+      map.jumpTo({
+        bearing: map.getBearing() - dx * 0.35,
+        pitch: Math.min(map.getMaxPitch(), Math.max(0, map.getPitch() - dy * 0.3)),
+      });
+    } else if (gesture.kind === "pan") {
+      grab(gesture.x, gesture.y, e.clientX, e.clientY);
+    } else {
+      const [x, y] = centroid();
+      const { distance, angle } = spread();
+      grab(gesture.x, gesture.y, x, y);
+      map.jumpTo({
+        zoom: gesture.zoom + Math.log2(distance / gesture.distance),
+        bearing: gesture.bearing - ((angle - gesture.angle) * 180) / Math.PI,
+      });
+      gesture.x = x;
+      gesture.y = y;
+      return;
+    }
+    gesture.x = e.clientX;
+    gesture.y = e.clientY;
+  });
+  const end = (e) => {
+    if (!pointers.delete(e.pointerId)) return;
+    gesture = null;
+    target.style.cursor = "grab";
+    // A finger lifted from two: the other carries on orbiting from where it is.
+    const rest = [...pointers.values()][0];
+    if (rest) gesture = { kind: "orbit", x: rest.x, y: rest.y };
+  };
+  target.addEventListener("pointerup", end);
+  target.addEventListener("pointercancel", end);
+}
+
 async function show() {
   if (!KEY) {
     showInfo(el("p", {}, t("Open a resort from the map, then its 3D map.")), el("a", { href: "map.html" }, t("Map")));
@@ -704,6 +796,7 @@ async function show() {
   document.getElementById("title").textContent = r.name;
   document.title = `${r.name} – ${t("3D map")} – LiftRadar`;
   const animate = el("input", { type: "checkbox", checked: "" });
+  const reset = el("button", { type: "button", class: "reset" }, t("Back to the start view"));
   const status = statusKey(r);
   showInfo(
     el(
@@ -718,8 +811,15 @@ async function show() {
       el("span", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
     ),
     el("p", {}, t("Lifts"), ": ", pair(r.lifts?.open, r.lifts?.total)),
-    el("p", { class: "hint" }, t("Drag with the right mouse button or Ctrl to turn and tilt; two fingers on a phone.")),
+    el(
+      "p",
+      { class: "hint" },
+      t(
+        "Drag to turn the model; right-drag or Shift-drag to move it; scroll or pinch to zoom. On a phone: one finger turns it, two move and zoom it.",
+      ),
+    ),
     el("label", {}, animate, t("Moving lifts")),
+    reset,
     el(
       "div",
       { class: "links" },
@@ -756,18 +856,10 @@ async function show() {
     [box[0], box[3]],
   ];
   const view = startView(corners, own.length ? own : shown, middle);
-  const map = await baseMap(
-    "map",
-    {
-      ...view,
-      dragRotate: true,
-      pitchWithRotate: true,
-      hash: "view",
-    },
-    { dem: "diorama" },
-  );
-  map.touchZoomRotate.enableRotation();
+  const map = await baseMap("map", { ...view, hash: "view" }, { dem: "diorama" });
+  orbitControls(map);
   map.addControl(new maplibregl.NavigationControl({ showZoom: false, visualizePitch: true }), "top-left");
+  reset.addEventListener("click", () => map.flyTo({ ...view, duration: 1200 }));
   map.addSource("terrain", { type: "raster-dem", encoding: "terrarium", ...DEMS.diorama });
   map.setTerrain({ source: "terrain", exaggeration: 1 });
   const dark = darkMode();
