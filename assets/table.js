@@ -5,6 +5,7 @@ const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
 const searchClear = document.getElementById("search-clear");
 const countryGroup = document.getElementById("country");
+const fnuggCreditLine = document.getElementById("fnugg-credit");
 const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
 const count = document.getElementById("count");
@@ -156,6 +157,8 @@ function filter() {
   const n = rows.length;
   count.textContent = filtered ? t("{shown} of {n} resorts", { shown, n }) : t("{n} resorts", { n });
   empty.hidden = shown > 0;
+  // fnugg's credit, with its data: all countries, or Norway.
+  fnuggCreditLine.hidden = Boolean(country) && country !== "no";
   saveState();
 }
 
