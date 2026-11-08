@@ -2,7 +2,8 @@
 // the number on a marker is the value chosen in the options panel (open lifts
 // by default). A click shows the report.
 // Resorts with a ski area in the ski tiles (assets/ski.js) also show it, and the pistes and lifts
-// appear when zoomed in.
+// appear when zoomed in; from there, the area takes the marker's place: hovering it names the
+// resort, and a click shows the report (the pistes and lifts have no tooltips of their own here).
 
 const STATUS = {
   open: { label: STATUS_LABELS.open, color: "--open" },
@@ -71,8 +72,9 @@ function meter(open, total, active) {
 }
 
 // The report like a resort card on the phone table: name and status pill, region,
-// then the values that are there (empty ones left out).
-function popup(r, status) {
+// then the values that are there (empty ones left out); at the bottom, when it was checked, and
+// the ways on: the resort's page, and its 3D map when it has an area (in3d).
+function popup(r, status, in3d) {
   const { snow, lifts, slopes, avalanche } = r;
   const active = status === "open";
   const values = [];
@@ -127,20 +129,21 @@ function popup(r, status) {
   );
   if (values.length) content.append(el("div", { class: "values" }, ...values));
   content.append(fnuggCredit(r));
-  const foot = el("div", { class: "foot" });
   // fetched_at: an index published before checked_at was added.
   const checked = r.checked_at ?? r.fetched_at;
-  foot.append(
-    el(
-      "span",
-      {},
-      t("Checked {time}", {
-        time: viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" }),
-      }),
-    ),
+  const time = viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
+  const actions = el(
+    "div",
+    { class: "actions" },
+    el("a", { class: "action primary", href: resortPage(r) }, t("Details")),
   );
-  foot.append(el("a", { href: resortPage(r) }, t("Details and history →")));
-  content.append(foot);
+  if (in3d) {
+    const cube = el("span", { class: "cube", "aria-hidden": "true" });
+    cube.innerHTML =
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>';
+    actions.append(el("a", { class: "action", href: `3d.html?r=${skiKey(r)}` }, cube, t("3D map")));
+  }
+  content.append(el("div", { class: "foot" }, t("Checked {time}", { time })), actions);
   return content;
 }
 
@@ -150,10 +153,10 @@ function show(map, [index, ski]) {
   document.getElementById("updated").textContent = updatedText(index);
   const resorts = index.resorts.filter((r) => skiPoint(r, ski));
   const byKey = new Map(resorts.map((r) => [skiKey(r), r]));
-  addPistes(map, ski, { names: new Map(index.resorts.map((r) => [skiKey(r), r.name])) });
+  addPistes(map, ski, { names: new Map(index.resorts.map((r) => [skiKey(r), r.name])), tips: false });
 
   // The areas, in their resort's status colour: filled when zoomed out, only an outline where
-  // the pistes show, so they stay visible and their tooltips reachable.
+  // the pistes show (filled faintly when hovered), so they stay visible. Clickable at every zoom.
   const areas = resorts
     .map((r) => ski?.resorts.get(skiKey(r)))
     .filter(Boolean)
@@ -168,10 +171,15 @@ function show(map, [index, ski]) {
       id: "areas-fill",
       type: "fill",
       source: "areas",
-      maxzoom: ski ? SKI_MIN_ZOOM : 24,
       paint: {
         "fill-color": ["get", "color"],
-        "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.45, 0.25],
+        "fill-opacity": [
+          "step",
+          ["zoom"],
+          ["case", ["boolean", ["feature-state", "hover"], false], 0.45, 0.25],
+          ski ? SKI_MIN_ZOOM : 24,
+          ["case", ["boolean", ["feature-state", "hover"], false], 0.12, 0],
+        ],
       },
     },
     before,
@@ -206,7 +214,7 @@ function show(map, [index, ski]) {
     if (map.getContainer().clientWidth < 500) map.jumpTo({ center: at, offset: [0, 120] });
     return new maplibregl.Popup({ maxWidth: "296px", offset: 14 })
       .setLngLat(at)
-      .setDOMContent(popup(r, statusKey(r)))
+      .setDOMContent(popup(r, statusKey(r), Boolean(ski?.resorts.has(skiKey(r)))))
       .addTo(map);
   };
   map.on("click", "areas-fill", (e) => {
@@ -226,8 +234,26 @@ function show(map, [index, ski]) {
       e.stopPropagation();
       openPopup(r, marker.getLngLat());
     });
-    markers.push({ marker, element, r, status });
+    markers.push({ marker, element, r, status, area: Boolean(ski?.resorts.has(skiKey(r))) });
   }
+  // Shown: the markers of the statuses chosen with the chips (all when none is), except, where the
+  // pistes show, those of resorts with an area.
+  const shown = new Set();
+  const showMarkers = () => {
+    const zoomedIn = map.getZoom() >= SKI_MIN_ZOOM;
+    for (const { element, status, area } of markers) {
+      const visible = (!shown.size || shown.has(status)) && !(zoomedIn && area);
+      element.style.display = visible ? "" : "none";
+    }
+  };
+  // Redrawn only when the zoom crosses that line, not on every frame of a zoom.
+  let wasZoomedIn = map.getZoom() >= SKI_MIN_ZOOM;
+  map.on("zoom", () => {
+    if (wasZoomedIn === map.getZoom() >= SKI_MIN_ZOOM) return;
+    wasZoomedIn = !wasZoomedIn;
+    showMarkers();
+  });
+  showMarkers();
 
   const setLabels = (choice) => {
     for (const { element, r, status } of markers) element.textContent = labelText(r, status, choice);
@@ -266,10 +292,8 @@ function show(map, [index, ski]) {
 
   // Statuses chosen with the chips; none chosen shows every resort.
   const filters = document.getElementById("filters");
-  const shown = new Set();
   const showStatuses = () => {
-    const visible = (status) => !shown.size || shown.has(status);
-    for (const { element, status } of markers) element.style.display = visible(status) ? "" : "none";
+    showMarkers();
     const filter = shown.size ? ["in", ["get", "status"], ["literal", [...shown]]] : null;
     map.setFilter("areas-fill", filter);
     map.setFilter("areas-line", filter);

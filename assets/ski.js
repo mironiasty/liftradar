@@ -173,9 +173,10 @@ function skiLabel({ properties: p }) {
 
 // Pistes and lifts of the tiles in view, under the labels. With highlight (a resort's key), that
 // resort's are drawn strong and the others faded; names maps resort keys to the names shown in the
-// tooltips (otherwise those the tiles give); minZoom, from where they're drawn. Resolves once the
+// tooltips (otherwise those the tiles give); minZoom, from where they're drawn; tips: false for
+// no tooltips (the map page, where a click on the area shows the resort). Resolves once the
 // tiles of the first view are drawn.
-function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SKI_MIN_ZOOM } = {}) {
+function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SKI_MIN_ZOOM, tips = true } = {}) {
   const empty = { type: "FeatureCollection", features: [] };
   map.addSource("ski-runs", { type: "geojson", data: empty, attribution: SKI_ATTRIBUTION });
   map.addSource("ski-lifts", { type: "geojson", data: empty });
@@ -249,7 +250,7 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
       "text-opacity": ["get", "opacity"],
     },
   });
-  hoverTip(map, ["ski-runs", "ski-runs-dashed", "ski-run-areas", "ski-lifts", "ski-lifts-dashed"], skiLabel);
+  if (tips) hoverTip(map, ["ski-runs", "ski-runs-dashed", "ski-run-areas", "ski-lifts", "ski-lifts-dashed"], skiLabel);
 
   const data = { runs: [], lifts: [], stations: [] };
   const sources = { runs: "ski-runs", lifts: "ski-lifts", stations: "ski-stations" };

@@ -79,9 +79,17 @@
   .popup .fresh { color: var(--accent); font-weight: 600; }
   .popup .meter { width: 100%; max-width: 64px; margin-top: 5px; }
   .popup .danger { display: flex; align-items: center; gap: 6px; }
-  .popup .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 10px; margin-top: 12px; padding-top: 10px;
-    border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
-  .popup .foot a { margin-left: auto; font-weight: 500; }
+  .popup .foot { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: .78rem; }
+  /* The ways on: the resort's page, and its 3D map, side by side (one under the other when they don't fit). */
+  .popup .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .popup .action { flex: 1 1 auto; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 34px;
+    padding: 6px 9px; border: 1px solid var(--line); border-radius: 8px; color: var(--fg); font-size: .8rem; font-weight: 600;
+    line-height: 1.2; white-space: nowrap; text-decoration: none; }
+  .popup .action:hover { border-color: var(--accent); color: var(--accent); }
+  .popup .action.primary { border-color: var(--accent); background: var(--accent); color: var(--bg); }
+  .popup .action.primary:hover { filter: brightness(1.1); color: var(--bg); }
+  .popup .action:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .popup .action .cube { display: inline-flex; color: var(--accent); }
 </style>
 </head>
 <body>
