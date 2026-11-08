@@ -10,7 +10,7 @@
   },
   "website": "https://www.crestvoland.com",
   "status": "no_report",
-  "fetched_at": "2026-11-07T23:13:56.146445+01:00",
+  "fetched_at": "2026-11-08T08:40:37.536505+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -59,12 +59,30 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-05",
+    "region": "Beaufortain",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-07T16:00:00+01:00",
+    "valid_from": "2026-11-07T16:00:00+01:00",
+    "valid_until": "2026-11-08T18:00:00+01:00"
+  },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=crest-voland&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-diamant",
+    "https://public.lumiplay.link/interactive-map/v1/map/09110215-8a54-42cd-991a-1c534bfb5115/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/09110215-8a54-42cd-991a-1c534bfb5115/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/09110215-8a54-42cd-991a-1c534bfb5115/dynamicPoiData?lang=fr"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-08/2026-11-08-FR.json"
   ],
   "errors": []
 }

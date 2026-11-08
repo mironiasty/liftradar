@@ -10,7 +10,7 @@
   },
   "website": "https://www.lescontamines.com",
   "status": "closed",
-  "fetched_at": "2026-11-07T23:13:56.146783+01:00",
+  "fetched_at": "2026-11-08T08:40:37.536771+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,12 +65,36 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-03",
+    "region": "Mont-Blanc",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 3400,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 3400,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-07T16:00:00+01:00",
+    "valid_from": "2026-11-07T16:00:00+01:00",
+    "valid_until": "2026-11-08T18:00:00+01:00"
+  },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-    "https://www.skiinfo.fr/alpes-du-nord/les-contamines-montjoie/station-de-ski"
+    "https://www.skiinfo.fr/alpes-du-nord/les-contamines-montjoie/station-de-ski",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-08/2026-11-08-FR.json"
   ],
   "errors": []
 }

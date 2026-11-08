@@ -10,7 +10,7 @@
   },
   "website": "https://www.lecollet.com",
   "status": "closed",
-  "fetched_at": "2026-11-07T23:13:56.146973+01:00",
+  "fetched_at": "2026-11-08T08:40:37.536920+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,12 +65,30 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-08",
+    "region": "Belledonne",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-07T15:00:00+01:00",
+    "valid_from": "2026-11-07T15:00:00+01:00",
+    "valid_until": "2026-11-08T18:00:00+01:00"
+  },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/le-collet",
     "https://public.lumiplay.link/interactive-map/v1/map/ca6e3565-ca7a-4999-9594-f28bda475a8c/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/ca6e3565-ca7a-4999-9594-f28bda475a8c/dynamicPoiData?lang=fr",
-    "https://www.skiinfo.fr/alpes-du-nord/le-collet-dallevard/station-de-ski"
+    "https://www.skiinfo.fr/alpes-du-nord/le-collet-dallevard/station-de-ski",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-08/2026-11-08-FR.json"
   ],
   "errors": []
 }
