@@ -60,6 +60,10 @@
           "title": "Danger"
         }
       },
+      "required": [
+        "danger_level",
+        "danger"
+      ],
       "title": "IndexAvalanche",
       "type": "object"
     },
@@ -167,9 +171,14 @@
         "id",
         "country",
         "name",
+        "region",
+        "location",
         "status",
         "checked_at",
         "snow",
+        "lifts",
+        "slopes",
+        "avalanche",
         "sources"
       ],
       "title": "IndexResort",
@@ -218,6 +227,11 @@
           "title": "Fresh Cm"
         }
       },
+      "required": [
+        "mountain_cm",
+        "valley_cm",
+        "fresh_cm"
+      ],
       "title": "IndexSnow",
       "type": "object"
     },
@@ -302,6 +316,12 @@
           "title": "Total Km"
         }
       },
+      "required": [
+        "open",
+        "total",
+        "open_km",
+        "total_km"
+      ],
       "title": "SlopeCounts",
       "type": "object"
     }
@@ -328,6 +348,7 @@
     }
   },
   "required": [
+    "$schema",
     "generated_at",
     "resorts"
   ],

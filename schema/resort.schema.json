@@ -83,6 +83,10 @@
       "required": [
         "region_id",
         "region",
+        "danger_level",
+        "danger",
+        "ratings",
+        "problems",
         "published_at",
         "valid_from",
         "valid_until"
@@ -176,7 +180,10 @@
         }
       },
       "required": [
-        "level"
+        "level",
+        "lower_bound",
+        "upper_bound",
+        "period"
       ],
       "title": "DangerRating",
       "type": "object"
@@ -262,6 +269,12 @@
           "title": "Total Km"
         }
       },
+      "required": [
+        "open",
+        "total",
+        "open_km",
+        "total_km"
+      ],
       "title": "SlopeCounts",
       "type": "object"
     },
@@ -340,6 +353,14 @@
           "type": "array"
         }
       },
+      "required": [
+        "mountain_cm",
+        "valley_cm",
+        "fresh_cm",
+        "last_snowfall",
+        "condition",
+        "stations"
+      ],
       "title": "Snow",
       "type": "object"
     },
@@ -418,7 +439,12 @@
         }
       },
       "required": [
-        "name"
+        "name",
+        "elevation_m",
+        "depth_cm",
+        "fresh_cm",
+        "temperature_c",
+        "condition"
       ],
       "title": "Station",
       "type": "object"
@@ -631,10 +657,24 @@
     }
   },
   "required": [
+    "$schema",
     "id",
     "country",
     "name",
-    "fetched_at"
+    "region",
+    "location",
+    "website",
+    "status",
+    "fetched_at",
+    "status_from",
+    "snow",
+    "lifts",
+    "slopes",
+    "lifts_by_type",
+    "slopes_by_difficulty",
+    "lifts_updated_at",
+    "avalanche",
+    "sources"
   ],
   "title": "Snow conditions for one resort",
   "type": "object"
