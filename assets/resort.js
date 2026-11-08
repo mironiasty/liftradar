@@ -592,7 +592,10 @@ async function show() {
       ),
     ),
   );
-  resortMap(r, mapBox).catch(() => mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load."))));
+  resortMap(r, mapBox).catch(() => {
+    mapBox.classList.remove("loading");
+    mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
+  });
   history(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );
