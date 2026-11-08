@@ -28,7 +28,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
     (`st-anton-am-arlberg`, `lech-zuers`, `warth-schroecken`) are gone.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
-  its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `sources.html` (data sources, incl. every URL in the
+  its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers), `sources.html` (data sources, incl. every URL in the
   current data) and `about.html` (what the values mean, and their caveats), plain
   static pages that load the JSON in the browser. No build step locally.
   The ski-area outlines, the resorts' points and the pistes and lifts on the map come from the ski

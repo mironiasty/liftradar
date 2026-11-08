@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/lang.js"></script>
+<title data-i18n>API – LiftRadar</title>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://liftradar.eu/api">
+<link rel="alternate" hreflang="de" href="https://liftradar.eu/de/api">
+<link rel="alternate" hreflang="fr" href="https://liftradar.eu/fr/api">
+<link rel="alternate" hreflang="it" href="https://liftradar.eu/it/api">
+<link rel="alternate" hreflang="pl" href="https://liftradar.eu/pl/api">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+  h1 { margin: 28px 0 4px; font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; margin: 32px 0 6px; scroll-margin-top: 16px; }
+  h3 { font-size: 1rem; margin: 22px 0 4px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 16px 0 0; padding: 0; list-style: none; font-size: .9rem; }
+  .toc li { margin: 0; }
+  code { overflow-wrap: anywhere; }
+  pre { overflow-x: auto; padding: 10px 12px; border-radius: 8px; background: color-mix(in srgb, currentColor 7%, transparent); font-size: .85rem; }
+  pre code { overflow-wrap: normal; }
+</style>
+</head>
+<body>
+<main>
+  <header class="site-header">
+    <a class="brand compact" href="./">
+    <svg width="36" height="36" viewBox="0 0 32 32" aria-hidden="true">
+      <mask id="logo-window"><rect width="32" height="32" fill="#fff"/><rect x="10.5" y="15" width="11" height="5.5" rx="1.3" fill="#000"/></mask>
+      <path d="M2 9 L30 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="16" cy="7" r="1.8" fill="currentColor"/>
+      <path d="M16 7 V12" stroke="currentColor" stroke-width="2"/>
+      <rect x="8" y="12" width="16" height="15.5" rx="3.6" style="fill: var(--accent)" mask="url(#logo-window)"/>
+    </svg>
+    <span class="name"><b>LiftRadar</b><small data-i18n>Status of ski resorts</small></span>
+    </a>
+    <nav aria-label="Main">
+    <a class="pill" href="./">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>
+      <span data-i18n>Table</span>
+    </a>
+    <a class="pill" href="map.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
+      <span data-i18n>Map</span>
+    </a>
+    <a class="pill" href="stats.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
+      <span data-i18n>Stats</span>
+    </a>
+    <details class="lang-menu">
+      <summary class="pill lang" aria-label="Language">EN</summary>
+      <div>
+        <a href="/api.html" hreflang="en" lang="en" aria-current="true">English</a>
+        <a href="/de/api.html" hreflang="de" lang="de">Deutsch</a>
+        <a href="/fr/api.html" hreflang="fr" lang="fr">Français</a>
+        <a href="/it/api.html" hreflang="it" lang="it">Italiano</a>
+        <a href="/pl/api.html" hreflang="pl" lang="pl">Polski</a>
+      </div>
+    </details>
+    </nav>
+  </header>
+  <h1 data-i18n>API</h1>
+  <p data-i18n>All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>,
+    readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.</p>
+  <ul class="toc">
+    <li><a href="#resorts" data-i18n>All resorts</a></li>
+    <li><a href="#resort" data-i18n>One resort</a></li>
+    <li><a href="#history" data-i18n>History</a></li>
+    <li><a href="#stats" data-i18n>Stats</a></li>
+    <li><a href="#ski-map" data-i18n>Pistes and lifts</a></li>
+    <li><a href="#reading" data-i18n>Reading the values</a></li>
+    <li><a href="#polling" data-i18n>Polling</a></li>
+  </ul>
+
+  <h2 id="resorts" data-i18n>All resorts</h2>
+  <pre><code>GET https://liftradar.eu/json/index.json</code></pre>
+  <p data-i18n>Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level and
+    location (<a href="/schema/index.schema.json">schema</a>). Each resort's <code>country</code> and <code>id</code> give the
+    address of its full report.</p>
+
+  <h2 id="resort" data-i18n>One resort</h2>
+  <pre><code>GET https://liftradar.eu/json/&lt;country&gt;/&lt;id&gt;.json</code></pre>
+  <p data-i18n>One resort's full report (<a href="/schema/resort.schema.json">schema</a>): everything in the list, plus snow
+    stations, lifts by type, slopes by difficulty, the avalanche bulletin and the reports it was built from. For example
+    <a href="/json/at/hintertux.json"><code>json/at/hintertux.json</code></a>. The <code>id</code> is in the address of each
+    resort's page on this site.</p>
+  <p data-i18n><code>country</code> is the ISO code in lower case: <code>at</code>, <code>ch</code>, <code>cz</code>,
+    <code>de</code>, <code>es</code>, <code>fi</code>, <code>fr</code>, <code>it</code>, <code>no</code>, <code>pl</code>,
+    <code>sk</code>. These addresses stay: when resorts merge, the old ones keep working as copies of the new one's.</p>
+  <pre><code>curl -s https://liftradar.eu/json/at/hintertux.json | jq '{status, snow: .snow.mountain_cm, lifts}'</code></pre>
+
+  <h2 id="history" data-i18n>History</h2>
+  <pre><code>GET https://liftradar.eu/history/&lt;country&gt;/&lt;id&gt;.json</code></pre>
+  <p data-i18n>The key numbers of every run over the last 365 days, one list per value: <code>time</code>, <code>status</code>,
+    open and total lifts and slopes, open km and snow depths (<a href="/schema/history.schema.json">schema</a>). Data has
+    been collected since 24 October 2026.</p>
+
+  <h2 id="stats" data-i18n>Stats</h2>
+  <pre><code>GET https://liftradar.eu/json/stats.json</code></pre>
+  <p data-i18n>Daily totals per country and region over the last 365 days: resorts tracked and open, and their open lifts,
+    slopes and km (<a href="/schema/stats.schema.json">schema</a>).</p>
+
+  <h2 id="ski-map" data-i18n>Pistes and lifts</h2>
+  <pre><code>GET https://liftradar.eu/ski/v1/10/&lt;x&gt;/&lt;y&gt;.json
+GET https://liftradar.eu/ski/v1/resorts.geojson
+GET https://liftradar.eu/ski/v1/meta.json</code></pre>
+  <p data-i18n>The lifts, pistes and ski areas of OpenSkiData in map tiles (XYZ, zoom 10), each with its resort here when it
+    has one (<a href="/ski/v1/tile.schema.json">schema</a>), and each resort's outline and point on the map. The build and
+    counts are in <code>meta.json</code>. Rebuilt weekly, under the
+    <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>: data from OpenSkiData, © OpenStreetMap contributors.</p>
+
+  <h2 id="reading" data-i18n>Reading the values</h2>
+  <ul>
+    <li data-i18n><code>null</code> means the source doesn't publish the value. <code>status</code> is never <code>null</code>:
+      it's <code>open</code>, <code>closed</code> or <code>no_report</code>.</li>
+    <li data-i18n>With <code>no_report</code>, <code>lifts.open</code> is 0 and <code>slopes.open</code> is <code>null</code>. With
+      <code>closed</code>, the snow depths and <code>condition</code> are <code>null</code>;
+      <code>last_snowfall</code> and station measurements stay.</li>
+    <li data-i18n><code>fetched_at</code> is when we read the report and <code>lifts_updated_at</code> is the resort's own report
+      time, <code>null</code> if its source has none. <code>status_from</code> is set when the latest run couldn't read
+      the report, and gives the time of the run the values come from.</li>
+    <li data-i18n>Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.</li>
+  </ul>
+  <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>
+
+  <h2 id="polling" data-i18n>Polling</h2>
+  <p data-i18n>The data changes twice a day, at about 08:40 and 13:40 Vienna time, so there's no point reading it more often
+    than hourly. The files have an <code>ETag</code>: send <code>If-None-Match</code> and an unchanged file costs nothing.
+    Questions, or a use we should know about: miron [at] liftradar.eu.</p>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="sources.html" data-i18n>Data sources</a>
+      <a href="about.html" data-i18n>About the data</a>
+      <a href="api.html" data-i18n>API</a>
+      <span data-i18n>Contact: miron [at] liftradar.eu</span>
+    </nav>
+    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+      <span data-i18n>Made by <b>Miron</b></span></span>
+  </footer>
+</main>
+</body>
+</html>
