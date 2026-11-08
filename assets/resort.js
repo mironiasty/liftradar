@@ -343,8 +343,10 @@ function data(r) {
 
 // Resort map: only this resort's area (or point), with its pistes and lifts strong and the
 // neighbours' faded; "Map of all resorts" shows the other resorts. The wheel zooms it only
-// once it has been clicked, so the page scrolls past it.
+// once it has been clicked, so the page scrolls past it. Shown once it has drawn the base map, the
+// relief and the pistes (or after a few seconds), rather than each as it comes.
 async function resortMap(r, container) {
+  container.classList.add("loading");
   const start = r.location
     ? { center: [r.location.lon, r.location.lat], zoom: 12 }
     : { center: [11.9, 47.25], zoom: 6 };
@@ -384,7 +386,12 @@ async function resortMap(r, container) {
       '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>';
     container.append(el("a", { class: "map-3d", href: `3d.html?r=${skiKey(r)}` }, cube, t("See the resort in 3D")));
   }
-  addPistes(map, ski, { highlight: skiKey(r), names: new Map([[skiKey(r), r.name]]) });
+  const pistes = addPistes(map, ski, {
+    highlight: skiKey(r),
+    names: new Map([[skiKey(r), r.name]]),
+    // From the zoom the map opens at, however large the resort: its lifts and pistes are always shown.
+    minZoom: Math.min(SKI_MIN_ZOOM, Math.floor(map.getZoom())),
+  });
   const point = skiPoint(r, ski);
   if (point) {
     const pin = el("div", {
@@ -394,6 +401,9 @@ async function resortMap(r, container) {
     });
     new maplibregl.Marker({ element: pin }).setLngLat(point).addTo(map);
   }
+  const drawn = pistes.then(() => !map.loaded() && new Promise((resolve) => map.once("idle", resolve)));
+  await Promise.race([drawn, new Promise((resolve) => setTimeout(resolve, 4000))]);
+  container.classList.remove("loading");
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).

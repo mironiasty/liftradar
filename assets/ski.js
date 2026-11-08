@@ -173,8 +173,9 @@ function skiLabel({ properties: p }) {
 
 // Pistes and lifts of the tiles in view, under the labels. With highlight (a resort's key), that
 // resort's are drawn strong and the others faded; names maps resort keys to the names shown in the
-// tooltips (otherwise those the tiles give).
-function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
+// tooltips (otherwise those the tiles give); minZoom, from where they're drawn. Resolves once the
+// tiles of the first view are drawn.
+function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SKI_MIN_ZOOM } = {}) {
   const empty = { type: "FeatureCollection", features: [] };
   map.addSource("ski-runs", { type: "geojson", data: empty, attribution: SKI_ATTRIBUTION });
   map.addSource("ski-lifts", { type: "geojson", data: empty });
@@ -186,7 +187,7 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
         id,
         type: "line",
         source,
-        minzoom: SKI_MIN_ZOOM,
+        minzoom: minZoom,
         filter,
         layout: { "line-cap": "round", "line-join": "round" },
         paint: {
@@ -203,7 +204,7 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
       id: "ski-run-areas",
       type: "fill",
       source: "ski-runs",
-      minzoom: SKI_MIN_ZOOM,
+      minzoom: minZoom,
       filter: ["==", ["geometry-type"], "Polygon"],
       paint: { "fill-color": ["get", "color"], "fill-opacity": ["*", ["get", "opacity"], 0.2] },
     },
@@ -224,7 +225,7 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
       id: "ski-stations",
       type: "circle",
       source: "ski-stations",
-      minzoom: SKI_MIN_ZOOM,
+      minzoom: minZoom,
       paint: { "circle-radius": 2.5, "circle-color": ["get", "color"], "circle-opacity": ["get", "opacity"] },
     },
     before,
@@ -269,29 +270,33 @@ function skiLayers(map, ski, { highlight = null, names = new Map() } = {}) {
     }
   };
   const update = () => {
-    if (map.getZoom() < SKI_MIN_ZOOM) return;
+    const fetches = [];
+    if (map.getZoom() < minZoom) return fetches;
     const bounds = map.getBounds();
     const [x0, y0] = tileOf([bounds.getWest(), bounds.getNorth()]);
     const [x1, y1] = tileOf([bounds.getEast(), bounds.getSouth()]);
-    if ((x1 - x0 + 1) * (y1 - y0 + 1) > 16) return;
+    if ((x1 - x0 + 1) * (y1 - y0 + 1) > 16) return fetches;
     for (let x = x0; x <= x1; x++) {
       for (let y = y0; y <= y1; y++) {
         const path = `${x}/${y}`;
         if (loaded.has(path)) continue;
         loaded.add(path);
         // 404: nothing there.
-        fetch(`${SKI_URL}/10/${path}.json?b=${ski.build}`)
-          .then((response) => (response.ok ? response.json() : null))
-          .then((tile) => tile && add(tile))
-          .catch(() => loaded.delete(path));
+        fetches.push(
+          fetch(`${SKI_URL}/10/${path}.json?b=${ski.build}`)
+            .then((response) => (response.ok ? response.json() : null))
+            .then((tile) => tile && add(tile))
+            .catch(() => loaded.delete(path)),
+        );
       }
     }
+    return fetches;
   };
   map.on("moveend", update);
-  update();
+  return Promise.all(update());
 }
 
-// The pistes and lifts over the map, when there are ski tiles.
+// The pistes and lifts over the map, when there are ski tiles. Resolves once those in view are drawn.
 function addPistes(map, ski, options = {}) {
-  if (ski) skiLayers(map, ski, options);
+  return ski ? skiLayers(map, ski, options) : Promise.resolve();
 }
