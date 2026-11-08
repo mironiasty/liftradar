@@ -401,15 +401,6 @@ async function resortMap(r, container) {
     // From the zoom the map opens at, however large the resort: its lifts and pistes are always shown.
     minZoom: Math.min(SKI_MIN_ZOOM, Math.floor(map.getZoom())),
   });
-  const point = skiPoint(r, ski);
-  if (point) {
-    const pin = el("div", {
-      class: "pin",
-      title: r.name,
-      style: `background:${cssColor(STATUS_COLORS[statusKey(r)].slice(4, -1))}`,
-    });
-    new maplibregl.Marker({ element: pin }).setLngLat(point).addTo(map);
-  }
   const drawn = pistes.then(() => !map.loaded() && new Promise((resolve) => map.once("idle", resolve)));
   await Promise.race([drawn, new Promise((resolve) => setTimeout(resolve, 4000))]);
   container.classList.remove("loading");
