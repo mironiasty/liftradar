@@ -20,6 +20,7 @@ const DATE_LOCALE = LANG === "en" ? "de-AT" : LANG;
 // Absolute: the translated pages are one level down, and share the assets and data.
 const INDEX_URL = "/json/index.json";
 
+/** @returns {Promise<Index>} */
 async function loadIndex() {
   const response = await fetch(INDEX_URL, { cache: "no-cache" });
   if (!response.ok) throw new Error(`${INDEX_URL}: HTTP ${response.status}`);
@@ -27,13 +28,17 @@ async function loadIndex() {
 }
 
 // Same path layout as liftradar-fetcher's models.resort_path() and history_path().
+/** @param {{ country: string, id: string }} r */
 const resortPath = (r) => `/json/${r.country}/${r.id}.json`;
+/** @param {{ country: string, id: string }} r */
 const historyPath = (r) => `/history/${r.country}/${r.id}.json`;
 // The resort's page (resort.html), e.g. resort.html?r=at/soelden.
+/** @param {{ country: string, id: string }} r */
 const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;
 // sessionStorage key of the resort list's last filters and order (its query string), set by table.js.
 const LIST_KEY = "resort-list";
 // The map zoomed in on the resort (map.html), e.g. map.html?r=at/soelden.
+/** @param {{ country: string, id: string }} r */
 const resortOnMap = (r) => `map.html?r=${r.country}/${r.id}`;
 
 // Lowercase without accents, so "Sölden" sorts and matches like "solden".
@@ -64,8 +69,10 @@ const dangerName = (level) => DANGER_NAMES[level] ?? level.replaceAll("_", " ");
 // Same as the table and the map.
 const STATUS_COLORS = { open: "var(--open)", closed: "var(--closed)", no_report: "var(--none)" };
 // Data published before 27.10.2026 can have a null status (fetching failed): shown as no report.
+/** @param {IndexResort | Resort} r */
 const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "no_report");
 
+/** @param {string} iso @param {Intl.DateTimeFormatOptions} [options] */
 const viennaTime = (iso, options = { dateStyle: "medium", timeStyle: "short" }) =>
   new Date(iso).toLocaleString(DATE_LOCALE, { timeZone: "Europe/Vienna", ...options });
 
@@ -73,15 +80,17 @@ const viennaTime = (iso, options = { dateStyle: "medium", timeStyle: "short" }) 
 // resort last changed it. Stale: an open resort whose report the latest run couldn't read, or that
 // hasn't changed for STALE_DAYS (slope maps keep their time while nothing opens or closes).
 const STALE_DAYS = 7;
+/** @param {Resort} r */
 function reportTimes(r) {
   const checked = r.status_from ?? r.fetched_at;
   const changed = r.lifts_updated_at;
-  const days = changed ? Math.floor((new Date(r.fetched_at) - new Date(changed)) / 864e5) : 0;
+  const days = changed ? Math.floor((Date.parse(r.fetched_at) - Date.parse(changed)) / 864e5) : 0;
   const stale = statusKey(r) === "open" && (Boolean(r.status_from) || days > STALE_DAYS);
   return { checked, changed, days, stale };
 }
 
 // Fnugg's terms: a visible credit next to its data, linking to the resort's page there.
+/** @param {IndexResort | Resort} r */
 function fnuggCredit(r) {
   const page = r.country === "no" && r.sources.find((source) => source.startsWith("https://fnugg.no/"));
   return page
@@ -89,8 +98,9 @@ function fnuggCredit(r) {
     : "";
 }
 const regionNames = new Intl.DisplayNames([LANG], { type: "region" });
-const countryName = (code) => regionNames.of(code.toUpperCase());
+const countryName = (code) => regionNames.of(code.toUpperCase()) ?? code;
 
+/** @param {Index} index */
 function updatedText(index) {
   const time = new Date(index.generated_at);
   const formatted = time.toLocaleString(DATE_LOCALE, {

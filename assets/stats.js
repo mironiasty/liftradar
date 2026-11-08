@@ -23,7 +23,9 @@ const barsCard = el("section", { class: "card" });
 const tableBody = document.querySelector("#daily tbody");
 
 const saved = new URLSearchParams(location.search);
+/** @type {IndexResort[]} */
 let resorts = [];
+/** @type {Stats} */
 let stats;
 let country = "";
 const number = new Intl.NumberFormat(LANG, { maximumFractionDigits: 1 });
@@ -39,6 +41,7 @@ const svgEl = (tag, attributes = {}) => {
   return node;
 };
 
+/** @returns {Promise<Stats>} */
 async function loadStats() {
   const response = await fetch(STATS_URL, { cache: "no-cache" });
   if (!response.ok) throw new Error(`${STATS_URL}: HTTP ${response.status}`);
@@ -65,7 +68,7 @@ function totals(region) {
 function axis(max) {
   const rough = Math.max(max, 1) / 3;
   const power = 10 ** Math.floor(Math.log10(rough));
-  const step = Math.max(1, [1, 2, 5, 10].find((m) => m * power >= rough) * power);
+  const step = Math.max(1, ([1, 2, 5, 10].find((m) => m * power >= rough) ?? 10) * power);
   return { step, top: Math.ceil(Math.max(max, 1) / step) * step };
 }
 
@@ -191,6 +194,7 @@ function card(days, metric) {
 }
 
 // Open lifts now, largest first: per country, per region inside a country, per resort inside a region.
+/** @param {IndexResort[]} scope */
 function bars(scope, latestDay, region) {
   const day = shortDay(latestDay);
   const [title, group] = region
@@ -254,7 +258,7 @@ function render() {
     tableBody.replaceChildren();
     return;
   }
-  bars(scope, days.at(-1).day, region);
+  bars(scope, days[days.length - 1].day, region);
   table(days);
   // Drawn once every card is in place: a chart's width depends on how many share the row.
   const cards = METRICS.map((metric) => card(days, metric));
@@ -263,7 +267,7 @@ function render() {
 }
 
 function fillRegions(chosen = "") {
-  const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))].sort(
+  const names = [...new Set(resorts.flatMap((r) => (r.region && r.country === country ? [r.region] : [])))].sort(
     (a, b) => a.localeCompare(b),
   );
   regionSelect.replaceChildren(
@@ -282,7 +286,7 @@ function fillFilters() {
   const choose = (code, region) => {
     country = code;
     choices.forEach(([c], i) => {
-      countryGroup.children[i].setAttribute("aria-pressed", c === country);
+      countryGroup.children[i].setAttribute("aria-pressed", String(c === country));
     });
     fillRegions(region);
     render();
@@ -293,7 +297,7 @@ function fillFilters() {
     countryGroup.append(node);
   }
   regionSelect.addEventListener("change", render);
-  choose(countries.includes(saved.get("country")) ? saved.get("country") : "", saved.get("region") ?? "");
+  choose(countries.find((code) => code === saved.get("country")) ?? "", saved.get("region") ?? "");
 }
 
 loadIndex()

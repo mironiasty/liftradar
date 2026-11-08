@@ -92,7 +92,7 @@ async function liftsIn(ski, bounds) {
   const loaded = await Promise.all(
     tiles.map((path) =>
       fetch(`${SKI_URL}/10/${path}.json?b=${ski.build}`)
-        .then((response) => (response.ok ? response.json() : null))
+        .then((response) => (response.ok ? /** @type {Promise<SkiTile>} */ (response.json()) : null))
         .catch(() => null),
     ),
   );
@@ -155,6 +155,7 @@ function startView(corners, lifts, center) {
 }
 
 // Elevation tiles read as they are: no colour conversion, which would change the heights.
+/** @type {ImageBitmapOptions} */
 const DECODE = { colorSpaceConversion: "none", premultiplyAlpha: "none" };
 
 // The diorama: the resort's box as it is, and everything outside it a flat base `base` metres
@@ -174,13 +175,15 @@ function registerDiorama(box, base) {
     const tileNorth = latOf(y, n);
     const tileSouth = latOf(y + 1, n);
     const canvas = new OffscreenCanvas(tileSize, tileSize);
-    const context = canvas.getContext("2d", { willReadFrequently: true });
+    const context = /** @type {OffscreenCanvasRenderingContext2D} */ (
+      canvas.getContext("2d", { willReadFrequently: true })
+    );
     const outside = tileEast < west || tileWest > east || tileNorth < south || tileSouth > north;
     let pixels;
     if (outside) {
       pixels = context.createImageData(tileSize, tileSize);
     } else {
-      const url = tiles[0].replace("{z}", z).replace("{x}", x).replace("{y}", y);
+      const url = tiles[0].replace("{z}", `${z}`).replace("{x}", `${x}`).replace("{y}", `${y}`);
       const response = await fetch(url, { signal: abort.signal });
       const image = await createImageBitmap(await response.blob(), DECODE);
       context.drawImage(image, 0, 0, tileSize, tileSize);
@@ -233,10 +236,12 @@ async function groundAlong(lifts) {
     [...wanted].map(async (key) => {
       const [x, y] = key.split("/");
       try {
-        const url = tiles[0].replace("{z}", DEM_ZOOM).replace("{x}", x).replace("{y}", y);
+        const url = tiles[0].replace("{z}", `${DEM_ZOOM}`).replace("{x}", x).replace("{y}", y);
         const image = await createImageBitmap(await (await fetch(url)).blob(), DECODE);
         const canvas = new OffscreenCanvas(tileSize, tileSize);
-        const context = canvas.getContext("2d", { willReadFrequently: true });
+        const context = /** @type {OffscreenCanvasRenderingContext2D} */ (
+          canvas.getContext("2d", { willReadFrequently: true })
+        );
         context.drawImage(image, 0, 0, tileSize, tileSize);
         decoded.set(key, context.getImageData(0, 0, tileSize, tileSize).data);
       } catch {}
@@ -299,6 +304,7 @@ function path(points) {
 function buildLifts(lifts, origin, elevation) {
   const o = maplibregl.MercatorCoordinate.fromLngLat(origin, 0);
   const s = o.meterInMercatorCoordinateUnits();
+  /** @param {number[]} lonLat @param {number} alt */
   const local = ([lon, lat], alt) => {
     const m = maplibregl.MercatorCoordinate.fromLngLat([lon, lat], 0);
     return new THREE.Vector3((m.x - o.x) / s, alt, (m.y - o.y) / s);
@@ -357,6 +363,7 @@ function buildLifts(lifts, origin, elevation) {
       return a.top + (b.top - a.top) * t - (b.d - a.d) * SAG * 4 * t * (1 - t);
     };
     for (let round = 0; round < 80; round++) {
+      /** @type {number | null} */
       let worst = null;
       for (let i = 0; i < supports.length - 1 && !worst; i++) {
         const a = supports[i];
@@ -462,6 +469,7 @@ function buildLifts(lifts, origin, elevation) {
 function tunnelPortals(tunnels, origin, elevation) {
   const o = maplibregl.MercatorCoordinate.fromLngLat(origin, 0);
   const s = o.meterInMercatorCoordinateUnits();
+  /** @param {number[]} lonLat @param {number} alt */
   const local = ([lon, lat], alt) => {
     const m = maplibregl.MercatorCoordinate.fromLngLat([lon, lat], 0);
     return new THREE.Vector3((m.x - o.x) / s, alt, (m.y - o.y) / s);
@@ -481,6 +489,7 @@ function tunnelPortals(tunnels, origin, elevation) {
 }
 
 // A tunnel portal: a concrete face sunk a little into the slope, with the dark mouth.
+/** @type {any} */
 let portal = null;
 function portalModel() {
   portal ??= merge([
@@ -701,6 +710,7 @@ function pylonHead(kind) {
   const train = small ? 0.8 : Math.min(5, 1.6 + kind.pylon / 10);
   const wheels = small ? 2 : Math.max(4, Math.round(train / 0.6));
   const r = small ? 0.12 : 0.22;
+  /** @type {[THREE.BufferGeometry, number][]} */
   const parts = [
     [box(g + (small ? 0.5 : 1.6), small ? 0.2 : 0.5, small ? 0.2 : 0.5, 0, 0.3, 0), STEEL],
     [box(small ? 0.3 : 0.7, 0.25, small ? 0.3 : 0.7, 0, 0.62, 0), STEEL],
@@ -802,6 +812,7 @@ function liftLayer(map, lifts, origin, elevation, tunnels = []) {
   let transform;
   const animate = { on: true };
   const material = () => new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.65, metalness: 0.05 });
+  /** @type {import("maplibre-gl").CustomLayerInterface & { animate: { on: boolean }, place(seconds: number): void }} */
   const layer = {
     id: "lifts-3d",
     type: "custom",
@@ -952,6 +963,7 @@ function orbitControls(map) {
   target.style.touchAction = "none";
   target.addEventListener("contextmenu", (e) => e.preventDefault());
   const pointers = new Map();
+  /** @type {{ kind: "orbit", x: number, y: number } | { kind: "pan", x: number, y: number } | { kind: "touch", x: number, y: number, distance: number, angle: number, zoom: number, bearing: number } | null} */
   let gesture = null;
   // Moving keeps the ground under the pointer under it, as grabbing it would; not by screen
   // pixels, which near the horizon of a tilted view are kilometres.
@@ -1155,6 +1167,7 @@ async function show() {
     { id: "outside", type: "fill", source: "outside", paint: { "fill-color": background } },
     firstLabel(map),
   );
+  /** @type {Expression} */
   const within = ["within", { type: "Polygon", coordinates: [ring] }];
   for (const layer of map.getStyle().layers) {
     if (layer.type === "symbol" && layer.source === "openmaptiles" && layer.id !== "peaks") {
@@ -1193,16 +1206,24 @@ async function show() {
   }
   addPistes(map, ski, { highlight: KEY, names: new Map([[KEY, r.name]]) });
   // The lifts the models draw aren't also lines on the ground; nothing outside the box.
+  /** @type {Expression} */
   const ground = ["!", ["in", ["get", "type"], ["literal", AERIAL]]];
   for (const id of ["ski-runs", "ski-runs-dashed", "ski-lifts", "ski-lifts-dashed", "ski-stations", "ski-lift-names"]) {
-    const filter = map.getFilter(id);
+    // The layers' filters in ski.js are expressions.
+    const filter = /** @type {Expression | undefined} */ (map.getFilter(id));
     const lift = id.startsWith("ski-lift") || id === "ski-stations";
+    /** @type {Expression} */
     const mine = ["all", ["==", ["get", "lr"], KEY], within];
+    /** @type {Expression} */
     const extra = lift && id !== "ski-lift-names" ? ["all", ground, mine] : mine;
     map.setFilter(id, filter ? ["all", filter, extra] : extra);
   }
   // Pistes drawn as areas: "within" only takes points and lines, so by resort alone.
-  map.setFilter("ski-run-areas", ["all", map.getFilter("ski-run-areas"), ["==", ["get", "lr"], KEY]]);
+  map.setFilter("ski-run-areas", [
+    "all",
+    /** @type {Expression} */ (map.getFilter("ski-run-areas")),
+    ["==", ["get", "lr"], KEY],
+  ]);
   const layer = liftLayer(map, shown, middle, await elevation, tunnels);
   map.addLayer(layer, firstLabel(map));
   animate.addEventListener("change", () => {

@@ -21,6 +21,7 @@ async function loadSki() {
   }
 }
 
+/** @param {{ country: string, id: string }} r */
 const skiKey = (r) => `${r.country}/${r.id}`;
 
 // The resort's point on the map, [lon, lat]: in its ski area when the tiles have one.
@@ -101,6 +102,7 @@ function sharedColor(run, runs) {
 }
 
 // A tile's runs and lifts as GeoJSON features, with what the layers and tooltips need.
+/** @param {SkiTile} tile */
 function skiFeatures(tile, highlight, names) {
   for (const area of tile.areas) if (area.lr && !names.has(area.lr.id)) names.set(area.lr.id, area.lr.name);
   const runs = [];
@@ -285,7 +287,7 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
         // 404: nothing there.
         fetches.push(
           fetch(`${SKI_URL}/10/${path}.json?b=${ski.build}`)
-            .then((response) => (response.ok ? response.json() : null))
+            .then((response) => (response.ok ? /** @type {Promise<SkiTile>} */ (response.json()) : null))
             .then((tile) => tile && add(tile))
             .catch(() => loaded.delete(path)),
         );

@@ -1,6 +1,7 @@
 // sources.html: every URL the current data was built from (each report's
 // `sources`), grouped by website, with how many resorts use it.
 
+/** @param {Index} index */
 function show(index) {
   const resortsByUrl = new Map();
   for (const r of index.resorts) {

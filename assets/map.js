@@ -46,6 +46,7 @@ const METRICS = {
 const MODES = { open: t("Open"), total: t("Total") };
 const LABEL_KEY = "map-label";
 
+/** @param {IndexResort} r */
 function labelText(r, status, { metric, mode }) {
   const m = METRICS[metric];
   const openOnly = !m.value && mode === "open";
@@ -74,6 +75,7 @@ function meter(open, total, active) {
 // The report like a resort card on the phone table: name and status pill, region,
 // then the values that are there (empty ones left out); at the bottom, when it was checked, and
 // the ways on: the resort's page, and its 3D map when it has an area (in3d).
+/** @param {IndexResort} r */
 function popup(r, status, in3d) {
   const { snow, lifts, slopes, avalanche } = r;
   const active = status === "open";
@@ -100,7 +102,7 @@ function popup(r, status, in3d) {
       t("Slopes"),
       counts,
       counts,
-      ...meter(slopes.open, slopes.total, active),
+      ...meter(slopes?.open, slopes?.total, active),
       ...(km === "–" ? [] : [el("div", { class: "sub" }, km)]),
     );
   if (avalanche?.danger_level)
@@ -129,9 +131,7 @@ function popup(r, status, in3d) {
   );
   if (values.length) content.append(el("div", { class: "values" }, ...values));
   content.append(fnuggCredit(r));
-  // fetched_at: an index published before checked_at was added.
-  const checked = r.checked_at ?? r.fetched_at;
-  const time = viennaTime(checked, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
+  const time = viennaTime(r.checked_at, { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
   const actions = el(
     "div",
     { class: "actions" },
@@ -260,7 +260,7 @@ function show(map, [index, ski]) {
   };
   let choice = { metric: "lifts", mode: "open" };
   try {
-    const saved = JSON.parse(localStorage.getItem(LABEL_KEY));
+    const saved = JSON.parse(localStorage.getItem(LABEL_KEY) ?? "null");
     if (METRICS[saved?.metric] && MODES[saved?.mode]) choice = saved;
   } catch {}
   const metricButtons = Object.entries(METRICS).map(([metric, { label }]) =>

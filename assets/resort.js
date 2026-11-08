@@ -64,6 +64,7 @@ function tile(title, value, ...notes) {
 
 const cm = (v) => (present(v) ? [String(v), el("small", {}, " cm")] : "–");
 
+/** @param {Resort} r */
 function tiles(r) {
   const { snow, lifts, slopes, avalanche } = r;
   // Bars and shares only for open resorts: elsewhere open counts are 0 or not reported.
@@ -98,12 +99,12 @@ function tiles(r) {
     tile(
       t("Slopes"),
       present(slopes?.open) || present(slopes?.total)
-        ? pair(slopes.open, slopes.total)
+        ? pair(slopes?.open, slopes?.total)
         : pair(slopes?.open_km, slopes?.total_km, " km"),
       active && slopes?.total ? meter(slopes.open, slopes.total) : null,
       present(slopes?.open) || present(slopes?.total)
         ? present(slopes?.total_km)
-          ? pair(slopes.open_km, slopes.total_km, " km")
+          ? pair(slopes?.open_km, slopes?.total_km, " km")
           : null
         : null,
     ),
@@ -112,10 +113,11 @@ function tiles(r) {
 }
 
 // Why numbers are missing, from the README's "Status".
+/** @param {Resort} r */
 function statusNote(r) {
   // status_from: this run couldn't read the status, kept from that run's (for 2 days, then no report).
   const since = r.status_from && viennaTime(r.status_from);
-  if (since && new Date(r.fetched_at) - new Date(r.status_from) > 2 * 864e5)
+  if (r.status_from && Date.parse(r.fetched_at) - Date.parse(r.status_from) > 2 * 864e5)
     return t(
       "No report: the resort's report couldn't be read since {since}; only the area's size (lifts, slopes, km) is kept.",
       { since },
@@ -139,6 +141,7 @@ function statusNote(r) {
   return kept || null;
 }
 
+/** @param {Resort} r */
 function header(r) {
   const status = statusKey(r);
   const meta = [r.region, countryName(r.country)].filter(Boolean).join(" · ");
@@ -190,6 +193,7 @@ function backLink() {
   return link;
 }
 
+/** @param {Station[]} list */
 function stations(list) {
   if (!list.length) return null;
   const rows = list.map((s) =>
@@ -231,6 +235,7 @@ function stations(list) {
   );
 }
 
+/** @param {Resort} r */
 function breakdown(r) {
   const parts = [];
   if (r.lifts_by_type) {
@@ -257,6 +262,7 @@ function breakdown(r) {
   return parts.length ? el("section", { class: "card breakdown" }, ...parts) : null;
 }
 
+/** @param {DangerRating} rating */
 function elevation(rating) {
   const { lower_bound: lower, upper_bound: upper } = rating;
   const bound = (b) => (b === "treeline" ? t("the treeline") : `${b} m`);
@@ -268,6 +274,7 @@ function elevation(rating) {
   return t("all elevations");
 }
 
+/** @param {Avalanche | null | undefined} bulletin */
 function avalanche(bulletin) {
   if (!bulletin) return null;
   const ratings = bulletin.ratings.map((rating) => {
@@ -302,6 +309,7 @@ function avalanche(bulletin) {
   );
 }
 
+/** @param {Resort} r */
 function data(r) {
   const url = new URL(resortPath(r), location.href).href;
   const input = el("input", { type: "text", readonly: "", value: url, "aria-label": t("JSON URL") });
@@ -345,6 +353,7 @@ function data(r) {
 // neighbours' faded; "Map of all resorts" shows the other resorts. The wheel zooms it only
 // once it has been clicked, so the page scrolls past it. Shown once it has drawn the base map, the
 // relief and the pistes (or after a few seconds), rather than each as it comes.
+/** @param {Resort} r */
 async function resortMap(r, container) {
   container.classList.add("loading");
   const start = r.location
@@ -407,12 +416,13 @@ async function resortMap(r, container) {
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
-async function history(r, container) {
+/** @param {Resort} r */
+async function historyChart(r, container) {
   const response = await fetch(historyPath(r), { cache: "no-cache" });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  const runs = (await response.json()).runs;
+  const runs = /** @type {ResortHistory} */ (await response.json()).runs;
   const since = Date.now() - HISTORY_DAYS * 864e5;
-  const recent = runs.time.map((time, i) => ({ t: new Date(time), i })).filter((run) => run.t >= since);
+  const recent = runs.time.map((time, i) => ({ t: new Date(time), i })).filter((run) => run.t.getTime() >= since);
   const series = (key) => recent.map(({ t, i }) => ({ t, v: runs[key][i] }));
   container.replaceChildren(
     chart(t("Snow on the mountain"), "cm", "var(--accent)", series("mountain_cm")),
@@ -426,7 +436,7 @@ async function history(r, container) {
 function niceMax(v) {
   if (v <= 0) return 1;
   const power = 10 ** Math.floor(Math.log10(v));
-  return [1, 2, 5, 10].map((m) => m * power).find((m) => m >= v);
+  return [1, 2, 5, 10].map((m) => m * power).find((m) => m >= v) ?? 10 * power;
 }
 
 // A step line (values hold until the next run), redrawn when its box resizes.
@@ -545,6 +555,7 @@ async function show() {
   const response = await fetch(resortPath(wanted), { cache: "no-cache" });
   if (response.status === 404) return fail(t("There's no such resort."));
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  /** @type {Resort} */
   const r = await response.json();
   document.title = `${r.name} – LiftRadar`;
 
@@ -596,7 +607,7 @@ async function show() {
     mapBox.classList.remove("loading");
     mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
   });
-  history(r, historyBox).catch((error) =>
+  historyChart(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );
 }

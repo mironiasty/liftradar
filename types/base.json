@@ -1,0 +1,20 @@
+{
+  // Shared by the pages' type checks (pages/*.json, run by the jsconfig.json at the root).
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["es2023", "dom", "dom.iterable"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "checkJs": true,
+    "noEmit": true,
+    "composite": true,
+    "strict": true,
+    // Parameters without a type are allowed: the data's types are written where it's read.
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    // scene.js imports three.js from the CDN by its address.
+    "paths": {
+      "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.187.0/three.module.min.js": ["../node_modules/@types/three"]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  // Type check of assets/*.js (npm run check), one project per page, as the pages load the scripts: they
+  // share their top-level names. The pages load the files as they are, so this only checks; see README "Type check".
+  "files": [],
+  "references": [
+    { "path": "types/pages/table.json" },
+    { "path": "types/pages/stats.json" },
+    { "path": "types/pages/sources.json" },
+    { "path": "types/pages/map.json" },
+    { "path": "types/pages/resort.json" },
+    { "path": "types/pages/3d.json" }
+  ]
+}

@@ -31,10 +31,9 @@ const STATUS = {
 };
 const statusOf = statusKey;
 
+/** @param {IndexResort} r */
 function sortValues(r) {
-  const lifts = r.lifts || {},
-    slopes = r.slopes || {},
-    snow = r.snow;
+  const { lifts, slopes, snow } = r;
   return {
     name: fold(r.name),
     // Sorts by country, then region; also what the filters compare.
@@ -45,16 +44,17 @@ function sortValues(r) {
     mountain: snow.mountain_cm,
     valley: snow.valley_cm,
     fresh: snow.fresh_cm,
-    lifts_open: lifts.open ?? null,
-    lifts_total: lifts.total ?? null,
-    slopes_open: slopes.open ?? null,
-    slopes_total: slopes.total ?? null,
-    km_open: slopes.open_km ?? null,
-    km_total: slopes.total_km ?? null,
+    lifts_open: lifts?.open ?? null,
+    lifts_total: lifts?.total ?? null,
+    slopes_open: slopes?.open ?? null,
+    slopes_total: slopes?.total ?? null,
+    km_open: slopes?.open_km ?? null,
+    km_total: slopes?.total_km ?? null,
     avalanche: r.avalanche?.danger_level ?? null,
   };
 }
 
+/** @param {IndexResort} r */
 function nameCell(r) {
   const status = statusOf(r);
   const { label, color } = STATUS[status];
@@ -87,6 +87,7 @@ function meter(open, total, active) {
   return cell;
 }
 
+/** @param {IndexResort["slopes"]} slopes @param {boolean} active */
 function slopesCell(slopes, active) {
   const km = pair(slopes?.open_km, slopes?.total_km, " km");
   const counts = pair(slopes?.open, slopes?.total);
@@ -95,6 +96,7 @@ function slopesCell(slopes, active) {
   return cell;
 }
 
+/** @param {IndexResort["avalanche"]} bulletin */
 function avalancheCell(bulletin) {
   if (!bulletin || bulletin.danger_level === null)
     return el("td", { class: "c-value nil", "data-label": t("Avalanche danger") }, "–");
@@ -115,6 +117,7 @@ function value(label, text, content = text) {
   return el("td", { class: `num c-value${text === "–" ? " nil" : ""}`, "data-label": label }, content);
 }
 
+/** @param {IndexResort} r */
 function row(r) {
   const { mountain_cm: mountain, valley_cm: valley, fresh_cm: fresh } = r.snow;
   const active = statusOf(r) === "open";
@@ -132,7 +135,8 @@ function row(r) {
   );
   // The whole row opens the resort's page; the name is the link for keyboards and new tabs.
   tr.addEventListener("click", (event) => {
-    if (!event.target.closest("a") && !getSelection().toString()) location.href = resortPage(r);
+    if (!(/** @type {Element} */ (event.target).closest("a")) && !getSelection()?.toString())
+      location.href = resortPage(r);
   });
   return tr;
 }
@@ -187,8 +191,9 @@ function button(className, text, onClick) {
 }
 
 // The region list only offers regions of the chosen country, and is hidden until one is chosen.
+/** @param {IndexResort[]} resorts */
 function fillRegions(resorts, chosen = regionSelect.value) {
-  const names = [...new Set(resorts.filter((r) => r.region && r.country === country).map((r) => r.region))].sort(
+  const names = [...new Set(resorts.flatMap((r) => (r.region && r.country === country ? [r.region] : [])))].sort(
     (a, b) => a.localeCompare(b),
   );
   regionSelect.replaceChildren(option("", t("All regions")), ...names.map((name) => option(name, name)));
@@ -196,6 +201,7 @@ function fillRegions(resorts, chosen = regionSelect.value) {
   regionSelect.hidden = !country;
 }
 
+/** @param {IndexResort[]} resorts */
 function fillFilters(resorts) {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
     countryName(a).localeCompare(countryName(b), LANG),
@@ -233,14 +239,15 @@ function fillFilters(resorts) {
     search.value = "";
     regionSelect.value = "";
     shownStatuses.clear();
-    for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", false);
+    for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", "false");
     chooseCountry("");
   });
   search.value = saved.get("q") ?? "";
-  chooseCountry(countries.includes(saved.get("country")) ? saved.get("country") : "", saved.get("region") ?? "");
+  chooseCountry(countries.find((code) => code === saved.get("country")) ?? "", saved.get("region") ?? "");
 }
 
 // The phone layout has no column headers: a select offers the useful orders.
+/** @type {[string, boolean, string][]} */
 const SORTS = [
   ["name", true, t("Name A–Z")],
   ["lifts_open", false, t("Most open lifts")],
@@ -296,6 +303,7 @@ searchClear.addEventListener("click", () => {
 
 // The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
 // resort as a dot in its status colour; the tile links to map.html.
+/** @param {IndexResort[]} resorts */
 async function miniMap(resorts) {
   const response = await fetch("/assets/mini-map.svg");
   if (!response.ok) return;
@@ -314,9 +322,10 @@ async function miniMap(resorts) {
   const order = { open: 2, closed: 1 };
   const located = resorts.filter((r) => r.location).sort((a, b) => (order[a.status] ?? 0) - (order[b.status] ?? 0));
   for (const r of located) {
+    const { lon, lat } = /** @type {NonNullable<IndexResort["location"]>} */ (r.location);
     const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    dot.setAttribute("cx", ((r.location.lon - west) * k * scale).toFixed(1));
-    dot.setAttribute("cy", ((north - r.location.lat) * scale).toFixed(1));
+    dot.setAttribute("cx", ((lon - west) * k * scale).toFixed(1));
+    dot.setAttribute("cy", ((north - lat) * scale).toFixed(1));
     dot.setAttribute("r", "7");
     dot.style.fill = STATUS_COLORS[statusKey(r)];
     svg.append(dot);

@@ -24,6 +24,7 @@ const MAP_FONT = ["Noto Sans Regular"];
 const darkMode = () => matchMedia("(prefers-color-scheme: dark)").matches;
 
 // One elevation source for the hillshading and the contours, and one registration with MapLibre.
+/** @type {any} */
 let demSource = null;
 function dem() {
   if (!demSource) {

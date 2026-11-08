@@ -6,6 +6,7 @@
   const LANGUAGES = ["en", "de", "fr", "it", "pl"];
   const KEY = "language";
 
+  /** @type {string | null} */
   let chosen = null;
   try {
     chosen = localStorage.getItem(KEY);
@@ -16,15 +17,16 @@
     .find((code) => LANGUAGES.includes(code));
   // Without storage, this still lets the menu go to English.
   const fromThisSite = document.referrer.startsWith(`${location.origin}/`);
-  const wanted = LANGUAGES.includes(chosen) ? chosen : fromThisSite ? null : browser;
+  const wanted = chosen !== null && LANGUAGES.includes(chosen) ? chosen : fromThisSite ? null : browser;
   if (document.documentElement.lang === "en" && wanted && wanted !== "en")
     location.replace(`/${wanted}${location.pathname}${location.search}${location.hash}`);
 
   // A language in the menu is remembered, and keeps the resort, filters and order of the address.
   document.addEventListener("click", (event) => {
     const menu = document.querySelector(".lang-menu");
-    const link = event.target.closest?.("a[hreflang]");
-    if (menu && (link || !menu.contains(event.target))) menu.open = false;
+    const target = /** @type {any} */ (event.target);
+    const link = target.closest?.("a[hreflang]");
+    if (menu && (link || !menu.contains(target))) menu.open = false;
     if (!link) return;
     link.search = location.search;
     link.hash = location.hash;
