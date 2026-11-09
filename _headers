@@ -6,6 +6,8 @@
   Access-Control-Allow-Origin: *
 /schema/*
   Access-Control-Allow-Origin: *
+/openapi.json
+  Access-Control-Allow-Origin: *
 /ski/*
   Access-Control-Allow-Origin: *
 # Ski tiles change at most weekly, and the pages and apps add ?b=<build> from meta.json, which

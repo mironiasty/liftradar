@@ -1,0 +1,277 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "LiftRadar",
+    "version": "1",
+    "summary": "Status of ski resorts across Europe as static JSON: open lifts and slopes, snow depths, avalanche level.",
+    "description": "All the data is free to read as JSON, with no key and no sign-up: plain files on https://liftradar.eu, readable from any site (CORS allows any origin). The response formats are the JSON Schemas under https://liftradar.eu/schema/, which this document refers to.\n\n`null` means the source doesn't publish the value. `status` is never `null`: it's `open`, `closed` or `no_report`. Times are ISO 8601 with the Vienna offset.\n\nThe data changes twice a day, at about 08:40 and 13:40 Vienna time, so there's no point reading it more often than hourly. The files have an `ETag`: send `If-None-Match` and an unchanged file costs nothing.",
+    "contact": {
+      "name": "Miron",
+      "email": "miron@liftradar.eu",
+      "url": "https://liftradar.eu/api"
+    }
+  },
+  "externalDocs": {
+    "description": "API page, and what the numbers mean on About the data",
+    "url": "https://liftradar.eu/api"
+  },
+  "servers": [{ "url": "https://liftradar.eu" }],
+  "security": [],
+  "tags": [
+    { "name": "Resorts", "description": "Resort status, snow and avalanche level, updated twice a day." },
+    {
+      "name": "Pistes and lifts",
+      "description": "Lifts, pistes and ski areas of OpenSkiData, rebuilt weekly. Under the ODbL: data from OpenSkiData, © OpenStreetMap contributors.",
+      "externalDocs": { "url": "https://opendatacommons.org/licenses/odbl/" }
+    }
+  ],
+  "paths": {
+    "/json/index.json": {
+      "get": {
+        "tags": ["Resorts"],
+        "operationId": "listResorts",
+        "summary": "All resorts",
+        "description": "Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level and location. Each resort's `country` and `id` give the address of its full report.",
+        "parameters": [{ "$ref": "#/components/parameters/IfNoneMatch" }],
+        "responses": {
+          "200": {
+            "description": "All resorts.",
+            "headers": { "ETag": { "$ref": "#/components/headers/ETag" } },
+            "content": {
+              "application/json": { "schema": { "$ref": "https://liftradar.eu/schema/index.schema.json" } }
+            }
+          },
+          "304": { "$ref": "#/components/responses/NotModified" }
+        }
+      }
+    },
+    "/json/{country}/{id}.json": {
+      "get": {
+        "tags": ["Resorts"],
+        "operationId": "getResort",
+        "summary": "One resort",
+        "description": "One resort's full report: everything in the list, plus snow stations, lifts by type, slopes by difficulty, the avalanche bulletin and the reports it was built from. These addresses stay: when resorts merge, the old ones keep working as copies of the new one's.",
+        "parameters": [
+          { "$ref": "#/components/parameters/Country" },
+          { "$ref": "#/components/parameters/ResortId" },
+          { "$ref": "#/components/parameters/IfNoneMatch" }
+        ],
+        "responses": {
+          "200": {
+            "description": "The resort's report.",
+            "headers": { "ETag": { "$ref": "#/components/headers/ETag" } },
+            "content": {
+              "application/json": { "schema": { "$ref": "https://liftradar.eu/schema/resort.schema.json" } }
+            }
+          },
+          "304": { "$ref": "#/components/responses/NotModified" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/history/{country}/{id}.json": {
+      "get": {
+        "tags": ["Resorts"],
+        "operationId": "getResortHistory",
+        "summary": "History of one resort",
+        "description": "The key numbers of every run over the last 365 days, one list per value: `time`, `status`, open and total lifts and slopes, open km and snow depths. Data has been collected since 24 October 2026.",
+        "parameters": [
+          { "$ref": "#/components/parameters/Country" },
+          { "$ref": "#/components/parameters/ResortId" },
+          { "$ref": "#/components/parameters/IfNoneMatch" }
+        ],
+        "responses": {
+          "200": {
+            "description": "The resort's history.",
+            "headers": { "ETag": { "$ref": "#/components/headers/ETag" } },
+            "content": {
+              "application/json": { "schema": { "$ref": "https://liftradar.eu/schema/history.schema.json" } }
+            }
+          },
+          "304": { "$ref": "#/components/responses/NotModified" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/json/stats.json": {
+      "get": {
+        "tags": ["Resorts"],
+        "operationId": "getStats",
+        "summary": "Stats",
+        "description": "Daily totals per country and region over the last 365 days: resorts tracked and open, and their open lifts, slopes and km.",
+        "parameters": [{ "$ref": "#/components/parameters/IfNoneMatch" }],
+        "responses": {
+          "200": {
+            "description": "Daily totals.",
+            "headers": { "ETag": { "$ref": "#/components/headers/ETag" } },
+            "content": {
+              "application/json": { "schema": { "$ref": "https://liftradar.eu/schema/stats.schema.json" } }
+            }
+          },
+          "304": { "$ref": "#/components/responses/NotModified" }
+        }
+      }
+    },
+    "/ski/v1/10/{x}/{y}.json": {
+      "get": {
+        "tags": ["Pistes and lifts"],
+        "operationId": "getSkiTile",
+        "summary": "Map tile of lifts, pistes and ski areas",
+        "description": "The lifts, pistes and ski areas of OpenSkiData in one XYZ map tile at zoom 10, each with its resort here when it has one. Only tiles with ski data exist. Pages and apps may add `?b=<build>` from `meta.json`, as tiles are cached for a week.",
+        "parameters": [
+          {
+            "name": "x",
+            "in": "path",
+            "required": true,
+            "description": "Tile column at zoom 10.",
+            "schema": { "type": "integer", "minimum": 0, "maximum": 1023 },
+            "example": 545
+          },
+          {
+            "name": "y",
+            "in": "path",
+            "required": true,
+            "description": "Tile row at zoom 10.",
+            "schema": { "type": "integer", "minimum": 0, "maximum": 1023 },
+            "example": 358
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tile.",
+            "content": {
+              "application/json": { "schema": { "$ref": "https://liftradar.eu/ski/v1/tile.schema.json" } }
+            }
+          },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/ski/v1/resorts.geojson": {
+      "get": {
+        "tags": ["Pistes and lifts"],
+        "operationId": "getSkiResortShapes",
+        "summary": "Resort outlines",
+        "description": "Each resort's outline and point on the map, as a GeoJSON FeatureCollection. A feature's `properties.id` is `<country>/<id>`, the resort's address in the other files.",
+        "responses": {
+          "200": {
+            "description": "The resort outlines.",
+            "content": {
+              "application/geo+json": { "schema": { "$ref": "#/components/schemas/ResortShapes" } }
+            }
+          }
+        }
+      }
+    },
+    "/ski/v1/meta.json": {
+      "get": {
+        "tags": ["Pistes and lifts"],
+        "operationId": "getSkiMeta",
+        "summary": "Build and counts of the map data",
+        "responses": {
+          "200": {
+            "description": "The current build.",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/SkiMeta" } }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "Country": {
+        "name": "country",
+        "in": "path",
+        "required": true,
+        "description": "ISO country code in lower case, as in each resort's `country` in `json/index.json`.",
+        "schema": { "type": "string", "pattern": "^[a-z]{2}$" },
+        "example": "at"
+      },
+      "ResortId": {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "description": "The resort's `id` in `json/index.json`, also in the address of its page on liftradar.eu.",
+        "schema": { "type": "string" },
+        "example": "hintertux"
+      },
+      "IfNoneMatch": {
+        "name": "If-None-Match",
+        "in": "header",
+        "required": false,
+        "description": "The `ETag` of the copy you have: an unchanged file gets a 304 with no body.",
+        "schema": { "type": "string" }
+      }
+    },
+    "headers": {
+      "ETag": {
+        "description": "Version of the file, for `If-None-Match`.",
+        "schema": { "type": "string" }
+      }
+    },
+    "responses": {
+      "NotModified": { "description": "The file hasn't changed since the `ETag` sent in `If-None-Match`." },
+      "NotFound": {
+        "description": "No such file (an HTML page).",
+        "content": { "text/html": { "schema": { "type": "string" } } }
+      }
+    },
+    "schemas": {
+      "ResortShapes": {
+        "type": "object",
+        "required": ["type", "features"],
+        "properties": {
+          "type": { "const": "FeatureCollection" },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "properties", "geometry"],
+              "properties": {
+                "type": { "const": "Feature" },
+                "properties": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string", "description": "`<country>/<id>`.", "examples": ["at/hintertux"] },
+                    "point": {
+                      "type": "array",
+                      "description": "`[lon, lat]` of the resort's point.",
+                      "items": { "type": "number" },
+                      "minItems": 2,
+                      "maxItems": 2
+                    },
+                    "lifts": { "type": "integer" },
+                    "runs": { "type": "integer" },
+                    "km": { "type": "number" },
+                    "areas": { "type": "array", "items": { "type": "string" } }
+                  }
+                },
+                "geometry": {
+                  "type": "object",
+                  "description": "A GeoJSON geometry (RFC 7946).",
+                  "required": ["type"],
+                  "properties": { "type": { "type": "string" } }
+                }
+              }
+            }
+          }
+        }
+      },
+      "SkiMeta": {
+        "type": "object",
+        "properties": {
+          "v": { "type": "integer", "description": "Format version of the tiles." },
+          "build": { "type": "string", "description": "Build id, for `?b=` on tile addresses." },
+          "built_at": { "type": "string", "format": "date-time" },
+          "data_time": { "type": "string", "format": "date-time", "description": "Time of the OpenSkiData export." },
+          "zoom": { "type": "integer" },
+          "tiles": { "type": "string", "description": "Tile address template, relative to `ski/v1/`.", "examples": ["10/{x}/{y}.json"] },
+          "resorts": { "type": "string", "description": "Address of the resort outlines, relative to `ski/v1/`." },
+          "counts": { "type": "object", "additionalProperties": { "type": "integer" } }
+        }
+      }
+    }
+  }
+}

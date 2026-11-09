@@ -28,7 +28,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
     (`st-anton-am-arlberg`, `lech-zuers`, `warth-schroecken`) are gone.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
-  its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers), `sources.html` (data sources, incl. every URL in the
+  its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
   current data) and `about.html` (what the values mean, and their caveats), plain
   static pages that load the JSON in the browser. No build step locally.
   The ski-area outlines, the resorts' points and the pistes and lifts on the map come from the ski
@@ -42,7 +42,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
 (static assets only, `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
-`history/` and `schema/`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
+`history/`, `schema/` and `openapi.json`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
 
 ## About the data
 
