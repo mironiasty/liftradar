@@ -74,6 +74,7 @@
     <li><a href="#history" data-i18n>History</a></li>
     <li><a href="#stats" data-i18n>Stats</a></li>
     <li><a href="#ski-map" data-i18n>Pistes and lifts</a></li>
+    <li><a href="#mcp">MCP</a></li>
     <li><a href="#reading" data-i18n>Reading the values</a></li>
     <li><a href="#polling" data-i18n>Polling</a></li>
   </ul>
@@ -114,6 +115,14 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
     has one (<a href="/ski/v1/tile.schema.json">schema</a>), and each resort's outline and point on the map. The build and
     counts are in <code>meta.json</code>. Rebuilt weekly, under the
     <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>: data from OpenSkiData, © OpenStreetMap contributors.</p>
+
+  <h2 id="mcp">MCP</h2>
+  <pre><code>https://liftradar.eu/mcp</code></pre>
+  <p data-i18n>For AI assistants, the same data is an <a href="https://modelcontextprotocol.io">MCP</a> server, with no key:
+    add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find
+    resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and
+    the daily stats.</p>
+  <pre><code>claude mcp add --transport http liftradar https://liftradar.eu/mcp</code></pre>
 
   <h2 id="reading" data-i18n>Reading the values</h2>
   <ul>
