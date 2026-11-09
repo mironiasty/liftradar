@@ -4,10 +4,9 @@
     "title": "LiftRadar",
     "version": "1",
     "summary": "Status of ski resorts across Europe as static JSON: open lifts and slopes, snow depths, avalanche level.",
-    "description": "All the data is free to read as JSON, with no key and no sign-up: plain files on https://liftradar.eu, readable from any site (CORS allows any origin). The response formats are the JSON Schemas under https://liftradar.eu/schema/, which this document refers to.\n\n`null` means the source doesn't publish the value. `status` is never `null`: it's `open`, `closed` or `no_report`. Times are ISO 8601 with the Vienna offset.\n\nThe data changes twice a day, at about 08:40 and 13:40 Vienna time, so there's no point reading it more often than hourly. The files have an `ETag`: send `If-None-Match` and an unchanged file costs nothing.",
+    "description": "All the data is free to read as JSON, with no key and no sign-up: plain files on https://liftradar.eu, readable from any site (CORS allows any origin). The response formats are the JSON Schemas under https://liftradar.eu/schema/, which this document refers to.\n\n`null` means the source doesn't publish the value. `status` is never `null`: it's `open`, `closed` or `no_report`. Times are ISO 8601 with the Vienna offset.\n\nThe data changes twice a day, at about 08:40 and 13:40 Vienna time, so there's no point reading it more often than hourly. The files have an `ETag`: send `If-None-Match` and an unchanged file costs nothing.\n\nQuestions, or a use we should know about: miron [at] liftradar.eu.",
     "contact": {
       "name": "Miron",
-      "email": "miron@liftradar.eu",
       "url": "https://liftradar.eu/api"
     }
   },
