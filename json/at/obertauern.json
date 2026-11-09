@@ -9,8 +9,8 @@
     "lon": 13.557
   },
   "website": "https://www.obertauern.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-09T08:40:36.907114+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-09T13:40:42.037597+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,17 +25,66 @@
     "total": 26
   },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 86,
+    "open_km": 0.0,
     "total_km": 100
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-21T02:38:00+02:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 19
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 41,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 34,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-09T10:54:11+01:00",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/de/schneebericht/",
+    "https://winter.intermaps.com/obertauern/data?lang=en",
     "https://info.obertauern.com/skigebiet"
   ],
   "errors": []

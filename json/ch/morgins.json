@@ -9,13 +9,13 @@
     "lon": 6.8581
   },
   "website": "https://www.regiondentsdumidi.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-09T08:40:32.713357+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-09T13:40:37.391337+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 1,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -34,9 +34,9 @@
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 31,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 46
   },
   "lifts_by_type": {
@@ -59,21 +59,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 18,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },

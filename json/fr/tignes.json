@@ -9,23 +9,40 @@
     "lon": 6.9076
   },
   "website": "https://www.tignes.net",
-  "status": "no_report",
-  "fetched_at": "2026-11-09T08:40:32.715314+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-09T13:40:37.394656+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 20,
+    "valley_cm": 0,
     "fresh_cm": null,
-    "last_snowfall": null,
-    "condition": null,
-    "stations": []
+    "last_snowfall": "2026-04-14",
+    "condition": "De printemps",
+    "stations": [
+      {
+        "name": "Grande Motte",
+        "elevation_m": 3032,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "De printemps"
+      },
+      {
+        "name": "Tignes Lac",
+        "elevation_m": 2100,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "De printemps"
+      }
+    ]
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 37
   },
   "slopes": {
-    "open": null,
+    "open": 1,
     "total": 83,
     "open_km": null,
     "total_km": 150
@@ -40,7 +57,7 @@
       "total": 5
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 20
     },
     "drag_lift": {
@@ -48,7 +65,7 @@
       "total": 7
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
@@ -58,21 +75,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 44,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 1,
       "total": 21,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 18,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 19
     }
   },
