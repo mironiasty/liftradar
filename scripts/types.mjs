@@ -23,20 +23,9 @@ if (check && !existsSync("schema/index.schema.json")) {
   console.log("types: no schema/ here, so the generated types are not compared with it");
   process.exit(0);
 }
-// The fetcher writes every field of its models, those with a default too (pydantic's model_dump), while its
-// schemas leave those out of "required": in the types they're always there, null where they have no value.
-function allRequired(node) {
-  if (Array.isArray(node)) node.forEach(allRequired);
-  else if (node && typeof node === "object") {
-    if (node.properties) node.required = Object.keys(node.properties);
-    Object.values(node).forEach(allRequired);
-  }
-}
-
 let stale = 0;
 for (const [schema, out] of Object.entries(SCHEMAS)) {
   const json = JSON.parse(readFileSync(schema, "utf8"));
-  if (schema.startsWith("schema/")) allRequired(json);
   const types = await compile(json, json.title, {
     cwd: dirname(schema),
     bannerComment: BANNER.replace("{schema}", schema),

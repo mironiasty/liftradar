@@ -83,7 +83,7 @@ slopes_by_difficulty: SlopesByDifficulty
 lifts_updated_at: LiftsUpdatedAt
 avalanche: (Avalanche | null)
 sources: Sources
-errors: Errors
+errors?: Errors
 }
 /**
  * A point in the ski area (or its main village), for maps.
