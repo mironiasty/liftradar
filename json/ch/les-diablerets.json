@@ -9,13 +9,13 @@
     "lon": 7.1515
   },
   "website": "https://www.tvgd.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-08T13:40:36.911447+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-09T08:40:32.713244+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 4,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Pierres Fendues (SLF)",
         "elevation_m": 2218,
         "depth_cm": 4,
-        "fresh_cm": 0,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       }
@@ -34,9 +34,9 @@
     "total": 8
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 11,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 25
   },
   "lifts_by_type": {
@@ -59,21 +59,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 17
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 8
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 1
     }
   },

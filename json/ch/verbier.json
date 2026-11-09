@@ -10,12 +10,12 @@
   },
   "website": "https://www.verbier.ch",
   "status": "open",
-  "fetched_at": "2026-11-08T13:40:36.912331+01:00",
+  "fetched_at": "2026-11-09T08:40:32.713941+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 20,
     "valley_cm": 10,
-    "fresh_cm": 6,
+    "fresh_cm": null,
     "last_snowfall": "2026-11-07",
     "condition": "mainly: spring snow / partially: wet",
     "stations": [
@@ -30,8 +30,8 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 17,
-        "fresh_cm": 6,
+        "depth_cm": 19,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -46,7 +46,7 @@
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 1,
     "total": 17
   },
   "slopes": {
@@ -65,7 +65,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 6
     },
     "drag_lift": {
@@ -73,11 +73,11 @@
       "total": 3
     },
     "gondola": {
-      "open": 2,
+      "open": 1,
       "total": 4
     },
     "other": {
-      "open": 1,
+      "open": 0,
       "total": 1
     }
   },
@@ -107,7 +107,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-08T13:41:00+01:00",
+  "lifts_updated_at": "2026-11-09T08:41:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",

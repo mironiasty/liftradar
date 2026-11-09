@@ -10,7 +10,7 @@
   },
   "website": "https://www.les2alpes.com",
   "status": "no_report",
-  "fetched_at": "2026-11-08T13:40:36.914384+01:00",
+  "fetched_at": "2026-11-09T08:40:32.715700+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -90,27 +90,45 @@
   "avalanche": {
     "region_id": "FR-15",
     "region": "Oisans",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
+        "upper_bound": 3000,
+        "period": "later"
+      },
+      {
+        "level": "low",
+        "lower_bound": 3000,
         "upper_bound": null,
-        "period": "all_day"
+        "period": "earlier"
+      },
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 3000,
+        "period": "later"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 3000,
+        "upper_bound": null,
+        "period": "later"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-07T15:00:00+01:00",
-    "valid_from": "2026-11-07T15:00:00+01:00",
-    "valid_until": "2026-11-08T18:00:00+01:00"
+    "published_at": "2026-11-08T16:00:00+01:00",
+    "valid_from": "2026-11-08T16:00:00+01:00",
+    "valid_until": "2026-11-09T18:00:00+01:00"
   },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/deux-alpes",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-08/2026-11-08-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-09/2026-11-09-FR.json"
   ],
   "errors": []
 }
