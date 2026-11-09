@@ -51,13 +51,17 @@ jobs:
       - name: Generate the translated pages
         run: node site/scripts/translate.mjs _site
 
+      # The MCP server's packages, bundled into the Worker by wrangler at the deploy (README "MCP"),
+      # and esbuild for the next step.
+      - name: Install packages
+        run: npm ci --prefix site
+
       # Scripts keep their top-level names (esbuild leaves them alone when not bundling):
       # the pages share them from common.js. A failure here only costs a few kilobytes,
       # so it doesn't hold back new data: the unminified files stay valid.
       - name: Minify scripts and styles
         continue-on-error: true
         run: |
-          npm ci --prefix site
           site/node_modules/.bin/esbuild _site/assets/*.js _site/assets/*.css --minify --outdir=_site/assets --allow-overwrite
 
       # The same data without its indentation; only the deployed copy, the data branch

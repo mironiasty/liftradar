@@ -20,6 +20,8 @@ README documents every source in detail.
 - The data's fields are type checked (README "Type check"): when a page reads a new part of the data, give
   it its type in JSDoc (`/** @param {Resort} r */`) rather than leaving it `any`; after the fetcher's schema
   changes, `npm run types`.
+- `worker/mcp.js` is the MCP server at `/mcp` (README "MCP"), the Worker's only script: its tools read the same
+  files, so after a fetcher change check them too, and keep `api.html` ("MCP") in step with them.
 - Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
-  these checks and for minifying `assets/*.js` and `*.css` on deploy (`pages.yml`): the pages load no npm
-  package and work as they are, with no build step locally.
+  these checks, for minifying `assets/*.js` and `*.css` on deploy (`pages.yml`), and for the MCP server's packages,
+  which wrangler bundles: the pages load no npm package and work as they are, with no build step locally.

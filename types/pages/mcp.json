@@ -1,0 +1,5 @@
+{
+  // The MCP server (worker/mcp.js), a module run by the Worker rather than a page: its own imports, no globals.
+  "extends": "../base.json",
+  "files": ["../../worker/mcp.js"]
+}

@@ -39,7 +39,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
 `.github/workflows/pages.yml` combines both, generates the translated pages (see [Translations](#translations)), minifies `assets/*.js` and `*.css` with esbuild, compacts `json/index.json` with jq, and deploys to the Cloudflare Worker `liftradar`
-(static assets only, `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
+(the files, plus the MCP server at `/mcp`, see [MCP](#mcp); `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
 `history/`, `schema/` and `openapi.json`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
@@ -190,6 +190,32 @@ translation always stay there.
 Another language needs its own `i18n/<language>.json`, an entry in `LANGUAGES` in `assets/lang.js`, a link in
 the language menu of each page's header, its `hreflang` alternates, and a line in `.gitignore`; `<html lang>` then
 sets the dates, numbers and country names.
+
+## MCP
+
+`https://liftradar.eu/mcp` is an [MCP](https://modelcontextprotocol.io) server for AI assistants, with no key
+(Streamable HTTP, stateless): `worker/mcp.js`, the Worker's only script. `wrangler.jsonc` runs it for `/mcp`
+alone (`assets.run_worker_first`); every other address is served from the files as before, without it. Its
+tools read the same files through the assets binding (`env.ASSETS`), so they always match the site:
+
+- `search_resorts`: `json/index.json`, filtered by country, status, name, snow, open lifts or distance from a
+  point, and sorted.
+- `get_resort`: `json/<country>/<id>.json`.
+- `get_resort_history`: `history/<country>/<id>.json`, as rows, for the last days.
+- `get_stats`: `json/stats.json`, for a country or region and the last days.
+
+Unlike the pages, it uses npm packages (`dependencies` in `package.json`: the MCP SDK, zod, and
+`@cfworker/json-schema`, as Workers can't run the SDK's default validator), which wrangler bundles at the deploy.
+It reads the data with the same types as the pages, so `npm run check` fails when it reads a field that's gone.
+After a fetcher change, check its tools too; `api.html` documents it ("MCP").
+
+To try it locally, with the data linked as in [Running locally](#running-locally):
+
+```sh
+mkdir -p /tmp/lr-site && cp -R api.html 404.html openapi.json json history /tmp/lr-site/
+npx wrangler dev --assets /tmp/lr-site
+npx @modelcontextprotocol/inspector   # then connect to http://localhost:8787/mcp (Streamable HTTP)
+```
 
 ## Ski tiles
 

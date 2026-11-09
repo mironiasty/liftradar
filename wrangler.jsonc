@@ -1,15 +1,21 @@
-// Cloudflare: an assets-only Worker (no script) serving the site combined with
-// the data, as .github/workflows/pages.yml builds it in _site/ (passed there
-// with --assets, as the directory is relative to this file).
+// Cloudflare: a Worker serving the site combined with the data, as
+// .github/workflows/pages.yml builds it in _site/ (passed there with --assets,
+// as the directory is relative to this file). Its script, worker/mcp.js, only
+// answers /mcp (the MCP server, README "MCP"): every other address is a file.
 {
   "name": "liftradar",
   "compatibility_date": "2026-10-01",
+  "main": "worker/mcp.js",
   // The zone is proxied by Cloudflare: this route answers every request to
   // liftradar.eu (its DNS records still point at GitHub Pages, now unused).
   "routes": [{ "pattern": "liftradar.eu/*", "zone_name": "liftradar.eu" }],
   "workers_dev": true,  // liftradar.liftradar.workers.dev, to test a version
   "assets": {
     "directory": "./_site",
+    // The script reads the data files through this binding.
+    "binding": "ASSETS",
+    // Only /mcp runs the script; the files are served as before, without it.
+    "run_worker_first": ["/mcp"],
     // 404.html for missing files, rather than index.html with status 200.
     "not_found_handling": "404-page"
   }
