@@ -10,20 +10,28 @@
   },
   "website": "https://www.val-muestair.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-09T13:40:37.392281+01:00",
+  "fetched_at": "2026-11-10T08:40:34.707771+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 3,
-    "valley_cm": null,
-    "fresh_cm": 6,
+    "mountain_cm": 2,
+    "valley_cm": 0,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Murtaröl (SLF)",
         "elevation_m": 2359,
-        "depth_cm": 3,
-        "fresh_cm": 6,
+        "depth_cm": 2,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Sta.Maria (SLF)",
+        "elevation_m": 1387,
+        "depth_cm": 0,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }

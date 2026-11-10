@@ -10,46 +10,46 @@
   },
   "website": "https://www.soelden.com",
   "status": "open",
-  "fetched_at": "2026-11-09T13:40:37.383451+01:00",
+  "fetched_at": "2026-11-10T08:40:34.703373+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 49,
+    "mountain_cm": 54,
     "valley_cm": 0,
-    "fresh_cm": 0,
+    "fresh_cm": 5,
     "last_snowfall": "2026-10-25",
-    "condition": "Powder - grippy",
+    "condition": "Fresh snow",
     "stations": [
       {
         "name": "Sölden",
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": 6.9,
+        "temperature_c": 5.9,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
-        "depth_cm": 4,
+        "depth_cm": 5,
         "fresh_cm": 0,
-        "temperature_c": 2.4,
+        "temperature_c": 2.2,
         "condition": null
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 5,
-        "fresh_cm": 0,
-        "temperature_c": -1.4,
-        "condition": "Artificial snow"
+        "depth_cm": 7,
+        "fresh_cm": 3,
+        "temperature_c": 0.9,
+        "condition": "Fresh snow"
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
-        "depth_cm": 49,
-        "fresh_cm": 0,
-        "temperature_c": -2.6,
-        "condition": "Powder - grippy"
+        "depth_cm": 54,
+        "fresh_cm": 5,
+        "temperature_c": -0.3,
+        "condition": "Fresh snow"
       }
     ]
   },
@@ -111,7 +111,7 @@
       "total_km": 23
     }
   },
-  "lifts_updated_at": "2026-11-09T13:35:33+01:00",
+  "lifts_updated_at": "2026-11-10T08:33:30+01:00",
   "avalanche": null,
   "sources": [
     "https://www.soelden.com/en/live-information/snow-report",

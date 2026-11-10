@@ -9,12 +9,12 @@
     "lon": 25.1797
   },
   "website": "https://talmaski.fi",
-  "status": "no_report",
-  "fetched_at": "2026-11-09T13:40:37.396650+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-10T08:40:34.709799+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 0,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -33,7 +33,12 @@
     "open": 0,
     "total": 9
   },
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": null
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,

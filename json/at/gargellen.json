@@ -9,8 +9,8 @@
     "lon": 9.9187
   },
   "website": "https://www.montafon.at/gargellen/de",
-  "status": "closed",
-  "fetched_at": "2026-11-09T13:40:37.385175+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-10T08:40:34.704285+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,13 +21,13 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 8
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 23,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 30
   },
   "lifts_by_type": {
@@ -36,7 +36,7 @@
       "total": 3
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "gondola": {
@@ -54,13 +54,13 @@
     "easy": {
       "open": 0,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": 0.2,
       "total_km": 7
     },
     "difficult": {
@@ -70,7 +70,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-05T11:25:38+01:00",
+  "lifts_updated_at": "2026-11-10T08:40:40+01:00",
   "avalanche": null,
   "sources": [
     "https://winter.intermaps.com/gargellen/data?lang=en",
