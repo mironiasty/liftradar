@@ -1,0 +1,207 @@
+{
+  "time": "2026-11-11T08:42:21+01:00",
+  "resorts": [
+    {
+      "id": "koralpe",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:37:10.921386+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Koralpe"
+      ]
+    },
+    {
+      "id": "kronplatz",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "alta-badia",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "val-gardena",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "seiser-alm",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "carezza",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "3-zinnen-dolomiten",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "obereggen",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "plose",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "gitschberg-jochtal",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "klausberg",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:35:31.427510+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "speikboden",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-10T13:40:39.329255+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "schnalstal",
+      "country": "it",
+      "status": "open",
+      "status_from": "2026-11-10T08:40:34.708135+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "sulden",
+      "country": "it",
+      "status": "open",
+      "status_from": null,
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "schoeneben-haideralm",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-10T08:40:34.708149+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "meran-2000",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-09T13:40:37.393059+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "ratschings-jaufen",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-10T13:40:39.329292+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "ladurns",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-10T13:40:39.329299+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "pfelders",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:35:31.427586+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "schwemmalm",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:35:31.427595+01:00",
+      "errors": [
+        "suedtirol: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ConnectError: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1000)"
+      ]
+    },
+    {
+      "id": "laajis",
+      "country": "fi",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no slope or lift table (layout changed?)"
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only"
+  ]
+}

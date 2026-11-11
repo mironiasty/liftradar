@@ -10,32 +10,15 @@
   },
   "website": "https://www.dreizinnen.com",
   "status": "closed",
-  "fetched_at": "2026-11-10T13:40:39.329013+01:00",
+  "fetched_at": "2026-11-11T08:40:35.919431+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-07",
+    "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Mountain station",
-        "elevation_m": null,
-        "depth_cm": 13,
-        "fresh_cm": 10,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Valley station",
-        "elevation_m": null,
-        "depth_cm": 5,
-        "fresh_cm": 5,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
     "open": 0,
@@ -90,8 +73,9 @@
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
     "https://www.dolomitisuperski.com",
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://www.dreizinnen.com/en/skiing/skiing/ski-resort"
   ],
-  "errors": []
+  "errors": [
+    "snow: ReadTimeout: "
+  ]
 }

@@ -10,20 +10,20 @@
   },
   "website": "https://www.belalp.ch",
   "status": "closed",
-  "fetched_at": "2026-11-10T13:40:39.327327+01:00",
+  "fetched_at": "2026-11-11T08:40:35.918161+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-10",
     "condition": null,
     "stations": [
       {
-        "name": "Belalp (SLF)",
+        "name": "Belalp",
         "elevation_m": 2554,
-        "depth_cm": 4,
-        "fresh_cm": 9,
+        "depth_cm": 5,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -93,13 +93,10 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-10T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-11T08:40:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=54&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=54&saison=1&ref=contentBox"
   ],
   "errors": []
 }

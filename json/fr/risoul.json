@@ -10,7 +10,7 @@
   },
   "website": "https://www.risoul.com",
   "status": "no_report",
-  "fetched_at": "2026-11-10T13:40:39.330781+01:00",
+  "fetched_at": "2026-11-11T08:40:35.921121+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -71,37 +71,13 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-20",
-    "region": "Embrunais-Parpaillon",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": 2800,
-        "period": "all_day"
-      },
-      {
-        "level": "moderate",
-        "lower_bound": 2800,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-09T16:00:00+01:00",
-    "valid_from": "2026-11-09T16:00:00+01:00",
-    "valid_until": "2026-11-10T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=risoul&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-foret-blanche",
     "https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/dynamicPoiData?lang=fr",
-    "https://www.skiinfo.fr/alpes-du-sud/risoul/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-10/2026-11-10-FR.json"
+    "https://www.skiinfo.fr/alpes-du-sud/risoul/station-de-ski"
   ],
   "errors": []
 }

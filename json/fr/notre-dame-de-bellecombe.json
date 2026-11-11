@@ -10,7 +10,7 @@
   },
   "website": "https://www.notredamedebellecombe.com",
   "status": "no_report",
-  "fetched_at": "2026-11-10T13:40:39.330345+01:00",
+  "fetched_at": "2026-11-11T08:40:35.920682+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -61,30 +61,12 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-05",
-    "region": "Beaufortain",
-    "danger_level": 1,
-    "danger": "low",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-09T16:00:00+01:00",
-    "valid_from": "2026-11-09T16:00:00+01:00",
-    "valid_until": "2026-11-10T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-d-arly&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-diamant",
-    "https://public.lumiplay.link/interactive-map/v1/map/09110215-8a54-42cd-991a-1c534bfb5115/dynamicPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/09110215-8a54-42cd-991a-1c534bfb5115/staticPoiData?lang=fr",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-10/2026-11-10-FR.json"
+    "https://public.lumiplay.link/interactive-map/v1/map/dc54a8db-5da0-4ae7-a155-4c43dbd2a3fa/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/dc54a8db-5da0-4ae7-a155-4c43dbd2a3fa/staticPoiData?lang=fr"
   ],
   "errors": []
 }

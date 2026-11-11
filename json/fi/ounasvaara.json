@@ -9,12 +9,12 @@
     "lon": 25.8021
   },
   "website": "https://ounasvaara.fi",
-  "status": "closed",
-  "fetched_at": "2026-11-10T13:40:39.331362+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-11T08:40:35.921678+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 6,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -22,7 +22,7 @@
       {
         "name": "Rovaniemi lentoasema (FMI)",
         "elevation_m": null,
-        "depth_cm": 7,
+        "depth_cm": 6,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -30,33 +30,33 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 3,
     "total": 5
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 11,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": null
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },

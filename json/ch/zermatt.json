@@ -10,11 +10,11 @@
   },
   "website": "https://www.matterhornparadise.ch",
   "status": "open",
-  "fetched_at": "2026-11-10T13:40:39.328836+01:00",
+  "fetched_at": "2026-11-11T08:40:35.919295+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 8,
-    "valley_cm": 0,
+    "mountain_cm": 7,
+    "valley_cm": null,
     "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
@@ -22,15 +22,7 @@
       {
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
-        "depth_cm": 8,
-        "fresh_cm": 0,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Zermatt (SLF)",
-        "elevation_m": 1600,
-        "depth_cm": 0,
+        "depth_cm": 7,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -38,11 +30,11 @@
     ]
   },
   "lifts": {
-    "open": 7,
+    "open": 5,
     "total": 36
   },
   "slopes": {
-    "open": 9,
+    "open": 2,
     "total": 84,
     "open_km": null,
     "total_km": 200
@@ -57,7 +49,7 @@
       "total": 10
     },
     "drag_lift": {
-      "open": 2,
+      "open": 0,
       "total": 5
     },
     "funicular": {
@@ -75,15 +67,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 2,
+      "open": 0,
       "total": 12,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 7,
+      "open": 2,
       "total": 48,
-      "open_km": 14.8,
+      "open_km": 3.9,
       "total_km": 99
     },
     "difficult": {
@@ -99,12 +91,12 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-10T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-11T08:40:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",

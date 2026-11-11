@@ -10,7 +10,7 @@
   },
   "website": "https://www.obereggen.com",
   "status": "closed",
-  "fetched_at": "2026-11-10T13:40:39.329062+01:00",
+  "fetched_at": "2026-11-11T08:40:35.919477+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -64,5 +64,7 @@
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
     "https://www.dolomitisuperski.com"
   ],
-  "errors": []
+  "errors": [
+    "snow: ReadTimeout: "
+  ]
 }

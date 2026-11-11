@@ -10,7 +10,7 @@
   },
   "website": "https://www.queyras-montagne.com",
   "status": "no_report",
-  "fetched_at": "2026-11-10T13:40:39.330812+01:00",
+  "fetched_at": "2026-11-11T08:40:35.921157+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,33 +25,9 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-17",
-    "region": "Queyras",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": 2800,
-        "period": "all_day"
-      },
-      {
-        "level": "moderate",
-        "lower_bound": 2800,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-09T16:00:00+01:00",
-    "valid_from": "2026-11-09T16:00:00+01:00",
-    "valid_until": "2026-11-10T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-10/2026-11-10-FR.json"
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false"
   ],
   "errors": []
 }

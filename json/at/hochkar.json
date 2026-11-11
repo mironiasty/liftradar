@@ -9,8 +9,8 @@
     "lon": 14.9183
   },
   "website": "https://www.hochkar.com",
-  "status": "closed",
-  "fetched_at": "2026-11-10T13:40:39.323857+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-11T08:40:35.915039+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,56 +20,12 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 8
-  },
-  "slopes": {
-    "open": 0,
-    "total": 27,
-    "open_km": 0.0,
-    "total_km": 20
-  },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 6
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 2
-    }
-  },
-  "slopes_by_difficulty": {
-    "ski_route": {
-      "open": 0,
-      "total": 2,
-      "open_km": 0.0,
-      "total_km": 1
-    },
-    "easy": {
-      "open": 0,
-      "total": 10,
-      "open_km": 0.0,
-      "total_km": 7
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 12,
-      "open_km": 0.0,
-      "total_km": 10
-    },
-    "difficult": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": 3
-    }
-  },
-  "lifts_updated_at": "2026-10-28T07:07:30+01:00",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://winter.intermaps.com/hochkar/data?lang=en"
-  ],
+  "sources": [],
   "errors": []
 }
