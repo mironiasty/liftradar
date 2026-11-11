@@ -1,0 +1,54 @@
+{
+  "time": "2026-11-11T16:24:29+01:00",
+  "resorts": [
+    {
+      "id": "koralpe",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:37:10.921386+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Koralpe"
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://ski.salla.fi/aukioloajat-talvi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "laajis",
+      "country": "fi",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no slope or lift table (layout changed?)"
+      ]
+    },
+    {
+      "id": "golte",
+      "country": "si",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.golte.si/zima/smucanje/proge/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "soriska-planina",
+      "country": "si",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.soriska-planina.si/api/snowphone?type=info'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only"
+  ]
+}
