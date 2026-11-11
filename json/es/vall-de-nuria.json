@@ -10,7 +10,7 @@
   },
   "website": "https://pirineu365.cat/valldenuria/inici/",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.924194+01:00",
+  "fetched_at": "2026-11-11T11:31:21.757520+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -59,5 +59,23 @@
     "https://pirineu365.cat/es/valldenuria/estacion/plano-pistas-ficha-tecnica/",
     "https://static.avalanche.report/eaws_bulletins/2026-11-11/2026-11-11-ES-CT.json"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://api.pirineu365.cat/api/v1/web/stations/16/report?days_offset=0&format=json&language=es",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-11/2026-11-11-ES-CT.json",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://pirineu365.cat/es/valldenuria/estacion/plano-pistas-ficha-tecnica/",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

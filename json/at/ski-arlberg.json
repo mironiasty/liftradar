@@ -10,7 +10,7 @@
   },
   "website": "https://www.skiarlberg.at",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:40:35.915125+01:00",
+  "fetched_at": "2026-11-11T11:31:21.727570+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -83,5 +83,47 @@
     "https://www.skiarlberg.at/de/lech-zuers/live-infos/schnee-lawinenwarnbericht",
     "https://winter.intermaps.com/skiarlberg/data?lang=en"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=164&loadMore=1&orderState=ASC",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=164&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=4&loadMore=1&orderState=ASC",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=4&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=327&loadMore=1&orderState=ASC",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/live-info/table/slopes?regionId=327&loadMore=1&orderState=ASC&orderDifficulty=ASC",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/st-anton/live-infos/schnee-lawinenwarnbericht",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiarlberg.at/de/lech-zuers/live-infos/schnee-lawinenwarnbericht",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://winter.intermaps.com/skiarlberg/data?lang=en",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

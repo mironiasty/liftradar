@@ -364,6 +364,64 @@
       "title": "Snow",
       "type": "object"
     },
+    "SourceDetails": {
+      "additionalProperties": false,
+      "description": "The pages a report was built from, by what they give.",
+      "properties": {
+        "conditions": {
+          "description": "Pages with current values: status, lifts and slopes open, snow, avalanche danger.",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "title": "Conditions",
+          "type": "array"
+        },
+        "resort_info": {
+          "description": "Pages with the resort's fixed information only: the size of its ski area, slope lengths.",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          },
+          "title": "Resort Info",
+          "type": "array"
+        }
+      },
+      "required": [
+        "conditions",
+        "resort_info"
+      ],
+      "title": "SourceDetails",
+      "type": "object"
+    },
+    "SourceRef": {
+      "additionalProperties": false,
+      "description": "A page a report was built from.",
+      "properties": {
+        "url": {
+          "pattern": "^https?://\\S+$",
+          "title": "Url",
+          "type": "string"
+        },
+        "attribution_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether the source asks for attribution: true if it does, false if it's known not to, null if not checked yet (treat it as true).",
+          "title": "Attribution Required"
+        }
+      },
+      "required": [
+        "url",
+        "attribution_required"
+      ],
+      "title": "SourceRef",
+      "type": "object"
+    },
     "Station": {
       "additionalProperties": false,
       "description": "A snow measuring point published by the resort.",
@@ -640,11 +698,16 @@
       "default": null
     },
     "sources": {
+      "deprecated": true,
+      "description": "Deprecated: use `source_details`, which says which pages give current conditions and which only the resort's fixed information, and whether each asks for attribution.",
       "items": {
         "type": "string"
       },
       "title": "Sources",
       "type": "array"
+    },
+    "source_details": {
+      "$ref": "#/$defs/SourceDetails"
     },
     "errors": {
       "deprecated": true,
@@ -674,7 +737,8 @@
     "slopes_by_difficulty",
     "lifts_updated_at",
     "avalanche",
-    "sources"
+    "sources",
+    "source_details"
   ],
   "title": "Snow conditions for one resort",
   "type": "object"

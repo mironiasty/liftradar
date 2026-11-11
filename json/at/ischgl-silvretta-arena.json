@@ -10,7 +10,7 @@
   },
   "website": "https://www.ischgl.com",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:41:37.507860+01:00",
+  "fetched_at": "2026-11-11T11:32:24.435008+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -74,12 +74,30 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-11T08:35:06+01:00",
+  "lifts_updated_at": "2026-11-11T11:24:15+01:00",
   "avalanche": null,
   "sources": [
     "https://www.snowcard.tirol.at/skigebiet/Ischgl%20-%20Silvretta%20Arena_11",
     "https://winter.intermaps.com/silvretta_arena/data?lang=en",
     "https://www.ischgl.com/en/winter/silvretta-arena"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://www.snowcard.tirol.at/skigebiet/Ischgl%20-%20Silvretta%20Arena_11",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/silvretta_arena/data?lang=en",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.ischgl.com/en/winter/silvretta-arena",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

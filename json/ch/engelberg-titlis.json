@@ -10,7 +10,7 @@
   },
   "website": "https://www.titlis.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.919344+01:00",
+  "fetched_at": "2026-11-11T11:31:21.733533+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 0,
@@ -54,5 +54,27 @@
     "https://www.slf.ch/en/services-and-products/slf-data-service",
     "https://www.engelberg.ch/en/facts-figures/"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+        "attribution_required": null
+      },
+      {
+        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.engelberg.ch/en/facts-figures/",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

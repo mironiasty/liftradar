@@ -10,7 +10,7 @@
   },
   "website": "http://www.ljanalpin.no",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.923488+01:00",
+  "fetched_at": "2026-11-11T11:31:21.757039+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -51,5 +51,23 @@
     "https://fnugg.no/ljan/",
     "https://www.skiresort.com/en/ski-resort/sloreaasen-oslo/"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://api.fnugg.no/search?size=200",
+        "attribution_required": true
+      },
+      {
+        "url": "https://fnugg.no/ljan/",
+        "attribution_required": true
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/sloreaasen-oslo/",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

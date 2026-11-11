@@ -10,7 +10,7 @@
   },
   "website": "https://www.vt.sk",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.921445+01:00",
+  "fetched_at": "2026-11-11T11:31:21.737049+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -38,5 +38,18 @@
     "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
     "https://www.skiresort.info/ski-resort/tatranska-lomnica/"
   ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiresort.info/ski-resort/tatranska-lomnica/",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

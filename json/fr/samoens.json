@@ -10,7 +10,7 @@
   },
   "website": "https://www.grand-massif.com",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.920936+01:00",
+  "fetched_at": "2026-11-11T11:31:21.736249+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -38,5 +38,19 @@
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=samoens&lang=fr&isSoir=false",
     "https://www.skiinfo.fr/alpes-du-nord/samoens/station-de-ski"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=samoens&lang=fr&isSoir=false",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/samoens/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

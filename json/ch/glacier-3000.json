@@ -9,15 +9,15 @@
     "lon": 7.2056
   },
   "website": "https://www.glacier3000.ch",
-  "status": "open",
-  "fetched_at": "2026-11-11T08:40:35.918387+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-11T11:31:21.731998+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 35,
+    "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": "2026-11-07",
-    "condition": "powder",
+    "condition": null,
     "stations": [
       {
         "name": "In the ski area above",
@@ -30,40 +30,40 @@
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 0,
     "total": 11
   },
   "slopes": {
-    "open": 3,
+    "open": 0,
     "total": 17,
-    "open_km": 2.4,
+    "open_km": 0.0,
     "total_km": 32
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 2,
+      "open": 0,
       "total": 3
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 3
     },
     "drag_lift": {
-      "open": 1,
+      "open": 0,
       "total": 5
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 1,
+      "open": 0,
       "total": 6,
-      "open_km": 1.6,
+      "open_km": 0.0,
       "total_km": 10
     },
     "intermediate": {
-      "open": 2,
+      "open": 0,
       "total": 4,
-      "open_km": 0.8,
+      "open_km": 0.0,
       "total_km": 6
     },
     "difficult": {
@@ -79,10 +79,19 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-11T08:33:00+01:00",
+  "lifts_updated_at": "2026-11-11T11:25:00+01:00",
   "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=104&saison=1&ref=contentBox"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=104&saison=1&ref=contentBox",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

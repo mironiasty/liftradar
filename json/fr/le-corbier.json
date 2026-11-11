@@ -10,7 +10,7 @@
   },
   "website": "https://www.le-corbier.com",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.920762+01:00",
+  "fetched_at": "2026-11-11T11:31:21.735896+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -73,5 +73,31 @@
     "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/le-corbier/station-de-ski"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=le-corbier&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/les-sybelles",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/7a6ed0ee-a613-476a-b9b3-25444e075f16/staticPoiData?lang=fr",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/le-corbier/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

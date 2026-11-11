@@ -9,15 +9,15 @@
     "lon": 7.2338
   },
   "website": "https://www.verbier.ch",
-  "status": "open",
-  "fetched_at": "2026-11-11T08:40:35.919225+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-11T11:31:21.733284+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 20,
-    "valley_cm": 10,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": "2026-11-07",
-    "condition": "mainly: spring snow / partially: wet",
+    "condition": null,
     "stations": [
       {
         "name": "Les Ruinettes",
@@ -30,7 +30,7 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 15,
+        "depth_cm": 14,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -46,13 +46,13 @@
     ]
   },
   "lifts": {
-    "open": 1,
+    "open": 0,
     "total": 17
   },
   "slopes": {
-    "open": 2,
+    "open": 0,
     "total": 28,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -73,7 +73,7 @@
       "total": 3
     },
     "gondola": {
-      "open": 1,
+      "open": 0,
       "total": 4
     },
     "other": {
@@ -83,35 +83,43 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 1,
+      "open": 0,
       "total": 10,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 1,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-11T08:41:00+01:00",
+  "lifts_updated_at": "2026-11-11T11:32:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

@@ -10,12 +10,12 @@
   },
   "website": "https://www.airolo.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.918100+01:00",
+  "fetched_at": "2026-11-11T11:31:21.731516+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 1,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 3,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Vallascia (SLF)",
         "elevation_m": 2268,
         "depth_cm": 1,
-        "fresh_cm": null,
+        "fresh_cm": 3,
         "temperature_c": null,
         "condition": null
       }
@@ -86,5 +86,31 @@
     "https://www.slf.ch/en/services-and-products/slf-data-service",
     "https://www.skiresort.info/ski-resort/airolo-pesciuem/"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=147&saison=1&ref=contentBox",
+        "attribution_required": null
+      },
+      {
+        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
+        "attribution_required": null
+      },
+      {
+        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.info/ski-resort/airolo-pesciuem/",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

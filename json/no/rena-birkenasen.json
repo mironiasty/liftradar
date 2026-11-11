@@ -10,7 +10,7 @@
   },
   "website": "http://renaalpin.no",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.923394+01:00",
+  "fetched_at": "2026-11-11T11:31:21.756871+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -57,5 +57,23 @@
     "https://fnugg.no/rena/",
     "https://www.skiresort.com/en/ski-resort/rena/"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://api.fnugg.no/search?size=200",
+        "attribution_required": true
+      },
+      {
+        "url": "https://fnugg.no/rena/",
+        "attribution_required": true
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/rena/",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

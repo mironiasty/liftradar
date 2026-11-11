@@ -10,15 +10,40 @@
   },
   "website": "https://www.meran2000.com",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:40:35.919692+01:00",
-  "status_from": "2026-11-09T13:40:37.393059+01:00",
+  "fetched_at": "2026-11-11T11:31:21.734095+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "2.300 m - Kesselberg",
+        "elevation_m": 2300,
+        "depth_cm": 50,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "1.600 m - Falzeben in Avelengo",
+        "elevation_m": 1600,
+        "depth_cm": 42,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "2.000 m - Summit station Piffing",
+        "elevation_m": 2000,
+        "depth_cm": 49,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
@@ -64,13 +89,30 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-09T13:07:13+01:00",
+  "lifts_updated_at": "2026-11-11T10:53:05+01:00",
   "avalanche": null,
   "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://winter.intermaps.com/meran/data?lang=en",
     "https://www.skiresort.info/ski-resort/meran-2000/"
   ],
-  "errors": [
-    "suedtirol: ReadTimeout: "
-  ]
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/meran/data?lang=en",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.info/ski-resort/meran-2000/",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
 }

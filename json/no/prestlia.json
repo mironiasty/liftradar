@@ -10,7 +10,7 @@
   },
   "website": "https://www.prestlia.com/",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.923483+01:00",
+  "fetched_at": "2026-11-11T11:31:21.757032+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -56,5 +56,18 @@
     "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/prestlia/"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://api.fnugg.no/search?size=200",
+        "attribution_required": true
+      },
+      {
+        "url": "https://fnugg.no/prestlia/",
+        "attribution_required": true
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

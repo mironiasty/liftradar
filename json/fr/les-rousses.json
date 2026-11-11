@@ -10,7 +10,7 @@
   },
   "website": "https://www.lesrousses.com",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.921359+01:00",
+  "fetched_at": "2026-11-11T11:31:21.736922+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -72,5 +72,26 @@
     "https://public.lumiplay.link/interactive-map/v1/map/59462c53-7f75-4e9f-817d-14ff50933363/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/59462c53-7f75-4e9f-817d-14ff50933363/dynamicPoiData?lang=fr"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=les-rousses&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/Les-Rousses-Alpin",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/59462c53-7f75-4e9f-817d-14ff50933363/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/59462c53-7f75-4e9f-817d-14ff50933363/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

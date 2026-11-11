@@ -10,7 +10,7 @@
   },
   "website": "http://www.stordalenskisenter.no",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.923441+01:00",
+  "fetched_at": "2026-11-11T11:31:21.756975+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -78,5 +78,22 @@
     "https://fnugg.no/stordalen/",
     "https://static.avalanche.report/eaws_bulletins/2026-11-11/2026-11-11-NO.json"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://api.fnugg.no/search?size=200",
+        "attribution_required": true
+      },
+      {
+        "url": "https://fnugg.no/stordalen/",
+        "attribution_required": true
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-11/2026-11-11-NO.json",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

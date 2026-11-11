@@ -10,7 +10,7 @@
   },
   "website": "https://www.les2alpes.com",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.921012+01:00",
+  "fetched_at": "2026-11-11T11:31:21.736363+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -90,9 +90,31 @@
   "avalanche": null,
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/deux-alpes",
-    "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/deux-alpes",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

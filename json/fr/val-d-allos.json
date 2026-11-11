@@ -10,7 +10,7 @@
   },
   "website": "https://www.valdallos.com",
   "status": "no_report",
-  "fetched_at": "2026-11-11T08:40:35.921176+01:00",
+  "fetched_at": "2026-11-11T11:31:21.736594+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -72,5 +72,26 @@
     "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-d-allos&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/espace-lumiere",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

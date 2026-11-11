@@ -10,7 +10,7 @@
   },
   "website": "https://www.skipasscortina.com",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:40:35.919360+01:00",
+  "fetched_at": "2026-11-11T11:31:21.733554+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -75,5 +75,23 @@
     "https://www.dolomitisuperski.com",
     "https://skipasscortina.com/EN/page8-the-consortium"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.dolomitisuperski.com",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://skipasscortina.com/EN/page8-the-consortium",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

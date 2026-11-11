@@ -10,7 +10,7 @@
   },
   "website": "https://www.sportberg-goldeck.com",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:42:04.806230+01:00",
+  "fetched_at": "2026-11-11T11:32:48.126245+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -74,11 +74,24 @@
       "total_km": 7
     }
   },
-  "lifts_updated_at": "2026-10-30T13:34:40+01:00",
+  "lifts_updated_at": "2026-11-11T10:26:03+01:00",
   "avalanche": null,
   "sources": [
     "https://www.kaernten.at/golf/service/wetter/schneeberichte",
     "https://winter.intermaps.com/goldeck/data?lang=en"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/goldeck/data?lang=en",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }

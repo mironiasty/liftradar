@@ -10,7 +10,7 @@
   },
   "website": "https://www.latzoumaz.ch",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:40:35.918510+01:00",
+  "fetched_at": "2026-11-11T11:31:21.732197+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -77,5 +77,19 @@
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=101&saison=1&ref=contentBox",
     "https://www.valais.ch/fr/explorer/activites/ski-snowboard/domaines-skiables/la-tzoumaz"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=101&saison=1&ref=contentBox",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.valais.ch/fr/explorer/activites/ski-snowboard/domaines-skiables/la-tzoumaz",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

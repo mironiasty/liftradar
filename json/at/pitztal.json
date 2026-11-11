@@ -10,7 +10,7 @@
   },
   "website": "https://www.pitztaler-gletscher.at",
   "status": "open",
-  "fetched_at": "2026-11-11T08:40:35.913860+01:00",
+  "fetched_at": "2026-11-11T11:31:21.725601+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 30,
@@ -120,5 +120,23 @@
     "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
     "https://www.pitztaler-gletscher.at/en/winter/one-ski-area"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://www.pitztaler-gletscher.at/wetter",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.pitztaler-gletscher.at/en/winter/one-ski-area",
+        "attribution_required": null
+      }
+    ]
+  },
   "errors": []
 }

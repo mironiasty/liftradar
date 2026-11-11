@@ -10,7 +10,7 @@
   },
   "website": "https://www.station-metabief.com",
   "status": "closed",
-  "fetched_at": "2026-11-11T08:40:35.921341+01:00",
+  "fetched_at": "2026-11-11T11:31:21.736862+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -93,5 +93,26 @@
     "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/dynamicPoiData?lang=fr"
   ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=metabief&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/metabief",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
   "errors": []
 }
