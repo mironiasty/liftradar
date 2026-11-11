@@ -15,6 +15,8 @@ type Index = import("./index").SnowConditionsForAllResorts;
 type IndexResort = import("./index").IndexResort;
 // json/<country>/<id>.json.
 type Resort = import("./resort").SnowConditionsForOneResort;
+type SourceDetails = import("./resort").SourceDetails;
+type SourceRef = import("./resort").SourceRef;
 type Station = import("./resort").Station;
 type Avalanche = import("./resort").Avalanche;
 type DangerRating = import("./resort").DangerRating;

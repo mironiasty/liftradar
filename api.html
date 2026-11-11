@@ -134,6 +134,11 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
     <li data-i18n><code>fetched_at</code> is when we read the report and <code>lifts_updated_at</code> is the resort's own report
       time, <code>null</code> if its source has none. <code>status_from</code> is set when the latest run couldn't read
       the report, and gives the time of the run the values come from.</li>
+    <li data-i18n><code>source_details</code> lists the pages a report was built from: <code>conditions</code> give current
+      values, <code>resort_info</code> only what stays the same (the size of the ski area). <code>attribution_required</code>
+      is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code>
+      where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as
+      plain URLs, and will be removed.</li>
     <li data-i18n>Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.</li>
   </ul>
   <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>

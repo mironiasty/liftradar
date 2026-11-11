@@ -338,14 +338,19 @@ function data(r) {
     ),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, t("Open|file"))),
   );
-  section.append(
-    el("div", { class: "meta", style: "margin-top:12px" }, t("Sources")),
-    el(
-      "ul",
-      { class: "sources" },
-      ...r.sources.map((source) => el("li", {}, el("a", { href: source, rel: "nofollow" }, source))),
-    ),
-  );
+  const { conditions, resort_info } = sourceDetails(r);
+  /** @type {[string, SourceRef[]][]} */
+  const groups = [
+    [t("Current conditions"), conditions],
+    [t("Resort information"), resort_info],
+  ];
+  for (const [title, refs] of groups) {
+    if (!refs.length) continue;
+    section.append(
+      el("div", { class: "meta", style: "margin-top:12px" }, title),
+      el("ul", { class: "sources" }, ...refs.map((ref) => sourceItem(ref))),
+    );
+  }
   return section;
 }
 

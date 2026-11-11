@@ -114,7 +114,10 @@ slope map (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxon
 Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf
 and single-lift areas; the German uplands have no avalanche service. Not covered yet in Czechia:
 Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 12 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Each
-file's `sources` lists the URLs used for that report.
+file's `source_details` lists the URLs used for that report, as pages with current conditions and pages with the
+resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
+the site shows them on `sources.html` and the resort page, and falls back to the deprecated `sources` (plain URLs) for
+data published before `source_details`.
 
 ### Areas
 

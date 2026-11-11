@@ -89,12 +89,42 @@ function reportTimes(r) {
   return { checked, changed, days, stale };
 }
 
+/**
+ * The pages a report was built from. Data published before `source_details` has only the deprecated `sources`:
+ * all of them count as conditions, with attribution not checked.
+ * @param {IndexResort | Resort} r
+ * @returns {SourceDetails}
+ */
+function sourceDetails(r) {
+  return (
+    r.source_details ?? {
+      conditions: r.sources.map((url) => ({ url, attribution_required: null })),
+      resort_info: [],
+    }
+  );
+}
+
+/**
+ * One page of a report's sources, with a note where its terms ask for a credit.
+ * @param {SourceRef} ref
+ * @param {string} [note] after the link, e.g. how many resorts use it
+ */
+function sourceItem(ref, note = "") {
+  const parts = [note, ref.attribution_required ? t("credit required") : ""].filter(Boolean);
+  return el(
+    "li",
+    {},
+    el("a", { href: ref.url, rel: "nofollow" }, ref.url),
+    parts.length ? el("span", { class: "muted" }, ` (${parts.join(", ")})`) : "",
+  );
+}
+
 // Fnugg's terms: a visible credit next to its data, linking to the resort's page there.
 /** @param {IndexResort | Resort} r */
 function fnuggCredit(r) {
-  const page = r.country === "no" && r.sources.find((source) => source.startsWith("https://fnugg.no/"));
+  const page = r.country === "no" && sourceDetails(r).conditions.find(({ url }) => url.startsWith("https://fnugg.no/"));
   return page
-    ? el("div", { class: "credit" }, t("Snow and lift data provided by "), el("a", { href: page }, "fnugg"))
+    ? el("div", { class: "credit" }, t("Snow and lift data provided by "), el("a", { href: page.url }, "fnugg"))
     : "";
 }
 const regionNames = new Intl.DisplayNames([LANG], { type: "region" });

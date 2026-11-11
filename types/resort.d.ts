@@ -58,7 +58,23 @@ export type Problems = string[]
 export type PublishedAt = string
 export type ValidFrom = string
 export type ValidUntil = string
+/**
+ * Deprecated: use `source_details`, which says which pages give current conditions and which only the resort's fixed information, and whether each asks for attribution.
+ */
 export type Sources = string[]
+export type Url = string
+/**
+ * Whether the source asks for attribution: true if it does, false if it's known not to, null if not checked yet (treat it as true).
+ */
+export type AttributionRequired = (boolean | null)
+/**
+ * Pages with current values: status, lifts and slopes open, snow, avalanche danger.
+ */
+export type Conditions = SourceRef[]
+/**
+ * Pages with the resort's fixed information only: the size of its ski area, slope lengths.
+ */
+export type ResortInfo = SourceRef[]
 /**
  * Deprecated, to be removed: what failed in this run. See the run logs in logs/ on the data branch.
  */
@@ -83,6 +99,7 @@ slopes_by_difficulty: SlopesByDifficulty
 lifts_updated_at: LiftsUpdatedAt
 avalanche: (Avalanche | null)
 sources: Sources
+source_details: SourceDetails
 errors?: Errors
 }
 /**
@@ -150,4 +167,18 @@ level: Level
 lower_bound: LowerBound
 upper_bound: UpperBound
 period: Period
+}
+/**
+ * The pages a report was built from, by what they give.
+ */
+export interface SourceDetails {
+conditions: Conditions
+resort_info: ResortInfo
+}
+/**
+ * A page a report was built from.
+ */
+export interface SourceRef {
+url: Url
+attribution_required: AttributionRequired
 }
