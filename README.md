@@ -1,6 +1,6 @@
 # liftradar
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway and Spain, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway, Spain and Slovenia, published at
 [liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`, `json/stats.json`,
@@ -86,6 +86,10 @@ history, and a section for developers) is on the site: [About the data](https://
 | Formigal-Panticosa, Sierra Nevada | Their Intermaps slope map; Formigal is open only with a lift running |
 | Valdezcaray, Manzaneda, Valgrande-Pajares, Fuentes de Invierno | The resorts' own snow report pages |
 | Astún-Candanchú, Cerler, Javalambre, Valdelinares, Masella, Puerto de Navacerrada, Valdesquí, Alto Campoo, Leitariegos, La Covatilla, San Isidro, Tavascán | No status read yet: listed as "no report", with the operator's size where it publishes one. ATUDEM, the resorts' association, has a national report, but its terms require written permission for any use, so it isn't read |
+| Krvavec, Mariborsko Pohorje (with Areh), Golte, Stari vrh | The resorts' own sites: every lift and slope with its state ([Krvavec](https://rtc-krvavec.si) and [Stari vrh](https://starivrh.si/razmere/) with snow depth and report time; [Mariborsko Pohorje](https://www.visitpohorje.si/obratovalni-casi/) and [Golte](https://www.golte.si/zima/smucanje/proge/) without) |
+| Kranjska Gora, Vogel | [ski-kranjska-gora.com](https://www.ski-kranjska-gora.com/sl/zima/naprave-in-proge): open/total lifts and slopes and snow depth, in season only; [vogel.si](https://vogel.si/naprave-proge-zima/): every lift with its state, no slopes. No report time |
+| Soriška planina, Gače | The report their own sites show (`/api/snowphone`): every slope (and Soriška's lifts; Gače's lift counts) with its state for each day of the week, snow, report time |
+| Rogla, Kope, Cerkno, Velika planina, Ribniško Pohorje, Kanin | No status read: listed as "no report", with the operator's size, otherwise skiresort.com's. Rogla's report is behind a login built into its site, Kope's under a path its robots.txt excludes. Snežni telefon (7S), where most Slovenian resorts enter their report, is a commercial portal and isn't used |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk (TMR); Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko, Słotwiny Arena, Słotwiny, Nosal, Grapa (Czarna Góra), Beskid Sport Arena; Hauser Kaibling, Ramsau am Dachstein, Füssener Jöchle, Birkenlift & Geigenbühel (Seefeld) | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists (for the small neighbours of covered areas also OnTheSnow and skiresort.com) ([TMR slope tables](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk), the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
@@ -100,6 +104,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Avalanche danger, Kasprowy Wierch (Polish Tatras) | [TOPR](https://lawiny.topr.pl) (Tatra Volunteer Rescue), from the same EAWS bulletin files |
 | Avalanche danger, Bavarian Alps | [Lawinenwarndienst Bayern](https://www.lawinenwarndienst.bayern.de) (Bavarian Avalanche Warning Service), from the same EAWS bulletin files |
 | Avalanche danger, Norwegian mountain regions | [NVE](https://www.varsom.no/en/avalanches/avalanche-warnings/) (Varsom, the Norwegian Water Resources and Energy Directorate), from the same EAWS bulletin files |
+| Avalanche danger, Slovenian Alps and Prealps | [ARSO](https://meteo.arso.gov.si/met/sl/avalanche/) (Slovenian Environment Agency), from the same EAWS bulletin files; Pohorje and Gače aren't rated |
 | Avalanche danger, French Alps and Pyrenees | [Météo-France](https://meteofrance.com/meteo-montagne) mountain bulletin (by massif), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 | Ski-area outlines, pistes and lifts on the map | [OpenSkiData](https://openskidata.org) (ODbL), © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (the ski tiles, not the data) |
@@ -113,7 +118,7 @@ covered yet in Germany: a live status for the 83 areas outside the Sauerland wit
 slope map (the Allgäu, most of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
 Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf
 and single-lift areas; the German uplands have no avalanche service. Not covered yet in Czechia:
-Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 12 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Each
+Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 12 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Not covered yet in Slovenia: a live status for the six areas listed by size, the areas with fewer than 3 lifts and the nordic areas. Each
 file's `source_details` lists the URLs used for that report, as pages with current conditions and pages with the
 resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
 the site shows them on `sources.html` and the resort page, and falls back to the deprecated `sources` (plain URLs) for
