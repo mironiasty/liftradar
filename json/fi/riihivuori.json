@@ -9,12 +9,12 @@
     "lon": 25.6892
   },
   "website": "https://riihivuori.fi",
-  "status": "closed",
-  "fetched_at": "2026-11-12T09:44:04.629616+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-12T13:40:39.072752+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -31,32 +31,32 @@
   },
   "lifts": {
     "open": 0,
-    "total": 5
+    "total": 4
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 10,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": null
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
@@ -65,6 +65,7 @@
   "sources": [
     "https://ski.fi/hiihtokeskukset/riihivuori/",
     "https://www.riihivuori.fi/",
+    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
@@ -79,6 +80,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://ski.fi/hiihtokeskukset/",
+        "attribution_required": null
+      },
+      {
         "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
@@ -89,5 +94,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no 'Rinteet' or 'Hissit' counter (page layout changed?)"
+  ]
 }

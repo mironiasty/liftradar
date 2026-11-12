@@ -9,12 +9,12 @@
     "lon": 25.2996
   },
   "website": "https://himos.fi",
-  "status": "closed",
-  "fetched_at": "2026-11-12T09:44:04.629071+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-12T13:40:39.072047+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 0,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -31,21 +31,41 @@
   },
   "lifts": {
     "open": 0,
-    "total": 17
+    "total": 15
   },
   "slopes": {
-    "open": 0,
-    "total": 26,
-    "open_km": 0.0,
+    "open": null,
+    "total": 21,
+    "open_km": null,
     "total_km": null
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 7,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 8,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/himos/",
     "https://himos.fi/",
+    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
@@ -60,6 +80,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://ski.fi/hiihtokeskukset/",
+        "attribution_required": null
+      },
+      {
         "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
@@ -70,5 +94,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no 'Avoimet rinteet' or 'Avoimet hissit' counter (page layout changed?)"
+  ]
 }

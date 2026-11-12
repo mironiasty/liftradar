@@ -10,7 +10,7 @@
   },
   "website": "https://vuokatti.fi",
   "status": "closed",
-  "fetched_at": "2026-11-12T09:44:04.629139+01:00",
+  "fetched_at": "2026-11-12T13:40:39.072134+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,38 +31,41 @@
   },
   "lifts": {
     "open": 0,
-    "total": 10
+    "total": 9
   },
   "slopes": {
     "open": 0,
-    "total": 17,
+    "total": 14,
     "open_km": 0.0,
-    "total_km": 11
+    "total_km": null
   },
-  "lifts_by_type": {
-    "carpet": {
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
       "open": 0,
-      "total": 2
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
     },
-    "chairlift": {
+    "intermediate": {
       "open": 0,
-      "total": 2
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
     },
-    "drag_lift": {
+    "difficult": {
       "open": 0,
-      "total": 5
-    },
-    "other": {
-      "open": 0,
-      "total": 1
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
     }
   },
-  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/vuokatti/",
     "https://vuokatti.fi/vuokatinrinteet/rinteiden-aukioloajat/",
+    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
@@ -77,6 +80,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://ski.fi/hiihtokeskukset/",
+        "attribution_required": null
+      },
+      {
         "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
@@ -87,5 +94,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no slopes or lifts listed (layout changed?)"
+  ]
 }

@@ -10,7 +10,7 @@
   },
   "website": "https://ounasvaara.fi",
   "status": "open",
-  "fetched_at": "2026-11-12T09:44:04.629183+01:00",
+  "fetched_at": "2026-11-12T13:40:39.072188+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,7 +31,7 @@
   },
   "lifts": {
     "open": 3,
-    "total": 5
+    "total": 4
   },
   "slopes": {
     "open": 3,
@@ -65,6 +65,7 @@
   "sources": [
     "https://ski.fi/hiihtokeskukset/ounasvaara/",
     "https://ounasvaara.fi/",
+    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
@@ -79,6 +80,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://ski.fi/hiihtokeskukset/",
+        "attribution_required": null
+      },
+      {
         "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
@@ -89,5 +94,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no 'rinnettä auki' or 'hissiä auki' counter (page layout changed?)"
+  ]
 }
