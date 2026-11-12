@@ -10,7 +10,7 @@
   },
   "website": "https://www.obersaxen-mundaun.ch",
   "status": "closed",
-  "fetched_at": "2026-11-11T16:22:47.939632+01:00",
+  "fetched_at": "2026-11-12T09:44:04.626156+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -86,15 +86,39 @@
     }
   },
   "lifts_updated_at": "2026-11-11T10:07:00+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "CH-5214",
+    "region": "Obersaxen - Safien Valley",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "no_distinct_avalanche_problem"
+    ],
+    "published_at": "2026-11-11T17:00:00+01:00",
+    "valid_from": "2026-11-11T17:00:00+01:00",
+    "valid_until": "2026-11-12T17:00:00+01:00"
+  },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=53&saison=1&ref=contentBox",
-    "https://www.skiresort.info/ski-resort/obersaxen-mundaun-val-lumnezia/"
+    "https://www.skiresort.info/ski-resort/obersaxen-mundaun-val-lumnezia/",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=53&saison=1&ref=contentBox",
+        "attribution_required": null
+      },
+      {
+        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
         "attribution_required": null
       }
     ],

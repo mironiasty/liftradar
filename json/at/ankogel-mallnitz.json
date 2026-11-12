@@ -10,8 +10,8 @@
   },
   "website": "https://www.ankogel-mallnitz.at",
   "status": "closed",
-  "fetched_at": "2026-11-11T16:24:11.443751+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-12T09:44:08.665365+01:00",
+  "status_from": "2026-11-11T11:32:47.999763+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -35,16 +35,10 @@
   "lifts_updated_at": "2026-10-29T11:51:41+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
     "https://www.skiinfo.fr/carinthie/ankogel/station-de-ski"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/carinthie/ankogel/station-de-ski",
@@ -52,5 +46,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "kaernten: LookupError: no entry named Ankogel / Mallnitz"
+  ]
 }

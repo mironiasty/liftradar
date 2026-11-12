@@ -10,20 +10,20 @@
   },
   "website": "https://www.loetschental.ch",
   "status": "closed",
-  "fetched_at": "2026-11-11T16:22:47.939386+01:00",
+  "fetched_at": "2026-11-12T09:44:04.625994+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-11",
+    "last_snowfall": "2026-11-12",
     "condition": null,
     "stations": [
       {
         "name": "Gandegg",
         "elevation_m": 2720,
-        "depth_cm": 35,
-        "fresh_cm": 6,
+        "depth_cm": 40,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       }
@@ -81,15 +81,39 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-11T16:15:00+01:00",
-  "avalanche": null,
+  "lifts_updated_at": "2026-11-12T09:31:00+01:00",
+  "avalanche": {
+    "region_id": "CH-4211",
+    "region": "Leukerbad - Lötschental",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-11T17:00:00+01:00",
+    "valid_from": "2026-11-11T17:00:00+01:00",
+    "valid_until": "2026-11-12T17:00:00+01:00"
+  },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=43&saison=1&ref=contentBox"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=43&saison=1&ref=contentBox",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=43&saison=1&ref=contentBox",
+        "attribution_required": null
+      },
+      {
+        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
         "attribution_required": null
       }
     ],
