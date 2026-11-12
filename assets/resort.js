@@ -554,6 +554,7 @@ async function show() {
   /** @type {Resort} */
   const r = await response.json();
   document.title = `${r.name} – LiftRadar`;
+  setResortAddress(r);
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
   const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, t("Loading…")));

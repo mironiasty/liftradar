@@ -68,9 +68,8 @@ function translatePage(page, language, strings, seen) {
     const text = lookup(value);
     return text ? ` ${name}="${text}"` : attribute;
   });
-  html = html.replace(/<link rel="canonical" href="https:\/\/liftradar\.eu\/">/, (link) =>
-    link.replace('eu/"', `eu${prefix}"`),
-  );
+  // Each language is its own page for search engines (resort.js sets the resort page's from its address).
+  html = html.replace('<link rel="canonical" href="https://liftradar.eu/', `$&${language}/`);
   // The menu's links are the same on every page version: only the current language differs.
   html = html.replace(' aria-current="true"', "");
   html = html.replace(new RegExp(`(<a [^>]*hreflang="${language}"[^>]*)>`), '$1 aria-current="true">');

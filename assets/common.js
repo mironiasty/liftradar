@@ -35,6 +35,19 @@ const historyPath = (r) => `/history/${r.country}/${r.id}.json`;
 // The resort's page (resort.html), e.g. resort.html?r=at/soelden.
 /** @param {{ country: string, id: string }} r */
 const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;
+// The resort and 3D pages are the same HTML for every resort until their script runs: once it has the resort,
+// this gives the page its own address for search engines (its canonical, and its translations' in the
+// page's <link rel="alternate">), so they aren't taken for duplicates of each other. Those are the addresses
+// Cloudflare serves, without .html.
+/** @param {{ country: string, id: string }} r */
+function setResortAddress(r) {
+  const links = /** @type {NodeListOf<HTMLLinkElement>} */ (
+    document.querySelectorAll('link[rel="alternate"][hreflang]')
+  );
+  for (const link of links) link.href += `?r=${r.country}/${r.id}`;
+  const own = [...links].find((link) => link.hreflang === document.documentElement.lang);
+  if (own) document.head.append(el("link", { rel: "canonical", href: own.href }));
+}
 // sessionStorage key of the resort list's last filters and order (its query string), set by table.js.
 const LIST_KEY = "resort-list";
 // The map zoomed in on the resort (map.html), e.g. map.html?r=at/soelden.
