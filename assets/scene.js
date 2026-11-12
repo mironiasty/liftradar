@@ -1062,6 +1062,7 @@ async function show() {
   document.getElementById("updated").textContent = updatedText(index);
   document.getElementById("title").textContent = r.name;
   document.title = `${r.name} – ${t("3D map")} – LiftRadar`;
+  setResortAddress(r);
   const animate = el("input", { type: "checkbox", checked: "" });
   const reset = el("button", { type: "button", class: "reset" }, t("Back to the start view"));
   const status = statusKey(r);

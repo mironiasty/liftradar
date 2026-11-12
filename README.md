@@ -42,7 +42,16 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
 (the files, plus the MCP server at `/mcp`, see [MCP](#mcp); `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
-`history/`, `schema/` and `openapi.json`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string.
+`history/`, `schema/` and `openapi.json`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string: the deploy rewrites
+the links to the pages without `.html`, so search engines don't reach them through a redirect. Every page but
+`404.html` has a canonical address on liftradar.eu (the resort and 3D pages set theirs, with `?r=`, in `setResortAddress()`), so the copy on
+workers.dev and the addresses with filters aren't taken for duplicates.
+
+## Sitemap
+
+`scripts/sitemap.mjs` writes `sitemap.xml` on deploy, from the site as it goes out: every page in every language,
+each resort's page, and its 3D map when the ski tiles have its area, at the addresses without `.html`. Translations
+with `noindex` (still partly in English) are left out. `robots.txt` points to it; Cloudflare adds its own lines to it.
 
 ## About the data
 

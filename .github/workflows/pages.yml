@@ -33,7 +33,7 @@ jobs:
       - name: Combine site and data
         run: |
           mkdir _site
-          cp -R site/index.html site/about.html site/api.html site/map.html site/3d.html site/resort.html site/sources.html site/stats.html site/404.html site/openapi.json site/_headers site/assets _site/
+          cp -R site/index.html site/about.html site/api.html site/map.html site/3d.html site/resort.html site/sources.html site/stats.html site/404.html site/openapi.json site/robots.txt site/_headers site/assets _site/
           for part in json history schema; do cp -R "data/$part" _site/; done
 
       # The ski tiles (README "Ski tiles"), built weekly by ski.yml into a release asset. Without
@@ -50,6 +50,21 @@ jobs:
       # Before the asset links are versioned: these pages have the same links.
       - name: Generate the translated pages
         run: node site/scripts/translate.mjs _site
+
+      # After the translated pages and the ski tiles: it lists them (README "Sitemap").
+      - name: Write the sitemap
+        run: node site/scripts/sitemap.mjs _site
+
+      # Cloudflare redirects about.html to /about (307), and search engines report every page reached
+      # through one: the links go straight to the address it serves. Only here: python3 -m http.server,
+      # used locally, needs the .html. Quoted names only, so comments and other sites' links stay.
+      - name: Link to the addresses without .html
+        run: |
+          sed -i -E 's#(["`](/([a-z]{2}/)?)?)(map|3d|resort|stats|about|api|sources)\.html#\1\4#g' \
+            _site/*.html _site/*/*.html _site/assets/*.js
+          if grep -nE '["`](/([a-z]{2}/)?)?[a-z0-9]+\.html' _site/*.html _site/*/*.html _site/assets/*.js; then
+            echo "Links to .html pages left (above): add the page to the list"; exit 1
+          fi
 
       # The MCP server's packages, bundled into the Worker by wrangler at the deploy (README "MCP"),
       # and esbuild for the next step.
