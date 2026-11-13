@@ -18,6 +18,23 @@ const DIFFICULTIES = {
   ski_route: [t("Ski routes"), "#f2b705"],
   other: [t("Other"), "var(--muted)"],
 };
+// One lift's type, in the list of every lift and slope.
+const LIFT_TYPE = {
+  gondola: t("Gondola"),
+  cable_car: t("Cable car"),
+  chairlift: t("Chairlift"),
+  drag_lift: t("Drag lift"),
+  carpet: t("Magic carpet"),
+  funicular: t("Funicular"),
+  other: t("Other"),
+};
+// A lift's or slope's status, in that list: its name and colour, in the order they're listed.
+const ITEM_STATUS = {
+  open: [t("open"), "var(--open)"],
+  preparation: [t("in preparation"), "var(--none)"],
+  closed: [t("closed"), "var(--closed)"],
+  unknown: [t("unknown"), "var(--none)"],
+};
 const DANGER_LEVELS = { low: 1, moderate: 2, considerable: 3, high: 4, very_high: 5 };
 const PERIODS = { all_day: "", earlier: t("morning"), later: t("afternoon") };
 // The EAWS problem names, as the bulletins publish them; unknown ones are shown as they are.
@@ -260,6 +277,87 @@ function breakdown(r) {
     parts.push(el("div", {}, el("h2", {}, t("Slopes by difficulty")), el("div", { class: "bars" }, ...rows)));
   }
   return parts.length ? el("section", { class: "card breakdown" }, ...parts) : null;
+}
+
+// Every lift and slope with its status (the experimental `details` file), open ones first. Null without one, or
+// when it can't be read: the counts above still stand.
+/** @param {Resort} r */
+async function items(r) {
+  if (!r.details) return null;
+  const response = await fetch(`/${r.details}`, { cache: "no-cache" });
+  if (!response.ok) return null;
+  /** @type {ResortDetails} */
+  const d = await response.json();
+  const order = Object.keys(ITEM_STATUS);
+  /** @template {{ status: string }} T @param {T[]} list */
+  const sorted = (list) => list.toSorted((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
+  const state = (/** @type {string} */ status) => {
+    const [name, colour] = ITEM_STATUS[status] ?? ITEM_STATUS.unknown;
+    return el("td", { class: "state", style: `--c:${colour}` }, name);
+  };
+  /** @param {string} title @param {{ status: string }[]} list @param {string[]} heads @param {HTMLElement[]} rows */
+  const group = (title, list, heads, rows) => {
+    const known = list.filter((i) => i.status !== "unknown");
+    const open = known.filter((i) => i.status === "open").length;
+    return el(
+      "details",
+      { class: "items", ...(open ? { open: "" } : {}) },
+      el("summary", {}, el("b", {}, title), " ", t("{open} of {total} open", { open, total: known.length })),
+      el(
+        "div",
+        { class: "scroll" },
+        el(
+          "table",
+          {},
+          el(
+            "thead",
+            {},
+            el("tr", {}, ...heads.map((h, i) => el("th", { class: i === heads.length - 1 ? "num" : "" }, h))),
+          ),
+          el("tbody", {}, ...rows),
+        ),
+      ),
+    );
+  };
+  const length = (/** @type {number | null} */ m) => el("td", { class: "num" }, dash(m, " m"));
+  const lifts = sorted(d.lifts).map((l) =>
+    el(
+      "tr",
+      {},
+      state(l.status),
+      el("td", {}, l.name),
+      el("td", {}, LIFT_TYPE[l.type] ?? label(l.type)),
+      length(l.length_m),
+    ),
+  );
+  const slopes = sorted(d.slopes).map((s) => {
+    const [difficulty, colour] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
+    return el(
+      "tr",
+      {},
+      state(s.status),
+      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title: difficulty }), s.name),
+      length(s.length_m),
+    );
+  });
+  const updated = d.updated_at ? `${t("Updated {time}", { time: viennaTime(d.updated_at) })}.` : "";
+  return el(
+    "section",
+    { class: "card" },
+    el("h2", {}, t("Lifts and slopes")),
+    el(
+      "p",
+      { class: "meta", style: "margin:0 0 8px" },
+      `${updated} `,
+      t("Each lift and slope as the resort's slope map lists it ("),
+      el("a", { href: d.source, rel: "noopener" }, "Intermaps"),
+      t("). Experimental."),
+    ),
+    ...[
+      d.lifts.length && group(t("Lifts"), d.lifts, [t("Status"), t("Name"), t("Type"), t("Length")], lifts),
+      d.slopes.length && group(t("Slopes"), d.slopes, [t("Status"), t("Name"), t("Length")], slopes),
+    ].filter(Boolean),
+  );
 }
 
 /** @param {DangerRating} rating */
@@ -558,11 +656,12 @@ async function show() {
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
   const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, t("Loading…")));
+  const itemsBox = el("div", { hidden: "" });
   const main = el(
     "div",
     { class: "stack" },
     tiles(r),
-    ...[stations(r.snow.stations), breakdown(r), avalanche(r.avalanche)].filter(Boolean),
+    ...[stations(r.snow.stations), breakdown(r), itemsBox, avalanche(r.avalanche)].filter(Boolean),
     el(
       "section",
       { class: "card" },
@@ -604,6 +703,9 @@ async function show() {
     mapBox.classList.remove("loading");
     mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
   });
+  items(r)
+    .then((section) => section && itemsBox.replaceWith(section))
+    .catch(() => {});
   historyChart(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );

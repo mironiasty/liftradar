@@ -53,6 +53,10 @@ const SKI_LIFT_TYPES = {
   rope_tow: t("Rope tow"),
   magic_carpet: t("Magic carpet"),
 };
+// Experimental: the status of a lift or piste linked to its resort's details file (`item`), in its tooltip.
+const SKI_STATES = { open: t("open"), closed: t("closed"), preparation: t("in preparation") };
+// How much a closed lift or piste (or one in preparation) is faded, on top of its own opacity.
+const CLOSED_OPACITY = 0.25;
 const SKI_DIFFICULTIES = {
   novice: t("novice"),
   easy: t("easy"),
@@ -137,6 +141,9 @@ function skiFeatures(tile, highlight, names) {
         shared: downhill && !offPiste && !tunnel ? sharedColor(run, tile.runs) : null,
         width: downhill ? 2.5 : 1.5,
         opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
+        base: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
+        item: run.item ?? "",
+        state: "",
         name: run.name ?? "",
         lr: run.lr ?? "",
         tunnel,
@@ -154,6 +161,9 @@ function skiFeatures(tile, highlight, names) {
       color: gone ? "#888" : INK,
       dashed: gone || tunnel,
       opacity: (faded(lift) ? 0.35 : 1) * (tunnel ? 0.55 : 1),
+      base: (faded(lift) ? 0.35 : 1) * (tunnel ? 0.55 : 1),
+      item: lift.item ?? "",
+      state: "",
       name: lift.name ?? "",
       kind: [SKI_LIFT_TYPES[lift.type] ?? t("Lift"), gone ? t("out of service") : "", tunnel ? t("in a tunnel") : ""]
         .filter(Boolean)
@@ -169,6 +179,7 @@ function skiFeatures(tile, highlight, names) {
 function skiLabel({ properties: p }) {
   const box = el("div", {}, el("b", {}, p.name || p.kind));
   if (p.name) box.append(el("div", {}, p.kind));
+  if (SKI_STATES[p.state]) box.append(el("div", {}, capitalized(SKI_STATES[p.state])));
   if (p.resort) box.append(el("div", { class: "sub" }, p.resort));
   return box;
 }
@@ -258,7 +269,38 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
   const sources = { runs: "ski-runs", lifts: "ski-lifts", stations: "ski-stations" };
   const loaded = new Set();
   const drawn = new Set();
+  const draw = (key) => map.getSource(sources[key]).setData({ type: "FeatureCollection", features: data[key] });
+
+  // Experimental: lifts and pistes linked to a resort's details file get its status, and are faded when closed.
+  const states = new Map(); // "<country>/<id>/<item id>" -> status
+  const asked = new Set();
+  const restyle = (f) => {
+    const p = f.properties;
+    p.state = states.get(p.item) ?? "";
+    p.opacity = p.base * (p.state === "closed" || p.state === "preparation" ? CLOSED_OPACITY : 1);
+  };
+  /** @param {SkiTile} tile */
+  const loadStates = (tile) => {
+    for (const f of [...tile.lifts, ...tile.runs]) {
+      const resort = f.item?.split("/").slice(0, 2).join("/");
+      if (!resort || asked.has(resort)) continue;
+      asked.add(resort);
+      fetch(`/json/${resort}.details.json`, { cache: "no-cache" })
+        .then((response) => (response.ok ? /** @type {Promise<ResortDetails>} */ (response.json()) : null))
+        .then((details) => {
+          if (!details) return;
+          for (const i of [...details.lifts, ...details.slopes]) states.set(`${resort}/${i.id}`, i.status);
+          for (const key of Object.keys(data)) {
+            data[key].forEach(restyle);
+            draw(key);
+          }
+        })
+        .catch(() => asked.delete(resort));
+    }
+  };
+
   const add = (tile) => {
+    loadStates(tile);
     for (const [key, list] of Object.entries(skiFeatures(tile, highlight, names))) {
       for (const f of list) {
         // A line crossing tiles is in each of them, whole. Its OSM id alone isn't enough:
@@ -267,9 +309,10 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
         const id = `${key}:${f.id}:${line[0]}:${line.length}`;
         if (drawn.has(id)) continue;
         drawn.add(id);
+        restyle(f);
         data[key].push(f);
       }
-      map.getSource(sources[key]).setData({ type: "FeatureCollection", features: data[key] });
+      draw(key);
     }
   };
   const update = () => {
