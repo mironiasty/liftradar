@@ -10,7 +10,7 @@
   },
   "website": "https://www.queyras-montagne.com",
   "status": "no_report",
-  "fetched_at": "2026-11-13T08:40:35.561999+01:00",
+  "fetched_at": "2026-11-13T13:40:38.151725+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,14 +25,42 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-17",
+    "region": "Queyras",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2800,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2800,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-12T20:00:00+01:00",
+    "valid_from": "2026-11-12T20:00:00+01:00",
+    "valid_until": "2026-11-13T18:00:00+01:00"
+  },
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false"
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json",
         "attribution_required": null
       }
     ],

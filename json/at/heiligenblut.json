@@ -9,8 +9,8 @@
     "lon": 12.8408
   },
   "website": "https://heiligenblut.at",
-  "status": "closed",
-  "fetched_at": "2026-11-13T08:40:35.555321+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-13T13:40:38.142925+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,69 +20,22 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 12
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
-    "total": 18,
-    "open_km": 0.0,
+    "open": null,
+    "total": null,
+    "open_km": null,
     "total_km": 55
   },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 1
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 7
-    },
-    "gondola": {
-      "open": 0,
-      "total": 4
-    }
-  },
-  "slopes_by_difficulty": {
-    "ski_route": {
-      "open": 0,
-      "total": 5,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "easy": {
-      "open": 0,
-      "total": 4,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 8,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 1,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-10-30T13:15:04+01:00",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/heiligenblut/data?lang=en",
     "https://heiligenblut.at/en/winter/skigebiet-grossglockner-heiligenblut/"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://winter.intermaps.com/heiligenblut/data?lang=en",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://heiligenblut.at/en/winter/skigebiet-grossglockner-heiligenblut/",

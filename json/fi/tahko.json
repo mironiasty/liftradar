@@ -9,12 +9,12 @@
     "lon": 28.0404
   },
   "website": "https://www.tahko.com",
-  "status": "closed",
-  "fetched_at": "2026-11-13T08:40:35.562440+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-13T13:40:38.152331+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 4,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -22,7 +22,7 @@
       {
         "name": "Rautavaara Ylä-Luosta (FMI)",
         "elevation_m": null,
-        "depth_cm": 0,
+        "depth_cm": 4,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -30,13 +30,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 14
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 25,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": null
   },
   "lifts_by_type": null,

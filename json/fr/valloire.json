@@ -10,7 +10,7 @@
   },
   "website": "https://www.valloire.net",
   "status": "no_report",
-  "fetched_at": "2026-11-13T08:40:35.561563+01:00",
+  "fetched_at": "2026-11-13T13:40:38.151147+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -75,12 +75,30 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-09",
+    "region": "Maurienne",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-12T19:00:00+01:00",
+    "valid_from": "2026-11-12T19:00:00+01:00",
+    "valid_until": "2026-11-13T18:00:00+01:00"
+  },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=valloire&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/valmeinier-valloire",
     "https://public.lumiplay.link/interactive-map/v1/map/b626e4db-ba81-4cc1-a263-c26facac4bb1/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/b626e4db-ba81-4cc1-a263-c26facac4bb1/dynamicPoiData?lang=fr"
+    "https://public.lumiplay.link/interactive-map/v1/map/b626e4db-ba81-4cc1-a263-c26facac4bb1/dynamicPoiData?lang=fr",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -98,6 +116,10 @@
       },
       {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/b626e4db-ba81-4cc1-a263-c26facac4bb1/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json",
         "attribution_required": null
       }
     ],

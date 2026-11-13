@@ -10,7 +10,7 @@
   },
   "website": "https://www.praloup.com",
   "status": "no_report",
-  "fetched_at": "2026-11-13T08:40:35.562007+01:00",
+  "fetched_at": "2026-11-13T13:40:38.151736+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -69,13 +69,31 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-21",
+    "region": "Ubaye",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-12T20:00:00+01:00",
+    "valid_from": "2026-11-12T20:00:00+01:00",
+    "valid_until": "2026-11-13T18:00:00+01:00"
+  },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=praloup&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-lumiere",
     "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr",
-    "https://www.skiinfo.fr/alpes-du-sud/praloup/station-de-ski"
+    "https://www.skiinfo.fr/alpes-du-sud/praloup/station-de-ski",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -93,6 +111,10 @@
       },
       {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json",
         "attribution_required": null
       }
     ],
