@@ -9,12 +9,12 @@
     "lon": 27.6789
   },
   "website": "https://www.kasurila.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.072774+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-13T08:40:35.563016+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 0,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -34,32 +34,18 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
-    "total": 9,
-    "open_km": null,
+    "open": 0,
+    "total": 8,
+    "open_km": 0.0,
     "total_km": null
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": 5,
-      "open_km": null,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": null,
-      "total": 4,
-      "open_km": null,
-      "total_km": null
-    }
-  },
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/kasurila/",
     "https://www.kasurila.com/",
-    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
@@ -74,10 +60,6 @@
         "attribution_required": null
       },
       {
-        "url": "https://ski.fi/hiihtokeskukset/",
-        "attribution_required": null
-      },
-      {
         "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
@@ -88,7 +70,5 @@
     ],
     "resort_info": []
   },
-  "errors": [
-    "status: ValueError: no 'Rinteet' or 'Hissit' counter (page layout changed?)"
-  ]
+  "errors": []
 }

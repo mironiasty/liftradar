@@ -10,46 +10,38 @@
   },
   "website": "https://www.saas-fee.ch",
   "status": "open",
-  "fetched_at": "2026-11-12T13:40:39.068585+01:00",
+  "fetched_at": "2026-11-13T08:40:35.559586+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 4,
-    "valley_cm": 0,
-    "fresh_cm": 0,
+    "mountain_cm": 6,
+    "valley_cm": null,
+    "fresh_cm": 14,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Gibidum (SLF)",
         "elevation_m": 2680,
-        "depth_cm": 4,
-        "fresh_cm": 0,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Saas Fee (SLF)",
-        "elevation_m": 1790,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 6,
+        "fresh_cm": 14,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 7,
+    "open": 5,
     "total": 23
   },
   "slopes": {
-    "open": 7,
+    "open": 6,
     "total": 34,
-    "open_km": 27.3,
+    "open_km": 21.3,
     "total_km": 100
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 2
     },
     "drag_lift": {
@@ -61,7 +53,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 3,
+      "open": 2,
       "total": 8
     }
   },
@@ -79,9 +71,9 @@
       "total_km": 32
     },
     "intermediate": {
-      "open": 7,
+      "open": 6,
       "total": 16,
-      "open_km": 27.3,
+      "open_km": 21.3,
       "total_km": 55
     },
     "difficult": {
@@ -91,7 +83,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-12T13:29:47+01:00",
+  "lifts_updated_at": "2026-11-13T08:37:28+01:00",
   "avalanche": {
     "region_id": "CH-4223",
     "region": "Saas Fee",
@@ -108,9 +100,9 @@
     "problems": [
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-11T17:00:00+01:00",
-    "valid_from": "2026-11-11T17:00:00+01:00",
-    "valid_until": "2026-11-12T17:00:00+01:00"
+    "published_at": "2026-11-12T17:00:00+01:00",
+    "valid_from": "2026-11-12T17:00:00+01:00",
+    "valid_until": "2026-11-13T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=252&saison=1&ref=contentBox",

@@ -9,8 +9,8 @@
     "lon": 28.0121
   },
   "website": "https://www.suomutunturi.fi",
-  "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.072763+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-13T08:40:35.563007+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,38 +25,18 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
-    "total": 10,
-    "open_km": null,
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
     "total_km": null
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": 3,
-      "open_km": null,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": null,
-      "total": 4,
-      "open_km": null,
-      "total_km": null
-    },
-    "difficult": {
-      "open": null,
-      "total": 3,
-      "open_km": null,
-      "total_km": null
-    }
-  },
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/suomutunturi/",
-    "https://www.suomutunturi.fi/",
-    "https://ski.fi/hiihtokeskukset/"
+    "https://www.suomutunturi.fi/"
   ],
   "source_details": {
     "conditions": [
@@ -67,15 +47,9 @@
       {
         "url": "https://www.suomutunturi.fi/",
         "attribution_required": null
-      },
-      {
-        "url": "https://ski.fi/hiihtokeskukset/",
-        "attribution_required": null
       }
     ],
     "resort_info": []
   },
-  "errors": [
-    "status: ValueError: no 'Avoimet rinteet' or 'Avoimet hissit' counter (page layout changed?)"
-  ]
+  "errors": []
 }

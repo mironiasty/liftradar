@@ -9,8 +9,8 @@
     "lon": 10.4813
   },
   "website": "http://www.lommedalenskisenter.no",
-  "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.088235+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-13T08:40:35.575284+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 2
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 5,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 1
   },
   "lifts_by_type": {
@@ -38,19 +38,19 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-09-29T16:25:24+02:00",
+  "lifts_updated_at": "2026-11-12T19:31:10+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

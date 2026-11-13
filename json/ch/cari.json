@@ -10,7 +10,7 @@
   },
   "website": "https://www.cari.swiss",
   "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.067414+01:00",
+  "fetched_at": "2026-11-13T08:40:35.558697+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 0,
@@ -73,22 +73,22 @@
   "avalanche": {
     "region_id": "CH-6115",
     "region": "Lower Valle Leventina",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "no_distinct_avalanche_problem"
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-11T17:00:00+01:00",
-    "valid_from": "2026-11-11T17:00:00+01:00",
-    "valid_until": "2026-11-12T17:00:00+01:00"
+    "published_at": "2026-11-12T17:00:00+01:00",
+    "valid_from": "2026-11-12T17:00:00+01:00",
+    "valid_until": "2026-11-13T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=149&saison=1&ref=contentBox",

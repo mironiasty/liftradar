@@ -9,25 +9,42 @@
     "lon": 6.6358
   },
   "website": "https://www.risoul.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.071443+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-13T08:40:35.561963+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-23",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Station",
+        "elevation_m": 1850,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Altitude",
+        "elevation_m": 2570,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 16
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 44,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 85
   },
   "lifts_by_type": {
@@ -46,27 +63,27 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 28,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 16
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },

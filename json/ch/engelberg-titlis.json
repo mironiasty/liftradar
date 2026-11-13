@@ -10,12 +10,12 @@
   },
   "website": "https://www.titlis.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.069026+01:00",
+  "fetched_at": "2026-11-13T08:40:35.559928+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 0,
     "valley_cm": 0,
-    "fresh_cm": 0,
+    "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Titlisboden (SLF)",
         "elevation_m": 2149,
         "depth_cm": 0,
-        "fresh_cm": 0,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       },
@@ -63,9 +63,9 @@
     "problems": [
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-11T17:00:00+01:00",
-    "valid_from": "2026-11-11T17:00:00+01:00",
-    "valid_until": "2026-11-12T17:00:00+01:00"
+    "published_at": "2026-11-12T17:00:00+01:00",
+    "valid_from": "2026-11-12T17:00:00+01:00",
+    "valid_until": "2026-11-13T17:00:00+01:00"
   },
   "sources": [
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",

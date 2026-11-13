@@ -9,8 +9,8 @@
     "lon": 8.9671
   },
   "website": "https://www.vasetskiheiser.no",
-  "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.087800+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-13T08:40:35.574898+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 9,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 7
   },
   "lifts_by_type": {
@@ -38,19 +38,19 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-21T21:26:32+02:00",
+  "lifts_updated_at": "2026-11-13T01:49:42+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

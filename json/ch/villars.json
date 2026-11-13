@@ -10,7 +10,7 @@
   },
   "website": "https://www.villars-diablerets.ch",
   "status": "closed",
-  "fetched_at": "2026-11-12T13:40:39.068886+01:00",
+  "fetched_at": "2026-11-13T08:40:35.559813+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -95,26 +95,26 @@
       "total_km": 15
     }
   },
-  "lifts_updated_at": "2026-11-12T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-13T08:30:00+01:00",
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "no_distinct_avalanche_problem"
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-11T17:00:00+01:00",
-    "valid_from": "2026-11-11T17:00:00+01:00",
-    "valid_until": "2026-11-12T17:00:00+01:00"
+    "published_at": "2026-11-12T17:00:00+01:00",
+    "valid_from": "2026-11-12T17:00:00+01:00",
+    "valid_until": "2026-11-13T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=60&saison=1&ref=contentBox",

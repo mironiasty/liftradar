@@ -10,7 +10,7 @@
   },
   "website": "https://vogel.si",
   "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.089166+01:00",
+  "fetched_at": "2026-11-13T08:40:35.576325+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,14 +20,38 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
   "slopes": {
     "open": null,
     "total": null,
     "open_km": null,
     "total_km": 22
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
   "slopes_by_difficulty": {
     "easy": {
       "open": null,

@@ -10,20 +10,20 @@
   },
   "website": "https://www.skilifte-tschappina.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.068791+01:00",
+  "fetched_at": "2026-11-13T08:40:35.559724+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 0,
+    "mountain_cm": 3,
     "valley_cm": null,
-    "fresh_cm": 0,
+    "fresh_cm": 3,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Innerglas (SLF)",
         "elevation_m": 1820,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 3,
+        "fresh_cm": 3,
         "temperature_c": null,
         "condition": null
       }
@@ -63,22 +63,22 @@
   "avalanche": {
     "region_id": "CH-5222",
     "region": "Schams",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "no_distinct_avalanche_problem"
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-11T17:00:00+01:00",
-    "valid_from": "2026-11-11T17:00:00+01:00",
-    "valid_until": "2026-11-12T17:00:00+01:00"
+    "published_at": "2026-11-12T17:00:00+01:00",
+    "valid_from": "2026-11-12T17:00:00+01:00",
+    "valid_until": "2026-11-13T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=84&saison=1&ref=contentBox",

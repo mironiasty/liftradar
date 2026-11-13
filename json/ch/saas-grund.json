@@ -10,7 +10,7 @@
   },
   "website": "https://www.hohsaas.ch",
   "status": "closed",
-  "fetched_at": "2026-11-12T13:40:39.068597+01:00",
+  "fetched_at": "2026-11-13T08:40:35.559594+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,8 @@
       {
         "name": "Gibidum (SLF)",
         "elevation_m": 2680,
-        "depth_cm": 4,
-        "fresh_cm": 0,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Saas Fee (SLF)",
-        "elevation_m": 1790,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 6,
+        "fresh_cm": 14,
         "temperature_c": null,
         "condition": null
       }
@@ -81,7 +73,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-12T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-13T08:30:00+01:00",
   "avalanche": {
     "region_id": "CH-4223",
     "region": "Saas Fee",
@@ -98,9 +90,9 @@
     "problems": [
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-11T17:00:00+01:00",
-    "valid_from": "2026-11-11T17:00:00+01:00",
-    "valid_until": "2026-11-12T17:00:00+01:00"
+    "published_at": "2026-11-12T17:00:00+01:00",
+    "valid_from": "2026-11-12T17:00:00+01:00",
+    "valid_until": "2026-11-13T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=206&saison=1&ref=contentBox",

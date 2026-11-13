@@ -9,12 +9,12 @@
     "lon": 28.2456
   },
   "website": "https://ukkohalla.fi",
-  "status": "no_report",
-  "fetched_at": "2026-11-12T13:40:39.072069+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-13T08:40:35.562483+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 2,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -22,7 +22,7 @@
       {
         "name": "Puolanka Paljakka (FMI)",
         "elevation_m": null,
-        "depth_cm": 2,
+        "depth_cm": 6,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -31,41 +31,21 @@
   },
   "lifts": {
     "open": 0,
-    "total": 4
+    "total": 5
   },
   "slopes": {
-    "open": null,
-    "total": 17,
-    "open_km": null,
+    "open": 0,
+    "total": 16,
+    "open_km": 0.0,
     "total_km": null
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": 8,
-      "open_km": null,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": null,
-      "total": 8,
-      "open_km": null,
-      "total_km": null
-    },
-    "difficult": {
-      "open": null,
-      "total": 1,
-      "open_km": null,
-      "total_km": null
-    }
-  },
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/ukkohalla/",
     "https://skiukkohalla.fi/",
-    "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
@@ -80,10 +60,6 @@
         "attribution_required": null
       },
       {
-        "url": "https://ski.fi/hiihtokeskukset/",
-        "attribution_required": null
-      },
-      {
         "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
@@ -94,7 +70,5 @@
     ],
     "resort_info": []
   },
-  "errors": [
-    "status: ValueError: no 'Rinteet' or 'Hissit' counter (page layout changed?)"
-  ]
+  "errors": []
 }
