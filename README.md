@@ -10,6 +10,9 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   - `json/index.json`: all resorts, with only what the table, map and sources pages read; the
     full report (stations, lift and slope breakdowns, avalanche bulletin, ...) is in
     `json/<country>/<resort>.json`.
+  - `json/<country>/<resort>.details.json` (experimental, not part of the API): every lift and slope
+    with its status, for resorts whose report has `details` (those with an Intermaps slope map); the
+    resort page lists them.
   - `json/stats.json`: daily totals per country and region over the last 365 days (resorts
     tracked and open; open lifts, slopes and km, of open resorts only), for `stats.html`.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
