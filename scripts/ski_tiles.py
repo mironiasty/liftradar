@@ -3,7 +3,8 @@
 Writes `<out>/v1/10/{x}/{y}.json` (XYZ tiles at zoom 10, only those with lifts, runs or ski areas),
 `<out>/v1/resorts.geojson` (each liftradar resort's outline and map point, made from its lifts
 and runs), `<out>/v1/meta.json` and `<out>/v1/tile.schema.json`. Each lift and run gets the
-liftradar resort it belongs to (`lr`, "<country>/<id>"), when there is one (ski_resorts.py).
+liftradar resort it belongs to (`lr`, "<country>/<id>"), when there is one (ski_resorts.py), and
+the item of a details file it matches (`item`, experimental; lift_links.py).
 The format is in README, "Ski tiles".
 
     for f in lifts runs ski_areas; do
@@ -29,6 +30,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 import ijson
+import lift_links
 import shapely
 import ski_resorts
 from shapely.geometry import box, shape
@@ -215,6 +217,7 @@ def build(args) -> dict:
     area_lr = {a: v.most_common(1)[0][0] for a, v in votes.items()}
 
     tiles = defaultdict(lambda: {"areas": {}, "lifts": [], "runs": []})
+    tile_lifts, tile_runs = [], []  # each once, for lift_links
     # Areas: in every tile their outline (or point) touches; and in those of their lifts and runs, below.
     lifted = {a for f in lifts for a in f["_areas"]}
     for a, area in areas.items():
@@ -230,6 +233,7 @@ def build(args) -> dict:
         if i in lift_lr:
             lift["lr"] = lift_lr[i]
         lift["c"] = [rounded(c) for c in simplify(f["_coords"], SIMPLIFY_M)]
+        tile_lifts.append(lift)
         for t in line_tiles(f["_coords"]):
             for a in f["_areas"]:
                 tiles[t]["areas"][a] = None
@@ -243,6 +247,7 @@ def build(args) -> dict:
             run["osm"] = osm[0]
         if j in run_lr:
             run["lr"] = run_lr[j]
+        tile_runs.append(run)
         if f["geometry"]["type"] == "LineString":
             coords = f["geometry"]["coordinates"]
             run["c"] = [rounded(c[:2]) for c in simplify(coords, SIMPLIFY_M)]
@@ -254,6 +259,10 @@ def build(args) -> dict:
             for a in f["_areas"]:
                 tiles[t]["areas"][a] = None
             tiles[t]["runs"].append((run, f["_areas"]))
+
+    # Experimental: the lifts and slopes of the resorts' details files (next to the index), for their status.
+    linked = lift_links.link(Path(args.index).parent, tile_lifts, tile_runs)
+    print(lift_links.summary(linked))
 
     def area_entry(a: str) -> dict:
         area = areas[a]

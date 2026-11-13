@@ -261,13 +261,20 @@ once a day; its own vector tiles may not be used directly.
   resort most of its lifts belong to, `osm`, `wd`, `p`: a point in it, `outline`). `lifts`: all but
   proposed, planned and under construction (disused and abandoned ones stay, for old tracks), with
   `type`, `name`, `ref`, `status`, `capacity`, `duration`, `occupancy`, `heating`, `bubble`, `tunnel`, `osm`,
-  `lr`, `areas` (indexes in this tile's `areas`) and `c`, the line simplified to 5 m as
+  `lr`, `item` (experimental: the lift in a resort's details file, `<country>/<id>/<item id>`, for its
+  status; see below), `areas` (indexes in this tile's `areas`) and `c`, the line simplified to 5 m as
   `[lon, lat, elevation]`. `runs`: every piste and trail, with `uses` (downhill, nordic, skitour,
   sled…), `difficulty`, `conv` (the colour convention when not European: `north_america`, `japan`),
   `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `tunnel`, `osm` (not unique: OpenSkiData
   splits some ways into several runs), `lr`, `areas`, and `c`
   (`[lon, lat]`) or, for a piste drawn as an area, `poly` (polygon rings). Empty values are left out.
   The schema is `ski/v1/tile.schema.json` (`scripts/ski-tile.schema.json`).
+
+Runs get `item` too. `scripts/lift_links.py` sets it during the build: it matches the lifts and slopes of each
+`json/<country>/<id>.details.json` (experimental) to the lines in and around that resort by number, name, type
+and, for lifts, length and altitudes, as there's no shared id; about 85% of lifts and 80% of slopes match. The map
+and resort pages load the details of the resorts in view and fade closed lifts and pistes. Run it on built tiles
+with `python3 scripts/lift_links.py ../liftradar-data/json ski`.
 
 `scripts/ski_resorts.py` gives OpenSkiData's areas to liftradar's resorts. A resort claims the areas
 within 8 km whose name matches its own best (and other matching ones within 3 km), and the nearest
