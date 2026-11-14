@@ -10,8 +10,8 @@
   },
   "website": "https://www.katzenkopf-leutasch.at",
   "status": "no_report",
-  "fetched_at": "2026-11-13T13:41:32.046193+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-14T08:41:31.818008+01:00",
+  "status_from": "2026-11-12T09:45:02.491682+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -34,17 +34,12 @@
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-10-29T08:51:00+01:00",
   "avalanche": null,
-  "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Katzenkopf%20Leutasch_659"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.snowcard.tirol.at/skigebiet/Katzenkopf%20Leutasch_659",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Katzenkopf%20Leutasch_659'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ]
 }

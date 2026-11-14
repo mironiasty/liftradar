@@ -9,30 +9,30 @@
     "lon": 13.0145
   },
   "website": "https://www.moelltaler-gletscher.at",
-  "status": "closed",
-  "fetched_at": "2026-11-13T13:41:52.894830+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-14T08:41:52.859014+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 40,
+    "valley_cm": 40,
     "fresh_cm": null,
     "last_snowfall": "2026-11-03",
-    "condition": null,
+    "condition": "griffig",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 3,
     "total": 8
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 20,
-    "open_km": 0.0,
-    "total_km": 36
+    "open_km": null,
+    "total_km": null
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "drag_lift": {
@@ -40,11 +40,11 @@
       "total": 2
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 1
     }
   },
@@ -52,19 +52,19 @@
     "ski_route": {
       "open": 0,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": 2.0,
       "total_km": 4
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 9,
-      "open_km": 0.0,
+      "open_km": 0.5,
       "total_km": 9
     },
     "difficult": {
@@ -74,7 +74,7 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-13T07:55:29+01:00",
+  "lifts_updated_at": "2026-11-14T07:40:13+01:00",
   "avalanche": null,
   "sources": [
     "https://www.kaernten.at/golf/service/wetter/schneeberichte",

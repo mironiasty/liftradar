@@ -10,8 +10,8 @@
   },
   "website": "https://www.tirolina.at",
   "status": "closed",
-  "fetched_at": "2026-11-13T13:41:43.852411+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-14T08:41:44.129127+01:00",
+  "status_from": "2026-11-13T08:41:50.555719+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -35,16 +35,10 @@
   "lifts_updated_at": "2026-11-13T01:33:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Tirolina%20-%20Ski-%2CSport-%2C%20und%20Aktivberg%20Thiersee_96",
     "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-tirolina-hinterthiersee"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.snowcard.tirol.at/skigebiet/Tirolina%20-%20Ski-%2CSport-%2C%20und%20Aktivberg%20Thiersee_96",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-tirolina-hinterthiersee",
@@ -52,5 +46,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Tirolina%20-%20Ski-%2CSport-%2C%20und%20Aktivberg%20Thiersee_96'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ]
 }

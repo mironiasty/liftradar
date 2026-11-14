@@ -9,12 +9,12 @@
     "lon": 10.87
   },
   "website": "https://www.pitztaler-gletscher.at",
-  "status": "closed",
-  "fetched_at": "2026-11-13T13:40:38.141283+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-14T08:40:37.963326+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 30,
+    "valley_cm": 0,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -62,58 +62,58 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 7,
     "total": 13
   },
   "slopes": {
-    "open": 0,
+    "open": 5,
     "total": 29,
-    "open_km": 0.0,
+    "open_km": 14.2,
     "total_km": 67
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "drag_lift": {
-      "open": 0,
+      "open": 2,
       "total": 4
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 3
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 9,
-      "open_km": 0.0,
+      "open_km": 5.3,
       "total_km": 18
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": 7.5,
       "total_km": 45
     },
     "difficult": {
-      "open": 0,
+      "open": 1,
       "total": 9,
-      "open_km": 0.0,
+      "open_km": 1.5,
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-11-13T10:06:50+01:00",
+  "lifts_updated_at": "2026-11-13T15:56:03+01:00",
   "avalanche": null,
   "sources": [
     "https://www.pitztaler-gletscher.at/wetter",

@@ -9,8 +9,8 @@
     "lon": 14.1196
   },
   "website": "https://www.riesneralm.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-13T13:40:38.142789+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-14T08:40:37.965000+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,22 +20,63 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 8
+  },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 17,
+    "open_km": 0.0,
     "total_km": 33
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 15
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-11-13T16:28:14+01:00",
   "avalanche": null,
   "sources": [
+    "https://winter.intermaps.com/riesneralm/data?lang=en",
     "https://www.skiresort.info/ski-resort/riesneralm-donnersbachwald/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://winter.intermaps.com/riesneralm/data?lang=en",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/riesneralm-donnersbachwald/",

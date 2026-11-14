@@ -10,7 +10,7 @@
   },
   "website": "https://www.prazsurarly.com",
   "status": "no_report",
-  "fetched_at": "2026-11-13T13:40:38.151054+01:00",
+  "fetched_at": "2026-11-14T08:40:37.973480+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -64,34 +64,34 @@
   "avalanche": {
     "region_id": "FR-03",
     "region": "Mont-Blanc",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "low",
         "lower_bound": null,
-        "upper_bound": 3000,
+        "upper_bound": 2800,
         "period": "all_day"
       },
       {
-        "level": "considerable",
-        "lower_bound": 3000,
+        "level": "moderate",
+        "lower_bound": 2800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-12T19:00:00+01:00",
-    "valid_from": "2026-11-12T19:00:00+01:00",
-    "valid_until": "2026-11-13T18:00:00+01:00"
+    "published_at": "2026-11-13T16:00:00+01:00",
+    "valid_from": "2026-11-13T16:00:00+01:00",
+    "valid_until": "2026-11-14T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-d-arly&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-diamant",
-    "https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/praz-sur-arly/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-14/2026-11-14-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -104,15 +104,15 @@
         "attribution_required": null
       },
       {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/staticPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/dynamicPoiData?lang=fr",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json",
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-14/2026-11-14-FR.json",
         "attribution_required": null
       }
     ],

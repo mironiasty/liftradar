@@ -10,7 +10,7 @@
   },
   "website": "https://www.valdanniviers.ch",
   "status": "closed",
-  "fetched_at": "2026-11-13T13:40:38.147895+01:00",
+  "fetched_at": "2026-11-14T08:40:37.970215+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Orzival (SLF)",
         "elevation_m": 2640,
-        "depth_cm": 30,
-        "fresh_cm": 16,
+        "depth_cm": 32,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
@@ -95,34 +95,14 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-13T13:30:00+01:00",
-  "avalanche": {
-    "region_id": "CH-4124",
-    "region": "Val d'Anniviers",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "persistent_weak_layers"
-    ],
-    "published_at": "2026-11-12T17:00:00+01:00",
-    "valid_from": "2026-11-12T17:00:00+01:00",
-    "valid_until": "2026-11-13T17:00:00+01:00"
-  },
+  "lifts_updated_at": "2026-11-14T08:30:00+01:00",
+  "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=56&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.valdanniviers.ch/en/Z15430/grimentz-en",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.valdanniviers.ch/en/Z15430/grimentz-en"
   ],
   "source_details": {
     "conditions": [
@@ -140,10 +120,6 @@
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
-        "attribution_required": null
-      },
-      {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
         "attribution_required": null
       }
     ],

@@ -9,15 +9,15 @@
     "lon": 7.2338
   },
   "website": "https://www.verbier.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-13T13:40:38.148668+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-14T08:40:37.971027+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 20,
+    "valley_cm": 10,
+    "fresh_cm": 21,
     "last_snowfall": "2026-11-13",
-    "condition": null,
+    "condition": "mainly: spring snow / partially: wet",
     "stations": [
       {
         "name": "Les Ruinettes",
@@ -30,7 +30,7 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 30,
+        "depth_cm": 34,
         "fresh_cm": 21,
         "temperature_c": null,
         "condition": null
@@ -46,13 +46,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 28,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -73,7 +73,7 @@
       "total": 3
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "other": {
@@ -85,61 +85,37 @@
     "easy": {
       "open": 0,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-13T13:41:00+01:00",
-  "avalanche": {
-    "region_id": "CH-4115",
-    "region": "Martigny - Verbier",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "persistent_weak_layers"
-    ],
-    "published_at": "2026-11-12T17:00:00+01:00",
-    "valid_from": "2026-11-12T17:00:00+01:00",
-    "valid_until": "2026-11-13T17:00:00+01:00"
-  },
+  "lifts_updated_at": "2026-11-14T08:41:00+01:00",
+  "avalanche": null,
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
         "attribution_required": null
       }
     ],

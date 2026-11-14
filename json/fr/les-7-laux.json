@@ -10,7 +10,7 @@
   },
   "website": "https://www.les7laux.com",
   "status": "closed",
-  "fetched_at": "2026-11-13T13:40:38.151550+01:00",
+  "fetched_at": "2026-11-14T08:40:37.973986+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -68,33 +68,27 @@
   "avalanche": {
     "region_id": "FR-08",
     "region": "Belledonne",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 1,
+    "danger": "low",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": 2700,
-        "period": "all_day"
-      },
-      {
-        "level": "moderate",
-        "lower_bound": 2700,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-12T19:00:00+01:00",
-    "valid_from": "2026-11-12T19:00:00+01:00",
-    "valid_until": "2026-11-13T18:00:00+01:00"
+    "published_at": "2026-11-13T16:00:00+01:00",
+    "valid_from": "2026-11-13T16:00:00+01:00",
+    "valid_until": "2026-11-14T18:00:00+01:00"
   },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/les7laux",
     "https://public.lumiplay.link/interactive-map/v1/map/957de085-2374-467f-9e43-e201be02fc12/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/957de085-2374-467f-9e43-e201be02fc12/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-7-laux/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-14/2026-11-14-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -111,7 +105,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-13/2026-11-13-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-14/2026-11-14-FR.json",
         "attribution_required": null
       }
     ],

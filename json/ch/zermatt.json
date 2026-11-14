@@ -10,12 +10,12 @@
   },
   "website": "https://www.matterhornparadise.ch",
   "status": "open",
-  "fetched_at": "2026-11-13T13:40:38.148790+01:00",
+  "fetched_at": "2026-11-14T08:40:37.971160+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 19,
     "valley_cm": 0,
-    "fresh_cm": 14,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
         "depth_cm": 19,
-        "fresh_cm": 14,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
@@ -38,7 +38,7 @@
     ]
   },
   "lifts": {
-    "open": 6,
+    "open": 7,
     "total": 36
   },
   "slopes": {
@@ -49,7 +49,7 @@
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 2,
+      "open": 0,
       "total": 6
     },
     "chairlift": {
@@ -57,7 +57,7 @@
       "total": 10
     },
     "drag_lift": {
-      "open": 1,
+      "open": 0,
       "total": 5
     },
     "funicular": {
@@ -65,7 +65,7 @@
       "total": 2
     },
     "gondola": {
-      "open": 2,
+      "open": 6,
       "total": 9
     },
     "other": {
@@ -99,36 +99,16 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-13T13:40:00+01:00",
-  "avalanche": {
-    "region_id": "CH-4222",
-    "region": "Zermatt",
-    "danger_level": 2,
-    "danger": "moderate",
-    "ratings": [
-      {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "persistent_weak_layers"
-    ],
-    "published_at": "2026-11-12T17:00:00+01:00",
-    "valid_from": "2026-11-12T17:00:00+01:00",
-    "valid_until": "2026-11-13T17:00:00+01:00"
-  },
+  "lifts_updated_at": "2026-11-14T08:41:00+01:00",
+  "avalanche": null,
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.zermatt.ch/en/unique/International-Ski-Area",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.zermatt.ch/en/unique/International-Ski-Area"
   ],
   "source_details": {
     "conditions": [
@@ -137,11 +117,11 @@
         "attribution_required": null
       },
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
@@ -154,10 +134,6 @@
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
-        "attribution_required": null
-      },
-      {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
         "attribution_required": null
       }
     ],
