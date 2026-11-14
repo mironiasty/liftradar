@@ -1,0 +1,151 @@
+{
+  "time": "2026-11-14T13:42:02+01:00",
+  "resorts": [
+    {
+      "id": "brixlegg",
+      "country": "at",
+      "status": "closed",
+      "status_from": "2026-11-13T08:41:21.856666+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Brixlegg_2969'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "hochalmlifte-christlum-achenkirch",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:21.850169+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_38'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "katzenkopf-leutasch",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-12T09:45:02.491682+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Katzenkopf%20Leutasch_659'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "muttereralm",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:28.906679+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Muttereralm%20-%20Nockspitzbahn_49'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "nesselwaengle-im-tannheimer-tal",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:29.236521+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "niederthai",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:30.478387+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Niederthai_89'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "rofanseilbahn-maurach",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:32.372419+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Rofanseilbahn%20-%20Maurach_76'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "tirolina-thiersee",
+      "country": "at",
+      "status": "closed",
+      "status_from": "2026-11-13T08:41:50.555719+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Tirolina%20-%20Ski-%2CSport-%2C%20und%20Aktivberg%20Thiersee_96'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "ankogel-mallnitz",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:47.999763+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Ankogel / Mallnitz"
+      ]
+    },
+    {
+      "id": "koralpe",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:37:10.921386+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Koralpe"
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://ski.salla.fi/aukioloajat-talvi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "laajis",
+      "country": "fi",
+      "status": "open",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no slope or lift table (layout changed?)"
+      ]
+    },
+    {
+      "id": "golte",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-11T16:22:47.960389+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.golte.si/zima/smucanje/proge/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "soriska-planina",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-11T16:22:47.960418+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.soriska-planina.si/api/snowphone?type=workCondition'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    }
+  ],
+  "warnings": [
+    "zieleniec: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://zieleniec.pl/zima/aktualne-warunki'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "mayrhofen: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Mayrhofen_17'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "mayrhofen: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Eggalmbahnen_26'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "zillertal-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Gerlos%20-%20Zillertal%20Arena_30'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "zillertal-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Gerlosstein%20-%20Zillertal%20Arena_97'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "zillertal-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten%20-%20Zillertal%20Arena_2563'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "hochzeiger-pitztal: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochzeiger%20-%20Jerzens_43'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "ischgl-silvretta-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Ischgl_2897'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "joechelspitze-lechtal: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/J%C3%B6chelspitze%20Lechtal_2906'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "kitzbuehel: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Mittersill%20-%20Pa%C3%9F%20Thurn%20-%20Kitzb%C3%BChel_2544'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "lienz-zettersfeld-hochstein: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Lienz%20Zettersfeld%20Hochstein_48'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "neukirchen-bramberg-wildkogel: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Neukirchen%20-%20Bramberg%20-%20Wildkogel_28'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "nordkette-innsbruck: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nordkette%20-%20Innsbruck_51'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "serfaus-fiss-ladis: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Serfaus_16'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "serfaus-fiss-ladis: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Fiss-Ladis_98'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "steinplatte-winklmoosalm: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Steinplatte-Waidring_67'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "steinplatte-winklmoosalm: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Steinplatte-Winklmoosalm_2572'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ]
+}
