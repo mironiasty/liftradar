@@ -9,13 +9,13 @@
     "lon": 7.7806
   },
   "website": "https://www.eischoll.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-15T08:40:31.499364+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-15T13:40:36.753751+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 1,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -34,9 +34,9 @@
     "total": 4
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 13,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 15
   },
   "lifts_by_type": {
@@ -55,21 +55,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 2
     }
   },
