@@ -9,9 +9,9 @@
     "lon": 14.0079
   },
   "website": "https://www.soriska-planina.si",
-  "status": "no_report",
-  "fetched_at": "2026-11-14T13:40:34.008593+01:00",
-  "status_from": "2026-11-11T16:22:47.960418+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-15T08:40:31.504228+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,22 +20,58 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 8,
+    "open_km": 0.0,
     "total_km": 7
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-15T05:00:15+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.soriska-planina.si/api/snowphone?type=workCondition",
+    "https://www.soriska-planina.si/api/snowphone?type=info",
     "https://www.skiresort.com/en/ski-resort/soriska-planina/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.soriska-planina.si/api/snowphone?type=workCondition",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.soriska-planina.si/api/snowphone?type=info",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/en/ski-resort/soriska-planina/",
@@ -43,7 +79,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.soriska-planina.si/api/snowphone?type=workCondition'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-  ]
+  "errors": []
 }

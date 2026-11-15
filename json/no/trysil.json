@@ -9,8 +9,8 @@
     "lon": 12.2427
   },
   "website": "http://www.skistar.com/trysil",
-  "status": "no_report",
-  "fetched_at": "2026-11-14T13:40:34.006947+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-15T08:40:31.503257+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 40
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 70,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 78
   },
   "lifts_by_type": {
@@ -50,31 +50,31 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 44,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 13,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-30T13:42:07+02:00",
+  "lifts_updated_at": "2026-11-14T14:16:13+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

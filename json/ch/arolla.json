@@ -10,19 +10,27 @@
   },
   "website": "https://www.valdherens.ch/en/espace-dent-blanche-ski-sector-arolla-fp42182",
   "status": "no_report",
-  "fetched_at": "2026-11-14T13:40:33.984787+01:00",
+  "fetched_at": "2026-11-15T08:40:31.499262+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 24,
-    "valley_cm": null,
-    "fresh_cm": 0,
+    "mountain_cm": 26,
+    "valley_cm": 0,
+    "fresh_cm": 3,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Les Fontanesses (SLF)",
         "elevation_m": 2847,
-        "depth_cm": 24,
+        "depth_cm": 26,
+        "fresh_cm": 3,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Arolla (SLF)",
+        "elevation_m": 2070,
+        "depth_cm": 0,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
