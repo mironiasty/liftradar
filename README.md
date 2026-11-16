@@ -314,8 +314,8 @@ Skimap.org, Who's On First, © Mapterhorn. The tiles are a derived database unde
 
 ## 3D engine
 
-TrailRider's resort viewer (its `web/src/viewer.ts`, `docs/3d-engine-plan.md`) is to replace
-`assets/scene.js` in `3d.html` (step 3). It isn't in git: TrailRider (`../trailrider`, a private repo)
+TrailRider's resort viewer (its `web/src/viewer.ts`, `docs/3d-engine-plan.md`) draws `3d.html` where the
+browser has WebGPU (`assets/scene.js` loads the version `/engine.json` pins). It isn't in git: TrailRider (`../trailrider`, a private repo)
 publishes it with `npm run viewer -- --release` on this repo's release `viewer-<commit>` as
 `viewer.tar.gz` (`viewer.js`, the engine's WebAssembly beside it, and its types, `viewer.d.ts`).
 `engine.json` pins one by its `tag` and the archive's `sha256`; `scripts/engine.mjs` downloads that,
@@ -332,8 +332,11 @@ also load MapLibre GL JS 5 (from cdnjs; version 6 is only an ES module there), m
 labels in the page's language, peaks, and hillshading and contours from Terrain Tiles) and
 `assets/ski.js` (outlines, points, pistes and lifts from the ski tiles).
 
-`3d.html` also loads `assets/scene.js`, an ES module (it still sees the shared names) with three.js
-(cdnjs). It cuts a box around the resort out of [Mapterhorn](https://mapterhorn.com)'s terrain
+`3d.html` also loads `assets/scene.js`, an ES module (it still sees the shared names). Where the browser
+has WebGPU it draws the resort with TrailRider's engine (see "3D engine"): the realistic map from the
+Terrain Tiles' elevation and this site's ski tiles, every lift as what it is, a card for a clicked lift or
+piste, and + and − and a compass. Elsewhere, or when the engine can't load or draw the resort, it draws a
+diorama with three.js (cdnjs): it cuts a box around the resort out of [Mapterhorn](https://mapterhorn.com)'s terrain
 (0.5–10 m in the Alps; the elevation tiles go through a MapLibre protocol that flattens everything
 outside the box, and the sky, base and the cut's slopes are in the page's background colour, so
 the box floats). Only the resort's own pistes and lifts are drawn (`lr`). The lifts are models in a
@@ -344,4 +347,4 @@ two tracks, and carriers sized by `occupancy`, moving at the speed from `duratio
 `capacity` when the data has them. The camera starts over the box, looking the way the lifts go
 up; `#view=zoom/lat/lon/bearing/pitch` in the URL keeps a view.
 
-Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles from [OpenFreeMap](https://openfreemap.org) © [OpenMapTiles](https://openmaptiles.org); relief from [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen); the 3D terrain from [Mapterhorn](https://mapterhorn.com/attribution/); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).
+Data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors; map tiles from [OpenFreeMap](https://openfreemap.org) © [OpenMapTiles](https://openmaptiles.org); relief from [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) (Mapzen); the 3D terrain from Terrain Tiles with WebGPU, else from [Mapterhorn](https://mapterhorn.com/attribution/); ski areas, pistes and lifts from [OpenSkiData](https://openskidata.org) (ODbL).
