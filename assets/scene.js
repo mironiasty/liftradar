@@ -1076,6 +1076,33 @@ async function mountEngine(section, key) {
       card.style.top = `${Math.max(8, Math.min(y + 12, h - card.offsetHeight - 8))}px`;
     };
     document.addEventListener("keydown", (event) => event.key === "Escape" && close());
+    // + and − and a compass, as the other maps have them (MapLibre's own look, from its CSS).
+    const button = (kind, label, onClick) => {
+      const node = el(
+        "button",
+        { type: "button", class: `maplibregl-ctrl-${kind}`, title: label, "aria-label": label },
+        el("span", { class: "maplibregl-ctrl-icon", "aria-hidden": "true" }),
+      );
+      node.addEventListener("click", onClick);
+      return node;
+    };
+    /** @type {import("../types/viewer").MountedResort | null} */
+    let view = null;
+    const compass = button("compass", t("Face north"), () => view?.faceNorth());
+    const needle = /** @type {HTMLElement} */ (compass.firstElementChild);
+    section.append(
+      el(
+        "div",
+        { class: "maplibregl-ctrl-top-left" },
+        el(
+          "div",
+          { class: "maplibregl-ctrl maplibregl-ctrl-group" },
+          button("zoom-in", t("Zoom in"), () => view?.zoom(1.6)),
+          button("zoom-out", t("Zoom out"), () => view?.zoom(1 / 1.6)),
+          compass,
+        ),
+      ),
+    );
     return await new Promise((resolve) => {
       const mounted = viewer.mountResort(canvas, {
         resort: key,
@@ -1086,17 +1113,24 @@ async function mountEngine(section, key) {
           place(picked);
         },
         // It stays by what was picked as the map moves, and hides while that's out of view.
+        // The compass's needle points north as the camera turns.
+        onTurn: (yaw) => {
+          needle.style.transform = `rotate(${yaw}rad)`;
+        },
         onPickMove: (at) => {
           if (closed) return;
           if (at) place(at);
           else card.setAttribute("hidden", "");
         },
         onStatus: (status) => {
-          if (status === "ready") resolve(mounted);
-          else if (typeof status === "object") {
+          if (status === "ready") {
+            view = mounted;
+            resolve(mounted);
+          } else if (typeof status === "object") {
             console.warn("3D engine:", status.error);
             mounted.destroy();
             canvas.remove();
+            section.querySelector(".maplibregl-ctrl-top-left")?.remove();
             resolve(null);
           }
         },

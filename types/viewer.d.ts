@@ -19,6 +19,11 @@ export interface MountOptions {
    * time the camera has moved it (CSS pixels); null while it's off the canvas or behind the camera.
    */
   onPickMove?(at: { x: number; y: number } | null): void;
+  /**
+   * The camera's turn whenever it changes, in radians from 0 (looking north) to 2π, growing as the
+   * camera goes round east: north on screen is that much clockwise from up (a compass's needle).
+   */
+  onTurn?(yaw: number): void;
 }
 
 /**
@@ -45,6 +50,10 @@ export type Picked = { x: number; y: number } & (
 );
 
 export interface MountedResort {
+  /** Glides `by` times closer (below 1 further back), as a map's + and − do. */
+  zoom(by: number): void;
+  /** Glides round to look north. */
+  faceNorth(): void;
   /** Stops drawing and frees the GPU. The canvas can't be drawn on again: give a new one. */
   destroy(): void;
 }
