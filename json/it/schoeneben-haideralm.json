@@ -10,8 +10,8 @@
   },
   "website": "https://www.schoeneben.it",
   "status": "no_report",
-  "fetched_at": "2026-11-16T08:40:31.395713+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-16T13:40:38.286174+01:00",
+  "status_from": "2026-11-11T11:31:21.734082+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -21,11 +21,11 @@
     "stations": []
   },
   "lifts": {
-    "open": 1,
+    "open": 0,
     "total": 11
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 15,
     "open_km": null,
     "total_km": 65
@@ -44,25 +44,25 @@
       "total": 2
     },
     "gondola": {
-      "open": 1,
+      "open": 0,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 7,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 4,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 4,
       "open_km": null,
       "total_km": null
@@ -71,16 +71,11 @@
   "lifts_updated_at": "2026-11-10T18:32:59+01:00",
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
     "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en",
     "https://www.skiresort.info/ski-resort/belpiano-schoeneben-malga-san-valentino-haideralm/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en",
-        "attribution_required": null
-      },
       {
         "url": "https://winter.intermaps.com/schoeneben_haideralm/data?lang=en",
         "attribution_required": null
@@ -93,5 +88,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  ]
 }

@@ -9,14 +9,14 @@
     "lon": 9.1723
   },
   "website": "https://www.elm.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-16T08:40:31.394712+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-16T13:40:38.284889+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 1,
     "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": "2026-03-29",
+    "fresh_cm": 0,
+    "last_snowfall": null,
     "condition": null,
     "stations": [
       {
@@ -34,9 +34,9 @@
     "total": 6
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 16,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 41
   },
   "lifts_by_type": {
@@ -59,21 +59,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 17
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 9,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 22
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 2
     }
   },
@@ -95,8 +95,8 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-15T17:00:00+01:00",
-    "valid_from": "2026-11-15T17:00:00+01:00",
+    "published_at": "2026-11-16T08:00:00+01:00",
+    "valid_from": "2026-11-16T08:00:00+01:00",
     "valid_until": "2026-11-16T17:00:00+01:00"
   },
   "sources": [

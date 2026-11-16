@@ -9,8 +9,8 @@
     "lon": 10.4021
   },
   "website": "https://vassfjellet.no/",
-  "status": "no_report",
-  "fetched_at": "2026-11-16T08:40:31.400090+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-16T13:40:38.291023+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 12,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 15
   },
   "lifts_by_type": {
@@ -42,25 +42,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-03-25T13:30:08+01:00",
+  "lifts_updated_at": "2026-11-16T11:49:19+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

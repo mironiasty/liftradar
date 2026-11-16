@@ -10,7 +10,7 @@
   },
   "website": "https://www.matterhornparadise.ch",
   "status": "open",
-  "fetched_at": "2026-11-16T08:40:31.395304+01:00",
+  "fetched_at": "2026-11-16T13:40:38.285700+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 17,
@@ -38,7 +38,7 @@
     ]
   },
   "lifts": {
-    "open": 8,
+    "open": 11,
     "total": 36
   },
   "slopes": {
@@ -53,7 +53,7 @@
       "total": 6
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 10
     },
     "drag_lift": {
@@ -65,7 +65,7 @@
       "total": 2
     },
     "gondola": {
-      "open": 4,
+      "open": 6,
       "total": 9
     },
     "other": {
@@ -99,7 +99,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-16T08:41:00+01:00",
+  "lifts_updated_at": "2026-11-16T13:41:00+01:00",
   "avalanche": {
     "region_id": "CH-4222",
     "region": "Zermatt",
@@ -117,13 +117,13 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-15T17:00:00+01:00",
-    "valid_from": "2026-11-15T17:00:00+01:00",
+    "published_at": "2026-11-16T08:00:00+01:00",
+    "valid_from": "2026-11-16T08:00:00+01:00",
     "valid_until": "2026-11-16T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
@@ -134,11 +134,11 @@
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {

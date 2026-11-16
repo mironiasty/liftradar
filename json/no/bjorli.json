@@ -9,8 +9,8 @@
     "lon": 8.2129
   },
   "website": "https://www.bjorli.no/",
-  "status": "no_report",
-  "fetched_at": "2026-11-16T08:40:31.400175+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-16T13:40:38.291118+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 11,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 20
   },
   "lifts_by_type": {
@@ -38,31 +38,31 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-27T08:28:10+01:00",
+  "lifts_updated_at": "2026-11-16T09:46:30+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

@@ -9,14 +9,14 @@
     "lon": 6.9447
   },
   "website": "https://www.les-paccots.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-16T08:40:31.394980+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-16T13:40:38.285252+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 0,
     "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": "2026-02-20",
+    "fresh_cm": 3,
+    "last_snowfall": null,
     "condition": null,
     "stations": [
       {
@@ -34,9 +34,9 @@
     "total": 10
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 10,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 16
   },
   "lifts_by_type": {
@@ -47,21 +47,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 8,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 11
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 3
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 3
     }
   },
