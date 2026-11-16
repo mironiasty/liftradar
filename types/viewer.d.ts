@@ -14,6 +14,11 @@ export interface MountOptions {
   onInfo?(info: { name: string; lifts: number; pistes: number }): void;
   /** A click (not a drag) on a lift or piste; null on neither. */
   onPick?(picked: Picked | null): void;
+  /**
+   * While something is picked, where on the canvas the point of it that was clicked now is, each
+   * time the camera has moved it (CSS pixels); null while it's off the canvas or behind the camera.
+   */
+  onPickMove?(at: { x: number; y: number } | null): void;
 }
 
 /**

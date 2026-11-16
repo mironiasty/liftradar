@@ -1062,7 +1062,19 @@ async function mountEngine(section, key) {
     // A card at a clicked lift or piste; a click on neither, or Escape, closes it.
     const card = el("div", { class: "pick", hidden: "" });
     section.append(card);
-    const close = () => card.setAttribute("hidden", "");
+    let closed = true;
+    const close = () => {
+      closed = true;
+      card.setAttribute("hidden", "");
+    };
+    /** @param {{ x: number, y: number }} at */
+    const place = ({ x, y }) => {
+      closed = false;
+      card.removeAttribute("hidden");
+      const [w, h] = [section.clientWidth, section.clientHeight];
+      card.style.left = `${Math.max(8, Math.min(x + 12, w - card.offsetWidth - 8))}px`;
+      card.style.top = `${Math.max(8, Math.min(y + 12, h - card.offsetHeight - 8))}px`;
+    };
     document.addEventListener("keydown", (event) => event.key === "Escape" && close());
     return await new Promise((resolve) => {
       const mounted = viewer.mountResort(canvas, {
@@ -1071,10 +1083,13 @@ async function mountEngine(section, key) {
         onPick: (picked) => {
           if (!picked) return close();
           card.replaceChildren(...pickedCard(picked));
-          card.removeAttribute("hidden");
-          const [w, h] = [section.clientWidth, section.clientHeight];
-          card.style.left = `${Math.min(picked.x + 12, w - card.offsetWidth - 8)}px`;
-          card.style.top = `${Math.min(picked.y + 12, h - card.offsetHeight - 8)}px`;
+          place(picked);
+        },
+        // It stays by what was picked as the map moves, and hides while that's out of view.
+        onPickMove: (at) => {
+          if (closed) return;
+          if (at) place(at);
+          else card.setAttribute("hidden", "");
         },
         onStatus: (status) => {
           if (status === "ready") resolve(mounted);
