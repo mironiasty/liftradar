@@ -10,6 +10,8 @@ const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
 const count = document.getElementById("count");
 const empty = document.getElementById("empty");
+const favoritesSection = document.getElementById("favorites");
+const favoriteCards = document.getElementById("fav-cards");
 let rows = [];
 const values = new Map();
 let key = "name",
@@ -19,6 +21,15 @@ let country = "";
 const shownStatuses = new Set();
 // Each status chip's count element, by status.
 const statusCounts = new Map();
+// The "Favourites" chip: only the visitor's favourite resorts; shown while they have any.
+let favoritesOnly = false;
+/** @type {HTMLElement | null} */
+let favoritesChip = null;
+/** @type {HTMLElement | null} */
+let favoritesCount = null;
+// Every resort by its key ("at/soelden"), for the favourites' cards.
+/** @type {Map<string, IndexResort>} */
+const byKey = new Map();
 // The filters and order are kept in the address (?q=&country=&region=&status=open,closed&sort=-lifts_open),
 // so going back to the list keeps them; resort.js's "All resorts" link reuses the last one (LIST_KEY).
 const saved = new URLSearchParams(location.search);
@@ -70,7 +81,13 @@ function nameCell(r) {
   return el(
     "td",
     {},
-    el("div", { class: "resort" }, el("span", { class: "dot", style: `--c:${color}`, title: label }), text),
+    el(
+      "div",
+      { class: "resort" },
+      el("span", { class: "dot", style: `--c:${color}`, title: label }),
+      text,
+      favoriteButton(r),
+    ),
   );
 }
 
@@ -123,7 +140,7 @@ function row(r) {
   const active = statusOf(r) === "open";
   const tr = el(
     "tr",
-    { class: active ? "" : "inactive" },
+    { class: active ? "" : "inactive", "data-key": resortKey(r) },
     nameCell(r),
     el("td", { class: "c-region" }, r.region ?? "–", el("div", { class: "sub-line" }, countryName(r.country))),
     value(t("Mountain"), dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
@@ -133,9 +150,9 @@ function row(r) {
     slopesCell(r.slopes, active),
     avalancheCell(r.avalanche),
   );
-  // The whole row opens the resort's page; the name is the link for keyboards and new tabs.
+  // The whole row opens the resort's page; the name is the link for keyboards and new tabs. The star doesn't.
   tr.addEventListener("click", (event) => {
-    if (!(/** @type {Element} */ (event.target).closest("a")) && !getSelection()?.toString())
+    if (!(/** @type {Element} */ (event.target).closest("a, button")) && !getSelection()?.toString())
       location.href = resortPage(r);
   });
   return tr;
@@ -147,17 +164,22 @@ function filter() {
   let shown = 0;
   // A chip counts the resorts the other filters leave, whichever statuses are chosen.
   const totals = {};
+  const favorite = new Set(favorites());
+  let favoritesShown = 0;
   for (const tr of rows) {
     const v = values.get(tr);
     const matches =
       v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
-    if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
-    tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
+    const isFav = favorite.has(tr.dataset.key);
+    if (matches && (!favoritesOnly || isFav)) totals[v.status] = (totals[v.status] ?? 0) + 1;
+    if (matches && isFav && (shownStatuses.size === 0 || shownStatuses.has(v.status))) favoritesShown++;
+    tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status)) || (favoritesOnly && !isFav);
     if (!tr.hidden) shown++;
   }
   for (const [status, node] of statusCounts) node.textContent = String(totals[status] ?? 0);
+  if (favoritesCount) favoritesCount.textContent = String(favoritesShown);
   searchClear.hidden = !search.value;
-  const filtered = query || country || region || shownStatuses.size;
+  const filtered = query || country || region || shownStatuses.size || favoritesOnly;
   const n = rows.length;
   count.textContent = filtered ? t("{shown} of {n} resorts", { shown, n }) : t("{n} resorts", { n });
   empty.hidden = shown > 0;
@@ -172,6 +194,7 @@ function saveState() {
   if (country) params.set("country", country);
   if (regionSelect.value) params.set("region", regionSelect.value);
   if (shownStatuses.size) params.set("status", [...shownStatuses].join(","));
+  if (favoritesOnly) params.set("favorites", "1");
   if (key !== "name" || !ascending) params.set("sort", (ascending ? "" : "-") + key);
   const query = params.toString() ? `?${params}` : "";
   history.replaceState(null, "", location.pathname + query + location.hash);
@@ -235,10 +258,27 @@ function fillFilters(resorts) {
     statusGroup.append(chip);
   }
 
+  const favChip = button("chip fav-chip", "", () => {
+    favoritesOnly = !favoritesOnly;
+    favChip.setAttribute("aria-pressed", String(favoritesOnly));
+    filter();
+  });
+  favChip.innerHTML =
+    '<svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">' +
+    '<path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>';
+  favoritesCount = el("span", { class: "count" });
+  favChip.append(t("Favourites"), favoritesCount);
+  favoritesOnly = saved.get("favorites") === "1" && favorites().length > 0;
+  favChip.setAttribute("aria-pressed", String(favoritesOnly));
+  favChip.hidden = favorites().length === 0;
+  favoritesChip = favChip;
+  statusGroup.append(favChip);
+
   document.getElementById("reset").addEventListener("click", () => {
     search.value = "";
     regionSelect.value = "";
     shownStatuses.clear();
+    favoritesOnly = false;
     for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", "false");
     chooseCountry("");
   });
@@ -301,6 +341,61 @@ searchClear.addEventListener("click", () => {
   search.focus();
 });
 
+// The favourites' cards, in the order they were added: status, where, and the key numbers the resort has.
+// A favourite no longer in the index is left out.
+function showFavorites() {
+  const cards = favorites().flatMap((key) => {
+    const r = byKey.get(key);
+    return r ? [favoriteCard(r)] : [];
+  });
+  favoriteCards.replaceChildren(...cards);
+  favoritesSection.hidden = cards.length === 0;
+}
+
+/** @param {IndexResort} r */
+function favoriteCard(r) {
+  const status = statusOf(r);
+  const { label, color } = STATUS[status];
+  const { lifts, slopes, snow } = r;
+  const slopeCount = pair(slopes?.open, slopes?.total);
+  /** @type {[string, string][]} */
+  const shown = [
+    [t("Lifts"), pair(lifts?.open, lifts?.total)],
+    [t("Slopes"), slopeCount === "–" ? pair(slopes?.open_km, slopes?.total_km, " km") : slopeCount],
+    [t("Mountain"), dash(snow.mountain_cm, " cm")],
+    [t("Fresh"), snow.fresh_cm ? `+${snow.fresh_cm} cm` : "–"],
+  ];
+  const where = [r.region, countryName(r.country)].filter(Boolean).join(", ");
+  return el(
+    "div",
+    { class: "fav-card" },
+    el("a", { href: resortPage(r) }, r.name),
+    favoriteButton(r),
+    el("div", { class: "where" }, el("span", { class: "dot", style: `--c:${color}` }), `${label} · ${where}`),
+    el(
+      "div",
+      { class: "values" },
+      ...shown
+        .filter(([, text]) => text !== "–")
+        .map(([name, text]) => el("span", {}, el("span", {}, `${name} `), text)),
+    ),
+  );
+}
+
+onFavoritesChange(() => {
+  if (!byKey.size) return;
+  const any = favorites().length > 0;
+  if (favoritesChip) {
+    favoritesChip.hidden = !any;
+    if (!any) {
+      favoritesOnly = false;
+      favoritesChip.setAttribute("aria-pressed", "false");
+    }
+  }
+  showFavorites();
+  filter();
+});
+
 // The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
 // resort as a dot in its status colour; the tile links to map.html.
 /** @param {IndexResort[]} resorts */
@@ -335,6 +430,8 @@ async function miniMap(resorts) {
 loadIndex()
   .then((index) => {
     document.getElementById("updated").textContent = updatedText(index);
+    for (const r of index.resorts) byKey.set(resortKey(r), r);
+    showFavorites();
     rows = index.resorts.map((r) => {
       const tr = row(r);
       values.set(tr, sortValues(r));

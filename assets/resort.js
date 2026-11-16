@@ -161,7 +161,7 @@ function header(r) {
     "header",
     { class: "resort-head" },
     backLink(),
-    el("h1", {}, r.name),
+    el("div", { class: "title" }, el("h1", {}, r.name), favoriteButton(r)),
     el(
       "div",
       { class: "facts" },
