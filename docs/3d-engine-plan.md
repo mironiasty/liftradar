@@ -81,6 +81,16 @@ Once the look is accepted, move what step 0 did in TS into the Rust core, so the
   `Scene` built for a resort: the phones' step 6). Assembling the scene stays the web engine's own, in TS, as it
   is for a day: the phones assemble theirs in `trailrider-ffi`, as they do now.
 
+- **Status (16 November 2026): done** in TrailRider's `resort-core` branch.
+  - **Core:** `ski::find_resort` (resorts.geojson → id, name, outline), `ski::outline_tiles`, `plan::plan_resort`
+    (the land), and `ski::resort_view`. The lifts are `lifts_of_resort`. The pistes now take the core's downhill and
+    connection runs, with their shared edges.
+  - **Numbers:** `shared/look.json` → `resort` (lift and tree metres, pylon spacing, speed, piste fill, margin, pitch,
+    turning, hour), generated for the phones.
+  - **Bindings:** WebAssembly `findResort`, `resortTiles`, `SkiTiles.resortView`; the FFI `ResortLoader` (name, tile
+    URLs, `load` → the view as JSON). The phones' scene for it is still step 6.
+  - **Fixtures:** `shared/fixtures/resorts/` (Hintertux, Kasprowy) on a two-resort `inputs/ski/resorts.geojson`.
+
 ### 2. The viewer bundle, delivered to the site
 
 The site has no build step and loads no npm package; the engine is TypeScript (Vite) plus about 1.2 MB of
