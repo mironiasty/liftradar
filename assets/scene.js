@@ -1059,10 +1059,23 @@ async function mountEngine(section, key) {
     if (!(await viewer.supported())) return null;
     const canvas = el("canvas", { class: "engine" });
     section.append(canvas);
+    // A card at a clicked lift or piste; a click on neither, or Escape, closes it.
+    const card = el("div", { class: "pick", hidden: "" });
+    section.append(card);
+    const close = () => card.setAttribute("hidden", "");
+    document.addEventListener("keydown", (event) => event.key === "Escape" && close());
     return await new Promise((resolve) => {
       const mounted = viewer.mountResort(canvas, {
         resort: key,
         base: location.origin,
+        onPick: (picked) => {
+          if (!picked) return close();
+          card.replaceChildren(...pickedCard(picked));
+          card.removeAttribute("hidden");
+          const [w, h] = [section.clientWidth, section.clientHeight];
+          card.style.left = `${Math.min(picked.x + 12, w - card.offsetWidth - 8)}px`;
+          card.style.top = `${Math.min(picked.y + 12, h - card.offsetHeight - 8)}px`;
+        },
         onStatus: (status) => {
           if (status === "ready") resolve(mounted);
           else if (typeof status === "object") {
@@ -1078,6 +1091,39 @@ async function mountEngine(section, key) {
     console.warn("3D engine:", error);
     return null;
   }
+}
+
+/**
+ * What the engine says was clicked, as a small card at the click: a lift's name, type and number,
+ * seats, capacity, length and climb; a piste's name or number, difficulty and length.
+ * @param {import("../types/viewer").Picked} picked
+ */
+function pickedCard(picked) {
+  const number = (n) => Math.round(n).toLocaleString(LANG);
+  const length = (m) =>
+    m >= 1000 ? `${(m / 1000).toLocaleString(LANG, { maximumFractionDigits: 1 })} km` : `${number(m)} m`;
+  if (picked.kind === "lift") {
+    const kind = [SKI_LIFT_TYPES[picked.type ?? ""] ?? t("Lift"), picked.ref, picked.tunnel ? t("in a tunnel") : ""]
+      .filter(Boolean)
+      .join(" · ");
+    const facts = [
+      picked.seats ? t("{n} seats", { n: picked.seats }) : "",
+      picked.capacity ? t("{n} people/h", { n: number(picked.capacity) }) : "",
+      length(picked.lengthM) + (picked.riseM ? `, ↑ ${number(picked.riseM)} m` : ""),
+    ].filter(Boolean);
+    return [
+      el("b", {}, picked.name || kind),
+      picked.name ? el("div", {}, kind) : "",
+      el("div", { class: "sub" }, facts.join(" · ")),
+    ];
+  }
+  const title = picked.name || [t("Piste"), picked.ref].filter(Boolean).join(" ");
+  const kind = [picked.name ? picked.ref : "", SKI_DIFFICULTIES[picked.difficulty ?? ""]].filter(Boolean).join(" · ");
+  return [
+    el("b", {}, el("span", { class: `dot ${picked.colour}` }), title),
+    kind ? el("div", {}, kind) : "",
+    picked.lengthM ? el("div", { class: "sub" }, length(picked.lengthM)) : "",
+  ];
 }
 
 /** Where the engine's view comes from: its terrain and the ski data. */

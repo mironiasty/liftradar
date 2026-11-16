@@ -12,7 +12,32 @@ export interface MountOptions {
   onStatus?(status: ResortStatus): void;
   /** Once ready: the resort's name as the tiles have it, and how many lifts and pistes are drawn. */
   onInfo?(info: { name: string; lifts: number; pistes: number }): void;
+  /** A click (not a drag) on a lift or piste; null on neither. */
+  onPick?(picked: Picked | null): void;
 }
+
+/**
+ * What was clicked, and where on the canvas (CSS pixels). A lift: OpenSkiData's `type` (chair_lift,
+ * gondola…), seats and capacity (people an hour), whether in a tunnel, its name and number (`ref`),
+ * length with the climb and the climb in metres, and the ride time in seconds, where the map has them.
+ * A piste: its colour on the signs (green, blue, red, black, orange), name, number, OpenSkiData's
+ * `difficulty` (and colour convention `conv`, when not Europe's), and length in metres when it's a line.
+ */
+export type Picked = { x: number; y: number } & (
+  | {
+      kind: 'lift';
+      type?: string;
+      seats?: number;
+      capacity?: number;
+      tunnel?: boolean;
+      name?: string;
+      ref?: string;
+      lengthM: number;
+      riseM?: number;
+      durationS?: number;
+    }
+  | { kind: 'piste'; colour: string; name?: string; ref?: string; difficulty?: string; conv?: string; lengthM?: number }
+);
 
 export interface MountedResort {
   /** Stops drawing and frees the GPU. The canvas can't be drawn on again: give a new one. */
