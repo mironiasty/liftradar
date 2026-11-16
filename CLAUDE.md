@@ -22,6 +22,8 @@ README documents every source in detail.
   changes, `npm run types`.
 - `worker/mcp.js` is the MCP server at `/mcp` (README "MCP"), the Worker's only script: its tools read the same
   files, so after a fetcher change check them too, and keep `api.html` ("MCP") in step with them.
+- TrailRider's 3D engine reaches the site as a release pinned in `engine.json` (README "3D engine"),
+  unpacked into `engine/` by `scripts/engine.mjs`: move the pin, never edit what's unpacked.
 - Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
   these checks, for minifying `assets/*.js` and `*.css` on deploy (`pages.yml`), and for the MCP server's packages,
   which wrangler bundles: the pages load no npm package and work as they are, with no build step locally.

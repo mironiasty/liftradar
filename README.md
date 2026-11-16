@@ -155,6 +155,7 @@ Put the data next to the pages and serve the folder:
 git worktree add ../liftradar-data data   # once
 for part in json history schema; do ln -sfn ../liftradar-data/$part .; done
 # optional: the ski tiles, built as in "Ski tiles" (or unpacked from the release ski-latest)
+node scripts/engine.mjs                         # optional: the 3D engine (see "3D engine")
 python3 -m http.server 8000                     # http://localhost:8000
 ```
 
@@ -310,6 +311,17 @@ lifts.
 Lifts, pistes and ski areas: data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL),
 Skimap.org, Who's On First, © Mapterhorn. The tiles are a derived database under the
 [ODbL](https://opendatacommons.org/licenses/odbl/), as public as the rest of the data.
+
+## 3D engine
+
+TrailRider's resort viewer (its `web/src/viewer.ts`, `docs/3d-engine-plan.md`) is to replace
+`assets/scene.js` in `3d.html` (step 3). It isn't in git: TrailRider (`../trailrider`, a private repo)
+publishes it with `npm run viewer -- --release` on this repo's release `viewer-<commit>` as
+`viewer.tar.gz` (`viewer.js`, the engine's WebAssembly beside it, and its types, `viewer.d.ts`).
+`engine.json` pins one by its `tag` and the archive's `sha256`; `scripts/engine.mjs` downloads that,
+checks it and unpacks it into `engine/<tag>/` (git-ignored), and every deploy does the same into the
+site, so each version has its own address, cached for good (`_headers`). A new engine reaches the site
+only when the pin moves. Without it (GitHub failing) the deploy goes on without `/engine/`.
 
 ## Scripts
 

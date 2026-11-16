@@ -47,6 +47,13 @@ jobs:
           tar xzf ski-archive/ski.tar.gz -C _site
           jq -c '{build, counts}' _site/ski/v1/meta.json
 
+      # The 3D engine (README "3D engine"): TrailRider's viewer, pinned in engine.json, into
+      # /engine/<tag>/. Without it (GitHub failing) the site goes out without it, and 3d.html
+      # shows the diorama it falls back to.
+      - name: Add the 3D engine
+        continue-on-error: true
+        run: node site/scripts/engine.mjs _site
+
       # Before the asset links are versioned: these pages have the same links.
       - name: Generate the translated pages
         run: node site/scripts/translate.mjs _site
