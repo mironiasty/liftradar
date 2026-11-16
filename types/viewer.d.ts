@@ -53,8 +53,8 @@ export interface MountedResort {
 export function supported(): Promise<boolean>;
 
 /**
- * The resort drawn on `canvas`, sized as the canvas is laid out, the camera turning slowly round
- * it until touched (drag to turn, wheel or pinch to zoom). The elevation tiles come from the
+ * The resort drawn on `canvas`, sized as the canvas is laid out, the camera still until moved
+ * (drag to turn, right-drag or Shift-drag to move, wheel or pinch to zoom). The elevation tiles come from the
  * Terrarium tiles on AWS (Mapzen, Terrain Tiles); the ski tiles from `base`.
  */
 export function mountResort(canvas: HTMLCanvasElement, options: MountOptions): MountedResort;
