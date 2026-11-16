@@ -50,6 +50,65 @@ function setResortAddress(r) {
 }
 // sessionStorage key of the resort list's last filters and order (its query string), set by table.js.
 const LIST_KEY = "resort-list";
+// The visitor's favourite resorts, kept only in this browser (localStorage, shared by every language) as
+// "country/id" keys, in the order they were added. Without storage (private windows, blocked site data) there
+// are none, and the stars do nothing lasting.
+const FAVORITES_KEY = "favorites";
+/** @param {{ country: string, id: string }} r */
+const resortKey = (r) => `${r.country}/${r.id}`;
+/** @returns {string[]} */
+function favorites() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(FAVORITES_KEY) ?? "[]");
+    return Array.isArray(saved) ? saved.filter((key) => typeof key === "string") : [];
+  } catch {
+    return [];
+  }
+}
+/** @param {{ country: string, id: string }} r */
+const isFavorite = (r) => favorites().includes(resortKey(r));
+/** @param {{ country: string, id: string }} r */
+function toggleFavorite(r) {
+  const key = resortKey(r);
+  const list = favorites();
+  const next = list.includes(key) ? list.filter((k) => k !== key) : [...list, key];
+  try {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify(next));
+  } catch {}
+  favoritesChanged();
+}
+/** @type {(() => void)[]} */
+const favoriteListeners = [];
+// Called when the favourites change, here or in another tab.
+/** @param {() => void} listener */
+const onFavoritesChange = (listener) => favoriteListeners.push(listener);
+function favoritesChanged() {
+  const list = favorites();
+  for (const button of document.querySelectorAll("button.fav"))
+    setFavoriteButton(button, list.includes(button.dataset.key));
+  for (const listener of favoriteListeners) listener();
+}
+addEventListener("storage", (event) => {
+  if (event.key === FAVORITES_KEY || event.key === null) favoritesChanged();
+});
+/** @param {HTMLElement} button @param {boolean} on */
+function setFavoriteButton(button, on) {
+  const label = on ? t("Remove from favourites") : t("Add to favourites");
+  button.setAttribute("aria-pressed", String(on));
+  button.setAttribute("aria-label", label);
+  button.title = label;
+}
+// A star that adds the resort to the favourites, or removes it; every star of the resort on the page follows.
+/** @param {{ country: string, id: string }} r */
+function favoriteButton(r) {
+  const button = el("button", { type: "button", class: "fav", "data-key": resortKey(r) });
+  button.innerHTML =
+    '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" stroke-width="1.8" stroke-linejoin="round">' +
+    '<path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>';
+  setFavoriteButton(button, isFavorite(r));
+  button.addEventListener("click", () => toggleFavorite(r));
+  return button;
+}
 // The map zoomed in on the resort (map.html), e.g. map.html?r=at/soelden.
 /** @param {{ country: string, id: string }} r */
 const resortOnMap = (r) => `map.html?r=${r.country}/${r.id}`;
