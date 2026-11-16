@@ -9,8 +9,8 @@
     "lon": 10.2357
   },
   "website": "https://www.ok-bergbahnen.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.758876+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-16T08:40:31.399230+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,15 +20,62 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 13,
+    "open_km": 0.0,
+    "total_km": 12
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
   "errors": []

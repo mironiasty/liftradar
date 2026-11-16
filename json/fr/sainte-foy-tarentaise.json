@@ -10,7 +10,7 @@
   },
   "website": "https://www.saintefoy-tarentaise.com",
   "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.755907+01:00",
+  "fetched_at": "2026-11-16T08:40:31.396705+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -70,27 +70,27 @@
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": 2700,
+        "upper_bound": 2500,
         "period": "all_day"
       },
       {
         "level": "moderate",
-        "lower_bound": 2700,
+        "lower_bound": 2500,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-14T16:00:00+01:00",
-    "valid_from": "2026-11-14T16:00:00+01:00",
-    "valid_until": "2026-11-15T18:00:00+01:00"
+    "published_at": "2026-11-15T16:00:00+01:00",
+    "valid_from": "2026-11-15T16:00:00+01:00",
+    "valid_until": "2026-11-16T18:00:00+01:00"
   },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/Sainte-Foy",
-    "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/sainte-foy-tarentaise/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-15/2026-11-15-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -99,15 +99,15 @@
         "attribution_required": null
       },
       {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/staticPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/dynamicPoiData?lang=fr",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-15/2026-11-15-FR.json",
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
         "attribution_required": null
       }
     ],

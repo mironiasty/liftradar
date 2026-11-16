@@ -9,9 +9,9 @@
     "lon": 13.7984
   },
   "website": "https://www.badkleinkirchheim.com",
-  "status": "closed",
-  "fetched_at": "2026-11-15T13:41:52.320446+01:00",
-  "status_from": null,
+  "status": "no_report",
+  "fetched_at": "2026-11-16T08:40:35.509003+01:00",
+  "status_from": "2026-11-11T11:32:47.498268+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 24
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 39,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -50,48 +50,38 @@
   },
   "slopes_by_difficulty": {
     "ski_route": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 20,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 52
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 8
     }
   },
   "lifts_updated_at": "2026-11-01T16:12:16+01:00",
   "avalanche": null,
-  "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-    "https://winter.intermaps.com/bad_kleinkirchheim/data?lang=en"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-        "attribution_required": null
-      },
-      {
-        "url": "https://winter.intermaps.com/bad_kleinkirchheim/data?lang=en",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "kaernten: LookupError: no entry named Bad Kleinkirchheim"
+  ]
 }

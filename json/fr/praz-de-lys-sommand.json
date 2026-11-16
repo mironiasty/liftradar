@@ -10,7 +10,7 @@
   },
   "website": "https://www.prazdelys-sommand.com",
   "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.756272+01:00",
+  "fetched_at": "2026-11-16T08:40:31.398271+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -68,20 +68,26 @@
   "avalanche": {
     "region_id": "FR-01",
     "region": "Chablais",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2300,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-14T16:00:00+01:00",
-    "valid_from": "2026-11-14T16:00:00+01:00",
-    "valid_until": "2026-11-15T18:00:00+01:00"
+    "published_at": "2026-11-15T16:00:00+01:00",
+    "valid_from": "2026-11-15T16:00:00+01:00",
+    "valid_until": "2026-11-16T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=praz-lys-sommand&lang=fr&isSoir=false",
@@ -89,7 +95,7 @@
     "https://public.lumiplay.link/interactive-map/v1/map/1a73be55-4c08-4ded-b858-2d63fa4624e7/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/1a73be55-4c08-4ded-b858-2d63fa4624e7/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/praz-de-lys-sommand/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-15/2026-11-15-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -110,7 +116,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-15/2026-11-15-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
         "attribution_required": null
       }
     ],

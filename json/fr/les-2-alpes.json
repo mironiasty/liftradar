@@ -10,7 +10,7 @@
   },
   "website": "https://www.les2alpes.com",
   "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.756281+01:00",
+  "fetched_at": "2026-11-16T08:40:31.398280+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -90,33 +90,33 @@
   "avalanche": {
     "region_id": "FR-15",
     "region": "Oisans",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": 2900,
+        "upper_bound": 2800,
         "period": "all_day"
       },
       {
-        "level": "moderate",
-        "lower_bound": 2900,
+        "level": "considerable",
+        "lower_bound": 2800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-14T15:00:00+01:00",
-    "valid_from": "2026-11-14T15:00:00+01:00",
-    "valid_until": "2026-11-15T18:00:00+01:00"
+    "published_at": "2026-11-15T16:00:00+01:00",
+    "valid_from": "2026-11-15T16:00:00+01:00",
+    "valid_until": "2026-11-16T18:00:00+01:00"
   },
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/deux-alpes",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-2-alpes/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-15/2026-11-15-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -133,7 +133,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-15/2026-11-15-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
         "attribution_required": null
       }
     ],

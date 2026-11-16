@@ -9,8 +9,8 @@
     "lon": 13.7751
   },
   "website": "https://www.hauser-kaibling.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.750354+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-16T08:40:31.391690+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,23 +22,65 @@
   },
   "lifts": {
     "open": 0,
-    "total": 11
+    "total": 14
   },
   "slopes": {
-    "open": null,
-    "total": 18,
-    "open_km": null,
+    "open": 0,
+    "total": 21,
+    "open_km": 0.0,
     "total_km": 37
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 6
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/hauser-kaibling_resort_6323",
     "https://www.skiinfo.fr/styrie/hauser-kaibling-haus-im-ennstal/station-de-ski"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/hauser-kaibling_resort_6323",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/styrie/hauser-kaibling-haus-im-ennstal/station-de-ski",

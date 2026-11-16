@@ -9,8 +9,8 @@
     "lon": 13.6308
   },
   "website": "https://www.ramsau.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.753484+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-16T08:40:31.391701+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,20 +25,54 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
     "total_km": 13
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/rittisberg-ramsau-am-dachstein_resort_6320",
     "https://www.skiresort.com/en/ski-resort/ramsau-am-dachstein-rittisberg/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/rittisberg-ramsau-am-dachstein_resort_6320",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/en/ski-resort/ramsau-am-dachstein-rittisberg/",

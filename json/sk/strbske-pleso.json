@@ -9,8 +9,8 @@
     "lon": 20.064
   },
   "website": "https://www.vt.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.758072+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-16T08:40:31.398701+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +25,45 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 9,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 8
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
     "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
     "https://www.skiresort.info/ski-resort/strbske-pleso/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
+      {
+        "url": "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
+        "attribution_required": null
+      },
       {
         "url": "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
         "attribution_required": null
-      },
+      }
+    ],
+    "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/strbske-pleso/",
         "attribution_required": null

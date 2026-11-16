@@ -10,7 +10,7 @@
   },
   "website": "https://www.turracherhoehe.at",
   "status": "closed",
-  "fetched_at": "2026-11-15T13:41:53.241370+01:00",
+  "fetched_at": "2026-11-16T08:41:45.998260+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,74 +22,25 @@
   },
   "lifts": {
     "open": 0,
-    "total": 16
+    "total": 15
   },
   "slopes": {
-    "open": 0,
-    "total": 40,
+    "open": null,
+    "total": null,
     "open_km": 0.0,
     "total_km": 43
   },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 1
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 7
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 8
-    }
-  },
-  "slopes_by_difficulty": {
-    "ski_route": {
-      "open": 0,
-      "total": 2,
-      "open_km": 0.0,
-      "total_km": 2
-    },
-    "easy": {
-      "open": 0,
-      "total": 16,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 17,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 2,
-      "open_km": 0.0,
-      "total_km": 2
-    },
-    "other": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-11-02T07:19:55+01:00",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": "2026-11-10T02:00:19+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-    "https://winter.intermaps.com/turracher_hoehe/data?lang=en"
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-        "attribution_required": null
-      },
-      {
-        "url": "https://winter.intermaps.com/turracher_hoehe/data?lang=en",
         "attribution_required": null
       }
     ],

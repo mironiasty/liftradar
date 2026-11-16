@@ -10,7 +10,7 @@
   },
   "website": "https://www.wiriehorn.ch",
   "status": "closed",
-  "fetched_at": "2026-11-15T13:40:36.753740+01:00",
+  "fetched_at": "2026-11-16T08:40:31.394692+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,16 @@
       {
         "name": "Vorderstocken (SLF)",
         "elevation_m": 1791,
+        "depth_cm": 0,
+        "fresh_cm": 8,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Stockhorn (SLF)",
+        "elevation_m": 1646,
         "depth_cm": 1,
-        "fresh_cm": 0,
+        "fresh_cm": 1,
         "temperature_c": null,
         "condition": null
       }
@@ -75,13 +83,33 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-15T13:31:00+01:00",
-  "avalanche": null,
+  "lifts_updated_at": "2026-11-16T08:30:00+01:00",
+  "avalanche": {
+    "region_id": "CH-1228",
+    "region": "Obersimmental",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "no_distinct_avalanche_problem"
+    ],
+    "published_at": "2026-11-15T17:00:00+01:00",
+    "valid_from": "2026-11-15T17:00:00+01:00",
+    "valid_until": "2026-11-16T17:00:00+01:00"
+  },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=214&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
     "conditions": [
@@ -99,6 +127,10 @@
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "attribution_required": null
+      },
+      {
+        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
         "attribution_required": null
       }
     ],

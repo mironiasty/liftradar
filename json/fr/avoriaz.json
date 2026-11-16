@@ -1,0 +1,116 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "avoriaz",
+  "country": "fr",
+  "name": "Avoriaz",
+  "region": "Haute-Savoie",
+  "location": {
+    "lat": 46.1913,
+    "lon": 6.7741
+  },
+  "website": "https://www.avoriaz.com",
+  "status": "closed",
+  "fetched_at": "2026-11-16T08:40:31.398659+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 29
+  },
+  "slopes": {
+    "open": 0,
+    "total": 34,
+    "open_km": 0.0,
+    "total_km": 76
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 17
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 10
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 22,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-16T08:40:46+01:00",
+  "avalanche": {
+    "region_id": "FR-01",
+    "region": "Chablais",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2300,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-15T16:00:00+01:00",
+    "valid_from": "2026-11-15T16:00:00+01:00",
+    "valid_until": "2026-11-16T18:00:00+01:00"
+  },
+  "sources": [
+    "https://winter.intermaps.com/portes_du_soleil/data?lang=en",
+    "https://www.skiinfo.fr/alpes-du-nord/avoriaz/station-de-ski",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
+  ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://winter.intermaps.com/portes_du_soleil/data?lang=en",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/avoriaz/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

@@ -10,7 +10,7 @@
   },
   "website": "https://station.autrans-meaudre.fr",
   "status": "no_report",
-  "fetched_at": "2026-11-15T13:40:36.756324+01:00",
+  "fetched_at": "2026-11-16T08:40:31.398321+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,37 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-14",
+    "region": "Vercors",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-15T17:00:00+01:00",
+    "valid_from": "2026-11-15T17:00:00+01:00",
+    "valid_until": "2026-11-16T18:00:00+01:00"
+  },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=autrans-meaudre&lang=fr&isSoir=false",
-    "https://www.skiinfo.fr/alpes-du-nord/autrans/station-de-ski"
+    "https://www.skiinfo.fr/alpes-du-nord/autrans/station-de-ski",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=autrans-meaudre&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
         "attribution_required": null
       }
     ],
