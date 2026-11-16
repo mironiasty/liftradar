@@ -1,7 +1,9 @@
 // The 3D engine (docs/3d-engine-plan.md, step 2): TrailRider's resort viewer, released on this
 // repo as viewer-<commit> (viewer.tar.gz) and pinned in engine.json by its tag and sha256. Downloads
 // the pinned archive, checks it, and unpacks it into <site>/engine/<tag>/, so each version has its
-// own address and can be cached for good. Locally (README "3D engine") and on deploy (pages.yml):
+// own address and can be cached for good; the pin goes to <site>/engine.json too, for the page to
+// know which to load (not under /engine/, cached for good). Locally (README "3D engine") and on
+// deploy (pages.yml):
 //   node scripts/engine.mjs [site]      (site: where the pages are, this folder when left out)
 // An engine change reaches the site only when engine.json's pin moves.
 import { execFileSync } from "node:child_process";
@@ -15,6 +17,8 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const site = resolve(process.argv[2] ?? root);
 const { tag, sha256 } = JSON.parse(readFileSync(join(root, "engine.json"), "utf8"));
 const out = join(site, "engine", tag);
+// Which version the page loads (assets/scene.js): the pin itself, at the top of the site.
+writeFileSync(join(site, "engine.json"), `${JSON.stringify({ tag, sha256 }, null, 2)}\n`);
 if (existsSync(join(out, "viewer.js"))) {
   console.log(`engine ${tag}: already in ${out}`);
   process.exit(0);
