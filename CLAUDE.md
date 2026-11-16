@@ -22,6 +22,9 @@ README documents every source in detail.
   changes, `npm run types`.
 - `worker/mcp.js` is the MCP server at `/mcp` (README "MCP"), the Worker's only script: its tools read the same
   files, so after a fetcher change check them too, and keep `api.html` ("MCP") in step with them.
+- TrailRider's (`../trailrider`) 3D engine is to replace `3d.html` (`docs/3d-engine-plan.md`), and then to be
+  used by a native LiftRadar app for iOS and Android (`docs/mobile-app-plan.md`, with push notifications from
+  `pages.yml`). Keep the data's changes backward compatible with the app in mind.
 - Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
   these checks, for minifying `assets/*.js` and `*.css` on deploy (`pages.yml`), and for the MCP server's packages,
   which wrangler bundles: the pages load no npm package and work as they are, with no build step locally.
