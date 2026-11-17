@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url";
 const SITE = "https://liftradar.eu";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 // index.html is the home page, "/"; the resort and 3D pages are listed per resort.
-const PAGES = ["index", "map", "stats", "about", "api", "sources"];
+const PAGES = ["index", "map", "stats", "about", "api", "sources", "privacy"];
 
 const out = process.argv[2];
 if (!out) {

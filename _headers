@@ -21,3 +21,6 @@
 # The 3D engine: each version at its own address (/engine/<tag>/), never changed once released.
 /engine/*
   Cache-Control: public, max-age=31536000, immutable
+# The phone apps' https links (README "App links"): iOS reads this file as JSON, though it has no extension.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
