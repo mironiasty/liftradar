@@ -29,7 +29,8 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
   its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
-  current data) and `about.html` (what the values mean, and their caveats), plain
+  current data), `about.html` (what the values mean, and their caveats) and `privacy.html` (the privacy policy
+  of the site and the phone apps, the URL the app stores ask for: keep it in step with what they download), plain
   static pages that load the JSON in the browser. No build step locally.
   The ski-area outlines, the resorts' points and the pistes and lifts on the map come from the ski
   tiles at `/ski/`, built weekly and not kept in git; see [Ski tiles](#ski-tiles).
@@ -46,6 +47,14 @@ also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin re
 the links to the pages without `.html`, so search engines don't reach them through a redirect. Every page but
 `404.html` has a canonical address on liftradar.eu (the resort and 3D pages set theirs, with `?r=`, in `setResortAddress()`), so the copy on
 workers.dev and the addresses with filters aren't taken for duplicates.
+
+## App links
+
+The phone apps (TrailRider's repo, `apps/liftradar`) open `https://liftradar.eu/resort?r=<country>/<id>[&view=3d]`
+when the site vouches for them. `.well-known/apple-app-site-association` does it for iOS (the company team's app
+ID, `85CCW66723.eu.liftradar.app`; `_headers` serves it as JSON), once the app has the Associated Domains
+capability. Android's `.well-known/assetlinks.json` needs the SHA-256 fingerprint of the key Google Play signs
+the app with, so it comes when the app is on Play.
 
 ## Sitemap
 
