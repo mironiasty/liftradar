@@ -10,8 +10,8 @@
   },
   "website": "https://www.la-toussuire.com",
   "status": "no_report",
-  "fetched_at": "2026-11-17T08:40:38.299622+01:00",
-  "status_from": "2026-11-16T08:40:31.396799+01:00",
+  "fetched_at": "2026-11-17T13:40:33.280635+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -109,6 +109,7 @@
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=la-toussuire&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/les-sybelles",
     "https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/la-toussuire/station-de-ski",
     "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
   ],
@@ -127,6 +128,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
         "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
@@ -138,7 +143,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
-  ]
+  "errors": []
 }

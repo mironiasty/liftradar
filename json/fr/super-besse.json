@@ -10,8 +10,8 @@
   },
   "website": "https://www.sancy.com",
   "status": "no_report",
-  "fetched_at": "2026-11-17T08:40:38.301734+01:00",
-  "status_from": "2026-11-16T13:40:38.289090+01:00",
+  "fetched_at": "2026-11-17T13:40:33.281572+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -73,6 +73,8 @@
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=super-besse&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/Super-Besse",
+    "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/massif-central/besse-super-besse/station-de-ski"
   ],
   "source_details": {
@@ -84,6 +86,14 @@
       {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/name/Super-Besse",
         "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/dynamicPoiData?lang=fr",
+        "attribution_required": null
       }
     ],
     "resort_info": [
@@ -93,7 +103,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }

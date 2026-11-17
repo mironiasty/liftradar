@@ -10,8 +10,8 @@
   },
   "website": "https://www.lesarcs.com",
   "status": "no_report",
-  "fetched_at": "2026-11-17T08:40:38.299454+01:00",
-  "status_from": "2026-11-16T13:40:38.287431+01:00",
+  "fetched_at": "2026-11-17T13:40:33.280539+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -116,6 +116,7 @@
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=les-arcs&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/Paradiski",
+    "https://public.lumiplay.link/interactive-map/v1/map/e6302a83-ce5b-4717-bab8-4f282b1083d7/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e6302a83-ce5b-4717-bab8-4f282b1083d7/staticPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/les-arcs-bourg-st-maurice/station-de-ski",
     "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
@@ -128,6 +129,10 @@
       },
       {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/name/Paradiski",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/e6302a83-ce5b-4717-bab8-4f282b1083d7/dynamicPoiData?lang=fr",
         "attribution_required": null
       },
       {
@@ -146,7 +151,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/e6302a83-ce5b-4717-bab8-4f282b1083d7/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
-  ]
+  "errors": []
 }

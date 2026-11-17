@@ -10,15 +10,40 @@
   },
   "website": "https://www.laclusaz.com",
   "status": "closed",
-  "fetched_at": "2026-11-17T08:40:38.300883+01:00",
-  "status_from": "2026-11-16T08:40:31.398117+01:00",
+  "fetched_at": "2026-11-17T13:40:33.281244+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-31",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Col Balme",
+        "elevation_m": 2500,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bergerie",
+        "elevation_m": 1800,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "La Clusaz",
+        "elevation_m": 1040,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
@@ -101,6 +126,7 @@
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=la-clusaz&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/La-Clusaz-Manigod",
     "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/la-clusaz/station-de-ski",
     "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
   ],
@@ -119,6 +145,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
         "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
@@ -130,7 +160,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
-  ]
+  "errors": []
 }

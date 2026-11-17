@@ -10,8 +10,8 @@
   },
   "website": "https://www.sauze.com",
   "status": "no_report",
-  "fetched_at": "2026-11-17T08:40:38.301557+01:00",
-  "status_from": "2026-11-16T08:40:31.398409+01:00",
+  "fetched_at": "2026-11-17T13:40:33.281469+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -104,6 +104,8 @@
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=sauze&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/sauze",
+    "https://public.lumiplay.link/interactive-map/v1/map/c3f4d605-4d11-4b20-8f35-fc653c9b0e93/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/c3f4d605-4d11-4b20-8f35-fc653c9b0e93/dynamicPoiData?lang=fr",
     "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
   ],
   "source_details": {
@@ -117,13 +119,19 @@
         "attribution_required": null
       },
       {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/c3f4d605-4d11-4b20-8f35-fc653c9b0e93/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/c3f4d605-4d11-4b20-8f35-fc653c9b0e93/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
         "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
     ],
     "resort_info": []
   },
-  "errors": [
-    "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c3f4d605-4d11-4b20-8f35-fc653c9b0e93/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }

@@ -9,23 +9,23 @@
     "lon": 9.42
   },
   "website": "https://aurdal.no/",
-  "status": "no_report",
-  "fetched_at": "2026-11-17T08:40:38.304157+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-17T13:40:33.282776+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 0,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Faste og fine forhold",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 2,
     "total": 13,
     "open_km": null,
     "total_km": 10
@@ -36,37 +36,37 @@
       "total": 3
     },
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 2
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 1,
       "total": 7,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 1,
       "total": 3,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 2,
       "open_km": null,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
       "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-21T16:14:40+02:00",
+  "lifts_updated_at": "2026-11-17T11:38:28+01:00",
   "avalanche": null,
   "sources": [
     "https://api.fnugg.no/search?size=200",

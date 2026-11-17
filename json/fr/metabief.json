@@ -9,25 +9,50 @@
     "lon": 6.3505
   },
   "website": "https://www.station-metabief.com",
-  "status": "open",
-  "fetched_at": "2026-11-17T08:40:38.301769+01:00",
-  "status_from": "2026-11-16T13:40:38.289124+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-17T13:40:33.281592+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Métabief Station",
+        "elevation_m": 1020,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Métabief sommet Morond",
+        "elevation_m": 1370,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Super Longevilles Bas station",
+        "elevation_m": 1200,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 13
   },
   "slopes": {
-    "open": 1,
+    "open": 0,
     "total": 26,
-    "open_km": 4.1,
+    "open_km": 0.0,
     "total_km": 26
   },
   "lifts_by_type": {
@@ -42,9 +67,9 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 1,
+      "open": 0,
       "total": 17,
-      "open_km": 4.1,
+      "open_km": 0.0,
       "total_km": 18
     },
     "intermediate": {
@@ -65,7 +90,8 @@
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=metabief&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/metabief",
-    "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/staticPoiData?lang=fr"
+    "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/dynamicPoiData?lang=fr"
   ],
   "source_details": {
     "conditions": [
@@ -80,11 +106,13 @@
       {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/staticPoiData?lang=fr",
         "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/dynamicPoiData?lang=fr",
+        "attribution_required": null
       }
     ],
     "resort_info": []
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
-  ]
+  "errors": []
 }

@@ -10,8 +10,8 @@
   },
   "website": "https://www.valmorel.com",
   "status": "no_report",
-  "fetched_at": "2026-11-17T08:40:38.299582+01:00",
-  "status_from": "2026-11-16T08:40:31.396768+01:00",
+  "fetched_at": "2026-11-17T13:40:33.280612+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -108,6 +108,7 @@
   "sources": [
     "https://public.lumiplay.link/interactive-map/v1/map/name/saint-francois-valmorel",
     "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/valmorel/station-de-ski",
     "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
   ],
@@ -122,6 +123,10 @@
         "attribution_required": null
       },
       {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
         "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
@@ -133,7 +138,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
-  ]
+  "errors": []
 }
