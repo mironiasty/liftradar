@@ -10,12 +10,12 @@
   },
   "website": "https://www.zuozski.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-16T13:40:38.285716+01:00",
+  "fetched_at": "2026-11-17T08:40:38.297644+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 16,
     "valley_cm": 0,
-    "fresh_cm": 2,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Porta d'Es-cha (SLF)",
         "elevation_m": 2727,
         "depth_cm": 16,
-        "fresh_cm": 2,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
@@ -85,22 +85,23 @@
   "avalanche": {
     "region_id": "CH-7113",
     "region": "Zuoz",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
+      "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=40&saison=1&ref=contentBox",

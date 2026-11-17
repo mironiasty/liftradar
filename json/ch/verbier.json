@@ -10,13 +10,13 @@
   },
   "website": "https://www.verbier.ch",
   "status": "closed",
-  "fetched_at": "2026-11-16T13:40:38.285625+01:00",
+  "fetched_at": "2026-11-17T08:40:38.297546+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-16",
+    "last_snowfall": "2026-11-17",
     "condition": null,
     "stations": [
       {
@@ -30,8 +30,8 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 53,
-        "fresh_cm": 19,
+        "depth_cm": 46,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       },
@@ -107,15 +107,15 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-16T13:41:00+01:00",
+  "lifts_updated_at": "2026-11-17T08:41:00+01:00",
   "avalanche": {
     "region_id": "CH-4115",
     "region": "Martigny - Verbier",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -123,11 +123,12 @@
     ],
     "problems": [
       "wind_slab",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "wet_snow"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",

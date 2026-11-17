@@ -10,32 +10,15 @@
   },
   "website": "https://www.risoul.com",
   "status": "closed",
-  "fetched_at": "2026-11-16T13:40:38.288841+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-17T08:40:38.301487+01:00",
+  "status_from": "2026-11-16T08:40:31.398359+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-03-23",
+    "last_snowfall": null,
     "condition": null,
-    "stations": [
-      {
-        "name": "Station",
-        "elevation_m": 1850,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Altitude",
-        "elevation_m": 2570,
-        "depth_cm": 0,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      }
-    ]
+    "stations": []
   },
   "lifts": {
     "open": 0,
@@ -97,28 +80,26 @@
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": 2400,
+        "upper_bound": 2500,
         "period": "all_day"
       },
       {
         "level": "moderate",
-        "lower_bound": 2400,
+        "lower_bound": 2500,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-15T16:00:00+01:00",
-    "valid_from": "2026-11-15T16:00:00+01:00",
-    "valid_until": "2026-11-16T18:00:00+01:00"
+    "published_at": "2026-11-16T16:00:00+01:00",
+    "valid_from": "2026-11-16T16:00:00+01:00",
+    "valid_until": "2026-11-17T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=risoul&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/espace-foret-blanche",
-    "https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/staticPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-sud/risoul/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -131,15 +112,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/staticPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/dynamicPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
     ],
@@ -150,5 +123,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+  ]
 }

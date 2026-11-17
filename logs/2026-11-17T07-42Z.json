@@ -1,0 +1,726 @@
+{
+  "time": "2026-11-17T08:42:13+01:00",
+  "resorts": [
+    {
+      "id": "brixlegg",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-13T08:41:21.856666+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Brixlegg_2969'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "hochalmlifte-christlum-achenkirch",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:21.850169+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_38'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "katzenkopf-leutasch",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-12T09:45:02.491682+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Katzenkopf%20Leutasch_659'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "muttereralm",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:28.906679+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Muttereralm%20-%20Nockspitzbahn_49'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "nesselwaengle-im-tannheimer-tal",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:29.236521+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "niederthai",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:30.478387+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Niederthai_89'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "rofanseilbahn-maurach",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:32.372419+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Rofanseilbahn%20-%20Maurach_76'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "tirolina-thiersee",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-13T08:41:50.555719+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Tirolina%20-%20Ski-%2CSport-%2C%20und%20Aktivberg%20Thiersee_96'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "bad-kleinkirchheim",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:47.498268+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Bad Kleinkirchheim"
+      ]
+    },
+    {
+      "id": "ankogel-mallnitz",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:47.999763+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Ankogel / Mallnitz"
+      ]
+    },
+    {
+      "id": "koralpe",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-10-28T21:37:10.921386+01:00",
+      "errors": [
+        "kaernten: LookupError: no entry named Koralpe"
+      ]
+    },
+    {
+      "id": "kronplatz",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "alta-badia",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "val-gardena",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "seiser-alm",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "carezza",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "3-zinnen-dolomiten",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "obereggen",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "plose",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "gitschberg-jochtal",
+      "country": "it",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "klausberg",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.734025+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "speikboden",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.395691+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "schnalstal",
+      "country": "it",
+      "status": "open",
+      "status_from": "2026-11-16T08:40:31.395698+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "sulden",
+      "country": "it",
+      "status": "open",
+      "status_from": null,
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "schoeneben-haideralm",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.734082+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "meran-2000",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.734095+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "ratschings-jaufen",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.395734+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "ladurns",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.395740+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "pfelders",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.734121+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "schwemmalm",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.734134+01:00",
+      "errors": [
+        "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "courchevel",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287359+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "meribel",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287375+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "val-thorens",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287388+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "les-menuires",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287402+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "la-plagne",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287418+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/e6302a83-ce5b-4717-bab8-4f282b1083d7/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "les-arcs",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287431+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/e6302a83-ce5b-4717-bab8-4f282b1083d7/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "tignes",
+      "country": "fr",
+      "status": "closed",
+      "status_from": "2026-11-16T13:40:38.287445+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '404 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/name/Tignes_ValdIsere'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "sainte-foy-tarentaise",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.287474+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/eaa06047-f0c5-4d58-ae17-0121b5090a3d/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "les-saisies",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396724+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "crest-voland",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396731+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "notre-dame-de-bellecombe",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396738+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "praz-sur-arly",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396752+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/0f2d2a36-92a5-4d3b-abb2-cb3651bc32d4/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "valmorel",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396768+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "saint-francois-longchamp",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396781+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/d2d1dd82-f742-4342-9270-1c3479d4f372/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "le-corbier",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396791+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "la-toussuire",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396799+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "saint-sorlin-d-arves",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396808+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c02e5fc2-67d3-4a0b-bd50-54eb8d68838d/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "valloire",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396815+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/b626e4db-ba81-4cc1-a263-c26facac4bb1/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "valmeinier",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396825+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/b626e4db-ba81-4cc1-a263-c26facac4bb1/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "aussois",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.396854+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "la-clusaz",
+      "country": "fr",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.398117+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "manigod",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398127+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/71b57c4a-b0f4-4634-8310-e1416104b70a/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "le-grand-bornand",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398136+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/7f2e7918-abcb-447b-8342-6758cdfb5e3f/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "megeve",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398145+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "saint-gervais",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398157+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "les-contamines",
+      "country": "fr",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.398164+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "portes-du-mont-blanc",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398173+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "praz-de-lys-sommand",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398271+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/1a73be55-4c08-4ded-b858-2d63fa4624e7/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "les-2-alpes",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.288743+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/e885cd49-8401-4154-9794-2b1d63e48dbb/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "les-7-laux",
+      "country": "fr",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.398293+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/957de085-2374-467f-9e43-e201be02fc12/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "le-collet-d-allevard",
+      "country": "fr",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.398303+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/ca6e3565-ca7a-4999-9594-f28bda475a8c/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "vars",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398346+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "risoul",
+      "country": "fr",
+      "status": "closed",
+      "status_from": "2026-11-16T08:40:31.398359+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/47ab4d23-36f8-4bff-b618-c30cedfe2d58/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "superdevoluy",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.288860+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c0e7e0c2-a98b-4cbb-b4d2-5bd3c59b4745/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "pra-loup",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398393+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "val-d-allos",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398402+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/198d271f-f46c-4892-9393-4cb5cc332d87/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "le-sauze",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398409+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/c3f4d605-4d11-4b20-8f35-fc653c9b0e93/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "valberg",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398428+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/09fb8612-d478-4618-8001-4f2d2c5c491e/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "les-angles",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T08:40:31.398524+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/88c0c7a4-6510-4deb-afb1-72657afdd735/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "super-besse",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.289090+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/917ab92c-a95d-405d-bceb-6f3ffb699af2/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "mont-dore",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.736835+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/bd58ff03-33ec-4343-85ee-010558b0d2f4/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "metabief",
+      "country": "fr",
+      "status": "open",
+      "status_from": "2026-11-16T13:40:38.289124+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '401 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/f1737561-56e1-4857-ad93-45a0cbf6828f/dynamicPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+      ]
+    },
+    {
+      "id": "monts-jura",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-14T08:40:37.974469+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/4387c0a2-4ccc-4942-855c-10683bc37144/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "les-rousses",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-16T13:40:38.289147+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/59462c53-7f75-4e9f-817d-14ff50933363/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "la-bresse-hohneck",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:31:21.736958+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/ce6e6eaa-c427-4b57-91a9-85ce91a53bd2/staticPoiData?lang=fr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://ski.salla.fi/aukioloajat-talvi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "laajis",
+      "country": "fi",
+      "status": "open",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no slope or lift table (layout changed?)"
+      ]
+    },
+    {
+      "id": "golte",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-11T16:22:47.960389+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.golte.si/zima/smucanje/proge/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    }
+  ],
+  "warnings": [
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "mayrhofen: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Mayrhofen_17'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "mayrhofen: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Eggalmbahnen_26'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "zillertal-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Gerlos%20-%20Zillertal%20Arena_30'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "zillertal-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Gerlosstein%20-%20Zillertal%20Arena_97'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "zillertal-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/K%C3%B6nigsleiten%20-%20Zillertal%20Arena_2563'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "hochzeiger-pitztal: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochzeiger%20-%20Jerzens_43'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "ischgl-silvretta-arena: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Ischgl_2897'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "joechelspitze-lechtal: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/J%C3%B6chelspitze%20Lechtal_2906'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "kitzbuehel: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Mittersill%20-%20Pa%C3%9F%20Thurn%20-%20Kitzb%C3%BChel_2544'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "lienz-zettersfeld-hochstein: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Lienz%20Zettersfeld%20Hochstein_48'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "neukirchen-bramberg-wildkogel: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Neukirchen%20-%20Bramberg%20-%20Wildkogel_28'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "nordkette-innsbruck: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nordkette%20-%20Innsbruck_51'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "serfaus-fiss-ladis: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Serfaus_16'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "serfaus-fiss-ladis: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Fiss-Ladis_98'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "steinplatte-winklmoosalm: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Steinplatte-Waidring_67'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+    "steinplatte-winklmoosalm: snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Steinplatte-Winklmoosalm_2572'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ]
+}

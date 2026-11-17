@@ -10,7 +10,7 @@
   },
   "website": "https://www.bonneval-sur-arc.com",
   "status": "closed",
-  "fetched_at": "2026-11-16T13:40:38.288525+01:00",
+  "fetched_at": "2026-11-17T08:40:38.300853+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -81,31 +81,43 @@
   "avalanche": {
     "region_id": "FR-11",
     "region": "Haute-Maurienne",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
         "upper_bound": 2500,
-        "period": "all_day"
+        "period": "earlier"
       },
       {
         "level": "moderate",
         "lower_bound": 2500,
         "upper_bound": null,
-        "period": "all_day"
+        "period": "earlier"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "later"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "later"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-15T16:00:00+01:00",
-    "valid_from": "2026-11-15T16:00:00+01:00",
-    "valid_until": "2026-11-16T18:00:00+01:00"
+    "published_at": "2026-11-16T16:00:00+01:00",
+    "valid_from": "2026-11-16T16:00:00+01:00",
+    "valid_until": "2026-11-17T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=bonneval-sur-arc&lang=fr&isSoir=false",
     "https://www.skiinfo.fr/alpes-du-nord/bonneval-sur-arc/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -114,7 +126,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-16/2026-11-16-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
     ],

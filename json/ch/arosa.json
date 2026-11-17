@@ -10,7 +10,7 @@
   },
   "website": "https://arosalenzerheide.swiss",
   "status": "closed",
-  "fetched_at": "2026-11-16T13:40:38.284688+01:00",
+  "fetched_at": "2026-11-17T08:40:38.296588+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -97,26 +97,27 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-16T12:00:00+01:00",
+  "lifts_updated_at": "2026-11-17T08:35:00+01:00",
   "avalanche": {
     "region_id": "CH-5122",
     "region": "Schanfigg",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
+      "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=67&saison=1&ref=contentBox",

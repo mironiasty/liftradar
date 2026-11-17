@@ -10,7 +10,7 @@
   },
   "website": "https://www.sanmartino.com",
   "status": "closed",
-  "fetched_at": "2026-11-16T13:40:38.285912+01:00",
+  "fetched_at": "2026-11-17T08:40:38.297850+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +22,7 @@
   },
   "lifts": {
     "open": 0,
-    "total": 24
+    "total": 25
   },
   "slopes": {
     "open": 0,
@@ -41,7 +41,7 @@
     },
     "chairlift": {
       "open": 0,
-      "total": 11
+      "total": 12
     },
     "drag_lift": {
       "open": 0,
@@ -72,7 +72,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-10T19:01:19.983523+01:00",
+  "lifts_updated_at": "2026-11-16T19:00:08.119216+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

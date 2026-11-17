@@ -9,42 +9,34 @@
     "lon": 7.7428
   },
   "website": "https://www.matterhornparadise.ch",
-  "status": "open",
-  "fetched_at": "2026-11-16T13:40:38.285700+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-17T08:40:38.297624+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 17,
-    "valley_cm": 0,
-    "fresh_cm": 4,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
-        "depth_cm": 17,
-        "fresh_cm": 4,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Zermatt (SLF)",
-        "elevation_m": 1600,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 24,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 11,
+    "open": 0,
     "total": 36
   },
   "slopes": {
-    "open": 2,
+    "open": 0,
     "total": 84,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 200
   },
   "lifts_by_type": {
@@ -53,7 +45,7 @@
       "total": 6
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 10
     },
     "drag_lift": {
@@ -65,11 +57,11 @@
       "total": 2
     },
     "gondola": {
-      "open": 6,
+      "open": 0,
       "total": 9
     },
     "other": {
-      "open": 4,
+      "open": 0,
       "total": 4
     }
   },
@@ -77,13 +69,13 @@
     "easy": {
       "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 2,
+      "open": 0,
       "total": 48,
-      "open_km": 3.9,
+      "open_km": 0.0,
       "total_km": 99
     },
     "difficult": {
@@ -95,11 +87,11 @@
     "ski_route": {
       "open": 0,
       "total": 16,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-16T13:41:00+01:00",
+  "lifts_updated_at": "2026-11-17T08:40:00+01:00",
   "avalanche": {
     "region_id": "CH-4222",
     "region": "Zermatt",
@@ -115,11 +107,12 @@
     ],
     "problems": [
       "wind_slab",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "wet_snow"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",

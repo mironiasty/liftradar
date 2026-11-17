@@ -10,19 +10,19 @@
   },
   "website": "https://www.vicheres.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-16T13:40:38.285648+01:00",
+  "fetched_at": "2026-11-17T08:40:38.297570+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 8,
-    "valley_cm": 6,
-    "fresh_cm": 6,
+    "mountain_cm": 11,
+    "valley_cm": 0,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Pointe de Toules (SLF)",
         "elevation_m": 2687,
-        "depth_cm": 8,
+        "depth_cm": 11,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -30,8 +30,8 @@
       {
         "name": "Bourg-St-Pierre (SLF)",
         "elevation_m": 1670,
-        "depth_cm": 6,
-        "fresh_cm": 6,
+        "depth_cm": 0,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -81,23 +81,24 @@
   "avalanche": {
     "region_id": "CH-4113",
     "region": "Val d'Entremont - Val Ferret",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "wind_slab",
-      "persistent_weak_layers"
+      "new_snow",
+      "persistent_weak_layers",
+      "wet_snow"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",

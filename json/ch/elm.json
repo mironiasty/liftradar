@@ -10,7 +10,7 @@
   },
   "website": "https://www.elm.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-16T13:40:38.284889+01:00",
+  "fetched_at": "2026-11-17T08:40:38.296798+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 1,
@@ -93,11 +93,12 @@
     ],
     "problems": [
       "wind_slab",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "wet_snow"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=65&saison=1&ref=contentBox",

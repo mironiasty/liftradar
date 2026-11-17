@@ -10,20 +10,20 @@
   },
   "website": "https://www.unterbaech.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-16T13:40:38.285590+01:00",
+  "fetched_at": "2026-11-17T08:40:38.297510+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 1,
+    "mountain_cm": 4,
     "valley_cm": null,
-    "fresh_cm": 3,
+    "fresh_cm": 10,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Chiematte (SLF)",
         "elevation_m": 2205,
-        "depth_cm": 1,
-        "fresh_cm": 3,
+        "depth_cm": 4,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       }
@@ -99,11 +99,12 @@
     ],
     "problems": [
       "wind_slab",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "wet_snow"
     ],
-    "published_at": "2026-11-16T08:00:00+01:00",
-    "valid_from": "2026-11-16T08:00:00+01:00",
-    "valid_until": "2026-11-16T17:00:00+01:00"
+    "published_at": "2026-11-16T17:00:00+01:00",
+    "valid_from": "2026-11-16T17:00:00+01:00",
+    "valid_until": "2026-11-17T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=223&saison=1&ref=contentBox",
