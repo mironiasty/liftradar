@@ -367,6 +367,30 @@ async function resortMap(r, container) {
     ? { center: [r.location.lon, r.location.lat], zoom: 12 }
     : { center: [11.9, 47.25], zoom: 6 };
   const loading = loadSki();
+  // Above the map, as soon as the ski tiles say the resort has an area (the 3D map needs it, which the resorts
+  // without one lack), rather than once the map has drawn.
+  loading.then((ski) => {
+    if (!ski?.resorts.has(skiKey(r))) return;
+    // A block of land cut out with its peaks, seen from above at an angle: the 3D map's diorama. The block's
+    // sides in two shades, the ridges in the accent.
+    const icon = el("span", { class: "icon", "aria-hidden": "true" });
+    icon.innerHTML =
+      '<svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" opacity=".45" d="M2 15.5v2.5l10 5v-2.5z"/><path fill="currentColor" opacity=".7" d="M22 15.5v2.5l-10 5v-2.5z"/><path fill="currentColor" d="M2 15.5 7.5 9l3 3.2L14.5 5l4 6 3.5 4.5-10 5z"/><path fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-linejoin="round" d="M14.5 5 13.5 11l2.4 2.6M7.5 9l.2 4.3"/></svg>';
+    container.before(
+      el(
+        "a",
+        { class: "map-3d", href: `3d.html?r=${skiKey(r)}` },
+        icon,
+        el(
+          "span",
+          { class: "text" },
+          el("b", {}, t("See the resort in 3D")),
+          t("Every lift and piste on the real terrain"),
+        ),
+        el("span", { class: "go", "aria-hidden": "true" }, "→"),
+      ),
+    );
+  });
   // Opened on the area when there is one, rather than moving there once it's known.
   const view = loading.then((ski) => {
     const area = ski?.resorts.get(skiKey(r));
@@ -377,7 +401,6 @@ async function resortMap(r, container) {
     baseMap(
       container,
       view.then((v) => ({ ...v, scrollZoom: false })),
-      // The zoom buttons on the right: the way to the 3D map is on the left.
       { controls: "top-right" },
     ),
     loading,
@@ -396,11 +419,6 @@ async function resortMap(r, container) {
       },
       firstLabel(map),
     );
-    // The 3D map needs the area, which the resorts without one lack.
-    const cube = el("span", { class: "cube", "aria-hidden": "true" });
-    cube.innerHTML =
-      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>';
-    container.append(el("a", { class: "map-3d", href: `3d.html?r=${skiKey(r)}` }, cube, t("See the resort in 3D")));
   }
   const pistes = addPistes(map, ski, {
     highlight: skiKey(r),
