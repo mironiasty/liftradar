@@ -337,6 +337,23 @@ checks it and unpacks it into `engine/<tag>/` (git-ignored), and every deploy do
 site, so each version has its own address, cached for good (`_headers`). A new engine reaches the site
 only when the pin moves. Without it (GitHub failing) the deploy goes on without `/engine/`.
 
+To move the site to a newer engine:
+
+1. In TrailRider, on a commit that is pushed, with nothing uncommitted (the release names the commit):
+   `cd web && npm run viewer -- --release`. It builds the core's WebAssembly (Rust, as TrailRider's README
+   says) and the viewer, publishes them on this repo's pre-release `viewer-<commit>` (`gh`, logged in with
+   write access here; never the repo's "Latest", which stays the ski tiles'), and prints the pin. Without
+   `--release` it only builds and packs, to try. The releases so far: `gh release list`.
+2. Put that pin in `engine.json`, and run `node scripts/engine.mjs` to fetch it into `engine/<tag>/`.
+3. Compare the new `engine/<tag>/viewer.d.ts` with `types/viewer.d.ts`, the copy `assets/scene.js` is type
+   checked against: if they differ, copy it over, and `npm run check` points at what in `scene.js` no longer
+   fits the viewer's options or calls.
+4. Open `3d.html?r=<country>/<id>` in a browser with WebGPU, with the data from liftradar.eu (`json/`,
+   `history/` and `ski/` aren't on `main`), `npm run check`, and commit `engine.json` ("3D map:
+   TrailRider's engine at <commit>", what changed in it), with `types/viewer.d.ts` if it changed. The deploy
+   fetches the engine; the old versions stay on GitHub, so moving the pin back is a revert. Old
+   `engine/<tag>/` folders here can be deleted.
+
 ## Scripts
 
 The pages load `assets/common.js` and then their own script, sharing its top-level names: a
