@@ -9,8 +9,8 @@
     "lon": 12.3871
   },
   "website": "https://www.dreizinnen.com",
-  "status": "closed",
-  "fetched_at": "2026-11-18T08:40:35.240673+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-18T13:40:34.632272+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 30
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 86,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 115
   },
   "lifts_by_type": {
@@ -52,23 +52,23 @@
     "easy": {
       "open": 0,
       "total": 39,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 32,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 15,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-17T13:01:18.160808+01:00",
+  "lifts_updated_at": "2026-11-18T09:20:19.504742+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

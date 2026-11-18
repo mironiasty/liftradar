@@ -10,7 +10,7 @@
   },
   "website": "https://www.valgardena.it",
   "status": "closed",
-  "fetched_at": "2026-11-18T08:40:35.240644+01:00",
+  "fetched_at": "2026-11-18T13:40:34.632243+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +22,7 @@
   },
   "lifts": {
     "open": 0,
-    "total": 53
+    "total": 52
   },
   "slopes": {
     "open": 0,
@@ -53,7 +53,7 @@
     },
     "gondola": {
       "open": 0,
-      "total": 10
+      "total": 9
     }
   },
   "slopes_by_difficulty": {
@@ -76,7 +76,7 @@
       "total_km": 18
     }
   },
-  "lifts_updated_at": "2026-11-15T13:25:34.484916+01:00",
+  "lifts_updated_at": "2026-11-18T10:00:08.335082+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

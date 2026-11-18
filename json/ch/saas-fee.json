@@ -9,13 +9,13 @@
     "lon": 7.9291
   },
   "website": "https://www.saas-fee.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-18T08:40:35.240401+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-18T13:40:34.632016+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 34,
+    "valley_cm": 11,
+    "fresh_cm": 32,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -26,22 +26,30 @@
         "fresh_cm": 32,
         "temperature_c": null,
         "condition": null
+      },
+      {
+        "name": "Saas Fee (SLF)",
+        "elevation_m": 1790,
+        "depth_cm": 11,
+        "fresh_cm": 6,
+        "temperature_c": null,
+        "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 5,
     "total": 23
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 34,
-    "open_km": 0.0,
+    "open_km": 6.5,
     "total_km": 100
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 2
     },
     "drag_lift": {
@@ -49,11 +57,11 @@
       "total": 12
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 3,
       "total": 8
     }
   },
@@ -71,9 +79,9 @@
       "total_km": 32
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 16,
-      "open_km": 0.0,
+      "open_km": 6.5,
       "total_km": 55
     },
     "difficult": {
@@ -83,7 +91,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-18T08:20:57+01:00",
+  "lifts_updated_at": "2026-11-18T13:10:22+01:00",
   "avalanche": {
     "region_id": "CH-4223",
     "region": "Saas Fee",

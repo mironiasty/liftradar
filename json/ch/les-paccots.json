@@ -9,14 +9,14 @@
     "lon": 6.9447
   },
   "website": "https://www.les-paccots.ch",
-  "status": "no_report",
-  "fetched_at": "2026-11-18T08:40:35.240321+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-18T13:40:34.631936+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 0,
+    "mountain_cm": null,
     "valley_cm": null,
-    "fresh_cm": 0,
-    "last_snowfall": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-02-20",
     "condition": null,
     "stations": [
       {
@@ -34,9 +34,9 @@
     "total": 10
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 10,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 16
   },
   "lifts_by_type": {
@@ -47,25 +47,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 8,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 11
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-02T11:30:00+01:00",
+  "lifts_updated_at": "2026-11-18T11:47:00+01:00",
   "avalanche": {
     "region_id": "CH-1111",
     "region": "Vaud Prealps",
