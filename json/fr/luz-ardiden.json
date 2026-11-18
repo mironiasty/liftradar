@@ -10,7 +10,7 @@
   },
   "website": "https://luz-ardiden.com",
   "status": "no_report",
-  "fetched_at": "2026-11-18T13:40:34.634945+01:00",
+  "fetched_at": "2026-11-18T21:00:21.176297+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,37 +65,15 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-66",
-    "region": "Haute-Bigorre",
-    "danger_level": 1,
-    "danger": "low",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-17T16:00:00+01:00",
-    "valid_from": "2026-11-17T16:00:00+01:00",
-    "valid_until": "2026-11-18T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=luz-ardiden&lang=fr&isSoir=false",
-    "https://www.skiinfo.fr/pyrenees/luz-ardiden/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-18/2026-11-18-FR.json"
+    "https://www.skiinfo.fr/pyrenees/luz-ardiden/station-de-ski"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=luz-ardiden&lang=fr&isSoir=false",
-        "attribution_required": null
-      },
-      {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-18/2026-11-18-FR.json",
         "attribution_required": null
       }
     ],

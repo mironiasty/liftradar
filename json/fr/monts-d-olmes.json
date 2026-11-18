@@ -1,0 +1,50 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "monts-d-olmes",
+  "country": "fr",
+  "name": "Les Monts d'Olmes",
+  "region": "Ariège",
+  "location": {
+    "lat": 42.8397,
+    "lon": 1.746
+  },
+  "website": "https://www.montsdolmes.ski",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.177062+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": null,
+    "total": 21,
+    "open_km": null,
+    "total_km": 21
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.montsdolmes.ski/fr/"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.montsdolmes.ski/fr/",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

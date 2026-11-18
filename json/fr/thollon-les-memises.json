@@ -1,0 +1,56 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "thollon-les-memises",
+  "country": "fr",
+  "name": "Thollon-les-Mémises",
+  "region": "Haute-Savoie",
+  "location": {
+    "lat": 46.391,
+    "lon": 6.6989
+  },
+  "website": "https://www.thollon.fr",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.176510+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 14
+  },
+  "slopes": {
+    "open": null,
+    "total": 16,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=thollon&lang=fr&isSoir=false",
+    "https://www.skiinfo.fr/alpes-du-nord/thollon-les-memises/station-de-ski"
+  ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=thollon&lang=fr&isSoir=false",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/thollon-les-memises/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

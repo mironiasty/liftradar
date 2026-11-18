@@ -1,0 +1,82 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "col-de-rousset",
+  "country": "fr",
+  "name": "Col de Rousset",
+  "region": "Drôme",
+  "location": {
+    "lat": 44.8355,
+    "lon": 5.4192
+  },
+  "website": "https://www.lesstationsdeladrome.fr/stations/col-du-rousset/",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.176472+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 11
+  },
+  "slopes": {
+    "open": null,
+    "total": 30,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 24,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://bulletinv3.lumiplan.pro/bulletin.php?station=col-de-rousset&lang=fr&isSoir=false"
+  ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=col-de-rousset&lang=fr&isSoir=false",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
+  "errors": []
+}

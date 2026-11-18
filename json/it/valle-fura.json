@@ -1,0 +1,50 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "valle-fura",
+  "country": "it",
+  "name": "Valle Fura - Pescocostanzo",
+  "region": "Abruzzo",
+  "location": {
+    "lat": 41.9165,
+    "lon": 14.0597
+  },
+  "website": "https://www.impiantivallefura.it/",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.174380+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": 9,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiinfo.fr/abruzzes/pescocostanzo/station-de-ski"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/abruzzes/pescocostanzo/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

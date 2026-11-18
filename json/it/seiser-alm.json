@@ -10,7 +10,7 @@
   },
   "website": "https://www.seiseralm.it",
   "status": "closed",
-  "fetched_at": "2026-11-18T13:40:34.632251+01:00",
+  "fetched_at": "2026-11-18T21:00:21.171701+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -84,6 +84,6 @@
     "resort_info": []
   },
   "errors": [
-    "snow: ReadTimeout: "
+    "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
   ]
 }

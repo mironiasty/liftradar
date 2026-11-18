@@ -1,0 +1,55 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "guzet",
+  "country": "fr",
+  "name": "Guzet",
+  "region": "Ariège",
+  "location": {
+    "lat": 42.7791,
+    "lon": 1.3021
+  },
+  "website": "https://www.guzet.ski",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.176832+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 13
+  },
+  "slopes": {
+    "open": null,
+    "total": 31,
+    "open_km": null,
+    "total_km": 40
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiinfo.fr/pyrenees/guzet/station-de-ski",
+    "https://www.guzet.ski/fr/"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/pyrenees/guzet/station-de-ski",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.guzet.ski/fr/",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

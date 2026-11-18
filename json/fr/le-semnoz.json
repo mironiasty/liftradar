@@ -1,0 +1,55 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "le-semnoz",
+  "country": "fr",
+  "name": "Le Semnoz",
+  "region": "Haute-Savoie",
+  "location": {
+    "lat": 45.791,
+    "lon": 6.1019
+  },
+  "website": "https://www.semnoz.fr",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.177034+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 12
+  },
+  "slopes": {
+    "open": null,
+    "total": 18,
+    "open_km": null,
+    "total_km": 15
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiinfo.fr/alpes-du-nord/le-semnoz/station-de-ski",
+    "https://www.semnoz.fr/"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/le-semnoz/station-de-ski",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.semnoz.fr/",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "passo-mendola",
+  "country": "it",
+  "name": "Passo della Mendola",
+  "region": "Trentino",
+  "location": {
+    "lat": 46.4168,
+    "lon": 11.2083
+  },
+  "website": "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+  "status": "closed",
+  "fetched_at": "2026-11-18T21:00:21.172062+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": 0,
+    "total": 2,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+    "https://www.skiinfo.fr/trentin/passo-mendola-prati-di-golf/station-de-ski"
+  ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/trentin/passo-mendola-prati-di-golf/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

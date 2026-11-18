@@ -1,0 +1,50 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "campo-felice",
+  "country": "it",
+  "name": "Campo Felice",
+  "region": "Abruzzo",
+  "location": {
+    "lat": 42.2063,
+    "lon": 13.465
+  },
+  "website": "https://www.campofelice.it/",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.172541+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 15
+  },
+  "slopes": {
+    "open": null,
+    "total": 24,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiinfo.fr/abruzzes/campo-felice/station-de-ski"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/abruzzes/campo-felice/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

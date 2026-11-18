@@ -1,0 +1,50 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "saint-hilaire-du-touvet",
+  "country": "fr",
+  "name": "Saint-Hilaire-du-Touvet",
+  "region": "Isère",
+  "location": {
+    "lat": 45.3089,
+    "lon": 5.8869
+  },
+  "website": "https://www.station-ski-saint-hilaire.fr",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T21:00:21.177583+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 5
+  },
+  "slopes": {
+    "open": null,
+    "total": 10,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.skiinfo.fr/alpes-du-nord/saint-hilaire-du-touvet/station-de-ski"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/alpes-du-nord/saint-hilaire-du-touvet/station-de-ski",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}
