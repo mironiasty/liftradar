@@ -427,6 +427,9 @@ async function miniMap(resorts) {
   }
 }
 
+// The gondolas under the table's head till the rows come.
+const tableLoader = liftLoader();
+document.querySelector("table")?.after(tableLoader);
 loadIndex()
   .then((index) => {
     document.getElementById("updated").textContent = updatedText(index);
@@ -449,4 +452,5 @@ loadIndex()
   })
   .catch((error) => {
     document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
-  });
+  })
+  .finally(() => tableLoader.remove());

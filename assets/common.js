@@ -219,3 +219,32 @@ function el(tag, attributes = {}, ...children) {
   node.append(...children);
   return node;
 }
+
+// The apps' loader (LiftRadar's LiftLoader): the logo's gondolas going up a cable, 3.6 s each, while data
+// loads. The cabins move in style.css (.lift-loader), and stand still with reduced motion. `small` for
+// a narrow place (half the size, the caption beside it); without `caption`, only screen readers say it.
+const LIFT_LOADER_CABINS = (() => {
+  // A rounded rectangle, for the cabin and its window (cut out of it).
+  const box = (x, y, w, h, r) =>
+    `M${x + r} ${y}h${w - 2 * r}a${r} ${r} 0 0 1 ${r} ${r}v${h - 2 * r}a${r} ${r} 0 0 1 -${r} ${r}` +
+    `h-${w - 2 * r}a${r} ${r} 0 0 1 -${r} -${r}v-${h - 2 * r}a${r} ${r} 0 0 1 ${r} -${r}z`;
+  // Each at its grip on the cable: the hanger, the grip, and the cabin (as the logo's).
+  const cabin =
+    '<path d="M0 0v9" stroke="var(--fg)" stroke-width="1.8"/><circle r="2.4" fill="var(--fg)"/>' +
+    `<path fill="var(--accent)" fill-rule="evenodd" d="${box(-11, 9, 22, 21, 5)}${box(-7.6, 13, 15.2, 7.6, 1.8)}"/>`;
+  return (
+    '<svg viewBox="0 0 168 96" aria-hidden="true">' +
+    '<path d="M6 66 162 8" stroke="var(--muted)" stroke-opacity=".7" stroke-width="1.6" stroke-linecap="round"/>' +
+    '<circle cx="6" cy="66" r="3" fill="var(--muted)"/><circle cx="162" cy="8" r="3" fill="var(--muted)"/>' +
+    `<g class="cabin">${cabin}</g>`.repeat(3) +
+    "</svg>"
+  );
+})();
+
+function liftLoader({ caption = true, small = false } = {}) {
+  const node = el("div", { class: small ? "lift-loader small" : "lift-loader", role: "status" });
+  node.innerHTML = LIFT_LOADER_CABINS;
+  if (caption) node.append(el("span", {}, t("Loading…")));
+  else node.setAttribute("aria-label", t("Loading…"));
+  return node;
+}

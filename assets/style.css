@@ -486,3 +486,63 @@ button.fav:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
+
+/* The gondolas going up while data loads (liftLoader() in common.js), as in the apps. The cable runs from
+   (6, 66) to (162, 8); a cabin rides 6–94 % of it, fading in over its first 14 % and out over its last. The
+   delays space the three a third apart, and with reduced motion they stand where they'd be halfway. */
+.lift-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.lift-loader svg {
+  width: 168px;
+  height: 96px;
+  overflow: visible;
+}
+.lift-loader .cabin {
+  animation: lift-loader 3.6s linear infinite;
+}
+.lift-loader .cabin:nth-of-type(1) {
+  animation-delay: -1.8s;
+}
+.lift-loader .cabin:nth-of-type(2) {
+  animation-delay: -3s;
+}
+.lift-loader .cabin:nth-of-type(3) {
+  animation-delay: -4.2s;
+}
+@keyframes lift-loader {
+  0% {
+    transform: translate(15.36px, 62.52px);
+    opacity: 0;
+  }
+  14%,
+  86% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(152.64px, 11.48px);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lift-loader .cabin {
+    animation-play-state: paused;
+  }
+}
+/* Half the size, the caption beside it: for a narrow place. */
+.lift-loader.small {
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 0;
+}
+.lift-loader.small svg {
+  width: 84px;
+  height: 48px;
+}
