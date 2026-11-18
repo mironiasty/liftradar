@@ -114,7 +114,15 @@ function favoriteButton(r) {
 const resortOnMap = (r) => `map.html?r=${r.country}/${r.id}`;
 
 // Lowercase without accents, so "Sölden" sorts and matches like "solden".
-const fold = (text) => text.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+// Letters of their own that NFD doesn't take apart into a letter and its mark: "Białka" is found as "bialka".
+/** @type {Record<string, string>} */
+const LETTERS = { ł: "l", ø: "o", đ: "d", ß: "ss", æ: "ae", œ: "oe", ı: "i", ħ: "h", þ: "th" };
+const fold = (text) =>
+  text
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[łøđßæœıħþ]/g, (c) => LETTERS[c]);
 
 const dash = (value, unit = "") => (value === null || value === undefined ? "–" : `${value}${unit}`);
 

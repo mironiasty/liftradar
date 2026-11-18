@@ -101,7 +101,7 @@ function createServer(env, origin) {
       inputSchema: {
         country: country.optional(),
         status: z.enum(["open", "closed", "no_report"]).optional().describe("open: the resort reports lifts running"),
-        name: z.string().min(2).optional().describe("Part of the resort's name or region, any case"),
+        name: z.string().min(2).optional().describe("Part of the resort's name or region, any case, accents optional"),
         min_snow_cm: z.number().min(0).optional().describe("Minimum snow depth on the mountain, in cm"),
         min_lifts_open: z.number().int().min(0).optional(),
         near: z
@@ -119,11 +119,11 @@ function createServer(env, origin) {
     },
     async ({ country, status, name, min_snow_cm, min_lifts_open, near, sort, limit }) => {
       const index = /** @type {Index} */ (await read("/json/index.json"));
-      const words = name?.toLowerCase();
+      const words = name && fold(name);
       let found = index.resorts
         .filter((r) => !country || r.country === country)
         .filter((r) => !status || r.status === status)
-        .filter((r) => !words || `${r.name} ${r.region ?? ""}`.toLowerCase().includes(words))
+        .filter((r) => !words || fold(`${r.name} ${r.region ?? ""}`).includes(words))
         .filter((r) => min_snow_cm === undefined || (r.snow.mountain_cm ?? -1) >= min_snow_cm)
         .filter((r) => min_lifts_open === undefined || (r.lifts?.open ?? -1) >= min_lifts_open)
         .map((r) => ({ r, km: near && r.location ? distanceKm(near, r.location) : null }))
@@ -278,6 +278,18 @@ function notFound(country, id) {
     ],
   };
 }
+
+// Names compared without case and marks, as the site's search does (assets/common.js): "bialka" finds
+// "Białka Tatrzańska". The letters NFD doesn't take apart are mapped by hand.
+/** @type {Record<string, string>} */
+const LETTERS = { ł: "l", ø: "o", đ: "d", ß: "ss", æ: "ae", œ: "oe", ı: "i", ħ: "h", þ: "th" };
+/** @param {string} text */
+const fold = (text) =>
+  text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[łøđßæœıħþ]/g, (c) => LETTERS[c]);
 
 /**
  * Great-circle distance in km.
