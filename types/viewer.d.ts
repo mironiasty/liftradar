@@ -10,8 +10,17 @@ export interface MountOptions {
   base?: string;
   /** Fetching the ski tiles, then the elevation tiles, then drawn; or why it couldn't be. */
   onStatus?(status: ResortStatus): void;
-  /** Once ready: the resort's name as the tiles have it, and how many lifts and pistes are drawn. */
-  onInfo?(info: { name: string; lifts: number; pistes: number }): void;
+  /**
+   * Once ready: the resort's name as the tiles have it, how many lifts and pistes are drawn, and whether
+   * the villages and roads round it are (from OpenFreeMap: credit OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors).
+   */
+  onInfo?(info: { name: string; lifts: number; pistes: number; towns: boolean }): void;
+  /**
+   * The places' names to write over the canvas, whenever they change as the camera moves: each centred
+   * at `x, y` (CSS pixels on the canvas), `major` for a village or bigger (the apps write it larger, in a
+   * pale pill). Not told without towns.
+   */
+  onLabels?(labels: PlaceLabel[]): void;
   /** A click (not a drag) on a lift or piste; null on neither. */
   onPick?(picked: Picked | null): void;
   /**
@@ -48,6 +57,9 @@ export type Picked = { x: number; y: number } & (
     }
   | { kind: 'piste'; colour: string; name?: string; ref?: string; difficulty?: string; conv?: string; lengthM?: number }
 );
+
+/** A place's name over the land. */
+export type PlaceLabel = { name: string; x: number; y: number; major: boolean };
 
 export interface MountedResort {
   /** Glides `by` times closer (below 1 further back), as a map's + and − do. */
