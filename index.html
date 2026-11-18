@@ -53,9 +53,8 @@
   .resort button.fav { align-self: flex-start; margin: -3px 0 -3px auto; padding: 3px; }
   .resort button.fav[aria-pressed="false"] { opacity: .35; }
   tr:hover .resort button.fav, .resort button.fav:focus-visible { opacity: 1; }
-  .chip.fav-chip svg { color: var(--star); }
   /* Toolbar: search, country and region selects, status chips. */
-  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 24px; font-size: .9rem; }
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 12px; font-size: .9rem; }
   .search { position: relative; flex: 1 1 16rem; max-width: 22rem; }
   .search > svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
   input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 10px; font: inherit; color: var(--fg);
@@ -79,7 +78,14 @@
   .chip[aria-pressed="true"] .dot { background: var(--c); }
   .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
   button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  #count, #updated { margin-left: auto; }
+  #count { margin-left: auto; }
+  /* When the data was fetched: a chip with a clock, as the resort page's "Checked" time, over the search so the
+     country and region fit beside it. */
+  .updated-row { display: flex; justify-content: flex-end; margin: 24px 0 0; font-size: .9rem; }
+  .updated { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px;
+    background: var(--chip); color: var(--fg); font-size: .85rem; font-weight: 500; }
+  .updated svg { flex: none; color: var(--muted); }
+  .updated.failed, .updated.failed svg { color: var(--warn); }
 
   /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
      table scrolls sideways and the resort column sticks. */
@@ -126,8 +132,10 @@
   @media (max-width: 640px) {
     .mobile-only { display: inline-block; }
     .search { order: -2; flex-basis: 100%; max-width: none; }
-    #updated { order: -1; }
-    #country, #region, #sort { flex: 1 1 40%; min-width: 0; }
+    /* Country and region share a row; the order gets its own while the region shows. */
+    #country, #region, #sort { flex: 1 1 0; min-width: 0; }
+    #country { flex: 0 1 auto; }
+    #region:not([hidden]) ~ #sort { flex-basis: 100%; }
     .table { overflow: visible; }
     thead { display: none; }
     table, tbody { display: block; }
@@ -209,6 +217,9 @@
     <h2 id="favorites-title" data-i18n>Your favourites</h2>
     <div class="fav-cards" id="fav-cards"></div>
   </section>
+  <p class="updated-row">
+    <span class="updated"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="updated" data-i18n>Loading…</span></span>
+  </p>
   <div class="tools">
     <div class="search">
       <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -221,7 +232,6 @@
     </details>
     <select id="region" aria-label="Region"><option value="" data-i18n>All regions</option></select>
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
-    <span class="muted" id="updated" data-i18n>Loading…</span>
     <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
