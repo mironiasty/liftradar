@@ -4,7 +4,7 @@
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
 const searchClear = document.getElementById("search-clear");
-const countryGroup = document.getElementById("country");
+const countryMenuNode = /** @type {HTMLDetailsElement} */ (document.getElementById("country"));
 const fnuggCreditLine = document.getElementById("fnugg-credit");
 const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
@@ -21,12 +21,6 @@ let country = "";
 const shownStatuses = new Set();
 // Each status chip's count element, by status.
 const statusCounts = new Map();
-// The "Favourites" chip: only the visitor's favourite resorts; shown while they have any.
-let favoritesOnly = false;
-/** @type {HTMLElement | null} */
-let favoritesChip = null;
-/** @type {HTMLElement | null} */
-let favoritesCount = null;
 // Every resort by its key ("at/soelden"), for the favourites' cards.
 /** @type {Map<string, IndexResort>} */
 const byKey = new Map();
@@ -164,22 +158,17 @@ function filter() {
   let shown = 0;
   // A chip counts the resorts the other filters leave, whichever statuses are chosen.
   const totals = {};
-  const favorite = new Set(favorites());
-  let favoritesShown = 0;
   for (const tr of rows) {
     const v = values.get(tr);
     const matches =
       v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
-    const isFav = favorite.has(tr.dataset.key);
-    if (matches && (!favoritesOnly || isFav)) totals[v.status] = (totals[v.status] ?? 0) + 1;
-    if (matches && isFav && (shownStatuses.size === 0 || shownStatuses.has(v.status))) favoritesShown++;
-    tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status)) || (favoritesOnly && !isFav);
+    if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
+    tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
     if (!tr.hidden) shown++;
   }
   for (const [status, node] of statusCounts) node.textContent = String(totals[status] ?? 0);
-  if (favoritesCount) favoritesCount.textContent = String(favoritesShown);
   searchClear.hidden = !search.value;
-  const filtered = query || country || region || shownStatuses.size || favoritesOnly;
+  const filtered = query || country || region || shownStatuses.size;
   const n = rows.length;
   count.textContent = filtered ? t("{shown} of {n} resorts", { shown, n }) : t("{n} resorts", { n });
   empty.hidden = shown > 0;
@@ -194,7 +183,6 @@ function saveState() {
   if (country) params.set("country", country);
   if (regionSelect.value) params.set("region", regionSelect.value);
   if (shownStatuses.size) params.set("status", [...shownStatuses].join(","));
-  if (favoritesOnly) params.set("favorites", "1");
   if (key !== "name" || !ascending) params.set("sort", (ascending ? "" : "-") + key);
   const query = params.toString() ? `?${params}` : "";
   history.replaceState(null, "", location.pathname + query + location.hash);
@@ -229,14 +217,10 @@ function fillFilters(resorts) {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
     countryName(a).localeCompare(countryName(b), LANG),
   );
-  const choices = [["", t("All")], ...countries.map((code) => [code, countryName(code)])];
-  const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
-  countryGroup.append(...countryButtons);
+  const showCountry = countryMenu(countryMenuNode, countries, (code) => chooseCountry(code));
   const chooseCountry = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => {
-      countryButtons[i].setAttribute("aria-pressed", c === country);
-    });
+    showCountry(code);
     fillRegions(resorts, region);
     filter();
   };
@@ -258,27 +242,10 @@ function fillFilters(resorts) {
     statusGroup.append(chip);
   }
 
-  const favChip = button("chip fav-chip", "", () => {
-    favoritesOnly = !favoritesOnly;
-    favChip.setAttribute("aria-pressed", String(favoritesOnly));
-    filter();
-  });
-  favChip.innerHTML =
-    '<svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">' +
-    '<path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>';
-  favoritesCount = el("span", { class: "count" });
-  favChip.append(t("Favourites"), favoritesCount);
-  favoritesOnly = saved.get("favorites") === "1" && favorites().length > 0;
-  favChip.setAttribute("aria-pressed", String(favoritesOnly));
-  favChip.hidden = favorites().length === 0;
-  favoritesChip = favChip;
-  statusGroup.append(favChip);
-
   document.getElementById("reset").addEventListener("click", () => {
     search.value = "";
     regionSelect.value = "";
     shownStatuses.clear();
-    favoritesOnly = false;
     for (const chip of statusGroup.children) chip.setAttribute("aria-pressed", "false");
     chooseCountry("");
   });
@@ -383,17 +350,7 @@ function favoriteCard(r) {
 }
 
 onFavoritesChange(() => {
-  if (!byKey.size) return;
-  const any = favorites().length > 0;
-  if (favoritesChip) {
-    favoritesChip.hidden = !any;
-    if (!any) {
-      favoritesOnly = false;
-      favoritesChip.setAttribute("aria-pressed", "false");
-    }
-  }
-  showFavorites();
-  filter();
+  if (byKey.size) showFavorites();
 });
 
 // The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
@@ -451,6 +408,8 @@ loadIndex()
     miniMap(index.resorts).catch(() => {});
   })
   .catch((error) => {
-    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
+    const updated = /** @type {HTMLElement} */ (document.getElementById("updated"));
+    updated.textContent = t("Could not load the data ({message})", error);
+    updated.parentElement?.classList.add("failed");
   })
   .finally(() => tableLoader.remove());

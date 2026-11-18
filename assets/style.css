@@ -546,3 +546,128 @@ button.fav:focus-visible {
   width: 84px;
   height: 48px;
 }
+
+/* The country menu of the table and stats pages: like the language menu, as a <select> can't show flags. */
+.country-menu {
+  position: relative;
+}
+.country-menu > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  height: 34px;
+  padding: 0 28px 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  color: var(--fg);
+  white-space: nowrap;
+  cursor: pointer;
+  list-style: none;
+}
+.country-menu > summary::-webkit-details-marker {
+  display: none;
+}
+.country-menu > summary > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.country-menu > div {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 1100;
+  display: grid;
+  min-width: max(100%, 180px);
+  max-height: min(70vh, 480px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
+}
+.country-menu button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--fg);
+  font: inherit;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.country-menu button:hover,
+.country-menu button:focus-visible {
+  background: var(--chip);
+  color: var(--accent);
+}
+.country-menu button[aria-pressed="true"] {
+  font-weight: 600;
+}
+/* Country flags, drawn here rather than as emoji (which Windows shows as letters); simplified, without the
+   coats of arms' detail. A country with none here gets a blank one: add its flag with the country. The
+   ring keeps white stripes visible; "all countries" has a globe in its place. */
+.flag {
+  display: inline-block;
+  flex: none;
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--chip) center / 100% 100% no-repeat;
+  box-shadow: 0 0 0 1px var(--line);
+}
+.flag[data-country=""] {
+  display: inline-flex;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  color: var(--muted);
+}
+.flag[data-country="ad"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'%3E%3Cpath fill='%2310069f' d='M0 0h8v16H0z'/%3E%3Cpath fill='%23fedd00' d='M8 0h8v16H8z'/%3E%3Cpath fill='%23d50032' d='M16 0h8v16h-8z'/%3E%3Cpath fill='%23c7b37f' stroke='%23703d29' stroke-width='.5' d='M10 4.5h4v4q0 2-2 3q-2-1-2-3z'/%3E%3C/svg%3E");
+}
+.flag[data-country="at"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23c8102e' d='M0 0h3v3H0z'/%3E%3Cpath fill='%23fff' d='M0 1h3v1H0z'/%3E%3C/svg%3E");
+}
+.flag[data-country="ch"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20' preserveAspectRatio='none'%3E%3Cpath fill='%23da291c' d='M0 0h30v20H0z'/%3E%3Cpath fill='%23fff' d='M13 4h4v12h-4zM9 8h12v4H9z'/%3E%3C/svg%3E");
+}
+.flag[data-country="cz"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 4' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h6v2H0z'/%3E%3Cpath fill='%23d7141a' d='M0 2h6v2H0z'/%3E%3Cpath fill='%2311457e' d='M0 0l3 2-3 2z'/%3E%3C/svg%3E");
+}
+.flag[data-country="de"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M0 0h3v1H0z'/%3E%3Cpath fill='%23d00' d='M0 1h3v1H0z'/%3E%3Cpath fill='%23ffce00' d='M0 2h3v1H0z'/%3E%3C/svg%3E");
+}
+.flag[data-country="es"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4' preserveAspectRatio='none'%3E%3Cpath fill='%23aa151b' d='M0 0h4v4H0z'/%3E%3Cpath fill='%23f1bf00' d='M0 1h4v2H0z'/%3E%3C/svg%3E");
+}
+.flag[data-country="fi"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 12' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h18v12H0z'/%3E%3Cpath fill='%23002f6c' d='M5 0h3v12H5zM0 4.5h18v3H0z'/%3E%3C/svg%3E");
+}
+.flag[data-country="fr"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23002395' d='M0 0h1v3H0z'/%3E%3Cpath fill='%23fff' d='M1 0h1v3H1z'/%3E%3Cpath fill='%23ed2939' d='M2 0h1v3H2z'/%3E%3C/svg%3E");
+}
+.flag[data-country="it"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23008c45' d='M0 0h1v3H0z'/%3E%3Cpath fill='%23f4f5f0' d='M1 0h1v3H1z'/%3E%3Cpath fill='%23cd212a' d='M2 0h1v3H2z'/%3E%3C/svg%3E");
+}
+.flag[data-country="no"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16' preserveAspectRatio='none'%3E%3Cpath fill='%23ba0c2f' d='M0 0h24v16H0z'/%3E%3Cpath fill='%23fff' d='M7 0h4v16H7zM0 6h24v4H0z'/%3E%3Cpath fill='%2300205b' d='M8 0h2v16H8zM0 7h24v2H0z'/%3E%3C/svg%3E");
+}
+.flag[data-country="pl"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h2v1H0z'/%3E%3Cpath fill='%23dc143c' d='M0 1h2v1H0z'/%3E%3C/svg%3E");
+}
+.flag[data-country="si"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h9v2H0z'/%3E%3Cpath fill='%23005da4' d='M0 2h9v2H0z'/%3E%3Cpath fill='%23ed1c24' d='M0 4h9v2H0z'/%3E%3Cpath fill='%23005da4' stroke='%23ed1c24' stroke-width='.2' d='M1.8 .9h2v1.5q0 .9-1 1.4q-1-.5-1-1.4z'/%3E%3Cpath fill='%23fff' d='M2 2.4l.5-.6.3.3.3-.3.5.6q-.3.6-.8.9q-.5-.3-.8-.9z'/%3E%3C/svg%3E");
+}
+.flag[data-country="sk"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h9v2H0z'/%3E%3Cpath fill='%230b4ea2' d='M0 2h9v2H0z'/%3E%3Cpath fill='%23ee1c25' d='M0 4h9v2H0z'/%3E%3Cpath fill='%23ee1c25' stroke='%23fff' stroke-width='.2' d='M1.6 1.3h2.2v1.9q0 1.2-1.1 1.6q-1.1-.4-1.1-1.6z'/%3E%3Cpath fill='%23fff' d='M2.55 1.6h.3v2.4h-.3zM2.25 2h.9v.25h-.9zM2.05 2.55h1.3v.25h-1.3z'/%3E%3Cpath fill='%230b4ea2' d='M1.8 4q.45-.5.9-.2q.45-.3.9.2q-.35.5-.9.75q-.55-.25-.9-.75z'/%3E%3C/svg%3E");
+}

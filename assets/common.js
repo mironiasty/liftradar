@@ -228,6 +228,61 @@ function el(tag, attributes = {}, ...children) {
   return node;
 }
 
+// The country filter of the table and stats pages: a <details> like the language menu, as a <select> can't
+// show flags (style.css, .flag). Choosing a country calls onChoose; the function returned shows one as chosen.
+// The arrow keys go through the countries, and Escape or a click elsewhere closes it.
+/**
+ * @param {HTMLDetailsElement} menu
+ * @param {string[]} countries
+ * @param {(code: string) => void} onChoose
+ * @returns {(code: string) => void}
+ */
+function countryMenu(menu, countries, onChoose) {
+  const summary = /** @type {HTMLElement} */ (menu.querySelector("summary"));
+  /** @param {string} code */
+  const flag = (code) => {
+    const node = el("span", { class: "flag", "data-country": code, "aria-hidden": "true" });
+    if (!code)
+      node.innerHTML =
+        '<svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">' +
+        '<circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-2.2 2.4-2.2 10.6 0 13M8 1.5c2.2 2.4 2.2 10.6 0 13"/></svg>';
+    return node;
+  };
+  /** @param {string} code */
+  const label = (code) => (code ? countryName(code) : t("All countries"));
+  const items = ["", ...countries].map((code) => {
+    const item = el("button", { type: "button", "data-country": code }, flag(code), label(code));
+    item.addEventListener("click", () => {
+      menu.open = false;
+      summary.focus();
+      onChoose(code);
+    });
+    return item;
+  });
+  /** @type {HTMLElement} */ (menu.querySelector("div")).replaceChildren(...items);
+  document.addEventListener("click", (event) => {
+    if (!menu.contains(/** @type {Node} */ (event.target))) menu.open = false;
+  });
+  menu.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.open) {
+      menu.open = false;
+      summary.focus();
+    } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      menu.open = true;
+      const at = items.indexOf(/** @type {HTMLButtonElement} */ (document.activeElement));
+      const next =
+        at < 0 ? items.findIndex((item) => item.ariaPressed === "true") : at + (event.key === "ArrowDown" ? 1 : -1);
+      items[Math.max(0, Math.min(items.length - 1, next))].focus();
+    }
+  });
+  return (code) => {
+    summary.replaceChildren(flag(code), el("span", {}, label(code)));
+    summary.setAttribute("aria-label", `${t("Country")}: ${label(code)}`);
+    for (const item of items) item.setAttribute("aria-pressed", String(item.dataset.country === code));
+  };
+}
+
 // The apps' loader (LiftRadar's LiftLoader): the logo's gondolas going up a cable, 3.6 s each, while data
 // loads. The cabins move in style.css (.lift-loader), and stand still with reduced motion. `small` for
 // a narrow place (half the size, the caption beside it); without `caption`, only screen readers say it.

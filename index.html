@@ -53,9 +53,8 @@
   .resort button.fav { align-self: flex-start; margin: -3px 0 -3px auto; padding: 3px; }
   .resort button.fav[aria-pressed="false"] { opacity: .35; }
   tr:hover .resort button.fav, .resort button.fav:focus-visible { opacity: 1; }
-  .chip.fav-chip svg { color: var(--star); }
-  /* Toolbar: search, country and status chips, region. */
-  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 24px; font-size: .9rem; }
+  /* Toolbar: search, country and region selects, status chips. */
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 12px; font-size: .9rem; }
   .search { position: relative; flex: 1 1 16rem; max-width: 22rem; }
   .search > svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
   input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 10px; font: inherit; color: var(--fg);
@@ -70,16 +69,6 @@
   select { padding-right: 28px; appearance: none; cursor: pointer;
     background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center; }
   input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
-  .seg { display: inline-flex; flex-wrap: wrap; gap: 2px; max-width: 100%; padding: 2px; border-radius: 8px; background: var(--chip); }
-  .seg button { height: 30px; padding: 0 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
-  .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
-  /* Eight countries no longer fit beside the search box: the country control gets its own
-     full-width row with the buttons spread evenly, and the status chips go on the row below. */
-  @media (min-width: 641px) {
-    .seg { order: 1; flex-basis: 100%; box-sizing: border-box; }
-    .seg button { flex: 1 0 auto; }
-    .chips, #count { order: 2; }
-  }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line);
     border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
@@ -89,7 +78,14 @@
   .chip[aria-pressed="true"] .dot { background: var(--c); }
   .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
   button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  #count, #updated { margin-left: auto; }
+  #count { margin-left: auto; }
+  /* When the data was fetched: a chip with a clock, as the resort page's "Checked" time, over the search so the
+     country and region fit beside it. */
+  .updated-row { display: flex; justify-content: flex-end; margin: 24px 0 0; font-size: .9rem; }
+  .updated { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px;
+    background: var(--chip); color: var(--fg); font-size: .85rem; font-weight: 500; }
+  .updated svg { flex: none; color: var(--muted); }
+  .updated.failed, .updated.failed svg { color: var(--warn); }
 
   /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
      table scrolls sideways and the resort column sticks. */
@@ -136,10 +132,10 @@
   @media (max-width: 640px) {
     .mobile-only { display: inline-block; }
     .search { order: -2; flex-basis: 100%; max-width: none; }
-    #updated { order: -1; }
-    .seg { flex-wrap: wrap; flex-basis: 100%; box-sizing: border-box; }
-    .seg button { flex: 1 0 auto; }
-    #region, #sort { flex: 1 1 40%; min-width: 0; }
+    /* Country and region share a row; the order gets its own while the region shows. */
+    #country, #region, #sort { flex: 1 1 0; min-width: 0; }
+    #country { flex: 0 1 auto; }
+    #region:not([hidden]) ~ #sort { flex-basis: 100%; }
     .table { overflow: visible; }
     thead { display: none; }
     table, tbody { display: block; }
@@ -221,16 +217,21 @@
     <h2 id="favorites-title" data-i18n>Your favourites</h2>
     <div class="fav-cards" id="fav-cards"></div>
   </section>
+  <p class="updated-row">
+    <span class="updated"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="updated" data-i18n>Loading…</span></span>
+  </p>
   <div class="tools">
     <div class="search">
       <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
       <button type="button" id="search-clear" aria-label="Clear search" hidden><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
     </div>
-    <div class="seg" id="country" role="group" aria-label="Country"></div>
+    <details class="country-menu" id="country">
+      <summary aria-label="Country"><span data-i18n>All countries</span></summary>
+      <div></div>
+    </details>
     <select id="region" aria-label="Region"><option value="" data-i18n>All regions</option></select>
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
-    <span class="muted" id="updated" data-i18n>Loading…</span>
     <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
