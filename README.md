@@ -119,6 +119,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk | [TMR](https://www.jasna.sk)'s lift and slope tables, as its sites embed them ([e.g. Jasná's slopes](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk)): every lift and slope with its state. No report time. Outside the season the lift tables list only the summer lifts, so the lift total is the area's size until a slope opens |
 | Beskid Sport Arena | Its own [lift](https://beskidsportarena.pl/szczyrk-wyciagi-narciarskie-i-kolej-linowa/) and [slope](https://beskidsportarena.pl/szczyrk-trasy-narciarskie/) tables: every lift and slope with its state. No report time |
 | Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko, Słotwiny Arena, Słotwiny, Nosal, Grapa (Czarna Góra); Füssener Jöchle, Birkenlift & Geigenbühel (Seefeld) | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists (for the small neighbours of covered areas also OnTheSnow and skiresort.com) (the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
+| Val Cenis, Saint-Lary, Auron, Les Orres, Chamrousse, Ax 3 Domaines, Orcières, Les Karellis, L'Alpe du Grand Serre, Font-Romeu Pyrénées 2000, Superbagnères and 17 smaller French areas | **Size only** (no live status yet; their slope maps and digisnow widgets load in the browser): lift and slope totals, and km where the resort gives them, from the resort's own site, otherwise [OnTheSnow](https://www.skiinfo.fr/). Each reported there in the 2025/26 season |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Engelberg, Friuli Venezia Giulia and Madesimo | The resort's own Intermaps slope map |
 | Ski-area sizes (total slope km, and lift and slope totals a report lacks) | The size on the resort's own website; otherwise [OnTheSnow](https://www.skiinfo.fr/) (the figures resorts enter there) or [skiresort.com](https://www.skiresort.com/) (km, and km by difficulty for some bigger areas); for a sector of a linked area, the sum of the operator's own slope lengths (Ski Arlberg's slope map, infosnow, Dolomiti Superski) |
 | Avalanche danger, Tirol | [avalanche.report](https://avalanche.report), Euregio Tirol – South Tyrol – Trentino |
@@ -137,8 +138,9 @@ history, and a section for developers) is on the site: [About the data](https://
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
 Lumiplan is where French resorts submit theirs (Alpe d'Huez uses ATEN Altitude instead). Not
-covered yet in France: Val Cenis, Saint-Lary, Font-Romeu, Ax 3 Domaines, Auron, Orcières,
-Chamrousse and Les Orres (no source we can read). Not covered yet in Finland: Levi's own lift list (ski.fi's
+covered yet in France: a live status for 28 areas listed with their size only (Val Cenis, Saint-Lary,
+Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse, Les Orres and 20 smaller ones), and the areas
+under 15 km. Not covered yet in Finland: Levi's own lift list (ski.fi's
 block is used), Paljakka, Koli and the smaller hills; Finland has no avalanche ratings to read. Not
 covered yet in Germany: a live status for the 77 areas outside the Sauerland without a current
 slope map or a page we read (most of the Allgäu and of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
