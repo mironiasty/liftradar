@@ -184,6 +184,14 @@ a.brand:focus-visible,
   gap: 8px;
   margin-left: auto;
 }
+/* The app's store link, for the visitor's phone only (lang.js sets data-os). */
+.pill.app {
+  display: none;
+}
+:root[data-os="ios"] .pill.app-ios,
+:root[data-os="android"] .pill.app-android {
+  display: inline-flex;
+}
 /* The language menu: over the page, and over the map's controls. */
 .lang-menu {
   position: relative;
@@ -429,6 +437,48 @@ a.brand:focus-visible,
 .site-footer nav a:hover {
   color: var(--accent);
   text-decoration: underline;
+}
+/* The app's two stores, as buttons in the stores' own style: black, white text, the store's logo. */
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.store {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.store svg {
+  flex: none;
+}
+.store span {
+  display: grid;
+  line-height: 1.1;
+}
+.store small {
+  font-size: 0.62rem;
+}
+.store b {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.store:hover {
+  border-color: var(--accent);
+}
+/* On a phone or tablet, only its own store (lang.js sets data-os). */
+:root[data-os="ios"] .store-android,
+:root[data-os="android"] .store-ios {
+  display: none;
 }
 .made-by {
   display: inline-flex;
