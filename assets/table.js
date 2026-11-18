@@ -4,7 +4,7 @@
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
 const searchClear = document.getElementById("search-clear");
-const countryGroup = document.getElementById("country");
+const countryMenuNode = /** @type {HTMLDetailsElement} */ (document.getElementById("country"));
 const fnuggCreditLine = document.getElementById("fnugg-credit");
 const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
@@ -229,14 +229,10 @@ function fillFilters(resorts) {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
     countryName(a).localeCompare(countryName(b), LANG),
   );
-  const choices = [["", t("All")], ...countries.map((code) => [code, countryName(code)])];
-  const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
-  countryGroup.append(...countryButtons);
+  const showCountry = countryMenu(countryMenuNode, countries, (code) => chooseCountry(code));
   const chooseCountry = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => {
-      countryButtons[i].setAttribute("aria-pressed", c === country);
-    });
+    showCountry(code);
     fillRegions(resorts, region);
     filter();
   };

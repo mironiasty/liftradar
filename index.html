@@ -54,7 +54,7 @@
   .resort button.fav[aria-pressed="false"] { opacity: .35; }
   tr:hover .resort button.fav, .resort button.fav:focus-visible { opacity: 1; }
   .chip.fav-chip svg { color: var(--star); }
-  /* Toolbar: search, country and status chips, region. */
+  /* Toolbar: search, country and region selects, status chips. */
   .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 24px; font-size: .9rem; }
   .search { position: relative; flex: 1 1 16rem; max-width: 22rem; }
   .search > svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
@@ -70,16 +70,6 @@
   select { padding-right: 28px; appearance: none; cursor: pointer;
     background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center; }
   input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
-  .seg { display: inline-flex; flex-wrap: wrap; gap: 2px; max-width: 100%; padding: 2px; border-radius: 8px; background: var(--chip); }
-  .seg button { height: 30px; padding: 0 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
-  .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
-  /* Eight countries no longer fit beside the search box: the country control gets its own
-     full-width row with the buttons spread evenly, and the status chips go on the row below. */
-  @media (min-width: 641px) {
-    .seg { order: 1; flex-basis: 100%; box-sizing: border-box; }
-    .seg button { flex: 1 0 auto; }
-    .chips, #count { order: 2; }
-  }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
   .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line);
     border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
@@ -137,9 +127,7 @@
     .mobile-only { display: inline-block; }
     .search { order: -2; flex-basis: 100%; max-width: none; }
     #updated { order: -1; }
-    .seg { flex-wrap: wrap; flex-basis: 100%; box-sizing: border-box; }
-    .seg button { flex: 1 0 auto; }
-    #region, #sort { flex: 1 1 40%; min-width: 0; }
+    #country, #region, #sort { flex: 1 1 40%; min-width: 0; }
     .table { overflow: visible; }
     thead { display: none; }
     table, tbody { display: block; }
@@ -227,7 +215,10 @@
       <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
       <button type="button" id="search-clear" aria-label="Clear search" hidden><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
     </div>
-    <div class="seg" id="country" role="group" aria-label="Country"></div>
+    <details class="country-menu" id="country">
+      <summary aria-label="Country"><span data-i18n>All countries</span></summary>
+      <div></div>
+    </details>
     <select id="region" aria-label="Region"><option value="" data-i18n>All regions</option></select>
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
     <span class="muted" id="updated" data-i18n>Loading…</span>
