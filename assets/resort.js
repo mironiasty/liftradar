@@ -80,35 +80,44 @@ function tiles(r) {
         dangerName(avalanche.danger),
       ]
     : "–";
+  // First what's open, the reason most people come; then the snow and the avalanche danger.
   return el(
     "div",
-    { class: "tiles" },
-    tile(t("Mountain"), cm(snow.mountain_cm), snow.condition),
-    tile(t("Valley"), cm(snow.valley_cm)),
-    tile(
-      t("Fresh snow"),
-      snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm}`, el("small", {}, " cm")) : cm(snow.fresh_cm),
-      lastSnowfall,
+    { class: "summary" },
+    el(
+      "div",
+      { class: "tiles key" },
+      tile(
+        t("Lifts"),
+        pair(lifts?.open, lifts?.total),
+        active && lifts?.total ? meter(lifts.open, lifts.total) : null,
+        share(lifts?.open, lifts?.total),
+      ),
+      tile(
+        t("Slopes"),
+        present(slopes?.open) || present(slopes?.total)
+          ? pair(slopes?.open, slopes?.total)
+          : pair(slopes?.open_km, slopes?.total_km, " km"),
+        active && slopes?.total ? meter(slopes.open, slopes.total) : null,
+        present(slopes?.open) || present(slopes?.total)
+          ? present(slopes?.total_km)
+            ? pair(slopes?.open_km, slopes?.total_km, " km")
+            : null
+          : null,
+      ),
     ),
-    tile(
-      t("Lifts"),
-      pair(lifts?.open, lifts?.total),
-      active && lifts?.total ? meter(lifts.open, lifts.total) : null,
-      share(lifts?.open, lifts?.total),
+    el(
+      "div",
+      { class: "tiles" },
+      tile(t("Mountain"), cm(snow.mountain_cm), snow.condition),
+      tile(t("Valley"), cm(snow.valley_cm)),
+      tile(
+        t("Fresh snow"),
+        snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm}`, el("small", {}, " cm")) : cm(snow.fresh_cm),
+        lastSnowfall,
+      ),
+      tile(t("Avalanche danger"), danger, avalanche?.region),
     ),
-    tile(
-      t("Slopes"),
-      present(slopes?.open) || present(slopes?.total)
-        ? pair(slopes?.open, slopes?.total)
-        : pair(slopes?.open_km, slopes?.total_km, " km"),
-      active && slopes?.total ? meter(slopes.open, slopes.total) : null,
-      present(slopes?.open) || present(slopes?.total)
-        ? present(slopes?.total_km)
-          ? pair(slopes?.open_km, slopes?.total_km, " km")
-          : null
-        : null,
-    ),
-    tile(t("Avalanche danger"), danger, avalanche?.region),
   );
 }
 
@@ -144,39 +153,85 @@ function statusNote(r) {
 /** @param {Resort} r */
 function header(r) {
   const status = statusKey(r);
-  const meta = [r.region, countryName(r.country)].filter(Boolean).join(" · ");
-  const { checked, changed, days, stale } = reportTimes(r);
-  const times = [
-    t("Checked {time}", { time: viennaTime(checked) }),
-    changed && t("resort's last change {time}", { time: viennaTime(changed) }),
+  // The region and country open the list of all resorts filtered to them.
+  const filterLink = (text, params) => el("a", { class: "where", href: `./?${new URLSearchParams(params)}` }, text);
+  const where = [
+    r.region ? filterLink(r.region, { country: r.country, region: r.region }) : null,
+    filterLink(countryName(r.country), { country: r.country }),
   ]
-    .filter(Boolean)
-    .join(" · ");
+    .filter((link) => link !== null)
+    .flatMap((link, i) => (i ? [" · ", link] : [link]));
+  const { checked, changed, days, stale } = reportTimes(r);
+  // When the report was read and last changed, opposite the name (under it on narrow screens).
+  const clock = el("span", { class: "clock", "aria-hidden": "true" });
+  clock.innerHTML =
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"' +
+    ' stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+  const checkedText = t("Checked {time}", { time: viennaTime(checked) });
+  const changedText = changed && t("resort's last change {time}", { time: viennaTime(changed) });
+  const times = el(
+    "div",
+    { class: stale ? "times stale" : "times" },
+    el("span", { class: "checked" }, clock, checkedText),
+    changedText ? el("span", { class: "changed" }, changedText) : "",
+  );
+  // Narrow screens: just the time, next to the status; tapped, it shows both lines.
+  const short = viennaTime(checked, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  const when = el(
+    "details",
+    { class: stale ? "when stale" : "when" },
+    el("summary", { class: "checked" }, clock.cloneNode(true), short),
+    el("div", {}, el("span", {}, checkedText), changedText ? el("span", { class: "changed" }, changedText) : ""),
+  );
+  closeOnOutside(when);
   const unchanged =
     stale && !r.status_from
-      ? ` ${t("The resort hasn't changed its report for {n} days: check its own page.", { n: days })}`
+      ? t("The resort hasn't changed its report for {n} days: check its own page.", { n: days })
       : "";
   const note = statusNote(r);
   return el(
     "header",
     { class: "resort-head" },
     backLink(),
-    el("div", { class: "title" }, el("h1", {}, r.name), favoriteButton(r)),
     el(
       "div",
-      { class: "facts" },
+      { class: "head-row" },
       el(
-        "span",
-        { class: "status" },
-        el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }),
-        STATUS_LABELS[status],
+        "div",
+        { class: "head-main" },
+        el("div", { class: "title" }, el("h1", {}, r.name), favoriteButton(r)),
+        el(
+          "div",
+          { class: "facts" },
+          el(
+            "span",
+            { class: "status" },
+            el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }),
+            STATUS_LABELS[status],
+          ),
+          el("span", {}, ...where),
+          when,
+        ),
+        fnuggCredit(r),
       ),
-      el("span", {}, meta),
+      times,
     ),
-    fnuggCredit(r),
-    el("p", { class: stale ? "meta stale" : "meta" }, times + unchanged),
+    unchanged ? el("p", { class: "meta stale" }, unchanged) : "",
     note ? el("p", { class: "meta" }, note) : "",
   );
+}
+
+// A <details> popover closes on a click elsewhere and on Escape, like the language menu.
+/** @param {HTMLDetailsElement} details */
+function closeOnOutside(details) {
+  document.addEventListener("click", (event) => {
+    if (details.open && !details.contains(/** @type {Node} */ (event.target))) details.open = false;
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !details.open) return;
+    details.open = false;
+    details.querySelector("summary")?.focus();
+  });
 }
 
 // Back to the list of all resorts, with the filters and order it had in this tab.
@@ -584,7 +639,7 @@ async function show() {
     "div",
     { class: "stack" },
     tiles(r),
-    ...[stations(r.snow.stations), breakdown(r), avalanche(r.avalanche)].filter(Boolean),
+    ...[breakdown(r), stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
     el(
       "section",
       { class: "card" },
