@@ -63,7 +63,8 @@
   .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
     min-width: 22px; padding: 0 5px; box-sizing: border-box; color: #fff; font: 600 11px/1 system-ui, sans-serif;
     border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; }
-  /* Resort popup: laid out like a resort card in the phone table. */
+  /* Resort popup: laid out like a resort card in the phone table, above every pin (they go up to z-index 2). */
+  .maplibregl-popup { z-index: 3; }
   .maplibregl-popup:not(.map-tip) .maplibregl-popup-content { width: 264px; padding: 14px 16px; font: 14px/1.4 system-ui, sans-serif; }
   .pin { cursor: pointer; }
   .popup .head { display: flex; align-items: baseline; gap: 8px; padding-right: 14px; }
