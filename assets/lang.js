@@ -34,6 +34,16 @@
       localStorage.setItem(KEY, link.hreflang);
     } catch {}
   });
+  // The header's "Get the app" link shows only on a phone or tablet, for its own store (style.css .pill.app);
+  // the footer links to both on a computer, and to its own there. iPadOS calls itself a Mac, with a touch screen.
+  const ua = navigator.userAgent;
+  const os = /Android/.test(ua)
+    ? "android"
+    : /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)
+      ? "ios"
+      : null;
+  if (os) document.documentElement.dataset.os = os;
+
   document.addEventListener("keydown", (event) => {
     const menu = document.querySelector(".lang-menu");
     if (event.key !== "Escape" || !menu?.open) return;
