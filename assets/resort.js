@@ -361,6 +361,8 @@ function data(r) {
 /** @param {Resort} r */
 async function resortMap(r, container) {
   container.classList.add("loading");
+  const loader = liftLoader();
+  container.append(loader);
   const start = r.location
     ? { center: [r.location.lon, r.location.lat], zoom: 12 }
     : { center: [11.9, 47.25], zoom: 6 };
@@ -409,6 +411,7 @@ async function resortMap(r, container) {
   const drawn = pistes.then(() => !map.loaded() && new Promise((resolve) => map.once("idle", resolve)));
   await Promise.race([drawn, new Promise((resolve) => setTimeout(resolve, 4000))]);
   container.classList.remove("loading");
+  loader.remove();
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
@@ -548,6 +551,7 @@ function chart(title, unit, colour, points) {
 async function show() {
   const wanted = requested();
   if (!wanted) return fail(t("No resort given."));
+  page.replaceChildren(liftLoader());
   const response = await fetch(resortPath(wanted), { cache: "no-cache" });
   if (response.status === 404) return fail(t("There's no such resort."));
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -557,7 +561,7 @@ async function show() {
   setResortAddress(r);
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
-  const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, t("Loading…")));
+  const historyBox = el("div", { class: "charts" }, liftLoader({ small: true }));
   const main = el(
     "div",
     { class: "stack" },

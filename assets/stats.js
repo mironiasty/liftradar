@@ -300,6 +300,8 @@ function fillFilters() {
   choose(countries.find((code) => code === saved.get("country")) ?? "", saved.get("region") ?? "");
 }
 
+// The small gondolas where the charts go, till they're drawn (render() replaces them).
+charts.replaceChildren(liftLoader({ small: true }));
 loadIndex()
   .then(async (index) => {
     document.getElementById("updated").textContent = updatedText(index);
@@ -315,5 +317,6 @@ loadIndex()
     }).observe(charts);
   })
   .catch((error) => {
+    charts.replaceChildren();
     document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
   });
