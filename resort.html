@@ -24,6 +24,33 @@
   .title button.fav { padding: 6px; }
   .title button.fav svg { width: 24px; height: 24px; }
   .resort-head p { margin: 0; max-width: 70ch; }
+  /* Name and status on the left; when the report was read on the right, level with the status. */
+  .head-row { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; }
+  .head-main { display: grid; flex: 1; gap: 8px; min-width: 0; }
+  .where { color: inherit; text-decoration: none; }
+  .where:hover { color: var(--accent); text-decoration: underline; }
+  .times { display: grid; justify-items: end; gap: 3px; color: var(--muted); font-size: .8rem; text-align: right; }
+  .times .checked, .when .checked { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px;
+    background: var(--chip); color: var(--fg); font-size: .85rem; font-weight: 500; }
+  .times.stale .checked, .when.stale .checked { color: var(--warn); }
+  .clock { display: inline-flex; color: var(--muted); }
+  /* "resort's last change …" began mid-sentence when it followed the check on one line. */
+  .changed { display: block; }
+  .changed::first-letter { text-transform: uppercase; }
+  .stale .clock { color: var(--warn); }
+  /* Narrow screens: the time as a chip at the end of the status row, which opens both lines under the row. */
+  .facts { position: relative; }
+  .when { display: none; margin-left: auto; }
+  .when summary { cursor: pointer; list-style: none; }
+  .when summary::-webkit-details-marker { display: none; }
+  .when > div { position: absolute; top: calc(100% + 6px); right: 0; z-index: 1100; width: max-content; max-width: calc(100vw - 32px); display: grid; gap: 3px;
+    padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22); font-size: .85rem; }
+  .when > div .changed { color: var(--muted); }
+  @media (max-width: 860px) {
+    .times { display: none; }
+    .when { display: block; }
+  }
   h2 { margin: 0 0 10px; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   .dot { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
   .meta { color: var(--muted); font-size: .9rem; }
@@ -39,13 +66,19 @@
     .layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
     .stack, .side { display: contents; }
     .layout section, .layout .charts-card { order: 3; }
-    .tiles { order: 1; }
+    .summary { order: 1; }
     .map-box { order: 2; }
     .layout .data { order: 4; }
   }
 
-  /* Key numbers. */
-  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  /* Key numbers: open lifts and slopes, larger, above the snow and the avalanche danger. */
+  .summary { display: grid; gap: 20px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .tiles.key { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tiles.key .tile { padding: 16px 18px; }
+  .tiles.key .value { font-size: 2.2rem; line-height: 1.15; }
+  .tiles.key .value small { font-size: 1.1rem; }
+  .tiles.key .meter { height: 8px; margin: 8px 0 4px; border-radius: 4px; }
   .tile { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
   .tile .label { color: var(--muted); font-size: .75rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
   .tile .value { margin-top: 2px; font-size: 1.6rem; font-weight: 600; font-variant-numeric: tabular-nums; }
