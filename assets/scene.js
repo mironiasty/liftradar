@@ -1196,11 +1196,16 @@ function engineCredits() {
   );
 }
 
+// The gondolas over the map till the resort is drawn (by the engine, or the diorama once it's idle).
+const sceneLoader = liftLoader();
+
 async function show() {
   if (!KEY) {
     showInfo(el("p", {}, t("Open a resort from the map, then its 3D map.")), el("a", { href: "map.html" }, t("Map")));
     return;
   }
+  const section = /** @type {HTMLElement} */ (document.getElementById("map"));
+  section.append(sceneLoader);
   const [index, ski] = await Promise.all([loadIndex(), loadSki()]);
   const r = index.resorts.find((x) => skiKey(x) === KEY);
   if (!r || !ski) throw new Error(KEY);
@@ -1239,12 +1244,18 @@ async function show() {
       el("a", { href: resortPage(r) }, t("Resort page")),
       el("a", { href: resortOnMap(r) }, t("Map of all resorts")),
     );
-  const section = /** @type {HTMLElement} */ (document.getElementById("map"));
   if (await mountEngine(section, KEY)) {
+    sceneLoader.remove();
     showInfo(
       summary(),
       liftCount(),
-      el("p", { class: "hint" }, t("Drag to turn it; scroll or pinch to zoom.")),
+      el(
+        "p",
+        { class: "hint" },
+        t(
+          "Drag to move it, right-drag (or with Ctrl) to turn and tilt it, scroll to zoom. On a phone: one finger moves it, two zoom, turn and tilt it.",
+        ),
+      ),
       links(),
       engineCredits(),
     );
@@ -1402,6 +1413,10 @@ async function show() {
     layer.animate.on = animate.checked;
     map.triggerRepaint();
   });
+  map.once("idle", () => sceneLoader.remove());
 }
 
-show().catch((error) => showInfo(el("p", {}, t("The map could not load."), ` (${error.message})`)));
+show().catch((error) => {
+  sceneLoader.remove();
+  showInfo(el("p", {}, t("The map could not load."), ` (${error.message})`));
+});
