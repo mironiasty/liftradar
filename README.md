@@ -365,7 +365,9 @@ labels in the page's language, peaks, and hillshading and contours from Terrain 
 
 `3d.html` also loads `assets/scene.js`, an ES module (it still sees the shared names). Where the browser
 has WebGPU it draws the resort with TrailRider's engine (see "3D engine"): the realistic map from the
-Terrain Tiles' elevation and this site's ski tiles, every lift as what it is, a card for a clicked lift or
+Terrain Tiles' elevation and this site's ski tiles, every lift as what it is, the villages round it with
+their houses, roads and names (OpenFreeMap's tiles, the engine fetches them; the page writes the names it
+gives, `onLabels`, and credits OpenFreeMap when it drew them), a card for a clicked lift or
 piste, and + and − and a compass. Elsewhere, or when the engine can't load or draw the resort, it draws a
 diorama with three.js (cdnjs): it cuts a box around the resort out of [Mapterhorn](https://mapterhorn.com)'s terrain
 (0.5–10 m in the Alps; the elevation tiles go through a MapLibre protocol that flattens everything

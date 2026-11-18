@@ -1059,6 +1059,9 @@ async function mountEngine(section, key) {
     if (!(await viewer.supported())) return null;
     const canvas = el("canvas", { class: "engine" });
     section.append(canvas);
+    // The places' names over the land, where the engine says, as the apps write them.
+    const names = el("div", { class: "names", "aria-hidden": "true" });
+    section.append(names);
     // A card at a clicked lift or piste; a click on neither, or Escape, closes it.
     const card = el("div", { class: "pick", hidden: "" });
     section.append(card);
@@ -1107,6 +1110,15 @@ async function mountEngine(section, key) {
       const mounted = viewer.mountResort(canvas, {
         resort: key,
         base: location.origin,
+        onInfo: (info) => {
+          engineTowns = info.towns;
+        },
+        onLabels: (labels) =>
+          names.replaceChildren(
+            ...labels.map(({ name, x, y, major }) =>
+              el("span", { class: major ? "major" : "", style: `left:${x}px;top:${y}px` }, name),
+            ),
+          ),
         onPick: (picked) => {
           if (!picked) return close();
           card.replaceChildren(...pickedCard(picked));
@@ -1175,7 +1187,10 @@ function pickedCard(picked) {
   ];
 }
 
-/** Where the engine's view comes from: its terrain and the ski data. */
+/** Whether the engine drew the villages and roads round the resort (OpenFreeMap's), for their credit. */
+let engineTowns = false;
+
+/** Where the engine's view comes from: its terrain, the ski data, and the villages and roads when it drew them. */
 function engineCredits() {
   const link = (href, text) => el("a", { href }, text);
   return el(
@@ -1193,6 +1208,19 @@ function engineCredits() {
     " ",
     t("contributors"),
     ")",
+    ...(engineTowns
+      ? [
+          " · ",
+          t("Villages and roads"),
+          ": ",
+          link("https://openfreemap.org", "OpenFreeMap"),
+          " (© ",
+          link("https://www.openmaptiles.org", "OpenMapTiles"),
+          ", © ",
+          link("https://www.openstreetmap.org/copyright", "OpenStreetMap"),
+          ")",
+        ]
+      : []),
   );
 }
 
