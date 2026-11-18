@@ -9,8 +9,8 @@
     "lon": 10.7827
   },
   "website": "https://www.schnalstal.com",
-  "status": "open",
-  "fetched_at": "2026-11-17T13:40:33.279866+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T08:40:35.240851+01:00",
   "status_from": "2026-11-16T08:40:31.395698+01:00",
   "snow": {
     "mountain_cm": null,
@@ -21,11 +21,11 @@
     "stations": []
   },
   "lifts": {
-    "open": 3,
+    "open": 0,
     "total": 11
   },
   "slopes": {
-    "open": 2,
+    "open": null,
     "total": 22,
     "open_km": null,
     "total_km": 42
@@ -47,6 +47,6 @@
     ]
   },
   "errors": [
-    "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+    "suedtirol: ReadTimeout: "
   ]
 }

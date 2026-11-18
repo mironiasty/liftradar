@@ -10,7 +10,7 @@
   },
   "website": "https://www.alpedhuez.com",
   "status": "no_report",
-  "fetched_at": "2026-11-17T13:40:33.281622+01:00",
+  "fetched_at": "2026-11-18T08:40:35.242801+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -30,43 +30,15 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-12",
-    "region": "Grandes-Rousses",
-    "danger_level": 3,
-    "danger": "considerable",
-    "ratings": [
-      {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": 2800,
-        "period": "all_day"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": 2800,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-16T15:00:00+01:00",
-    "valid_from": "2026-11-16T15:00:00+01:00",
-    "valid_until": "2026-11-17T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://live.aten-altitude.com/alpehuez/",
-    "https://www.skiinfo.fr/alpes-du-nord/alpe-dhuez/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json"
+    "https://www.skiinfo.fr/alpes-du-nord/alpe-dhuez/station-de-ski"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://live.aten-altitude.com/alpehuez/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-17/2026-11-17-FR.json",
         "attribution_required": null
       }
     ],

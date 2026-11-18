@@ -9,8 +9,8 @@
     "lon": 11.3537
   },
   "website": "https://www.ladurns.it",
-  "status": "closed",
-  "fetched_at": "2026-11-17T13:40:33.279895+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-18T08:40:35.240877+01:00",
   "status_from": "2026-11-16T08:40:31.395740+01:00",
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 3
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 10,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 18
   },
   "lifts_by_type": null,
@@ -47,6 +47,6 @@
     ]
   },
   "errors": [
-    "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+    "suedtirol: ReadTimeout: "
   ]
 }

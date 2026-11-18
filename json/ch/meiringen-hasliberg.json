@@ -10,7 +10,7 @@
   },
   "website": "https://www.meiringen-hasliberg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-17T13:40:33.279396+01:00",
+  "fetched_at": "2026-11-18T08:40:35.240344+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Schönbüel (SLF)",
         "elevation_m": 1777,
-        "depth_cm": 6,
-        "fresh_cm": 4,
+        "depth_cm": 0,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -77,15 +77,15 @@
       "total_km": 11
     }
   },
-  "lifts_updated_at": "2026-11-17T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-18T08:31:00+01:00",
   "avalanche": {
     "region_id": "CH-1244",
     "region": "Hasliberg - Rosenlaui",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -93,12 +93,11 @@
     ],
     "problems": [
       "wind_slab",
-      "persistent_weak_layers",
-      "wet_snow"
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T17:00:00+01:00",
-    "valid_from": "2026-11-16T17:00:00+01:00",
-    "valid_until": "2026-11-17T17:00:00+01:00"
+    "published_at": "2026-11-17T17:00:00+01:00",
+    "valid_from": "2026-11-17T17:00:00+01:00",
+    "valid_until": "2026-11-18T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=188&saison=1&ref=contentBox",

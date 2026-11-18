@@ -10,12 +10,12 @@
   },
   "website": "https://www.unterbaech.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-17T13:40:33.279535+01:00",
+  "fetched_at": "2026-11-18T08:40:35.240491+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 4,
     "valley_cm": null,
-    "fresh_cm": 10,
+    "fresh_cm": 16,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Chiematte (SLF)",
         "elevation_m": 2205,
         "depth_cm": 4,
-        "fresh_cm": 10,
+        "fresh_cm": 16,
         "temperature_c": null,
         "condition": null
       }
@@ -87,24 +87,23 @@
   "avalanche": {
     "region_id": "CH-4221",
     "region": "Lower Visp valleys",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "wind_slab",
-      "persistent_weak_layers",
-      "wet_snow"
+      "new_snow",
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T17:00:00+01:00",
-    "valid_from": "2026-11-16T17:00:00+01:00",
-    "valid_until": "2026-11-17T17:00:00+01:00"
+    "published_at": "2026-11-17T17:00:00+01:00",
+    "valid_from": "2026-11-17T17:00:00+01:00",
+    "valid_until": "2026-11-18T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=223&saison=1&ref=contentBox",

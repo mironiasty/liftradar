@@ -9,47 +9,39 @@
     "lon": 7.9291
   },
   "website": "https://www.saas-fee.ch",
-  "status": "open",
-  "fetched_at": "2026-11-17T13:40:33.279451+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-18T08:40:35.240401+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 22,
-    "valley_cm": 6,
-    "fresh_cm": 12,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Gibidum (SLF)",
         "elevation_m": 2680,
-        "depth_cm": 22,
-        "fresh_cm": 12,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Saas Fee (SLF)",
-        "elevation_m": 1790,
-        "depth_cm": 6,
-        "fresh_cm": 6,
+        "depth_cm": 34,
+        "fresh_cm": 32,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 0,
     "total": 23
   },
   "slopes": {
-    "open": 2,
+    "open": 0,
     "total": 34,
-    "open_km": 6.5,
+    "open_km": 0.0,
     "total_km": 100
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 2
     },
     "drag_lift": {
@@ -57,11 +49,11 @@
       "total": 12
     },
     "funicular": {
-      "open": 1,
+      "open": 0,
       "total": 1
     },
     "gondola": {
-      "open": 2,
+      "open": 0,
       "total": 8
     }
   },
@@ -79,9 +71,9 @@
       "total_km": 32
     },
     "intermediate": {
-      "open": 2,
+      "open": 0,
       "total": 16,
-      "open_km": 6.5,
+      "open_km": 0.0,
       "total_km": 55
     },
     "difficult": {
@@ -91,28 +83,27 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-17T13:19:07+01:00",
+  "lifts_updated_at": "2026-11-18T08:20:57+01:00",
   "avalanche": {
     "region_id": "CH-4223",
     "region": "Saas Fee",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "wind_slab",
-      "persistent_weak_layers",
-      "wet_snow"
+      "new_snow",
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T17:00:00+01:00",
-    "valid_from": "2026-11-16T17:00:00+01:00",
-    "valid_until": "2026-11-17T17:00:00+01:00"
+    "published_at": "2026-11-17T17:00:00+01:00",
+    "valid_from": "2026-11-17T17:00:00+01:00",
+    "valid_until": "2026-11-18T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=252&saison=1&ref=contentBox",

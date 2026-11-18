@@ -10,7 +10,7 @@
   },
   "website": "https://www.gstaad.ch",
   "status": "closed",
-  "fetched_at": "2026-11-17T13:40:33.279260+01:00",
+  "fetched_at": "2026-11-18T08:40:35.240212+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Obere Meiel (SLF)",
         "elevation_m": 2097,
-        "depth_cm": 13,
-        "fresh_cm": 2,
+        "depth_cm": 1,
+        "fresh_cm": 3,
         "temperature_c": null,
         "condition": null
       },
@@ -89,22 +89,23 @@
   "avalanche": {
     "region_id": "CH-1222",
     "region": "Gstaad",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "low",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "wet_snow"
+      "wind_slab",
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T17:00:00+01:00",
-    "valid_from": "2026-11-16T17:00:00+01:00",
-    "valid_until": "2026-11-17T17:00:00+01:00"
+    "published_at": "2026-11-17T17:00:00+01:00",
+    "valid_from": "2026-11-17T17:00:00+01:00",
+    "valid_until": "2026-11-18T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=39&saison=1&ref=contentBox",

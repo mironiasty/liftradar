@@ -10,28 +10,28 @@
   },
   "website": "https://www.valdherens.ch/en/espace-dent-blanche-ski-sector-arolla-fp42182",
   "status": "no_report",
-  "fetched_at": "2026-11-17T13:40:33.279076+01:00",
+  "fetched_at": "2026-11-18T08:40:35.240021+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 34,
-    "valley_cm": 8,
-    "fresh_cm": 4,
+    "mountain_cm": 50,
+    "valley_cm": 12,
+    "fresh_cm": 34,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Les Fontanesses (SLF)",
         "elevation_m": 2847,
-        "depth_cm": 34,
-        "fresh_cm": 4,
+        "depth_cm": 50,
+        "fresh_cm": 34,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Arolla (SLF)",
         "elevation_m": 2070,
-        "depth_cm": 8,
-        "fresh_cm": 0,
+        "depth_cm": 12,
+        "fresh_cm": 11,
         "temperature_c": null,
         "condition": null
       }
@@ -94,13 +94,12 @@
       }
     ],
     "problems": [
-      "wind_slab",
-      "persistent_weak_layers",
-      "wet_snow"
+      "new_snow",
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-16T17:00:00+01:00",
-    "valid_from": "2026-11-16T17:00:00+01:00",
-    "valid_until": "2026-11-17T17:00:00+01:00"
+    "published_at": "2026-11-17T17:00:00+01:00",
+    "valid_from": "2026-11-17T17:00:00+01:00",
+    "valid_until": "2026-11-18T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=170&saison=1&ref=contentBox",
