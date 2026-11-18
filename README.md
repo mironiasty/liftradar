@@ -159,7 +159,7 @@ data published before `source_details`.
 
 Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
 (see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
-running `ski.yml` by hand. 731 of the 742 resorts have one in November 2026; the others are a
+running `ski.yml` by hand. 895 of the 906 resorts have one in November 2026; the others are a
 marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
@@ -287,6 +287,9 @@ once a day; its own vector tiles may not be used directly.
   `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `tunnel`, `osm` (not unique: OpenSkiData
   splits some ways into several runs), `lr`, `areas`, and `c`
   (`[lon, lat]`) or, for a piste drawn as an area, `poly` (polygon rings). Empty values are left out.
+  OpenSkiData makes runs of a ski route relation's members, the lifts the route rides included (Saalbach's
+  "The Challenge", the Sellaronda): a run made only from relations loses each segment lying along a lift
+  (both ends and its middle within 10 m), and is split there.
   The schema is `ski/v1/tile.schema.json` (`scripts/ski-tile.schema.json`).
 
 `scripts/ski_resorts.py` gives OpenSkiData's areas to liftradar's resorts. A resort claims the areas
