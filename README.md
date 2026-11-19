@@ -141,15 +141,16 @@ history, and a section for developers) is on the site: [About the data](https://
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
 Lumiplan is where French resorts submit theirs (Alpe d'Huez uses ATEN Altitude instead). Not
-covered yet in France: a live status for 73 areas listed with their size only (Val Cenis, Saint-Lary,
-Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse, Les Orres and 65 smaller ones), and the areas
+covered yet in France: a live status for 74 areas listed with their size only (Val Cenis, Saint-Lary,
+Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse, Les Orres, La Chapelle-d'Abondance and 65 smaller
+ones), and the areas
 with fewer than 3 lifts. Not covered yet in Finland: Levi's own lift list (ski.fi's
 block is used), Paljakka, Koli and the smaller hills; Finland has no avalanche ratings to read. Not
 covered yet in Germany: a live status for the 77 areas outside the Sauerland without a current
 slope map or a page we read (most of the Allgäu and of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
 Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf
 and single-lift areas; the German uplands have no avalanche service. Not covered yet in Czechia:
-Jáchymov, Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 10 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Not covered yet in Slovenia: a live status for the five areas listed by size, Kanin (its Slovenian side closed in 2025), the areas with fewer than 3 lifts and the nordic areas. Each
+Jáchymov, Velká Úpa (listed with its size), Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 10 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Not covered yet in Slovenia: a live status for the five areas listed by size, Kanin (its Slovenian side closed in 2025), the areas with fewer than 3 lifts and the nordic areas. Each
 file's `source_details` lists the URLs used for that report, as pages with current conditions and pages with the
 resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
 the site shows them on `sources.html` and the resort page, and falls back to the deprecated `sources` (plain URLs) for
@@ -159,7 +160,7 @@ data published before `source_details`.
 
 Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
 (see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
-running `ski.yml` by hand. 893 of the 905 resorts have one in November 2026; the others are a
+running `ski.yml` by hand. 898 of the 910 resorts have one in November 2026; the others are a
 marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
