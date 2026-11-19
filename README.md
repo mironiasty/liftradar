@@ -308,6 +308,12 @@ when that's inside, and otherwise the bottom station nearest to it. Wrong matche
 `scripts/ski_overrides.json`: `claims` and `ignore` add or remove a resort's areas (by an OSM id of
 their sources, Wikidata id or exact name), and `points` move the point a shared area is split by
 (Samoëns: its ski area, not its village). Check a change on the map, with the tiles built locally.
+`scripts/ski_split_check.py` finds wrong splits and checks a fix without the download: from built tiles
+(the release `ski-latest`) and `json/index.json`, it lists the resorts whose lift count on the map is far
+from their report's and the areas several resorts share; `--lifts <country>/<id>` lists a resort's lifts
+by name; `--assign` runs the assignment again on the tiles' lifts with the current overrides
+(`--before <overrides.json>` compares with a run on others, e.g. `main`'s). Lifts only: check the map once
+the tiles are built.
 
 The script fails, keeping the last tiles, if the lifts, runs, areas or assigned lifts or runs drop by
 more than 15%. To build the tiles locally (about 290 MB to download, a minute and 3.5 GB of memory)
