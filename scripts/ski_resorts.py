@@ -29,6 +29,11 @@ OPEN_M = 70  # strips narrower than twice this removed (a lift alone across a va
 ISLAND_M2 = 50_000  # and pieces smaller than this,
 HOLE_M2 = 500_000  # holes smaller than this filled,
 OUTLINE_SIMPLIFY_M = 15  # and simplified
+# Rack railways (OpenSkiData's "railway": the Bayerische Zugspitzbahn, the Tramway du Mont-Blanc, the
+# Wendelsteinbahn) keep their resort in the tiles, for a GPS track that rides them, but aren't counted
+# among its lifts or drawn in its outline: they're mapped as dozens of segments, most of them far below
+# the area.
+NOT_COUNTED = {"railway"}
 OVERRIDES = Path(__file__).with_name("ski_overrides.json")
 GENERIC = {"ski", "skigebiet", "area", "sci", "comprensorio", "bergbahnen", "der", "und", "and", "san", "skiarena"}
 GENERIC |= {"skiregion", "domaine", "station", "les", "the", "skicentrum", "skicenter", "alpinsenter", "lifte"}
@@ -237,10 +242,13 @@ def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict
         if k not in members or not r.get("location"):
             continue
         lift_ids, run_ids = members[k]
+        lift_ids = [i for i in lift_ids if lifts[i]["properties"].get("liftType") not in NOT_COUNTED]
         here = (r["location"]["lon"], r["location"]["lat"])
         to_m, to_deg = projector(here)
         pieces = [to_m(LineString([c[:2] for c in lifts[i]["_coords"]])).buffer(LIFT_BUFFER_M) for i in lift_ids]
         downhill = [j for j in run_ids if "downhill" in (runs[j]["properties"].get("uses") or [])]
+        if not lift_ids and not downhill:  # only a railway
+            continue
         for j in downhill:
             g = to_m(runs[j]["_geom"])
             pieces.append(g if g.geom_type in ("Polygon", "MultiPolygon") else g.buffer(RUN_BUFFER_M))
