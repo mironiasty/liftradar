@@ -75,10 +75,10 @@ history, and a section for developers) is on the site: [About the data](https://
 | What | Where it comes from |
 |---|---|
 | Tirol resorts | [Tirol Snow Card](https://www.snowcard.tirol.at/skigebiete) resort reports |
-| Salzburg resorts; Planai, Dachstein Gletscher, Feuerkogel | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
+| Salzburg resorts; Dachstein Gletscher, Feuerkogel | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
 | Hintertux, Sölden, Kitzsteinhorn, Kaunertal, Pitztal | The resorts' own websites (snow measuring stations; last snowfall for Hintertux and Sölden), instead of the regional report |
 | Carinthia | [Kärnten snow report](https://www.kaernten.at/golf/service/wetter/schneeberichte) (Kärnten Werbung, tourism board) |
-| Hauser Kaibling, Ramsau am Dachstein | [Schladming-Dachstein](https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter) tourism board: each area's page of lifts and slopes with their state. No report time |
+| Schladming 4-Berge-Skischaukel (Planai, Hochwurzen, Hauser Kaibling, Reiteralm, added up), Galsterberg, Ramsau am Dachstein | [Schladming-Dachstein](https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter) tourism board: each area's page of lifts and slopes with their state. No report time |
 | St. Anton, Lech Zürs, Warth-Schröcken | [skiarlberg.at](https://www.skiarlberg.at/de/live-infos/anlagen): every lift and slope, the lift companies' live info (no report time, no km; no snow depth for Warth-Schröcken) |
 | Other resorts in Vorarlberg, Styria, Upper and Lower Austria, some in Carinthia | Their Intermaps slope map only (lifts and slopes, no snow depth) |
 | Swiss resorts | [infosnow.ch](https://infosnow.ch/portal/): live lift and slope status as the lift companies publish it |
@@ -159,7 +159,7 @@ data published before `source_details`.
 
 Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
 (see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
-running `ski.yml` by hand. 895 of the 906 resorts have one in November 2026; the others are a
+running `ski.yml` by hand. 894 of the 905 resorts have one in November 2026; the others are a
 marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
