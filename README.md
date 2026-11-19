@@ -88,7 +88,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Dolomiti Superski areas | [Open Data Hub South Tyrol](https://opendatahub.com): every lift and slope as Dolomiti Superski publishes it (CC0) |
 | Valle d'Aosta (and Alagna) | [lovevda.it snow bulletin](https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa) |
 | Trentino | [visittrentino.info snow bulletin](https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino) |
-| South Tyrol outside Dolomiti Superski; snow of the South Tyrol DSS areas | [Open Data Hub](https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en) snow report (province's tourism database) |
+| South Tyrol outside Dolomiti Superski; snow of the South Tyrol DSS areas | [Open Data Hub](https://tourism.api.opendatahub.com/swagger/index.html) snow report (province's tourism database) |
 | Bormio (with San Colombano), Santa Caterina, Stelvio | [bormio.eu](https://www.bormio.eu/it/live-info/impianti-e-piste) (tourism board) |
 | Livigno | [livigno.eu](https://www.livigno.eu/en/lifts) (tourism board, lifts only) |
 | Riserva Bianca (Limone Piemonte), Aprica, Monte Pora | The resorts' own status pages ([Riserva Bianca](https://riservabianca.it/impianti-piste), [Aprica](https://www.apricaonline.com/it/situazione-neve-e-piste), [Monte Pora](https://www.montepora.com/impianti/)): every lift and slope with its state. No report time |
