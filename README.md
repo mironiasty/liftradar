@@ -301,7 +301,9 @@ resort claims it. An area claimed by several resorts is split between them by ne
 and nearest lift (pistes). A lift without an area goes to a resort within 1 km. A lift whose areas no
 resort claimed (only a wider area, such as "Stubai" around the Stubaier Gletscher, has it) joins the
 resort with a lift station within 200 m of its own, and such a piste the resort with a lift or piste
-end within 50 m (two rounds, for a piste leading to another). The outline is the
+end within 50 m (two rounds, for a piste leading to another). Rack railways (the Bayerische Zugspitzbahn,
+the Tramway du Mont-Blanc, the Wendelsteinbahn) keep their resort in the tiles but aren't counted among its
+lifts or drawn in its outline: they're mapped as dozens of segments, mostly far below the area. The outline is the
 resort's lifts and downhill pistes widened, merged and smoothed, without strips narrower than 140 m
 (a lone cable car across a valley) or pieces under 0.05 km²; the point is the resort's `location`
 when that's inside, and otherwise the bottom station nearest to it. Wrong matches are fixed in
