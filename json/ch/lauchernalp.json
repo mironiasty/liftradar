@@ -10,20 +10,36 @@
   },
   "website": "https://www.loetschental.ch",
   "status": "closed",
-  "fetched_at": "2026-11-19T08:40:36.348388+01:00",
+  "fetched_at": "2026-11-19T10:42:11.239735+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-18",
+    "last_snowfall": "2026-11-19",
     "condition": null,
     "stations": [
       {
+        "name": "Wiler",
+        "elevation_m": 1400,
+        "depth_cm": 1,
+        "fresh_cm": 1,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Lauchernalp",
+        "elevation_m": 1968,
+        "depth_cm": 25,
+        "fresh_cm": 15,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
         "name": "Gandegg",
         "elevation_m": 2720,
-        "depth_cm": 106,
-        "fresh_cm": 48,
+        "depth_cm": 82,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -81,7 +97,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-19T08:30:00+01:00",
+  "lifts_updated_at": "2026-11-19T10:30:00+01:00",
   "avalanche": {
     "region_id": "CH-4211",
     "region": "Leukerbad - Lötschental",

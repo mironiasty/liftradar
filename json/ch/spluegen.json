@@ -9,13 +9,13 @@
     "lon": 9.3234
   },
   "website": "https://www.spluegen.ch",
-  "status": "no_report",
-  "fetched_at": "2026-11-19T08:40:36.348742+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-19T10:42:11.239970+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 3,
-    "valley_cm": 0,
-    "fresh_cm": 2,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -42,9 +42,9 @@
     "total": 7
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 16,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 28
   },
   "lifts_by_type": {
@@ -67,31 +67,31 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 8,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 14
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 10
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     },
     "ski_route": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-10-12T17:19:00+02:00",
+  "lifts_updated_at": "2026-11-19T09:25:00+01:00",
   "avalanche": {
     "region_id": "CH-5223",
     "region": "Rheinwald",

@@ -1,16 +1,16 @@
 {
   "$schema": "https://liftradar.eu/schema/resort.schema.json",
-  "id": "hauser-kaibling",
+  "id": "galsterberg",
   "country": "at",
-  "name": "Hauser Kaibling",
+  "name": "Galsterberg",
   "region": "Steiermark",
   "location": {
-    "lat": 47.3884,
-    "lon": 13.7751
+    "lat": 47.3855,
+    "lon": 13.8665
   },
-  "website": "https://www.hauser-kaibling.at",
+  "website": "https://www.schladming-dachstein.at/de/schladming-dachstein-entdecken/winterberge/galsterberg",
   "status": "closed",
-  "fetched_at": "2026-11-19T08:40:36.344015+01:00",
+  "fetched_at": "2026-11-19T10:42:11.236255+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,22 +22,18 @@
   },
   "lifts": {
     "open": 0,
-    "total": 14
+    "total": 4
   },
   "slopes": {
     "open": 0,
-    "total": 22,
+    "total": 13,
     "open_km": 0.0,
-    "total_km": 37
+    "total_km": 15
   },
   "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 3
-    },
     "chairlift": {
       "open": 0,
-      "total": 6
+      "total": 1
     },
     "drag_lift": {
       "open": 0,
@@ -45,25 +41,25 @@
     },
     "gondola": {
       "open": 0,
-      "total": 3
+      "total": 1
     }
   },
   "slopes_by_difficulty": {
     "easy": {
       "open": 0,
-      "total": 11,
+      "total": 5,
       "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
       "open": 0,
-      "total": 8,
+      "total": 7,
       "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
       "open": 0,
-      "total": 3,
+      "total": 1,
       "open_km": 0.0,
       "total_km": null
     }
@@ -71,19 +67,19 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/hauser-kaibling_resort_6323",
-    "https://www.skiinfo.fr/styrie/hauser-kaibling-haus-im-ennstal/station-de-ski"
+    "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/galsterberg_resort_6328",
+    "https://www.schladming-dachstein.at/de/schladming-dachstein-entdecken/winterberge/galsterberg"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/hauser-kaibling_resort_6323",
+        "url": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/galsterberg_resort_6328",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/styrie/hauser-kaibling-haus-im-ennstal/station-de-ski",
+        "url": "https://www.schladming-dachstein.at/de/schladming-dachstein-entdecken/winterberge/galsterberg",
         "attribution_required": null
       }
     ]

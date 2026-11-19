@@ -9,9 +9,9 @@
     "lon": 13.4589
   },
   "website": "https://www.sportberg-goldeck.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-19T08:40:40.270635+01:00",
-  "status_from": "2026-11-13T08:42:00.260772+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-19T10:43:51.747705+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 22,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 29
   },
   "lifts_by_type": {
@@ -50,37 +50,42 @@
   },
   "slopes_by_difficulty": {
     "ski_route": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     },
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 11,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 14
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 7
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 7
     }
   },
   "lifts_updated_at": "2026-11-12T16:58:22+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
     "https://winter.intermaps.com/goldeck/data?lang=en"
   ],
   "source_details": {
     "conditions": [
+      {
+        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      },
       {
         "url": "https://winter.intermaps.com/goldeck/data?lang=en",
         "attribution_required": null
@@ -88,7 +93,5 @@
     ],
     "resort_info": []
   },
-  "errors": [
-    "kaernten: LookupError: no entry named Goldeck am Millstätter See"
-  ]
+  "errors": []
 }

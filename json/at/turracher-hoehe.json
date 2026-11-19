@@ -9,9 +9,9 @@
     "lon": 13.8765
   },
   "website": "https://www.turracherhoehe.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-19T08:40:40.270563+01:00",
-  "status_from": "2026-11-18T21:01:53.966970+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-19T10:43:51.569694+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,18 +20,31 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 15
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": 0.0,
+    "total_km": 43
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_updated_at": "2026-11-10T02:00:19+01:00",
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
-  "errors": [
-    "kaernten: LookupError: no entry named Turracher Höhe"
-  ]
+  "errors": []
 }

@@ -10,13 +10,13 @@
   },
   "website": "https://www.thyon.ch",
   "status": "closed",
-  "fetched_at": "2026-11-19T08:40:36.348786+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-19T10:42:11.239999+01:00",
+  "status_from": "2026-11-19T08:40:36.348786+01:00",
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 16,
     "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": "2026-11-03",
+    "fresh_cm": 10,
+    "last_snowfall": null,
     "condition": null,
     "stations": [
       {
@@ -96,18 +96,14 @@
     "valid_until": "2026-11-19T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox",
     "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
       {
         "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
         "attribution_required": null
@@ -125,7 +121,14 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox",
+        "attribution_required": null
+      }
+    ]
   },
-  "errors": []
+  "errors": [
+    "infosnow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  ]
 }

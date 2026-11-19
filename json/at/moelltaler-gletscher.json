@@ -10,14 +10,14 @@
   },
   "website": "https://www.moelltaler-gletscher.at",
   "status": "open",
-  "fetched_at": "2026-11-19T08:40:40.270658+01:00",
+  "fetched_at": "2026-11-19T10:43:52.156440+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 40,
+    "valley_cm": 40,
     "fresh_cm": null,
-    "last_snowfall": null,
-    "condition": null,
+    "last_snowfall": "2026-11-03",
+    "condition": "griffig",
     "stations": []
   },
   "lifts": {
@@ -27,8 +27,8 @@
   "slopes": {
     "open": 3,
     "total": 20,
-    "open_km": null,
-    "total_km": null
+    "open_km": 9.0,
+    "total_km": 36
   },
   "lifts_by_type": {
     "chairlift": {
@@ -77,10 +77,15 @@
   "lifts_updated_at": "2026-11-19T07:22:35+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
     "https://winter.intermaps.com/moelltaler_gletscher/data?lang=en"
   ],
   "source_details": {
     "conditions": [
+      {
+        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      },
       {
         "url": "https://winter.intermaps.com/moelltaler_gletscher/data?lang=en",
         "attribution_required": null
@@ -88,7 +93,5 @@
     ],
     "resort_info": []
   },
-  "errors": [
-    "kaernten: LookupError: no entry named Mölltaler Gletscher"
-  ]
+  "errors": []
 }
