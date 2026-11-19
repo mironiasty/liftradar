@@ -9,8 +9,8 @@
     "lon": 6.5823
   },
   "website": "https://www.valthorens.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-19T11:43:21.737729+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-19T13:40:37.555056+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -18,16 +18,33 @@
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Station",
+        "elevation_m": 2300,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Altitude",
+        "elevation_m": 3200,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 23
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 75,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 150
   },
   "lifts_by_type": {
@@ -54,21 +71,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 42,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 26,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
