@@ -10,7 +10,7 @@
   },
   "website": "https://www.matterhornparadise.ch",
   "status": "closed",
-  "fetched_at": "2026-11-19T10:42:11.240104+01:00",
+  "fetched_at": "2026-11-19T11:43:21.733319+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -99,7 +99,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-19T10:40:00+01:00",
+  "lifts_updated_at": "2026-11-19T11:44:00+01:00",
   "avalanche": {
     "region_id": "CH-4222",
     "region": "Zermatt",
@@ -122,9 +122,9 @@
     "valid_until": "2026-11-19T17:00:00+01:00"
   },
   "sources": [
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
@@ -134,15 +134,15 @@
   "source_details": {
     "conditions": [
       {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+        "attribution_required": null
+      },
+      {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
