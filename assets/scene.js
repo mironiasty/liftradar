@@ -1111,9 +1111,11 @@ async function mountEngine(section, key) {
     const card = el("div", { class: "pick", hidden: "" });
     section.append(card);
     let closed = true;
+    // Closing the card unmarks what was picked too (its cables amber, its slope in full colour).
     const close = () => {
       closed = true;
       card.setAttribute("hidden", "");
+      view?.unpick();
     };
     /** @param {{ x: number, y: number }} at */
     const place = ({ x, y }) => {
