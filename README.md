@@ -159,7 +159,7 @@ data published before `source_details`.
 
 Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
 (see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
-running `ski.yml` by hand. 894 of the 905 resorts have one in November 2026; the others are a
+running `ski.yml` by hand. 893 of the 905 resorts have one in November 2026; the others are a
 marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
