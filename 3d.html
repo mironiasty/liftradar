@@ -38,6 +38,43 @@
   #map .names span { position: absolute; transform: translate(-50%, -50%); padding: 2px 7px; border-radius: 999px;
     background: rgba(255, 255, 255, .82); color: #1a1a1a; font-size: 11px; font-weight: 500; line-height: 1.3; white-space: nowrap; }
   #map .names span.major { font-size: 13px; font-weight: 600; }
+  /* A lift's and a slope's: after a small gondola, or a dot in its colour on the signs. */
+  #map .names span.lift, #map .names span.piste { display: flex; align-items: center; gap: 4px; padding-left: 5px; font-weight: 600; }
+  #map .names span.lift svg { width: 13px; height: 13px; flex: none; }
+  #map .names .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; box-shadow: 0 0 0 1px rgba(255, 255, 255, .9); }
+  #map .names .dot.green { background: #2e9e3f; } #map .names .dot.blue { background: #1f6fd1; } #map .names .dot.red { background: #d62828; }
+  #map .names .dot.black { background: #111; } #map .names .dot.orange { background: #ef8a00; }
+  /* The map's settings: a button beside the resort's panel on the right (scene.js sets --beside to the panel's
+     width as it opens and closes), that opens a menu under it: the names' layers as pills (on: dark, as the
+     app's chips), and the sun's hour. On a small screen, where the map's top holds its buttons and the panel,
+     only its gear, under the map's buttons, the menu over the panel. */
+  #map .map-settings { position: absolute; top: 13px; right: calc(var(--beside, 0px) + 18px); z-index: 1001; }
+  #map .settings-toggle { display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px 0 9px; border: 0; border-radius: 999px;
+    background: rgba(255, 255, 255, .9); color: #1a1a1a; font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .22); white-space: nowrap; }
+  #map .map-settings.open .settings-toggle { background: #1a1a1a; color: #fff; }
+  #map .settings-menu { display: none; position: absolute; top: 38px; right: 0; width: 300px; padding: 10px 12px 12px; border-radius: 12px;
+    background: var(--bg); color: var(--fg); box-shadow: 0 2px 14px rgba(0, 0, 0, .22); font-size: .85rem; }
+  #map .map-settings.open .settings-menu { display: block; }
+  #map .settings-menu h2 { margin: 0 0 6px; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  #map .name-layers { display: flex; flex-wrap: wrap; gap: 6px; }
+  #map .name-layers button { display: flex; align-items: center; gap: 5px; height: 28px; padding: 0 11px; border: 0; border-radius: 999px;
+    background: rgba(127, 127, 127, .16); color: var(--fg); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+  #map .name-layers button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+  #map .name-layers button svg { flex: none; }
+  #map .settings-menu .sun { margin-top: 14px; }
+  @media (max-width: 640px) {
+    #map .map-settings { top: 108px; right: auto; left: 10px; }
+    #map .settings-toggle { width: 30px; padding: 0; justify-content: center; }
+    #map .settings-toggle span { display: none; }
+    #map .settings-menu { right: auto; left: 0; width: min(300px, calc(100vw - 40px)); }
+  }
+  /* The engine's sources, at the map's foot (scene.js): over the names, small. */
+  #map .engine-credits { z-index: 850; }
+  #map .engine-credits .maplibregl-ctrl-attrib { font-size: 10px; line-height: 20px; }
+  /* How to move the 3D view: with a mouse, or with fingers where the screen is touched. */
+  .hint.touch { display: none; }
+  @media (pointer: coarse) { .hint.mouse { display: none; } .hint.touch { display: block; } }
   /* A clicked lift or piste, at the click. */
   .pick { position: absolute; z-index: 900; max-width: 260px; padding: 7px 10px; border-radius: 8px; background: var(--bg);
     color: var(--fg); box-shadow: 0 2px 10px rgba(0,0,0,.25); font-size: .8rem; pointer-events: none; }
@@ -68,6 +105,11 @@
     background: color-mix(in srgb, var(--c) 16%, transparent); font-size: .72rem; font-weight: 500; }
   .status-pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c); }
   .panel label { display: flex; align-items: center; gap: 6px; margin-top: 8px; }
+  /* Where the sun is over the 3D view, by the hour. */
+  .sun { margin-top: 10px; }
+  .sun-row { display: flex; justify-content: space-between; font-weight: 600; }
+  .sun-row output { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 500; }
+  .sun input { width: 100%; margin: 4px 0 0; accent-color: var(--fg); }
   .panel .reset { margin-top: 10px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg);
     color: var(--fg); font: inherit; cursor: pointer; }
   .panel .reset:hover { border-color: var(--accent); color: var(--accent); }

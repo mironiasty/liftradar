@@ -11,16 +11,25 @@ export interface MountOptions {
   /** Fetching the ski tiles, then the elevation tiles, then drawn; or why it couldn't be. */
   onStatus?(status: ResortStatus): void;
   /**
-   * Once ready: the resort's name as the tiles have it, how many lifts and pistes are drawn, and whether
-   * the villages and roads round it are (from OpenFreeMap: credit OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors).
+   * Once ready: the resort's name as the tiles have it, how many lifts and pistes are drawn, whether
+   * the villages and roads round it are (from OpenFreeMap: credit OpenFreeMap, © OpenMapTiles, © OpenStreetMap contributors),
+   * and `daylight`: the local hours (in quarters) between which the sun is over the horizon there today, for setHour.
    */
-  onInfo?(info: { name: string; lifts: number; pistes: number; towns: boolean }): void;
+  onInfo?(info: { name: string; lifts: number; pistes: number; towns: boolean; daylight: [number, number] }): void;
+  /** The sun as at this local hour today (11.5: half past eleven); the look's, 11.5, when unset. setHour changes it. */
+  hour?: number;
   /**
-   * The places' names to write over the canvas, whenever they change as the camera moves: each centred
-   * at `x, y` (CSS pixels on the canvas), `major` for a village or bigger (the apps write it larger, in a
-   * pale pill). Not told without towns.
+   * Which names are written over the land at first (setLabels changes it): the places' only when unset.
+   * A layer that's on shows by the zoom, as a map's names do: the places' always, every lift's from
+   * closer, every piste's from closer still.
    */
-  onLabels?(labels: PlaceLabel[]): void;
+  labels?: LabelLayers;
+  /**
+   * The names to write over the canvas, whenever they change as the camera moves or the layers change:
+   * each centred at `x, y` (CSS pixels on the canvas). Places' (`major` for a village or bigger: the apps
+   * write it larger, in a pale pill; none without towns), and lifts' and pistes' where those are on.
+   */
+  onLabels?(labels: MapLabel[]): void;
   /** A click (not a drag) on a lift or piste; null on neither. */
   onPick?(picked: Picked | null): void;
   /**
@@ -58,14 +67,36 @@ export type Picked = { x: number; y: number } & (
   | { kind: 'piste'; colour: string; name?: string; ref?: string; difficulty?: string; conv?: string; lengthM?: number }
 );
 
-/** A place's name over the land. */
-export type PlaceLabel = { name: string; x: number; y: number; major: boolean };
+/** Which names are written: the places', the lifts', the pistes'. */
+export type LabelLayers = { places: boolean; lifts: boolean; pistes: boolean };
+
+/**
+ * A name over the land: a place's, a lift's (with OpenSkiData's `liftType`, for its picture) or a
+ * piste's (with its `colour` on the signs: green, blue, red, black, orange). A lift's and a piste's
+ * name is its number where the map has no name.
+ */
+export type MapLabel = {
+  kind: 'place' | 'lift' | 'piste';
+  name: string;
+  x: number;
+  y: number;
+  major: boolean;
+  liftType?: string;
+  colour?: string;
+};
+
+/** A place's name over the land (a MapLabel of kind `place`; the name before lifts and pistes had theirs). */
+export type PlaceLabel = MapLabel;
 
 export interface MountedResort {
   /** Glides `by` times closer (below 1 further back), as a map's + and − do. */
   zoom(by: number): void;
   /** Glides round to look north. */
   faceNorth(): void;
+  /** Which names are written over the land: onLabels is told the new ones at the next frame. */
+  setLabels(layers: LabelLayers): void;
+  /** The sun as at this local hour today (11.5: half past eleven), from the next frame: shadows and light move with it. */
+  setHour(hour: number): void;
   /** Stops drawing and frees the GPU. The canvas can't be drawn on again: give a new one. */
   destroy(): void;
 }
