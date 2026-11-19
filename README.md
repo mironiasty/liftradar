@@ -53,8 +53,10 @@ workers.dev and the addresses with filters aren't taken for duplicates.
 The phone apps (TrailRider's repo, `apps/liftradar`) open `https://liftradar.eu/resort?r=<country>/<id>[&view=3d]`
 when the site vouches for them. `.well-known/apple-app-site-association` does it for iOS (the company team's app
 ID, `85CCW66723.eu.liftradar.app`; `_headers` serves it as JSON), once the app has the Associated Domains
-capability. Android's `.well-known/assetlinks.json` needs the SHA-256 fingerprint of the key Google Play signs
-the app with, so it comes when the app is on Play.
+capability. Android's `.well-known/assetlinks.json` names the app (`eu.liftradar.app`) by the SHA-256 fingerprint of
+the key Google Play signs it with (Play Console, the app signing key's certificate); Android checks it when the app
+is installed or updated, and then opens those links in the app without asking. A build signed with another key
+(the upload key, a debug build) isn't covered and opens them in the browser.
 
 ## Sitemap
 
