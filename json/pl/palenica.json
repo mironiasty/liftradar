@@ -10,8 +10,8 @@
   },
   "website": "https://www.pkl.pl",
   "status": "closed",
-  "fetched_at": "2026-11-18T21:00:21.175220+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-19T08:40:36.352723+01:00",
+  "status_from": "2026-11-17T08:40:38.299023+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -60,22 +60,12 @@
   },
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://www.pkl.pl/koleje-i-wyciagi.html",
-    "https://www.pkl.pl/trasy-narciarskie.html"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.pkl.pl/koleje-i-wyciagi.html",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.pkl.pl/trasy-narciarskie.html",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)"
+  ]
 }

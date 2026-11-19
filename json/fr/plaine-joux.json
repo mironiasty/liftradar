@@ -10,7 +10,7 @@
   },
   "website": "https://www.passy-mont-blanc.com",
   "status": "no_report",
-  "fetched_at": "2026-11-18T21:00:21.177406+01:00",
+  "fetched_at": "2026-11-19T08:40:36.355062+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,12 +33,41 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-01",
+    "region": "Chablais",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2300,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-18T16:00:00+01:00",
+    "valid_from": "2026-11-18T16:00:00+01:00",
+    "valid_until": "2026-11-19T18:00:00+01:00"
+  },
   "sources": [
-    "https://www.skiinfo.fr/alpes-du-nord/passy/station-de-ski"
+    "https://www.skiinfo.fr/alpes-du-nord/passy/station-de-ski",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-19/2026-11-19-FR.json"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-19/2026-11-19-FR.json",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/alpes-du-nord/passy/station-de-ski",

@@ -10,8 +10,8 @@
   },
   "website": "https://www.gerlitzen.com",
   "status": "closed",
-  "fetched_at": "2026-11-18T21:01:54.095589+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-19T08:40:40.270480+01:00",
+  "status_from": "2026-11-18T21:01:54.095589+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -77,15 +77,10 @@
   "lifts_updated_at": "2026-11-18T18:13:48+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
     "https://winter.intermaps.com/gerlitzen/data?lang=en"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-        "attribution_required": null
-      },
       {
         "url": "https://winter.intermaps.com/gerlitzen/data?lang=en",
         "attribution_required": null
@@ -93,5 +88,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "kaernten: LookupError: no entry named Gerlitzen Alpe"
+  ]
 }
