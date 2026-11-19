@@ -24,3 +24,5 @@
 # The phone apps' https links (README "App links"): iOS reads this file as JSON, though it has no extension.
 /.well-known/apple-app-site-association
   Content-Type: application/json
+/.well-known/assetlinks.json
+  Content-Type: application/json
