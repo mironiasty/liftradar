@@ -1,5 +1,5 @@
 // index.html: one row per resort from json/index.json, with a name search,
-// country, region and status filters, and sortable columns. Rows start sorted by name.
+// country, region and status filters, and sortable columns. Rows start with the most open slopes first.
 
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
@@ -14,8 +14,11 @@ const favoritesSection = document.getElementById("favorites");
 const favoriteCards = document.getElementById("fav-cards");
 let rows = [];
 const values = new Map();
-let key = "name",
-  ascending = true;
+// The order rows start in, and leave out of the address: the most open slopes first.
+const DEFAULT_KEY = "slopes_open",
+  DEFAULT_ASCENDING = false;
+let key = DEFAULT_KEY,
+  ascending = DEFAULT_ASCENDING;
 let country = "";
 // Statuses chosen with the chips; none chosen shows every resort.
 const shownStatuses = new Set();
@@ -55,7 +58,6 @@ function sortValues(r) {
     slopes_total: slopes?.total ?? null,
     km_open: slopes?.open_km ?? null,
     km_total: slopes?.total_km ?? null,
-    avalanche: r.avalanche?.danger_level ?? null,
   };
 }
 
@@ -107,22 +109,6 @@ function slopesCell(slopes, active) {
   return cell;
 }
 
-/** @param {IndexResort["avalanche"]} bulletin */
-function avalancheCell(bulletin) {
-  if (!bulletin || bulletin.danger_level === null)
-    return el("td", { class: "c-value nil", "data-label": t("Avalanche danger") }, "–");
-  return el(
-    "td",
-    { class: "c-value", "data-label": t("Avalanche danger") },
-    el(
-      "span",
-      { class: "danger" },
-      el("span", { class: `badge lvl${bulletin.danger_level}` }, String(bulletin.danger_level)),
-      el("span", { class: "danger-text" }, dangerName(bulletin.danger)),
-    ),
-  );
-}
-
 // A number cell; labelled for the phone layout, which also leaves out empty ones ("–").
 function value(label, text, content = text) {
   return el("td", { class: `num c-value${text === "–" ? " nil" : ""}`, "data-label": label }, content);
@@ -142,7 +128,6 @@ function row(r) {
     value(t("Fresh"), dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
     value(t("Lifts"), pair(r.lifts?.open, r.lifts?.total), meter(r.lifts?.open, r.lifts?.total, active)),
     slopesCell(r.slopes, active),
-    avalancheCell(r.avalanche),
   );
   // The whole row opens the resort's page; the name is the link for keyboards and new tabs. The star doesn't.
   tr.addEventListener("click", (event) => {
@@ -183,7 +168,7 @@ function saveState() {
   if (country) params.set("country", country);
   if (regionSelect.value) params.set("region", regionSelect.value);
   if (shownStatuses.size) params.set("status", [...shownStatuses].join(","));
-  if (key !== "name" || !ascending) params.set("sort", (ascending ? "" : "-") + key);
+  if (key !== DEFAULT_KEY || ascending !== DEFAULT_ASCENDING) params.set("sort", (ascending ? "" : "-") + key);
   const query = params.toString() ? `?${params}` : "";
   history.replaceState(null, "", location.pathname + query + location.hash);
   try {
@@ -263,7 +248,6 @@ const SORTS = [
   ["mountain", false, t("Most snow")],
   ["fresh", false, t("Most fresh snow")],
   ["km_total", false, t("Biggest areas")],
-  ["avalanche", false, t("Highest avalanche danger")],
 ];
 const sortSelect = document.getElementById("sort");
 sortSelect.append(...SORTS.map(([, , label], i) => option(String(i), label)));
