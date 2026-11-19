@@ -93,6 +93,11 @@ export interface MountedResort {
   zoom(by: number): void;
   /** Glides round to look north. */
   faceNorth(): void;
+  /**
+   * What was picked is no longer marked (as a click on nothing does): call it when its card is closed. A
+   * picked lift's cables are drawn wider and amber, a picked piste (all its pieces) in its colour in full.
+   */
+  unpick(): void;
   /** Which names are written over the land: onLabels is told the new ones at the next frame. */
   setLabels(layers: LabelLayers): void;
   /** The sun as at this local hour today (11.5: half past eleven), from the next frame: shadows and light move with it. */
