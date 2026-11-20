@@ -64,7 +64,16 @@ export type Picked = { x: number; y: number } & (
       riseM?: number;
       durationS?: number;
     }
-  | { kind: 'piste'; colour: string; name?: string; ref?: string; difficulty?: string; conv?: string; lengthM?: number }
+  | {
+      kind: 'piste';
+      colour: string;
+      name?: string;
+      ref?: string;
+      difficulty?: string;
+      conv?: string;
+      /** The longest way down through the pieces marked (those with its name, number and colour), metres. */
+      lengthM?: number;
+    }
 );
 
 /** Which names are written: the places', the lifts', the pistes'. */
