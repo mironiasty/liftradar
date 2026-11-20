@@ -409,6 +409,51 @@ function data(r) {
   return section;
 }
 
+// The groups the resort is in, from its linked_area and ski_region: a card for each, under the map, with the
+// group's name and the other members, by name and status from the index, each to its own page.
+/** @param {Resort} r @param {HTMLElement} container */
+async function groupCards(r, container) {
+  if (!r.linked_area && !r.ski_region) return;
+  const [groups, index] = await Promise.all([loadGroups(), loadIndex().catch(() => null)]);
+  /** @type {Map<string, IndexResort>} */
+  const resorts = new Map((index?.resorts ?? []).map((x) => [resortKey(x), x]));
+  /** @type {[string | undefined, string, string][]} */
+  const wanted = [
+    [r.linked_area, t("Linked ski area"), t("Linked resorts")],
+    [r.ski_region, t("Ski region"), t("Other resorts in the region")],
+  ];
+  const cards = wanted.flatMap(([id, title, membersTitle]) => {
+    const group = id ? groups[id] : undefined;
+    if (!group) return [];
+    const others = group.members
+      .filter((key) => key !== resortKey(r))
+      .map((key) => {
+        const [country, resortId] = key.split("/");
+        const known = resorts.get(key);
+        const dot = el("span", { class: "dot", style: `--c:${STATUS_COLORS[known ? statusKey(known) : "no_report"]}` });
+        if (known) dot.title = STATUS_LABELS[statusKey(known)];
+        return el(
+          "li",
+          {},
+          dot,
+          el("a", { href: resortPage({ country, id: resortId }) }, known?.name ?? resortId),
+          country === r.country ? "" : el("span", { class: "meta" }, countryName(country)),
+        );
+      });
+    return [
+      el(
+        "section",
+        { class: "card group" },
+        el("h2", {}, title),
+        el("strong", { class: "group-name" }, group.name),
+        others.length ? el("div", { class: "meta" }, membersTitle) : "",
+        others.length ? el("ul", { class: "members" }, ...others) : "",
+      ),
+    ];
+  });
+  container.replaceWith(...cards);
+}
+
 // Resort map: only this resort's area (or point), with its pistes and lifts strong and the
 // neighbours' faded; "Map of all resorts" shows the other resorts. The wheel zooms it only
 // once it has been clicked, so the page scrolls past it. Shown once it has drawn the base map, the
@@ -635,6 +680,8 @@ async function show() {
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
   const historyBox = el("div", { class: "charts" }, liftLoader({ small: true }));
+  // Replaced by the cards of the resort's groups once json/groups.json is in; nothing without groups.
+  const groupsBox = el("div", { hidden: "" });
   const main = el(
     "div",
     { class: "stack" },
@@ -663,6 +710,7 @@ async function show() {
           mapBox,
           el("a", { class: "map-link", href: resortOnMap(r) }, t("Map of all resorts →")),
         ),
+        groupsBox,
         ...(r.website
           ? [
               el(
@@ -681,6 +729,7 @@ async function show() {
     mapBox.classList.remove("loading");
     mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
   });
+  groupCards(r, groupsBox).catch(() => groupsBox.remove());
   historyChart(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );

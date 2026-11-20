@@ -68,7 +68,7 @@
     .stack, .side { display: contents; }
     .layout section, .layout .charts-card { order: 3; }
     .summary { order: 1; }
-    .map-box { order: 2; }
+    .map-box, .layout .group { order: 2; }
     .layout .data { order: 4; }
   }
 
@@ -157,6 +157,12 @@
   button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .sources { margin: 8px 0 0; padding-left: 18px; font-size: .85rem; word-break: break-all; }
   .empty { color: var(--muted); font-size: .9rem; margin: 0; }
+  /* The resort's linked ski area and ski region, with their other members. */
+  .group .group-name { display: block; margin-bottom: 10px; }
+  .members { display: grid; gap: 6px; margin: 6px 0 0; padding: 0; list-style: none; font-size: .9rem; }
+  .members li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+  .members a { text-decoration: none; }
+  .members a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
