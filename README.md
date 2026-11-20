@@ -194,7 +194,7 @@ Static checks, also run on every push (`.github/workflows/checks.yml`):
 
 ```sh
 npm install        # once
-npm run check      # Biome (JS, CSS), html-validate, the type check, ruff (scripts/)
+npm run check      # Biome (JS, CSS), html-validate, the type check, the MCP test, ruff (scripts/)
 npm run format     # format the JS, the CSS and scripts/; HTML is validated but not formatted
 ```
 
@@ -255,6 +255,8 @@ tools read the same files through the assets binding (`env.ASSETS`), so they alw
 Unlike the pages, it uses npm packages (`dependencies` in `package.json`: the MCP SDK, zod, and
 `@cfworker/json-schema`, as Workers can't run the SDK's default validator), which wrangler bundles at the deploy.
 It reads the data with the same types as the pages, so `npm run check` fails when it reads a field that's gone.
+`worker/mcp.test.js` calls each tool as a client does, on a few made-up resorts served as its assets, and checks
+what it finds (`npm run check` runs it, or `node --test worker/mcp.test.js`): a tool's change goes there too.
 After a fetcher change, check its tools too; `api.html` documents it ("MCP").
 
 To try it locally, with the data linked as in [Running locally](#running-locally):
