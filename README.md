@@ -317,7 +317,8 @@ their sources, Wikidata id or exact name), and `points` move the point a shared 
 (Samoëns: its ski area, not its village). `features` gives single lifts and runs (by their OSM id) to a
 resort, for one OpenSkiData puts in the wrong area (a run along Kompleks Narciarski Słotwiny's chairlift,
 in Słotwiny Arena's, drew Arena's outline over Kompleks; `ski_split_check.py --assign` doesn't apply
-it). Check a change on the map, with the tiles built locally.
+it). `clip` keeps a resort's lifts and runs inside a box `[west, south, east, north]`, for a resort that is
+only part of its area (Wierchomla: OpenSkiData's "Dwie Doliny" also has the Szczawnik side, closed since 2019). Check a change on the map, with the tiles built locally.
 `scripts/ski_split_check.py` finds wrong splits and checks a fix without the download: from built tiles
 (the release `ski-latest`) and `json/index.json`, it lists the resorts whose lift count on the map is far
 from their report's and the areas several resorts share; `--lifts <country>/<id>` lists a resort's lifts

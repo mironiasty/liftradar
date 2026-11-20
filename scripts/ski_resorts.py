@@ -88,8 +88,8 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
 
     Each resort claims ski areas: those near it whose name matches its own best (or at all,
     within NEAR_M), and the nearest one with a lift within NEAR_M unless another resort claimed
-    that one by name (scripts/ski_overrides.json adds or removes claims, and moves single lifts and
-    runs by their OSM id).
+    that one by name (scripts/ski_overrides.json adds or removes claims, moves single lifts and runs
+    by their OSM id, and clips a resort to a box).
     A lift or run then goes to the smallest of its areas that was claimed: an area that is a
     sector of a bigger one claimed by another resort stays with its own resort, and an area a
     ski pass groups (Ski amadé, Les Portes du Soleil) only counts when a resort claims it. In an
@@ -189,6 +189,14 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
             if k := next((moved[s["id"]] for s in sources if s.get("id") in moved), None):
                 assigned[i] = k
     adopt(lifts, runs, lift_lr, run_lr)
+    # A resort that has only part of its ski area (ski_overrides.json "clip": [west, south, east, north]):
+    # its lifts and runs outside that box go to no resort.
+    for k, (w, s, e, n) in overrides.get("clip", {}).items():
+        for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
+            for i in [i for i, r in assigned.items() if r == k]:
+                c = features[i]["_geom"].centroid
+                if not (w <= c.x <= e and s <= c.y <= n):
+                    del assigned[i]
     return lift_lr, run_lr
 
 
