@@ -10,20 +10,20 @@
   },
   "website": "https://www.tvgd.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-19T13:40:37.549772+01:00",
+  "fetched_at": "2026-11-20T08:40:36.486963+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 2,
+    "mountain_cm": 29,
     "valley_cm": null,
-    "fresh_cm": 14,
+    "fresh_cm": 34,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Pierres Fendues (SLF)",
         "elevation_m": 2218,
-        "depth_cm": 2,
-        "fresh_cm": 14,
+        "depth_cm": 29,
+        "fresh_cm": 34,
         "temperature_c": null,
         "condition": null
       }
@@ -81,23 +81,22 @@
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 4,
+    "danger": "high",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "high",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
-      "persistent_weak_layers"
+      "new_snow"
     ],
-    "published_at": "2026-11-19T08:00:00+01:00",
-    "valid_from": "2026-11-19T08:00:00+01:00",
-    "valid_until": "2026-11-19T17:00:00+01:00"
+    "published_at": "2026-11-20T08:00:00+01:00",
+    "valid_from": "2026-11-20T08:00:00+01:00",
+    "valid_until": "2026-11-20T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=50&saison=1&ref=contentBox",

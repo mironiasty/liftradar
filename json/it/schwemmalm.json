@@ -10,8 +10,8 @@
   },
   "website": "https://www.schwemmalm.com",
   "status": "no_report",
-  "fetched_at": "2026-11-19T13:40:37.550960+01:00",
-  "status_from": "2026-11-11T11:31:21.734134+01:00",
+  "fetched_at": "2026-11-20T08:40:36.488175+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -35,10 +35,16 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI451F7C4C21CF443F83BC9CD007870FD9",
     "https://www.skiresort.info/ski-resort/schwemmalm/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI451F7C4C21CF443F83BC9CD007870FD9",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/schwemmalm/",
@@ -46,7 +52,5 @@
       }
     ]
   },
-  "errors": [
-    "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }

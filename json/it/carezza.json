@@ -10,15 +10,32 @@
   },
   "website": "https://carezza.it",
   "status": "closed",
-  "fetched_at": "2026-11-19T13:40:37.550512+01:00",
+  "fetched_at": "2026-11-20T08:40:36.487694+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-19",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Mountain station",
+        "elevation_m": null,
+        "depth_cm": 5,
+        "fresh_cm": 5,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Valley station",
+        "elevation_m": null,
+        "depth_cm": 5,
+        "fresh_cm": 5,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
@@ -76,7 +93,8 @@
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-    "https://www.dolomitisuperski.com"
+    "https://www.dolomitisuperski.com",
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI34ACBD6AE92F40EB9187C3785F942DE3"
   ],
   "source_details": {
     "conditions": [
@@ -87,11 +105,13 @@
       {
         "url": "https://www.dolomitisuperski.com",
         "attribution_required": null
+      },
+      {
+        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI34ACBD6AE92F40EB9187C3785F942DE3",
+        "attribution_required": null
       }
     ],
     "resort_info": []
   },
-  "errors": [
-    "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }

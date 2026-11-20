@@ -10,7 +10,7 @@
   },
   "website": "https://www.elm.ch",
   "status": "closed",
-  "fetched_at": "2026-11-19T13:40:37.549434+01:00",
+  "fetched_at": "2026-11-20T08:40:36.486630+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +22,7 @@
       {
         "name": "Chüebodensee (SLF)",
         "elevation_m": 2058,
-        "depth_cm": 1,
+        "depth_cm": 2,
         "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
@@ -92,12 +92,12 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-19T08:00:00+01:00",
-    "valid_from": "2026-11-19T08:00:00+01:00",
-    "valid_until": "2026-11-19T17:00:00+01:00"
+    "published_at": "2026-11-20T08:00:00+01:00",
+    "valid_from": "2026-11-20T08:00:00+01:00",
+    "valid_until": "2026-11-20T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=65&saison=1&ref=contentBox",

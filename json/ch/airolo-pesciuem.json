@@ -10,28 +10,28 @@
   },
   "website": "https://www.airolo.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-19T13:40:37.549131+01:00",
+  "fetched_at": "2026-11-20T08:40:36.486342+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 12,
-    "valley_cm": 14,
-    "fresh_cm": 5,
+    "mountain_cm": 16,
+    "valley_cm": 15,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Vallascia (SLF)",
         "elevation_m": 2268,
-        "depth_cm": 12,
-        "fresh_cm": 4,
+        "depth_cm": 16,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Pesciüm (SLF)",
         "elevation_m": 1770,
-        "depth_cm": 14,
-        "fresh_cm": 5,
+        "depth_cm": 15,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -103,9 +103,9 @@
       "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-19T08:00:00+01:00",
-    "valid_from": "2026-11-19T08:00:00+01:00",
-    "valid_until": "2026-11-19T17:00:00+01:00"
+    "published_at": "2026-11-20T08:00:00+01:00",
+    "valid_from": "2026-11-20T08:00:00+01:00",
+    "valid_until": "2026-11-20T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=147&saison=1&ref=contentBox",

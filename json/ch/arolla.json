@@ -9,29 +9,29 @@
     "lon": 7.4818
   },
   "website": "https://www.valdherens.ch/en/espace-dent-blanche-ski-sector-arolla-fp42182",
-  "status": "no_report",
-  "fetched_at": "2026-11-19T13:40:37.549190+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T08:40:36.486389+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 44,
-    "valley_cm": 24,
-    "fresh_cm": 11,
-    "last_snowfall": null,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-03-29",
     "condition": null,
     "stations": [
       {
         "name": "Les Fontanesses (SLF)",
         "elevation_m": 2847,
-        "depth_cm": 44,
-        "fresh_cm": 0,
+        "depth_cm": 56,
+        "fresh_cm": 25,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Arolla (SLF)",
         "elevation_m": 2070,
-        "depth_cm": 24,
-        "fresh_cm": 11,
+        "depth_cm": 38,
+        "fresh_cm": 13,
         "temperature_c": null,
         "condition": null
       }
@@ -42,9 +42,9 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 17,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 36
   },
   "lifts_by_type": {
@@ -55,31 +55,31 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 8,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 19
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 6
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     },
     "ski_route": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-10-12T15:09:00+02:00",
+  "lifts_updated_at": "2026-11-19T17:54:00+01:00",
   "avalanche": {
     "region_id": "CH-4123",
     "region": "Arolla",
@@ -97,9 +97,9 @@
       "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-19T08:00:00+01:00",
-    "valid_from": "2026-11-19T08:00:00+01:00",
-    "valid_until": "2026-11-19T17:00:00+01:00"
+    "published_at": "2026-11-20T08:00:00+01:00",
+    "valid_from": "2026-11-20T08:00:00+01:00",
+    "valid_until": "2026-11-20T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=170&saison=1&ref=contentBox",

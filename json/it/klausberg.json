@@ -10,8 +10,8 @@
   },
   "website": "https://www.skiworldahrntal.it",
   "status": "no_report",
-  "fetched_at": "2026-11-19T13:40:37.550869+01:00",
-  "status_from": "2026-11-11T11:31:21.734025+01:00",
+  "fetched_at": "2026-11-20T08:40:36.488051+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -35,10 +35,16 @@
   "lifts_updated_at": "2026-04-27T23:57:06.367000+02:00",
   "avalanche": null,
   "sources": [
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI0E9790D2D4BD4F84B1E0055BC96277E4",
     "https://www.skiresort.info/ski-resort/klausberg-skiworld-ahrntal/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI0E9790D2D4BD4F84B1E0055BC96277E4",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/klausberg-skiworld-ahrntal/",
@@ -46,7 +52,5 @@
       }
     ]
   },
-  "errors": [
-    "suedtirol: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }

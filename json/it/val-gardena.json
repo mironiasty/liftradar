@@ -10,15 +10,48 @@
   },
   "website": "https://www.valgardena.it",
   "status": "closed",
-  "fetched_at": "2026-11-19T13:40:37.550483+01:00",
+  "fetched_at": "2026-11-20T08:40:36.487665+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-19",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Valley station",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 15,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Mountain station",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 20,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Mountain station",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 20,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Valley station",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 15,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
@@ -76,11 +109,12 @@
       "total_km": 18
     }
   },
-  "lifts_updated_at": "2026-11-19T10:00:10.638922+01:00",
+  "lifts_updated_at": "2026-11-19T16:03:28.936423+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
-    "https://www.dolomitisuperski.com"
+    "https://www.dolomitisuperski.com",
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI2C99CEA3DF2F458FB75E45CA39222E9D"
   ],
   "source_details": {
     "conditions": [
@@ -91,11 +125,13 @@
       {
         "url": "https://www.dolomitisuperski.com",
         "attribution_required": null
+      },
+      {
+        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI2C99CEA3DF2F458FB75E45CA39222E9D",
+        "attribution_required": null
       }
     ],
     "resort_info": []
   },
-  "errors": [
-    "snow: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
-  ]
+  "errors": []
 }
