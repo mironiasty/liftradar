@@ -10,20 +10,28 @@
   },
   "website": "https://graechen.ch",
   "status": "closed",
-  "fetched_at": "2026-11-20T08:40:36.486739+01:00",
+  "fetched_at": "2026-11-20T13:40:35.707546+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-20",
     "condition": null,
     "stations": [
       {
+        "name": "Grächen",
+        "elevation_m": null,
+        "depth_cm": null,
+        "fresh_cm": 4,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
         "name": "Hannigalp",
         "elevation_m": null,
-        "depth_cm": 10,
-        "fresh_cm": null,
+        "depth_cm": 15,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       },
@@ -31,7 +39,7 @@
         "name": "Seetalhorn",
         "elevation_m": null,
         "depth_cm": 25,
-        "fresh_cm": null,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +93,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-20T08:30:00+01:00",
+  "lifts_updated_at": "2026-11-20T13:30:00+01:00",
   "avalanche": {
     "region_id": "CH-4221",
     "region": "Lower Visp valleys",

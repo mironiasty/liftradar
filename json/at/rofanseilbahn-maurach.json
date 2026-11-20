@@ -9,14 +9,14 @@
     "lon": 11.7513
   },
   "website": "https://www.rofanseilbahn.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T08:41:46.422288+01:00",
-  "status_from": "2026-11-11T11:32:32.372419+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T13:41:53.992600+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-29",
     "condition": null,
     "stations": []
   },
@@ -25,20 +25,26 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 6,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 11
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2024-11-07T03:38:00+01:00",
+  "lifts_updated_at": "2026-11-08T16:26:00+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Rofan%20Seilbahn%20-%20Maurach_2680",
     "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigbiet-rofan"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.snowcard.tirol.at/skigebiet/Rofan%20Seilbahn%20-%20Maurach_2680",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigbiet-rofan",
@@ -46,7 +52,5 @@
       }
     ]
   },
-  "errors": [
-    "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Rofanseilbahn%20-%20Maurach_76'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
-  ]
+  "errors": []
 }

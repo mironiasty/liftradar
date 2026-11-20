@@ -10,7 +10,7 @@
   },
   "website": "https://www.porte-puymorens.eu",
   "status": "no_report",
-  "fetched_at": "2026-11-20T08:40:36.493306+01:00",
+  "fetched_at": "2026-11-20T13:40:35.712388+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,12 +26,40 @@
   },
   "slopes": {
     "open": null,
-    "total": 35,
+    "total": 30,
     "open_km": null,
     "total_km": 26
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 17,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 7,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": {
     "region_id": "FR-73",

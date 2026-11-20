@@ -9,9 +9,9 @@
     "lon": 11.703
   },
   "website": "https://www.christlum.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T08:41:36.233486+01:00",
-  "status_from": "2026-11-11T11:32:21.850169+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T13:41:42.744163+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,25 +20,28 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 10
-  },
+  "lifts": null,
   "slopes": {
     "open": null,
-    "total": 9,
-    "open_km": null,
+    "total": null,
+    "open_km": 0.0,
     "total_km": 27
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-22T11:34:00+02:00",
+  "lifts_updated_at": "2026-11-19T10:59:00+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_2973",
     "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-hochalmlifte-christlum-achenkirch"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_2973",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.tirol.at/aktivitaeten/sport/skifahren/skigebiete/skigebiet-hochalmlifte-christlum-achenkirch",
@@ -46,7 +49,5 @@
       }
     ]
   },
-  "errors": [
-    "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Hochalmlifte%20Christlum%20-%20Achenkirch_38'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
-  ]
+  "errors": []
 }

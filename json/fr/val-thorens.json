@@ -9,15 +9,15 @@
     "lon": 6.5823
   },
   "website": "https://www.valthorens.com",
-  "status": "open",
-  "fetched_at": "2026-11-20T08:40:36.492406+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T13:40:35.711728+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 90,
-    "valley_cm": 40,
-    "fresh_cm": 20,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": "2026-11-19",
-    "condition": "Fraîche",
+    "condition": null,
     "stations": [
       {
         "name": "Station",
@@ -42,9 +42,9 @@
     "total": 23
   },
   "slopes": {
-    "open": 13,
+    "open": 0,
     "total": 75,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 150
   },
   "lifts_by_type": {
@@ -71,21 +71,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 11,
+      "open": 0,
       "total": 42,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 2,
+      "open": 0,
       "total": 26,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },

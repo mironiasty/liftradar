@@ -9,8 +9,8 @@
     "lon": 1.476
   },
   "website": "https://www.palarinsal.com/",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T08:41:24.029452+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T13:40:35.716476+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,17 +22,53 @@
   },
   "lifts": {
     "open": 0,
-    "total": 30
+    "total": 25
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 47,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": null
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 9
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 11
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 26,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 17,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-12T10:22:00+01:00",
   "avalanche": {
     "region_id": "AD-02",
     "region": "Center Area",
@@ -52,22 +88,21 @@
     "valid_until": "2026-11-20T15:59:59+01:00"
   },
   "sources": [
-    "https://www.skiinfo.fr/andorre/vallnord-pal-arinsal/station-de-ski",
+    "https://www.palarinsal.com/ca/estacio/comunicat-neu",
     "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-AD.json"
   ],
   "source_details": {
     "conditions": [
       {
+        "url": "https://www.palarinsal.com/ca/estacio/comunicat-neu",
+        "attribution_required": null
+      },
+      {
         "url": "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-AD.json",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.skiinfo.fr/andorre/vallnord-pal-arinsal/station-de-ski",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

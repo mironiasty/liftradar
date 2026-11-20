@@ -9,9 +9,9 @@
     "lon": 11.3775
   },
   "website": "https://www.muttereralm.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T08:41:42.578407+01:00",
-  "status_from": "2026-11-11T11:32:28.906679+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T13:41:50.848428+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -20,26 +20,28 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 5
-  },
+  "lifts": null,
   "slopes": {
     "open": null,
-    "total": 10,
-    "open_km": null,
-    "total_km": 17
+    "total": null,
+    "open_km": 0.0,
+    "total_km": null
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-31T17:43:00+01:00",
+  "lifts_updated_at": "2026-11-16T17:13:00+01:00",
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.snowcard.tirol.at/skigebiet/Muttereralmbahn_2971"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.snowcard.tirol.at/skigebiet/Muttereralmbahn_2971",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
-  "errors": [
-    "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Muttereralm%20-%20Nockspitzbahn_49'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
-  ]
+  "errors": []
 }

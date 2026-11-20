@@ -9,9 +9,9 @@
     "lon": 20.8983
   },
   "website": "https://jaworzynakrynicka.pl",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T08:40:36.492020+01:00",
-  "status_from": "2026-11-17T08:40:38.298999+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-20T13:40:35.711467+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 10
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 15,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 13
   },
   "lifts_by_type": {
@@ -50,32 +50,42 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 9,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 6
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 7
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.pkl.pl/koleje-i-wyciagi.html",
+    "https://www.pkl.pl/trasy-narciarskie.html"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.pkl.pl/koleje-i-wyciagi.html",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.pkl.pl/trasy-narciarskie.html",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
-  "errors": [
-    "status: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)"
-  ]
+  "errors": []
 }
