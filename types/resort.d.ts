@@ -17,6 +17,15 @@ export type Lon = number
  * The resort's official website
  */
 export type Website = (string | null)
+export type Id1 = string
+export type Name1 = string
+export type Website1 = (string | null)
+/**
+ * Every member, this resort too, as <country>/<id>: each one's report is at json/<country>/<id>.json.
+ * 
+ * @minItems 2
+ */
+export type Members = [string, string, ...(string)[]]
 export type Status = ("open" | "closed" | "no_report")
 export type FetchedAt = string
 export type StatusFrom = (string | null)
@@ -25,7 +34,7 @@ export type ValleyCm = (number | null)
 export type FreshCm = (number | null)
 export type LastSnowfall = (string | null)
 export type Condition = (string | null)
-export type Name1 = string
+export type Name2 = string
 export type ElevationM = (number | null)
 export type DepthCm = (number | null)
 export type FreshCm1 = (number | null)
@@ -45,10 +54,6 @@ export type SlopesByDifficulty = ({
 [k: string]: SlopeCounts
 } | null)
 export type LiftsUpdatedAt = (string | null)
-/**
- * Experimental, may change or go away without notice: the path (from the site's root) of a file listing every lift and slope with its status (resort-details.schema.json). Null when the resort's sources don't list them, or this run couldn't read them.
- */
-export type Details = (string | null)
 export type RegionId = string
 export type Region1 = string
 export type DangerLevel = (number | null)
@@ -92,6 +97,14 @@ name: Name
 region: Region
 location: (Location | null)
 website: Website
+/**
+ * The ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. Les 3 Vallées); null when it isn't part of one we list as several resorts.
+ */
+linked_area: (ResortGroup | null)
+/**
+ * The ski region or pass this resort shares with the other members without being linked to them (e.g. Dolomiti Superski); null when it isn't part of one.
+ */
+ski_region: (ResortGroup | null)
 status: Status
 fetched_at: FetchedAt
 status_from: StatusFrom
@@ -101,7 +114,6 @@ slopes: (SlopeCounts | null)
 lifts_by_type: LiftsByType
 slopes_by_difficulty: SlopesByDifficulty
 lifts_updated_at: LiftsUpdatedAt
-details?: Details
 avalanche: (Avalanche | null)
 sources: Sources
 source_details: SourceDetails
@@ -113,6 +125,15 @@ errors?: Errors
 export interface Location {
 lat: Lat
 lon: Lon
+}
+/**
+ * A group of resorts listed separately, which a resort is a member of (data/resort_groups.json).
+ */
+export interface ResortGroup {
+id: Id1
+name: Name1
+website: Website1
+members: Members
 }
 export interface Snow {
 mountain_cm: MountainCm
@@ -126,7 +147,7 @@ stations: Stations
  * A snow measuring point published by the resort.
  */
 export interface Station {
-name: Name1
+name: Name2
 elevation_m: ElevationM
 depth_cm: DepthCm
 fresh_cm: FreshCm1
