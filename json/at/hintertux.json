@@ -9,21 +9,9 @@
     "lon": 11.658
   },
   "website": "https://www.hintertuxergletscher.at",
-  "linked_area": null,
-  "ski_region": {
-    "id": "zillertal",
-    "name": "Zillertal (Zillertaler Superskipass)",
-    "website": "https://www.zillertal.at",
-    "members": [
-      "at/zillertal-arena",
-      "at/mayrhofen",
-      "at/hintertux",
-      "at/hochzillertal-hochfuegen",
-      "at/spieljochbahn-fuegen"
-    ]
-  },
+  "ski_region": "zillertal",
   "status": "open",
-  "fetched_at": "2026-11-20T16:01:24.113720+01:00",
+  "fetched_at": "2026-11-20T16:46:47.397012+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 65,
@@ -37,7 +25,7 @@
         "elevation_m": 3250,
         "depth_cm": 65,
         "fresh_cm": null,
-        "temperature_c": -9.5,
+        "temperature_c": -9.9,
         "condition": "grippy/hard powder"
       },
       {
@@ -45,7 +33,7 @@
         "elevation_m": 2660,
         "depth_cm": 50,
         "fresh_cm": null,
-        "temperature_c": -5.1,
+        "temperature_c": -4.9,
         "condition": "grippy/hard powder"
       },
       {
@@ -53,7 +41,7 @@
         "elevation_m": 2100,
         "depth_cm": 30,
         "fresh_cm": null,
-        "temperature_c": 0.4,
+        "temperature_c": -0.2,
         "condition": "grippy"
       }
     ]
@@ -112,7 +100,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-19T16:56:18+01:00",
+  "lifts_updated_at": "2026-11-20T16:33:28+01:00",
   "avalanche": null,
   "sources": [
     "https://www.hintertuxergletscher.at/en/information/currently/weather/",

@@ -9,23 +9,14 @@
     "lon": 7.7428
   },
   "website": "https://www.matterhornparadise.ch",
-  "linked_area": {
-    "id": "matterhorn-ski-paradise",
-    "name": "Matterhorn Ski Paradise (Zermatt - Cervinia)",
-    "website": "https://www.matterhornparadise.ch",
-    "members": [
-      "ch/zermatt",
-      "it/breuil-cervinia"
-    ]
-  },
-  "ski_region": null,
-  "status": "open",
-  "fetched_at": "2026-11-20T16:01:24.118447+01:00",
+  "linked_area": "matterhorn-ski-paradise",
+  "status": "closed",
+  "fetched_at": "2026-11-20T16:46:47.406603+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 49,
-    "valley_cm": 10,
-    "fresh_cm": 19,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -48,22 +39,22 @@
     ]
   },
   "lifts": {
-    "open": 7,
+    "open": 0,
     "total": 36
   },
   "slopes": {
-    "open": 2,
+    "open": 0,
     "total": 84,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 200
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 0,
       "total": 6
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 10
     },
     "drag_lift": {
@@ -75,11 +66,11 @@
       "total": 2
     },
     "gondola": {
-      "open": 1,
+      "open": 0,
       "total": 9
     },
     "other": {
-      "open": 4,
+      "open": 0,
       "total": 4
     }
   },
@@ -87,13 +78,13 @@
     "easy": {
       "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 2,
+      "open": 0,
       "total": 48,
-      "open_km": 3.9,
+      "open_km": 0.0,
       "total_km": 99
     },
     "difficult": {
@@ -105,11 +96,11 @@
     "ski_route": {
       "open": 0,
       "total": 16,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-20T16:02:00+01:00",
+  "lifts_updated_at": "2026-11-20T16:46:00+01:00",
   "avalanche": {
     "region_id": "CH-4222",
     "region": "Zermatt",

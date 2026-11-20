@@ -212,53 +212,6 @@
       "title": "Location",
       "type": "object"
     },
-    "ResortGroup": {
-      "additionalProperties": false,
-      "description": "A group of resorts listed separately, which a resort is a member of (data/resort_groups.json).",
-      "properties": {
-        "id": {
-          "pattern": "^[a-z0-9-]+$",
-          "title": "Id",
-          "type": "string"
-        },
-        "name": {
-          "minLength": 1,
-          "title": "Name",
-          "type": "string"
-        },
-        "website": {
-          "anyOf": [
-            {
-              "pattern": "^https?://\\S+$",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Website"
-        },
-        "members": {
-          "description": "Every member, this resort too, as <country>/<id>: each one's report is at json/<country>/<id>.json.",
-          "items": {
-            "pattern": "^[a-z]{2}/[a-z0-9-]+$",
-            "type": "string"
-          },
-          "minItems": 2,
-          "title": "Members",
-          "type": "array"
-        }
-      },
-      "required": [
-        "id",
-        "name",
-        "website",
-        "members"
-      ],
-      "title": "ResortGroup",
-      "type": "object"
-    },
     "SlopeCounts": {
       "additionalProperties": false,
       "description": "Slope counts plus kilometres, when the resort publishes every slope's length.\n\nCounts can be missing where only kilometres are published (SalzburgerLand).\nopen_km is rounded to 0.1 km and total_km up to a whole km, so the\nrounded open km never exceeds the rounded total.",
@@ -619,28 +572,16 @@
       "title": "Website"
     },
     "linked_area": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/ResortGroup"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "description": "The ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. Les 3 Vallées); null when it isn't part of one we list as several resorts."
+      "description": "The id, in json/groups.json, of the ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. les-3-vallees); left out when it isn't part of one we list as several resorts.",
+      "pattern": "^[a-z0-9-]+$",
+      "title": "Linked Area",
+      "type": "string"
     },
     "ski_region": {
-      "anyOf": [
-        {
-          "$ref": "#/$defs/ResortGroup"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "default": null,
-      "description": "The ski region or pass this resort shares with the other members without being linked to them (e.g. Dolomiti Superski); null when it isn't part of one."
+      "description": "The id, in json/groups.json, of the ski region or pass this resort shares with the other members without being linked to them (e.g. dolomiti-superski); left out when it isn't part of one.",
+      "pattern": "^[a-z0-9-]+$",
+      "title": "Ski Region",
+      "type": "string"
     },
     "status": {
       "enum": [
@@ -798,8 +739,6 @@
     "region",
     "location",
     "website",
-    "linked_area",
-    "ski_region",
     "status",
     "fetched_at",
     "status_from",

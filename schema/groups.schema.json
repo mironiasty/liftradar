@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liftradar.eu/schema/groups.schema.json",
+  "$defs": {
+    "ResortGroup": {
+      "additionalProperties": false,
+      "description": "A group of resorts listed separately (data/resort_groups.json); its id is its key in json/groups.json.",
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "kind": {
+          "description": "linked: one ski area, its members linked by lifts and runs and sold as one (Les 3 Vallées); region: a pass or regional operator whose members aren't linked (Dolomiti Superski).",
+          "enum": [
+            "linked",
+            "region"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "website": {
+          "anyOf": [
+            {
+              "pattern": "^https?://\\S+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Website"
+        },
+        "members": {
+          "description": "Every member as <country>/<id>: each one's report is at json/<country>/<id>.json.",
+          "items": {
+            "pattern": "^[a-z]{2}/[a-z0-9-]+$",
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Members",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "kind",
+        "website",
+        "members"
+      ],
+      "title": "ResortGroup",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "const": "https://liftradar.eu/schema/groups.schema.json",
+      "default": "https://liftradar.eu/schema/groups.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "groups": {
+      "description": "By id, the value of linked_area or ski_region in each member's report.",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "$ref": "#/$defs/ResortGroup"
+        }
+      },
+      "title": "Groups",
+      "type": "object"
+    }
+  },
+  "required": [
+    "$schema",
+    "groups"
+  ],
+  "title": "Groups of resorts listed separately",
+  "type": "object"
+}

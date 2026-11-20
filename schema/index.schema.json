@@ -69,7 +69,7 @@
     },
     "IndexResort": {
       "additionalProperties": false,
-      "description": "What the site's table, map and sources page read of a report; the rest is in the resort's own file.",
+      "description": "What the site's table, map and sources page read of a report, and the groups it's in (for API clients);\nthe rest is in the resort's own file.",
       "properties": {
         "id": {
           "pattern": "^[a-z0-9-]+$",
@@ -108,6 +108,18 @@
             }
           ],
           "default": null
+        },
+        "linked_area": {
+          "description": "The id, in json/groups.json, of the ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. les-3-vallees); left out when it isn't part of one we list as several resorts.",
+          "pattern": "^[a-z0-9-]+$",
+          "title": "Linked Area",
+          "type": "string"
+        },
+        "ski_region": {
+          "description": "The id, in json/groups.json, of the ski region or pass this resort shares with the other members without being linked to them (e.g. dolomiti-superski); left out when it isn't part of one.",
+          "pattern": "^[a-z0-9-]+$",
+          "title": "Ski Region",
+          "type": "string"
         },
         "status": {
           "enum": [
