@@ -1,43 +1,85 @@
+/* The apps' colours: a sky from light to deeper blue behind the page (--sky-top to --sky-bottom), navy text,
+   and cards, menus and inputs on --bg, a lighter surface over the sky. --chip tints inside a card. */
 :root {
-  --bg: #fff;
-  --fg: #1a1a1a;
-  --muted: #666;
-  --line: #e3e3e3;
+  --sky-top: #eef4fb;
+  --sky-bottom: #d7e4f3;
+  --bg: #f8fbff;
+  --fg: #14365e;
+  --muted: #587194;
+  --line: #dbe4ef;
   --accent: #0b5cad;
-  --open: #1f7a3a;
-  --closed: #6b6b6b;
-  --none: #b9b9b9;
-  --chip: #eef1f4;
-  --row-hover: #f6f8fa;
+  --open: #1f8a3e;
+  --closed: #6b7a8c;
+  --none: #b3bfcc;
+  --chip: #e8f0f9;
+  --row-hover: #eef4fb;
   --warn: #9a5b00;
   /* A ski area's boundary on the maps: brown, unlike any piste colour. */
   --boundary: #8a5a2b;
   --star: #d99a00;
+  --radius: 18px;
+  --shadow: 0 1px 2px rgba(20, 54, 94, 0.05), 0 6px 20px rgba(20, 54, 94, 0.06);
+  /* The peaks at the foot of the page, as in the apps' tab bar: ridges, and one big peak with its snowy face. */
+  --peaks: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='xMaxYMax slice'%3E%3Cpath fill='%23c6d9ee' d='M0 120V74l150-36 110 30 130-40 150 52 120-34 150 44 160-58 230 42v46z'/%3E%3Cpath fill='%23b0cbe8' d='M0 120V96l190-50 120 44 70-14 170 44 150-36 150 36h350v0z'/%3E%3Cpath fill='%2399bbe1' d='M760 120l250-104 70 58 120 22v24z'/%3E%3Cpath fill='%23fff' d='M1010 16l34 50-14 26 40 28h130V96l-120-22z'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121212;
-    --fg: #ececec;
-    --muted: #9a9a9a;
-    --line: #2c2c2c;
-    --accent: #7fb3ff;
-    --open: #3fa65c;
-    --closed: #8a8a8a;
-    --none: #5a5a5a;
-    --chip: #262a2f;
-    --row-hover: #1b1e22;
-    --warn: #e0a64a;
+    --sky-top: #30588a;
+    --sky-bottom: #4d7099;
+    --bg: #26476e;
+    --fg: #f3f7fc;
+    --muted: #b6c8dd;
+    --line: #3a5c84;
+    --accent: #a9cdf6;
+    --open: #4cc36b;
+    --closed: #a2b2c5;
+    --none: #6c86a5;
+    --chip: #33567f;
+    --row-hover: #2d5079;
+    --warn: #f0b45a;
     --boundary: #c79a6b;
     --star: #f2c14e;
+    --shadow: 0 1px 2px rgba(5, 20, 40, 0.12), 0 6px 20px rgba(5, 20, 40, 0.14);
+    --peaks: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='xMaxYMax slice'%3E%3Cpath fill='%233f628a' d='M0 120V74l150-36 110 30 130-40 150 52 120-34 150 44 160-58 230 42v46z'/%3E%3Cpath fill='%2335577e' d='M0 120V96l190-50 120 44 70-14 170 44 150-36 150 36h350v0z'/%3E%3Cpath fill='%232b4b71' d='M760 120l250-104 70 58 120 22v24z'/%3E%3Cpath fill='%237896bb' d='M1010 16l34 50-14 26 40 28h130V96l-120-22z'/%3E%3C/svg%3E");
   }
 }
+html {
+  background: var(--sky-bottom);
+}
 body {
-  background: var(--bg);
+  background: linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
   color: var(--fg);
   font:
     16px / 1.5 system-ui,
     sans-serif;
   margin: 0;
+  min-height: 100vh;
+}
+/* Pages with a footer end in the peaks, across the whole width and never cropped: their height follows the width
+   (the drawing is 10:1). They rise behind the footer's lower half. */
+body:has(.site-footer) {
+  box-sizing: border-box;
+  padding-bottom: calc(5vw + 8px);
+  background:
+    var(--peaks) center bottom / 100% auto no-repeat,
+    linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
+}
+/* Narrower, they keep a height of 110px and show their right end, with the big peak. */
+@media (max-width: 1100px) {
+  body:has(.site-footer) {
+    padding-bottom: 56px;
+    background-position:
+      right bottom,
+      0 0;
+    background-size:
+      1100px 110px,
+      auto;
+  }
+}
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
 }
 a {
   color: var(--accent);
@@ -57,15 +99,16 @@ code {
 /* Open share of lifts or slopes. */
 .meter {
   width: 64px;
-  height: 4px;
-  border-radius: 2px;
+  height: 5px;
+  border-radius: 3px;
   background: var(--line);
   overflow: hidden;
 }
 .meter span {
   display: block;
   height: 100%;
-  background: var(--open);
+  border-radius: inherit;
+  background: var(--accent);
 }
 /* Avalanche danger level in the European (EAWS) colours. */
 .badge {
@@ -116,9 +159,9 @@ code {
 }
 .brand b {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 .brand small {
   font-size: 0.7rem;
@@ -135,20 +178,23 @@ code {
   gap: 3px;
 }
 .brand.compact b {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
 }
 .brand.compact small {
-  font-size: 0.62rem;
+  font-size: 0.64rem;
 }
+/* The pills sit on the sky: the card surface, no border, as the apps' chips. */
 .pill {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  height: 32px;
-  padding: 0 14px 0 11px;
+  height: 34px;
+  padding: 0 15px 0 12px;
   box-sizing: border-box;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 999px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
   color: var(--fg);
   font-size: 0.9rem;
   font-weight: 500;
@@ -159,8 +205,10 @@ code {
   color: var(--accent);
 }
 .pill:hover {
-  border-color: var(--accent);
   color: var(--accent);
+  box-shadow:
+    inset 0 0 0 1.5px var(--accent),
+    var(--shadow);
 }
 a.brand:focus-visible,
 .pill:focus-visible {
@@ -175,7 +223,6 @@ a.brand:focus-visible,
   align-items: center;
   gap: 10px 8px;
   padding-bottom: 14px;
-  border-bottom: 1px solid var(--line);
   margin-inline: calc(50% - min(550px, 50vw - 16px));
 }
 .site-header nav {
@@ -225,10 +272,10 @@ a.brand:focus-visible,
   display: grid;
   min-width: 130px;
   padding: 4px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  border: 0;
+  border-radius: 14px;
   background: var(--bg);
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 24px rgba(10, 30, 60, 0.22);
 }
 .lang-menu a {
   display: flex;
@@ -419,9 +466,9 @@ a.brand:focus-visible,
   align-items: center;
   justify-content: space-between;
   gap: 12px 24px;
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
   color: var(--muted);
   font-size: 0.85rem;
 }
@@ -429,6 +476,19 @@ a.brand:focus-visible,
   display: flex;
   flex-wrap: wrap;
   gap: 4px 16px;
+}
+/* The app's stores, then the author and GitHub at the right end: they wrap under the links together, and the
+   author only goes under the stores where both don't fit, still at the right. */
+.footer-end {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+}
+.footer-end .made-by {
+  margin-left: auto;
 }
 .site-footer nav a {
   color: var(--muted);
@@ -438,63 +498,65 @@ a.brand:focus-visible,
   color: var(--accent);
   text-decoration: underline;
 }
-/* The app's two stores, as buttons in the stores' own style: black, white text, the store's logo. */
-.stores {
+/* The app's two stores, and the author and the code on GitHub: pills, as in the header, so they read over the
+   peaks. The stores' own badges and logos may only be used unchanged, so these are plain links with a phone. */
+.stores,
+.made-by {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
 }
-.store {
+.store,
+.made-by a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   height: 40px;
-  padding: 0 14px 0 10px;
   box-sizing: border-box;
-  border: 1px solid #a6a6a6;
-  border-radius: 8px;
-  background: #000;
-  color: #fff;
+  border-radius: 999px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  color: var(--muted);
   text-decoration: none;
+}
+.store {
+  padding: 0 16px 0 13px;
+  color: var(--fg);
+  font-weight: 600;
 }
 .store svg {
   flex: none;
+  color: var(--accent);
 }
-.store span {
-  display: grid;
-  line-height: 1.1;
-}
-.store small {
-  font-size: 0.62rem;
-}
-.store b {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-.store:hover {
-  border-color: var(--accent);
+.store:hover,
+.made-by a:hover {
+  color: var(--accent);
+  box-shadow:
+    inset 0 0 0 1.5px var(--accent),
+    var(--shadow);
 }
 /* On a phone or tablet, only its own store (lang.js sets data-os). */
 :root[data-os="ios"] .store-android,
 :root[data-os="android"] .store-ios {
   display: none;
 }
-.made-by {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--muted);
+.made-by .author {
+  padding: 0 16px 0 6px;
+  color: var(--fg);
+  font-weight: 600;
+}
+.made-by .github {
+  justify-content: center;
+  width: 40px;
+  color: var(--fg);
 }
 .made-by img {
   flex: none;
   border-radius: 50%;
   background: var(--chip);
 }
-.made-by b {
-  color: var(--fg);
-  font-weight: 600;
-}
+
 .site-footer a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -607,9 +669,10 @@ button.fav:focus-visible {
   gap: 8px;
   box-sizing: border-box;
   height: 34px;
-  padding: 0 28px 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  padding: 0 30px 0 12px;
+  border: 0;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
   background: var(--bg)
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E")
     no-repeat right 10px center;
@@ -636,10 +699,10 @@ button.fav:focus-visible {
   overflow-y: auto;
   box-sizing: border-box;
   padding: 4px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  border: 0;
+  border-radius: 14px;
   background: var(--bg);
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 24px rgba(10, 30, 60, 0.22);
 }
 .country-menu button {
   display: flex;

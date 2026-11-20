@@ -32,7 +32,7 @@
   "Slope counts of SalzburgerLand and Trentino resorts are the area's size, not reported; Livigno shows lifts only. Most resorts in Vorarlberg, Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.": "Les nombres de pistes des stations de SalzburgerLand et du Trentin sont la taille du domaine, pas des valeurs signalées ; Livigno n'affiche que les remontées. La plupart des stations du Vorarlberg, de Styrie, de Haute-Autriche et de Basse-Autriche n'ont que leur plan des pistes : remontées et pistes, sans hauteur de neige.",
   "Data sources": "Sources des données",
   "Contact: miron [at] liftradar.eu": "Contact : miron [at] liftradar.eu",
-  "Made by <b>Miron</b>": "Créé par <b>Miron</b>",
+  "GitHub": "GitHub",
   "Main": "Principale",
   "Search resorts": "Rechercher une station",
   "Clear search": "Effacer la recherche",
@@ -195,6 +195,7 @@
   "Page not found": "Page introuvable",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "Il n'y a rien à cette adresse. <a href=\"/\">Toutes les stations →</a>",
   "What the numbers mean and where they can mislead. LiftRadar isn't an official source: reports can be late or wrong, so check the resort's own website before you go.": "Ce que signifient les chiffres et où ils peuvent induire en erreur. LiftRadar n'est pas une source officielle : les bulletins peuvent être en retard ou erronés, vérifiez donc le site de la station avant de partir.",
+  "All the data is free to read: as JSON files, and for AI assistants as an MCP server. How to use both is on <a href=\"api.html\">API</a>.": "Toutes les données sont librement accessibles : en fichiers JSON, et pour les assistants IA via un serveur MCP. Comment utiliser les deux est expliqué sur <a href=\"api.html\">API</a>.",
   "Timing": "Horaires",
   "Lifts and slopes": "Remontées et pistes",
   "History": "Historique",
@@ -281,6 +282,7 @@
   "For AI assistants, the same data is an <a href=\"https://modelcontextprotocol.io\">MCP</a> server, with no key: add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and the daily stats.": "Pour les assistants IA, les mêmes données sont disponibles en serveur <a href=\"https://modelcontextprotocol.io\">MCP</a>, sans clé : ajoutez l’adresse ci-dessus comme serveur distant (Streamable HTTP) dans Claude, Cursor ou tout autre client MCP. Ses outils trouvent les stations par pays, statut, neige, remontées ouvertes ou distance d’un point, et lisent le bulletin d’une station, son historique et les statistiques quotidiennes.",
   "API – LiftRadar": "API – LiftRadar",
   "All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>, readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.": "Toutes les données sont librement accessibles en JSON, sans clé ni inscription : de simples fichiers sur <code>https://liftradar.eu</code>, lisibles depuis n’importe quel site (CORS autorise toutes les origines). Le format est défini par le JSON Schema de chaque fichier.",
+  "AI assistants can read the same data through the <a href=\"#mcp\">MCP server</a>, also with no key.": "Les assistants IA peuvent lire les mêmes données via le <a href=\"#mcp\">serveur MCP</a>, sans clé non plus.",
   "One resort": "Une station",
   "Pistes and lifts": "Pistes et remontées",
   "Villages and roads": "Villages et routes",
@@ -339,7 +341,5 @@
   "LiftRadar isn't aimed at children and doesn't knowingly collect children's data.": "LiftRadar ne s'adresse pas aux enfants et ne collecte pas sciemment de données d'enfants.",
   "Changes": "Modifications",
   "If this policy changes, the new version will appear on this page with a new date.": "Si cette politique change, la nouvelle version paraîtra sur cette page avec une nouvelle date.",
-  "Get the app": "Télécharger l’app",
-  "Download on the": "Télécharger dans l’",
-  "Get it on": "Disponible sur"
+  "Get the app": "Télécharger l’app"
 }
