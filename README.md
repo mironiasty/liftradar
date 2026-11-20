@@ -314,7 +314,10 @@ resort's lifts and downhill pistes widened, merged and smoothed, without strips 
 when that's inside, and otherwise the bottom station nearest to it. Wrong matches are fixed in
 `scripts/ski_overrides.json`: `claims` and `ignore` add or remove a resort's areas (by an OSM id of
 their sources, Wikidata id or exact name), and `points` move the point a shared area is split by
-(Samoëns: its ski area, not its village). Check a change on the map, with the tiles built locally.
+(Samoëns: its ski area, not its village). `features` gives single lifts and runs (by their OSM id) to a
+resort, for one OpenSkiData puts in the wrong area (a run along Kompleks Narciarski Słotwiny's chairlift,
+in Słotwiny Arena's, drew Arena's outline over Kompleks; `ski_split_check.py --assign` doesn't apply
+it). Check a change on the map, with the tiles built locally.
 `scripts/ski_split_check.py` finds wrong splits and checks a fix without the download: from built tiles
 (the release `ski-latest`) and `json/index.json`, it lists the resorts whose lift count on the map is far
 from their report's and the areas several resorts share; `--lifts <country>/<id>` lists a resort's lifts

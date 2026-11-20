@@ -88,7 +88,8 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
 
     Each resort claims ski areas: those near it whose name matches its own best (or at all,
     within NEAR_M), and the nearest one with a lift within NEAR_M unless another resort claimed
-    that one by name (scripts/ski_overrides.json adds or removes claims).
+    that one by name (scripts/ski_overrides.json adds or removes claims, and moves single lifts and
+    runs by their OSM id).
     A lift or run then goes to the smallest of its areas that was claimed: an area that is a
     sector of a bigger one claimed by another resort stays with its own resort, and an area a
     ski pass groups (Ski amadé, Les Portes du Soleil) only counts when a resort claims it. In an
@@ -180,6 +181,13 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
             if a not in trees:
                 trees[a] = shapely.STRtree([lines[i] for i in lifts_in[a]])
             run_lr[j] = lift_lr[lifts_in[a][int(trees[a].nearest(f["_geom"].centroid))]]
+    # Single lifts and runs OpenSkiData puts in the wrong area (ski_overrides.json "features": OSM ids).
+    moved = {ref: k for k, refs in overrides.get("features", {}).items() for ref in refs}
+    for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
+        for i, f in enumerate(features):
+            sources = (f.get("properties") or {}).get("sources") or []
+            if k := next((moved[s["id"]] for s in sources if s.get("id") in moved), None):
+                assigned[i] = k
     adopt(lifts, runs, lift_lr, run_lr)
     return lift_lr, run_lr
 
