@@ -24,7 +24,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import ski_resorts
-from shapely.geometry import LineString
+from shapely.geometry import LineString, Point
 
 MORE = 1.6  # listed when the map has this many times the report's lifts (and FEW more),
 LESS = 0.6  # or this share of them (and FEW fewer)
@@ -50,11 +50,13 @@ def load_lifts(ski: Path) -> tuple[dict, list]:
                     "wd": area.get("wd"),
                 }
                 keys.append(key)
+            # As ski_tiles.py gives them to assign(): the line (for "clip") and the OSM id (for "features").
             lifts.append(
                 {
                     "_areas": keys,
                     "_coords": lift["c"],
-                    "_geom": LineString([c[:2] for c in lift["c"]]),  # for assign()'s clip
+                    "_geom": LineString([c[:2] for c in lift["c"]]) if len(lift["c"]) > 1 else Point(lift["c"][0][:2]),
+                    "properties": {"sources": [{"type": "openstreetmap", "id": lift["osm"]}]},
                     "name": lift.get("name"),
                     "lr": lift.get("lr"),
                 }

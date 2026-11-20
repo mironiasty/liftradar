@@ -1,0 +1,63 @@
+name: Ski assignment
+
+# A pull request that changes how lifts are given to resorts (README "Ski tiles": ski_resorts.py and
+# ski_overrides.json) lists the resorts whose lift count on the map changes, so the review sees them
+# before the tiles are built. ski_split_check.py --assign runs on the latest tiles (the release
+# ski-latest) and index, once with the base's rules and once with the change's, with the change's
+# checker for both: the difference is the change's alone. Lifts only: runs follow them.
+on:
+  pull_request:
+    paths:
+      - scripts/ski_resorts.py
+      - scripts/ski_overrides.json
+      - scripts/ski_split_check.py
+      - .github/workflows/ski-assign.yml
+
+permissions:
+  contents: read
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: site
+
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+
+      # Only the index: the data branch's archive is large.
+      - uses: actions/checkout@v7
+        with:
+          ref: data
+          path: data
+          sparse-checkout: json/index.json
+          sparse-checkout-cone-mode: false
+
+      - uses: astral-sh/setup-uv@v10.3.2
+
+      - name: The latest tiles
+        run: |
+          gh release download ski-latest -R "$GITHUB_REPOSITORY" -p ski.tar.gz
+          tar xzf ski.tar.gz
+
+      - name: Lifts per resort, before and after
+        run: |
+          cp site/scripts/ski_split_check.py base/scripts/
+          for side in base site; do
+            uv run --no-project --with shapely==2.2.0 python3 "$side/scripts/ski_split_check.py" \
+              ski data/json/index.json --assign > "$side.txt"
+          done
+          diff base.txt site.txt > changes.txt || true
+          {
+            echo "### Resorts whose lift count changes (tiles → base, then → this change)"
+            echo '```diff'
+            if [ -s changes.txt ]; then grep '^[<>]' changes.txt | sed 's/^</-/; s/^>/+/'; else echo "no change"; fi
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
