@@ -125,6 +125,13 @@
   <p data-i18n>Daily totals per country and region over the last 365 days: resorts tracked and open, and their open lifts,
     slopes and km (<a href="/schema/stats.schema.json">schema</a>).</p>
 
+  <h2 id="groups" data-i18n>Resort groups</h2>
+  <pre><code>GET https://liftradar.eu/json/groups.json</code></pre>
+  <p data-i18n>The groups of resorts we list separately, by id: ski areas linked by lifts and runs (<code>linked</code>,
+    e.g. Les 3 Vallées) and passes or regions whose areas aren't linked (<code>region</code>, e.g. Dolomiti Superski),
+    each with its name, website and members as <code>&lt;country&gt;/&lt;id&gt;</code>
+    (<a href="/schema/groups.schema.json">schema</a>).</p>
+
   <h2 id="ski-map" data-i18n>Pistes and lifts</h2>
   <pre><code>GET https://liftradar.eu/ski/v1/10/&lt;x&gt;/&lt;y&gt;.json
 GET https://liftradar.eu/ski/v1/resorts.geojson
@@ -149,10 +156,10 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
       is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code>
       where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as
       plain URLs, and will be removed.</li>
-    <li data-i18n><code>linked_area</code> is the ski area a resort shares with others, linked by lifts and runs (Les 3
-      Vallées), and <code>ski_region</code> the pass or region it shares without a link (Dolomiti Superski); both are
-      <code>null</code> for the other resorts. Each lists every member as <code>&lt;country&gt;/&lt;id&gt;</code> in
-      <code>members</code>, so the group can be shown as one from its members' files.</li>
+    <li data-i18n><code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs
+      (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link
+      (<code>dolomiti-superski</code>); look them up in <a href="#groups"><code>json/groups.json</code></a>. Both are left
+      out for a resort that isn't in such a group.</li>
     <li data-i18n>Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.</li>
   </ul>
   <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>

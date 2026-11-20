@@ -3,7 +3,7 @@
 Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway, Spain, Slovenia and Andorra, published at
 [liftradar.eu](https://liftradar.eu).
 
-- **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`, `json/stats.json`,
+- **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`, `json/stats.json`, `json/groups.json`,
   `history/<country>/<resort>.json` and `schema/…`, published by the fetcher twice a day, plus
   `archive/` and `logs/`, which aren't served by the site. Don't edit it by hand: every publish
   replaces it.
@@ -12,6 +12,8 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
     `json/<country>/<resort>.json`.
   - `json/stats.json`: daily totals per country and region over the last 365 days (resorts
     tracked and open; open lifts, slopes and km, of open resorts only), for `stats.html`.
+  - `json/groups.json`: the groups of resorts listed separately (linked ski areas, passes and
+    regions) by id, which a member's `linked_area` and `ski_region` give; the site doesn't read it yet.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
     (open lifts and slopes, snow, status), one list per value, for the resort page's graphs.
   - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every

@@ -17,15 +17,14 @@ export type Lon = number
  * The resort's official website
  */
 export type Website = (string | null)
-export type Id1 = string
-export type Name1 = string
-export type Website1 = (string | null)
 /**
- * Every member, this resort too, as <country>/<id>: each one's report is at json/<country>/<id>.json.
- * 
- * @minItems 2
+ * The id, in json/groups.json, of the ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. les-3-vallees); left out when it isn't part of one we list as several resorts.
  */
-export type Members = [string, string, ...(string)[]]
+export type LinkedArea = string
+/**
+ * The id, in json/groups.json, of the ski region or pass this resort shares with the other members without being linked to them (e.g. dolomiti-superski); left out when it isn't part of one.
+ */
+export type SkiRegion = string
 export type Status = ("open" | "closed" | "no_report")
 export type FetchedAt = string
 export type StatusFrom = (string | null)
@@ -34,7 +33,7 @@ export type ValleyCm = (number | null)
 export type FreshCm = (number | null)
 export type LastSnowfall = (string | null)
 export type Condition = (string | null)
-export type Name2 = string
+export type Name1 = string
 export type ElevationM = (number | null)
 export type DepthCm = (number | null)
 export type FreshCm1 = (number | null)
@@ -97,14 +96,8 @@ name: Name
 region: Region
 location: (Location | null)
 website: Website
-/**
- * The ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. Les 3 Vallées); null when it isn't part of one we list as several resorts.
- */
-linked_area: (ResortGroup | null)
-/**
- * The ski region or pass this resort shares with the other members without being linked to them (e.g. Dolomiti Superski); null when it isn't part of one.
- */
-ski_region: (ResortGroup | null)
+linked_area?: LinkedArea
+ski_region?: SkiRegion
 status: Status
 fetched_at: FetchedAt
 status_from: StatusFrom
@@ -126,15 +119,6 @@ export interface Location {
 lat: Lat
 lon: Lon
 }
-/**
- * A group of resorts listed separately, which a resort is a member of (data/resort_groups.json).
- */
-export interface ResortGroup {
-id: Id1
-name: Name1
-website: Website1
-members: Members
-}
 export interface Snow {
 mountain_cm: MountainCm
 valley_cm: ValleyCm
@@ -147,7 +131,7 @@ stations: Stations
  * A snow measuring point published by the resort.
  */
 export interface Station {
-name: Name2
+name: Name1
 elevation_m: ElevationM
 depth_cm: DepthCm
 fresh_cm: FreshCm1
