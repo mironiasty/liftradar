@@ -68,7 +68,8 @@ function translatePage(page, language, strings, seen) {
   html = html.replace(/<html lang="en">/, `<html lang="${language}">`);
   html = html.replace(/\s(aria-label|placeholder|title|alt)="([^"]+)"/g, (attribute, name, value) => {
     const text = lookup(value);
-    return text ? ` ${name}="${text}"` : attribute;
+    // A " in the translation (Polish „…", say) would end the attribute.
+    return text ? ` ${name}="${text.replaceAll('"', "&quot;")}"` : attribute;
   });
   // Each language is its own page for search engines (resort.js sets the resort page's from its address).
   html = html.replace('<link rel="canonical" href="https://liftradar.eu/', `$&${language}/`);
