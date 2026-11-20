@@ -8,6 +8,14 @@ export type Name = string
 export type Region = (string | null)
 export type Lat = number
 export type Lon = number
+/**
+ * The id, in json/groups.json, of the ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. les-3-vallees); left out when it isn't part of one we list as several resorts.
+ */
+export type LinkedArea = string
+/**
+ * The id, in json/groups.json, of the ski region or pass this resort shares with the other members without being linked to them (e.g. dolomiti-superski); left out when it isn't part of one.
+ */
+export type SkiRegion = string
 export type Status = ("open" | "closed" | "no_report")
 export type CheckedAt = string
 export type MountainCm = (number | null)
@@ -46,7 +54,8 @@ generated_at: GeneratedAt
 resorts: Resorts
 }
 /**
- * What the site's table, map and sources page read of a report; the rest is in the resort's own file.
+ * What the site's table, map and sources page read of a report, and the groups it's in (for API clients);
+ * the rest is in the resort's own file.
  */
 export interface IndexResort {
 id: Id
@@ -54,6 +63,8 @@ country: Country
 name: Name
 region: Region
 location: (Location | null)
+linked_area?: LinkedArea
+ski_region?: SkiRegion
 status: Status
 checked_at: CheckedAt
 snow: IndexSnow
