@@ -32,7 +32,7 @@
   "Slope counts of SalzburgerLand and Trentino resorts are the area's size, not reported; Livigno shows lifts only. Most resorts in Vorarlberg, Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.": "I numeri di piste delle stazioni di SalzburgerLand e Trentino sono la dimensione dell'area, non valori comunicati; Livigno mostra solo gli impianti. La maggior parte delle stazioni di Vorarlberg, Stiria, Alta e Bassa Austria ha solo la mappa delle piste: impianti e piste, senza altezza della neve.",
   "Data sources": "Fonti dei dati",
   "Contact: miron [at] liftradar.eu": "Contatto: miron [at] liftradar.eu",
-  "Made by <b>Miron</b>": "Creato da <b>Miron</b>",
+  "GitHub": "GitHub",
   "Main": "Principale",
   "Search resorts": "Cerca stazioni",
   "Clear search": "Cancella ricerca",
@@ -195,6 +195,7 @@
   "Page not found": "Pagina non trovata",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "A questo indirizzo non c'è nulla. <a href=\"/\">Tutte le stazioni →</a>",
   "What the numbers mean and where they can mislead. LiftRadar isn't an official source: reports can be late or wrong, so check the resort's own website before you go.": "Che cosa significano i numeri e dove possono ingannare. LiftRadar non è una fonte ufficiale: i bollettini possono essere in ritardo o errati, quindi controlla il sito della stazione prima di partire.",
+  "All the data is free to read: as JSON files, and for AI assistants as an MCP server. How to use both is on <a href=\"api.html\">API</a>.": "Tutti i dati sono liberamente leggibili: come file JSON e, per gli assistenti IA, tramite un server MCP. Come usarli è spiegato in <a href=\"api.html\">API</a>.",
   "Timing": "Tempistiche",
   "Lifts and slopes": "Impianti e piste",
   "History": "Storico",
@@ -281,6 +282,7 @@
   "For AI assistants, the same data is an <a href=\"https://modelcontextprotocol.io\">MCP</a> server, with no key: add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and the daily stats.": "Per gli assistenti IA, gli stessi dati sono un server <a href=\"https://modelcontextprotocol.io\">MCP</a>, senza chiave: aggiungi l’indirizzo qui sopra come server remoto (Streamable HTTP) in Claude, Cursor o qualsiasi altro client MCP. I suoi strumenti trovano i comprensori per paese, stato, neve, impianti aperti o distanza da un punto, e leggono il bollettino di un comprensorio, la sua cronologia e le statistiche giornaliere.",
   "API – LiftRadar": "API – LiftRadar",
   "All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>, readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.": "Tutti i dati sono liberamente leggibili in JSON, senza chiave e senza registrazione: semplici file su <code>https://liftradar.eu</code>, leggibili da qualsiasi sito (CORS consente qualsiasi origine). Il formato è definito dal JSON Schema di ogni file.",
+  "AI assistants can read the same data through the <a href=\"#mcp\">MCP server</a>, also with no key.": "Gli assistenti IA possono leggere gli stessi dati tramite il <a href=\"#mcp\">server MCP</a>, anche qui senza chiave.",
   "One resort": "Una stazione",
   "Pistes and lifts": "Piste e impianti",
   "Villages and roads": "Paesi e strade",
@@ -339,7 +341,5 @@
   "LiftRadar isn't aimed at children and doesn't knowingly collect children's data.": "LiftRadar non è rivolto ai minori e non raccoglie consapevolmente dati di minori.",
   "Changes": "Modifiche",
   "If this policy changes, the new version will appear on this page with a new date.": "Se questa informativa cambia, la nuova versione apparirà in questa pagina con una nuova data.",
-  "Get the app": "Scarica l’app",
-  "Download on the": "Scarica su",
-  "Get it on": "Disponibile su"
+  "Get the app": "Scarica l’app"
 }

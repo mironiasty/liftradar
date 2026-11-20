@@ -19,11 +19,11 @@
   .top { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; margin-top: 20px; }
   .top > div { min-width: 0; }
   .map-tile { position: relative; display: flex; align-items: flex-end; height: 160px; padding: 10px; box-sizing: border-box;
-    border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--chip); color: var(--fg); text-decoration: none; }
+    border-radius: var(--radius); overflow: hidden; background: var(--chip); box-shadow: var(--shadow); color: var(--fg); text-decoration: none; }
   #mini-map { position: absolute; inset: 0; background: var(--chip); pointer-events: none; }
   .map-tile span { position: relative; z-index: 500; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px;
     background: var(--bg); font-size: .85rem; font-weight: 500; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
-  .map-tile:hover { border-color: var(--accent); }
+  .map-tile:hover { box-shadow: inset 0 0 0 2px var(--accent), var(--shadow); }
   .map-tile:hover span { color: var(--accent); }
   .map-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   #mini-map svg { display: block; width: 100%; height: 100%; }
@@ -33,21 +33,23 @@
   #mini-map path.covered { stroke-opacity: .4; }
   #mini-map circle { stroke: var(--bg); stroke-width: 1.5; }
   @media (max-width: 640px) { .top { grid-template-columns: 1fr; } .map-tile { height: 140px; } }
-  .intro { margin: 0 0 8px; }
+  .intro { margin: 0 0 8px; font-size: 1.05rem; }
+  .intro.muted { font-size: .9rem; }
 
   /* The visitor's favourite resorts (localStorage), as cards above the list; hidden while there are none. */
   .favorites { margin-top: 24px; }
   .favorites h2 { margin: 0 0 10px; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-  .fav-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
-  .fav-card { position: relative; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; }
-  .fav-card:hover { border-color: var(--accent); }
+  .fav-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .fav-card { position: relative; padding: 14px 16px; border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow); }
+  .fav-card:hover { box-shadow: inset 0 0 0 2px var(--accent), var(--shadow); }
   .fav-card:has(a:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .fav-card a { display: block; padding-right: 28px; color: var(--fg); font-weight: 600; text-decoration: none; outline: none; }
+  .fav-card a { display: block; padding-right: 28px; color: var(--fg); font-size: 1.1rem; font-weight: 700; text-decoration: none; outline: none; }
   .fav-card a::after { content: ""; position: absolute; inset: 0; border-radius: 12px; }
   .fav-card:hover a { color: var(--accent); }
-  .fav-card button.fav { position: absolute; top: 8px; right: 8px; z-index: 1; }
+  .fav-card button.fav { position: absolute; top: 10px; right: 8px; z-index: 1; }
   .fav-card .where { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: .8rem; }
-  .fav-card .values { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 8px; font-size: .85rem; font-variant-numeric: tabular-nums; }
+  .fav-card .values { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 10px; font-size: .9rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .fav-card .values span span { font-weight: 400; }
   .fav-card .values span span { color: var(--muted); }
   /* The list's stars: faint until the row is pointed at, so 742 of them don't crowd it. */
   .resort button.fav { align-self: flex-start; margin: -3px 0 -3px auto; padding: 3px; }
@@ -57,23 +59,24 @@
   .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 12px; font-size: .9rem; }
   .search { position: relative; flex: 1 1 16rem; max-width: 22rem; }
   .search > svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-  input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 10px; font: inherit; color: var(--fg);
-    background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
-  input[type=search] { width: 100%; padding-left: 32px; padding-right: 32px; }
+  input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 12px; font: inherit; color: var(--fg);
+    background: var(--bg); border: 0; border-radius: 999px; box-shadow: var(--shadow); }
+  input[type=search] { width: 100%; height: 40px; padding-left: 36px; padding-right: 36px; }
+  .search > svg { left: 14px; }
   /* Browsers' own clear buttons differ (Firefox has none): #search-clear replaces them. */
   input[type=search]::-webkit-search-cancel-button { display: none; }
-  #search-clear { position: absolute; right: 2px; top: 2px; display: flex; align-items: center; justify-content: center;
-    width: 30px; height: 30px; padding: 0; border: 0; border-radius: 6px; background: none; color: var(--muted); cursor: pointer; }
+  #search-clear { position: absolute; right: 5px; top: 5px; display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; padding: 0; border: 0; border-radius: 999px; background: none; color: var(--muted); cursor: pointer; }
   #search-clear[hidden] { display: none; }
   #search-clear:hover { color: var(--fg); }
-  select { padding-right: 28px; appearance: none; cursor: pointer;
+  select { padding-right: 30px; appearance: none; cursor: pointer;
     background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center; }
   input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line);
-    border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px solid transparent;
+    border-radius: 999px; background: color-mix(in srgb, var(--bg) 45%, transparent); color: var(--muted); font: inherit; cursor: pointer; }
   .chip:hover { border-color: var(--muted); }
-  .chip[aria-pressed="true"] { background: var(--chip); border-color: transparent; color: var(--fg); font-weight: 500; }
+  .chip[aria-pressed="true"] { background: var(--bg); box-shadow: var(--shadow); color: var(--fg); font-weight: 500; }
   .chip .dot { box-shadow: inset 0 0 0 1.5px var(--c); }
   .chip[aria-pressed="true"] .dot { background: var(--c); }
   .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
@@ -82,14 +85,16 @@
   /* When the data was fetched: a chip with a clock, as the resort page's "Checked" time, over the search so the
      country and region fit beside it. */
   .updated-row { display: flex; justify-content: flex-end; margin: 24px 0 0; font-size: .9rem; }
-  .updated { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px;
-    background: var(--chip); color: var(--fg); font-size: .85rem; font-weight: 500; }
+  .updated { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px;
+    background: var(--bg); box-shadow: var(--shadow); color: var(--fg); font-size: .9rem; font-weight: 500; }
   .updated svg { flex: none; color: var(--muted); }
   .updated.failed, .updated.failed svg { color: var(--warn); }
 
   /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
      table scrolls sideways and the resort column sticks. */
-  .table { margin: 16px 0 24px; overflow-x: auto; }
+  /* The table on a card over the sky, as the apps' list. */
+  .table { margin: 16px 0 24px; padding: 4px 14px 8px; border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow); overflow-x: auto; }
+  tbody tr:last-child td { border-bottom: 0; }
   @media (min-width: 1000px) { .table { overflow: visible; } }
   table { border-collapse: separate; border-spacing: 0; width: 100%; }
   th, td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: top; }
@@ -109,7 +114,7 @@
   th .sub button + button::before { content: "/"; color: var(--muted); padding: 0 2px; }
 
   .resort { display: flex; gap: 8px; align-items: baseline; }
-  .resort .name { font-weight: 500; }
+  .resort .name { font-weight: 600; }
   .dot { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
   .resort .dot { position: relative; top: -1px; }
   .sub-line { color: var(--muted); font-size: .8rem; margin-top: 2px; }
@@ -140,6 +145,7 @@
     thead { display: none; }
     table, tbody { display: block; }
     tr { display: flex; flex-wrap: wrap; gap: 10px 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    tbody tr:last-child { border-bottom: 0; }
     .resort .dot, .status-line { display: none; }
     .resort > div { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
     .resort .name { flex: 1; min-width: 0; }
@@ -161,7 +167,7 @@
   }
   .empty { padding: 32px 0; text-align: center; color: var(--muted); }
 
-  .notes { margin-top: 8px; border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; }
+  .notes { margin-top: 8px; border-radius: var(--radius); padding: 0 18px; background: var(--bg); box-shadow: var(--shadow); }
   .notes summary { padding: 12px 0; cursor: pointer; font-weight: 600; }
   .notes ul { margin: 0 0 16px; padding-left: 20px; }
   .notes li { margin: 4px 0; }
@@ -297,18 +303,25 @@
       <a href="privacy.html" data-i18n>Privacy</a>
       <span data-i18n>Contact: miron [at] liftradar.eu</span>
     </nav>
-    <div class="stores">
-      <a class="store store-ios" href="https://apps.apple.com/us/app/liftradar-ski-resort-status/id6836206533">
-        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-        <span><small data-i18n>Download on the</small> <b>App Store</b></span>
-      </a>
-      <a class="store store-android" href="https://play.google.com/store/apps/details?id=eu.liftradar.app">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>
-        <span><small data-i18n>Get it on</small> <b>Google Play</b></span>
-      </a>
-    </div>
-    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span data-i18n>Made by <b>Miron</b></span></span>
+    <div class="footer-end">
+      <div class="stores">
+        <a class="store store-ios" href="https://apps.apple.com/us/app/liftradar-ski-resort-status/id6836206533">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>App Store</span>
+        </a>
+        <a class="store store-android" href="https://play.google.com/store/apps/details?id=eu.liftradar.app">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>Google Play</span>
+        </a>
+      </div>
+        <div class="made-by">
+        <a class="github" href="https://github.com/mironiasty/liftradar" aria-label="GitHub" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a class="author" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+          <span>Miron Pawlik</span></a>
+      </div>
+      </div>
   </footer>
 </main>
 <script src="/assets/common.js"></script>
