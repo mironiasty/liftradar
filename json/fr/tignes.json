@@ -9,23 +9,50 @@
     "lon": 6.9076
   },
   "website": "https://www.tignes.net",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.711764+01:00",
-  "status_from": "2026-11-16T13:40:38.287445+01:00",
+  "linked_area": {
+    "id": "tignes-val-d-isere",
+    "name": "Tignes - Val d'Isère",
+    "website": "https://www.tignes.net",
+    "members": [
+      "fr/tignes",
+      "fr/val-d-isere"
+    ]
+  },
+  "ski_region": null,
+  "status": "open",
+  "fetched_at": "2026-11-20T16:01:24.122159+01:00",
+  "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": null,
-    "condition": null,
-    "stations": []
+    "mountain_cm": 150,
+    "valley_cm": 70,
+    "fresh_cm": 40,
+    "last_snowfall": "2026-11-20",
+    "condition": "Fraîche",
+    "stations": [
+      {
+        "name": "Grande Motte",
+        "elevation_m": 3032,
+        "depth_cm": 150,
+        "fresh_cm": 40,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      },
+      {
+        "name": "Tignes Lac",
+        "elevation_m": 2100,
+        "depth_cm": 70,
+        "fresh_cm": 15,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 37
   },
   "slopes": {
-    "open": null,
+    "open": 10,
     "total": 82,
     "open_km": null,
     "total_km": 150
@@ -58,21 +85,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 7,
       "total": 43,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 3,
       "total": 21,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 18,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 19
     }
   },
@@ -103,6 +130,9 @@
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=tignes&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/Tignes-Val-d-isere",
+    "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/tignes/station-de-ski",
     "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-FR.json"
   ],
@@ -110,6 +140,18 @@
     "conditions": [
       {
         "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=tignes&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/Tignes-Val-d-isere",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/dynamicPoiData?lang=fr",
         "attribution_required": null
       },
       {
@@ -124,7 +166,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Client error '404 ' for url 'https://public.lumiplay.link/interactive-map/v1/map/name/Tignes_ValdIsere'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
-  ]
+  "errors": []
 }

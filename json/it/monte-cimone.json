@@ -9,8 +9,10 @@
     "lon": 10.7189
   },
   "website": "https://cimonesci.it",
+  "linked_area": null,
+  "ski_region": null,
   "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.709802+01:00",
+  "fetched_at": "2026-11-20T16:01:24.120536+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +24,45 @@
   },
   "lifts": {
     "open": 0,
-    "total": 20
+    "total": 14
   },
   "slopes": {
     "open": null,
-    "total": 25,
+    "total": 26,
     "open_km": null,
     "total_km": null
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 5
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": null,
+      "total": 26,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-04-07T14:00:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/emilie-romagne/cimone/station-de-ski"
+    "https://www.cimonesci.it/impianti-aperti/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.skiinfo.fr/emilie-romagne/cimone/station-de-ski",
+        "url": "https://www.cimonesci.it/impianti-aperti/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

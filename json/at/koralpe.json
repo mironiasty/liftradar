@@ -9,8 +9,10 @@
     "lon": 14.9564
   },
   "website": "https://www.koralpe-kaernten.at",
+  "linked_area": null,
+  "ski_region": null,
   "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:41.877724+01:00",
+  "fetched_at": "2026-11-20T16:01:28.552024+01:00",
   "status_from": "2026-10-28T21:37:10.921386+01:00",
   "snow": {
     "mountain_cm": null,
@@ -35,10 +37,16 @@
   "lifts_updated_at": "2026-10-28T17:17:11+01:00",
   "avalanche": null,
   "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
     "https://www.skiinfo.fr/carinthie/koralpe/station-de-ski"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/carinthie/koralpe/station-de-ski",
@@ -46,7 +54,5 @@
       }
     ]
   },
-  "errors": [
-    "kaernten: LookupError: no entry named Koralpe"
-  ]
+  "errors": []
 }

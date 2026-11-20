@@ -1,0 +1,57 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "zwardon-ski",
+  "country": "pl",
+  "name": "Zwardoń Ski",
+  "region": "Śląskie",
+  "location": {
+    "lat": 49.5076,
+    "lon": 18.995
+  },
+  "website": "https://www.zwardonski.pl",
+  "linked_area": null,
+  "ski_region": null,
+  "status": "no_report",
+  "fetched_at": "2026-11-20T16:01:24.122063+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 5
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://www.zwardonski.pl/stacja-narciarska/mapa-osrodka",
+    "https://openskimap.org/"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://www.zwardonski.pl/stacja-narciarska/mapa-osrodka",
+        "attribution_required": null
+      },
+      {
+        "url": "https://openskimap.org/",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

@@ -9,8 +9,19 @@
     "lon": 9.8161
   },
   "website": "https://www.corvatsch-diavolezza.ch",
+  "linked_area": null,
+  "ski_region": {
+    "id": "engadin-st-moritz",
+    "name": "Engadin St. Moritz",
+    "website": "https://www.engadin.ch",
+    "members": [
+      "ch/st-moritz-corviglia",
+      "ch/corvatsch",
+      "ch/diavolezza-lagalb"
+    ]
+  },
   "status": "open",
-  "fetched_at": "2026-11-20T13:40:35.707387+01:00",
+  "fetched_at": "2026-11-20T16:01:24.117879+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 5,
@@ -89,7 +100,7 @@
       "total_km": 19
     }
   },
-  "lifts_updated_at": "2026-11-20T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-20T16:01:00+01:00",
   "avalanche": {
     "region_id": "CH-7111",
     "region": "Corvatsch",

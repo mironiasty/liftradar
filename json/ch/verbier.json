@@ -9,8 +9,21 @@
     "lon": 7.2338
   },
   "website": "https://www.verbier.ch",
+  "linked_area": {
+    "id": "4-vallees",
+    "name": "4 Vallées",
+    "website": "https://www.4vallees.ch",
+    "members": [
+      "ch/verbier",
+      "ch/la-tzoumaz",
+      "ch/nendaz",
+      "ch/veysonnaz",
+      "ch/thyon"
+    ]
+  },
+  "ski_region": null,
   "status": "closed",
-  "fetched_at": "2026-11-20T13:40:35.708091+01:00",
+  "fetched_at": "2026-11-20T16:01:24.118398+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -30,7 +43,7 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 87,
+        "depth_cm": 85,
         "fresh_cm": 34,
         "temperature_c": null,
         "condition": null
@@ -99,7 +112,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-20T12:51:00+01:00",
+  "lifts_updated_at": "2026-11-20T16:02:00+01:00",
   "avalanche": {
     "region_id": "CH-4115",
     "region": "Martigny - Verbier",

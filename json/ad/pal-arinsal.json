@@ -9,8 +9,10 @@
     "lon": 1.476
   },
   "website": "https://www.palarinsal.com/",
+  "linked_area": null,
+  "ski_region": null,
   "status": "closed",
-  "fetched_at": "2026-11-20T13:40:35.716476+01:00",
+  "fetched_at": "2026-11-20T16:01:24.127561+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -69,36 +71,14 @@
     }
   },
   "lifts_updated_at": "2026-11-12T10:22:00+01:00",
-  "avalanche": {
-    "region_id": "AD-02",
-    "region": "Center Area",
-    "danger_level": null,
-    "danger": null,
-    "ratings": [
-      {
-        "level": "no_snow",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-19T00:00:00+01:00",
-    "valid_from": "2026-11-19T16:00:00+01:00",
-    "valid_until": "2026-11-20T15:59:59+01:00"
-  },
+  "avalanche": null,
   "sources": [
-    "https://www.palarinsal.com/ca/estacio/comunicat-neu",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-AD.json"
+    "https://www.palarinsal.com/ca/estacio/comunicat-neu"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.palarinsal.com/ca/estacio/comunicat-neu",
-        "attribution_required": null
-      },
-      {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-AD.json",
         "attribution_required": null
       }
     ],

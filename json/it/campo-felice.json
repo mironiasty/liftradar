@@ -9,8 +9,10 @@
     "lon": 13.465
   },
   "website": "https://www.campofelice.it/",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.709311+01:00",
+  "linked_area": null,
+  "ski_region": null,
+  "status": "closed",
+  "fetched_at": "2026-11-20T16:01:24.120509+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +24,54 @@
   },
   "lifts": {
     "open": 0,
-    "total": 15
+    "total": 13
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 24,
-    "open_km": null,
-    "total_km": null
+    "open_km": 0.0,
+    "total_km": 32
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 9
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 24,
+      "open_km": 0.0,
+      "total_km": 32
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/abruzzes/campo-felice/station-de-ski"
+    "https://www.campofelice.it/ita/impianti.php",
+    "https://www.campofelice.it/ita/piste.php"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.skiinfo.fr/abruzzes/campo-felice/station-de-ski",
+        "url": "https://www.campofelice.it/ita/impianti.php",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.campofelice.it/ita/piste.php",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

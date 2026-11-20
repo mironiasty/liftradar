@@ -9,8 +9,32 @@
     "lon": 11.8028
   },
   "website": "https://www.sanmartino.com",
+  "linked_area": null,
+  "ski_region": {
+    "id": "dolomiti-superski",
+    "name": "Dolomiti Superski",
+    "website": "https://www.dolomitisuperski.com",
+    "members": [
+      "it/cortina-d-ampezzo",
+      "it/kronplatz",
+      "it/alta-badia",
+      "it/val-gardena",
+      "it/seiser-alm",
+      "it/val-di-fassa",
+      "it/carezza",
+      "it/arabba-marmolada",
+      "it/3-zinnen-dolomiten",
+      "it/val-di-fiemme",
+      "it/obereggen",
+      "it/san-martino-di-castrozza",
+      "it/plose",
+      "it/gitschberg-jochtal",
+      "it/alpe-lusia-san-pellegrino",
+      "it/civetta"
+    ]
+  },
   "status": "closed",
-  "fetched_at": "2026-11-20T13:40:35.708403+01:00",
+  "fetched_at": "2026-11-20T16:01:24.118666+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -72,7 +96,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-20T13:00:09.120941+01:00",
+  "lifts_updated_at": "2026-11-20T16:00:10.287648+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

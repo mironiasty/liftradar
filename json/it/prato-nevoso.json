@@ -9,8 +9,19 @@
     "lon": 7.7856
   },
   "website": "https://pratonevoso.com/",
+  "linked_area": {
+    "id": "mondole-ski",
+    "name": "Mondolè Ski",
+    "website": "https://www.pratonevoso.com",
+    "members": [
+      "it/prato-nevoso",
+      "it/frabosa-soprana",
+      "it/artesina"
+    ]
+  },
+  "ski_region": null,
   "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.709357+01:00",
+  "fetched_at": "2026-11-20T16:01:24.120544+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +33,7 @@
   },
   "lifts": {
     "open": 0,
-    "total": 11
+    "total": 5
   },
   "slopes": {
     "open": null,
@@ -30,21 +41,53 @@
     "open_km": null,
     "total_km": null
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-04-12T16:07:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/piemont/prato-nevoso/station-de-ski"
+    "https://www.pratonevoso.com/inverno/live/aperture/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.skiinfo.fr/piemont/prato-nevoso/station-de-ski",
+        "url": "https://www.pratonevoso.com/inverno/live/aperture/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

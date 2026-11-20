@@ -9,8 +9,10 @@
     "lon": 13.5161
   },
   "website": "https://www.ovindolimagnola.it/",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.709519+01:00",
+  "linked_area": null,
+  "ski_region": null,
+  "status": "closed",
+  "fetched_at": "2026-11-20T16:01:24.120525+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,12 +24,12 @@
   },
   "lifts": {
     "open": 0,
-    "total": 11
+    "total": 12
   },
   "slopes": {
-    "open": null,
-    "total": 21,
-    "open_km": null,
+    "open": 0,
+    "total": 24,
+    "open_km": 0.0,
     "total_km": null
   },
   "lifts_by_type": null,
@@ -35,16 +37,16 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/abruzzes/ovindoli/station-de-ski"
+    "https://www.ovindolimagnola.it/live.html"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.skiinfo.fr/abruzzes/ovindoli/station-de-ski",
+        "url": "https://www.ovindolimagnola.it/live.html",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

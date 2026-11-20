@@ -9,8 +9,10 @@
     "lon": 6.8448
   },
   "website": "https://www.queyras-montagne.com",
+  "linked_area": null,
+  "ski_region": null,
   "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.712243+01:00",
+  "fetched_at": "2026-11-20T16:01:24.122572+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,10 +22,50 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts": {
+    "open": 0,
+    "total": 32
+  },
+  "slopes": {
+    "open": null,
+    "total": 77,
+    "open_km": null,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 24
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 41,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 30,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": {
     "region_id": "FR-17",
@@ -51,12 +93,27 @@
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false",
+    "https://public.lumiplay.link/interactive-map/v1/map/name/queyras",
+    "https://public.lumiplay.link/interactive-map/v1/map/6679db48-755d-4519-ab59-4ccc53ab76de/dynamicPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/6679db48-755d-4519-ab59-4ccc53ab76de/staticPoiData?lang=fr",
     "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-FR.json"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=queyras-alpin&lang=fr&isSoir=false",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/queyras",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/6679db48-755d-4519-ab59-4ccc53ab76de/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/6679db48-755d-4519-ab59-4ccc53ab76de/staticPoiData?lang=fr",
         "attribution_required": null
       },
       {

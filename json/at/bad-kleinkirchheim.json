@@ -9,8 +9,10 @@
     "lon": 13.7984
   },
   "website": "https://www.badkleinkirchheim.com",
+  "linked_area": null,
+  "ski_region": null,
   "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:41.877550+01:00",
+  "fetched_at": "2026-11-20T16:01:28.551854+01:00",
   "status_from": "2026-11-11T11:32:47.498268+01:00",
   "snow": {
     "mountain_cm": null,
@@ -76,12 +78,17 @@
   },
   "lifts_updated_at": "2026-11-01T16:12:16+01:00",
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
-  "errors": [
-    "kaernten: LookupError: no entry named Bad Kleinkirchheim"
-  ]
+  "errors": []
 }

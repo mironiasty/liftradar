@@ -1,0 +1,140 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "grindelwald-first",
+  "country": "ch",
+  "name": "Grindelwald-First",
+  "region": "Bern",
+  "location": {
+    "lat": 46.6493,
+    "lon": 8.0655
+  },
+  "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
+  "linked_area": null,
+  "ski_region": {
+    "id": "jungfrau-ski-region",
+    "name": "Jungfrau Ski Region",
+    "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
+    "members": [
+      "ch/grindelwald-wengen",
+      "ch/grindelwald-first",
+      "ch/muerren-schilthorn"
+    ]
+  },
+  "status": "closed",
+  "fetched_at": "2026-11-20T16:01:24.118514+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": [
+      {
+        "name": "First",
+        "elevation_m": 2168,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Grindelwald",
+        "elevation_m": 1034,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 29,
+    "open_km": 0.0,
+    "total_km": null
+  },
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "other": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-20T12:20:08+01:00",
+  "avalanche": {
+    "region_id": "CH-1242",
+    "region": "Grindelwald",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "considerable",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "new_snow"
+    ],
+    "published_at": "2026-11-20T08:00:00+01:00",
+    "valid_from": "2026-11-20T08:00:00+01:00",
+    "valid_until": "2026-11-20T17:00:00+01:00"
+  },
+  "sources": [
+    "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+  ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+        "attribution_required": null
+      },
+      {
+        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
+  "errors": []
+}

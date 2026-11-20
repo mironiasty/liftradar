@@ -9,8 +9,10 @@
     "lon": 10.6645
   },
   "website": "https://multipassabetone.it/",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T13:40:35.709230+01:00",
+  "linked_area": null,
+  "ski_region": null,
+  "status": "closed",
+  "fetched_at": "2026-11-20T16:01:24.120517+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +27,67 @@
     "total": 17
   },
   "slopes": {
-    "open": null,
-    "total": 25,
-    "open_km": null,
-    "total_km": null
+    "open": 0,
+    "total": 27,
+    "open_km": 0.0,
+    "total_km": 43
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 10
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 16,
+      "open_km": 0.0,
+      "total_km": 33
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/toscane/abetone/station-de-ski"
+    "https://www.multipassabetone.it/stato-impianti",
+    "https://www.multipassabetone.it/stato-piste"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.skiinfo.fr/toscane/abetone/station-de-ski",
+        "url": "https://www.multipassabetone.it/stato-impianti",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.multipassabetone.it/stato-piste",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }
