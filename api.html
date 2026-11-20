@@ -149,6 +149,10 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
       is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code>
       where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as
       plain URLs, and will be removed.</li>
+    <li data-i18n><code>linked_area</code> is the ski area a resort shares with others, linked by lifts and runs (Les 3
+      Vallées), and <code>ski_region</code> the pass or region it shares without a link (Dolomiti Superski); both are
+      <code>null</code> for the other resorts. Each lists every member as <code>&lt;country&gt;/&lt;id&gt;</code> in
+      <code>members</code>, so the group can be shown as one from its members' files.</li>
     <li data-i18n>Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.</li>
   </ul>
   <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>
