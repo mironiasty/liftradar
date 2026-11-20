@@ -124,6 +124,13 @@ in the table: no 2025/26 report, not on OnTheSnow, or an OnTheSnow station that 
 | Abetone                                 | multipassabetone.it/stato-impianti                      | lifts listed, state probably as a class: check |
 | San Domenico                            | san-domenico.com/inverno/info-live/situazione-impianti/ | states, lift names not in the text: check      |
 
+**Done 2026-11-20:** Campo Felice (campofelice.it/ita/impianti.php and piste.php), Abetone, Ovindoli (counters
+only), Monte Cimone (cimonesci.it/impianti-aperti, with an update time) and Mondolè Ski's Prato Nevoso and
+Frabosa Soprana (one page, with the bulletin's time) are read from their pages. Still to do: San Domenico;
+Macugnaga (macugnagamonterosaski.com/impianti lists only its four all-season lifts outside the winter);
+Artesina (its own bulletin, not found). Rechecked in the browser: Roccaraso has only a static map,
+Bardonecchia's "impianti aperti" page is empty before the season.
+
 ## Harder
 
 - **digisnow.app widget**, loaded in the browser: Val Cenis (Haute Maurienne), Orcières, Chamrousse,
