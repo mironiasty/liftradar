@@ -27,6 +27,17 @@ async function loadIndex() {
   return response.json();
 }
 
+// The groups of resorts listed separately (linked ski areas, ski regions), by the id a member's linked_area and
+// ski_region give.
+const GROUPS_URL = "/json/groups.json";
+
+/** @returns {Promise<Groups["groups"]>} */
+async function loadGroups() {
+  const response = await fetch(GROUPS_URL, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`${GROUPS_URL}: HTTP ${response.status}`);
+  return (await response.json()).groups;
+}
+
 // Same path layout as liftradar-fetcher's models.resort_path() and history_path().
 /** @param {{ country: string, id: string }} r */
 const resortPath = (r) => `/json/${r.country}/${r.id}.json`;

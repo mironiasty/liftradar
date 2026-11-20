@@ -1,4 +1,4 @@
-// index.html: one row per resort from json/index.json, with a name search,
+// index.html: one row per resort from json/index.json, with a search by name (or that of its ski area or region),
 // country, region and status filters, and sortable columns. Rows start with the most open slopes first.
 
 const tbody = document.querySelector("tbody");
@@ -14,6 +14,10 @@ const favoritesSection = document.getElementById("favorites");
 const favoriteCards = document.getElementById("fav-cards");
 let rows = [];
 const values = new Map();
+// What the search looks in, by row: the resort's name and those of its linked ski area and ski region (from
+// json/groups.json), so "3 Vallées" or "Dolomiti Superski" finds their resorts. Folded, as the query is.
+/** @type {Map<HTMLElement, string>} */
+const searchText = new Map();
 // The order rows start in, and leave out of the address: the most open slopes first.
 const DEFAULT_KEY = "slopes_open",
   DEFAULT_ASCENDING = false;
@@ -146,7 +150,9 @@ function filter() {
   for (const tr of rows) {
     const v = values.get(tr);
     const matches =
-      v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
+      (searchText.get(tr) ?? "").includes(query) &&
+      (!country || v.country === country) &&
+      (!region || v.regionName === region);
     if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
     tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
     if (!tr.hidden) shown++;
@@ -371,14 +377,17 @@ async function miniMap(resorts) {
 // The gondolas under the table's head till the rows come.
 const tableLoader = liftLoader();
 document.querySelector("table")?.after(tableLoader);
-loadIndex()
-  .then((index) => {
+// Without the groups, the search looks only in the names.
+Promise.all([loadIndex(), loadGroups().catch(() => ({}))])
+  .then(([index, groups]) => {
     document.getElementById("updated").textContent = updatedText(index);
     for (const r of index.resorts) byKey.set(resortKey(r), r);
     showFavorites();
     rows = index.resorts.map((r) => {
       const tr = row(r);
       values.set(tr, sortValues(r));
+      const groupNames = [r.linked_area, r.ski_region].map((id) => (id && groups[id]?.name) || "");
+      searchText.set(tr, fold([r.name, ...groupNames].join("\n")));
       return tr;
     });
     const savedSort = saved.get("sort") ?? "";

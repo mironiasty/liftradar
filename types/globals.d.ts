@@ -20,6 +20,8 @@ type SourceRef = import("./resort").SourceRef;
 type Station = import("./resort").Station;
 type Avalanche = import("./resort").Avalanche;
 type DangerRating = import("./resort").DangerRating;
+// json/groups.json.
+type Groups = import("./groups").GroupsOfResortsListedSeparately;
 // history/<country>/<id>.json.
 type ResortHistory = import("./history").PastRunsOfOneResortForGraphs;
 // json/stats.json.
