@@ -393,20 +393,24 @@ function data(r) {
     ),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, t("Open|file"))),
   );
+  return section;
+}
+
+/** @param {Resort} r */
+function sources(r) {
   const { conditions, resort_info } = sourceDetails(r);
   /** @type {[string, SourceRef[]][]} */
   const groups = [
     [t("Current conditions"), conditions],
     [t("Resort information"), resort_info],
   ];
-  for (const [title, refs] of groups) {
-    if (!refs.length) continue;
-    section.append(
-      el("div", { class: "meta", style: "margin-top:12px" }, title),
+  const parts = groups
+    .filter(([, refs]) => refs.length)
+    .flatMap(([title, refs], i) => [
+      el("div", i ? { class: "meta", style: "margin-top:12px" } : { class: "meta" }, title),
       el("ul", { class: "sources" }, ...refs.map((ref) => sourceItem(ref))),
-    );
-  }
-  return section;
+    ]);
+  return parts.length ? el("section", { class: "card data" }, el("h2", {}, t("Sources")), ...parts) : null;
 }
 
 // The groups the resort is in, from its linked_area and ski_region: a card for each, under the map, with the
@@ -717,10 +721,11 @@ async function show() {
                 "section",
                 { class: "card" },
                 el("h2", {}, t("Official website")),
-                el("a", { href: r.website, rel: "noopener", style: "word-break:break-all" }, r.website),
+                el("a", { class: "external", href: r.website, rel: "noopener" }, r.website),
               ),
             ]
           : []),
+        ...[sources(r)].filter((card) => card !== null),
         data(r),
       ),
     ),

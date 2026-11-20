@@ -59,7 +59,7 @@
   .facts { font-size: 1.05rem; }
 
   .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 24px; margin-top: 24px; align-items: start; }
-  .side { position: sticky; top: 16px; display: grid; gap: 16px; }
+  .side { position: sticky; top: 16px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .card { border-radius: var(--radius); padding: 18px 20px; background: var(--bg); box-shadow: var(--shadow); }
   .stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
   /* Narrow screens: one column of everything, the map right after the key numbers and the data last. */
@@ -155,7 +155,13 @@
     border-radius: 999px; background: var(--bg); color: var(--fg); font: inherit; font-size: .85rem; cursor: pointer; text-decoration: none; }
   .url button:hover, .url a:hover { border-color: var(--accent); color: var(--accent); }
   button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .sources { margin: 8px 0 0; padding-left: 18px; font-size: .85rem; word-break: break-all; }
+  .sources { margin: 8px 0 0; padding-left: 18px; font-size: .85rem; }
+  /* Links to other sites: one line, cut with "…", and an arrow out of a box at the end (in the padding, so it isn't cut). */
+  .sources a, a.external { position: relative; display: inline-block; box-sizing: border-box; max-width: 100%; padding-right: 1.15em; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap; vertical-align: top; }
+  .sources a::after, a.external::after { content: ""; position: absolute; right: 0; top: 50%; width: .8em; height: .8em;
+    transform: translateY(-50%); background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 2h5v5M14 2 7 9M12 9.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3.5'/%3E%3C/svg%3E") center / contain no-repeat; }
   .empty { color: var(--muted); font-size: .9rem; margin: 0; }
   /* The resort's linked ski area and ski region, with their other members. */
   .group .group-name { display: block; margin-bottom: 10px; }
