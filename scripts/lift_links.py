@@ -2,9 +2,10 @@
 draw them by status. Each linked lift or run gets `item`, "<country>/<id>/<item id>": the resort whose
 json/<country>/<id>.details.json lists it, and its id there.
 
-There's no shared id: the details come from the resorts' Intermaps slope maps, which have no coordinates. An
-item is matched to the OpenStreetMap lines in and around its resort (within NEARBY_KM of the resort's own lifts)
-by its number (`ref`, or the code its name starts with), its name with lift-type words left out, its lift type or
+There's no shared id: the details come from the resorts' Intermaps slope maps and from the sources that list lifts
+and slopes one by one (infosnow, Lumiplan, ...; their ids are made from the name when the source has none), none of
+which have coordinates. An item is matched to the OpenStreetMap lines in and around its resort (within NEARBY_KM of
+the resort's own lifts) by its number (`ref`, or the code its name starts with), its name with lift-type words left out, its lift type or
 slope difficulty and, for lifts, the length and the altitudes of its stations. The best pairs go first, each
 lift and slope once; a slope takes every OSM segment with its name and number. About 85% of the lifts and 78%
 of the slopes match, nearly all correctly (docs/plans/2026-11-13-lift-details.md in liftradar-fetcher).
