@@ -29,6 +29,8 @@ OPEN_M = 70  # strips narrower than twice this removed (a lift alone across a va
 ISLAND_M2 = 50_000  # and pieces smaller than this,
 HOLE_M2 = 500_000  # holes smaller than this filled,
 OUTLINE_SIMPLIFY_M = 15  # and simplified
+LINK_END_M = 250  # a lift's stretch outside the outline links two of its parts when it ends this near both
+# (a station can lie that far out: the outline loses a lift's thin end with the strips)
 # Rack railways (OpenSkiData's "railway": the Bayerische Zugspitzbahn, the Tramway du Mont-Blanc, the
 # Wendelsteinbahn) keep their resort in the tiles, for a GPS track that rides them, but aren't counted
 # among its lifts or drawn in its outline: they're mapped as dozens of segments, most of them far below
@@ -270,8 +272,10 @@ def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict
             pieces.append(g if g.geom_type in ("Polygon", "MultiPolygon") else g.buffer(RUN_BUFFER_M))
         geom = shape_outline(shapely.union_all(pieces))
         km = sum(to_m(runs[j]["_geom"]).length for j in downhill if runs[j]["_geom"].geom_type == "LineString") / 1000
+        lines = [to_m(LineString([c[:2] for c in lifts[i]["_coords"]])) for i in lift_ids]
         point = map_point(here, geom, [lifts[i]["_coords"] for i in lift_ids], to_m, to_deg)
         outline = json.loads(json.dumps(mapping(to_deg(geom))), parse_float=lambda f: round(float(f), 5))
+        bridges = [[[round(x, 5), round(y, 5)] for x, y in to_deg(b).coords] for b in links(geom, lines)]
         names = sorted({areas[a]["name"] for i in lift_ids if (a := lifts[i]["_home"]) and areas[a]["name"]})
         features.append(
             {
@@ -283,6 +287,7 @@ def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict
                     "runs": len(downhill),
                     "km": round(km, 1),
                     "areas": names,
+                    **({"links": bridges} if bridges else {}),
                 },
                 "geometry": outline,
             }
@@ -300,6 +305,26 @@ def shape_outline(geom):
     if not parts:
         parts = sorted(getattr(closed, "geoms", [closed]), key=lambda p: -p.area)[:1]
     return fill_holes(shapely.union_all(parts)).simplify(OUTLINE_SIMPLIFY_M)
+
+
+def links(geom, lines: list) -> list:
+    """The stretches of the lifts outside the outline that join two of its parts (a cable car
+    across a valley, removed by shape_outline), so the parts show as one area: each must end
+    near two different parts, not out in the open or back on the part it left."""
+    parts = getattr(geom, "geoms", [geom])
+    if len(parts) < 2:
+        return []
+    found = []
+    for line in lines:
+        outside = line.difference(geom)
+        for piece in getattr(outside, "geoms", [outside]):
+            if piece.is_empty or piece.geom_type != "LineString":
+                continue
+            ends = [Point(piece.coords[0]), Point(piece.coords[-1])]
+            near = [{i for i, p in enumerate(parts) if p.distance(e) <= LINK_END_M} for e in ends]
+            if near[0] and near[1] and len(near[0] | near[1]) > 1:
+                found.append(piece)
+    return found
 
 
 def fill_holes(geom):

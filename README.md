@@ -291,7 +291,9 @@ once a day; its own vector tiles may not be used directly.
 - `ski/v1/resorts.geojson`: a feature per liftradar resort with lifts there, `id` `<country>/<id>`:
   its outline (the geometry), `point` (`[lon, lat]`, its marker), and `lifts`, `runs` (downhill),
   `km` (of downhill runs drawn as lines) and `areas` (the OpenSkiData areas' names) as OpenSkiData
-  has them, which may differ from the resort's own counts.
+  has them, which may differ from the resort's own counts; `links`, when the outline has several parts,
+  the stretches of its lifts outside it that join two of them (`[[lon, lat], …]` each), which the map
+  draws in the area's colour until the lifts show, so a cable car across a valley doesn't leave two patches.
 - `ski/v1/10/{x}/{y}.json`: XYZ tiles at zoom 10 (about 25–40 km), only those with something in them
   (a 404 means nothing). `areas`: the OpenSkiData areas touching the tile (`name`, `lr`: the liftradar
   resort most of its lifts belong to, `osm`, `wd`, `p`: a point in it, `outline`). `lifts`: all but
@@ -328,7 +330,7 @@ end within 50 m (two rounds, for a piste leading to another). Rack railways (the
 the Tramway du Mont-Blanc, the Wendelsteinbahn) keep their resort in the tiles but aren't counted among its
 lifts or drawn in its outline: they're mapped as dozens of segments, mostly far below the area. The outline is the
 resort's lifts and downhill pistes widened, merged and smoothed, without strips narrower than 140 m
-(a lone cable car across a valley) or pieces under 0.05 km²; the point is the resort's `location`
+(a lone cable car across a valley: such a lift becomes one of its `links`) or pieces under 0.05 km²; the point is the resort's `location`
 when that's inside, and otherwise the bottom station nearest to it. Wrong matches are fixed in
 `scripts/ski_overrides.json`: `claims` and `ignore` add or remove a resort's areas (by an OSM id of
 their sources, Wikidata id or exact name), and `points` move the point a shared area is split by
