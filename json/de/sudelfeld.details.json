@@ -1,0 +1,371 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "sudelfeld",
+  "country": "de",
+  "fetched_at": "2026-11-21T13:40:33.626821+01:00",
+  "updated_at": "2026-11-21T03:30:53+01:00",
+  "source": "https://winter.intermaps.com/sudelfeld/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_14594",
+      "ref": null,
+      "name": "B Kitzlahner-4er-Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1050,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1240,
+      "top_m": 1505
+    },
+    {
+      "id": "L_14595",
+      "ref": null,
+      "name": "C Waldkopf-6er-Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 673,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1029,
+      "top_m": 1254
+    },
+    {
+      "id": "L_14596",
+      "ref": null,
+      "name": "J Mittleres Sudelfeldlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 400,
+      "capacity_per_hour": 800,
+      "bottom_m": 1200,
+      "top_m": 1285
+    },
+    {
+      "id": "L_14599",
+      "ref": null,
+      "name": "F Rosengassenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1140,
+      "capacity_per_hour": 800,
+      "bottom_m": 1080,
+      "top_m": 1420
+    },
+    {
+      "id": "L_14600",
+      "ref": null,
+      "name": "H Vogelsanglift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 300,
+      "capacity_per_hour": 800,
+      "bottom_m": 1473,
+      "top_m": 1563
+    },
+    {
+      "id": "L_14601",
+      "ref": null,
+      "name": "I Wallerlift Monte Gogo",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 190,
+      "capacity_per_hour": 700,
+      "bottom_m": 1401,
+      "top_m": 1440
+    },
+    {
+      "id": "L_14602",
+      "ref": null,
+      "name": "L Doppelschlepplift Wedellift 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 270,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1090,
+      "top_m": 1148
+    },
+    {
+      "id": "L_14603",
+      "ref": null,
+      "name": "M Hotellift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 320,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1090,
+      "top_m": 1170
+    },
+    {
+      "id": "L_14604",
+      "ref": null,
+      "name": "E Schöngrat-3er-Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1250,
+      "capacity_per_hour": 2200,
+      "bottom_m": 1110,
+      "top_m": 1428
+    },
+    {
+      "id": "L_14638",
+      "ref": null,
+      "name": "A Schwebelift Bayrischzell",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1450,
+      "capacity_per_hour": 450,
+      "bottom_m": 870,
+      "top_m": 1240
+    },
+    {
+      "id": "L_14639",
+      "ref": null,
+      "name": "N Kinderland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 150,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_14640",
+      "ref": null,
+      "name": "D Sudelfeldkopf-8er-Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1294,
+      "capacity_per_hour": 3500,
+      "bottom_m": 1095,
+      "top_m": 1438
+    },
+    {
+      "id": "L_42469",
+      "ref": null,
+      "name": "L Doppelschlepplift Wedellift II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 270,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_14615",
+      "ref": null,
+      "name": "1a Waldkopf Fis",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 910
+    },
+    {
+      "id": "R_14616",
+      "ref": null,
+      "name": "1b Waldkopf Variante",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 925
+    },
+    {
+      "id": "R_14617",
+      "ref": null,
+      "name": "2 Westabfahrt Waldkopf",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1150
+    },
+    {
+      "id": "R_14618",
+      "ref": null,
+      "name": "3 Familienabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1940
+    },
+    {
+      "id": "R_14619",
+      "ref": null,
+      "name": "4 Sauhöll",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "R_14620",
+      "ref": null,
+      "name": "5 Hotelhang",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 310
+    },
+    {
+      "id": "R_14621",
+      "ref": null,
+      "name": "6 Bröselalmschuss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 480
+    },
+    {
+      "id": "R_14622",
+      "ref": null,
+      "name": "7 Wedellift 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "R_14623",
+      "ref": null,
+      "name": "7a Wedellift 2",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "R_14624",
+      "ref": null,
+      "name": "9 Herrenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_14625",
+      "ref": null,
+      "name": "10 Damenabfahrt 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_14626",
+      "ref": null,
+      "name": "11 Damenabfahrt 2",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "R_14627",
+      "ref": null,
+      "name": "11a Mittleres Sudelfeld",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 460
+    },
+    {
+      "id": "R_14628",
+      "ref": null,
+      "name": "18 Grafenherbergschuss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_14629",
+      "ref": null,
+      "name": "12 Waller Mahd",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1830
+    },
+    {
+      "id": "R_14630",
+      "ref": null,
+      "name": "13 Vogelsang",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 380
+    },
+    {
+      "id": "R_14631",
+      "ref": null,
+      "name": "14 Rosengasse",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "R_14632",
+      "ref": null,
+      "name": "15 Schönauer",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_14633",
+      "ref": null,
+      "name": "15a Rosengasse Skiweg",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 855
+    },
+    {
+      "id": "R_14634",
+      "ref": null,
+      "name": "16 Jaga Mahd",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_14635",
+      "ref": null,
+      "name": "16a Weiße Perle",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 620
+    },
+    {
+      "id": "R_14636",
+      "ref": null,
+      "name": "17 Sudelfeldkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1660
+    },
+    {
+      "id": "R_14637",
+      "ref": null,
+      "name": "17a Sudelfeldkopf-Ost",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1520
+    },
+    {
+      "id": "R_14641",
+      "ref": null,
+      "name": "8 Stockhang",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1910
+    },
+    {
+      "id": "R_14642",
+      "ref": null,
+      "name": "17b Sudelfeldkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "R_14643",
+      "ref": null,
+      "name": "19 Oswald Piste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "R_14659",
+      "ref": null,
+      "name": "9a Einfahrt Talabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 100
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "goldeck",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:42:01.072087+01:00",
+  "updated_at": "2026-11-12T16:58:22+01:00",
+  "source": "https://winter.intermaps.com/goldeck/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_25255",
+      "ref": null,
+      "name": "3 6er-SL Bärnbissbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1425,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1490,
+      "top_m": 1910
+    },
+    {
+      "id": "L_25256",
+      "ref": null,
+      "name": "4 6er-Gipfelbahn Skyliner",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1048,
+      "capacity_per_hour": null,
+      "bottom_m": 387,
+      "top_m": null
+    },
+    {
+      "id": "L_25279",
+      "ref": null,
+      "name": "2 8er-EUB Talbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3100,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_25281",
+      "ref": null,
+      "name": "9 Kinderland I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 238,
+      "capacity_per_hour": null,
+      "bottom_m": 41,
+      "top_m": null
+    },
+    {
+      "id": "L_25282",
+      "ref": null,
+      "name": "10 Kinderland II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "capacity_per_hour": null,
+      "bottom_m": 33,
+      "top_m": null
+    },
+    {
+      "id": "L_25325",
+      "ref": null,
+      "name": "7 Zauberteppich",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_25257",
+      "ref": null,
+      "name": "1 Rennstrecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 530
+    },
+    {
+      "id": "R_25258",
+      "ref": null,
+      "name": "2 Familienabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1070
+    },
+    {
+      "id": "R_25259",
+      "ref": null,
+      "name": "3 Bärnbissabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "R_25260",
+      "ref": null,
+      "name": "4 Gipfelliftabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_25262",
+      "ref": null,
+      "name": "6 Skiroute Eggeralm",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_25276",
+      "ref": null,
+      "name": "3a Bärnbissabfahrt NEU",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 305
+    },
+    {
+      "id": "R_25280",
+      "ref": "5a",
+      "name": "5a Eggeralmabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "R_25283",
+      "ref": null,
+      "name": "10 Kinderland I & II, Anfänger I & II",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 635
+    },
+    {
+      "id": "R_25286",
+      "ref": null,
+      "name": "3b Zubringer Gipfelbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 275
+    },
+    {
+      "id": "R_25287",
+      "ref": null,
+      "name": "11 Green Run",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "R_25291",
+      "ref": "7",
+      "name": "7 Seeblickpiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_25297",
+      "ref": "2a",
+      "name": "2a Ochsenalmpiste",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_25299",
+      "ref": "4b",
+      "name": "4b Fichtenschleuse",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_25301",
+      "ref": "7a",
+      "name": "7a Skiweg Goldeckbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_25302",
+      "ref": "11a",
+      "name": "11a GreenRun Goldeckbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_25303",
+      "ref": "7b",
+      "name": "7b Skiweg Bärnbiss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_25304",
+      "ref": "11b",
+      "name": "11b GreenRun Wald",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_25307",
+      "ref": "13",
+      "name": "13 Skiroute Steilhang",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_25308",
+      "ref": "S1",
+      "name": "S1 Kälberriegel",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_25309",
+      "ref": "S1",
+      "name": "S1 Nord",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_25352",
+      "ref": "8",
+      "name": "8 Dorfweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_25353",
+      "ref": "9",
+      "name": "9 Krendlmarboden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1010
+    }
+  ]
+}

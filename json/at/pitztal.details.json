@@ -1,0 +1,435 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "pitztal",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.618683+01:00",
+  "updated_at": "2026-11-20T15:22:45+01:00",
+  "source": "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_18242",
+      "ref": null,
+      "name": "Gletscherexpress",
+      "type": "funicular",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 1600,
+      "bottom_m": 1740,
+      "top_m": 2840
+    },
+    {
+      "id": "L_18243",
+      "ref": null,
+      "name": "Wildspitzbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2185,
+      "bottom_m": 2840,
+      "top_m": 3440
+    },
+    {
+      "id": "L_18244",
+      "ref": null,
+      "name": "Mittelbergbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2100,
+      "bottom_m": 2688,
+      "top_m": 3273
+    },
+    {
+      "id": "L_18245",
+      "ref": null,
+      "name": "Gletscherseebahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2777,
+      "bottom_m": 2688,
+      "top_m": 2840
+    },
+    {
+      "id": "L_18246",
+      "ref": null,
+      "name": "Brunnenkogel",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 1400,
+      "bottom_m": 2840,
+      "top_m": 3200
+    },
+    {
+      "id": "L_18247",
+      "ref": null,
+      "name": "Mittagskogel",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 328,
+      "bottom_m": 2840,
+      "top_m": 2895
+    },
+    {
+      "id": "L_18248",
+      "ref": null,
+      "name": "Förderbänder",
+      "type": "carpet",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": 2840,
+      "top_m": 2855
+    },
+    {
+      "id": "L_18249",
+      "ref": null,
+      "name": "Rifflsee",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1570,
+      "bottom_m": 1680,
+      "top_m": 2300
+    },
+    {
+      "id": "L_18250",
+      "ref": null,
+      "name": "Grubenkopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1550,
+      "bottom_m": 2200,
+      "top_m": 2880
+    },
+    {
+      "id": "L_18251",
+      "ref": null,
+      "name": "SunnaAlm Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2050,
+      "bottom_m": 2150,
+      "top_m": 2350
+    },
+    {
+      "id": "L_18252",
+      "ref": null,
+      "name": "Muttenkopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1984,
+      "bottom_m": 2125,
+      "top_m": 2345
+    },
+    {
+      "id": "L_18253",
+      "ref": null,
+      "name": "Hirschtallift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 600,
+      "bottom_m": 2230,
+      "top_m": 2272
+    },
+    {
+      "id": "L_18314",
+      "ref": null,
+      "name": "Mandarfen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_18254",
+      "ref": "1",
+      "name": "Rifflsee Talabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 15000
+    },
+    {
+      "id": "R_18255",
+      "ref": "2",
+      "name": "Muttenkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 969
+    },
+    {
+      "id": "R_18256",
+      "ref": "3",
+      "name": "Hüttenabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 865
+    },
+    {
+      "id": "R_18257",
+      "ref": "4",
+      "name": "Almrosen",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1089
+    },
+    {
+      "id": "R_18258",
+      "ref": "5",
+      "name": "Steinbock",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 832
+    },
+    {
+      "id": "R_18259",
+      "ref": "6",
+      "name": "Sunnalm",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 544
+    },
+    {
+      "id": "R_18260",
+      "ref": "7",
+      "name": "Hirschtal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1615
+    },
+    {
+      "id": "R_18261",
+      "ref": "7a",
+      "name": "Hirschtal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 525
+    },
+    {
+      "id": "R_18262",
+      "ref": "7b",
+      "name": "Hirschtal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 525
+    },
+    {
+      "id": "R_18263",
+      "ref": "9",
+      "name": "Grubengrad",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2890
+    },
+    {
+      "id": "R_18264",
+      "ref": "10",
+      "name": "Grubenkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3389
+    },
+    {
+      "id": "R_18265",
+      "ref": "10a",
+      "name": "Plodersee",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 853
+    },
+    {
+      "id": "R_18266",
+      "ref": "11",
+      "name": "Buckelpiste",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "R_18267",
+      "ref": "20",
+      "name": "Mittagskogel",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 3400
+    },
+    {
+      "id": "R_18268",
+      "ref": "21",
+      "name": "Wisbi-Run",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1970
+    },
+    {
+      "id": "R_18269",
+      "ref": "22",
+      "name": "Brunnenkogel",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1565
+    },
+    {
+      "id": "R_18270",
+      "ref": "23",
+      "name": "Longline",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 3400
+    },
+    {
+      "id": "R_18271",
+      "ref": "24",
+      "name": "Pitz-Live",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1475
+    },
+    {
+      "id": "R_18272",
+      "ref": "25",
+      "name": "Gletschersee",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 3350
+    },
+    {
+      "id": "R_18273",
+      "ref": "26",
+      "name": "Wildspitz",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 1460
+    },
+    {
+      "id": "R_18275",
+      "ref": "28",
+      "name": "Panorama",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 3410
+    },
+    {
+      "id": "R_18276",
+      "ref": "29",
+      "name": "Downhill",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 2157
+    },
+    {
+      "id": "R_18277",
+      "ref": "33",
+      "name": "Schweizer Weg",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3910
+    },
+    {
+      "id": "R_18278",
+      "ref": "34",
+      "name": "Hoher Rain",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4401
+    },
+    {
+      "id": "R_18279",
+      "ref": "36",
+      "name": "Mittelberg",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 5305
+    },
+    {
+      "id": "R_18286",
+      "ref": "1a",
+      "name": "Talstation Muttenkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3026
+    },
+    {
+      "id": "R_18290",
+      "ref": "8",
+      "name": "Seekogel",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 275
+    },
+    {
+      "id": "R_18298",
+      "ref": "35",
+      "name": "35 - Rot",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_18310",
+      "ref": null,
+      "name": "Grubenkar - Freeride",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 9000
+    },
+    {
+      "id": "R_18316",
+      "ref": null,
+      "name": "Mittagskogel",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 10000
+    },
+    {
+      "id": "R_18329",
+      "ref": null,
+      "name": "Tourenabfahrt - Griestal",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 10000
+    },
+    {
+      "id": "R_18330",
+      "ref": null,
+      "name": "Tourenabfahrt - Taschachtal",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 12000
+    },
+    {
+      "id": "R_18910",
+      "ref": null,
+      "name": "Mandarfen",
+      "difficulty": "easy",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_18911",
+      "ref": "8",
+      "name": "Seekogel",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 275
+    },
+    {
+      "id": "R_139983",
+      "ref": null,
+      "name": "Ziehweg",
+      "difficulty": "difficult",
+      "status": "unknown",
+      "length_m": null
+    }
+  ]
+}

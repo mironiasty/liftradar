@@ -1,0 +1,603 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "avoriaz",
+  "country": "fr",
+  "fetched_at": "2026-11-21T13:40:33.625654+01:00",
+  "updated_at": "2026-11-21T13:40:28+01:00",
+  "source": "https://winter.intermaps.com/portes_du_soleil/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_58662",
+      "ref": null,
+      "name": "TD6 LAC-INTRETS",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1706,
+      "capacity_per_hour": 2800,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58663",
+      "ref": null,
+      "name": "TD6 GRANDES COMBES",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1950,
+      "capacity_per_hour": 2640,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58665",
+      "ref": null,
+      "name": "TK ARARE 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58666",
+      "ref": null,
+      "name": "TK ARARE 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58686",
+      "ref": null,
+      "name": "TD4 CHOUCAS",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1323,
+      "capacity_per_hour": 2400,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58687",
+      "ref": null,
+      "name": "TD6 FORNET",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1629,
+      "capacity_per_hour": 3000,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58689",
+      "ref": null,
+      "name": "TK CHAVANETTE 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58690",
+      "ref": null,
+      "name": "TK CHAVANETTE 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58691",
+      "ref": null,
+      "name": "TS3 CUBORE AVORIAZ",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 500,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58703",
+      "ref": null,
+      "name": "TK ECOLES 1",
+      "type": "drag_lift",
+      "status": "preparation",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58712",
+      "ref": null,
+      "name": "TD6 SERAUSSAIX",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58714",
+      "ref": null,
+      "name": "TD4 ZORE",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": 1300,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58715",
+      "ref": null,
+      "name": "TD6 PROCLOU",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": 1620,
+      "capacity_per_hour": 3400,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58716",
+      "ref": null,
+      "name": "TK BARON",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58726",
+      "ref": null,
+      "name": "TLC ARDENT",
+      "type": "gondola",
+      "status": "preparation",
+      "length_m": 1460,
+      "capacity_per_hour": 2400,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58727",
+      "ref": null,
+      "name": "TD4 LINDARETS",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": 1268,
+      "capacity_per_hour": 2400,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58728",
+      "ref": null,
+      "name": "TD4 MOSSETTES",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": 2376,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58729",
+      "ref": null,
+      "name": "TD6 BROCHAUX",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1006,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58730",
+      "ref": null,
+      "name": "TD6 CASES",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58731",
+      "ref": null,
+      "name": "TD6 CHAUX FLEURIE",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": 1148,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58732",
+      "ref": null,
+      "name": "TD6 LECHERE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1029,
+      "capacity_per_hour": 1800,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58733",
+      "ref": null,
+      "name": "TD6 PROLAYS",
+      "type": "chairlift",
+      "status": "preparation",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58734",
+      "ref": null,
+      "name": "TK BARMETTES",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58770",
+      "ref": null,
+      "name": "TPH PRODAINS 3S",
+      "type": "gondola",
+      "status": "preparation",
+      "length_m": 1571,
+      "capacity_per_hour": 2400,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58771",
+      "ref": null,
+      "name": "TK PRODAINS",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58772",
+      "ref": null,
+      "name": "TS3 PLATEAU",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 730,
+      "capacity_per_hour": 1200,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58773",
+      "ref": null,
+      "name": "TS6 TOUR",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58774",
+      "ref": null,
+      "name": "TK CHAPELLE",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_58775",
+      "ref": null,
+      "name": "TK DES TRASHERS",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_58669",
+      "ref": null,
+      "name": "CREUX DE LA NEIGE",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58670",
+      "ref": null,
+      "name": "BLEUE D'ARARE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58671",
+      "ref": null,
+      "name": "BLEUE DU LAC",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58672",
+      "ref": null,
+      "name": "LE CROT",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58673",
+      "ref": null,
+      "name": "STADE D'ARARE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58674",
+      "ref": null,
+      "name": "JEAN VUARNET",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58675",
+      "ref": null,
+      "name": "STADE TETE BOEUFS",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58677",
+      "ref": null,
+      "name": "ARETE DES INTRETS",
+      "difficulty": "difficult",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58678",
+      "ref": null,
+      "name": "COMBE DU MACHON",
+      "difficulty": "difficult",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58679",
+      "ref": null,
+      "name": "COMBETTE",
+      "difficulty": "difficult",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58680",
+      "ref": null,
+      "name": "COUPE DU MONDE",
+      "difficulty": "difficult",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58693",
+      "ref": null,
+      "name": "ALLER CHAVANETTE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58695",
+      "ref": null,
+      "name": "BLEUE CHAVANETTE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58696",
+      "ref": null,
+      "name": "FORNET",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58698",
+      "ref": null,
+      "name": "RETOUR CHAVANETTE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58701",
+      "ref": null,
+      "name": "PATENAILLE",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58720",
+      "ref": null,
+      "name": "PROCLOU 1 GLISSE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58721",
+      "ref": null,
+      "name": "SERAUSSAIX",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58742",
+      "ref": null,
+      "name": "LECHERETTE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58743",
+      "ref": null,
+      "name": "ABRICOTINE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58744",
+      "ref": null,
+      "name": "BLUE VELVET",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58746",
+      "ref": null,
+      "name": "COMBE A FLORET",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58748",
+      "ref": null,
+      "name": "GRAND PLAN",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58749",
+      "ref": null,
+      "name": "LA CRETE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58750",
+      "ref": null,
+      "name": "PARCHETS",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58752",
+      "ref": null,
+      "name": "STADE FRANCOIS DIDES",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58753",
+      "ref": null,
+      "name": "CHAUX FLEURIE",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58754",
+      "ref": null,
+      "name": "CUBORE MONTRIOND",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58755",
+      "ref": null,
+      "name": "TANNES",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58756",
+      "ref": null,
+      "name": "VAUTNA",
+      "difficulty": "intermediate",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58777",
+      "ref": null,
+      "name": "LE Q'MONT",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58778",
+      "ref": null,
+      "name": "LES GERNES",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58779",
+      "ref": null,
+      "name": "PROCLOU",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    },
+    {
+      "id": "R_58781",
+      "ref": null,
+      "name": "ZORE",
+      "difficulty": "easy",
+      "status": "preparation",
+      "length_m": null
+    }
+  ]
+}

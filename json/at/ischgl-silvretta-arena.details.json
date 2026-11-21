@@ -1,0 +1,1230 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ischgl-silvretta-arena",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:41:36.045451+01:00",
+  "updated_at": "2026-11-21T13:32:39+01:00",
+  "source": "https://winter.intermaps.com/silvretta_arena/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_32800",
+      "ref": "13",
+      "name": "A1 Silvrettabahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1954,
+      "capacity_per_hour": 3440,
+      "bottom_m": 1360,
+      "top_m": 2321
+    },
+    {
+      "id": "L_32801",
+      "ref": null,
+      "name": "A2 Pardatschgratbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3424,
+      "capacity_per_hour": null,
+      "bottom_m": 1365,
+      "top_m": 2616
+    },
+    {
+      "id": "L_32802",
+      "ref": null,
+      "name": "A3 Fimbabahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3847,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1371,
+      "top_m": 2321
+    },
+    {
+      "id": "L_32805",
+      "ref": null,
+      "name": "B1 Velillbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1464,
+      "capacity_per_hour": null,
+      "bottom_m": 2321,
+      "top_m": 2621
+    },
+    {
+      "id": "L_32806",
+      "ref": null,
+      "name": "B10 Förderband Viderböden",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 80,
+      "capacity_per_hour": null,
+      "bottom_m": 2314,
+      "top_m": 2323
+    },
+    {
+      "id": "L_32807",
+      "ref": null,
+      "name": "B2 Flimjochbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1797,
+      "capacity_per_hour": null,
+      "bottom_m": 2302,
+      "top_m": 2756
+    },
+    {
+      "id": "L_32808",
+      "ref": null,
+      "name": "B3 Idjochbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1797,
+      "capacity_per_hour": null,
+      "bottom_m": 2302,
+      "top_m": 2763
+    },
+    {
+      "id": "L_32809",
+      "ref": null,
+      "name": "B4 Greitspitzlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 548,
+      "capacity_per_hour": null,
+      "bottom_m": 2753,
+      "top_m": 2874
+    },
+    {
+      "id": "L_32810",
+      "ref": null,
+      "name": "B5 Sonnenbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 646,
+      "capacity_per_hour": null,
+      "bottom_m": 2306,
+      "top_m": 2434
+    },
+    {
+      "id": "L_32811",
+      "ref": null,
+      "name": "B6 Übungslift Velill",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 375,
+      "capacity_per_hour": null,
+      "bottom_m": 2320,
+      "top_m": 2371
+    },
+    {
+      "id": "L_32812",
+      "ref": null,
+      "name": "B7 Übungslift Viderböden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "capacity_per_hour": null,
+      "bottom_m": 2316,
+      "top_m": 2348
+    },
+    {
+      "id": "L_32813",
+      "ref": null,
+      "name": "B8 Gratbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 970,
+      "capacity_per_hour": null,
+      "bottom_m": 2307,
+      "top_m": 2625
+    },
+    {
+      "id": "L_32814",
+      "ref": null,
+      "name": "B9 Förderband Übungsareal",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 80,
+      "capacity_per_hour": null,
+      "bottom_m": 2324,
+      "top_m": 2331
+    },
+    {
+      "id": "L_32816",
+      "ref": null,
+      "name": "C1 Höllbodenbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1265,
+      "capacity_per_hour": 4200,
+      "bottom_m": 2141,
+      "top_m": 2379
+    },
+    {
+      "id": "L_32817",
+      "ref": null,
+      "name": "C2 Höllkarbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1650,
+      "capacity_per_hour": null,
+      "bottom_m": 2141,
+      "top_m": 2468
+    },
+    {
+      "id": "L_32818",
+      "ref": null,
+      "name": "C3 Sassgalunbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 348,
+      "capacity_per_hour": null,
+      "bottom_m": 2141,
+      "top_m": 2280
+    },
+    {
+      "id": "L_32819",
+      "ref": null,
+      "name": "C4 Nachtweidebahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1645,
+      "capacity_per_hour": null,
+      "bottom_m": 2089,
+      "top_m": 2446
+    },
+    {
+      "id": "L_32820",
+      "ref": null,
+      "name": "C5 Lange Wandbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1545,
+      "capacity_per_hour": null,
+      "bottom_m": 2221,
+      "top_m": 2853
+    },
+    {
+      "id": "L_32822",
+      "ref": null,
+      "name": "D1 Palinkopfbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1577,
+      "capacity_per_hour": null,
+      "bottom_m": 2413,
+      "top_m": 2853
+    },
+    {
+      "id": "L_32823",
+      "ref": null,
+      "name": "D2 Zeblasbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1481,
+      "capacity_per_hour": null,
+      "bottom_m": 2416,
+      "top_m": 2791
+    },
+    {
+      "id": "L_32826",
+      "ref": null,
+      "name": "E1 Paznauner Thayabahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1256,
+      "capacity_per_hour": null,
+      "bottom_m": 1973,
+      "top_m": 2272
+    },
+    {
+      "id": "L_32827",
+      "ref": null,
+      "name": "E2 Höllspitzbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1792,
+      "capacity_per_hour": null,
+      "bottom_m": 1994,
+      "top_m": 2639
+    },
+    {
+      "id": "L_32828",
+      "ref": null,
+      "name": "E3 Bodenalpbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 726,
+      "capacity_per_hour": null,
+      "bottom_m": 1834,
+      "top_m": 2150
+    },
+    {
+      "id": "L_32829",
+      "ref": null,
+      "name": "E4 Gampenbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2416,
+      "capacity_per_hour": null,
+      "bottom_m": 1924,
+      "top_m": 2848
+    },
+    {
+      "id": "L_32830",
+      "ref": null,
+      "name": "E5 Piz Val Grondabahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2452,
+      "capacity_per_hour": null,
+      "bottom_m": 2295,
+      "top_m": 2812
+    },
+    {
+      "id": "L_32836",
+      "ref": null,
+      "name": "F1 Velilleckbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1948,
+      "capacity_per_hour": null,
+      "bottom_m": 2048,
+      "top_m": 2620
+    },
+    {
+      "id": "L_32837",
+      "ref": null,
+      "name": "F2 Pardoramabahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1600,
+      "capacity_per_hour": null,
+      "bottom_m": 1889,
+      "top_m": 2624
+    },
+    {
+      "id": "L_32846",
+      "ref": null,
+      "name": "G1 Übungslift Mathon",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 449,
+      "capacity_per_hour": null,
+      "bottom_m": 1463,
+      "top_m": 1558
+    },
+    {
+      "id": "L_32847",
+      "ref": null,
+      "name": "G2 Schwarzwasserlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 681,
+      "capacity_per_hour": 723,
+      "bottom_m": 1697,
+      "top_m": 1687
+    },
+    {
+      "id": "L_32858",
+      "ref": null,
+      "name": "L2 Luftseilbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2269,
+      "capacity_per_hour": null,
+      "bottom_m": 1789,
+      "top_m": 2511
+    },
+    {
+      "id": "L_32861",
+      "ref": null,
+      "name": "M1 Grivaleabahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1532,
+      "capacity_per_hour": null,
+      "bottom_m": 2314,
+      "top_m": 2657
+    },
+    {
+      "id": "L_32862",
+      "ref": null,
+      "name": "M2 Mullerbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 792,
+      "capacity_per_hour": null,
+      "bottom_m": 2306,
+      "top_m": 2509
+    },
+    {
+      "id": "L_32864",
+      "ref": null,
+      "name": "N1 Flimsattelbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2695,
+      "capacity_per_hour": null,
+      "bottom_m": 2265,
+      "top_m": 2754
+    },
+    {
+      "id": "L_32865",
+      "ref": null,
+      "name": "N2 Visnitzbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1208,
+      "capacity_per_hour": null,
+      "bottom_m": 2261,
+      "top_m": 2633
+    },
+    {
+      "id": "L_32866",
+      "ref": null,
+      "name": "N3 Milolift (Babylift)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 282,
+      "capacity_per_hour": 792,
+      "bottom_m": 2264,
+      "top_m": 2289
+    },
+    {
+      "id": "L_32867",
+      "ref": null,
+      "name": "N4 Viderjochbahn 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1549,
+      "capacity_per_hour": null,
+      "bottom_m": 2266,
+      "top_m": 2609
+    },
+    {
+      "id": "L_32868",
+      "ref": null,
+      "name": "N5 Alp Trider Ecklift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 580,
+      "capacity_per_hour": null,
+      "bottom_m": 2377,
+      "top_m": 2510
+    },
+    {
+      "id": "L_32869",
+      "ref": null,
+      "name": "N6 Alp Trider Sattelbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1024,
+      "capacity_per_hour": null,
+      "bottom_m": 2276,
+      "top_m": 2505
+    },
+    {
+      "id": "L_32870",
+      "ref": null,
+      "name": "N7 Alp Trida Förderband",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 30,
+      "capacity_per_hour": null,
+      "bottom_m": 2277,
+      "top_m": 2278
+    },
+    {
+      "id": "L_32873",
+      "ref": null,
+      "name": "O1 Greitspitzbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1407,
+      "capacity_per_hour": null,
+      "bottom_m": 2458,
+      "top_m": 2872
+    },
+    {
+      "id": "L_32874",
+      "ref": null,
+      "name": "O2 Blais Grondalift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 775,
+      "capacity_per_hour": null,
+      "bottom_m": 2456,
+      "top_m": 2598
+    },
+    {
+      "id": "L_32875",
+      "ref": null,
+      "name": "O4 Viderjochbahn 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1299,
+      "capacity_per_hour": null,
+      "bottom_m": 2462,
+      "top_m": 2756
+    },
+    {
+      "id": "L_32878",
+      "ref": null,
+      "name": "P1 Musellalift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 400,
+      "capacity_per_hour": null,
+      "bottom_m": 1840,
+      "top_m": 1920
+    },
+    {
+      "id": "L_32879",
+      "ref": null,
+      "name": "P2 Förderband Musella 1",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 57,
+      "capacity_per_hour": null,
+      "bottom_m": 1835,
+      "top_m": 1848
+    },
+    {
+      "id": "L_32880",
+      "ref": null,
+      "name": "P3 Förderband Musella 2",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 57,
+      "capacity_per_hour": null,
+      "bottom_m": 1835,
+      "top_m": 1848
+    },
+    {
+      "id": "L_34464",
+      "ref": null,
+      "name": "L1 Twinliner",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2269,
+      "capacity_per_hour": null,
+      "bottom_m": 1789,
+      "top_m": 2511
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_32713",
+      "ref": "1",
+      "name": "1 Idalp - middle station Silvrettabahn A1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 17000
+    },
+    {
+      "id": "R_32714",
+      "ref": "1",
+      "name": "1 middle station Silvrettabahn A1 - Ischgl",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32715",
+      "ref": "10",
+      "name": "10 Flimjoch - Idalp",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32716",
+      "ref": "11",
+      "name": "11 Idjoch - Idalp",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32717",
+      "ref": "12",
+      "name": "12 Idjoch - Höllboden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "R_32718",
+      "ref": "12a",
+      "name": "12a Idjoch - Höllkar",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_32719",
+      "ref": "13",
+      "name": "13 Greitspitze - Idalp",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32720",
+      "ref": "13a",
+      "name": "13 start piste eleven",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32721",
+      "ref": "14",
+      "name": "14 Greitspitze - Idjoch",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32722",
+      "ref": "14a",
+      "name": "14a Greitspitz - Höllkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32723",
+      "ref": "14b",
+      "name": "14b Greitspitze - Höllkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32724",
+      "ref": "14c",
+      "name": "14c Greitspitze - Höllkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32725",
+      "ref": "15",
+      "name": "15 Greitspitze - Höllkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32726",
+      "ref": "1a",
+      "name": "1a valley run - Pardatschgrat",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_32727",
+      "ref": "2",
+      "name": "2 Idalp - Höllboden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32728",
+      "ref": "20",
+      "name": "20 Palinkopf - Palinkopfbahn valley",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32729",
+      "ref": "21",
+      "name": "21 Zeblasbahn mountain- Zeblasbahn valley",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32730",
+      "ref": "22",
+      "name": "22 Palinkopf - Palinkopfbahn valley",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32731",
+      "ref": "23",
+      "name": "23 Palinkopf valley - Höllboden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32732",
+      "ref": "24",
+      "name": "24 Höllkarbahn mountain - Höllkarbahn valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32733",
+      "ref": "25",
+      "name": "25 Sassgalun - Höllboden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32734",
+      "ref": "26",
+      "name": "26 Höllkar",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32735",
+      "ref": "26a",
+      "name": "26a Höllkar",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_32736",
+      "ref": "2a",
+      "name": "2a Idalp - Nachtweide valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32737",
+      "ref": "2b",
+      "name": "2b ideal for beginners",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32738",
+      "ref": "3",
+      "name": "3 Idalp - middle station Fimba",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32739",
+      "ref": "30",
+      "name": "30 Sassgalun - Paznauner Thaya",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32740",
+      "ref": "31",
+      "name": "31 Sassgalun - Paznauner Thaya",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32741",
+      "ref": "32",
+      "name": "32 Höllspitz - Restaurant Schwarzwand",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32742",
+      "ref": "33",
+      "name": "33 Palinkopf - Paznauner Thaya",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32743",
+      "ref": "34",
+      "name": "34 Höllspitz - Bodenalpbahn Bergstation",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32744",
+      "ref": "35",
+      "name": "35 Höllspitz - Paznauner Thaya",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32745",
+      "ref": "36",
+      "name": "36 Paznauner Thaya - Bodenalp",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32746",
+      "ref": "37",
+      "name": "37 Bodenalpbahn mountain - A3 middle station",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 9000
+    },
+    {
+      "id": "R_32747",
+      "ref": "38",
+      "name": "38 Höllspitzbahn mountain - Gampen",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32748",
+      "ref": "39",
+      "name": "39 Palinkopf - Gampenalp",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32749",
+      "ref": "3a",
+      "name": "3a Idalp - middle station A3",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32750",
+      "ref": "4",
+      "name": "4 F1 mountain - middle station A2",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_32751",
+      "ref": "40",
+      "name": "40 Palinkopf - Gampenalp",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "R_32752",
+      "ref": "40a",
+      "name": "40a Palinkopf - Gampenalp",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32753",
+      "ref": "40a",
+      "name": "40a Gampenalp",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32754",
+      "ref": "40b",
+      "name": "40b Gampenbahn valley - Bodenalpe",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32755",
+      "ref": "40c",
+      "name": "40c Gampenalp",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32756",
+      "ref": "41",
+      "name": "41 Palinkopf - Piz Val Gronda Tal",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32757",
+      "ref": "41",
+      "name": "41 Palinkopf - Piz Val Gronda Tal",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32758",
+      "ref": "42",
+      "name": "42 Val Gronda mountain- Val Gronda valley",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32759",
+      "ref": "42",
+      "name": "42 Piz Val Gronda mountain - Piz Val Gronda valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32760",
+      "ref": "4a",
+      "name": "4a Velilleckbahn mountain - Velilleckbahn valley",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32761",
+      "ref": "5",
+      "name": "5 Pardatschgrat Westabf. - Middlestation A2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_32762",
+      "ref": "5a",
+      "name": "5a Pardatschgrat",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_32763",
+      "ref": "6",
+      "name": "6 Pardatschgrat - Idalp",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32764",
+      "ref": "60",
+      "name": "60 Alp Trida - Samnaun Laret",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "R_32765",
+      "ref": "61",
+      "name": "61 Grivaleabahn valley - Samnaun Laret",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32766",
+      "ref": "62",
+      "name": "62 Viderjoch - Alp Trida",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32767",
+      "ref": "62a",
+      "name": "62a Viderjoch - Alp Trida",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32768",
+      "ref": "62b",
+      "name": "62b Viderjoch - Alp Trida",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32769",
+      "ref": "63",
+      "name": "63 Idjoch - Alp Trida",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32770",
+      "ref": "64",
+      "name": "64 Idjoch - Salaas",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32771",
+      "ref": "65",
+      "name": "65 Visnitzbahn mountain - Alp Trida",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32772",
+      "ref": "65a",
+      "name": "65a Visnitzbahn mountain - Alp Trida",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32773",
+      "ref": "66",
+      "name": "66 Visnitzbahn mountain - Alp Bella",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32774",
+      "ref": "67",
+      "name": "67 Mullerbahn mountain - Alp Trida",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32775",
+      "ref": "68",
+      "name": "68 Muller mountain - Muller valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32776",
+      "ref": "68a",
+      "name": "68a Muller mountain - Muller valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32777",
+      "ref": "68b",
+      "name": "68b Muller mountain station - Alp Trida",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32778",
+      "ref": "69",
+      "name": "69 Alp Trida Eck - Alp Trida",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32779",
+      "ref": "69a",
+      "name": "69a Alp Trida Eck - Alp Trida",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32780",
+      "ref": "69b",
+      "name": "69b Alp Trida Eck - Alp Trida",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32781",
+      "ref": "6a",
+      "name": "6a Pardatschgrat - Velill",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_32782",
+      "ref": "7",
+      "name": "7 Velilltal - Velilleckbahn valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_32783",
+      "ref": "70",
+      "name": "70 Greitspitze - Salaas",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32784",
+      "ref": "70a",
+      "name": "70a Greitspitze - Salaas",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32785",
+      "ref": "71",
+      "name": "71 Viderjochbahn mountain - Salaas",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32787",
+      "ref": "72",
+      "name": "72 Greitspitze - 72a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32788",
+      "ref": "72a",
+      "name": "72a Idjoch - Salaas",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32789",
+      "ref": "76",
+      "name": "76 Grivaleabahn mountain - Gravaleabahn valley",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32790",
+      "ref": "7a",
+      "name": "7a Velill valley",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32791",
+      "ref": "7a",
+      "name": "7a Velilleckbahn valley - Pardatschgrat valley",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32792",
+      "ref": "8",
+      "name": "8 Velillbahn mountain - Idalp",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32793",
+      "ref": "80",
+      "name": "80 slope to Samnaun village",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 10000
+    },
+    {
+      "id": "R_32794",
+      "ref": "80a",
+      "name": "80a Samnaun valley – valley station Ravaisch",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_32795",
+      "ref": "80b",
+      "name": "80b Samnaun Dorf – Talstation Ravaisch",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_32796",
+      "ref": "80c",
+      "name": "80c Zeblasbahn mountain station - Samnaun",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32797",
+      "ref": "81",
+      "name": "81 Zeblasbahn mountain - Samnaun",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_32798",
+      "ref": "9",
+      "name": "9 Flimjoch Mountain - Idalp",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_32900",
+      "ref": "SP",
+      "name": "Mathon",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_32901",
+      "ref": "SP",
+      "name": "Musella",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_39362",
+      "ref": "SR",
+      "name": "Neue rote Piste (80-41)",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_39464",
+      "ref": "34",
+      "name": "34 Höllspitz - Bodenalpbahn Bergstation",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

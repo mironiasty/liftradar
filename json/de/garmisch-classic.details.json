@@ -1,0 +1,413 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "garmisch-classic",
+  "country": "de",
+  "fetched_at": "2026-11-21T13:40:33.626863+01:00",
+  "updated_at": "2026-11-08T17:04:01+01:00",
+  "source": "https://winter.intermaps.com/zugspitzbahn_garmisch/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_33632",
+      "ref": null,
+      "name": "Kreuzeckbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2304,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_33633",
+      "ref": null,
+      "name": "Alpspitzbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3800,
+      "capacity_per_hour": 500,
+      "bottom_m": 750,
+      "top_m": 2050
+    },
+    {
+      "id": "L_33677",
+      "ref": null,
+      "name": "Bayerische Zugspitzbahn",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34066",
+      "ref": null,
+      "name": "Hochalmbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 750,
+      "capacity_per_hour": 900,
+      "bottom_m": 1700,
+      "top_m": 2050
+    },
+    {
+      "id": "L_34368",
+      "ref": null,
+      "name": "H Hexenkesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34369",
+      "ref": null,
+      "name": "K Längenfelderbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34370",
+      "ref": null,
+      "name": "B Kreuzwankl-Ski-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34371",
+      "ref": null,
+      "name": "G Kandahar-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34372",
+      "ref": null,
+      "name": "A Adamswiesenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34374",
+      "ref": null,
+      "name": "C1 Übungslift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34375",
+      "ref": null,
+      "name": "C2 Rimmler-Moos-Lift I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34376",
+      "ref": null,
+      "name": "C3 Rimmler-Moos-Lift II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34377",
+      "ref": null,
+      "name": "C4 Kinderland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34378",
+      "ref": null,
+      "name": "E Trögllift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34379",
+      "ref": null,
+      "name": "Hausbergbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2031,
+      "capacity_per_hour": 2400,
+      "bottom_m": 740,
+      "top_m": 1340
+    },
+    {
+      "id": "L_34381",
+      "ref": null,
+      "name": "I Kreuzeckzubringer",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34382",
+      "ref": null,
+      "name": "J Bernadeinlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34384",
+      "ref": null,
+      "name": "L Osterfelderkopflift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34385",
+      "ref": null,
+      "name": "Wankbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3000,
+      "capacity_per_hour": 900,
+      "bottom_m": 740,
+      "top_m": 1750
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_34386",
+      "ref": "1",
+      "name": "1 Kochelberg-Abfahrt oben",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34387",
+      "ref": "1",
+      "name": "1 Kochelberg-Abfahrt unten",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34388",
+      "ref": "10",
+      "name": "10 Kreuzjoch-Hexenkessel Skiweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34389",
+      "ref": "11",
+      "name": "11 Hexenkessel",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34390",
+      "ref": "12",
+      "name": "12 Oberer Skiweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34391",
+      "ref": "13",
+      "name": "13 Mittlerer Skiweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34392",
+      "ref": "14",
+      "name": "14 Rimmlermoos-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34393",
+      "ref": "15",
+      "name": "15 Osterfelder-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34394",
+      "ref": "16",
+      "name": "16 Bernadein-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34395",
+      "ref": "17",
+      "name": "17 Längenfelder Abfahrt I",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34396",
+      "ref": "18",
+      "name": "18 Längenfelder Abfahrt II",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34397",
+      "ref": "19",
+      "name": "19 Hochalmweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34398",
+      "ref": "2",
+      "name": "2 Horn-Abfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34399",
+      "ref": "3",
+      "name": "3 Standard-Tonihütten-Abfahrt",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34400",
+      "ref": "4",
+      "name": "4 Olympia Abfahrt oben",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34401",
+      "ref": "4",
+      "name": "4 Olympia Abfahrt unten",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34402",
+      "ref": "5a",
+      "name": "5a Kandahar-Abfahrt oben",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34403",
+      "ref": "5a",
+      "name": "5a Kandahar-Abfahrt unten",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34404",
+      "ref": "5b",
+      "name": "5b Kandahar-Abfahrt oben",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34405",
+      "ref": "5b",
+      "name": "5b Kandahar-Abfahrt unten",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34406",
+      "ref": "6",
+      "name": "6 Bayernhaus-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34407",
+      "ref": "7",
+      "name": "7 Kreuzwankl-Abfahrten",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34408",
+      "ref": "8",
+      "name": "8 Trögllifthang",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34409",
+      "ref": "9",
+      "name": "9 Kreuzwankl-Umfahrung",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

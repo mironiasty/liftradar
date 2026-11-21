@@ -1,0 +1,312 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "stuhleck",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619327+01:00",
+  "updated_at": "2026-11-18T16:13:52+01:00",
+  "source": "https://winter.intermaps.com/stuhleck/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_14901",
+      "ref": null,
+      "name": "[A] Stuhleckbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2733,
+      "capacity_per_hour": null,
+      "bottom_m": 782,
+      "top_m": 1320
+    },
+    {
+      "id": "L_14902",
+      "ref": null,
+      "name": "[B] Promibahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1721,
+      "capacity_per_hour": null,
+      "bottom_m": 875,
+      "top_m": 1386
+    },
+    {
+      "id": "L_14903",
+      "ref": null,
+      "name": "[E] Nachtpiste (17:30 - 20:30 Uhr)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 603,
+      "capacity_per_hour": null,
+      "bottom_m": 839,
+      "top_m": 1000
+    },
+    {
+      "id": "L_14904",
+      "ref": null,
+      "name": "[F] Schieferwiese I+II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 639,
+      "capacity_per_hour": null,
+      "bottom_m": 940,
+      "top_m": 1103
+    },
+    {
+      "id": "L_14905",
+      "ref": null,
+      "name": "[G] Familienlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 397,
+      "capacity_per_hour": null,
+      "bottom_m": 892,
+      "top_m": 972
+    },
+    {
+      "id": "L_14906",
+      "ref": null,
+      "name": "[D] Weißenelfbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1811,
+      "capacity_per_hour": null,
+      "bottom_m": 1301,
+      "top_m": 1639
+    },
+    {
+      "id": "L_14907",
+      "ref": null,
+      "name": "[H] Minilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 126,
+      "capacity_per_hour": null,
+      "bottom_m": 882,
+      "top_m": 891
+    },
+    {
+      "id": "L_14908",
+      "ref": null,
+      "name": "[K] Verbindungslift Sonnenlift",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 54,
+      "capacity_per_hour": null,
+      "bottom_m": 1005,
+      "top_m": 1015
+    },
+    {
+      "id": "L_14909",
+      "ref": null,
+      "name": "[L] Skischullift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 135,
+      "capacity_per_hour": null,
+      "bottom_m": 795,
+      "top_m": 826
+    },
+    {
+      "id": "L_14910",
+      "ref": null,
+      "name": "[C] Steinbachalmbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1393,
+      "capacity_per_hour": null,
+      "bottom_m": 1355,
+      "top_m": 1774
+    },
+    {
+      "id": "L_14911",
+      "ref": null,
+      "name": "[E] Sonnenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 603,
+      "capacity_per_hour": null,
+      "bottom_m": 839,
+      "top_m": 1000
+    },
+    {
+      "id": "L_14915",
+      "ref": null,
+      "name": "[M] Tellerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 153,
+      "capacity_per_hour": null,
+      "bottom_m": 875,
+      "top_m": 903
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_14878",
+      "ref": "1b",
+      "name": "1b Stuhleck-Abfahrt-Standard",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_14879",
+      "ref": "3b",
+      "name": "3b Promi-Skiweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "R_14880",
+      "ref": "4",
+      "name": "4 Sonnenlift",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "R_14881",
+      "ref": "5",
+      "name": "5 Familienlift-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "R_14882",
+      "ref": "6",
+      "name": "6 Minilift-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "R_14883",
+      "ref": "7",
+      "name": "7 Skiweg Familienlift - Schieferwiese",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_14884",
+      "ref": "8",
+      "name": "8 Verbindung Schieferwiese - Sonnenlift - Promibahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_14885",
+      "ref": "9",
+      "name": "9 Verbindung Promibahn bis Familienlift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_14886",
+      "ref": "10",
+      "name": "10 Ganzeben-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_14887",
+      "ref": "10a",
+      "name": "10a Ganzeben-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_14888",
+      "ref": "11",
+      "name": "11 Alm-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_14889",
+      "ref": "12",
+      "name": "12 Weißenelf-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_14893",
+      "ref": "1",
+      "name": "1 Stuhleck-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2350
+    },
+    {
+      "id": "R_14894",
+      "ref": "1a",
+      "name": "1a Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2050
+    },
+    {
+      "id": "R_14895",
+      "ref": "1b",
+      "name": "1b Stuhleck-Abfahrt-Standard",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "R_14896",
+      "ref": "1c",
+      "name": "1c Skiweg-Rodelbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_14897",
+      "ref": "2",
+      "name": "2 Schieferwiese",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_14898",
+      "ref": "3",
+      "name": "3 FIS-Abfahrt-Kaltenbach",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2350
+    },
+    {
+      "id": "R_14899",
+      "ref": "3a",
+      "name": "3a Promi-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1550
+    },
+    {
+      "id": "R_14980",
+      "ref": null,
+      "name": "Übungspiste Skischullift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_14981",
+      "ref": null,
+      "name": "Übungspiste Tellerlift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

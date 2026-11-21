@@ -1,0 +1,1280 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "zillertal-arena",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:41:32.818495+01:00",
+  "updated_at": "2026-11-21T13:41:06+01:00",
+  "source": "https://winter.intermaps.com/zillertalarena/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_603164",
+      "ref": null,
+      "name": "2er Sonnalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1701,
+      "capacity_per_hour": 1113,
+      "bottom_m": 1313,
+      "top_m": 1836
+    },
+    {
+      "id": "L_603163",
+      "ref": null,
+      "name": "2er Arbiskogel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 502,
+      "capacity_per_hour": 1446,
+      "bottom_m": 1591,
+      "top_m": 1834
+    },
+    {
+      "id": "L_60383",
+      "ref": null,
+      "name": "4er Filzsteinbahn Speedy",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1350,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1647,
+      "top_m": 1964
+    },
+    {
+      "id": "L_603122",
+      "ref": null,
+      "name": "6er Karspitz X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1589,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1699,
+      "top_m": 2217
+    },
+    {
+      "id": "L_603123",
+      "ref": null,
+      "name": "6er Hanser X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1571,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1735,
+      "top_m": 2246
+    },
+    {
+      "id": "L_603127",
+      "ref": null,
+      "name": "6er Kreuzjoch X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1255,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2042,
+      "top_m": 2408
+    },
+    {
+      "id": "L_60334",
+      "ref": null,
+      "name": "6er Krummbach X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1838,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1369,
+      "top_m": 1982
+    },
+    {
+      "id": "L_60331",
+      "ref": null,
+      "name": "6er Ebenfeld X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1370,
+      "capacity_per_hour": 2500,
+      "bottom_m": 1784,
+      "top_m": 2079
+    },
+    {
+      "id": "L_60336",
+      "ref": null,
+      "name": "6er Fussalm X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1667,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1524,
+      "top_m": 1924
+    },
+    {
+      "id": "L_60386",
+      "ref": null,
+      "name": "Duxer 6er Bubble",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1181,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1685,
+      "top_m": 1991
+    },
+    {
+      "id": "L_60389",
+      "ref": null,
+      "name": "Plattenkogel X-Press II",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1560,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1695,
+      "top_m": 2040
+    },
+    {
+      "id": "L_6036",
+      "ref": null,
+      "name": "6er Larmach",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1157,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1977,
+      "top_m": 2302
+    },
+    {
+      "id": "L_60385",
+      "ref": null,
+      "name": "Duxer X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2600,
+      "bottom_m": 1692,
+      "top_m": 2002
+    },
+    {
+      "id": "L_6033",
+      "ref": null,
+      "name": "6er Mitterleger",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1772,
+      "top_m": 2151
+    },
+    {
+      "id": "L_603131",
+      "ref": null,
+      "name": "6er Kreuzwiesn-X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2524,
+      "capacity_per_hour": 1800,
+      "bottom_m": 1851,
+      "top_m": 2160
+    },
+    {
+      "id": "L_60335",
+      "ref": null,
+      "name": "6er Moseltret-X-Press",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 646,
+      "capacity_per_hour": 2409,
+      "bottom_m": 1371,
+      "top_m": 1544
+    },
+    {
+      "id": "L_60388",
+      "ref": null,
+      "name": "Plattenkogel X-Press I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 963,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1470,
+      "top_m": 1719
+    },
+    {
+      "id": "L_60333",
+      "ref": null,
+      "name": "Teufeltal",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2750,
+      "bottom_m": 2058,
+      "top_m": 2280
+    },
+    {
+      "id": "L_603128",
+      "ref": null,
+      "name": "8er Sesselbahn Kapauns",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1936,
+      "capacity_per_hour": 2940,
+      "bottom_m": 1905,
+      "top_m": 2502
+    },
+    {
+      "id": "L_603129",
+      "ref": null,
+      "name": "Plattenanger I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 446,
+      "capacity_per_hour": 1290,
+      "bottom_m": 1658,
+      "top_m": 1744
+    },
+    {
+      "id": "L_603130",
+      "ref": null,
+      "name": "Plattenanger II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 365,
+      "capacity_per_hour": 1046,
+      "bottom_m": 1676,
+      "top_m": 1744
+    },
+    {
+      "id": "L_60338",
+      "ref": null,
+      "name": "Vorkogel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 789,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1830,
+      "top_m": 2065
+    },
+    {
+      "id": "L_60375",
+      "ref": null,
+      "name": "Almhoflift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 370,
+      "capacity_per_hour": 500,
+      "bottom_m": 1250,
+      "top_m": 1550
+    },
+    {
+      "id": "L_6038",
+      "ref": null,
+      "name": "Eberharterlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 460,
+      "capacity_per_hour": 800,
+      "bottom_m": 1544,
+      "top_m": 1594
+    },
+    {
+      "id": "L_6037",
+      "ref": null,
+      "name": "Märchenwald II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 604,
+      "capacity_per_hour": 1121,
+      "bottom_m": 1570,
+      "top_m": 1697
+    },
+    {
+      "id": "L_60387",
+      "ref": null,
+      "name": "Plattenkogellift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 860,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1700,
+      "top_m": 1847
+    },
+    {
+      "id": "L_60384",
+      "ref": null,
+      "name": "Duxer Tellerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 278,
+      "capacity_per_hour": 700,
+      "bottom_m": 1682,
+      "top_m": 1741
+    },
+    {
+      "id": "L_60382",
+      "ref": null,
+      "name": "Filzsteinlift 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 296,
+      "capacity_per_hour": 800,
+      "bottom_m": 1643,
+      "top_m": 1696
+    },
+    {
+      "id": "L_60381",
+      "ref": null,
+      "name": "Filzsteinlift 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 590,
+      "capacity_per_hour": 800,
+      "bottom_m": 1643,
+      "top_m": 1766
+    },
+    {
+      "id": "L_60380",
+      "ref": null,
+      "name": "Handlalmlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 675,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1574,
+      "top_m": 1795
+    },
+    {
+      "id": "L_603162",
+      "ref": null,
+      "name": "Larchkopf",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 770,
+      "capacity_per_hour": 1209,
+      "bottom_m": 1570,
+      "top_m": 1748
+    },
+    {
+      "id": "L_6035",
+      "ref": null,
+      "name": "Mühlachalm",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 392,
+      "capacity_per_hour": 621,
+      "bottom_m": 2177,
+      "top_m": 2241
+    },
+    {
+      "id": "L_603160",
+      "ref": null,
+      "name": "Gerlossteinbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 2281,
+      "capacity_per_hour": 500,
+      "bottom_m": 929,
+      "top_m": 1644
+    },
+    {
+      "id": "L_603133",
+      "ref": null,
+      "name": "Babylift Rosenalm",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 155,
+      "capacity_per_hour": 720,
+      "bottom_m": 1746,
+      "top_m": 1765
+    },
+    {
+      "id": "L_60374",
+      "ref": null,
+      "name": "Kinderland Gerlos",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 200,
+      "capacity_per_hour": 400,
+      "bottom_m": 1897,
+      "top_m": 1917
+    },
+    {
+      "id": "L_603182",
+      "ref": null,
+      "name": "Förderbahnd Duxeralm",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_6039",
+      "ref": null,
+      "name": "Märchenwald I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 120,
+      "capacity_per_hour": 1121,
+      "bottom_m": 1558,
+      "top_m": 1572
+    },
+    {
+      "id": "L_603161",
+      "ref": null,
+      "name": "Babylift Gerlosstein",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "capacity_per_hour": 570,
+      "bottom_m": 1640,
+      "top_m": 1668
+    },
+    {
+      "id": "L_603120",
+      "ref": null,
+      "name": "Rosenalmbahn 1",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1910,
+      "capacity_per_hour": 2620,
+      "bottom_m": 579,
+      "top_m": 1310
+    },
+    {
+      "id": "L_603121",
+      "ref": null,
+      "name": "Rosenalmbahn 2",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1745,
+      "capacity_per_hour": 2880,
+      "bottom_m": 1309,
+      "top_m": 1744
+    },
+    {
+      "id": "L_603125",
+      "ref": null,
+      "name": "Karspitzbahn 1",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1826,
+      "capacity_per_hour": 2400,
+      "bottom_m": 576,
+      "top_m": 1310
+    },
+    {
+      "id": "L_60330",
+      "ref": null,
+      "name": "Isskogelbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 2052,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1261,
+      "top_m": 1897
+    },
+    {
+      "id": "L_6030",
+      "ref": null,
+      "name": "Sonnwendkopfbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1754,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1470,
+      "top_m": 2035
+    },
+    {
+      "id": "L_60337",
+      "ref": null,
+      "name": "Falschbachbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1244,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1868,
+      "top_m": 2305
+    },
+    {
+      "id": "L_603126",
+      "ref": null,
+      "name": "Karspitzbahn 2",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 2410,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1310,
+      "top_m": 2116
+    },
+    {
+      "id": "L_6034",
+      "ref": null,
+      "name": "Gipfelbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1248,
+      "capacity_per_hour": 2754,
+      "bottom_m": 1947,
+      "top_m": 2301
+    },
+    {
+      "id": "L_6032",
+      "ref": null,
+      "name": "Dorfbahn 1",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 927,
+      "capacity_per_hour": 2381,
+      "bottom_m": 1600,
+      "top_m": 1920
+    },
+    {
+      "id": "L_6031",
+      "ref": null,
+      "name": "Dorfbahn 2",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1700,
+      "capacity_per_hour": 2381,
+      "bottom_m": 1920,
+      "top_m": 2250
+    },
+    {
+      "id": "L_603124",
+      "ref": null,
+      "name": "Wilde Krimml",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1870,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2065,
+      "top_m": 2501
+    },
+    {
+      "id": "L_60332",
+      "ref": null,
+      "name": "10er Stuanmandl",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1527,
+      "capacity_per_hour": 2800,
+      "bottom_m": 2079,
+      "top_m": 2282
+    },
+    {
+      "id": "L_60339",
+      "ref": null,
+      "name": "Dorfbahn Gerlos 1",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1133,
+      "capacity_per_hour": 2413,
+      "bottom_m": 1265,
+      "top_m": 1585
+    },
+    {
+      "id": "L_60340",
+      "ref": null,
+      "name": "Dorfbahn Gerlos 2",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": 1466,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1585,
+      "top_m": 2079
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_603141",
+      "ref": "12",
+      "name": "12 Zell am Ziller",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1150
+    },
+    {
+      "id": "R_603145",
+      "ref": "16",
+      "name": "16 Zell am Ziller",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "R_603147",
+      "ref": "18",
+      "name": "18 Zell am Ziller",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2620
+    },
+    {
+      "id": "R_60351",
+      "ref": "32",
+      "name": "32 Ebenfeld Gerlos",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 5290
+    },
+    {
+      "id": "R_60353",
+      "ref": "34",
+      "name": "34 Stoanmandl Gerlos",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1790
+    },
+    {
+      "id": "R_603156",
+      "ref": null,
+      "name": "Funty-Piste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "R_60319",
+      "ref": "52",
+      "name": "Königsleiten Nr. 52 Larmach",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4300
+    },
+    {
+      "id": "R_60320",
+      "ref": "3",
+      "name": "Königsleiten Nr. 53 Hochalmkar",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 5200
+    },
+    {
+      "id": "R_60324",
+      "ref": "55a",
+      "name": "Königsleiten Nr. 55a Abfahrt Sonnwendkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_60323",
+      "ref": "55",
+      "name": "Königsleiten Nr. 55 Abfahrt Sonnwendkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60397",
+      "ref": "84",
+      "name": "Gerlosplatte Nr. 84 Filzstein Tellerlifte Übungspiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 390
+    },
+    {
+      "id": "R_60398",
+      "ref": "83",
+      "name": "Gerlosplatte Nr. 83 Speedy Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2280
+    },
+    {
+      "id": "R_603100",
+      "ref": "81",
+      "name": "Gerlosplatte Nr. 81 Duxer 4er blau",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 620
+    },
+    {
+      "id": "R_603107",
+      "ref": "73",
+      "name": "Gerlosplatte Nr. 73 Platten Schlepper",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "R_603108",
+      "ref": "72",
+      "name": "Gerlosplatte Nr. 72 X-Press II Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3050
+    },
+    {
+      "id": "R_603109",
+      "ref": "71",
+      "name": "Gerlosplatte Nr. 71 X-Press II Die Panorama",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1990
+    },
+    {
+      "id": "R_603201",
+      "ref": "4",
+      "name": "4 Gerlossteinwand",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1230
+    },
+    {
+      "id": "R_60370",
+      "ref": null,
+      "name": "Kinderland Arena Center",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60328",
+      "ref": "53a",
+      "name": "Königsleiten Nr. 53a Hochalmkar",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60318",
+      "ref": "52",
+      "name": "Königsleiten Nr. 52 Larmach",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4300
+    },
+    {
+      "id": "R_60314",
+      "ref": "55",
+      "name": "Königsleiten Nr. 55 Abfahrt Sonnwendkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60325",
+      "ref": "55b",
+      "name": "Königsleiten Nr. 55b Abfahrt Sonnwendkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_603105",
+      "ref": "76",
+      "name": "Gerlosplatte Nr. 76 6-Bubble",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2570
+    },
+    {
+      "id": "R_60313",
+      "ref": "54",
+      "name": "Königsleiten Nr. 54 Mitterleger",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60329",
+      "ref": null,
+      "name": "60 Königsleiten Müllach",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_603205",
+      "ref": null,
+      "name": "Zell am Ziller - Umfahrung Karspitzbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_603140",
+      "ref": "11",
+      "name": "11 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1740
+    },
+    {
+      "id": "R_603142",
+      "ref": "13",
+      "name": "13 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3160
+    },
+    {
+      "id": "R_603143",
+      "ref": "14",
+      "name": "14 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 5440
+    },
+    {
+      "id": "R_603202",
+      "ref": "14a",
+      "name": "14a Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_603144",
+      "ref": "15",
+      "name": "15 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 960
+    },
+    {
+      "id": "R_603146",
+      "ref": "17",
+      "name": "17 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3820
+    },
+    {
+      "id": "R_603149",
+      "ref": "19",
+      "name": "19 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "R_603150",
+      "ref": "19a",
+      "name": "19a Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "R_603151",
+      "ref": "19b",
+      "name": "19b Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2140
+    },
+    {
+      "id": "R_603157",
+      "ref": "19c",
+      "name": "19c Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_603152",
+      "ref": "20",
+      "name": "20 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2010
+    },
+    {
+      "id": "R_603153",
+      "ref": "21",
+      "name": "21 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2060
+    },
+    {
+      "id": "R_603154",
+      "ref": "21a",
+      "name": "21a Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1030
+    },
+    {
+      "id": "R_603155",
+      "ref": "22",
+      "name": "22 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 830
+    },
+    {
+      "id": "R_60350",
+      "ref": "31",
+      "name": "31 Isskogel Talabfahrt Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3930
+    },
+    {
+      "id": "R_60363",
+      "ref": "31a",
+      "name": "31a Schiweg Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2830
+    },
+    {
+      "id": "R_60352",
+      "ref": "33",
+      "name": "33 Vorkogel Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2640
+    },
+    {
+      "id": "R_60354",
+      "ref": "35",
+      "name": "35 Teufeltal Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1410
+    },
+    {
+      "id": "R_60355",
+      "ref": null,
+      "name": "35a Teufeltal Gerlos",
+      "difficulty": "intermediate",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_60358",
+      "ref": null,
+      "name": "37 Moseltret Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "R_60359",
+      "ref": "38",
+      "name": "38 Fußalm Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2340
+    },
+    {
+      "id": "R_60364",
+      "ref": "38a",
+      "name": "38a Fussalmabfahrt Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "R_60360",
+      "ref": "39",
+      "name": "39 Falschbach Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2050
+    },
+    {
+      "id": "R_60361",
+      "ref": "40",
+      "name": "40 Nederbodenabfahrt Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "R_60369",
+      "ref": "40a",
+      "name": "40a Falschbachweg Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "R_60315",
+      "ref": "51",
+      "name": "Königsleiten Nr. 51 Abfahrt Dorfbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_60317",
+      "ref": "2",
+      "name": "Königsleiten Nr. 52a Larmach",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "R_60321",
+      "ref": "53",
+      "name": "Königsleiten Nr. 53 Abfahrt Gipfelbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "R_60322",
+      "ref": "54",
+      "name": "Königsleiten Nr. 54 Mitterleger",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "R_60396",
+      "ref": "85",
+      "name": "Gerlosplatte Nr. 85 Handlalm",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1160
+    },
+    {
+      "id": "R_60399",
+      "ref": "82",
+      "name": "Gerlosplatte Nr. 82 Filzstein Speedy Waldabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1730
+    },
+    {
+      "id": "R_603102",
+      "ref": "80",
+      "name": "Gerlosplatte Nr. 80 Duxer 4er rot",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2440
+    },
+    {
+      "id": "R_603115",
+      "ref": "77",
+      "name": "Gerlosplatte Nr. 77 Duxer 6-er Bubble",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_603104",
+      "ref": "78",
+      "name": "Gerlosplatte Nr. 78 6-Bubble",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1060
+    },
+    {
+      "id": "R_603110",
+      "ref": "70",
+      "name": "Gerlosplatte Nr. 70 X-Press I",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1310
+    },
+    {
+      "id": "R_603166",
+      "ref": "1",
+      "name": "1 Gerlossteinwand",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3970
+    },
+    {
+      "id": "R_603167",
+      "ref": "1a",
+      "name": "1a Gerlossteinwand",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1630
+    },
+    {
+      "id": "R_603168",
+      "ref": "2",
+      "name": "2 Gerlossteinwand",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2770
+    },
+    {
+      "id": "R_60368",
+      "ref": "40b",
+      "name": "40b Gerlos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_60316",
+      "ref": "53",
+      "name": "Königsleiten Nr. 53a Abfahrt Gipfelbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60326",
+      "ref": "52b",
+      "name": "Königsleiten Nr. 52b Larmach",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_60327",
+      "ref": "52c",
+      "name": "Königsleiten Nr. 52c Larmach",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_603101",
+      "ref": "79",
+      "name": "Gerlosplatte Nr. 79 Duxer Waldabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_603116",
+      "ref": "74",
+      "name": "Gerlosplatte Nr. 74 Platten Schlepper",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1570
+    },
+    {
+      "id": "R_603103",
+      "ref": "75",
+      "name": "Gerlosplatte Nr. 75 6-er Bubble Waldabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 890
+    },
+    {
+      "id": "R_60312",
+      "ref": "51a",
+      "name": "Königsleiten Nr. 51a Abfahrt Dorfbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_603148",
+      "ref": null,
+      "name": "18 Zell am Ziller",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1750
+    },
+    {
+      "id": "R_60356",
+      "ref": "36",
+      "name": "36 Krummbach Gerlos",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1610
+    },
+    {
+      "id": "R_60357",
+      "ref": "36",
+      "name": "36a Krummbach Gerlos",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "R_60378",
+      "ref": "41",
+      "name": "41 Sportabfahrt Gerlos",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1580
+    },
+    {
+      "id": "R_60362",
+      "ref": "42",
+      "name": "42 Diretissima Gerlos",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1270
+    },
+    {
+      "id": "R_60395",
+      "ref": "86",
+      "name": "Gerlosplatte Nr. 86 Handlalm",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1190
+    },
+    {
+      "id": "R_603169",
+      "ref": "3",
+      "name": "3 Gerlossteinwand",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 570
+    },
+    {
+      "id": "R_60379",
+      "ref": "31b",
+      "name": "31b Gerlos",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 520
+    },
+    {
+      "id": "R_60371",
+      "ref": "33a",
+      "name": "33a Gerlos",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "R_60311",
+      "ref": "51",
+      "name": "Königsleiten Nr. 51 Abfahrt Dorfbahn",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "R_603158",
+      "ref": "19d",
+      "name": "19d Zell am Ziller",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_603203",
+      "ref": "10",
+      "name": "10 Zell am Ziller",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_603159",
+      "ref": null,
+      "name": "Skipiste 20a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 560
+    },
+    {
+      "id": "R_60392",
+      "ref": null,
+      "name": "Skiroute Isskogel Talstation",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_603204",
+      "ref": null,
+      "name": "Skiroute Kreuzwiese",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

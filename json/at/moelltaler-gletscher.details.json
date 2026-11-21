@@ -1,0 +1,271 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "moelltaler-gletscher",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:42:01.119995+01:00",
+  "updated_at": "2026-11-21T08:51:16+01:00",
+  "source": "https://winter.intermaps.com/moelltaler_gletscher/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_103133",
+      "ref": null,
+      "name": "A Mölltaler Gletscher Express",
+      "type": "funicular",
+      "status": "open",
+      "length_m": 4718,
+      "capacity_per_hour": 1600,
+      "bottom_m": 1222,
+      "top_m": 2234
+    },
+    {
+      "id": "L_103134",
+      "ref": null,
+      "name": "Gondelbahn Eissee",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1175,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2241,
+      "top_m": 2800
+    },
+    {
+      "id": "L_103135",
+      "ref": null,
+      "name": "Panoramabahn Klühspies",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 989,
+      "capacity_per_hour": 1420,
+      "bottom_m": 2483,
+      "top_m": 2795
+    },
+    {
+      "id": "L_103136",
+      "ref": null,
+      "name": "Schwarzkopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 765,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2108,
+      "top_m": 2384
+    },
+    {
+      "id": "L_103137",
+      "ref": null,
+      "name": "Gletscher Jet",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1075,
+      "capacity_per_hour": 3000,
+      "bottom_m": 2717,
+      "top_m": 3122
+    },
+    {
+      "id": "L_103138",
+      "ref": null,
+      "name": "Schlepplift Stübele",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 300,
+      "capacity_per_hour": 700,
+      "bottom_m": 2228,
+      "top_m": 2265
+    },
+    {
+      "id": "L_103139",
+      "ref": null,
+      "name": "Schlepplift Mittelstation",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 178,
+      "capacity_per_hour": 636,
+      "bottom_m": 2226,
+      "top_m": 2261
+    },
+    {
+      "id": "L_103158",
+      "ref": null,
+      "name": "Alteck",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 851,
+      "capacity_per_hour": 2014,
+      "bottom_m": 2430,
+      "top_m": 2751
+    },
+    {
+      "id": "L_103165",
+      "ref": null,
+      "name": "Sesselbahn 3000er",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1440,
+      "bottom_m": 2716,
+      "top_m": 3122
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_103140",
+      "ref": null,
+      "name": "1 Schareck 1",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103141",
+      "ref": null,
+      "name": "2 Schareck 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103142",
+      "ref": null,
+      "name": "3 Schareck 3",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103143",
+      "ref": null,
+      "name": "4 Schareck 4",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_103144",
+      "ref": null,
+      "name": "5 Wurtenboden 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103145",
+      "ref": null,
+      "name": "6 Wurtenboden 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103146",
+      "ref": null,
+      "name": "7 Wurtenboden Trainingspiste",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_103147",
+      "ref": null,
+      "name": "8 Wurten Restaurant",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 500
+    },
+    {
+      "id": "R_103148",
+      "ref": null,
+      "name": "9 Familienabfahrt",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2000
+    },
+    {
+      "id": "R_103149",
+      "ref": null,
+      "name": "10 Eissee Fis Abfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_103150",
+      "ref": null,
+      "name": "11 Stübelesee Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103151",
+      "ref": null,
+      "name": "12 Weissee Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103155",
+      "ref": null,
+      "name": "Anfängergelände Mittelstation",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_103156",
+      "ref": null,
+      "name": "13 Alteck Racing Piste",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103157",
+      "ref": null,
+      "name": "14 Alteck 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_103159",
+      "ref": null,
+      "name": "15 Alteck 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_103160",
+      "ref": null,
+      "name": "Variante 1",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_103161",
+      "ref": null,
+      "name": "Variante 2",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_103162",
+      "ref": null,
+      "name": "Variante 3",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_103163",
+      "ref": null,
+      "name": "Variantenabfahrt",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

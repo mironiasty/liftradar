@@ -1,0 +1,986 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "obertauern",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:38.034672+01:00",
+  "updated_at": "2026-11-21T12:14:09+01:00",
+  "source": "https://winter.intermaps.com/obertauern/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_98779",
+      "ref": null,
+      "name": "1 Zehnerkar",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1668,
+      "top_m": 2196
+    },
+    {
+      "id": "L_98780",
+      "ref": null,
+      "name": "2 Schaidberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1631,
+      "top_m": 1970
+    },
+    {
+      "id": "L_98781",
+      "ref": null,
+      "name": "4 Hundskogel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2420,
+      "bottom_m": 1793,
+      "top_m": 2142
+    },
+    {
+      "id": "L_98782",
+      "ref": null,
+      "name": "6 Monte Flu",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1577,
+      "bottom_m": 1730,
+      "top_m": 1839
+    },
+    {
+      "id": "L_98783",
+      "ref": null,
+      "name": "7 Kehrkopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1630,
+      "top_m": 1839
+    },
+    {
+      "id": "L_98784",
+      "ref": null,
+      "name": "8 Grünwaldkopf",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 3470,
+      "bottom_m": 1665,
+      "top_m": 1970
+    },
+    {
+      "id": "L_98785",
+      "ref": null,
+      "name": "9 Seekareck",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1946,
+      "top_m": 2160
+    },
+    {
+      "id": "L_98786",
+      "ref": null,
+      "name": "11 Schönalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1791,
+      "top_m": 1992
+    },
+    {
+      "id": "L_98787",
+      "ref": null,
+      "name": "12 Anger",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1789,
+      "top_m": 1907
+    },
+    {
+      "id": "L_98788",
+      "ref": null,
+      "name": "13 Achenrain",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1638,
+      "top_m": 1848
+    },
+    {
+      "id": "L_98789",
+      "ref": null,
+      "name": "14 Gamsleiten 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2500,
+      "bottom_m": 1740,
+      "top_m": 1984
+    },
+    {
+      "id": "L_98790",
+      "ref": null,
+      "name": "15 Sonnenlift 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1441,
+      "bottom_m": 1669,
+      "top_m": 1907
+    },
+    {
+      "id": "L_98791",
+      "ref": null,
+      "name": "16 Zentral",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1736,
+      "top_m": 1997
+    },
+    {
+      "id": "L_98792",
+      "ref": null,
+      "name": "17 Pernerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 710,
+      "bottom_m": 1740,
+      "top_m": 1771
+    },
+    {
+      "id": "L_98793",
+      "ref": null,
+      "name": "18 Edelweiß",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2200,
+      "bottom_m": 1670,
+      "top_m": 1874
+    },
+    {
+      "id": "L_98794",
+      "ref": null,
+      "name": "20 Gamskarlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1935,
+      "top_m": 2030
+    },
+    {
+      "id": "L_98795",
+      "ref": null,
+      "name": "21 Kringsalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2200,
+      "bottom_m": 1808,
+      "top_m": 2025
+    },
+    {
+      "id": "L_98796",
+      "ref": null,
+      "name": "22 Hochalm",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2600,
+      "bottom_m": 1946,
+      "top_m": 2036
+    },
+    {
+      "id": "L_98797",
+      "ref": null,
+      "name": "23 Sonnenlift 3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 880,
+      "bottom_m": 1738,
+      "top_m": 1810
+    },
+    {
+      "id": "L_98798",
+      "ref": null,
+      "name": "24 Schrotteralmlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 650,
+      "bottom_m": 1630,
+      "top_m": 1680
+    },
+    {
+      "id": "L_98799",
+      "ref": null,
+      "name": "25 Kirchbühellift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1100,
+      "bottom_m": 1672,
+      "top_m": 1747
+    },
+    {
+      "id": "L_98800",
+      "ref": null,
+      "name": "26 Gamsleiten 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1400,
+      "bottom_m": 1951,
+      "top_m": 2313
+    },
+    {
+      "id": "L_98896",
+      "ref": null,
+      "name": "10 Panorama",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2600,
+      "bottom_m": 1943,
+      "top_m": 2204
+    },
+    {
+      "id": "L_98900",
+      "ref": null,
+      "name": "5 Seekarspitz",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2600,
+      "bottom_m": 1807,
+      "top_m": 2204
+    },
+    {
+      "id": "L_98905",
+      "ref": null,
+      "name": "3 Plattenkar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 3630,
+      "bottom_m": 1664,
+      "top_m": 2047
+    },
+    {
+      "id": "L_98907",
+      "ref": null,
+      "name": "19 Übungslift",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 500,
+      "bottom_m": 1652,
+      "top_m": 1680
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_98801",
+      "ref": "1a",
+      "name": "1a Zehnerkar",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98802",
+      "ref": "1b",
+      "name": "1b Zehnerkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98803",
+      "ref": "1c",
+      "name": "1c Zehnerkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98804",
+      "ref": "1d",
+      "name": "1d Zehnerkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98805",
+      "ref": "1e",
+      "name": "1e Zehnerkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98806",
+      "ref": "2a",
+      "name": "2a Schaidberg",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98807",
+      "ref": "2b",
+      "name": "2b Schaidberg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98808",
+      "ref": "2c",
+      "name": "2c Schaidberg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98809",
+      "ref": "2d",
+      "name": "2d Schaidberg",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98810",
+      "ref": "2e",
+      "name": "2e Schaidberg",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98811",
+      "ref": "3a",
+      "name": "3a Plattenkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98812",
+      "ref": "3b",
+      "name": "3b Plattenkar",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98813",
+      "ref": "3c",
+      "name": "3c Plattenkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98814",
+      "ref": "3d",
+      "name": "3d Plattenkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98815",
+      "ref": "3e",
+      "name": "3e Plattenkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98816",
+      "ref": "3f",
+      "name": "3f Plattenkar",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98817",
+      "ref": "3g",
+      "name": "3g Plattenkar",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98818",
+      "ref": "4a",
+      "name": "4a Hundskogel",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98819",
+      "ref": "4b",
+      "name": "4b Hundskogel",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98820",
+      "ref": "4c",
+      "name": "4c Hundskogel",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98821",
+      "ref": "4d",
+      "name": "4d Hundskogel",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98822",
+      "ref": "4e",
+      "name": "4e Hundskogel",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98823",
+      "ref": "5a",
+      "name": "5a Seekarspitz",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_98824",
+      "ref": "5b",
+      "name": "5b Seekarspitz",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98825",
+      "ref": "5c",
+      "name": "5c Seekarspitz",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98826",
+      "ref": "6a",
+      "name": "6a Monte Flu",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98827",
+      "ref": "6b",
+      "name": "6b Monte Flu",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98828",
+      "ref": "7a",
+      "name": "7a Kehrkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98829",
+      "ref": "7b",
+      "name": "7b Kehrkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98830",
+      "ref": "7c",
+      "name": "7c Kehrkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98831",
+      "ref": "7d",
+      "name": "7d Kehrkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98832",
+      "ref": "8a",
+      "name": "8a Grünwaldkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98833",
+      "ref": "8b",
+      "name": "8b Grünwaldkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98834",
+      "ref": "8c",
+      "name": "8c Grünwaldkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98835",
+      "ref": "8d",
+      "name": "8d Grünwaldkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98836",
+      "ref": "8e",
+      "name": "8e Grünwaldkopf",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98837",
+      "ref": "9a",
+      "name": "9a Seekareck",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98838",
+      "ref": "9b",
+      "name": "9b Seekareck",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98839",
+      "ref": "9c",
+      "name": "9c Seekareck",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98840",
+      "ref": "9d",
+      "name": "9d Seekareck",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98841",
+      "ref": "10a",
+      "name": "10a Panorama",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_98842",
+      "ref": "10b",
+      "name": "10b Panorama",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_98843",
+      "ref": "10c",
+      "name": "10c Panorama",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98844",
+      "ref": "10d",
+      "name": "10d Panorama",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98845",
+      "ref": "11a",
+      "name": "11a Schönalmbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98846",
+      "ref": "11b",
+      "name": "11b Schönalmbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98847",
+      "ref": "11c",
+      "name": "11c Schönalmbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98848",
+      "ref": "12a",
+      "name": "12a Angerbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98849",
+      "ref": "13a",
+      "name": "13a Achenrain",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98850",
+      "ref": "13b",
+      "name": "13b Achenrain",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98851",
+      "ref": "13c",
+      "name": "13c Achenrain",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98852",
+      "ref": "14a",
+      "name": "14a Gamsleiten 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98853",
+      "ref": "14b",
+      "name": "14b Gamsleiten 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98854",
+      "ref": "14c",
+      "name": "14c Gamsleiten 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98855",
+      "ref": "14d",
+      "name": "14d Gamsleiten 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98856",
+      "ref": "15a",
+      "name": "15a Sonnenlift 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98857",
+      "ref": "15b",
+      "name": "15b Sonnenlift 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98858",
+      "ref": "15c",
+      "name": "15c Sonnenlift 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98859",
+      "ref": "15d",
+      "name": "15d Sonnenlift 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98860",
+      "ref": "15e",
+      "name": "15e Sonnenlift 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98861",
+      "ref": "15f",
+      "name": "15f Sonnenlift 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98862",
+      "ref": "16a",
+      "name": "16a Zentralbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98863",
+      "ref": "16b",
+      "name": "16b Zentralbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98864",
+      "ref": "16c",
+      "name": "16c Zentralbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98865",
+      "ref": "16d",
+      "name": "16d Zentralbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98866",
+      "ref": "16e",
+      "name": "16e Zentralbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98867",
+      "ref": "16f",
+      "name": "16f Zentralbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98868",
+      "ref": "17a",
+      "name": "17a Pernerlift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98869",
+      "ref": "18a",
+      "name": "18a Edelweissbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98870",
+      "ref": "18b",
+      "name": "18b Edelweissbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98871",
+      "ref": "18c",
+      "name": "18c Edelweissbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98872",
+      "ref": "18d",
+      "name": "18d Edelweissbahn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98873",
+      "ref": "19a",
+      "name": "19a Übungslift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98875",
+      "ref": "20a",
+      "name": "20a Gamskar",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98876",
+      "ref": "21a",
+      "name": "21a Kringsalm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98877",
+      "ref": "21b",
+      "name": "21b Kringsalm",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98878",
+      "ref": "21c",
+      "name": "21c Kringsalm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98879",
+      "ref": "22a",
+      "name": "22a Hochalmbahn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98880",
+      "ref": "23a",
+      "name": "23a Sonnenlift 3",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98881",
+      "ref": "23b",
+      "name": "23b Sonnenlift 3",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98882",
+      "ref": "24a",
+      "name": "24a Schrotteralmlift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98883",
+      "ref": "25a",
+      "name": "25a Kirchbühellift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98884",
+      "ref": "26a",
+      "name": "26a Gamsleiten 2",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98885",
+      "ref": "26b",
+      "name": "26b Gamsleiten 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98891",
+      "ref": null,
+      "name": "Nachtskibetrieb Donnerstag",
+      "difficulty": "other",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_98909",
+      "ref": null,
+      "name": "3e Plattenkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

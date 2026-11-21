@@ -1,0 +1,723 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "nassfeld",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:42:01.000042+01:00",
+  "updated_at": "2026-11-20T12:50:03+01:00",
+  "source": "https://winter.intermaps.com/nassfeld/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_116796",
+      "ref": null,
+      "name": "32. Millennium-Express Sektion I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116797",
+      "ref": null,
+      "name": "33. Millennium-Express Sektion II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116798",
+      "ref": null,
+      "name": "34. Millennium-Express Sektion III",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116799",
+      "ref": null,
+      "name": "22. Trogkofelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116800",
+      "ref": null,
+      "name": "23. Zweikofelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116801",
+      "ref": null,
+      "name": "6. 6er-SB Garnitzenbahn I 'La Prima'",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116802",
+      "ref": null,
+      "name": "7. 6er-SB Garnitzenbahn II 'La Perla'",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116803",
+      "ref": null,
+      "name": "10. 6er-SB Madritschenbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116804",
+      "ref": null,
+      "name": "20. 6er-SB Mössernbahn 'Warm up'",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116805",
+      "ref": null,
+      "name": "24. 4er-SB Sonnleitnbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116806",
+      "ref": null,
+      "name": "4. 4er-SB FIS-Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116807",
+      "ref": null,
+      "name": "13. Babydoppellift I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116808",
+      "ref": null,
+      "name": "14. Babydoppellift II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116809",
+      "ref": null,
+      "name": "21. 6er-SB Rudnigsattelbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116810",
+      "ref": null,
+      "name": "12. Kanonenrohrlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116811",
+      "ref": null,
+      "name": "31. Kuhalmlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116812",
+      "ref": null,
+      "name": "15. Babylift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116813",
+      "ref": null,
+      "name": "28. Schlanitzer-Alm-Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 720,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116814",
+      "ref": null,
+      "name": "3. Watschiger-Alm-Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116815",
+      "ref": null,
+      "name": "30. Tressdorfer Alm- Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116816",
+      "ref": null,
+      "name": "40. Skischullift Treßdorfer Alm (nur für Skischulbetrieb)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116817",
+      "ref": null,
+      "name": "37. Übungsgelände Tröpolach I",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116818",
+      "ref": null,
+      "name": "38. Übungsgelände Tröpolach II",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116819",
+      "ref": null,
+      "name": "36. Übungsgelände Tressdorfer Alm",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116820",
+      "ref": null,
+      "name": "16. Skischullift Nassfeld (nur für Skischulbetrieb)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116821",
+      "ref": null,
+      "name": "29. Skischullift Sonnleitn (nur für Skischulbetrieb)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116864",
+      "ref": null,
+      "name": "25. 6er-SB Tröglbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116865",
+      "ref": null,
+      "name": "35. Rossalmlift",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_116866",
+      "ref": null,
+      "name": "1. 10er-Kabinenbahn Gartnerkofelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_116822",
+      "ref": null,
+      "name": "1. FIS-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116823",
+      "ref": null,
+      "name": "2. Wulfenia-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116824",
+      "ref": null,
+      "name": "3. Watschiger-Alm-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116825",
+      "ref": null,
+      "name": "4. Familien-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116826",
+      "ref": null,
+      "name": "6. Felsenköpfel-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116827",
+      "ref": null,
+      "name": "7. Garnitzen-Alm-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116828",
+      "ref": null,
+      "name": "8. Pontebbana",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116829",
+      "ref": null,
+      "name": "9. Kronen-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116830",
+      "ref": null,
+      "name": "21. Kanonenrohr-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116831",
+      "ref": null,
+      "name": "23. Lärchenboden-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116832",
+      "ref": null,
+      "name": "24. Verbindungsabfahrt-Lärchenboden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116833",
+      "ref": null,
+      "name": "25. Schwefelbodenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116834",
+      "ref": null,
+      "name": "27. Dreierliftabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116835",
+      "ref": null,
+      "name": "28. Strohsack-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116836",
+      "ref": null,
+      "name": "40. Tröglabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116837",
+      "ref": null,
+      "name": "45. Millennium-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116838",
+      "ref": null,
+      "name": "50. Tressdorfer-Alm-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116839",
+      "ref": null,
+      "name": "51. Leitern-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116840",
+      "ref": null,
+      "name": "60. Kammabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116841",
+      "ref": null,
+      "name": "62. Hohe-Höhe-Buckelpiste",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116842",
+      "ref": null,
+      "name": "63. Scheibelbodenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116843",
+      "ref": null,
+      "name": "65. Sattelabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116844",
+      "ref": null,
+      "name": "70. Schnittlauchkofel-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116845",
+      "ref": null,
+      "name": "75. Trogkofelabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116846",
+      "ref": null,
+      "name": "77. Zweikofel-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116847",
+      "ref": null,
+      "name": "22. Übungswiese-Nassfeld",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116848",
+      "ref": null,
+      "name": "53. Eggerboden-Übungsgelände",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116849",
+      "ref": null,
+      "name": "55. Tressdorfer-Alm-Übungswiese",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116850",
+      "ref": null,
+      "name": "56. Tressdorfer-Alm-Übungsgelände I",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116851",
+      "ref": null,
+      "name": "57. Tressdorfer Alm Übungsgelände II",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116852",
+      "ref": null,
+      "name": "46. BOBO-Skiweg-Tressdorfer Alm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116853",
+      "ref": null,
+      "name": "64. BOBO-Skiweg Lockstanalm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116854",
+      "ref": null,
+      "name": "66. BOBO-Sattelabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116855",
+      "ref": null,
+      "name": "71. BOBO-Skiweg Rastl",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116856",
+      "ref": null,
+      "name": "78. BOBO-Skiweg Zweikofel",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116857",
+      "ref": null,
+      "name": "80. Carnia",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116858",
+      "ref": null,
+      "name": "2a. Märchenwiese- Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116859",
+      "ref": null,
+      "name": "29. BOBO-Skiweg Lärchenboden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116860",
+      "ref": null,
+      "name": "80 Carnia-Abschnitt 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116861",
+      "ref": null,
+      "name": "67. Trainingsstrecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_116868",
+      "ref": null,
+      "name": "61. Hohe- Höhe- Variante",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116869",
+      "ref": null,
+      "name": "Abfahrtsroute 2",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116870",
+      "ref": null,
+      "name": "Abfahrtsroute 3",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116871",
+      "ref": null,
+      "name": "Abfahrtsroute 5",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116872",
+      "ref": null,
+      "name": "Abfahrtsroute 6",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116873",
+      "ref": null,
+      "name": "Abfahrtsroute 7",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116874",
+      "ref": null,
+      "name": "Abfahrtsroute 8",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116875",
+      "ref": null,
+      "name": "Freeride-Area",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_116877",
+      "ref": null,
+      "name": "Skitour",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": null
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "nauders",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:41:40.811490+01:00",
+  "updated_at": "2026-11-18T09:23:40+01:00",
+  "source": "https://winter.intermaps.com/nauders/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_48318",
+      "ref": null,
+      "name": "A Bergkastelseilbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2270,
+      "bottom_m": 1400,
+      "top_m": 2173
+    },
+    {
+      "id": "L_48319",
+      "ref": null,
+      "name": "B Zirmbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 3204,
+      "bottom_m": 2178,
+      "top_m": 2496
+    },
+    {
+      "id": "L_48320",
+      "ref": "D",
+      "name": "C Tscheyeckbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2100,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1885,
+      "top_m": 2662
+    },
+    {
+      "id": "L_48321",
+      "ref": null,
+      "name": "D Gaislochbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48322",
+      "ref": null,
+      "name": "E Lärchenhanglift I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1450,
+      "bottom_m": 1400,
+      "top_m": 1700
+    },
+    {
+      "id": "L_48323",
+      "ref": null,
+      "name": "F Lärchenhanglift II",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 817,
+      "bottom_m": 1700,
+      "top_m": 2175
+    },
+    {
+      "id": "L_48324",
+      "ref": null,
+      "name": "G Almlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48325",
+      "ref": null,
+      "name": "Goldseebahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48326",
+      "ref": null,
+      "name": "I Ganderbildlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 900,
+      "bottom_m": 2105,
+      "top_m": 2295
+    },
+    {
+      "id": "L_48327",
+      "ref": null,
+      "name": "J Panoramalift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48328",
+      "ref": null,
+      "name": "M Snow Base Bergkastel",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48329",
+      "ref": null,
+      "name": "L Tallift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48330",
+      "ref": null,
+      "name": "Mutzkopf ab 25.12. immer mittwochs",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48404",
+      "ref": null,
+      "name": "Snow Base Berkastel Förderband I",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_48406",
+      "ref": null,
+      "name": "Snow Base Berkastel Förderband II",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_48286",
+      "ref": "6",
+      "name": "6 Almabfahrt Steilhang",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48287",
+      "ref": "8",
+      "name": "8 Goldseepiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48288",
+      "ref": null,
+      "name": "14 Gaislochabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48291",
+      "ref": null,
+      "name": "5 Almabfahrt Alpboden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48292",
+      "ref": null,
+      "name": "7 Westabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48293",
+      "ref": null,
+      "name": "9 Südhang",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48294",
+      "ref": null,
+      "name": "10 Martannesabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48296",
+      "ref": null,
+      "name": "12 Gampenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48299",
+      "ref": null,
+      "name": "18 Die Schwarze",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48300",
+      "ref": null,
+      "name": "19 Wiegenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48301",
+      "ref": null,
+      "name": "20 Hilfsabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48302",
+      "ref": null,
+      "name": "23 Skiweg nach Nauders",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48303",
+      "ref": null,
+      "name": "24 Jagerhüttlabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48304",
+      "ref": null,
+      "name": "25 Almtalabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48305",
+      "ref": null,
+      "name": "1 Gueser Kopf",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48306",
+      "ref": null,
+      "name": "2 G 3000",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48312",
+      "ref": null,
+      "name": "3 Down Under Route",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48313",
+      "ref": null,
+      "name": "4 Südwest Route",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48314",
+      "ref": null,
+      "name": "5 Grenz Route",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48315",
+      "ref": null,
+      "name": "26 Stieralmabfahrt I",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48316",
+      "ref": null,
+      "name": "27 Stieralmabfahrt II",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48317",
+      "ref": null,
+      "name": "28 Bullenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48352",
+      "ref": null,
+      "name": "1 Talabfahrt Bergkastel *",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48354",
+      "ref": null,
+      "name": "11 Waldabfahrt *",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48357",
+      "ref": null,
+      "name": "15 Piengabfahrt *",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48360",
+      "ref": null,
+      "name": "16 Ganderbildabfahrt *",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48362",
+      "ref": null,
+      "name": "17 Tscheyeckabfahrt *",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48364",
+      "ref": null,
+      "name": "2 Zirmabfahrt West *",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48368",
+      "ref": null,
+      "name": "21 Avagrassaabfahrt *",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48370",
+      "ref": null,
+      "name": "22 Übungspiste *",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48374",
+      "ref": null,
+      "name": "3 Zirmabfahrt Ost *",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_48376",
+      "ref": null,
+      "name": "4 Goldseeabfahrt *",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

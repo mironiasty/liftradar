@@ -1,0 +1,309 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "sulden",
+  "country": "it",
+  "fetched_at": "2026-11-21T13:40:33.623453+01:00",
+  "updated_at": "2026-11-21T06:52:11+01:00",
+  "source": "https://winter.intermaps.com/sulden/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_33642",
+      "ref": null,
+      "name": "Madriccio",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1600,
+      "capacity_per_hour": 2000,
+      "bottom_m": 2606,
+      "top_m": 2850
+    },
+    {
+      "id": "L_33644",
+      "ref": null,
+      "name": "Funivia Sez. II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1441,
+      "capacity_per_hour": 1300,
+      "bottom_m": 2200,
+      "top_m": 2610
+    },
+    {
+      "id": "L_33645",
+      "ref": null,
+      "name": "Funivia Sez. I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1441,
+      "capacity_per_hour": 1300,
+      "bottom_m": 1900,
+      "top_m": 2200
+    },
+    {
+      "id": "L_33648",
+      "ref": null,
+      "name": "Beltovo I",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1000,
+      "capacity_per_hour": 1600,
+      "bottom_m": 2850,
+      "top_m": 3150
+    },
+    {
+      "id": "L_33649",
+      "ref": null,
+      "name": "Beltovo II",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1150,
+      "capacity_per_hour": 2200,
+      "bottom_m": 2820,
+      "top_m": 3250
+    },
+    {
+      "id": "L_33650",
+      "ref": null,
+      "name": "Chairlift Langenstein-Orso",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1138,
+      "capacity_per_hour": 1028,
+      "bottom_m": 1860,
+      "top_m": 2350
+    },
+    {
+      "id": "L_33653",
+      "ref": null,
+      "name": "Des Alpes",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 800,
+      "capacity_per_hour": 1784,
+      "bottom_m": 2300,
+      "top_m": 2550
+    },
+    {
+      "id": "L_33657",
+      "ref": null,
+      "name": "Cevedale",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 222,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_33660",
+      "ref": null,
+      "name": "Gondola Rosim",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1450,
+      "capacity_per_hour": 1600,
+      "bottom_m": 1950,
+      "top_m": 2450
+    },
+    {
+      "id": "L_33665",
+      "ref": null,
+      "name": "Sole",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 225,
+      "capacity_per_hour": 645,
+      "bottom_m": 1877,
+      "top_m": 1920
+    },
+    {
+      "id": "L_33670",
+      "ref": null,
+      "name": "Kanzel cable car",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1328,
+      "capacity_per_hour": 1500,
+      "bottom_m": 1850,
+      "top_m": 2350
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_33638",
+      "ref": null,
+      "name": "1a Madriccio",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_33639",
+      "ref": null,
+      "name": "9 Pista coppa del mondo",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 800
+    },
+    {
+      "id": "R_33640",
+      "ref": null,
+      "name": "8 Gran Zebru 2",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1000
+    },
+    {
+      "id": "R_33641",
+      "ref": null,
+      "name": "4 Beltovo",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1500
+    },
+    {
+      "id": "R_33643",
+      "ref": null,
+      "name": "1 Madriccio",
+      "difficulty": "easy",
+      "status": "unknown",
+      "length_m": 4600
+    },
+    {
+      "id": "R_33646",
+      "ref": null,
+      "name": "2 Madriccio",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2100
+    },
+    {
+      "id": "R_33647",
+      "ref": null,
+      "name": "3 Beltovo",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1800
+    },
+    {
+      "id": "R_33652",
+      "ref": null,
+      "name": "1c Kanonenrohr",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "R_33654",
+      "ref": null,
+      "name": "1b Discesa a valle",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "R_33655",
+      "ref": null,
+      "name": "15 Ortler",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_33656",
+      "ref": null,
+      "name": "12a Pendio classico",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_33658",
+      "ref": null,
+      "name": "16 Rosim",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2700
+    },
+    {
+      "id": "R_33659",
+      "ref": null,
+      "name": "14a Des Alpes 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_33661",
+      "ref": null,
+      "name": "12 Pulpito/Kanzel",
+      "difficulty": "easy",
+      "status": "unknown",
+      "length_m": 2800
+    },
+    {
+      "id": "R_33662",
+      "ref": null,
+      "name": "12b Collegamento",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2000
+    },
+    {
+      "id": "R_33663",
+      "ref": null,
+      "name": "13 Discesa di Zay",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "R_33664",
+      "ref": null,
+      "name": "7 Gran Zebru 1",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_33666",
+      "ref": null,
+      "name": "10 Langenstein/Orso",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2700
+    },
+    {
+      "id": "R_33667",
+      "ref": null,
+      "name": "14 Des Alpes 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_34208",
+      "ref": "5",
+      "name": "Hochleiten",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 3000
+    },
+    {
+      "id": "R_34209",
+      "ref": "6",
+      "name": "Schaubachweg",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 2500
+    },
+    {
+      "id": "R_34210",
+      "ref": "11",
+      "name": "Marlet",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 2800
+    }
+  ]
+}

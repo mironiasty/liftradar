@@ -1,0 +1,1236 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "silvretta-montafon",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619145+01:00",
+  "updated_at": "2026-11-21T12:01:35+01:00",
+  "source": "https://winter.intermaps.com/silvretta_montafon/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_17439",
+      "ref": null,
+      "name": "Valisera Bahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2128,
+      "capacity_per_hour": 2800,
+      "bottom_m": 822,
+      "top_m": 1639
+    },
+    {
+      "id": "L_17440",
+      "ref": null,
+      "name": "Valisera Bahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1964,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1639,
+      "top_m": 2104
+    },
+    {
+      "id": "L_17441",
+      "ref": null,
+      "name": "Versettla Bahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1377,
+      "capacity_per_hour": 1982,
+      "bottom_m": 978,
+      "top_m": 1483
+    },
+    {
+      "id": "L_17442",
+      "ref": null,
+      "name": "Versettla Bahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1313,
+      "capacity_per_hour": 1982,
+      "bottom_m": 1483,
+      "top_m": 2014
+    },
+    {
+      "id": "L_17443",
+      "ref": null,
+      "name": "Garfrescha Bahn I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1376,
+      "capacity_per_hour": 1440,
+      "bottom_m": 872,
+      "top_m": 1483
+    },
+    {
+      "id": "L_17444",
+      "ref": null,
+      "name": "Silvretta Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2150,
+      "capacity_per_hour": 3200,
+      "bottom_m": null,
+      "top_m": 2145
+    },
+    {
+      "id": "L_17445",
+      "ref": null,
+      "name": "Spatla Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 548,
+      "capacity_per_hour": 2007,
+      "bottom_m": 1815,
+      "top_m": 1985
+    },
+    {
+      "id": "L_17446",
+      "ref": null,
+      "name": "Nova Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 925,
+      "capacity_per_hour": 3200,
+      "bottom_m": 1686,
+      "top_m": 2014
+    },
+    {
+      "id": "L_17447",
+      "ref": null,
+      "name": "Burg Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 646,
+      "capacity_per_hour": 1016,
+      "bottom_m": 1875,
+      "top_m": 2113
+    },
+    {
+      "id": "L_17448",
+      "ref": null,
+      "name": "Lifinar Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 310,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_17482",
+      "ref": null,
+      "name": "Hochjoch Bahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1454,
+      "capacity_per_hour": null,
+      "bottom_m": 700,
+      "top_m": 1359
+    },
+    {
+      "id": "L_17483",
+      "ref": null,
+      "name": "Hochjoch Bahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1524,
+      "capacity_per_hour": null,
+      "bottom_m": 1359,
+      "top_m": 1862
+    },
+    {
+      "id": "L_17484",
+      "ref": null,
+      "name": "Zamang Bahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2792,
+      "capacity_per_hour": 1797,
+      "bottom_m": 698,
+      "top_m": 1856
+    },
+    {
+      "id": "L_17485",
+      "ref": null,
+      "name": "Kapell Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1889,
+      "capacity_per_hour": 620,
+      "bottom_m": 856,
+      "top_m": 1752
+    },
+    {
+      "id": "L_17486",
+      "ref": null,
+      "name": "Seebliga Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 891,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1731,
+      "top_m": 2037
+    },
+    {
+      "id": "L_17487",
+      "ref": null,
+      "name": "Kapell Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 197,
+      "capacity_per_hour": 1352,
+      "bottom_m": 1802,
+      "top_m": 1862
+    },
+    {
+      "id": "L_17488",
+      "ref": null,
+      "name": "Kropfen Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1855,
+      "capacity_per_hour": 859,
+      "bottom_m": 1362,
+      "top_m": 1920
+    },
+    {
+      "id": "L_17489",
+      "ref": null,
+      "name": "Sennigrat Bahn I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1277,
+      "capacity_per_hour": 1434,
+      "bottom_m": 1858,
+      "top_m": 2294
+    },
+    {
+      "id": "L_17490",
+      "ref": null,
+      "name": "Panorama Bahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2473,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1774,
+      "top_m": 2375
+    },
+    {
+      "id": "L_17491",
+      "ref": null,
+      "name": "Platina Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 812,
+      "capacity_per_hour": 1235,
+      "bottom_m": 1928,
+      "top_m": 2160
+    },
+    {
+      "id": "L_17492",
+      "ref": null,
+      "name": "Freda Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 949,
+      "capacity_per_hour": 1443,
+      "bottom_m": 1920,
+      "top_m": 2167
+    },
+    {
+      "id": "L_17493",
+      "ref": null,
+      "name": "Förderband Kapell",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 87,
+      "capacity_per_hour": 360,
+      "bottom_m": 1771,
+      "top_m": 1785
+    },
+    {
+      "id": "L_17524",
+      "ref": null,
+      "name": "Schwarzköpfle Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1456,
+      "capacity_per_hour": 2072,
+      "bottom_m": 1692,
+      "top_m": 2220
+    },
+    {
+      "id": "L_17525",
+      "ref": null,
+      "name": "Heimspitz Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 853,
+      "capacity_per_hour": 2402,
+      "bottom_m": 1994,
+      "top_m": 2219
+    },
+    {
+      "id": "L_17526",
+      "ref": null,
+      "name": "Grandau Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 607,
+      "capacity_per_hour": 1619,
+      "bottom_m": 1392,
+      "top_m": 1588
+    },
+    {
+      "id": "L_17527",
+      "ref": null,
+      "name": "Madrisella Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1530,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1682,
+      "top_m": 2216
+    },
+    {
+      "id": "L_17528",
+      "ref": null,
+      "name": "Rinderhütten Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1044,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2012,
+      "top_m": 2275
+    },
+    {
+      "id": "L_17529",
+      "ref": null,
+      "name": "Sonnen Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 590,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1939,
+      "top_m": 2149
+    },
+    {
+      "id": "L_17530",
+      "ref": null,
+      "name": "Vermiel Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 429,
+      "capacity_per_hour": 2998,
+      "bottom_m": 1466,
+      "top_m": 1590
+    },
+    {
+      "id": "L_17531",
+      "ref": null,
+      "name": "Vallüla Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 152,
+      "capacity_per_hour": 668,
+      "bottom_m": 1000,
+      "top_m": 1020
+    },
+    {
+      "id": "L_17578",
+      "ref": null,
+      "name": "Grasjoch Bahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3915,
+      "capacity_per_hour": 2400,
+      "bottom_m": 820,
+      "top_m": 1980
+    },
+    {
+      "id": "L_17579",
+      "ref": null,
+      "name": "Hochalpila Bahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1338,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1980,
+      "top_m": 2430
+    },
+    {
+      "id": "L_17582",
+      "ref": null,
+      "name": "Sennigrat Bahn II",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 167,
+      "capacity_per_hour": 1434,
+      "bottom_m": 2205,
+      "top_m": 2294
+    },
+    {
+      "id": "L_17654",
+      "ref": null,
+      "name": "Förderband Valisera",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 72,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_17666",
+      "ref": null,
+      "name": "Jöchle Bahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 962,
+      "capacity_per_hour": 2335,
+      "bottom_m": 1804,
+      "top_m": 2108
+    },
+    {
+      "id": "L_17689",
+      "ref": null,
+      "name": "Jägerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 50,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_32977",
+      "ref": null,
+      "name": "Kristberg cable car",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1575,
+      "capacity_per_hour": 215,
+      "bottom_m": 889,
+      "top_m": 1444
+    },
+    {
+      "id": "L_32978",
+      "ref": null,
+      "name": "Kristberg drag lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 260,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1430,
+      "top_m": 1493
+    },
+    {
+      "id": "L_32979",
+      "ref": null,
+      "name": "Sattel drag lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 665,
+      "capacity_per_hour": 972,
+      "bottom_m": 1490,
+      "top_m": 1589
+    },
+    {
+      "id": "L_32999",
+      "ref": null,
+      "name": "Silbis Winter World (conveyor belt)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 30,
+      "capacity_per_hour": null,
+      "bottom_m": 1450,
+      "top_m": 1460
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_17449",
+      "ref": "28",
+      "name": "28",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1040
+    },
+    {
+      "id": "R_17450",
+      "ref": "24",
+      "name": "24",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2342
+    },
+    {
+      "id": "R_17451",
+      "ref": "40",
+      "name": "40",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3505
+    },
+    {
+      "id": "R_17452",
+      "ref": "26",
+      "name": "26",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1657
+    },
+    {
+      "id": "R_17453",
+      "ref": "20a",
+      "name": "20a",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3088
+    },
+    {
+      "id": "R_17454",
+      "ref": "21",
+      "name": "21",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2912
+    },
+    {
+      "id": "R_17455",
+      "ref": "27",
+      "name": "27",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1693
+    },
+    {
+      "id": "R_17456",
+      "ref": "50",
+      "name": "50",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2131
+    },
+    {
+      "id": "R_17457",
+      "ref": "51",
+      "name": "51",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1928
+    },
+    {
+      "id": "R_17458",
+      "ref": "20d",
+      "name": "20d - Talabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3422
+    },
+    {
+      "id": "R_17459",
+      "ref": "20e",
+      "name": "20e - Talabfahrt Valisera",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1929
+    },
+    {
+      "id": "R_17460",
+      "ref": "40",
+      "name": "40",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2934
+    },
+    {
+      "id": "R_17461",
+      "ref": "42",
+      "name": "42",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2949
+    },
+    {
+      "id": "R_17462",
+      "ref": "30",
+      "name": "30",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1478
+    },
+    {
+      "id": "R_17463",
+      "ref": "34",
+      "name": "34",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 995
+    },
+    {
+      "id": "R_17464",
+      "ref": "35",
+      "name": "R35",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 697
+    },
+    {
+      "id": "R_17465",
+      "ref": "43",
+      "name": "43",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2014
+    },
+    {
+      "id": "R_17466",
+      "ref": "45",
+      "name": "45",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1991
+    },
+    {
+      "id": "R_17467",
+      "ref": "31",
+      "name": "31",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1675
+    },
+    {
+      "id": "R_17468",
+      "ref": "44",
+      "name": "44 Black Scorpion",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2874
+    },
+    {
+      "id": "R_17469",
+      "ref": "63",
+      "name": "63",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1280
+    },
+    {
+      "id": "R_17470",
+      "ref": "54",
+      "name": "54 Black Scorpion",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 535
+    },
+    {
+      "id": "R_17471",
+      "ref": "55",
+      "name": "55",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 990
+    },
+    {
+      "id": "R_17472",
+      "ref": "R22",
+      "name": "R22",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1413
+    },
+    {
+      "id": "R_17473",
+      "ref": "R21",
+      "name": "R21",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 766
+    },
+    {
+      "id": "R_17474",
+      "ref": "R60a",
+      "name": "R60a",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "R_17475",
+      "ref": "R55",
+      "name": "R55",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1063
+    },
+    {
+      "id": "R_17476",
+      "ref": "R44",
+      "name": "R44",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 2304
+    },
+    {
+      "id": "R_17477",
+      "ref": "R66",
+      "name": "R66",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 3594
+    },
+    {
+      "id": "R_17494",
+      "ref": "1a",
+      "name": "1a",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3085
+    },
+    {
+      "id": "R_17495",
+      "ref": "1b",
+      "name": "1b",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 994
+    },
+    {
+      "id": "R_17496",
+      "ref": "1c",
+      "name": "1c",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2675
+    },
+    {
+      "id": "R_17497",
+      "ref": "1d",
+      "name": "1d - Talabfahrt Schruns",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 3117
+    },
+    {
+      "id": "R_17498",
+      "ref": "3",
+      "name": "3 Black Scorpion",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1391
+    },
+    {
+      "id": "R_17499",
+      "ref": "4",
+      "name": "4",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2278
+    },
+    {
+      "id": "R_17500",
+      "ref": "8",
+      "name": "8",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1095
+    },
+    {
+      "id": "R_17501",
+      "ref": "9",
+      "name": "9",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2855
+    },
+    {
+      "id": "R_17502",
+      "ref": "6",
+      "name": "6",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2493
+    },
+    {
+      "id": "R_17503",
+      "ref": "10",
+      "name": "10",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3386
+    },
+    {
+      "id": "R_17504",
+      "ref": "12",
+      "name": "12",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2836
+    },
+    {
+      "id": "R_17505",
+      "ref": "13",
+      "name": "13",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1451
+    },
+    {
+      "id": "R_17507",
+      "ref": "R3",
+      "name": "R3",
+      "difficulty": "ski_route",
+      "status": "unknown",
+      "length_m": 375
+    },
+    {
+      "id": "R_17508",
+      "ref": "R13",
+      "name": "R13",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 844
+    },
+    {
+      "id": "R_17509",
+      "ref": "R19",
+      "name": "R19",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1217
+    },
+    {
+      "id": "R_17513",
+      "ref": "65",
+      "name": "65 Black Scorpion",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 479
+    },
+    {
+      "id": "R_17523",
+      "ref": "R20",
+      "name": "R20",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 612
+    },
+    {
+      "id": "R_17532",
+      "ref": "41",
+      "name": "41",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2082
+    },
+    {
+      "id": "R_17533",
+      "ref": "R60c",
+      "name": "R60c",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "R_17534",
+      "ref": "70",
+      "name": "70",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 355
+    },
+    {
+      "id": "R_17535",
+      "ref": "71",
+      "name": "71",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 481
+    },
+    {
+      "id": "R_17537",
+      "ref": "20d",
+      "name": "20d - Talabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 999
+    },
+    {
+      "id": "R_17538",
+      "ref": "60a",
+      "name": "60a",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1305
+    },
+    {
+      "id": "R_17566",
+      "ref": "11",
+      "name": "11",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2501
+    },
+    {
+      "id": "R_17567",
+      "ref": "53",
+      "name": "53",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 594
+    },
+    {
+      "id": "R_17568",
+      "ref": "R46",
+      "name": "R46",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 907
+    },
+    {
+      "id": "R_17569",
+      "ref": "33",
+      "name": "33",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2207
+    },
+    {
+      "id": "R_17570",
+      "ref": "36",
+      "name": "36",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 714
+    },
+    {
+      "id": "R_17571",
+      "ref": "20b",
+      "name": "20b",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1736
+    },
+    {
+      "id": "R_17572",
+      "ref": "20a",
+      "name": "20a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 265
+    },
+    {
+      "id": "R_17573",
+      "ref": "20c",
+      "name": "20c",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2571
+    },
+    {
+      "id": "R_17574",
+      "ref": "29",
+      "name": "29",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1061
+    },
+    {
+      "id": "R_17575",
+      "ref": "61",
+      "name": "61",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 658
+    },
+    {
+      "id": "R_17576",
+      "ref": "62",
+      "name": "62",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1348
+    },
+    {
+      "id": "R_17577",
+      "ref": "64",
+      "name": "64",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1140
+    },
+    {
+      "id": "R_17580",
+      "ref": "R11",
+      "name": "R11",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 681
+    },
+    {
+      "id": "R_17581",
+      "ref": "23",
+      "name": "23",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1004
+    },
+    {
+      "id": "R_17585",
+      "ref": "R2",
+      "name": "R2",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 401
+    },
+    {
+      "id": "R_17586",
+      "ref": "R1",
+      "name": "R1",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 493
+    },
+    {
+      "id": "R_17605",
+      "ref": "R45",
+      "name": "R45",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 983
+    },
+    {
+      "id": "R_17617",
+      "ref": "2a",
+      "name": "2a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2417
+    },
+    {
+      "id": "R_17618",
+      "ref": "5",
+      "name": "5 Black Scorpion",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 359
+    },
+    {
+      "id": "R_17619",
+      "ref": "R4",
+      "name": "R4",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 975
+    },
+    {
+      "id": "R_17620",
+      "ref": "R5",
+      "name": "R5",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1255
+    },
+    {
+      "id": "R_17621",
+      "ref": "R23",
+      "name": "R23",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 992
+    },
+    {
+      "id": "R_17623",
+      "ref": "1e",
+      "name": "R1e - Skiweg Silbertal",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 4254
+    },
+    {
+      "id": "R_17624",
+      "ref": "2b",
+      "name": "2b",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1404
+    },
+    {
+      "id": "R_17626",
+      "ref": "25",
+      "name": "25",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 545
+    },
+    {
+      "id": "R_17628",
+      "ref": "21",
+      "name": "21",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 815
+    },
+    {
+      "id": "R_17655",
+      "ref": "R25",
+      "name": "R25",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 556
+    },
+    {
+      "id": "R_17685",
+      "ref": "60b",
+      "name": "60b",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1533
+    },
+    {
+      "id": "R_17686",
+      "ref": "R53",
+      "name": "R53",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 395
+    },
+    {
+      "id": "R_17687",
+      "ref": "20f",
+      "name": "20f - Talabfahrt Garfrescha",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 673
+    },
+    {
+      "id": "R_17690",
+      "ref": "60c",
+      "name": "60c - Talabfahrt Gaschurn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4593
+    },
+    {
+      "id": "R_17691",
+      "ref": "30",
+      "name": "30",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 180
+    },
+    {
+      "id": "R_17726",
+      "ref": "46",
+      "name": "46",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1344
+    },
+    {
+      "id": "R_17727",
+      "ref": "R60b",
+      "name": "R60b",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 721
+    },
+    {
+      "id": "R_17909",
+      "ref": null,
+      "name": "ÜL Kapell",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_17910",
+      "ref": null,
+      "name": "ÜL Vallüla",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 359
+    },
+    {
+      "id": "R_17915",
+      "ref": null,
+      "name": "Snowpark",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3486
+    },
+    {
+      "id": "R_24626",
+      "ref": "R27",
+      "name": "R27",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 620
+    },
+    {
+      "id": "R_24627",
+      "ref": "46",
+      "name": "46",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 607
+    },
+    {
+      "id": "R_24729",
+      "ref": "60b",
+      "name": "60b",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 470
+    },
+    {
+      "id": "R_32980",
+      "ref": null,
+      "name": "2 Sattel- und Kristberg Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_32981",
+      "ref": null,
+      "name": "1 Lang Ried",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_32982",
+      "ref": null,
+      "name": "3 Skiroute bis Tal",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1850
+    },
+    {
+      "id": "R_32995",
+      "ref": null,
+      "name": "3 Skiroute bis Mittelstation",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "R_33000",
+      "ref": null,
+      "name": "4 Skiroute Sattel",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "R_33001",
+      "ref": null,
+      "name": "5 Silbis Kinderwelt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 30
+    }
+  ]
+}

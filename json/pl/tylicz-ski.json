@@ -9,8 +9,8 @@
     "lon": 20.9996
   },
   "website": "https://tylicz.ski",
-  "status": "no_report",
-  "fetched_at": "2026-11-21T08:40:33.816826+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-21T13:40:33.624706+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,13 +25,33 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 8,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 5
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
@@ -39,12 +59,13 @@
     "https://openskimap.org/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://tylicz.ski/",
         "attribution_required": null
-      },
+      }
+    ],
+    "resort_info": [
       {
         "url": "https://openskimap.org/",
         "attribution_required": null

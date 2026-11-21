@@ -1,0 +1,284 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "gargellen",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619251+01:00",
+  "updated_at": "2026-11-17T16:22:42+01:00",
+  "source": "https://winter.intermaps.com/gargellen/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_40331",
+      "ref": null,
+      "name": "H Schmuggi Luggi",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 322,
+      "capacity_per_hour": 647,
+      "bottom_m": 2100,
+      "top_m": 2175
+    },
+    {
+      "id": "L_40332",
+      "ref": null,
+      "name": "G Valzifenz",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 660,
+      "capacity_per_hour": 1111,
+      "bottom_m": 1854,
+      "top_m": 2084
+    },
+    {
+      "id": "L_40333",
+      "ref": null,
+      "name": "B Gargellen Alpe - Schafberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 905,
+      "capacity_per_hour": 873,
+      "bottom_m": 1730,
+      "top_m": 2074
+    },
+    {
+      "id": "L_40334",
+      "ref": null,
+      "name": "E Madrisa",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 180,
+      "capacity_per_hour": 850,
+      "bottom_m": 1450,
+      "top_m": 1565
+    },
+    {
+      "id": "L_40335",
+      "ref": null,
+      "name": "A Gargellen Schafberg",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2035,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1438,
+      "top_m": 2126
+    },
+    {
+      "id": "L_40336",
+      "ref": null,
+      "name": "D Kristallbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 810,
+      "capacity_per_hour": 2350,
+      "bottom_m": 2040,
+      "top_m": 2277
+    },
+    {
+      "id": "L_40337",
+      "ref": null,
+      "name": "F Vergalden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 271,
+      "capacity_per_hour": 650,
+      "bottom_m": 1515,
+      "top_m": 1579
+    },
+    {
+      "id": "L_40338",
+      "ref": null,
+      "name": "C Gargellner Köpfe",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 877,
+      "capacity_per_hour": 1800,
+      "bottom_m": 2040,
+      "top_m": 2257
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_40339",
+      "ref": null,
+      "name": "1 Schnapfenwald",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4200
+    },
+    {
+      "id": "R_40340",
+      "ref": null,
+      "name": "6 Täli",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "R_40341",
+      "ref": null,
+      "name": "2b Birkenegg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "R_40342",
+      "ref": null,
+      "name": "7 Schlüachteck",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_40343",
+      "ref": null,
+      "name": "9a Trainingsstrecke",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_40344",
+      "ref": null,
+      "name": "1a Lange Seite",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_40345",
+      "ref": null,
+      "name": "9 Einkehrschwung",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_40346",
+      "ref": null,
+      "name": "12 Rinderhütte",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_40347",
+      "ref": null,
+      "name": "5 Madrisa",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_40348",
+      "ref": null,
+      "name": "3a Steehüsli",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_40349",
+      "ref": null,
+      "name": "4 Schmuggi Luggi",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_40350",
+      "ref": null,
+      "name": "2a Forstweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "R_40351",
+      "ref": null,
+      "name": "8 Direkte",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_40352",
+      "ref": null,
+      "name": "6a Schwefeltobel",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "R_40353",
+      "ref": null,
+      "name": "5a Gandasee",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_40354",
+      "ref": null,
+      "name": "2 Verbindung Schnapfenwald",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_40355",
+      "ref": null,
+      "name": "3 Gargellner Köpfe",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "R_40356",
+      "ref": null,
+      "name": "11 Standard",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_40357",
+      "ref": null,
+      "name": "1b Verbindung Schwefeltobel",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 170
+    },
+    {
+      "id": "R_40358",
+      "ref": null,
+      "name": "2c Verbindung Vergalden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_40359",
+      "ref": null,
+      "name": "10 Kristallabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_40390",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_40391",
+      "ref": null,
+      "name": "Vergalden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

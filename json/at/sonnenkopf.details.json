@@ -1,0 +1,306 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "sonnenkopf",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619266+01:00",
+  "updated_at": "2026-11-16T08:45:27+01:00",
+  "source": "https://winter.intermaps.com/sonnenkopf/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_42062",
+      "ref": null,
+      "name": "Übungslift",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_42063",
+      "ref": null,
+      "name": "A Sonnenkopfbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1001,
+      "top_m": 1840
+    },
+    {
+      "id": "L_42064",
+      "ref": null,
+      "name": "B Obermuribahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1832,
+      "top_m": 2179
+    },
+    {
+      "id": "L_42065",
+      "ref": null,
+      "name": "C Obermoos",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1438,
+      "bottom_m": 1596,
+      "top_m": null
+    },
+    {
+      "id": "L_42066",
+      "ref": null,
+      "name": "D Glattingrat",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1442,
+      "bottom_m": 2078,
+      "top_m": 2296
+    },
+    {
+      "id": "L_42067",
+      "ref": null,
+      "name": "E Riedkopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1788,
+      "top_m": 1952
+    },
+    {
+      "id": "L_140431",
+      "ref": null,
+      "name": "F Riedboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1060,
+      "bottom_m": 1788,
+      "top_m": 1840
+    },
+    {
+      "id": "L_140432",
+      "ref": null,
+      "name": "G Bettler Älpele",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1160,
+      "bottom_m": 1737,
+      "top_m": 1867
+    },
+    {
+      "id": "L_140433",
+      "ref": null,
+      "name": "H Sattelkopf",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1300,
+      "bottom_m": 1830,
+      "top_m": 1862
+    },
+    {
+      "id": "L_140434",
+      "ref": null,
+      "name": "I Verbindungslift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_140401",
+      "ref": null,
+      "name": "Übungshang",
+      "difficulty": "easy",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_140402",
+      "ref": null,
+      "name": "1 Waldabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_140403",
+      "ref": null,
+      "name": "10 Klostertaler Abfahrt (Bärenloch)",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_140405",
+      "ref": null,
+      "name": "12 Skiroute Klösterle Dorfmitte",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_140406",
+      "ref": null,
+      "name": "13 Skiroute Riedkopf",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_140407",
+      "ref": null,
+      "name": "14 Skiroute Glattingrat",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_140408",
+      "ref": null,
+      "name": "15 Skiroute - Schäferhütte",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_140409",
+      "ref": null,
+      "name": "1a Talabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_140410",
+      "ref": null,
+      "name": "2 Mittlere Muriabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_140411",
+      "ref": null,
+      "name": "3 Hintere Muriabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_140412",
+      "ref": null,
+      "name": "3a Verbindung Glattingrat",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_140413",
+      "ref": null,
+      "name": "4 Abfahrt Vermalen Obermoos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "R_140414",
+      "ref": null,
+      "name": "4a Tal-Abfahrt Vermalen",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4200
+    },
+    {
+      "id": "R_140415",
+      "ref": null,
+      "name": "5 Muri - Standardabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_140416",
+      "ref": null,
+      "name": "5a Abfahrt Untermuri",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_140417",
+      "ref": null,
+      "name": "6 Slalomhang (WISBI Strecke)",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_140418",
+      "ref": null,
+      "name": "7 Abfahrt Riedkopf",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "R_140419",
+      "ref": null,
+      "name": "7a Riedkopf Direkte",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_140420",
+      "ref": null,
+      "name": "7b Riedkopf Umfahrung",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_140421",
+      "ref": null,
+      "name": "8 Abfahrt Riedboden",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_140422",
+      "ref": null,
+      "name": "9 Abfahrt Glattingrat",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_140423",
+      "ref": null,
+      "name": "9a Verbindung zu Abfahrt 3",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_140461",
+      "ref": null,
+      "name": "11 Abfahrt Schlossboden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    }
+  ]
+}

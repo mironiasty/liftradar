@@ -1,0 +1,817 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "soelden",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.618646+01:00",
+  "updated_at": "2026-11-21T13:33:55+01:00",
+  "source": "https://winter.intermaps.com/soelden/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_69378",
+      "ref": "C30",
+      "name": "10EUB Giggijoch",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 2650,
+      "capacity_per_hour": 4500,
+      "bottom_m": 1362,
+      "top_m": 2648
+    },
+    {
+      "id": "L_69379",
+      "ref": "C38",
+      "name": "10EUB Hochsölden-Rotkogl",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1200,
+      "capacity_per_hour": 1330,
+      "bottom_m": 1987,
+      "top_m": 2340
+    },
+    {
+      "id": "L_69380",
+      "ref": "A16",
+      "name": "6SK Gratl",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1080,
+      "capacity_per_hour": 1440,
+      "bottom_m": 2131,
+      "top_m": 2533
+    },
+    {
+      "id": "L_69381",
+      "ref": "A11",
+      "name": "3SK Gaislachkogl II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1980,
+      "capacity_per_hour": 1850,
+      "bottom_m": 2176,
+      "top_m": 3040
+    },
+    {
+      "id": "L_69382",
+      "ref": "D50",
+      "name": "4SB Seekogl",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 890,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2504,
+      "top_m": 2666
+    },
+    {
+      "id": "L_69383",
+      "ref": "C34",
+      "name": "4SK Hainbachkar",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1290,
+      "capacity_per_hour": 2650,
+      "bottom_m": 2279,
+      "top_m": 2573
+    },
+    {
+      "id": "L_69384",
+      "ref": "A13",
+      "name": "4SK Heidebahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1620,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1952,
+      "top_m": 2428
+    },
+    {
+      "id": "L_69385",
+      "ref": "C37",
+      "name": "4SK Rosskirpl",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1650,
+      "capacity_per_hour": 2650,
+      "bottom_m": 2287,
+      "top_m": 2744
+    },
+    {
+      "id": "L_69386",
+      "ref": "D52",
+      "name": "4SK Schwarzkogl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1110,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2573,
+      "top_m": 2964
+    },
+    {
+      "id": "L_69387",
+      "ref": "C31",
+      "name": "6SK Langegg",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 2260,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1912,
+      "top_m": 2663
+    },
+    {
+      "id": "L_69388",
+      "ref": "E65",
+      "name": "6SK Seiterkar",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 920,
+      "capacity_per_hour": 3000,
+      "bottom_m": 2795,
+      "top_m": 3051
+    },
+    {
+      "id": "L_69393",
+      "ref": "A17",
+      "name": "6SK Stabele",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1220,
+      "capacity_per_hour": 2600,
+      "bottom_m": 1960,
+      "top_m": 2394
+    },
+    {
+      "id": "L_69394",
+      "ref": "A14",
+      "name": "6SK Wasserkar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1470,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1854,
+      "top_m": 2430
+    },
+    {
+      "id": "L_69395",
+      "ref": "A10",
+      "name": "8EUB Gaislachkogl I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 2040,
+      "capacity_per_hour": 3600,
+      "bottom_m": 1363,
+      "top_m": 2174
+    },
+    {
+      "id": "L_69396",
+      "ref": "D53",
+      "name": "8EUB Gletscherexpress",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1590,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2672,
+      "top_m": 2756
+    },
+    {
+      "id": "L_69397",
+      "ref": "E61",
+      "name": "8EUB Schwarze Schneid I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 920,
+      "capacity_per_hour": 2800,
+      "bottom_m": 2674,
+      "top_m": 2991
+    },
+    {
+      "id": "L_69398",
+      "ref": "E62",
+      "name": "8EUB Schwarze Schneid II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1013,
+      "capacity_per_hour": 2800,
+      "bottom_m": 2991,
+      "top_m": 3247
+    },
+    {
+      "id": "L_69416",
+      "ref": "E66",
+      "name": "8EUB Tiefenbach",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 2040,
+      "capacity_per_hour": 2800,
+      "bottom_m": 2793,
+      "top_m": 3249
+    },
+    {
+      "id": "L_69417",
+      "ref": "D51",
+      "name": "8SK Einzeiger",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1100,
+      "capacity_per_hour": 4000,
+      "bottom_m": 2505,
+      "top_m": 2767
+    },
+    {
+      "id": "L_69418",
+      "ref": "C36",
+      "name": "8SK Giggijoch",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1232,
+      "capacity_per_hour": 3700,
+      "bottom_m": 2282,
+      "top_m": 2597
+    },
+    {
+      "id": "L_69430",
+      "ref": "C35",
+      "name": "8SK Silberbrünnl",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1700,
+      "capacity_per_hour": 3800,
+      "bottom_m": 2281,
+      "top_m": 2670
+    },
+    {
+      "id": "L_69431",
+      "ref": "E60",
+      "name": "Gletscherband",
+      "type": "carpet",
+      "status": "open",
+      "length_m": 170,
+      "capacity_per_hour": 1100,
+      "bottom_m": 2657,
+      "top_m": 2673
+    },
+    {
+      "id": "L_69432",
+      "ref": "C33",
+      "name": "Minilift Giggijoch",
+      "type": "carpet",
+      "status": "open",
+      "length_m": 160,
+      "capacity_per_hour": 1100,
+      "bottom_m": 2284,
+      "top_m": 2306
+    },
+    {
+      "id": "L_69433",
+      "ref": "E69",
+      "name": "Minilift Tiefenbach",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 340,
+      "capacity_per_hour": 750,
+      "bottom_m": 2783,
+      "top_m": 2848
+    },
+    {
+      "id": "L_69434",
+      "ref": "A12",
+      "name": "SL Gaislachalm",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 500,
+      "capacity_per_hour": 1010,
+      "bottom_m": 1968,
+      "top_m": 2130
+    },
+    {
+      "id": "L_69435",
+      "ref": "B21",
+      "name": "SL Innerwald I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 350,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1470,
+      "top_m": 1540
+    },
+    {
+      "id": "L_69436",
+      "ref": "B22",
+      "name": "SL Innerwald II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 430,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1470,
+      "top_m": 1590
+    },
+    {
+      "id": "L_69437",
+      "ref": "E63",
+      "name": "SL Karleskogl",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 920,
+      "capacity_per_hour": 1440,
+      "bottom_m": 2991,
+      "top_m": 3248
+    },
+    {
+      "id": "L_69438",
+      "ref": "E67",
+      "name": "SL Mutkogl",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 2099,
+      "capacity_per_hour": 1435,
+      "bottom_m": 2790,
+      "top_m": 3229
+    },
+    {
+      "id": "L_69459",
+      "ref": "E64",
+      "name": "SL Seiterjoechl",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 990,
+      "capacity_per_hour": 1331,
+      "bottom_m": 2645,
+      "top_m": 3047
+    },
+    {
+      "id": "L_69460",
+      "ref": "B20",
+      "name": "Zentrum Shuttle",
+      "type": "funicular",
+      "status": "open",
+      "length_m": 270,
+      "capacity_per_hour": 800,
+      "bottom_m": 1350,
+      "top_m": 1457
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_69389",
+      "ref": "80",
+      "name": "Skiroute Nr. 80",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_69390",
+      "ref": "81",
+      "name": "Skiroute Nr. 81",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "R_69391",
+      "ref": "Private Skirouten zu Skihütten Gaislachalm",
+      "name": "Skirouten Gaislachalm",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_69399",
+      "ref": "50",
+      "name": "Piste Nr. 50",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_69400",
+      "ref": "5a",
+      "name": "Piste Nr. 5a",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_69401",
+      "ref": "6",
+      "name": "Piste Nr. 6",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1100
+    },
+    {
+      "id": "R_69402",
+      "ref": "7",
+      "name": "Piste Nr. 7",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_69403",
+      "ref": "7a",
+      "name": "Piste Nr. 7a",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_69404",
+      "ref": "8",
+      "name": "Piste Nr. 8",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_69405",
+      "ref": "9",
+      "name": "Piste Nr. 9",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "R_69406",
+      "ref": "60",
+      "name": "Skiroute Nr. 60",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_69407",
+      "ref": "61",
+      "name": "Skiroute Nr. 61",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_69408",
+      "ref": "62",
+      "name": "Skiroute Nr. 62",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_69409",
+      "ref": "63",
+      "name": "Skiroute Nr. 63",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_69410",
+      "ref": "64",
+      "name": "Skiroute Nr. 64",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_69411",
+      "ref": "65",
+      "name": "Skiroute Nr. 65",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_69412",
+      "ref": "70",
+      "name": "Skiroute Nr. 70",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_69413",
+      "ref": "71",
+      "name": "Skiroute Nr. 71",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_69414",
+      "ref": "72",
+      "name": "Skiroute Nr. 72",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_69415",
+      "ref": "73",
+      "name": "Skiroute Nr. 73",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_69442",
+      "ref": "36",
+      "name": "Piste Nr. 36",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1600
+    },
+    {
+      "id": "R_69443",
+      "ref": "18",
+      "name": "Piste Nr. 18",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_69444",
+      "ref": "19",
+      "name": "Piste Nr. 19",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "R_69445",
+      "ref": "1a",
+      "name": "Piste Nr. 1a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "R_69446",
+      "ref": "1b",
+      "name": "Piste Nr. 1b",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1800
+    },
+    {
+      "id": "R_69447",
+      "ref": "2",
+      "name": "Piste Nr. 2",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 6200
+    },
+    {
+      "id": "R_69448",
+      "ref": "34",
+      "name": "Piste Nr. 34",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1200
+    },
+    {
+      "id": "R_69461",
+      "ref": "1",
+      "name": "Piste Nr. 1",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 3000
+    },
+    {
+      "id": "R_69462",
+      "ref": "10",
+      "name": "Piste Nr. 10",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_69463",
+      "ref": "11",
+      "name": "Piste Nr. 11",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 9000
+    },
+    {
+      "id": "R_69464",
+      "ref": "12",
+      "name": "Piste Nr. 12",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 4100
+    },
+    {
+      "id": "R_69465",
+      "ref": "13",
+      "name": "Piste Nr. 13",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 10800
+    },
+    {
+      "id": "R_69466",
+      "ref": "14",
+      "name": "Piste Nr. 14",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 10700
+    },
+    {
+      "id": "R_69467",
+      "ref": "15",
+      "name": "Piste Nr. 15",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 9900
+    },
+    {
+      "id": "R_69468",
+      "ref": "16",
+      "name": "Piste Nr. 16",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "R_69469",
+      "ref": "20",
+      "name": "Piste Nr. 20",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 2100
+    },
+    {
+      "id": "R_69470",
+      "ref": "21",
+      "name": "Piste Nr. 21",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_69471",
+      "ref": "21a",
+      "name": "Piste Nr. 21a",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "R_69472",
+      "ref": "22",
+      "name": "Piste Nr. 22",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_69473",
+      "ref": "22",
+      "name": "Piste Nr. 22a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_69474",
+      "ref": "23",
+      "name": "Piste Nr. 23",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1300
+    },
+    {
+      "id": "R_69475",
+      "ref": "24",
+      "name": "Piste Nr. 24",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2900
+    },
+    {
+      "id": "R_69476",
+      "ref": "25",
+      "name": "Piste Nr. 25",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_69477",
+      "ref": "2a",
+      "name": "Piste Nr. 2a",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "R_69478",
+      "ref": "3",
+      "name": "Piste Nr. 3",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "R_69479",
+      "ref": "30",
+      "name": "Piste Nr. 30",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 5900
+    },
+    {
+      "id": "R_69480",
+      "ref": "31",
+      "name": "Piste Nr. 31",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 2400
+    },
+    {
+      "id": "R_69481",
+      "ref": "32",
+      "name": "Piste Nr. 32",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 6300
+    },
+    {
+      "id": "R_69482",
+      "ref": "33",
+      "name": "Piste Nr. 33",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 5600
+    },
+    {
+      "id": "R_69483",
+      "ref": "38",
+      "name": "Piste Nr. 38",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 8400
+    },
+    {
+      "id": "R_69484",
+      "ref": "39",
+      "name": "Piste Nr. 39",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 7000
+    },
+    {
+      "id": "R_69485",
+      "ref": "3a",
+      "name": "Piste Nr. 3a",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_69486",
+      "ref": "3b",
+      "name": "Piste Nr. 3b",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_69487",
+      "ref": "4",
+      "name": "Piste Nr. 4",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 5500
+    },
+    {
+      "id": "R_69488",
+      "ref": "40",
+      "name": "Piste Nr. 40",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_69489",
+      "ref": "41",
+      "name": "Piste Nr. 41",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 800
+    },
+    {
+      "id": "R_69490",
+      "ref": "5",
+      "name": "Piste Nr. 5",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_89751",
+      "ref": "19a",
+      "name": "Piste Nr. 19",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1100
+    }
+  ]
+}

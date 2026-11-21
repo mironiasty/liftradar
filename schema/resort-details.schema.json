@@ -1,0 +1,272 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liftradar.eu/schema/resort-details.schema.json",
+  "$defs": {
+    "DetailsLift": {
+      "additionalProperties": false,
+      "description": "One lift as the source lists it.",
+      "properties": {
+        "id": {
+          "description": "The source's id, stable between runs",
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The lift's number on the resort's map, e.g. C30",
+          "title": "Ref"
+        },
+        "name": {
+          "description": "As the source writes it, often with a type prefix (10EUB, SL)",
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "gondola",
+            "cable_car",
+            "chairlift",
+            "drag_lift",
+            "carpet",
+            "funicular",
+            "other"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "open",
+            "closed",
+            "preparation",
+            "unknown"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "length_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Length M"
+        },
+        "capacity_per_hour": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Capacity Per Hour"
+        },
+        "bottom_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Elevation of the valley station",
+          "title": "Bottom M"
+        },
+        "top_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Elevation of the mountain station",
+          "title": "Top M"
+        }
+      },
+      "required": [
+        "id",
+        "ref",
+        "name",
+        "type",
+        "status",
+        "length_m",
+        "capacity_per_hour",
+        "bottom_m",
+        "top_m"
+      ],
+      "title": "DetailsLift",
+      "type": "object"
+    },
+    "DetailsSlope": {
+      "additionalProperties": false,
+      "description": "One slope or ski route as the source lists it.",
+      "properties": {
+        "id": {
+          "description": "The source's id, stable between runs",
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The slope's number on the resort's map, e.g. 4c",
+          "title": "Ref"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "intermediate",
+            "difficult",
+            "ski_route",
+            "other"
+          ],
+          "title": "Difficulty",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "open",
+            "closed",
+            "preparation",
+            "unknown"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "length_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Length M"
+        }
+      },
+      "required": [
+        "id",
+        "ref",
+        "name",
+        "difficulty",
+        "status",
+        "length_m"
+      ],
+      "title": "DetailsSlope",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Experimental: every lift and slope of one resort with its status, from its slope map. `unknown` items\nare listed but left out of the resort file's counts.",
+  "properties": {
+    "$schema": {
+      "const": "https://liftradar.eu/schema/resort-details.schema.json",
+      "default": "https://liftradar.eu/schema/resort-details.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9-]+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "country": {
+      "pattern": "^[a-z]{2}$",
+      "title": "Country",
+      "type": "string"
+    },
+    "fetched_at": {
+      "format": "date-time",
+      "title": "Fetched At",
+      "type": "string"
+    },
+    "updated_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "When the source last updated the statuses",
+      "title": "Updated At"
+    },
+    "source": {
+      "pattern": "^https?://\\S+$",
+      "title": "Source",
+      "type": "string"
+    },
+    "lifts": {
+      "items": {
+        "$ref": "#/$defs/DetailsLift"
+      },
+      "title": "Lifts",
+      "type": "array"
+    },
+    "slopes": {
+      "items": {
+        "$ref": "#/$defs/DetailsSlope"
+      },
+      "title": "Slopes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "$schema",
+    "id",
+    "country",
+    "fetched_at",
+    "updated_at",
+    "source",
+    "lifts",
+    "slopes"
+  ],
+  "title": "Experimental: every lift and slope of one resort",
+  "type": "object",
+  "x-experimental": true
+}

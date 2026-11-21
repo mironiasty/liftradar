@@ -1,0 +1,223 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "hochficht",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619333+01:00",
+  "updated_at": "2026-11-18T08:53:19+01:00",
+  "source": "https://winter.intermaps.com/hochficht/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_101963",
+      "ref": null,
+      "name": "H1 Hochfichtbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1601,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": 1338
+    },
+    {
+      "id": "L_101964",
+      "ref": null,
+      "name": "R5 Rehberglift I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1234,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101965",
+      "ref": null,
+      "name": "R6 Rehberglift II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1234,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101966",
+      "ref": null,
+      "name": "R4 Reischa Junior Park",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 185,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101967",
+      "ref": null,
+      "name": "Z1 Zwieselbergbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1153,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101968",
+      "ref": null,
+      "name": "Z2 Schwarzenbergbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1270,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101984",
+      "ref": null,
+      "name": "R1 Reischlbergbahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 422,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101985",
+      "ref": null,
+      "name": "R2 Reischlbergbahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 998,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101989",
+      "ref": null,
+      "name": "R3 Fichtl Kids Park",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_101969",
+      "ref": "1",
+      "name": "1 Stierwiesenabfahrt Family",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "R_101970",
+      "ref": "1a",
+      "name": "1a Stierwiesenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "R_101971",
+      "ref": "2",
+      "name": "2 Standardabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "R_101972",
+      "ref": "2a",
+      "name": "2a Schönbergabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_101973",
+      "ref": "3",
+      "name": "3 Hochwaldabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "R_101974",
+      "ref": "4",
+      "name": "4 Reischlbergabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_101975",
+      "ref": "5",
+      "name": "5 Wenzelwiese",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_101976",
+      "ref": "6",
+      "name": "6 Rehbergabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_101977",
+      "ref": "7",
+      "name": "7 Zwieselbergabfahrt FIS",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "R_101978",
+      "ref": "7a",
+      "name": "7a Zwieselbergabfahrt FIS",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_101979",
+      "ref": "8",
+      "name": "8 Zwieselbergabfahrt Family",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_101986",
+      "ref": "7b",
+      "name": "7b Zwieselweg",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_101987",
+      "ref": "9",
+      "name": "9 Schwarzenbergabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "R_101988",
+      "ref": "11",
+      "name": "11 Zwieselberg-Skiroute",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 600
+    }
+  ]
+}

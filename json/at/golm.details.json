@@ -1,0 +1,247 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "golm",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619237+01:00",
+  "updated_at": "2026-11-20T15:05:14+01:00",
+  "source": "https://winter.intermaps.com/golm/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_39039",
+      "ref": null,
+      "name": "Außergolmbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 933,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1788,
+      "top_m": 2100
+    },
+    {
+      "id": "L_39040",
+      "ref": null,
+      "name": "Matschwitz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1420,
+      "capacity_per_hour": 2880,
+      "bottom_m": 1491,
+      "top_m": 1902
+    },
+    {
+      "id": "L_39046",
+      "ref": null,
+      "name": "Hüttenkopfbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1341,
+      "capacity_per_hour": 2440,
+      "bottom_m": 1637,
+      "top_m": 2032
+    },
+    {
+      "id": "L_39047",
+      "ref": null,
+      "name": "Rätikonbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1730,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1643,
+      "top_m": 2103
+    },
+    {
+      "id": "L_39081",
+      "ref": null,
+      "name": "Golmerbahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1555,
+      "capacity_per_hour": 1800,
+      "bottom_m": 650,
+      "top_m": 1000
+    },
+    {
+      "id": "L_39082",
+      "ref": null,
+      "name": "Golmerbahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1266,
+      "capacity_per_hour": 1800,
+      "bottom_m": 1000,
+      "top_m": 1521
+    },
+    {
+      "id": "L_39083",
+      "ref": null,
+      "name": "Golmerbahn III",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1201,
+      "capacity_per_hour": 1800,
+      "bottom_m": 1521,
+      "top_m": 1892
+    },
+    {
+      "id": "L_39097",
+      "ref": null,
+      "name": "Innerbach",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 250,
+      "capacity_per_hour": 440,
+      "bottom_m": 650,
+      "top_m": 680
+    },
+    {
+      "id": "L_39112",
+      "ref": null,
+      "name": "Sücka",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 300,
+      "capacity_per_hour": 700,
+      "bottom_m": 1860,
+      "top_m": 1915
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_38982",
+      "ref": null,
+      "name": "Übungshang Innerbach",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_38983",
+      "ref": null,
+      "name": "Übungshang Sücka",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "R_39003",
+      "ref": null,
+      "name": "1 Standard I",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "R_39005",
+      "ref": null,
+      "name": "10 Diaboloabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1482
+    },
+    {
+      "id": "R_39025",
+      "ref": null,
+      "name": "2 Matschwitz - Latschau",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "R_39029",
+      "ref": null,
+      "name": "21 Skiroute Schwarze Wand",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_39031",
+      "ref": null,
+      "name": "22 Skiroute - Gauertal",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "R_39032",
+      "ref": null,
+      "name": "23 Skiroute Latschau - Tschagguns",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "R_39033",
+      "ref": null,
+      "name": "24 Skiroute nach Vandans",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 7400
+    },
+    {
+      "id": "R_39034",
+      "ref": null,
+      "name": "25 Skiroute Golmi-Wald",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "R_39036",
+      "ref": null,
+      "name": "3 Zundraboden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_39037",
+      "ref": null,
+      "name": "4 Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "R_39041",
+      "ref": null,
+      "name": "5 Außergolmabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "R_39045",
+      "ref": null,
+      "name": "6 Weltcupabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_39049",
+      "ref": null,
+      "name": "7 Täliabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "R_39051",
+      "ref": null,
+      "name": "8 Latschau - Vandans",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "R_39053",
+      "ref": null,
+      "name": "9 Race Area",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    }
+  ]
+}

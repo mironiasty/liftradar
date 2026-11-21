@@ -1,0 +1,1025 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "mayrhofen",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:41:29.572165+01:00",
+  "updated_at": "2026-11-21T08:08:04+01:00",
+  "source": "https://winter.intermaps.com/mayrhofen/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_70439",
+      "ref": null,
+      "name": "Penkenbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2901,
+      "capacity_per_hour": 3840,
+      "bottom_m": 654,
+      "top_m": 1790
+    },
+    {
+      "id": "L_70440",
+      "ref": null,
+      "name": "Horbergbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3850,
+      "capacity_per_hour": 2600,
+      "bottom_m": 620,
+      "top_m": 1645
+    },
+    {
+      "id": "L_70441",
+      "ref": null,
+      "name": "Möslbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": 1377,
+      "top_m": 1934
+    },
+    {
+      "id": "L_70442",
+      "ref": null,
+      "name": "8 SB Tappenalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 614,
+      "capacity_per_hour": 3200,
+      "bottom_m": 1624,
+      "top_m": 1772
+    },
+    {
+      "id": "L_70443",
+      "ref": null,
+      "name": "6 SB Penken Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1017,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1721,
+      "top_m": 2011
+    },
+    {
+      "id": "L_70444",
+      "ref": null,
+      "name": "6 SB Schneekar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1540,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1622,
+      "top_m": 2267
+    },
+    {
+      "id": "L_70445",
+      "ref": null,
+      "name": "6 SB Unterbergalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 870,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1944,
+      "top_m": 2267
+    },
+    {
+      "id": "L_70446",
+      "ref": null,
+      "name": "6 SB Gerent",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1708,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1841,
+      "top_m": 2269
+    },
+    {
+      "id": "L_70447",
+      "ref": null,
+      "name": "4 SB Lärchwald",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1071,
+      "capacity_per_hour": 2500,
+      "bottom_m": 1622,
+      "top_m": 1995
+    },
+    {
+      "id": "L_70448",
+      "ref": null,
+      "name": "4 SB Sun-Jet",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 482,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1695,
+      "top_m": 1820
+    },
+    {
+      "id": "L_70449",
+      "ref": null,
+      "name": "6 SB Knorren",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1037,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1692,
+      "top_m": 2068
+    },
+    {
+      "id": "L_70450",
+      "ref": null,
+      "name": "Kombibahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 867,
+      "capacity_per_hour": 3900,
+      "bottom_m": 1793,
+      "top_m": 1994
+    },
+    {
+      "id": "L_70451",
+      "ref": null,
+      "name": "Penkenkuli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 168,
+      "capacity_per_hour": 859,
+      "bottom_m": 1749,
+      "top_m": 1792
+    },
+    {
+      "id": "L_70452",
+      "ref": null,
+      "name": "Babylift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 147,
+      "capacity_per_hour": 1025,
+      "bottom_m": 1782,
+      "top_m": 1795
+    },
+    {
+      "id": "L_70453",
+      "ref": null,
+      "name": "Mittertrett",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1146,
+      "capacity_per_hour": 283,
+      "bottom_m": 1690,
+      "top_m": 1746
+    },
+    {
+      "id": "L_70454",
+      "ref": null,
+      "name": "Horberg Shuttle",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70455",
+      "ref": null,
+      "name": "ÜbungsLand Lärchwald",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70456",
+      "ref": null,
+      "name": "ÜbungsLand Penken",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70457",
+      "ref": null,
+      "name": "KinderLand Horberg",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 153,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70458",
+      "ref": null,
+      "name": "ÜbungsLand Mösl",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70459",
+      "ref": null,
+      "name": "Ahornbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3062,
+      "capacity_per_hour": 1105,
+      "bottom_m": 670,
+      "top_m": 1978
+    },
+    {
+      "id": "L_70460",
+      "ref": null,
+      "name": "6 SB Ebenwald",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 2400,
+      "capacity_per_hour": 1244,
+      "bottom_m": 1433,
+      "top_m": 1886
+    },
+    {
+      "id": "L_70461",
+      "ref": null,
+      "name": "8 SB Ahorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 643,
+      "capacity_per_hour": 3000,
+      "bottom_m": 1884,
+      "top_m": 1991
+    },
+    {
+      "id": "L_70462",
+      "ref": null,
+      "name": "Filzenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 345,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1842,
+      "top_m": 1952
+    },
+    {
+      "id": "L_70463",
+      "ref": null,
+      "name": "Filzenalmlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 390,
+      "capacity_per_hour": 660,
+      "bottom_m": 1911,
+      "top_m": 1967
+    },
+    {
+      "id": "L_70464",
+      "ref": null,
+      "name": "Übungslift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 181,
+      "capacity_per_hour": 710,
+      "bottom_m": 1967,
+      "top_m": 1996
+    },
+    {
+      "id": "L_70465",
+      "ref": null,
+      "name": "ÜbungsLand Ahorn",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 138,
+      "capacity_per_hour": 710,
+      "bottom_m": 1967,
+      "top_m": 1996
+    },
+    {
+      "id": "L_70527",
+      "ref": null,
+      "name": "10er Finkenberg 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1800,
+      "capacity_per_hour": 2400,
+      "bottom_m": 878,
+      "top_m": 1760
+    },
+    {
+      "id": "L_70528",
+      "ref": null,
+      "name": "8er Finkenberg 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 860,
+      "capacity_per_hour": 2880,
+      "bottom_m": 1760,
+      "top_m": 2090
+    },
+    {
+      "id": "L_70529",
+      "ref": null,
+      "name": "4er Nordhang",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1114,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1695,
+      "top_m": 2087
+    },
+    {
+      "id": "L_70530",
+      "ref": null,
+      "name": "Hasenmulde I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 740,
+      "capacity_per_hour": 405,
+      "bottom_m": 1995,
+      "top_m": 2090
+    },
+    {
+      "id": "L_70531",
+      "ref": null,
+      "name": "Hasenmulde II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 420,
+      "capacity_per_hour": 980,
+      "bottom_m": 1987,
+      "top_m": 2090
+    },
+    {
+      "id": "L_70532",
+      "ref": null,
+      "name": "Babylift Penkenjoch",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 150,
+      "capacity_per_hour": 510,
+      "bottom_m": 2080,
+      "top_m": 2090
+    },
+    {
+      "id": "L_70540",
+      "ref": null,
+      "name": "6er Katzenmoos mit Bubble",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1540,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1506,
+      "top_m": 2087
+    },
+    {
+      "id": "L_70620",
+      "ref": null,
+      "name": "4er Rastkogel",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2295,
+      "capacity_per_hour": 1300,
+      "bottom_m": 1275,
+      "top_m": 2112
+    },
+    {
+      "id": "L_70621",
+      "ref": null,
+      "name": "150er Tux",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1800,
+      "capacity_per_hour": 1750,
+      "bottom_m": 1706,
+      "top_m": 2415
+    },
+    {
+      "id": "L_70622",
+      "ref": null,
+      "name": "6er Wanglspitz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 921,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2184,
+      "top_m": 2400
+    },
+    {
+      "id": "L_70623",
+      "ref": null,
+      "name": "8er Horbergjoch",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1617,
+      "capacity_per_hour": 4000,
+      "bottom_m": 2022,
+      "top_m": 2473
+    },
+    {
+      "id": "L_70624",
+      "ref": null,
+      "name": "Lämmerbichl",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 300,
+      "capacity_per_hour": 1440,
+      "bottom_m": 2080,
+      "top_m": 2120
+    },
+    {
+      "id": "L_70625",
+      "ref": null,
+      "name": "Babylift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70626",
+      "ref": null,
+      "name": "Minilift/Zubringer 150er",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_70638",
+      "ref": null,
+      "name": "6er Lämmerbichl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1563,
+      "capacity_per_hour": 2800,
+      "bottom_m": 1848,
+      "top_m": 2290
+    },
+    {
+      "id": "L_70649",
+      "ref": null,
+      "name": "Eggalmbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1550,
+      "capacity_per_hour": 1600,
+      "bottom_m": 1300,
+      "top_m": 2000
+    },
+    {
+      "id": "L_70650",
+      "ref": null,
+      "name": "6 SB Eggalm Nord",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1905,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1490,
+      "top_m": 2155
+    },
+    {
+      "id": "L_70651",
+      "ref": null,
+      "name": "Hinterangerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 307,
+      "capacity_per_hour": 1008,
+      "bottom_m": 1300,
+      "top_m": 1356
+    },
+    {
+      "id": "L_70652",
+      "ref": null,
+      "name": "Beilspitzlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 786,
+      "capacity_per_hour": 1112,
+      "bottom_m": 1930,
+      "top_m": 2200
+    },
+    {
+      "id": "L_70653",
+      "ref": null,
+      "name": "6SB Lattenalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1094,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1680,
+      "top_m": 2010
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_70466",
+      "ref": null,
+      "name": "10 Gerent",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "R_70467",
+      "ref": null,
+      "name": "11 Gerent",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "R_70468",
+      "ref": null,
+      "name": "12 DevilsRun",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "R_70469",
+      "ref": null,
+      "name": "13 Tappental",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_70470",
+      "ref": null,
+      "name": "14 Tappenalm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "R_70471",
+      "ref": null,
+      "name": "15 Unterbergalm",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2700
+    },
+    {
+      "id": "R_70472",
+      "ref": null,
+      "name": "16 BlackAttack",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_70473",
+      "ref": null,
+      "name": "Rennstrecke Sun-Jet",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_70474",
+      "ref": null,
+      "name": "25 Albert's Penken Tour",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "R_70475",
+      "ref": null,
+      "name": "25 Penken Gschößalm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "R_70476",
+      "ref": null,
+      "name": "26 Penken Standard",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_70477",
+      "ref": null,
+      "name": "27 Penken Mittlere",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_70478",
+      "ref": null,
+      "name": "28 Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_70479",
+      "ref": null,
+      "name": "29 Horberg Baby Tour",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_70480",
+      "ref": null,
+      "name": "31 Lärchwald",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "R_70481",
+      "ref": null,
+      "name": "32 Knorren",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "R_70482",
+      "ref": null,
+      "name": "33 Knorren",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_70483",
+      "ref": null,
+      "name": "33 Knorren",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_70484",
+      "ref": null,
+      "name": "34 Harakiri",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_70485",
+      "ref": null,
+      "name": "30 Skiroute Schwendau",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 5400
+    },
+    {
+      "id": "R_70486",
+      "ref": null,
+      "name": "1 Ahorn Süd",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_70487",
+      "ref": null,
+      "name": "Ahorn Übungsgelände",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70488",
+      "ref": null,
+      "name": "2 Ahorn Nord",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_70489",
+      "ref": null,
+      "name": "3 Ahorn Filzen",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "R_70490",
+      "ref": null,
+      "name": "Ahorn Skiweg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_70491",
+      "ref": null,
+      "name": "4 Ahorn Ebenwald",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "R_70492",
+      "ref": null,
+      "name": "4a AlbertAdler Tour",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "R_70493",
+      "ref": null,
+      "name": "5 Ahorn TalAbfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "R_70533",
+      "ref": null,
+      "name": "45 Neurautabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70534",
+      "ref": null,
+      "name": "47 Katzenmoosabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70535",
+      "ref": null,
+      "name": "48 Penkenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70536",
+      "ref": null,
+      "name": "49 Lanersteinabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70537",
+      "ref": null,
+      "name": "52 Hasenmuldenabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70538",
+      "ref": null,
+      "name": "55 Nordhangabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70541",
+      "ref": null,
+      "name": "50",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70543",
+      "ref": null,
+      "name": "53",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70627",
+      "ref": null,
+      "name": "60 Hoarberggrube",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70628",
+      "ref": null,
+      "name": "61 Grauer Spitz",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70629",
+      "ref": null,
+      "name": "62 Niederleger",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70630",
+      "ref": null,
+      "name": "64 Alter Hochleger",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70631",
+      "ref": null,
+      "name": "63 Zeigerspitze",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70632",
+      "ref": null,
+      "name": "63",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70633",
+      "ref": null,
+      "name": "67 Weit offen",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70634",
+      "ref": null,
+      "name": "68 Wanglseite",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70635",
+      "ref": null,
+      "name": "66 Panoramaabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70636",
+      "ref": null,
+      "name": "69 Weitental",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70637",
+      "ref": null,
+      "name": "56 Gspielkopfabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70639",
+      "ref": null,
+      "name": "65",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70641",
+      "ref": null,
+      "name": "67a",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70654",
+      "ref": null,
+      "name": "78 Lattenalmabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70655",
+      "ref": null,
+      "name": "77a Nordabfahrt Pfanne",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70656",
+      "ref": null,
+      "name": "78 Talabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70657",
+      "ref": null,
+      "name": "77 Talabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70658",
+      "ref": null,
+      "name": "76 Beilabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70659",
+      "ref": null,
+      "name": "75 Verbindung Skigebiet Eggalm vom Rastkogel",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70660",
+      "ref": null,
+      "name": "77b Talabfahrt Lanersbach/Eggalmbahnen",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70661",
+      "ref": null,
+      "name": "75 Abfahrt Rastkogel - Eggalm Nord",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70709",
+      "ref": null,
+      "name": "51 Babytour",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70716",
+      "ref": null,
+      "name": "77 Nordabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70717",
+      "ref": null,
+      "name": "77 Talabfahrt Vorderlanersbach/Rastkogel",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_70718",
+      "ref": null,
+      "name": "77 Waldabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_74991",
+      "ref": null,
+      "name": "78 Lattenalmabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

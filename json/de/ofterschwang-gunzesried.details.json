@@ -1,0 +1,225 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ofterschwang-gunzesried",
+  "country": "de",
+  "fetched_at": "2026-11-21T13:40:33.626797+01:00",
+  "updated_at": "2026-11-21T13:14:15+01:00",
+  "source": "https://winter.intermaps.com/ofterschwang/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_25441",
+      "ref": null,
+      "name": "A Weltcup-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1500,
+      "capacity_per_hour": 1830,
+      "bottom_m": 869,
+      "top_m": 1304
+    },
+    {
+      "id": "L_25442",
+      "ref": null,
+      "name": "B Ossi-Reichert-Bahn Sektion I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1300,
+      "capacity_per_hour": null,
+      "bottom_m": 885,
+      "top_m": 1170
+    },
+    {
+      "id": "L_25443",
+      "ref": null,
+      "name": "C Ossi-Reichert-Bahn Sektion II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 930,
+      "capacity_per_hour": null,
+      "bottom_m": 1170,
+      "top_m": 1304
+    },
+    {
+      "id": "L_25444",
+      "ref": null,
+      "name": "D Gipfel 6er",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1000,
+      "capacity_per_hour": 1800,
+      "bottom_m": 1167,
+      "top_m": 1405
+    },
+    {
+      "id": "L_25445",
+      "ref": null,
+      "name": "E Alpe Eck Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 500,
+      "capacity_per_hour": 1150,
+      "bottom_m": 1060,
+      "top_m": 1220
+    },
+    {
+      "id": "L_25446",
+      "ref": null,
+      "name": "F Übungslift Ofterschwang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "capacity_per_hour": 750,
+      "bottom_m": 875,
+      "top_m": 900
+    },
+    {
+      "id": "L_25447",
+      "ref": null,
+      "name": "G Kinderland Bergstation",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 150,
+      "capacity_per_hour": 720,
+      "bottom_m": 1308,
+      "top_m": 1321
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_25448",
+      "ref": null,
+      "name": "1 Weltcup-Piste",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_25449",
+      "ref": null,
+      "name": "1a Umfahrung Sonnenhof",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_25450",
+      "ref": null,
+      "name": "1b Umfahrung Fäßler s Berg",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "R_25451",
+      "ref": null,
+      "name": "2 Familienabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "R_25452",
+      "ref": null,
+      "name": "2a Herdebuch",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "R_25453",
+      "ref": null,
+      "name": "3 Jägerabfahrt-Skiroute",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_25454",
+      "ref": null,
+      "name": "4 Gipfelabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1750
+    },
+    {
+      "id": "R_25455",
+      "ref": null,
+      "name": "4a Gipfelabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_25456",
+      "ref": null,
+      "name": "4b Gipfelabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "R_25457",
+      "ref": null,
+      "name": "5 Oberegg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_25458",
+      "ref": null,
+      "name": "6 Alpe Eck",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_25459",
+      "ref": null,
+      "name": "7 Gunzesried",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_25460",
+      "ref": null,
+      "name": "8 Märchenwiese",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "R_25461",
+      "ref": null,
+      "name": "9 Geißrücken",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "R_25468",
+      "ref": null,
+      "name": "4c Melke",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_25469",
+      "ref": null,
+      "name": "4s Gipfel-S",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_25470",
+      "ref": null,
+      "name": "9a Geißrücken Umfahrung",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 500
+    }
+  ]
+}

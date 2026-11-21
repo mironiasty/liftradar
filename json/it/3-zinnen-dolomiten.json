@@ -11,7 +11,7 @@
   "website": "https://www.dreizinnen.com",
   "ski_region": "dolomiti-superski",
   "status": "open",
-  "fetched_at": "2026-11-21T08:40:33.815289+01:00",
+  "fetched_at": "2026-11-21T13:40:33.623244+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 20,
@@ -43,7 +43,7 @@
     "total": 30
   },
   "slopes": {
-    "open": 1,
+    "open": 2,
     "total": 86,
     "open_km": null,
     "total_km": 115
@@ -74,7 +74,7 @@
       "total_km": null
     },
     "intermediate": {
-      "open": 1,
+      "open": 2,
       "total": 32,
       "open_km": null,
       "total_km": null
@@ -86,7 +86,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-20T19:01:17.980896+01:00",
+  "lifts_updated_at": "2026-11-21T09:20:12.700546+01:00",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

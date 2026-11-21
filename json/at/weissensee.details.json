@@ -1,0 +1,140 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "weissensee",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619402+01:00",
+  "updated_at": "2026-11-14T04:23:44+01:00",
+  "source": "https://winter.intermaps.com/weissensee/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_111382",
+      "ref": null,
+      "name": "Weissensee Bergbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1300,
+      "capacity_per_hour": 1200,
+      "bottom_m": 952,
+      "top_m": 1332
+    },
+    {
+      "id": "L_111383",
+      "ref": null,
+      "name": "Sonnenlift Naggler Alm",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 250,
+      "capacity_per_hour": 680,
+      "bottom_m": 1321,
+      "top_m": 1367
+    },
+    {
+      "id": "L_111384",
+      "ref": null,
+      "name": "Verbindungslift Naggler Alm",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 140,
+      "capacity_per_hour": 500,
+      "bottom_m": 1315,
+      "top_m": 1347
+    },
+    {
+      "id": "L_111385",
+      "ref": null,
+      "name": "Schulernöckl",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 540,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1211,
+      "top_m": 1381
+    },
+    {
+      "id": "L_111386",
+      "ref": null,
+      "name": "Seewiesenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 290,
+      "capacity_per_hour": 600,
+      "bottom_m": 935,
+      "top_m": 973
+    },
+    {
+      "id": "L_111772",
+      "ref": null,
+      "name": "Kinderseillift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_111773",
+      "ref": null,
+      "name": "Kinderteppichlift",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_111774",
+      "ref": null,
+      "name": "Kinderkarussell",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_111431",
+      "ref": "1",
+      "name": "1 FIS-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "R_111432",
+      "ref": "2",
+      "name": "2 Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_111433",
+      "ref": "3",
+      "name": "3 Naggler Alm",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 270
+    },
+    {
+      "id": "R_111434",
+      "ref": "4",
+      "name": "4 Seewiese",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 290
+    },
+    {
+      "id": "R_111453",
+      "ref": "6",
+      "name": "6 - Steilhang",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 550
+    }
+  ]
+}

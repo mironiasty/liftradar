@@ -1,0 +1,182 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "klippitztoerl",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619382+01:00",
+  "updated_at": "2026-11-10T11:30:05+01:00",
+  "source": "https://winter.intermaps.com/klippitztoerl/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_102792",
+      "ref": null,
+      "name": "4er Bärenwald",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2130,
+      "bottom_m": 1520,
+      "top_m": 1821
+    },
+    {
+      "id": "L_102793",
+      "ref": null,
+      "name": "2er Hochegger",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1435,
+      "bottom_m": 1535,
+      "top_m": 1800
+    },
+    {
+      "id": "L_102794",
+      "ref": null,
+      "name": "Kuhgraben I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1006,
+      "bottom_m": 1469,
+      "top_m": 1818
+    },
+    {
+      "id": "L_102795",
+      "ref": null,
+      "name": "Kuhgraben II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1365,
+      "bottom_m": 1469,
+      "top_m": 1818
+    },
+    {
+      "id": "L_102796",
+      "ref": null,
+      "name": "Flutlichtlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 724,
+      "bottom_m": 1535,
+      "top_m": 1602
+    },
+    {
+      "id": "L_102797",
+      "ref": null,
+      "name": "Zauberteppich",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_102798",
+      "ref": "1",
+      "name": "1 Kindercenter",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 290
+    },
+    {
+      "id": "R_102799",
+      "ref": "2",
+      "name": "2 Abfahrt Seetal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "R_102800",
+      "ref": "2a",
+      "name": "2a Abfahrt Hochegger",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1590
+    },
+    {
+      "id": "R_102801",
+      "ref": "3",
+      "name": "3 Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1880
+    },
+    {
+      "id": "R_102802",
+      "ref": "4",
+      "name": "4 Abfahrt Fellner",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1920
+    },
+    {
+      "id": "R_102803",
+      "ref": "5",
+      "name": "5 Hohenwart Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_102804",
+      "ref": "6",
+      "name": "6 Alte Rennstrecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "R_102805",
+      "ref": "7",
+      "name": "7 Abfahrt Kuhgraben",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1610
+    },
+    {
+      "id": "R_102806",
+      "ref": "8",
+      "name": "8 FIS-Rennstrecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1820
+    },
+    {
+      "id": "R_102807",
+      "ref": "9",
+      "name": "9 Gugl-Karner-Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1360
+    },
+    {
+      "id": "R_102808",
+      "ref": "10",
+      "name": "10 Steinkellner Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1850
+    },
+    {
+      "id": "R_102809",
+      "ref": "11",
+      "name": "11 Weitenbacher Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2480
+    },
+    {
+      "id": "R_102810",
+      "ref": null,
+      "name": "12 Skiroute Bischofhütten",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 2180
+    }
+  ]
+}

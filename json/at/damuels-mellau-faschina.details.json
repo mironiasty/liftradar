@@ -1,0 +1,880 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "damuels-mellau-faschina",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619284+01:00",
+  "updated_at": "2026-11-16T18:10:52+01:00",
+  "source": "https://winter.intermaps.com/damuels_mellau_faschina/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_68622",
+      "ref": null,
+      "name": "Skikindergarten",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 70,
+      "capacity_per_hour": 900,
+      "bottom_m": 1490,
+      "top_m": 1510
+    },
+    {
+      "id": "L_68631",
+      "ref": null,
+      "name": "Skikindergarten 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_68632",
+      "ref": null,
+      "name": "Skikindergarten 3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_68633",
+      "ref": null,
+      "name": "4er Sesselbahn Glatthorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1100,
+      "capacity_per_hour": 1550,
+      "bottom_m": 1680,
+      "top_m": 1980
+    },
+    {
+      "id": "L_68634",
+      "ref": null,
+      "name": "Doppelsesselbahn Stafelalpe",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1780,
+      "capacity_per_hour": 1440,
+      "bottom_m": 1490,
+      "top_m": 1865
+    },
+    {
+      "id": "L_68635",
+      "ref": null,
+      "name": "Schlepplift Guggernülli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 450,
+      "capacity_per_hour": 1000,
+      "bottom_m": 1490,
+      "top_m": 1620
+    },
+    {
+      "id": "L_68636",
+      "ref": null,
+      "name": "Übungslift Faschina",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 220,
+      "capacity_per_hour": 760,
+      "bottom_m": 1450,
+      "top_m": 1490
+    },
+    {
+      "id": "L_68648",
+      "ref": null,
+      "name": "6er Sesselbahn Suttis",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1150,
+      "capacity_per_hour": 2214,
+      "bottom_m": 1420,
+      "top_m": 1750
+    },
+    {
+      "id": "L_68656",
+      "ref": null,
+      "name": "Hasenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 112,
+      "capacity_per_hour": 800,
+      "bottom_m": 690,
+      "top_m": 701
+    },
+    {
+      "id": "L_68658",
+      "ref": null,
+      "name": "6er Sesselbahn Wildgunten",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1210,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1465,
+      "top_m": 1750
+    },
+    {
+      "id": "L_68659",
+      "ref": null,
+      "name": "10er Gondelbahn Mellaubahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2080,
+      "capacity_per_hour": 3100,
+      "bottom_m": 710,
+      "top_m": 1395
+    },
+    {
+      "id": "L_68660",
+      "ref": null,
+      "name": "8er Gondelbahn Gipfelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 600,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1412,
+      "top_m": 1924
+    },
+    {
+      "id": "L_68661",
+      "ref": null,
+      "name": "8er Sesselbahn Roßstelle",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 638,
+      "capacity_per_hour": 3400,
+      "bottom_m": 1400,
+      "top_m": 1570
+    },
+    {
+      "id": "L_68677",
+      "ref": null,
+      "name": "Easy Cheesy Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_69183",
+      "ref": null,
+      "name": "6er Sesselbahn Hohes Licht",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1200,
+      "capacity_per_hour": 1440,
+      "bottom_m": 1805,
+      "top_m": 2015
+    },
+    {
+      "id": "L_69184",
+      "ref": null,
+      "name": "6er Sesselbahn Sunnegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 900,
+      "capacity_per_hour": null,
+      "bottom_m": 1400,
+      "top_m": 1880
+    },
+    {
+      "id": "L_69185",
+      "ref": null,
+      "name": "6er Sesselbahn Oberdamüls",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 300,
+      "capacity_per_hour": 1440,
+      "bottom_m": 1450,
+      "top_m": 1750
+    },
+    {
+      "id": "L_69186",
+      "ref": null,
+      "name": "Doppelsesselbahn Walisgaden",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 600,
+      "capacity_per_hour": 1440,
+      "bottom_m": 1400,
+      "top_m": 1560
+    },
+    {
+      "id": "L_69187",
+      "ref": null,
+      "name": "4er Sesselbahn Uga-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1600,
+      "capacity_per_hour": 2200,
+      "bottom_m": 1380,
+      "top_m": 1830
+    },
+    {
+      "id": "L_69188",
+      "ref": null,
+      "name": "4er Sesselbahn Furka",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 600,
+      "capacity_per_hour": 1800,
+      "bottom_m": 1590,
+      "top_m": 1750
+    },
+    {
+      "id": "L_69189",
+      "ref": null,
+      "name": "6er Sesselbahn Hasenbühel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1900,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1400,
+      "top_m": 1915
+    },
+    {
+      "id": "L_69190",
+      "ref": null,
+      "name": "6er Sesselbahn Elsenkopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 750,
+      "capacity_per_hour": 2600,
+      "bottom_m": 1630,
+      "top_m": 1850
+    },
+    {
+      "id": "L_69191",
+      "ref": null,
+      "name": "6er Sesselbahn Hohe Wacht",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1060,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1630,
+      "top_m": 2005
+    },
+    {
+      "id": "L_69192",
+      "ref": null,
+      "name": "Übungslift Sunnegg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 220,
+      "capacity_per_hour": 800,
+      "bottom_m": 1400,
+      "top_m": 1445
+    },
+    {
+      "id": "L_69193",
+      "ref": null,
+      "name": "Kinderwelt Bunny 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_69194",
+      "ref": null,
+      "name": "Kinderwelt Bunny 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 120,
+      "capacity_per_hour": 700,
+      "bottom_m": 1430,
+      "top_m": 1400
+    },
+    {
+      "id": "L_69195",
+      "ref": null,
+      "name": "6er Sesselbahn Ragaz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1433,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1765,
+      "top_m": 2025
+    },
+    {
+      "id": "L_69211",
+      "ref": null,
+      "name": "Kinderwelt Bunny 3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_68624",
+      "ref": null,
+      "name": "1 Skiroute Hahnenkopf Süd",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68625",
+      "ref": null,
+      "name": "2 Skiroute Hahnenkopf Ost",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68626",
+      "ref": null,
+      "name": "3 Skiroute Hahnenkopf Nord",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68627",
+      "ref": "4",
+      "name": "Abfahrt Guggernülli 2",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_68628",
+      "ref": "5",
+      "name": "Abfahrt Guggernülli 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_68629",
+      "ref": "5a",
+      "name": "Abfahrt Ischgafelsa - Verbindungsabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_68637",
+      "ref": null,
+      "name": "Abfahrt Glatthorn",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68638",
+      "ref": "1a",
+      "name": "Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "R_68639",
+      "ref": "2",
+      "name": "Abfahrt Glatthorn",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_68640",
+      "ref": "3",
+      "name": "Abfahrt Stafelalpe",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_68641",
+      "ref": null,
+      "name": "3a Skiroute Stafelalpe - Weg",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68642",
+      "ref": "6",
+      "name": "Abfahrt Faschinajoch",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "R_68643",
+      "ref": null,
+      "name": "Nachtskilauf am Guggernülli-Lift",
+      "difficulty": "other",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68653",
+      "ref": null,
+      "name": "7 Skiroute Hochegg Mellau",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68654",
+      "ref": "35",
+      "name": "Dorfabfahrt Mellau",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "R_68657",
+      "ref": null,
+      "name": "Hasenlift",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68662",
+      "ref": "21",
+      "name": "Abfahrt Roßstelle links",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_68663",
+      "ref": "22",
+      "name": "Abfahrt Roßstelle rechts",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_68664",
+      "ref": "23",
+      "name": "Abfahrt Wannen",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "R_68665",
+      "ref": "24",
+      "name": "Abfahrt Moos",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "R_68666",
+      "ref": "25",
+      "name": "Abfahrt Wildgunten",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_68667",
+      "ref": "26",
+      "name": "Abfahrt Achtergraben",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_68668",
+      "ref": "27",
+      "name": "Abfahrt Nüggl",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_68669",
+      "ref": "28",
+      "name": "Abfahrt Schnimösle",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_68670",
+      "ref": "29",
+      "name": "Abfahrt FIS-Rennstrecke Ulfern",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68671",
+      "ref": "30",
+      "name": "Abfahrt Funpark Nühof",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_68672",
+      "ref": "31",
+      "name": "Abfahrt Roterberg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_68673",
+      "ref": "32",
+      "name": "Abfahrt Steilhang Suttis",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "R_68674",
+      "ref": "33",
+      "name": "Abfahrt Steilhang Seele",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_68675",
+      "ref": "34",
+      "name": "Abfahrt Vordersuttis",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "R_68678",
+      "ref": "23a",
+      "name": "23a Steilhang Wannen",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68679",
+      "ref": "23b",
+      "name": "23b Abfahrt Wannen",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_68680",
+      "ref": "23c",
+      "name": "23c Abfahrt Moos",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69156",
+      "ref": null,
+      "name": "17 Abfahrt Wäldle",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69157",
+      "ref": null,
+      "name": "2 Skiroute Sunnegg Steilhang",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69158",
+      "ref": null,
+      "name": "3 Skiroute Sunnegg Nord",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69159",
+      "ref": "4",
+      "name": "4 Skiroute Hohes Licht",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69160",
+      "ref": null,
+      "name": "5 Skiroute Hasenbühel",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69161",
+      "ref": null,
+      "name": "6 Skiroute Wannenkopf",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69162",
+      "ref": null,
+      "name": "Skiweg Mühlewald",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_69163",
+      "ref": null,
+      "name": "1 Skiroute Hohe Kante",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69165",
+      "ref": null,
+      "name": "Skiweg Uga",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 5500
+    },
+    {
+      "id": "R_69166",
+      "ref": null,
+      "name": "Skiweg Sunnegg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "R_69167",
+      "ref": null,
+      "name": "Bunny`s Übungsgelände",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69168",
+      "ref": "11",
+      "name": "Abfahrt Nordhang",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_69169",
+      "ref": "14",
+      "name": "Abfahrt Hochalpe",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "R_69170",
+      "ref": "3",
+      "name": "Abfahrt Hohes Licht",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "R_69171",
+      "ref": null,
+      "name": "1800",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "R_69172",
+      "ref": "7",
+      "name": "Abfahrt Halde",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_69173",
+      "ref": "8",
+      "name": "Abfahrt Stofel",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "R_69174",
+      "ref": "13",
+      "name": "Abfahrt Hohe Wacht",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "R_69175",
+      "ref": "2",
+      "name": "Abfahrt Uga",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_69176",
+      "ref": "2a",
+      "name": "Abfahrt Walisgaden",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "R_69177",
+      "ref": "2b",
+      "name": "Rennstrecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "R_69178",
+      "ref": "4",
+      "name": "Abfahrt Zilla",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "R_69179",
+      "ref": "6",
+      "name": "Abfahrt Grüsch",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_69180",
+      "ref": "9",
+      "name": "Abfahrt Furka",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_69181",
+      "ref": "16",
+      "name": "Abfahrt Hochblanken",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_69182",
+      "ref": null,
+      "name": "15 Abfahrt Ragaz",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69196",
+      "ref": "10",
+      "name": "Abfahrt Sonnenheim",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_69197",
+      "ref": "1",
+      "name": "Abfahrt Herzegg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69198",
+      "ref": "12",
+      "name": "Abfahrt Glaubicht",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_69199",
+      "ref": "3a",
+      "name": "Abfahrt Mittagspitze",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "R_69210",
+      "ref": null,
+      "name": "8 Skiroute Sünserjoch",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_69212",
+      "ref": null,
+      "name": "18 Rot Spitzgrätli",
+      "difficulty": "intermediate",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_69213",
+      "ref": null,
+      "name": "Abfahrt FIS-Rennstrecke Ulfern",
+      "difficulty": "other",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_69214",
+      "ref": "15",
+      "name": "Abfahrt Ragaz",
+      "difficulty": "other",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_69215",
+      "ref": "3a",
+      "name": "Abfahrt Stafelalpe - Weg",
+      "difficulty": "other",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_69234",
+      "ref": "5",
+      "name": "Guggernülli 1",
+      "difficulty": "easy",
+      "status": "unknown",
+      "length_m": null
+    },
+    {
+      "id": "R_69235",
+      "ref": null,
+      "name": "Hasenlift",
+      "difficulty": "other",
+      "status": "unknown",
+      "length_m": null
+    }
+  ]
+}

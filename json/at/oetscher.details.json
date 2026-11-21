@@ -1,0 +1,180 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "oetscher",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.619356+01:00",
+  "updated_at": "2026-11-13T16:26:01+01:00",
+  "source": "https://winter.intermaps.com/oetscher/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_103184",
+      "ref": "C",
+      "name": "Gr. Ötscher",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1731,
+      "capacity_per_hour": 1299,
+      "bottom_m": 847,
+      "top_m": 1437
+    },
+    {
+      "id": "L_103185",
+      "ref": "B",
+      "name": "Eibenkogel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 885,
+      "capacity_per_hour": 2262,
+      "bottom_m": 812,
+      "top_m": 1000
+    },
+    {
+      "id": "L_103186",
+      "ref": "A",
+      "name": "Ötscherbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1113,
+      "capacity_per_hour": 1797,
+      "bottom_m": 999,
+      "top_m": 1414
+    },
+    {
+      "id": "L_103187",
+      "ref": "D",
+      "name": "Fuchswald 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 827,
+      "capacity_per_hour": 1025,
+      "bottom_m": 851,
+      "top_m": 1055
+    },
+    {
+      "id": "L_103188",
+      "ref": "F",
+      "name": "Kälberhalt",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 65,
+      "capacity_per_hour": 1015,
+      "bottom_m": 868,
+      "top_m": 921
+    },
+    {
+      "id": "L_103206",
+      "ref": null,
+      "name": "Zauberteppich 102m",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 102,
+      "capacity_per_hour": null,
+      "bottom_m": 810,
+      "top_m": null
+    },
+    {
+      "id": "L_103221",
+      "ref": "E",
+      "name": "Fuchswald 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1025,
+      "bottom_m": 851,
+      "top_m": 1055
+    },
+    {
+      "id": "L_103224",
+      "ref": null,
+      "name": "Zauberteppich 25m",
+      "type": "carpet",
+      "status": "unknown",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": 810,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_103189",
+      "ref": "5",
+      "name": "Kleine Ötscherabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1560
+    },
+    {
+      "id": "R_103190",
+      "ref": "1",
+      "name": "Naturschneepiste Große Ötscherabfahrt",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "R_103191",
+      "ref": "4",
+      "name": "Distelpiste FIS SL",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_103192",
+      "ref": "3",
+      "name": "Distelpiste FIS RTL",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "R_103193",
+      "ref": "2",
+      "name": "Naturschneepiste Riffelabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "R_103194",
+      "ref": "6",
+      "name": "Fuchswald",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "R_103195",
+      "ref": "7",
+      "name": "Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2730
+    },
+    {
+      "id": "R_103196",
+      "ref": "8",
+      "name": "Eibenkogelpiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "R_103197",
+      "ref": null,
+      "name": "Kinderland - Piste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "R_103198",
+      "ref": "9",
+      "name": "Kälberhaltpiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 280
+    }
+  ]
+}

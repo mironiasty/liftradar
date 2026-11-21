@@ -1,0 +1,529 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kitzsteinhorn",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:40:33.618663+01:00",
+  "updated_at": "2026-11-21T10:48:45+01:00",
+  "source": "https://winter.intermaps.com/kitzsteinhorn/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_97432",
+      "ref": null,
+      "name": "Panoramabahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 1850,
+      "bottom_m": 929,
+      "top_m": 1978
+    },
+    {
+      "id": "L_97433",
+      "ref": null,
+      "name": "Langwiedbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2200,
+      "bottom_m": 1976,
+      "top_m": 2453
+    },
+    {
+      "id": "L_97434",
+      "ref": null,
+      "name": "Gletscherjet 2",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 3440,
+      "bottom_m": 1979,
+      "top_m": 2453
+    },
+    {
+      "id": "L_97435",
+      "ref": null,
+      "name": "Gletschershuttle",
+      "type": "funicular",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_97436",
+      "ref": null,
+      "name": "Sonnenkarbahn 1",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 3000,
+      "bottom_m": 2414,
+      "top_m": 2673
+    },
+    {
+      "id": "L_97437",
+      "ref": null,
+      "name": "Sonnenkarbahn 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1440,
+      "bottom_m": 2414,
+      "top_m": 2611
+    },
+    {
+      "id": "L_97439",
+      "ref": null,
+      "name": "Kristallbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2600,
+      "bottom_m": 2265,
+      "top_m": 2678
+    },
+    {
+      "id": "L_97440",
+      "ref": null,
+      "name": "Magnetköpfllift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 1193,
+      "bottom_m": 2850,
+      "top_m": 2913
+    },
+    {
+      "id": "L_97441",
+      "ref": null,
+      "name": "Schneehasenlift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 830,
+      "bottom_m": 2600,
+      "top_m": 2650
+    },
+    {
+      "id": "L_97442",
+      "ref": null,
+      "name": "Kitzlift 1",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2360,
+      "bottom_m": 2622,
+      "top_m": 2921
+    },
+    {
+      "id": "L_97443",
+      "ref": null,
+      "name": "Kitzlift 2",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2360,
+      "bottom_m": 2622,
+      "top_m": 2921
+    },
+    {
+      "id": "L_97444",
+      "ref": null,
+      "name": "Maurerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1200,
+      "bottom_m": 2627,
+      "top_m": 2875
+    },
+    {
+      "id": "L_97445",
+      "ref": null,
+      "name": "Maisilifte",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 663,
+      "bottom_m": 1108,
+      "top_m": 1175
+    },
+    {
+      "id": "L_97446",
+      "ref": null,
+      "name": "Almbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1125,
+      "top_m": 1733
+    },
+    {
+      "id": "L_97447",
+      "ref": null,
+      "name": "Lechnerberglifte",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 1440,
+      "bottom_m": 770,
+      "top_m": 835
+    },
+    {
+      "id": "L_97486",
+      "ref": null,
+      "name": "Gletscherjet 3",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 3600,
+      "bottom_m": 2448,
+      "top_m": 2628
+    },
+    {
+      "id": "L_97487",
+      "ref": null,
+      "name": "Gletscherjet 4",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 3326,
+      "bottom_m": 2628,
+      "top_m": 2926
+    },
+    {
+      "id": "L_97488",
+      "ref": null,
+      "name": "Gletscherjet 1",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 2660,
+      "bottom_m": 911,
+      "top_m": 1978
+    },
+    {
+      "id": "L_97491",
+      "ref": null,
+      "name": "Schmiedingerbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2900,
+      "bottom_m": 2530,
+      "top_m": 2775
+    },
+    {
+      "id": "L_97496",
+      "ref": null,
+      "name": "MK Maiskogelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2800,
+      "bottom_m": 768,
+      "top_m": 1570
+    },
+    {
+      "id": "L_97499",
+      "ref": null,
+      "name": "3K K-onnection",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": 2700,
+      "bottom_m": 1570,
+      "top_m": 1975
+    },
+    {
+      "id": "L_97503",
+      "ref": null,
+      "name": "Lechnerberglift 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_97621",
+      "ref": null,
+      "name": "Gipfelbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": 480,
+      "bottom_m": 2452,
+      "top_m": 3029
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_97448",
+      "ref": null,
+      "name": "1 Alpincenterpiste",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97449",
+      "ref": null,
+      "name": "1a Magnetköpflpiste",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97450",
+      "ref": null,
+      "name": "2 Gletscherseepiste",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97451",
+      "ref": null,
+      "name": "3a Schmiedingerpiste 1",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97452",
+      "ref": null,
+      "name": "3b Schmiedingerpiste 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97453",
+      "ref": null,
+      "name": "4a Gletscherpiste 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97454",
+      "ref": null,
+      "name": "4b Gletscherpiste 2",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97455",
+      "ref": null,
+      "name": "4c Gletscherpiste 3",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97456",
+      "ref": null,
+      "name": "5a Maurerpiste 1",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97457",
+      "ref": null,
+      "name": "5b Maurerpiste 2",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97458",
+      "ref": null,
+      "name": "7 Schmiedingerschwung",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97459",
+      "ref": null,
+      "name": "8a Sonnenkarpiste 1",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97460",
+      "ref": null,
+      "name": "8b Sonnenkarpiste 2",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97461",
+      "ref": null,
+      "name": "9 Nordkarpiste",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97462",
+      "ref": null,
+      "name": "10 Rettenwandpiste 1",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97463",
+      "ref": null,
+      "name": "11 Langwiedpiste",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97464",
+      "ref": null,
+      "name": "12 Kristallpiste",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97465",
+      "ref": null,
+      "name": "13 Krefelderpiste",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97466",
+      "ref": null,
+      "name": "X1 ICE AGE",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97467",
+      "ref": null,
+      "name": "X2 WEST SIDE STORY",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97468",
+      "ref": null,
+      "name": "X3 LEFT WING",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97469",
+      "ref": null,
+      "name": "X4 JUMP RUN",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97470",
+      "ref": null,
+      "name": "X5 PIPE LINE",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97479",
+      "ref": null,
+      "name": "6 Easy Run",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97480",
+      "ref": null,
+      "name": "14 Black Mamba",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97481",
+      "ref": null,
+      "name": "30 Schermer Steilhang",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97482",
+      "ref": null,
+      "name": "31 Familienabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97483",
+      "ref": null,
+      "name": "32 Sauloch - Trainingspiste",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97484",
+      "ref": null,
+      "name": "33 Schaufelberg Abfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97485",
+      "ref": null,
+      "name": "34 Übungspiste Maisi",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97489",
+      "ref": null,
+      "name": "15 Schneehasenpiste",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "R_97490",
+      "ref": null,
+      "name": "40 Lechnerbergpiste",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_97492",
+      "ref": null,
+      "name": "10a Rettenwandpiste 2",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

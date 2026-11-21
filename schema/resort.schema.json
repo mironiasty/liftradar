@@ -698,6 +698,13 @@
       "default": null,
       "title": "Lifts Updated At"
     },
+    "details": {
+      "description": "Experimental, may change or go away without notice: the path (from the site's root) of a file listing every lift and slope with its status (resort-details.schema.json). Left out when the resort's sources don't list them, or this run couldn't read them.",
+      "pattern": "^json/[a-z]{2}/[a-z0-9-]+\\.details\\.json$",
+      "title": "Details",
+      "type": "string",
+      "x-experimental": true
+    },
     "avalanche": {
       "anyOf": [
         {

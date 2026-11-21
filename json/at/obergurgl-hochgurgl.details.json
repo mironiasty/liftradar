@@ -1,0 +1,698 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "obergurgl-hochgurgl",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:41:42.772230+01:00",
+  "updated_at": "2026-11-21T13:34:17+01:00",
+  "source": "https://winter.intermaps.com/obergurgl_hochgurgl/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_84701",
+      "ref": null,
+      "name": "4SB TOP - Wurmkogl II",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1080,
+      "capacity_per_hour": 1800,
+      "bottom_m": 2697,
+      "top_m": 3027
+    },
+    {
+      "id": "L_84702",
+      "ref": null,
+      "name": "4SB Top - Wurmkogl I",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 2050,
+      "capacity_per_hour": 2526,
+      "bottom_m": 2420,
+      "top_m": 2783
+    },
+    {
+      "id": "L_84706",
+      "ref": null,
+      "name": "10EUB Kirchenkarbahn I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1510,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2174,
+      "top_m": 2630
+    },
+    {
+      "id": "L_84707",
+      "ref": null,
+      "name": "10EUB Kirchenkarbahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 500,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2630,
+      "top_m": 2840
+    },
+    {
+      "id": "L_84708",
+      "ref": null,
+      "name": "10EUB Rosskarbahn I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1920,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1909,
+      "top_m": 2668
+    },
+    {
+      "id": "L_84709",
+      "ref": null,
+      "name": "10EUB Rosskarbahn II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1920,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1909,
+      "top_m": 2668
+    },
+    {
+      "id": "L_84710",
+      "ref": null,
+      "name": "4SB Bruggenbodenbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 340,
+      "capacity_per_hour": 2200,
+      "bottom_m": 2040,
+      "top_m": 2125
+    },
+    {
+      "id": "L_84711",
+      "ref": null,
+      "name": "4SB Plattachbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1830,
+      "capacity_per_hour": 2000,
+      "bottom_m": 2262,
+      "top_m": 2898
+    },
+    {
+      "id": "L_84716",
+      "ref": null,
+      "name": "8EUB Top Schermer 3000",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1900,
+      "capacity_per_hour": 2393,
+      "bottom_m": 2422,
+      "top_m": 2922
+    },
+    {
+      "id": "L_84717",
+      "ref": null,
+      "name": "Förderband Hochgurgl",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_84718",
+      "ref": null,
+      "name": "SL Gipfellift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 850,
+      "capacity_per_hour": 1200,
+      "bottom_m": 2556,
+      "top_m": 2664
+    },
+    {
+      "id": "L_84719",
+      "ref": null,
+      "name": "SL Krumpwasserlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 470,
+      "capacity_per_hour": 700,
+      "bottom_m": 2170,
+      "top_m": 2274
+    },
+    {
+      "id": "L_84720",
+      "ref": null,
+      "name": "SL Mahdstuhllift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 370,
+      "capacity_per_hour": 659,
+      "bottom_m": 1894,
+      "top_m": 1932
+    },
+    {
+      "id": "L_84721",
+      "ref": null,
+      "name": "SL Vorder Wurmkogllift II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 180,
+      "capacity_per_hour": 1000,
+      "bottom_m": 2549,
+      "top_m": 2695
+    },
+    {
+      "id": "L_84722",
+      "ref": null,
+      "name": "SL Vorderer Wurmkogllift I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1530,
+      "capacity_per_hour": 962,
+      "bottom_m": 2010,
+      "top_m": 2572
+    },
+    {
+      "id": "L_84723",
+      "ref": null,
+      "name": "SL Wiesenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 120,
+      "capacity_per_hour": 442,
+      "bottom_m": 1907,
+      "top_m": 1940
+    },
+    {
+      "id": "L_84753",
+      "ref": null,
+      "name": "8EUB Hohe Mut Bahn I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1020,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1910,
+      "top_m": 2072
+    },
+    {
+      "id": "L_84754",
+      "ref": null,
+      "name": "8EUB Hohe Mut Bahn II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1430,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2072,
+      "top_m": 2647
+    },
+    {
+      "id": "L_84755",
+      "ref": null,
+      "name": "8EUB Topexpress Gurgl",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 3590,
+      "capacity_per_hour": 1200,
+      "bottom_m": 2340,
+      "top_m": 2421
+    },
+    {
+      "id": "L_84770",
+      "ref": null,
+      "name": "6EUB Festkoglbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 2170,
+      "capacity_per_hour": 2000,
+      "bottom_m": 1910,
+      "top_m": 2671
+    },
+    {
+      "id": "L_84771",
+      "ref": null,
+      "name": "6SB Grosse Karbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1070,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2149,
+      "top_m": 2538
+    },
+    {
+      "id": "L_84772",
+      "ref": null,
+      "name": "6SB Steinmannbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 790,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1953,
+      "top_m": 2240
+    },
+    {
+      "id": "L_84773",
+      "ref": null,
+      "name": "8EUB Hochgurgl I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 910,
+      "capacity_per_hour": 2015,
+      "bottom_m": 1789,
+      "top_m": 2160
+    },
+    {
+      "id": "L_84774",
+      "ref": null,
+      "name": "8EUB Hochgurgl II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 2180,
+      "capacity_per_hour": 2015,
+      "bottom_m": 2160,
+      "top_m": 2713
+    },
+    {
+      "id": "L_108100",
+      "ref": null,
+      "name": "Kinderland Obergurgl",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_108101",
+      "ref": null,
+      "name": "Kinderclub Obergurgl",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_84684",
+      "ref": "6",
+      "name": "Piste 6 Wiesenlift",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 200
+    },
+    {
+      "id": "R_84685",
+      "ref": "6a",
+      "name": "Piste 6a Festkogl",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1180
+    },
+    {
+      "id": "R_84686",
+      "ref": "7",
+      "name": "Piste 7 Plattach",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 6750
+    },
+    {
+      "id": "R_84687",
+      "ref": "7a",
+      "name": "Piste 7a Plattach",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 620
+    },
+    {
+      "id": "R_84688",
+      "ref": "8",
+      "name": "Piste 8 Plattach",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 2210
+    },
+    {
+      "id": "R_84689",
+      "ref": "8a",
+      "name": "Piste 8a Plattach",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 420
+    },
+    {
+      "id": "R_84690",
+      "ref": "9",
+      "name": "Piste 9 Dorfmitte",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "R_84712",
+      "ref": "29",
+      "name": "Piste 29",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1390
+    },
+    {
+      "id": "R_84724",
+      "ref": "1",
+      "name": "Piste 1 Hohe Mut",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1620
+    },
+    {
+      "id": "R_84725",
+      "ref": "10",
+      "name": "Piste 10 Rosskar Mitte",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 880
+    },
+    {
+      "id": "R_84726",
+      "ref": "10a",
+      "name": "Piste 10a Rosskar Mitte",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 690
+    },
+    {
+      "id": "R_84727",
+      "ref": "11",
+      "name": "Piste 11 Rosskar Mitte",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1830
+    },
+    {
+      "id": "R_84728",
+      "ref": "12",
+      "name": "Piste 12 Festkogl Talabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4980
+    },
+    {
+      "id": "R_84729",
+      "ref": "12a",
+      "name": "Piste 12a Rosskar Mitte",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 950
+    },
+    {
+      "id": "R_84730",
+      "ref": "13",
+      "name": "Piste 13 Ferwall",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1550
+    },
+    {
+      "id": "R_84731",
+      "ref": "14",
+      "name": "Piste 14 Ferwall",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1320
+    },
+    {
+      "id": "R_84732",
+      "ref": "15",
+      "name": "Piste 15 Mahdstuhl",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "R_84733",
+      "ref": "1a",
+      "name": "Piste 1a Hohe Mut Skiweg",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 770
+    },
+    {
+      "id": "R_84734",
+      "ref": "2",
+      "name": "Piste 2 Hohe Mut",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "R_84735",
+      "ref": "21",
+      "name": "Piste 21",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 2850
+    },
+    {
+      "id": "R_84736",
+      "ref": "31",
+      "name": "Piste 31",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1250
+    },
+    {
+      "id": "R_84737",
+      "ref": "32",
+      "name": "Piste 32",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2620
+    },
+    {
+      "id": "R_84738",
+      "ref": "33",
+      "name": "Piste 33",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 2740
+    },
+    {
+      "id": "R_84739",
+      "ref": "34",
+      "name": "Piste 34",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 990
+    },
+    {
+      "id": "R_84740",
+      "ref": "35",
+      "name": "Piste 35",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1520
+    },
+    {
+      "id": "R_84741",
+      "ref": "35",
+      "name": "Piste 35 blau",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 680
+    },
+    {
+      "id": "R_84742",
+      "ref": "36",
+      "name": "Piste 36",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 4620
+    },
+    {
+      "id": "R_84743",
+      "ref": "37",
+      "name": "Piste 37",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 650
+    },
+    {
+      "id": "R_84744",
+      "ref": "38",
+      "name": "Piste 38",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1320
+    },
+    {
+      "id": "R_84745",
+      "ref": "4",
+      "name": "Piste 4 Steinmann",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1850
+    },
+    {
+      "id": "R_84746",
+      "ref": "41",
+      "name": "Piste 41",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2840
+    },
+    {
+      "id": "R_84747",
+      "ref": "42",
+      "name": "Piste 42",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_84748",
+      "ref": "43",
+      "name": "Piste 43 Kirchenkarbahn II blau",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1730
+    },
+    {
+      "id": "R_84749",
+      "ref": "44",
+      "name": "Piste 44 Kirchenkarbahn II rot",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 530
+    },
+    {
+      "id": "R_84750",
+      "ref": "4a",
+      "name": "Piste 4a Steinmann",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 650
+    },
+    {
+      "id": "R_84751",
+      "ref": "5",
+      "name": "Piste 5 Steinmann",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3250
+    },
+    {
+      "id": "R_84752",
+      "ref": "6",
+      "name": "Piste 6 Familienabfahrt Plattachbahn Gipfellift",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 10980
+    },
+    {
+      "id": "R_84756",
+      "ref": "3",
+      "name": "Piste 3 Zirbenwald",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1340
+    },
+    {
+      "id": "R_84757",
+      "ref": "30",
+      "name": "Piste 30",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 5990
+    },
+    {
+      "id": "R_84759",
+      "ref": "28",
+      "name": "Piste 28",
+      "difficulty": "difficult",
+      "status": "open",
+      "length_m": 1580
+    },
+    {
+      "id": "R_84760",
+      "ref": "12",
+      "name": "Piste 12 Festkogl",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 990
+    },
+    {
+      "id": "R_84761",
+      "ref": "22",
+      "name": "Piste 22",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 680
+    },
+    {
+      "id": "R_84762",
+      "ref": "22a",
+      "name": "Piste 22a",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 1380
+    },
+    {
+      "id": "R_84763",
+      "ref": "22b",
+      "name": "Piste 22b",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1120
+    },
+    {
+      "id": "R_84764",
+      "ref": "22c",
+      "name": "Piste 22c",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2180
+    },
+    {
+      "id": "R_84765",
+      "ref": "23",
+      "name": "Piste 23",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 590
+    },
+    {
+      "id": "R_84766",
+      "ref": "24",
+      "name": "Piste 24",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 4990
+    },
+    {
+      "id": "R_84767",
+      "ref": "25",
+      "name": "Piste 25",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 960
+    },
+    {
+      "id": "R_84768",
+      "ref": "26",
+      "name": "Piste 26",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 12180
+    },
+    {
+      "id": "R_84769",
+      "ref": "27",
+      "name": "Piste 27",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 5420
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "bolsterlang",
+  "country": "de",
+  "fetched_at": "2026-11-21T13:40:33.626789+01:00",
+  "updated_at": "2026-11-21T13:14:59+01:00",
+  "source": "https://winter.intermaps.com/hoernerbahn/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_26102",
+      "ref": null,
+      "name": "A Hörnerbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1800,
+      "capacity_per_hour": 1500,
+      "bottom_m": 940,
+      "top_m": 1540
+    },
+    {
+      "id": "L_26103",
+      "ref": null,
+      "name": "B Stuibeneckbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 850,
+      "capacity_per_hour": 1250,
+      "bottom_m": 1120,
+      "top_m": 1380
+    },
+    {
+      "id": "L_26104",
+      "ref": null,
+      "name": "C Weiherkopfbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1200,
+      "capacity_per_hour": 2500,
+      "bottom_m": 1265,
+      "top_m": 1665
+    },
+    {
+      "id": "L_26105",
+      "ref": null,
+      "name": "D Dorflift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 700,
+      "capacity_per_hour": 900,
+      "bottom_m": 890,
+      "top_m": 1050
+    },
+    {
+      "id": "L_26107",
+      "ref": null,
+      "name": "E Hörni - Tellerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 270,
+      "capacity_per_hour": 700,
+      "bottom_m": 890,
+      "top_m": 940
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_26109",
+      "ref": null,
+      "name": "1b Weiherkopf Alter Hof",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "R_26110",
+      "ref": null,
+      "name": "1c Weiherkopf Kölle",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "R_26111",
+      "ref": null,
+      "name": "2 Weiherkopfabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "R_26112",
+      "ref": null,
+      "name": "3 Knobel FIS-Slalomstrecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "R_26113",
+      "ref": null,
+      "name": "4 Horngratabfahrt",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "R_26114",
+      "ref": null,
+      "name": "5 Snowcross",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "R_26115",
+      "ref": null,
+      "name": "6 Stuibenabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1250
+    },
+    {
+      "id": "R_26116",
+      "ref": null,
+      "name": "7 Farnrücken Direttissima",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "R_26117",
+      "ref": null,
+      "name": "8 Dorfliftabfahrten",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "R_26119",
+      "ref": null,
+      "name": "9 Märchenwiese",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "R_26120",
+      "ref": null,
+      "name": "10 Laubbrunnen",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "R_26121",
+      "ref": null,
+      "name": "11 Talabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1550
+    },
+    {
+      "id": "R_26128",
+      "ref": null,
+      "name": "1a Weiherkopf Gipfelhang",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 240
+    },
+    {
+      "id": "R_26163",
+      "ref": null,
+      "name": "3a Knobel Variante",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 600
+    }
+  ]
+}

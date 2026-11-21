@@ -11,7 +11,7 @@
   "website": "https://www.matterhornparadise.ch",
   "linked_area": "matterhorn-ski-paradise",
   "status": "open",
-  "fetched_at": "2026-11-21T08:40:33.813906+01:00",
+  "fetched_at": "2026-11-21T13:40:33.622450+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 54,
@@ -39,18 +39,18 @@
     ]
   },
   "lifts": {
-    "open": 7,
+    "open": 12,
     "total": 36
   },
   "slopes": {
-    "open": 1,
+    "open": 13,
     "total": 84,
     "open_km": null,
     "total_km": 200
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 0,
       "total": 6
     },
     "chairlift": {
@@ -58,7 +58,7 @@
       "total": 10
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 5
     },
     "funicular": {
@@ -66,7 +66,7 @@
       "total": 2
     },
     "gondola": {
-      "open": 1,
+      "open": 6,
       "total": 9
     },
     "other": {
@@ -76,15 +76,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 12,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 1,
+      "open": 11,
       "total": 48,
-      "open_km": 2.1,
+      "open_km": 20.2,
       "total_km": 99
     },
     "difficult": {
@@ -100,7 +100,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T08:40:00+01:00",
+  "lifts_updated_at": "2026-11-21T13:40:00+01:00",
   "avalanche": {
     "region_id": "CH-4222",
     "region": "Zermatt",
@@ -123,8 +123,8 @@
     "valid_until": "2026-11-21T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
@@ -135,11 +135,11 @@
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {

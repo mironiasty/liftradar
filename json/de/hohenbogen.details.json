@@ -1,0 +1,133 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "hohenbogen",
+  "country": "de",
+  "fetched_at": "2026-11-21T13:40:33.626849+01:00",
+  "updated_at": "2026-11-20T21:40:09+01:00",
+  "source": "https://winter.intermaps.com/hohenbogen/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_10063558",
+      "ref": "1",
+      "name": "Hohenbogenbahn GmbH & Co KG",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1358,
+      "capacity_per_hour": 720,
+      "bottom_m": 650,
+      "top_m": 1050
+    },
+    {
+      "id": "L_10063559",
+      "ref": null,
+      "name": "Brünnlhang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_10063560",
+      "ref": null,
+      "name": "Skischul-Schlepplift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_10063571",
+      "ref": "9",
+      "name": "Dowiashöhe",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063572",
+      "ref": "10",
+      "name": "Brünnlhang",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063573",
+      "ref": "11",
+      "name": "Nußberglstein",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063563",
+      "ref": "1",
+      "name": "Sonnenhang",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063565",
+      "ref": "3",
+      "name": "Ahornriegel-Abfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063566",
+      "ref": "4",
+      "name": "Wartnerwege",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063568",
+      "ref": "6",
+      "name": "FIS-Strecke",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063569",
+      "ref": "7",
+      "name": "Mittlere Liftschneise",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063570",
+      "ref": "8",
+      "name": "Ecksteinabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063564",
+      "ref": "2",
+      "name": "Obere Liftschneise",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_10063567",
+      "ref": "5",
+      "name": "Schönblickhang",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

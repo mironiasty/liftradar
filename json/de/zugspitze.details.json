@@ -1,0 +1,193 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "zugspitze",
+  "country": "de",
+  "fetched_at": "2026-11-21T13:40:33.626843+01:00",
+  "updated_at": "2026-11-20T16:55:59+01:00",
+  "source": "https://winter.intermaps.com/zugspitzplatt/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_33678",
+      "ref": null,
+      "name": "Seilbahn Zugspitze",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34070",
+      "ref": "D",
+      "name": "Gletscherbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34422",
+      "ref": null,
+      "name": "A 6er Sesselbahn Sonnenkar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34424",
+      "ref": null,
+      "name": "Zahnradbahn",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": 19000,
+      "capacity_per_hour": 720,
+      "bottom_m": 700,
+      "top_m": 2600
+    },
+    {
+      "id": "L_34425",
+      "ref": null,
+      "name": "B Weißes Tal",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34426",
+      "ref": null,
+      "name": "C 6er Sesselbahn Wetterwandeck",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34427",
+      "ref": null,
+      "name": "D Brunntal",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_34431",
+      "ref": "1",
+      "name": "1 Aspen Run",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34432",
+      "ref": "10",
+      "name": "10 Super G",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34433",
+      "ref": "11",
+      "name": "11 Brunntal",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34434",
+      "ref": "12",
+      "name": "12 Gletscherabfahrten",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34435",
+      "ref": "13",
+      "name": "13 Zufahrt Weißes Tal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34436",
+      "ref": "2",
+      "name": "2 Sonnenkar",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34437",
+      "ref": "3",
+      "name": "3 Weißes Tal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34438",
+      "ref": "4",
+      "name": "4 Oberes Weißes Tal",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34439",
+      "ref": "5",
+      "name": "5 Weißes Tal Süd",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34440",
+      "ref": "6",
+      "name": "6 Zufahrt Sonn Alpin",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34441",
+      "ref": "7",
+      "name": "7 Wetterwandeck West",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34442",
+      "ref": "8",
+      "name": "8 Wetterwandeck",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "R_34443",
+      "ref": "9",
+      "name": "9 Panoramaabfahrt",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

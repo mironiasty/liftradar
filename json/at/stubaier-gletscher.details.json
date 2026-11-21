@@ -1,0 +1,575 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "stubaier-gletscher",
+  "country": "at",
+  "fetched_at": "2026-11-21T13:41:47.747177+01:00",
+  "updated_at": "2026-11-21T13:05:24+01:00",
+  "source": "https://winter.intermaps.com/stubaier_gletscher/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_40034",
+      "ref": null,
+      "name": "Gamsgarten I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1906,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1749,
+      "top_m": 2295
+    },
+    {
+      "id": "L_40035",
+      "ref": null,
+      "name": "Gamsgarten II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1569,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2295,
+      "top_m": 2631
+    },
+    {
+      "id": "L_40036",
+      "ref": null,
+      "name": "Schaufeljoch",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1155,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2887,
+      "top_m": 3170
+    },
+    {
+      "id": "L_40037",
+      "ref": null,
+      "name": "Eisjoch",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 2268,
+      "capacity_per_hour": 2500,
+      "bottom_m": 2626,
+      "top_m": 3130
+    },
+    {
+      "id": "L_40038",
+      "ref": null,
+      "name": "Fernau",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 2067,
+      "capacity_per_hour": 2400,
+      "bottom_m": 2580,
+      "top_m": 3064
+    },
+    {
+      "id": "L_40039",
+      "ref": null,
+      "name": "Murmele",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 499,
+      "capacity_per_hour": 2585,
+      "bottom_m": 2607,
+      "top_m": 2672
+    },
+    {
+      "id": "L_40040",
+      "ref": null,
+      "name": "Pfaffengrat",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 323,
+      "capacity_per_hour": 1200,
+      "bottom_m": 2919,
+      "top_m": 3060
+    },
+    {
+      "id": "L_40041",
+      "ref": null,
+      "name": "Wildspitz",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 384,
+      "capacity_per_hour": 1400,
+      "bottom_m": 3041,
+      "top_m": 3212
+    },
+    {
+      "id": "L_40043",
+      "ref": null,
+      "name": "Schlepplift Fernau",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 903,
+      "capacity_per_hour": 1191,
+      "bottom_m": 2300,
+      "top_m": 2600
+    },
+    {
+      "id": "L_40044",
+      "ref": null,
+      "name": "Schlepplift Gaiskarferner",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 984,
+      "capacity_per_hour": 1250,
+      "bottom_m": 2927,
+      "top_m": 3166
+    },
+    {
+      "id": "L_40045",
+      "ref": null,
+      "name": "Schlepplift Windachferner",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 378,
+      "capacity_per_hour": 1160,
+      "bottom_m": 3054,
+      "top_m": 3143
+    },
+    {
+      "id": "L_40046",
+      "ref": null,
+      "name": "Schlepplift Daunferner I",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 1114,
+      "capacity_per_hour": 1186,
+      "bottom_m": 2844,
+      "top_m": 3116
+    },
+    {
+      "id": "L_40047",
+      "ref": null,
+      "name": "Schlepplift Daunferner II",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 1146,
+      "capacity_per_hour": 1428,
+      "bottom_m": 2857,
+      "top_m": 3203
+    },
+    {
+      "id": "L_40048",
+      "ref": null,
+      "name": "Schlepplift Daunscharte",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 753,
+      "capacity_per_hour": 1194,
+      "bottom_m": 2888,
+      "top_m": 3117
+    },
+    {
+      "id": "L_40049",
+      "ref": null,
+      "name": "Übungslift Gamsgarten",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 180,
+      "capacity_per_hour": 560,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_40050",
+      "ref": null,
+      "name": "Tellerlift Kitzlift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 209,
+      "capacity_per_hour": 649,
+      "bottom_m": 2595,
+      "top_m": 2623
+    },
+    {
+      "id": "L_40051",
+      "ref": null,
+      "name": "Zauberteppich 1",
+      "type": "carpet",
+      "status": "open",
+      "length_m": 39,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_40053",
+      "ref": null,
+      "name": "Schneekarussell",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_40090",
+      "ref": null,
+      "name": "Rotadl",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": 1355,
+      "capacity_per_hour": 3400,
+      "bottom_m": 2623,
+      "top_m": 3015
+    },
+    {
+      "id": "L_40092",
+      "ref": null,
+      "name": "Daunjoch",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1197,
+      "capacity_per_hour": 1600,
+      "bottom_m": 2635,
+      "top_m": 3000
+    },
+    {
+      "id": "L_40095",
+      "ref": null,
+      "name": "Snowpark-Lift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 299,
+      "capacity_per_hour": 384,
+      "bottom_m": 3042,
+      "top_m": 3092
+    },
+    {
+      "id": "L_40099",
+      "ref": null,
+      "name": "3S Eisgratbahn I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 1875,
+      "capacity_per_hour": 3014,
+      "bottom_m": 1695,
+      "top_m": 2293
+    },
+    {
+      "id": "L_40100",
+      "ref": null,
+      "name": "3S Eisgratbahn II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": 2287,
+      "capacity_per_hour": 3014,
+      "bottom_m": 2293,
+      "top_m": 2888
+    },
+    {
+      "id": "L_40107",
+      "ref": null,
+      "name": "Zauberteppich 3, 4",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_113843",
+      "ref": null,
+      "name": "Zauberteppich Eisgrat",
+      "type": "carpet",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_40054",
+      "ref": null,
+      "name": "5 Eisjoch",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 3200
+    },
+    {
+      "id": "R_40055",
+      "ref": null,
+      "name": "4 Schaufelschuss",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2360
+    },
+    {
+      "id": "R_40056",
+      "ref": null,
+      "name": "2 Steilhang",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 380
+    },
+    {
+      "id": "R_40057",
+      "ref": null,
+      "name": "19 Obere Silberschneid",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3250
+    },
+    {
+      "id": "R_40058",
+      "ref": null,
+      "name": "22 Gamsgarten",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 3890
+    },
+    {
+      "id": "R_40059",
+      "ref": null,
+      "name": "17 Zufahrt Fernau",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 3470
+    },
+    {
+      "id": "R_40060",
+      "ref": null,
+      "name": "21 Falwesuna",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2540
+    },
+    {
+      "id": "R_40061",
+      "ref": null,
+      "name": "12 Gaiskarferner",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 3150
+    },
+    {
+      "id": "R_40062",
+      "ref": null,
+      "name": "13 Sonnenhang",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 1130
+    },
+    {
+      "id": "R_40063",
+      "ref": null,
+      "name": "10 Windachferner Nord",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 850
+    },
+    {
+      "id": "R_40064",
+      "ref": null,
+      "name": "7 Daunferner",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 5490
+    },
+    {
+      "id": "R_40065",
+      "ref": null,
+      "name": "6 Skiweg Eisgrat",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1280
+    },
+    {
+      "id": "R_40067",
+      "ref": null,
+      "name": "14 Fernauferner",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 3420
+    },
+    {
+      "id": "R_40068",
+      "ref": null,
+      "name": "16 Pfaffenschneid",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 4140
+    },
+    {
+      "id": "R_40069",
+      "ref": null,
+      "name": "23 Big Family Schuss",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 1390
+    },
+    {
+      "id": "R_40070",
+      "ref": null,
+      "name": "26 Daunfernerschuss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2090
+    },
+    {
+      "id": "R_40071",
+      "ref": null,
+      "name": "9 Kogelferner",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1590
+    },
+    {
+      "id": "R_40072",
+      "ref": null,
+      "name": "40 Fernau Mauer",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 4890
+    },
+    {
+      "id": "R_40073",
+      "ref": null,
+      "name": "35 Wilde Grube",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 14540
+    },
+    {
+      "id": "R_40074",
+      "ref": null,
+      "name": "37 Steile Zunge",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1390
+    },
+    {
+      "id": "R_40075",
+      "ref": null,
+      "name": "39 Kanonenrohr",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "R_40091",
+      "ref": null,
+      "name": "27 Daunhill",
+      "difficulty": "difficult",
+      "status": "closed",
+      "length_m": 2880
+    },
+    {
+      "id": "R_40098",
+      "ref": null,
+      "name": "24 Skiweg Murmele",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1140
+    },
+    {
+      "id": "R_40101",
+      "ref": null,
+      "name": "28 Skiweg Mutterberg",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1690
+    },
+    {
+      "id": "R_40103",
+      "ref": null,
+      "name": "34 Fernau",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 5610
+    },
+    {
+      "id": "R_40108",
+      "ref": null,
+      "name": "15 Fernauschuss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 1670
+    },
+    {
+      "id": "R_40109",
+      "ref": null,
+      "name": "36 Schartenschuss",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1760
+    },
+    {
+      "id": "R_40111",
+      "ref": null,
+      "name": "3 Seeschuss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 870
+    },
+    {
+      "id": "R_40113",
+      "ref": null,
+      "name": "38 Bildstöckljoch",
+      "difficulty": "ski_route",
+      "status": "closed",
+      "length_m": 1020
+    },
+    {
+      "id": "R_40195",
+      "ref": null,
+      "name": "1 Seeblick",
+      "difficulty": "easy",
+      "status": "open",
+      "length_m": 2690
+    },
+    {
+      "id": "R_40196",
+      "ref": null,
+      "name": "11 Windachferner Süd",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 550
+    },
+    {
+      "id": "R_40198",
+      "ref": null,
+      "name": "18 Bödele Schuss",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 2110
+    },
+    {
+      "id": "R_40199",
+      "ref": null,
+      "name": "20 Untere Silberschneid",
+      "difficulty": "intermediate",
+      "status": "closed",
+      "length_m": 2410
+    },
+    {
+      "id": "R_40201",
+      "ref": null,
+      "name": "25 Süd-Ost Tangente",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 240
+    },
+    {
+      "id": "R_40204",
+      "ref": null,
+      "name": "8 Daunenhang",
+      "difficulty": "easy",
+      "status": "closed",
+      "length_m": 3250
+    },
+    {
+      "id": "R_41973",
+      "ref": null,
+      "name": "29 Rotadl",
+      "difficulty": "intermediate",
+      "status": "open",
+      "length_m": 1880
+    }
+  ]
+}
