@@ -10,6 +10,41 @@ const LIFT_TYPES = {
   funicular: t("Funiculars"),
   other: t("Other"),
 };
+// An icon for each lift type in "Lifts by type" (drawn in design/lift-icons.html): lines in the text's colour on
+// 24×24; only the funicular's car is solid, with its windows in the card's colour.
+const LIFT_ICONS = {
+  gondola:
+    '<path d="M2 8.5 22 4.5M12 6.5V10"/><circle cx="12" cy="6.5" r="1.4" fill="currentColor" stroke="none"/>' +
+    '<rect x="6.5" y="10" width="11" height="10.5" rx="3"/><rect x="8.8" y="12.3" width="6.4" height="3.4" rx="1"/>',
+  cable_car:
+    '<path d="M2 7 22 3M2 9.5 22 5.5M9 7.4l6-1.2M12 7v3.2"/><rect x="4.5" y="10.2" width="15" height="10.8" rx="1.6"/>' +
+    '<rect x="6.6" y="12.4" width="4.6" height="3.6" rx=".6"/><rect x="12.8" y="12.4" width="4.6" height="3.6" rx=".6"/>',
+  chairlift:
+    '<path d="M2 8.5 22 4.5M13 6.3V10H8v8h8.5M16.5 18l1.5 3h2.5"/>' +
+    '<circle cx="13" cy="6.3" r="1.4" fill="currentColor" stroke="none"/><path d="M8 16.2h8.5v1.8H8z" stroke-width="1"/>',
+  drag_lift:
+    '<path d="M2 6.5 22 3M14 4.4 11.5 15M2 21.5 22 18"/><circle cx="14" cy="4.4" r="1.4" fill="currentColor" stroke="none"/>' +
+    '<path d="M7.5 15h8" stroke-width="2.2"/>',
+  carpet:
+    '<circle cx="11" cy="3.6" r="1.7" fill="currentColor" stroke="none"/><path d="M11 6.4v4.4M11 10.8l-2 3.4M11 10.8l2 3M8.3 8.6h5.4"/>' +
+    '<path d="M3.5 16.4 20.5 13a1.8 1.8 0 0 1 .7 3.5L4.2 19.9a1.8 1.8 0 0 1-.7-3.5z"/>',
+  funicular:
+    '<path d="M2 20 22 10"/><path d="M4 16 18 9V4L4 11z" fill="currentColor"/>' +
+    '<path d="M6.2 11.6l4.6-2.3v2.4l-4.6 2.3zM12.2 8.6l4.6-2.3v2.4l-4.6 2.3z" fill="var(--bg)" stroke="none"/>' +
+    '<circle cx="6.5" cy="16.5" r="1.2" fill="currentColor" stroke="none"/>' +
+    '<circle cx="15.5" cy="12" r="1.2" fill="currentColor" stroke="none"/>',
+  other:
+    '<path d="M2 6.6 22 4.6M6.5 8.6h11M10.2 21 11.4 8.6M13.8 21 12.6 8.6M9 21h6"/>' +
+    '<circle cx="8" cy="6.9" r="1.1"/><circle cx="16" cy="6.1" r="1.1"/>',
+};
+/** @param {string} type */
+function liftIcon(type) {
+  const icon = el("span", { class: "lift-icon", "aria-hidden": "true" });
+  icon.innerHTML =
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"' +
+    ` stroke-linecap="round" stroke-linejoin="round">${LIFT_ICONS[type] ?? LIFT_ICONS.other}</svg>`;
+  return icon;
+}
 // Piste colours as on slope maps; ski routes yellow.
 const DIFFICULTIES = {
   easy: [t("Easy"), "#2a6fdb"],
@@ -406,7 +441,7 @@ function breakdown(r) {
   };
   if (r.lifts_by_type) {
     const rows = Object.entries(r.lifts_by_type).flatMap(([type, c]) => [
-      el("span", {}, LIFT_TYPES[type] ?? label(type)),
+      el("span", { class: "lift" }, liftIcon(type), LIFT_TYPES[type] ?? label(type)),
       el("span", { class: "n" }, pair(c.open, c.total)),
       meter(c.open, c.total),
     ]);
