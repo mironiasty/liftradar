@@ -18,6 +18,23 @@ const DIFFICULTIES = {
   ski_route: [t("Ski routes"), "#f2b705"],
   other: [t("Other"), "var(--muted)"],
 };
+// One lift's type, in the list of every lift and slope.
+const LIFT_TYPE = {
+  gondola: t("Gondola"),
+  cable_car: t("Cable car"),
+  chairlift: t("Chairlift"),
+  drag_lift: t("Drag lift"),
+  carpet: t("Magic carpet"),
+  funicular: t("Funicular"),
+  other: t("Other"),
+};
+// A lift's or slope's status, in that list: its name and colour, in the order they're listed.
+const ITEM_STATUS = {
+  open: [t("open"), "var(--open)"],
+  preparation: [t("in preparation"), "var(--none)"],
+  closed: [t("closed"), "var(--closed)"],
+  unknown: [t("unknown"), "var(--none)"],
+};
 const DANGER_LEVELS = { low: 1, moderate: 2, considerable: 3, high: 4, very_high: 5 };
 const PERIODS = { all_day: "", earlier: t("morning"), later: t("afternoon") };
 // The EAWS problem names, as the bulletins publish them; unknown ones are shown as they are.
@@ -290,16 +307,127 @@ function stations(list) {
   );
 }
 
-/** @param {Resort} r */
+// Every lift or slope with its status, open ones first, from the experimental `details` file.
+/** @param {string[]} heads @param {HTMLElement[]} rows */
+function itemTable(heads, rows) {
+  return el(
+    "div",
+    { class: "scroll" },
+    el(
+      "table",
+      {},
+      el(
+        "thead",
+        {},
+        el("tr", {}, ...heads.map((h, i) => el("th", { class: i === heads.length - 1 ? "num" : "" }, h))),
+      ),
+      el("tbody", {}, ...rows),
+    ),
+  );
+}
+
+/** @template {{ status: string }} T @param {T[]} list */
+function byStatus(list) {
+  const order = Object.keys(ITEM_STATUS);
+  return list.toSorted((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
+}
+
+/** @param {string} status */
+function itemState(status) {
+  const [name, colour] = ITEM_STATUS[status] ?? ITEM_STATUS.unknown;
+  return el("td", { class: "state", style: `--c:${colour}` }, name);
+}
+
+/** @param {ResortDetails} d */
+function liftList(d) {
+  const rows = byStatus(d.lifts).map((l) =>
+    el(
+      "tr",
+      {},
+      itemState(l.status),
+      el("td", {}, l.name),
+      el("td", {}, LIFT_TYPE[l.type] ?? label(l.type)),
+      el("td", { class: "num" }, dash(l.length_m, " m")),
+    ),
+  );
+  return itemTable([t("Status"), t("Name"), t("Type"), t("Length")], rows);
+}
+
+/** @param {ResortDetails} d */
+function slopeList(d) {
+  const rows = byStatus(d.slopes).map((s) => {
+    const [difficulty, colour] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
+    return el(
+      "tr",
+      {},
+      itemState(s.status),
+      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title: difficulty }), s.name),
+      el("td", { class: "num" }, dash(s.length_m, " m")),
+    );
+  });
+  return itemTable([t("Status"), t("Name"), t("Length")], rows);
+}
+
+// The lifts by type and slopes by difficulty, then, for a resort with a `details` file, a card for each list that
+// its "Details" button opens. The file is read on the first click, once for both; without it, the counts stand.
+/** @param {Resort} r @returns {HTMLElement[]} */
 function breakdown(r) {
   const parts = [];
+  /** @type {HTMLElement[]} */
+  const panels = [];
+  /** @type {Promise<ResortDetails> | undefined} */
+  let details;
+  const load = () =>
+    (details ??= fetch(`/${r.details}`, { cache: "no-cache" }).then((response) => {
+      if (!response.ok) throw new Error(response.statusText);
+      return response.json();
+    }));
+  /** @type {HTMLElement[]} */
+  const buttons = [];
+  // A pill at the bottom of the card, under its column, that opens its list in a card of its own, closing the other.
+  /** @param {string} id @param {string} text @param {string} title @param {(d: ResortDetails) => HTMLElement} list */
+  const more = (id, text, title, list) => {
+    if (!r.details) return [];
+    const panel = el("section", { class: "card", id, hidden: "" }, el("h2", {}, title));
+    const button = el("button", { type: "button", class: "pill more", "aria-expanded": "false", "aria-controls": id });
+    button.innerHTML =
+      '<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"' +
+      ' stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+    button.append(text);
+    panels.push(panel);
+    buttons.push(button);
+    let filled = false;
+    button.addEventListener("click", () => {
+      const open = panel.hidden;
+      for (const [i, other] of panels.entries()) {
+        other.hidden = !(open && other === panel);
+        buttons[i].setAttribute("aria-expanded", String(open && other === panel));
+      }
+      if (!open || filled) return;
+      filled = true;
+      const loader = liftLoader({ small: true });
+      panel.append(loader);
+      load()
+        .then((d) => loader.replaceWith(list(d)))
+        .catch(() => loader.replaceWith(el("p", { class: "empty" }, t("The list could not load."))));
+    });
+    return [];
+  };
   if (r.lifts_by_type) {
     const rows = Object.entries(r.lifts_by_type).flatMap(([type, c]) => [
       el("span", {}, LIFT_TYPES[type] ?? label(type)),
       el("span", { class: "n" }, pair(c.open, c.total)),
       meter(c.open, c.total),
     ]);
-    parts.push(el("div", {}, el("h2", {}, t("Lifts by type")), el("div", { class: "bars" }, ...rows)));
+    parts.push(
+      el(
+        "div",
+        {},
+        el("h2", {}, t("Lifts by type")),
+        el("div", { class: "bars" }, ...rows),
+        ...more("all-lifts", t("All lifts"), t("Lifts"), liftList),
+      ),
+    );
   }
   if (r.slopes_by_difficulty) {
     const rows = Object.entries(r.slopes_by_difficulty).flatMap(([difficulty, c]) => {
@@ -312,9 +440,19 @@ function breakdown(r) {
         meter(c.open, c.total),
       ];
     });
-    parts.push(el("div", {}, el("h2", {}, t("Slopes by difficulty")), el("div", { class: "bars" }, ...rows)));
+    parts.push(
+      el(
+        "div",
+        {},
+        el("h2", {}, t("Slopes by difficulty")),
+        el("div", { class: "bars" }, ...rows),
+        ...more("all-slopes", t("All slopes"), t("Slopes"), slopeList),
+      ),
+    );
   }
-  return parts.length ? el("section", { class: "card breakdown" }, ...parts) : null;
+  if (!parts.length) return [];
+  const row = buttons.length ? [el("div", { class: "more-row", style: `--n:${parts.length}` }, ...buttons)] : [];
+  return [el("section", { class: "card breakdown" }, ...parts, ...row), ...panels];
 }
 
 /** @param {DangerRating} rating */
@@ -690,7 +828,8 @@ async function show() {
     "div",
     { class: "stack" },
     tiles(r),
-    ...[breakdown(r), stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
+    ...breakdown(r),
+    ...[stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
     el(
       "section",
       { class: "card" },

@@ -14,6 +14,7 @@ const SCHEMAS = {
   "schema/resort.schema.json": "types/resort.d.ts",
   "schema/history.schema.json": "types/history.d.ts",
   "schema/stats.schema.json": "types/stats.d.ts",
+  "schema/resort-details.schema.json": "types/resort-details.d.ts",
   "schema/groups.schema.json": "types/groups.d.ts",
   "scripts/ski-tile.schema.json": "types/ski-tile.d.ts",
 };

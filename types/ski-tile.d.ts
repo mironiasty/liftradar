@@ -76,6 +76,10 @@ osm?: string
  */
 lr?: string
 /**
+ * Experimental: the lift or slope in a resort's details file (json/<country>/<id>.details.json) that this is, as <country>/<id>/<item id>, for its status. Matched by name and number, so it can be wrong or missing (scripts/lift_links.py).
+ */
+item?: string
+/**
  * Indexes in this tile's areas.
  */
 areas: number[]
@@ -117,6 +121,10 @@ osm?: string
  * liftradar resort, <country>/<id>.
  */
 lr?: string
+/**
+ * Experimental: the lift or slope in a resort's details file (json/<country>/<id>.details.json) that this is, as <country>/<id>/<item id>, for its status. Matched by name and number, so it can be wrong or missing (scripts/lift_links.py).
+ */
+item?: string
 /**
  * Indexes in this tile's areas.
  */
