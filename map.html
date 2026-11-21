@@ -17,16 +17,28 @@
 <style>
   html, body { height: 100%; }
   body { font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; }
-  /* The same header as the other pages, across the full width, with the update time after the name. */
+  /* The same header as the other pages, across the full width, with the update time pill after the name. */
   .site-header { margin-inline: 0; padding: 10px 16px; }
-  .site-header > .muted { margin-left: 12px; }
+  .site-header > .updated-menu { margin-left: 12px; }
+  .site-header .updated-menu > div { right: auto; left: 0; }
   h1 { margin: 0; }
-  /* Phones: one compact row, so the map keeps the height. The update time takes the tagline's place under the name. */
-  @media (max-width: 760px) {
+  /* Narrower screens: one compact row, so the map keeps the height and the pills never wrap to a second row. The
+     update time pill takes the tagline's place under the name. 1240px: the widest header in one row (Italian, with the
+     app's pill on a tablet). */
+  @media (max-width: 1240px) {
     .site-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0 8px; padding: 6px 12px; }
     .site-header .brand small { display: none; }
-    .site-header > .muted { grid-area: 2 / 1; margin: 0 0 0 35px; font-size: .68rem; line-height: 1.2; }
-    .site-header nav { grid-area: 1 / 2 / 3 / 3; margin: 0; }
+    .site-header > .updated-menu { grid-area: 2 / 1 / 3 / 3; justify-self: start; margin: 2px 0 0 35px; }
+    .site-header .updated { gap: 5px; padding: 2px 9px; font-size: .68rem; line-height: 1.3; }
+    .site-header .updated svg { width: 11px; height: 11px; }
+    .site-header nav { grid-area: 1 / 2; margin: 0; }
+  }
+  /* The links as icons sooner than on the other pages (style.css, 560px), so the update time keeps its room. */
+  @media (max-width: 1000px) {
+    .site-header .pill { justify-content: center; width: 32px; height: 32px; padding: 0; gap: 0; font-size: 0; }
+    .site-header .pill svg { width: 16px; height: 16px; }
+    .site-header .pill.lang { width: auto; gap: 5px; padding: 0 8px; }
+    .site-header nav { gap: 4px; }
   }
   .muted { font-size: .85rem; }
   .map-wrap { flex: 1; position: relative; min-height: 300px; }
@@ -106,7 +118,10 @@
     </svg>
     <span class="name"><b>LiftRadar</b><small data-i18n>Status of ski resorts</small></span>
   </a></h1>
-  <span class="muted"><span id="updated" data-i18n>Loading…</span></span>
+  <details class="updated-menu">
+    <summary class="updated"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="updated" data-i18n>Loading…</span></summary>
+    <div data-i18n>We read the reports twice a day, at about 08:40 and 13:40 CET.</div>
+  </details>
   <nav aria-label="Main">
   <a class="pill" href="./">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 10v10"/></svg>

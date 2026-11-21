@@ -151,7 +151,6 @@ function popup(r, status, in3d) {
 // The ski tiles are optional (loadSki() is null without them): the map then shows the markers
 // at the resorts' locations, without areas, pistes or lifts.
 function show(map, [index, ski]) {
-  document.getElementById("updated").textContent = updatedText(index);
   const resorts = index.resorts.filter((r) => skiPoint(r, ski));
   const byKey = new Map(resorts.map((r) => [skiKey(r), r]));
   addPistes(map, ski, { names: new Map(index.resorts.map((r) => [skiKey(r), r.name])), tips: false });
@@ -389,11 +388,22 @@ function resortView([index, ski]) {
   return wanted && skiPoint(wanted, ski) ? { center: skiPoint(wanted, ski), zoom: 12 } : ALL_RESORTS;
 }
 
+closeOnOutside(/** @type {HTMLDetailsElement} */ (document.querySelector(".updated-menu")));
+
 const data = Promise.all([loadIndex(), loadSki()]);
+// The update time as soon as the data is in, not only once the base map has loaded.
+data.then(
+  ([index]) => {
+    document.getElementById("updated").textContent = updatedText(index);
+  },
+  () => {},
+);
 baseMap("map", WANTED ? data.then(resortView).catch(() => ALL_RESORTS) : ALL_RESORTS).then((map) =>
   data
     .then((loaded) => show(map, loaded))
     .catch((error) => {
-      document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
+      const updated = /** @type {HTMLElement} */ (document.getElementById("updated"));
+      updated.textContent = t("Could not load the data ({message})", error);
+      updated.parentElement?.classList.add("failed");
     }),
 );

@@ -215,6 +215,52 @@ a.brand:focus-visible,
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+/* When the data was fetched: a pill with a clock, as the resort page's "Checked" time (table, stats and map).
+   Clicked, it says when we read the reports, under it. */
+.updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  color: var(--fg);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.updated svg {
+  flex: none;
+  color: var(--muted);
+}
+.updated.failed,
+.updated.failed svg {
+  color: var(--warn);
+}
+.updated-menu {
+  position: relative;
+}
+.updated-menu summary {
+  cursor: pointer;
+  list-style: none;
+}
+.updated-menu summary::-webkit-details-marker {
+  display: none;
+}
+.updated-menu > div {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 1100;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--bg);
+  box-shadow: 0 4px 24px rgba(10, 30, 60, 0.22);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 /* The bar at the top of every page, as wide as the table page's content (1100px) even where the page's own text
    column is narrower. */
 .site-header {

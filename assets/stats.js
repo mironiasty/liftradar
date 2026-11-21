@@ -18,9 +18,10 @@ const TOP_BARS = 8;
 const countryMenuNode = /** @type {HTMLDetailsElement} */ (document.getElementById("country"));
 const regionSelect = document.getElementById("region");
 const charts = document.getElementById("charts");
-const count = document.getElementById("count");
 const barsCard = el("section", { class: "card" });
 const tableBody = document.querySelector("#daily tbody");
+
+closeOnOutside(/** @type {HTMLDetailsElement} */ (document.querySelector(".updated-menu")));
 
 const saved = new URLSearchParams(location.search);
 /** @type {IndexResort[]} */
@@ -252,7 +253,6 @@ function render() {
   if (country) params.set("country", country);
   if (region) params.set("region", region);
   history.replaceState(null, "", location.pathname + (params.size ? `?${params}` : ""));
-  count.textContent = t("{n} resorts", { n: scope.length });
   if (!days.length) {
     charts.replaceChildren();
     tableBody.replaceChildren();
@@ -311,5 +311,7 @@ loadIndex()
   })
   .catch((error) => {
     charts.replaceChildren();
-    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
+    const updated = /** @type {HTMLElement} */ (document.getElementById("updated"));
+    updated.textContent = t("Could not load the data ({message})", error);
+    updated.parentElement?.classList.add("failed");
   });
