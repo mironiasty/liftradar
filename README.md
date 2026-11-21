@@ -194,7 +194,7 @@ Static checks, also run on every push (`.github/workflows/checks.yml`):
 
 ```sh
 npm install        # once
-npm run check      # Biome (JS, CSS), html-validate, the type check, ruff (scripts/)
+npm run check      # Biome (JS, CSS), html-validate (translated pages too), the type check, ruff (scripts/)
 npm run format     # format the JS, the CSS and scripts/; HTML is validated but not formatted
 ```
 
@@ -229,7 +229,8 @@ is in the source's language). What can be translated:
 Always edit the English; never the generated pages. Each marked block's English text is its key in the
 dictionary, so a changed block shows in English until it's translated, and can't show an outdated translation.
 `npm run check` lists what's missing and what's no longer used (the old text's entry, to replace), and fails
-if a translation loses a `{name}` or a tag.
+if a translation loses a `{name}` or a tag. It also generates the translated pages (as below) and validates them
+with the English ones.
 
 `assets/lang.js` sends visitors arriving on an English page to the translation their browser prefers. The
 language menu in the header overrides that, and the choice is remembered in `localStorage`. Links to a
