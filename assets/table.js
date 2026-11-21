@@ -126,7 +126,17 @@ function row(r) {
     "tr",
     { class: active ? "" : "inactive", "data-key": resortKey(r) },
     nameCell(r),
-    el("td", { class: "c-region" }, r.region ?? "–", el("div", { class: "sub-line" }, countryName(r.country))),
+    el(
+      "td",
+      { class: "c-region" },
+      r.region ?? "–",
+      el(
+        "div",
+        { class: "sub-line" },
+        el("span", { class: "flag", "data-country": r.country, "aria-hidden": "true" }),
+        countryName(r.country),
+      ),
+    ),
     value(t("Mountain"), dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
     value(t("Valley"), dash(valley, " cm")),
     value(t("Fresh"), dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
