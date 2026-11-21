@@ -2,7 +2,8 @@
 // the number on a marker is the value chosen in the options panel (open lifts
 // by default). A click shows the report.
 // Resorts with a ski area in the ski tiles (assets/ski.js) also show it, and the pistes and lifts
-// appear when zoomed in; from there, the area takes the marker's place: hovering it names the
+// appear when zoomed in (before that, the lifts joining an area's parts show as lines in its colour);
+// from there, the area takes the marker's place: hovering it names the
 // resort, and a click shows the report (the pistes and lifts have no tooltips of their own here).
 
 const STATUS = {
@@ -165,6 +166,17 @@ function show(map, [index, ski]) {
       return { ...f, id: i, properties: { key: f.properties.id, status: statusKey(r), color: color(statusKey(r)) } };
     });
   map.addSource("areas", { type: "geojson", data: { type: "FeatureCollection", features: areas } });
+  // The lifts joining an area's parts (a cable car across a valley, outside the outline), in the
+  // same colour, until the lifts themselves show: one area, not separate patches.
+  const links = areas
+    .filter((f) => ski.resorts.get(f.properties.key).properties.links)
+    .map((f) => ({
+      type: "Feature",
+      id: f.id,
+      properties: f.properties,
+      geometry: { type: "MultiLineString", coordinates: ski.resorts.get(f.properties.key).properties.links },
+    }));
+  map.addSource("links", { type: "geojson", data: { type: "FeatureCollection", features: links } });
   const before = firstLabel(map);
   map.addLayer(
     {
@@ -198,17 +210,48 @@ function show(map, [index, ski]) {
     },
     before,
   );
+  map.addLayer(
+    {
+      id: "areas-links",
+      type: "line",
+      source: "links",
+      maxzoom: SKI_MIN_ZOOM,
+      layout: { "line-cap": "round" },
+      paint: {
+        "line-color": ["get", "color"],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          8,
+          ["case", ["boolean", ["feature-state", "hover"], false], 2.5, 1.5],
+          SKI_MIN_ZOOM,
+          ["case", ["boolean", ["feature-state", "hover"], false], 4.5, 3],
+        ],
+      },
+    },
+    before,
+  );
+  // An area and its links share their id: hovering either highlights both.
+  const layers = ["areas-fill", "areas-links"];
   let hovered = null;
-  const tip = hoverTip(map, ["areas-fill"], (f) => el("b", {}, byKey.get(f.properties.key).name));
-  map.on("mousemove", "areas-fill", (e) => {
-    if (hovered !== null) map.setFeatureState({ source: "areas", id: hovered }, { hover: false });
-    hovered = e.features[0].id;
-    map.setFeatureState({ source: "areas", id: hovered }, { hover: true });
-  });
-  map.on("mouseleave", "areas-fill", () => {
-    if (hovered !== null) map.setFeatureState({ source: "areas", id: hovered }, { hover: false });
-    hovered = null;
-  });
+  const setHover = (hover) => {
+    if (hovered === null) return;
+    map.setFeatureState({ source: "areas", id: hovered }, { hover });
+    map.setFeatureState({ source: "links", id: hovered }, { hover });
+  };
+  const tip = hoverTip(map, layers, (f) => el("b", {}, byKey.get(f.properties.key).name));
+  for (const layer of layers) {
+    map.on("mousemove", layer, (e) => {
+      setHover(false);
+      hovered = e.features[0].id;
+      setHover(true);
+    });
+    map.on("mouseleave", layer, () => {
+      setHover(false);
+      hovered = null;
+    });
+  }
   // One report open at a time: a click on a pin doesn't reach the map (it would close it), so a new one
   // closes the last itself.
   /** @type {import("maplibre-gl").Popup | null} */
@@ -222,10 +265,12 @@ function show(map, [index, ski]) {
       .setDOMContent(popup(r, statusKey(r), Boolean(ski?.resorts.has(skiKey(r)))))
       .addTo(map);
   };
-  map.on("click", "areas-fill", (e) => {
-    tip.remove();
-    openPopup(byKey.get(e.features[0].properties.key), e.lngLat);
-  });
+  for (const layer of layers) {
+    map.on("click", layer, (e) => {
+      tip.remove();
+      openPopup(byKey.get(e.features[0].properties.key), e.lngLat);
+    });
+  }
 
   const markers = [];
   for (const r of resorts) {
@@ -302,6 +347,7 @@ function show(map, [index, ski]) {
     const filter = shown.size ? ["in", ["get", "status"], ["literal", [...shown]]] : null;
     map.setFilter("areas-fill", filter);
     map.setFilter("areas-line", filter);
+    map.setFilter("areas-links", filter);
   };
   for (const [status, { label }] of Object.entries(STATUS)) {
     const total = resorts.filter((r) => statusKey(r) === status).length;
