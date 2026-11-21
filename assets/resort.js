@@ -384,7 +384,7 @@ function breakdown(r) {
     }));
   /** @type {HTMLElement[]} */
   const buttons = [];
-  // A pill at the bottom of its column that opens its list in a card of its own, closing the other one.
+  // A pill at the bottom of the card, under its column, that opens its list in a card of its own, closing the other.
   /** @param {string} id @param {string} text @param {string} title @param {(d: ResortDetails) => HTMLElement} list */
   const more = (id, text, title, list) => {
     if (!r.details) return [];
@@ -411,7 +411,7 @@ function breakdown(r) {
         .then((d) => loader.replaceWith(list(d)))
         .catch(() => loader.replaceWith(el("p", { class: "empty" }, t("The list could not load."))));
     });
-    return [el("div", { class: "more-cell" }, button)];
+    return [];
   };
   if (r.lifts_by_type) {
     const rows = Object.entries(r.lifts_by_type).flatMap(([type, c]) => [
@@ -450,7 +450,9 @@ function breakdown(r) {
       ),
     );
   }
-  return parts.length ? [el("section", { class: "card breakdown" }, ...parts), ...panels] : [];
+  if (!parts.length) return [];
+  const row = buttons.length ? [el("div", { class: "more-row", style: `--n:${parts.length}` }, ...buttons)] : [];
+  return [el("section", { class: "card breakdown" }, ...parts, ...row), ...panels];
 }
 
 /** @param {DangerRating} rating */
