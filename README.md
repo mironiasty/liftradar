@@ -246,7 +246,8 @@ sets the dates, numbers and country names.
 alone (`assets.run_worker_first`); every other address is served from the files as before, without it. Its
 tools read the same files through the assets binding (`env.ASSETS`), so they always match the site:
 
-- `search_resorts`: `json/index.json`, filtered by country, status, name, snow, open lifts or distance from a
+- `search_resorts`: `json/index.json`, filtered by country, status, name (also its region's, and its linked ski
+  area's and ski region's from `json/groups.json`, as the site's search), snow, open lifts or distance from a
   point, and sorted.
 - `get_resort`: `json/<country>/<id>.json`.
 - `get_resort_history`: `history/<country>/<id>.json`, as rows, for the last days.
