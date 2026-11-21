@@ -307,16 +307,122 @@ function stations(list) {
   );
 }
 
-/** @param {Resort} r */
+// Every lift or slope with its status, open ones first, from the experimental `details` file.
+/** @param {string[]} heads @param {HTMLElement[]} rows */
+function itemTable(heads, rows) {
+  return el(
+    "div",
+    { class: "scroll" },
+    el(
+      "table",
+      {},
+      el(
+        "thead",
+        {},
+        el("tr", {}, ...heads.map((h, i) => el("th", { class: i === heads.length - 1 ? "num" : "" }, h))),
+      ),
+      el("tbody", {}, ...rows),
+    ),
+  );
+}
+
+/** @template {{ status: string }} T @param {T[]} list */
+function byStatus(list) {
+  const order = Object.keys(ITEM_STATUS);
+  return list.toSorted((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
+}
+
+/** @param {string} status */
+function itemState(status) {
+  const [name, colour] = ITEM_STATUS[status] ?? ITEM_STATUS.unknown;
+  return el("td", { class: "state", style: `--c:${colour}` }, name);
+}
+
+/** @param {ResortDetails} d */
+function liftList(d) {
+  const rows = byStatus(d.lifts).map((l) =>
+    el(
+      "tr",
+      {},
+      itemState(l.status),
+      el("td", {}, l.name),
+      el("td", {}, LIFT_TYPE[l.type] ?? label(l.type)),
+      el("td", { class: "num" }, dash(l.length_m, " m")),
+    ),
+  );
+  return itemTable([t("Status"), t("Name"), t("Type"), t("Length")], rows);
+}
+
+/** @param {ResortDetails} d */
+function slopeList(d) {
+  const rows = byStatus(d.slopes).map((s) => {
+    const [difficulty, colour] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
+    return el(
+      "tr",
+      {},
+      itemState(s.status),
+      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title: difficulty }), s.name),
+      el("td", { class: "num" }, dash(s.length_m, " m")),
+    );
+  });
+  return itemTable([t("Status"), t("Name"), t("Length")], rows);
+}
+
+// The lifts by type and slopes by difficulty, then, for a resort with a `details` file, a card for each list that
+// its "Details" button opens. The file is read on the first click, once for both; without it, the counts stand.
+/** @param {Resort} r @returns {HTMLElement[]} */
 function breakdown(r) {
   const parts = [];
+  /** @type {HTMLElement[]} */
+  const panels = [];
+  /** @type {Promise<ResortDetails> | undefined} */
+  let details;
+  const load = () =>
+    (details ??= fetch(`/${r.details}`, { cache: "no-cache" }).then((response) => {
+      if (!response.ok) throw new Error(response.statusText);
+      return response.json();
+    }));
+  /** @param {string} id @param {string} title @param {(d: ResortDetails) => HTMLElement} list */
+  const more = (id, title, list) => {
+    if (!r.details) return [];
+    const panel = el("section", { class: "card", id, hidden: "" }, el("h2", {}, title));
+    panels.push(panel);
+    const button = el(
+      "button",
+      { type: "button", class: "more", "aria-expanded": "false", "aria-controls": id },
+      t("Details"),
+    );
+    let filled = false;
+    button.addEventListener("click", () => {
+      const open = panel.hidden;
+      panel.hidden = !open;
+      button.setAttribute("aria-expanded", String(open));
+      button.textContent = open ? t("Hide details") : t("Details");
+      if (!open || filled) return;
+      filled = true;
+      const loader = liftLoader({ small: true });
+      panel.append(loader);
+      load()
+        .then((d) => loader.replaceWith(list(d)))
+        .catch(() => loader.replaceWith(el("p", { class: "empty" }, t("The list could not load."))));
+    });
+    return [button];
+  };
   if (r.lifts_by_type) {
     const rows = Object.entries(r.lifts_by_type).flatMap(([type, c]) => [
       el("span", {}, LIFT_TYPES[type] ?? label(type)),
       el("span", { class: "n" }, pair(c.open, c.total)),
       meter(c.open, c.total),
     ]);
-    parts.push(el("div", {}, el("h2", {}, t("Lifts by type")), el("div", { class: "bars" }, ...rows)));
+    parts.push(
+      el(
+        "div",
+        {},
+        el("h2", {}, t("Lifts by type")),
+        el("div", { class: "bars" }, ...rows),
+        ...more("all-lifts", t("Lifts"), liftList),
+      ),
+    );
   }
   if (r.slopes_by_difficulty) {
     const rows = Object.entries(r.slopes_by_difficulty).flatMap(([difficulty, c]) => {
@@ -329,90 +435,17 @@ function breakdown(r) {
         meter(c.open, c.total),
       ];
     });
-    parts.push(el("div", {}, el("h2", {}, t("Slopes by difficulty")), el("div", { class: "bars" }, ...rows)));
-  }
-  return parts.length ? el("section", { class: "card breakdown" }, ...parts) : null;
-}
-
-// Every lift and slope with its status (the experimental `details` file), open ones first. Null without one, or
-// when it can't be read: the counts above still stand.
-/** @param {Resort} r */
-async function items(r) {
-  if (!r.details) return null;
-  const response = await fetch(`/${r.details}`, { cache: "no-cache" });
-  if (!response.ok) return null;
-  /** @type {ResortDetails} */
-  const d = await response.json();
-  const order = Object.keys(ITEM_STATUS);
-  /** @template {{ status: string }} T @param {T[]} list */
-  const sorted = (list) => list.toSorted((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
-  const state = (/** @type {string} */ status) => {
-    const [name, colour] = ITEM_STATUS[status] ?? ITEM_STATUS.unknown;
-    return el("td", { class: "state", style: `--c:${colour}` }, name);
-  };
-  /** @param {string} title @param {{ status: string }[]} list @param {string[]} heads @param {HTMLElement[]} rows */
-  const group = (title, list, heads, rows) => {
-    const known = list.filter((i) => i.status !== "unknown");
-    const open = known.filter((i) => i.status === "open").length;
-    return el(
-      "details",
-      { class: "items", ...(open ? { open: "" } : {}) },
-      el("summary", {}, el("b", {}, title), " ", t("{open} of {total} open", { open, total: known.length })),
+    parts.push(
       el(
         "div",
-        { class: "scroll" },
-        el(
-          "table",
-          {},
-          el(
-            "thead",
-            {},
-            el("tr", {}, ...heads.map((h, i) => el("th", { class: i === heads.length - 1 ? "num" : "" }, h))),
-          ),
-          el("tbody", {}, ...rows),
-        ),
+        {},
+        el("h2", {}, t("Slopes by difficulty")),
+        el("div", { class: "bars" }, ...rows),
+        ...more("all-slopes", t("Slopes"), slopeList),
       ),
     );
-  };
-  const length = (/** @type {number | null} */ m) => el("td", { class: "num" }, dash(m, " m"));
-  const lifts = sorted(d.lifts).map((l) =>
-    el(
-      "tr",
-      {},
-      state(l.status),
-      el("td", {}, l.name),
-      el("td", {}, LIFT_TYPE[l.type] ?? label(l.type)),
-      length(l.length_m),
-    ),
-  );
-  const slopes = sorted(d.slopes).map((s) => {
-    const [difficulty, colour] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
-    return el(
-      "tr",
-      {},
-      state(s.status),
-      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title: difficulty }), s.name),
-      length(s.length_m),
-    );
-  });
-  const updated = d.updated_at ? `${t("Updated {time}", { time: viennaTime(d.updated_at) })}.` : "";
-  return el(
-    "section",
-    { class: "card" },
-    el("h2", {}, t("Lifts and slopes")),
-    el(
-      "p",
-      { class: "meta", style: "margin:0 0 8px" },
-      `${updated} `,
-      t("Each lift and slope as the resort's slope map lists it ("),
-      el("a", { href: d.source, rel: "noopener" }, "Intermaps"),
-      t("). Experimental."),
-    ),
-    ...[
-      d.lifts.length && group(t("Lifts"), d.lifts, [t("Status"), t("Name"), t("Type"), t("Length")], lifts),
-      d.slopes.length && group(t("Slopes"), d.slopes, [t("Status"), t("Name"), t("Length")], slopes),
-    ].filter(Boolean),
-  );
+  }
+  return parts.length ? [el("section", { class: "card breakdown" }, ...parts), ...panels] : [];
 }
 
 /** @param {DangerRating} rating */
@@ -784,12 +817,12 @@ async function show() {
   const historyBox = el("div", { class: "charts" }, liftLoader({ small: true }));
   // Replaced by the cards of the resort's groups once json/groups.json is in; nothing without groups.
   const groupsBox = el("div", { hidden: "" });
-  const itemsBox = el("div", { hidden: "" });
   const main = el(
     "div",
     { class: "stack" },
     tiles(r),
-    ...[breakdown(r), itemsBox, stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
+    ...breakdown(r),
+    ...[stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
     el(
       "section",
       { class: "card" },
@@ -833,9 +866,6 @@ async function show() {
     mapBox.classList.remove("loading");
     mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
   });
-  items(r)
-    .then((section) => section && itemsBox.replaceWith(section))
-    .catch(() => {});
   groupCards(r, groupsBox).catch(() => groupsBox.remove());
   historyChart(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),

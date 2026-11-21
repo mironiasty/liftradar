@@ -54,9 +54,9 @@ export type SlopesByDifficulty = ({
 } | null)
 export type LiftsUpdatedAt = (string | null)
 /**
- * Experimental, may change or go away without notice: the path (from the site's root) of a file listing every lift and slope with its status (resort-details.schema.json). Null when the resort's sources don't list them, or this run couldn't read them.
+ * Experimental, may change or go away without notice: the path (from the site's root) of a file listing every lift and slope with its status (resort-details.schema.json). Left out when the resort's sources don't list them, or this run couldn't read them.
  */
-export type Details = (string | null)
+export type Details = string
 export type RegionId = string
 export type Region1 = string
 export type DangerLevel = (number | null)
