@@ -10,7 +10,7 @@
   },
   "website": "https://www.schwarzsee.ch",
   "status": "closed",
-  "fetched_at": "2026-11-20T16:46:47.406154+01:00",
+  "fetched_at": "2026-11-21T08:40:33.813775+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Fochsen (SLF)",
         "elevation_m": 1707,
-        "depth_cm": 4,
-        "fresh_cm": 10,
+        "depth_cm": 28,
+        "fresh_cm": 39,
         "temperature_c": null,
         "condition": null
       }
@@ -73,26 +73,26 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-20T16:46:00+01:00",
+  "lifts_updated_at": "2026-11-21T08:30:00+01:00",
   "avalanche": {
     "region_id": "CH-1121",
     "region": "Jaun",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "wind_slab"
+      "new_snow"
     ],
-    "published_at": "2026-11-20T08:00:00+01:00",
-    "valid_from": "2026-11-20T08:00:00+01:00",
-    "valid_until": "2026-11-20T17:00:00+01:00"
+    "published_at": "2026-11-21T08:00:00+01:00",
+    "valid_from": "2026-11-21T08:00:00+01:00",
+    "valid_until": "2026-11-21T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=228&saison=1&ref=contentBox",

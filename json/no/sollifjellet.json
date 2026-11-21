@@ -9,42 +9,42 @@
     "lon": 16.4041
   },
   "website": "https://www.sollifjellet.no",
-  "status": "no_report",
-  "fetched_at": "2026-11-20T16:46:47.422944+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-21T08:40:33.820520+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 20,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Variable forhold",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 3
   },
   "slopes": {
-    "open": null,
+    "open": 5,
     "total": 5,
     "open_km": null,
     "total_km": 8
   },
   "lifts_by_type": {
     "other": {
-      "open": 0,
+      "open": 2,
       "total": 3
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 5,
       "total": 5,
       "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-01-02T08:13:59+01:00",
+  "lifts_updated_at": "2026-11-21T04:40:38+01:00",
   "avalanche": {
     "region_id": "NO-3012",
     "region": "Sør-Troms",
@@ -59,15 +59,15 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-20T00:00:00+01:00",
-    "valid_from": "2026-11-20T00:00:00+01:00",
-    "valid_until": "2026-11-20T23:59:59+01:00"
+    "published_at": "2026-11-21T00:00:00+01:00",
+    "valid_from": "2026-11-21T00:00:00+01:00",
+    "valid_until": "2026-11-21T23:59:59+01:00"
   },
   "sources": [
     "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/sollifjellet/",
     "https://www.skiresort.com/en/ski-resort/sollifjellet/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-NO.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-NO.json"
   ],
   "source_details": {
     "conditions": [
@@ -80,7 +80,7 @@
         "attribution_required": true
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-NO.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-NO.json",
         "attribution_required": null
       }
     ],

@@ -10,7 +10,7 @@
   },
   "website": "https://www.chaeserrugg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-20T16:46:47.405007+01:00",
+  "fetched_at": "2026-11-21T08:40:33.813425+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Unterwasser Iltios (SLF)",
         "elevation_m": 1340,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 2,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -106,11 +106,11 @@
       }
     ],
     "problems": [
-      "wind_slab"
+      "new_snow"
     ],
-    "published_at": "2026-11-20T08:00:00+01:00",
-    "valid_from": "2026-11-20T08:00:00+01:00",
-    "valid_until": "2026-11-20T17:00:00+01:00"
+    "published_at": "2026-11-21T08:00:00+01:00",
+    "valid_from": "2026-11-21T08:00:00+01:00",
+    "valid_until": "2026-11-21T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=78&saison=1&ref=contentBox",

@@ -10,8 +10,8 @@
   },
   "website": "https://www.skilife.ski",
   "status": "no_report",
-  "fetched_at": "2026-11-20T16:46:47.409023+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-21T08:40:33.815384+01:00",
+  "status_from": "2026-11-20T16:46:47.409023+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -61,15 +61,41 @@
     }
   },
   "lifts_updated_at": "2026-04-07T08:20:00+02:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-23-AO-21",
+    "region": "C - VAL DI RHEMES",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2100,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2100,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "new_snow",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-20T17:00:00+01:00",
+    "valid_from": "2026-11-21T00:00:00+01:00",
+    "valid_until": "2026-11-22T00:00:00+01:00"
+  },
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
-    "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/rhemes-notre-dame/stazione-di-chanavey/3573"
+    "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/rhemes-notre-dame/stazione-di-chanavey/3573",
+    "https://bollettini.aineva.it/albina_files/2026-11-21/2026-11-21_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-21/2026-11-21_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
@@ -80,5 +106,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

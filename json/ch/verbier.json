@@ -10,42 +10,50 @@
   },
   "website": "https://www.verbier.ch",
   "linked_area": "4-vallees",
-  "status": "closed",
-  "fetched_at": "2026-11-20T16:46:47.406423+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-21T08:40:33.813858+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": "2026-11-20",
-    "condition": null,
+    "mountain_cm": 90,
+    "valley_cm": 5,
+    "fresh_cm": 21,
+    "last_snowfall": "2026-11-21",
+    "condition": "mainly: spring snow / partially: wet",
     "stations": [
+      {
+        "name": "Verbier",
+        "elevation_m": 1500,
+        "depth_cm": 5,
+        "fresh_cm": 3,
+        "temperature_c": null,
+        "condition": null
+      },
       {
         "name": "Les Ruinettes",
         "elevation_m": 2200,
-        "depth_cm": 23,
-        "fresh_cm": 23,
+        "depth_cm": 61,
+        "fresh_cm": 21,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 85,
-        "fresh_cm": 34,
+        "depth_cm": 90,
+        "fresh_cm": 11,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 6,
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": 4,
     "total": 28,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -58,7 +66,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 0,
+      "open": 3,
       "total": 6
     },
     "drag_lift": {
@@ -66,60 +74,61 @@
       "total": 3
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 4
     },
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 1
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 3,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-20T16:48:00+01:00",
+  "lifts_updated_at": "2026-11-21T08:41:00+01:00",
   "avalanche": {
     "region_id": "CH-4115",
     "region": "Martigny - Verbier",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "persistent_weak_layers"
     ],
-    "published_at": "2026-11-20T08:00:00+01:00",
-    "valid_from": "2026-11-20T08:00:00+01:00",
-    "valid_until": "2026-11-20T17:00:00+01:00"
+    "published_at": "2026-11-21T08:00:00+01:00",
+    "valid_from": "2026-11-21T08:00:00+01:00",
+    "valid_until": "2026-11-21T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",

@@ -10,8 +10,8 @@
   },
   "website": "https://www.visitmonterosa.com",
   "status": "closed",
-  "fetched_at": "2026-11-20T16:46:47.408976+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-21T08:40:33.815366+01:00",
+  "status_from": "2026-11-20T16:46:47.408976+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -77,15 +77,40 @@
     }
   },
   "lifts_updated_at": "2026-11-20T08:00:00+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-23-AO-07",
+    "region": "B - MEDIA VAL D'AYAS BRUSSON",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab"
+    ],
+    "published_at": "2026-11-20T17:00:00+01:00",
+    "valid_from": "2026-11-21T00:00:00+01:00",
+    "valid_until": "2026-11-22T00:00:00+01:00"
+  },
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
-    "https://www.skiresort.info/ski-resort/alagna-valsesia-gressoney-la-trinite-champoluc-frachey-monterosa-ski/"
+    "https://www.skiresort.info/ski-resort/alagna-valsesia-gressoney-la-trinite-champoluc-frachey-monterosa-ski/",
+    "https://bollettini.aineva.it/albina_files/2026-11-21/2026-11-21_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-21/2026-11-21_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
@@ -96,5 +121,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

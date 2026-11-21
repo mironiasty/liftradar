@@ -11,7 +11,7 @@
   "website": "https://www.lesportesdumontblanc.fr",
   "linked_area": "evasion-mont-blanc",
   "status": "no_report",
-  "fetched_at": "2026-11-20T16:46:47.414186+01:00",
+  "fetched_at": "2026-11-21T08:40:33.817225+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -73,34 +73,46 @@
   "avalanche": {
     "region_id": "FR-03",
     "region": "Mont-Blanc",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 4,
+    "danger": "high",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
-        "upper_bound": 2000,
-        "period": "all_day"
+        "upper_bound": 2500,
+        "period": "later"
+      },
+      {
+        "level": "high",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "earlier"
       },
       {
         "level": "considerable",
-        "lower_bound": 2000,
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "later"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2500,
         "upper_bound": null,
-        "period": "all_day"
+        "period": "later"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-19T16:00:00+01:00",
-    "valid_from": "2026-11-19T16:00:00+01:00",
-    "valid_until": "2026-11-20T18:00:00+01:00"
+    "published_at": "2026-11-20T16:00:00+01:00",
+    "valid_from": "2026-11-20T16:00:00+01:00",
+    "valid_until": "2026-11-21T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=portes-du-mont-blanc&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/evasion-mont-blanc",
-    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
+    "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
     "https://www.skiresort.com/en/ski-resort/les-portes-du-mont-blanc-combloux-megeve-le-jaillet-la-giettaz/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -113,15 +125,15 @@
         "attribution_required": null
       },
       {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/staticPoiData?lang=fr",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-FR.json",
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/007b3623-778f-4bc0-8a3a-5f7dd582be32/dynamicPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json",
         "attribution_required": null
       }
     ],

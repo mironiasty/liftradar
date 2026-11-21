@@ -11,27 +11,27 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "open",
-  "fetched_at": "2026-11-20T16:46:47.408567+01:00",
+  "fetched_at": "2026-11-21T08:40:33.815193+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 27,
+    "mountain_cm": 41,
     "valley_cm": null,
-    "fresh_cm": 8,
+    "fresh_cm": 21,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Weissfluhjoch",
         "elevation_m": 2663,
-        "depth_cm": 27,
-        "fresh_cm": 8,
+        "depth_cm": 41,
+        "fresh_cm": 21,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 5,
+    "open": 4,
     "total": 18
   },
   "slopes": {
@@ -46,7 +46,7 @@
       "total": 4
     },
     "chairlift": {
-      "open": 2,
+      "open": 1,
       "total": 6
     },
     "drag_lift": {
@@ -106,9 +106,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-20T08:00:00+01:00",
-    "valid_from": "2026-11-20T08:00:00+01:00",
-    "valid_until": "2026-11-20T17:00:00+01:00"
+    "published_at": "2026-11-21T08:00:00+01:00",
+    "valid_from": "2026-11-21T08:00:00+01:00",
+    "valid_until": "2026-11-21T17:00:00+01:00"
   },
   "sources": [
     "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",

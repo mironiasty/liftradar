@@ -10,8 +10,8 @@
   },
   "website": "https://www.torgnon.info",
   "status": "no_report",
-  "fetched_at": "2026-11-20T16:46:47.408986+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-21T08:40:33.815370+01:00",
+  "status_from": "2026-11-20T16:46:47.408986+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -65,15 +65,40 @@
     }
   },
   "lifts_updated_at": "2026-04-06T17:30:00+02:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-23-AO-05",
+    "region": "A - BASSA VALTOURNENCHE CHATILLON",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab"
+    ],
+    "published_at": "2026-11-20T17:00:00+01:00",
+    "valid_from": "2026-11-21T00:00:00+01:00",
+    "valid_until": "2026-11-22T00:00:00+01:00"
+  },
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
-    "https://www.skiresort.info/ski-resort/torgnon/"
+    "https://www.skiresort.info/ski-resort/torgnon/",
+    "https://bollettini.aineva.it/albina_files/2026-11-21/2026-11-21_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-21/2026-11-21_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
@@ -84,5 +109,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ConnectTimeout: "
+  ]
 }

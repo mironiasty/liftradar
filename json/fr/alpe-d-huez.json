@@ -10,15 +10,40 @@
   },
   "website": "https://www.alpedhuez.com",
   "status": "no_report",
-  "fetched_at": "2026-11-20T16:46:47.415458+01:00",
+  "fetched_at": "2026-11-21T08:40:33.817611+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": null,
-    "condition": null,
-    "stations": []
+    "mountain_cm": 90,
+    "valley_cm": 20,
+    "fresh_cm": 20,
+    "last_snowfall": "2026-11-20",
+    "condition": "Fraiche",
+    "stations": [
+      {
+        "name": "Alpe d'Huez",
+        "elevation_m": 1800,
+        "depth_cm": 10,
+        "fresh_cm": 10,
+        "temperature_c": null,
+        "condition": "Fraiche"
+      },
+      {
+        "name": "Pic Blanc",
+        "elevation_m": 3300,
+        "depth_cm": 90,
+        "fresh_cm": 20,
+        "temperature_c": null,
+        "condition": "Fraiche"
+      },
+      {
+        "name": "Vaujany – Montfrais",
+        "elevation_m": 1250,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Humide"
+      }
+    ]
   },
   "lifts": null,
   "slopes": {
@@ -39,25 +64,25 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2600,
+        "upper_bound": 2500,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2600,
+        "lower_bound": 2500,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-19T15:00:00+01:00",
-    "valid_from": "2026-11-19T15:00:00+01:00",
-    "valid_until": "2026-11-20T18:00:00+01:00"
+    "published_at": "2026-11-20T16:00:00+01:00",
+    "valid_from": "2026-11-20T16:00:00+01:00",
+    "valid_until": "2026-11-21T18:00:00+01:00"
   },
   "sources": [
     "https://live.aten-altitude.com/alpehuez/",
     "https://www.skiinfo.fr/alpes-du-nord/alpe-dhuez/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -66,7 +91,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-20/2026-11-20-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json",
         "attribution_required": null
       }
     ],
