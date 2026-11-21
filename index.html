@@ -89,6 +89,13 @@
     background: var(--bg); box-shadow: var(--shadow); color: var(--fg); font-size: .9rem; font-weight: 500; }
   .updated svg { flex: none; color: var(--muted); }
   .updated.failed, .updated.failed svg { color: var(--warn); }
+  /* Clicked, the chip says when we read the reports, under it, like the resort page's "Checked" time. */
+  .updated-menu { position: relative; }
+  .updated-menu summary { cursor: pointer; list-style: none; }
+  .updated-menu summary::-webkit-details-marker { display: none; }
+  .updated-menu > div { position: absolute; top: calc(100% + 6px); right: 0; z-index: 1100; width: max-content;
+    max-width: calc(100vw - 32px); padding: 10px 12px; border-radius: 14px; background: var(--bg);
+    box-shadow: 0 4px 24px rgba(10, 30, 60, 0.22); color: var(--muted); font-size: .85rem; }
 
   /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
      table scrolls sideways and the resort column sticks. */
@@ -232,9 +239,12 @@
     <h2 id="favorites-title" data-i18n>Your favourites</h2>
     <div class="fav-cards" id="fav-cards"></div>
   </section>
-  <p class="updated-row">
-    <span class="updated"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="updated" data-i18n>Loading…</span></span>
-  </p>
+  <div class="updated-row">
+    <details class="updated-menu">
+      <summary class="updated"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="updated" data-i18n>Loading…</span></summary>
+      <div data-i18n>We read the reports twice a day, at about 08:40 and 13:40 CET.</div>
+    </details>
+  </div>
   <div class="tools">
     <div class="search">
       <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>

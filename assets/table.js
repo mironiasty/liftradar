@@ -4,6 +4,7 @@
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
 const searchClear = document.getElementById("search-clear");
+closeOnOutside(/** @type {HTMLDetailsElement} */ (document.querySelector(".updated-menu")));
 const countryMenuNode = /** @type {HTMLDetailsElement} */ (document.getElementById("country"));
 const fnuggCreditLine = document.getElementById("fnugg-credit");
 const regionSelect = document.getElementById("region");

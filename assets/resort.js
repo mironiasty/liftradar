@@ -242,19 +242,6 @@ function header(r) {
   );
 }
 
-// A <details> popover closes on a click elsewhere and on Escape, like the language menu.
-/** @param {HTMLDetailsElement} details */
-function closeOnOutside(details) {
-  document.addEventListener("click", (event) => {
-    if (details.open && !details.contains(/** @type {Node} */ (event.target))) details.open = false;
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape" || !details.open) return;
-    details.open = false;
-    details.querySelector("summary")?.focus();
-  });
-}
-
 // Back to the list of all resorts, with the filters and order it had in this tab.
 function backLink() {
   let list = "";

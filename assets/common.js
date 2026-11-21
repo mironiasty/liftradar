@@ -232,6 +232,19 @@ function updatedText(index) {
   return t("Updated {time}", { time: formatted });
 }
 
+// A <details> popover closes on a click elsewhere and on Escape, like the language menu.
+/** @param {HTMLDetailsElement} details */
+function closeOnOutside(details) {
+  document.addEventListener("click", (event) => {
+    if (details.open && !details.contains(/** @type {Node} */ (event.target))) details.open = false;
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !details.open) return;
+    details.open = false;
+    details.querySelector("summary")?.focus();
+  });
+}
+
 function el(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, value);
