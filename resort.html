@@ -105,7 +105,8 @@
   .diff { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 2px; background: var(--c); }
 
   /* Every lift and slope (the experimental details file). */
-  .breakdown .more-row { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; }
+  .breakdown > div { display: flex; flex-direction: column; }
+  .breakdown .more-cell { margin-top: auto; padding-top: 16px; text-align: center; }
   .breakdown .more { font-family: inherit; cursor: pointer; }
   .breakdown .more svg { transition: transform .15s; }
   .breakdown .more[aria-expanded="true"] { color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent), var(--shadow); }

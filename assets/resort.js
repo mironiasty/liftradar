@@ -384,10 +384,10 @@ function breakdown(r) {
     }));
   /** @type {HTMLElement[]} */
   const buttons = [];
-  // A pill under the card that opens its list in a card of its own, closing the other one.
+  // A pill at the bottom of its column that opens its list in a card of its own, closing the other one.
   /** @param {string} id @param {string} text @param {string} title @param {(d: ResortDetails) => HTMLElement} list */
   const more = (id, text, title, list) => {
-    if (!r.details) return;
+    if (!r.details) return [];
     const panel = el("section", { class: "card", id, hidden: "" }, el("h2", {}, title));
     const button = el("button", { type: "button", class: "pill more", "aria-expanded": "false", "aria-controls": id });
     button.innerHTML =
@@ -411,6 +411,7 @@ function breakdown(r) {
         .then((d) => loader.replaceWith(list(d)))
         .catch(() => loader.replaceWith(el("p", { class: "empty" }, t("The list could not load."))));
     });
+    return [el("div", { class: "more-cell" }, button)];
   };
   if (r.lifts_by_type) {
     const rows = Object.entries(r.lifts_by_type).flatMap(([type, c]) => [
@@ -418,7 +419,15 @@ function breakdown(r) {
       el("span", { class: "n" }, pair(c.open, c.total)),
       meter(c.open, c.total),
     ]);
-    parts.push(el("div", {}, el("h2", {}, t("Lifts by type")), el("div", { class: "bars" }, ...rows)));
+    parts.push(
+      el(
+        "div",
+        {},
+        el("h2", {}, t("Lifts by type")),
+        el("div", { class: "bars" }, ...rows),
+        ...more("all-lifts", t("All lifts"), t("Lifts"), liftList),
+      ),
+    );
   }
   if (r.slopes_by_difficulty) {
     const rows = Object.entries(r.slopes_by_difficulty).flatMap(([difficulty, c]) => {
@@ -431,13 +440,17 @@ function breakdown(r) {
         meter(c.open, c.total),
       ];
     });
-    parts.push(el("div", {}, el("h2", {}, t("Slopes by difficulty")), el("div", { class: "bars" }, ...rows)));
+    parts.push(
+      el(
+        "div",
+        {},
+        el("h2", {}, t("Slopes by difficulty")),
+        el("div", { class: "bars" }, ...rows),
+        ...more("all-slopes", t("All slopes"), t("Slopes"), slopeList),
+      ),
+    );
   }
-  if (!parts.length) return [];
-  if (r.lifts_by_type) more("all-lifts", t("All lifts"), t("Lifts"), liftList);
-  if (r.slopes_by_difficulty) more("all-slopes", t("All slopes"), t("Slopes"), slopeList);
-  const row = buttons.length ? [el("div", { class: "more-row" }, ...buttons)] : [];
-  return [el("section", { class: "card breakdown" }, ...parts, ...row), ...panels];
+  return parts.length ? [el("section", { class: "card breakdown" }, ...parts), ...panels] : [];
 }
 
 /** @param {DangerRating} rating */
