@@ -19,11 +19,11 @@
   .top { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; margin-top: 20px; }
   .top > div { min-width: 0; }
   .map-tile { position: relative; display: flex; align-items: flex-end; height: 160px; padding: 10px; box-sizing: border-box;
-    border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--chip); color: var(--fg); text-decoration: none; }
+    border-radius: var(--radius); overflow: hidden; background: var(--chip); box-shadow: var(--shadow); color: var(--fg); text-decoration: none; }
   #mini-map { position: absolute; inset: 0; background: var(--chip); pointer-events: none; }
   .map-tile span { position: relative; z-index: 500; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px;
     background: var(--bg); font-size: .85rem; font-weight: 500; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
-  .map-tile:hover { border-color: var(--accent); }
+  .map-tile:hover { box-shadow: inset 0 0 0 2px var(--accent), var(--shadow); }
   .map-tile:hover span { color: var(--accent); }
   .map-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   #mini-map svg { display: block; width: 100%; height: 100%; }
@@ -33,48 +33,68 @@
   #mini-map path.covered { stroke-opacity: .4; }
   #mini-map circle { stroke: var(--bg); stroke-width: 1.5; }
   @media (max-width: 640px) { .top { grid-template-columns: 1fr; } .map-tile { height: 140px; } }
-  .intro { margin: 0 0 8px; }
+  .intro { margin: 0 0 8px; font-size: 1.05rem; }
+  .intro.muted { font-size: .9rem; }
 
-  /* Toolbar: search, country and status chips, region. */
-  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 24px; font-size: .9rem; }
+  /* The visitor's favourite resorts (localStorage), as cards above the list; hidden while there are none. */
+  .favorites { margin-top: 24px; }
+  .favorites h2 { margin: 0 0 10px; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .fav-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .fav-card { position: relative; padding: 14px 16px; border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow); }
+  .fav-card:hover { box-shadow: inset 0 0 0 2px var(--accent), var(--shadow); }
+  .fav-card:has(a:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .fav-card a { display: block; padding-right: 28px; color: var(--fg); font-size: 1.1rem; font-weight: 700; text-decoration: none; outline: none; }
+  .fav-card a::after { content: ""; position: absolute; inset: 0; border-radius: 12px; }
+  .fav-card:hover a { color: var(--accent); }
+  .fav-card button.fav { position: absolute; top: 10px; right: 8px; z-index: 1; }
+  .fav-card .where { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: .8rem; }
+  .fav-card .values { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 10px; font-size: .9rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .fav-card .values span span { font-weight: 400; }
+  .fav-card .values span span { color: var(--muted); }
+  /* The list's stars: faint until the row is pointed at, so 742 of them don't crowd it. */
+  .resort button.fav { align-self: flex-start; margin: -3px 0 -3px auto; padding: 3px; }
+  .resort button.fav[aria-pressed="false"] { opacity: .35; }
+  tr:hover .resort button.fav, .resort button.fav:focus-visible { opacity: 1; }
+  /* Toolbar: search, country and region selects, status chips. */
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 12px; font-size: .9rem; }
   .search { position: relative; flex: 1 1 16rem; max-width: 22rem; }
   .search > svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-  input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 10px; font: inherit; color: var(--fg);
-    background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
-  input[type=search] { width: 100%; padding-left: 32px; padding-right: 32px; }
+  input[type=search], select { box-sizing: border-box; height: 34px; padding: 0 12px; font: inherit; color: var(--fg);
+    background: var(--bg); border: 0; border-radius: 999px; box-shadow: var(--shadow); }
+  input[type=search] { width: 100%; height: 40px; padding-left: 36px; padding-right: 36px; }
+  .search > svg { left: 14px; }
   /* Browsers' own clear buttons differ (Firefox has none): #search-clear replaces them. */
   input[type=search]::-webkit-search-cancel-button { display: none; }
-  #search-clear { position: absolute; right: 2px; top: 2px; display: flex; align-items: center; justify-content: center;
-    width: 30px; height: 30px; padding: 0; border: 0; border-radius: 6px; background: none; color: var(--muted); cursor: pointer; }
+  #search-clear { position: absolute; right: 5px; top: 5px; display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; padding: 0; border: 0; border-radius: 999px; background: none; color: var(--muted); cursor: pointer; }
   #search-clear[hidden] { display: none; }
   #search-clear:hover { color: var(--fg); }
-  select { padding-right: 28px; appearance: none; cursor: pointer;
+  select { padding-right: 30px; appearance: none; cursor: pointer;
     background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center; }
   input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
-  .seg { display: inline-flex; flex-wrap: wrap; gap: 2px; max-width: 100%; padding: 2px; border-radius: 8px; background: var(--chip); }
-  .seg button { height: 30px; padding: 0 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
-  .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
-  /* Eight countries no longer fit beside the search box: the country control gets its own
-     full-width row with the buttons spread evenly, and the status chips go on the row below. */
-  @media (min-width: 641px) {
-    .seg { order: 1; flex-basis: 100%; box-sizing: border-box; }
-    .seg button { flex: 1 0 auto; }
-    .chips, #count { order: 2; }
-  }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border: 1px solid var(--line);
-    border-radius: 999px; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px solid transparent;
+    border-radius: 999px; background: color-mix(in srgb, var(--bg) 45%, transparent); color: var(--muted); font: inherit; cursor: pointer; }
   .chip:hover { border-color: var(--muted); }
-  .chip[aria-pressed="true"] { background: var(--chip); border-color: transparent; color: var(--fg); font-weight: 500; }
+  .chip[aria-pressed="true"] { background: var(--bg); box-shadow: var(--shadow); color: var(--fg); font-weight: 500; }
   .chip .dot { box-shadow: inset 0 0 0 1.5px var(--c); }
   .chip[aria-pressed="true"] .dot { background: var(--c); }
   .count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
   button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  #count, #updated { margin-left: auto; }
+  #count { margin-left: auto; }
+  /* When the data was fetched: a chip with a clock, as the resort page's "Checked" time, over the search so the
+     country and region fit beside it. */
+  .updated-row { display: flex; justify-content: flex-end; margin: 24px 0 0; font-size: .9rem; }
+  .updated { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px;
+    background: var(--bg); box-shadow: var(--shadow); color: var(--fg); font-size: .9rem; font-weight: 500; }
+  .updated svg { flex: none; color: var(--muted); }
+  .updated.failed, .updated.failed svg { color: var(--warn); }
 
   /* Table. On wide screens the page scrolls and the header sticks; on narrow ones the
      table scrolls sideways and the resort column sticks. */
-  .table { margin: 16px 0 24px; overflow-x: auto; }
+  /* The table on a card over the sky, as the apps' list. */
+  .table { margin: 16px 0 24px; padding: 4px 14px 8px; border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow); overflow-x: auto; }
+  tbody tr:last-child td { border-bottom: 0; }
   @media (min-width: 1000px) { .table { overflow: visible; } }
   table { border-collapse: separate; border-spacing: 0; width: 100%; }
   th, td { text-align: left; padding: 10px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; vertical-align: top; }
@@ -94,7 +114,7 @@
   th .sub button + button::before { content: "/"; color: var(--muted); padding: 0 2px; }
 
   .resort { display: flex; gap: 8px; align-items: baseline; }
-  .resort .name { font-weight: 500; }
+  .resort .name { font-weight: 600; }
   .dot { display: inline-block; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
   .resort .dot { position: relative; top: -1px; }
   .sub-line { color: var(--muted); font-size: .8rem; margin-top: 2px; }
@@ -117,14 +137,15 @@
   @media (max-width: 640px) {
     .mobile-only { display: inline-block; }
     .search { order: -2; flex-basis: 100%; max-width: none; }
-    #updated { order: -1; }
-    .seg { flex-wrap: wrap; flex-basis: 100%; box-sizing: border-box; }
-    .seg button { flex: 1 0 auto; }
-    #region, #sort { flex: 1 1 40%; min-width: 0; }
+    /* Country and region share a row; the order gets its own while the region shows. */
+    #country, #region, #sort { flex: 1 1 0; min-width: 0; }
+    #country { flex: 0 1 auto; }
+    #region:not([hidden]) ~ #sort { flex-basis: 100%; }
     .table { overflow: visible; }
     thead { display: none; }
     table, tbody { display: block; }
     tr { display: flex; flex-wrap: wrap; gap: 10px 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    tbody tr:last-child { border-bottom: 0; }
     .resort .dot, .status-line { display: none; }
     .resort > div { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
     .resort .name { flex: 1; min-width: 0; }
@@ -146,7 +167,7 @@
   }
   .empty { padding: 32px 0; text-align: center; color: var(--muted); }
 
-  .notes { margin-top: 8px; border: 1px solid var(--line); border-radius: 10px; padding: 0 16px; }
+  .notes { margin-top: 8px; border-radius: var(--radius); padding: 0 18px; background: var(--bg); box-shadow: var(--shadow); }
   .notes summary { padding: 12px 0; cursor: pointer; font-weight: 600; }
   .notes ul { margin: 0 0 16px; padding-left: 20px; }
   .notes li { margin: 4px 0; }
@@ -174,6 +195,14 @@
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
       <span data-i18n>About the data</span>
     </a>
+    <a class="pill app app-ios" href="https://apps.apple.com/us/app/liftradar-ski-resort-status/id6836206533">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+      <span data-i18n>Get the app</span>
+    </a>
+    <a class="pill app app-android" href="https://play.google.com/store/apps/details?id=eu.liftradar.app">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+      <span data-i18n>Get the app</span>
+    </a>
     <details class="lang-menu">
       <summary class="pill lang" aria-label="Language">EN</summary>
       <div>
@@ -198,31 +227,39 @@
     <span data-i18n>Map of all resorts &rarr;</span>
   </a>
   </div>
+  <section class="favorites" id="favorites" aria-labelledby="favorites-title" hidden>
+    <h2 id="favorites-title" data-i18n>Your favourites</h2>
+    <div class="fav-cards" id="fav-cards"></div>
+  </section>
+  <p class="updated-row">
+    <span class="updated"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="updated" data-i18n>Loading…</span></span>
+  </p>
   <div class="tools">
     <div class="search">
       <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       <input type="search" id="search" placeholder="Search resorts" aria-label="Search resorts" autocomplete="off">
       <button type="button" id="search-clear" aria-label="Clear search" hidden><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 1l8 8M9 1l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
     </div>
-    <div class="seg" id="country" role="group" aria-label="Country"></div>
+    <details class="country-menu" id="country">
+      <summary aria-label="Country"><span data-i18n>All countries</span></summary>
+      <div></div>
+    </details>
     <select id="region" aria-label="Region"><option value="" data-i18n>All regions</option></select>
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
-    <span class="muted" id="updated" data-i18n>Loading…</span>
     <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
   </div>
   <div class="table">
   <table>
     <thead><tr>
-      <th><button type="button" data-key="name" class="sorted asc" data-i18n>Resort</button></th>
+      <th><button type="button" data-key="name" data-i18n>Resort</button></th>
       <th><button type="button" data-key="region" data-i18n>Region</button></th>
       <th class="num"><button type="button" data-key="mountain" data-i18n>Mountain</button></th>
       <th class="num"><button type="button" data-key="valley" data-i18n>Valley</button></th>
       <th class="num"><button type="button" data-key="fresh" data-i18n>Fresh</button></th>
       <th class="num"><span data-i18n>Lifts</span><span class="sub"><button type="button" data-key="lifts_open" data-i18n="open|count">open</button><button type="button" data-key="lifts_total" data-i18n>total</button></span></th>
-      <th class="num"><span data-i18n>Slopes</span><span class="sub"><button type="button" data-key="slopes_open" data-i18n="open|count">open</button><button type="button" data-key="slopes_total" data-i18n>total</button></span>
+      <th class="num"><span data-i18n>Slopes</span><span class="sub"><button type="button" data-key="slopes_open" class="sorted" data-i18n="open|count">open</button><button type="button" data-key="slopes_total" data-i18n>total</button></span>
         <span class="sub">km <button type="button" data-key="km_open" data-i18n="open|count">open</button><button type="button" data-key="km_total" data-i18n>total</button></span></th>
-      <th><button type="button" data-key="avalanche" data-i18n>Avalanche<br>danger</button></th>
     </tr></thead>
     <tbody></tbody>
   </table>
@@ -256,7 +293,6 @@
         weather station's natural snow, not the depth on the slopes.</li>
       <li data-i18n>Slope counts of SalzburgerLand and Trentino resorts are the area's size, not reported; Livigno shows lifts only. Most resorts in Vorarlberg,
         Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.</li>
-      <li data-i18n>Avalanche danger (Tirol, Switzerland, Italy, the French Alps and Pyrenees, Krkonoše and Jeseníky in Czechia, Jasná and the Slovak and Polish Tatras, the Bavarian Alps, the Norwegian mountain regions, the Spanish Pyrenees, Guadarrama and part of the Cantabrian range, the Slovenian Alps and Prealps; not other Austrian states, the German uplands, Pohorje or Finland) is the highest level of the day in the resort's warning region.</li>
     </ul>
   </details>
   <footer class="site-footer">
@@ -264,10 +300,28 @@
       <a href="sources.html" data-i18n>Data sources</a>
       <a href="about.html" data-i18n>About the data</a>
       <a href="api.html" data-i18n>API</a>
+      <a href="privacy.html" data-i18n>Privacy</a>
       <span data-i18n>Contact: miron [at] liftradar.eu</span>
     </nav>
-    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span data-i18n>Made by <b>Miron</b></span></span>
+    <div class="footer-end">
+      <div class="stores">
+        <a class="store store-ios" href="https://apps.apple.com/us/app/liftradar-ski-resort-status/id6836206533">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>App Store</span>
+        </a>
+        <a class="store store-android" href="https://play.google.com/store/apps/details?id=eu.liftradar.app">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>Google Play</span>
+        </a>
+      </div>
+        <div class="made-by">
+        <a class="github" href="https://github.com/mironiasty/liftradar" aria-label="GitHub" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a class="author" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+          <span>Miron Pawlik</span></a>
+      </div>
+      </div>
   </footer>
 </main>
 <script src="/assets/common.js"></script>

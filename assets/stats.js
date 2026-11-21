@@ -15,7 +15,7 @@ const METRICS = [
 const STATS_URL = "/json/stats.json";
 const TOP_BARS = 8;
 
-const countryGroup = document.getElementById("country");
+const countryMenuNode = /** @type {HTMLDetailsElement} */ (document.getElementById("country"));
 const regionSelect = document.getElementById("region");
 const charts = document.getElementById("charts");
 const count = document.getElementById("count");
@@ -282,24 +282,19 @@ function fillFilters() {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
     countryName(a).localeCompare(countryName(b), LANG),
   );
-  const choices = [["", t("All")], ...countries.map((code) => [code, countryName(code)])];
+  const showCountry = countryMenu(countryMenuNode, countries, (code) => choose(code));
   const choose = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => {
-      countryGroup.children[i].setAttribute("aria-pressed", String(c === country));
-    });
+    showCountry(code);
     fillRegions(region);
     render();
   };
-  for (const [code, label] of choices) {
-    const node = el("button", { type: "button" }, label);
-    node.addEventListener("click", () => choose(code));
-    countryGroup.append(node);
-  }
   regionSelect.addEventListener("change", render);
   choose(countries.find((code) => code === saved.get("country")) ?? "", saved.get("region") ?? "");
 }
 
+// The small gondolas where the charts go, till they're drawn (render() replaces them).
+charts.replaceChildren(liftLoader({ small: true }));
 loadIndex()
   .then(async (index) => {
     document.getElementById("updated").textContent = updatedText(index);
@@ -315,5 +310,6 @@ loadIndex()
     }).observe(charts);
   })
   .catch((error) => {
+    charts.replaceChildren();
     document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
   });

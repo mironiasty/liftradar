@@ -45,6 +45,7 @@ SKIPPED_STATUS = {"proposed", "planned", "construction"}
 SIMPLIFY_M = 5  # Douglas–Peucker tolerance for lifts and runs
 OUTLINE_SIMPLIFY_M = 25  # and for ski-area outlines
 DENSIFY_M = 1000  # steps along a segment when finding the tiles it crosses
+ON_LIFT_M = 10  # a route relation's run this close to a lift at both ends of a segment rides it there
 MAX_DROP = 0.15
 MIN_LIFTS = 25000  # about 32,000 in November 2026
 MIN_RUNS = 180000  # about 231,000 in November 2026
@@ -129,6 +130,67 @@ def osm_ids(properties: dict) -> list[str]:
     return [s["id"] for s in properties.get("sources") or [] if s.get("type") == "openstreetmap"]
 
 
+def from_metres(here: tuple, line: list, point: list) -> float:
+    """Distance in metres from a (lon, lat) point to a line, flat-earth around here."""
+    k = math.cos(math.radians(here[1]))
+    px, py = point[0] * k, point[1]
+    best = math.inf
+    for a, b in itertools.pairwise(line):
+        ax, ay, bx, by = a[0] * k, a[1], b[0] * k, b[1]
+        dx, dy = bx - ax, by - ay
+        length = dx * dx + dy * dy
+        t = max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / length)) if length else 0.0
+        best = min(best, math.hypot(px - ax - t * dx, py - ay - t * dy))
+    return best * M_PER_DEG
+
+
+def on_lifts(point: list, lines: list) -> set[int]:
+    """The indexes of the lift lines within ON_LIFT_M of a point."""
+    return {k for k, line in enumerate(lines) if from_metres(point, line, point) <= ON_LIFT_M}
+
+
+def off_lifts(runs: list, lifts: list) -> tuple[list, int]:
+    """The runs without the stretches that are a lift, and how many runs lost one. OpenSkiData makes
+    runs of a ski route relation's members, the lifts the route rides included, sometimes joined to the
+    piste before them: Saalbach's "The Challenge" drew pistes under some 30 lifts. Only runs from
+    relations alone are cut: a piste way of its own along a drag lift is real."""
+    tree = shapely.STRtree([f["_geom"] for f in lifts])
+    kept, cut = [], 0
+    for f in runs:
+        osm = osm_ids(f["properties"])
+        if f["geometry"]["type"] != "LineString" or not osm or not all(s.startswith("relation/") for s in osm):
+            kept.append(f)
+            continue
+        coords = f["geometry"]["coordinates"]
+        reach = ON_LIFT_M / (M_PER_DEG * math.cos(math.radians(coords[0][1])))
+        near = [lifts[i]["_coords"] for i in tree.query(f["_geom"], predicate="dwithin", distance=reach)]
+        if not near:
+            kept.append(f)
+            continue
+        # A segment whose ends and middle are on the same lift rides it.
+        ends = [on_lifts(c, near) for c in coords]
+        pieces, piece = [], [coords[0]]
+        for i in range(1, len(coords)):
+            a, b = coords[i - 1], coords[i]
+            both = ends[i - 1] & ends[i]
+            if both and metres(a, b) > 2 * ON_LIFT_M and both & on_lifts([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2], near):
+                if len(piece) > 1:
+                    pieces.append(piece)
+                piece = [coords[i]]
+            else:
+                piece.append(coords[i])
+        if len(piece) > 1:
+            pieces.append(piece)
+        if len(pieces) == 1 and len(pieces[0]) == len(coords):
+            kept.append(f)
+            continue
+        cut += 1
+        for piece in pieces:
+            geometry = {"type": "LineString", "coordinates": piece}
+            kept.append({**f, "geometry": geometry, "_geom": shape(geometry)})
+    return kept, cut
+
+
 def outline(geom) -> list:
     """A simplified outline as GeoJSON polygon coordinates (a list of polygons, outer rings only)."""
     k = math.cos(math.radians(geom.centroid.y)) * M_PER_DEG
@@ -205,6 +267,8 @@ def build(args) -> dict:
         if f["properties"].get("status") in SKIPPED_STATUS or f["geometry"]["type"] not in ("LineString", "Polygon"):
             continue
         runs.append(prepare(f))
+    runs, cut = off_lifts(runs, lifts)
+    print(f"{cut} runs from route relations cut where they ride a lift")
 
     lift_lr, run_lr = ski_resorts.assign(resorts, areas, lifts, runs)
     features = ski_resorts.outlines(resorts, lifts, runs, lift_lr, run_lr, areas)

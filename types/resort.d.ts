@@ -17,6 +17,14 @@ export type Lon = number
  * The resort's official website
  */
 export type Website = (string | null)
+/**
+ * The id, in json/groups.json, of the ski area this resort is part of, linked by lifts and runs to the other members and sold as one (e.g. les-3-vallees); left out when it isn't part of one we list as several resorts.
+ */
+export type LinkedArea = string
+/**
+ * The id, in json/groups.json, of the ski region or pass this resort shares with the other members without being linked to them (e.g. dolomiti-superski); left out when it isn't part of one.
+ */
+export type SkiRegion = string
 export type Status = ("open" | "closed" | "no_report")
 export type FetchedAt = string
 export type StatusFrom = (string | null)
@@ -92,6 +100,8 @@ name: Name
 region: Region
 location: (Location | null)
 website: Website
+linked_area?: LinkedArea
+ski_region?: SkiRegion
 status: Status
 fetched_at: FetchedAt
 status_from: StatusFrom

@@ -29,6 +29,11 @@ OPEN_M = 70  # strips narrower than twice this removed (a lift alone across a va
 ISLAND_M2 = 50_000  # and pieces smaller than this,
 HOLE_M2 = 500_000  # holes smaller than this filled,
 OUTLINE_SIMPLIFY_M = 15  # and simplified
+# Rack railways (OpenSkiData's "railway": the Bayerische Zugspitzbahn, the Tramway du Mont-Blanc, the
+# Wendelsteinbahn) keep their resort in the tiles, for a GPS track that rides them, but aren't counted
+# among its lifts or drawn in its outline: they're mapped as dozens of segments, most of them far below
+# the area.
+NOT_COUNTED = {"railway"}
 OVERRIDES = Path(__file__).with_name("ski_overrides.json")
 GENERIC = {"ski", "skigebiet", "area", "sci", "comprensorio", "bergbahnen", "der", "und", "and", "san", "skiarena"}
 GENERIC |= {"skiregion", "domaine", "station", "les", "the", "skicentrum", "skicenter", "alpinsenter", "lifte"}
@@ -83,7 +88,8 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
 
     Each resort claims ski areas: those near it whose name matches its own best (or at all,
     within NEAR_M), and the nearest one with a lift within NEAR_M unless another resort claimed
-    that one by name (scripts/ski_overrides.json adds or removes claims).
+    that one by name (scripts/ski_overrides.json adds or removes claims, moves single lifts and runs
+    by their OSM id, and clips a resort to a box).
     A lift or run then goes to the smallest of its areas that was claimed: an area that is a
     sector of a bigger one claimed by another resort stays with its own resort, and an area a
     ski pass groups (Ski amadé, Les Portes du Soleil) only counts when a resort claims it. In an
@@ -175,7 +181,22 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
             if a not in trees:
                 trees[a] = shapely.STRtree([lines[i] for i in lifts_in[a]])
             run_lr[j] = lift_lr[lifts_in[a][int(trees[a].nearest(f["_geom"].centroid))]]
+    # Single lifts and runs OpenSkiData puts in the wrong area (ski_overrides.json "features": OSM ids).
+    moved = {ref: k for k, refs in overrides.get("features", {}).items() for ref in refs}
+    for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
+        for i, f in enumerate(features):
+            sources = (f.get("properties") or {}).get("sources") or []
+            if k := next((moved[s["id"]] for s in sources if s.get("id") in moved), None):
+                assigned[i] = k
     adopt(lifts, runs, lift_lr, run_lr)
+    # A resort that has only part of its ski area (ski_overrides.json "clip": [west, south, east, north]):
+    # its lifts and runs outside that box go to no resort.
+    for k, (w, s, e, n) in overrides.get("clip", {}).items():
+        for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
+            for i in [i for i, r in assigned.items() if r == k]:
+                c = features[i]["_geom"].centroid
+                if not (w <= c.x <= e and s <= c.y <= n):
+                    del assigned[i]
     return lift_lr, run_lr
 
 
@@ -237,10 +258,13 @@ def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict
         if k not in members or not r.get("location"):
             continue
         lift_ids, run_ids = members[k]
+        lift_ids = [i for i in lift_ids if lifts[i]["properties"].get("liftType") not in NOT_COUNTED]
         here = (r["location"]["lon"], r["location"]["lat"])
         to_m, to_deg = projector(here)
         pieces = [to_m(LineString([c[:2] for c in lifts[i]["_coords"]])).buffer(LIFT_BUFFER_M) for i in lift_ids]
         downhill = [j for j in run_ids if "downhill" in (runs[j]["properties"].get("uses") or [])]
+        if not lift_ids and not downhill:  # only a railway
+            continue
         for j in downhill:
             g = to_m(runs[j]["_geom"])
             pieces.append(g if g.geom_type in ("Polygon", "MultiPolygon") else g.buffer(RUN_BUFFER_M))

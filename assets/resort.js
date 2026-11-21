@@ -97,35 +97,44 @@ function tiles(r) {
         dangerName(avalanche.danger),
       ]
     : "–";
+  // First what's open, the reason most people come; then the snow and the avalanche danger.
   return el(
     "div",
-    { class: "tiles" },
-    tile(t("Mountain"), cm(snow.mountain_cm), snow.condition),
-    tile(t("Valley"), cm(snow.valley_cm)),
-    tile(
-      t("Fresh snow"),
-      snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm}`, el("small", {}, " cm")) : cm(snow.fresh_cm),
-      lastSnowfall,
+    { class: "summary" },
+    el(
+      "div",
+      { class: "tiles key" },
+      tile(
+        t("Lifts"),
+        pair(lifts?.open, lifts?.total),
+        active && lifts?.total ? meter(lifts.open, lifts.total) : null,
+        share(lifts?.open, lifts?.total),
+      ),
+      tile(
+        t("Slopes"),
+        present(slopes?.open) || present(slopes?.total)
+          ? pair(slopes?.open, slopes?.total)
+          : pair(slopes?.open_km, slopes?.total_km, " km"),
+        active && slopes?.total ? meter(slopes.open, slopes.total) : null,
+        present(slopes?.open) || present(slopes?.total)
+          ? present(slopes?.total_km)
+            ? pair(slopes?.open_km, slopes?.total_km, " km")
+            : null
+          : null,
+      ),
     ),
-    tile(
-      t("Lifts"),
-      pair(lifts?.open, lifts?.total),
-      active && lifts?.total ? meter(lifts.open, lifts.total) : null,
-      share(lifts?.open, lifts?.total),
+    el(
+      "div",
+      { class: "tiles" },
+      tile(t("Mountain"), cm(snow.mountain_cm), snow.condition),
+      tile(t("Valley"), cm(snow.valley_cm)),
+      tile(
+        t("Fresh snow"),
+        snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm}`, el("small", {}, " cm")) : cm(snow.fresh_cm),
+        lastSnowfall,
+      ),
+      tile(t("Avalanche danger"), danger, avalanche?.region),
     ),
-    tile(
-      t("Slopes"),
-      present(slopes?.open) || present(slopes?.total)
-        ? pair(slopes?.open, slopes?.total)
-        : pair(slopes?.open_km, slopes?.total_km, " km"),
-      active && slopes?.total ? meter(slopes.open, slopes.total) : null,
-      present(slopes?.open) || present(slopes?.total)
-        ? present(slopes?.total_km)
-          ? pair(slopes?.open_km, slopes?.total_km, " km")
-          : null
-        : null,
-    ),
-    tile(t("Avalanche danger"), danger, avalanche?.region),
   );
 }
 
@@ -161,39 +170,85 @@ function statusNote(r) {
 /** @param {Resort} r */
 function header(r) {
   const status = statusKey(r);
-  const meta = [r.region, countryName(r.country)].filter(Boolean).join(" · ");
-  const { checked, changed, days, stale } = reportTimes(r);
-  const times = [
-    t("Checked {time}", { time: viennaTime(checked) }),
-    changed && t("resort's last change {time}", { time: viennaTime(changed) }),
+  // The region and country open the list of all resorts filtered to them.
+  const filterLink = (text, params) => el("a", { class: "where", href: `./?${new URLSearchParams(params)}` }, text);
+  const where = [
+    r.region ? filterLink(r.region, { country: r.country, region: r.region }) : null,
+    filterLink(countryName(r.country), { country: r.country }),
   ]
-    .filter(Boolean)
-    .join(" · ");
+    .filter((link) => link !== null)
+    .flatMap((link, i) => (i ? [" · ", link] : [link]));
+  const { checked, changed, days, stale } = reportTimes(r);
+  // When the report was read and last changed, opposite the name (under it on narrow screens).
+  const clock = el("span", { class: "clock", "aria-hidden": "true" });
+  clock.innerHTML =
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"' +
+    ' stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+  const checkedText = t("Checked {time}", { time: viennaTime(checked) });
+  const changedText = changed && t("resort's last change {time}", { time: viennaTime(changed) });
+  const times = el(
+    "div",
+    { class: stale ? "times stale" : "times" },
+    el("span", { class: "checked" }, clock, checkedText),
+    changedText ? el("span", { class: "changed" }, changedText) : "",
+  );
+  // Narrow screens: just the time, next to the status; tapped, it shows both lines.
+  const short = viennaTime(checked, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  const when = el(
+    "details",
+    { class: stale ? "when stale" : "when" },
+    el("summary", { class: "checked" }, clock.cloneNode(true), short),
+    el("div", {}, el("span", {}, checkedText), changedText ? el("span", { class: "changed" }, changedText) : ""),
+  );
+  closeOnOutside(when);
   const unchanged =
     stale && !r.status_from
-      ? ` ${t("The resort hasn't changed its report for {n} days: check its own page.", { n: days })}`
+      ? t("The resort hasn't changed its report for {n} days: check its own page.", { n: days })
       : "";
   const note = statusNote(r);
   return el(
     "header",
     { class: "resort-head" },
     backLink(),
-    el("h1", {}, r.name),
     el(
       "div",
-      { class: "facts" },
+      { class: "head-row" },
       el(
-        "span",
-        { class: "status" },
-        el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }),
-        STATUS_LABELS[status],
+        "div",
+        { class: "head-main" },
+        el("div", { class: "title" }, el("h1", {}, r.name), favoriteButton(r)),
+        el(
+          "div",
+          { class: "facts" },
+          el(
+            "span",
+            { class: "status" },
+            el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }),
+            STATUS_LABELS[status],
+          ),
+          el("span", {}, ...where),
+          when,
+        ),
+        fnuggCredit(r),
       ),
-      el("span", {}, meta),
+      times,
     ),
-    fnuggCredit(r),
-    el("p", { class: stale ? "meta stale" : "meta" }, times + unchanged),
+    unchanged ? el("p", { class: "meta stale" }, unchanged) : "",
     note ? el("p", { class: "meta" }, note) : "",
   );
+}
+
+// A <details> popover closes on a click elsewhere and on Escape, like the language menu.
+/** @param {HTMLDetailsElement} details */
+function closeOnOutside(details) {
+  document.addEventListener("click", (event) => {
+    if (details.open && !details.contains(/** @type {Node} */ (event.target))) details.open = false;
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !details.open) return;
+    details.open = false;
+    details.querySelector("summary")?.focus();
+  });
 }
 
 // Back to the list of all resorts, with the filters and order it had in this tab.
@@ -436,20 +491,69 @@ function data(r) {
     ),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, t("Open|file"))),
   );
+  return section;
+}
+
+/** @param {Resort} r */
+function sources(r) {
   const { conditions, resort_info } = sourceDetails(r);
   /** @type {[string, SourceRef[]][]} */
   const groups = [
     [t("Current conditions"), conditions],
     [t("Resort information"), resort_info],
   ];
-  for (const [title, refs] of groups) {
-    if (!refs.length) continue;
-    section.append(
-      el("div", { class: "meta", style: "margin-top:12px" }, title),
+  const parts = groups
+    .filter(([, refs]) => refs.length)
+    .flatMap(([title, refs], i) => [
+      el("div", i ? { class: "meta", style: "margin-top:12px" } : { class: "meta" }, title),
       el("ul", { class: "sources" }, ...refs.map((ref) => sourceItem(ref))),
-    );
-  }
-  return section;
+    ]);
+  return parts.length ? el("section", { class: "card data" }, el("h2", {}, t("Sources")), ...parts) : null;
+}
+
+// The groups the resort is in, from its linked_area and ski_region: a card for each, under the map, with the
+// group's name and the other members, by name and status from the index, each to its own page.
+/** @param {Resort} r @param {HTMLElement} container */
+async function groupCards(r, container) {
+  if (!r.linked_area && !r.ski_region) return;
+  const [groups, index] = await Promise.all([loadGroups(), loadIndex().catch(() => null)]);
+  /** @type {Map<string, IndexResort>} */
+  const resorts = new Map((index?.resorts ?? []).map((x) => [resortKey(x), x]));
+  /** @type {[string | undefined, string, string][]} */
+  const wanted = [
+    [r.linked_area, t("Linked ski area"), t("Linked resorts")],
+    [r.ski_region, t("Ski region"), t("Other resorts in the region")],
+  ];
+  const cards = wanted.flatMap(([id, title, membersTitle]) => {
+    const group = id ? groups[id] : undefined;
+    if (!group) return [];
+    const others = group.members
+      .filter((key) => key !== resortKey(r))
+      .map((key) => {
+        const [country, resortId] = key.split("/");
+        const known = resorts.get(key);
+        const dot = el("span", { class: "dot", style: `--c:${STATUS_COLORS[known ? statusKey(known) : "no_report"]}` });
+        if (known) dot.title = STATUS_LABELS[statusKey(known)];
+        return el(
+          "li",
+          {},
+          dot,
+          el("a", { href: resortPage({ country, id: resortId }) }, known?.name ?? resortId),
+          country === r.country ? "" : el("span", { class: "meta" }, countryName(country)),
+        );
+      });
+    return [
+      el(
+        "section",
+        { class: "card group" },
+        el("h2", {}, title),
+        el("strong", { class: "group-name" }, group.name),
+        others.length ? el("div", { class: "meta" }, membersTitle) : "",
+        others.length ? el("ul", { class: "members" }, ...others) : "",
+      ),
+    ];
+  });
+  container.replaceWith(...cards);
 }
 
 // Resort map: only this resort's area (or point), with its pistes and lifts strong and the
@@ -459,10 +563,36 @@ function data(r) {
 /** @param {Resort} r */
 async function resortMap(r, container) {
   container.classList.add("loading");
+  const loader = liftLoader();
+  container.append(loader);
   const start = r.location
     ? { center: [r.location.lon, r.location.lat], zoom: 12 }
     : { center: [11.9, 47.25], zoom: 6 };
   const loading = loadSki();
+  // Above the map, as soon as the ski tiles say the resort has an area (the 3D map needs it, which the resorts
+  // without one lack), rather than once the map has drawn.
+  loading.then((ski) => {
+    if (!ski?.resorts.has(skiKey(r))) return;
+    // A block of land cut out with its peaks, seen from above at an angle: the 3D map's diorama. The block's
+    // sides in two shades, the ridges in the accent.
+    const icon = el("span", { class: "icon", "aria-hidden": "true" });
+    icon.innerHTML =
+      '<svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" opacity=".45" d="M2 15.5v2.5l10 5v-2.5z"/><path fill="currentColor" opacity=".7" d="M22 15.5v2.5l-10 5v-2.5z"/><path fill="currentColor" d="M2 15.5 7.5 9l3 3.2L14.5 5l4 6 3.5 4.5-10 5z"/><path fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-linejoin="round" d="M14.5 5 13.5 11l2.4 2.6M7.5 9l.2 4.3"/></svg>';
+    container.before(
+      el(
+        "a",
+        { class: "map-3d", href: `3d.html?r=${skiKey(r)}` },
+        icon,
+        el(
+          "span",
+          { class: "text" },
+          el("b", {}, t("See the resort in 3D")),
+          t("Every lift and piste on the real terrain"),
+        ),
+        el("span", { class: "go", "aria-hidden": "true" }, "→"),
+      ),
+    );
+  });
   // Opened on the area when there is one, rather than moving there once it's known.
   const view = loading.then((ski) => {
     const area = ski?.resorts.get(skiKey(r));
@@ -473,7 +603,6 @@ async function resortMap(r, container) {
     baseMap(
       container,
       view.then((v) => ({ ...v, scrollZoom: false })),
-      // The zoom buttons on the right: the way to the 3D map is on the left.
       { controls: "top-right" },
     ),
     loading,
@@ -492,11 +621,6 @@ async function resortMap(r, container) {
       },
       firstLabel(map),
     );
-    // The 3D map needs the area, which the resorts without one lack.
-    const cube = el("span", { class: "cube", "aria-hidden": "true" });
-    cube.innerHTML =
-      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>';
-    container.append(el("a", { class: "map-3d", href: `3d.html?r=${skiKey(r)}` }, cube, t("See the resort in 3D")));
   }
   const pistes = addPistes(map, ski, {
     highlight: skiKey(r),
@@ -507,6 +631,7 @@ async function resortMap(r, container) {
   const drawn = pistes.then(() => !map.loaded() && new Promise((resolve) => map.once("idle", resolve)));
   await Promise.race([drawn, new Promise((resolve) => setTimeout(resolve, 4000))]);
   container.classList.remove("loading");
+  loader.remove();
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
@@ -646,6 +771,7 @@ function chart(title, unit, colour, points) {
 async function show() {
   const wanted = requested();
   if (!wanted) return fail(t("No resort given."));
+  page.replaceChildren(liftLoader());
   const response = await fetch(resortPath(wanted), { cache: "no-cache" });
   if (response.status === 404) return fail(t("There's no such resort."));
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -655,13 +781,15 @@ async function show() {
   setResortAddress(r);
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
-  const historyBox = el("div", { class: "charts" }, el("p", { class: "empty" }, t("Loading…")));
+  const historyBox = el("div", { class: "charts" }, liftLoader({ small: true }));
+  // Replaced by the cards of the resort's groups once json/groups.json is in; nothing without groups.
+  const groupsBox = el("div", { hidden: "" });
   const itemsBox = el("div", { hidden: "" });
   const main = el(
     "div",
     { class: "stack" },
     tiles(r),
-    ...[stations(r.snow.stations), breakdown(r), itemsBox, avalanche(r.avalanche)].filter(Boolean),
+    ...[breakdown(r), itemsBox, stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
     el(
       "section",
       { class: "card" },
@@ -685,16 +813,18 @@ async function show() {
           mapBox,
           el("a", { class: "map-link", href: resortOnMap(r) }, t("Map of all resorts →")),
         ),
+        groupsBox,
         ...(r.website
           ? [
               el(
                 "section",
                 { class: "card" },
                 el("h2", {}, t("Official website")),
-                el("a", { href: r.website, rel: "noopener", style: "word-break:break-all" }, r.website),
+                el("a", { class: "external", href: r.website, rel: "noopener" }, r.website),
               ),
             ]
           : []),
+        ...[sources(r)].filter((card) => card !== null),
         data(r),
       ),
     ),
@@ -706,6 +836,7 @@ async function show() {
   items(r)
     .then((section) => section && itemsBox.replaceWith(section))
     .catch(() => {});
+  groupCards(r, groupsBox).catch(() => groupsBox.remove());
   historyChart(r, historyBox).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );

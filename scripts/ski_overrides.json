@@ -1,26 +1,141 @@
 {
-  "about": "Fixes to how ski_resorts.py gives OpenSkiData's ski areas to liftradar's resorts (README, 'Ski tiles'). An area is named by an OSM id of its sources, its Wikidata id, or its exact name in OpenSkiData. claims: areas a resort also takes. ignore: areas it doesn't take. points: [lon, lat] used instead of the resort's location when an area shared by several resorts is split between them (the sector's ski area rather than its village).",
+  "about": "Fixes to how ski_resorts.py gives OpenSkiData's ski areas to liftradar's resorts (README, 'Ski tiles'). An area is named by an OSM id of its sources, its Wikidata id, or its exact name in OpenSkiData. claims: areas a resort also takes. ignore: areas it doesn't take. points: [lon, lat] used instead of the resort's location when an area shared by several resorts is split between them (the sector's ski area rather than its village). features: OSM ids of single lifts and runs a resort takes, for one OpenSkiData puts in the wrong area. clip: [west, south, east, north] a resort's lifts and runs must lie in, for a resort that is only part of its OpenSkiData area.",
   "claims": {
     "fr/chamonix": [
       "way/642251577",
-      "way/642252996"
+      "way/642252996",
+      "Balme - Vallorcine",
+      "Vormaine",
+      "La Poya (Chamonix)",
+      "Les Bossons",
+      "Les Houches - Saint-Gervais"
     ],
     "at/ski-arlberg": [
       "Ski Arlberg",
       "St. Anton/St. Christoph/Stuben",
       "Lech/Zürs",
       "Warth-Schröcken"
+    ],
+    "at/schladming": [
+      "Reiteralm"
+    ],
+    "fr/la-bresse-hohneck": [
+      "La Bresse - Hohneck"
+    ],
+    "it/val-di-fiemme": [
+      "Latemar Dolomites"
+    ],
+    "de/winterberg": [
+      "Familienskigebiet Sahnehang"
+    ],
+    "ch/gstaad": [
+      "Schönried - Saanenmöser - Zweisimmen - St. Stephan",
+      "Lauenen",
+      "Heiti – Gsteig b. Gstaad"
+    ],
+    "fr/saint-gervais": [
+      "Megève"
+    ],
+    "fr/les-contamines": [
+      "Evasion Mont Blanc"
+    ],
+    "at/ski-juwel": [
+      "Niederau (Wildschönau)",
+      "Ski Juwel - Oberau (Wildschönau)",
+      "Ski Juwel - Reith im Alpbachtal",
+      "Ski Juwel - Roggenboden"
     ]
   },
   "ignore": {
+    "pl/zwardon-ski": [
+      "Zwardoń - Myto"
+    ],
     "ch/st-moritz-corviglia": [
       "Muottas Muragl (St Moritz, Engadin)"
+    ],
+    "pl/beskid-sport-arena": [
+      "Szczyrk Mountain Resort"
+    ],
+    "pl/szczyrk-mountain-resort": [
+      "Beskidek"
+    ],
+    "at/schladming": [
+      "Schladming Dachstein"
+    ],
+    "at/ramsau-am-dachstein": [
+      "Schladming Dachstein"
+    ],
+    "at/dachstein-gletscher": [
+      "Schladming Dachstein"
+    ],
+    "fr/la-bresse-hohneck": [
+      "La Bresse Brabant"
+    ],
+    "fr/la-bresse-lispach": [
+      "La Bresse - Hohneck"
+    ],
+    "at/eben-monte-popolo": [
+      "Ski amadé"
+    ],
+    "fr/saint-gervais": [
+      "Les Houches - Saint-Gervais"
+    ],
+    "at/brixlegg": [
+      "Ski Juwel - Reith im Alpbachtal"
     ]
   },
   "points": {
     "fr/samoens": [
       6.7,
       46.05
+    ],
+    "at/muttereralm": [
+      11.33,
+      47.21
+    ],
+    "it/val-di-fiemme": [
+      11.565,
+      46.333
+    ],
+    "at/bad-gastein-bad-hofgastein": [
+      13.105,
+      47.105
+    ],
+    "at/graukogel-bad-gastein": [
+      13.165,
+      47.108
+    ],
+    "fr/le-corbier": [
+      6.255,
+      45.235
+    ],
+    "fr/la-toussuire": [
+      6.245,
+      45.256
+    ],
+    "fr/saint-gervais": [
+      6.7,
+      45.86
+    ],
+    "fr/morillon": [
+      6.672,
+      46.058
+    ],
+    "ch/thyon": [
+      7.386,
+      46.179
+    ],
+    "ch/veysonnaz": [
+      7.36,
+      46.18
     ]
+  },
+  "features": {
+    "pl/slotwiny": [
+      "way/264370758"
+    ]
+  },
+  "clip": {
+    "pl/wierchomla": [20.81, 49.4185, 20.85, 49.435]
   }
 }

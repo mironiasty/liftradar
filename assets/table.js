@@ -1,24 +1,36 @@
-// index.html: one row per resort from json/index.json, with a name search,
-// country, region and status filters, and sortable columns. Rows start sorted by name.
+// index.html: one row per resort from json/index.json, with a search by name (or that of its ski area or region),
+// country, region and status filters, and sortable columns. Rows start with the most open slopes first.
 
 const tbody = document.querySelector("tbody");
 const search = document.getElementById("search");
 const searchClear = document.getElementById("search-clear");
-const countryGroup = document.getElementById("country");
+const countryMenuNode = /** @type {HTMLDetailsElement} */ (document.getElementById("country"));
 const fnuggCreditLine = document.getElementById("fnugg-credit");
 const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
 const count = document.getElementById("count");
 const empty = document.getElementById("empty");
+const favoritesSection = document.getElementById("favorites");
+const favoriteCards = document.getElementById("fav-cards");
 let rows = [];
 const values = new Map();
-let key = "name",
-  ascending = true;
+// What the search looks in, by row: the resort's name and those of its linked ski area and ski region (from
+// json/groups.json), so "3 Vallées" or "Dolomiti Superski" finds their resorts. Folded, as the query is.
+/** @type {Map<HTMLElement, string>} */
+const searchText = new Map();
+// The order rows start in, and leave out of the address: the most open slopes first.
+const DEFAULT_KEY = "slopes_open",
+  DEFAULT_ASCENDING = false;
+let key = DEFAULT_KEY,
+  ascending = DEFAULT_ASCENDING;
 let country = "";
 // Statuses chosen with the chips; none chosen shows every resort.
 const shownStatuses = new Set();
 // Each status chip's count element, by status.
 const statusCounts = new Map();
+// Every resort by its key ("at/soelden"), for the favourites' cards.
+/** @type {Map<string, IndexResort>} */
+const byKey = new Map();
 // The filters and order are kept in the address (?q=&country=&region=&status=open,closed&sort=-lifts_open),
 // so going back to the list keeps them; resort.js's "All resorts" link reuses the last one (LIST_KEY).
 const saved = new URLSearchParams(location.search);
@@ -50,7 +62,6 @@ function sortValues(r) {
     slopes_total: slopes?.total ?? null,
     km_open: slopes?.open_km ?? null,
     km_total: slopes?.total_km ?? null,
-    avalanche: r.avalanche?.danger_level ?? null,
   };
 }
 
@@ -70,7 +81,13 @@ function nameCell(r) {
   return el(
     "td",
     {},
-    el("div", { class: "resort" }, el("span", { class: "dot", style: `--c:${color}`, title: label }), text),
+    el(
+      "div",
+      { class: "resort" },
+      el("span", { class: "dot", style: `--c:${color}`, title: label }),
+      text,
+      favoriteButton(r),
+    ),
   );
 }
 
@@ -96,22 +113,6 @@ function slopesCell(slopes, active) {
   return cell;
 }
 
-/** @param {IndexResort["avalanche"]} bulletin */
-function avalancheCell(bulletin) {
-  if (!bulletin || bulletin.danger_level === null)
-    return el("td", { class: "c-value nil", "data-label": t("Avalanche danger") }, "–");
-  return el(
-    "td",
-    { class: "c-value", "data-label": t("Avalanche danger") },
-    el(
-      "span",
-      { class: "danger" },
-      el("span", { class: `badge lvl${bulletin.danger_level}` }, String(bulletin.danger_level)),
-      el("span", { class: "danger-text" }, dangerName(bulletin.danger)),
-    ),
-  );
-}
-
 // A number cell; labelled for the phone layout, which also leaves out empty ones ("–").
 function value(label, text, content = text) {
   return el("td", { class: `num c-value${text === "–" ? " nil" : ""}`, "data-label": label }, content);
@@ -123,7 +124,7 @@ function row(r) {
   const active = statusOf(r) === "open";
   const tr = el(
     "tr",
-    { class: active ? "" : "inactive" },
+    { class: active ? "" : "inactive", "data-key": resortKey(r) },
     nameCell(r),
     el("td", { class: "c-region" }, r.region ?? "–", el("div", { class: "sub-line" }, countryName(r.country))),
     value(t("Mountain"), dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
@@ -131,11 +132,10 @@ function row(r) {
     value(t("Fresh"), dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
     value(t("Lifts"), pair(r.lifts?.open, r.lifts?.total), meter(r.lifts?.open, r.lifts?.total, active)),
     slopesCell(r.slopes, active),
-    avalancheCell(r.avalanche),
   );
-  // The whole row opens the resort's page; the name is the link for keyboards and new tabs.
+  // The whole row opens the resort's page; the name is the link for keyboards and new tabs. The star doesn't.
   tr.addEventListener("click", (event) => {
-    if (!(/** @type {Element} */ (event.target).closest("a")) && !getSelection()?.toString())
+    if (!(/** @type {Element} */ (event.target).closest("a, button")) && !getSelection()?.toString())
       location.href = resortPage(r);
   });
   return tr;
@@ -150,7 +150,9 @@ function filter() {
   for (const tr of rows) {
     const v = values.get(tr);
     const matches =
-      v.name.includes(query) && (!country || v.country === country) && (!region || v.regionName === region);
+      (searchText.get(tr) ?? "").includes(query) &&
+      (!country || v.country === country) &&
+      (!region || v.regionName === region);
     if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
     tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
     if (!tr.hidden) shown++;
@@ -172,7 +174,7 @@ function saveState() {
   if (country) params.set("country", country);
   if (regionSelect.value) params.set("region", regionSelect.value);
   if (shownStatuses.size) params.set("status", [...shownStatuses].join(","));
-  if (key !== "name" || !ascending) params.set("sort", (ascending ? "" : "-") + key);
+  if (key !== DEFAULT_KEY || ascending !== DEFAULT_ASCENDING) params.set("sort", (ascending ? "" : "-") + key);
   const query = params.toString() ? `?${params}` : "";
   history.replaceState(null, "", location.pathname + query + location.hash);
   try {
@@ -206,14 +208,10 @@ function fillFilters(resorts) {
   const countries = [...new Set(resorts.map((r) => r.country))].sort((a, b) =>
     countryName(a).localeCompare(countryName(b), LANG),
   );
-  const choices = [["", t("All")], ...countries.map((code) => [code, countryName(code)])];
-  const countryButtons = choices.map(([code, label]) => button("", label, () => chooseCountry(code)));
-  countryGroup.append(...countryButtons);
+  const showCountry = countryMenu(countryMenuNode, countries, (code) => chooseCountry(code));
   const chooseCountry = (code, region) => {
     country = code;
-    choices.forEach(([c], i) => {
-      countryButtons[i].setAttribute("aria-pressed", c === country);
-    });
+    showCountry(code);
     fillRegions(resorts, region);
     filter();
   };
@@ -256,7 +254,6 @@ const SORTS = [
   ["mountain", false, t("Most snow")],
   ["fresh", false, t("Most fresh snow")],
   ["km_total", false, t("Biggest areas")],
-  ["avalanche", false, t("Highest avalanche danger")],
 ];
 const sortSelect = document.getElementById("sort");
 sortSelect.append(...SORTS.map(([, , label], i) => option(String(i), label)));
@@ -301,6 +298,51 @@ searchClear.addEventListener("click", () => {
   search.focus();
 });
 
+// The favourites' cards, in the order they were added: status, where, and the key numbers the resort has.
+// A favourite no longer in the index is left out.
+function showFavorites() {
+  const cards = favorites().flatMap((key) => {
+    const r = byKey.get(key);
+    return r ? [favoriteCard(r)] : [];
+  });
+  favoriteCards.replaceChildren(...cards);
+  favoritesSection.hidden = cards.length === 0;
+}
+
+/** @param {IndexResort} r */
+function favoriteCard(r) {
+  const status = statusOf(r);
+  const { label, color } = STATUS[status];
+  const { lifts, slopes, snow } = r;
+  const slopeCount = pair(slopes?.open, slopes?.total);
+  /** @type {[string, string][]} */
+  const shown = [
+    [t("Lifts"), pair(lifts?.open, lifts?.total)],
+    [t("Slopes"), slopeCount === "–" ? pair(slopes?.open_km, slopes?.total_km, " km") : slopeCount],
+    [t("Mountain"), dash(snow.mountain_cm, " cm")],
+    [t("Fresh"), snow.fresh_cm ? `+${snow.fresh_cm} cm` : "–"],
+  ];
+  const where = [r.region, countryName(r.country)].filter(Boolean).join(", ");
+  return el(
+    "div",
+    { class: "fav-card" },
+    el("a", { href: resortPage(r) }, r.name),
+    favoriteButton(r),
+    el("div", { class: "where" }, el("span", { class: "dot", style: `--c:${color}` }), `${label} · ${where}`),
+    el(
+      "div",
+      { class: "values" },
+      ...shown
+        .filter(([, text]) => text !== "–")
+        .map(([name, text]) => el("span", {}, el("span", {}, `${name} `), text)),
+    ),
+  );
+}
+
+onFavoritesChange(() => {
+  if (byKey.size) showFavorites();
+});
+
 // The small map in the header: country borders from assets/mini-map.svg (see scripts/mini_map.py) and every
 // resort as a dot in its status colour; the tile links to map.html.
 /** @param {IndexResort[]} resorts */
@@ -332,12 +374,20 @@ async function miniMap(resorts) {
   }
 }
 
-loadIndex()
-  .then((index) => {
+// The gondolas under the table's head till the rows come.
+const tableLoader = liftLoader();
+document.querySelector("table")?.after(tableLoader);
+// Without the groups, the search looks only in the names.
+Promise.all([loadIndex(), loadGroups().catch(() => ({}))])
+  .then(([index, groups]) => {
     document.getElementById("updated").textContent = updatedText(index);
+    for (const r of index.resorts) byKey.set(resortKey(r), r);
+    showFavorites();
     rows = index.resorts.map((r) => {
       const tr = row(r);
       values.set(tr, sortValues(r));
+      const groupNames = [r.linked_area, r.ski_region].map((id) => (id && groups[id]?.name) || "");
+      searchText.set(tr, fold([r.name, ...groupNames].join("\n")));
       return tr;
     });
     const savedSort = saved.get("sort") ?? "";
@@ -351,5 +401,8 @@ loadIndex()
     miniMap(index.resorts).catch(() => {});
   })
   .catch((error) => {
-    document.getElementById("updated").textContent = t("Could not load the data ({message})", error);
-  });
+    const updated = /** @type {HTMLElement} */ (document.getElementById("updated"));
+    updated.textContent = t("Could not load the data ({message})", error);
+    updated.parentElement?.classList.add("failed");
+  })
+  .finally(() => tableLoader.remove());

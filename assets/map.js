@@ -209,10 +209,15 @@ function show(map, [index, ski]) {
     if (hovered !== null) map.setFeatureState({ source: "areas", id: hovered }, { hover: false });
     hovered = null;
   });
+  // One report open at a time: a click on a pin doesn't reach the map (it would close it), so a new one
+  // closes the last itself.
+  /** @type {import("maplibre-gl").Popup | null} */
+  let opened = null;
   const openPopup = (r, at) => {
+    opened?.remove();
     // A narrow map has no room beside the marker: centre it, with the popup above.
     if (map.getContainer().clientWidth < 500) map.jumpTo({ center: at, offset: [0, 120] });
-    return new maplibregl.Popup({ maxWidth: "296px", offset: 14 })
+    opened = new maplibregl.Popup({ maxWidth: "296px", offset: 14 })
       .setLngLat(at)
       .setDOMContent(popup(r, statusKey(r), Boolean(ski?.resorts.has(skiKey(r)))))
       .addTo(map);

@@ -13,6 +13,7 @@ import { z } from "zod";
 /** @typedef {import("../types/index").IndexResort} IndexResort */
 /** @typedef {import("../types/history").PastRunsOfOneResortForGraphs} ResortHistory */
 /** @typedef {import("../types/stats").DailyTotalsPerCountryAndRegion} Stats */
+/** @typedef {import("../types/groups").GroupsOfResortsListedSeparately} Groups */
 
 const INSTRUCTIONS = `LiftRadar: the status of ski resorts across Europe, from the resorts' own reports, updated twice a day \
 (about 08:40 and 13:40 Vienna time). null means the source doesn't publish the value; status is open, closed or \
@@ -101,7 +102,13 @@ function createServer(env, origin) {
       inputSchema: {
         country: country.optional(),
         status: z.enum(["open", "closed", "no_report"]).optional().describe("open: the resort reports lifts running"),
-        name: z.string().min(2).optional().describe("Part of the resort's name or region, any case"),
+        name: z
+          .string()
+          .min(2)
+          .optional()
+          .describe(
+            "Part of the resort's name or region, or of its linked ski area or ski region (e.g. Dolomiti Superski), any case, accents optional",
+          ),
         min_snow_cm: z.number().min(0).optional().describe("Minimum snow depth on the mountain, in cm"),
         min_lifts_open: z.number().int().min(0).optional(),
         near: z
@@ -119,11 +126,18 @@ function createServer(env, origin) {
     },
     async ({ country, status, name, min_snow_cm, min_lifts_open, near, sort, limit }) => {
       const index = /** @type {Index} */ (await read("/json/index.json"));
-      const words = name?.toLowerCase();
+      const words = name && fold(name);
+      // As the site's search (assets/table.js): the names of its linked ski area and ski region too, so
+      // "3 Vallées" finds their resorts. Without groups.json, only the resort's own names.
+      const file = /** @type {Groups | null} */ (words ? await read("/json/groups.json").catch(() => null) : null);
+      const groups = file?.groups ?? {};
+      /** @param {IndexResort} r */
+      const searched = (r) =>
+        [r.name, r.region, ...[r.linked_area, r.ski_region].map((id) => id && groups[id]?.name)].join("\n");
       let found = index.resorts
         .filter((r) => !country || r.country === country)
         .filter((r) => !status || r.status === status)
-        .filter((r) => !words || `${r.name} ${r.region ?? ""}`.toLowerCase().includes(words))
+        .filter((r) => !words || fold(searched(r)).includes(words))
         .filter((r) => min_snow_cm === undefined || (r.snow.mountain_cm ?? -1) >= min_snow_cm)
         .filter((r) => min_lifts_open === undefined || (r.lifts?.open ?? -1) >= min_lifts_open)
         .map((r) => ({ r, km: near && r.location ? distanceKm(near, r.location) : null }))
@@ -278,6 +292,18 @@ function notFound(country, id) {
     ],
   };
 }
+
+// Names compared without case and marks, as the site's search does (assets/common.js): "bialka" finds
+// "Białka Tatrzańska". The letters NFD doesn't take apart are mapped by hand.
+/** @type {Record<string, string>} */
+const LETTERS = { ł: "l", ø: "o", đ: "d", ß: "ss", æ: "ae", œ: "oe", ı: "i", ħ: "h", þ: "th" };
+/** @param {string} text */
+const fold = (text) =>
+  text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[łøđßæœıħþ]/g, (c) => LETTERS[c]);
 
 /**
  * Great-circle distance in km.

@@ -27,6 +27,17 @@ async function loadIndex() {
   return response.json();
 }
 
+// The groups of resorts listed separately (linked ski areas, ski regions), by the id a member's linked_area and
+// ski_region give.
+const GROUPS_URL = "/json/groups.json";
+
+/** @returns {Promise<Groups["groups"]>} */
+async function loadGroups() {
+  const response = await fetch(GROUPS_URL, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`${GROUPS_URL}: HTTP ${response.status}`);
+  return (await response.json()).groups;
+}
+
 // Same path layout as liftradar-fetcher's models.resort_path() and history_path().
 /** @param {{ country: string, id: string }} r */
 const resortPath = (r) => `/json/${r.country}/${r.id}.json`;
@@ -50,12 +61,79 @@ function setResortAddress(r) {
 }
 // sessionStorage key of the resort list's last filters and order (its query string), set by table.js.
 const LIST_KEY = "resort-list";
+// The visitor's favourite resorts, kept only in this browser (localStorage, shared by every language) as
+// "country/id" keys, in the order they were added. Without storage (private windows, blocked site data) there
+// are none, and the stars do nothing lasting.
+const FAVORITES_KEY = "favorites";
+/** @param {{ country: string, id: string }} r */
+const resortKey = (r) => `${r.country}/${r.id}`;
+/** @returns {string[]} */
+function favorites() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(FAVORITES_KEY) ?? "[]");
+    return Array.isArray(saved) ? saved.filter((key) => typeof key === "string") : [];
+  } catch {
+    return [];
+  }
+}
+/** @param {{ country: string, id: string }} r */
+const isFavorite = (r) => favorites().includes(resortKey(r));
+/** @param {{ country: string, id: string }} r */
+function toggleFavorite(r) {
+  const key = resortKey(r);
+  const list = favorites();
+  const next = list.includes(key) ? list.filter((k) => k !== key) : [...list, key];
+  try {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify(next));
+  } catch {}
+  favoritesChanged();
+}
+/** @type {(() => void)[]} */
+const favoriteListeners = [];
+// Called when the favourites change, here or in another tab.
+/** @param {() => void} listener */
+const onFavoritesChange = (listener) => favoriteListeners.push(listener);
+function favoritesChanged() {
+  const list = favorites();
+  for (const button of document.querySelectorAll("button.fav"))
+    setFavoriteButton(button, list.includes(button.dataset.key));
+  for (const listener of favoriteListeners) listener();
+}
+addEventListener("storage", (event) => {
+  if (event.key === FAVORITES_KEY || event.key === null) favoritesChanged();
+});
+/** @param {HTMLElement} button @param {boolean} on */
+function setFavoriteButton(button, on) {
+  const label = on ? t("Remove from favourites") : t("Add to favourites");
+  button.setAttribute("aria-pressed", String(on));
+  button.setAttribute("aria-label", label);
+  button.title = label;
+}
+// A star that adds the resort to the favourites, or removes it; every star of the resort on the page follows.
+/** @param {{ country: string, id: string }} r */
+function favoriteButton(r) {
+  const button = el("button", { type: "button", class: "fav", "data-key": resortKey(r) });
+  button.innerHTML =
+    '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" stroke-width="1.8" stroke-linejoin="round">' +
+    '<path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>';
+  setFavoriteButton(button, isFavorite(r));
+  button.addEventListener("click", () => toggleFavorite(r));
+  return button;
+}
 // The map zoomed in on the resort (map.html), e.g. map.html?r=at/soelden.
 /** @param {{ country: string, id: string }} r */
 const resortOnMap = (r) => `map.html?r=${r.country}/${r.id}`;
 
 // Lowercase without accents, so "Sölden" sorts and matches like "solden".
-const fold = (text) => text.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+// Letters of their own that NFD doesn't take apart into a letter and its mark: "Białka" is found as "bialka".
+/** @type {Record<string, string>} */
+const LETTERS = { ł: "l", ø: "o", đ: "d", ß: "ss", æ: "ae", œ: "oe", ı: "i", ħ: "h", þ: "th" };
+const fold = (text) =>
+  text
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[łøđßæœıħþ]/g, (c) => LETTERS[c]);
 
 const dash = (value, unit = "") => (value === null || value === undefined ? "–" : `${value}${unit}`);
 
@@ -158,5 +236,89 @@ function el(tag, attributes = {}, ...children) {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, value);
   node.append(...children);
+  return node;
+}
+
+// The country filter of the table and stats pages: a <details> like the language menu, as a <select> can't
+// show flags (style.css, .flag). Choosing a country calls onChoose; the function returned shows one as chosen.
+// The arrow keys go through the countries, and Escape or a click elsewhere closes it.
+/**
+ * @param {HTMLDetailsElement} menu
+ * @param {string[]} countries
+ * @param {(code: string) => void} onChoose
+ * @returns {(code: string) => void}
+ */
+function countryMenu(menu, countries, onChoose) {
+  const summary = /** @type {HTMLElement} */ (menu.querySelector("summary"));
+  /** @param {string} code */
+  const flag = (code) => {
+    const node = el("span", { class: "flag", "data-country": code, "aria-hidden": "true" });
+    if (!code)
+      node.innerHTML =
+        '<svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">' +
+        '<circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13M8 1.5c-2.2 2.4-2.2 10.6 0 13M8 1.5c2.2 2.4 2.2 10.6 0 13"/></svg>';
+    return node;
+  };
+  /** @param {string} code */
+  const label = (code) => (code ? countryName(code) : t("All countries"));
+  const items = ["", ...countries].map((code) => {
+    const item = el("button", { type: "button", "data-country": code }, flag(code), label(code));
+    item.addEventListener("click", () => {
+      menu.open = false;
+      summary.focus();
+      onChoose(code);
+    });
+    return item;
+  });
+  /** @type {HTMLElement} */ (menu.querySelector("div")).replaceChildren(...items);
+  document.addEventListener("click", (event) => {
+    if (!menu.contains(/** @type {Node} */ (event.target))) menu.open = false;
+  });
+  menu.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menu.open) {
+      menu.open = false;
+      summary.focus();
+    } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      menu.open = true;
+      const at = items.indexOf(/** @type {HTMLButtonElement} */ (document.activeElement));
+      const next =
+        at < 0 ? items.findIndex((item) => item.ariaPressed === "true") : at + (event.key === "ArrowDown" ? 1 : -1);
+      items[Math.max(0, Math.min(items.length - 1, next))].focus();
+    }
+  });
+  return (code) => {
+    summary.replaceChildren(flag(code), el("span", {}, label(code)));
+    summary.setAttribute("aria-label", `${t("Country")}: ${label(code)}`);
+    for (const item of items) item.setAttribute("aria-pressed", String(item.dataset.country === code));
+  };
+}
+
+// The apps' loader (LiftRadar's LiftLoader): the logo's gondolas going up a cable, 3.6 s each, while data
+// loads. The cabins move in style.css (.lift-loader), and stand still with reduced motion. `small` for
+// a narrow place (half the size, the caption beside it); without `caption`, only screen readers say it.
+const LIFT_LOADER_CABINS = (() => {
+  // A rounded rectangle, for the cabin and its window (cut out of it).
+  const box = (x, y, w, h, r) =>
+    `M${x + r} ${y}h${w - 2 * r}a${r} ${r} 0 0 1 ${r} ${r}v${h - 2 * r}a${r} ${r} 0 0 1 -${r} ${r}` +
+    `h-${w - 2 * r}a${r} ${r} 0 0 1 -${r} -${r}v-${h - 2 * r}a${r} ${r} 0 0 1 ${r} -${r}z`;
+  // Each at its grip on the cable: the hanger, the grip, and the cabin (as the logo's).
+  const cabin =
+    '<path d="M0 0v9" stroke="var(--fg)" stroke-width="1.8"/><circle r="2.4" fill="var(--fg)"/>' +
+    `<path fill="var(--accent)" fill-rule="evenodd" d="${box(-11, 9, 22, 21, 5)}${box(-7.6, 13, 15.2, 7.6, 1.8)}"/>`;
+  return (
+    '<svg viewBox="0 0 168 96" aria-hidden="true">' +
+    '<path d="M6 66 162 8" stroke="var(--muted)" stroke-opacity=".7" stroke-width="1.6" stroke-linecap="round"/>' +
+    '<circle cx="6" cy="66" r="3" fill="var(--muted)"/><circle cx="162" cy="8" r="3" fill="var(--muted)"/>' +
+    `<g class="cabin">${cabin}</g>`.repeat(3) +
+    "</svg>"
+  );
+})();
+
+function liftLoader({ caption = true, small = false } = {}) {
+  const node = el("div", { class: small ? "lift-loader small" : "lift-loader", role: "status" });
+  node.innerHTML = LIFT_LOADER_CABINS;
+  if (caption) node.append(el("span", {}, t("Loading…")));
+  else node.setAttribute("aria-label", t("Loading…"));
   return node;
 }

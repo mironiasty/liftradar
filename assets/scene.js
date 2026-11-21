@@ -1,7 +1,9 @@
-// 3d.html?r=<country>/<id>: the resort in 3D, as a diorama: a box around it cut out of Mapterhorn's
+// 3d.html?r=<country>/<id>: the resort in 3D. Drawn by TrailRider's engine (README "3D engine",
+// docs/3d-engine-plan.md) where the browser has WebGPU: the realistic map, every lift as what it is.
+// Elsewhere, or when the engine can't load, as a diorama: a box around it cut out of Mapterhorn's
 // terrain and floating on the page's background, with its own pistes draped on it, and the lifts as simple models drawn by three.js
 // in the map's own WebGL context, so the terrain hides what's behind it: pylons, stations, the
-// cable on two tracks, and cabins, chairs or bars moving along it. A prototype.
+// cable on two tracks, and cabins, chairs or bars moving along it.
 
 import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.187.0/three.module.min.js";
 
@@ -1041,11 +1043,317 @@ function orbitControls(map) {
   target.addEventListener("pointercancel", end);
 }
 
+/** The names over the engine's land that are written (places', lifts', slopes'), as last chosen in this browser. */
+const NAME_LAYERS = "liftradar.names";
+/** @returns {import("../types/viewer").LabelLayers} */
+function nameLayers() {
+  const all = { places: true, lifts: true, pistes: true };
+  try {
+    return { ...all, ...JSON.parse(localStorage.getItem(NAME_LAYERS) ?? "{}") };
+  } catch {
+    return all;
+  }
+}
+/** @param {import("../types/viewer").LabelLayers} layers */
+function keepNameLayers(layers) {
+  try {
+    localStorage.setItem(NAME_LAYERS, JSON.stringify(layers));
+  } catch {
+    // Private mode, or storage off: the choice lasts till the page goes.
+  }
+}
+
+/** A lift's mark before its name over the land: a small gondola, as the app's logo has it (sized here too, not only by the page's CSS). */
+const LIFT_MARK =
+  '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 6 L22 3"/><path d="M12 4.5 V8"/><rect x="6.5" y="8" width="11" height="12" rx="2.5"/><path d="M9.3 10.8 H14.7 V14.2 H9.3 Z" fill="currentColor" stroke="none"/></svg>';
+
+/** The settings button's mark: a gear. */
+const GEAR =
+  '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>';
+
+/**
+ * A name over the engine's land: a place's in a pale pill (larger for a village or bigger), a lift's
+ * after a small gondola, a slope's after a dot in its colour on the signs.
+ * @param {import("../types/viewer").MapLabel} label
+ */
+function nameOverLand({ kind, name, x, y, major, colour }) {
+  const style = `left:${x}px;top:${y}px`;
+  if (kind === "lift") {
+    const node = el("span", { class: "lift", style }, name);
+    node.insertAdjacentHTML("afterbegin", LIFT_MARK);
+    return node;
+  }
+  if (kind === "piste")
+    return el("span", { class: "piste", style }, el("i", { class: `dot ${colour ?? "black"}` }), name);
+  return el("span", { class: major ? "major" : "", style }, name);
+}
+
+/**
+ * The resort drawn by the engine in `section`, once it's ready: the version /engine.json pins, from
+ * /engine/<tag>/ (scripts/engine.mjs), its ski tiles from this site. Null without WebGPU, or when the
+ * engine isn't there or can't draw the resort: the diorama instead.
+ * @param {HTMLElement} section
+ * @param {string} key
+ * @returns {Promise<import("../types/viewer").MountedResort | null>}
+ */
+async function mountEngine(section, key) {
+  try {
+    const pin = await (await fetch("/engine.json")).json();
+    /** @type {typeof import("../types/viewer")} */
+    const viewer = await import(`/engine/${pin.tag}/viewer.js`);
+    if (!(await viewer.supported())) return null;
+    const canvas = el("canvas", { class: "engine" });
+    section.append(canvas);
+    // The names over the land (places', and lifts' and slopes' as chosen), where the engine says.
+    const names = el("div", { class: "names", "aria-hidden": "true" });
+    section.append(names);
+    // A card at a clicked lift or piste; a click on neither, or Escape, closes it.
+    const card = el("div", { class: "pick", hidden: "" });
+    section.append(card);
+    let closed = true;
+    // Closing the card unmarks what was picked too (its cables amber, its slope in full colour).
+    const close = () => {
+      closed = true;
+      card.setAttribute("hidden", "");
+      view?.unpick();
+    };
+    /** @param {{ x: number, y: number }} at */
+    const place = ({ x, y }) => {
+      closed = false;
+      card.removeAttribute("hidden");
+      const [w, h] = [section.clientWidth, section.clientHeight];
+      card.style.left = `${Math.max(8, Math.min(x + 12, w - card.offsetWidth - 8))}px`;
+      card.style.top = `${Math.max(8, Math.min(y + 12, h - card.offsetHeight - 8))}px`;
+    };
+    document.addEventListener("keydown", (event) => event.key === "Escape" && close());
+    // + and − and a compass, as the other maps have them (MapLibre's own look, from its CSS).
+    const button = (kind, label, onClick) => {
+      const node = el(
+        "button",
+        { type: "button", class: `maplibregl-ctrl-${kind}`, title: label, "aria-label": label },
+        el("span", { class: "maplibregl-ctrl-icon", "aria-hidden": "true" }),
+      );
+      node.addEventListener("click", onClick);
+      return node;
+    };
+    /** @type {import("../types/viewer").MountedResort | null} */
+    let view = null;
+    const compass = button("compass", t("Face north"), () => view?.faceNorth());
+    const needle = /** @type {HTMLElement} */ (compass.firstElementChild);
+    section.append(
+      el(
+        "div",
+        { class: "maplibregl-ctrl-top-left" },
+        el(
+          "div",
+          { class: "maplibregl-ctrl maplibregl-ctrl-group" },
+          button("zoom-in", t("Zoom in"), () => view?.zoom(1.6)),
+          button("zoom-out", t("Zoom out"), () => view?.zoom(1 / 1.6)),
+          compass,
+        ),
+      ),
+    );
+    return await new Promise((resolve) => {
+      const mounted = viewer.mountResort(canvas, {
+        resort: key,
+        base: location.origin,
+        onInfo: (info) => {
+          engineTowns = info.towns;
+          engineDaylight = info.daylight;
+        },
+        labels: nameLayers(),
+        onLabels: (labels) => names.replaceChildren(...labels.map(nameOverLand)),
+        onPick: (picked) => {
+          if (!picked) return close();
+          card.replaceChildren(...pickedCard(picked));
+          place(picked);
+        },
+        // It stays by what was picked as the map moves, and hides while that's out of view.
+        // The compass's needle points north as the camera turns.
+        onTurn: (yaw) => {
+          needle.style.transform = `rotate(${yaw}rad)`;
+        },
+        onPickMove: (at) => {
+          if (closed) return;
+          if (at) place(at);
+          else card.setAttribute("hidden", "");
+        },
+        onStatus: (status) => {
+          if (status === "ready") {
+            view = mounted;
+            resolve(mounted);
+          } else if (typeof status === "object") {
+            console.warn("3D engine:", status.error);
+            mounted.destroy();
+            canvas.remove();
+            section.querySelector(".maplibregl-ctrl-top-left")?.remove();
+            resolve(null);
+          }
+        },
+      });
+    });
+  } catch (error) {
+    console.warn("3D engine:", error);
+    return null;
+  }
+}
+
+/**
+ * What the engine says was clicked, as a small card at the click: a lift's name, type and number,
+ * seats, capacity, length and climb; a piste's name or number, difficulty and length.
+ * @param {import("../types/viewer").Picked} picked
+ */
+function pickedCard(picked) {
+  const number = (n) => Math.round(n).toLocaleString(LANG);
+  const length = (m) =>
+    m >= 1000 ? `${(m / 1000).toLocaleString(LANG, { maximumFractionDigits: 1 })} km` : `${number(m)} m`;
+  if (picked.kind === "lift") {
+    const kind = [SKI_LIFT_TYPES[picked.type ?? ""] ?? t("Lift"), picked.ref, picked.tunnel ? t("in a tunnel") : ""]
+      .filter(Boolean)
+      .join(" · ");
+    const facts = [
+      picked.seats ? t("{n} seats", { n: picked.seats }) : "",
+      picked.capacity ? t("{n} people/h", { n: number(picked.capacity) }) : "",
+      length(picked.lengthM) + (picked.riseM ? `, ↑ ${number(picked.riseM)} m` : ""),
+    ].filter(Boolean);
+    return [
+      el("b", {}, picked.name || kind),
+      picked.name ? el("div", {}, kind) : "",
+      el("div", { class: "sub" }, facts.join(" · ")),
+    ];
+  }
+  const title = picked.name || [t("Piste"), picked.ref].filter(Boolean).join(" ");
+  const kind = [picked.name ? picked.ref : "", SKI_DIFFICULTIES[picked.difficulty ?? ""]].filter(Boolean).join(" · ");
+  return [
+    el("b", {}, el("span", { class: `dot ${picked.colour}` }), title),
+    kind ? el("div", {}, kind) : "",
+    picked.lengthM ? el("div", { class: "sub" }, length(picked.lengthM)) : "",
+  ];
+}
+
+/** Whether the engine drew the villages and roads round the resort (OpenFreeMap's), for their credit. */
+let engineTowns = false;
+/** The local hours between which the sun is up at the resort today, as the engine says. */
+let engineDaylight = [8, 16];
+/** The sun's hour the engine's view starts at (its look's): half past eleven. */
+const SUN_HOUR = 11.5;
+
+/** An hour of the day (11.5) as the clock has it: 11:30. @param {number} hour */
+const clock = (hour) => `${Math.floor(hour)}:${String(Math.round((hour % 1) * 60)).padStart(2, "0")}`;
+
+/**
+ * A slider for where the sun is over the engine's view, by the hour today: from sunrise to sunset there.
+ * @param {import("../types/viewer").MountedResort} engine
+ */
+function sunSlider(engine) {
+  const [from, to] = engineDaylight;
+  const start = Math.min(to, Math.max(from, SUN_HOUR));
+  if (start !== SUN_HOUR) engine.setHour(start);
+  const time = el("output", {}, clock(start));
+  const input = el("input", { type: "range", min: String(from), max: String(to), step: "0.25", value: String(start) });
+  input.setAttribute("aria-label", t("Sun"));
+  input.addEventListener("input", () => {
+    const hour = Number(input.value);
+    engine.setHour(hour);
+    time.textContent = clock(hour);
+  });
+  return el("div", { class: "sun" }, el("div", { class: "sun-row" }, el("span", {}, t("Sun")), time), input);
+}
+
+/** Where the engine's view comes from: its terrain, the ski data, and the villages and roads when it drew them. */
+function engineCredits() {
+  const link = (href, text) => el("a", { href }, text);
+  return el(
+    "div",
+    { class: "maplibregl-ctrl-attrib-inner" },
+    t("Terrain"),
+    ": ",
+    link("https://registry.opendata.aws/terrain-tiles/", "Terrain Tiles"),
+    " (Mapzen) · ",
+    t("Pistes and lifts"),
+    ": ",
+    link("https://openskimap.org", "OpenSkiData"),
+    " (ODbL, © ",
+    link("https://www.openstreetmap.org/copyright", "OpenStreetMap"),
+    " ",
+    t("contributors"),
+    ")",
+    ...(engineTowns
+      ? [
+          " · ",
+          t("Villages and roads"),
+          ": ",
+          link("https://openfreemap.org", "OpenFreeMap"),
+          " (© ",
+          link("https://www.openmaptiles.org", "OpenMapTiles"),
+          ", © ",
+          link("https://www.openstreetmap.org/copyright", "OpenStreetMap"),
+          ")",
+        ]
+      : []),
+  );
+}
+
+/**
+ * The engine's sources at the map's foot on the right, as MapLibre's compact attribution on the other maps
+ * (and the apps' 3D view): written out once the view is drawn, folded into its "i" once the map is moved
+ * (a drag or the wheel), opened again by a click on it.
+ * @param {HTMLElement} section
+ */
+function engineCreditsControl(section) {
+  const credits = el(
+    "details",
+    { class: "maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact maplibregl-compact-show", open: "" },
+    el("summary", {
+      class: "maplibregl-ctrl-attrib-button",
+      title: t("Map data sources"),
+      "aria-label": t("Map data sources"),
+    }),
+    engineCredits(),
+  );
+  credits.addEventListener("toggle", () => credits.classList.toggle("maplibregl-compact-show", credits.open));
+  const fold = () => {
+    credits.open = false;
+    credits.classList.remove("maplibregl-compact-show");
+    stop();
+  };
+  /** @type {{ x: number, y: number } | null} */
+  let down = null;
+  /** @param {PointerEvent} event */
+  const press = (event) => {
+    down = { x: event.clientX, y: event.clientY };
+  };
+  /** @param {PointerEvent} event */
+  const drag = (event) => {
+    if (down && Math.hypot(event.clientX - down.x, event.clientY - down.y) > 5) fold();
+  };
+  const lift = () => {
+    down = null;
+  };
+  const canvas = section.querySelector("canvas.engine");
+  const stop = () => {
+    canvas?.removeEventListener("pointerdown", press);
+    canvas?.removeEventListener("pointermove", drag);
+    canvas?.removeEventListener("pointerup", lift);
+    canvas?.removeEventListener("wheel", fold);
+  };
+  canvas?.addEventListener("pointerdown", press);
+  canvas?.addEventListener("pointermove", drag);
+  canvas?.addEventListener("pointerup", lift);
+  canvas?.addEventListener("wheel", fold, { passive: true });
+  return el("div", { class: "maplibregl-ctrl-bottom-right engine-credits" }, credits);
+}
+
+// The gondolas over the map till the resort is drawn (by the engine, or the diorama once it's idle).
+const sceneLoader = liftLoader();
+
 async function show() {
   if (!KEY) {
     showInfo(el("p", {}, t("Open a resort from the map, then its 3D map.")), el("a", { href: "map.html" }, t("Map")));
     return;
   }
+  const section = /** @type {HTMLElement} */ (document.getElementById("map"));
+  section.append(sceneLoader);
   const [index, ski] = await Promise.all([loadIndex(), loadSki()]);
   const r = index.resorts.find((x) => skiKey(x) === KEY);
   if (!r || !ski) throw new Error(KEY);
@@ -1063,10 +1371,8 @@ async function show() {
   document.getElementById("title").textContent = r.name;
   document.title = `${r.name} – ${t("3D map")} – LiftRadar`;
   setResortAddress(r);
-  const animate = el("input", { type: "checkbox", checked: "" });
-  const reset = el("button", { type: "button", class: "reset" }, t("Back to the start view"));
   const status = statusKey(r);
-  showInfo(
+  const summary = () =>
     el(
       "div",
       {},
@@ -1077,8 +1383,92 @@ async function show() {
       ),
       " ",
       el("span", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
-    ),
-    el("p", {}, t("Lifts"), ": ", pair(r.lifts?.open, r.lifts?.total)),
+    );
+  const liftCount = () => el("p", {}, t("Lifts"), ": ", pair(r.lifts?.open, r.lifts?.total));
+  const links = () => el("div", { class: "links" }, el("a", { href: resortPage(r) }, t("Resort page")));
+  const engine = await mountEngine(section, KEY);
+  if (engine) {
+    sceneLoader.remove();
+    // The map's settings, behind one button by the resort's panel (under the map's buttons on a small
+    // screen): which names are written over the land, as pills that turn each on and off (each layer shows
+    // by the zoom: the places' from afar, every lift's closer, every slope's closer still; the choice kept
+    // in this browser), and the sun's hour.
+    const layers = nameLayers();
+    /** @param {keyof import("../types/viewer").LabelLayers} key @param {string} label */
+    const layer = (key, label) => {
+      const pill = el("button", { type: "button", "aria-pressed": String(layers[key]) }, label);
+      pill.addEventListener("click", () => {
+        layers[key] = !layers[key];
+        pill.setAttribute("aria-pressed", String(layers[key]));
+        keepNameLayers(layers);
+        engine.setLabels({ ...layers });
+      });
+      return pill;
+    };
+    const lifts = layer("lifts", t("Lifts"));
+    lifts.insertAdjacentHTML("afterbegin", LIFT_MARK);
+    const toggle = el(
+      "button",
+      { type: "button", class: "settings-toggle", "aria-expanded": "false", "aria-label": t("Settings") },
+      el("span", {}, t("Settings")),
+    );
+    toggle.insertAdjacentHTML("afterbegin", GEAR);
+    const settings = el(
+      "div",
+      { class: "map-settings" },
+      toggle,
+      el(
+        "div",
+        { class: "settings-menu" },
+        el("h2", {}, t("Names on the map")),
+        el(
+          "div",
+          { class: "name-layers", role: "group", "aria-label": t("Names on the map") },
+          layer("places", t("Places")),
+          lifts,
+          layer("pistes", t("Slopes")),
+        ),
+        sunSlider(engine),
+      ),
+    );
+    /** @param {boolean} open */
+    const unfold = (open) => {
+      settings.classList.toggle("open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+    };
+    toggle.addEventListener("click", () => unfold(!settings.classList.contains("open")));
+    document.addEventListener("pointerdown", (event) => {
+      if (!settings.contains(/** @type {Node} */ (event.target))) unfold(false);
+    });
+    document.addEventListener("keydown", (event) => event.key === "Escape" && unfold(false));
+    section.append(settings);
+    // Beside the resort's panel, however wide it is as it opens and closes.
+    const panel = document.getElementById("panel");
+    if (panel) {
+      const beside = () => settings.style.setProperty("--beside", `${panel.offsetWidth}px`);
+      new ResizeObserver(beside).observe(panel);
+      beside();
+    }
+    showInfo(
+      summary(),
+      liftCount(),
+      // How to move it: with a mouse, or (where the screen is touched: pointer coarse, 3d.html) with fingers.
+      el(
+        "p",
+        { class: "hint mouse" },
+        t("Drag to move it, right-drag (or with Ctrl) to turn and tilt it, scroll to zoom."),
+      ),
+      el("p", { class: "hint touch" }, t("One finger moves it, two zoom, turn and tilt it.")),
+      links(),
+    );
+    section.append(engineCreditsControl(section));
+    return;
+  }
+  const animate = el("input", { type: "checkbox", checked: "" });
+  const reset = el("button", { type: "button", class: "reset" }, t("Back to the start view"));
+  showInfo(
+    summary(),
+    liftCount(),
     el(
       "p",
       { class: "hint" },
@@ -1088,12 +1478,7 @@ async function show() {
     ),
     el("label", {}, animate, t("Moving lifts")),
     reset,
-    el(
-      "div",
-      { class: "links" },
-      el("a", { href: resortPage(r) }, t("Resort page")),
-      el("a", { href: resortOnMap(r) }, t("Map of all resorts")),
-    ),
+    links(),
   );
 
   // Centred on the area (or the lifts), not on the resort's point at its bottom station.
@@ -1231,6 +1616,10 @@ async function show() {
     layer.animate.on = animate.checked;
     map.triggerRepaint();
   });
+  map.once("idle", () => sceneLoader.remove());
 }
 
-show().catch((error) => showInfo(el("p", {}, t("The map could not load."), ` (${error.message})`)));
+show().catch((error) => {
+  sceneLoader.remove();
+  showInfo(el("p", {}, t("The map could not load."), ` (${error.message})`));
+});

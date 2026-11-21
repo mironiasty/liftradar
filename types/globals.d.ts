@@ -24,6 +24,8 @@ type DangerRating = import("./resort").DangerRating;
 type ResortDetails = import("./resort-details").ExperimentalEveryLiftAndSlopeOfOneResort;
 type DetailsLift = import("./resort-details").DetailsLift;
 type DetailsSlope = import("./resort-details").DetailsSlope;
+// json/groups.json.
+type Groups = import("./groups").GroupsOfResortsListedSeparately;
 // history/<country>/<id>.json.
 type ResortHistory = import("./history").PastRunsOfOneResortForGraphs;
 // json/stats.json.

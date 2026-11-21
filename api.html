@@ -53,6 +53,14 @@
       <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20v-7M12 20V5M19 20v-10"/></svg>
       <span data-i18n>Stats</span>
     </a>
+    <a class="pill app app-ios" href="https://apps.apple.com/us/app/liftradar-ski-resort-status/id6836206533">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+      <span data-i18n>Get the app</span>
+    </a>
+    <a class="pill app app-android" href="https://play.google.com/store/apps/details?id=eu.liftradar.app">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+      <span data-i18n>Get the app</span>
+    </a>
     <details class="lang-menu">
       <summary class="pill lang" aria-label="Language">EN</summary>
       <div>
@@ -68,22 +76,31 @@
   <h1 data-i18n>API</h1>
   <p data-i18n>All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>,
     readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.</p>
+  <p data-i18n>AI assistants can read the same data through the <a href="#mcp">MCP server</a>, also with no key.</p>
   <p data-i18n>For code generators and API tools, every file is described in <a href="/openapi.json">OpenAPI 3.1</a>.</p>
   <ul class="toc">
+    <li><a href="#mcp">MCP</a></li>
     <li><a href="#resorts" data-i18n>All resorts</a></li>
     <li><a href="#resort" data-i18n>One resort</a></li>
     <li><a href="#history" data-i18n>History</a></li>
     <li><a href="#stats" data-i18n>Stats</a></li>
     <li><a href="#ski-map" data-i18n>Pistes and lifts</a></li>
-    <li><a href="#mcp">MCP</a></li>
     <li><a href="#reading" data-i18n>Reading the values</a></li>
     <li><a href="#polling" data-i18n>Polling</a></li>
   </ul>
 
+  <h2 id="mcp">MCP</h2>
+  <pre><code>https://liftradar.eu/mcp</code></pre>
+  <p data-i18n>For AI assistants, the same data is an <a href="https://modelcontextprotocol.io">MCP</a> server, with no key:
+    add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find
+    resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and
+    the daily stats.</p>
+  <pre><code>claude mcp add --transport http liftradar https://liftradar.eu/mcp</code></pre>
+
   <h2 id="resorts" data-i18n>All resorts</h2>
   <pre><code>GET https://liftradar.eu/json/index.json</code></pre>
-  <p data-i18n>Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level and
-    location (<a href="/schema/index.schema.json">schema</a>). Each resort's <code>country</code> and <code>id</code> give the
+  <p data-i18n>Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level,
+    location and the <a href="#groups">groups</a> it's in (<a href="/schema/index.schema.json">schema</a>). Each resort's <code>country</code> and <code>id</code> give the
     address of its full report.</p>
 
   <h2 id="resort" data-i18n>One resort</h2>
@@ -108,6 +125,13 @@
   <p data-i18n>Daily totals per country and region over the last 365 days: resorts tracked and open, and their open lifts,
     slopes and km (<a href="/schema/stats.schema.json">schema</a>).</p>
 
+  <h2 id="groups" data-i18n>Resort groups</h2>
+  <pre><code>GET https://liftradar.eu/json/groups.json</code></pre>
+  <p data-i18n>The groups of resorts we list separately, by id: ski areas linked by lifts and runs (<code>linked</code>,
+    e.g. Les 3 Vallées) and passes or regions whose areas aren't linked (<code>region</code>, e.g. Dolomiti Superski),
+    each with its name, website and members as <code>&lt;country&gt;/&lt;id&gt;</code>
+    (<a href="/schema/groups.schema.json">schema</a>).</p>
+
   <h2 id="ski-map" data-i18n>Pistes and lifts</h2>
   <pre><code>GET https://liftradar.eu/ski/v1/10/&lt;x&gt;/&lt;y&gt;.json
 GET https://liftradar.eu/ski/v1/resorts.geojson
@@ -116,14 +140,6 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
     has one (<a href="/ski/v1/tile.schema.json">schema</a>), and each resort's outline and point on the map. The build and
     counts are in <code>meta.json</code>. Rebuilt weekly, under the
     <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>: data from OpenSkiData, © OpenStreetMap contributors.</p>
-
-  <h2 id="mcp">MCP</h2>
-  <pre><code>https://liftradar.eu/mcp</code></pre>
-  <p data-i18n>For AI assistants, the same data is an <a href="https://modelcontextprotocol.io">MCP</a> server, with no key:
-    add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find
-    resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and
-    the daily stats.</p>
-  <pre><code>claude mcp add --transport http liftradar https://liftradar.eu/mcp</code></pre>
 
   <h2 id="reading" data-i18n>Reading the values</h2>
   <ul>
@@ -140,6 +156,10 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
       is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code>
       where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as
       plain URLs, and will be removed.</li>
+    <li data-i18n><code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs
+      (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link
+      (<code>dolomiti-superski</code>); look them up in <a href="#groups"><code>json/groups.json</code></a>. Both are left
+      out for a resort that isn't in such a group.</li>
     <li data-i18n>Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.</li>
   </ul>
   <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>
@@ -154,10 +174,28 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
       <a href="sources.html" data-i18n>Data sources</a>
       <a href="about.html" data-i18n>About the data</a>
       <a href="api.html" data-i18n>API</a>
+      <a href="privacy.html" data-i18n>Privacy</a>
       <span data-i18n>Contact: miron [at] liftradar.eu</span>
     </nav>
-    <span class="made-by"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
-      <span data-i18n>Made by <b>Miron</b></span></span>
+    <div class="footer-end">
+      <div class="stores">
+        <a class="store store-ios" href="https://apps.apple.com/us/app/liftradar-ski-resort-status/id6836206533">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>App Store</span>
+        </a>
+        <a class="store store-android" href="https://play.google.com/store/apps/details?id=eu.liftradar.app">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>Google Play</span>
+        </a>
+      </div>
+        <div class="made-by">
+        <a class="github" href="https://github.com/mironiasty/liftradar" aria-label="GitHub" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a class="author" href="https://miron.asia"><img src="https://miron.asia/favicon.svg" width="28" height="28" alt="">
+          <span>Miron Pawlik</span></a>
+      </div>
+      </div>
   </footer>
 </main>
 </body>
