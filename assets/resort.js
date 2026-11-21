@@ -53,6 +53,29 @@ const DIFFICULTIES = {
   ski_route: [t("Ski routes"), "#f2b705"],
   other: [t("Other"), "var(--muted)"],
 };
+// A slope's own colour, where its source gives one (experimental `colour` in the details file): green for the very
+// easy slopes of France, Spain and the Nordic countries, yellow and orange Swiss runs, two-colour slopes split.
+const SLOPE_COLOURS = {
+  green: [t("Green"), "#2e9e3f"],
+  blue: [t("Blue"), "#2a6fdb"],
+  red: [t("Red"), "#d62828"],
+  black: [t("Black"), "var(--fg)"],
+  yellow: [t("Yellow"), "#f2b705"],
+  orange: [t("Orange"), "#f07c0c"],
+};
+
+/**
+ * The slope's swatch and its title: its own colour when the source gives one, else its difficulty's.
+ * @param {ResortDetails["slopes"][number]} s
+ */
+function slopeSwatch(s) {
+  const [difficulty, fallback] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
+  const parts = (s.colour ?? "").split("_").map((c) => SLOPE_COLOURS[c]);
+  if (!s.colour || parts.some((p) => !p)) return { colour: fallback, title: difficulty };
+  const names = parts.map(([name]) => name).join(" / ");
+  const colour = parts.length === 1 ? parts[0][1] : `linear-gradient(135deg, ${parts[0][1]} 50%, ${parts[1][1]} 50%)`;
+  return { colour, title: `${difficulty}: ${names}` };
+}
 // One lift's type, in the list of every lift and slope.
 const LIFT_TYPE = {
   gondola: t("Gondola"),
@@ -382,12 +405,12 @@ function liftList(d) {
 /** @param {ResortDetails} d */
 function slopeList(d) {
   const rows = byStatus(d.slopes).map((s) => {
-    const [difficulty, colour] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
+    const { colour, title } = slopeSwatch(s);
     return el(
       "tr",
       {},
       itemState(s.status),
-      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title: difficulty }), s.name),
+      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title }), s.name),
       el("td", { class: "num" }, dash(s.length_m, " m")),
     );
   });

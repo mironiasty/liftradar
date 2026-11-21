@@ -10,7 +10,7 @@ export type FetchedAt = string
 export type UpdatedAt = (string | null)
 export type Source = string
 /**
- * The source's id, stable between runs
+ * The source's id, stable between runs; where the source has none, made from the name
  */
 export type Id1 = string
 /**
@@ -35,7 +35,7 @@ export type BottomM = (number | null)
 export type TopM = (number | null)
 export type Lifts = DetailsLift[]
 /**
- * The source's id, stable between runs
+ * The source's id, stable between runs; where the source has none, made from the name
  */
 export type Id2 = string
 /**
@@ -44,13 +44,17 @@ export type Id2 = string
 export type Ref1 = (string | null)
 export type Name1 = string
 export type Difficulty = ("easy" | "intermediate" | "difficult" | "ski_route" | "other")
+/**
+ * Its colour as the source marks it, where the source gives one: green (very easy, in France, Spain, Andorra and the Nordic countries), yellow and orange (Swiss ski routes and fun slopes), and pairs for two-colour slopes; `difficulty` groups them
+ */
+export type Colour = (("green" | "blue" | "red" | "black" | "yellow" | "orange" | "blue_red" | "red_black" | "black_blue" | "yellow_red") | null)
 export type Status1 = ("open" | "closed" | "preparation" | "unknown")
 export type LengthM1 = (number | null)
 export type Slopes = DetailsSlope[]
 
 /**
- * Experimental: every lift and slope of one resort with its status, from its slope map. `unknown` items
- * are listed but left out of the resort file's counts.
+ * Experimental: every lift and slope of one resort with its status, from its slope map or from the source
+ * that lists them one by one. `unknown` items are listed but left out of the resort file's counts.
  */
 export interface ExperimentalEveryLiftAndSlopeOfOneResort {
 $schema: $Schema
@@ -84,6 +88,7 @@ id: Id2
 ref: Ref1
 name: Name1
 difficulty: Difficulty
+colour: Colour
 status: Status1
 length_m: LengthM1
 }
