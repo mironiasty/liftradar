@@ -28,10 +28,24 @@ const FILES = {
     generated_at: iso(now),
     resorts: [
       resort("at", "soelden", "Sölden", "Tirol", "open", 46.97, 11.0, 120, 12),
-      resort("at", "hintertux", "Hintertuxer Gletscher", "Tirol", "open", 47.06, 11.66, 65, 16),
+      {
+        ...resort("at", "hintertux", "Hintertuxer Gletscher", "Tirol", "open", 47.06, 11.66, 65, 16),
+        ski_region: "zillertal",
+      },
       resort("pl", "kotelnica", "Kotelnica Białczańska", "Małopolska", "closed", 49.4, 20.1, null, 0),
-      resort("fr", "tignes", "Tignes", null, "no_report", 45.47, 6.9, null, null),
+      { ...resort("fr", "tignes", "Tignes", null, "no_report", 45.47, 6.9, null, null), linked_area: "espace-killy" },
     ],
+  },
+  "/json/groups.json": {
+    groups: {
+      "espace-killy": { name: "Espace Killy", kind: "linked", website: null, members: ["fr/tignes", "fr/val-d-isere"] },
+      zillertal: {
+        name: "Ski Zillertal 3000",
+        kind: "region",
+        website: null,
+        members: ["at/hintertux", "at/mayrhofen"],
+      },
+    },
   },
   "/json/at/soelden.json": { id: "soelden", country: "at", name: "Sölden" },
   "/history/at/soelden.json": {
@@ -108,6 +122,11 @@ test("search_resorts: names without case or accents, and regions", async () => {
   assert.deepEqual(ids(await call("search_resorts", { name: "bialczanska" })), ["kotelnica"]);
   assert.deepEqual(ids(await call("search_resorts", { name: "tirol", sort: "name" })), ["hintertux", "soelden"]);
   assert.equal((await call("search_resorts", { name: "nowhere" })).data.matches, 0);
+});
+
+test("search_resorts: by the name of its linked ski area or ski region (json/groups.json)", async () => {
+  assert.deepEqual(ids(await call("search_resorts", { name: "espace killy" })), ["tignes"]);
+  assert.deepEqual(ids(await call("search_resorts", { name: "zillertal 3000" })), ["hintertux"]);
 });
 
 test("search_resorts: filters, the default order by snow (unknown last), and limit", async () => {
