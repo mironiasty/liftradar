@@ -322,15 +322,17 @@ when that's inside, and otherwise the bottom station nearest to it. Wrong matche
 their sources, Wikidata id or exact name), and `points` move the point a shared area is split by
 (Samoëns: its ski area, not its village). `features` gives single lifts and runs (by their OSM id) to a
 resort, for one OpenSkiData puts in the wrong area (a run along Kompleks Narciarski Słotwiny's chairlift,
-in Słotwiny Arena's, drew Arena's outline over Kompleks; `ski_split_check.py --assign` doesn't apply
-it). `clip` keeps a resort's lifts and runs inside a box `[west, south, east, north]`, for a resort that is
+in Słotwiny Arena's, drew Arena's outline over Kompleks; `ski_split_check.py --assign` applies it to
+lifts only). `clip` keeps a resort's lifts and runs inside a box `[west, south, east, north]`, for a resort that is
 only part of its area (Wierchomla: OpenSkiData's "Dwie Doliny" also has the Szczawnik side, closed since 2019). Check a change on the map, with the tiles built locally.
 `scripts/ski_split_check.py` finds wrong splits and checks a fix without the download: from built tiles
 (the release `ski-latest`) and `json/index.json`, it lists the resorts whose lift count on the map is far
 from their report's and the areas several resorts share; `--lifts <country>/<id>` lists a resort's lifts
 by name; `--assign` runs the assignment again on the tiles' lifts with the current overrides
 (`--before <overrides.json>` compares with a run on others, e.g. `main`'s). Lifts only: check the map once
-the tiles are built.
+the tiles are built. A pull request changing `ski_resorts.py` or `ski_overrides.json` runs `--assign` with
+the base's rules and with its own (`.github/workflows/ski-assign.yml`), and lists the resorts whose lift
+count changes in the run's summary.
 
 The script fails, keeping the last tiles, if the lifts, runs, areas or assigned lifts or runs drop by
 more than 15%. To build the tiles locally (about 290 MB to download, a minute and 3.5 GB of memory)
