@@ -184,25 +184,25 @@ function header(r) {
     .filter((link) => link !== null)
     .flatMap((link, i) => (i ? [" · ", link] : [link]));
   const { checked, changed, days, stale } = reportTimes(r);
-  // When the report was read and last changed, opposite the name (under it on narrow screens).
+  // When the report was read: a chip at the end of the status row; clicked, it shows when the resort last changed
+  // its report too. Wide screens say "Checked …" in full, narrow ones just the time.
   const clock = el("span", { class: "clock", "aria-hidden": "true" });
   clock.innerHTML =
     '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"' +
     ' stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
   const checkedText = t("Checked {time}", { time: viennaTime(checked) });
   const changedText = changed && t("resort's last change {time}", { time: viennaTime(changed) });
-  const times = el(
-    "div",
-    { class: stale ? "times stale" : "times" },
-    el("span", { class: "checked" }, clock, checkedText),
-    changedText ? el("span", { class: "changed" }, changedText) : "",
-  );
-  // Narrow screens: just the time, next to the status; tapped, it shows both lines.
   const short = viennaTime(checked, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
   const when = el(
     "details",
     { class: stale ? "when stale" : "when" },
-    el("summary", { class: "checked" }, clock.cloneNode(true), short),
+    el(
+      "summary",
+      { class: "checked" },
+      clock,
+      el("span", { class: "long" }, checkedText),
+      el("span", { class: "short" }, short),
+    ),
     el("div", {}, el("span", {}, checkedText), changedText ? el("span", { class: "changed" }, changedText) : ""),
   );
   closeOnOutside(when);
@@ -236,7 +236,6 @@ function header(r) {
         ),
         fnuggCredit(r),
       ),
-      times,
     ),
     unchanged ? el("p", { class: "meta stale" }, unchanged) : "",
     note ? el("p", { class: "meta" }, note) : "",
