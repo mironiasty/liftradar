@@ -161,8 +161,8 @@ and single-lift areas; the German uplands have no avalanche service. Not covered
 Jáchymov, Velká Úpa (listed with its size), Světlý vrch and the areas under 4 km of slopes. Not covered yet in Spain: a live status for 10 areas (see the table), the nordic areas and Madrid SnowZone. Not covered yet in Norway: a live status for the areas that aren't on Fnugg (Skimore's Tryvann, Kongsberg and Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia); only the 70 resorts inside NVE's rated regions have avalanche danger. Not covered yet in Slovenia: a live status for the five areas listed by size, Kanin (its Slovenian side closed in 2025), the areas with fewer than 3 lifts and the nordic areas. Each
 file's `source_details` lists the URLs used for that report, as pages with current conditions and pages with the
 resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
-the site shows them on `sources.html` and the resort page, and falls back to the deprecated `sources` (plain URLs) for
-data published before `source_details`.
+the site shows them on `sources.html` and the resort page. The deprecated `sources` (the same URLs, plain) isn't read
+by the site any more.
 
 ### Areas
 

@@ -159,7 +159,8 @@ const dangerName = (level) => DANGER_NAMES[level] ?? level.replaceAll("_", " ");
 
 // Same as the table and the map.
 const STATUS_COLORS = { open: "var(--open)", closed: "var(--closed)", no_report: "var(--none)" };
-// Data published before 27.10.2026 can have a null status (fetching failed): shown as no report.
+// A status the site doesn't know (one the fetcher adds before the pages do) is shown as no report, rather than
+// breaking the pages that look up its label and colour.
 /** @param {IndexResort | Resort} r */
 const statusKey = (r) => (STATUS_LABELS[r.status] ? r.status : "no_report");
 
@@ -181,21 +182,6 @@ function reportTimes(r) {
 }
 
 /**
- * The pages a report was built from. Data published before `source_details` has only the deprecated `sources`:
- * all of them count as conditions, with attribution not checked.
- * @param {IndexResort | Resort} r
- * @returns {SourceDetails}
- */
-function sourceDetails(r) {
-  return (
-    r.source_details ?? {
-      conditions: r.sources.map((url) => ({ url, attribution_required: null })),
-      resort_info: [],
-    }
-  );
-}
-
-/**
  * One page of a report's sources, with a note where its terms ask for a credit.
  * @param {SourceRef} ref
  * @param {string} [note] after the link, e.g. how many resorts use it
@@ -213,7 +199,7 @@ function sourceItem(ref, note = "") {
 // Fnugg's terms: a visible credit next to its data, linking to the resort's page there.
 /** @param {IndexResort | Resort} r */
 function fnuggCredit(r) {
-  const page = r.country === "no" && sourceDetails(r).conditions.find(({ url }) => url.startsWith("https://fnugg.no/"));
+  const page = r.country === "no" && r.source_details.conditions.find(({ url }) => url.startsWith("https://fnugg.no/"));
   return page
     ? el("div", { class: "credit" }, t("Snow and lift data provided by "), el("a", { href: page.url }, "fnugg"))
     : "";

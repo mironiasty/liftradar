@@ -9,7 +9,7 @@
 function pagesOf(index, kind) {
   const pages = new Map();
   for (const r of index.resorts) {
-    for (const ref of sourceDetails(r)[kind]) {
+    for (const ref of r.source_details[kind]) {
       if (!pages.has(ref.url)) pages.set(ref.url, { ref, names: [] });
       pages.get(ref.url)?.names.push(r.name);
     }
