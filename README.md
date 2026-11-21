@@ -128,7 +128,8 @@ history, and a section for developers) is on the site: [About the data](https://
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk | [TMR](https://www.jasna.sk)'s lift and slope tables, as its sites embed them ([e.g. Jasná's slopes](https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk)): every lift and slope with its state. No report time. Outside the season the lift tables list only the summer lifts, so the lift total is the area's size until a slope opens |
 | Beskid Sport Arena | Its own [lift](https://beskidsportarena.pl/szczyrk-wyciagi-narciarskie-i-kolej-linowa/) and [slope](https://beskidsportarena.pl/szczyrk-trasy-narciarskie/) tables: every lift and slope with its state. No report time |
-| Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko, Słotwiny Arena, Kompleks Narciarski Słotwiny, Nosal, Grapa (Czarna Góra); Wierchomla, Master Ski, Tylicz.ski, Jurgów Ski, Małe Ciche, Laskowa-Kamionna, Kasina Ski, Czarny Groń, Cieńków, Soszów, Nowa Osada, Skolnity, Czantoria, Zwardoń Ski, Kiczera Ski; Füssener Jöchle, Birkenlift & Geigenbühel (Seefeld) | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists (for the small neighbours of covered areas also OnTheSnow and skiresort.com; where a Polish operator publishes no list, [OpenSkiMap](https://openskimap.org/), from OpenStreetMap) (the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
+| Tylicz.ski | The lift and slope states on its [home page](https://tylicz.ski/) ("Aktualne warunki na trasach"). No report time, no slope lengths: its km from [OpenSkiMap](https://openskimap.org/) |
+| Kotelnica Białczańska, Czarna Góra, Szrenica, Karpacz, Pilsko, Słotwiny Arena, Kompleks Narciarski Słotwiny, Nosal, Grapa (Czarna Góra); Wierchomla, Master Ski, Jurgów Ski, Małe Ciche, Laskowa-Kamionna, Kasina Ski, Czarny Groń, Cieńków, Soszów, Nowa Osada, Skolnity, Czantoria, Zwardoń Ski, Kiczera Ski; Füssener Jöchle, Birkenlift & Geigenbühel (Seefeld) | **Size only** (no live status yet): lift and slope totals and km from the operators' own lists (for the small neighbours of covered areas also OnTheSnow and skiresort.com; where a Polish operator publishes no list, [OpenSkiMap](https://openskimap.org/), from OpenStreetMap) (the resorts' sites; Kotelnica from [visitmalopolska.pl](https://visitmalopolska.pl/en/obiekt/-/poi/osrodek-narciarski-kotelnica-bialczanska)) |
 | Val Cenis, Saint-Lary, Auron, Les Orres, Chamrousse, Ax 3 Domaines, Orcières, Les Karellis, L'Alpe du Grand Serre, Font-Romeu Pyrénées 2000, Superbagnères and 62 smaller French areas | **Size only** (no live status yet; their slope maps and digisnow widgets load in the browser): lift and slope totals, and km where the resort gives them, from the resort's own site, otherwise [OnTheSnow](https://www.skiinfo.fr/). Each reported there in the 2025/26 season |
 | Lift/slope status of the bigger Austrian areas, Andermatt, Friuli Venezia Giulia, Madesimo and Schöneben-Haideralm | The resort's own Intermaps slope map |
 | Ski-area sizes (total slope km, and lift and slope totals a report lacks) | The size on the resort's own website; otherwise [OnTheSnow](https://www.skiinfo.fr/) (the figures resorts enter there) or [skiresort.com](https://www.skiresort.com/) (km, and km by difficulty for some bigger areas); for a sector of a linked area, the sum of the operator's own slope lengths (Ski Arlberg's slope map, infosnow, Dolomiti Superski) |
@@ -167,7 +168,7 @@ data published before `source_details`.
 
 Each resort's outline and point on the map are made weekly from OpenSkiData's lifts and pistes
 (see [Ski tiles](#ski-tiles)): a new resort gets them with the next build, or straight away by
-running `ski.yml` by hand. 922 of the 934 resorts have one in November 2026; the others are a
+running `ski.yml` by hand. 921 of the 933 resorts have one in November 2026; the others are a
 marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
@@ -194,7 +195,7 @@ Static checks, also run on every push (`.github/workflows/checks.yml`):
 
 ```sh
 npm install        # once
-npm run check      # Biome (JS, CSS), html-validate, the type check, the MCP test, ruff (scripts/)
+npm run check      # Biome (JS, CSS), html-validate (translated pages too), the type check, the MCP test, ruff (scripts/)
 npm run format     # format the JS, the CSS and scripts/; HTML is validated but not formatted
 ```
 
@@ -229,7 +230,8 @@ is in the source's language). What can be translated:
 Always edit the English; never the generated pages. Each marked block's English text is its key in the
 dictionary, so a changed block shows in English until it's translated, and can't show an outdated translation.
 `npm run check` lists what's missing and what's no longer used (the old text's entry, to replace), and fails
-if a translation loses a `{name}` or a tag.
+if a translation loses a `{name}` or a tag. It also generates the translated pages (as below) and validates them
+with the English ones.
 
 `assets/lang.js` sends visitors arriving on an English page to the translation their browser prefers. The
 language menu in the header overrides that, and the choice is remembered in `localStorage`. Links to a
@@ -246,7 +248,8 @@ sets the dates, numbers and country names.
 alone (`assets.run_worker_first`); every other address is served from the files as before, without it. Its
 tools read the same files through the assets binding (`env.ASSETS`), so they always match the site:
 
-- `search_resorts`: `json/index.json`, filtered by country, status, name, snow, open lifts or distance from a
+- `search_resorts`: `json/index.json`, filtered by country, status, name (also its region's, and its linked ski
+  area's and ski region's from `json/groups.json`, as the site's search), snow, open lifts or distance from a
   point, and sorted.
 - `get_resort`: `json/<country>/<id>.json`.
 - `get_resort_history`: `history/<country>/<id>.json`, as rows, for the last days.
@@ -321,15 +324,17 @@ when that's inside, and otherwise the bottom station nearest to it. Wrong matche
 their sources, Wikidata id or exact name), and `points` move the point a shared area is split by
 (Samoëns: its ski area, not its village). `features` gives single lifts and runs (by their OSM id) to a
 resort, for one OpenSkiData puts in the wrong area (a run along Kompleks Narciarski Słotwiny's chairlift,
-in Słotwiny Arena's, drew Arena's outline over Kompleks; `ski_split_check.py --assign` doesn't apply
-it). `clip` keeps a resort's lifts and runs inside a box `[west, south, east, north]`, for a resort that is
+in Słotwiny Arena's, drew Arena's outline over Kompleks; `ski_split_check.py --assign` applies it to
+lifts only). `clip` keeps a resort's lifts and runs inside a box `[west, south, east, north]`, for a resort that is
 only part of its area (Wierchomla: OpenSkiData's "Dwie Doliny" also has the Szczawnik side, closed since 2019). Check a change on the map, with the tiles built locally.
 `scripts/ski_split_check.py` finds wrong splits and checks a fix without the download: from built tiles
 (the release `ski-latest`) and `json/index.json`, it lists the resorts whose lift count on the map is far
 from their report's and the areas several resorts share; `--lifts <country>/<id>` lists a resort's lifts
 by name; `--assign` runs the assignment again on the tiles' lifts with the current overrides
 (`--before <overrides.json>` compares with a run on others, e.g. `main`'s). Lifts only: check the map once
-the tiles are built.
+the tiles are built. A pull request changing `ski_resorts.py` or `ski_overrides.json` runs `--assign` with
+the base's rules and with its own (`.github/workflows/ski-assign.yml`), and lists the resorts whose lift
+count changes in the run's summary.
 
 The script fails, keeping the last tiles, if the lifts, runs, areas or assigned lifts or runs drop by
 more than 15%. To build the tiles locally (about 290 MB to download, a minute and 3.5 GB of memory)
