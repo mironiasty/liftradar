@@ -11,8 +11,9 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
     `linked_area` / `ski_region`, the groups a resort is in, for API clients); the full report (stations, lift and slope breakdowns, avalanche bulletin, ...) is in
     `json/<country>/<resort>.json`.
   - `json/<country>/<resort>.details.json` (experimental, not part of the API): every lift and slope
-    with its status, for resorts whose report has `details` (those with an Intermaps slope map); the
-    resort page lists them.
+    with its status, for resorts whose report has `details`: those with an Intermaps slope map, and those whose
+    source lists its lifts and slopes one by one (infosnow, Lumiplan, Dolomiti Superski, Fnugg, the resorts' own
+    pages, ...; only open or closed there). The resort page lists them.
   - `json/stats.json`: daily totals per country and region over the last 365 days (resorts
     tracked and open; open lifts, slopes and km, of open resorts only), for `stats.html`.
   - `json/groups.json`: the groups of resorts listed separately (linked ski areas, passes and
