@@ -94,7 +94,12 @@ function tiles(r) {
   const danger = avalanche?.danger_level
     ? [
         el("span", { class: `badge lvl${avalanche.danger_level}` }, String(avalanche.danger_level)),
-        dangerName(avalanche.danger),
+        // Sized by its length (resort.html), to stay on the badge's line in a narrow tile.
+        el(
+          "span",
+          { class: "danger", style: `--chars:${dangerName(avalanche.danger).length}` },
+          dangerName(avalanche.danger),
+        ),
       ]
     : "–";
   // First what's open, the reason most people come; then the snow and the avalanche danger.
@@ -526,7 +531,11 @@ function data(r) {
       "div",
       { class: "meta" },
       t("This resort's JSON, e.g. for the "),
-      el("a", { href: "https://trmnl.com/recipes/ski-resort-snow-report-219253" }, t("TRMNL plugin")),
+      el(
+        "a",
+        { class: "external", href: "https://trmnl.com/recipes/ski-resort-snow-report-219253", rel: "noopener" },
+        t("TRMNL plugin"),
+      ),
       t(": paste it as its Resort."),
     ),
     el("div", { class: "url" }, input, copy, el("a", { href: resortPath(r) }, t("Open|file"))),
@@ -676,10 +685,21 @@ async function resortMap(r, container) {
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
 /** @param {Resort} r */
-async function historyChart(r, container) {
+// `collected` says since when: the history starts with the resort's first run (it keeps a year).
+/** @param {Resort} r @param {HTMLElement} container @param {HTMLElement} collected */
+async function historyChart(r, container, collected) {
   const response = await fetch(historyPath(r), { cache: "no-cache" });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const runs = /** @type {ResortHistory} */ (await response.json()).runs;
+  if (runs.time.length) {
+    // A month's name, so English reads "24 October 2026" rather than the Austrian "24. Oktober 2026".
+    const date = new Date(runs.time[0]).toLocaleDateString(LANG === "en" ? "en-GB" : DATE_LOCALE, {
+      timeZone: "Europe/Vienna",
+      dateStyle: "long",
+    });
+    collected.textContent = t("Collected since {date}.", { date });
+    collected.hidden = false;
+  }
   const since = Date.now() - HISTORY_DAYS * 864e5;
   const recent = runs.time.map((time, i) => ({ t: new Date(time), i })).filter((run) => run.t.getTime() >= since);
   const series = (key) => recent.map(({ t, i }) => ({ t, v: runs[key][i] }));
@@ -822,6 +842,7 @@ async function show() {
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
   const historyBox = el("div", { class: "charts" }, liftLoader({ small: true }));
+  const collected = el("p", { class: "meta", style: "margin:10px 0 0", hidden: "" });
   // Replaced by the cards of the resort's groups once json/groups.json is in; nothing without groups.
   const groupsBox = el("div", { hidden: "" });
   const main = el(
@@ -830,13 +851,7 @@ async function show() {
     tiles(r),
     ...breakdown(r),
     ...[stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
-    el(
-      "section",
-      { class: "card" },
-      el("h2", {}, t("Last {n} days", { n: HISTORY_DAYS })),
-      historyBox,
-      el("p", { class: "meta", style: "margin:10px 0 0" }, t("Collected since 24 October 2026.")),
-    ),
+    el("section", { class: "card" }, el("h2", {}, t("Last {n} days", { n: HISTORY_DAYS })), historyBox, collected),
   );
   page.replaceChildren(
     header(r),
@@ -874,7 +889,7 @@ async function show() {
     mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
   });
   groupCards(r, groupsBox).catch(() => groupsBox.remove());
-  historyChart(r, historyBox).catch((error) =>
+  historyChart(r, historyBox, collected).catch((error) =>
     historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
   );
 }

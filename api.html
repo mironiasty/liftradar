@@ -160,12 +160,12 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
       (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link
       (<code>dolomiti-superski</code>); look them up in <a href="#groups"><code>json/groups.json</code></a>. Both are left
       out for a resort that isn't in such a group.</li>
-    <li data-i18n>Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.</li>
+    <li data-i18n>Times are ISO 8601 with the Central European offset (+01:00, +02:00 in summer). <code>condition</code> is in the source's language.</li>
   </ul>
   <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>
 
   <h2 id="polling" data-i18n>Polling</h2>
-  <p data-i18n>The data changes twice a day, at about 08:40 and 13:40 Vienna time, so there's no point reading it more often
+  <p data-i18n>The data changes twice a day, at about 08:40 and 13:40 CET, so there's no point reading it more often
     than hourly. The files have an <code>ETag</code>: send <code>If-None-Match</code> and an unchanged file costs nothing.
     Questions, or a use we should know about: miron [at] liftradar.eu.</p>
 
