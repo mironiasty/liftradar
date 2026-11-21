@@ -77,6 +77,9 @@ const INK = darkMode() ? "#eee" : "#222";
 if (darkMode()) for (const colors of Object.values(PISTE_COLORS)) colors.advanced = colors.expert = INK;
 const OFF_PISTE = "#ef8a00";
 const NORDIC = "#7a5cc7";
+// On the map, the lifts and pistes of areas liftradar has no resort for: grey, and a little faint.
+const UNLISTED = darkMode() ? "#9aa1ab" : "#5f6670";
+const UNLISTED_OPACITY = 0.7;
 
 function tileOf([lon, lat]) {
   const n = 1024; // zoom 10
@@ -112,7 +115,11 @@ function skiFeatures(tile, highlight, names) {
   const runs = [];
   const lifts = [];
   const stations = [];
+  // With a highlight, every other resort's are faded; without (the map), those of no resort liftradar has
+  // are grey (UNLISTED).
   const faded = (f) => highlight && f.lr !== highlight;
+  const grey = (f) => !highlight && !f.lr;
+  const fade = (f) => (grey(f) ? UNLISTED_OPACITY : faded(f) ? 0.35 : 1);
   for (const run of tile.runs) {
     const uses = run.uses ?? [];
     const downhill = uses.includes("downhill");
@@ -132,16 +139,18 @@ function skiFeatures(tile, highlight, names) {
       id: run.osm,
       geometry: run.c ? { type: "LineString", coordinates: run.c } : { type: "Polygon", coordinates: run.poly },
       properties: {
-        color: !downhill
-          ? NORDIC
-          : offPiste
-            ? OFF_PISTE
-            : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777"),
+        color: grey(run)
+          ? UNLISTED
+          : !downhill
+            ? NORDIC
+            : offPiste
+              ? OFF_PISTE
+              : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777"),
         dashed: offPiste || !downhill || tunnel,
-        shared: downhill && !offPiste && !tunnel ? sharedColor(run, tile.runs) : null,
+        shared: downhill && !offPiste && !tunnel && !grey(run) ? sharedColor(run, tile.runs) : null,
         width: downhill ? 2.5 : 1.5,
-        opacity: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
-        base: (faded(run) ? 0.35 : 1) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
+        opacity: fade(run) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
+        base: fade(run) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
         item: run.item ?? "",
         state: "",
         name: run.name ?? "",
@@ -158,10 +167,10 @@ function skiFeatures(tile, highlight, names) {
     const properties = {
       type: lift.type ?? "",
       lr: lift.lr ?? "",
-      color: gone ? "#888" : INK,
+      color: grey(lift) ? UNLISTED : gone ? "#888" : INK,
       dashed: gone || tunnel,
-      opacity: (faded(lift) ? 0.35 : 1) * (tunnel ? 0.55 : 1),
-      base: (faded(lift) ? 0.35 : 1) * (tunnel ? 0.55 : 1),
+      opacity: fade(lift) * (tunnel ? 0.55 : 1),
+      base: fade(lift) * (tunnel ? 0.55 : 1),
       item: lift.item ?? "",
       state: "",
       name: lift.name ?? "",
@@ -185,7 +194,8 @@ function skiLabel({ properties: p }) {
 }
 
 // Pistes and lifts of the tiles in view, under the labels. With highlight (a resort's key), that
-// resort's are drawn strong and the others faded; names maps resort keys to the names shown in the
+// resort's are drawn strong and the others faded, and without, those of areas liftradar has no resort
+// for are grey; names maps resort keys to the names shown in the
 // tooltips (otherwise those the tiles give); minZoom, from where they're drawn; tips: false for
 // no tooltips (the map page, where a click on the area shows the resort). Resolves once the
 // tiles of the first view are drawn.
