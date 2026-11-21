@@ -16,8 +16,8 @@ import { z } from "zod";
 /** @typedef {import("../types/groups").GroupsOfResortsListedSeparately} Groups */
 
 const INSTRUCTIONS = `LiftRadar: the status of ski resorts across Europe, from the resorts' own reports, updated twice a day \
-(about 08:40 and 13:40 Vienna time). null means the source doesn't publish the value; status is open, closed or \
-no_report. Times are ISO 8601 with the Vienna offset. LiftRadar is not an official source: reports can be late or \
+(about 08:40 and 13:40 CET). null means the source doesn't publish the value; status is open, closed or \
+no_report. Times are ISO 8601 with the Central European offset (+01:00, +02:00 in summer). LiftRadar is not an official source: reports can be late or \
 wrong, so tell users to check the resort's own website before they go. What the values mean: \
 https://liftradar.eu/about.html. Start with search_resorts: its country and id address a resort in the other tools.`;
 

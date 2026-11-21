@@ -86,6 +86,12 @@
   .tile .value small { font-size: .9rem; font-weight: 500; color: var(--muted); }
   .tile .note { color: var(--muted); font-size: .8rem; }
   .tile .meter { width: 100%; margin: 6px 0 2px; }
+  /* The danger's name, on one line with its badge: as large as the tile's width allows for its length (--chars),
+     from the size of the other tiles' numbers down to a small one; narrower still, it ends in "…". */
+  .tile .value:has(.danger) { container-type: inline-size; height: 1.5em; display: flex; align-items: center; white-space: nowrap; }
+  .tile .value:has(.danger) .badge { flex: none; vertical-align: 0; }
+  .tile .danger { min-width: 0; overflow: hidden; text-overflow: ellipsis;
+    font-size: clamp(.75rem, calc((100cqi - 36px) / var(--chars) * 1.5), 1.8rem); }
   .tile .badge { width: 30px; height: 30px; font-size: 1rem; margin-right: 6px; vertical-align: 3px; }
   .fresh { color: var(--accent); }
 
