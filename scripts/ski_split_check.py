@@ -24,6 +24,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import ski_resorts
+from shapely.geometry import LineString
 
 MORE = 1.6  # listed when the map has this many times the report's lifts (and FEW more),
 LESS = 0.6  # or this share of them (and FEW fewer)
@@ -49,7 +50,15 @@ def load_lifts(ski: Path) -> tuple[dict, list]:
                     "wd": area.get("wd"),
                 }
                 keys.append(key)
-            lifts.append({"_areas": keys, "_coords": lift["c"], "name": lift.get("name"), "lr": lift.get("lr")})
+            lifts.append(
+                {
+                    "_areas": keys,
+                    "_coords": lift["c"],
+                    "_geom": LineString([c[:2] for c in lift["c"]]),  # for assign()'s clip
+                    "name": lift.get("name"),
+                    "lr": lift.get("lr"),
+                }
+            )
     if not lifts:
         raise SystemExit(f"no tiles in {ski / 'v1' / '10'}")
     return areas, lifts
