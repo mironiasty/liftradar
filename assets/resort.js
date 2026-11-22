@@ -381,10 +381,21 @@ function byStatus(list) {
   return list.toSorted((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
 }
 
+// The status as a dot alone, its name on hover (and for screen readers); in preparation, a blinking green.
 /** @param {string} status */
 function itemState(status) {
   const [name, colour] = ITEM_STATUS[status] ?? ITEM_STATUS.unknown;
-  return el("td", { class: "state", style: `--c:${colour}` }, name);
+  return el(
+    "td",
+    { class: "state" },
+    el("span", {
+      class: status === "preparation" ? "dot preparing" : "dot",
+      style: `--c:${colour}`,
+      role: "img",
+      "aria-label": name,
+      title: name,
+    }),
+  );
 }
 
 /** @param {ResortDetails} d */
@@ -394,17 +405,40 @@ function liftList(d) {
       "tr",
       {},
       itemState(l.status),
+      el("td", {}, el("span", { class: "lift" }, liftIcon(l.type), LIFT_TYPE[l.type] ?? label(l.type))),
       el("td", {}, l.name),
-      el("td", {}, LIFT_TYPE[l.type] ?? label(l.type)),
       el("td", { class: "num" }, dash(l.length_m, " m")),
     ),
   );
-  return itemTable([t("Status"), t("Name"), t("Type"), t("Length")], rows);
+  return itemTable([t("Status"), t("Type"), t("Name"), t("Length")], rows);
+}
+
+// Slopes open first (then in preparation, closed, unknown), and within each the easiest first: by difficulty,
+// then by the slope's own colour (green before blue), then by name.
+const DIFFICULTY_ORDER = Object.keys(DIFFICULTIES);
+const COLOUR_ORDER = ["green", "blue", "yellow", "orange", "red", "black"];
+/** @param {ResortDetails["slopes"][number]} s */
+const colourRank = (s) => {
+  const i = COLOUR_ORDER.indexOf((s.colour ?? "").split("_")[0]);
+  return i === -1 ? COLOUR_ORDER.length : i;
+};
+/** @param {ResortDetails["slopes"]} slopes */
+function sortedSlopes(slopes) {
+  const status = Object.keys(ITEM_STATUS);
+  /** @param {string} key @param {string[]} order */
+  const rank = (key, order) => (order.includes(key) ? order.indexOf(key) : order.length);
+  return slopes.toSorted(
+    (a, b) =>
+      rank(a.status, status) - rank(b.status, status) ||
+      rank(a.difficulty, DIFFICULTY_ORDER) - rank(b.difficulty, DIFFICULTY_ORDER) ||
+      colourRank(a) - colourRank(b) ||
+      a.name.localeCompare(b.name, undefined, { numeric: true }),
+  );
 }
 
 /** @param {ResortDetails} d */
 function slopeList(d) {
-  const rows = byStatus(d.slopes).map((s) => {
+  const rows = sortedSlopes(d.slopes).map((s) => {
     const { colour, title } = slopeSwatch(s);
     return el(
       "tr",
@@ -415,6 +449,22 @@ function slopeList(d) {
     );
   });
   return itemTable([t("Status"), t("Name"), t("Length")], rows);
+}
+
+// The counts of some slopes from the details file, as in the resort's slopes_by_difficulty; km only when every one
+// of them has its length.
+/** @param {DetailsSlope[]} slopes @returns {SlopeCounts} */
+function colourCount(slopes) {
+  const open = slopes.filter((s) => s.status === "open");
+  /** @param {DetailsSlope[]} list */
+  const km = (list) => Math.round(list.reduce((sum, s) => sum + (s.length_m ?? 0), 0) / 100) / 10;
+  const lengths = slopes.every((s) => s.length_m);
+  return {
+    open: open.length,
+    total: slopes.length,
+    open_km: lengths ? km(open) : null,
+    total_km: lengths ? Math.ceil(km(slopes)) : null,
+  };
 }
 
 // The lifts by type and slopes by difficulty, then, for a resort with a `details` file, a card for each list that
@@ -479,8 +529,8 @@ function breakdown(r) {
     );
   }
   if (r.slopes_by_difficulty) {
-    const rows = Object.entries(r.slopes_by_difficulty).flatMap(([difficulty, c]) => {
-      const [name, colour] = DIFFICULTIES[difficulty] ?? [label(difficulty), "var(--muted)"];
+    /** @param {string} name @param {string} colour @param {SlopeCounts} c */
+    const slopeRow = (name, colour, c) => {
       const km =
         present(c.open_km) || present(c.total_km) ? el("div", { class: "km" }, pair(c.open_km, c.total_km, " km")) : "";
       return [
@@ -488,7 +538,34 @@ function breakdown(r) {
         el("span", { class: "n" }, pair(c.open, c.total)),
         meter(c.open, c.total),
       ];
+    };
+    /** @type {Record<string, HTMLElement[]>} */
+    const byDifficulty = {};
+    const rows = Object.entries(r.slopes_by_difficulty).flatMap(([difficulty, c]) => {
+      const [name, colour] = DIFFICULTIES[difficulty] ?? [label(difficulty), "var(--muted)"];
+      byDifficulty[difficulty] = slopeRow(name, colour, c);
+      return byDifficulty[difficulty];
     });
+    // Where the source marks the very easy slopes green (France, Spain, Andorra, the Nordic countries), the easy
+    // ones split into green and blue, counted from the details file: only when its counts match the resort's.
+    const easy = r.slopes_by_difficulty.easy;
+    if (easy && byDifficulty.easy && r.details) {
+      load()
+        .then((d) => {
+          const listed = d.slopes.filter((s) => s.difficulty === "easy" && s.status !== "unknown");
+          const green = listed.filter((s) => s.colour === "green");
+          const blue = listed.filter((s) => s.colour !== "green");
+          if (!green.length || listed.length !== easy.total) return;
+          if (listed.filter((s) => s.status === "open").length !== easy.open) return;
+          const [first, ...others] = byDifficulty.easy;
+          first.replaceWith(
+            ...slopeRow(t("Very easy"), SLOPE_COLOURS.green[1], colourCount(green)),
+            ...slopeRow(DIFFICULTIES.easy[0], SLOPE_COLOURS.blue[1], colourCount(blue)),
+          );
+          for (const e of others) e.remove();
+        })
+        .catch(() => {});
+    }
     parts.push(
       el(
         "div",

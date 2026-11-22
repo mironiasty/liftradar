@@ -20,6 +20,7 @@ type SourceRef = import("./resort").SourceRef;
 type Station = import("./resort").Station;
 type Avalanche = import("./resort").Avalanche;
 type DangerRating = import("./resort").DangerRating;
+type SlopeCounts = import("./resort").SlopeCounts;
 // json/<country>/<id>.details.json (experimental): every lift and slope, for resorts with `details`.
 type ResortDetails = import("./resort-details").ExperimentalEveryLiftAndSlopeOfOneResort;
 type DetailsLift = import("./resort-details").DetailsLift;
