@@ -153,7 +153,18 @@ function popup(r, status, in3d) {
 function show(map, [index, ski]) {
   const resorts = index.resorts.filter((r) => skiPoint(r, ski));
   const byKey = new Map(resorts.map((r) => [skiKey(r), r]));
-  addPistes(map, ski, { names: new Map(index.resorts.map((r) => [skiKey(r), r.name])), tips: false });
+  // The legend of the lifts' and pistes' statuses: once a resort in view has them, where the pistes show.
+  const legend = document.getElementById("ski-legend");
+  let withStates = false;
+  const showLegend = () => (legend.hidden = !(withStates && map.getZoom() >= SKI_MIN_ZOOM));
+  addPistes(map, ski, {
+    names: new Map(index.resorts.map((r) => [skiKey(r), r.name])),
+    tips: false,
+    onStates: () => {
+      withStates = true;
+      showLegend();
+    },
+  });
 
   // The areas, in their resort's status colour: filled when zoomed out, only an outline where
   // the pistes show (filled faintly when hovered), so they stay visible. Clickable at every zoom.
@@ -301,6 +312,7 @@ function show(map, [index, ski]) {
     if (wasZoomedIn === map.getZoom() >= SKI_MIN_ZOOM) return;
     wasZoomedIn = !wasZoomedIn;
     showMarkers();
+    showLegend();
   });
   showMarkers();
 
