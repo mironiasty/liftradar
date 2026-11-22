@@ -27,7 +27,6 @@ RUN_BUFFER_M = 50
 CLOSE_M = 150  # the gaps between them closed,
 OPEN_M = 70  # strips narrower than twice this removed (a lift alone across a valley),
 ISLAND_M2 = 50_000  # and pieces smaller than this,
-HOLE_M2 = 500_000  # holes smaller than this filled,
 OUTLINE_SIMPLIFY_M = 15  # and simplified
 LINK_END_M = 250  # a lift's stretch outside the outline links two of its parts when it ends this near both
 # (a station can lie that far out: the outline loses a lift's thin end with the strips)
@@ -267,10 +266,11 @@ def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict
         downhill = [j for j in run_ids if "downhill" in (runs[j]["properties"].get("uses") or [])]
         if not lift_ids and not downhill:  # only a railway
             continue
+        run_pieces = []
         for j in downhill:
             g = to_m(runs[j]["_geom"])
-            pieces.append(g if g.geom_type in ("Polygon", "MultiPolygon") else g.buffer(RUN_BUFFER_M))
-        geom = shape_outline(shapely.union_all(pieces))
+            run_pieces.append(g if g.geom_type in ("Polygon", "MultiPolygon") else g.buffer(RUN_BUFFER_M))
+        geom = shape_outline(shapely.union_all(pieces + run_pieces), shapely.union_all(run_pieces))
         km = sum(to_m(runs[j]["_geom"]).length for j in downhill if runs[j]["_geom"].geom_type == "LineString") / 1000
         lines = [to_m(LineString([c[:2] for c in lifts[i]["_coords"]])) for i in lift_ids]
         point = map_point(here, geom, [lifts[i]["_coords"] for i in lift_ids], to_m, to_deg)
@@ -295,12 +295,13 @@ def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict
     return features
 
 
-def shape_outline(geom):
+def shape_outline(geom, runs):
     """Lifts and runs widened and merged into an area: gaps closed, then strips narrower than
-    OPEN_M (a long cable car or train across a valley) and islands under ISLAND_M2 removed,
-    unless that would leave nothing (a small area of one lift and run), and small holes filled."""
+    OPEN_M (a long cable car or train across a valley) removed, but not those of the runs (widened, `runs`): a
+    piste alone is skied however narrow (Zermatt's valley runs, Hintertux's Schwarze Pfanne). Then islands under
+    ISLAND_M2 removed, unless that would leave nothing (a small area of one lift and run), and the holes filled."""
     closed = geom.buffer(CLOSE_M).buffer(-CLOSE_M)
-    opened = closed.buffer(-OPEN_M).buffer(OPEN_M)
+    opened = shapely.union_all([closed.buffer(-OPEN_M).buffer(OPEN_M), runs])
     parts = [p for p in getattr(opened, "geoms", [opened]) if p.area >= ISLAND_M2]
     if not parts:
         parts = sorted(getattr(closed, "geoms", [closed]), key=lambda p: -p.area)[:1]
@@ -328,14 +329,10 @@ def links(geom, lines: list) -> list:
 
 
 def fill_holes(geom):
-    polygons = getattr(geom, "geoms", [geom])
-    filled = []
-    for p in polygons:
-        if p.is_empty:
-            continue
-        holes = [h for h in p.interiors if shapely.Polygon(h).area >= HOLE_M2]
-        filled.append(shapely.Polygon(p.exterior, holes))
-    return shapely.MultiPolygon(filled) if len(filled) > 1 else filled[0]
+    """Every hole filled: what pistes and lifts go round is part of the area (the Weiße Ring around Lech and
+    Zürs, a lone piste's loop), and its border would otherwise run along both sides of them."""
+    filled = [shapely.Polygon(p.exterior) for p in getattr(geom, "geoms", [geom]) if not p.is_empty]
+    return shapely.union_all(filled)
 
 
 def map_point(here: tuple, geom, lift_coords: list, to_m, to_deg) -> list:
