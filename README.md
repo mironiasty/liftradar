@@ -291,8 +291,11 @@ hash of the files, so a week without changes publishes nothing. OpenSkiData may 
 once a day; its own vector tiles may not be used directly.
 
 - `ski/v1/meta.json`: `build` (add `?b=<build>` to the other URLs, to skip stale caches), `built_at`,
-  `data_time` (OpenSkiData's build), `zoom`, `resorts` (the file below), the counts, the attribution
-  and the license.
+  `data_time` (OpenSkiData's build), `zoom`, `resorts` and `lengths` (the files below), the counts, the
+  attribution and the license.
+- `ski/v1/lengths.json` (experimental): `data_time`, and `resorts`, `{"<country>/<id>": {"lifts": {<item id>:
+  metres}, "slopes": {…}}}`, the length on the map of each lift and slope of the details files that
+  `lift_links.py` matched (below), rounded to 10 m. liftradar-fetcher reads it every run, as the details' `map_length_m`.
 - `ski/v1/resorts.geojson`: a feature per liftradar resort with lifts there, `id` `<country>/<id>`:
   its outline (the geometry), `point` (`[lon, lat]`, its marker), and `lifts`, `runs` (downhill),
   `km` (of downhill runs drawn as lines) and `areas` (the OpenSkiData areas' names) as OpenSkiData
@@ -325,6 +328,15 @@ and resort pages load the details of the resorts in view: open lifts and pistes 
 dashed, those without a known status thin and faint, and a green or red dot on each lift station (`SKI_LOOKS` in
 `assets/ski.js`); the map's options panel then shows a legend. Run it on built tiles
 with `python3 scripts/lift_links.py ../liftradar-data/json ski`.
+
+It then measures them, for `lengths.json`: a lift is its OSM lines (its sections) along the slope; a slope its
+linked segments, and those joined to them (ends within 25 m) that carry its number or one of their names in the
+same resort, as OpenSkiData cuts a piste into pieces named differently ("Hochalmkar", only "52", none, "42, 43, 40");
+runs made from route relations are left out, their members being runs too, and so are pistes drawn only as areas.
+Against the lengths the sources give, lifts agree within 20% nine times in ten (median 1.01); slopes come out a
+fifth shorter at the median, by resort much as the resorts' advertised km against OpenSkiData's (Pitztal and the
+Stubaier Gletscher about half, Saalbach's certified lengths and Tarvisio about the same). The resort page shows
+a map length, with "≈", only where the source has none.
 
 `scripts/ski_resorts.py` gives OpenSkiData's areas to liftradar's resorts. A resort claims the areas
 within 8 km whose name matches its own best (and other matching ones within 3 km), and the nearest

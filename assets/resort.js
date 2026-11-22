@@ -375,6 +375,21 @@ function itemTable(heads, rows) {
   );
 }
 
+// The source's length, or else the one measured on the map (OpenStreetMap, by the weekly ski tiles), with "≈".
+// The map's is only a fallback: the km come from the source's, and resorts' slopes run longer than their maps'.
+const MAP_NOTE = () => t("≈ length on the OpenStreetMap map, where the resort gives none");
+/** @param {{ length_m: number | null, map_length_m?: number | null }} item */
+function itemLength(item) {
+  if (item.length_m || !item.map_length_m) return el("td", { class: "num" }, dash(item.length_m, " m"));
+  return el("td", { class: "num", title: MAP_NOTE() }, `≈ ${item.map_length_m} m`);
+}
+
+/** @param {{ length_m: number | null, map_length_m?: number | null }[]} items @param {HTMLElement} table */
+function withMapNote(items, table) {
+  if (!items.some((i) => !i.length_m && i.map_length_m)) return table;
+  return el("div", {}, table, el("p", { class: "meta", style: "margin:8px 0 0" }, MAP_NOTE()));
+}
+
 /** @template {{ status: string }} T @param {T[]} list */
 function byStatus(list) {
   const order = Object.keys(ITEM_STATUS);
@@ -407,10 +422,10 @@ function liftList(d) {
       itemState(l.status),
       el("td", {}, el("span", { class: "lift" }, liftIcon(l.type), LIFT_TYPE[l.type] ?? label(l.type))),
       el("td", {}, l.name),
-      el("td", { class: "num" }, dash(l.length_m, " m")),
+      itemLength(l),
     ),
   );
-  return itemTable([t("Status"), t("Type"), t("Name"), t("Length")], rows);
+  return withMapNote(d.lifts, itemTable([t("Status"), t("Type"), t("Name"), t("Length")], rows));
 }
 
 // Slopes open first (then in preparation, closed, unknown), and within each the easiest first: by difficulty,
@@ -445,10 +460,10 @@ function slopeList(d) {
       {},
       itemState(s.status),
       el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title }), s.name),
-      el("td", { class: "num" }, dash(s.length_m, " m")),
+      itemLength(s),
     );
   });
-  return itemTable([t("Status"), t("Name"), t("Length")], rows);
+  return withMapNote(d.slopes, itemTable([t("Status"), t("Name"), t("Length")], rows));
 }
 
 // The counts of some slopes from the details file, as in the resort's slopes_by_difficulty; km only when every one

@@ -12,7 +12,10 @@ list first; a neighbour's list (whose map may show them too) only gets those sti
 with a known status. About 82% of the lifts and 72% of the slopes match, nearly all correctly
 (docs/plans/2026-11-13-lift-details.md in liftradar-fetcher).
 
-ski_tiles.py calls `link` while it builds the tiles. To link tiles that are already built (e.g. to try it out):
+`lengths` then measures the linked lifts and slopes on the map, for lengths.json, which liftradar-fetcher reads as the
+details' `map_length_m` (README "Ski tiles").
+
+ski_tiles.py calls `link` and `lengths` while it builds the tiles. To link tiles that are already built (e.g. to try it out):
 
     python3 scripts/lift_links.py ../liftradar-data/json ski
 """
@@ -287,14 +290,16 @@ def link_items(
                     f["item"] = item
 
 
+def load_details(details_dir: Path) -> list[dict]:
+    return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(Path(details_dir).glob("*/*.details.json"))]
+
+
 def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:
     """Set `item` on the lifts and runs (tile dicts; the same lift may be several dicts, one per tile) that match
     an item of a details file. Returns the counts, per resort and in all."""
     lifts = [f for f in lifts if f.get("status", "operating") == "operating" and f.get("c")]
     runs = [f for f in runs if "downhill" in (f.get("uses") or [])]
-    files = [
-        json.loads(path.read_text(encoding="utf-8")) for path in sorted(Path(details_dir).glob("*/*.details.json"))
-    ]
+    files = load_details(details_dir)
     listed = {f"{details['country']}/{details['id']}" for details in files}
     done = {key: (set(), set()) for key in listed}  # the indexes of the linked lifts and slopes
     for neighbours in (False, True):
@@ -315,10 +320,147 @@ def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:
     return counts
 
 
+# --- lengths -------------------------------------------------------------------------------------------------
+
+TOUCH_M = 25  # a piste's segments meet within this
+
+
+def line_metres(c: list) -> float:
+    """A line's length, along the slope when it has elevations."""
+    total = 0.0
+    for a, b in itertools.pairwise(c):
+        flat = metres(a, b)
+        total += math.hypot(flat, b[2] - a[2]) if len(a) > 2 < len(b) and None not in (a[2], b[2]) else flat
+    return total
+
+
+def from_relation(feature: dict) -> bool:
+    """A run OpenSkiData made from a route relation: its members are runs of their own too."""
+    return (feature.get("osm") or "").startswith("relation/")
+
+
+def piece_refs(feature: dict) -> set[str]:
+    return osm_refs(feature) | {r.strip().lower() for r in (feature.get("ref") or "").split("/") if r.strip()}
+
+
+def piece_names(feature: dict) -> set[str]:
+    """The names a segment of several pistes carries ("Hochalm, Panorama"), without bare numbers."""
+    parts = re.split(r"[,;/]", feature.get("name") or "")
+    return {fold(p).strip() for p in parts if p.strip() and not re.fullmatch(r"\s*\d{1,3}[a-z]?\s*", p)}
+
+
+def grow(item: dict, key: str, seeds: list[int], lines: list[dict], touching) -> list[int]:
+    """A slope's segments: those it's linked to, and the ones joined to them that carry its number, or one of the
+    seeds' names, in the same resort. OpenSkiData cuts a piste into pieces named differently (its name, only its
+    number, none, several pistes' names), and `link` takes only the pieces with one name and number."""
+    resorts = {lines[i].get("lr") for i in seeds}
+    refs = refs_of(item) | {r for i in seeds for r in piece_refs(lines[i])}
+    names = {n for i in seeds for n in piece_names(lines[i])}
+
+    def fits(f: dict) -> bool:
+        if from_relation(f) or f.get("lr") not in resorts:
+            return False
+        theirs = piece_refs(f)
+        if f.get("item") and f["item"] != key and not refs & theirs:
+            return False  # another slope's, not shared with this one
+        if refs and theirs:
+            return bool(refs & theirs)
+        return bool(names & piece_names(f))
+
+    have, todo = set(seeds), list(seeds)
+    while todo:
+        for j in touching(todo.pop()):
+            if j not in have and fits(lines[j]):
+                have.add(j)
+                todo.append(j)
+    ways = [i for i in have if not from_relation(lines[i])]
+    return ways or sorted(have)
+
+
+def lengths(details_dir: Path, lifts: list[dict], runs: list[dict], measured: dict[int, float] | None = None) -> dict:
+    """After `link`: the length of each linked lift and slope on the map, in metres (rounded to 10), as
+    {"<country>/<id>": {"lifts": {item id: m}, "slopes": {...}}}. A lift is the sum of its OSM lines (its sections),
+    along the slope; a slope the sum of its segments (`grow`), drawn as lines (a piste drawn only as an area has
+    none). `measured`: id() of a line -> its length from the full geometry, before simplifying."""
+    measured = measured or {}
+    items = {
+        f"{d['country']}/{d['id']}/{slope['id']}": slope for d in load_details(details_dir) for slope in d["slopes"]
+    }
+
+    def length(f: dict) -> float:
+        return measured.get(id(f)) or line_metres(f["c"])
+
+    out: dict = defaultdict(lambda: {"lifts": {}, "slopes": {}})
+
+    def put(item: str, kind: str, m: float) -> None:
+        if m >= 10:
+            resort, item_id = item.rsplit("/", 1)
+            out[resort][kind][item_id] = int(round(m, -1))
+
+    seen, by_item = set(), defaultdict(float)
+    for f in lifts:
+        if f.get("item") and f.get("c") and (f.get("osm") or id(f)) not in seen:
+            seen.add(f.get("osm") or id(f))
+            by_item[f["item"]] += length(f)
+    for item, m in by_item.items():
+        put(item, "lifts", m)
+
+    lines = [f for f in runs if f.get("c") and "downhill" in (f.get("uses") or [])]
+    cell = lambda p: (round(p[0] * 400), round(p[1] * 600))  # cells of about 150-200 m
+    ends = defaultdict(list)
+    for i, f in enumerate(lines):
+        for p in (f["c"][0], f["c"][-1]):
+            ends[cell(p)].append(i)
+    near: dict[int, set[int]] = {}
+
+    def touching(i: int) -> set[int]:
+        """The segments with an end within TOUCH_M of a point of this one."""
+        if i not in near:
+            found = set()
+            for p in lines[i]["c"]:
+                x, y = cell(p)
+                for j in {j for dx in (-1, 0, 1) for dy in (-1, 0, 1) for j in ends.get((x + dx, y + dy), ())}:
+                    if (
+                        j != i
+                        and j not in found
+                        and min(metres(p, lines[j]["c"][0]), metres(p, lines[j]["c"][-1])) < TOUCH_M
+                    ):
+                        found.add(j)
+            near[i] = found
+        return near[i]
+
+    seeds = defaultdict(list)
+    for i, f in enumerate(lines):
+        if f.get("item"):
+            seeds[f["item"]].append(i)
+    for item, mine in seeds.items():
+        details = items.get(item)
+        segments = grow(details, item, mine, lines, touching) if details else mine
+        put(item, "slopes", sum(length(lines[i]) for i in segments))
+    return {k: out[k] for k in sorted(out)}
+
+
+LENGTHS_FILE = "lengths.json"
+
+
+def write_lengths(out: Path, measured: dict, data_time: str | None) -> str:
+    """Write lengths.json next to the tiles (README "Ski tiles"); returns its text."""
+    body = {"data_time": data_time, "resorts": measured}
+    text = json.dumps(body, ensure_ascii=False, separators=(",", ":")) + "\n"
+    (out / LENGTHS_FILE).write_text(text, encoding="utf-8")
+    return text
+
+
 def summary(counts: dict) -> str:
     (lm, lt), (sm, st) = counts["lifts"], counts["slopes"]
     resorts = len(counts["resorts"])
     return f"linked {lm} of {lt} lifts and {sm} of {st} slopes of {resorts} resorts' details"
+
+
+def length_summary(measured: dict) -> str:
+    lifts = sum(len(r["lifts"]) for r in measured.values())
+    slopes = sum(len(r["slopes"]) for r in measured.values())
+    return f"measured {lifts} lifts and {slopes} slopes on the map"
 
 
 def main() -> None:
@@ -334,24 +476,35 @@ def main() -> None:
     for tile in tiles.values():
         for f in tile["lifts"] + tile["runs"]:
             f.pop("item", None)
-    counts = link(
+    lifts = [f for t in tiles.values() for f in t["lifts"]]
+    runs = [f for t in tiles.values() for f in t["runs"]]
+    counts = link(Path(args.details), lifts, runs)
+    # A line crossing tiles is in each of them: measured once.
+    once = {}
+    for kind, features in (("lifts", lifts), ("runs", runs)):
+        for f in features:
+            once.setdefault((kind, f.get("osm"), json.dumps(f.get("c") or f.get("poly"))), f)
+    measured = lengths(
         Path(args.details),
-        [f for t in tiles.values() for f in t["lifts"]],
-        [f for t in tiles.values() for f in t["runs"]],
+        [f for (k, *_), f in once.items() if k == "lifts"],
+        [f for (k, *_), f in once.items() if k == "runs"],
     )
+    meta_path = out / "meta.json"
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
     digest = hashlib.sha256()
     for path, tile in tiles.items():
         text = json.dumps(tile, ensure_ascii=False, separators=(",", ":"))
         path.write_text(text, encoding="utf-8")
         digest.update(text.encode())
-    meta_path = out / "meta.json"
-    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    digest.update(write_lengths(out, measured, meta.get("data_time")).encode())
+    meta["lengths"] = LENGTHS_FILE
     meta["build"] = digest.hexdigest()[:12]  # so browsers don't keep the unlinked tiles
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if args.verbose:
         for key, (lm, lt, sm, st) in counts["resorts"].items():
             print(f"{key:40} lifts {lm:3}/{lt:3}  slopes {sm:3}/{st:3}")
     print(summary(counts))
+    print(length_summary(measured))
 
 
 if __name__ == "__main__":

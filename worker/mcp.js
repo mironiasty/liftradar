@@ -206,8 +206,9 @@ function createServer(env, origin) {
       title: "One ski resort's lifts and slopes",
       description:
         "Every lift and slope of one resort, one by one, as its source lists them: name, status, lift type or slope " +
-        "difficulty, and length, capacity and altitudes where the source gives them. Only for resorts whose source " +
-        "lists them one by one; get_resort has the totals for all.",
+        "difficulty, and length, capacity and altitudes where the source gives them; map_length_m is the length on " +
+        "the OpenStreetMap map where it's matched there (resorts' slopes often run longer than their map's). Only " +
+        "for resorts whose source lists them one by one; get_resort has the totals for all.",
       inputSchema: {
         country,
         id: resortId,
@@ -246,6 +247,7 @@ function createServer(env, origin) {
           type: l.type,
           status: l.status,
           length_m: l.length_m,
+          map_length_m: l.map_length_m ?? null,
           capacity_per_hour: l.capacity_per_hour,
           bottom_m: l.bottom_m,
           top_m: l.top_m,
@@ -257,6 +259,7 @@ function createServer(env, origin) {
           colour: s.colour ?? null,
           status: s.status,
           length_m: s.length_m,
+          map_length_m: s.map_length_m ?? null,
         })),
         page: `${SITE}/resort?r=${country}/${id}`,
       });
