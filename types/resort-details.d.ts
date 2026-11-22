@@ -24,6 +24,10 @@ export type Name = string
 export type Type = ("gondola" | "cable_car" | "chairlift" | "drag_lift" | "carpet" | "funicular" | "other")
 export type Status = ("open" | "closed" | "preparation" | "unknown")
 export type LengthM = (number | null)
+/**
+ * Its length on the map: its OpenStreetMap lines (OpenSkiData, © OpenStreetMap contributors, ODbL), measured along the slope by liftradar's weekly ski tiles, where they're matched to it; a slope's covers only its segments drawn as lines. Resorts often give longer slope lengths than their map
+ */
+export type MapLengthM = (number | null)
 export type CapacityPerHour = (number | null)
 /**
  * Elevation of the valley station
@@ -50,6 +54,10 @@ export type Difficulty = ("easy" | "intermediate" | "difficult" | "ski_route" | 
 export type Colour = (("green" | "blue" | "red" | "black" | "yellow" | "orange" | "blue_red" | "red_black" | "black_blue" | "yellow_red") | null)
 export type Status1 = ("open" | "closed" | "preparation" | "unknown")
 export type LengthM1 = (number | null)
+/**
+ * Its length on the map: its OpenStreetMap lines (OpenSkiData, © OpenStreetMap contributors, ODbL), measured along the slope by liftradar's weekly ski tiles, where they're matched to it; a slope's covers only its segments drawn as lines. Resorts often give longer slope lengths than their map
+ */
+export type MapLengthM1 = (number | null)
 export type Slopes = DetailsSlope[]
 
 /**
@@ -76,6 +84,7 @@ name: Name
 type: Type
 status: Status
 length_m: LengthM
+map_length_m: MapLengthM
 capacity_per_hour: CapacityPerHour
 bottom_m: BottomM
 top_m: TopM
@@ -91,4 +100,5 @@ difficulty: Difficulty
 colour: Colour
 status: Status1
 length_m: LengthM1
+map_length_m: MapLengthM1
 }

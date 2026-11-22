@@ -368,5 +368,7 @@
   "<code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link (<code>dolomiti-superski</code>); look them up in <a href=\"#groups\"><code>json/groups.json</code></a>. Both are left out for a resort that isn't in such a group.": "<code>linked_area</code> ist die id des Skigebiets, das ein Resort mit anderen teilt, durch Lifte und Pisten verbunden (<code>les-3-vallees</code>), und <code>ski_region</code> die des Skipasses oder der Region, die es ohne Verbindung mit ihnen teilt (<code>dolomiti-superski</code>); nachzuschlagen in <a href=\"#groups\"><code>json/groups.json</code></a>. Gehört ein Resort zu keiner solchen Gruppe, fehlen beide Felder.",
   "Closed or in preparation": "Geschlossen oder in Vorbereitung",
   "Status not known": "Status unbekannt",
-  "From the resorts' own lists, as of their last update.": "Aus den Listen der Skigebiete selbst, Stand ihrer letzten Aktualisierung."
+  "From the resorts' own lists, as of their last update.": "Aus den Listen der Skigebiete selbst, Stand ihrer letzten Aktualisierung.",
+  "≈ length on the OpenStreetMap map, where the resort gives none": "≈ Länge auf der OpenStreetMap-Karte, wo das Skigebiet keine angibt",
+  "<b>Lengths with &asymp;</b> in a resort's list of lifts and slopes are measured on the OpenStreetMap map, where the resort gives none. Resorts' own slope lengths often run longer than the map's.": "<b>Längen mit &asymp;</b> in der Liste der Lifte und Pisten eines Skigebiets sind auf der OpenStreetMap-Karte gemessen, wo das Skigebiet keine angibt. Die Pistenlängen der Skigebiete selbst sind oft länger als die der Karte."
 }

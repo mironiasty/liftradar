@@ -282,6 +282,7 @@ def build(args) -> dict:
 
     tiles = defaultdict(lambda: {"areas": {}, "lifts": [], "runs": []})
     tile_lifts, tile_runs = [], []  # each once, for lift_links
+    measured = {}  # id() of a tile lift or run -> its length before simplifying, for lift_links.lengths
     # Areas: in every tile their outline (or point) touches; and in those of their lifts and runs, below.
     lifted = {a for f in lifts for a in f["_areas"]}
     for a, area in areas.items():
@@ -297,6 +298,7 @@ def build(args) -> dict:
         if i in lift_lr:
             lift["lr"] = lift_lr[i]
         lift["c"] = [rounded(c) for c in simplify(f["_coords"], SIMPLIFY_M)]
+        measured[id(lift)] = lift_links.line_metres(f["_coords"])
         tile_lifts.append(lift)
         for t in line_tiles(f["_coords"]):
             for a in f["_areas"]:
@@ -315,6 +317,7 @@ def build(args) -> dict:
         if f["geometry"]["type"] == "LineString":
             coords = f["geometry"]["coordinates"]
             run["c"] = [rounded(c[:2]) for c in simplify(coords, SIMPLIFY_M)]
+            measured[id(run)] = lift_links.line_metres(coords)
             covered = line_tiles(coords)
         else:
             run["poly"] = rings(f["_geom"])
@@ -327,6 +330,8 @@ def build(args) -> dict:
     # Experimental: the lifts and slopes of the resorts' details files (next to the index), for their status.
     linked = lift_links.link(Path(args.index).parent, tile_lifts, tile_runs)
     print(lift_links.summary(linked))
+    map_lengths = lift_links.lengths(Path(args.index).parent, tile_lifts, tile_runs, measured)
+    print(lift_links.length_summary(map_lengths))
 
     def area_entry(a: str) -> dict:
         area = areas[a]
@@ -366,6 +371,8 @@ def build(args) -> dict:
     collection = {"type": "FeatureCollection", "features": features}
     resorts_text = json.dumps(collection, ensure_ascii=False, separators=(",", ":"))
     digest.update(resorts_text.encode())
+    new.mkdir(parents=True, exist_ok=True)
+    digest.update(lift_links.write_lengths(new, map_lengths, args.data_time).encode())
 
     counts = {
         "tiles": len(tiles),
@@ -385,6 +392,7 @@ def build(args) -> dict:
         "zoom": ZOOM,
         "tiles": f"{ZOOM}/{{x}}/{{y}}.json",
         "resorts": "resorts.geojson",
+        "lengths": lift_links.LENGTHS_FILE,
         "counts": counts,
         "attribution": ATTRIBUTION,
         "license": "ODbL-1.0",
