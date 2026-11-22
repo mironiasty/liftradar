@@ -78,6 +78,8 @@
     readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.</p>
   <p data-i18n>AI assistants can read the same data through the <a href="#mcp">MCP server</a>, also with no key.</p>
   <p data-i18n>For code generators and API tools, every file is described in <a href="/openapi.json">OpenAPI 3.1</a>.</p>
+  <p data-i18n>Only the addresses on this page, and the MCP server's tools, are a stable API. The site's pages also read
+    other files, which can change or disappear at any time, without notice.</p>
   <ul class="toc">
     <li><a href="#mcp">MCP</a></li>
     <li><a href="#resorts" data-i18n>All resorts</a></li>
@@ -93,8 +95,8 @@
   <pre><code>https://liftradar.eu/mcp</code></pre>
   <p data-i18n>For AI assistants, the same data is an <a href="https://modelcontextprotocol.io">MCP</a> server, with no key:
     add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find
-    resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and
-    the daily stats.</p>
+    resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its lifts and
+    slopes one by one, its history and the daily stats.</p>
   <pre><code>claude mcp add --transport http liftradar https://liftradar.eu/mcp</code></pre>
 
   <h2 id="resorts" data-i18n>All resorts</h2>
@@ -109,7 +111,7 @@
     stations, lifts by type, slopes by difficulty, the avalanche bulletin and the reports it was built from. For example
     <a href="/json/at/hintertux.json"><code>json/at/hintertux.json</code></a>. The <code>id</code> is in the address of each
     resort's page on this site.</p>
-  <p data-i18n><code>country</code> is the ISO code in lower case: <code>at</code>, <code>ch</code>, <code>cz</code>,
+  <p data-i18n><code>country</code> is the ISO code in lower case: <code>ad</code>, <code>at</code>, <code>ch</code>, <code>cz</code>,
     <code>de</code>, <code>es</code>, <code>fi</code>, <code>fr</code>, <code>it</code>, <code>no</code>, <code>pl</code>,
     <code>si</code>, <code>sk</code>. These addresses stay: when resorts merge, the old ones keep working as copies of the new one's.</p>
   <pre><code>curl -s https://liftradar.eu/json/at/hintertux.json | jq '{status, snow: .snow.mountain_cm, lifts}'</code></pre>

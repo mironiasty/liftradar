@@ -48,6 +48,50 @@ const FILES = {
     },
   },
   "/json/at/soelden.json": { id: "soelden", country: "at", name: "Sölden" },
+  "/json/at/hintertux.json": { id: "hintertux", country: "at", name: "Hintertuxer Gletscher" },
+  "/json/at/soelden.details.json": {
+    id: "soelden",
+    country: "at",
+    fetched_at: iso(now),
+    updated_at: null,
+    source: "https://example.com/soelden",
+    lifts: [
+      {
+        id: "l1",
+        ref: null,
+        name: "Gaislachkoglbahn",
+        type: "gondola",
+        status: "open",
+        length_m: 4000,
+        capacity_per_hour: 3600,
+        bottom_m: 1360,
+        top_m: 3040,
+      },
+      {
+        id: "l2",
+        ref: null,
+        name: "Rettenbach",
+        type: "chairlift",
+        status: "closed",
+        length_m: null,
+        capacity_per_hour: null,
+        bottom_m: null,
+        top_m: null,
+      },
+    ],
+    slopes: [
+      {
+        id: "s1",
+        ref: "1",
+        name: "Gaislachkogl",
+        difficulty: "intermediate",
+        colour: "blue",
+        status: "open",
+        length_m: null,
+      },
+      { id: "s2", ref: "2", name: "Rettenbach", difficulty: "difficult", status: "closed", length_m: null },
+    ],
+  },
   "/history/at/soelden.json": {
     name: "Sölden",
     runs: {
@@ -157,6 +201,29 @@ test("get_resort: the report with its page, or an error naming the way to find o
   assert.equal(found.data.page, "https://liftradar.eu/resort?r=at/soelden");
   const missing = await call("get_resort", { country: "at", id: "nowhere" });
   assert.ok(missing.error);
+  assert.match(missing.text, /search_resorts/);
+});
+
+test("get_resort_lifts: every lift and slope, by status; an error without a list or a resort", async () => {
+  const all = await call("get_resort_lifts", { country: "at", id: "soelden" });
+  assert.deepEqual(
+    all.data.lifts.map((l) => [l.name, l.type, l.status]),
+    [
+      ["Gaislachkoglbahn", "gondola", "open"],
+      ["Rettenbach", "chairlift", "closed"],
+    ],
+  );
+  assert.deepEqual(
+    [all.data.slopes[0].difficulty, all.data.slopes[0].colour, all.data.slopes[1].colour],
+    ["intermediate", "blue", null],
+  );
+  assert.equal(all.data.lifts[0].id, undefined);
+  const open = await call("get_resort_lifts", { country: "at", id: "soelden", status: "open" });
+  assert.deepEqual([open.data.lifts.length, open.data.slopes.length], [1, 1]);
+  const noList = await call("get_resort_lifts", { country: "at", id: "hintertux" });
+  assert.ok(noList.error);
+  assert.match(noList.text, /get_resort/);
+  const missing = await call("get_resort_lifts", { country: "at", id: "nowhere" });
   assert.match(missing.text, /search_resorts/);
 });
 

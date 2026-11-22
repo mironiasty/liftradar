@@ -257,6 +257,9 @@ tools read the same files through the assets binding (`env.ASSETS`), so they alw
   area's and ski region's from `json/groups.json`, as the site's search), snow, open lifts or distance from a
   point, and sorted.
 - `get_resort`: `json/<country>/<id>.json`.
+- `get_resort_lifts`: `json/<country>/<id>.details.json` (only resorts whose source lists every lift and slope),
+  with its fields copied one by one, so that the tool's output stays the same when that file changes:
+  `api.html` doesn't list the file, so only the tool is stable.
 - `get_resort_history`: `history/<country>/<id>.json`, as rows, for the last days.
 - `get_stats`: `json/stats.json`, for a country or region and the last days.
 
