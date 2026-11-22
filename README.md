@@ -318,8 +318,12 @@ once a day; its own vector tiles may not be used directly.
 
 Runs get `item` too. `scripts/lift_links.py` sets it during the build: it matches the lifts and slopes of each
 `json/<country>/<id>.details.json` (experimental) to the lines in and around that resort by number, name, type
-and, for lifts, length and altitudes, as there's no shared id; about 85% of lifts and 80% of slopes match. The map
-and resort pages load the details of the resorts in view and fade closed lifts and pistes. Run it on built tiles
+and, for lifts, length and altitudes, as there's no shared id; about 82% of lifts and 72% of slopes match. A resort's
+own lines go to its own list first, and a neighbour's list (SkiWelt's map also shows KitzSki's lifts, without a
+status) gets only those left unlinked, and only its items with a known status. The map
+and resort pages load the details of the resorts in view: open lifts and pistes wide on a light edge, closed ones thin and
+dashed, those without a known status thin and faint, and a green or red dot on each lift station (`SKI_LOOKS` in
+`assets/ski.js`); the map's options panel then shows a legend. Run it on built tiles
 with `python3 scripts/lift_links.py ../liftradar-data/json ski`.
 
 `scripts/ski_resorts.py` gives OpenSkiData's areas to liftradar's resorts. A resort claims the areas
