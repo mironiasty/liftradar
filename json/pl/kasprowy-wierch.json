@@ -10,7 +10,7 @@
   },
   "website": "https://www.pkl.pl",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.624638+01:00",
+  "fetched_at": "2026-11-22T08:40:36.257651+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -55,6 +55,7 @@
     }
   },
   "lifts_updated_at": null,
+  "details": "json/pl/kasprowy-wierch.details.json",
   "avalanche": {
     "region_id": "PL-12",
     "region": "Polskie Tatry",
@@ -63,41 +64,41 @@
     "ratings": [
       {
         "level": "low",
-        "lower_bound": 1600,
+        "lower_bound": 999,
         "upper_bound": null,
         "period": "all_day"
       },
       {
         "level": "no_snow",
         "lower_bound": null,
-        "upper_bound": 1600,
+        "upper_bound": 999,
         "period": "all_day"
       }
     ],
     "problems": [
       "wind_slab"
     ],
-    "published_at": "2026-11-20T16:34:00+01:00",
-    "valid_from": "2026-11-20T16:34:00+01:00",
-    "valid_until": "2026-11-21T20:00:00+01:00"
+    "published_at": "2026-11-21T17:16:00+01:00",
+    "valid_from": "2026-11-21T17:16:00+01:00",
+    "valid_until": "2026-11-22T20:00:00+01:00"
   },
   "sources": [
-    "https://www.pkl.pl/trasy-narciarskie.html",
     "https://www.pkl.pl/koleje-i-wyciagi.html",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-PL-12.json"
+    "https://www.pkl.pl/trasy-narciarskie.html",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-PL-12.json"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://www.pkl.pl/trasy-narciarskie.html",
-        "attribution_required": null
-      },
       {
         "url": "https://www.pkl.pl/koleje-i-wyciagi.html",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-PL-12.json",
+        "url": "https://www.pkl.pl/trasy-narciarskie.html",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-PL-12.json",
         "attribution_required": null
       }
     ],

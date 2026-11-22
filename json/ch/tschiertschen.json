@@ -10,28 +10,28 @@
   },
   "website": "https://www.tschiertschen.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-21T13:40:33.622382+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254326+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 18,
-    "valley_cm": 15,
-    "fresh_cm": 15,
+    "mountain_cm": 28,
+    "valley_cm": 16,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Plang Bi (SLF)",
         "elevation_m": 2495,
-        "depth_cm": 18,
-        "fresh_cm": 14,
+        "depth_cm": 28,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Arosa (SLF)",
         "elevation_m": 1845,
-        "depth_cm": 15,
-        "fresh_cm": 15,
+        "depth_cm": 16,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       }
@@ -105,9 +105,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=71&saison=1&ref=contentBox",

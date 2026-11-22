@@ -1,0 +1,119 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kuncice",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257413+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-kuncice-skitech-jeseniky",
+  "lifts": [
+    {
+      "id": "lift-hajovna",
+      "ref": null,
+      "name": "Hájovna",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-triangl",
+      "ref": null,
+      "name": "Triangl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-130",
+      "ref": null,
+      "name": "H 130",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-detsky-vlek",
+      "ref": null,
+      "name": "Dětský vlek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-severni",
+      "ref": null,
+      "name": "Severní",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-nova",
+      "ref": null,
+      "name": "Nová",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "slope-triangl",
+      "ref": null,
+      "name": "Triangl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-vecerni",
+      "ref": null,
+      "name": "Večerní",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-hajovna",
+      "ref": null,
+      "name": "Hájovna",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-baletka",
+      "ref": null,
+      "name": "Baletka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "slope-spojovacka",
+      "ref": null,
+      "name": "Spojovačka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    }
+  ]
+}

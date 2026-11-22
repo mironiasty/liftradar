@@ -1,0 +1,904 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kronplatz",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255781+01:00",
+  "updated_at": "2026-11-19T16:03:45.540018+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_284",
+      "ref": null,
+      "name": "Alpen connecting",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_290",
+      "ref": null,
+      "name": "Antermoia",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_283",
+      "ref": null,
+      "name": "Arndt",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_265",
+      "ref": null,
+      "name": "Belvedere",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_288",
+      "ref": null,
+      "name": "Berglift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_291",
+      "ref": null,
+      "name": "Cianross",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_276",
+      "ref": null,
+      "name": "Col Toron",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_277",
+      "ref": null,
+      "name": "Costa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_1778584100",
+      "ref": null,
+      "name": "Dolomiti",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_269",
+      "ref": null,
+      "name": "Gipfelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_287",
+      "ref": null,
+      "name": "Guggenberg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_267",
+      "ref": null,
+      "name": "Korer",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_262",
+      "ref": null,
+      "name": "Kronplatz 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_263",
+      "ref": null,
+      "name": "Kronplatz 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_264",
+      "ref": null,
+      "name": "Kronplatz 2000",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_268",
+      "ref": null,
+      "name": "Marchner",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_274",
+      "ref": null,
+      "name": "Miara",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_280",
+      "ref": null,
+      "name": "Olang 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_281",
+      "ref": null,
+      "name": "Olang 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_289",
+      "ref": null,
+      "name": "Panorama - Terenten",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_275",
+      "ref": null,
+      "name": "Pedaga",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_1458323",
+      "ref": null,
+      "name": "Pichl Gsies",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_279",
+      "ref": null,
+      "name": "Piculin",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_271",
+      "ref": null,
+      "name": "Piz de Plaies",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_285",
+      "ref": null,
+      "name": "Plateau",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_273",
+      "ref": null,
+      "name": "Pre da Peres",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_278",
+      "ref": null,
+      "name": "Rara",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_292",
+      "ref": null,
+      "name": "Ried",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_286",
+      "ref": null,
+      "name": "Riepenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_270",
+      "ref": null,
+      "name": "Ruis",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_272",
+      "ref": null,
+      "name": "Skitrans Bronta",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:2_266",
+      "ref": null,
+      "name": "Sonne",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3301",
+      "ref": null,
+      "name": "Alpen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1756
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3354",
+      "ref": null,
+      "name": "Antermoia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3318",
+      "ref": null,
+      "name": "Arndt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2028
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3283",
+      "ref": null,
+      "name": "Belvedere 7",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3284",
+      "ref": null,
+      "name": "Belvedere 8",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3351",
+      "ref": null,
+      "name": "Berglift",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_404586811",
+      "ref": null,
+      "name": "Bronta - Pedaga",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 35
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_40458687",
+      "ref": null,
+      "name": "Bus - Piculin",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3342",
+      "ref": null,
+      "name": "Cianross",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 465
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3340",
+      "ref": null,
+      "name": "Col Toron",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1782
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3343",
+      "ref": null,
+      "name": "Corn",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 765
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3333",
+      "ref": null,
+      "name": "Costa 29",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 923
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3401",
+      "ref": null,
+      "name": "Costa 30",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 790
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1778654284",
+      "ref": null,
+      "name": "Dolomiti",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3346",
+      "ref": null,
+      "name": "Erta",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1610
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3288",
+      "ref": null,
+      "name": "Furcia 12",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2427
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3285",
+      "ref": null,
+      "name": "Furcia 9",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2702
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3314",
+      "ref": null,
+      "name": "Gassl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3320
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3350",
+      "ref": null,
+      "name": "Guggenberg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3273",
+      "ref": null,
+      "name": "Herrnegg",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_7365549",
+      "ref": null,
+      "name": "Hinterberg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1458477",
+      "ref": null,
+      "name": "Hintna Riese",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 480
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3289",
+      "ref": null,
+      "name": "Korer 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3292",
+      "ref": null,
+      "name": "Korer 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_404586810",
+      "ref": null,
+      "name": "Kronplatz 2000 - Kronplatz 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_216236",
+      "ref": null,
+      "name": "Lorenzi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1334
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1700488091",
+      "ref": null,
+      "name": "Lumen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3330",
+      "ref": null,
+      "name": "Marchner",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2280
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3341",
+      "ref": null,
+      "name": "Miara",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1976
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_40458688",
+      "ref": null,
+      "name": "Miara - Trans Bronta",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3338",
+      "ref": null,
+      "name": "Nordica Ski Arena Pre da Peres",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 866
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3281",
+      "ref": null,
+      "name": "Olang 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3344",
+      "ref": null,
+      "name": "Pedagà",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 720
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3348",
+      "ref": null,
+      "name": "Piculin",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3347",
+      "ref": null,
+      "name": "Piz de Plaies",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2310
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3282",
+      "ref": null,
+      "name": "Plateau",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1114
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3304",
+      "ref": null,
+      "name": "Pracken",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 892
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3280",
+      "ref": null,
+      "name": "Pramstall",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3337",
+      "ref": null,
+      "name": "Pre da Peres",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1067
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1458476",
+      "ref": null,
+      "name": "Puregg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 681
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3336",
+      "ref": null,
+      "name": "Rara 31",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 911
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3339",
+      "ref": null,
+      "name": "Rara 33",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 818
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3297",
+      "ref": null,
+      "name": "Ried",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_11016427",
+      "ref": null,
+      "name": "Ried",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3349",
+      "ref": null,
+      "name": "Riepen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3306",
+      "ref": null,
+      "name": "Ruipa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 890
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3277",
+      "ref": null,
+      "name": "Seewiese",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3286",
+      "ref": null,
+      "name": "Sonne",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3287",
+      "ref": null,
+      "name": "Sonne 11",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1664176811",
+      "ref": null,
+      "name": "Sorega",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3300",
+      "ref": null,
+      "name": "Spitzhorn",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1730
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3202",
+      "ref": null,
+      "name": "Sylvester",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3352",
+      "ref": null,
+      "name": "Terenten",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3279",
+      "ref": null,
+      "name": "Trasse",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1778593535",
+      "ref": null,
+      "name": "Trasse",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_404586812",
+      "ref": null,
+      "name": "Verbindung Connection Furcia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_40458689",
+      "ref": null,
+      "name": "Verbindung Kronplatz oben",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1763650880",
+      "ref": null,
+      "name": "Verbindung St. Vigil",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_404586813",
+      "ref": null,
+      "name": "Verbindung St. Vigil",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1778593431",
+      "ref": null,
+      "name": "Weiden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    }
+  ]
+}

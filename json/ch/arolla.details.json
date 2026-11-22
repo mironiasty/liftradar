@@ -1,0 +1,231 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "arolla",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253716+01:00",
+  "updated_at": "2026-11-21T09:12:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=170&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-le-torrent",
+      "ref": null,
+      "name": "Le Torrent",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fontanesses-1",
+      "ref": null,
+      "name": "Fontanesses 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fontanesses-2",
+      "ref": null,
+      "name": "Fontanesses 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fontanesses-3",
+      "ref": null,
+      "name": "Fontanesses 3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-la-remointse",
+      "ref": null,
+      "name": "La Remointse",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pinochio",
+      "ref": null,
+      "name": "Pinochio",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-la-bleue-du-fontanesse-1",
+      "ref": null,
+      "name": "La bleue du Fontanesse 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-le-fontanesse-2",
+      "ref": null,
+      "name": "Le Fontanesse 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-la-bleue-du-fontanesse-3",
+      "ref": null,
+      "name": "La bleue du Fontanesse 3",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-la-combe-de-la-bleue",
+      "ref": null,
+      "name": "La combe de la bleue",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-le-torrent",
+      "ref": null,
+      "name": "Le Torrent",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-la-piste-des-hotels",
+      "ref": null,
+      "name": "La piste des Hôtels",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-la-bleue-de-la-remointse",
+      "ref": null,
+      "name": "La bleue de la Remointse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-le-chemin-des-marmottes",
+      "ref": null,
+      "name": "Le chemin des Marmottes",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-la-rouge-de-la-remointse",
+      "ref": null,
+      "name": "La rouge de la Remointse",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-la-rouge-a-rene",
+      "ref": null,
+      "name": "La rouge à René",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-l-alpe",
+      "ref": null,
+      "name": "L'Alpe",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-la-noire-du-col",
+      "ref": null,
+      "name": "La noire du Col",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-itineraire-n1-guitza",
+      "ref": null,
+      "name": "Itinéraire n°1 - Guitza",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-itineraire-n2-la-cassorte",
+      "ref": null,
+      "name": "Itinéraire n°2 - La Cassorte",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-itineraire-n5-la-bleue-de-pragra",
+      "ref": null,
+      "name": "Itinéraire n°5 - La bleue de Pragra",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-itineraire-n3-le-mont-dolin",
+      "ref": null,
+      "name": "Itinéraire n°3 - Le Mont Dolin",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-itineraire-n4-les-chottes",
+      "ref": null,
+      "name": "Itinéraire n°4 - Les Chottes",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 800
+    }
+  ]
+}

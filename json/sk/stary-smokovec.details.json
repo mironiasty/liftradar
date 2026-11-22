@@ -1,0 +1,29 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "stary-smokovec",
+  "country": "sk",
+  "fetched_at": "2026-11-22T08:40:36.260037+01:00",
+  "updated_at": null,
+  "source": "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-jakubkova-luka",
+      "ref": null,
+      "name": "Jakubková lúka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "slope-jakubkova-luka-ii",
+      "ref": null,
+      "name": "Jakubková lúka II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 75
+    }
+  ]
+}

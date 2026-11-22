@@ -1,0 +1,229 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "jaun",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253990+01:00",
+  "updated_at": "2026-11-12T20:50:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=215&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-gastlosenexpress-ski",
+      "ref": null,
+      "name": "Gastlosenexpress - Ski",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a-gastlosenexpress-fussganger",
+      "ref": null,
+      "name": "A • Gastlosenexpress - Fussgänger",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-schattenhalb",
+      "ref": null,
+      "name": "B • Schattenhalb",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-fussmatta",
+      "ref": null,
+      "name": "C • Fussmatta",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-oberbach-teleski-enfants",
+      "ref": null,
+      "name": "D • Oberbach - Téléski enfants",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-pilarda",
+      "ref": null,
+      "name": "1 • Pilarda",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6400
+    },
+    {
+      "id": "slope-1-schortritzen",
+      "ref": null,
+      "name": "1 • Schortritzen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-2-moos",
+      "ref": null,
+      "name": "2 • Moos",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-3-eggweidli",
+      "ref": null,
+      "name": "3 • Eggweidli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-4-steinweidli",
+      "ref": null,
+      "name": "4 • Steinweidli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-5-fussmatta",
+      "ref": null,
+      "name": "5 • Fussmatta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-6-oberbach",
+      "ref": null,
+      "name": "6 • Oberbach",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-7-marliweg",
+      "ref": null,
+      "name": "7 • Märliweg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-10-schattenhalb-fis",
+      "ref": null,
+      "name": "10 • Schattenhalb/FIS",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-11-musersbergli",
+      "ref": null,
+      "name": "11 • Musersbergli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-12-ober-moos",
+      "ref": null,
+      "name": "12 • Ober Moos",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-13-hess",
+      "ref": null,
+      "name": "13 • Hess",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-14-trainingspiste",
+      "ref": null,
+      "name": "14 • Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-15-buhl",
+      "ref": null,
+      "name": "15 • Bühl",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-16-egg-pilarda",
+      "ref": null,
+      "name": "16 • Egg-Pilarda",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-18-schwarze-piste",
+      "ref": null,
+      "name": "18 • Schwarze Piste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-19-abfahrtsroute-1",
+      "ref": null,
+      "name": "19 • Abfahrtsroute 1",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-20-abfahrtsroute-2",
+      "ref": null,
+      "name": "20 • Abfahrtsroute 2",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 500
+    }
+  ]
+}

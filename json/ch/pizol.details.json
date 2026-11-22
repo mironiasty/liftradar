@@ -1,0 +1,486 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "pizol",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254196+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=47&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-bad-ragaz-pardiel",
+      "ref": null,
+      "name": "A • Bad Ragaz-Pardiel",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-pardiel-laufboden",
+      "ref": null,
+      "name": "B • Pardiel-Laufböden",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-ubungslift-prodboden",
+      "ref": null,
+      "name": "C • Übungslift Prodboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-6er-sessel-schwamm",
+      "ref": null,
+      "name": "D • 6er-Sessel Schwamm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-verbindungslift-pizolhutte-laufboden",
+      "ref": null,
+      "name": "E • Verbindungslift Pizolhütte - Laufböden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-sac-lift",
+      "ref": null,
+      "name": "F • SAC-Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-4er-sessel-gaffia-pizolhutte",
+      "ref": null,
+      "name": "G • 4er-Sessel Gaffia - Pizolhütte",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-4er-sessel-furt-gaffia",
+      "ref": null,
+      "name": "H • 4er-Sessel Furt - Gaffia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-ubungslift-furt",
+      "ref": null,
+      "name": "I • Übungslift Furt",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-gondelbahn-wangs-maienberg-furt",
+      "ref": null,
+      "name": "J • Gondelbahn Wangs - Maienberg - Furt",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-forderbander-pardiel",
+      "ref": null,
+      "name": "K • Förderbänder Pardiel",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-riderlift-riderpark",
+      "ref": null,
+      "name": "L • Riderlift Riderpark",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-prodboden",
+      "ref": null,
+      "name": "1 • Prodboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-1b-kinderhang",
+      "ref": null,
+      "name": "1b • Kinderhang",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-2-see-egg",
+      "ref": null,
+      "name": "2 • See-Egg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-3-tali",
+      "ref": null,
+      "name": "3 • Täli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-4-verbindungspiste",
+      "ref": null,
+      "name": "4 • Verbindungspiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-5-sac-piste",
+      "ref": null,
+      "name": "5 • SAC-Piste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-6-gaffia-furt",
+      "ref": null,
+      "name": "6 • Gaffia - Furt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-6b-kappeler",
+      "ref": null,
+      "name": "6b • Kappeler",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-7-ubungslift-furt",
+      "ref": null,
+      "name": "7 • Übungslift Furt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-8-suntigweid",
+      "ref": null,
+      "name": "8 • Suntigweid",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-8b-obersass",
+      "ref": null,
+      "name": "8b • Obersäss",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-9-waldweg",
+      "ref": null,
+      "name": "9 • Waldweg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-9b-mittelsass",
+      "ref": null,
+      "name": "9b • Mittelsäss",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-10-twarchamm-piste",
+      "ref": null,
+      "name": "10 • Twärchamm-Piste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-11-schwamm",
+      "ref": null,
+      "name": "11 • Schwamm",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-11b-trainingspiste-schwamm",
+      "ref": null,
+      "name": "11b • Trainingspiste Schwamm",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-12-zanuz",
+      "ref": null,
+      "name": "12 • Zanuz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-13-tritt",
+      "ref": null,
+      "name": "13 • Tritt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "slope-14-chli-tali",
+      "ref": null,
+      "name": "14 • Chli Täli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-15-valeis",
+      "ref": null,
+      "name": "15 • Valeis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-16-wissi-stei",
+      "ref": null,
+      "name": "16 • Wissi Stei",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-17-adler-piste",
+      "ref": null,
+      "name": "17 • Adler Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-17b-untere-adler-piste",
+      "ref": null,
+      "name": "17b • untere Adler Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-18-dreieck",
+      "ref": null,
+      "name": "18 • Dreieck",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-18b-schneise",
+      "ref": null,
+      "name": "18b • Schneise",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-19-soldanella",
+      "ref": null,
+      "name": "19 • Soldanella",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-20-fis-piste",
+      "ref": null,
+      "name": "20 • FIS Piste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-21-arvenegg",
+      "ref": null,
+      "name": "21 • Arvenegg",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-22-gartinis",
+      "ref": null,
+      "name": "22 • Gartinis",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-23-talabfahrt",
+      "ref": null,
+      "name": "23 • Talabfahrt",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-24-schwiffiggler",
+      "ref": null,
+      "name": "24 • Schwiffiggler",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-25-alpina-couloir",
+      "ref": null,
+      "name": "25 • Alpina Couloir",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-31-abfahrt-jona",
+      "ref": null,
+      "name": "31 • Abfahrt Jona",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-32-abfahrt-zanuz",
+      "ref": null,
+      "name": "32 • Abfahrt Zanuz",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-34-couloir",
+      "ref": null,
+      "name": "34 • Couloir",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-36-abfahrt-grosses-tali",
+      "ref": null,
+      "name": "36 • Abfahrt Grosses Täli",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-37-abfahrt-wangs",
+      "ref": null,
+      "name": "37 • Abfahrt Wangs",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-38-schwarzwald",
+      "ref": null,
+      "name": "38 • Schwarzwald",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    }
+  ]
+}

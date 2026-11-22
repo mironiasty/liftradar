@@ -1,0 +1,186 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "sauda",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262308+01:00",
+  "updated_at": "2026-11-21T21:22:47+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-familie-barneheis-skalheis-150-m",
+      "ref": null,
+      "name": "Familie/barneheis, skålheis 150 m",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-parallellen-t-krok",
+      "ref": null,
+      "name": "Parallellen, T-krok",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-alpinisten-t-krok",
+      "ref": null,
+      "name": "Alpinisten, T-krok",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-smalanutheisen-t-krok",
+      "ref": null,
+      "name": "Smalanutheisen, T-krok",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tjuvanutheisen-skalheis",
+      "ref": null,
+      "name": "Tjuvanutheisen, Skålheis",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-skiband-familieomradet-40-m",
+      "ref": null,
+      "name": "skibånd familieområdet 40 m",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-super-g-trase-svart-rd",
+      "ref": null,
+      "name": "Super G trase svart/rød",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-smalanut-svart-bla",
+      "ref": null,
+      "name": "Smalanut svart/blå",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-tjuanut-bla-1",
+      "ref": null,
+      "name": "Tjuanut blå 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-tjuanut-rd-1",
+      "ref": null,
+      "name": "Tjuanut rød 1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-tjuanut-bla-2",
+      "ref": null,
+      "name": "Tjuanut blå 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-tjuanut-rd-1-2",
+      "ref": null,
+      "name": "Tjuanut rød 1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-smalanut-grnn",
+      "ref": null,
+      "name": "Smalanut Grønn",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-poma-trase-rd",
+      "ref": null,
+      "name": "Poma trase rød",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-familiebakken-grnn",
+      "ref": null,
+      "name": "Familiebakken grønn",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-hovedbakken-grnn",
+      "ref": null,
+      "name": "Hovedbakken grønn",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bratthenget-svart",
+      "ref": null,
+      "name": "Bratthenget svart",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-hovedbakken-rd-bla",
+      "ref": null,
+      "name": "Hovedbakken rød/blå",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

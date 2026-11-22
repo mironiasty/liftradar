@@ -1,0 +1,248 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "thyon",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254292+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=99&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-joc",
+      "ref": null,
+      "name": "JOC",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-petit-vallon",
+      "ref": null,
+      "name": "Petit Vallon",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-piccolo",
+      "ref": null,
+      "name": "Piccolo",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-theytaz-2",
+      "ref": null,
+      "name": "Theytaz 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-muraz",
+      "ref": null,
+      "name": "Muraz",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-les-masses",
+      "ref": null,
+      "name": "Les Masses",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-trabanta",
+      "ref": null,
+      "name": "Trabanta",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-etherolla",
+      "ref": null,
+      "name": "Ethérolla",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-slow-vallon",
+      "ref": null,
+      "name": "Slow Vallon",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-la-matze",
+      "ref": null,
+      "name": "La Matze",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-competition",
+      "ref": null,
+      "name": "Compétition",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-snowpark",
+      "ref": null,
+      "name": "Snowpark",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-grenier",
+      "ref": null,
+      "name": "Grenier",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-etherolla",
+      "ref": null,
+      "name": "Ethérolla",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 6000
+    },
+    {
+      "id": "slope-les-masses",
+      "ref": null,
+      "name": "Les Masses",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-trabanta",
+      "ref": null,
+      "name": "Trabanta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-matze",
+      "ref": null,
+      "name": "Matze",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-theytaz-1",
+      "ref": null,
+      "name": "Theytaz 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-joc",
+      "ref": null,
+      "name": "JOC",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-petit-vallon",
+      "ref": null,
+      "name": "Petit Vallon",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-piccolo",
+      "ref": null,
+      "name": "Piccolo",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-theytaz-2",
+      "ref": null,
+      "name": "Theytaz 2",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-muraz",
+      "ref": null,
+      "name": "Muraz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-les-cretes",
+      "ref": null,
+      "name": "Les Crêtes",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4000
+    }
+  ]
+}

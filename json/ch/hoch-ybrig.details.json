@@ -1,0 +1,353 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "hoch-ybrig",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253972+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=75&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-weglosen-seebli",
+      "ref": null,
+      "name": "A • Weglosen-Seebli",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-sternen",
+      "ref": null,
+      "name": "B • Sternen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-hesisbol",
+      "ref": null,
+      "name": "C • Hesisbol",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-spirstock",
+      "ref": null,
+      "name": "D • Spirstock",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-fuederegg",
+      "ref": null,
+      "name": "E • Fuederegg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-forderband-kabi-kinderland",
+      "ref": null,
+      "name": "F • Förderband (KABI-Kinderland)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-uberdachtes-forderband-kabi-kinderland",
+      "ref": null,
+      "name": "F • Überdachtes Förderband (KABI-Kinderland)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-laucheren",
+      "ref": null,
+      "name": "G • Laucheren",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-laucherenstockli",
+      "ref": null,
+      "name": "H • Laucherenstöckli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-roggen",
+      "ref": null,
+      "name": "I • Roggen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-st-johannesberg",
+      "ref": null,
+      "name": "J • St. Johannesberg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-kulm",
+      "ref": null,
+      "name": "K • Kulm",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-alpstubli",
+      "ref": null,
+      "name": "L • Alpstubli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-2-fis-piste",
+      "ref": null,
+      "name": "2 • FIS-Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-trainingspiste",
+      "ref": null,
+      "name": "Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-3-melchboden",
+      "ref": null,
+      "name": "3 • Melchboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-kinderlift",
+      "ref": null,
+      "name": "Kinderlift",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-4-stafel",
+      "ref": null,
+      "name": "4 • Stäfel",
+      "difficulty": "other",
+      "colour": "blue_red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-5-hesisbol",
+      "ref": null,
+      "name": "5 • Hesisbol",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-6-chueband",
+      "ref": null,
+      "name": "6 • Chüeband",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-fuederegg",
+      "ref": null,
+      "name": "Fuederegg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-7-natschboden",
+      "ref": null,
+      "name": "7 • Nätschboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-8-laucherentobel",
+      "ref": null,
+      "name": "8 • Laucherentobel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-9-berggeisttobel",
+      "ref": null,
+      "name": "9 • Berggeisttobel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-10-steinboden",
+      "ref": null,
+      "name": "10 • Steinboden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-talabfahrt-laucheren",
+      "ref": null,
+      "name": "11 • Talabfahrt Laucheren",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-1-talabfahrt-weglosen",
+      "ref": null,
+      "name": "1 • Talabfahrt Weglosen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-12-abfahrtsroute-illgau-skisafari",
+      "ref": null,
+      "name": "12 • Abfahrtsroute Illgau (Skisafari)",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-12-abfahrsroute-ibergeregg",
+      "ref": null,
+      "name": "12 • Abfahrsroute Ibergeregg",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-12-abfahrtsroute-laucheren",
+      "ref": null,
+      "name": "12 • Abfahrtsroute Laucheren",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-roggen",
+      "ref": null,
+      "name": "Roggen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-schwandi",
+      "ref": null,
+      "name": "Schwändi",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-st-johannesberg",
+      "ref": null,
+      "name": "St. Johannesberg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-standard-kulm",
+      "ref": null,
+      "name": "Standard/Kulm",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-hinteregg-loseggen",
+      "ref": null,
+      "name": "Hinteregg / Loseggen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "belalp",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253738+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=54&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-2326-sparrhorn",
+      "ref": null,
+      "name": "A • 2326 Sparrhorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-kelchbach",
+      "ref": null,
+      "name": "B • Kelchbach",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-bruchegg",
+      "ref": null,
+      "name": "C • Bruchegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-2325-blatten-belalp",
+      "ref": null,
+      "name": "D • 2325 Blatten-Belalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-sparrhorngrat",
+      "ref": null,
+      "name": "E • Sparrhorngrat",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-hohstock",
+      "ref": null,
+      "name": "F • Hohstock",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-stafellift",
+      "ref": null,
+      "name": "G • Stafellift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-farrich",
+      "ref": null,
+      "name": "H • Färrich",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-hexenland",
+      "ref": null,
+      "name": "I • Hexenland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-2324-blatten-chiematte",
+      "ref": null,
+      "name": "J • 2324 Blatten-Chiematte",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-tunnel-westseite",
+      "ref": null,
+      "name": "1 • Tunnel Westseite",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-2-hulsen",
+      "ref": null,
+      "name": "2 • Hülsen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-3-hax-oben",
+      "ref": null,
+      "name": "3 • Häx oben",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-4-hax-unten",
+      "ref": null,
+      "name": "4 • Häx unten",
+      "difficulty": "other",
+      "colour": "blue_red",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-5-grat",
+      "ref": null,
+      "name": "5 • Grat",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-6-jo-piste",
+      "ref": null,
+      "name": "6 • JO-Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-7-tola-oben",
+      "ref": null,
+      "name": "7 • Tola oben",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-8-tola-unten",
+      "ref": null,
+      "name": "8 • Tola unten",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-9-gletscher",
+      "ref": null,
+      "name": "9 • Gletscher",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-9a-aussichtspunkt",
+      "ref": null,
+      "name": "9a • Aussichtspunkt",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-10-aletsch",
+      "ref": null,
+      "name": "10 • Aletsch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-11-farrichpista",
+      "ref": null,
+      "name": "11 • Färrichpista",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-12-kanonenrohr",
+      "ref": null,
+      "name": "12 • Kanonenrohr",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-13-tyndall",
+      "ref": null,
+      "name": "13 • Tyndall",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-14-aletschbord",
+      "ref": null,
+      "name": "14 • Aletschbord",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-15-rennpiste",
+      "ref": null,
+      "name": "15 • Rennpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-16-lagni",
+      "ref": null,
+      "name": "16 • Lägni",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-17-piste-nord",
+      "ref": null,
+      "name": "17 • Piste Nord",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-18-bruchji",
+      "ref": null,
+      "name": "18 • Bruchji",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-19-loch",
+      "ref": null,
+      "name": "19 • Loch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-20-sattlen",
+      "ref": null,
+      "name": "20 • Sattlen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-21-talli",
+      "ref": null,
+      "name": "21 • Tälli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-22-mausefalle",
+      "ref": null,
+      "name": "22 • Mausefalle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-23-stafel",
+      "ref": null,
+      "name": "23 • Stafel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-24-tschuggen-blatten",
+      "ref": null,
+      "name": "24 • Tschuggen-Blatten",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-25-belalp-tschuggen",
+      "ref": null,
+      "name": "25 • Belalp-Tschuggen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-28-strasse-bruchegg-bergstation",
+      "ref": null,
+      "name": "28 • Strasse Bruchegg-Bergstation",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-50-tunnel-westseite-roti-blatte",
+      "ref": null,
+      "name": "50 • Tunnel Westseite Roti Blatte",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-51-ramifluo",
+      "ref": null,
+      "name": "51 • Rämiflüo",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-52-bromat",
+      "ref": null,
+      "name": "52 • Bromat",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-53-fulmoos",
+      "ref": null,
+      "name": "53 • Fülmoos",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-54-ofubiel",
+      "ref": null,
+      "name": "54 • Ofubiel",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-55-schwiibiel",
+      "ref": null,
+      "name": "55 • Schwiibiel",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 300
+    }
+  ]
+}

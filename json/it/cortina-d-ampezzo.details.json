@@ -1,0 +1,1187 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "cortina-d-ampezzo",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255769+01:00",
+  "updated_at": "2026-11-19T16:03:45.411334+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_218",
+      "ref": null,
+      "name": "5 Torri",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_217",
+      "ref": null,
+      "name": "5 Torri",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_258",
+      "ref": null,
+      "name": "Ansiei",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_221",
+      "ref": null,
+      "name": "Baby Socrepes",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_231",
+      "ref": null,
+      "name": "Cacciatori",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_229",
+      "ref": null,
+      "name": "Col Drusciè /Ra Valles",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_216",
+      "ref": null,
+      "name": "Col Gallina",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_228",
+      "ref": null,
+      "name": "Cortina - Col Drusciè",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_260",
+      "ref": null,
+      "name": "Croda Negra",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_252",
+      "ref": null,
+      "name": "Donariè",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_226",
+      "ref": null,
+      "name": "Duca D'Aosta/Pomedes",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_215",
+      "ref": null,
+      "name": "Falzarego",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_214",
+      "ref": null,
+      "name": "Falzarego - Lagazuoi",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_259",
+      "ref": null,
+      "name": "Fedare",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_243",
+      "ref": null,
+      "name": "Funivia Faloria",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_1762184646",
+      "ref": null,
+      "name": "Lacedel-Socrepes",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_251",
+      "ref": null,
+      "name": "Loita",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_257",
+      "ref": null,
+      "name": "Malón",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_250",
+      "ref": null,
+      "name": "Misurina - Col de Varda",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_220",
+      "ref": null,
+      "name": "Olimpia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_246",
+      "ref": null,
+      "name": "Padeon",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_230",
+      "ref": null,
+      "name": "Pian Ra Valles",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_225",
+      "ref": null,
+      "name": "Piè Tofana - Duca d'Aosta",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_235",
+      "ref": null,
+      "name": "Ra Valles/Cima Tofana",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_244",
+      "ref": null,
+      "name": "Rio Gere - Pian de Ra Bigontina",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_247",
+      "ref": null,
+      "name": "Rio Gere/Son Forca",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_254",
+      "ref": null,
+      "name": "San Marco",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_241",
+      "ref": null,
+      "name": "Sciovia Tondi di Faloria",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_245",
+      "ref": null,
+      "name": "Seggiovia Pian de Ra Bigontina",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_793997110",
+      "ref": null,
+      "name": "Skyline Cortina",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_255",
+      "ref": null,
+      "name": "Taiarezze/Malon",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_1669905897",
+      "ref": null,
+      "name": "Tambres",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_224",
+      "ref": null,
+      "name": "Tofana Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_242",
+      "ref": null,
+      "name": "Vitelli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215834",
+      "ref": null,
+      "name": "5 Torri",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1528
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_76378594",
+      "ref": null,
+      "name": "5 Torri - Averau",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215838",
+      "ref": null,
+      "name": "Antelao",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1037
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215840",
+      "ref": null,
+      "name": "Armentarola",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 7300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215836",
+      "ref": null,
+      "name": "A. Tomba",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2714
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215841",
+      "ref": null,
+      "name": "Averau",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1235
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215843",
+      "ref": null,
+      "name": "Bianca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2056
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215844",
+      "ref": null,
+      "name": "Bigontina",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 756
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215845",
+      "ref": null,
+      "name": "Brosolàs",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 113
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215846",
+      "ref": null,
+      "name": "Busc",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1464
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215848",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 545
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_13503193",
+      "ref": null,
+      "name": "Campo scuola Ansiei",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 50
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215849",
+      "ref": null,
+      "name": "Campo Scuola Socrepes",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 413
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215850",
+      "ref": null,
+      "name": "Canalini 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 863
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215847",
+      "ref": null,
+      "name": "Canalini 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215852",
+      "ref": null,
+      "name": "Canalone",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2040
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215853",
+      "ref": null,
+      "name": "Canalone Franchetti",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1055
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215855",
+      "ref": null,
+      "name": "Caprioli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 832
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215856",
+      "ref": null,
+      "name": "Caprioli 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1174
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215858",
+      "ref": null,
+      "name": "Ciastèl",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 966
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215859",
+      "ref": null,
+      "name": "Col de Varda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1503
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215860",
+      "ref": null,
+      "name": "Col Druscié A",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 907
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215861",
+      "ref": null,
+      "name": "Col Drusciè B",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1428
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215862",
+      "ref": null,
+      "name": "Col Gallina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 696
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_76378592",
+      "ref": null,
+      "name": "Collegamento Col Gallina-Lagazuoi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1528
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215864",
+      "ref": null,
+      "name": "Col Tarón",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 863
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215869",
+      "ref": null,
+      "name": "Costón del Falco",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1109
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215871",
+      "ref": null,
+      "name": "Creste Bianche",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "ref": null,
+      "name": "Donarié",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 601
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215872",
+      "ref": null,
+      "name": "Donarié",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 601
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215873",
+      "ref": null,
+      "name": "Faloria Normale",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2843
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215874",
+      "ref": null,
+      "name": "Falzarego",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2183
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215868",
+      "ref": null,
+      "name": "Falzarego Bai de Dones",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1579
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215875",
+      "ref": null,
+      "name": "Fedo",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 835
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215876",
+      "ref": null,
+      "name": "Forcella Rossa",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2102
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215881",
+      "ref": null,
+      "name": "Lagazuoi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2388
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215879",
+      "ref": null,
+      "name": "La Pala",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 526
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215883",
+      "ref": null,
+      "name": "Limedes",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1798
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215902",
+      "ref": null,
+      "name": "Lino Lacedelli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1431
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215884",
+      "ref": null,
+      "name": "Loita",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 793
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215885",
+      "ref": null,
+      "name": "Malón",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 860
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215886",
+      "ref": null,
+      "name": "Mazzorana",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1437
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215888",
+      "ref": null,
+      "name": "Monti",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215889",
+      "ref": null,
+      "name": "Muro de Ra Cioures",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1437
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215891",
+      "ref": null,
+      "name": "Nuvolau",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215894",
+      "ref": null,
+      "name": "Olympia  Pocol",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1506
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215892",
+      "ref": null,
+      "name": "Olympia - Stratofana (pista Schuss)",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 689
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215897",
+      "ref": null,
+      "name": "Ovest",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 510
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215898",
+      "ref": null,
+      "name": "Padeón",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 842
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215899",
+      "ref": null,
+      "name": "Pian Ra Valles",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 961
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215901",
+      "ref": null,
+      "name": "Potor",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1431
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215900",
+      "ref": null,
+      "name": "Raccordo Follina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215903",
+      "ref": null,
+      "name": "Raccordo Nuvolau",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 264
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215904",
+      "ref": null,
+      "name": "Raccordo Piè Tofana",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1047
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_4032099",
+      "ref": null,
+      "name": "raccordo tondi slittone",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1673337767",
+      "ref": null,
+      "name": "Ra Stradéla",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215905",
+      "ref": null,
+      "name": "Redoncè",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 917
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215907",
+      "ref": null,
+      "name": "Rio Gere",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2556
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215908",
+      "ref": null,
+      "name": "Rio Gere - Pian de Ra Bigontina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215909",
+      "ref": null,
+      "name": "Roncato",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1006
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215911",
+      "ref": null,
+      "name": "Rosà",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 656
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1767515762",
+      "ref": null,
+      "name": "Rosà",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 656
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215912",
+      "ref": null,
+      "name": "San Zan",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1243
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215913",
+      "ref": null,
+      "name": "Scoiattoli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 607
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_76378593",
+      "ref": null,
+      "name": "Scoiattoli bassa",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1528
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_27039414",
+      "ref": null,
+      "name": "Scoiattolo",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 905
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215914",
+      "ref": null,
+      "name": "Serpentina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1527
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215915",
+      "ref": null,
+      "name": "Skiweg Croda Negra",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1740
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215916",
+      "ref": null,
+      "name": "Slittone",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 636
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215917",
+      "ref": null,
+      "name": "Socrepes",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 332
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215918",
+      "ref": null,
+      "name": "Son Forca",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 966
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_40320912",
+      "ref": null,
+      "name": "son forca - padeon",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215895",
+      "ref": null,
+      "name": "Stratofana Olimpica (Schuss)",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2402
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215921",
+      "ref": null,
+      "name": "Stratondi",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 846
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215922",
+      "ref": null,
+      "name": "Stries",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1737
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1681714202",
+      "ref": null,
+      "name": "Stries",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215923",
+      "ref": null,
+      "name": "Taiarezze",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 863
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215924",
+      "ref": null,
+      "name": "Tambres",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1524
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215925",
+      "ref": null,
+      "name": "Tambres 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 280
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215927",
+      "ref": null,
+      "name": "Tofanina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3418
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215928",
+      "ref": null,
+      "name": "Tondi Normale",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1065
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215929",
+      "ref": null,
+      "name": "Valón",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 927
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_29007331",
+      "ref": null,
+      "name": "Variante Pian Ra Valles",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 394
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1673337769",
+      "ref": null,
+      "name": "Verbindung Pocol Socrepes",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1396
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215930",
+      "ref": null,
+      "name": "Vertigine Bianca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 871
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
+      "ref": null,
+      "name": "Vertigine Bianca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 871
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215932",
+      "ref": null,
+      "name": "Vitelli",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1169
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215931",
+      "ref": null,
+      "name": "Vitelli Bassa",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1751
+    }
+  ]
+}

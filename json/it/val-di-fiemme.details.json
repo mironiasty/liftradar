@@ -1,0 +1,910 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "val-di-fiemme",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255851+01:00",
+  "updated_at": "2026-11-09T17:25:40.659526+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_588",
+      "ref": null,
+      "name": "Campanil",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_578",
+      "ref": null,
+      "name": "Campo Scuola Cermis",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_1764748160",
+      "ref": null,
+      "name": "Campo Scuola Doss dei Laresi",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_592",
+      "ref": null,
+      "name": "Campo Scuola Gardoné",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_586",
+      "ref": null,
+      "name": "Campo scuola Latemar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_594",
+      "ref": null,
+      "name": "Castelir - Fassane",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_573",
+      "ref": null,
+      "name": "Cavalese - Fondovalle",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_597",
+      "ref": null,
+      "name": "Corno Bianco",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_600",
+      "ref": null,
+      "name": "Corno Nero I.",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_601",
+      "ref": null,
+      "name": "Corno Nero II.",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_575",
+      "ref": null,
+      "name": "Costabella",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_574",
+      "ref": null,
+      "name": "Doss dei Laresi-Cermis",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_595",
+      "ref": null,
+      "name": "Fassane - Morea",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_579",
+      "ref": null,
+      "name": "Fondovalle-Doss dei Laresi",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_591",
+      "ref": null,
+      "name": "Gardoné-Passo Feudo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_576",
+      "ref": null,
+      "name": "Lagorai",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_587",
+      "ref": null,
+      "name": "La Residenza/P.so Feudo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_599",
+      "ref": null,
+      "name": "La Rocca",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_1679567478",
+      "ref": null,
+      "name": "Latemar",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_598",
+      "ref": null,
+      "name": "Malga Varena",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_585",
+      "ref": null,
+      "name": "Pala Santa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_1680271763",
+      "ref": null,
+      "name": "Pampeago-M.te Agnello",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_584",
+      "ref": null,
+      "name": "Plateau",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_577",
+      "ref": null,
+      "name": "Prà  Fiorì",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_590",
+      "ref": null,
+      "name": "Predazzo-Gardoné",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_582",
+      "ref": null,
+      "name": "Tresca",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184930",
+      "ref": null,
+      "name": "Agnello",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_40572335",
+      "ref": null,
+      "name": "Busabella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1849210",
+      "ref": null,
+      "name": "Campanil",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1765553116",
+      "ref": null,
+      "name": "Campanil",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184925",
+      "ref": null,
+      "name": "Campanil",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1765553345",
+      "ref": null,
+      "name": "Campanil 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184616",
+      "ref": null,
+      "name": "Campo Scuola Cermis",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_41729982",
+      "ref": null,
+      "name": "Campo Scuola Doss dei Laresi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184943",
+      "ref": null,
+      "name": "Campo Scuola Gardoné",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 520
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184926",
+      "ref": null,
+      "name": "Campo Scuola Latemar",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184947",
+      "ref": null,
+      "name": "Castelir",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1661503429",
+      "ref": null,
+      "name": "Cervo Fun Slope",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184946",
+      "ref": null,
+      "name": "Ciafuli",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184940",
+      "ref": null,
+      "name": "Cinque Nazioni",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2650
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1699027544",
+      "ref": null,
+      "name": "Collegamento Bianconero",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184615",
+      "ref": null,
+      "name": "Collegamento Costabella-Prafiorì",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184618",
+      "ref": null,
+      "name": "Collegamento Lagorai-Costabella",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184608",
+      "ref": null,
+      "name": "Collegamento Prafiorì-Costabella",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184922",
+      "ref": null,
+      "name": "Collegamento Zanggen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 285
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184917",
+      "ref": null,
+      "name": "Corno Bianco",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184915",
+      "ref": null,
+      "name": "Corno Nero",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184612",
+      "ref": null,
+      "name": "Costabella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184611",
+      "ref": null,
+      "name": "Dei Cirmi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184949",
+      "ref": null,
+      "name": "Dolomitica",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184610",
+      "ref": null,
+      "name": "Donei",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184914",
+      "ref": null,
+      "name": "Fanti",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184607",
+      "ref": null,
+      "name": "Forcella-Bombasel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184948",
+      "ref": null,
+      "name": "Fraine",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184609",
+      "ref": null,
+      "name": "Lagorai",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184918",
+      "ref": null,
+      "name": "La Rocca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184945",
+      "ref": null,
+      "name": "Le Fassane",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184916",
+      "ref": null,
+      "name": "Malga Varena",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1661503380",
+      "ref": null,
+      "name": "Morea Snowpark",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184933",
+      "ref": null,
+      "name": "Naturale Agnello",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1699027462",
+      "ref": null,
+      "name": "Oclini",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184605",
+      "ref": null,
+      "name": "Olimpia 1",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184603",
+      "ref": null,
+      "name": "Olimpia 2",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184604",
+      "ref": null,
+      "name": "Olimpia 3",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1790327228",
+      "ref": null,
+      "name": "Olimpia III Fun",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184920",
+      "ref": null,
+      "name": "Pala di Santa",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184929",
+      "ref": null,
+      "name": "Panoramica",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184613",
+      "ref": null,
+      "name": "Prafiorì",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184928",
+      "ref": null,
+      "name": "Prà  Erto",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184932",
+      "ref": null,
+      "name": "Raccordo Agnello-Tresca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184939",
+      "ref": null,
+      "name": "Residenza",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1960
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184614",
+      "ref": null,
+      "name": "Salera",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184924",
+      "ref": null,
+      "name": "Selftime Campanil",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_30206982",
+      "ref": null,
+      "name": "Selftime Tresca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184954",
+      "ref": null,
+      "name": "Skiweg Campo - Fassane",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_30206983",
+      "ref": null,
+      "name": "Skiweg Parcheggi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184944",
+      "ref": null,
+      "name": "Torre di Pisa",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184935",
+      "ref": null,
+      "name": "Tresca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184927",
+      "ref": null,
+      "name": "Val Todesca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184923",
+      "ref": null,
+      "name": "Variante Bosco",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184942",
+      "ref": null,
+      "name": "Variante Cinque Nazioni",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184936",
+      "ref": null,
+      "name": "Variante Dossi",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 230
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184931",
+      "ref": null,
+      "name": "Variante Muro Agnello",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184921",
+      "ref": null,
+      "name": "Variante Muro Pala Santa",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 480
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184937",
+      "ref": null,
+      "name": "Variante Muro Tresca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 230
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184934",
+      "ref": null,
+      "name": "Variante Naturale Allenamento",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 540
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_18494",
+      "ref": null,
+      "name": "Variante Slalom",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 460
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184938",
+      "ref": null,
+      "name": "Variante Val della Pigna",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1699027545",
+      "ref": null,
+      "name": "Verbindung Bianconero 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_40572339",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_40572338",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_40572337",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_40572336",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184606",
+      "ref": null,
+      "name": "Via del Bosco",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4500
+    }
+  ]
+}

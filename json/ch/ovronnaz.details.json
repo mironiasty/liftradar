@@ -1,0 +1,296 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ovronnaz",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254187+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=180&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-jorasse",
+      "ref": null,
+      "name": "A • Jorasse",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-col-express",
+      "ref": null,
+      "name": "B • Col-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-bougnonne",
+      "ref": null,
+      "name": "D • Bougnonne",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-tsantonnaire",
+      "ref": null,
+      "name": "E • Tsantonnaire",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-petit-pre",
+      "ref": null,
+      "name": "G • Petit-Pré",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-baby-jorasse",
+      "ref": null,
+      "name": "C • Baby-Jorasse",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-baby-lift-station",
+      "ref": null,
+      "name": "H • Baby-lift station",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-grande-creuse",
+      "ref": null,
+      "name": "1 • Grande Creuse",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-1b-grande-creuse-inf",
+      "ref": null,
+      "name": "1b • Grande Creuse (inf)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2-petite-creuse",
+      "ref": null,
+      "name": "2 • Petite Creuse",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-2b-petite-creuse-int",
+      "ref": null,
+      "name": "2b • Petite Creuse (int)",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2c-petite-creuse-inf",
+      "ref": null,
+      "name": "2c • Petite Creuse (inf)",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-3-bougnonne",
+      "ref": null,
+      "name": "3 • Bougnonne",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-3b-bougnonne-inf",
+      "ref": null,
+      "name": "3b • Bougnonne inf.",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-4-tsantonnaire",
+      "ref": null,
+      "name": "4 • Tsantonnaire",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-5-sud",
+      "ref": null,
+      "name": "5 • Sud",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-5b-sud-inferieure",
+      "ref": null,
+      "name": "5b • Sud inférieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-6-col",
+      "ref": null,
+      "name": "6 • Col",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-7-petit-pre",
+      "ref": null,
+      "name": "7 • Petit-Pré",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-8-chatillon",
+      "ref": null,
+      "name": "8 • Châtillon",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-9-tsantonnaire-six-armailles",
+      "ref": null,
+      "name": "9 • Tsantonnaire Six Armailles",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-9-baby-jorasse",
+      "ref": null,
+      "name": "9 • Baby-Jorasse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-11-liaison-col-petit-pre",
+      "ref": null,
+      "name": "11 • Liaison Col - Petit-Pré",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-lui-fleurie",
+      "ref": null,
+      "name": "12 • Lui Fleurie",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13a-combe-sup",
+      "ref": null,
+      "name": "13a • Combe (sup)",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13b-combe-inf",
+      "ref": null,
+      "name": "13b • Combe (inf)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-10-itineraire-creuses",
+      "ref": null,
+      "name": "10 • Itinéraire Creuses",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-11-baby-station",
+      "ref": null,
+      "name": "11 • Baby-Station",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-liaisons-tsantonnaire",
+      "ref": null,
+      "name": "Liaisons Tsantonnaire",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-liaisons-bougnonne-col-jorasse",
+      "ref": null,
+      "name": "Liaisons Bougnonne-Col-Jorasse",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

@@ -1,0 +1,571 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "st-moritz-corviglia",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254281+01:00",
+  "updated_at": "2026-11-16T13:26:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=41&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-st-moritz-bad-signal",
+      "ref": null,
+      "name": "A • St.Moritz Bad – Signal",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-st-moritz-dorf-chantarella",
+      "ref": null,
+      "name": "B • St.Moritz Dorf – Chantarella",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-chantarella-corviglia",
+      "ref": null,
+      "name": "C • Chantarella – Corviglia",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-corviglia-piz-nair",
+      "ref": null,
+      "name": "D • Corviglia – Piz Nair",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-celerina-marguns",
+      "ref": null,
+      "name": "E • Celerina – Marguns",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-suvretta",
+      "ref": null,
+      "name": "G • Suvretta",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-suvretta-randolins",
+      "ref": null,
+      "name": "H • Suvretta – Randolins",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-randolins-munt-da-san-murezzan",
+      "ref": null,
+      "name": "I • Randolins – Munt da San Murezzan",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-alp-giop-munt-da-san-murezzan",
+      "ref": null,
+      "name": "J • Alp Giop – Munt da San Murezzan",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-salastrains",
+      "ref": null,
+      "name": "L • Salastrains",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n-fis",
+      "ref": null,
+      "name": "N • FIS",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-zauberteppich-runzol",
+      "ref": null,
+      "name": "O • Zauberteppich Runzöl",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p-sass-runzol",
+      "ref": null,
+      "name": "P • Sass Runzöl",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-q-marguns-corviglia",
+      "ref": null,
+      "name": "Q • Marguns – Corviglia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-r-plateau-nair",
+      "ref": null,
+      "name": "R • Plateau Nair",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-s-trais-fluors",
+      "ref": null,
+      "name": "S • Trais Fluors",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-zauberteppich-marguns",
+      "ref": null,
+      "name": "T • Zauberteppich Marguns",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-u-gluna",
+      "ref": null,
+      "name": "U • Glüna",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-v-fuorcla-grischa",
+      "ref": null,
+      "name": "V • Fuorcla Grischa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-w-lej-da-la-pesch",
+      "ref": null,
+      "name": "W • Lej da la Pêsch",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x-quartas",
+      "ref": null,
+      "name": "X • Quartas",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-y-tschainas",
+      "ref": null,
+      "name": "Y • Tschainas",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-z-ponylift-paradiso",
+      "ref": null,
+      "name": "Z • Ponylift Paradiso",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-paradiso",
+      "ref": null,
+      "name": "01 • Paradiso",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6600
+    },
+    {
+      "id": "slope-02-swing",
+      "ref": null,
+      "name": "02 • Swing",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4600
+    },
+    {
+      "id": "slope-03-lanigiro",
+      "ref": null,
+      "name": "03 • Lanigiro",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4300
+    },
+    {
+      "id": "slope-04-corviglia-run",
+      "ref": null,
+      "name": "04 • Corviglia Run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "slope-05-fis",
+      "ref": null,
+      "name": "05 • FIS",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4300
+    },
+    {
+      "id": "slope-06-standard",
+      "ref": null,
+      "name": "06 • Standard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 9600
+    },
+    {
+      "id": "slope-07-alpina",
+      "ref": null,
+      "name": "07 • Alpina",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-08-akademiker",
+      "ref": null,
+      "name": "08 • Akademiker",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 10000
+    },
+    {
+      "id": "slope-09-muntanella",
+      "ref": null,
+      "name": "09 • Muntanella",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-10-pizzin",
+      "ref": null,
+      "name": "10 • Pizzin",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-11-thomas-run",
+      "ref": null,
+      "name": "11 • Thomas Run",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-12-olympia",
+      "ref": null,
+      "name": "12 • Olympia",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 7200
+    },
+    {
+      "id": "slope-13a-runzol",
+      "ref": null,
+      "name": "13a • Runzöl",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-13b-runzol",
+      "ref": null,
+      "name": "13b • Runzöl",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-14-marmotta",
+      "ref": null,
+      "name": "14 • Marmotta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4700
+    },
+    {
+      "id": "slope-15-champion",
+      "ref": null,
+      "name": "15 • Champion",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5800
+    },
+    {
+      "id": "slope-16-grischa",
+      "ref": null,
+      "name": "16 • Grischa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-17-schlattain",
+      "ref": null,
+      "name": "17 • Schlattain",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-18-fuorcla-grischa",
+      "ref": null,
+      "name": "18 • Fuorcla Grischa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 5500
+    },
+    {
+      "id": "slope-19-gluna",
+      "ref": null,
+      "name": "19 • Glüna",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-20-chuderas",
+      "ref": null,
+      "name": "20 • Chüderas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-21-princess",
+      "ref": null,
+      "name": "21 • Princess",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7700
+    },
+    {
+      "id": "slope-22-mezzauna",
+      "ref": null,
+      "name": "22 • Mezzauna",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7500
+    },
+    {
+      "id": "slope-23-zollner",
+      "ref": null,
+      "name": "23 • Zöllner",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-24-selin",
+      "ref": null,
+      "name": "24 • Selin",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-25-saluver-talabfahrt",
+      "ref": null,
+      "name": "25 • Saluver (Talabfahrt)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-26-cristolais-samedan",
+      "ref": null,
+      "name": "26 • Cristolais-Samedan",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-27-talabfahrt-st-moritz-dorf",
+      "ref": null,
+      "name": "27 • Talabfahrt St.Moritz Dorf",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-28-talabfahrt-st-moritz-bad",
+      "ref": null,
+      "name": "28 • Talabfahrt St.Moritz Bad",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-29-talabfahrt-suvretta",
+      "ref": null,
+      "name": "29 • Talabfahrt Suvretta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-31-chamanna",
+      "ref": null,
+      "name": "31 • Chamanna",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-32-foppas-run",
+      "ref": null,
+      "name": "32 • Foppas Run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-34-skilift-run",
+      "ref": null,
+      "name": "34 • Skilift Run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-35-pesch-run",
+      "ref": null,
+      "name": "35 • Pêsch Run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3600
+    }
+  ]
+}

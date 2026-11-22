@@ -11,7 +11,7 @@
   "website": "https://www.alpelusia.it",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.623280+01:00",
+  "fetched_at": "2026-11-22T08:40:36.255890+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -70,6 +70,7 @@
     }
   },
   "lifts_updated_at": "2026-10-29T13:02:11.610725+01:00",
+  "details": "json/it/alpe-lusia-san-pellegrino.details.json",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

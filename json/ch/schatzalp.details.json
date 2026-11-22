@@ -1,0 +1,101 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "schatzalp",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.255747+01:00",
+  "updated_at": null,
+  "source": "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+  "lifts": [
+    {
+      "id": "229",
+      "ref": null,
+      "name": "Schlepplift Strelaberg - Strelapass",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "211",
+      "ref": null,
+      "name": "Sessellift Schatzalp - Strelaberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "209",
+      "ref": null,
+      "name": "Standseilbahn Davos Platz - Schatzalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "231",
+      "ref": null,
+      "name": "Strelapass Junior",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "5",
+      "ref": null,
+      "name": "Bananenhang",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 164
+    },
+    {
+      "id": "1",
+      "ref": null,
+      "name": "Schiabach",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "3",
+      "ref": null,
+      "name": "Strela - Standard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "7",
+      "ref": null,
+      "name": "Strelaberg - Schatzalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "9",
+      "ref": null,
+      "name": "Talabfahrt Bobbahn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2900
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "valgrande-pajares",
+  "country": "es",
+  "fetched_at": "2026-11-22T08:40:36.263231+01:00",
+  "updated_at": null,
+  "source": "https://www.valgrande-pajares.com/parte-de-nieve-meteo/",
+  "lifts": [
+    {
+      "id": "lift-telecabina-cuetu-negru",
+      "ref": null,
+      "name": "Telecabina Cuetu Negru",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-telesqui-fuente-la-reina",
+      "ref": null,
+      "name": "Telesquí Fuente la Reina",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-telesqui-tubo",
+      "ref": null,
+      "name": "Telesquí Tubo",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-telesilla-branillin",
+      "ref": null,
+      "name": "Telesilla Brañillín",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-telesilla-valle-del-sol",
+      "ref": null,
+      "name": "Telesilla Valle del Sol",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cinta-zona-baja",
+      "ref": null,
+      "name": "Cinta Zona Baja",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cinta-cueto-negro",
+      "ref": null,
+      "name": "Cinta Cueto Negro",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-pista-debutantes-iii",
+      "ref": null,
+      "name": "Pista Debutantes III",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 35
+    },
+    {
+      "id": "slope-pista-debutantes-iv",
+      "ref": null,
+      "name": "Pista Debutantes IV",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 35
+    },
+    {
+      "id": "slope-el-ventisquero",
+      "ref": null,
+      "name": "El Ventisquero",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-el-baby",
+      "ref": null,
+      "name": "El Baby",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-hoya-cueto-negro",
+      "ref": null,
+      "name": "Hoya Cueto Negro",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-diagonal-del-valle",
+      "ref": null,
+      "name": "Diagonal del Valle",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-el-retorno",
+      "ref": null,
+      "name": "El Retorno",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-los-galgos",
+      "ref": null,
+      "name": "Los Galgos",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-pasos-martinelli",
+      "ref": null,
+      "name": "Pasos Martinelli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-el-muro-del-valle",
+      "ref": null,
+      "name": "El Muro del Valle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-pena-negra",
+      "ref": null,
+      "name": "Peña Negra",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-valle-del-sol-i",
+      "ref": null,
+      "name": "Valle del Sol I",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-valle-del-sol-ii",
+      "ref": null,
+      "name": "Valle del Sol II",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-fuente-del-valle",
+      "ref": null,
+      "name": "Fuente del Valle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-la-soleyera",
+      "ref": null,
+      "name": "La Soleyera",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "slope-paso-pirata",
+      "ref": null,
+      "name": "Paso Pirata",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 120
+    },
+    {
+      "id": "slope-los-acebos",
+      "ref": null,
+      "name": "Los Acebos",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-enlace-patines",
+      "ref": null,
+      "name": "Enlace Patines",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "slope-el-urogallo",
+      "ref": null,
+      "name": "El Urogallo",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-el-rio",
+      "ref": null,
+      "name": "El Río",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-el-tubo",
+      "ref": null,
+      "name": "El Tubo",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-muro-del-tubo",
+      "ref": null,
+      "name": "Muro del Tubo",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-la-cresta",
+      "ref": null,
+      "name": "La Cresta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 825
+    },
+    {
+      "id": "slope-diagonal-del-tubo",
+      "ref": null,
+      "name": "Diagonal del Tubo",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-las-cuandias",
+      "ref": null,
+      "name": "Las Cuandias",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "slope-peligrao",
+      "ref": null,
+      "name": "Peligrao",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-la-cornisa",
+      "ref": null,
+      "name": "La Cornisa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-la-ventosa",
+      "ref": null,
+      "name": "La Ventosa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-arandanera",
+      "ref": null,
+      "name": "Arandanera",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-parapente",
+      "ref": null,
+      "name": "Parapente",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-escubiu",
+      "ref": null,
+      "name": "Escubiu",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-vallon-1",
+      "ref": null,
+      "name": "Vallón 1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-vallon-2",
+      "ref": null,
+      "name": "Vallón 2",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-la-hoya",
+      "ref": null,
+      "name": "La Hoya",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-pista-debutantes-i",
+      "ref": null,
+      "name": "Pista Debutantes I",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 50
+    },
+    {
+      "id": "slope-pista-debutantes-ii",
+      "ref": null,
+      "name": "Pista Debutantes II",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": 50
+    },
+    {
+      "id": "slope-enlaces-arroyo",
+      "ref": null,
+      "name": "Enlaces Arroyo",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "slope-la-umbria",
+      "ref": null,
+      "name": "La Umbría",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    }
+  ]
+}

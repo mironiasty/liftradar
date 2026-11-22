@@ -1,0 +1,1660 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "laax",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254038+01:00",
+  "updated_at": "2026-11-22T08:00:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=200&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-mughels-lift",
+      "ref": null,
+      "name": "Mughels Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-zb-caumasee",
+      "ref": null,
+      "name": "ZB • Caumasee",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lsb1-laax-crap-sogn-gion",
+      "ref": null,
+      "name": "LSB1 • LAAX - Crap Sogn Gion",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lsb2-crap-sogn-gion-crap-masegn",
+      "ref": null,
+      "name": "LSB2 • Crap Sogn Gion - Crap Masegn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb12-laax-larnags-1st-section",
+      "ref": null,
+      "name": "GB12 • LAAX - Larnags (1st section)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb12-larnags-curnius-2nd-section",
+      "ref": null,
+      "name": "GB12 • Larnags - Curnius (2nd section)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb10-flemx-flims-foppa",
+      "ref": null,
+      "name": "GB10 • FlemX | Flims - Foppa",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb10-flemx-foppa-startgels",
+      "ref": null,
+      "name": "GB10 • FlemX | Foppa - Startgels",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb10-flemx-startgels-segnes",
+      "ref": null,
+      "name": "GB10 • FlemX | Startgels - Segnes",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb10-flemx-segnes-nagens-sura",
+      "ref": null,
+      "name": "GB10 • FlemX | Segnes - Nagens Sura",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb10-flemx-segnes-cassons",
+      "ref": null,
+      "name": "GB10 • FlemX | Segnes - Cassons",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb10-sogn-martin-la-siala",
+      "ref": null,
+      "name": "GB10 • Sogn Martin - La Siala",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb8-flims-plaun-1st-section",
+      "ref": null,
+      "name": "GB8 • Flims - Plaun (1st section)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb8-plaun-scansinas-2nd-section",
+      "ref": null,
+      "name": "GB8 • Plaun - Scansinas (2nd section)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb8-scansinas-nagens-3rd-section",
+      "ref": null,
+      "name": "GB8 • Scansinas - Nagens (3rd section)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb8-fuorcla-masegn",
+      "ref": null,
+      "name": "GB8 • Fuorcla - Masegn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gb8-fuorcla-vorab",
+      "ref": null,
+      "name": "GB8 • Fuorcla - Vorab",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb6-mutta-rodunda",
+      "ref": null,
+      "name": "SB6 • Mutta Rodunda",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb6-plaun-crap-sogn-gion",
+      "ref": null,
+      "name": "SB6 • Plaun - Crap Sogn Gion",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb6-alp-dado",
+      "ref": null,
+      "name": "SB6 • Alp Dado",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb6-treis-palas-crap-masegn",
+      "ref": null,
+      "name": "SB6 • Treis Palas - Crap Masegn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb6-lavadinas-fuorcla-da-sagogn",
+      "ref": null,
+      "name": "SB6 • Lavadinas - Fuorcla da Sagogn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb4-falera-curnius",
+      "ref": null,
+      "name": "SB4 • Falera - Curnius",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sb4-curnius-crap-sogn-gion",
+      "ref": null,
+      "name": "SB4 • Curnius - Crap Sogn Gion",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-vorab-glacier",
+      "ref": null,
+      "name": "SL • Vorab Glacier",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-ils-plauns-i",
+      "ref": null,
+      "name": "SL • Ils Plauns I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-ils-plauns-ii",
+      "ref": null,
+      "name": "SL • Ils Plauns II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-craplift",
+      "ref": null,
+      "name": "SL • Craplift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-pipelift",
+      "ref": null,
+      "name": "SL • Pipelift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-nagens",
+      "ref": null,
+      "name": "SL • Nagens",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-spalegna",
+      "ref": null,
+      "name": "SL • Spalegna",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sl-vorab-glacier-ii-right",
+      "ref": null,
+      "name": "SL • Vorab Glacier II right",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-4-1-4-1-spalegna",
+      "ref": null,
+      "name": "4.1 • 4.1 Spalegna",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-4-2-4-2-spalegnalift-berg-foppa",
+      "ref": null,
+      "name": "4.2 • 4.2 Spalegnalift Berg - Foppa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-4-3-4-3-foppa-spalegna",
+      "ref": null,
+      "name": "4.3 • 4.3 Foppa - Spalegna",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-4-4-4-4-foppa-spalegna",
+      "ref": null,
+      "name": "4.4 • 4.4 Foppa - Spalegna",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-4-5-4-5-foppa-spalegna",
+      "ref": null,
+      "name": "4.5 • 4.5 Foppa - Spalegna",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-4-6-4-6-foppa-flims",
+      "ref": null,
+      "name": "4.6 • 4.6 Foppa - Flims",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-5-5-flims-oberdorf",
+      "ref": null,
+      "name": "5 • 5 Flims Oberdorf",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-6-6-punt-gronda-flims-waldhaus",
+      "ref": null,
+      "name": "6 • 6. Punt Gronda - Flims Waldhaus",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-10-1-10-1-la-siala-nagens-segnes",
+      "ref": null,
+      "name": "10.1 • 10.1 La Siala - Nagens/Segnes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-10-2-10-2-la-siala-nagens-segnes",
+      "ref": null,
+      "name": "10.2 • 10.2 La Siala - Nagens/Segnes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-10-3-10-3-la-siala-segnes",
+      "ref": null,
+      "name": "10.3 • 10.3 La Siala - Segnes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-10-4-10-4-segnes-startgels",
+      "ref": null,
+      "name": "10.4 • 10.4 Segnes - Startgels",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-10-6-10-6-startgels-flims",
+      "ref": null,
+      "name": "10.6 • 10.6 Startgels - Flims",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4400
+    },
+    {
+      "id": "slope-10-7-10-7-startgels-flims",
+      "ref": null,
+      "name": "10.7 • 10.7 Startgels - Flims",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-10-8-10-8-startgels-flims",
+      "ref": null,
+      "name": "10.8 • 10.8 Startgels - Flims",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-12-1-12-1-la-siala-mutta-rodunda",
+      "ref": null,
+      "name": "12.1 • 12.1 La Siala - Mutta Rodunda",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-12-2-12-2-mutta-rodunda-nagens-sura",
+      "ref": null,
+      "name": "12.2 • 12.2 Mutta Rodunda - Nagens Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-12-3-12-3-mutta-rodunda-nagens-sura",
+      "ref": null,
+      "name": "12.3 • 12.3 Mutta Rodunda - Nagens Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-12-4-12-4-mutta-rodunda-nagens-sura",
+      "ref": null,
+      "name": "12.4 • 12.4 Mutta Rodunda - Nagens Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-12-5-12-5-nagens-sura-nagens",
+      "ref": null,
+      "name": "12.5 • 12.5 Nagens Sura - Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-12-6-12-6-nagens-sura-nagens",
+      "ref": null,
+      "name": "12.6 • 12.6 Nagens Sura - Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-12-7-12-7-nagens-alp-nagens",
+      "ref": null,
+      "name": "12.7 • 12.7 Nagens - Alp Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-12-8-12-8-nagens-scansinas",
+      "ref": null,
+      "name": "12.8 • 12.8 Nagens - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-12-9-12-9-nagens-scansinas",
+      "ref": null,
+      "name": "12.9 • 12.9 Nagens - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-12-10-12-mutta-east",
+      "ref": null,
+      "name": "12.10 • 12 Mutta East",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-13-1-13-1-mutta-rodunda-scansinas",
+      "ref": null,
+      "name": "13.1 • 13.1 Mutta Rodunda - Scansinas",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-13-2-13-2-mutta-rodunda-scansinas",
+      "ref": null,
+      "name": "13.2 • 13.2 Mutta Rodunda - Scansinas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-14-1-14-1-mutta-rodunda-nagenssura",
+      "ref": null,
+      "name": "14.1 • 14.1 Mutta Rodunda - Nagenssura",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-14-2-14-2-mutta-rodunda-segnes",
+      "ref": null,
+      "name": "14.2 • 14.2 Mutta Rodunda - Segnes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-15-15-mutta-rodunda-nagens",
+      "ref": null,
+      "name": "15 • 15 Mutta Rodunda - Nagens",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-16-1-16-1-mutta-rodunda-scansinas",
+      "ref": null,
+      "name": "16.1 • 16.1 Mutta Rodunda - Scansinas",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-16-2-16-2-mutta-rodunda-scansinas",
+      "ref": null,
+      "name": "16.2 • 16.2 Mutta Rodunda - Scansinas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-16-3-16-3-mutta-rodunda-scansinas",
+      "ref": null,
+      "name": "16.3 • 16.3 Mutta Rodunda - Scansinas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-16-4-16-4-mutta-rodunda-scansinas",
+      "ref": null,
+      "name": "16.4 • 16.4 Mutta Rodunda - Scansinas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-18-18-talabfahrt-stretg",
+      "ref": null,
+      "name": "18 • 18 Talabfahrt Stretg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4700
+    },
+    {
+      "id": "slope-22-1-22-1-connection-vorab-nagens",
+      "ref": null,
+      "name": "22.1 • 22.1 Connection Vorab - Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-22-2-22-2-connection-vorab-nagens",
+      "ref": null,
+      "name": "22.2 • 22.2 Connection Vorab - Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-22-3-22-3-connection-vorab-nagens",
+      "ref": null,
+      "name": "22.3 • 22.3 Connection Vorab - Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "slope-22-4-22-4-connection-vorab-nagens",
+      "ref": null,
+      "name": "22.4 • 22.4 Connection Vorab - Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-23-1-23-1-mutta-rodunda-sogn-martin",
+      "ref": null,
+      "name": "23.1 • 23.1 Mutta Rodunda - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-23-2-23-2-mutta-rodunda-sogn-martin",
+      "ref": null,
+      "name": "23.2 • 23.2 Mutta Rodunda - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-23-3-23-3-mutta-rodunda-sogn-martin",
+      "ref": null,
+      "name": "23.3 • 23.3 Mutta Rodunda - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-23-4-23-4-mutta-rodunda-sogn-martin",
+      "ref": null,
+      "name": "23.4 • 23.4 Mutta Rodunda - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-23-5-23-5-mutta-rodunda-sogn-martin",
+      "ref": null,
+      "name": "23.5 • 23.5 Mutta Rodunda - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-25-1-25-1-nagens-sogn-martin-plaun",
+      "ref": null,
+      "name": "25.1 • 25.1 Nagens - Sogn Martin/Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-25-2-25-2-nagens-sogn-martin-plaun",
+      "ref": null,
+      "name": "25.2 • 25.2 Nagens - Sogn Martin/Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-25-3-25-3-nagens-sogn-martin-plaun",
+      "ref": null,
+      "name": "25.3 • 25.3 Nagens - Sogn Martin/Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-25-4-25-4-nagens-sogn-martin-plaun",
+      "ref": null,
+      "name": "25.4 • 25.4 Nagens - Sogn Martin/Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-25-5-25-5-nagens-sogn-martin-plaun",
+      "ref": null,
+      "name": "25.5 • 25.5 Nagens - Sogn Martin/Plaun",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-25-6-25-6-nagens-plaun",
+      "ref": null,
+      "name": "25.6 • 25.6 Nagens - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-26-1-26-1-la-siala-west",
+      "ref": null,
+      "name": "26.1 • 26.1 La Siala West",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-26-2-26-2-la-siala-west",
+      "ref": null,
+      "name": "26.2 • 26.2 La Siala West",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-27-1-27-1-siala-west-fuorcla",
+      "ref": null,
+      "name": "27.1 • 27.1 Siala West - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-27-2-27-2-siala-west-fuorcla",
+      "ref": null,
+      "name": "27.2 • 27.2 Siala West - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-27-3-27-3-siala-west-fuorcla",
+      "ref": null,
+      "name": "27.3 • 27.3 Siala West - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-27-4-27-4-siala-west-fuorcla",
+      "ref": null,
+      "name": "27.4 • 27.4 Siala West - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-28-1-28-1-la-siala-vorab",
+      "ref": null,
+      "name": "28.1 • 28.1 La Siala - Vorab",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-28-2-28-2-la-siala-vorab",
+      "ref": null,
+      "name": "28.2 • 28.2 La Siala - Vorab",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-29-1-29-1-connection-vorab-scansinas",
+      "ref": null,
+      "name": "29.1 • 29.1 Connection Vorab - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-29-2-29-2-connection-vorab-scansinas",
+      "ref": null,
+      "name": "29.2 • 29.2 Connection Vorab - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-29-3-29-3-connection-vorab-scansinas",
+      "ref": null,
+      "name": "29.3 • 29.3 Connection Vorab - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-29-4-29-4-connection-vorab-scansinas",
+      "ref": null,
+      "name": "29.4 • 29.4 Connection Vorab - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-29-5-29-5-connection-vorab-scansinas",
+      "ref": null,
+      "name": "29.5 • 29.5 Connection Vorab - Scansinas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-30-1-30-1-vorab-sogn-martin",
+      "ref": null,
+      "name": "30.1 • 30.1 Vorab - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-30-2-30-2-vorab-sogn-martin",
+      "ref": null,
+      "name": "30.2 • 30.2 Vorab - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-30-3-30-3-vorab-sogn-martin",
+      "ref": null,
+      "name": "30.3 • 30.3 Vorab - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-30-4-30-4-vorab-sogn-martin",
+      "ref": null,
+      "name": "30.4 • 30.4 Vorab - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-30-5-30-bunker",
+      "ref": null,
+      "name": "30.5 • 30 Bunker",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-31-1-31-1-vorab-fuorcla",
+      "ref": null,
+      "name": "31.1 • 31.1 Vorab - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-31-2-31-2-vorab-fuorcla",
+      "ref": null,
+      "name": "31.2 • 31.2 Vorab - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-32-1-32-1-vorab-glacier-right",
+      "ref": null,
+      "name": "32.1 • 32.1 Vorab Glacier Right",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-32-2-32-2-vorab-glacier-right",
+      "ref": null,
+      "name": "32.2 • 32.2 Vorab Glacier Right",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-32-3-32-3-vorab-glacier-right",
+      "ref": null,
+      "name": "32.3 • 32.3 Vorab Glacier Right",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-33-1-33-1-vorab-glacier-left",
+      "ref": null,
+      "name": "33.1 • 33.1 Vorab Glacier Left",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-33-2-33-2-vorab-glacier",
+      "ref": null,
+      "name": "33.2 • 33.2 Vorab Glacier",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-33-3-33-3-vorab-glacier",
+      "ref": null,
+      "name": "33.3 • 33.3 Vorab Glacier",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-34-1-34-1-vorab-sogn-martin",
+      "ref": null,
+      "name": "34.1 • 34.1 Vorab - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-34-2-34-2-vorab-sogn-martin",
+      "ref": null,
+      "name": "34.2 • 34.2 Vorab - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-35-35-vorab-sattel-lavadinas",
+      "ref": null,
+      "name": "35 • 35 Vorab Sattel - Lavadinas",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 5800
+    },
+    {
+      "id": "slope-36-36-fuorcla-da-sagogn-fuorcla",
+      "ref": null,
+      "name": "36 • 36 Fuorcla da Sagogn - Fuorcla",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-38-1-38-1-fuorcla-da-sagogn-sogn-martin",
+      "ref": null,
+      "name": "38.1 • 38.1 Fuorcla da Sagogn - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-38-2-38-2-fuorcla-da-sagogn-sogn-martin",
+      "ref": null,
+      "name": "38.2 • 38.2 Fuorcla da Sagogn - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-38-3-38-3-fuorcla-da-sagogn-sogn-martin",
+      "ref": null,
+      "name": "38.3 • 38.3 Fuorcla da Sagogn - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-38-4-38-4-fuorcla-da-sagogn-sogn-martin",
+      "ref": null,
+      "name": "38.4 • 38.4 Fuorcla da Sagogn - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-38-5-38-5-fuorcla-da-sagogn-sogn-martin",
+      "ref": null,
+      "name": "38.5 • 38.5 Fuorcla da Sagogn - Sogn Martin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-38-6-38-6-sogn-martin-plaun",
+      "ref": null,
+      "name": "38.6 • 38.6 Sogn Martin - Plaun",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-38-7-38-7-sogn-martin-plaun",
+      "ref": null,
+      "name": "38.7 • 38.7 Sogn Martin - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-38-8-38-8-sogn-martin-plaun",
+      "ref": null,
+      "name": "38.8 • 38.8 Sogn Martin - Plaun",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-38-9-38-9-sogn-martin-plaun",
+      "ref": null,
+      "name": "38.9 • 38.9 Sogn Martin - Plaun",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-38-10-38-10-sogn-martin-plaun",
+      "ref": null,
+      "name": "38.10 • 38.10 Sogn Martin - Plaun",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-40-1-40-1-crap-masegn-plaun",
+      "ref": null,
+      "name": "40.1 • 40.1 Crap Masegn - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-40-2-40-2-crap-masegn-plaun",
+      "ref": null,
+      "name": "40.2 • 40.2 Crap Masegn - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-40-3-40-3-crap-masegn-plaun",
+      "ref": null,
+      "name": "40.3 • 40.3 Crap Masegn - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-40-4-40-4-crap-masegn-plaun",
+      "ref": null,
+      "name": "40.4 • 40.4 Crap Masegn - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "slope-41-41-crap-masegn-fuorcla",
+      "ref": null,
+      "name": "41 • 41 Crap Masegn - Fuorcla",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-42-42-crest-la-siala-plaun",
+      "ref": null,
+      "name": "42 • 42 Crest la Siala - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-43-1-43-1-crest-la-siala-fuorcla",
+      "ref": null,
+      "name": "43.1 • 43.1 Crest la Siala - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-43-2-43-2-crest-la-siala-fuorcla",
+      "ref": null,
+      "name": "43.2 • 43.2 Crest la Siala - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-43-3-43-3-crest-la-siala-fuorcla",
+      "ref": null,
+      "name": "43.3 • 43.3 Crest la Siala - Fuorcla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-44-44-crap-masegn-lavadinas",
+      "ref": null,
+      "name": "44 • 44 Crap Masegn - Lavadinas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-45-1-45-1-crap-masegn-treis-palas",
+      "ref": null,
+      "name": "45.1 • 45.1 Crap Masegn - Treis Palas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-45-2-45-2-treis-palas-alp-dado",
+      "ref": null,
+      "name": "45.2 • 45.2 Treis Palas - Alp Dado",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-47-1-47-1-ils-plauns-treis-palas",
+      "ref": null,
+      "name": "47.1 • 47.1 Ils Plauns - Treis Palas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-47-2-47-2-crest-la-siala-treis-palas",
+      "ref": null,
+      "name": "47.2 • 47.2 Crest la Siala - Treis Palas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-49-1-49-1-crest-la-siala-crap-sogn-gion",
+      "ref": null,
+      "name": "49.1 • 49.1 Crest la Siala - Crap Sogn Gion",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-49-2-49-2-crest-la-siala-crap-son-gion",
+      "ref": null,
+      "name": "49.2 • 49.2 Crest la Siala - Crap Son Gion",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-50-1-50-1-crest-la-siala-alp-dado",
+      "ref": null,
+      "name": "50.1 • 50.1 Crest la Siala - Alp Dado",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-50-2-50-2-crest-la-siala-alp-dado",
+      "ref": null,
+      "name": "50.2 • 50.2 Crest La Siala - Alp Dado",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-51-2-51-2-ils-plauns-alp-dado",
+      "ref": null,
+      "name": "51.2 • 51.2 Ils Plauns - Alp Dado",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-51-3-51-3-ils-plauns-alp-dado",
+      "ref": null,
+      "name": "51.3 • 51.3 Ils Plauns - Alp Dado",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-52-1-52-1-crap-sogn-gion-ils-plauns",
+      "ref": null,
+      "name": "52.1 • 52.1 Crap Sogn Gion - Ils Plauns",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-52-2-52-2-crap-sogn-gion-crap-lift",
+      "ref": null,
+      "name": "52.2 • 52.2 Crap Sogn Gion - Crap Lift",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-52-3-52-3-crap-sogn-gion-alp-dado",
+      "ref": null,
+      "name": "52.3 • 52.3 Crap Sogn Gion - Alp Dado",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-52-4-52-4-crap-sogn-gion-alp-dado",
+      "ref": null,
+      "name": "52.4 • 52.4 Crap Sogn Gion - Alp Dado",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-52-5-52-5-alp-dado-curnius",
+      "ref": null,
+      "name": "52.5 • 52.5 Alp Dado - Curnius",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-53-53-curnius-falera",
+      "ref": null,
+      "name": "53 • 53 Curnius - Falera",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4300
+    },
+    {
+      "id": "slope-55-55-steep-slope-alp-dado",
+      "ref": null,
+      "name": "55 • 55 Steep slope Alp Dado",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-64-1-64-1-crap-sogn-gion-curnius",
+      "ref": null,
+      "name": "64.1 • 64.1 Crap Sogn Gion - Curnius",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-64-2-64-2-crap-sogn-gion-curnius",
+      "ref": null,
+      "name": "64.2 • 64.2 Crap Sogn Gion - Curnius",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-64-3-64-3-crap-sogn-gion-curnius",
+      "ref": null,
+      "name": "64.3 • 64.3 Crap Sogn Gion - Curnius",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-64-4-64-4-curnius-laax",
+      "ref": null,
+      "name": "64.4 • 64.4 Curnius - LAAX",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-64-5-64-5-curnius-laax",
+      "ref": null,
+      "name": "64.5 • 64.5 Curnius - LAAX",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-65-65-fis",
+      "ref": null,
+      "name": "65 • 65 FIS",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4400
+    },
+    {
+      "id": "slope-66-1-66-1-crap-sogn-gion-plaun",
+      "ref": null,
+      "name": "66.1 • 66.1 Crap Sogn Gion - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-66-2-66-2-crap-sogn-gion-plaun",
+      "ref": null,
+      "name": "66.2 • 66.2 Crap Sogn Gion - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-66-3-66-3-crap-sogn-gion-plaun",
+      "ref": null,
+      "name": "66.3 • 66.3 Crap Sogn Gion - Plaun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-70-70-viwalti",
+      "ref": null,
+      "name": "70 • 70 Viwalti",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "slope-71-71-vivorak",
+      "ref": null,
+      "name": "71 • 71 Vivorak",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-73-73-old-route",
+      "ref": null,
+      "name": "73 • 73 Old route",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-76-76-uno",
+      "ref": null,
+      "name": "76 • 76 Uno",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-77-77-vorab-pign",
+      "ref": null,
+      "name": "77 • 77 Vorab Pign",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-80-80-bottleneck",
+      "ref": null,
+      "name": "80 • 80 Bottleneck",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-81-81-oven",
+      "ref": null,
+      "name": "81 • 81 Oven",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-82-82-japanese",
+      "ref": null,
+      "name": "82 • 82 Japanese",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-83-83-muladera",
+      "ref": null,
+      "name": "83 • 83 Muladera",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-84-84-rene-s-long-way",
+      "ref": null,
+      "name": "84 • 84 René's long way",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-85-85-nature-pipe",
+      "ref": null,
+      "name": "85 • 85 Nature Pipe",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-86-86-baywatch",
+      "ref": null,
+      "name": "86 • 86 Baywatch",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-90-90-ladir-slope",
+      "ref": null,
+      "name": "90 • 90 Ladir slope",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 18700
+    },
+    {
+      "id": "slope-kl-foppa-winter-wonderland-foppa",
+      "ref": null,
+      "name": "KL FOPPA • Winter Wonderland Foppa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-kl-flims-winter-wonderland-flims",
+      "ref": null,
+      "name": "KL FLIMS • Winter Wonderland Flims",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-kl-laax-winter-wonderland-laax-murschetg",
+      "ref": null,
+      "name": "KL LAAX • Winter Wonderland Laax-Murschetg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-kl-falera-winter-wonderland-falera",
+      "ref": null,
+      "name": "KL FALERA • Winter Wonderland Falera",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-kl-nagens-training-ground-nagens",
+      "ref": null,
+      "name": "KL NAGENS • Training ground Nagens",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    }
+  ]
+}

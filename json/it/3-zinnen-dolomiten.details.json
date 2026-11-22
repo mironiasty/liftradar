@@ -1,0 +1,1116 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "3-zinnen-dolomiten",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255838+01:00",
+  "updated_at": "2026-11-21T09:20:12.700546+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_541",
+      "ref": null,
+      "name": "Brugger",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_570",
+      "ref": null,
+      "name": "Cenerentola",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_569",
+      "ref": null,
+      "name": "Col d'la Tenda",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_546",
+      "ref": null,
+      "name": "Doris",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_212526",
+      "ref": null,
+      "name": "Drei Zinnen",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_545",
+      "ref": null,
+      "name": "Erschbaum",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_542",
+      "ref": null,
+      "name": "Hasenkoepfl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_544",
+      "ref": null,
+      "name": "Haunold",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_535",
+      "ref": null,
+      "name": "Hawaii",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_554",
+      "ref": null,
+      "name": "Heinrich Harrer",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_536",
+      "ref": null,
+      "name": "Helmissimo Vierschach",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_534",
+      "ref": null,
+      "name": "Helmjet Sexten",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_567",
+      "ref": null,
+      "name": "Kameriot",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_563",
+      "ref": null,
+      "name": "Kreuzberg",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_548",
+      "ref": null,
+      "name": "Laerchen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_537",
+      "ref": null,
+      "name": "Mittelstation",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_553",
+      "ref": null,
+      "name": "Porzen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_539",
+      "ref": null,
+      "name": "Raut",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_557",
+      "ref": null,
+      "name": "Rienza",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_551",
+      "ref": null,
+      "name": "Rotwand",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_552",
+      "ref": null,
+      "name": "Rotwandwiesen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_550",
+      "ref": null,
+      "name": "Signaue",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_566",
+      "ref": null,
+      "name": "Sonnleiten",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_212525",
+      "ref": null,
+      "name": "Stiergarten",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_556",
+      "ref": null,
+      "name": "Trenker",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_538",
+      "ref": null,
+      "name": "Uebungslift",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_547",
+      "ref": null,
+      "name": "Untertal",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_561",
+      "ref": null,
+      "name": "Waldheim",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_560",
+      "ref": null,
+      "name": "Waldheim",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_540",
+      "ref": null,
+      "name": "Wiese",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183125",
+      "ref": null,
+      "name": "Bad Moos - Rotwand",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183116",
+      "ref": null,
+      "name": "Brugger",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1669967957",
+      "ref": null,
+      "name": "Campo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3097
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183140",
+      "ref": null,
+      "name": "Campo Scuola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 386
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301102",
+      "ref": null,
+      "name": "Connection Helmjet",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 660
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_32060083",
+      "ref": null,
+      "name": "Crosspiste Kameriot",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 640
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_6839580",
+      "ref": null,
+      "name": "Crosspiste Sonnleiten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 380
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301099",
+      "ref": null,
+      "name": "Direttissima",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 463
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183121",
+      "ref": null,
+      "name": "Doris",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_71823329",
+      "ref": null,
+      "name": "Doris II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_212527",
+      "ref": null,
+      "name": "Drei Zinnen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2415
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183124",
+      "ref": null,
+      "name": "Erschbaum",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183139",
+      "ref": null,
+      "name": "Europa Unita",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1128
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1696423705",
+      "ref": null,
+      "name": "Familienvariante Vierschach",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182961",
+      "ref": null,
+      "name": "Hahnspiel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 777
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_216632",
+      "ref": null,
+      "name": "Hahnspieleck - Sexten",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 580
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182962",
+      "ref": null,
+      "name": "Hahnspiel-Eck Variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 277
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_71823328",
+      "ref": null,
+      "name": "Hahnspielhuette",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1423
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183112",
+      "ref": null,
+      "name": "Hasenkoepfl",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2956
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183119",
+      "ref": null,
+      "name": "Haunold",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183120",
+      "ref": null,
+      "name": "Haunold West",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301110",
+      "ref": null,
+      "name": "Heinrich Harrer",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 531
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183113",
+      "ref": null,
+      "name": "Helm",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301096",
+      "ref": null,
+      "name": "Helm II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 956
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182959",
+      "ref": null,
+      "name": "Helm - Stiergarten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3842
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182963",
+      "ref": null,
+      "name": "Helm - Vierschach",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5786
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183126",
+      "ref": null,
+      "name": "Holzriese I",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 667
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183127",
+      "ref": null,
+      "name": "Holzriese II",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 790
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183152",
+      "ref": null,
+      "name": "Kameriot",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 640
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301106",
+      "ref": null,
+      "name": "Kids Race",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 762
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301113",
+      "ref": null,
+      "name": "Kids Ski Cross",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183148",
+      "ref": null,
+      "name": "Kreuzberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": 575
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_216631",
+      "ref": null,
+      "name": "Kristlerhang - Sexten",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2785
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183123",
+      "ref": null,
+      "name": "Laerchen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1191383",
+      "ref": null,
+      "name": "Mandoriese",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183149",
+      "ref": null,
+      "name": "Marc Girardelli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": 565
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301093",
+      "ref": null,
+      "name": "Mittelstation",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183130",
+      "ref": null,
+      "name": "Moos",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 442
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301111",
+      "ref": null,
+      "name": "Moos- Rotwand",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 344
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_64736672",
+      "ref": null,
+      "name": "Moos-Sexten",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301092",
+      "ref": null,
+      "name": "Olperls Funslope",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301100",
+      "ref": null,
+      "name": "Olperl Weg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1664181681",
+      "ref": null,
+      "name": "Parfal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183134",
+      "ref": null,
+      "name": "Popera",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5180
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183129",
+      "ref": null,
+      "name": "Porzen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1475
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_127218009",
+      "ref": null,
+      "name": "Porzen Variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 227
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301115",
+      "ref": null,
+      "name": "Pra dei Guardiani",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 585
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182967",
+      "ref": null,
+      "name": "Raut Vierschach",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3310
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183145",
+      "ref": null,
+      "name": "Rienz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183142",
+      "ref": null,
+      "name": "Rienz Ski School",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_30818780",
+      "ref": null,
+      "name": "Rodelbahn Haunold",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_30818779",
+      "ref": null,
+      "name": "Rodelbahn Rotwand",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183128",
+      "ref": null,
+      "name": "Rotwandwiesen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 909
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183135",
+      "ref": null,
+      "name": "Rudi Rentier Weg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 587
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301098",
+      "ref": null,
+      "name": "Schuss",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 365
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183131",
+      "ref": null,
+      "name": "Signaue",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183133",
+      "ref": null,
+      "name": "Signaue II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183110",
+      "ref": null,
+      "name": "Skiweg Raut",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 318
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1764755370",
+      "ref": null,
+      "name": "Skiweg Signaue-Kreuzberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4720
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183132",
+      "ref": null,
+      "name": "Skiweg UNESCO",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4720
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183151",
+      "ref": null,
+      "name": "Sonnleiten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183150",
+      "ref": null,
+      "name": "Sonnleiten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301097",
+      "ref": null,
+      "name": "Steilhang",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 365
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_212528",
+      "ref": null,
+      "name": "Stiergarten",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2415
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_84479488",
+      "ref": null,
+      "name": "Stiergarten - Sexten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183138",
+      "ref": null,
+      "name": "Tabiadel",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1032
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182960",
+      "ref": null,
+      "name": "Trainingspiste Hahnspiel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 618
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301108",
+      "ref": null,
+      "name": "Trainingspiste Porzen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1433
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183144",
+      "ref": null,
+      "name": "Trainingspiste Trenker",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301112",
+      "ref": null,
+      "name": "Trainingspiste - Untertal",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183143",
+      "ref": null,
+      "name": "Trenker",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183137",
+      "ref": null,
+      "name": "Tre Picchi - Talstation",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2035
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183115",
+      "ref": null,
+      "name": "Uebungshang Raut",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301095",
+      "ref": null,
+      "name": "Uebungslift",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1324
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183111",
+      "ref": null,
+      "name": "Uebungslift",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1324
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_84479489",
+      "ref": null,
+      "name": "Uebungslift II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183122",
+      "ref": null,
+      "name": "Untertal",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301103",
+      "ref": null,
+      "name": "Variante Family Drei Zinnen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_28554915",
+      "ref": null,
+      "name": "Variante Family Drei Zinnen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 630
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_182964",
+      "ref": null,
+      "name": "Variante \"S\" Vierschach",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 304
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_127218010",
+      "ref": null,
+      "name": "Verbindung Rotwandwiesen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 227
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1696423706",
+      "ref": null,
+      "name": "Verbindung Vierschach",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_1696423707",
+      "ref": null,
+      "name": "Verbindung Vierschach - Zug",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183146",
+      "ref": null,
+      "name": "Waldheim I",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183147",
+      "ref": null,
+      "name": "Waldheim I/bis",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183114",
+      "ref": null,
+      "name": "Wiese",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

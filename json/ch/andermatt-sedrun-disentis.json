@@ -10,28 +10,28 @@
   },
   "website": "https://www.andermatt-sedrun-disentis.ch",
   "status": "open",
-  "fetched_at": "2026-11-21T13:40:33.623105+01:00",
+  "fetched_at": "2026-11-22T08:40:36.255648+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 11,
-    "valley_cm": 19,
-    "fresh_cm": 24,
+    "mountain_cm": 38,
+    "valley_cm": 9,
+    "fresh_cm": 4,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Gütsch (SLF)",
         "elevation_m": 2209,
-        "depth_cm": 11,
-        "fresh_cm": 24,
+        "depth_cm": 38,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Andermatt (SLF)",
         "elevation_m": 1440,
-        "depth_cm": 19,
-        "fresh_cm": 19,
+        "depth_cm": 9,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -42,8 +42,8 @@
     "total": 34
   },
   "slopes": {
-    "open": 4,
-    "total": 79,
+    "open": 5,
+    "total": 82,
     "open_km": null,
     "total_km": 180
   },
@@ -73,8 +73,8 @@
       "total_km": null
     },
     "intermediate": {
-      "open": 4,
-      "total": 32,
+      "open": 5,
+      "total": 35,
       "open_km": null,
       "total_km": null
     },
@@ -85,7 +85,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T13:03:44+01:00",
+  "lifts_updated_at": "2026-11-22T05:30:39+01:00",
   "details": "json/ch/andermatt-sedrun-disentis.details.json",
   "avalanche": {
     "region_id": "CH-2223",
@@ -104,9 +104,9 @@
       "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://winter.intermaps.com/andermatt_sedrun_disentis/data?lang=en",

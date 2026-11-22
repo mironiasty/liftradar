@@ -1,0 +1,1164 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "zermatt",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.255597+01:00",
+  "updated_at": "2026-11-22T08:40:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-p1-zermatt-furi-matterhorn-express",
+      "ref": null,
+      "name": "P1 • Zermatt - Furi (Matterhorn-Express)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p2-furi-schwarzsee",
+      "ref": null,
+      "name": "P2 • Furi - Schwarzsee",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p3-schwarzsee-furgg",
+      "ref": null,
+      "name": "P3 • Schwarzsee - Furgg",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p4-furgg-trockener-steg",
+      "ref": null,
+      "name": "P4 • Furgg - Trockener Steg",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o1-zermatt-furi-pendelbahn",
+      "ref": null,
+      "name": "O1 • Zermatt - Furi (Pendelbahn)",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o2-furi-trockener-steg-pendelbahn",
+      "ref": null,
+      "name": "O2 • Furi - Trockener Steg (Pendelbahn)",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-3s-matterhorn-glacier-ride-i",
+      "ref": null,
+      "name": "3S • Matterhorn Glacier Ride I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-3s-matterhorn-glacier-ride-ii",
+      "ref": null,
+      "name": "3S • Matterhorn Glacier Ride II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-v-furggsattel",
+      "ref": null,
+      "name": "V • Furggsattel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x4-plateau-rosa-1",
+      "ref": null,
+      "name": "X4 • Plateau Rosa 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x5-plateau-rosa-2",
+      "ref": null,
+      "name": "X5 • Plateau Rosa 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x3-plateau-rosa-3",
+      "ref": null,
+      "name": "X3 • Plateau Rosa 3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-q-furi-riffelberg",
+      "ref": null,
+      "name": "Q • Furi - Riffelberg",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o3-trockener-steg-matterhorn-glacier-paradise",
+      "ref": null,
+      "name": "O3 • Trockener Steg - Matterhorn Glacier Paradise",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-u1-furgg-sandiger-boden",
+      "ref": null,
+      "name": "U1 • Furgg - Sandiger Boden",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-r-hirli",
+      "ref": null,
+      "name": "R • Hirli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x2-testa",
+      "ref": null,
+      "name": "X2 • Testa",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a1-zermatt-sunnegga",
+      "ref": null,
+      "name": "A1 • Zermatt - Sunnegga",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a2-sunnegga-blauherd",
+      "ref": null,
+      "name": "A2 • Sunnegga - Blauherd",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a3-blauherd-rothorn",
+      "ref": null,
+      "name": "A3 • Blauherd - Rothorn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-hublot-express-gant-blauherd",
+      "ref": null,
+      "name": "F • Hublot-Express: Gant - Blauherd",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-eisfluh",
+      "ref": null,
+      "name": "B • Eisfluh",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c1-eja-sunnegga",
+      "ref": null,
+      "name": "C1 • Eja - Sunnegga",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c2-eja-breitenboden",
+      "ref": null,
+      "name": "C2 • Eja - Breitenboden",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-patrullarve",
+      "ref": null,
+      "name": "D • Patrullarve",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e1-tuftern-tufternkumme",
+      "ref": null,
+      "name": "E1 • Tuftern - Tufternkumme",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e2-tufternkumme-rothorn",
+      "ref": null,
+      "name": "E2 • Tufternkumme - Rothorn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-leisee-shuttle",
+      "ref": null,
+      "name": "Leisee-Shuttle",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n1-zermatt-riffelalp",
+      "ref": null,
+      "name": "N1 • Zermatt - Riffelalp",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n2-riffelalp-riffelberg",
+      "ref": null,
+      "name": "N2 • Riffelalp - Riffelberg",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n3-riffelberg-rotenboden",
+      "ref": null,
+      "name": "N3 • Riffelberg - Rotenboden",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n4-rotenboden-gornergrat",
+      "ref": null,
+      "name": "N4 • Rotenboden - Gornergrat",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-gifthittli",
+      "ref": null,
+      "name": "M • Gifthittli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-gant-hohtalli",
+      "ref": null,
+      "name": "G • Gant - Hohtälli",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-rote-nase",
+      "ref": null,
+      "name": "H • Rote Nase",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-triftji",
+      "ref": null,
+      "name": "I • Triftji",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-64-garten",
+      "ref": null,
+      "name": "64 • Garten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-65-rennstrecke-skimovie",
+      "ref": null,
+      "name": "65 • Rennstrecke/Skimovie",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-66-theodulsee",
+      "ref": null,
+      "name": "66 • Theodulsee",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-72-furggsattel",
+      "ref": null,
+      "name": "72 • Furggsattel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-73-gandegg",
+      "ref": null,
+      "name": "73 • Gandegg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-80-testa-grigia",
+      "ref": null,
+      "name": "80 • Testa Grigia",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-81-fiererpiste",
+      "ref": null,
+      "name": "81 • Fiererpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-83-plateau-rosa",
+      "ref": null,
+      "name": "83 • Plateau Rosa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-84-ventina-glacier",
+      "ref": null,
+      "name": "84 • Ventina Glacier",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-85-1-matterhorn-glacier-paradise",
+      "ref": null,
+      "name": "85.1 • Matterhorn Glacier Paradise",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-85-2-matterhorn-glacier-paradise",
+      "ref": null,
+      "name": "85.2 • Matterhorn Glacier Paradise",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-87-verbindungspiste",
+      "ref": null,
+      "name": "87 • Verbindungspiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-88-testa-ii",
+      "ref": null,
+      "name": "88 • Testa II",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-49-bielti",
+      "ref": null,
+      "name": "49 • Bielti",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-50-blatten",
+      "ref": null,
+      "name": "50 • Blatten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-51-weisse-perle",
+      "ref": null,
+      "name": "51 • Weisse Perle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6000
+    },
+    {
+      "id": "slope-51-weisse-perle-traverse",
+      "ref": null,
+      "name": "51 • Weisse Perle Traverse",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-52-stafelalp",
+      "ref": null,
+      "name": "52 • Stafelalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4600
+    },
+    {
+      "id": "slope-53-oberer-tiefbach",
+      "ref": null,
+      "name": "53 • Oberer Tiefbach",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-54-hornli",
+      "ref": null,
+      "name": "54 • Hörnli",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-55-hirli",
+      "ref": null,
+      "name": "55 • Hirli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-56-kuhbodmen",
+      "ref": null,
+      "name": "56 • Kuhbodmen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-57-aroleid",
+      "ref": null,
+      "name": "57 • Aroleid",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-58-hermetje",
+      "ref": null,
+      "name": "58 • Hermetje",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-59-tiefbach",
+      "ref": null,
+      "name": "59 • Tiefbach",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-60-momatt",
+      "ref": null,
+      "name": "60 • Momatt",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-61-skiweg",
+      "ref": null,
+      "name": "61 • Skiweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-62-furgg-furi",
+      "ref": null,
+      "name": "62 • Furgg - Furi",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-63-sandiger-boden",
+      "ref": null,
+      "name": "63 • Sandiger Boden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-67-garten-buckelpiste",
+      "ref": null,
+      "name": "67 • Garten Buckelpiste",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-68-tumigu",
+      "ref": null,
+      "name": "68 • Tumigu",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-69-matterhorn",
+      "ref": null,
+      "name": "69 • Matterhorn",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-70-schusspiste",
+      "ref": null,
+      "name": "70 • Schusspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-71-theodulgletscher",
+      "ref": null,
+      "name": "71 • Theodulgletscher",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5400
+    },
+    {
+      "id": "slope-74-gandegghutte",
+      "ref": null,
+      "name": "74 • Gandegghütte",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-82-mittelpiste",
+      "ref": null,
+      "name": "82 • Mittelpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-85a-matterhorn-glacier-paradise",
+      "ref": null,
+      "name": "85A • Matterhorn Glacier Paradise",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-86-gobba-di-rollin",
+      "ref": null,
+      "name": "86 • Gobba di Rollin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-1-untere-national",
+      "ref": null,
+      "name": "1 • Untere National",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-2-ried",
+      "ref": null,
+      "name": "2 • Ried",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-2a-riedweg",
+      "ref": null,
+      "name": "2a • Riedweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-3-howette",
+      "ref": null,
+      "name": "3 • Howette",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-4-brunnjeschbord",
+      "ref": null,
+      "name": "4 • Brunnjeschbord",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-5-eisfluh",
+      "ref": null,
+      "name": "5 • Eisfluh",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-6-easy-run",
+      "ref": null,
+      "name": "6 • Easy run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-6-easy-run-2",
+      "ref": null,
+      "name": "6 • Easy run",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-7-standard",
+      "ref": null,
+      "name": "7 • Standard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-8-obere-national",
+      "ref": null,
+      "name": "8 • Obere National",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-9-tuftern",
+      "ref": null,
+      "name": "9 • Tuftern",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-10-paradise",
+      "ref": null,
+      "name": "10 • Paradise",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-11-rotweng-unten",
+      "ref": null,
+      "name": "11 • Rotweng unten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-11-rotweng-oben",
+      "ref": null,
+      "name": "11 • Rotweng oben",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-12-schneehuhn",
+      "ref": null,
+      "name": "12 • Schneehuhn",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-13-downhill",
+      "ref": null,
+      "name": "13 • Downhill",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-14-kumme",
+      "ref": null,
+      "name": "14 • Kumme",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-15-tufternkumme",
+      "ref": null,
+      "name": "15 • Tufternkumme",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-15b-tufternkumme",
+      "ref": null,
+      "name": "15b • Tufternkumme",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-16-chamois",
+      "ref": null,
+      "name": "16 • Chamois",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-17-marmotte",
+      "ref": null,
+      "name": "17 • Marmotte",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-18-arbzug",
+      "ref": null,
+      "name": "18 • Arbzug",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-19-fluhalp",
+      "ref": null,
+      "name": "19 • Fluhalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-19a-morane-umfahrung",
+      "ref": null,
+      "name": "19a • Moräne Umfahrung",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-25-berter",
+      "ref": null,
+      "name": "25 • Berter",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-26-grunsee",
+      "ref": null,
+      "name": "26 • Grünsee",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-27-balmbrunnen",
+      "ref": null,
+      "name": "27 • Balmbrunnen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-28-white-hare",
+      "ref": null,
+      "name": "28 • White Hare",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-29-kelle",
+      "ref": null,
+      "name": "29 • Kelle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-29a-kelle-schwarz",
+      "ref": null,
+      "name": "29a • Kelle Schwarz",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-30-mittelritz",
+      "ref": null,
+      "name": "30 • Mittelritz",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-31-platte",
+      "ref": null,
+      "name": "31 • Platte",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-32-grieschumme",
+      "ref": null,
+      "name": "32 • Grieschumme",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-33-triftji",
+      "ref": null,
+      "name": "33 • Triftji",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-34-stockhorn",
+      "ref": null,
+      "name": "34 • Stockhorn",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-35-gifthittli",
+      "ref": null,
+      "name": "35 • Gifthittli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-36-gornergrat",
+      "ref": null,
+      "name": "36 • Gornergrat",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-37-riffelhorn",
+      "ref": null,
+      "name": "37 • Riffelhorn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-38-rotenboden",
+      "ref": null,
+      "name": "38 • Rotenboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-39-riffelalp",
+      "ref": null,
+      "name": "39 • Riffelalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-40-riffelboden",
+      "ref": null,
+      "name": "40 • Riffelboden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-41-landtunnel",
+      "ref": null,
+      "name": "41 • Landtunnel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-42-schweigmatten",
+      "ref": null,
+      "name": "42 • Schweigmatten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-43-moos",
+      "ref": null,
+      "name": "43 • Moos",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-44-hohtalli",
+      "ref": null,
+      "name": "44 • Hohtälli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-45-iglupiste",
+      "ref": null,
+      "name": "45 • Iglupiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    }
+  ]
+}

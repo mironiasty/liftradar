@@ -1,0 +1,286 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "glacier-3000",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253914+01:00",
+  "updated_at": "2026-11-22T08:12:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=104&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-col-du-pillon-cabane",
+      "ref": null,
+      "name": "Col du Pillon - Cabane",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cabane-scex-rouge",
+      "ref": null,
+      "name": "Cabane - Scex Rouge",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-glacier-scex-rouge",
+      "ref": null,
+      "name": "Glacier - Scex Rouge",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-oldenalp-oldenegg",
+      "ref": null,
+      "name": "Oldenalp - Oldenegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-oldenegg-cabane",
+      "ref": null,
+      "name": "Oldenegg - Cabane",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-dome",
+      "ref": null,
+      "name": "Dôme",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tsanfleuron",
+      "ref": null,
+      "name": "Tsanfleuron",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-quille-du-diable",
+      "ref": null,
+      "name": "Quille du Diable",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-borer-scex-rouge",
+      "ref": null,
+      "name": "Borer Scex Rouge",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-col-d-audon",
+      "ref": null,
+      "name": "Col d'Audon",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-reusch-oldenegg",
+      "ref": null,
+      "name": "Reusch - Oldenegg",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-110-scex-rouge",
+      "ref": null,
+      "name": "110 • Scex Rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-108-dome",
+      "ref": null,
+      "name": "108 • Dôme",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-105-tsanfleuron",
+      "ref": null,
+      "name": "105 • Tsanfleuron",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-106-quille",
+      "ref": null,
+      "name": "106 • Quille",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-107-yeti",
+      "ref": null,
+      "name": "107 • Yeti",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-102-olden-slope",
+      "ref": null,
+      "name": "102 • Olden Slope",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-114a-black-wall",
+      "ref": null,
+      "name": "114a • Black Wall",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-112-red-run",
+      "ref": null,
+      "name": "112 • Red Run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-101-martisberg",
+      "ref": null,
+      "name": "101 • Martisberg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-100-reusch",
+      "ref": null,
+      "name": "100 • Reusch",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-115-pierres-pointes-itinerary",
+      "ref": null,
+      "name": "115 • Pierres-Pointes Itinerary",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-114b-black-wall-part-2",
+      "ref": null,
+      "name": "114b • Black Wall part.2",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-113-martisberg-part-1",
+      "ref": null,
+      "name": "113 • Martisberg part.1",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-111-scex-rouge-croisee",
+      "ref": null,
+      "name": "111 • Scex Rouge - Croisée",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-103-croisee-dome",
+      "ref": null,
+      "name": "103 • Croisée - Dôme",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-104-dome-tsanfleuron",
+      "ref": null,
+      "name": "104 • Dôme - Tsanfleuron",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-109-retour-scex-rouge",
+      "ref": null,
+      "name": "109 • Retour Scex Rouge",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    }
+  ]
+}

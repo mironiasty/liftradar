@@ -1,0 +1,184 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "vicheres-liddes",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254374+01:00",
+  "updated_at": "2026-11-20T10:45:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-la-lorette-bourg-st-pierre",
+      "ref": null,
+      "name": "La Lorette (Bourg-St-Pierre)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-la-chaux",
+      "ref": null,
+      "name": "J • La Chaux",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-le-chapelet",
+      "ref": null,
+      "name": "K • Le Chapelet",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-la-vuardette",
+      "ref": null,
+      "name": "L • La Vuardette",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-babylift",
+      "ref": null,
+      "name": "M • Babylift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-la-lorette-bourg-st-pierre",
+      "ref": null,
+      "name": "La Lorette (Bourg-St-Pierre)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-1-la-combe-des-six-nier",
+      "ref": null,
+      "name": "1 • La Combe des Six-Nier",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-2-la-chaux",
+      "ref": null,
+      "name": "2 • La Chaux",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-3-tessune",
+      "ref": null,
+      "name": "3 • Tessune",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-4-le-stade-raiffeisen",
+      "ref": null,
+      "name": "4 • Le Stade Raiffeisen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-5-l-arete",
+      "ref": null,
+      "name": "5 • L'Arête",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-6-combette",
+      "ref": null,
+      "name": "6 • Combette",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-7-la-vuardette-1",
+      "ref": null,
+      "name": "7 • La Vuardette 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-8-le-botza",
+      "ref": null,
+      "name": "8 • Le Botza",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5100
+    },
+    {
+      "id": "slope-9-la-noire",
+      "ref": null,
+      "name": "9 • La Noire",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-10-baby",
+      "ref": null,
+      "name": "10 • Baby",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-11-la-vuardette-2",
+      "ref": null,
+      "name": "11 • La Vuardette 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-13-les-melezes",
+      "ref": null,
+      "name": "13 • Les Mélèzes",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1300
+    }
+  ]
+}

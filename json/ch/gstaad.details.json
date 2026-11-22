@@ -1,0 +1,992 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "gstaad",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253964+01:00",
+  "updated_at": "2026-11-20T16:27:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=39&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-l1-rougemont-la-videmanette",
+      "ref": null,
+      "name": "L1 • Rougemont - La Videmanette",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a2-lengebrand-parwengesattel",
+      "ref": null,
+      "name": "A2 • Lengebrand - Parwengesattel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b1-zweisimmen-eggweid",
+      "ref": null,
+      "name": "B1 • Zweisimmen - Eggweid",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b2-eggweid-rinderberg",
+      "ref": null,
+      "name": "B2 • Eggweid - Rinderberg",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b3-birrmoos",
+      "ref": null,
+      "name": "B3 • Birrmoos",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b6-oeschseite-buelti",
+      "ref": null,
+      "name": "B6 • Oeschseite - Büelti",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c10-lochstafel",
+      "ref": null,
+      "name": "C10 • Lochstafel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c1-saanenmoser-saanenwald",
+      "ref": null,
+      "name": "C1 • Saanenmöser - Saanenwald",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c12-oeschseite-chubeli",
+      "ref": null,
+      "name": "C12 • Oeschseite - Chübeli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c2-saanenwald-saanerslochgrat",
+      "ref": null,
+      "name": "C2 • Saanenwald - Saanerslochgrat",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c4-chaltebrunne-saanerslochgrat-verbindung",
+      "ref": null,
+      "name": "C4 • Chaltebrunne - Saanerslochgrat (Verbindung)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c5-chaltebrunne-parwengesattel-verbindung",
+      "ref": null,
+      "name": "C5 • Chaltebrunne - Parwengesattel (Verbindung)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c7-saanenwald-hornberg",
+      "ref": null,
+      "name": "C7 • Saanenwald - Hornberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c8-hornfluh",
+      "ref": null,
+      "name": "C8 • Hornfluh",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c9-huenerspil",
+      "ref": null,
+      "name": "C9 • Hüenerspil",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d1-schonried-horneggli",
+      "ref": null,
+      "name": "D1 • Schönried - Horneggli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o2-lauenen",
+      "ref": null,
+      "name": "O2 • Lauenen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g1-gstaad-wasserngrat",
+      "ref": null,
+      "name": "G1 • Gstaad - Wasserngrat",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h1-gstaad-wispile",
+      "ref": null,
+      "name": "H1 • Gstaad-Wispile",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d2-lager",
+      "ref": null,
+      "name": "D2 • Läger",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h3-stand-wispile",
+      "ref": null,
+      "name": "H3 • Stand - Wispile",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h5-rutti",
+      "ref": null,
+      "name": "H5 • Rütti",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h6-zuckerli",
+      "ref": null,
+      "name": "H6 • Zückerli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j1-gstaad-eggli",
+      "ref": null,
+      "name": "J1 • Gstaad - Eggli",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j2-stand-eggli",
+      "ref": null,
+      "name": "J2 • Stand - Eggli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j3-saanen-eggli",
+      "ref": null,
+      "name": "J3 • Saanen - Eggli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j4-schopfen",
+      "ref": null,
+      "name": "J4 • Schopfen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j6-chalberhoni-vorderes-eggli",
+      "ref": null,
+      "name": "J6 • Chalberhöni - Vorderes Eggli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k1-chalberhoni-les-gouilles",
+      "ref": null,
+      "name": "K1 • Chalberhöni - Les Gouilles",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l3-les-gouilles-va-et-vient",
+      "ref": null,
+      "name": "L3 • Les Gouilles (Va-et-vient)",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o1-gsteig",
+      "ref": null,
+      "name": "O1 • Gsteig",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-piste-1",
+      "ref": null,
+      "name": "01 • Piste 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-02-parwengesattel-lengebrand",
+      "ref": null,
+      "name": "02 • Parwengesattel-Lengebrand",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4600
+    },
+    {
+      "id": "slope-03-parwengesattel-lengebrand",
+      "ref": null,
+      "name": "03 • Parwengesattel-Lengebrand",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "slope-04-chalberweid",
+      "ref": null,
+      "name": "04 • Chalberweid",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-05-parwengesattel-chalberweid",
+      "ref": null,
+      "name": "05 • Parwengesattel-Chalberweid",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-06-chalen",
+      "ref": null,
+      "name": "06 • Chälen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-07-ostgrat",
+      "ref": null,
+      "name": "07 • Ostgrat",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4100
+    },
+    {
+      "id": "slope-08-ostgrat-lengebrand-rinderberg-ronda",
+      "ref": null,
+      "name": "08 • Ostgrat-Lengebrand {Rinderberg Ronda}",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-09-talabfahrt-zweisimmen",
+      "ref": null,
+      "name": "09 • Talabfahrt Zweisimmen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-10-rinderberg-eggweid",
+      "ref": null,
+      "name": "10 • Rinderberg-Eggweid",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-11-ostgrat-west",
+      "ref": null,
+      "name": "11 • Ostgrat West",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-12-birrmoos",
+      "ref": null,
+      "name": "12 • Birrmoos",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-13-buelti-oeschseite",
+      "ref": null,
+      "name": "13 • Büelti-Oeschseite",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-15-chubeli-oeschseite",
+      "ref": null,
+      "name": "15 • Chübeli-Oeschseite",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "slope-16-chubeli",
+      "ref": null,
+      "name": "16 • Chübeli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-17-lochstafel",
+      "ref": null,
+      "name": "17 • Lochstafel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-20-parwengesattel-chaltebrunne",
+      "ref": null,
+      "name": "20 • Parwengesattel-Chaltebrunne",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-21-parwengesattel-chaltebrunne-verbindungspiste",
+      "ref": null,
+      "name": "21 • Parwengesattel-Chaltebrunne (Verbindungspiste)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-22-saanerslochgrat-chaltebrunne-verbindungspiste",
+      "ref": null,
+      "name": "22 • Saanerslochgrat-Chaltebrunne (Verbindungspiste)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-23-talabfahrt-saanenmoser",
+      "ref": null,
+      "name": "23 • Talabfahrt Saanenmöser",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-24-saanerslochgrat-saanenwald",
+      "ref": null,
+      "name": "24 • Saanerslochgrat-Saanenwald",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5500
+    },
+    {
+      "id": "slope-25-saanerslochgrat-chubeli-saanenwald",
+      "ref": null,
+      "name": "25 • Saanerslochgrat-Chübeli-Saanenwald",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6600
+    },
+    {
+      "id": "slope-26-hornberg-lochstafel",
+      "ref": null,
+      "name": "26 • Hornberg-Lochstafel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-27-huhnerspiel-lochstafel",
+      "ref": null,
+      "name": "27 • Hühnerspiel-Lochstafel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-28-huhnerspiel-hornberg",
+      "ref": null,
+      "name": "28 • Hühnerspiel-Hornberg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-29-hornfluh-hornberg-saanenwald",
+      "ref": null,
+      "name": "29 • Hornfluh-Hornberg-Saanenwald",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6600
+    },
+    {
+      "id": "slope-30-hornberg-lochstafel",
+      "ref": null,
+      "name": "30 • Hornberg-Lochstafel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-31-horneggli-saanenwald",
+      "ref": null,
+      "name": "31 • Horneggli-Saanenwald",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-32-talabfahrt-schonried",
+      "ref": null,
+      "name": "32 • Talabfahrt Schönried",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5200
+    },
+    {
+      "id": "slope-33-horevorschess-schonried",
+      "ref": null,
+      "name": "33 • Horevorschess-Schönried",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-34-horneggli-schonried",
+      "ref": null,
+      "name": "34 • Horneggli-Schönried",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5400
+    },
+    {
+      "id": "slope-35-horevorschess",
+      "ref": null,
+      "name": "35 • Horevorschess",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-36-hornfluh-gfell-lager",
+      "ref": null,
+      "name": "36 • Hornfluh-Gfell-Läger",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-37-horneggli-lager",
+      "ref": null,
+      "name": "37 • Horneggli-Läger",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-38-horneggli-schonried",
+      "ref": null,
+      "name": "38 • Horneggli-Schönried",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "slope-39-lager",
+      "ref": null,
+      "name": "39 • Läger",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-46-stand-eggli",
+      "ref": null,
+      "name": "46 • Stand-Eggli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-47-horneggli-verbingungspiste",
+      "ref": null,
+      "name": "47 • Horneggli Verbingungspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-55-talabfahrt-wasserngrat-bissen",
+      "ref": null,
+      "name": "55 • Talabfahrt Wasserngrat-Bissen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-56-tiger-run",
+      "ref": null,
+      "name": "56 • Tiger Run",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-57-talabfahrt-wasserngrat-bissen",
+      "ref": null,
+      "name": "57 • Talabfahrt Wasserngrat-Bissen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-58-trainingspiste",
+      "ref": null,
+      "name": "58 • Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-61-bodme-rutti-bergstation",
+      "ref": null,
+      "name": "61 • Bodme-Rütti Bergstation",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-62-rutti-gstaad",
+      "ref": null,
+      "name": "62 • Rütti-Gstaad",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-63-wispile-bodme",
+      "ref": null,
+      "name": "63 • Wispile-Bodme",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-64-wispile-bodme",
+      "ref": null,
+      "name": "64 • Wispile-Bodme",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-65-stand-wispile",
+      "ref": null,
+      "name": "65 • Stand-Wispile",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-67-zuckerli",
+      "ref": null,
+      "name": "67 • Zückerli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-68-neue-matte",
+      "ref": null,
+      "name": "68 • Neue Matte",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-70-talabfahrt-eggli-gstaad",
+      "ref": null,
+      "name": "70 • Talabfahrt Eggli-Gstaad",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-71-eggli-talabfahrt-blau",
+      "ref": null,
+      "name": "71 • Eggli Talabfahrt blau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-73-eggli-schopfen",
+      "ref": null,
+      "name": "73 • Eggli-Schopfen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-74-latzi-rossfalli",
+      "ref": null,
+      "name": "74 • Lätzi Rossfälli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-75-stand-fang",
+      "ref": null,
+      "name": "75 • Stand-Fang",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-76-eggli-saanen",
+      "ref": null,
+      "name": "76 • Eggli-Saanen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-77-schopfen-fang-verbindungspiste",
+      "ref": null,
+      "name": "77 • Schopfen-Fäng (Verbindungspiste)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-79-stand-chalberhoni",
+      "ref": null,
+      "name": "79 • Stand-Chalberhöni",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-80-skiweg-chalberhoni",
+      "ref": null,
+      "name": "80 • Skiweg Chalberhöni",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5500
+    },
+    {
+      "id": "slope-81-stand-chalberhoni",
+      "ref": null,
+      "name": "81 • Stand-Chalberhöni",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-82-les-gouilles-chalberhoni",
+      "ref": null,
+      "name": "82 • Les Gouilles-Chalberhöni",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7500
+    },
+    {
+      "id": "slope-83-les-gouilles-chalberhoni",
+      "ref": null,
+      "name": "83 • Les Gouilles-Chalberhöni",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5900
+    },
+    {
+      "id": "slope-84-videmanette-les-gouilles",
+      "ref": null,
+      "name": "84 • Videmanette-Les Gouilles",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-85-charles-louis",
+      "ref": null,
+      "name": "85 • Charles-Louis",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-86-les-romonts",
+      "ref": null,
+      "name": "86 • Les Romonts",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-87-les-gouilles-rougemont",
+      "ref": null,
+      "name": "87 • Les Gouilles-Rougemont",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 8500
+    },
+    {
+      "id": "slope-88-videmanette-les-gouilles",
+      "ref": null,
+      "name": "88 • Videmanette-Les Gouilles",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-89-la-verra",
+      "ref": null,
+      "name": "89 • La Verra",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-90-lauenen-blau",
+      "ref": null,
+      "name": "90 • Lauenen Blau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-91-gsteig-blau",
+      "ref": null,
+      "name": "91 • Gsteig Blau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-92-lauenen-rot",
+      "ref": null,
+      "name": "92 • Lauenen Rot",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-93-gsteig-rot",
+      "ref": null,
+      "name": "93 • Gsteig Rot",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "dagali-fjellpark",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262741+01:00",
+  "updated_at": "2026-11-12T18:05:19+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-t-krokheisen",
+      "ref": null,
+      "name": "T-krokheisen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-skitau-for-barn",
+      "ref": null,
+      "name": "Skitau for barn",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-kvikk-lunsj-lypa",
+      "ref": null,
+      "name": "Kvikk Lunsj-løypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-kulelypa",
+      "ref": null,
+      "name": "Kuleløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bratthenget",
+      "ref": null,
+      "name": "Bratthenget",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bestemorlypa",
+      "ref": null,
+      "name": "Bestemorløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-kjelkelypa-kun-for-kjelker",
+      "ref": null,
+      "name": "Kjelkeløypa (kun for kjelker)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnebakken",
+      "ref": null,
+      "name": "Barnebakken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "soriska-planina",
+  "country": "si",
+  "fetched_at": "2026-11-22T08:40:36.263456+01:00",
+  "updated_at": "2026-11-22T05:00:15+01:00",
+  "source": "https://www.soriska-planina.si/api/snowphone?type=workCondition",
+  "lifts": [
+    {
+      "id": "RL1105",
+      "ref": null,
+      "name": "Vlečnica Slatnik",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "RL1106",
+      "ref": null,
+      "name": "Vlečnica Sedlo",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "RL1107",
+      "ref": null,
+      "name": "Vlečnica Lajnar",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "RL1216",
+      "ref": null,
+      "name": "Dvosedežnica Lajnar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "RL1265",
+      "ref": null,
+      "name": "Otroška vlečnica Lucija",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "RS2173",
+      "ref": null,
+      "name": "Slatnik",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2174",
+      "ref": null,
+      "name": "Sedlo 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2175",
+      "ref": null,
+      "name": "Sedlo 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2176",
+      "ref": null,
+      "name": "FIS proga 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2177",
+      "ref": null,
+      "name": "FIS proga 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2178",
+      "ref": null,
+      "name": "Družinska proga",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2179",
+      "ref": null,
+      "name": "Smuk",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "RS2180",
+      "ref": null,
+      "name": "Poligon za deskanje",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

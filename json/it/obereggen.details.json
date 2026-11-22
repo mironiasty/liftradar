@@ -1,0 +1,282 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "obereggen",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255857+01:00",
+  "updated_at": "2026-10-09T22:25:27.618580+02:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_617",
+      "ref": null,
+      "name": "Absam-Maierl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_624",
+      "ref": null,
+      "name": "Deutschnofen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_620",
+      "ref": null,
+      "name": "Eben",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_622",
+      "ref": null,
+      "name": "Laner",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_621",
+      "ref": null,
+      "name": "Obereggen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_616",
+      "ref": null,
+      "name": "Oberholz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_618",
+      "ref": null,
+      "name": "Ochsenweide",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_625",
+      "ref": null,
+      "name": "Panorama",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:8_619",
+      "ref": null,
+      "name": "Reiter Joch",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182262",
+      "ref": null,
+      "name": "Absam",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182255",
+      "ref": null,
+      "name": "Campo Scuola Eben",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182267",
+      "ref": null,
+      "name": "Collegamento Reiteralpe",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182470",
+      "ref": null,
+      "name": "Deutschnofen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182260",
+      "ref": null,
+      "name": "Laner",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182261",
+      "ref": null,
+      "name": "Maierl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1640
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182257",
+      "ref": null,
+      "name": "Obereggen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1780
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182256",
+      "ref": null,
+      "name": "Oberholz",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182259",
+      "ref": null,
+      "name": "Ochsenweide",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182299",
+      "ref": null,
+      "name": "Pampeago",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182469",
+      "ref": null,
+      "name": "Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 720
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182264",
+      "ref": null,
+      "name": "Skiweg Reiterjoch",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182266",
+      "ref": null,
+      "name": "Toler",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182263",
+      "ref": null,
+      "name": "Variante Absam",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_182258",
+      "ref": null,
+      "name": "Variante Oberholz",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1666943233",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1666943232",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_184919",
+      "ref": null,
+      "name": "Zanggen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:8_1666943231",
+      "ref": null,
+      "name": "Zanggen 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    }
+  ]
+}

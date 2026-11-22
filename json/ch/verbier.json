@@ -11,13 +11,13 @@
   "website": "https://www.verbier.ch",
   "linked_area": "4-vallees",
   "status": "open",
-  "fetched_at": "2026-11-21T13:40:33.622404+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254354+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 91,
+    "mountain_cm": 93,
     "valley_cm": 5,
-    "fresh_cm": 21,
-    "last_snowfall": "2026-11-21",
+    "fresh_cm": 13,
+    "last_snowfall": "2026-11-22",
     "condition": "mainly: spring snow / partially: wet",
     "stations": [
       {
@@ -31,16 +31,16 @@
       {
         "name": "Les Ruinettes",
         "elevation_m": 2200,
-        "depth_cm": 61,
-        "fresh_cm": 21,
+        "depth_cm": 58,
+        "fresh_cm": 6,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 91,
-        "fresh_cm": 11,
+        "depth_cm": 93,
+        "fresh_cm": 13,
         "temperature_c": null,
         "condition": null
       }
@@ -108,7 +108,8 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T13:41:00+01:00",
+  "lifts_updated_at": "2026-11-22T08:41:00+01:00",
+  "details": "json/ch/verbier.details.json",
   "avalanche": {
     "region_id": "CH-4115",
     "region": "Martigny - Verbier",
@@ -124,11 +125,12 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",

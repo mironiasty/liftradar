@@ -9,8 +9,9 @@
     "lon": 6.7414
   },
   "website": "https://www.aussois.com",
+  "ski_region": "haute-maurienne-vanoise",
   "status": "no_report",
-  "fetched_at": "2026-11-21T13:40:33.625158+01:00",
+  "fetched_at": "2026-11-22T08:40:36.258336+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -70,27 +71,27 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2300,
+        "upper_bound": 2000,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2300,
+        "lower_bound": 2000,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-20T16:00:00+01:00",
-    "valid_from": "2026-11-20T16:00:00+01:00",
-    "valid_until": "2026-11-21T18:00:00+01:00"
+    "published_at": "2026-11-21T16:00:00+01:00",
+    "valid_from": "2026-11-21T16:00:00+01:00",
+    "valid_until": "2026-11-22T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=aussois&lang=fr&isSoir=false",
     "https://public.lumiplay.link/interactive-map/v1/map/name/Aussois",
-    "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json"
+    "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr",
+    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -103,15 +104,15 @@
         "attribution_required": null
       },
       {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
         "url": "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/dynamicPoiData?lang=fr",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json",
+        "url": "https://public.lumiplay.link/interactive-map/v1/map/e68b5cdd-02c4-43f9-b75f-2c679445b626/staticPoiData?lang=fr",
+        "attribution_required": null
+      },
+      {
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json",
         "attribution_required": null
       }
     ],

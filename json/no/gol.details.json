@@ -1,0 +1,169 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "gol",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262680+01:00",
+  "updated_at": "2026-11-17T11:32:31+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-gol-1",
+      "ref": null,
+      "name": "Gol 1",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-familieheisen",
+      "ref": null,
+      "name": "Familieheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-lvebakken",
+      "ref": null,
+      "name": "Løvebakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-svartfallet",
+      "ref": null,
+      "name": "Svartfallet",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-full-fart",
+      "ref": null,
+      "name": "Full Fart",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-ratass",
+      "ref": null,
+      "name": "Råtass",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pinneskogen",
+      "ref": null,
+      "name": "Pinneskogen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-sinnataggen",
+      "ref": null,
+      "name": "Sinnataggen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-gamlelypa",
+      "ref": null,
+      "name": "Gamleløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-skrabakken",
+      "ref": null,
+      "name": "Skråbakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-vaffelbakken",
+      "ref": null,
+      "name": "Vaffelbakken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-skogshornlypa",
+      "ref": null,
+      "name": "Skogshornløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-gunvald",
+      "ref": null,
+      "name": "Gunvald",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-hans",
+      "ref": null,
+      "name": "Hans",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-grete",
+      "ref": null,
+      "name": "Grete",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-ta-turen",
+      "ref": null,
+      "name": "Ta Turen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-golparken",
+      "ref": null,
+      "name": "Golparken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

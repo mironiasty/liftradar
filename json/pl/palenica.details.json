@@ -1,0 +1,123 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "palenica",
+  "country": "pl",
+  "fetched_at": "2026-11-22T08:40:36.257677+01:00",
+  "updated_at": null,
+  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
+  "lifts": [
+    {
+      "id": "lift-palenica",
+      "ref": null,
+      "name": "Palenica",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-szafranowka-i",
+      "ref": null,
+      "name": "Szafranówka I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-szafranowka-ii",
+      "ref": null,
+      "name": "Szafranówka II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-szafranowka-iii",
+      "ref": null,
+      "name": "Szafranówka III",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-szafranowka-iv",
+      "ref": null,
+      "name": "Szafranówka IV",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-przenosnik-tasmowy",
+      "ref": null,
+      "name": "Przenośnik taśmowy",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-palenica-i",
+      "ref": null,
+      "name": "Palenica I",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-palenica-ii-tzw-rodzinna",
+      "ref": null,
+      "name": "Palenica II tzw. rodzinna",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-szafranowka-i",
+      "ref": null,
+      "name": "Szafranówka I",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-szafranowka-ii",
+      "ref": null,
+      "name": "Szafranówka II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-polana-do-nauki",
+      "ref": null,
+      "name": "Polana do nauki",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 40
+    }
+  ]
+}

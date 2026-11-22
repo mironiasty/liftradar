@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pitztal",
   "country": "at",
-  "fetched_at": "2026-11-21T13:40:33.618683+01:00",
+  "fetched_at": "2026-11-22T08:40:36.249420+01:00",
   "updated_at": "2026-11-20T15:22:45+01:00",
   "source": "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
   "lifts": [
@@ -156,6 +156,7 @@
       "ref": "1",
       "name": "Rifflsee Talabfahrt",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 15000
     },
@@ -164,6 +165,7 @@
       "ref": "2",
       "name": "Muttenkopf",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 969
     },
@@ -172,6 +174,7 @@
       "ref": "3",
       "name": "Hüttenabfahrt",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 865
     },
@@ -180,6 +183,7 @@
       "ref": "4",
       "name": "Almrosen",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 1089
     },
@@ -188,6 +192,7 @@
       "ref": "5",
       "name": "Steinbock",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 832
     },
@@ -196,6 +201,7 @@
       "ref": "6",
       "name": "Sunnalm",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 544
     },
@@ -204,6 +210,7 @@
       "ref": "7",
       "name": "Hirschtal",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 1615
     },
@@ -212,6 +219,7 @@
       "ref": "7a",
       "name": "Hirschtal",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 525
     },
@@ -220,6 +228,7 @@
       "ref": "7b",
       "name": "Hirschtal",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 525
     },
@@ -228,6 +237,7 @@
       "ref": "9",
       "name": "Grubengrad",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 2890
     },
@@ -236,6 +246,7 @@
       "ref": "10",
       "name": "Grubenkopf",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 3389
     },
@@ -244,6 +255,7 @@
       "ref": "10a",
       "name": "Plodersee",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 853
     },
@@ -252,6 +264,7 @@
       "ref": "11",
       "name": "Buckelpiste",
       "difficulty": "difficult",
+      "colour": null,
       "status": "closed",
       "length_m": 450
     },
@@ -260,6 +273,7 @@
       "ref": "20",
       "name": "Mittagskogel",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "open",
       "length_m": 3400
     },
@@ -268,6 +282,7 @@
       "ref": "21",
       "name": "Wisbi-Run",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "open",
       "length_m": 1970
     },
@@ -276,6 +291,7 @@
       "ref": "22",
       "name": "Brunnenkogel",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "open",
       "length_m": 1565
     },
@@ -284,6 +300,7 @@
       "ref": "23",
       "name": "Longline",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "open",
       "length_m": 3400
     },
@@ -292,6 +309,7 @@
       "ref": "24",
       "name": "Pitz-Live",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 1475
     },
@@ -300,6 +318,7 @@
       "ref": "25",
       "name": "Gletschersee",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "open",
       "length_m": 3350
     },
@@ -308,6 +327,7 @@
       "ref": "26",
       "name": "Wildspitz",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "open",
       "length_m": 1460
     },
@@ -316,6 +336,7 @@
       "ref": "28",
       "name": "Panorama",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "open",
       "length_m": 3410
     },
@@ -324,6 +345,7 @@
       "ref": "29",
       "name": "Downhill",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "open",
       "length_m": 2157
     },
@@ -332,6 +354,7 @@
       "ref": "33",
       "name": "Schweizer Weg",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 3910
     },
@@ -340,6 +363,7 @@
       "ref": "34",
       "name": "Hoher Rain",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 4401
     },
@@ -348,6 +372,7 @@
       "ref": "36",
       "name": "Mittelberg",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "open",
       "length_m": 5305
     },
@@ -356,6 +381,7 @@
       "ref": "1a",
       "name": "Talstation Muttenkopf",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 3026
     },
@@ -364,6 +390,7 @@
       "ref": "8",
       "name": "Seekogel",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 275
     },
@@ -372,6 +399,7 @@
       "ref": "35",
       "name": "35 - Rot",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 1800
     },
@@ -380,6 +408,7 @@
       "ref": null,
       "name": "Grubenkar - Freeride",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "unknown",
       "length_m": 9000
     },
@@ -388,6 +417,7 @@
       "ref": null,
       "name": "Mittagskogel",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "unknown",
       "length_m": 10000
     },
@@ -396,6 +426,7 @@
       "ref": null,
       "name": "Tourenabfahrt - Griestal",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "unknown",
       "length_m": 10000
     },
@@ -404,6 +435,7 @@
       "ref": null,
       "name": "Tourenabfahrt - Taschachtal",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "unknown",
       "length_m": 12000
     },
@@ -412,6 +444,7 @@
       "ref": null,
       "name": "Mandarfen",
       "difficulty": "easy",
+      "colour": null,
       "status": "unknown",
       "length_m": null
     },
@@ -420,6 +453,7 @@
       "ref": "8",
       "name": "Seekogel",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 275
     },
@@ -428,6 +462,7 @@
       "ref": null,
       "name": "Ziehweg",
       "difficulty": "difficult",
+      "colour": null,
       "status": "unknown",
       "length_m": null
     }

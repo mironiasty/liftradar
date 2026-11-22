@@ -1,0 +1,63 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "mala-moravka-koprivna",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257588+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/ski-areal-koprivna-jeseniky",
+  "lifts": [
+    {
+      "id": "lift-lanova-draha-koprivna",
+      "ref": null,
+      "name": "Lanová dráha Kopřivná",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-vlek",
+      "ref": null,
+      "name": "Vlek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pohyblivy-pas",
+      "ref": null,
+      "name": "Pohyblivý pás",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-koprivna-i",
+      "ref": null,
+      "name": "Kopřivná I.",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "slope-koprivna-ii",
+      "ref": null,
+      "name": "Kopřivná II.",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 930
+    }
+  ]
+}

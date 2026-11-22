@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "saas-fee",
   "country": "ch",
-  "fetched_at": "2026-11-21T13:40:33.622292+01:00",
-  "updated_at": "2026-11-21T13:41:15+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254204+01:00",
+  "updated_at": "2026-11-22T08:42:15+01:00",
   "source": "https://winter.intermaps.com/saas_fee/data?lang=en",
   "lifts": [
     {
@@ -33,7 +33,7 @@
       "ref": null,
       "name": "Metro Alpin",
       "type": "funicular",
-      "status": "open",
+      "status": "closed",
       "length_m": 1447,
       "capacity_per_hour": null,
       "bottom_m": null,
@@ -55,7 +55,7 @@
       "ref": null,
       "name": "Alpin Express II",
       "type": "gondola",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
@@ -266,6 +266,7 @@
       "ref": "17a",
       "name": "17a Gletscherpromenade",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 4000
     },
@@ -274,6 +275,7 @@
       "ref": "19b",
       "name": "19b Derbyschuss",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 3000
     },
@@ -282,6 +284,7 @@
       "ref": "18",
       "name": "18 Metro",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 4800
     },
@@ -290,6 +293,7 @@
       "ref": "10b",
       "name": "10b Gletscherband",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 5000
     },
@@ -298,6 +302,7 @@
       "ref": "07",
       "name": "07 Altes Kanonenrohr",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 1000
     },
@@ -306,6 +311,7 @@
       "ref": "15a",
       "name": "15a Felsental",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 3000
     },
@@ -314,6 +320,7 @@
       "ref": "05",
       "name": "05 Felskinn",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 4000
     },
@@ -322,6 +329,7 @@
       "ref": "05a",
       "name": "05a Eiskristall",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "open",
       "length_m": 3000
     },
@@ -330,6 +338,7 @@
       "ref": "06",
       "name": "06 Moräne",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 2500
     },
@@ -338,6 +347,7 @@
       "ref": "04a",
       "name": "04a Ritzi",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 3500
     },
@@ -346,6 +356,7 @@
       "ref": "09",
       "name": "09 Egginerjoch",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -354,6 +365,7 @@
       "ref": "06b",
       "name": "06b Sperwerzucht",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -362,6 +374,7 @@
       "ref": "11",
       "name": "11 Längfluh",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 3500
     },
@@ -370,6 +383,7 @@
       "ref": "11a",
       "name": "11a Spielboden",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 3500
     },
@@ -378,6 +392,7 @@
       "ref": "02",
       "name": "02 Galen (red)",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 3500
     },
@@ -386,6 +401,7 @@
       "ref": "01",
       "name": "01 Plattjen",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -394,6 +410,7 @@
       "ref": "10",
       "name": "10 Weisse Meile",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -402,6 +419,7 @@
       "ref": "10a",
       "name": "10a Feechatz-Piste",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 5000
     },
@@ -410,6 +428,7 @@
       "ref": "02a",
       "name": "02a Wang",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -418,6 +437,7 @@
       "ref": "03",
       "name": "03 Waldweg",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 4000
     },
@@ -426,6 +446,7 @@
       "ref": "02",
       "name": "02 Galen (black)",
       "difficulty": "difficult",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -434,6 +455,7 @@
       "ref": "11b",
       "name": "11b Oberer Spielboden",
       "difficulty": "difficult",
+      "colour": null,
       "status": "closed",
       "length_m": 2500
     },
@@ -442,6 +464,7 @@
       "ref": "19",
       "name": "19 Allalin",
       "difficulty": "intermediate",
+      "colour": null,
       "status": "closed",
       "length_m": 6000
     },
@@ -450,6 +473,7 @@
       "ref": "06a",
       "name": "06a Kanonenrohr",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 1000
     },
@@ -458,6 +482,7 @@
       "ref": "01a",
       "name": "01a National",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -466,6 +491,7 @@
       "ref": "02b",
       "name": "02b Galen",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 1000
     },
@@ -474,6 +500,7 @@
       "ref": "13",
       "name": "13 Weisse Perle",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -482,6 +509,7 @@
       "ref": "04c",
       "name": "04c Skiweg",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 200
     },
@@ -490,6 +518,7 @@
       "ref": "04b",
       "name": "04b Gletschergrotte",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 6000
     },
@@ -498,6 +527,7 @@
       "ref": "20",
       "name": "20 Stafelwald",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 3000
     },
@@ -506,6 +536,7 @@
       "ref": "08",
       "name": "08 Mittaghorn",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 1000
     },
@@ -514,6 +545,7 @@
       "ref": "21",
       "name": "Kalbermatten",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 2000
     },
@@ -522,6 +554,7 @@
       "ref": "04",
       "name": "04 Stollenausgang",
       "difficulty": "easy",
+      "colour": null,
       "status": "closed",
       "length_m": 1000
     },
@@ -530,6 +563,7 @@
       "ref": "04",
       "name": "04 Egginer (2)",
       "difficulty": "easy",
+      "colour": null,
       "status": "open",
       "length_m": 7000
     }

@@ -1,0 +1,184 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "bellwald",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253749+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=184&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-furgangen-bellwald",
+      "ref": null,
+      "name": "Fürgangen - Bellwald",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-richenen",
+      "ref": null,
+      "name": "Richenen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-furggulti",
+      "ref": null,
+      "name": "Furggulti",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mattenlift",
+      "ref": null,
+      "name": "Mattenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fleschenlift",
+      "ref": null,
+      "name": "Fleschenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-sektion-fleschen-gassen",
+      "ref": null,
+      "name": "1 • Sektion Fleschen-Gassen",
+      "difficulty": "other",
+      "colour": "blue_red",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-2-sektion-furggulti-fleschen",
+      "ref": null,
+      "name": "2 • Sektion Furggulti-Fleschen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-3-schaferchriitz",
+      "ref": null,
+      "name": "3 • Schäferchriitz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-4-hang",
+      "ref": null,
+      "name": "4 • Hang",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-5-chumelti",
+      "ref": null,
+      "name": "5 • Chumelti",
+      "difficulty": "other",
+      "colour": "red_black",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-6-rapito",
+      "ref": null,
+      "name": "6 • Rapito",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-7-beich",
+      "ref": null,
+      "name": "7 • Beich",
+      "difficulty": "other",
+      "colour": "blue_red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-8-matten-2",
+      "ref": null,
+      "name": "8 • Matten 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-9-matten-1",
+      "ref": null,
+      "name": "9 • Matten 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-10-fleschenpiste",
+      "ref": null,
+      "name": "10 • Fleschenpiste",
+      "difficulty": "other",
+      "colour": "red_black",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-11-schwarzepiste",
+      "ref": null,
+      "name": "11 • Schwarzepiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-12-strasse",
+      "ref": null,
+      "name": "12 • Strasse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4100
+    },
+    {
+      "id": "slope-13-rennpiste",
+      "ref": null,
+      "name": "13 • Rennpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 200
+    }
+  ]
+}

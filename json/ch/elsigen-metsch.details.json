@@ -1,0 +1,275 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "elsigen-metsch",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253875+01:00",
+  "updated_at": "2026-11-13T11:23:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=112&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-f01-elsigbach-elsigenalp",
+      "ref": null,
+      "name": "F01 • Elsigbach - Elsigenalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f02a-elsigenalp-i",
+      "ref": null,
+      "name": "F02a • Elsigenalp I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f02b-elsigenalp-ii",
+      "ref": null,
+      "name": "F02b • Elsigenalp II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f03-elsighorn",
+      "ref": null,
+      "name": "F03 • Elsighorn",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f04-metschegge",
+      "ref": null,
+      "name": "F04 • Metschegge",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f05-kinderparadieslifte-elsigenalp",
+      "ref": null,
+      "name": "F05 • Kinderparadieslifte Elsigenalp",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f06-hohmatti",
+      "ref": null,
+      "name": "F06 • Hohmatti",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f07-hochst-metsch",
+      "ref": null,
+      "name": "F07 • Höchst - Metsch",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f08-widerhubel",
+      "ref": null,
+      "name": "F08 • Widerhubel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f10-verbindungslift-kinderlift-elsigenalp",
+      "ref": null,
+      "name": "F10 • Verbindungslift / Kinderlift Elsigenalp",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-109-trainingspiste",
+      "ref": null,
+      "name": "109 • Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-110-carvingpiste",
+      "ref": null,
+      "name": "110 • Carvingpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-111-mittelpiste",
+      "ref": null,
+      "name": "111 • Mittelpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-112-parsennpiste",
+      "ref": null,
+      "name": "112 • Parsennpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-113-steilhangpiste",
+      "ref": null,
+      "name": "113 • Steilhangpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-114-panoramapiste",
+      "ref": null,
+      "name": "114 • Panoramapiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-116-verbindungspiste-metsch-elsigen",
+      "ref": null,
+      "name": "116 • Verbindungspiste Metsch - Elsigen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-117-verbindungspiste-elsigen-metsch",
+      "ref": null,
+      "name": "117 • Verbindungspiste Elsigen - Metsch",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-118-hohmattipiste",
+      "ref": null,
+      "name": "118 • Hohmattipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-119-senggipiste",
+      "ref": null,
+      "name": "119 • Senggipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-120-weisse-perle",
+      "ref": null,
+      "name": "120 • Weisse Perle",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-122-chrindepiste",
+      "ref": null,
+      "name": "122 • Chrindepiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-123-elsighornpiste",
+      "ref": null,
+      "name": "123 • Elsighornpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-124-aeglerepiste",
+      "ref": null,
+      "name": "124 • Aeglerepiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-125-metschegga",
+      "ref": null,
+      "name": "125 • Metschegga",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-126-talabfahrt",
+      "ref": null,
+      "name": "126 • Talabfahrt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "slope-127-kinderpiste",
+      "ref": null,
+      "name": "127 • Kinderpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    }
+  ]
+}

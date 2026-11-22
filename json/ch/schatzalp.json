@@ -9,9 +9,8 @@
     "lon": 9.8108
   },
   "website": "https://www.schatzalp.ch",
-  "ski_region": "davos-klosters",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.623182+01:00",
+  "fetched_at": "2026-11-22T08:40:36.255747+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +22,16 @@
       {
         "name": "Weissfluhjoch (SLF)",
         "elevation_m": 2536,
-        "depth_cm": 28,
-        "fresh_cm": 19,
+        "depth_cm": 37,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Weissfluhjoch (SLF)",
         "elevation_m": 2536,
-        "depth_cm": 46,
-        "fresh_cm": 17,
+        "depth_cm": 41,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -81,6 +80,7 @@
     }
   },
   "lifts_updated_at": null,
+  "details": "json/ch/schatzalp.details.json",
   "avalanche": {
     "region_id": "CH-5123",
     "region": "Davos",
@@ -98,9 +98,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",

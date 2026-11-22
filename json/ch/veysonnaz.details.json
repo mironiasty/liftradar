@@ -1,0 +1,203 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "veysonnaz",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254303+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=102&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-bambino-i",
+      "ref": null,
+      "name": "Bambino I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bambino-ii",
+      "ref": null,
+      "name": "Bambino II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-inalpe",
+      "ref": null,
+      "name": "Inalpe",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-drus",
+      "ref": null,
+      "name": "Drus",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cheminee",
+      "ref": null,
+      "name": "Cheminée",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tsa",
+      "ref": null,
+      "name": "Tsa",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-les-chottes",
+      "ref": null,
+      "name": "Les Chottes",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-veysonnaz",
+      "ref": null,
+      "name": "Veysonnaz",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-piste-de-l-ours",
+      "ref": null,
+      "name": "Piste de l'Ours",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-thyon-2000",
+      "ref": null,
+      "name": "Thyon 2000",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-troncon",
+      "ref": null,
+      "name": "Tronçon",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-piste-de-l-ours",
+      "ref": null,
+      "name": "Piste de l'Ours",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-les-mayens",
+      "ref": null,
+      "name": "Les Mayens",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-bambino",
+      "ref": null,
+      "name": "Bambino",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-inalpe",
+      "ref": null,
+      "name": "Inalpe",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-les-drus",
+      "ref": null,
+      "name": "Les Drus",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-cheminee",
+      "ref": null,
+      "name": "Cheminée",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-tsa",
+      "ref": null,
+      "name": "Tsa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-les-chottes",
+      "ref": null,
+      "name": "Les Chottes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    }
+  ]
+}

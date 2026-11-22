@@ -1,0 +1,184 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "visperterminen",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254394+01:00",
+  "updated_at": "2026-11-20T10:00:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=229&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-sentum",
+      "ref": null,
+      "name": "Sentum",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-giw",
+      "ref": null,
+      "name": "Giw",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-rothorn",
+      "ref": null,
+      "name": "Rothorn",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kinderlift",
+      "ref": null,
+      "name": "Kinderlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bambilift",
+      "ref": null,
+      "name": "Bambilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-rothorn",
+      "ref": null,
+      "name": "1 • Rothorn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-2-rothorn",
+      "ref": null,
+      "name": "2 • Rothorn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-3-rothorn",
+      "ref": null,
+      "name": "3 • Rothorn",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-4-rothorn",
+      "ref": null,
+      "name": "4 • Rothorn",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-5-rothorn",
+      "ref": null,
+      "name": "5 • Rothorn",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-6-rothorn",
+      "ref": null,
+      "name": "6 • Rothorn",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-7-rothorn",
+      "ref": null,
+      "name": "7 • Rothorn",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-8-senntum",
+      "ref": null,
+      "name": "8 • Senntum",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-9-senntum",
+      "ref": null,
+      "name": "9 • Senntum",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-10-talabfahrt",
+      "ref": null,
+      "name": "10 • Talabfahrt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-11-skipiste-und-schlittelweg",
+      "ref": null,
+      "name": "11 • Skipiste und Schlittelweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-12-kinderpiste",
+      "ref": null,
+      "name": "12 • Kinderpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-13-trainingspiste",
+      "ref": null,
+      "name": "13 • Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    }
+  ]
+}

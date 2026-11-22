@@ -11,7 +11,7 @@
   "website": "https://www.mountains.ch",
   "ski_region": "engadin-st-moritz",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622353+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254281+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Valetta (SLF)",
         "elevation_m": 2512,
-        "depth_cm": 14,
-        "fresh_cm": 2,
+        "depth_cm": 15,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "St.Moritz (SLF)",
         "elevation_m": 1850,
-        "depth_cm": 2,
-        "fresh_cm": 1,
+        "depth_cm": 1,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -101,6 +101,7 @@
     }
   },
   "lifts_updated_at": "2026-11-16T13:26:00+01:00",
+  "details": "json/ch/st-moritz-corviglia.details.json",
   "avalanche": {
     "region_id": "CH-7114",
     "region": "St. Moritz",
@@ -118,9 +119,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=41&saison=1&ref=contentBox",

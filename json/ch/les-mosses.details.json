@@ -1,0 +1,382 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "les-mosses",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254093+01:00",
+  "updated_at": "2026-11-21T08:07:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=97&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-1m-parchets-i",
+      "ref": null,
+      "name": "1M • Parchets I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-2m-parchets-ii",
+      "ref": null,
+      "name": "2M • Parchets II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-3m-crettex",
+      "ref": null,
+      "name": "3M • Crettex",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-4m-dorchaux-i",
+      "ref": null,
+      "name": "4M • Dorchaux I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-5m-dorchaux-ii",
+      "ref": null,
+      "name": "5M • Dorchaux II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-6m-picatchou",
+      "ref": null,
+      "name": "6M • Picatchou",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-7m-tapis-mini-glisse",
+      "ref": null,
+      "name": "7M • Tapis mini-glisse",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-8m-dorchaux-junior",
+      "ref": null,
+      "name": "8M • Dorchaux Junior",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-9m-dorchaux-iii",
+      "ref": null,
+      "name": "9M • Dorchaux III",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-10m-l-arsat",
+      "ref": null,
+      "name": "10M • L'Arsat",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-11m-pra-cornet",
+      "ref": null,
+      "name": "11M • Pra Cornet",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-12m-eraisis",
+      "ref": null,
+      "name": "12M • Eraisis",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-13m-mossette",
+      "ref": null,
+      "name": "13M • Mossette",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-14m-baby-lecherette",
+      "ref": null,
+      "name": "14M • Baby Lécherette",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-tapis-roulant",
+      "ref": null,
+      "name": "Tapis Roulant",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-dorchaux-junior",
+      "ref": null,
+      "name": "Dorchaux junior",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-la-lecherette-baby",
+      "ref": null,
+      "name": "La Lécherette-Baby",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-20-les-parchets-i",
+      "ref": null,
+      "name": "20 • Les Parchets I",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-21-les-parchets-i",
+      "ref": null,
+      "name": "21 • Les Parchets I",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-22-les-parchets-ii",
+      "ref": null,
+      "name": "22 • Les Parchets II",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-23-le-crettex",
+      "ref": null,
+      "name": "23 • Le Crettex",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-24-le-crettex",
+      "ref": null,
+      "name": "24 • Le Crettex",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-25-crettex-dorchaux",
+      "ref": null,
+      "name": "25 • Crettex-Dorchaux",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-26-dorchaux",
+      "ref": null,
+      "name": "26 • Dorchaux",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-27-dorchaux",
+      "ref": null,
+      "name": "27 • Dorchaux",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-27-picatchou",
+      "ref": null,
+      "name": "27 • Picatchou",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-28-dorchaux-iii",
+      "ref": null,
+      "name": "28 • Dorchaux III",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-29-dorchaux-cherne",
+      "ref": null,
+      "name": "29 • Dorchaux - Cherne",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-30-l-arsat",
+      "ref": null,
+      "name": "30 • L'Arsat",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-31-l-arsat",
+      "ref": null,
+      "name": "31 • L'Arsat",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-32-praz-cornet",
+      "ref": null,
+      "name": "32 • Praz-Cornet",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-33-praz-cornet",
+      "ref": null,
+      "name": "33 • Praz-Cornet",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-34-praz-cornet-lecherette",
+      "ref": null,
+      "name": "34 • Praz-Cornet - Lécherette",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-35-la-lecherette",
+      "ref": null,
+      "name": "35 • La Lécherette",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-36-la-mossette",
+      "ref": null,
+      "name": "36 • La Mossette",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-37-la-lecherette",
+      "ref": null,
+      "name": "37 • La Lécherette",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-38-la-mossette",
+      "ref": null,
+      "name": "38 • La Mossette",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-39-lecherette",
+      "ref": null,
+      "name": "39 • Lécherette",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

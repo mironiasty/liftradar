@@ -1,0 +1,420 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "villars",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254383+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=60&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-bvb-villars-col-de-soud",
+      "ref": null,
+      "name": "BVB Villars - Col de Soud",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bvb-col-de-soud-bretaye",
+      "ref": null,
+      "name": "BVB Col de Soud - Bretaye",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-bretaye",
+      "ref": null,
+      "name": "Tapis Bretaye",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a-bvb-villars-bretaye",
+      "ref": null,
+      "name": "A • BVB Villars-Bretaye",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-villars-roc-d-orsay",
+      "ref": null,
+      "name": "B • Villars-Roc d'Orsay",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-grand-chamossaire",
+      "ref": null,
+      "name": "C • Grand Chamossaire",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-bretaye-orsay",
+      "ref": null,
+      "name": "D • Bretaye-Orsay",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-combe-d-orsay",
+      "ref": null,
+      "name": "E • Combe d'Orsay",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-lac-noir-chaux-ronde",
+      "ref": null,
+      "name": "F • Lac Noir-Chaux Ronde",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-lac-noir-bretaye",
+      "ref": null,
+      "name": "G • Lac Noir-Bretaye",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-chaux-ronde-i-ii",
+      "ref": null,
+      "name": "J • Chaux Ronde I & II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-lac-de-bretaye",
+      "ref": null,
+      "name": "K • Lac de Bretaye",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-petit-chamossaire",
+      "ref": null,
+      "name": "K • Petit Chamossaire",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-rasse-chaux-ronde",
+      "ref": null,
+      "name": "M • Rasse-Chaux Ronde",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-w-chavonnes",
+      "ref": null,
+      "name": "W • Chavonnes",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-ecureil",
+      "ref": null,
+      "name": "Ecureil",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-montjoie",
+      "ref": null,
+      "name": "Montjoie",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-tetra",
+      "ref": null,
+      "name": "Tetra",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-01-populaire-bretaye-col-de-soud",
+      "ref": null,
+      "name": "01 • Populaire Bretaye-Col de Soud",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-02-lapins",
+      "ref": null,
+      "name": "02 • Lapins",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-03-golette",
+      "ref": null,
+      "name": "03 • Golette",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-05-parc",
+      "ref": null,
+      "name": "05 • Parc",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-06-loveresse",
+      "ref": null,
+      "name": "06 • Loveresse",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-07-bouquetins",
+      "ref": null,
+      "name": "07 • Bouquetins",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "slope-08-bretaye-orsay",
+      "ref": null,
+      "name": "08 • Bretaye-Orsay",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-09-combe-d-orsay",
+      "ref": null,
+      "name": "09 • Combe d'Orsay",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-10-chamossaire-nord",
+      "ref": null,
+      "name": "10 • Chamossaire-Nord",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-11-chamossaire-sud",
+      "ref": null,
+      "name": "11 • Chamossaire-Sud",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-13-aigle",
+      "ref": null,
+      "name": "13 • Aigle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-14-chamois",
+      "ref": null,
+      "name": "14 • Chamois",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-14a-chavonnes",
+      "ref": null,
+      "name": "14a • Chavonnes",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-15-lac-de-bretaye",
+      "ref": null,
+      "name": "15 • Lac de Bretaye",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-16-lac-noir-bleu",
+      "ref": null,
+      "name": "16 • Lac Noir Bleu",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-16b-lac-noir-rouge",
+      "ref": null,
+      "name": "16b • Lac Noir Rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-17-chaux-ronde-bleu",
+      "ref": null,
+      "name": "17 • Chaux Ronde Bleu",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-18-chaux-ronde-rouge",
+      "ref": null,
+      "name": "18 • Chaux Ronde Rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-19-la-traverse",
+      "ref": null,
+      "name": "19 • La Traverse",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-20-les-rochers",
+      "ref": null,
+      "name": "20 • Les Rochers",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-21-les-vernes",
+      "ref": null,
+      "name": "21 • Les Vernes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-22-le-crot",
+      "ref": null,
+      "name": "22 • Le Crot",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-24-la-rasse",
+      "ref": null,
+      "name": "24 • La Rasse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4200
+    },
+    {
+      "id": "slope-25-palace",
+      "ref": null,
+      "name": "25 • Palace",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    }
+  ]
+}

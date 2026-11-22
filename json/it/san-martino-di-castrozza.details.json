@@ -1,0 +1,627 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "san-martino-di-castrozza",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255863+01:00",
+  "updated_at": "2026-11-22T07:00:07.130401+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_638",
+      "ref": null,
+      "name": "Baby Tognola",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_628",
+      "ref": null,
+      "name": "Castellazzo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_637",
+      "ref": null,
+      "name": "Cigolera",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_645",
+      "ref": null,
+      "name": "Cima Tognola",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_630",
+      "ref": null,
+      "name": "Cimon",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_639",
+      "ref": null,
+      "name": "Colbricon Express",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_647",
+      "ref": null,
+      "name": "Col Verde",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_642",
+      "ref": null,
+      "name": "Coston andata",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_643",
+      "ref": null,
+      "name": "Coston ritorno",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_631",
+      "ref": null,
+      "name": "Ferrari",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_1702282754",
+      "ref": null,
+      "name": "Nasse Park",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_629",
+      "ref": null,
+      "name": "Paradiso",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_650",
+      "ref": null,
+      "name": "Prà delle Nasse 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_651",
+      "ref": null,
+      "name": "Prà  delle Nasse 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_640",
+      "ref": null,
+      "name": "Punta Ces",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_635",
+      "ref": null,
+      "name": "Rododendro",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_627",
+      "ref": null,
+      "name": "Rolle",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_648",
+      "ref": null,
+      "name": "Rosetta",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_634",
+      "ref": null,
+      "name": "Scandola",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_1702283455",
+      "ref": null,
+      "name": "Tappeto primi passi Baby Tognola",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_1702283130",
+      "ref": null,
+      "name": "Tappeto primi passi Prà delle Nasse",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_1702370656",
+      "ref": null,
+      "name": "Tappeto trasferimento segg. Castellazzo",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_633",
+      "ref": null,
+      "name": "Tognola",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:9_644",
+      "ref": null,
+      "name": "Valcigolera",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216249",
+      "ref": null,
+      "name": "Baby Tognola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 207
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216250",
+      "ref": null,
+      "name": "Bellaria",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 995
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216257",
+      "ref": null,
+      "name": "Campo Scuola Cimon",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 560
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216251",
+      "ref": null,
+      "name": "Castellazzo 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216252",
+      "ref": null,
+      "name": "Castellazzo 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 995
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216253",
+      "ref": null,
+      "name": "Castellazzo 3",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1080
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216255",
+      "ref": null,
+      "name": "Cigolera",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 778
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216256",
+      "ref": null,
+      "name": "Cima Tognola",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1360
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_1780284",
+      "ref": null,
+      "name": "Colbricon",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1460
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_76410630",
+      "ref": null,
+      "name": "collegamento Cimon-Ferrari",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 207
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216258",
+      "ref": null,
+      "name": "Col Verde 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 676
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216259",
+      "ref": null,
+      "name": "Col Verde 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2110
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216262",
+      "ref": null,
+      "name": "Conca",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1390
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216263",
+      "ref": null,
+      "name": "Coston",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216264",
+      "ref": null,
+      "name": "Cristiania",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1980
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_1702286381",
+      "ref": null,
+      "name": "Fantasia2000",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216266",
+      "ref": null,
+      "name": "Ferrari",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 880
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216267",
+      "ref": null,
+      "name": "Ferrari II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 473
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216268",
+      "ref": null,
+      "name": "Fiamme Gialle",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 724
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216285",
+      "ref": null,
+      "name": "Malga Ces",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1320
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216269",
+      "ref": null,
+      "name": "Paradiso I",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1030
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216270",
+      "ref": null,
+      "name": "Paradiso II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216271",
+      "ref": null,
+      "name": "Prà Nasse 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 244
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216272",
+      "ref": null,
+      "name": "Prà Nasse 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 244
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_2813810",
+      "ref": null,
+      "name": "Raccordo Ferrari",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 970
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216274",
+      "ref": null,
+      "name": "Rekord",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216275",
+      "ref": null,
+      "name": "Rododendro",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1460
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216276",
+      "ref": null,
+      "name": "Rolle I",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216277",
+      "ref": null,
+      "name": "Rolle II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216278",
+      "ref": null,
+      "name": "Scandola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216279",
+      "ref": null,
+      "name": "Segantini",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 260
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216280",
+      "ref": null,
+      "name": "Ski Weg Coston",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 679
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216281",
+      "ref": null,
+      "name": "Sole",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 935
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216283",
+      "ref": null,
+      "name": "Tognola 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216282",
+      "ref": null,
+      "name": "Tognola 1",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1040
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216284",
+      "ref": null,
+      "name": "Tognola 3",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216260",
+      "ref": null,
+      "name": "Valbonetta",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216286",
+      "ref": null,
+      "name": "Variante 1 - 3",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2410
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216273",
+      "ref": null,
+      "name": "Variante Rekord-Coston",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 193
+    }
+  ]
+}

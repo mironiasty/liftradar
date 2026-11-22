@@ -10,7 +10,7 @@
   },
   "website": "https://www.titlis.ch",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.623120+01:00",
+  "fetched_at": "2026-11-22T08:40:36.255662+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Titlisboden (SLF)",
         "elevation_m": 2149,
-        "depth_cm": 4,
-        "fresh_cm": 16,
+        "depth_cm": 20,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       },
@@ -100,6 +100,7 @@
     }
   },
   "lifts_updated_at": null,
+  "details": "json/ch/engelberg-titlis.details.json",
   "avalanche": {
     "region_id": "CH-2122",
     "region": "Engelberg",
@@ -117,9 +118,9 @@
       "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://export.siscontrol.ch/sismedia/json/EFCA0DF3-C1FC-4932-9F8F-B1911C5DBAD7",

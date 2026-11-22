@@ -1,0 +1,92 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "strazne",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257567+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/skiareal-strazne",
+  "lifts": [
+    {
+      "id": "lift-kotva",
+      "ref": null,
+      "name": "Kotva",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pod-starou-skolou",
+      "ref": null,
+      "name": "Pod Starou školou",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kolonka-i",
+      "ref": null,
+      "name": "Kolonka I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kolonka-ii",
+      "ref": null,
+      "name": "Kolonka II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-kotva",
+      "ref": null,
+      "name": "Kotva",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-pod-starou-skolou",
+      "ref": null,
+      "name": "Pod Starou školou",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "slope-kolonka",
+      "ref": null,
+      "name": "Kolonka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-freestyle-park",
+      "ref": null,
+      "name": "Freestyle park",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    }
+  ]
+}

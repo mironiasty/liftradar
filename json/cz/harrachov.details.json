@@ -1,0 +1,130 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "harrachov",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257219+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/lyzovani-ci-skoky-ve-ski-arealu-certova-hora-v-har",
+  "lifts": [
+    {
+      "id": "lift-harrachov-certova-hora-delta",
+      "ref": null,
+      "name": "Harrachov - Čertova hora, Delta",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ryzoviste-certova-hora-alfa",
+      "ref": null,
+      "name": "Rýžoviště - Čertova hora, Alfa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lv-doplik",
+      "ref": null,
+      "name": "LV Doplik",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lv-amalka",
+      "ref": null,
+      "name": "LV Amálka",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lv-zakouti",
+      "ref": null,
+      "name": "LV Zákoutí",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-ryzoviste-cervena-i",
+      "ref": null,
+      "name": "Rýžoviště - Červená I.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1640
+    },
+    {
+      "id": "slope-ryzoviste-modra",
+      "ref": null,
+      "name": "Rýžoviště - Modrá",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-ryzoviste-cerna",
+      "ref": null,
+      "name": "Rýžoviště - Černá",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1250
+    },
+    {
+      "id": "slope-harrachov-cervena-ii",
+      "ref": null,
+      "name": "Harrachov - Červená II.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1850
+    },
+    {
+      "id": "slope-harrachov-osvetlenka-cervena-ii",
+      "ref": null,
+      "name": "Harrachov - osvětlenka Červená II.",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-amalka",
+      "ref": null,
+      "name": "Amálka",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 360
+    },
+    {
+      "id": "slope-zakouti",
+      "ref": null,
+      "name": "Zákoutí",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    }
+  ]
+}

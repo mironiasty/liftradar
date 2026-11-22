@@ -1,0 +1,199 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "engstligenalp",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253885+01:00",
+  "updated_at": "2026-11-22T04:00:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=113&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-e01-unter-dem-birg-engstligenalp",
+      "ref": null,
+      "name": "E01 • Unter dem Birg - Engstligenalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e00-globi-bahn-unter-dem-birg-engstligenalp",
+      "ref": null,
+      "name": "E00 • GLOBI-Bahn Unter dem Birg - Engstligenalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e02-dossen-i",
+      "ref": null,
+      "name": "E02 • Dossen I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e03-dossen-ii",
+      "ref": null,
+      "name": "E03 • Dossen II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e04-bockmatti",
+      "ref": null,
+      "name": "E04 • Bockmatti",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e05-feeder",
+      "ref": null,
+      "name": "E05 • Feeder",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e06-ponylift",
+      "ref": null,
+      "name": "E06 • Ponylift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e07-kleinskilift",
+      "ref": null,
+      "name": "E07 • Kleinskilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-100-dossen",
+      "ref": null,
+      "name": "100 • Dossen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-101-race-track",
+      "ref": null,
+      "name": "101 • Race track",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-102-strubel",
+      "ref": null,
+      "name": "102 • Strubel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-103-carving",
+      "ref": null,
+      "name": "103 • Carving",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-104-gollet",
+      "ref": null,
+      "name": "104 • Gollet",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-105-bockmatti",
+      "ref": null,
+      "name": "105 • Bockmatti",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-106-bockmatti",
+      "ref": null,
+      "name": "106 • Bockmatti",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-107-staghorn",
+      "ref": null,
+      "name": "107 • Stäghorn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-108-hora-trail",
+      "ref": null,
+      "name": "108 • Horä-Trail",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-109-kinderpiste",
+      "ref": null,
+      "name": "109 • Kinderpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-110-ponypiste",
+      "ref": null,
+      "name": "110 • Ponypiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100
+    }
+  ]
+}

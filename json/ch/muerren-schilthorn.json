@@ -11,11 +11,11 @@
   "website": "https://www.schilthorn.ch",
   "ski_region": "jungfrau-ski-region",
   "status": "open",
-  "fetched_at": "2026-11-21T13:40:33.623144+01:00",
+  "fetched_at": "2026-11-22T08:40:36.255692+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 17,
-    "valley_cm": 0,
+    "valley_cm": 11,
     "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
@@ -31,7 +31,7 @@
       {
         "name": "Mürren",
         "elevation_m": 1638,
-        "depth_cm": 0,
+        "depth_cm": 11,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -92,7 +92,8 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T13:05:04+01:00",
+  "lifts_updated_at": "2026-11-22T07:10:05+01:00",
+  "details": "json/ch/muerren-schilthorn.details.json",
   "avalanche": {
     "region_id": "CH-1234",
     "region": "Jungfrau - Schilthorn",
@@ -108,11 +109,13 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "wet_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://www.jungfrau.ch/api/live-data/resort?locale=de",

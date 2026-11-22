@@ -1,0 +1,276 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "wildhaus",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254401+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=76&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-oberdorfbahn",
+      "ref": null,
+      "name": "A • Oberdorfbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-freienalpbahn",
+      "ref": null,
+      "name": "B • Freienalpbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-gamsalpbahn",
+      "ref": null,
+      "name": "C • Gamsalpbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-gamserrugglift",
+      "ref": null,
+      "name": "D • Gamserrugglift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-oberdorflift",
+      "ref": null,
+      "name": "E • Oberdorflift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-zauberteppich-oberdorf",
+      "ref": null,
+      "name": "F • Zauberteppich Oberdorf",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-oberdorf-wildhaus",
+      "ref": null,
+      "name": "1 • Oberdorf-Wildhaus",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-1b-oberdorf-wildhaus",
+      "ref": null,
+      "name": "1b • Oberdorf-Wildhaus",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-2-schwendi",
+      "ref": null,
+      "name": "2 • Schwendi",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-3-alpenrose",
+      "ref": null,
+      "name": "3 • Alpenrose",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-4-oberdorf",
+      "ref": null,
+      "name": "4 • Oberdorf",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-5-familienpiste",
+      "ref": null,
+      "name": "5 • Familienpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-6-chessler",
+      "ref": null,
+      "name": "6 • Chessler",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-6a-chessler",
+      "ref": null,
+      "name": "6a • Chessler",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-6b-chessler",
+      "ref": null,
+      "name": "6b • Chessler",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-7-hagis",
+      "ref": null,
+      "name": "7 • Hägis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-8-gamsalp-freienalp",
+      "ref": null,
+      "name": "8 • Gamsalp-Freienalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-8a-gamsalp-freienalp",
+      "ref": null,
+      "name": "8a • Gamsalp-Freienalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-8b-gamsalp-freienalp",
+      "ref": null,
+      "name": "8b • Gamsalp-Freienalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-9-munggepfiff",
+      "ref": null,
+      "name": "9 • Munggepfiff",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-10-warmtobel",
+      "ref": null,
+      "name": "10 • Warmtobel",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-11-gamserrugg",
+      "ref": null,
+      "name": "11 • Gamserrugg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-11a-gamserrugg",
+      "ref": null,
+      "name": "11a • Gamserrugg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-11b-gamserrugg",
+      "ref": null,
+      "name": "11b • Gamserrugg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-12-yeti",
+      "ref": null,
+      "name": "12 • Yeti",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-12a-yeti",
+      "ref": null,
+      "name": "12a • Yeti",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-13-gamserrugg-ostabfahrt",
+      "ref": null,
+      "name": "13 • Gamserrugg Ostabfahrt",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-14-galferroute",
+      "ref": null,
+      "name": "14 • Galferroute",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 500
+    }
+  ]
+}

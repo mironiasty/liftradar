@@ -1,0 +1,839 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "seiser-alm",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255805+01:00",
+  "updated_at": "2026-11-19T10:00:10.833291+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_435",
+      "ref": null,
+      "name": "Bamby",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_441",
+      "ref": null,
+      "name": "Dorflift Kastelruth",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_437",
+      "ref": null,
+      "name": "Euro",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_436",
+      "ref": null,
+      "name": "Eurotel 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_431",
+      "ref": null,
+      "name": "Floralpina",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_426",
+      "ref": null,
+      "name": "Florian",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_432",
+      "ref": null,
+      "name": "Goldknopf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_438",
+      "ref": null,
+      "name": "Hexe",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_433",
+      "ref": null,
+      "name": "Laurin",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_428",
+      "ref": null,
+      "name": "Leo Demetz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_427",
+      "ref": null,
+      "name": "Ludy",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_440",
+      "ref": null,
+      "name": "Marinzen",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_430",
+      "ref": null,
+      "name": "Mezdì",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_421",
+      "ref": null,
+      "name": "Monte Piz - Rif. Icaro",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_423",
+      "ref": null,
+      "name": "Panorama",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_434",
+      "ref": null,
+      "name": "Paradiso",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_424",
+      "ref": null,
+      "name": "Puflatsch",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_429",
+      "ref": null,
+      "name": "Sanon",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_439",
+      "ref": null,
+      "name": "Seis - Seiser Alm",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_425",
+      "ref": null,
+      "name": "Spitzbühl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_422",
+      "ref": null,
+      "name": "Steger/Dellai",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_420",
+      "ref": null,
+      "name": "Zur Sonne",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216078",
+      "ref": null,
+      "name": "Bamby",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 420
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216079",
+      "ref": null,
+      "name": "Bamby - Euro",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1666183934",
+      "ref": null,
+      "name": "Bamby - Laurin",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216081",
+      "ref": null,
+      "name": "Bamby - Steger Dellai",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 780
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1666183931",
+      "ref": null,
+      "name": "Dorflift Kastelruth",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216118",
+      "ref": null,
+      "name": "Euro 69",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 770
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216119",
+      "ref": null,
+      "name": "Euro 70",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 780
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216122",
+      "ref": null,
+      "name": "Euro - Spitzbühl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216120",
+      "ref": null,
+      "name": "Eurotel 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 420
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216127",
+      "ref": null,
+      "name": "Floralpina 27",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2858011",
+      "ref": null,
+      "name": "Floralpina 28",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2858198",
+      "ref": null,
+      "name": "Floralpina - Florian",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216128",
+      "ref": null,
+      "name": "Floralpina - Goldknopf",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216129",
+      "ref": null,
+      "name": "Florian 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216130",
+      "ref": null,
+      "name": "Florian 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216077",
+      "ref": null,
+      "name": "Florian - Zallinger - Floralpina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216137",
+      "ref": null,
+      "name": "Goldknopf 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216138",
+      "ref": null,
+      "name": "Goldknopf 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216139",
+      "ref": null,
+      "name": "Goldknopf - Floralpina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1480
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216142",
+      "ref": null,
+      "name": "Hexe 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216143",
+      "ref": null,
+      "name": "Hexe 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1661934272",
+      "ref": null,
+      "name": "Hexe - Puflatsch Lang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 131
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216145",
+      "ref": null,
+      "name": "Laurin 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1215
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1741780",
+      "ref": null,
+      "name": "Laurin 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1452
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216147",
+      "ref": null,
+      "name": "Laurin Berg - Spitzbühl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216146",
+      "ref": null,
+      "name": "Laurin - Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216174",
+      "ref": null,
+      "name": "Laurin - Paradiso",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2667706",
+      "ref": null,
+      "name": "Laurin Tal - Spitzbühl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216148",
+      "ref": null,
+      "name": "Leo Demetz",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216149",
+      "ref": null,
+      "name": "Leo Demetz - Mezdí",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216151",
+      "ref": null,
+      "name": "Leo Demetz - Sanon",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216152",
+      "ref": null,
+      "name": "Ludy",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 320
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216153",
+      "ref": null,
+      "name": "Mezdí",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1661933657",
+      "ref": null,
+      "name": "Mezdì",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 957
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216154",
+      "ref": null,
+      "name": "Mezdí - Leo Demetz",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216155",
+      "ref": null,
+      "name": "Mezdí - Sanon 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1661933817",
+      "ref": null,
+      "name": "Mezdì - Seilbahn St.Ulrich",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 545
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216157",
+      "ref": null,
+      "name": "Monte Piz",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216158",
+      "ref": null,
+      "name": "Monte Piz - Icaro - Leo Demetz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216169",
+      "ref": null,
+      "name": "Panorama 13",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216167",
+      "ref": null,
+      "name": "Panorama 14",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1666183935",
+      "ref": null,
+      "name": "Panorama - Eurotel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216170",
+      "ref": null,
+      "name": "Panorama - Laurin",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216171",
+      "ref": null,
+      "name": "Panorama - Paradiso",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216173",
+      "ref": null,
+      "name": "Paradiso",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1666183933",
+      "ref": null,
+      "name": "Paradiso - Bamby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216189",
+      "ref": null,
+      "name": "Puflatsch Alpin",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216188",
+      "ref": null,
+      "name": "Puflatsch Freccia",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216190",
+      "ref": null,
+      "name": "Puflatsch - Hexe",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216187",
+      "ref": null,
+      "name": "Puflatsch Race",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1120
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216198",
+      "ref": null,
+      "name": "Sanon 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 560
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216199",
+      "ref": null,
+      "name": "Sanon 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 555
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216205",
+      "ref": null,
+      "name": "Seilbahn St. Ulrich - Mezdí",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 520
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1661933897",
+      "ref": null,
+      "name": "Skischule - Eurotel 1 - Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 461
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216209",
+      "ref": null,
+      "name": "Speedtrap Goldknopf",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216210",
+      "ref": null,
+      "name": "Spitzbühl 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1130
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2857494",
+      "ref": null,
+      "name": "Spitzbühl 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 590
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216211",
+      "ref": null,
+      "name": "Spitzbühl 3",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2857459",
+      "ref": null,
+      "name": "Spitzbühl 4",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1425
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216212",
+      "ref": null,
+      "name": "Steger",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1170
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216213",
+      "ref": null,
+      "name": "Steger  - Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1180
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1734097247",
+      "ref": null,
+      "name": "Verbindung Florian - Floralpina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1666183932",
+      "ref": null,
+      "name": "Verbindung Seiser Alm - Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216224",
+      "ref": null,
+      "name": "Zur Sonne",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 480
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216225",
+      "ref": null,
+      "name": "Zur Sonne - Mezdí",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 580
+    }
+  ]
+}

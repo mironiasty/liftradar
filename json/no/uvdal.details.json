@@ -1,0 +1,319 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "uvdal",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262331+01:00",
+  "updated_at": "2026-04-11T10:22:22+02:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-vesleheisen",
+      "ref": null,
+      "name": "Vesleheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-stolheisen",
+      "ref": null,
+      "name": "Stolheisen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fjellheisen",
+      "ref": null,
+      "name": "Fjellheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-alpinparken",
+      "ref": null,
+      "name": "Alpinparken",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barnetrekk",
+      "ref": null,
+      "name": "Barnetrekk",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-bjnneparken",
+      "ref": null,
+      "name": "Bjønneparken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnepark",
+      "ref": null,
+      "name": "Barnepark",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnebakken",
+      "ref": null,
+      "name": "Barnebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-veslelypa",
+      "ref": null,
+      "name": "Vesleløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-slafenhenget",
+      "ref": null,
+      "name": "Slafenhenget",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-slafen",
+      "ref": null,
+      "name": "Slafen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bjnnesvingen",
+      "ref": null,
+      "name": "Bjønnesvingen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-britalypa",
+      "ref": null,
+      "name": "Britaløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bjnnelypa",
+      "ref": null,
+      "name": "Bjønneløypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-knutelypa",
+      "ref": null,
+      "name": "Knuteløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bjnnesvingen-2",
+      "ref": null,
+      "name": "Bjønnesvingen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-hjertelypa",
+      "ref": null,
+      "name": "Hjerteløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-snipbulypa",
+      "ref": null,
+      "name": "Snipbuløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-kulverten",
+      "ref": null,
+      "name": "Kulverten",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-viddasvingen",
+      "ref": null,
+      "name": "Viddasvingen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bjnnemyra",
+      "ref": null,
+      "name": "Bjønnemyra",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-elgtrekket",
+      "ref": null,
+      "name": "Elgtrekket",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fjellrypa",
+      "ref": null,
+      "name": "Fjellrypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fjellypa",
+      "ref": null,
+      "name": "Fjelløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-reinslypa",
+      "ref": null,
+      "name": "Reinsløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-knutehenget",
+      "ref": null,
+      "name": "Knutehenget",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-u-ringen-til-alpinpark",
+      "ref": null,
+      "name": "U-Ringen til alpinpark",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-u-ringen-til-skisenter",
+      "ref": null,
+      "name": "U-Ringen til skisenter",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-superspeed-2",
+      "ref": null,
+      "name": "Superspeed 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-superspeed",
+      "ref": null,
+      "name": "Superspeed",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-flatalypa",
+      "ref": null,
+      "name": "Flåtaløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-flatalypa-barn",
+      "ref": null,
+      "name": "Flåtaløypa Barn",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-britahenget",
+      "ref": null,
+      "name": "Britahenget",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

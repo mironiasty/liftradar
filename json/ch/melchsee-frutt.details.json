@@ -1,0 +1,330 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "melchsee-frutt",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254144+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=117&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-stockalp-melchsee-frutt",
+      "ref": null,
+      "name": "A • Stöckalp - Melchsee-Frutt",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-cheselen",
+      "ref": null,
+      "name": "B • Cheselen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-jast",
+      "ref": null,
+      "name": "C • Jäst",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-bettenalp",
+      "ref": null,
+      "name": "D • Bettenalp",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-skilift-bettenalp",
+      "ref": null,
+      "name": "E • Skilift Bettenalp",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-distelboden-bonistock",
+      "ref": null,
+      "name": "F • Distelboden - Bonistock",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-balmeregg",
+      "ref": null,
+      "name": "G • Balmeregg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-erzegg",
+      "ref": null,
+      "name": "H • Erzegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-vogelbuel",
+      "ref": null,
+      "name": "I • Vogelbüel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-verbindungslift-erzegg",
+      "ref": null,
+      "name": "J • Verbindungslift Erzegg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-verbindungslift-vogelbuel",
+      "ref": null,
+      "name": "L • Verbindungslift Vogelbüel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-zauberteppich-fruttli-land",
+      "ref": null,
+      "name": "M • Zauberteppich Fruttli-Land",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n-kinderlift-fruttli-land",
+      "ref": null,
+      "name": "N • Kinderlift Fruttli-Land",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-dorfli-lift",
+      "ref": null,
+      "name": "O • Dörfli-Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p-pfideri-lift",
+      "ref": null,
+      "name": "P • Pfideri-Lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-bonistock-melchsee-frutt",
+      "ref": null,
+      "name": "1 • Bonistock - Melchsee-Frutt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-2-paradiesli",
+      "ref": null,
+      "name": "2 • Paradiesli",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-3-chrummegg",
+      "ref": null,
+      "name": "3 • Chrummegg",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-4-jast",
+      "ref": null,
+      "name": "4 • Jäst",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-5-melchsee-frutt-cheselenfirst",
+      "ref": null,
+      "name": "5 • Melchsee-Frutt - Cheselenfirst",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5300
+    },
+    {
+      "id": "slope-6-cheselenfirst-stockalp",
+      "ref": null,
+      "name": "6 • Cheselenfirst - Stöckalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4700
+    },
+    {
+      "id": "slope-7-dampfelsmatt",
+      "ref": null,
+      "name": "7 • Dämpfelsmatt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-8-aahang",
+      "ref": null,
+      "name": "8 • Aahang",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-9-droslestuidahang",
+      "ref": null,
+      "name": "9 • Droslestuidähang",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-10-cheselenhang",
+      "ref": null,
+      "name": "10 • Cheselenhang",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-11-erzegg-distelboden",
+      "ref": null,
+      "name": "11 • Erzegg - Distelboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7600
+    },
+    {
+      "id": "slope-12-erzegg-rennpiste",
+      "ref": null,
+      "name": "12 • Erzegg Rennpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-13-erzegg-trainingspiste",
+      "ref": null,
+      "name": "13 • Erzegg Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-14-tali",
+      "ref": null,
+      "name": "14 • Täli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-15-balmeregg",
+      "ref": null,
+      "name": "15 • Balmeregg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-16-balmeregg-steilhang",
+      "ref": null,
+      "name": "16 • Balmeregg Steilhang",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-17-vogelbuel",
+      "ref": null,
+      "name": "17 • Vogelbüel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    }
+  ]
+}

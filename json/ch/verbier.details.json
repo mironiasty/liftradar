@@ -1,0 +1,451 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "verbier",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254354+01:00",
+  "updated_at": "2026-11-22T08:41:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-100-le-chable-verbier",
+      "ref": null,
+      "name": "100 • Le Châble-Verbier",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-101-barnes-line-medran-4",
+      "ref": null,
+      "name": "101 • Barnes Line (Médran 4)",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-102-medran-2",
+      "ref": null,
+      "name": "102 • Médran 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-107-mayentzet",
+      "ref": null,
+      "name": "107 • Mayentzet",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-113-chaux-express",
+      "ref": null,
+      "name": "113 • Chaux-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-104-funispace",
+      "ref": null,
+      "name": "104 • Funispace",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-112-attelas",
+      "ref": null,
+      "name": "112 • Attelas",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-114-chaux-2",
+      "ref": null,
+      "name": "114 • Chaux 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-116-lac-des-vaux-1",
+      "ref": null,
+      "name": "116 • Lac des Vaux 1",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-118-lac-des-vaux-2",
+      "ref": null,
+      "name": "118 • Lac des Vaux 2",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-119-tortin-chassoure",
+      "ref": null,
+      "name": "119 • Tortin-Chassoure",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-106-mont-gele",
+      "ref": null,
+      "name": "106 • Mont Gelé",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-303-esserts",
+      "ref": null,
+      "name": "303 • Esserts",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-304-tapis-esserts",
+      "ref": null,
+      "name": "304 • Tapis Esserts",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-300-moulins",
+      "ref": null,
+      "name": "300 • Moulins",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-302-rouge",
+      "ref": null,
+      "name": "302 • Rouge",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-305-tapis-rouge",
+      "ref": null,
+      "name": "305 • Tapis Rouge",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-moulins",
+      "ref": null,
+      "name": "Moulins",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-rouge",
+      "ref": null,
+      "name": "Rouge",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-esserts",
+      "ref": null,
+      "name": "Esserts",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-etiertses",
+      "ref": null,
+      "name": "Etiértses",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 8300
+    },
+    {
+      "id": "slope-chaux",
+      "ref": null,
+      "name": "Chaux",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5600
+    },
+    {
+      "id": "slope-route-de-medran",
+      "ref": null,
+      "name": "Route de Médran",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-lacs",
+      "ref": null,
+      "name": "Lacs",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-grands-creux",
+      "ref": null,
+      "name": "Grands Creux",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bleue-a-fernand",
+      "ref": null,
+      "name": "Bleue à Fernand",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-fontanet",
+      "ref": null,
+      "name": "Fontanet",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6000
+    },
+    {
+      "id": "slope-hattey",
+      "ref": null,
+      "name": "Hattey",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5300
+    },
+    {
+      "id": "slope-attelas",
+      "ref": null,
+      "name": "Attelas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 6300
+    },
+    {
+      "id": "slope-lacs-2",
+      "ref": null,
+      "name": "Lacs",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-lacs-ii",
+      "ref": null,
+      "name": "Lacs II",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-chaux-2",
+      "ref": null,
+      "name": "Chaux",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "slope-combe",
+      "ref": null,
+      "name": "Combe",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-tsarbonne",
+      "ref": null,
+      "name": "Tsarbonné",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fis-superieure",
+      "ref": null,
+      "name": "FIS - supérieure",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 7600
+    },
+    {
+      "id": "slope-fis-intermediaire",
+      "ref": null,
+      "name": "FIS - intermédiaire",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fis-inferieure",
+      "ref": null,
+      "name": "FIS - inférieure",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-piste-des-profs",
+      "ref": null,
+      "name": "Piste des Profs",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-lacs-3",
+      "ref": null,
+      "name": "Lacs",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-vallon-d-arbi",
+      "ref": null,
+      "name": "Vallon d'Arbi",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 11000
+    },
+    {
+      "id": "slope-mont-gele-tortin-grande-journee",
+      "ref": null,
+      "name": "Mont Gelé-Tortin (Grande Journée)",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 17500
+    },
+    {
+      "id": "slope-mont-gele-chaux",
+      "ref": null,
+      "name": "Mont Gelé-Chaux",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-chassoure-tortin",
+      "ref": null,
+      "name": "Chassoure-Tortin",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 6300
+    },
+    {
+      "id": "slope-col-des-mines",
+      "ref": null,
+      "name": "Col des Mines",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-clambin",
+      "ref": null,
+      "name": "Clambin",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2800
+    }
+  ]
+}

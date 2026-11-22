@@ -1,0 +1,208 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "vassfjellet",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.261369+01:00",
+  "updated_at": "2026-11-16T11:49:19+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-midt-expressen",
+      "ref": null,
+      "name": "Midt-expressen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-kroken",
+      "ref": null,
+      "name": "T-kroken",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-parkheisen",
+      "ref": null,
+      "name": "Parkheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barneheisen",
+      "ref": null,
+      "name": "Barneheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barnebandet",
+      "ref": null,
+      "name": "Barnebåndet",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-transportbandet",
+      "ref": null,
+      "name": "Transportbåndet",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-freidigheisen",
+      "ref": null,
+      "name": "Freidigheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-toppheisen",
+      "ref": null,
+      "name": "Toppheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-familielypa",
+      "ref": null,
+      "name": "Familieløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-srlypa",
+      "ref": null,
+      "name": "Sørløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-freidigbakken",
+      "ref": null,
+      "name": "Freidigbakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-midtlypa",
+      "ref": null,
+      "name": "Midtløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-nordlypa",
+      "ref": null,
+      "name": "Nordløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-vassaparken",
+      "ref": null,
+      "name": "Vassaparken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-leklia",
+      "ref": null,
+      "name": "Leklia",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-vasseland",
+      "ref": null,
+      "name": "Vasseland",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-topplypa",
+      "ref": null,
+      "name": "Toppløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fjellsvingen",
+      "ref": null,
+      "name": "Fjellsvingen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-vasses-skicross",
+      "ref": null,
+      "name": "Vasses skicross",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fjellhenget",
+      "ref": null,
+      "name": "Fjellhenget",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

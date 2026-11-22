@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "golm",
   "country": "at",
-  "fetched_at": "2026-11-21T13:40:33.619237+01:00",
+  "fetched_at": "2026-11-22T08:40:36.250225+01:00",
   "updated_at": "2026-11-20T15:05:14+01:00",
   "source": "https://winter.intermaps.com/golm/data?lang=en",
   "lifts": [
@@ -112,6 +112,7 @@
       "ref": null,
       "name": "Übungshang Innerbach",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 200
     },
@@ -120,6 +121,7 @@
       "ref": null,
       "name": "Übungshang Sücka",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 400
     },
@@ -128,6 +130,7 @@
       "ref": null,
       "name": "1 Standard I",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 2400
     },
@@ -136,6 +139,7 @@
       "ref": null,
       "name": "10 Diaboloabfahrt",
       "difficulty": "difficult",
+      "colour": "black",
       "status": "closed",
       "length_m": 1482
     },
@@ -144,6 +148,7 @@
       "ref": null,
       "name": "2 Matschwitz - Latschau",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 3400
     },
@@ -152,6 +157,7 @@
       "ref": null,
       "name": "21 Skiroute Schwarze Wand",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 300
     },
@@ -160,6 +166,7 @@
       "ref": null,
       "name": "22 Skiroute - Gauertal",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 7000
     },
@@ -168,6 +175,7 @@
       "ref": null,
       "name": "23 Skiroute Latschau - Tschagguns",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 2800
     },
@@ -176,6 +184,7 @@
       "ref": null,
       "name": "24 Skiroute nach Vandans",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 7400
     },
@@ -184,6 +193,7 @@
       "ref": null,
       "name": "25 Skiroute Golmi-Wald",
       "difficulty": "ski_route",
+      "colour": null,
       "status": "closed",
       "length_m": 400
     },
@@ -192,6 +202,7 @@
       "ref": null,
       "name": "3 Zundraboden",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 3000
     },
@@ -200,6 +211,7 @@
       "ref": null,
       "name": "4 Familienabfahrt",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 3300
     },
@@ -208,6 +220,7 @@
       "ref": null,
       "name": "5 Außergolmabfahrt",
       "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": 3600
     },
@@ -216,6 +229,7 @@
       "ref": null,
       "name": "6 Weltcupabfahrt",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 3000
     },
@@ -224,6 +238,7 @@
       "ref": null,
       "name": "7 Täliabfahrt",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 2500
     },
@@ -232,6 +247,7 @@
       "ref": null,
       "name": "8 Latschau - Vandans",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 2300
     },
@@ -240,6 +256,7 @@
       "ref": null,
       "name": "9 Race Area",
       "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": 1100
     }

@@ -10,7 +10,7 @@
   },
   "website": "https://www.saint-bernard.ch/fr/destination/champex-lac-26/",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.621969+01:00",
+  "fetched_at": "2026-11-22T08:40:36.253795+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Glacier de l'Evole (SLF)",
         "elevation_m": 2800,
-        "depth_cm": 193,
-        "fresh_cm": 56,
+        "depth_cm": 188,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       }
@@ -76,25 +76,28 @@
     }
   },
   "lifts_updated_at": "2026-11-21T08:50:00+01:00",
+  "details": "json/ch/champex-lac.details.json",
   "avalanche": {
     "region_id": "CH-4113",
     "region": "Val d'Entremont - Val Ferret",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "wet_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=82&saison=1&ref=contentBox",

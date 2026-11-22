@@ -11,7 +11,7 @@
   "website": "https://www.kronplatz.com",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.623200+01:00",
+  "fetched_at": "2026-11-22T08:40:36.255781+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -75,6 +75,7 @@
     }
   },
   "lifts_updated_at": "2026-11-19T16:03:45.540018+01:00",
+  "details": "json/it/kronplatz.details.json",
   "avalanche": null,
   "sources": [
     "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",

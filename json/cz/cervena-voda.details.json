@@ -1,0 +1,88 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "cervena-voda",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257386+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/skipark-cervena-voda",
+  "lifts": [
+    {
+      "id": "lift-lanova-draha-cervena-voda-bukova-hora",
+      "ref": null,
+      "name": "Lanová dráha Červená Voda - Buková hora",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lyzarsky-vlek-kid-park",
+      "ref": null,
+      "name": "Lyžařský vlek Kid park",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-mlynice",
+      "ref": null,
+      "name": "Mlýnice",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2150
+    },
+    {
+      "id": "slope-herolticka",
+      "ref": null,
+      "name": "Heroltická",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2290
+    },
+    {
+      "id": "slope-detska",
+      "ref": null,
+      "name": "Dětská",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "slope-kid-park",
+      "ref": null,
+      "name": "Kid park",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-spojeni-z-cervene-vody-do-cenkovic",
+      "ref": null,
+      "name": "Spojení z Červené Vody do Čenkovic",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "slope-spojeni-z-cenkovic-do-cervene-vody",
+      "ref": null,
+      "name": "Spojení z Čenkovic do Červené Vody",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    }
+  ]
+}

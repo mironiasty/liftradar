@@ -11,7 +11,7 @@
   "website": "https://www.valthorens.com",
   "linked_area": "les-3-vallees",
   "status": "open",
-  "fetched_at": "2026-11-21T13:40:33.624994+01:00",
+  "fetched_at": "2026-11-22T08:40:36.258114+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 105,
@@ -39,11 +39,11 @@
     ]
   },
   "lifts": {
-    "open": 13,
+    "open": 12,
     "total": 23
   },
   "slopes": {
-    "open": 23,
+    "open": 26,
     "total": 75,
     "open_km": null,
     "total_km": 150
@@ -66,19 +66,19 @@
       "total": 1
     },
     "gondola": {
-      "open": 7,
+      "open": 6,
       "total": 9
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 18,
+      "open": 20,
       "total": 42,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 5,
+      "open": 6,
       "total": 26,
       "open_km": null,
       "total_km": null
@@ -91,6 +91,7 @@
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/val-thorens.details.json",
   "avalanche": {
     "region_id": "FR-10",
     "region": "Vanoise",
@@ -111,9 +112,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-20T16:00:00+01:00",
-    "valid_from": "2026-11-20T16:00:00+01:00",
-    "valid_until": "2026-11-21T18:00:00+01:00"
+    "published_at": "2026-11-21T16:00:00+01:00",
+    "valid_from": "2026-11-21T16:00:00+01:00",
+    "valid_until": "2026-11-22T18:00:00+01:00"
   },
   "sources": [
     "https://bulletinv3.lumiplan.pro/bulletin.php?station=val-thorens&lang=fr&isSoir=false",
@@ -121,7 +122,7 @@
     "https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/staticPoiData?lang=fr",
     "https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr",
     "https://www.skiinfo.fr/alpes-du-nord/val-thorens/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json"
   ],
   "source_details": {
     "conditions": [
@@ -142,7 +143,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json",
         "attribution_required": null
       }
     ],

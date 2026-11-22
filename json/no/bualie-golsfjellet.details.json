@@ -1,0 +1,124 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "bualie-golsfjellet",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262695+01:00",
+  "updated_at": "2026-11-17T11:16:53+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-bualie-panorama-6-seter-stolheis",
+      "ref": null,
+      "name": "Bualie Panorama 6 seter stolheis",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-buoheisen-barneheis-skalheis",
+      "ref": null,
+      "name": "Buoheisen (barneheis/skålheis)",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-bualiebakken",
+      "ref": null,
+      "name": "Bualiebakken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-stubben",
+      "ref": null,
+      "name": "Stubben",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-nyelypa",
+      "ref": null,
+      "name": "Nyeløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-osetbakken",
+      "ref": null,
+      "name": "Osetbakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-ratassen",
+      "ref": null,
+      "name": "Råtassen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-midtlypa",
+      "ref": null,
+      "name": "Midtløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-lauritzparken",
+      "ref": null,
+      "name": "Lauritzparken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnebakke-nybegynner",
+      "ref": null,
+      "name": "Barnebakke/nybegynner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnebakke-nybegynner-2",
+      "ref": null,
+      "name": "Barnebakke/nybegynner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnebakke-nybegynner-3",
+      "ref": null,
+      "name": "Barnebakke/nybegynner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

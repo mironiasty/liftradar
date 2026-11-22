@@ -1,0 +1,184 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "aurdal-valdres",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262353+01:00",
+  "updated_at": "2026-11-20T08:44:51+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-t-krokheis-1800-m",
+      "ref": null,
+      "name": "T-Krokheis 1800 m",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-krokheis-1800-m-2",
+      "ref": null,
+      "name": "T-Krokheis 1800 m",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barneheis-300-m",
+      "ref": null,
+      "name": "Barneheis 300 m",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barne-beltetrekk-130-m",
+      "ref": null,
+      "name": "Barne/Beltetrekk 130 m",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fjellstlheisen-350-m",
+      "ref": null,
+      "name": "Fjellstølheisen 350 m",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-barnebakken-begynner-beginner",
+      "ref": null,
+      "name": "1 Barnebakken - Begynner / Beginner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2-skogsvingen-begynner-beginner",
+      "ref": null,
+      "name": "2 Skogsvingen - Begynner / Beginner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-3-turisten-lett-easy",
+      "ref": null,
+      "name": "3 Turisten - Lett / Easy",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-4-vardinlypa-begynner-beginner",
+      "ref": null,
+      "name": "4 Vardinløypa - Begynner / Beginner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-5-kneika-middels-medium",
+      "ref": null,
+      "name": "5 Kneika - Middels / Medium",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-6-s-lypa-middels-medium",
+      "ref": null,
+      "name": "6 S-løypa - Middels / Medium",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-7-brtahenget-ekspert-expert",
+      "ref": null,
+      "name": "7 Brøtahenget - Ekspert / Expert",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-8-ruudlypa-ekspert-expert",
+      "ref": null,
+      "name": "8 Ruudløypa - Ekspert / Expert",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-9-cruiser-lypa-begynner-beginner",
+      "ref": null,
+      "name": "9 Cruiser løypa - Begynner / Beginner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-terrengpark",
+      "ref": null,
+      "name": "11 Terrengpark",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13-fjellparklypa-lett-easy",
+      "ref": null,
+      "name": "13 Fjellparkløypa - Lett / Easy",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-14-fjellstllypa-middels-medium",
+      "ref": null,
+      "name": "14 Fjellstølløypa - Middels / Medium",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-15-danebulypa-begynner-beginner",
+      "ref": null,
+      "name": "15 Danebuløypa - Begynner / Beginner",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

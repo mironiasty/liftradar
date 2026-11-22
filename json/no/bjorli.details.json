@@ -1,0 +1,177 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "bjorli",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262315+01:00",
+  "updated_at": "2026-11-21T08:54:53+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-heis-1",
+      "ref": null,
+      "name": "Heis 1",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bjorli-ekspressen",
+      "ref": null,
+      "name": "Bjorli-Ekspressen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-heis-3",
+      "ref": null,
+      "name": "Heis 3",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fjellheisen",
+      "ref": null,
+      "name": "Fjellheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mini-maneuver",
+      "ref": null,
+      "name": "Mini-maNeuver",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lykke-maneuver",
+      "ref": null,
+      "name": "Lykke-maNeuver",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-bjorlilypa",
+      "ref": null,
+      "name": "Bjorliløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-anderslypa",
+      "ref": null,
+      "name": "Andersløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-lyslypa",
+      "ref": null,
+      "name": "Lysløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fjellypa-sr",
+      "ref": null,
+      "name": "Fjelløypa sør",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-bvra",
+      "ref": null,
+      "name": "Bøvra",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barmanlypa",
+      "ref": null,
+      "name": "Barmanløypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-nm-lypa",
+      "ref": null,
+      "name": "NM løypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-fjellype-nord",
+      "ref": null,
+      "name": "Fjelløype nord",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-randonne",
+      "ref": null,
+      "name": "Randonné",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-mini-maneuver-bakken",
+      "ref": null,
+      "name": "Mini-maNeuver Bakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-bjorlikrusen",
+      "ref": null,
+      "name": "Bjorlikrusen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

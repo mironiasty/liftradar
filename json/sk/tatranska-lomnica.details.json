@@ -1,0 +1,146 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "tatranska-lomnica",
+  "country": "sk",
+  "fetched_at": "2026-11-22T08:40:36.260002+01:00",
+  "updated_at": null,
+  "source": "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-start-zapad",
+      "ref": null,
+      "name": "Štart západ",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-start-vychod",
+      "ref": null,
+      "name": "Štart východ",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "slope-cucoriedky-zapad",
+      "ref": null,
+      "name": "Čučoriedky západ",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 880
+    },
+    {
+      "id": "slope-cucoriedky-vychod",
+      "ref": null,
+      "name": "Čučoriedky východ",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 960
+    },
+    {
+      "id": "slope-general",
+      "ref": null,
+      "name": "Generál",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "slope-general-traverz",
+      "ref": null,
+      "name": "Generál traverz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-esicka",
+      "ref": null,
+      "name": "Esíčka",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-lomnicke-sedlo",
+      "ref": null,
+      "name": "Lomnické sedlo",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1240
+    },
+    {
+      "id": "slope-grand-slnecna",
+      "ref": null,
+      "name": "Grand Slnečná",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-bukova-hora-vychod",
+      "ref": null,
+      "name": "Buková hora východ",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-javorova-cesta",
+      "ref": null,
+      "name": "Javorová cesta",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "slope-javorova-cesta-2",
+      "ref": null,
+      "name": "Javorová cesta",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-bukova-hora-zapad",
+      "ref": null,
+      "name": "Buková hora západ",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-freeride-francuzska-mulda",
+      "ref": null,
+      "name": "Freeride Francúzska mulda",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2190
+    },
+    {
+      "id": "slope-lyziarska-cesta-bukova",
+      "ref": null,
+      "name": "Lyžiarska cesta Buková",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    }
+  ]
+}

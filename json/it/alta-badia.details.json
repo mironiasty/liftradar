@@ -1,0 +1,1519 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "alta-badia",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255789+01:00",
+  "updated_at": "2026-11-19T16:03:45.731049+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_315",
+      "ref": null,
+      "name": "Abrusé",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_305",
+      "ref": null,
+      "name": "Arlara",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_343",
+      "ref": null,
+      "name": "Armentarola",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_347",
+      "ref": null,
+      "name": "Baby La Crusc",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_330",
+      "ref": null,
+      "name": "Bamby",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_339",
+      "ref": null,
+      "name": "Biok",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_303",
+      "ref": null,
+      "name": "Boé",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_316",
+      "ref": null,
+      "name": "Borest",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_297",
+      "ref": null,
+      "name": "Braia Fraida",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_298",
+      "ref": null,
+      "name": "Capanna Nera",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_340",
+      "ref": null,
+      "name": "Ciampai",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_341",
+      "ref": null,
+      "name": "Codes",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_296",
+      "ref": null,
+      "name": "Col Alto",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_335",
+      "ref": null,
+      "name": "Col d'Altin",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_322",
+      "ref": null,
+      "name": "Colfosco",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_321",
+      "ref": null,
+      "name": "Col Pradat",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_336",
+      "ref": null,
+      "name": "Colz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_308",
+      "ref": null,
+      "name": "Costes da l'Ega",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_306",
+      "ref": null,
+      "name": "Costoratta",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_302",
+      "ref": null,
+      "name": "Crep de Mont",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_334",
+      "ref": null,
+      "name": "Doninz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_331",
+      "ref": null,
+      "name": "Ferata Gran Risa",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_323",
+      "ref": null,
+      "name": "Forcelles",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_320",
+      "ref": null,
+      "name": "Frara",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_332",
+      "ref": null,
+      "name": "Gardenaccia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_307",
+      "ref": null,
+      "name": "Incisa",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_338",
+      "ref": null,
+      "name": "La Brancia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_348",
+      "ref": null,
+      "name": "La Crusc 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_349",
+      "ref": null,
+      "name": "La Crusc 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_345",
+      "ref": null,
+      "name": "La Fraina",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_344",
+      "ref": null,
+      "name": "La Para",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_333",
+      "ref": null,
+      "name": "La Rüa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_318",
+      "ref": null,
+      "name": "Pezzei",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_329",
+      "ref": null,
+      "name": "Piz La Ila",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_342",
+      "ref": null,
+      "name": "Piz Sorega",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_319",
+      "ref": null,
+      "name": "Plans",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_350",
+      "ref": null,
+      "name": "Pradüc",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_300",
+      "ref": null,
+      "name": "Pralongiá",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_299",
+      "ref": null,
+      "name": "Pralongiá  I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_301",
+      "ref": null,
+      "name": "Pralongiá  II",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_313",
+      "ref": null,
+      "name": "Pre Ciablun",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_328",
+      "ref": null,
+      "name": "Pre dai Corf",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_327",
+      "ref": null,
+      "name": "Roby",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_317",
+      "ref": null,
+      "name": "Sodlisia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_351",
+      "ref": null,
+      "name": "Sponata",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_325",
+      "ref": null,
+      "name": "Stella Alpina",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:3_304",
+      "ref": null,
+      "name": "Vallon",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215667",
+      "ref": null,
+      "name": "Abrusé",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215668",
+      "ref": null,
+      "name": "Altin",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215669",
+      "ref": null,
+      "name": "Arlara",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215670",
+      "ref": null,
+      "name": "Arlara - Pralongiá  II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215673",
+      "ref": null,
+      "name": "Baby La Crusc",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215674",
+      "ref": null,
+      "name": "Baby La Crusc - La Crusc 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215675",
+      "ref": null,
+      "name": "Bamby",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1393
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215676",
+      "ref": null,
+      "name": "Bamby 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 906
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215677",
+      "ref": null,
+      "name": "Biok",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215678",
+      "ref": null,
+      "name": "Biok - Pralongiá II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215679",
+      "ref": null,
+      "name": "Biok - Saraghes",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215680",
+      "ref": null,
+      "name": "Boé",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215765",
+      "ref": null,
+      "name": "Boé - Campolongo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1023
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_64162268",
+      "ref": null,
+      "name": "Boé variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1668
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215734",
+      "ref": null,
+      "name": "Bordercross La Para",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 588
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215684",
+      "ref": null,
+      "name": "Braia Fraida",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 839
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_64163218",
+      "ref": null,
+      "name": "Braia Fraida intermedia - Roby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 319
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215687",
+      "ref": null,
+      "name": "Braia Fraida - Roby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 739
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215688",
+      "ref": null,
+      "name": "Braida Fraida - Arlara",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 361
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215692",
+      "ref": null,
+      "name": "Capanna Nera",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 971
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215694",
+      "ref": null,
+      "name": "Ciampai",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 617
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1764579529",
+      "ref": null,
+      "name": "Codes",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215697",
+      "ref": null,
+      "name": "Codes",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215700",
+      "ref": null,
+      "name": "Col Alt 4",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215698",
+      "ref": null,
+      "name": "Col Alt 4 1/2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_64165076",
+      "ref": null,
+      "name": "Col Alt 5",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2071
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215701",
+      "ref": null,
+      "name": "Col d'Altin 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215702",
+      "ref": null,
+      "name": "Col d'Altin 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215704",
+      "ref": null,
+      "name": "Colfosco 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215705",
+      "ref": null,
+      "name": "Colfosco 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215738",
+      "ref": null,
+      "name": "Collegamento Armentarola - Piz Sorega",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 540
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_76362204",
+      "ref": null,
+      "name": "Collegamento Boé - Costes da l'Ega",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 160
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_79387077",
+      "ref": null,
+      "name": "Collegamento Capanna Nera",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1770213131",
+      "ref": null,
+      "name": "Collegamento Crep de Munt - Boé",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_80533626",
+      "ref": null,
+      "name": "Collegamento Crep de Munt - Boé",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215708",
+      "ref": null,
+      "name": "Collegamento Sodlisia - Frara",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 215
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215703",
+      "ref": null,
+      "name": "Col Pradat",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215710",
+      "ref": null,
+      "name": "Colz - Doninz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 70
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_64163219",
+      "ref": null,
+      "name": "Colz - la Rüa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215693",
+      "ref": null,
+      "name": "Costes da l'Ega",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 604
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215713",
+      "ref": null,
+      "name": "Costoratta",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 886
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215714",
+      "ref": null,
+      "name": "Crep De Mont",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215717",
+      "ref": null,
+      "name": "Doninz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 290
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215709",
+      "ref": null,
+      "name": "Doninz - Colz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 160
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215719",
+      "ref": null,
+      "name": "Forcelles",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1305
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215720",
+      "ref": null,
+      "name": "Frara",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3555
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1760446385",
+      "ref": null,
+      "name": "Frara II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 458
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215722",
+      "ref": null,
+      "name": "Frara - Sodlisia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 485
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215723",
+      "ref": null,
+      "name": "Frara - Val Setus",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 408
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215741",
+      "ref": null,
+      "name": "Frara - variante",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 797
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215763",
+      "ref": null,
+      "name": "Gardena",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 627
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215725",
+      "ref": null,
+      "name": "Gardenaccia A",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 920
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215724",
+      "ref": null,
+      "name": "Gardenaccia B",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2040
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1764579366",
+      "ref": null,
+      "name": "Gardenaccia nera",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215726",
+      "ref": null,
+      "name": "Gran Risa",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2193
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_805336213",
+      "ref": null,
+      "name": "Incisa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215728",
+      "ref": null,
+      "name": "La Baita - Pralongiá valle",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_609791",
+      "ref": null,
+      "name": "La Brancia 14",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215730",
+      "ref": null,
+      "name": "La Brancia - Pralongiá  II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1594
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215752",
+      "ref": null,
+      "name": "La Crusc 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215753",
+      "ref": null,
+      "name": "La Crusc 1 - Baby La Crusc",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_82840062",
+      "ref": null,
+      "name": "La Crusc 1 variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215731",
+      "ref": null,
+      "name": "La Crusc 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1764579050",
+      "ref": null,
+      "name": "La Crusc 2 variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215732",
+      "ref": null,
+      "name": "La Fraina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215733",
+      "ref": null,
+      "name": "La Para",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215737",
+      "ref": null,
+      "name": "Pezzei",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 469
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_609793",
+      "ref": null,
+      "name": "Pferde",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215755",
+      "ref": null,
+      "name": "Pista di collegamento Bamby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1897
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215681",
+      "ref": null,
+      "name": "Pista di collegamento Boé - Costoratta",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 404
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215739",
+      "ref": null,
+      "name": "Piz Sorega A",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2109
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215740",
+      "ref": null,
+      "name": "Piz Sorega B",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_609794",
+      "ref": null,
+      "name": "Piz Sorega - Bioch",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1708700355",
+      "ref": null,
+      "name": "Pradüc - Sponata",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215736",
+      "ref": null,
+      "name": "Pralongiá - San Cassiano",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2829
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215742",
+      "ref": null,
+      "name": "Pralongiá  I",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 811
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215743",
+      "ref": null,
+      "name": "Pralongiá  I - Arlara",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 308
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215745",
+      "ref": null,
+      "name": "Pralongiá  II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1288
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215746",
+      "ref": null,
+      "name": "Pralongiá  - Punta Trieste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 469
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215749",
+      "ref": null,
+      "name": "Pre Dai Corf",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1764579938",
+      "ref": null,
+      "name": "Pre Dai Corf - Gran Risa",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1225713",
+      "ref": null,
+      "name": "Punta Trieste - La Baita",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 736
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215682",
+      "ref": null,
+      "name": "Raccordo Boé - Crep de Mont",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 462
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215695",
+      "ref": null,
+      "name": "Raccordo Ciampai - La Fraina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215696",
+      "ref": null,
+      "name": "Raccordo Ciampai - n. 10",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215699",
+      "ref": null,
+      "name": "Raccordo Col Alt - Braia Fraida",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 246
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215729",
+      "ref": null,
+      "name": "Raccordo La Brancia - n.15",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 311
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_609792",
+      "ref": null,
+      "name": "Raccordo Piz Sorega B - Armentarola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 820
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215750",
+      "ref": null,
+      "name": "Roby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215751",
+      "ref": null,
+      "name": "Roby - Bamby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1214
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215747",
+      "ref": null,
+      "name": "Seggiovia Pralongiá",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 651
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_64461767",
+      "ref": null,
+      "name": "Seggiovia Pralongiá",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1290
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_64461768",
+      "ref": null,
+      "name": "Seggiovia Pralongiá",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1290
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215748",
+      "ref": null,
+      "name": "Seggiovia Pralongiá - Pralongiá II",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 261
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1774621196",
+      "ref": null,
+      "name": "Skilift Armentarola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215756",
+      "ref": null,
+      "name": "Sodlisia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 925
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215759",
+      "ref": null,
+      "name": "Sponata",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1810
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1764579240",
+      "ref": null,
+      "name": "Sponata - Gardenaccia variante",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215760",
+      "ref": null,
+      "name": "Stella Alpina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 608
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_82840061",
+      "ref": null,
+      "name": "Stella Alpina variante",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 458
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215764",
+      "ref": null,
+      "name": "Vallon",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1317
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_215766",
+      "ref": null,
+      "name": "Variante Col Pradat",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_1734098043",
+      "ref": null,
+      "name": "Verbindung - Biok - La Brancia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_76384898",
+      "ref": null,
+      "name": "Verbindung Borest - Costes da l'Ega",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_80533627",
+      "ref": null,
+      "name": "Verbindung Piz Arlara - Costes da l'Ega",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_80533628",
+      "ref": null,
+      "name": "Verbindung Pralongia 2 - Pralongia 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_805336210",
+      "ref": null,
+      "name": "Verbindungspiste Boé - Vallon",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_80533629",
+      "ref": null,
+      "name": "Verbindungspiste Borest - Boé",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_805336211",
+      "ref": null,
+      "name": "Verbindungspiste Costoratta - Campolongo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:3_805336212",
+      "ref": null,
+      "name": "Verbindungspiste Costoratta - Cherz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 294
+    }
+  ]
+}

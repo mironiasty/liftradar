@@ -1,0 +1,197 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "unterbaech",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254335+01:00",
+  "updated_at": "2026-11-19T09:21:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=223&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-breite-stag-unter-sanntum",
+      "ref": null,
+      "name": "Breite Stäg - Unter Sänntum",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-unter-sanntum-seefeld",
+      "ref": null,
+      "name": "Unter Sänntum - Seefeld",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-dorflift",
+      "ref": null,
+      "name": "Dorflift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-unterbach-brandalp",
+      "ref": null,
+      "name": "Unterbäch - Brandalp",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-brandalp-breite-stag",
+      "ref": null,
+      "name": "Brandalp - Breite Stäg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-raron-unterbach",
+      "ref": null,
+      "name": "Raron - Unterbäch",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-swiss-snow-kids-village",
+      "ref": null,
+      "name": "Swiss Snow Kids Village",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-brandalp-unterbach",
+      "ref": null,
+      "name": "Brandalp - Unterbäch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-solihang",
+      "ref": null,
+      "name": "Solihang",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-becki-unterbach",
+      "ref": null,
+      "name": "Becki - Unterbäch",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-brandalp-unterbach-2",
+      "ref": null,
+      "name": "Brandalp - Unterbäch",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-ubungslift-kinderparadies",
+      "ref": null,
+      "name": "Übungslift & Kinderparadies",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-skilifthang-ober-sanntum",
+      "ref": null,
+      "name": "Skilifthang Ober Sänntum",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-unter-sanntum-breite-stag",
+      "ref": null,
+      "name": "Unter Sänntum - Breite Stäg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-ruckfahrtstrasse-breite-stag-brandalp",
+      "ref": null,
+      "name": "Rückfahrtstrasse Breite Stäg - Brandalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-seefeld-unter-sanntum",
+      "ref": null,
+      "name": "Seefeld - Unter Sänntum",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-steinmanjni",
+      "ref": null,
+      "name": "Steinmanjni",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-verbindung-eischoll-unterbach",
+      "ref": null,
+      "name": "Verbindung Eischoll - Unterbäch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-ruckfahrtpiste-meiggerli",
+      "ref": null,
+      "name": "Rückfahrtpiste Meiggerli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    }
+  ]
+}

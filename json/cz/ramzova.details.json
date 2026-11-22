@@ -1,0 +1,99 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ramzova",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257467+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-ramzova",
+  "lifts": [
+    {
+      "id": "lift-lanova-draha-ramzova-cernava",
+      "ref": null,
+      "name": "Lanová dráha Ramzová - Čerňava",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lanova-draha-cernava-serak",
+      "ref": null,
+      "name": "Lanová dráha Čerňava - Šerák",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-moby",
+      "ref": null,
+      "name": "Moby",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-cernava-ramzova-i",
+      "ref": null,
+      "name": "Čerňava - Ramzová I.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-cernava-ramzova-ii",
+      "ref": null,
+      "name": "Čerňava - Ramzová II.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-mracna-cernava-i",
+      "ref": null,
+      "name": "Mračná - Černava I.",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-mracna-cernava-ii",
+      "ref": null,
+      "name": "Mračná - Černava II.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-serak-ramzova",
+      "ref": null,
+      "name": "Šerák - Ramzová",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3260
+    },
+    {
+      "id": "slope-ramzova-louka",
+      "ref": null,
+      "name": "Ramzová - Louka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "les-marecottes",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254081+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=80&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-les-marecottes-la-creusaz",
+      "ref": null,
+      "name": "Les Marécottes - La Creusaz",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x-le-velard",
+      "ref": null,
+      "name": "X • Le Vélard",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-y-le-luisin",
+      "ref": null,
+      "name": "Y • Le Luisin",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-z-tapis-debutants-la-creusaz",
+      "ref": null,
+      "name": "Z • Tapis débutants La Creusaz",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-eau-neuve-piste-damee",
+      "ref": null,
+      "name": "1 • Eau Neuve (piste damée)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-3-perrons",
+      "ref": null,
+      "name": "3 • Perrons",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6000
+    },
+    {
+      "id": "slope-4-les-lettons",
+      "ref": null,
+      "name": "4 • Les Lettons",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-5-tsante",
+      "ref": null,
+      "name": "5 • Tsanté",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-6-le-7",
+      "ref": null,
+      "name": "6 • Le 7",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-7-velard",
+      "ref": null,
+      "name": "7 • Vélard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-8-grand-reck",
+      "ref": null,
+      "name": "8 • Grand Reck",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-9-jardin-des-neiges-enfants-debutants",
+      "ref": null,
+      "name": "9 • Jardin des neiges (enfants-débutants)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-2-eau-neuve-itineraire-non-dame",
+      "ref": null,
+      "name": "2 • Eau Neuve (itinéraire non damé)",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-10-la-route",
+      "ref": null,
+      "name": "10 • La Route",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6000
+    }
+  ]
+}

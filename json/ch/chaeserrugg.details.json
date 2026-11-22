@@ -1,0 +1,373 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "chaeserrugg",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253773+01:00",
+  "updated_at": "2026-11-20T16:18:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=78&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-ponylift-alt-st-johann",
+      "ref": null,
+      "name": "Ponylift Alt St.Johann",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ponylift-zinggen",
+      "ref": null,
+      "name": "Ponylift Zinggen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-zauberteppich-alt-st-johann",
+      "ref": null,
+      "name": "Zauberteppich Alt St.Johann",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-unterwasser-iltios",
+      "ref": null,
+      "name": "K • Unterwasser-Iltios",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-s-alt-st-johann-sellamatt",
+      "ref": null,
+      "name": "S • Alt St.Johann-Sellamatt",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-iltios-chaserrugg",
+      "ref": null,
+      "name": "L • Iltios - Chäserrugg",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-verbindungslift-sellamatt-zinggen",
+      "ref": null,
+      "name": "T • Verbindungslift Sellamatt-Zinggen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-chaserrugg",
+      "ref": null,
+      "name": "M • Chäserrugg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-u-ruestel",
+      "ref": null,
+      "name": "U • Ruestel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-espel-stofeli-1-sektion",
+      "ref": null,
+      "name": "O • Espel - Stöfeli (1. Sektion)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n-stofeli-chaserrugg-2-sektion",
+      "ref": null,
+      "name": "N • Stöfeli - Chäserrugg (2. Sektion)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p-iltios",
+      "ref": null,
+      "name": "P • Iltios",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-zauberteppich-iltios",
+      "ref": null,
+      "name": "Zauberteppich Iltios",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ponylift-chaserrugg",
+      "ref": null,
+      "name": "Ponylift Chäserrugg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-chaserrugg",
+      "ref": null,
+      "name": "1 • Chäserrugg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-2-chaserrugg-stofeli",
+      "ref": null,
+      "name": "2 • Chäserrugg-Stöfeli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-3-simon-ammann-piste",
+      "ref": null,
+      "name": "3 • Simon Ammann-Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-4-surenboden",
+      "ref": null,
+      "name": "4 • Surenboden",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-5-piste-iltios",
+      "ref": null,
+      "name": "5 • Piste Iltios",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-6-skischulrun-iltios",
+      "ref": null,
+      "name": "6 • Skischulrun Iltios",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-7-iltios-park",
+      "ref": null,
+      "name": "7 • Iltios Park",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-8-espel-rennpiste",
+      "ref": null,
+      "name": "8 • Espel Rennpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-9-horen",
+      "ref": null,
+      "name": "9 • Horen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-10-chaserrugg-ostabfahrt",
+      "ref": null,
+      "name": "10 • Chäserrugg Ostabfahrt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5300
+    },
+    {
+      "id": "slope-11-iltios-espel",
+      "ref": null,
+      "name": "11 • Iltios-Espel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-12-schwendi-unterwasser",
+      "ref": null,
+      "name": "12 • Schwendi-Unterwasser",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-13-holderen-unterwasser",
+      "ref": null,
+      "name": "13 • Holderen-Unterwasser",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-14-stofeli-zinggen",
+      "ref": null,
+      "name": "14 • Stöfeli-Zinggen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-15-ruestel-iltios",
+      "ref": null,
+      "name": "15 • Ruestel-Iltios",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-16-ruestelhang",
+      "ref": null,
+      "name": "16 • Ruestelhang",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-17-ruestel-cross",
+      "ref": null,
+      "name": "17 • Ruestel Cross",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-18-zinggen-sellamatt",
+      "ref": null,
+      "name": "18 • Zinggen-Sellamatt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-19-chuweid-quell",
+      "ref": null,
+      "name": "19 • Chuweid-Quell",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-20-letzi-chueweid-alt-st-johann",
+      "ref": null,
+      "name": "20 • Letzi-Chueweid-Alt. St.Johann",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-21-mittelschwendi",
+      "ref": null,
+      "name": "21 • Mittelschwendi",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-22-burenwald",
+      "ref": null,
+      "name": "22 • Burenwald",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-23-herrenwald-alt-st-johann",
+      "ref": null,
+      "name": "23 • Herrenwald-Alt. St.Johann",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2800
+    }
+  ]
+}

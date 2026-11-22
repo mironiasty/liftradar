@@ -1,0 +1,88 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "skarslia",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262749+01:00",
+  "updated_at": "2026-11-17T15:24:20+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-skarslia-hovedheis",
+      "ref": null,
+      "name": "Skarslia hovedheis",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barneheis",
+      "ref": null,
+      "name": "Barneheis",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-hovedbakke",
+      "ref": null,
+      "name": "Hovedbakke",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-svartebakken",
+      "ref": null,
+      "name": "Svartebakken",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-barnebakken",
+      "ref": null,
+      "name": "Barnebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-mellombakken",
+      "ref": null,
+      "name": "Mellombakken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-kjelkebakke-vest",
+      "ref": null,
+      "name": "Kjelkebakke vest",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-kjelkebakke-st",
+      "ref": null,
+      "name": "Kjelkebakke øst",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

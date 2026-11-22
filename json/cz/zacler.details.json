@@ -1,0 +1,108 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "zacler",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257357+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-zacler-prkenny-dul",
+  "lifts": [
+    {
+      "id": "lift-dopik",
+      "ref": null,
+      "name": "Dopík",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pomik",
+      "ref": null,
+      "name": "Pomík",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mlyn",
+      "ref": null,
+      "name": "Mlýn",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-i",
+      "ref": null,
+      "name": "I.",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-ii",
+      "ref": null,
+      "name": "II.",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-iii",
+      "ref": null,
+      "name": "III.",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-iv",
+      "ref": null,
+      "name": "IV.",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-v",
+      "ref": null,
+      "name": "V.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-vi",
+      "ref": null,
+      "name": "VI.",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-vii",
+      "ref": null,
+      "name": "VII.",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 80
+    }
+  ]
+}

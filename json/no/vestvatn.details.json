@@ -1,0 +1,79 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "vestvatn",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262788+01:00",
+  "updated_at": "2026-11-18T13:24:41+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-storlia-t-heis",
+      "ref": null,
+      "name": "Storlia T-heis",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-coop-familiebakke-skitau",
+      "ref": null,
+      "name": "Coop Familiebakke - Skitau",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-storbakken",
+      "ref": null,
+      "name": "Storbakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-storlia-frikjringslype-1-og-2-uprepparert",
+      "ref": null,
+      "name": "Storlia Frikjøringsløype 1 og 2 (Uprepparert)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-vestvatnlia-skogslype",
+      "ref": null,
+      "name": "Vestvatnlia skogsløype",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": null
+    },
+    {
+      "id": "slope-karblsvingen",
+      "ref": null,
+      "name": "Karbølsvingen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-coop-familiebakke",
+      "ref": null,
+      "name": "Coop Familiebakke",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null
+    }
+  ]
+}

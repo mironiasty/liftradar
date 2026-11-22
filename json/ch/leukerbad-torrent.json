@@ -10,7 +10,7 @@
   },
   "website": "https://www.leukerbad.ch",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622220+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254116+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Trubelboden (SLF)",
         "elevation_m": 2459,
-        "depth_cm": 118,
-        "fresh_cm": 35,
+        "depth_cm": 114,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       }
@@ -83,7 +83,8 @@
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-11-21T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-22T08:31:00+01:00",
+  "details": "json/ch/leukerbad-torrent.details.json",
   "avalanche": {
     "region_id": "CH-4211",
     "region": "Leukerbad - Lötschental",
@@ -99,11 +100,12 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=135&saison=1&ref=contentBox",

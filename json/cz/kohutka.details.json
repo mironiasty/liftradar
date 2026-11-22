@@ -1,0 +1,179 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kohutka",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257488+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/ski-centrum-kohutka",
+  "lifts": [
+    {
+      "id": "lift-velka-kohutka",
+      "ref": null,
+      "name": "Velká Kohútka",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-runda",
+      "ref": null,
+      "name": "Runda",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mala-kohutka",
+      "ref": null,
+      "name": "Malá Kohútka",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-barborka",
+      "ref": null,
+      "name": "Barborka",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-senik",
+      "ref": null,
+      "name": "Seník",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-spartak",
+      "ref": null,
+      "name": "Spartak",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-detsky-skipark",
+      "ref": null,
+      "name": "Dětský skipark",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-velka-a",
+      "ref": null,
+      "name": "Velká A",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "slope-velka-b",
+      "ref": null,
+      "name": "Velká B",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-babska",
+      "ref": null,
+      "name": "Babská",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-mala",
+      "ref": null,
+      "name": "Malá",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-detsky-skipark",
+      "ref": null,
+      "name": "Dětský skipark",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "slope-barborka",
+      "ref": null,
+      "name": "Barborka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 240
+    },
+    {
+      "id": "slope-runda",
+      "ref": null,
+      "name": "Runda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-spartak",
+      "ref": null,
+      "name": "Spartak",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 290
+    },
+    {
+      "id": "slope-senik",
+      "ref": null,
+      "name": "Seník",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 320
+    },
+    {
+      "id": "slope-vranca-parkoviste",
+      "ref": null,
+      "name": "Vranča parkoviště",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    }
+  ]
+}

@@ -10,7 +10,7 @@
   },
   "website": "https://www.skistar.com/no/vare-skisteder/hemsedal/",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.627463+01:00",
+  "fetched_at": "2026-11-22T08:40:36.261266+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -57,6 +57,7 @@
     }
   },
   "lifts_updated_at": "2026-11-13T13:35:55+01:00",
+  "details": "json/no/hemsedal.details.json",
   "avalanche": {
     "region_id": "NO-3032",
     "region": "Hallingdal",
@@ -71,15 +72,15 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-21T00:00:00+01:00",
-    "valid_from": "2026-11-21T00:00:00+01:00",
-    "valid_until": "2026-11-21T23:59:59+01:00"
+    "published_at": "2026-11-22T00:00:00+01:00",
+    "valid_from": "2026-11-22T00:00:00+01:00",
+    "valid_until": "2026-11-22T23:59:59+01:00"
   },
   "sources": [
     "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/hemsedal/",
     "https://www.skiresort.com/en/ski-resort/hemsedal/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-NO.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-NO.json"
   ],
   "source_details": {
     "conditions": [
@@ -92,7 +93,7 @@
         "attribution_required": true
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-NO.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-NO.json",
         "attribution_required": null
       }
     ],

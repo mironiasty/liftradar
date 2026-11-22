@@ -1,0 +1,425 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "carezza",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255823+01:00",
+  "updated_at": "2026-11-01T19:02:30.948539+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_496",
+      "ref": null,
+      "name": "Franzin",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_498",
+      "ref": null,
+      "name": "Golf I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_501",
+      "ref": null,
+      "name": "Golf II",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_504",
+      "ref": null,
+      "name": "Hubertus",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_491",
+      "ref": null,
+      "name": "Koenig Laurin 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_123693482",
+      "ref": null,
+      "name": "Koenig Laurin 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_503",
+      "ref": null,
+      "name": "Le Pope",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_6519878",
+      "ref": null,
+      "name": "Nani",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_499",
+      "ref": null,
+      "name": "Paolina",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_502",
+      "ref": null,
+      "name": "Pra di Tori",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_161104786",
+      "ref": null,
+      "name": "Tiers",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_493",
+      "ref": null,
+      "name": "Tschein",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:5_182248",
+      "ref": null,
+      "name": "Welschnofen – Frommer Alm",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182276",
+      "ref": null,
+      "name": "Carezza Snowpark",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182279",
+      "ref": null,
+      "name": "Franzin",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_1772021256",
+      "ref": null,
+      "name": "Frommer",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182269",
+      "ref": null,
+      "name": "Frommer",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182284",
+      "ref": null,
+      "name": "Golf",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1820
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182292",
+      "ref": null,
+      "name": "Hubertus",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1730
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_2639181",
+      "ref": null,
+      "name": "König Laurin",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182273",
+      "ref": null,
+      "name": "König Laurin",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 740
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182272",
+      "ref": null,
+      "name": "König Laurin - Tierser Seite",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_2637508",
+      "ref": null,
+      "name": "König Laurin - Tierser Seite",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182295",
+      "ref": null,
+      "name": "Latemarwiesen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182296",
+      "ref": null,
+      "name": "Le Pope",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_1772022393",
+      "ref": null,
+      "name": "Masarè - Rosengarten",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 515
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182282",
+      "ref": null,
+      "name": "Masarè - Rosengarten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_6556598",
+      "ref": null,
+      "name": "Nani Fun Slope",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3040
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182286",
+      "ref": null,
+      "name": "Paolina",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 490
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182287",
+      "ref": null,
+      "name": "Paolina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182294",
+      "ref": null,
+      "name": "Pra di Tori",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_2639451",
+      "ref": null,
+      "name": "Pra di Tori",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_1772023239",
+      "ref": null,
+      "name": "Skiweg Latmoralm",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_2638985",
+      "ref": null,
+      "name": "Skiweg Messnerjoch",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_2637838",
+      "ref": null,
+      "name": "Tschein",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182274",
+      "ref": null,
+      "name": "Tschein",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1220
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182280",
+      "ref": null,
+      "name": "Variante Franzin",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182270",
+      "ref": null,
+      "name": "Variante Frommer",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182291",
+      "ref": null,
+      "name": "Variante Golf",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182283",
+      "ref": null,
+      "name": "Variante Paolina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_1772023882",
+      "ref": null,
+      "name": "Variante Tschein",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182271",
+      "ref": null,
+      "name": "Variante Tschein",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_1772021482",
+      "ref": null,
+      "name": "Welschnofen Talabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5140
+    }
+  ]
+}

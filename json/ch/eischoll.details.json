@@ -1,0 +1,173 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "eischoll",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253853+01:00",
+  "updated_at": "2026-11-20T15:47:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=258&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-raron-eischoll",
+      "ref": null,
+      "name": "Raron - Eischoll",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-eischoll-striggen",
+      "ref": null,
+      "name": "Eischoll - Striggen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-striggen-erez",
+      "ref": null,
+      "name": "Striggen - Erez",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kinderlift-stryggen",
+      "ref": null,
+      "name": "Kinderlift Stryggen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-p1-village-slope",
+      "ref": null,
+      "name": "P1 • Village slope",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-p1-piste-dorf",
+      "ref": null,
+      "name": "P1 • Piste Dorf",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-p2-piste-biel",
+      "ref": null,
+      "name": "P2 • Piste Biel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-p3-piste-senggalp",
+      "ref": null,
+      "name": "P3 • Piste Senggalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-p4-piste-luchre",
+      "ref": null,
+      "name": "P4 • Piste Luchre",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-p5-piste-seewen-a",
+      "ref": null,
+      "name": "P5 • Piste Seewen A",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-p6-piste-seewen-b",
+      "ref": null,
+      "name": "P6 • Piste Seewen B",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-p7-piste-brandegg",
+      "ref": null,
+      "name": "P7 • Piste Brandegg",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-p8-piste-schreghang",
+      "ref": null,
+      "name": "P8 • Piste Schreghang",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-p9-eischoll-unterbach",
+      "ref": null,
+      "name": "P9 • Eischoll - Unterbäch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-t1-traverse-untere-strasse",
+      "ref": null,
+      "name": "T1 • Traverse untere Strasse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-t2-traverse-obere-strasse",
+      "ref": null,
+      "name": "T2 • Traverse obere Strasse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-t3-traverse-bergstation",
+      "ref": null,
+      "name": "T3 • Traverse Bergstation",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    }
+  ]
+}

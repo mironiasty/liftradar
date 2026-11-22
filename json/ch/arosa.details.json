@@ -1,0 +1,571 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "arosa",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253727+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=67&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-weisshorn-1-sektion",
+      "ref": null,
+      "name": "A • Weisshorn 1. Sektion",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-weisshorn-2-sektion",
+      "ref": null,
+      "name": "C • Weisshorn 2. Sektion",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-hornli-express",
+      "ref": null,
+      "name": "E • Hörnli-Express",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-urdenbahn",
+      "ref": null,
+      "name": "G • Urdenbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-hornli",
+      "ref": null,
+      "name": "H • Hörnli",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-plattenhorn",
+      "ref": null,
+      "name": "I • Plattenhorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-carmenna",
+      "ref": null,
+      "name": "J • Carmenna",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-kulm",
+      "ref": null,
+      "name": "K • Kulm",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-tschuggen-ost",
+      "ref": null,
+      "name": "L • Tschuggen Ost",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-bruggerhorn",
+      "ref": null,
+      "name": "M • Brüggerhorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n-tomeli",
+      "ref": null,
+      "name": "N • Tomeli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-tschuggen-west",
+      "ref": null,
+      "name": "O • Tschuggen West",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p-ried",
+      "ref": null,
+      "name": "P • Ried",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-q-pratschli",
+      "ref": null,
+      "name": "Q • Prätschli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-zufahrt-gob-hornli-express",
+      "ref": null,
+      "name": "Zufahrt GOB Hörnli Express",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-1-hintere-piste-oberer-teil",
+      "ref": null,
+      "name": "1 • Hintere Piste oberer Teil",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-1a-hintere-piste-unterer-teil",
+      "ref": null,
+      "name": "1a • Hintere Piste unterer Teil",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-1b-skibob-piste",
+      "ref": null,
+      "name": "1b • Skibob Piste",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-1h-heimfahrtspiste-robinson",
+      "ref": null,
+      "name": "1h • Heimfahrtspiste Robinson",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-2-mittlere-piste",
+      "ref": null,
+      "name": "2 • Mittlere Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-2a-munggaegg",
+      "ref": null,
+      "name": "2a • Munggaegg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-2b-herrenbachli-hundschopf-alpenblick",
+      "ref": null,
+      "name": "2b • Herrenbächli - Hundschopf - Alpenblick",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-2c-alpenblick-hornli-express-tal",
+      "ref": null,
+      "name": "2c • Alpenblick - Hörnli-Express Tal",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-3-direttisima",
+      "ref": null,
+      "name": "3 • Direttisima",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-3a-piste-3",
+      "ref": null,
+      "name": "3a • Piste 3",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-4-skiclub",
+      "ref": null,
+      "name": "4 • Skiclub",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-5-hornli-traverse",
+      "ref": null,
+      "name": "5 • Hörnli Traverse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-5a-strada-oberer-teil",
+      "ref": null,
+      "name": "5a • Strada Oberer Teil",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 600
+    },
+    {
+      "id": "slope-5b-zufahrt-sb-hornli-talstation",
+      "ref": null,
+      "name": "5b • Zufahrt SB Hörnli Talstation",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 500
+    },
+    {
+      "id": "slope-5c-strada-unterer-teil",
+      "ref": null,
+      "name": "5c • Strada Unterer Teil",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-5d-sbp-tal-carmenna-tal",
+      "ref": null,
+      "name": "5d • SBP Tal - Carmenna Tal",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-5e-klempen-alpentobel",
+      "ref": null,
+      "name": "5e • Klempen - Alpentobel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-6-sbp-berg-oberer-carmennahang-unterer-carmennahang-zufahrt-sbp-tal",
+      "ref": null,
+      "name": "6 • SBP Berg-Oberer Carmennahang-Unterer Carmennahang-Zufahrt SBP Tal",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-6a-emsla",
+      "ref": null,
+      "name": "6a • Emsla",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-7-obersasspiste",
+      "ref": null,
+      "name": "7 • Obersässpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-8-weisshorn-carmennaberg",
+      "ref": null,
+      "name": "8 • Weisshorn-Carmennaberg",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-8a-carmennaberg-carmennahutte",
+      "ref": null,
+      "name": "8a • Carmennaberg-Carmennahütte",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-9-carmenna-berg-carmenna-mitte",
+      "ref": null,
+      "name": "9 • Carmenna Berg-Carmenna Mitte",
+      "difficulty": "other",
+      "colour": "red_black",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-9a-carmenna-mitte-briggerhang-traverse-ried-berg",
+      "ref": null,
+      "name": "9a • Carmenna Mitte-Briggerhang Traverse-Ried Berg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-9b-carmenna-mitte-emsla",
+      "ref": null,
+      "name": "9b • Carmenna Mitte-Emsla",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-9c-pgs",
+      "ref": null,
+      "name": "9c • PGS",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-9d-donauwellen",
+      "ref": null,
+      "name": "9d • Donauwellen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-9e-kollerhupf-verlangerung",
+      "ref": null,
+      "name": "9e • Kollerhupf Verlängerung",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-10-weisshorngipfel-sattelhutte-law-mitte",
+      "ref": null,
+      "name": "10 • Weisshorngipfel-Sattelhütte-LAW Mitte",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-10a-traxloch-kreuzung-hintere-hutte",
+      "ref": null,
+      "name": "10a • Traxloch-Kreuzung Hintere Hütte",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-10b-kreuzung-hintere-hutte-ried-tal",
+      "ref": null,
+      "name": "10b • Kreuzung Hintere Hütte- Ried Tal",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-11-leichte-maran-oberer-teil",
+      "ref": null,
+      "name": "11 • Leichte Maran Oberer Teil",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-11a-leichte-maran-unterer-teil",
+      "ref": null,
+      "name": "11a • Leichte Maran Unterer Teil",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-11h-heimfahrtspiste-valsana",
+      "ref": null,
+      "name": "11h • Heimfahrtspiste Valsana",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-12-diamond-slope",
+      "ref": null,
+      "name": "12 • Diamond Slope",
+      "difficulty": "other",
+      "colour": "black_blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-13-ried-berg-gondelbahn-kulm-tal",
+      "ref": null,
+      "name": "13 • Ried Berg-Gondelbahn Kulm Tal",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-13a-carmenna-tal-hornli-express-tal",
+      "ref": null,
+      "name": "13a • Carmenna Tal - Hörnli-Express Tal",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-13b-kulmwiese",
+      "ref": null,
+      "name": "13b • Kulmwiese",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-14-gondelbahn-kulm-berg-tschuggenhutte-ried-tal",
+      "ref": null,
+      "name": "14 • Gondelbahn Kulm Berg-Tschuggenhütte-Ried Tal",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-14a-gondelbahn-kulm-berg-ried-berg",
+      "ref": null,
+      "name": "14a • Gondelbahn Kulm Berg - Ried Berg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-14h-heimfahrtspiste-tschuggen",
+      "ref": null,
+      "name": "14h • Heimfahrtspiste Tschuggen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-15-tomelisteilhang",
+      "ref": null,
+      "name": "15 • Tomelisteilhang",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-15a-law-mittelstation-tomeli-tal-vetter",
+      "ref": null,
+      "name": "15a • LAW Mittelstation - Tomeli Tal - Vetter",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-16-pratschli-pisten",
+      "ref": null,
+      "name": "16 • Prätschli Pisten",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    }
+  ]
+}

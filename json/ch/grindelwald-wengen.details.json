@@ -1,0 +1,783 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "grindelwald-wengen",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.255673+01:00",
+  "updated_at": "2026-11-21T09:25:06+01:00",
+  "source": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+  "lifts": [
+    {
+      "id": "grindelwald_wengen_lift_1_grindelwald_–_kleine_scheidegg",
+      "ref": null,
+      "name": "Grindelwald – Kleine Scheidegg",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_12_kleine_scheidegg_–_eigergletscher",
+      "ref": null,
+      "name": "Kleine Scheidegg – Eigergletscher",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_14_grindelwald_grund_–_maennlichen",
+      "ref": null,
+      "name": "Grindelwald Grund – Männlichen",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_16_holenstein_–_maennlichen",
+      "ref": null,
+      "name": "Holenstein – Männlichen",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_17_wengen_–_maennlichen",
+      "ref": null,
+      "name": "Wengen – Männlichen",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_18_arven",
+      "ref": null,
+      "name": "Arven",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_19_gummi",
+      "ref": null,
+      "name": "Gummi",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_20_lauberhorn",
+      "ref": null,
+      "name": "Lauberhorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_21_maennlichen",
+      "ref": null,
+      "name": "Männlichen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_23_innerwengen",
+      "ref": null,
+      "name": "Innerwengen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_24_laeger",
+      "ref": null,
+      "name": "Läger",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_25_wixi",
+      "ref": null,
+      "name": "Wixi",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_26_bumps",
+      "ref": null,
+      "name": "Bumps",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_27_honegg",
+      "ref": null,
+      "name": "Honegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_28_eigernordwand",
+      "ref": null,
+      "name": "Eigernordwand",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_29_tschuggen",
+      "ref": null,
+      "name": "Tschuggen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_30_wengiboden",
+      "ref": null,
+      "name": "Wengiboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_31_figeller",
+      "ref": null,
+      "name": "Figeller",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_6_lauterbrunnen_–_kleine_scheidegg",
+      "ref": null,
+      "name": "Lauterbrunnen – Kleine Scheidegg",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_32_maennlichen",
+      "ref": null,
+      "name": "Männlichen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_wengen_lift_600_eiger_express",
+      "ref": null,
+      "name": "Eiger Express",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "grindelwald_wengen_track_129_45_lauberhorn-start_-_hanneggbruecke",
+      "ref": null,
+      "name": "45 Lauberhorn-Start - Hanneggbrücke",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3290
+    },
+    {
+      "id": "grindelwald_wengen_track_100_1_gratbort",
+      "ref": null,
+      "name": "1 Gratbort",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 620
+    },
+    {
+      "id": "grindelwald_wengen_track_116_27_oh_-_god",
+      "ref": null,
+      "name": "27 Oh - God",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "grindelwald_wengen_track_117_32_black_-_rock",
+      "ref": null,
+      "name": "32 Black - Rock",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2160
+    },
+    {
+      "id": "grindelwald_wengen_track_118_31_schwarzen",
+      "ref": null,
+      "name": "31 Schwarzen",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "grindelwald_wengen_track_122_41_stoeckipiste",
+      "ref": null,
+      "name": "41 Stöckipiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "grindelwald_wengen_track_128_45_lauberhorn_weltcupstrecke",
+      "ref": null,
+      "name": "45 Lauberhorn Weltcupstrecke",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_track_127_47_lauberhorn_weltcup_slalom",
+      "ref": null,
+      "name": "47 Lauberhorn Weltcup Slalom",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1020
+    },
+    {
+      "id": "grindelwald_wengen_track_125_45_hanneggbruecke_-_innerwengen",
+      "ref": null,
+      "name": "45 Hanneggbrücke - Innerwengen",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1370
+    },
+    {
+      "id": "grindelwald_wengen_track_135_41a_einfahrtspiste",
+      "ref": null,
+      "name": "41a Einfahrtspiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "grindelwald_wengen_track_136_1_grathula",
+      "ref": null,
+      "name": "1 Grathula",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "grindelwald_wengen_track_1_3_holenstein_-_grindelwald_grund",
+      "ref": null,
+      "name": "3 Holenstein - Grindelwald Grund",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3070
+    },
+    {
+      "id": "grindelwald_wengen_track_2_3_maennlichenlift_talst._-_holenstein",
+      "ref": null,
+      "name": "3 Männlichenlift Talst. - Holenstein",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "grindelwald_wengen_track_3_3_maennlichen",
+      "ref": null,
+      "name": "3 Männlichen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3070
+    },
+    {
+      "id": "grindelwald_wengen_track_6_21_kleine_scheidegg_-_grindelwald_grund",
+      "ref": null,
+      "name": "21 Kleine Scheidegg - Grindelwald Grund",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3410
+    },
+    {
+      "id": "grindelwald_wengen_track_7_21_skilift_tschuggen_-_aspen",
+      "ref": null,
+      "name": "21 Skilift Tschuggen - Aspen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3730
+    },
+    {
+      "id": "grindelwald_wengen_track_8_21_arven_-_skilift_tschuggen",
+      "ref": null,
+      "name": "21 Arven - Skilift Tschuggen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "grindelwald_wengen_track_12_43_standard_innerwengen",
+      "ref": null,
+      "name": "43 Standard Innerwengen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1380
+    },
+    {
+      "id": "grindelwald_wengen_track_13_18_maennlichen_->_scheidegg",
+      "ref": null,
+      "name": "18 Männlichen -> Scheidegg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "grindelwald_wengen_track_14_21_scheidegg_->_maennlichen",
+      "ref": null,
+      "name": "21 Scheidegg -> Männlichen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_track_18_21_kleine_scheidegg_-_arven",
+      "ref": null,
+      "name": "21 Kleine Scheidegg - Arven",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1710
+    },
+    {
+      "id": "grindelwald_wengen_track_102_4_eggboden",
+      "ref": null,
+      "name": "4 Eggboden",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3290
+    },
+    {
+      "id": "grindelwald_wengen_track_103_5_distelboden",
+      "ref": null,
+      "name": "5 Distelboden",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1040
+    },
+    {
+      "id": "grindelwald_wengen_track_105_7_sattelegg",
+      "ref": null,
+      "name": "7 Sattelegg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2510
+    },
+    {
+      "id": "grindelwald_wengen_track_106_8_gummi_sued",
+      "ref": null,
+      "name": "8 Gummi Süd",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2280
+    },
+    {
+      "id": "grindelwald_wengen_track_107_11_baerhaag",
+      "ref": null,
+      "name": "11 Bärhaag",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4310
+    },
+    {
+      "id": "grindelwald_wengen_track_110_13_honegg_-_seeli",
+      "ref": null,
+      "name": "13 Honegg - Seeli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2280
+    },
+    {
+      "id": "grindelwald_wengen_track_97_15_inberg",
+      "ref": null,
+      "name": "15 Inberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2160
+    },
+    {
+      "id": "grindelwald_wengen_track_111_23_brandegg_-_aspen",
+      "ref": null,
+      "name": "23 Brandegg - Aspen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2390
+    },
+    {
+      "id": "grindelwald_wengen_track_115_26_punchball",
+      "ref": null,
+      "name": "26 Punchball",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2050
+    },
+    {
+      "id": "grindelwald_wengen_track_119_34_mittelegg",
+      "ref": null,
+      "name": "34 Mittelegg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2050
+    },
+    {
+      "id": "grindelwald_wengen_track_120_35_moos",
+      "ref": null,
+      "name": "35 Moos",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1020
+    },
+    {
+      "id": "grindelwald_wengen_track_123_42_lauberhorn",
+      "ref": null,
+      "name": "42 Lauberhorn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2040
+    },
+    {
+      "id": "grindelwald_wengen_track_124_44_engi",
+      "ref": null,
+      "name": "44 Engi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2160
+    },
+    {
+      "id": "grindelwald_wengen_track_126_46_huussengg",
+      "ref": null,
+      "name": "46 Huussengg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 790
+    },
+    {
+      "id": "grindelwald_wengen_track_108_11_loogler",
+      "ref": null,
+      "name": "11 Loogler",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1030
+    },
+    {
+      "id": "grindelwald_wengen_track_137_3_maennlichen_holenstein_(eggboden)",
+      "ref": null,
+      "name": "3 Männlichen Holenstein (Eggboden)",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550
+    },
+    {
+      "id": "grindelwald_wengen_track_189_8b_gummi_sued",
+      "ref": null,
+      "name": "8b Gummi Süd",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_valleyRun_3_holenstein",
+      "ref": null,
+      "name": "3 Grindelwald Grund via Holenstein➔Aspen",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_valleyRun_21_aspen",
+      "ref": null,
+      "name": "21 Grindelwald Grund via Tschuggen➔Aspen",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_valleyRun_22_mettlen",
+      "ref": null,
+      "name": "22 Grindelwald Grund via Mettlen➔Brandegg",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_valleyRun_36_wengen",
+      "ref": null,
+      "name": "36 Wengen",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_track_36_bumps",
+      "ref": null,
+      "name": "36 Bumps",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_track_4_22_brandegg_-_grindelwald_grund",
+      "ref": null,
+      "name": "22 Brandegg - Grindelwald Grund",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2730
+    },
+    {
+      "id": "grindelwald_wengen_track_5_22_arven_-_brandegg",
+      "ref": null,
+      "name": "22 Arven - Brandegg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5090
+    },
+    {
+      "id": "grindelwald_wengen_track_9_36_allmend_-_wengen_dorf",
+      "ref": null,
+      "name": "36 Allmend - Wengen Dorf",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2280
+    },
+    {
+      "id": "grindelwald_wengen_track_10_36_wengernalp_-_allmend",
+      "ref": null,
+      "name": "36 Wengernalp - Allmend",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3750
+    },
+    {
+      "id": "grindelwald_wengen_track_11_36_kleine_scheidegg_-_wengernalp",
+      "ref": null,
+      "name": "36 Kleine Scheidegg - Wengernalp",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2160
+    },
+    {
+      "id": "grindelwald_wengen_track_121_37_wengernalp_-_wixi",
+      "ref": null,
+      "name": "37 Wengernalp - Wixi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1020
+    },
+    {
+      "id": "grindelwald_wengen_track_101_2_wasserwendi_slow-slope",
+      "ref": null,
+      "name": "2 Wasserwendi Slow-Slope",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3190
+    },
+    {
+      "id": "grindelwald_wengen_track_104_6_laeger",
+      "ref": null,
+      "name": "6 Läger",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3050
+    },
+    {
+      "id": "grindelwald_wengen_track_109_12_rohr",
+      "ref": null,
+      "name": "12 Rohr",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1820
+    },
+    {
+      "id": "grindelwald_wengen_track_113_22_kleine_scheidegg_-_arven",
+      "ref": null,
+      "name": "22 Kleine Scheidegg - Arven",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1710
+    },
+    {
+      "id": "grindelwald_wengen_track_99_24_schattwald",
+      "ref": null,
+      "name": "24 Schattwald",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2160
+    },
+    {
+      "id": "grindelwald_wengen_track_114_25_phenix",
+      "ref": null,
+      "name": "25 Phenix",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1810
+    },
+    {
+      "id": "grindelwald_wengen_track_112_23_aspen_-_grindelwald_grund",
+      "ref": null,
+      "name": "23 Aspen - Grindelwald Grund",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2260
+    },
+    {
+      "id": "grindelwald_wengen_track_192_36b_wengernalp_-_allmend",
+      "ref": null,
+      "name": "36b Wengernalp - Allmend",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_track_192_36a_wengernalp_-_allmend",
+      "ref": null,
+      "name": "36a Wengernalp - Allmend",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_track_102728_31_schwarzen",
+      "ref": null,
+      "name": "31 Schwarzen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "grindelwald_wengen_track_1021211_36_kleine_scheidegg_-_wixi",
+      "ref": null,
+      "name": "36 Kleine Scheidegg - Wixi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

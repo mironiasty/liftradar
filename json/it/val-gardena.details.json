@@ -1,0 +1,1700 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "val-gardena",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255796+01:00",
+  "updated_at": "2026-11-19T16:03:28.936423+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_383",
+      "ref": null,
+      "name": "Biancaneve",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_382",
+      "ref": null,
+      "name": "Cadepunt",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_396",
+      "ref": null,
+      "name": "Campo Freina",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_362",
+      "ref": null,
+      "name": "Catores Martin",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_374",
+      "ref": null,
+      "name": "Cendevaves",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_395",
+      "ref": null,
+      "name": "Ciampinoi",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_387",
+      "ref": null,
+      "name": "Cir",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_359",
+      "ref": null,
+      "name": "Cisles",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_406",
+      "ref": null,
+      "name": "Città  dei Sassi",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_360",
+      "ref": null,
+      "name": "Col Raiser",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_408",
+      "ref": null,
+      "name": "Comici 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_409",
+      "ref": null,
+      "name": "Comici 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_379",
+      "ref": null,
+      "name": "Costabella",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_378",
+      "ref": null,
+      "name": "Dantercepies I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_185959",
+      "ref": null,
+      "name": "Dantercepies II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_357",
+      "ref": null,
+      "name": "Fermeda",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_400",
+      "ref": null,
+      "name": "Fungeia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_366",
+      "ref": null,
+      "name": "Furdenan",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_356",
+      "ref": null,
+      "name": "Furnes - Seceda",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_358",
+      "ref": null,
+      "name": "Gherdeina Ronda",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_407",
+      "ref": null,
+      "name": "Gran Paradiso",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_206957",
+      "ref": null,
+      "name": "Langkofelscharte",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_381",
+      "ref": null,
+      "name": "Larciunei",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_386",
+      "ref": null,
+      "name": "Mickey Mouse",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_371",
+      "ref": null,
+      "name": "Mont de Seura",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_380",
+      "ref": null,
+      "name": "Nives",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_367",
+      "ref": null,
+      "name": "Palmer",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_389",
+      "ref": null,
+      "name": "Panorama",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_375",
+      "ref": null,
+      "name": "Parallel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_394",
+      "ref": null,
+      "name": "Piza Pranseies",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_401",
+      "ref": null,
+      "name": "Piz Sella",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_402",
+      "ref": null,
+      "name": "Piz Seteur 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_405",
+      "ref": null,
+      "name": "Piz Seteur/Sole",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_361",
+      "ref": null,
+      "name": "Plan da Tieja",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_404",
+      "ref": null,
+      "name": "Plan de Gralba",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_403",
+      "ref": null,
+      "name": "Pudra",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_373",
+      "ref": null,
+      "name": "Puntea",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_363",
+      "ref": null,
+      "name": "Raschötz",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_384",
+      "ref": null,
+      "name": "Risaccia 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_385",
+      "ref": null,
+      "name": "Risaccia 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_391",
+      "ref": null,
+      "name": "Saslong",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_418",
+      "ref": null,
+      "name": "Sasso Levante",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_393",
+      "ref": null,
+      "name": "Sochers",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_392",
+      "ref": null,
+      "name": "Sochers/Ciampinoi",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_410",
+      "ref": null,
+      "name": "Sotsaslong",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_369",
+      "ref": null,
+      "name": "St. Cristina - Monte Pana",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_355",
+      "ref": null,
+      "name": "St. Ulrich - Furnes",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_365",
+      "ref": null,
+      "name": "St. Ulrich - Seiser Alm",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_397",
+      "ref": null,
+      "name": "Terza punta",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_372",
+      "ref": null,
+      "name": "Tschucky",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_377",
+      "ref": null,
+      "name": "Val",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:4_388",
+      "ref": null,
+      "name": "Val Setus",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216161",
+      "ref": null,
+      "name": "Alpha",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216196",
+      "ref": null,
+      "name": "Bärenpiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1739464010",
+      "ref": null,
+      "name": "Berg Fermeda - Bergstation Seceda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 530
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216082",
+      "ref": null,
+      "name": "Biancaneve",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216159",
+      "ref": null,
+      "name": "Bravo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216083",
+      "ref": null,
+      "name": "Cadepunt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 370
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216084",
+      "ref": null,
+      "name": "Campo Freina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216085",
+      "ref": null,
+      "name": "Catores",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216086",
+      "ref": null,
+      "name": "Catores - Fermeda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216087",
+      "ref": null,
+      "name": "Cendevaves 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216088",
+      "ref": null,
+      "name": "Cendevaves 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216162",
+      "ref": null,
+      "name": "Charly",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216090",
+      "ref": null,
+      "name": "Ciampinoi 3",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216091",
+      "ref": null,
+      "name": "Ciampinoi 4",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216093",
+      "ref": null,
+      "name": "Ciampinoi 5",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216092",
+      "ref": null,
+      "name": "Ciampinoi 5 - Variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216095",
+      "ref": null,
+      "name": "Ciampinoi 6",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216094",
+      "ref": null,
+      "name": "Ciampinoi - Piza Pranseies",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 140
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216116",
+      "ref": null,
+      "name": "Cir",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216195",
+      "ref": null,
+      "name": "Cir-Ria",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216102",
+      "ref": null,
+      "name": "Colraiser",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216103",
+      "ref": null,
+      "name": "Colraiser - Fermeda",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216106",
+      "ref": null,
+      "name": "Col Raiser - Plan Da Tieja",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216109",
+      "ref": null,
+      "name": "Comici II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216108",
+      "ref": null,
+      "name": "Comici - Tramans",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216111",
+      "ref": null,
+      "name": "Costabella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216202",
+      "ref": null,
+      "name": "Curona",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_86251899",
+      "ref": null,
+      "name": "Daniela",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216114",
+      "ref": null,
+      "name": "Dantercepies",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216112",
+      "ref": null,
+      "name": "Dantercepies",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216113",
+      "ref": null,
+      "name": "Dantercepies - Risaccia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_71460569",
+      "ref": null,
+      "name": "Dantercepies-Verbindung",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 20
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_71489779",
+      "ref": null,
+      "name": "Dantercepies-Verbindung",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 20
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216115",
+      "ref": null,
+      "name": "Dantercepies - Wolkenstein",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_179234",
+      "ref": null,
+      "name": "Direttissima",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216180",
+      "ref": null,
+      "name": "Falk",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216123",
+      "ref": null,
+      "name": "Fermeda 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216124",
+      "ref": null,
+      "name": "Fermeda 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216126",
+      "ref": null,
+      "name": "Fermeda - St.Cristina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_29007227",
+      "ref": null,
+      "name": "Frainella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216131",
+      "ref": null,
+      "name": "Frara - Val Setus",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216097",
+      "ref": null,
+      "name": "Frea",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2670567",
+      "ref": null,
+      "name": "Fuenffinger",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1166
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216132",
+      "ref": null,
+      "name": "Fungeia - Campo Freina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216133",
+      "ref": null,
+      "name": "Furdenan 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216134",
+      "ref": null,
+      "name": "Furdenan 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216135",
+      "ref": null,
+      "name": "Furdenan - Palmer",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2670548",
+      "ref": null,
+      "name": "Gabia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216140",
+      "ref": null,
+      "name": "Gran Paradiso",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216141",
+      "ref": null,
+      "name": "Gran Paradiso - Piz Seteur",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216099",
+      "ref": null,
+      "name": "Gran Pela",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 520
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2670573",
+      "ref": null,
+      "name": "Grohmann",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 607
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216181",
+      "ref": null,
+      "name": "Knochenbrecher / Funtanes",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1763648409",
+      "ref": null,
+      "name": "La Ciampinoi",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 515
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216204",
+      "ref": null,
+      "name": "La Longia",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1675162878",
+      "ref": null,
+      "name": "La Longia - Furnes",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216217",
+      "ref": null,
+      "name": "Langental",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216144",
+      "ref": null,
+      "name": "Larciunei",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_133378440",
+      "ref": null,
+      "name": "La Ria",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1110
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216200",
+      "ref": null,
+      "name": "Martinelli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1220
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_12686125",
+      "ref": null,
+      "name": "Mickey Mouse",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 50
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216163",
+      "ref": null,
+      "name": "Nives",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216164",
+      "ref": null,
+      "name": "Palmer",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216165",
+      "ref": null,
+      "name": "Palmer - Furdenan",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 80
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216168",
+      "ref": null,
+      "name": "Panorama",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216117",
+      "ref": null,
+      "name": "Paprika",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_76408625",
+      "ref": null,
+      "name": "Paprika - Comici1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1166
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216175",
+      "ref": null,
+      "name": "Parallel 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 630
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216176",
+      "ref": null,
+      "name": "Parallel 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 630
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_179233",
+      "ref": null,
+      "name": "Pilat",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4703
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_133378441",
+      "ref": null,
+      "name": "Pista del Lupo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216100",
+      "ref": null,
+      "name": "Pitla Pela",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216101",
+      "ref": null,
+      "name": "Pitla Pela Variante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216183",
+      "ref": null,
+      "name": "Piza Pranseies - Ciampinoi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216178",
+      "ref": null,
+      "name": "Piz Sella 5",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216177",
+      "ref": null,
+      "name": "Piz Sella 5",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_436693",
+      "ref": null,
+      "name": "Piz Seteur - Comici",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_76408941",
+      "ref": null,
+      "name": "Piz Seteur - Gran Paradiso",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_862518911",
+      "ref": null,
+      "name": "Piz Seteur-Plan de Gralba",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216182",
+      "ref": null,
+      "name": "Piz Seteur - Steinerne Stadt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216184",
+      "ref": null,
+      "name": "Plan Da Tieja",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216185",
+      "ref": null,
+      "name": "Plan de Gralba",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_862518910",
+      "ref": null,
+      "name": "Pradel-Salei-Grohmann",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216186",
+      "ref": null,
+      "name": "Pudra",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 880
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216191",
+      "ref": null,
+      "name": "Puntea 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216192",
+      "ref": null,
+      "name": "Puntea 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216193",
+      "ref": null,
+      "name": "Raschötz - Furnes",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216194",
+      "ref": null,
+      "name": "Risaccia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2670549",
+      "ref": null,
+      "name": "Rodella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 915
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_2670568",
+      "ref": null,
+      "name": "Salei",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 737
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216201",
+      "ref": null,
+      "name": "Sas Betit",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216096",
+      "ref": null,
+      "name": "Saslong",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216089",
+      "ref": null,
+      "name": "Saslong B",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_612313",
+      "ref": null,
+      "name": "Sasso Levante",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216179",
+      "ref": null,
+      "name": "Schiappen - Sella",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1739463862",
+      "ref": null,
+      "name": "Seceda - Fermeda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216110",
+      "ref": null,
+      "name": "Sef",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216107",
+      "ref": null,
+      "name": "Sef",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_612312",
+      "ref": null,
+      "name": "Sellajoch",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1699970886",
+      "ref": null,
+      "name": "Skiweg Costabella",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1671090329",
+      "ref": null,
+      "name": "Skiweg Skilift Nives - La Poza",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216206",
+      "ref": null,
+      "name": "Sochers",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216207",
+      "ref": null,
+      "name": "Sochers 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 740
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_18442188",
+      "ref": null,
+      "name": "Sole/Piz Seteur",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216208",
+      "ref": null,
+      "name": "Sotsaslong",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216105",
+      "ref": null,
+      "name": "Steinerne Stadt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216214",
+      "ref": null,
+      "name": "Terza Punta",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216215",
+      "ref": null,
+      "name": "Tramans",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216216",
+      "ref": null,
+      "name": "Tschucky",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216219",
+      "ref": null,
+      "name": "Val Setus",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216098",
+      "ref": null,
+      "name": "Val Setus",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216220",
+      "ref": null,
+      "name": "Val Setus - Cir",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216197",
+      "ref": null,
+      "name": "Val Skiweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216223",
+      "ref": null,
+      "name": "Verbindung Alpha - Bravo",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_79388405",
+      "ref": null,
+      "name": "Verbindung Ciampinoi - Costabella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1166
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_82650797",
+      "ref": null,
+      "name": "Verbindung Freina - Costabella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1166
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_29007228",
+      "ref": null,
+      "name": "Verbindung Furdenan - Seilbahn St.Ulrich",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_11012113",
+      "ref": null,
+      "name": "Verbindung Gran Paradiso - Steinerne Stadt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_133378442",
+      "ref": null,
+      "name": "Verbindung - risaccia dantercepies",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216222",
+      "ref": null,
+      "name": "Verbindung Saslong - Piste B",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 480
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_76385532",
+      "ref": null,
+      "name": "Verbindung Saslong - Sochers",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_76408942",
+      "ref": null,
+      "name": "Verbindungspiste Gran Paradiso - Sotsasslong",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1770219943",
+      "ref": null,
+      "name": "Verbindungspiste Ortisei",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_1700815139",
+      "ref": null,
+      "name": "Verbindungspiste Ronc-Furdenan",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 380
+    }
+  ]
+}

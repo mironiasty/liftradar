@@ -1,0 +1,206 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "charmey",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253806+01:00",
+  "updated_at": "2026-11-22T04:00:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=247&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-charmey-vounetse",
+      "ref": null,
+      "name": "Charmey - Vounetse",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-intermediate-station",
+      "ref": null,
+      "name": "Intermediate station",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-la-scie-vounetse",
+      "ref": null,
+      "name": "La Scie - Vounetse",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-les-banderettes-2",
+      "ref": null,
+      "name": "Les Banderettes 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-les-banderettes-1",
+      "ref": null,
+      "name": "Les Banderettes 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-garden-ski-lift",
+      "ref": null,
+      "name": "Snow garden - Ski lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-garden-rug",
+      "ref": null,
+      "name": "Snow Garden - Rug",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-banderettes",
+      "ref": null,
+      "name": "1 • Banderettes",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-2-banderettes",
+      "ref": null,
+      "name": "2 • Banderettes",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-3-banderettes",
+      "ref": null,
+      "name": "3 • Banderettes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-4-chalet-neuf",
+      "ref": null,
+      "name": "4 • Chalet Neuf",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-5-fenil",
+      "ref": null,
+      "name": "5 • Fenil",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-6-nouvelle-bleue",
+      "ref": null,
+      "name": "6 • Nouvelle Bleue",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-7-bleue-foret",
+      "ref": null,
+      "name": "7 • Bleue forêt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-8-intermediaire",
+      "ref": null,
+      "name": "8 • Intermédiaire",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-9-village",
+      "ref": null,
+      "name": "9 • Village",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-10-variante-a-grand",
+      "ref": null,
+      "name": "10 • Variante à Grand",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-11-via-tissineva",
+      "ref": null,
+      "name": "11 • Via Tissineva",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-12-itineraire-freeride",
+      "ref": null,
+      "name": "12 • Itinéraire - Freeride",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 10600
+    },
+    {
+      "id": "slope-13-snow-garden",
+      "ref": null,
+      "name": "13 • Snow Garden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100
+    }
+  ]
+}

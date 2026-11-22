@@ -1,0 +1,184 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "diemtigtal-wiriehorn",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253843+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=214&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-wiriehorn-riedlinuegg",
+      "ref": null,
+      "name": "A • Wiriehorn: Riedli–Nüegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-skilift-ski-school-near-the-holiday-centre",
+      "ref": null,
+      "name": "B • Skilift ski school (near the holiday centre)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-roschteschwend",
+      "ref": null,
+      "name": "C • Röschteschwend",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-tubelfarrich-double-ski-lift",
+      "ref": null,
+      "name": "D • Tubelfärrich double ski lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-homad",
+      "ref": null,
+      "name": "F • Homad",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-nueggriedli",
+      "ref": null,
+      "name": "1 • Nüegg–Riedli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-3-schwarzenberg-roschteschwend",
+      "ref": null,
+      "name": "3 • Schwarzenberg-Röschteschwend",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-4-tubelfarrich-schwarzenbergnuegg",
+      "ref": null,
+      "name": "4 • Tubelfärrich-Schwarzenberg–Nüegg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-5-tubelfarrichnuegg-right",
+      "ref": null,
+      "name": "5 • Tubelfärrich–Nüegg (right)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-6-tubelfarrichnuegg-left",
+      "ref": null,
+      "name": "6 • Tubelfärrich–Nüegg (left)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-7-tubelfarrich-nuegg-mitte",
+      "ref": null,
+      "name": "7 • Tubelfärrich-Nüegg mitte",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-8-obere-heitereuntere-heitereallmiried-projekt-crowdfunding-homad",
+      "ref": null,
+      "name": "8 • Obere Heitere–untere Heitere–Allmiried (Projekt Crowdfunding Homad)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-9-homad-left-projekt-crowdfunding",
+      "ref": null,
+      "name": "9 • Homad (left) (Projekt Crowdfunding)",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-10-homad-right-projekt-crowdfunding",
+      "ref": null,
+      "name": "10 • Homad (right) (Projekt Crowdfunding)",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-11-tubelfarrich-steilhang",
+      "ref": null,
+      "name": "11 • Tubelfärrich Steilhang",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-30-schwarzenbergroschteschwend-racetrack",
+      "ref": null,
+      "name": "30 • Schwarzenberg–Röschteschwend racetrack",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-31-nuegg-racetrack",
+      "ref": null,
+      "name": "31 • Nüegg racetrack",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-32-tubelfarrich-west-racetrack",
+      "ref": null,
+      "name": "32 • Tubelfärrich west racetrack",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    }
+  ]
+}

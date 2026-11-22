@@ -1,0 +1,605 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "arabba-marmolada",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255829+01:00",
+  "updated_at": "2026-10-20T14:20:34.680586+02:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_186022",
+      "ref": null,
+      "name": "Alpenrose",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_514",
+      "ref": null,
+      "name": "Antercrëp",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_6495742",
+      "ref": null,
+      "name": "Arabba Fly",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_509",
+      "ref": null,
+      "name": "Burz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_1674918416",
+      "ref": null,
+      "name": "Campolongo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_528",
+      "ref": null,
+      "name": "Campo Scuola",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_525",
+      "ref": null,
+      "name": "Carpazza",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_520",
+      "ref": null,
+      "name": "Cherz 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_517",
+      "ref": null,
+      "name": "Cherz 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_523",
+      "ref": null,
+      "name": "Fodom",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_518",
+      "ref": null,
+      "name": "La Vizza",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_510",
+      "ref": null,
+      "name": "Le Pale",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_521",
+      "ref": null,
+      "name": "Lezuo",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_530",
+      "ref": null,
+      "name": "Malga - Serauta",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_522",
+      "ref": null,
+      "name": "Maria",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_519",
+      "ref": null,
+      "name": "Masarei",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_513",
+      "ref": null,
+      "name": "Mesola",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_527",
+      "ref": null,
+      "name": "Padon",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_11724639",
+      "ref": null,
+      "name": "Portados",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_506",
+      "ref": null,
+      "name": "Porta Vescovo",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_512",
+      "ref": null,
+      "name": "Sass de la Vegla",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:6_532",
+      "ref": null,
+      "name": "Serauta- P.Rocca",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759334",
+      "ref": null,
+      "name": "Alpenrose",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1324
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215791",
+      "ref": null,
+      "name": "Antercrëp",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1004
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759345",
+      "ref": null,
+      "name": "Arabba",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1764
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215773",
+      "ref": null,
+      "name": "Avoie",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 671
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215798",
+      "ref": null,
+      "name": "Bellunese",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 12000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759355",
+      "ref": null,
+      "name": "Belvedere 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1536
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759369",
+      "ref": null,
+      "name": "Belvedere 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1130
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215777",
+      "ref": null,
+      "name": "Burz",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1052
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215778",
+      "ref": null,
+      "name": "Campolongo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1245
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215771",
+      "ref": null,
+      "name": "Campo Scuola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2389
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215779",
+      "ref": null,
+      "name": "Cherz 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215780",
+      "ref": null,
+      "name": "Cherz 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215813",
+      "ref": null,
+      "name": "Finau",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759380",
+      "ref": null,
+      "name": "Fodoma",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2740
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215784",
+      "ref": null,
+      "name": "Incisa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_12044650",
+      "ref": null,
+      "name": "La Vizza",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215774",
+      "ref": null,
+      "name": "Le Pale",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1265
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759393",
+      "ref": null,
+      "name": "Maria",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 706
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215789",
+      "ref": null,
+      "name": "Mesola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1203
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215790",
+      "ref": null,
+      "name": "Ornella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3637
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_12045706",
+      "ref": null,
+      "name": "Padon",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1895
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215795",
+      "ref": null,
+      "name": "Pista del Sole",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_612504",
+      "ref": null,
+      "name": "Plan Boè",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 163
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759405",
+      "ref": null,
+      "name": "Pordoi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2491
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759413",
+      "ref": null,
+      "name": "Portados",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 791
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759462",
+      "ref": null,
+      "name": "Raccordo Salere - Alpenrose",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_612505",
+      "ref": null,
+      "name": "Rientro",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1294
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_65186381",
+      "ref": null,
+      "name": "Rientro",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5218
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215804",
+      "ref": null,
+      "name": "Rutort",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 955
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759434",
+      "ref": null,
+      "name": "Salere",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1973
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215806",
+      "ref": null,
+      "name": "Sass de la Vegla",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 952
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_612624",
+      "ref": null,
+      "name": "Savinè",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1021
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759444",
+      "ref": null,
+      "name": "Sourasass",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2984
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215772",
+      "ref": null,
+      "name": "Val d'Arei",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 888
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_612506",
+      "ref": null,
+      "name": "Variante Avoie",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 390
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_12793027",
+      "ref": null,
+      "name": "Variante Le Pale",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 383
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1762759427",
+      "ref": null,
+      "name": "Variante Ornella",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 190
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_215794",
+      "ref": null,
+      "name": "Variante Sole",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 310
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_1769001842",
+      "ref": null,
+      "name": "Verbindung Arabba",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 390
+    }
+  ]
+}

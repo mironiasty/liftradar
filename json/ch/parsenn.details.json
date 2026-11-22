@@ -1,0 +1,552 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "parsenn",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.255712+01:00",
+  "updated_at": null,
+  "source": "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+  "lifts": [
+    {
+      "id": "97",
+      "ref": null,
+      "name": "Davos – Höhenweg | 1. Sektion Standseilbahn",
+      "type": "funicular",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "99",
+      "ref": null,
+      "name": "Höhenweg – Weissfluhjoch |  2. Sektion Standseilbahn",
+      "type": "funicular",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "103",
+      "ref": null,
+      "name": "Parsennhütte – Weissfluhjoch | Pendelbahn",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "115",
+      "ref": null,
+      "name": "Rapid (Dorftäli) | 6er Sesselbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "109",
+      "ref": null,
+      "name": "Totalp | 4er Sesselbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "101",
+      "ref": null,
+      "name": "Weissfluhjoch – Weissfluhgipfel | Pendelbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "105",
+      "ref": null,
+      "name": "Schifer – Obersäss | 1. Sektion Schiferbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "107",
+      "ref": null,
+      "name": "Obersäss – Weissfluhjoch | 2. Sektion Schiferbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "89",
+      "ref": null,
+      "name": "Furka-Zipper | 6er Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "117",
+      "ref": null,
+      "name": "Meierhoftälli | 4er Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "113",
+      "ref": null,
+      "name": "Kreuzweg | Skilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "111",
+      "ref": null,
+      "name": "Hauptertäli | Skilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "77",
+      "ref": null,
+      "name": "Seetäli | Skilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "79",
+      "ref": null,
+      "name": "Klosters – Gotschnaboden | 1. Sektion Pendelbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "81",
+      "ref": null,
+      "name": "Gotschnaboden – Gotschnagrat | 2. Sektion Pendelbahn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "85",
+      "ref": null,
+      "name": "Gruobenalp | 4er Sesselbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "83",
+      "ref": null,
+      "name": "Schwarzseealp | 2er Sessellift",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "87",
+      "ref": null,
+      "name": "Parsennmäder | Skilift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "157",
+      "ref": null,
+      "name": "Standard - Höhenweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 3000
+    },
+    {
+      "id": "129",
+      "ref": null,
+      "name": "Totalp Weissfluhjoch-Parsennhütte",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 4500
+    },
+    {
+      "id": "123",
+      "ref": null,
+      "name": "Gipfel Nord - Kreuzweg",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2920
+    },
+    {
+      "id": "139",
+      "ref": null,
+      "name": "Gipfel Ost - Wasserscheide",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1080
+    },
+    {
+      "id": "153",
+      "ref": null,
+      "name": "Hauptertäli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "187",
+      "ref": null,
+      "name": "Skischul Run",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "189",
+      "ref": null,
+      "name": "Höhenweg - Davos | Talabfahrt",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3260
+    },
+    {
+      "id": "193",
+      "ref": null,
+      "name": "Steinbock (Abfahrt - Freeride) | 1.5km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "197",
+      "ref": null,
+      "name": "Heimeli-Langwies (Abfahrt - Freeride) | 1.5km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "199",
+      "ref": null,
+      "name": "Dorftäli (Abfahrt - Freeride) | 1.5km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "125",
+      "ref": null,
+      "name": "Meierhofertäli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "201",
+      "ref": null,
+      "name": "Meierhof (Abfahrt - Freeride) | 0.5km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "127",
+      "ref": null,
+      "name": "Meierhof - Wolfgang | Talabfahrt",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3340
+    },
+    {
+      "id": "131",
+      "ref": null,
+      "name": "Gruobenalp - Wolfgang | Talabfahrt",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 5400
+    },
+    {
+      "id": "133",
+      "ref": null,
+      "name": "Weissfluhjoch - Kreuzweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "135",
+      "ref": null,
+      "name": "Furka - Kreuzweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "137",
+      "ref": null,
+      "name": "Furka - Rechts",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1650
+    },
+    {
+      "id": "141",
+      "ref": null,
+      "name": "Furka - Links",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "143",
+      "ref": null,
+      "name": "Kreuzweg - Klosters | Talabfahrt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "145",
+      "ref": null,
+      "name": "Obersäss - Schifer",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "147",
+      "ref": null,
+      "name": "Verbindungspiste 22/21 Klosters",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "149",
+      "ref": null,
+      "name": "Casanna Alp - Schifer",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "151",
+      "ref": null,
+      "name": "Kreuzweg - Gauder - Schifer",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7400
+    },
+    {
+      "id": "155",
+      "ref": null,
+      "name": "Seetäli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "195",
+      "ref": null,
+      "name": "Chalbersäss (Abfahrt - Freeride) | 1.5km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "181",
+      "ref": null,
+      "name": "Schifer - Serneus (Abfahrt - Freeride - Talabfahrt) | 5.3km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 5320
+    },
+    {
+      "id": "183",
+      "ref": null,
+      "name": "(Saas)",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 6020
+    },
+    {
+      "id": "185",
+      "ref": null,
+      "name": "Schifer - Küblis (Abfahrt - Freeride - Talabfahrt) | 8.4km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 8400
+    },
+    {
+      "id": "159",
+      "ref": null,
+      "name": "Gruobenalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "161",
+      "ref": null,
+      "name": "Gruobenalp - Rechts",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "163",
+      "ref": null,
+      "name": "Parsennhütte - Gruobenalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "165",
+      "ref": null,
+      "name": "Mäder Rechts",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2140
+    },
+    {
+      "id": "167",
+      "ref": null,
+      "name": "Mäder Direkt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2120
+    },
+    {
+      "id": "169",
+      "ref": null,
+      "name": "Schwarzseealp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "171",
+      "ref": null,
+      "name": "Hirtenhütte - Schwarzseealp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "173",
+      "ref": null,
+      "name": "Hochroute - Casanna Alp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3810
+    },
+    {
+      "id": "175",
+      "ref": null,
+      "name": "Gotschnaboden - Klosters (Abfahrt - Freeride) | 3.1km",
+      "difficulty": "other",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "177",
+      "ref": null,
+      "name": "Schwarzseealp - Klosters | Talabfahrt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5600
+    }
+  ]
+}

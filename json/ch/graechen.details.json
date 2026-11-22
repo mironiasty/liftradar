@@ -1,0 +1,243 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "graechen",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253934+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=52&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-grachen-hannigalp",
+      "ref": null,
+      "name": "A • Grächen-Hannigalp",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-bargji-1-sektion",
+      "ref": null,
+      "name": "C • Bärgji 1 Sektion",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-bargji-2-sektion",
+      "ref": null,
+      "name": "C • Bärgji 2 Sektion",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-paradiesli",
+      "ref": null,
+      "name": "D • Paradiesli",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-furggen-1",
+      "ref": null,
+      "name": "E • Furggen 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-furggen-2",
+      "ref": null,
+      "name": "F • Furggen 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g1-hardera-1",
+      "ref": null,
+      "name": "G1 • Härdera 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g2-hardera-2",
+      "ref": null,
+      "name": "G2 • Härdera 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-stafel-seetalhorn",
+      "ref": null,
+      "name": "M • Stafel-Seetalhorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-plattja",
+      "ref": null,
+      "name": "O • Plattja",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p-hannigalp-lang",
+      "ref": null,
+      "name": "P • Hannigalp (lang)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-q-hannigalp-kurz",
+      "ref": null,
+      "name": "Q • Hannigalp (kurz)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-seetalhorn-stafel",
+      "ref": null,
+      "name": "1 • Seetalhorn-Stafel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "slope-2-stafel-hannigalp",
+      "ref": null,
+      "name": "2 • Stafel-Hannigalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-3-hannigalp-grachen",
+      "ref": null,
+      "name": "3 • Hannigalp-Grächen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-4-hannigalp-paradiesli",
+      "ref": null,
+      "name": "4 • Hannigalp-Paradiesli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-5-paradiesli-bargji",
+      "ref": null,
+      "name": "5 • Paradiesli-Bärgji",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-6-paradiesli",
+      "ref": null,
+      "name": "6 • Paradiesli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-7-kl-furggen-waldtola",
+      "ref": null,
+      "name": "7 • kl. Furggen - Waldtola",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6000
+    },
+    {
+      "id": "slope-9-furggen-hannigalp",
+      "ref": null,
+      "name": "9 • Furggen-Hannigalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-11-hardera",
+      "ref": null,
+      "name": "11 • Härdera",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-12-furggen-stafel",
+      "ref": null,
+      "name": "12 • Furggen-Stafel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-17-seetalhorn-durlochhorn-plattja",
+      "ref": null,
+      "name": "17 • Seetalhorn-Durlochhorn-Plattja",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6500
+    }
+  ]
+}

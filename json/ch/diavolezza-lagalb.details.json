@@ -1,0 +1,184 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "diavolezza-lagalb",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253835+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-diavolezza",
+      "ref": null,
+      "name": "A • Diavolezza",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-diavolezzafirn",
+      "ref": null,
+      "name": "B • Diavolezzafirn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-moving-carpet-alp-bondo",
+      "ref": null,
+      "name": "E • Moving Carpet Alp Bondo",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-ponylift-diavolezza",
+      "ref": null,
+      "name": "F • Ponylift Diavolezza",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-lagalb",
+      "ref": null,
+      "name": "G • Lagalb",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-firn",
+      "ref": null,
+      "name": "01 • Firn",
+      "difficulty": "other",
+      "colour": "red_black",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-2a-diavolezza-gletscher",
+      "ref": null,
+      "name": "2a • Diavolezza Gletscher",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2b-diavolezza",
+      "ref": null,
+      "name": "2b • Diavolezza",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-03-sass-queder",
+      "ref": null,
+      "name": "03 • Sass Queder",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-04-schwarzer-hang",
+      "ref": null,
+      "name": "04 • Schwarzer Hang",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-05-ravulaunas",
+      "ref": null,
+      "name": "05 • Ravulaunas",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-21-giandas",
+      "ref": null,
+      "name": "21 • Giandas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-22-minor",
+      "ref": null,
+      "name": "22 • Minor",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-23-bernina",
+      "ref": null,
+      "name": "23 • Bernina",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-connection-diavolezza-lagalb",
+      "ref": null,
+      "name": "25 • Connection Diavolezza - Lagalb",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-31-diavolezza-glacier-run",
+      "ref": null,
+      "name": "31 • Diavolezza glacier run",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 9000
+    },
+    {
+      "id": "slope-35-diavolezza-challenge-ski-touring-route",
+      "ref": null,
+      "name": "35 • Diavolezza Challenge, ski touring route",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-nachttraining-piste-2a-2b",
+      "ref": null,
+      "name": "Nachttraining Piste 2a & 2b",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

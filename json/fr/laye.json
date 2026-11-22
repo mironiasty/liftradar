@@ -10,7 +10,7 @@
   },
   "website": "https://www.champsaur-valgaudemar.com/hiver/ski-et-neige/les-stations/laye/",
   "status": "no_report",
-  "fetched_at": "2026-11-21T13:40:33.626105+01:00",
+  "fetched_at": "2026-11-22T08:40:36.259560+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -36,35 +36,35 @@
   "avalanche": {
     "region_id": "FR-18",
     "region": "Dévoluy",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2300,
+        "upper_bound": 2400,
         "period": "all_day"
       },
       {
-        "level": "moderate",
-        "lower_bound": 2300,
+        "level": "considerable",
+        "lower_bound": 2400,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-20T18:00:00+01:00",
-    "valid_from": "2026-11-20T18:00:00+01:00",
-    "valid_until": "2026-11-21T18:00:00+01:00"
+    "published_at": "2026-11-21T16:00:00+01:00",
+    "valid_from": "2026-11-21T16:00:00+01:00",
+    "valid_until": "2026-11-22T18:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/alpes-du-sud/laye-en-champsaur/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json",
         "attribution_required": null
       }
     ],

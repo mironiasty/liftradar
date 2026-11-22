@@ -11,13 +11,13 @@
   "website": "https://www.latzoumaz.ch",
   "linked_area": "4-vallees",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622150+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254025+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-21",
+    "last_snowfall": "2026-11-22",
     "condition": null,
     "stations": [
       {
@@ -31,8 +31,8 @@
       {
         "name": "In the ski area above",
         "elevation_m": 2200,
-        "depth_cm": 61,
-        "fresh_cm": 21,
+        "depth_cm": 58,
+        "fresh_cm": 6,
         "temperature_c": null,
         "condition": null
       }
@@ -80,7 +80,8 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T08:12:00+01:00",
+  "lifts_updated_at": "2026-11-22T07:50:00+01:00",
+  "details": "json/ch/la-tzoumaz.details.json",
   "avalanche": {
     "region_id": "CH-4115",
     "region": "Martigny - Verbier",
@@ -96,11 +97,12 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=101&saison=1&ref=contentBox",

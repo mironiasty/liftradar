@@ -1,0 +1,398 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "muerren-schilthorn",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.255692+01:00",
+  "updated_at": "2026-11-22T07:10:05+01:00",
+  "source": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+  "lifts": [
+    {
+      "id": "muerren_schilthorn_lift_1_lauterbrunnen_–_muerren",
+      "ref": null,
+      "name": "Lauterbrunnen – Mürren",
+      "type": "funicular",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_12_kandahar",
+      "ref": null,
+      "name": "Kandahar",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_13_maulerhubel",
+      "ref": null,
+      "name": "Maulerhubel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_14_muttleren",
+      "ref": null,
+      "name": "Muttleren",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_15_winteregg",
+      "ref": null,
+      "name": "Winteregg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_16_allmendhubel",
+      "ref": null,
+      "name": "Allmendhubel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_17_riggli",
+      "ref": null,
+      "name": "Riggli",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_18_gimmeln",
+      "ref": null,
+      "name": "Gimmeln",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_2_lauterbrunnen_–_gruetschalp",
+      "ref": null,
+      "name": "Lauterbrunnen – Grütschalp",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_10_muerren_–_allmendhubel",
+      "ref": null,
+      "name": "Mürren – Allmendhubel",
+      "type": "funicular",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_11_schiltgrat",
+      "ref": null,
+      "name": "Schiltgrat",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_8_muerren_–_birg",
+      "ref": null,
+      "name": "Mürren – Birg",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "muerren_schilthorn_lift_19_allmiboden",
+      "ref": null,
+      "name": "Allmiboden",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "muerren_schilthorn_track_1_10_schilthorn_abfahrt",
+      "ref": null,
+      "name": "10 Schilthorn Abfahrt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "open",
+      "length_m": 1930
+    },
+    {
+      "id": "muerren_schilthorn_track_3_16_kanonenrohr_-_muerren",
+      "ref": null,
+      "name": "16 Kanonenrohr - Mürren",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1670
+    },
+    {
+      "id": "muerren_schilthorn_track_60_12_bond",
+      "ref": null,
+      "name": "12 Bond",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 510
+    },
+    {
+      "id": "muerren_schilthorn_track_331_9_buckelpiste",
+      "ref": null,
+      "name": "9 Buckelpiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1030
+    },
+    {
+      "id": "muerren_schilthorn_track_333_15b_fis",
+      "ref": null,
+      "name": "15b FIS",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1160
+    },
+    {
+      "id": "muerren_schilthorn_track_74_14_muttleren",
+      "ref": null,
+      "name": "14 Muttleren",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "muerren_schilthorn_track_75_21_kandahar",
+      "ref": null,
+      "name": "21 Kandahar",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1160
+    },
+    {
+      "id": "muerren_schilthorn_track_61_9_direttissima",
+      "ref": null,
+      "name": "9 Direttissima",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 940
+    },
+    {
+      "id": "muerren_schilthorn_track_69_17_fis",
+      "ref": null,
+      "name": "17 FIS",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1090
+    },
+    {
+      "id": "muerren_schilthorn_track_5_5_palace-run",
+      "ref": null,
+      "name": "5 Palace-Run",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2310
+    },
+    {
+      "id": "muerren_schilthorn_track_7_3_lauterbrunnen",
+      "ref": null,
+      "name": "3 Lauterbrunnen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 8990
+    },
+    {
+      "id": "muerren_schilthorn_track_62_1_winteregg_-_oberberg",
+      "ref": null,
+      "name": "1 Winteregg - Oberberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1540
+    },
+    {
+      "id": "muerren_schilthorn_track_66_13_stellifluh",
+      "ref": null,
+      "name": "13 Stellifluh",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 260
+    },
+    {
+      "id": "muerren_schilthorn_track_68_15_bietenhorn",
+      "ref": null,
+      "name": "15 Bietenhorn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1540
+    },
+    {
+      "id": "muerren_schilthorn_track_72_24_gimmeln",
+      "ref": null,
+      "name": "24 Gimmeln",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2950
+    },
+    {
+      "id": "muerren_schilthorn_track_76_22_suppen_/_rad",
+      "ref": null,
+      "name": "22 Suppen / Rad",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1030
+    },
+    {
+      "id": "muerren_schilthorn_track_71_25_finel",
+      "ref": null,
+      "name": "25 Finel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1860
+    },
+    {
+      "id": "muerren_schilthorn_valleyRun_3_lauterbrunnen",
+      "ref": null,
+      "name": "3 Lauterbrunnen",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "muerren_schilthorn_track_2_11_engetal",
+      "ref": null,
+      "name": "11 Engetal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 3850
+    },
+    {
+      "id": "muerren_schilthorn_track_4_6_bob-run",
+      "ref": null,
+      "name": "6 Bob-Run",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3210
+    },
+    {
+      "id": "muerren_schilthorn_track_6_20_hindenburg",
+      "ref": null,
+      "name": "20 Hindenburg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3850
+    },
+    {
+      "id": "muerren_schilthorn_track_63_2_dreistern",
+      "ref": null,
+      "name": "2 Dreistern",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2570
+    },
+    {
+      "id": "muerren_schilthorn_track_64_4_maulerhubel",
+      "ref": null,
+      "name": "4 Maulerhubel",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1670
+    },
+    {
+      "id": "muerren_schilthorn_track_65_7_allmi",
+      "ref": null,
+      "name": "7 Allmi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "muerren_schilthorn_track_70_23_gimmeln",
+      "ref": null,
+      "name": "23 Gimmeln",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1670
+    },
+    {
+      "id": "muerren_schilthorn_track_73_26_wintertal",
+      "ref": null,
+      "name": "26 Wintertal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1280
+    },
+    {
+      "id": "muerren_schilthorn_track_67_8_riggli",
+      "ref": null,
+      "name": "8 Riggli",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1610
+    }
+  ]
+}

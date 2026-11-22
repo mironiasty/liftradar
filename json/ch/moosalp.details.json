@@ -1,0 +1,388 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "moosalp",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254152+01:00",
+  "updated_at": "2026-11-19T11:20:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=268&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-ramon-zenhausern-kinderlift",
+      "ref": null,
+      "name": "Ramon Zenhäusern Kinderlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pinocchio-lift-nur-skischule",
+      "ref": null,
+      "name": "Pinocchio-Lift (nur Skischule)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-riedlift",
+      "ref": null,
+      "name": "Riedlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ronalplift",
+      "ref": null,
+      "name": "Ronalplift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-unterratlift",
+      "ref": null,
+      "name": "Unterratlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-moosalplift",
+      "ref": null,
+      "name": "Moosalplift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-torbeltallift",
+      "ref": null,
+      "name": "Törbeltallift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-moosalp-express",
+      "ref": null,
+      "name": "Moosalp-Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-kinderparadies-bodmen",
+      "ref": null,
+      "name": "1 • Kinderparadies Bodmen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-2-ried",
+      "ref": null,
+      "name": "2 • Ried",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-3-brandegga",
+      "ref": null,
+      "name": "3 • Brandegga",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-4-ober-niw-guat",
+      "ref": null,
+      "name": "4 • Ober Niw Güät",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-5-unter-niw-guatv",
+      "ref": null,
+      "name": "5 • Unter Niw Güätv",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-6-ronalpa",
+      "ref": null,
+      "name": "6 • Ronalpa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-7-schwinggistall",
+      "ref": null,
+      "name": "7 • Schwinggistall",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-8-riegetschgrabo",
+      "ref": null,
+      "name": "8 • Riegetschgrabo",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-9-moospletsche",
+      "ref": null,
+      "name": "9 • Moospletsche",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-10-arb-chalte-bodo",
+      "ref": null,
+      "name": "10 • Arb-Chalte Bodo",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-11-verbindung-ronalp-unterrat",
+      "ref": null,
+      "name": "11 • Verbindung Ronalp-Unterrat",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-12-verbindung-ronalp-moosalp",
+      "ref": null,
+      "name": "12 • Verbindung Ronalp-Moosalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-13-verbindung-gross-lager-moosbodo",
+      "ref": null,
+      "name": "13 • Verbindung Gross Läger-Moosbodo",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-14-z-niiwu",
+      "ref": null,
+      "name": "14 • Z'Niiwu",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-15a-trainingspiste-scbb",
+      "ref": null,
+      "name": "15a • Trainingspiste SCBB",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-15b-trainingspiste-scbb",
+      "ref": null,
+      "name": "15b • Trainingspiste SCBB",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-15c-trainingspiste-scbb",
+      "ref": null,
+      "name": "15c • Trainingspiste SCBB",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-16-zappfuboimji",
+      "ref": null,
+      "name": "16 • Zäppfuböimji",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-17-tola",
+      "ref": null,
+      "name": "17 • Tola",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-18-grosse-stei",
+      "ref": null,
+      "name": "18 • Grosse Stei",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-19-unterrat-blau",
+      "ref": null,
+      "name": "19 • Unterrat Blau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-20-unterrat-schwarz",
+      "ref": null,
+      "name": "20 • Unterrat Schwarz",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-21-piste-ramon-zenhausern",
+      "ref": null,
+      "name": "21 • Piste Ramon Zenhäusern",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-22-kriz",
+      "ref": null,
+      "name": "22 • Kriz",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-23-verbindung-unterrat-moosalp",
+      "ref": null,
+      "name": "23 • Verbindung Unterrat-Moosalp",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-24-ussichts-pischta",
+      "ref": null,
+      "name": "24 • Üssichts Pischta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-25-danihang-traverse",
+      "ref": null,
+      "name": "25 • Danihang Traverse",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-26-danihang",
+      "ref": null,
+      "name": "26 • Danihang",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-27-panorama-pischta",
+      "ref": null,
+      "name": "27 • Panorama Pischta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-28-schwenni",
+      "ref": null,
+      "name": "28 • Schwenni",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-29-lusegga",
+      "ref": null,
+      "name": "29 • Lüsegga",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-30-bach",
+      "ref": null,
+      "name": "30 • Bach",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1100
+    }
+  ]
+}

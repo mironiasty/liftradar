@@ -11,7 +11,7 @@
   "website": "https://www.tvgd.ch",
   "linked_area": "villars-gryon-les-diablerets",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622091+01:00",
+  "fetched_at": "2026-11-22T08:40:36.253954+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,8 +23,8 @@
       {
         "name": "Col de Bretaye (SLF)",
         "elevation_m": 1780,
-        "depth_cm": 25,
-        "fresh_cm": 11,
+        "depth_cm": 28,
+        "fresh_cm": 8,
         "temperature_c": null,
         "condition": null
       }
@@ -85,25 +85,28 @@
     }
   },
   "lifts_updated_at": "2026-11-19T09:30:00+01:00",
+  "details": "json/ch/gryon.details.json",
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "wet_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=105&saison=1&ref=contentBox",

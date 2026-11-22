@@ -1,0 +1,228 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "saas-grund",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254216+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=206&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-kreuzboden-hohsaas",
+      "ref": null,
+      "name": "Kreuzboden - Hohsaas",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-saas-grund-kreuzboden",
+      "ref": null,
+      "name": "Saas-Grund - Kreuzboden",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-intermediate-station-trift",
+      "ref": null,
+      "name": "Intermediate station Trift",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kreuzboden",
+      "ref": null,
+      "name": "Kreuzboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-children-s-land",
+      "ref": null,
+      "name": "Children's land",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sandiger-boden",
+      "ref": null,
+      "name": "Sandiger Boden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-magic-carpet-pipo",
+      "ref": null,
+      "name": "Magic Carpet Pipo",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ziebel-village-lift",
+      "ref": null,
+      "name": "Ziebel (village lift)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bodu-saas-balen",
+      "ref": null,
+      "name": "Bodu (Saas-Balen)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-gletscher-rot",
+      "ref": null,
+      "name": "1 • Gletscher rot",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-1a-gletscher-hohkraut",
+      "ref": null,
+      "name": "1a • Gletscher Hohkraut",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-2-weissmiespiste",
+      "ref": null,
+      "name": "2 • Weissmiespiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-2a-talli",
+      "ref": null,
+      "name": "2a • Tälli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-3-kreuzboden",
+      "ref": null,
+      "name": "3 • Kreuzboden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-4-sandiger-boden",
+      "ref": null,
+      "name": "4 • Sandiger Boden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-5-snowland",
+      "ref": null,
+      "name": "5 • Snowland",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-6-trift",
+      "ref": null,
+      "name": "6 • Trift",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-7-talabfahrt-saas-grund",
+      "ref": null,
+      "name": "7 • Talabfahrt Saas-Grund",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "slope-8-talabfahrt-saas-balen",
+      "ref": null,
+      "name": "8 • Talabfahrt Saas-Balen",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-9-ziebel",
+      "ref": null,
+      "name": "9 • Ziebel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-10-bodu-saas-balen",
+      "ref": null,
+      "name": "10 • Bodu (Saas-Balen)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-hohkraut-gelb",
+      "ref": null,
+      "name": "Hohkraut Gelb",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

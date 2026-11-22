@@ -10,7 +10,7 @@
   },
   "website": "https://www.lesmosses.ch",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622197+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254093+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -86,6 +86,7 @@
     }
   },
   "lifts_updated_at": "2026-11-21T08:07:00+01:00",
+  "details": "json/ch/les-mosses.details.json",
   "avalanche": {
     "region_id": "CH-1113",
     "region": "Aigle - Leysin",
@@ -100,11 +101,13 @@
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "wet_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=97&saison=1&ref=contentBox",

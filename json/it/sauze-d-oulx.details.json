@@ -1,0 +1,893 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "sauze-d-oulx",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.256291+01:00",
+  "updated_at": null,
+  "source": "https://montgenevre.com/hiver/en-direct/infos-neige/",
+  "lifts": [
+    {
+      "id": "lift-sc-bourget",
+      "ref": null,
+      "name": "SC BOURGET",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg4-jouv-sportinia",
+      "ref": null,
+      "name": "SG4* JOUV.-SPORTINIA",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg4-clotes",
+      "ref": null,
+      "name": "SG4 CLOTES",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sc-tuassieres",
+      "ref": null,
+      "name": "SC TUASSIERES",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sc-rio-nero",
+      "ref": null,
+      "name": "SC RIO NERO",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg4-rocce-nere",
+      "ref": null,
+      "name": "SG4* ROCCE NERE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tp-minisportinia",
+      "ref": null,
+      "name": "TP MINISPORTINIA",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg3-cote-faure",
+      "ref": null,
+      "name": "SG3 COTE FAURE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg4-chamonier",
+      "ref": null,
+      "name": "SG4 CHAMONIER",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg3-triplex",
+      "ref": null,
+      "name": "SG3 TRIPLEX",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg2-colo",
+      "ref": null,
+      "name": "SG2 COLÓ",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg4-lago-nero",
+      "ref": null,
+      "name": "SG4* LAGO NERO",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sg4-sportinia",
+      "ref": null,
+      "name": "SG4* SPORTINIA",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-27-bassa",
+      "ref": null,
+      "name": "27 bassa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-principianti",
+      "ref": null,
+      "name": "Principianti",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-52-alta",
+      "ref": null,
+      "name": "52 alta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-bis",
+      "ref": null,
+      "name": "11 bis",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-boulevard-alto",
+      "ref": null,
+      "name": "Boulevard alto",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-broussailles-alta",
+      "ref": null,
+      "name": "Broussailles Alta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13",
+      "ref": null,
+      "name": "13",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-52-bassa",
+      "ref": null,
+      "name": "52 bassa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-27-alta",
+      "ref": null,
+      "name": "27 alta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-boulevard",
+      "ref": null,
+      "name": "Boulevard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-bis",
+      "ref": null,
+      "name": "12 bis",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-minisportina-sx",
+      "ref": null,
+      "name": "Minisportina SX",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-minisportinia-dx",
+      "ref": null,
+      "name": "Minisportinia DX",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-broussailles-bassa",
+      "ref": null,
+      "name": "Broussailles bassa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-principianti-clotes-alta",
+      "ref": null,
+      "name": "Principianti Clotes alta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-principianti-clotes-bassa",
+      "ref": null,
+      "name": "Principianti Clotes bassa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-var-mollino",
+      "ref": null,
+      "name": "Var. Mollino",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-52-var-baby-rock",
+      "ref": null,
+      "name": "52 var Baby Rock",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-racc-blvd-sc-rio-nero",
+      "ref": null,
+      "name": "Racc. Blvd-SC Rio Nero",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-46-alta",
+      "ref": null,
+      "name": "46 alta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-27-bis",
+      "ref": null,
+      "name": "27 bis",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-racc-sportinia-alto",
+      "ref": null,
+      "name": "Racc. Sportinia alto",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-racc-sportinia-basso",
+      "ref": null,
+      "name": "Racc. Sportinia basso",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2002-bis",
+      "ref": null,
+      "name": "2002 bis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-33-rossa-bassa",
+      "ref": null,
+      "name": "33 rossa bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-42-stadio",
+      "ref": null,
+      "name": "42 stadio §",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2002",
+      "ref": null,
+      "name": "2002",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-3000",
+      "ref": null,
+      "name": "3000",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-42-rossa",
+      "ref": null,
+      "name": "42 rossa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-47",
+      "ref": null,
+      "name": "47",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-42-alta",
+      "ref": null,
+      "name": "42 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-52-stadio",
+      "ref": null,
+      "name": "52 Stadio §",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-29-bassa",
+      "ref": null,
+      "name": "29 bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-alta",
+      "ref": null,
+      "name": "12 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-51",
+      "ref": null,
+      "name": "51",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25",
+      "ref": null,
+      "name": "25",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-29-alta",
+      "ref": null,
+      "name": "29 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-media-var",
+      "ref": null,
+      "name": "12 media var.",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-35-alta",
+      "ref": null,
+      "name": "35 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-54-cloriond",
+      "ref": null,
+      "name": "54 Cloriond",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-gran-pista-bas",
+      "ref": null,
+      "name": "Gran Pista bas.",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-29-bis",
+      "ref": null,
+      "name": "29 bis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-gran-pista-alta",
+      "ref": null,
+      "name": "Gran Pista alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-48-bassa",
+      "ref": null,
+      "name": "48 bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-41",
+      "ref": null,
+      "name": "41",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-14",
+      "ref": null,
+      "name": "14",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-30",
+      "ref": null,
+      "name": "30",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-16-bassa",
+      "ref": null,
+      "name": "16 bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-48-alta",
+      "ref": null,
+      "name": "48 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-alta",
+      "ref": null,
+      "name": "11 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2000",
+      "ref": null,
+      "name": "2000",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-media",
+      "ref": null,
+      "name": "12 media",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-34",
+      "ref": null,
+      "name": "34",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-16-bis-rossa",
+      "ref": null,
+      "name": "16 bis rossa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-35-bis",
+      "ref": null,
+      "name": "35 bis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-bassa",
+      "ref": null,
+      "name": "12 bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-bassa",
+      "ref": null,
+      "name": "11 bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2001",
+      "ref": null,
+      "name": "2001",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-50",
+      "ref": null,
+      "name": "50",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-var-olga",
+      "ref": null,
+      "name": "Var. Olga",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-tris",
+      "ref": null,
+      "name": "11 tris",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-var-capannina",
+      "ref": null,
+      "name": "Var. Capannina",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13-variante",
+      "ref": null,
+      "name": "13 variante",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13-bis",
+      "ref": null,
+      "name": "13 bis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-13-tris",
+      "ref": null,
+      "name": "13 tris",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-12-media-bis",
+      "ref": null,
+      "name": "12 media bis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-26-alta",
+      "ref": null,
+      "name": "26 alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-29-tris-bassa",
+      "ref": null,
+      "name": "29 tris bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-var-avventura",
+      "ref": null,
+      "name": "Var. Avventura",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-racc-tappeto-11-bassa",
+      "ref": null,
+      "name": "Racc. tappeto - 11 bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-media",
+      "ref": null,
+      "name": "11 media",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-34-vecchia",
+      "ref": null,
+      "name": "34 vecchia",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-var-sportinia",
+      "ref": null,
+      "name": "11 var Sportinia",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-16-alta",
+      "ref": null,
+      "name": "16 alta",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-canale-colo",
+      "ref": null,
+      "name": "Canale Colo",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-16-bis-nera",
+      "ref": null,
+      "name": "16 bis nera",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-33-alta",
+      "ref": null,
+      "name": "33 alta",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-15",
+      "ref": null,
+      "name": "15",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-36",
+      "ref": null,
+      "name": "36",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-nera-bassa",
+      "ref": null,
+      "name": "25 nera bassa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-nera-alta",
+      "ref": null,
+      "name": "25 nera alta",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-snowpark-zona-sportinia-rocce-nere",
+      "ref": null,
+      "name": "Snowpark Zona SPORTINIA-ROCCE NERE",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

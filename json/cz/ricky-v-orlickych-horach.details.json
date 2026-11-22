@@ -1,0 +1,101 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ricky-v-orlickych-horach",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257376+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/ricky-v-orlickych-horach",
+  "lifts": [
+    {
+      "id": "lift-sestisedacka-leitner",
+      "ref": null,
+      "name": "Šestisedačka Leitner",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tatrapoma",
+      "ref": null,
+      "name": "Tatrapoma",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mustek",
+      "ref": null,
+      "name": "Můstek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pojizdny-pas-lyzarske-skoly",
+      "ref": null,
+      "name": "Pojízdný pás lyžařské školy",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-slalomka",
+      "ref": null,
+      "name": "Slalomka",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-sjezdovka",
+      "ref": null,
+      "name": "Sjezdovka",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-loucky",
+      "ref": null,
+      "name": "Loučky",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-mustek",
+      "ref": null,
+      "name": "Můstek",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "slope-lyzarska-skola",
+      "ref": null,
+      "name": "Lyžařská škola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 160
+    }
+  ]
+}

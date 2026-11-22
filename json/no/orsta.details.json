@@ -1,0 +1,155 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "orsta",
+  "country": "no",
+  "fetched_at": "2026-11-22T08:40:36.262378+01:00",
+  "updated_at": "2026-11-12T20:13:38+01:00",
+  "source": "https://api.fnugg.no/search?size=200",
+  "lifts": [
+    {
+      "id": "lift-stolheisa",
+      "ref": null,
+      "name": "Stolheisa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hovudtrekk",
+      "ref": null,
+      "name": "Hovudtrekk",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-familietrekk",
+      "ref": null,
+      "name": "Familietrekk",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-nottane",
+      "ref": null,
+      "name": "Nottane",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-hovudtrase",
+      "ref": null,
+      "name": "Hovudtrase",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-treningstrase",
+      "ref": null,
+      "name": "Treningstrase",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-knutelypa",
+      "ref": null,
+      "name": "Knuteløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-familiebakken",
+      "ref": null,
+      "name": "Familiebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-nakkelypa",
+      "ref": null,
+      "name": "Nakkeløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-nottane",
+      "ref": null,
+      "name": "Nottane",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-turlypa",
+      "ref": null,
+      "name": "Turløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-terrengpark",
+      "ref": null,
+      "name": "Terrengpark",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-5-km-lyslype-langrenn",
+      "ref": null,
+      "name": "5 km lysløype langrenn",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-amskaret-langrenn",
+      "ref": null,
+      "name": "Åmskaret langrenn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-valsetheida",
+      "ref": null,
+      "name": "Valsetheida",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

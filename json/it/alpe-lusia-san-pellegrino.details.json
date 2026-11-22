@@ -1,0 +1,819 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "alpe-lusia-san-pellegrino",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255890+01:00",
+  "updated_at": "2026-10-29T13:02:11.610725+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_663",
+      "ref": null,
+      "name": "Campigol",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_679",
+      "ref": null,
+      "name": "Campo - Lastè",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_678",
+      "ref": null,
+      "name": "Campo - Le Cune",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_676",
+      "ref": null,
+      "name": "Campo Scuola Valbona",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_664",
+      "ref": null,
+      "name": "Capanna Margherita",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_668",
+      "ref": null,
+      "name": "Chiesetta 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_669",
+      "ref": null,
+      "name": "Chiesetta 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_671",
+      "ref": null,
+      "name": "Cima Uomo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_672",
+      "ref": null,
+      "name": "Col Margherita",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_665",
+      "ref": null,
+      "name": "Costabella",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_673",
+      "ref": null,
+      "name": "Del Passo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_670",
+      "ref": null,
+      "name": "Gigante",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_655",
+      "ref": null,
+      "name": "Lago Cavia - Col Margherita",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_656",
+      "ref": null,
+      "name": "Lago Cavia - Laresei",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_660",
+      "ref": null,
+      "name": "Le Buse - Laresei",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_661",
+      "ref": null,
+      "name": "Molino - Le Buse",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_677",
+      "ref": null,
+      "name": "Piavac",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_675",
+      "ref": null,
+      "name": "Ronchi - Valbona",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_657",
+      "ref": null,
+      "name": "Saline - Laresei",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_659",
+      "ref": null,
+      "name": "Sciovia Le Buse",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:11_680",
+      "ref": null,
+      "name": "Valbona - Le Cune",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_613757",
+      "ref": null,
+      "name": "Alfa Fischer",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_187547",
+      "ref": null,
+      "name": "Aquile Fun Slope",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_613759",
+      "ref": null,
+      "name": "Baby Boardercross",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1790590280",
+      "ref": null,
+      "name": "Blanco Funpark",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 230
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186591",
+      "ref": null,
+      "name": "Blanco Funslope",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_187546",
+      "ref": null,
+      "name": "Boardercross Lusia",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1671870811",
+      "ref": null,
+      "name": "Campagnola",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 740
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86621",
+      "ref": null,
+      "name": "Campigol",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 590
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186590",
+      "ref": null,
+      "name": "Campo scuola Chiesetta",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 80
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186579",
+      "ref": null,
+      "name": "Campo scuola Le Buse",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 271
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86602",
+      "ref": null,
+      "name": "Campo Scuola Valbona",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 180
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_613755",
+      "ref": null,
+      "name": "Canalone Tomba",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86628",
+      "ref": null,
+      "name": "Capanna Margherita",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_88228964",
+      "ref": null,
+      "name": "Ciadin",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_187461",
+      "ref": null,
+      "name": "Cima Uomo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186581",
+      "ref": null,
+      "name": "Collegamento Laresei",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2390
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86630",
+      "ref": null,
+      "name": "Col Margherita",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186580",
+      "ref": null,
+      "name": "Col Margherita - Lago Cavia",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2390
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86627",
+      "ref": null,
+      "name": "Costabella",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1380
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86632",
+      "ref": null,
+      "name": "Del Passo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 790
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86606",
+      "ref": null,
+      "name": "Direttissima",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 770
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186575",
+      "ref": null,
+      "name": "Falcade Funpark",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1790664911",
+      "ref": null,
+      "name": "Falcade X-Cross",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1790601952",
+      "ref": null,
+      "name": "Falcade X-Cross",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86603",
+      "ref": null,
+      "name": "Fiamme Oro 1",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1385
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86604",
+      "ref": null,
+      "name": "Fiamme Oro 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2290
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86617",
+      "ref": null,
+      "name": "Fuchiade",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86633",
+      "ref": null,
+      "name": "Gigante Funpark",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186567",
+      "ref": null,
+      "name": "Innamorati",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 11550
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186568",
+      "ref": null,
+      "name": "Laresei",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86609",
+      "ref": null,
+      "name": "Lastè",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1660
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186619",
+      "ref": null,
+      "name": "La VolatA",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186577",
+      "ref": null,
+      "name": "Le Buse - Molino (Rossignol)",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3925
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86631",
+      "ref": null,
+      "name": "Le Caviette",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86620",
+      "ref": null,
+      "name": "Le Coste A",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86623",
+      "ref": null,
+      "name": "Le Coste B",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86608",
+      "ref": null,
+      "name": "Le Cune",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2120
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86605",
+      "ref": null,
+      "name": "Mediolanum",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86636",
+      "ref": null,
+      "name": "Monzoni",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1520
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_187456",
+      "ref": null,
+      "name": "Nuova Cima Uomo",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86625",
+      "ref": null,
+      "name": "Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1230
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186573",
+      "ref": null,
+      "name": "Panoramica",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1769
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86624",
+      "ref": null,
+      "name": "Paradiso",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1180
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86611",
+      "ref": null,
+      "name": "Piavac",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186574",
+      "ref": null,
+      "name": "Plateau",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1770888112",
+      "ref": null,
+      "name": "Primi passi Le Buse",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86626",
+      "ref": null,
+      "name": "Rabbit Skicross",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_187462",
+      "ref": null,
+      "name": "Raccordo Ciadin - Costabella",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 355
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86618",
+      "ref": null,
+      "name": "Raccordo  Costabella - Ciadin",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86613",
+      "ref": null,
+      "name": "Raccordo - Cune",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86634",
+      "ref": null,
+      "name": "Raccordo Del Passo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86622",
+      "ref": null,
+      "name": "Raccordo Monzoni",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 590
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186578",
+      "ref": null,
+      "name": "Raccordo Pradazzo - Zingari",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 480
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1768314216",
+      "ref": null,
+      "name": "Raccordo Zingari - Lago Cavia",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186570",
+      "ref": null,
+      "name": "Saline",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1004
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186571",
+      "ref": null,
+      "name": "Saline - Lago Cavia",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 794
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_613751",
+      "ref": null,
+      "name": "Ski Cross Monzoni",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_613754",
+      "ref": null,
+      "name": "Skiweg Pozil",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86612",
+      "ref": null,
+      "name": "Valbona - Piavac",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_187457",
+      "ref": null,
+      "name": "Variante Cima Uomo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_186615",
+      "ref": null,
+      "name": "Variante del Gigio",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 358
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_613756",
+      "ref": null,
+      "name": "Variante Viezzena",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_1701938452",
+      "ref": null,
+      "name": "Zingari",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:11_86610",
+      "ref": null,
+      "name": "Zirmes",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000
+    }
+  ]
+}

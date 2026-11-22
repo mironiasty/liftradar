@@ -1,0 +1,400 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "corvatsch",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253815+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=42&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-surlej-murtel",
+      "ref": null,
+      "name": "A • Surlej-Murtèl",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-murtel-corvatsch",
+      "ref": null,
+      "name": "B • Murtèl-Corvatsch",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-sils-furtschellas",
+      "ref": null,
+      "name": "C • Sils-Furtschellas",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-mandra",
+      "ref": null,
+      "name": "D • Mandra",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-giand-alva",
+      "ref": null,
+      "name": "E • Giand' Alva",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-alp-surlej",
+      "ref": null,
+      "name": "F • Alp Surlej",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-curtinella",
+      "ref": null,
+      "name": "G • Curtinella",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-rabgiusa",
+      "ref": null,
+      "name": "H • Rabgiusa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-furtschellas-chairlift",
+      "ref": null,
+      "name": "I • Furtschellas Chairlift",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-murtel",
+      "ref": null,
+      "name": "J • Murtèl",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-cristins",
+      "ref": null,
+      "name": "K • Cristins",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-margun",
+      "ref": null,
+      "name": "L • Margun",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-chuderun",
+      "ref": null,
+      "name": "M • Chüderun",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n-grialetsch",
+      "ref": null,
+      "name": "N • Grialetsch",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-standard",
+      "ref": null,
+      "name": "01 • Standard",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-01a-durrenast",
+      "ref": null,
+      "name": "01a • Dürrenast",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5800
+    },
+    {
+      "id": "slope-02-fuorcla",
+      "ref": null,
+      "name": "02 • Fuorcla",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6200
+    },
+    {
+      "id": "slope-03-roseg",
+      "ref": null,
+      "name": "03 • Roseg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-04-giand-alva",
+      "ref": null,
+      "name": "04 • Giand' Alva",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "slope-05-hahnensee",
+      "ref": null,
+      "name": "05 • Hahnensee",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 13400
+    },
+    {
+      "id": "slope-06-mandra",
+      "ref": null,
+      "name": "06 • Mandra",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 6700
+    },
+    {
+      "id": "slope-07-arlas",
+      "ref": null,
+      "name": "07 • Arlas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-08-lejins",
+      "ref": null,
+      "name": "08 • Lejins",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-09-surlej",
+      "ref": null,
+      "name": "09 • Surlej",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-10a-chastelets",
+      "ref": null,
+      "name": "10a • Chastelets",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 4100
+    },
+    {
+      "id": "slope-10b-chastelets-unten",
+      "ref": null,
+      "name": "10b • Chastelets unten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-10c-talabfahrt",
+      "ref": null,
+      "name": "10c • Talabfahrt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3600
+    },
+    {
+      "id": "slope-11-crap-nair",
+      "ref": null,
+      "name": "11 • Crap Nair",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-12-curtinella-run",
+      "ref": null,
+      "name": "12 • Curtinella Run",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 6900
+    },
+    {
+      "id": "slope-13-rabgiusa",
+      "ref": null,
+      "name": "13 • Rabgiusa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 9000
+    },
+    {
+      "id": "slope-15-ravulaunas",
+      "ref": null,
+      "name": "15 • Ravulaunas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-16-valtellina",
+      "ref": null,
+      "name": "16 • Valtellina",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-18-curtinella-unten",
+      "ref": null,
+      "name": "18 • Curtinella unten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-19-furtschellas",
+      "ref": null,
+      "name": "19 • Furtschellas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7900
+    },
+    {
+      "id": "slope-19a-furtschellas-unten",
+      "ref": null,
+      "name": "19a • Furtschellas unten",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-20-muntanella",
+      "ref": null,
+      "name": "20 • Muntanella",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-20a-alte-muntanella",
+      "ref": null,
+      "name": "20a • Alte Muntanella",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-21-chuderun",
+      "ref": null,
+      "name": "21 • Chüderun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-22-grialetsch",
+      "ref": null,
+      "name": "22 • Grialetsch",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-23-prasura",
+      "ref": null,
+      "name": "23 • Prasüra",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 7800
+    }
+  ]
+}

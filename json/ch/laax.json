@@ -10,7 +10,7 @@
   },
   "website": "https://www.flimslaax.com",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622157+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254038+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "La Fuorcla (SLF)",
         "elevation_m": 2325,
-        "depth_cm": 24,
-        "fresh_cm": 23,
+        "depth_cm": 35,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       }
@@ -87,7 +87,8 @@
       "total_km": 34
     }
   },
-  "lifts_updated_at": "2026-11-21T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-22T08:00:00+01:00",
+  "details": "json/ch/laax.details.json",
   "avalanche": {
     "region_id": "CH-5124",
     "region": "Flims",
@@ -102,12 +103,12 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=200&saison=1&ref=contentBox",

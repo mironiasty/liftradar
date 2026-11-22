@@ -11,7 +11,7 @@
   "website": "https://www.veysonnaz.ch",
   "linked_area": "4-vallees",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622367+01:00",
+  "fetched_at": "2026-11-22T08:40:36.254303+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,7 +24,7 @@
         "name": "In the ski area below",
         "elevation_m": null,
         "depth_cm": 20,
-        "fresh_cm": 20,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -32,7 +32,7 @@
         "name": "In the ski area above",
         "elevation_m": null,
         "depth_cm": 40,
-        "fresh_cm": 40,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -80,7 +80,8 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-22T08:31:00+01:00",
+  "details": "json/ch/veysonnaz.details.json",
   "avalanche": {
     "region_id": "CH-4115",
     "region": "Martigny - Verbier",
@@ -96,11 +97,12 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=102&saison=1&ref=contentBox",

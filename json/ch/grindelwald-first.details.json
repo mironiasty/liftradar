@@ -1,0 +1,350 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "grindelwald-first",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.255685+01:00",
+  "updated_at": "2026-11-20T16:10:07+01:00",
+  "source": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+  "lifts": [
+    {
+      "id": "grindelwald_first_lift_9_baergelegg",
+      "ref": null,
+      "name": "Bärgelegg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_first_lift_6_oberjoch",
+      "ref": null,
+      "name": "Oberjoch",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_first_lift_7_grindel",
+      "ref": null,
+      "name": "Grindel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_first_lift_8_schilt",
+      "ref": null,
+      "name": "Schilt",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_first_lift_11_hohwald",
+      "ref": null,
+      "name": "Hohwald",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_first_lift_12_bodmilift",
+      "ref": null,
+      "name": "bodmiLIFT",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "grindelwald_first_lift_2_schreckfeld_-_first",
+      "ref": null,
+      "name": "Schreckfeld - First",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "grindelwald_first_track_170_5_bort_direkt",
+      "ref": null,
+      "name": "5 Bort direkt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2580
+    },
+    {
+      "id": "grindelwald_first_track_171_16_faxhubel_west",
+      "ref": null,
+      "name": "16 Faxhubel West",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "grindelwald_first_track_172_6_schreckfeld_-_egg",
+      "ref": null,
+      "name": "6 Schreckfeld - Egg",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1070
+    },
+    {
+      "id": "grindelwald_first_track_133_22_grindel",
+      "ref": null,
+      "name": "22 Grindel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4070
+    },
+    {
+      "id": "grindelwald_first_track_134_23_stepfi",
+      "ref": null,
+      "name": "23 Stepfi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 6070
+    },
+    {
+      "id": "grindelwald_first_track_181_1_oberjoch_rot",
+      "ref": null,
+      "name": "1 Oberjoch rot",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2110
+    },
+    {
+      "id": "grindelwald_first_track_174_4_tirrli",
+      "ref": null,
+      "name": "4 Tirrli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "grindelwald_first_track_183_7_faxhubel_ost",
+      "ref": null,
+      "name": "7 Faxhubel Ost",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1530
+    },
+    {
+      "id": "grindelwald_first_track_179_9_furggi",
+      "ref": null,
+      "name": "9 Furggi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2010
+    },
+    {
+      "id": "grindelwald_first_track_186_12_innerbaergel",
+      "ref": null,
+      "name": "12 Innerbärgel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150
+    },
+    {
+      "id": "grindelwald_first_track_5665_2_oberjoch_steilhang",
+      "ref": null,
+      "name": "2 Oberjoch Steilhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_20_chapf",
+      "ref": null,
+      "name": "20 Chapf",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_21_kirche",
+      "ref": null,
+      "name": "21 Kirche",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_21_muehlebach",
+      "ref": null,
+      "name": "21 Mühlebach",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_3_staehlisboden",
+      "ref": null,
+      "name": "22 Stählisboden",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_23_stepfi",
+      "ref": null,
+      "name": "23 Stepfi",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_track_130_21_bort_-_muehlebach",
+      "ref": null,
+      "name": "21 Bort - Mühlebach",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3520
+    },
+    {
+      "id": "grindelwald_first_track_180_1_oberjoch_blau",
+      "ref": null,
+      "name": "1 Oberjoch blau",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2580
+    },
+    {
+      "id": "grindelwald_first_track_173_3_uesserbaergel",
+      "ref": null,
+      "name": "3 Üsserbärgel",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1050
+    },
+    {
+      "id": "grindelwald_first_track_175_3_berme",
+      "ref": null,
+      "name": "3 Berme",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3280
+    },
+    {
+      "id": "grindelwald_first_track_177_10_gemsberg",
+      "ref": null,
+      "name": "10 Gemsberg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2920
+    },
+    {
+      "id": "grindelwald_first_track_182_8_distelboden",
+      "ref": null,
+      "name": "8 Distelboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1770
+    },
+    {
+      "id": "grindelwald_first_track_184_13_baergelegg",
+      "ref": null,
+      "name": "13 Bärgelegg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3130
+    },
+    {
+      "id": "grindelwald_first_track_185_11_hambiel",
+      "ref": null,
+      "name": "11 Hambiel",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1750
+    },
+    {
+      "id": "grindelwald_first_track_188_22_staehlisboden_-_muehlebach",
+      "ref": null,
+      "name": "22 Stählisboden - Mühlebach",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "grindelwald_first_track_187_bodmi",
+      "ref": null,
+      "name": "Bodmi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 820
+    },
+    {
+      "id": "grindelwald_first_track_135_21_muehlebach_-_kirche",
+      "ref": null,
+      "name": "21 Mühlebach - Kirche",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1520
+    },
+    {
+      "id": "grindelwald_first_track_993_10_hohwald_-_baergelegg",
+      "ref": null,
+      "name": "10 Hohwald - Bärgelegg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "grindelwald_first_track_2021168_3a_berme",
+      "ref": null,
+      "name": "3a Berme",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3280
+    }
+  ]
+}

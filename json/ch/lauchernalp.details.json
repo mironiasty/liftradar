@@ -1,0 +1,195 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "lauchernalp",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254047+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=43&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-wiler-lauchernalp",
+      "ref": null,
+      "name": "A • Wiler-Lauchernalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-lauchernalp-stafel",
+      "ref": null,
+      "name": "B • Lauchernalp-Stafel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-stafel-gandegg",
+      "ref": null,
+      "name": "C • Stafel-Gandegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-marwig-gandegg",
+      "ref": null,
+      "name": "D • Märwig-Gandegg",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-gandegg-hockenhorngrat",
+      "ref": null,
+      "name": "E • Gandegg-Hockenhorngrat",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-forderband-loichiland",
+      "ref": null,
+      "name": "F • Förderband Loichiland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-talabfahrt",
+      "ref": null,
+      "name": "1 • Talabfahrt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5500
+    },
+    {
+      "id": "slope-2-waldarra",
+      "ref": null,
+      "name": "2 • Waldärra",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-3-holz",
+      "ref": null,
+      "name": "3 • Holz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-4-tilgi",
+      "ref": null,
+      "name": "4 • Tilgi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-5-arba",
+      "ref": null,
+      "name": "5 • Arbä",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-6-national",
+      "ref": null,
+      "name": "6 • National",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5500
+    },
+    {
+      "id": "slope-7-gandegg",
+      "ref": null,
+      "name": "7 • Gandegg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-8-spali",
+      "ref": null,
+      "name": "8 • Spali",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-9-wisses-tali",
+      "ref": null,
+      "name": "9 • Wisses-Täli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-10-hockenhorn",
+      "ref": null,
+      "name": "10 • Hockenhorn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-11-petersgrat",
+      "ref": null,
+      "name": "11 • Petersgrat",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-12-milibach",
+      "ref": null,
+      "name": "12 • Milibach",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-13-gafenbach",
+      "ref": null,
+      "name": "13 • Gafenbach",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    }
+  ]
+}

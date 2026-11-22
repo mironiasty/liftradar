@@ -1,0 +1,228 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "la-tzoumaz",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254025+01:00",
+  "updated_at": "2026-11-22T07:50:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=101&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-tournelle",
+      "ref": null,
+      "name": "Tournelle",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-200-les-creux-savoleyres",
+      "ref": null,
+      "name": "200 • Les Creux-Savoleyres",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-208-piguet-galland-tmx-savoleyres",
+      "ref": null,
+      "name": "208 • Piguet Galland (TMX Savoleyres)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-207-tournelle",
+      "ref": null,
+      "name": "207 • Tournelle",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-201-la-tzoumaz-savoleyres",
+      "ref": null,
+      "name": "201 • La Tzoumaz-Savoleyres",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-tzoumaz",
+      "ref": null,
+      "name": "Tapis Tzoumaz",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-203-etablons",
+      "ref": null,
+      "name": "203 • Établons",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-204-taillay",
+      "ref": null,
+      "name": "204 • Taillay",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-205-nord",
+      "ref": null,
+      "name": "205 • Nord",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-tropicale",
+      "ref": null,
+      "name": "Tropicale",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-taillay",
+      "ref": null,
+      "name": "Taillay",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 8800
+    },
+    {
+      "id": "slope-planards-carrefour",
+      "ref": null,
+      "name": "Planards - Carrefour",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-route-du-marteau",
+      "ref": null,
+      "name": "Route du Marteau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-croix-de-coeur-planards",
+      "ref": null,
+      "name": "Croix-de-coeur - Planards",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-cur-superieur",
+      "ref": null,
+      "name": "Cœur supérieur",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "slope-cur-inferieur",
+      "ref": null,
+      "name": "Cœur inférieur",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-etablons",
+      "ref": null,
+      "name": "Etablons",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6300
+    },
+    {
+      "id": "slope-combe-du-nord",
+      "ref": null,
+      "name": "Combe du Nord",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6300
+    },
+    {
+      "id": "slope-tournelle",
+      "ref": null,
+      "name": "Tournelle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 9300
+    },
+    {
+      "id": "slope-planards",
+      "ref": null,
+      "name": "Planards",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 6600
+    },
+    {
+      "id": "slope-planards-esserts",
+      "ref": null,
+      "name": "Planards - Esserts",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-sud",
+      "ref": null,
+      "name": "Sud",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "adelboden",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253656+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=62&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-c01-geils-hahnenmoos",
+      "ref": null,
+      "name": "C01 • Geils - Hahnenmoos",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c02-geils-lavey",
+      "ref": null,
+      "name": "C02 • Geils - Lavey",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c03-geils-luegli",
+      "ref": null,
+      "name": "C03 • Geils - Luegli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c05-adelboden-oey",
+      "ref": null,
+      "name": "C05 • Adelboden - Oey",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c07-oey-berglager",
+      "ref": null,
+      "name": "C07 • Oey - Bergläger",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c08-berglager-sillerenbuhl",
+      "ref": null,
+      "name": "C08 • Bergläger - Sillerenbühl",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c09-aebi-sillerenbuhl",
+      "ref": null,
+      "name": "C09 • Aebi - Sillerenbühl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c11-tanzboden",
+      "ref": null,
+      "name": "C11 • Tanzboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c12-stand",
+      "ref": null,
+      "name": "C12 • Stand",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c13-kleinskilift-lurnigegge",
+      "ref": null,
+      "name": "C13 • Kleinskilift Lurnigegge",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c14-boden-chuenisbargli",
+      "ref": null,
+      "name": "C14 • Boden - Chuenisbärgli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c15-hochsthorn",
+      "ref": null,
+      "name": "C15 • Höchsthorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-vogellisi-piste",
+      "ref": null,
+      "name": "Vogellisi Piste",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-40-klusi",
+      "ref": null,
+      "name": "40 • Klusi",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-41-metschstand-blatti",
+      "ref": null,
+      "name": "41 • Metschstand -Blatti",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-42-chummi",
+      "ref": null,
+      "name": "42 • Chummi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-44-chummi-geils",
+      "ref": null,
+      "name": "44 • Chummi - Geils",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-46-geils-berglager",
+      "ref": null,
+      "name": "46 • Geils - Bergläger",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-47-brenggen-hahnenmooslager",
+      "ref": null,
+      "name": "47 • Brenggen - Hahnenmoosläger",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-48-hahnenmoos-geils",
+      "ref": null,
+      "name": "48 • Hahnenmoos - Geils",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-49-lavey-hahnenmoos",
+      "ref": null,
+      "name": "49 • Lavey - Hahnenmoos",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-50-lagerpiste",
+      "ref": null,
+      "name": "50 • Lägerpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-51-lavey-schwarz",
+      "ref": null,
+      "name": "51 • Lavey Schwarz",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-52-stand-hahnenmoosgraben",
+      "ref": null,
+      "name": "52 • Stand - Hahnenmoosgraben",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-53-tanzboden",
+      "ref": null,
+      "name": "53 • Tanzboden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-54-speedmessstrecke-luegli",
+      "ref": null,
+      "name": "54 • Speedmessstrecke Luegli",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-54-wolfspiste",
+      "ref": null,
+      "name": "54 • Wolfspiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-55-lavey-stand",
+      "ref": null,
+      "name": "55 • Lavey - Stand",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-55a-stand-rosshubel",
+      "ref": null,
+      "name": "55a • Stand - Rosshubel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-55b-rosshubel-aebi",
+      "ref": null,
+      "name": "55b • Rosshubel - Aebi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-56-murbipiste",
+      "ref": null,
+      "name": "56 • Murbipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-56a-sillerenbuhl-berglager",
+      "ref": null,
+      "name": "56a • Sillerenbühl -Bergläger",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-57-augstchummi",
+      "ref": null,
+      "name": "57 • Augstchummi",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-58-stand-sandige-boden",
+      "ref": null,
+      "name": "58 • Stand - sandige Boden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-59-tali",
+      "ref": null,
+      "name": "59 • Täli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-60-sillerenbuhl-geils",
+      "ref": null,
+      "name": "60 • Sillerenbühl - Geils",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-60a-sillerenbuhl-berglager",
+      "ref": null,
+      "name": "60a • Sillerenbühl - Bergläger",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-61-berglager-reharti",
+      "ref": null,
+      "name": "61 • Bergläger - Rehärti",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-63-sillerenbuhl-rosshubel",
+      "ref": null,
+      "name": "63 • Sillerenbühl - Rosshubel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-63a-rosshubel-sandige-boden",
+      "ref": null,
+      "name": "63a • Rosshubel - sandige Boden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-63b-sandige-boden-aebi",
+      "ref": null,
+      "name": "63b • Sandige Boden - Aebi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-64-waxhusi",
+      "ref": null,
+      "name": "64 • Waxhüsi",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-65-seelipiste",
+      "ref": null,
+      "name": "65 • Seelipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-65a-rehbockpiste",
+      "ref": null,
+      "name": "65a • Rehbockpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-67-sillerenbuhl-aebi",
+      "ref": null,
+      "name": "67 • Sillerenbühl - Aebi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-69-talpiste-aebi-oey",
+      "ref": null,
+      "name": "69 • Talpiste Aebi - Oey",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-80-weltcup",
+      "ref": null,
+      "name": "80 • Weltcup",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-81-chuenis-chale",
+      "ref": null,
+      "name": "81 • Chuenis-Chäle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-82-chuenis-bode",
+      "ref": null,
+      "name": "82 • Chuenis-Bode",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-84-hochst-chuenis",
+      "ref": null,
+      "name": "84 • Höchst-Chuenis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-85-chuenis-berglager",
+      "ref": null,
+      "name": "85 • Chuenis - Bergläger",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-86-chuenis-berglager",
+      "ref": null,
+      "name": "86 • Chuenis-Bergläger",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    }
+  ]
+}

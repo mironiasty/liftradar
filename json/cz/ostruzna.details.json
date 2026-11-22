@@ -1,0 +1,110 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ostruzna",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257596+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/ski-areal-ostruzna",
+  "lifts": [
+    {
+      "id": "lift-jednomistny",
+      "ref": null,
+      "name": "Jednomístný",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-jednomistny-2",
+      "ref": null,
+      "name": "Jednomístný",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-detske-lano",
+      "ref": null,
+      "name": "Dětské lano",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-detsky-koberec",
+      "ref": null,
+      "name": "Dětský koberec",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-lesni",
+      "ref": null,
+      "name": "Lesní",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "slope-zahradka",
+      "ref": null,
+      "name": "Zahrádka",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 430
+    },
+    {
+      "id": "slope-hlavni",
+      "ref": null,
+      "name": "Hlavní",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 430
+    },
+    {
+      "id": "slope-hajecek",
+      "ref": null,
+      "name": "Háječek",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "slope-jasanova",
+      "ref": null,
+      "name": "Jasanová",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 240
+    },
+    {
+      "id": "slope-skalka",
+      "ref": null,
+      "name": "Skalka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    }
+  ]
+}

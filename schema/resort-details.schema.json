@@ -7,7 +7,7 @@
       "description": "One lift as the source lists it.",
       "properties": {
         "id": {
-          "description": "The source's id, stable between runs",
+          "description": "The source's id, stable between runs; where the source has none, made from the name",
           "minLength": 1,
           "title": "Id",
           "type": "string"
@@ -128,7 +128,7 @@
       "description": "One slope or ski route as the source lists it.",
       "properties": {
         "id": {
-          "description": "The source's id, stable between runs",
+          "description": "The source's id, stable between runs; where the source has none, made from the name",
           "minLength": 1,
           "title": "Id",
           "type": "string"
@@ -162,6 +162,31 @@
           "title": "Difficulty",
           "type": "string"
         },
+        "colour": {
+          "anyOf": [
+            {
+              "enum": [
+                "green",
+                "blue",
+                "red",
+                "black",
+                "yellow",
+                "orange",
+                "blue_red",
+                "red_black",
+                "black_blue",
+                "yellow_red"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Its colour as the source marks it, where the source gives one: green (very easy, in France, Spain, Andorra and the Nordic countries), yellow and orange (Swiss ski routes and fun slopes), and pairs for two-colour slopes; `difficulty` groups them",
+          "title": "Colour"
+        },
         "status": {
           "enum": [
             "open",
@@ -191,6 +216,7 @@
         "ref",
         "name",
         "difficulty",
+        "colour",
         "status",
         "length_m"
       ],
@@ -199,7 +225,7 @@
     }
   },
   "additionalProperties": false,
-  "description": "Experimental: every lift and slope of one resort with its status, from its slope map. `unknown` items\nare listed but left out of the resort file's counts.",
+  "description": "Experimental: every lift and slope of one resort with its status, from its slope map or from the source\nthat lists them one by one. `unknown` items are listed but left out of the resort file's counts.",
   "properties": {
     "$schema": {
       "const": "https://liftradar.eu/schema/resort-details.schema.json",

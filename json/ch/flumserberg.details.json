@@ -1,0 +1,694 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "flumserberg",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253902+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=37&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a1-seejet-sektion-1-unterterzen-oberterzen",
+      "ref": null,
+      "name": "A1 • SeeJet Sektion 1 (Unterterzen - Oberterzen)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a2-seejet-sektion-2-oberterzen-tannenboden",
+      "ref": null,
+      "name": "A2 • SeeJet Sektion 2 (Oberterzen - Tannenboden)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b1-bergjet-tannenboden-maschgenkamm",
+      "ref": null,
+      "name": "B1 • BergJet (Tannenboden - Maschgenkamm)",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b2-chruz",
+      "ref": null,
+      "name": "B2 • Chrüz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b3-stelli",
+      "ref": null,
+      "name": "B3 • Stelli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b4-arve",
+      "ref": null,
+      "name": "B4 • Arve",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b5-seeben",
+      "ref": null,
+      "name": "B5 • Seeben",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b7-leist",
+      "ref": null,
+      "name": "B7 • Leist",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b8-panuol",
+      "ref": null,
+      "name": "B8 • Panüöl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b9-plattis",
+      "ref": null,
+      "name": "B9 • Plattis",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c1-prodalp-express",
+      "ref": null,
+      "name": "C1 • Prodalp-Express",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c2-prodkamm",
+      "ref": null,
+      "name": "C2 • Prodkamm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c3-twarchamm",
+      "ref": null,
+      "name": "C3 • Twärchamm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d1-tannenboden",
+      "ref": null,
+      "name": "D1 • Tannenboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d2-schwammkopf",
+      "ref": null,
+      "name": "D2 • Schwammkopf",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d3-madils",
+      "ref": null,
+      "name": "D3 • Madils",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d4-mittenwald",
+      "ref": null,
+      "name": "D4 • Mittenwald",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-spigapiste",
+      "ref": null,
+      "name": "01 • Spigapiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-01a-talabfahrt-tannenheim-cafrida",
+      "ref": null,
+      "name": "01a • Talabfahrt Tannenheim - Cafrida",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2700
+    },
+    {
+      "id": "slope-01b-prodalp-schnabel",
+      "ref": null,
+      "name": "01b • Prodalp-Schnabel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-02-prodkamm-prodalppiste",
+      "ref": null,
+      "name": "02 • Prodkamm-Prodalppiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-02a-verbindung",
+      "ref": null,
+      "name": "02a • Verbindung",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-03-talabfahrt-tannenheim-rennpiste",
+      "ref": null,
+      "name": "03 • Talabfahrt Tannenheim - Rennpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2700
+    },
+    {
+      "id": "slope-03a-tannenheimhangpiste",
+      "ref": null,
+      "name": "03a • Tannenheimhangpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-03b-verbindungspiste-mittenwald",
+      "ref": null,
+      "name": "03b • Verbindungspiste Mittenwald",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-04-edypiste",
+      "ref": null,
+      "name": "04 • Edypiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-04a-twarchamm-verbindungspiste",
+      "ref": null,
+      "name": "04a • Twärchamm Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-04b-verbindung-chruzboden",
+      "ref": null,
+      "name": "04b • Verbindung Chrüzböden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-05-c-piste",
+      "ref": null,
+      "name": "05 • C-Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-06-twarchammgratpiste",
+      "ref": null,
+      "name": "06 • Twärchammgratpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-07-twarchammpiste",
+      "ref": null,
+      "name": "07 • Twärchammpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-07a-verbindungspiste-twarchamm-stelli",
+      "ref": null,
+      "name": "07a • Verbindungspiste Twärchamm - Stelli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-07b-bosplangpiste",
+      "ref": null,
+      "name": "07b • Bösplangpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-08-untere-nordabfahrtpiste",
+      "ref": null,
+      "name": "08 • Untere Nordabfahrtpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-09-chuewegpiste",
+      "ref": null,
+      "name": "09 • Chuewegpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-10-mittenwaldpisten",
+      "ref": null,
+      "name": "10 • Mittenwaldpisten",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-11-haldenpiste",
+      "ref": null,
+      "name": "11 • Haldenpiste",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-12-sennenstubepiste",
+      "ref": null,
+      "name": "12 • Sennenstubepiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-13-tannenbodenpiste",
+      "ref": null,
+      "name": "13 • Tannenbodenpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-14-schwammkopfpisten",
+      "ref": null,
+      "name": "14 • Schwammkopfpisten",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-15-madilspiste",
+      "ref": null,
+      "name": "15 • Madilspiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-20-arvepiste",
+      "ref": null,
+      "name": "20 • Arvepiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-20-obersasspiste",
+      "ref": null,
+      "name": "20 • Obersässpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-20-talabfahrt-tannenboden-chruzpiste",
+      "ref": null,
+      "name": "20 • Talabfahrt Tannenboden - Chrüzpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-20a-kanonenleitung",
+      "ref": null,
+      "name": "20a • Kanonenleitung",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-20b-arvetal",
+      "ref": null,
+      "name": "20b • Arvetal",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-20c-arvetal",
+      "ref": null,
+      "name": "20c • Arvetal",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-21-grueb-seebenpiste",
+      "ref": null,
+      "name": "21 • Grueb-Seebenpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-21a-umfahrung-grueb",
+      "ref": null,
+      "name": "21a • Umfahrung Grueb",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-22-seebenpiste",
+      "ref": null,
+      "name": "22 • Seebenpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-22a-rennpiste-seeben",
+      "ref": null,
+      "name": "22a • Rennpiste Seeben",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-23-stellipiste",
+      "ref": null,
+      "name": "23 • Stellipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-23a-geissruckenpiste",
+      "ref": null,
+      "name": "23a • Geissrückenpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-24-luggapiste",
+      "ref": null,
+      "name": "24 • Luggäpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-24a-galgnipiste",
+      "ref": null,
+      "name": "24a • Galgnipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-stellitalipiste",
+      "ref": null,
+      "name": "25 • Stellitälipiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-26-waldpiste-chruz",
+      "ref": null,
+      "name": "26 • Waldpiste-Chrüz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-27-chalchofenpiste",
+      "ref": null,
+      "name": "27 • Chalchofenpiste",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-30-panuolpiste",
+      "ref": null,
+      "name": "30 • Panüölpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-32-cuncelspiste",
+      "ref": null,
+      "name": "32 • Cuncelspiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-38-fuchsnipiste",
+      "ref": null,
+      "name": "38 • Fuchsnipiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-39-plattispiste",
+      "ref": null,
+      "name": "39 • Plattispiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-40-sachserpiste",
+      "ref": null,
+      "name": "40 • Sächserpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-40a-sachserpiste-grueb",
+      "ref": null,
+      "name": "40a • Sächserpiste - Grueb",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-41-vorderleistpiste",
+      "ref": null,
+      "name": "41 • Vorderleistpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-42-breitmantelpiste",
+      "ref": null,
+      "name": "42 • Breitmantelpiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-43-zigerfurgglenpiste",
+      "ref": null,
+      "name": "43 • Zigerfurgglenpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-43a-verbindungspiste-zigerfurgglen-panuol",
+      "ref": null,
+      "name": "43a • Verbindungspiste Zigerfurgglen-Panüöl",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-50-talabfahrt-oberterzen-terzaabfahrt",
+      "ref": null,
+      "name": "50 • Talabfahrt Oberterzen - Terzaabfahrt",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-51-haxawaldli",
+      "ref": null,
+      "name": "51 • HäxäWäldli",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-61-ubungsland-prodalp",
+      "ref": null,
+      "name": "61 • Übungsland Prodalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "slope-62-ubungsland-tannenboden",
+      "ref": null,
+      "name": "62 • Übungsland Tannenboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    }
+  ]
+}

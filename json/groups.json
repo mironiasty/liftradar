@@ -195,6 +195,15 @@
         "ch/lenzerheide"
       ]
     },
+    "adelboden-lenk": {
+      "name": "Adelboden-Lenk",
+      "kind": "linked",
+      "website": "https://www.adelboden-lenk.ch",
+      "members": [
+        "ch/adelboden",
+        "ch/lenk"
+      ]
+    },
     "sella-ronda": {
       "name": "Sella Ronda",
       "kind": "linked",
@@ -283,6 +292,40 @@
         "at/spieljochbahn-fuegen"
       ]
     },
+    "silvretta-skipass": {
+      "name": "Paznaun (Silvretta Skipass)",
+      "kind": "region",
+      "website": "https://www.ischgl.com",
+      "members": [
+        "at/ischgl-silvretta-arena",
+        "at/galtuer",
+        "at/kappl",
+        "at/see-im-paznauntal"
+      ]
+    },
+    "oetztal": {
+      "name": "Ötztal (Ötztal Superskipass)",
+      "kind": "region",
+      "website": "https://www.oetztal.com",
+      "members": [
+        "at/soelden",
+        "at/obergurgl-hochgurgl",
+        "at/hochoetz-oetz",
+        "at/kuehtai",
+        "at/niederthai",
+        "at/venter-seilbahnen"
+      ]
+    },
+    "ski-alpin-card": {
+      "name": "Ski ALPIN CARD",
+      "kind": "region",
+      "website": "https://www.zellamsee-kaprun.com/en/activities/winter/skiing/ski-alpin-card",
+      "members": [
+        "at/skicircus-saalbach",
+        "at/schmittenhoehe",
+        "at/kitzsteinhorn"
+      ]
+    },
     "engadin-st-moritz": {
       "name": "Engadin St. Moritz",
       "kind": "region",
@@ -290,7 +333,8 @@
       "members": [
         "ch/st-moritz-corviglia",
         "ch/corvatsch",
-        "ch/diavolezza-lagalb"
+        "ch/diavolezza-lagalb",
+        "ch/zuoz"
       ]
     },
     "jungfrau-ski-region": {
@@ -311,8 +355,127 @@
         "ch/parsenn",
         "ch/jakobshorn",
         "ch/madrisa",
-        "ch/rinerhorn",
-        "ch/schatzalp"
+        "ch/rinerhorn"
+      ]
+    },
+    "gstaad": {
+      "name": "Gstaad (Gstaad Mountain Rides)",
+      "kind": "region",
+      "website": "https://www.gstaad.ch",
+      "members": [
+        "ch/gstaad",
+        "ch/glacier-3000"
+      ]
+    },
+    "saastal": {
+      "name": "Saastal",
+      "kind": "region",
+      "website": "https://www.saas-fee.ch",
+      "members": [
+        "ch/saas-fee",
+        "ch/saas-grund"
+      ]
+    },
+    "skiregion-adelboden-lenk": {
+      "name": "Skiregion Adelboden-Lenk",
+      "kind": "region",
+      "website": "https://www.adelboden-lenk.ch",
+      "members": [
+        "ch/adelboden",
+        "ch/lenk",
+        "ch/engstligenalp",
+        "ch/elsigen-metsch"
+      ]
+    },
+    "aravis": {
+      "name": "Aravis",
+      "kind": "region",
+      "website": "https://www.laclusaz.com",
+      "members": [
+        "fr/la-clusaz",
+        "fr/manigod",
+        "fr/le-grand-bornand"
+      ]
+    },
+    "haute-maurienne-vanoise": {
+      "name": "Haute Maurienne Vanoise",
+      "kind": "region",
+      "website": "https://www.haute-maurienne-vanoise.com",
+      "members": [
+        "fr/valfrejus",
+        "fr/la-norma",
+        "fr/aussois",
+        "fr/val-cenis",
+        "fr/bonneval-sur-arc"
+      ]
+    },
+    "suedtirol-skiarena": {
+      "name": "Südtirol Skiarena",
+      "kind": "region",
+      "website": "https://www.suedtirolskiarena.com",
+      "members": [
+        "it/sulden",
+        "it/schnalstal",
+        "it/trafoi",
+        "it/schoeneben-haideralm",
+        "it/watles",
+        "at/nauders",
+        "it/schwemmalm",
+        "it/pfelders",
+        "it/meran-2000",
+        "it/vigiljoch",
+        "it/rittner-horn",
+        "it/rosskopf",
+        "it/ladurns",
+        "it/ratschings-jaufen",
+        "it/speikboden",
+        "it/klausberg"
+      ]
+    },
+    "skirama": {
+      "name": "Skirama Dolomiti Adamello Brenta (Superskirama)",
+      "kind": "region",
+      "website": "https://www.skirama.it",
+      "members": [
+        "it/madonna-di-campiglio",
+        "it/pinzolo",
+        "it/folgarida-marilleva",
+        "it/pontedilegno-tonale",
+        "it/peio",
+        "it/paganella",
+        "it/monte-bondone",
+        "it/folgaria",
+        "it/lavarone"
+      ]
+    },
+    "alta-valtellina": {
+      "name": "Alta Valtellina",
+      "kind": "region",
+      "website": "https://bormioski.eu/en/alta-valtellina",
+      "members": [
+        "it/bormio",
+        "it/santa-caterina-valfurva",
+        "it/livigno"
+      ]
+    },
+    "valle-d-aosta": {
+      "name": "Valle d'Aosta (Skipass Valle d'Aosta)",
+      "kind": "region",
+      "website": "https://www.lovevda.it",
+      "members": [
+        "it/breuil-cervinia",
+        "it/monterosa-ski",
+        "it/pila",
+        "it/la-thuile",
+        "it/courmayeur",
+        "it/chamois",
+        "it/torgnon",
+        "it/cogne",
+        "it/champorcher",
+        "it/crevacol",
+        "it/rhemes-notre-dame",
+        "it/brusson",
+        "it/gressoney-saint-jean"
       ]
     },
     "oberstdorf-kleinwalsertal": {

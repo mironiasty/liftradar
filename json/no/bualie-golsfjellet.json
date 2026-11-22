@@ -10,7 +10,7 @@
   },
   "website": "https://www.bualie.no/",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.628459+01:00",
+  "fetched_at": "2026-11-22T08:40:36.262695+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -61,6 +61,7 @@
     }
   },
   "lifts_updated_at": "2026-11-17T11:16:53+01:00",
+  "details": "json/no/bualie-golsfjellet.details.json",
   "avalanche": {
     "region_id": "NO-3032",
     "region": "Hallingdal",
@@ -75,15 +76,15 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-21T00:00:00+01:00",
-    "valid_from": "2026-11-21T00:00:00+01:00",
-    "valid_until": "2026-11-21T23:59:59+01:00"
+    "published_at": "2026-11-22T00:00:00+01:00",
+    "valid_from": "2026-11-22T00:00:00+01:00",
+    "valid_until": "2026-11-22T23:59:59+01:00"
   },
   "sources": [
     "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/bualiegolsfjellet/",
     "https://www.skiresort.com/en/ski-resort/golsfjellet/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-NO.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-NO.json"
   ],
   "source_details": {
     "conditions": [
@@ -96,7 +97,7 @@
         "attribution_required": true
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-21/2026-11-21-NO.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-NO.json",
         "attribution_required": null
       }
     ],

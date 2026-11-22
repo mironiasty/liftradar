@@ -1,0 +1,305 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "monte-pora",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.256414+01:00",
+  "updated_at": null,
+  "source": "https://www.montepora.com/impianti/",
+  "lifts": [
+    {
+      "id": "lift-skilift-magnolini",
+      "ref": null,
+      "name": "Skilift Magnolini",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-valzelli",
+      "ref": null,
+      "name": "Seggiovia Valzelli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-termen",
+      "ref": null,
+      "name": "Seggiovia Termen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-roulant-primi-passi-termen",
+      "ref": null,
+      "name": "Tapis Roulant primi passi Termen",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-roulant-campo-scuola-termen",
+      "ref": null,
+      "name": "Tapis Roulant campo scuola Termen",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-cima-pora",
+      "ref": null,
+      "name": "Seggiovia Cima Pora",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-pian-de-l-asen",
+      "ref": null,
+      "name": "Seggiovia Pian de L'Asen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-pista-valzelli",
+      "ref": null,
+      "name": "Pista Valzelli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-magnolini",
+      "ref": null,
+      "name": "Pista raccordo Magnolini",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-baita-termen",
+      "ref": null,
+      "name": "Pista Baita Termen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-termen",
+      "ref": null,
+      "name": "Pista raccordo Termen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-campo-scuola-pian-del-termen",
+      "ref": null,
+      "name": "Campo scuola Pian del Termen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-pian-del-termen",
+      "ref": null,
+      "name": "Pista Pian del Termen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-boschetto",
+      "ref": null,
+      "name": "Pista Boschetto",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-variante-boschetto",
+      "ref": null,
+      "name": "Pista variante Boschetto",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-malga-alta",
+      "ref": null,
+      "name": "Pista Malga Alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-variante-malga-alta",
+      "ref": null,
+      "name": "Pista variante Malga Alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-cima-pora-destra",
+      "ref": null,
+      "name": "Pista Cima Pora destra",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-cima-pora",
+      "ref": null,
+      "name": "Pista raccordo Cima Pora",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-cima-pora-2",
+      "ref": null,
+      "name": "Pista raccordo Cima Pora",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-cima-pora-sinistra",
+      "ref": null,
+      "name": "Pista Cima Pora sinistra",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-fausto-radici",
+      "ref": null,
+      "name": "Pista Fausto Radici",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-pozza",
+      "ref": null,
+      "name": "Pista raccordo Pozza",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-pian-dell-asen-destra",
+      "ref": null,
+      "name": "Pista Pian dell'Asen destra",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-pian-dell-asen-sinistra",
+      "ref": null,
+      "name": "Pista Pian dell'Asen sinistra",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-cima-pora-vareno",
+      "ref": null,
+      "name": "Pista raccordo Cima Pora - Vareno",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-raccordo-canalone-del-vareno",
+      "ref": null,
+      "name": "Pista raccordo canalone del Vareno",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-canalone-del-vareno",
+      "ref": null,
+      "name": "Pista canalone del Vareno",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-variante-canalone-del-vareno",
+      "ref": null,
+      "name": "Pista variante canalone del Vareno",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-pista-magnolini",
+      "ref": null,
+      "name": "Pista Magnolini",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-snow-tube",
+      "ref": null,
+      "name": "Snow Tube",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "gitschberg-jochtal",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255880+01:00",
+  "updated_at": "2026-11-07T19:00:09.009796+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_735",
+      "ref": null,
+      "name": "Bergbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_729",
+      "ref": null,
+      "name": "Brunner",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_742",
+      "ref": null,
+      "name": "Gaisjoch",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_734",
+      "ref": null,
+      "name": "Gitschberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_738",
+      "ref": null,
+      "name": "Hinterberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_736",
+      "ref": null,
+      "name": "Jochtal",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_737",
+      "ref": null,
+      "name": "Manovia Restaurantlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_732",
+      "ref": null,
+      "name": "Mitterwiese",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_733",
+      "ref": null,
+      "name": "Nesselbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_728",
+      "ref": null,
+      "name": "Pobist",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_741",
+      "ref": null,
+      "name": "Schilling",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_730",
+      "ref": null,
+      "name": "Ski Express",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_739",
+      "ref": null,
+      "name": "Steinermandl",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_740",
+      "ref": null,
+      "name": "Tasa",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215935",
+      "ref": null,
+      "name": "Breiteben",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215937",
+      "ref": null,
+      "name": "Brunner",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_2159311",
+      "ref": null,
+      "name": "Connection Slope Brunner",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_1767954799",
+      "ref": null,
+      "name": "Connection Slope Brunner Huber",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_66006220",
+      "ref": null,
+      "name": "Family Slope",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215947",
+      "ref": null,
+      "name": "Gaisraste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_40864229",
+      "ref": null,
+      "name": "Gimmy Fun Ride",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215948",
+      "ref": null,
+      "name": "Gitsch",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215952",
+      "ref": null,
+      "name": "Hinterberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215951",
+      "ref": null,
+      "name": "Joechl",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215953",
+      "ref": null,
+      "name": "Kanonenrohr",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_1758886626",
+      "ref": null,
+      "name": "Kids Cross Jochtal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215956",
+      "ref": null,
+      "name": "Mitterling",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215957",
+      "ref": null,
+      "name": "Mitterwiese",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215936",
+      "ref": null,
+      "name": "Nesselwiese",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215960",
+      "ref": null,
+      "name": "Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215968",
+      "ref": null,
+      "name": "Pobist",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215973",
+      "ref": null,
+      "name": "Restaurant",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215974",
+      "ref": null,
+      "name": "Schilling",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215975",
+      "ref": null,
+      "name": "Schwandt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215976",
+      "ref": null,
+      "name": "Seepiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215977",
+      "ref": null,
+      "name": "Sergerwiese",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_1760706865",
+      "ref": null,
+      "name": "Skimovie",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215980",
+      "ref": null,
+      "name": "Sonnenhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215981",
+      "ref": null,
+      "name": "Steinermandl",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_1758888042",
+      "ref": null,
+      "name": "Steinermandl II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215983",
+      "ref": null,
+      "name": "Talabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215984",
+      "ref": null,
+      "name": "Tasa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_2159310",
+      "ref": null,
+      "name": "Trainingspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_40835666",
+      "ref": null,
+      "name": "Wastl Huber",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_1758888181",
+      "ref": null,
+      "name": "Wastl Huber II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    }
+  ]
+}

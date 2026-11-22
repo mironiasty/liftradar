@@ -1,0 +1,378 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "scuol",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254243+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=178&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-b-motta-naluns",
+      "ref": null,
+      "name": "B • Motta Naluns",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-ftan",
+      "ref": null,
+      "name": "D • Ftan",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-naluns",
+      "ref": null,
+      "name": "C • Naluns",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-prui",
+      "ref": null,
+      "name": "E • Prui",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-mot-da-ri",
+      "ref": null,
+      "name": "H • Mot da Ri",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-clunas",
+      "ref": null,
+      "name": "F • Clünas",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-salaniva",
+      "ref": null,
+      "name": "G • Salaniva",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-champatsch-i",
+      "ref": null,
+      "name": "I • Champatsch I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-champatsch-ii",
+      "ref": null,
+      "name": "I • Champatsch II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-zauberteppich-i",
+      "ref": null,
+      "name": "M • Zauberteppich I",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-zauberteppich-ii",
+      "ref": null,
+      "name": "L • Zauberteppich II",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-zauberteppich-iii",
+      "ref": null,
+      "name": "K • Zauberteppich III",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-derby-talabfahrt-scuol",
+      "ref": null,
+      "name": "01 • Derby/Talabfahrt Scuol",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-04-rachogna",
+      "ref": null,
+      "name": "04 • Rachögna",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-06-naluns",
+      "ref": null,
+      "name": "06 • Naluns",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-07-nevin-galmarini",
+      "ref": null,
+      "name": "07 • Nevin Galmarini",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-08-planta",
+      "ref": null,
+      "name": "08 • Planta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-09-prasuras-talabfahrt-ftan",
+      "ref": null,
+      "name": "09 • Prasüras/Talabfahrt Ftan",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-11-nateas",
+      "ref": null,
+      "name": "11 • Natèas",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-12-prui",
+      "ref": null,
+      "name": "12 • Prui",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-13-jonvrai",
+      "ref": null,
+      "name": "13 • Jonvrai",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-14-spi-fis",
+      "ref": null,
+      "name": "14 • Spi FIS",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-15-schlivera",
+      "ref": null,
+      "name": "15 • Schlivera",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-16-clunas",
+      "ref": null,
+      "name": "16 • Clünas",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-17-mot",
+      "ref": null,
+      "name": "17 • Mot",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-18-siert",
+      "ref": null,
+      "name": "18 • Siert",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-19-muntanella",
+      "ref": null,
+      "name": "19 • Muntanella",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-20-via-champatsch",
+      "ref": null,
+      "name": "20 • Via Champatsch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-21-val-ruschna",
+      "ref": null,
+      "name": "21 • Val Ruschna",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-23-crap-alb-fis",
+      "ref": null,
+      "name": "23 • Crap alb FIS",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-24-costera-fis",
+      "ref": null,
+      "name": "24 • Costera FIS",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-25-mot-da-ri",
+      "ref": null,
+      "name": "25 • Mot da Ri",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-26-era",
+      "ref": null,
+      "name": "26 • Era",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-27-era-champatsch",
+      "ref": null,
+      "name": "27 • Era Champatsch",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-28-piz-nair",
+      "ref": null,
+      "name": "28 • Piz Nair",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-29-champatsch",
+      "ref": null,
+      "name": "29 • Champatsch",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-31-isola-persa",
+      "ref": null,
+      "name": "31 • Isola Persa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-33-traumpiste-sent",
+      "ref": null,
+      "name": "33 • Traumpiste Sent",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 10000
+    }
+  ]
+}

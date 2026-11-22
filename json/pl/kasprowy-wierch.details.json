@@ -1,0 +1,72 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kasprowy-wierch",
+  "country": "pl",
+  "fetched_at": "2026-11-22T08:40:36.257651+01:00",
+  "updated_at": null,
+  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
+  "lifts": [
+    {
+      "id": "lift-kolej-kasprowy-wierch",
+      "ref": null,
+      "name": "Kolej Kasprowy Wierch",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kolej-krzesekowa-gasienicowa",
+      "ref": null,
+      "name": "Kolej Krzesełkowa Gąsienicowa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kolej-krzeskowa-goryczkowa",
+      "ref": null,
+      "name": "Kolej Krzesłkowa Goryczkowa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-trasa-narciarska-w-kotle-gasienicowym",
+      "ref": null,
+      "name": "Trasa Narciarska w Kotle Gąsienicowym",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-trasa-narciarska-w-kotle-goryczkowym",
+      "ref": null,
+      "name": "Trasa Narciarska w Kotle Goryczkowym",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-nartostrada-z-hali-goryczkowej",
+      "ref": null,
+      "name": "Nartostrada z Hali Goryczkowej",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3500
+    }
+  ]
+}

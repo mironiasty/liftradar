@@ -10,7 +10,7 @@
   },
   "website": "https://www.badkleinkirchheim.com",
   "status": "no_report",
-  "fetched_at": "2026-11-21T13:40:38.690863+01:00",
+  "fetched_at": "2026-11-22T08:40:41.714876+01:00",
   "status_from": "2026-11-11T11:32:47.498268+01:00",
   "snow": {
     "mountain_cm": null,
@@ -77,12 +77,17 @@
   "lifts_updated_at": "2026-11-01T16:12:16+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte"
+    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+    "https://winter.intermaps.com/bad_kleinkirchheim/data?lang=en"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/bad_kleinkirchheim/data?lang=en",
         "attribution_required": null
       }
     ],

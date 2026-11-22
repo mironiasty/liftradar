@@ -9,8 +9,9 @@
     "lon": 7.5664
   },
   "website": "https://engstligenalp.ch",
+  "ski_region": "skiregion-adelboden-lenk",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622036+01:00",
+  "fetched_at": "2026-11-22T08:40:36.253885+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -76,14 +77,15 @@
       "open_km": 0.0,
       "total_km": 5
     },
-    "ski_route": {
+    "other": {
       "open": 0,
       "total": 2,
       "open_km": 0.0,
       "total_km": 2
     }
   },
-  "lifts_updated_at": "2026-11-21T12:29:00+01:00",
+  "lifts_updated_at": "2026-11-22T04:00:00+01:00",
+  "details": "json/ch/engstligenalp.details.json",
   "avalanche": {
     "region_id": "CH-1227",
     "region": "Engstligen",
@@ -99,11 +101,13 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "wet_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=113&saison=1&ref=contentBox",

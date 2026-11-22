@@ -1,0 +1,222 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "elm",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253861+01:00",
+  "updated_at": "2026-11-20T14:38:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=65&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-elm-ampachli",
+      "ref": null,
+      "name": "A • Elm-Ämpächli",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-pleus",
+      "ref": null,
+      "name": "B • Pleus",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-schabell",
+      "ref": null,
+      "name": "C • Schabell",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-ampachli-ubungslift",
+      "ref": null,
+      "name": "D • Ämpächli (Übungslift)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-bischof",
+      "ref": null,
+      "name": "E • Bischof",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-kinder-arena-ampachli",
+      "ref": null,
+      "name": "D • Kinder-Arena Ämpächli",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-kinder-arena",
+      "ref": null,
+      "name": "Kinder-Arena",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-1-talabfahrt-steinibach",
+      "ref": null,
+      "name": "1 • Talabfahrt Steinibach",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-2-mattbodeli",
+      "ref": null,
+      "name": "2 • Mattbödeli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-3-trainings-und-rennpiste-bischof",
+      "ref": null,
+      "name": "3 • Trainings- und Rennpiste Bischof",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-4-bischof",
+      "ref": null,
+      "name": "4 • Bischof",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6500
+    },
+    {
+      "id": "slope-5-blistock",
+      "ref": null,
+      "name": "5 • Blistock",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-5a-lachen",
+      "ref": null,
+      "name": "5a • Lachen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-6-pleus",
+      "ref": null,
+      "name": "6 • Pleus",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 8000
+    },
+    {
+      "id": "slope-6a-verbindungspiste",
+      "ref": null,
+      "name": "6a • Verbindungspiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-7-burstplangge",
+      "ref": null,
+      "name": "7 • Burstplangge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-8-rietboden",
+      "ref": null,
+      "name": "8 • Rietboden",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-9-schabell",
+      "ref": null,
+      "name": "9 • Schabell",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-9a-mattlistutz",
+      "ref": null,
+      "name": "9a • Mättlistutz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-10-vreni-schneider-piste",
+      "ref": null,
+      "name": "10 • Vreni-Schneider-Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-11-talabfahrt-berg",
+      "ref": null,
+      "name": "11 • Talabfahrt Berg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-12-talabfahrt-stalden",
+      "ref": null,
+      "name": "12 • Talabfahrt Stalden",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    }
+  ]
+}

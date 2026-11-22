@@ -1,0 +1,618 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "obersaxen-mundaun",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254180+01:00",
+  "updated_at": "2026-11-21T11:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=53&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a1-meierhof-kartitscha",
+      "ref": null,
+      "name": "A1 • Meierhof - Kartitscha",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a3-wali-stein",
+      "ref": null,
+      "name": "A3 • Wali - Stein",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a4-wali-piz-sezner",
+      "ref": null,
+      "name": "A4 • Wali - Piz Sezner",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a5-untermatt-stein",
+      "ref": null,
+      "name": "A5 • Untermatt - Stein",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a6-misanenga-untermatt",
+      "ref": null,
+      "name": "A6 • Misanenga - Untermatt",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a7-chummenbuhl",
+      "ref": null,
+      "name": "A7 • Chummenbühl",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-a8-kartitscha",
+      "ref": null,
+      "name": "A8 • Kartitscha",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b1-valata-cuolm-sura",
+      "ref": null,
+      "name": "B1 • Valata - Cuolm Sura",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b2-cuolm-sura-piz-mundaun",
+      "ref": null,
+      "name": "B2 • Cuolm Sura - Piz Mundaun",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b3-plitsches",
+      "ref": null,
+      "name": "B3 • Plitschès",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b5-valata",
+      "ref": null,
+      "name": "B5 • Valata",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b6-cuolm-sura",
+      "ref": null,
+      "name": "B6 • Cuolm Sura",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c1-vella-triel",
+      "ref": null,
+      "name": "C1 • Vella - Triel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c2-triel-hitzeggen",
+      "ref": null,
+      "name": "C2 • Triel - Hitzeggen",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c3-vella",
+      "ref": null,
+      "name": "C3 • Vella",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1a-stein-kartitscha",
+      "ref": null,
+      "name": "1a • Stein - Kartitscha",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-1b-kartitscha-untermatt",
+      "ref": null,
+      "name": "1b • Kartitscha - Untermatt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-1c-untermatt-miraniga-meierhof",
+      "ref": null,
+      "name": "1c • Untermatt - Miraniga - Meierhof",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-2-carlo-janka-piste",
+      "ref": null,
+      "name": "2 • Carlo Janka Piste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-3a-stein-untermatt",
+      "ref": null,
+      "name": "3a • Stein - Untermatt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-3b-untermatt-misanenga",
+      "ref": null,
+      "name": "3b • Untermatt - Misanenga",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-4-stein-schweinestall",
+      "ref": null,
+      "name": "4 • Stein - Schweinestall",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-4a-stein-verbindung-stein-kartitscha",
+      "ref": null,
+      "name": "4a • Stein-Verbindung Stein-Kartitscha",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-5-stein-untermatt",
+      "ref": null,
+      "name": "5 • Stein - Untermatt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-6a-hitzeggen-untermatt",
+      "ref": null,
+      "name": "6a • Hitzeggen - Untermatt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-6b-untermatt-miraniga",
+      "ref": null,
+      "name": "6b • Untermatt - Miraniga",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-7-miraniga-chummenbuhl",
+      "ref": null,
+      "name": "7 • Miraniga - Chummenbühl",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-8-chummenbuhl",
+      "ref": null,
+      "name": "8 • Chummenbühl",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-9-chummenbuhl-berg-meierhof",
+      "ref": null,
+      "name": "9 • Chummenbühl Berg - Meierhof",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-10-kartitscha-waldweg",
+      "ref": null,
+      "name": "10 • Kartitscha - Waldweg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-11-stein-wali",
+      "ref": null,
+      "name": "11 • Stein - Wali",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-12a-stein-mittler-hutte",
+      "ref": null,
+      "name": "12a • Stein - Mittler Hütte",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-12b-wali-miraniga-waldweg",
+      "ref": null,
+      "name": "12b • Wali - Miraniga (Waldweg)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-13-piz-sezner-wali",
+      "ref": null,
+      "name": "13 • Piz Sezner - Wali",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-14-piz-sezner-wali",
+      "ref": null,
+      "name": "14 • Piz Sezner - Wali",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-15-piz-sezner-marchbial",
+      "ref": null,
+      "name": "15 • Piz Sezner - Marchbial",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-16-piz-sezner-wali",
+      "ref": null,
+      "name": "16 • Piz Sezner - Wali",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-17-piz-sezner-mirerberg-wali",
+      "ref": null,
+      "name": "17 • Piz Sezner - Mirerberg - Wali",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-18-piz-sezner-lombris-wali",
+      "ref": null,
+      "name": "18 • Piz Sezner - Lombris - Wali",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 7000
+    },
+    {
+      "id": "slope-20a-piz-mundaun-cuolm-sura",
+      "ref": null,
+      "name": "20a • Piz Mundaun - Cuolm Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4500
+    },
+    {
+      "id": "slope-20b-cuolm-sura-valata",
+      "ref": null,
+      "name": "20b • Cuolm Sura - Valata",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-21-piz-mundaun-cuolm-sura",
+      "ref": null,
+      "name": "21 • Piz Mundaun - Cuolm Sura",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-23-piz-mundaun-untermatt",
+      "ref": null,
+      "name": "23 • Piz Mundaun - Untermatt",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-24a-tegia-dado-kreuzung-vogeltobel",
+      "ref": null,
+      "name": "24a • Tegia Dado - Kreuzung Vogeltobel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-24b-kreuzung-vogeltobel-valata",
+      "ref": null,
+      "name": "24b • Kreuzung Vogeltobel - Valata",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-verbindung-schweinestall-cuolm-sura",
+      "ref": null,
+      "name": "25 • Verbindung Schweinestall - Cuolm Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-26-cuolm-sura-vogeltobel-misanenga",
+      "ref": null,
+      "name": "26 • Cuolm Sura - Vogeltobel - Misanenga",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-27-sut-alp-cuolm-sura",
+      "ref": null,
+      "name": "27 • Sut Alp - Cuolm Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-28-plitsches-cuolm-sura",
+      "ref": null,
+      "name": "28 • Plitschès - Cuolm Sura",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-34-surcuolm-valata",
+      "ref": null,
+      "name": "34 • Surcuolm - Valata",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-35-schwarze-valata",
+      "ref": null,
+      "name": "35 • Schwarze Valata",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-36-waldegg-flond",
+      "ref": null,
+      "name": "36 • Waldegg - Flond",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-40a-hitzeggen-triel",
+      "ref": null,
+      "name": "40a • Hitzeggen - Triel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-40b-triel-vella",
+      "ref": null,
+      "name": "40b • Triel - Vella",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-41a-stein-triel",
+      "ref": null,
+      "name": "41a • Stein - Triel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-41b-stein-ubergang-triel",
+      "ref": null,
+      "name": "41b • Stein Übergang Triel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-42-lavadinas-triel",
+      "ref": null,
+      "name": "42 • Lavadinas - Triel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-43-hitzeggen-cuolm-sura",
+      "ref": null,
+      "name": "43 • Hitzeggen - Cuolm Sura",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-45-triel-treis-aclas-vella",
+      "ref": null,
+      "name": "45 • Triel - Treis Aclas - Vella",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-46-skischulpiste",
+      "ref": null,
+      "name": "46 • Skischulpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-47-piz-sezner-crusch",
+      "ref": null,
+      "name": "47 • Piz Sezner – Crusch",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 15000
+    },
+    {
+      "id": "slope-48-piz-sezner-vignogn",
+      "ref": null,
+      "name": "48 • Piz Sezner - Vignogn",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-49-piz-sezner-lumbrein",
+      "ref": null,
+      "name": "49 • Piz Sezner - Lumbrein",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 5000
+    },
+    {
+      "id": "slope-50-triel-morissen",
+      "ref": null,
+      "name": "50 • Triel - Morissen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

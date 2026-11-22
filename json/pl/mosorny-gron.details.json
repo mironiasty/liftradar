@@ -1,0 +1,50 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "mosorny-gron",
+  "country": "pl",
+  "fetched_at": "2026-11-22T08:40:36.257689+01:00",
+  "updated_at": null,
+  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
+  "lifts": [
+    {
+      "id": "lift-mosorny-gron",
+      "ref": null,
+      "name": "Mosorny Groń",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-trasa-gowna",
+      "ref": null,
+      "name": "Trasa główna",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1420
+    },
+    {
+      "id": "slope-polana-do-nauki",
+      "ref": null,
+      "name": "Polana do nauki",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 50
+    },
+    {
+      "id": "slope-trasa-biegowa",
+      "ref": null,
+      "name": "Trasa biegowa",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4600
+    }
+  ]
+}

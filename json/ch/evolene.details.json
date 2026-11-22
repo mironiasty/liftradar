@@ -1,0 +1,202 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "evolene",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253893+01:00",
+  "updated_at": "2026-11-19T16:25:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=63&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-lannaz-chemeuille",
+      "ref": null,
+      "name": "A • Lannaz - Chemeuille",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-la-nouva",
+      "ref": null,
+      "name": "B • La Nouva",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-mt-rouge",
+      "ref": null,
+      "name": "C • Mt Rouge",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-arpilles",
+      "ref": null,
+      "name": "D • Arpilles",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-tapis-roulant",
+      "ref": null,
+      "name": "E • Tapis roulant",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-telesiege",
+      "ref": null,
+      "name": "1 • Télésiège",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 13500
+    },
+    {
+      "id": "slope-2-noire-telesiege",
+      "ref": null,
+      "name": "2 • Noire télésiège",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-3-nouva",
+      "ref": null,
+      "name": "3 • Nouva",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-4-mt-rouge",
+      "ref": null,
+      "name": "4 • Mt Rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-5-journalistes",
+      "ref": null,
+      "name": "5 • Journalistes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-6-route-des-maigeonnettes",
+      "ref": null,
+      "name": "6 • Route des Maigeonnettes",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-7-plan-plaute",
+      "ref": null,
+      "name": "7 • Plan Plauté",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-8-concours",
+      "ref": null,
+      "name": "8 • Concours",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-9-artzinol",
+      "ref": null,
+      "name": "9 • Artzinol",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-10-vendes",
+      "ref": null,
+      "name": "10 • Vendes",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3100
+    },
+    {
+      "id": "slope-11-veisivi",
+      "ref": null,
+      "name": "11 • Veisivi",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-13-jardin-des-neiges",
+      "ref": null,
+      "name": "13 • Jardin des neiges",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100
+    },
+    {
+      "id": "slope-14-arpille-1",
+      "ref": null,
+      "name": "14 • Arpille 1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-15-pas-d-arpille",
+      "ref": null,
+      "name": "15 • Pas d'Arpille",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-16-arpille-3",
+      "ref": null,
+      "name": "16 • Arpille 3",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3000
+    }
+  ]
+}

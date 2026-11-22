@@ -9,8 +9,9 @@
     "lon": 7.2838
   },
   "website": "https://www.gstaad.ch",
+  "ski_region": "gstaad",
   "status": "closed",
-  "fetched_at": "2026-11-21T13:40:33.622100+01:00",
+  "fetched_at": "2026-11-22T08:40:36.253964+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +23,16 @@
       {
         "name": "Obere Meiel (SLF)",
         "elevation_m": 2097,
-        "depth_cm": 68,
-        "fresh_cm": 35,
+        "depth_cm": 75,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Saanenmöser (SLF)",
         "elevation_m": 1390,
-        "depth_cm": 12,
-        "fresh_cm": 6,
+        "depth_cm": 10,
+        "fresh_cm": 1,
         "temperature_c": null,
         "condition": null
       }
@@ -86,6 +87,7 @@
     }
   },
   "lifts_updated_at": "2026-11-20T16:27:00+01:00",
+  "details": "json/ch/gstaad.details.json",
   "avalanche": {
     "region_id": "CH-1222",
     "region": "Gstaad",
@@ -100,11 +102,13 @@
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "wet_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-21T08:00:00+01:00",
-    "valid_from": "2026-11-21T08:00:00+01:00",
-    "valid_until": "2026-11-21T17:00:00+01:00"
+    "published_at": "2026-11-22T08:00:00+01:00",
+    "valid_from": "2026-11-22T08:00:00+01:00",
+    "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=39&saison=1&ref=contentBox",

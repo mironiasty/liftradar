@@ -1,0 +1,411 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "champery",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253787+01:00",
+  "updated_at": "2026-11-22T08:15:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=183&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-1-ripaille-2",
+      "ref": null,
+      "name": "1 • Ripaille 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-1-ripaille-1",
+      "ref": null,
+      "name": "1 • Ripaille 1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-2-chavanette",
+      "ref": null,
+      "name": "2 • Chavanette",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-5-grand-paradis",
+      "ref": null,
+      "name": "5 • Grand-Paradis",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-6-planachaux",
+      "ref": null,
+      "name": "6 • Planachaux",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-7-champery-croix-de-culet",
+      "ref": null,
+      "name": "7 • Champéry - Croix de Culet",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-8-marcheuson",
+      "ref": null,
+      "name": "8 • Marcheuson",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-9-hameau",
+      "ref": null,
+      "name": "9 • Hameau",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-10-crosets",
+      "ref": null,
+      "name": "10 • Crosets",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-11-chapelle",
+      "ref": null,
+      "name": "11 • Chapelle",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-12-pauvre-conche",
+      "ref": null,
+      "name": "12 • Pauvre Conche",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-13-cubore",
+      "ref": null,
+      "name": "13 • Cuboré",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-14-grand-conche",
+      "ref": null,
+      "name": "14 • Grand-Conche",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-15-mossettes",
+      "ref": null,
+      "name": "15 • Mossettes",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-18-tapis-planachaux",
+      "ref": null,
+      "name": "18 • Tapis Planachaux",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-la-chapelle",
+      "ref": null,
+      "name": "1 • La Chapelle",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-2-le-hameau",
+      "ref": null,
+      "name": "2 • Le Hameau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-3-les-crosets",
+      "ref": null,
+      "name": "3 • Les Crosets",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-4-marcheuson",
+      "ref": null,
+      "name": "4 • Marcheuson",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-5-planachaux",
+      "ref": null,
+      "name": "5 • Planachaux",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-6-les-crosets",
+      "ref": null,
+      "name": "6 • Les Crosets",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-7-marcheuson",
+      "ref": null,
+      "name": "7 • Marcheuson",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-8-lechereuse",
+      "ref": null,
+      "name": "8 • Léchereuse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6100
+    },
+    {
+      "id": "slope-9-planachaux",
+      "ref": null,
+      "name": "9 • Planachaux",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-10a-ripaille",
+      "ref": null,
+      "name": "10a • Ripaille",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-10b-ripaille",
+      "ref": null,
+      "name": "10b • Ripaille",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-11-ripaille-grand-paradis",
+      "ref": null,
+      "name": "11 • Ripaille-Grand Paradis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-12-chavanette",
+      "ref": null,
+      "name": "12 • Chavanette",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-14-grand-conche",
+      "ref": null,
+      "name": "14 • Grand-Conche",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-15-grand-conche",
+      "ref": null,
+      "name": "15 • Grand-Conche",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-16-grand-conche",
+      "ref": null,
+      "name": "16 • Grand-Conche",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-17-pauvre-conche",
+      "ref": null,
+      "name": "17 • Pauvre-Conche",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-18-pauvre-conche",
+      "ref": null,
+      "name": "18 • Pauvre-Conche",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-20-portes-du-soleil",
+      "ref": null,
+      "name": "20 • Portes du Soleil",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-21-les-mossettes",
+      "ref": null,
+      "name": "21 • Les Mossettes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-22-le-loquet",
+      "ref": null,
+      "name": "22 • Le Loquet",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-23-vautna",
+      "ref": null,
+      "name": "23 • Vautna",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-24-marcheuson",
+      "ref": null,
+      "name": "24 • Marcheuson",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-abricotine",
+      "ref": null,
+      "name": "25 • Abricotine",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-26-vautna",
+      "ref": null,
+      "name": "26 • Vautna",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-27-cubore",
+      "ref": null,
+      "name": "27 • Cuboré",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "beskid-sport-arena",
+  "country": "pl",
+  "fetched_at": "2026-11-22T08:40:36.257729+01:00",
+  "updated_at": null,
+  "source": "https://beskidsportarena.pl/szczyrk-trasy-narciarskie/",
+  "lifts": [
+    {
+      "id": "lift-kolej-linowa-beskid",
+      "ref": null,
+      "name": "Kolej linowa „Beskid”",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-wyciag-narciarski-sportowy",
+      "ref": null,
+      "name": "Wyciąg narciarski „Sportowy”",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-wyciag-narciarski-widokowy",
+      "ref": null,
+      "name": "Wyciąg narciarski „Widokowy”",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-trasa-1",
+      "ref": null,
+      "name": "Trasa 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-trasa-2",
+      "ref": null,
+      "name": "Trasa 2",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-trasa-3",
+      "ref": null,
+      "name": "Trasa 3",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-trasa-4",
+      "ref": null,
+      "name": "Trasa 4",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    }
+  ]
+}

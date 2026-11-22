@@ -1,0 +1,371 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "jasna",
+  "country": "sk",
+  "fetched_at": "2026-11-22T08:40:36.259986+01:00",
+  "updated_at": null,
+  "source": "https://laravel.jasna.sk/api/jasna/lanovky?lang=sk",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-petra-vlhova",
+      "ref": null,
+      "name": "Petra Vlhová",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2070
+    },
+    {
+      "id": "slope-vrcholova-chopok-lukova",
+      "ref": null,
+      "name": "Vrcholová Chopok - Luková",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-vrcholova-chopok-zapad-bez-upravy",
+      "ref": null,
+      "name": "Vrcholová Chopok - Západ - bez úpravy",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-plostinska",
+      "ref": null,
+      "name": "Ploštínska",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150
+    },
+    {
+      "id": "slope-majova-rovna-hola-priehyba",
+      "ref": null,
+      "name": "Májová Rovná Hoľa - Priehyba",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1115
+    },
+    {
+      "id": "slope-majova-priehyba-koliesko",
+      "ref": null,
+      "name": "Májová Priehyba - Koliesko",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-turisticka-rovna-hola-zahradky",
+      "ref": null,
+      "name": "Turistická Rovná Hoľa - Záhradky",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3800
+    },
+    {
+      "id": "slope-turisticka-lukova-rovna-hola",
+      "ref": null,
+      "name": "Turistická Luková - Rovná Hoľa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-turisticka-konsky-grun-lukova",
+      "ref": null,
+      "name": "Turistická Konský Grúň - Luková",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 940
+    },
+    {
+      "id": "slope-slalomak",
+      "ref": null,
+      "name": "Slalomák",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1380
+    },
+    {
+      "id": "slope-majstrovska",
+      "ref": null,
+      "name": "Majstrovská",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-otupne",
+      "ref": null,
+      "name": "Otupné",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 890
+    },
+    {
+      "id": "slope-lutonskeho",
+      "ref": null,
+      "name": "Lutonského",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-von-roll",
+      "ref": null,
+      "name": "Von Roll",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 960
+    },
+    {
+      "id": "slope-chaletova-vrchol-zabavy",
+      "ref": null,
+      "name": "Chaletová (Vrchol zábavy)",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2700
+    },
+    {
+      "id": "slope-vrbicka",
+      "ref": null,
+      "name": "Vrbická",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "slope-padak",
+      "ref": null,
+      "name": "Padák",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 570
+    },
+    {
+      "id": "slope-fis-rovna-hola-zahradky",
+      "ref": null,
+      "name": "FIS Rovná Hoľa - Záhradky",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-fis-konsky-grun-rovna-hola",
+      "ref": null,
+      "name": "FIS Konský Grúň - Rovná Hoľa",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1540
+    },
+    {
+      "id": "slope-habarka",
+      "ref": null,
+      "name": "Habarka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "slope-jeleni-grun",
+      "ref": null,
+      "name": "Jelení Grúň",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1960
+    },
+    {
+      "id": "slope-zalomena",
+      "ref": null,
+      "name": "Zalomená",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    },
+    {
+      "id": "slope-biela-put",
+      "ref": null,
+      "name": "Biela Púť",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 990
+    },
+    {
+      "id": "slope-happy-end",
+      "ref": null,
+      "name": "Happy End",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-lucky",
+      "ref": null,
+      "name": "Lúčky",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-rodinna",
+      "ref": null,
+      "name": "Rodinná",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-slnecna",
+      "ref": null,
+      "name": "Slnečná",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450
+    },
+    {
+      "id": "slope-treningova",
+      "ref": null,
+      "name": "Tréningová",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 720
+    },
+    {
+      "id": "slope-obzor",
+      "ref": null,
+      "name": "Obzor",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-vyhliadkova",
+      "ref": null,
+      "name": "Vyhliadková",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1840
+    },
+    {
+      "id": "slope-zjazdarska-predne-derese-krupova",
+      "ref": null,
+      "name": "Zjazdárska Predné Dereše - Krupová",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2670
+    },
+    {
+      "id": "slope-zjazdarska-chopok-predne-derese",
+      "ref": null,
+      "name": "Zjazdárska Chopok - Predné Dereše",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1820
+    },
+    {
+      "id": "slope-panorama-srdiecko-krupova",
+      "ref": null,
+      "name": "Panoráma Srdiečko – Krupová",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-panorama-kosodrevina-srdiecko",
+      "ref": null,
+      "name": "Panoráma Kosodrevina – Srdiečko",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-panorama-predne-derese-kosodrevina",
+      "ref": null,
+      "name": "Panoráma Predné Dereše – Kosodrevina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-panorama-chopok-predne-derese",
+      "ref": null,
+      "name": "Panoráma Chopok – Predné Dereše",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3300
+    },
+    {
+      "id": "slope-deresska",
+      "ref": null,
+      "name": "Derešská",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-zadne-derese",
+      "ref": null,
+      "name": "Zadné Dereše",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 950
+    },
+    {
+      "id": "slope-krupova",
+      "ref": null,
+      "name": "Krupová",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 520
+    },
+    {
+      "id": "slope-hotelova",
+      "ref": null,
+      "name": "Hotelová",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    }
+  ]
+}

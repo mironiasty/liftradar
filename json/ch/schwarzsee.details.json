@@ -1,0 +1,168 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "schwarzsee",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254235+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=228&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-chairlift-riggisalp",
+      "ref": null,
+      "name": "A • Chairlift Riggisalp",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-chairlift-kaiseregg",
+      "ref": null,
+      "name": "B • Chairlift Kaiseregg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-ski-lift-riggisalpboden",
+      "ref": null,
+      "name": "C • Ski lift Riggisalpboden",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-trainer-lift",
+      "ref": null,
+      "name": "D • Trainer lift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-ski-school-area",
+      "ref": null,
+      "name": "E • Ski school area",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-drachenland",
+      "ref": null,
+      "name": "F • Drachenland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-riggisalp-blau",
+      "ref": null,
+      "name": "1 • Riggisalp blau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-2-riggisalp-rot-oben",
+      "ref": null,
+      "name": "2 • Riggisalp rot oben",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-3-riggisalp-rot-unten-fis-piste",
+      "ref": null,
+      "name": "3 • Riggisalp rot unten - FIS-Piste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-4-trainerliftpiste",
+      "ref": null,
+      "name": "4 • Trainerliftpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-5-bodenlift-piste",
+      "ref": null,
+      "name": "5 • Bodenlift-Piste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-6-piste-oberweg",
+      "ref": null,
+      "name": "6 • Piste Oberweg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-7-kaiseregg-blau",
+      "ref": null,
+      "name": "7 • Kaiseregg blau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-8-kaiseregg-rot",
+      "ref": null,
+      "name": "8 • Kaiseregg rot",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-9-kaiseregg-schwarz",
+      "ref": null,
+      "name": "9 • Kaiseregg schwarz",
+      "difficulty": "other",
+      "colour": "red_black",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-10-skischulgelande",
+      "ref": null,
+      "name": "10 • Skischulgelände",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100
+    }
+  ]
+}

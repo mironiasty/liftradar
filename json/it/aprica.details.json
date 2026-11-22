@@ -1,0 +1,438 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "aprica",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.256403+01:00",
+  "updated_at": null,
+  "source": "https://www.apricaonline.com/it/situazione-neve-e-piste",
+  "lifts": [
+    {
+      "id": "lift-aprica-malga-magnolta",
+      "ref": null,
+      "name": "APRICA - MALGA MAGNOLTA",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-piana-galli",
+      "ref": null,
+      "name": "PIANA GALLI",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-puncera",
+      "ref": null,
+      "name": "PUNCERA",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-aprica-malga-palabione",
+      "ref": null,
+      "name": "APRICA - MALGA PALABIONE",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-quadrifoglio",
+      "ref": null,
+      "name": "QUADRIFOGLIO",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-dosso-paso",
+      "ref": null,
+      "name": "DOSSO PASÒ",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-salina",
+      "ref": null,
+      "name": "SALINA",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-palabione",
+      "ref": null,
+      "name": "PALABIONE",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-alpe-vago",
+      "ref": null,
+      "name": "ALPE VAGO",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cucciolo",
+      "ref": null,
+      "name": "CUCCIOLO",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-quadri",
+      "ref": null,
+      "name": "QUADRI",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-san-pietro",
+      "ref": null,
+      "name": "SAN PIETRO",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fantaski",
+      "ref": null,
+      "name": "FANTASKI",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-baby-lift",
+      "ref": null,
+      "name": "BABY LIFT",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-baradello-piana-galli",
+      "ref": null,
+      "name": "BARADELLO - PIANA GALLI",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-piana-dei-galli",
+      "ref": null,
+      "name": "Piana dei Galli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-collegamento-granvia-del-gallo-magnolta-palabione",
+      "ref": null,
+      "name": "Collegamento \"Granvia del Gallo\" Magnolta-Palabione",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2600
+    },
+    {
+      "id": "slope-puncera",
+      "ref": null,
+      "name": "Puncera",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-roccolo",
+      "ref": null,
+      "name": "Roccolo",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-magnolta-inferiore-pistone",
+      "ref": null,
+      "name": "Magnolta Inferiore (Pistone)",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-collegamento-magnolta-b",
+      "ref": null,
+      "name": "Collegamento Magnolta-\"B\"",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-dosso-paso-valletta",
+      "ref": null,
+      "name": "Dosso Pasò (Valletta)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-collegamento-granvia-del-gallo-palabione-magnolta",
+      "ref": null,
+      "name": "Collegamento \"Granvia del Gallo\" Palabione-Magnolta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2300
+    },
+    {
+      "id": "slope-benedetti-superiore",
+      "ref": null,
+      "name": "Benedetti Superiore",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-benedetti-inferiore",
+      "ref": null,
+      "name": "Benedetti Inferiore",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-lago-palabione",
+      "ref": null,
+      "name": "Lago Palabione",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-salina",
+      "ref": null,
+      "name": "Salina",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-medici",
+      "ref": null,
+      "name": "Medici",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-b-del-palabione",
+      "ref": null,
+      "name": "\"B\" del Palabione",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-collegamento-b-magnolta",
+      "ref": null,
+      "name": "Collegamento \"B\"-Magnolta",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-c-del-palabione",
+      "ref": null,
+      "name": "\"C\" del Palabione",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-variante-dell-orso",
+      "ref": null,
+      "name": "Variante dell'Orso",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-k",
+      "ref": null,
+      "name": "\"K\"",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-collegamento-alto-palabione-baradello-palabione",
+      "ref": null,
+      "name": "Collegamento alto Palabione - Baradello - Palabione",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-a-collegamento-palabione-baradello",
+      "ref": null,
+      "name": "\"A\" collegamento Palabione-Baradello",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-superpanoramica",
+      "ref": null,
+      "name": "Superpanoramica",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 6500
+    },
+    {
+      "id": "slope-direttissima-superiore",
+      "ref": null,
+      "name": "Direttissima superiore",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-direttissima-inferiore",
+      "ref": null,
+      "name": "Direttissima inferiore",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-valscesa-est",
+      "ref": null,
+      "name": "Valscesa Est",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-valscesa-ovest",
+      "ref": null,
+      "name": "Valscesa Ovest",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-campetti",
+      "ref": null,
+      "name": "Campetti",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 9500
+    },
+    {
+      "id": "slope-collegamento-campetti-palabione",
+      "ref": null,
+      "name": "Collegamento Campetti-Palabione",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-collegamento-campetti-baradello",
+      "ref": null,
+      "name": "Collegamento Campetti-Baradello",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-collegamento-baradello-campetti",
+      "ref": null,
+      "name": "Collegamento Baradello - Campetti",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400
+    }
+  ]
+}

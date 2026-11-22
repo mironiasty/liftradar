@@ -1,0 +1,72 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "korenov-rejdice",
+  "country": "cz",
+  "fetched_at": "2026-11-22T08:40:36.257577+01:00",
+  "updated_at": null,
+  "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-rejdice-korenov",
+  "lifts": [
+    {
+      "id": "lift-lanova-draha-poma-moravka-stepanka",
+      "ref": null,
+      "name": "Lanová dráha POMA Morávka - Štěpánka",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-panorama",
+      "ref": null,
+      "name": "PANORAMA",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lyzarska-a-snowboardova-skola-telemark",
+      "ref": null,
+      "name": "Lyžařská a snowboardová škola Telemark-",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-moravka",
+      "ref": null,
+      "name": "Morávka",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750
+    },
+    {
+      "id": "slope-panorama",
+      "ref": null,
+      "name": "Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650
+    },
+    {
+      "id": "slope-sbx-4cross-a-skicros",
+      "ref": null,
+      "name": "SBX, 4cross a skicros",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 850
+    }
+  ]
+}

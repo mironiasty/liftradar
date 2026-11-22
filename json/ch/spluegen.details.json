@@ -1,0 +1,233 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "spluegen",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254264+01:00",
+  "updated_at": "2026-11-19T16:35:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=86&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-splugen-blachtaboda",
+      "ref": null,
+      "name": "A • Splügen-Blachtaboda",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-blachtaboda-tanatzhohi",
+      "ref": null,
+      "name": "B • Blachtaboda-Tanatzhöhi",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-tanatz",
+      "ref": null,
+      "name": "C • Tanatz",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-bodmenstafel",
+      "ref": null,
+      "name": "D • Bodmenstafel",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-tamboalp",
+      "ref": null,
+      "name": "E • Tamboalp",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-zauberteppich",
+      "ref": null,
+      "name": "F • Zauberteppich",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-kinderland",
+      "ref": null,
+      "name": "G • Kinderland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-1-talpiste",
+      "ref": null,
+      "name": "1 • (1) Talpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-2-2-blachtaboda",
+      "ref": null,
+      "name": "2 • (2) Blachtaboda",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-3-3-funpiste",
+      "ref": null,
+      "name": "3 • (3) Funpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-4-4-tanatz",
+      "ref": null,
+      "name": "4 • (4) Tanatz",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-5-5-troglipiste",
+      "ref": null,
+      "name": "5 • (5) Tröglipiste",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-5a-5a-troglipiste-freeride",
+      "ref": null,
+      "name": "5a • (5a) Tröglipiste Freeride",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-6a-6a-tanatz-bodmenstafel-talpiste",
+      "ref": null,
+      "name": "6a • (6a) Tanatz - Bodmenstafel (Talpiste)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-6b-6b-bodmenstafel-tal-talpiste",
+      "ref": null,
+      "name": "6b • (6b) Bodmenstafel - Tal (Talpiste)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-7-7-tamboalp",
+      "ref": null,
+      "name": "7 • (7) Tamboalp",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-8-8-tanatz-traverse",
+      "ref": null,
+      "name": "8 • (8) Tanatz-Traverse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 600
+    },
+    {
+      "id": "slope-9-9-sesselpiste",
+      "ref": null,
+      "name": "9 • (9) Sesselpiste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2800
+    },
+    {
+      "id": "slope-10-10-alpetli",
+      "ref": null,
+      "name": "10 • (10) Alpetli",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "slope-11-11-kanonenrohr-traverse",
+      "ref": null,
+      "name": "11 • (11) Kanonenrohr-Traverse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-12-12-lattenstafel",
+      "ref": null,
+      "name": "12 • (12) Lattenstafel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-13-13-bodmenstafel",
+      "ref": null,
+      "name": "13 • (13) Bodmenstafel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "slope-14-14-huscherabach",
+      "ref": null,
+      "name": "14 • (14) Hüscherabach",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    }
+  ]
+}

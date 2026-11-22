@@ -1,0 +1,92 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "strbske-pleso",
+  "country": "sk",
+  "fetched_at": "2026-11-22T08:40:36.260020+01:00",
+  "updated_at": null,
+  "source": "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-solisko",
+      "ref": null,
+      "name": "Solisko",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-spojka-solisko-medvedia-kopa",
+      "ref": null,
+      "name": "Spojka Solisko - Medvedia kopa",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "slope-esicko",
+      "ref": null,
+      "name": "Esíčko",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350
+    },
+    {
+      "id": "slope-interski",
+      "ref": null,
+      "name": "Interski",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "slope-turisticka",
+      "ref": null,
+      "name": "Turistická",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1750
+    },
+    {
+      "id": "slope-prepojka-medvedia-kopa",
+      "ref": null,
+      "name": "Prepojka Medvedia kopa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "slope-furkotka",
+      "ref": null,
+      "name": "Furkotka",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-prepojka-medvedia-kopa-furkota",
+      "ref": null,
+      "name": "Prepojka Medvedia kopa - Furkota",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "slope-junior",
+      "ref": null,
+      "name": "Junior",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 360
+    }
+  ]
+}

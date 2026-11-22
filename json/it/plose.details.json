@@ -1,0 +1,271 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "plose",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255871+01:00",
+  "updated_at": "2026-11-14T09:25:14.917882+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_718",
+      "ref": null,
+      "name": "Palmschoss",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_721",
+      "ref": null,
+      "name": "Pfannspitze",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_715",
+      "ref": null,
+      "name": "Plose 1",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_7110",
+      "ref": null,
+      "name": "Plose 2",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_723",
+      "ref": null,
+      "name": "Randötsch",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_717",
+      "ref": null,
+      "name": "Rifugio C A I (ex Plose)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_719",
+      "ref": null,
+      "name": "Rossalm",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:10_716",
+      "ref": null,
+      "name": "Schönboden (Kreuztal)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215941",
+      "ref": null,
+      "name": "Baerenloch",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215963",
+      "ref": null,
+      "name": "Crazy Horse",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_6496665",
+      "ref": null,
+      "name": "Erler",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215942",
+      "ref": null,
+      "name": "Familienabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215944",
+      "ref": null,
+      "name": "Famlienabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215954",
+      "ref": null,
+      "name": "Luesen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215959",
+      "ref": null,
+      "name": "Palmschoss",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215961",
+      "ref": null,
+      "name": "Pfannspitz_1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215962",
+      "ref": null,
+      "name": "Pfannspitz_2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215964",
+      "ref": null,
+      "name": "Plose_1 Schoenboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215966",
+      "ref": null,
+      "name": "Plose_3",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215940",
+      "ref": null,
+      "name": "Plose_Ost",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215965",
+      "ref": null,
+      "name": "Plose Schoenboden",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215970",
+      "ref": null,
+      "name": "Querfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215971",
+      "ref": null,
+      "name": "Randötsch links",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215986",
+      "ref": null,
+      "name": "Rossalm 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4800
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215985",
+      "ref": null,
+      "name": "Rossalm 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215987",
+      "ref": null,
+      "name": "Trainingspiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:10_215990",
+      "ref": null,
+      "name": "Trametsch",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 8190
+    }
+  ]
+}

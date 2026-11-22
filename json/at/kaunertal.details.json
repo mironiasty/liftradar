@@ -1,0 +1,311 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kaunertal",
+  "country": "at",
+  "fetched_at": "2026-11-22T08:40:36.249406+01:00",
+  "updated_at": "2026-11-14T08:30:00+01:00",
+  "source": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/nowbox.html",
+  "lifts": [
+    {
+      "id": "lift-norderjoch",
+      "ref": null,
+      "name": "Nörderjoch",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fernerlift",
+      "ref": null,
+      "name": "Fernerlift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-karlesjochbahn",
+      "ref": null,
+      "name": "Karlesjochbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sonnenlift",
+      "ref": null,
+      "name": "Sonnenlift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ochsenalmbahn-i",
+      "ref": null,
+      "name": "Ochsenalmbahn I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ochsenalmbahn-ii",
+      "ref": null,
+      "name": "Ochsenalmbahn II",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-weiseejochbahn",
+      "ref": null,
+      "name": "Weißseejochbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-falginjochbahn",
+      "ref": null,
+      "name": "Falginjochbahn",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-zauberteppich",
+      "ref": null,
+      "name": "Zauberteppich",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-dorflift-in-feichten",
+      "ref": null,
+      "name": "Dorflift in Feichten",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-murml",
+      "ref": null,
+      "name": "1 Murml",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 3184
+    },
+    {
+      "id": "slope-2-kanonenrohr",
+      "ref": null,
+      "name": "2 Kanonenrohr",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": 2936
+    },
+    {
+      "id": "slope-3-norder-west",
+      "ref": null,
+      "name": "3 Nörder West",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 776
+    },
+    {
+      "id": "slope-4-norder-ost",
+      "ref": null,
+      "name": "4 Nörder Ost",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 761
+    },
+    {
+      "id": "slope-5-promenade",
+      "ref": null,
+      "name": "5 Promenade",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1023
+    },
+    {
+      "id": "slope-7-express",
+      "ref": null,
+      "name": "7 Express",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 416
+    },
+    {
+      "id": "slope-8-weiseegenuss",
+      "ref": null,
+      "name": "8 Weißseegenuss",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1741
+    },
+    {
+      "id": "slope-9-eisschwung",
+      "ref": null,
+      "name": "9 Eisschwung",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 376
+    },
+    {
+      "id": "slope-10-weiseeclassic",
+      "ref": null,
+      "name": "10 Weißseeclassic",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 1057
+    },
+    {
+      "id": "slope-11-black-ibex",
+      "ref": null,
+      "name": "11 Black Ibex",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 604
+    },
+    {
+      "id": "slope-12-ferner-ost",
+      "ref": null,
+      "name": "12 Ferner Ost",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 599
+    },
+    {
+      "id": "slope-14-sudtirolerweg",
+      "ref": null,
+      "name": "14 Südtirolerweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 1204
+    },
+    {
+      "id": "slope-15-karles-easy",
+      "ref": null,
+      "name": "15 Karles-Easy",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1056
+    },
+    {
+      "id": "slope-16-karles-expert",
+      "ref": null,
+      "name": "16 Karles-Expert",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1704
+    },
+    {
+      "id": "slope-17-vronipiste",
+      "ref": null,
+      "name": "17 Vronipiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": 452
+    },
+    {
+      "id": "slope-18-wiesejaggl",
+      "ref": null,
+      "name": "18 Wiesejaggl",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": 1099
+    },
+    {
+      "id": "slope-19-vronitunnel",
+      "ref": null,
+      "name": "19 Vronitunnel",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2898
+    },
+    {
+      "id": "slope-20-freier-fall",
+      "ref": null,
+      "name": "20 Freier Fall",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 189
+    },
+    {
+      "id": "slope-21-adlerpiste",
+      "ref": null,
+      "name": "21 Adlerpiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 680
+    },
+    {
+      "id": "slope-22-schmugglerin",
+      "ref": null,
+      "name": "22 Schmugglerin",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2523
+    },
+    {
+      "id": "slope-23-wallfahrer",
+      "ref": null,
+      "name": "23 Wallfahrer",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1111
+    }
+  ]
+}

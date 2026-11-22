@@ -1,0 +1,168 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "la-berra",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254008+01:00",
+  "updated_at": "2026-11-22T04:00:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=213&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-gite-d-allieres",
+      "ref": null,
+      "name": "Gîte d'Allières",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-gite-des-communs",
+      "ref": null,
+      "name": "Gîte des Communs",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-le-brand-la-gormanda",
+      "ref": null,
+      "name": "Le Brand - La Gormanda",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-teleski-debutant",
+      "ref": null,
+      "name": "Téléski débutant",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-jardin-des-neiges",
+      "ref": null,
+      "name": "Tapis Jardin des neiges",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-le-brand-la-berra",
+      "ref": null,
+      "name": "Le Brand - La Berra",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-petite-berra",
+      "ref": null,
+      "name": "1 • Petite Berra",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-2-allieres",
+      "ref": null,
+      "name": "2 • Allières",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-3-plan-des-gouilles",
+      "ref": null,
+      "name": "3 • Plan des Gouilles",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-4-le-brand",
+      "ref": null,
+      "name": "4 • Le Brand",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-5-espace-debutant",
+      "ref": null,
+      "name": "5 • Espace débutant",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-11-la-gormanda",
+      "ref": null,
+      "name": "11 • La Gormanda",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-12-gite-des-communs",
+      "ref": null,
+      "name": "12 • Gîte des Communs",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-13-piste-course",
+      "ref": null,
+      "name": "13 • Piste course",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-14-la-tchaka",
+      "ref": null,
+      "name": "14 • La Tchaka",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-15-les-pointes",
+      "ref": null,
+      "name": "15 • Les Pointes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "soerenberg",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254254+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=177&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-sorenberg-brienzer-rothorn",
+      "ref": null,
+      "name": "Sörenberg – Brienzer Rothorn",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-eisee-brienzer-rothorn",
+      "ref": null,
+      "name": "Eisee – Brienzer Rothorn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-habchegg-verbindungslift-rothorn-dorf",
+      "ref": null,
+      "name": "Habchegg (Verbindungslift Rothorn – Dorf )",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sorenberg-platz",
+      "ref": null,
+      "name": "Sörenberg – Platz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-steinetli",
+      "ref": null,
+      "name": "Steinetli",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sorenberg-rossweid",
+      "ref": null,
+      "name": "Sörenberg – Rossweid",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-doppelskilift-rossweid",
+      "ref": null,
+      "name": "Doppelskilift Rossweid",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-schonisei",
+      "ref": null,
+      "name": "Schönisei",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-dorf-ag1",
+      "ref": null,
+      "name": "Dorf / AG1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-doppelskilift-schwarzenegg-ag2",
+      "ref": null,
+      "name": "Doppelskilift Schwarzenegg / AG2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hundsknubel",
+      "ref": null,
+      "name": "Hundsknubel",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ochsenweid-zubringerlift-08-30-12-00-uhr",
+      "ref": null,
+      "name": "Ochsenweid Zubringerlift (08.30 - 12.00 Uhr)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-sonnenpiste-eisee",
+      "ref": null,
+      "name": "1 • Sonnenpiste Eisee",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-2-eisee",
+      "ref": null,
+      "name": "2 • Eisee",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-3-talabfahrt-rothorn",
+      "ref": null,
+      "name": "3 • Talabfahrt Rothorn",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4000
+    },
+    {
+      "id": "slope-3-variante-wald",
+      "ref": null,
+      "name": "3 • Variante Wald",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-verbindung-sorenberg-platz",
+      "ref": null,
+      "name": "Verbindung Sörenberg Platz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-verbindung-rothorn",
+      "ref": null,
+      "name": "Verbindung Rothorn",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-4-hinterschwarzenegg-steinetli-altes-trassee",
+      "ref": null,
+      "name": "4 • Hinterschwarzenegg - Steinetli (altes Trassee)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-4b-hinterschwarzenegg-steinetli",
+      "ref": null,
+      "name": "4b • Hinterschwarzenegg - Steinetli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-5-hinterschwarzenegg-steinetli-fluepiste",
+      "ref": null,
+      "name": "5 • Hinterschwarzenegg - Steinetli (Fluepiste)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-18-schwand-platz",
+      "ref": null,
+      "name": "18 • Schwand - Platz",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-19-steinetli-platz-schwandhoger",
+      "ref": null,
+      "name": "19 • Steinetli - Platz (Schwandhoger)",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-21-steinetli-rossweid",
+      "ref": null,
+      "name": "21 • Steinetli - Rossweid",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-22-rossweid-steinetli",
+      "ref": null,
+      "name": "22 • Rossweid - Steinetli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-rossweidli",
+      "ref": null,
+      "name": "Rossweidli",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-6-talabfahrt-rossweid",
+      "ref": null,
+      "name": "6 • Talabfahrt Rossweid",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-6c-schwand-dorf",
+      "ref": null,
+      "name": "6c • Schwand - Dorf",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-7-husili",
+      "ref": null,
+      "name": "7 • Hüsili",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-hundsknubel-schwarzenegg",
+      "ref": null,
+      "name": "Hundsknubel - Schwarzenegg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-hundsknubel",
+      "ref": null,
+      "name": "Hundsknubel",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-8-schwarzenegg-ag-2",
+      "ref": null,
+      "name": "8 • Schwarzenegg - AG 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-8b-ag-2-dorf",
+      "ref": null,
+      "name": "8b • AG 2 - Dorf",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-9-dorfpiste",
+      "ref": null,
+      "name": "9 • Dorfpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000
+    },
+    {
+      "id": "slope-20-steinetli-schwarzenegg",
+      "ref": null,
+      "name": "20 • Steinetli - Schwarzenegg",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-10-grossmutter",
+      "ref": null,
+      "name": "10 • Grossmutter",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3700
+    },
+    {
+      "id": "slope-11c-schonisei",
+      "ref": null,
+      "name": "11c • Schönisei",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    }
+  ]
+}

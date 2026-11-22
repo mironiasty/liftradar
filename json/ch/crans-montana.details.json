@@ -1,0 +1,933 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "crans-montana",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253823+01:00",
+  "updated_at": "2026-11-22T08:31:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=141&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-a-crans-merbe-cry-d-er",
+      "ref": null,
+      "name": "A • Crans-Merbé-Cry d'Er",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-bellalui",
+      "ref": null,
+      "name": "B • Bellalui",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-chetseron",
+      "ref": null,
+      "name": "C • Chetseron",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-cry-d-er",
+      "ref": null,
+      "name": "D • Cry d'Er",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-merignou",
+      "ref": null,
+      "name": "E • Merignou",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-snowpark",
+      "ref": null,
+      "name": "F • Snowpark",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-montana-arnouva",
+      "ref": null,
+      "name": "G • Montana - Arnouva",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-arnouva-cry-d-er",
+      "ref": null,
+      "name": "H • Arnouva - Cry d'Er",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-i-nationale-express",
+      "ref": null,
+      "name": "I • Nationale Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-j-zabona",
+      "ref": null,
+      "name": "J • Zabona",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-k-verdets",
+      "ref": null,
+      "name": "K • Verdets",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-l-barzettes-marolires-violettes",
+      "ref": null,
+      "name": "L • Barzettes-Marolires-Violettes",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-m-funitel-violettes-plaine-morte",
+      "ref": null,
+      "name": "M • Funitel Violettes-Plaine-Morte",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-n-cabane-de-bois-carl-f-bucherer",
+      "ref": null,
+      "name": "N • Cabane de bois (Carl F. Bucherer)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-lac",
+      "ref": null,
+      "name": "O • Lac",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-r-toula-inferieur",
+      "ref": null,
+      "name": "R • Toula Inférieur",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-r-toula-superieur",
+      "ref": null,
+      "name": "R • Toula Supérieur",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-s-tsa",
+      "ref": null,
+      "name": "S • Tsa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-espace-decouverte",
+      "ref": null,
+      "name": "Espace découverte",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-island-golf-2",
+      "ref": null,
+      "name": "SNOW ISLAND Golf 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-island-golf-baby",
+      "ref": null,
+      "name": "SNOW ISLAND Golf Baby",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-island-tapis-driving-1",
+      "ref": null,
+      "name": "SNOW ISLAND Tapis Driving 1",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-island-tapis-driving-2",
+      "ref": null,
+      "name": "SNOW ISLAND Tapis Driving 2",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snow-island-tapis-sporting",
+      "ref": null,
+      "name": "SNOW ISLAND Tapis Sporting",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-boulevard",
+      "ref": null,
+      "name": "1 • Boulevard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-2-chetseron",
+      "ref": null,
+      "name": "2 • Chetseron",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-2-chetseron-2",
+      "ref": null,
+      "name": "2 • Chetseron",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-2-chetseron-3",
+      "ref": null,
+      "name": "2 • Chetseron",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-2a-chemin-des-amoureux",
+      "ref": null,
+      "name": "2a • Chemin des Amoureux",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-2b-les-planches",
+      "ref": null,
+      "name": "2b • Les Planches",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 5900
+    },
+    {
+      "id": "slope-3-merbe-superieure",
+      "ref": null,
+      "name": "3 • Merbé supérieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-3-merbe-inferieure",
+      "ref": null,
+      "name": "3 • Merbé inférieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-4-cry-d-er-superieure",
+      "ref": null,
+      "name": "4 • Cry d'Er supérieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-4-cry-d-er-inferieure",
+      "ref": null,
+      "name": "4 • Cry d'Er inférieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-4a-chemin-des-jeeps-superieure",
+      "ref": null,
+      "name": "4a • Chemin des Jeeps supérieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-4a-chemin-des-jeeps-inferieure",
+      "ref": null,
+      "name": "4a • Chemin des Jeeps inférieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-4b-chemin-des-dames",
+      "ref": null,
+      "name": "4b • Chemin des dames",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3900
+    },
+    {
+      "id": "slope-4c-verdets",
+      "ref": null,
+      "name": "4c • Verdets",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-4d-kodak",
+      "ref": null,
+      "name": "4d • Kodak",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-4e-traverse-de-corbyre",
+      "ref": null,
+      "name": "4e • Traverse de Corbyre",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-4f-chemin-de-montana",
+      "ref": null,
+      "name": "4f • Chemin de Montana",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1200
+    },
+    {
+      "id": "slope-5-pas-du-loup",
+      "ref": null,
+      "name": "5 • Pas du loup",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4400
+    },
+    {
+      "id": "slope-5a-ski-video",
+      "ref": null,
+      "name": "5a • Ski Video",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-6-etoile-marolires",
+      "ref": null,
+      "name": "6 • Etoile-Marolires",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-6-mont-lachaux",
+      "ref": null,
+      "name": "6 • Mont-Lachaux",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-6-mont-lachaux-2",
+      "ref": null,
+      "name": "6 • Mont-Lachaux",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-6a-mont-lachaux-slalom",
+      "ref": null,
+      "name": "6a • Mont-Lachaux Slalom",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-7-merignou",
+      "ref": null,
+      "name": "7 • Mérignou",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-7a-brizzly",
+      "ref": null,
+      "name": "7a • Brizzly",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-7b-easy-snowpark",
+      "ref": null,
+      "name": "7b • Easy Snowpark",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-7c-pro-snowpark",
+      "ref": null,
+      "name": "7c • Pro Snowpark",
+      "difficulty": "other",
+      "colour": "orange",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-8-bellalui",
+      "ref": null,
+      "name": "8 • Bellalui",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "slope-8a-ski-club",
+      "ref": null,
+      "name": "8a • Ski Club",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-8b-t2",
+      "ref": null,
+      "name": "8b • T2",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2100
+    },
+    {
+      "id": "slope-9-itineraire-zabona",
+      "ref": null,
+      "name": "9 • Itinéraire Zabona",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-10-zabona",
+      "ref": null,
+      "name": "10 • Zabona",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-11-col-du-pochet",
+      "ref": null,
+      "name": "11 • Col du pochet",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "slope-12-nationale-superieure",
+      "ref": null,
+      "name": "12 • Nationale supérieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-12-nationale-intermediaire",
+      "ref": null,
+      "name": "12 • Nationale intermédiaire",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-12-nationale-inferieure-stade",
+      "ref": null,
+      "name": "12 • Nationale inférieure (stade)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-12a-marmottes",
+      "ref": null,
+      "name": "12a • Marmottes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "slope-12b-nationale-2",
+      "ref": null,
+      "name": "12b • Nationale 2",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-13-charly",
+      "ref": null,
+      "name": "13 • Charly",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1700
+    },
+    {
+      "id": "slope-14-ancienne-nationale",
+      "ref": null,
+      "name": "14 • Ancienne Nationale",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-14a-les-caves",
+      "ref": null,
+      "name": "14a • Les Caves",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-15-les-gouilles",
+      "ref": null,
+      "name": "15 • Les Gouilles",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-15-brigitte-superieure",
+      "ref": null,
+      "name": "15 • Brigitte supérieure",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-15-brigitte-inferieure",
+      "ref": null,
+      "name": "15 • Brigitte inférieure",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900
+    },
+    {
+      "id": "slope-15-brigitte-mayen-a-cina-retour-barzettes",
+      "ref": null,
+      "name": "15 • Brigitte Mayen à Cina retour barzettes",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-15a-cabane-de-bois",
+      "ref": null,
+      "name": "15a • Cabane de bois",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-15b-bovereche",
+      "ref": null,
+      "name": "15b • Bovèrèche",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-15c-le-geiger",
+      "ref": null,
+      "name": "15c • Le Geiger",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-16-gina",
+      "ref": null,
+      "name": "16 • Gina",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1600
+    },
+    {
+      "id": "slope-17-barmaz",
+      "ref": null,
+      "name": "17 • Barmaz",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-18-tonossi",
+      "ref": null,
+      "name": "18 • Tonossi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3400
+    },
+    {
+      "id": "slope-18a-le-plat",
+      "ref": null,
+      "name": "18a • Le Plat",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-19-kandahar-le-creux-de-la-bovereche",
+      "ref": null,
+      "name": "19 • Kandahar - Le Creux de la Boverèche",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-19-kandahar",
+      "ref": null,
+      "name": "19 • Kandahar",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 4900
+    },
+    {
+      "id": "slope-21-le-lac",
+      "ref": null,
+      "name": "21 • Le Lac",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-22-la-tsa",
+      "ref": null,
+      "name": "22 • La Tsa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-22a-petit-bonvin",
+      "ref": null,
+      "name": "22a • Petit Bonvin",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-22b-itineraire-de-la-tieche",
+      "ref": null,
+      "name": "22b • Itinéraire de la Tièche",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-23-aminona",
+      "ref": null,
+      "name": "23 • Aminona",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000
+    },
+    {
+      "id": "slope-23a-b2",
+      "ref": null,
+      "name": "23a • B2",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-23b-arbiche",
+      "ref": null,
+      "name": "23b • Arbiche",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-23c-tsampis",
+      "ref": null,
+      "name": "23c • Tsampis",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-24-dahu",
+      "ref": null,
+      "name": "24 • Dahu",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-24a-toula-rouge-inferieure",
+      "ref": null,
+      "name": "24a • Toula Rouge inférieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-24a-toula-rouge-superieure",
+      "ref": null,
+      "name": "24a • Toula Rouge supérieure",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-24b-les-taules",
+      "ref": null,
+      "name": "24b • Les Taules",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-24c-toula-noire",
+      "ref": null,
+      "name": "24c • Toula Noire",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2900
+    },
+    {
+      "id": "slope-24d-derupe",
+      "ref": null,
+      "name": "24d • Dérupe",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2500
+    },
+    {
+      "id": "slope-24e-les-bosses",
+      "ref": null,
+      "name": "24e • Les Bosses",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-25-prabaron",
+      "ref": null,
+      "name": "25 • Prabaron",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-26-ploumachit",
+      "ref": null,
+      "name": "26 • Ploumachit",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-27-colombire",
+      "ref": null,
+      "name": "27 • Colombire",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-28-snow-island-golf",
+      "ref": null,
+      "name": "28 • SNOW ISLAND Golf",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300
+    }
+  ]
+}

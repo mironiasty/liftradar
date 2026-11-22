@@ -1,0 +1,697 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "civetta",
+  "country": "it",
+  "fetched_at": "2026-11-22T08:40:36.255898+01:00",
+  "updated_at": "2026-11-16T17:23:02.643328+01:00",
+  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "lifts": [
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_685",
+      "ref": null,
+      "name": "Alleghe/Piani di Pezzè",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_687",
+      "ref": null,
+      "name": "Baby - Piani di Pezzè",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_690",
+      "ref": null,
+      "name": "Belamont",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_699",
+      "ref": null,
+      "name": "Campetto",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_691",
+      "ref": null,
+      "name": "Campo Scuola Mariaz",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_701",
+      "ref": null,
+      "name": "Casot di Pecol",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_702",
+      "ref": null,
+      "name": "Casot di Pecol-Col de la Grava",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_689",
+      "ref": null,
+      "name": "Col Fioret",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_697",
+      "ref": null,
+      "name": "Cristelin",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_696",
+      "ref": null,
+      "name": "Delle Coste",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_709",
+      "ref": null,
+      "name": "Fertazza",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_710",
+      "ref": null,
+      "name": "Lastiè",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_706",
+      "ref": null,
+      "name": "Palafavera",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_700",
+      "ref": null,
+      "name": "Palma",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_695",
+      "ref": null,
+      "name": "Pecol/Pian del Crep",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_132913688",
+      "ref": null,
+      "name": "Pelmetto",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_688",
+      "ref": null,
+      "name": "Pelmo",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_708",
+      "ref": null,
+      "name": "Pescul/Fertazza",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_686",
+      "ref": null,
+      "name": "Piani di Pezzè/Col dei Baldi",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_705",
+      "ref": null,
+      "name": "Pioda",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_711",
+      "ref": null,
+      "name": "Rio Canedo",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_712",
+      "ref": null,
+      "name": "Santa Fosca",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:12_698",
+      "ref": null,
+      "name": "Valgranda-Col de la Grava",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187043",
+      "ref": null,
+      "name": "2000",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1989
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550874",
+      "ref": null,
+      "name": "Azzurra",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 786
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550875",
+      "ref": null,
+      "name": "Baby Cabinovia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550898",
+      "ref": null,
+      "name": "Bait",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2457
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550873",
+      "ref": null,
+      "name": "Baldi",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 930
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550877",
+      "ref": null,
+      "name": "Belamont 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 966
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550878",
+      "ref": null,
+      "name": "Belamont 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1243
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550890",
+      "ref": null,
+      "name": "Campo Scuola Baby",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 234
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187098",
+      "ref": null,
+      "name": "Campo Scuola Campetto",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 138
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550876",
+      "ref": null,
+      "name": "Campo Scuola Mariaz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 260
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550900",
+      "ref": null,
+      "name": "Campo Scuola S. Fosca",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550891",
+      "ref": null,
+      "name": "Casot",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1177
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550901",
+      "ref": null,
+      "name": "Cima Fertazza sx",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 390
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550879",
+      "ref": null,
+      "name": "Civetta",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1137
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550880",
+      "ref": null,
+      "name": "Coldai",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3595
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550903",
+      "ref": null,
+      "name": "Col Fioret",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 697
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550882",
+      "ref": null,
+      "name": "Collegamento cab. Alleghe - Piani Pezzè",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187044",
+      "ref": null,
+      "name": "Cornia",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1287
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550892",
+      "ref": null,
+      "name": "Crep",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1006
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187057",
+      "ref": null,
+      "name": "Cristelin 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 814
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187058",
+      "ref": null,
+      "name": "Cristelin 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1320
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550889",
+      "ref": null,
+      "name": "Della Grava",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1841
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187045",
+      "ref": null,
+      "name": "Duel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1638
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550888",
+      "ref": null,
+      "name": "Fernazza",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1664
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550904",
+      "ref": null,
+      "name": "Fertazza",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1040
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550896",
+      "ref": null,
+      "name": "Fertazza - Col fioret",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550905",
+      "ref": null,
+      "name": "Fontana Fredda",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 936
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187050",
+      "ref": null,
+      "name": "Foppe",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1487
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550895",
+      "ref": null,
+      "name": "Forcella Alleghe",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 560
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550907",
+      "ref": null,
+      "name": "Forcella Pecol",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 519
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550906",
+      "ref": null,
+      "name": "Forcella Pecol 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 985
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187055",
+      "ref": null,
+      "name": "Grava 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1516
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187048",
+      "ref": null,
+      "name": "Laghetto",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1192
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550881",
+      "ref": null,
+      "name": "Lavadoi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1196
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550908",
+      "ref": null,
+      "name": "Le Ciaune",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1476
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187053",
+      "ref": null,
+      "name": "Le Coste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1915
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187051",
+      "ref": null,
+      "name": "Lendina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3744
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550893",
+      "ref": null,
+      "name": "Nera",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1060
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_132913689",
+      "ref": null,
+      "name": "Pelmetto",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550894",
+      "ref": null,
+      "name": "Pelmo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 765
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550886",
+      "ref": null,
+      "name": "Pian dei Sec",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2955
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550887",
+      "ref": null,
+      "name": "Raccordo Casot",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 511
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187101",
+      "ref": null,
+      "name": "Raccordo Casot di Pecol-Lendina",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550885",
+      "ref": null,
+      "name": "Rientro",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3501
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550884",
+      "ref": null,
+      "name": "Roa Bianca",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2941
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550883",
+      "ref": null,
+      "name": "Ru de Porta",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1743
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_6550909",
+      "ref": null,
+      "name": "Salere",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3665
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:12_187099",
+      "ref": null,
+      "name": "Valgranda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1105
+    }
+  ]
+}

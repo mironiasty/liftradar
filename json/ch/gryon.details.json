@@ -1,0 +1,186 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "gryon",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253954+01:00",
+  "updated_at": "2026-11-19T09:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=105&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-s-barboleuse-les-chaux",
+      "ref": null,
+      "name": "S • Barboleuse-Les Chaux",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-sodoleuvre-la-croix",
+      "ref": null,
+      "name": "T • Sodoleuvre-La Croix",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-u-la-gryonne",
+      "ref": null,
+      "name": "U • La Gryonne",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-v-plan-metroz",
+      "ref": null,
+      "name": "V • Plan-Métroz",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-x-fracherets",
+      "ref": null,
+      "name": "X • Fracherets",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-des-chaux",
+      "ref": null,
+      "name": "Tapis des Chaux",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-40-populaire-gryon",
+      "ref": null,
+      "name": "40 • Populaire Gryon",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 3500
+    },
+    {
+      "id": "slope-41-fracherets",
+      "ref": null,
+      "name": "41 • Fracherets",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-41a-la-croix-bleu",
+      "ref": null,
+      "name": "41a • La Croix bleu",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1400
+    },
+    {
+      "id": "slope-42-la-croix-rouge",
+      "ref": null,
+      "name": "42 • La Croix Rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-43-la-croix-noir",
+      "ref": null,
+      "name": "43 • La Croix Noir",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-44-couelle",
+      "ref": null,
+      "name": "44 • Couelle",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-45-leurins-jaune-frience",
+      "ref": null,
+      "name": "45 • Leurins jaune (Frience)",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    },
+    {
+      "id": "slope-46-fracherets-rouge",
+      "ref": null,
+      "name": "46 • Fracherets Rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-47-sodoleuvre-bleue",
+      "ref": null,
+      "name": "47 • Sodoleuvre bleue",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2400
+    },
+    {
+      "id": "slope-48-sodoleuvre-rouge",
+      "ref": null,
+      "name": "48 • Sodoleuvre rouge",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-49-sodoleuvre-noir",
+      "ref": null,
+      "name": "49 • Sodoleuvre noir",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-50-gryonne",
+      "ref": null,
+      "name": "50 • Gryonne",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 800
+    }
+  ]
+}

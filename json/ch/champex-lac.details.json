@@ -1,0 +1,155 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "champex-lac",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.253795+01:00",
+  "updated_at": "2026-11-21T08:50:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=82&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-q-la-breya-1",
+      "ref": null,
+      "name": "Q • La Breya 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-r-lac",
+      "ref": null,
+      "name": "R • Lac",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-s-la-breya-2",
+      "ref": null,
+      "name": "S • La Breya 2",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-petite-breya",
+      "ref": null,
+      "name": "T • Petite Breya",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-11-la-crete",
+      "ref": null,
+      "name": "11. La Crête",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-la-bleue",
+      "ref": null,
+      "name": "La Bleue",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 10300
+    },
+    {
+      "id": "slope-combe-1",
+      "ref": null,
+      "name": "Combe 1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-combe-2",
+      "ref": null,
+      "name": "Combe 2",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800
+    },
+    {
+      "id": "slope-la-noire",
+      "ref": null,
+      "name": "La Noire",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 500
+    },
+    {
+      "id": "slope-le-vallon",
+      "ref": null,
+      "name": "Le Vallon",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-le-lac",
+      "ref": null,
+      "name": "Le Lac",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200
+    },
+    {
+      "id": "slope-petite-breya",
+      "ref": null,
+      "name": "Petite Breya",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-8-combe-des-arolles",
+      "ref": null,
+      "name": "8 • Combe des Arolles",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-9-le-renard",
+      "ref": null,
+      "name": "9 • Le Renard",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    },
+    {
+      "id": "slope-10-couloir-des-melezes",
+      "ref": null,
+      "name": "10 • Couloir des Mélèzes",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null
+    }
+  ]
+}

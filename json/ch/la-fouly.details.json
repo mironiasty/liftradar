@@ -1,0 +1,173 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "la-fouly",
+  "country": "ch",
+  "fetched_at": "2026-11-22T08:40:36.254016+01:00",
+  "updated_at": "2026-11-22T08:30:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=83&saison=1&ref=contentBox",
+  "lifts": [
+    {
+      "id": "lift-n-arpalle-1",
+      "ref": null,
+      "name": "N • Arpalle 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-o-petite-combe",
+      "ref": null,
+      "name": "O • Petite Combe",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-p-arpalle-2",
+      "ref": null,
+      "name": "P • Arpalle 2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-q-tapis-glisse",
+      "ref": null,
+      "name": "Q • Tapis-glisse",
+      "type": "carpet",
+      "status": "open",
+      "length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-petite-combe",
+      "ref": null,
+      "name": "1 • Petite Combe",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 600
+    },
+    {
+      "id": "slope-2-la-route",
+      "ref": null,
+      "name": "2 • La Route",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-3-la-marmotte",
+      "ref": null,
+      "name": "3 • La Marmotte",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-4-le-chemin-du-loup",
+      "ref": null,
+      "name": "4 • Le Chemin du Loup",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1900
+    },
+    {
+      "id": "slope-5-le-plateau",
+      "ref": null,
+      "name": "5 • Le Plateau",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1100
+    },
+    {
+      "id": "slope-6-le-lievre",
+      "ref": null,
+      "name": "6 • Le Liévre",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-7-l-ecurie",
+      "ref": null,
+      "name": "7 • L'Ecurie",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-8-la-combe-verte",
+      "ref": null,
+      "name": "8 • La Combe verte",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-9-les-bassins",
+      "ref": null,
+      "name": "9 • Les Bassins",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-10-le-chamois",
+      "ref": null,
+      "name": "10 • Le Chamois",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 700
+    },
+    {
+      "id": "slope-11-le-bouquetin",
+      "ref": null,
+      "name": "11 • Le Bouquetin",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1000
+    },
+    {
+      "id": "slope-12-les-melezes",
+      "ref": null,
+      "name": "12 • Les Mélèzes",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1300
+    },
+    {
+      "id": "slope-13-les-luis",
+      "ref": null,
+      "name": "13 • Les Luis",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": 1500
+    }
+  ]
+}
