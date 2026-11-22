@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "corvatsch",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253815+01:00",
-  "updated_at": "2026-11-22T08:31:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007257+01:00",
+  "updated_at": "2026-11-22T13:31:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=42&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "open",
       "length_m": null,
+      "map_length_m": 2730,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1690,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1500,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "open",
       "length_m": null,
+      "map_length_m": 710,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 970,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "chairlift",
       "status": "open",
       "length_m": null,
+      "map_length_m": 1910,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "open",
       "length_m": null,
+      "map_length_m": 2150,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 520,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1710,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1360,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 750,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 960,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 640,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -169,7 +183,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3500
+      "length_m": 3500,
+      "map_length_m": null
     },
     {
       "id": "slope-01a-durrenast",
@@ -178,7 +193,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 5800
+      "length_m": 5800,
+      "map_length_m": null
     },
     {
       "id": "slope-02-fuorcla",
@@ -187,7 +203,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 6200
+      "length_m": 6200,
+      "map_length_m": null
     },
     {
       "id": "slope-03-roseg",
@@ -196,7 +213,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2900
+      "length_m": 2900,
+      "map_length_m": null
     },
     {
       "id": "slope-04-giand-alva",
@@ -205,7 +223,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3900
+      "length_m": 3900,
+      "map_length_m": null
     },
     {
       "id": "slope-05-hahnensee",
@@ -214,7 +233,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 13400
+      "length_m": 13400,
+      "map_length_m": null
     },
     {
       "id": "slope-06-mandra",
@@ -223,7 +243,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "open",
-      "length_m": 6700
+      "length_m": 6700,
+      "map_length_m": null
     },
     {
       "id": "slope-07-arlas",
@@ -232,7 +253,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3800
+      "length_m": 3800,
+      "map_length_m": null
     },
     {
       "id": "slope-08-lejins",
@@ -241,7 +263,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": null
     },
     {
       "id": "slope-09-surlej",
@@ -250,7 +273,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4000
+      "length_m": 4000,
+      "map_length_m": null
     },
     {
       "id": "slope-10a-chastelets",
@@ -259,7 +283,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
-      "length_m": 4100
+      "length_m": 4100,
+      "map_length_m": 1140
     },
     {
       "id": "slope-10b-chastelets-unten",
@@ -268,7 +293,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
-      "length_m": 4000
+      "length_m": 4000,
+      "map_length_m": 1360
     },
     {
       "id": "slope-10c-talabfahrt",
@@ -277,7 +303,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1300
     },
     {
       "id": "slope-11-crap-nair",
@@ -286,7 +313,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 670
     },
     {
       "id": "slope-12-curtinella-run",
@@ -295,7 +323,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
-      "length_m": 6900
+      "length_m": 6900,
+      "map_length_m": 1990
     },
     {
       "id": "slope-13-rabgiusa",
@@ -304,7 +333,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 9000
+      "length_m": 9000,
+      "map_length_m": 2760
     },
     {
       "id": "slope-15-ravulaunas",
@@ -313,7 +343,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": 910
     },
     {
       "id": "slope-16-valtellina",
@@ -322,7 +353,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2900
+      "length_m": 2900,
+      "map_length_m": 310
     },
     {
       "id": "slope-18-curtinella-unten",
@@ -331,7 +363,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 590
     },
     {
       "id": "slope-19-furtschellas",
@@ -340,7 +373,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 7900
+      "length_m": 7900,
+      "map_length_m": 150
     },
     {
       "id": "slope-19a-furtschellas-unten",
@@ -349,7 +383,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 5000
+      "length_m": 5000,
+      "map_length_m": 150
     },
     {
       "id": "slope-20-muntanella",
@@ -358,7 +393,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 1110
     },
     {
       "id": "slope-20a-alte-muntanella",
@@ -367,7 +403,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": null
     },
     {
       "id": "slope-21-chuderun",
@@ -376,7 +413,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1200
     },
     {
       "id": "slope-22-grialetsch",
@@ -385,7 +423,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 770
     },
     {
       "id": "slope-23-prasura",
@@ -394,7 +433,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 7800
+      "length_m": 7800,
+      "map_length_m": 2200
     }
   ]
 }

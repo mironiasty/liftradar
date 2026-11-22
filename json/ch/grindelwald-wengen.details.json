@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grindelwald-wengen",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.255673+01:00",
+  "fetched_at": "2026-11-22T13:40:33.008030+01:00",
   "updated_at": "2026-11-21T09:25:06+01:00",
   "source": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3050,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 30,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3130,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1000,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 690,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1060,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1860,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2090,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1640,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 600,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1750,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1760,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 130,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -200,6 +217,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 80,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -211,6 +229,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -222,6 +241,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -233,6 +253,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 6550,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -246,7 +267,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 3290
+      "length_m": 3290,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_100_1_gratbort",
@@ -255,7 +277,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 620
+      "length_m": 620,
+      "map_length_m": 1540
     },
     {
       "id": "grindelwald_wengen_track_116_27_oh_-_god",
@@ -264,7 +287,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_117_32_black_-_rock",
@@ -273,7 +297,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 2160
+      "length_m": 2160,
+      "map_length_m": 1900
     },
     {
       "id": "grindelwald_wengen_track_118_31_schwarzen",
@@ -282,7 +307,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 1430
     },
     {
       "id": "grindelwald_wengen_track_122_41_stoeckipiste",
@@ -291,7 +317,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1700
+      "length_m": 1700,
+      "map_length_m": 1420
     },
     {
       "id": "grindelwald_wengen_track_128_45_lauberhorn_weltcupstrecke",
@@ -300,7 +327,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 5120
     },
     {
       "id": "grindelwald_wengen_track_127_47_lauberhorn_weltcup_slalom",
@@ -309,7 +337,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1020
+      "length_m": 1020,
+      "map_length_m": 740
     },
     {
       "id": "grindelwald_wengen_track_125_45_hanneggbruecke_-_innerwengen",
@@ -318,7 +347,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1370
+      "length_m": 1370,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_135_41a_einfahrtspiste",
@@ -327,7 +357,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 550
+      "length_m": 550,
+      "map_length_m": 540
     },
     {
       "id": "grindelwald_wengen_track_136_1_grathula",
@@ -336,7 +367,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 650
+      "length_m": 650,
+      "map_length_m": 690
     },
     {
       "id": "grindelwald_wengen_track_1_3_holenstein_-_grindelwald_grund",
@@ -345,7 +377,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3070
+      "length_m": 3070,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_2_3_maennlichenlift_talst._-_holenstein",
@@ -354,7 +387,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_3_3_maennlichen",
@@ -363,7 +397,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3070
+      "length_m": 3070,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_6_21_kleine_scheidegg_-_grindelwald_grund",
@@ -372,7 +407,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3410
+      "length_m": 3410,
+      "map_length_m": 5300
     },
     {
       "id": "grindelwald_wengen_track_7_21_skilift_tschuggen_-_aspen",
@@ -381,7 +417,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3730
+      "length_m": 3730,
+      "map_length_m": 8790
     },
     {
       "id": "grindelwald_wengen_track_8_21_arven_-_skilift_tschuggen",
@@ -390,7 +427,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 8790
     },
     {
       "id": "grindelwald_wengen_track_12_43_standard_innerwengen",
@@ -399,7 +437,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1380
+      "length_m": 1380,
+      "map_length_m": 1480
     },
     {
       "id": "grindelwald_wengen_track_13_18_maennlichen_->_scheidegg",
@@ -408,7 +447,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 450
+      "length_m": 450,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_14_21_scheidegg_->_maennlichen",
@@ -417,7 +457,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 430
     },
     {
       "id": "grindelwald_wengen_track_18_21_kleine_scheidegg_-_arven",
@@ -426,7 +467,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1710
+      "length_m": 1710,
+      "map_length_m": 9090
     },
     {
       "id": "grindelwald_wengen_track_102_4_eggboden",
@@ -435,7 +477,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3290
+      "length_m": 3290,
+      "map_length_m": 640
     },
     {
       "id": "grindelwald_wengen_track_103_5_distelboden",
@@ -444,7 +487,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1040
+      "length_m": 1040,
+      "map_length_m": 1260
     },
     {
       "id": "grindelwald_wengen_track_105_7_sattelegg",
@@ -453,7 +497,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2510
+      "length_m": 2510,
+      "map_length_m": 3080
     },
     {
       "id": "grindelwald_wengen_track_106_8_gummi_sued",
@@ -462,7 +507,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2280
+      "length_m": 2280,
+      "map_length_m": 830
     },
     {
       "id": "grindelwald_wengen_track_107_11_baerhaag",
@@ -471,7 +517,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 4310
+      "length_m": 4310,
+      "map_length_m": 2030
     },
     {
       "id": "grindelwald_wengen_track_110_13_honegg_-_seeli",
@@ -480,7 +527,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2280
+      "length_m": 2280,
+      "map_length_m": 1950
     },
     {
       "id": "grindelwald_wengen_track_97_15_inberg",
@@ -489,7 +537,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2160
+      "length_m": 2160,
+      "map_length_m": 1100
     },
     {
       "id": "grindelwald_wengen_track_111_23_brandegg_-_aspen",
@@ -498,7 +547,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2390
+      "length_m": 2390,
+      "map_length_m": 1800
     },
     {
       "id": "grindelwald_wengen_track_115_26_punchball",
@@ -507,7 +557,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2050
+      "length_m": 2050,
+      "map_length_m": 2570
     },
     {
       "id": "grindelwald_wengen_track_119_34_mittelegg",
@@ -516,7 +567,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2050
+      "length_m": 2050,
+      "map_length_m": 1640
     },
     {
       "id": "grindelwald_wengen_track_120_35_moos",
@@ -525,7 +577,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1020
+      "length_m": 1020,
+      "map_length_m": 860
     },
     {
       "id": "grindelwald_wengen_track_123_42_lauberhorn",
@@ -534,7 +587,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2040
+      "length_m": 2040,
+      "map_length_m": 1320
     },
     {
       "id": "grindelwald_wengen_track_124_44_engi",
@@ -543,7 +597,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2160
+      "length_m": 2160,
+      "map_length_m": 2730
     },
     {
       "id": "grindelwald_wengen_track_126_46_huussengg",
@@ -552,7 +607,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 790
+      "length_m": 790,
+      "map_length_m": 680
     },
     {
       "id": "grindelwald_wengen_track_108_11_loogler",
@@ -561,7 +617,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1030
+      "length_m": 1030,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_137_3_maennlichen_holenstein_(eggboden)",
@@ -570,7 +627,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 550
+      "length_m": 550,
+      "map_length_m": 7690
     },
     {
       "id": "grindelwald_wengen_track_189_8b_gummi_sued",
@@ -579,7 +637,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_valleyRun_3_holenstein",
@@ -588,7 +647,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_valleyRun_21_aspen",
@@ -597,7 +657,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_valleyRun_22_mettlen",
@@ -606,7 +667,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_valleyRun_36_wengen",
@@ -615,7 +677,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 40
     },
     {
       "id": "grindelwald_wengen_track_36_bumps",
@@ -624,7 +687,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_4_22_brandegg_-_grindelwald_grund",
@@ -633,7 +697,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2730
+      "length_m": 2730,
+      "map_length_m": 2670
     },
     {
       "id": "grindelwald_wengen_track_5_22_arven_-_brandegg",
@@ -642,7 +707,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 5090
+      "length_m": 5090,
+      "map_length_m": 5990
     },
     {
       "id": "grindelwald_wengen_track_9_36_allmend_-_wengen_dorf",
@@ -651,7 +717,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2280
+      "length_m": 2280,
+      "map_length_m": 8700
     },
     {
       "id": "grindelwald_wengen_track_10_36_wengernalp_-_allmend",
@@ -660,7 +727,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 3750
+      "length_m": 3750,
+      "map_length_m": 8700
     },
     {
       "id": "grindelwald_wengen_track_11_36_kleine_scheidegg_-_wengernalp",
@@ -669,7 +737,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2160
+      "length_m": 2160,
+      "map_length_m": 8700
     },
     {
       "id": "grindelwald_wengen_track_121_37_wengernalp_-_wixi",
@@ -678,7 +747,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1020
+      "length_m": 1020,
+      "map_length_m": 930
     },
     {
       "id": "grindelwald_wengen_track_101_2_wasserwendi_slow-slope",
@@ -687,7 +757,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 3190
+      "length_m": 3190,
+      "map_length_m": 3040
     },
     {
       "id": "grindelwald_wengen_track_104_6_laeger",
@@ -696,7 +767,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 3050
+      "length_m": 3050,
+      "map_length_m": 4050
     },
     {
       "id": "grindelwald_wengen_track_109_12_rohr",
@@ -705,7 +777,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1820
+      "length_m": 1820,
+      "map_length_m": 2070
     },
     {
       "id": "grindelwald_wengen_track_113_22_kleine_scheidegg_-_arven",
@@ -714,7 +787,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1710
+      "length_m": 1710,
+      "map_length_m": 1830
     },
     {
       "id": "grindelwald_wengen_track_99_24_schattwald",
@@ -723,7 +797,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2160
+      "length_m": 2160,
+      "map_length_m": 1900
     },
     {
       "id": "grindelwald_wengen_track_114_25_phenix",
@@ -732,7 +807,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1810
+      "length_m": 1810,
+      "map_length_m": 1940
     },
     {
       "id": "grindelwald_wengen_track_112_23_aspen_-_grindelwald_grund",
@@ -741,7 +817,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2260
+      "length_m": 2260,
+      "map_length_m": 1840
     },
     {
       "id": "grindelwald_wengen_track_192_36b_wengernalp_-_allmend",
@@ -750,7 +827,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_192_36a_wengernalp_-_allmend",
@@ -759,7 +837,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_102728_31_schwarzen",
@@ -768,7 +847,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_1021211_36_kleine_scheidegg_-_wixi",
@@ -777,7 +857,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

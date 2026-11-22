@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "sansicario",
   "country": "it",
-  "fetched_at": "2026-11-22T08:40:36.256301+01:00",
+  "fetched_at": "2026-11-22T13:40:33.009185+01:00",
   "updated_at": null,
   "source": "https://montgenevre.com/hiver/en-direct/infos-neige/",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1020,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 550,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1020,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2540,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 40,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2040,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-70-media",
@@ -101,7 +109,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-olympic-centre-bassa",
@@ -110,7 +119,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1210
     },
     {
       "id": "slope-70-alta",
@@ -119,7 +129,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 330
     },
     {
       "id": "slope-puffi-alta",
@@ -128,7 +139,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 120
     },
     {
       "id": "slope-baby",
@@ -137,7 +149,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 280
     },
     {
       "id": "slope-olimp-bassa-blu",
@@ -146,7 +159,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-puffi-bassa",
@@ -155,7 +169,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 270
     },
     {
       "id": "slope-70-bassa",
@@ -164,7 +179,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-variante-baby",
@@ -173,7 +189,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 630
     },
     {
       "id": "slope-70-bassa-bis",
@@ -182,7 +199,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-71-bassa-blu",
@@ -191,7 +209,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-olympic-centre-alta",
@@ -200,7 +219,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 580
     },
     {
       "id": "slope-79-stadio",
@@ -209,7 +229,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-72-stadio",
@@ -218,7 +239,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-79-bassa",
@@ -227,7 +249,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 3070
     },
     {
       "id": "slope-81-bassa",
@@ -236,7 +259,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-19-bassa",
@@ -245,7 +269,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-72-media",
@@ -254,7 +279,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-19-alta",
@@ -263,7 +289,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-21-alta",
@@ -272,7 +299,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 3360
     },
     {
       "id": "slope-78-bis",
@@ -281,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-olimp-media",
@@ -290,7 +319,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-79-media",
@@ -299,7 +329,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1520
     },
     {
       "id": "slope-72-alta",
@@ -308,7 +339,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-olimp-alta",
@@ -317,7 +349,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-21-media",
@@ -326,7 +359,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 3360
     },
     {
       "id": "slope-olimp-bassa-rossa",
@@ -335,7 +369,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-79-alta",
@@ -344,7 +379,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 600
     },
     {
       "id": "slope-71-bis",
@@ -353,7 +389,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 540
     },
     {
       "id": "slope-71-alta",
@@ -362,7 +399,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1000
     },
     {
       "id": "slope-76",
@@ -371,7 +409,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1260
     },
     {
       "id": "slope-81-alta",
@@ -380,7 +419,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 550
     },
     {
       "id": "slope-72-bassa",
@@ -389,7 +429,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1880
     },
     {
       "id": "slope-21-rossa",
@@ -398,7 +439,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 3360
     },
     {
       "id": "slope-21-bis",
@@ -407,7 +449,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1000
     },
     {
       "id": "slope-71-bassa",
@@ -416,7 +459,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 2510
     },
     {
       "id": "slope-racc-21-olimpica",
@@ -425,7 +469,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-racc-chalmette",
@@ -434,7 +479,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-82-alta",
@@ -443,7 +489,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 550
     },
     {
       "id": "slope-82-bassa",
@@ -452,7 +499,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 740
     },
     {
       "id": "slope-82-bis",
@@ -461,7 +509,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 500
     },
     {
       "id": "slope-var-79-bassa-1",
@@ -470,7 +519,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-var-79-bassa-2",
@@ -479,7 +529,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 600
     },
     {
       "id": "slope-78",
@@ -488,7 +539,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 170
     },
     {
       "id": "slope-76-2",
@@ -497,7 +549,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1260
     },
     {
       "id": "slope-74",
@@ -506,7 +559,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1070
     },
     {
       "id": "slope-21-nera",
@@ -515,7 +569,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1000
     }
   ]
 }

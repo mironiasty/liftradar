@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "bjorli",
   "country": "no",
-  "fetched_at": "2026-11-22T08:40:36.262315+01:00",
-  "updated_at": "2026-11-21T08:54:53+01:00",
+  "fetched_at": "2026-11-22T13:40:33.015481+01:00",
+  "updated_at": "2026-11-22T09:38:41+01:00",
   "source": "https://api.fnugg.no/search?size=200",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1620,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1830,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 900,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 970,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "other",
       "status": "open",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -81,7 +87,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-anderslypa",
@@ -90,7 +97,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lyslypa",
@@ -99,7 +107,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-fjellypa-sr",
@@ -108,7 +117,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-bvra",
@@ -117,7 +127,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-barmanlypa",
@@ -126,7 +137,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-nm-lypa",
@@ -135,7 +147,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-fjellype-nord",
@@ -144,7 +157,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-randonne",
@@ -153,7 +167,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-mini-maneuver-bakken",
@@ -162,7 +177,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "open",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-bjorlikrusen",
@@ -171,7 +187,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

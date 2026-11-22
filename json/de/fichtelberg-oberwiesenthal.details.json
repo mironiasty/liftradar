@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "fichtelberg-oberwiesenthal",
   "country": "de",
-  "fetched_at": "2026-11-22T08:40:36.260469+01:00",
+  "fetched_at": "2026-11-22T13:40:33.014351+01:00",
   "updated_at": "2026-11-20T08:30:14+01:00",
   "source": "https://winter.intermaps.com/fichtelberg/data?lang=en",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1170,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1010,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 750,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1120,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 940
     },
     {
       "id": "R_99190",
@@ -101,7 +109,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1050
     },
     {
       "id": "R_99191",
@@ -110,7 +119,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "R_99192",
@@ -119,7 +129,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 360
     },
     {
       "id": "R_99193",
@@ -128,7 +139,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 750
     },
     {
       "id": "R_99194",
@@ -137,7 +149,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 670
     },
     {
       "id": "R_99195",
@@ -146,7 +159,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 710
     },
     {
       "id": "R_99196",
@@ -155,7 +169,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1280
     },
     {
       "id": "R_99197",
@@ -164,7 +179,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1410
     },
     {
       "id": "R_99198",
@@ -173,7 +189,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 970
     },
     {
       "id": "R_99199",
@@ -182,7 +199,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "R_99221",
@@ -191,7 +209,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "unknown",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

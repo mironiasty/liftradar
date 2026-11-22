@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pizol",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254196+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007710+01:00",
+  "updated_at": "2026-11-22T13:31:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=47&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3390,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2470,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 360,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1700,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 820,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 720,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1440,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1330,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 210,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3260,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 50,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 150,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -147,7 +159,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 760
     },
     {
       "id": "slope-1b-kinderhang",
@@ -156,7 +169,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-2-see-egg",
@@ -165,7 +179,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3500
+      "length_m": 3500,
+      "map_length_m": 3780
     },
     {
       "id": "slope-3-tali",
@@ -174,7 +189,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": null
     },
     {
       "id": "slope-4-verbindungspiste",
@@ -183,7 +199,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 1540
     },
     {
       "id": "slope-5-sac-piste",
@@ -192,7 +209,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 740
     },
     {
       "id": "slope-6-gaffia-furt",
@@ -201,7 +219,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 4500
+      "length_m": 4500,
+      "map_length_m": 1800
     },
     {
       "id": "slope-6b-kappeler",
@@ -210,7 +229,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 670
     },
     {
       "id": "slope-7-ubungslift-furt",
@@ -219,7 +239,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 310
     },
     {
       "id": "slope-8-suntigweid",
@@ -228,7 +249,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 500
     },
     {
       "id": "slope-8b-obersass",
@@ -237,7 +259,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-9-waldweg",
@@ -246,7 +269,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": null
     },
     {
       "id": "slope-9b-mittelsass",
@@ -255,7 +279,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": null
     },
     {
       "id": "slope-10-twarchamm-piste",
@@ -264,7 +289,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 1360
     },
     {
       "id": "slope-11-schwamm",
@@ -273,7 +299,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": null
     },
     {
       "id": "slope-11b-trainingspiste-schwamm",
@@ -282,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-12-zanuz",
@@ -291,7 +319,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4000
+      "length_m": 4000,
+      "map_length_m": 2560
     },
     {
       "id": "slope-13-tritt",
@@ -300,7 +329,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3900
+      "length_m": 3900,
+      "map_length_m": 2370
     },
     {
       "id": "slope-14-chli-tali",
@@ -309,7 +339,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": null
     },
     {
       "id": "slope-15-valeis",
@@ -318,7 +349,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 2130
     },
     {
       "id": "slope-16-wissi-stei",
@@ -327,7 +359,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 750
     },
     {
       "id": "slope-17-adler-piste",
@@ -336,7 +369,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": null
     },
     {
       "id": "slope-17b-untere-adler-piste",
@@ -345,7 +379,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": null
     },
     {
       "id": "slope-18-dreieck",
@@ -354,7 +389,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 1990
     },
     {
       "id": "slope-18b-schneise",
@@ -363,7 +399,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 520
     },
     {
       "id": "slope-19-soldanella",
@@ -372,7 +409,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-20-fis-piste",
@@ -381,7 +419,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 640
     },
     {
       "id": "slope-21-arvenegg",
@@ -390,7 +429,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": null
     },
     {
       "id": "slope-22-gartinis",
@@ -399,7 +439,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 1070
     },
     {
       "id": "slope-23-talabfahrt",
@@ -408,7 +449,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 1130
     },
     {
       "id": "slope-24-schwiffiggler",
@@ -417,7 +459,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": 2220
     },
     {
       "id": "slope-25-alpina-couloir",
@@ -426,7 +469,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 390
     },
     {
       "id": "slope-31-abfahrt-jona",
@@ -435,7 +479,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 950
     },
     {
       "id": "slope-32-abfahrt-zanuz",
@@ -444,7 +489,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": null
     },
     {
       "id": "slope-34-couloir",
@@ -453,7 +499,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": null
     },
     {
       "id": "slope-36-abfahrt-grosses-tali",
@@ -462,7 +509,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": null
     },
     {
       "id": "slope-37-abfahrt-wangs",
@@ -471,7 +519,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": null
     },
     {
       "id": "slope-38-schwarzwald",
@@ -480,7 +529,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": null
     }
   ]
 }

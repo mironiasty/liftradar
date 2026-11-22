@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "les-mosses",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254093+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007586+01:00",
   "updated_at": "2026-11-21T08:07:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=97&saison=1&ref=contentBox",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1870,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1290,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1550,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 980,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 980,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 260,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 720,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1390,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1350,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1110,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 790,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 100,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -169,7 +183,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-dorchaux-junior",
@@ -178,7 +193,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-la-lecherette-baby",
@@ -187,7 +203,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 200
+      "length_m": 200,
+      "map_length_m": 120
     },
     {
       "id": "slope-20-les-parchets-i",
@@ -196,7 +213,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 510
     },
     {
       "id": "slope-21-les-parchets-i",
@@ -205,7 +223,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 2810
     },
     {
       "id": "slope-22-les-parchets-ii",
@@ -214,7 +233,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1660
     },
     {
       "id": "slope-23-le-crettex",
@@ -223,7 +243,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 1260
     },
     {
       "id": "slope-24-le-crettex",
@@ -232,7 +253,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 2520
     },
     {
       "id": "slope-25-crettex-dorchaux",
@@ -241,7 +263,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 1240
     },
     {
       "id": "slope-26-dorchaux",
@@ -250,7 +273,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 510
     },
     {
       "id": "slope-27-dorchaux",
@@ -259,7 +283,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1510
     },
     {
       "id": "slope-27-picatchou",
@@ -268,7 +293,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-28-dorchaux-iii",
@@ -277,7 +303,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 600
     },
     {
       "id": "slope-29-dorchaux-cherne",
@@ -286,7 +313,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 2140
     },
     {
       "id": "slope-30-l-arsat",
@@ -295,7 +323,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 710
     },
     {
       "id": "slope-31-l-arsat",
@@ -304,7 +333,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 1160
     },
     {
       "id": "slope-32-praz-cornet",
@@ -313,7 +343,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3800
+      "length_m": 3800,
+      "map_length_m": 1340
     },
     {
       "id": "slope-33-praz-cornet",
@@ -322,7 +353,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3300
+      "length_m": 3300,
+      "map_length_m": 1490
     },
     {
       "id": "slope-34-praz-cornet-lecherette",
@@ -331,7 +363,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3200
+      "length_m": 3200,
+      "map_length_m": 650
     },
     {
       "id": "slope-35-la-lecherette",
@@ -340,7 +373,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2900
+      "length_m": 2900,
+      "map_length_m": 1590
     },
     {
       "id": "slope-36-la-mossette",
@@ -349,7 +383,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 810
     },
     {
       "id": "slope-37-la-lecherette",
@@ -358,7 +393,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 60
     },
     {
       "id": "slope-38-la-mossette",
@@ -367,7 +403,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 840
     },
     {
       "id": "slope-39-lecherette",
@@ -376,7 +413,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1030
     }
   ]
 }

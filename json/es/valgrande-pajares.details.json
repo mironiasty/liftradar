@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "valgrande-pajares",
   "country": "es",
-  "fetched_at": "2026-11-22T08:40:36.263231+01:00",
+  "fetched_at": "2026-11-22T13:40:33.016799+01:00",
   "updated_at": null,
   "source": "https://www.valgrande-pajares.com/parte-de-nieve-meteo/",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 330,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 920,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 50,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 35
+      "length_m": 35,
+      "map_length_m": 40
     },
     {
       "id": "slope-pista-debutantes-iv",
@@ -101,7 +109,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 35
+      "length_m": 35,
+      "map_length_m": 40
     },
     {
       "id": "slope-el-ventisquero",
@@ -110,7 +119,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 380
     },
     {
       "id": "slope-el-baby",
@@ -119,7 +129,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 370
     },
     {
       "id": "slope-hoya-cueto-negro",
@@ -128,7 +139,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 270
     },
     {
       "id": "slope-diagonal-del-valle",
@@ -137,7 +149,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-el-retorno",
@@ -146,7 +159,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": 1080
     },
     {
       "id": "slope-los-galgos",
@@ -155,7 +169,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 340
     },
     {
       "id": "slope-pasos-martinelli",
@@ -164,7 +179,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 850
     },
     {
       "id": "slope-el-muro-del-valle",
@@ -173,7 +189,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 680
     },
     {
       "id": "slope-pena-negra",
@@ -182,7 +199,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 690
     },
     {
       "id": "slope-valle-del-sol-i",
@@ -191,7 +209,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 690
     },
     {
       "id": "slope-valle-del-sol-ii",
@@ -200,7 +219,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 790
     },
     {
       "id": "slope-fuente-del-valle",
@@ -209,7 +229,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": null
     },
     {
       "id": "slope-la-soleyera",
@@ -218,7 +239,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 550
+      "length_m": 550,
+      "map_length_m": 660
     },
     {
       "id": "slope-paso-pirata",
@@ -227,7 +249,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 120
+      "length_m": 120,
+      "map_length_m": 110
     },
     {
       "id": "slope-los-acebos",
@@ -236,7 +259,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": 430
     },
     {
       "id": "slope-enlace-patines",
@@ -245,7 +269,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 360
+      "length_m": 360,
+      "map_length_m": 210
     },
     {
       "id": "slope-el-urogallo",
@@ -254,7 +279,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 710
     },
     {
       "id": "slope-el-rio",
@@ -263,7 +289,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 640
     },
     {
       "id": "slope-el-tubo",
@@ -272,7 +299,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 480
     },
     {
       "id": "slope-muro-del-tubo",
@@ -281,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-la-cresta",
@@ -290,7 +319,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 825
+      "length_m": 825,
+      "map_length_m": 370
     },
     {
       "id": "slope-diagonal-del-tubo",
@@ -299,7 +329,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 240
     },
     {
       "id": "slope-las-cuandias",
@@ -308,7 +339,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 550
+      "length_m": 550,
+      "map_length_m": 870
     },
     {
       "id": "slope-peligrao",
@@ -317,7 +349,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 440
     },
     {
       "id": "slope-la-cornisa",
@@ -326,7 +359,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 780
     },
     {
       "id": "slope-la-ventosa",
@@ -335,7 +369,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 290
     },
     {
       "id": "slope-arandanera",
@@ -344,7 +379,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 250
     },
     {
       "id": "slope-parapente",
@@ -353,7 +389,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 300
     },
     {
       "id": "slope-escubiu",
@@ -362,7 +399,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-vallon-1",
@@ -371,7 +409,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 1380
     },
     {
       "id": "slope-vallon-2",
@@ -380,7 +419,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 310
     },
     {
       "id": "slope-la-hoya",
@@ -389,7 +429,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": 410
     },
     {
       "id": "slope-pista-debutantes-i",
@@ -398,7 +439,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 50
+      "length_m": 50,
+      "map_length_m": 70
     },
     {
       "id": "slope-pista-debutantes-ii",
@@ -407,7 +449,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": 50
+      "length_m": 50,
+      "map_length_m": 60
     },
     {
       "id": "slope-enlaces-arroyo",
@@ -416,7 +459,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 100
+      "length_m": 100,
+      "map_length_m": 420
     },
     {
       "id": "slope-la-umbria",
@@ -425,7 +469,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     }
   ]
 }

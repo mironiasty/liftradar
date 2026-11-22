@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "wildhaus",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254401+01:00",
-  "updated_at": "2026-11-22T08:31:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007938+01:00",
+  "updated_at": "2026-11-22T13:31:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=76&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 810,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2040,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1680,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 400,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 30,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -81,7 +87,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 1870
     },
     {
       "id": "slope-1b-oberdorf-wildhaus",
@@ -90,7 +97,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": null
     },
     {
       "id": "slope-2-schwendi",
@@ -99,7 +107,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1790
     },
     {
       "id": "slope-3-alpenrose",
@@ -108,7 +117,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 2020
     },
     {
       "id": "slope-4-oberdorf",
@@ -117,7 +127,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": null
     },
     {
       "id": "slope-5-familienpiste",
@@ -126,7 +137,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1860
     },
     {
       "id": "slope-6-chessler",
@@ -135,7 +147,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 770
     },
     {
       "id": "slope-6a-chessler",
@@ -144,7 +157,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 530
     },
     {
       "id": "slope-6b-chessler",
@@ -153,7 +167,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 600
     },
     {
       "id": "slope-7-hagis",
@@ -162,7 +177,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 1260
     },
     {
       "id": "slope-8-gamsalp-freienalp",
@@ -171,7 +187,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1790
     },
     {
       "id": "slope-8a-gamsalp-freienalp",
@@ -180,7 +197,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 260
     },
     {
       "id": "slope-8b-gamsalp-freienalp",
@@ -189,7 +207,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-9-munggepfiff",
@@ -198,7 +217,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 1060
     },
     {
       "id": "slope-10-warmtobel",
@@ -207,7 +227,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1600
     },
     {
       "id": "slope-11-gamserrugg",
@@ -216,7 +237,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 2530
     },
     {
       "id": "slope-11a-gamserrugg",
@@ -225,7 +247,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-11b-gamserrugg",
@@ -234,7 +257,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-12-yeti",
@@ -243,7 +267,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1380
     },
     {
       "id": "slope-12a-yeti",
@@ -252,7 +277,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-13-gamserrugg-ostabfahrt",
@@ -261,7 +287,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 1480
     },
     {
       "id": "slope-14-galferroute",
@@ -270,7 +297,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 8360
     }
   ]
 }

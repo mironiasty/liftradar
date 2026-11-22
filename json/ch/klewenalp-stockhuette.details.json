@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "klewenalp-stockhuette",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253998+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007474+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=64&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3100,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1490,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 220,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 130,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 400,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1180,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 490,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 80,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 80,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -180,7 +195,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 2570
     },
     {
       "id": "slope-2-holderli",
@@ -189,7 +205,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 1130
     },
     {
       "id": "slope-3-buel",
@@ -198,7 +215,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3700
+      "length_m": 3700,
+      "map_length_m": 1630
     },
     {
       "id": "slope-4-aengital",
@@ -207,7 +225,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1750
     },
     {
       "id": "slope-5-klewenstock",
@@ -216,7 +235,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 830
     },
     {
       "id": "slope-6-junior",
@@ -225,7 +245,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 340
     },
     {
       "id": "slope-7-blauweiss",
@@ -234,7 +255,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 600
     },
     {
       "id": "slope-8-ergglen",
@@ -243,7 +265,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 1080
     },
     {
       "id": "slope-10-twaregg",
@@ -252,7 +275,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 1630
     },
     {
       "id": "slope-11-romantica",
@@ -261,7 +285,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1110
     },
     {
       "id": "slope-12-slalom",
@@ -270,7 +295,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": 760
     },
     {
       "id": "slope-13-herti",
@@ -279,7 +305,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 730
     },
     {
       "id": "slope-14-verbindungspiste",
@@ -288,7 +315,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 560
     },
     {
       "id": "slope-18-abfahrtsroute-klewenstock",
@@ -297,7 +325,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 880
     }
   ]
 }

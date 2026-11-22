@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "diavolezza-lagalb",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253835+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007285+01:00",
+  "updated_at": "2026-11-22T13:31:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=38&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3590,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 950,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 290,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 180,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2360,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -70,7 +75,8 @@
       "difficulty": "other",
       "colour": "red_black",
       "status": "closed",
-      "length_m": 2600
+      "length_m": 2600,
+      "map_length_m": null
     },
     {
       "id": "slope-2a-diavolezza-gletscher",
@@ -79,7 +85,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-2b-diavolezza",
@@ -88,7 +95,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-03-sass-queder",
@@ -97,7 +105,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-04-schwarzer-hang",
@@ -106,7 +115,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-05-ravulaunas",
@@ -115,7 +125,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-21-giandas",
@@ -124,7 +135,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 3950
     },
     {
       "id": "slope-22-minor",
@@ -133,7 +145,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1380
     },
     {
       "id": "slope-23-bernina",
@@ -142,7 +155,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1980
     },
     {
       "id": "slope-25-connection-diavolezza-lagalb",
@@ -151,7 +165,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 1110
     },
     {
       "id": "slope-31-diavolezza-glacier-run",
@@ -160,7 +175,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 9000
+      "length_m": 9000,
+      "map_length_m": null
     },
     {
       "id": "slope-35-diavolezza-challenge-ski-touring-route",
@@ -169,7 +185,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 4500
+      "length_m": 4500,
+      "map_length_m": null
     },
     {
       "id": "slope-nachttraining-piste-2a-2b",
@@ -178,7 +195,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

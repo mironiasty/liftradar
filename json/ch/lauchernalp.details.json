@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "lauchernalp",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254047+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007527+01:00",
+  "updated_at": "2026-11-22T13:31:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=43&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1210,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1620,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 940,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 980,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -81,7 +87,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 5500
+      "length_m": 5500,
+      "map_length_m": null
     },
     {
       "id": "slope-2-waldarra",
@@ -90,7 +97,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 4000
+      "length_m": 4000,
+      "map_length_m": 1080
     },
     {
       "id": "slope-3-holz",
@@ -99,7 +107,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 420
     },
     {
       "id": "slope-4-tilgi",
@@ -108,7 +117,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 460
     },
     {
       "id": "slope-5-arba",
@@ -117,7 +127,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 1440
     },
     {
       "id": "slope-6-national",
@@ -126,7 +137,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 5500
+      "length_m": 5500,
+      "map_length_m": 2520
     },
     {
       "id": "slope-7-gandegg",
@@ -135,7 +147,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1040
     },
     {
       "id": "slope-8-spali",
@@ -144,7 +157,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 720
     },
     {
       "id": "slope-9-wisses-tali",
@@ -153,7 +167,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 4500
+      "length_m": 4500,
+      "map_length_m": 1480
     },
     {
       "id": "slope-10-hockenhorn",
@@ -162,7 +177,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 4500
+      "length_m": 4500,
+      "map_length_m": 2130
     },
     {
       "id": "slope-11-petersgrat",
@@ -171,7 +187,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 630
     },
     {
       "id": "slope-12-milibach",
@@ -180,7 +197,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3500
+      "length_m": 3500,
+      "map_length_m": 1650
     },
     {
       "id": "slope-13-gafenbach",
@@ -189,7 +207,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 950
     }
   ]
 }

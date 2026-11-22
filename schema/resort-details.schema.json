@@ -67,6 +67,20 @@
           "default": null,
           "title": "Length M"
         },
+        "map_length_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Its length on the map: its OpenStreetMap lines (OpenSkiData, © OpenStreetMap contributors, ODbL), measured along the slope by liftradar's weekly ski tiles, where they're matched to it; a slope's covers only its segments drawn as lines. Resorts often give longer slope lengths than their map",
+          "title": "Map Length M"
+        },
         "capacity_per_hour": {
           "anyOf": [
             {
@@ -116,6 +130,7 @@
         "type",
         "status",
         "length_m",
+        "map_length_m",
         "capacity_per_hour",
         "bottom_m",
         "top_m"
@@ -209,6 +224,20 @@
           ],
           "default": null,
           "title": "Length M"
+        },
+        "map_length_m": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Its length on the map: its OpenStreetMap lines (OpenSkiData, © OpenStreetMap contributors, ODbL), measured along the slope by liftradar's weekly ski tiles, where they're matched to it; a slope's covers only its segments drawn as lines. Resorts often give longer slope lengths than their map",
+          "title": "Map Length M"
         }
       },
       "required": [
@@ -218,7 +247,8 @@
         "difficulty",
         "colour",
         "status",
-        "length_m"
+        "length_m",
+        "map_length_m"
       ],
       "title": "DetailsSlope",
       "type": "object"

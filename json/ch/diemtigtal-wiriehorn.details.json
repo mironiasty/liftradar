@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "diemtigtal-wiriehorn",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253843+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007295+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=214&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1400,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1360,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -70,7 +75,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1840
     },
     {
       "id": "slope-3-schwarzenberg-roschteschwend",
@@ -79,7 +85,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": 900
     },
     {
       "id": "slope-4-tubelfarrich-schwarzenbergnuegg",
@@ -88,7 +95,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 2890
     },
     {
       "id": "slope-5-tubelfarrichnuegg-right",
@@ -97,7 +105,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 1280
     },
     {
       "id": "slope-6-tubelfarrichnuegg-left",
@@ -106,7 +115,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1380
     },
     {
       "id": "slope-7-tubelfarrich-nuegg-mitte",
@@ -115,7 +125,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": null
     },
     {
       "id": "slope-8-obere-heitereuntere-heitereallmiried-projekt-crowdfunding-homad",
@@ -124,7 +135,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1700
+      "length_m": 1700,
+      "map_length_m": null
     },
     {
       "id": "slope-9-homad-left-projekt-crowdfunding",
@@ -133,7 +145,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": null
     },
     {
       "id": "slope-10-homad-right-projekt-crowdfunding",
@@ -142,7 +155,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": null
     },
     {
       "id": "slope-11-tubelfarrich-steilhang",
@@ -151,7 +165,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 2620
     },
     {
       "id": "slope-30-schwarzenbergroschteschwend-racetrack",
@@ -160,7 +175,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 560
     },
     {
       "id": "slope-31-nuegg-racetrack",
@@ -169,7 +185,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 570
     },
     {
       "id": "slope-32-tubelfarrich-west-racetrack",
@@ -178,7 +195,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 810
     }
   ]
 }

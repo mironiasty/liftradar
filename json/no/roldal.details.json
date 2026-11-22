@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "roldal",
   "country": "no",
-  "fetched_at": "2026-11-22T08:40:36.261407+01:00",
+  "fetched_at": "2026-11-22T13:40:33.015422+01:00",
   "updated_at": "2026-11-14T12:17:14+01:00",
   "source": "https://api.fnugg.no/search?size=200",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 520,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 770,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1050,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 260,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1170,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -81,7 +87,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-2-bratthenget-rldal-1",
@@ -90,7 +97,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-3-gamle-lyslypa-rldal-1",
@@ -99,7 +107,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-4-nybegynner-lysside",
@@ -108,7 +117,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-5-nybegynner-figurlypa",
@@ -117,7 +127,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-6-gamleveien",
@@ -126,7 +137,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-7-tilkomst-paralell",
@@ -135,7 +147,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-8-tilkomst-nybegynner",
@@ -144,7 +157,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-9-travers-til-ekspress",
@@ -153,7 +167,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-10-paralell-rundt-sving-rldal-2",
@@ -162,7 +177,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-11-brattheng-rldal-2",
@@ -171,7 +187,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-12-turistlypa",
@@ -180,7 +197,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-13-nutheislypa",
@@ -189,7 +207,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-14-fjellheis-til-paralell",
@@ -198,7 +217,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-lype-15-seljestadsida-fjellheis",
@@ -207,7 +227,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-rail-linje",
@@ -216,7 +237,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-parklinje-grnn",
@@ -225,7 +247,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-parklinje-bla",
@@ -234,7 +257,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

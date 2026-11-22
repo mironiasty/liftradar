@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "alto-campoo",
   "country": "es",
-  "fetched_at": "2026-11-22T08:40:36.263255+01:00",
+  "fetched_at": "2026-11-22T13:40:33.016830+01:00",
   "updated_at": "2026-11-09T12:23:00+01:00",
   "source": "https://altocampoo.com/",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1350,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 990,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 990,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1680,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 810,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 940,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 500,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 520,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 210,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -147,7 +159,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 510
     },
     {
       "id": "slope-calgosa-ii",
@@ -156,7 +169,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 530
     },
     {
       "id": "slope-tobogan-i",
@@ -165,7 +179,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 230
     },
     {
       "id": "slope-tobogan-ii",
@@ -174,7 +189,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 250
     },
     {
       "id": "slope-pidruecos-i",
@@ -183,7 +199,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 460
     },
     {
       "id": "slope-pidruecos-ii",
@@ -192,7 +209,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 2030
     },
     {
       "id": "slope-el-chivo-i",
@@ -201,7 +219,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-el-chivo-ii",
@@ -210,7 +229,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-el-chivo-iii",
@@ -219,7 +239,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 160
     },
     {
       "id": "slope-rio-hijar-i-superior",
@@ -228,7 +249,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-rio-hijar-i-inferior",
@@ -237,7 +259,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 2130
     },
     {
       "id": "slope-rio-hijar-ii",
@@ -246,7 +269,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1400
     },
     {
       "id": "slope-pena-labra",
@@ -255,7 +279,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1370
     },
     {
       "id": "slope-la-cabana",
@@ -264,7 +289,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 620
     },
     {
       "id": "slope-el-chivo-sp-i",
@@ -273,7 +299,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 630
     },
     {
       "id": "slope-el-chivo-sp-ii",
@@ -282,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 360
     },
     {
       "id": "slope-tres-mares",
@@ -291,7 +319,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 820
     },
     {
       "id": "slope-la-tortuga",
@@ -300,7 +329,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 880
     },
     {
       "id": "slope-los-asnos",
@@ -309,7 +339,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 800
     },
     {
       "id": "slope-el-castro-i",
@@ -318,7 +349,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 960
     },
     {
       "id": "slope-el-castro-ii",
@@ -327,7 +359,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1060
     },
     {
       "id": "slope-cuchillon",
@@ -336,7 +369,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1020
     },
     {
       "id": "slope-stadium",
@@ -345,7 +379,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 900
     }
   ]
 }

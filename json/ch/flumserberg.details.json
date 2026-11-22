@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "flumserberg",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253902+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007361+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=37&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1210,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2250,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1310,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1580,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1030,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 600,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1120,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 960,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 360,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1440,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1760,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 500,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 540,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 230,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -202,7 +219,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3700
+      "length_m": 3700,
+      "map_length_m": null
     },
     {
       "id": "slope-01a-talabfahrt-tannenheim-cafrida",
@@ -211,7 +229,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": null
     },
     {
       "id": "slope-01b-prodalp-schnabel",
@@ -220,7 +239,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": null
     },
     {
       "id": "slope-02-prodkamm-prodalppiste",
@@ -229,7 +249,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": null
     },
     {
       "id": "slope-02a-verbindung",
@@ -238,7 +259,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-03-talabfahrt-tannenheim-rennpiste",
@@ -247,7 +269,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": null
     },
     {
       "id": "slope-03a-tannenheimhangpiste",
@@ -256,7 +279,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-03b-verbindungspiste-mittenwald",
@@ -265,7 +289,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-04-edypiste",
@@ -274,7 +299,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": null
     },
     {
       "id": "slope-04a-twarchamm-verbindungspiste",
@@ -283,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-04b-verbindung-chruzboden",
@@ -292,7 +319,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-05-c-piste",
@@ -301,7 +329,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": null
     },
     {
       "id": "slope-06-twarchammgratpiste",
@@ -310,7 +339,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-07-twarchammpiste",
@@ -319,7 +349,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": null
     },
     {
       "id": "slope-07a-verbindungspiste-twarchamm-stelli",
@@ -328,7 +359,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-07b-bosplangpiste",
@@ -337,7 +369,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 200
+      "length_m": 200,
+      "map_length_m": null
     },
     {
       "id": "slope-08-untere-nordabfahrtpiste",
@@ -346,7 +379,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-09-chuewegpiste",
@@ -355,7 +389,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": null
     },
     {
       "id": "slope-10-mittenwaldpisten",
@@ -364,7 +399,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1150
     },
     {
       "id": "slope-11-haldenpiste",
@@ -373,7 +409,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 1280
     },
     {
       "id": "slope-12-sennenstubepiste",
@@ -382,7 +419,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 750
     },
     {
       "id": "slope-13-tannenbodenpiste",
@@ -391,7 +429,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-14-schwammkopfpisten",
@@ -400,7 +439,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 2210
     },
     {
       "id": "slope-15-madilspiste",
@@ -409,7 +449,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 240
     },
     {
       "id": "slope-20-arvepiste",
@@ -418,7 +459,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 1340
     },
     {
       "id": "slope-20-obersasspiste",
@@ -427,7 +469,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 180
     },
     {
       "id": "slope-20-talabfahrt-tannenboden-chruzpiste",
@@ -436,7 +479,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 140
     },
     {
       "id": "slope-20a-kanonenleitung",
@@ -445,7 +489,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-20b-arvetal",
@@ -454,7 +499,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 200
+      "length_m": 200,
+      "map_length_m": 190
     },
     {
       "id": "slope-20c-arvetal",
@@ -463,7 +509,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-21-grueb-seebenpiste",
@@ -472,7 +519,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3100
+      "length_m": 3100,
+      "map_length_m": 2360
     },
     {
       "id": "slope-21a-umfahrung-grueb",
@@ -481,7 +529,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-22-seebenpiste",
@@ -490,7 +539,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 710
     },
     {
       "id": "slope-22a-rennpiste-seeben",
@@ -499,7 +549,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 230
     },
     {
       "id": "slope-23-stellipiste",
@@ -508,7 +559,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 310
     },
     {
       "id": "slope-23a-geissruckenpiste",
@@ -517,7 +569,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 840
     },
     {
       "id": "slope-24-luggapiste",
@@ -526,7 +579,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 800
     },
     {
       "id": "slope-24a-galgnipiste",
@@ -535,7 +589,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-25-stellitalipiste",
@@ -544,7 +599,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1820
     },
     {
       "id": "slope-26-waldpiste-chruz",
@@ -553,7 +609,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 1300
     },
     {
       "id": "slope-27-chalchofenpiste",
@@ -562,7 +619,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1000
     },
     {
       "id": "slope-30-panuolpiste",
@@ -571,7 +629,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 1040
     },
     {
       "id": "slope-32-cuncelspiste",
@@ -580,7 +639,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 960
     },
     {
       "id": "slope-38-fuchsnipiste",
@@ -589,7 +649,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 470
     },
     {
       "id": "slope-39-plattispiste",
@@ -598,7 +659,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": 420
     },
     {
       "id": "slope-40-sachserpiste",
@@ -607,7 +669,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1920
     },
     {
       "id": "slope-40a-sachserpiste-grueb",
@@ -616,7 +679,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": null
     },
     {
       "id": "slope-41-vorderleistpiste",
@@ -625,7 +689,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1700
+      "length_m": 1700,
+      "map_length_m": 640
     },
     {
       "id": "slope-42-breitmantelpiste",
@@ -634,7 +699,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 2020
     },
     {
       "id": "slope-43-zigerfurgglenpiste",
@@ -643,7 +709,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 1280
     },
     {
       "id": "slope-43a-verbindungspiste-zigerfurgglen-panuol",
@@ -652,7 +719,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-50-talabfahrt-oberterzen-terzaabfahrt",
@@ -661,7 +729,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 4180
     },
     {
       "id": "slope-51-haxawaldli",
@@ -670,7 +739,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 790
     },
     {
       "id": "slope-61-ubungsland-prodalp",
@@ -679,7 +749,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-62-ubungsland-tannenboden",
@@ -688,7 +759,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": null
     }
   ]
 }

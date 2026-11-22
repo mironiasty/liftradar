@@ -11,7 +11,7 @@
   "website": "https://www.matterhornparadise.ch",
   "linked_area": "matterhorn-ski-paradise",
   "status": "closed",
-  "fetched_at": "2026-11-22T08:40:36.255597+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007949+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -100,7 +100,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-22T08:40:00+01:00",
+  "lifts_updated_at": "2026-11-22T13:40:00+01:00",
   "details": "json/ch/zermatt.details.json",
   "avalanche": {
     "region_id": "CH-4222",
@@ -124,9 +124,9 @@
     "valid_until": "2026-11-22T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
     "https://measurement-api.slf.ch/public/api/imis/daily-snow",
     "https://measurement-api.slf.ch/public/api/study-plot/measurements",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
@@ -136,15 +136,15 @@
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=398&saison=1&ref=contentBox",
+        "attribution_required": null
+      },
+      {
+        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
         "attribution_required": null
       },
       {

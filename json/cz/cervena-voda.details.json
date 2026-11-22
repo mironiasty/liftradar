@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cervena-voda",
   "country": "cz",
-  "fetched_at": "2026-11-22T08:40:36.257386+01:00",
+  "fetched_at": "2026-11-22T13:40:33.010423+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/skipark-cervena-voda",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -37,7 +39,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 2150
+      "length_m": 2150,
+      "map_length_m": null
     },
     {
       "id": "slope-herolticka",
@@ -46,7 +49,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 2290
+      "length_m": 2290,
+      "map_length_m": 80
     },
     {
       "id": "slope-detska",
@@ -55,7 +59,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 450
+      "length_m": 450,
+      "map_length_m": null
     },
     {
       "id": "slope-kid-park",
@@ -64,7 +69,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 200
+      "length_m": 200,
+      "map_length_m": null
     },
     {
       "id": "slope-spojeni-z-cervene-vody-do-cenkovic",
@@ -73,7 +79,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 100
+      "length_m": 100,
+      "map_length_m": 220
     },
     {
       "id": "slope-spojeni-z-cenkovic-do-cervene-vody",
@@ -82,7 +89,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 200
+      "length_m": 200,
+      "map_length_m": 320
     }
   ]
 }

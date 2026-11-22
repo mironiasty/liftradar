@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ovronnaz",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254187+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007701+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=180&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1560,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1110,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 730,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1650,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1230,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 140,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4000
+      "length_m": 4000,
+      "map_length_m": 2380
     },
     {
       "id": "slope-1b-grande-creuse-inf",
@@ -101,7 +109,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-2-petite-creuse",
@@ -110,7 +119,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": 2040
     },
     {
       "id": "slope-2b-petite-creuse-int",
@@ -119,7 +129,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-2c-petite-creuse-inf",
@@ -128,7 +139,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-3-bougnonne",
@@ -137,7 +149,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 7000
+      "length_m": 7000,
+      "map_length_m": 860
     },
     {
       "id": "slope-3b-bougnonne-inf",
@@ -146,7 +159,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-4-tsantonnaire",
@@ -155,7 +169,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4800
+      "length_m": 4800,
+      "map_length_m": 1840
     },
     {
       "id": "slope-5-sud",
@@ -164,7 +179,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1200
     },
     {
       "id": "slope-5b-sud-inferieure",
@@ -173,7 +189,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-6-col",
@@ -182,7 +199,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3500
+      "length_m": 3500,
+      "map_length_m": 1920
     },
     {
       "id": "slope-7-petit-pre",
@@ -191,7 +209,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3500
+      "length_m": 3500,
+      "map_length_m": 1480
     },
     {
       "id": "slope-8-chatillon",
@@ -200,7 +219,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 940
     },
     {
       "id": "slope-9-tsantonnaire-six-armailles",
@@ -209,7 +229,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 950
     },
     {
       "id": "slope-9-baby-jorasse",
@@ -218,7 +239,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 270
     },
     {
       "id": "slope-11-liaison-col-petit-pre",
@@ -227,7 +249,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-12-lui-fleurie",
@@ -236,7 +259,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 930
     },
     {
       "id": "slope-13a-combe-sup",
@@ -245,7 +269,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-13b-combe-inf",
@@ -254,7 +279,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-10-itineraire-creuses",
@@ -263,7 +289,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": null
     },
     {
       "id": "slope-11-baby-station",
@@ -272,7 +299,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 200
+      "length_m": 200,
+      "map_length_m": null
     },
     {
       "id": "slope-liaisons-tsantonnaire",
@@ -281,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-liaisons-bougnonne-col-jorasse",
@@ -290,7 +319,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

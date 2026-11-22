@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "lenk",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254055+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007541+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=59&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2040,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1830,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 620,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 850,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 530,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 730,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 80,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 910,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2190,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1650,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1740,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 560,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -200,6 +217,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -213,7 +231,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 6500
+      "length_m": 6500,
+      "map_length_m": 2390
     },
     {
       "id": "slope-2-stoss-lenk",
@@ -222,7 +241,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 2300
     },
     {
       "id": "slope-2a-gondola-access",
@@ -231,7 +251,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-3-kehrweide",
@@ -240,7 +261,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": null
     },
     {
       "id": "slope-4-badweide",
@@ -249,7 +271,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 460
     },
     {
       "id": "slope-5-balmen",
@@ -258,7 +281,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-6-tschuggen",
@@ -267,7 +291,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 6900
+      "length_m": 6900,
+      "map_length_m": 3520
     },
     {
       "id": "slope-7-kids-fun-slope-hasler",
@@ -276,7 +301,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 1060
     },
     {
       "id": "slope-8-mulkerblatten-wallegg",
@@ -285,7 +311,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": null
     },
     {
       "id": "slope-9-joana-hahlen-skimovie",
@@ -294,7 +321,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": null
     },
     {
       "id": "slope-10-wallegg-lenk",
@@ -303,7 +331,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4800
+      "length_m": 4800,
+      "map_length_m": 2320
     },
     {
       "id": "slope-11-mulkerblatten-hasler",
@@ -312,7 +341,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3400
+      "length_m": 3400,
+      "map_length_m": null
     },
     {
       "id": "slope-12-hasler",
@@ -321,7 +351,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 870
     },
     {
       "id": "slope-13-hasler-wallegg",
@@ -330,7 +361,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2600
+      "length_m": 2600,
+      "map_length_m": 640
     },
     {
       "id": "slope-14-speedtrack-mulkerblatten-wallegg",
@@ -339,7 +371,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-15-cross-park-betelberg",
@@ -348,7 +381,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-16-mauren",
@@ -357,7 +391,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": null
     },
     {
       "id": "slope-17-hasler-racetrack",
@@ -366,7 +401,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 780
     },
     {
       "id": "slope-19-funslope-buhlberg",
@@ -375,7 +411,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": null
     },
     {
       "id": "slope-20-guetflack",
@@ -384,7 +421,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": 1160
     },
     {
       "id": "slope-21-metschberg",
@@ -393,7 +431,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 1540
     },
     {
       "id": "slope-22-gran-masta-park-main-line",
@@ -402,7 +441,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-23-gran-masta-park-beginner-line",
@@ -411,7 +451,8 @@
       "difficulty": "other",
       "colour": "orange",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-24-sumpfbach",
@@ -420,7 +461,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 700
     },
     {
       "id": "slope-25-sonnenhang",
@@ -429,7 +471,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": 1510
     },
     {
       "id": "slope-26-fis",
@@ -438,7 +481,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1970
     },
     {
       "id": "slope-27-metschmaad-metsch",
@@ -447,7 +491,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 900
     },
     {
       "id": "slope-28-metschstand-brenggen",
@@ -456,7 +501,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1700
+      "length_m": 1700,
+      "map_length_m": null
     },
     {
       "id": "slope-29-schattwy",
@@ -465,7 +511,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 1190
     },
     {
       "id": "slope-30-holzegg",
@@ -474,7 +521,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 590
     },
     {
       "id": "slope-31-brenggen",
@@ -483,7 +531,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": 600
     },
     {
       "id": "slope-32-brenggen-buhlbergpiste",
@@ -492,7 +541,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 680
     },
     {
       "id": "slope-33-metsch-buhlberg",
@@ -501,7 +551,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1240
     },
     {
       "id": "slope-34-buhlberg-metschmaad",
@@ -510,7 +561,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 2150
     },
     {
       "id": "slope-35-buhlberg-sud",
@@ -519,7 +571,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 2770
     },
     {
       "id": "slope-36-buhlberg-nord",
@@ -528,7 +581,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 2170
     },
     {
       "id": "slope-37-laveygrat-buhlberg",
@@ -537,7 +591,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 340
     },
     {
       "id": "slope-38-sonnenmeder",
@@ -546,7 +601,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 380
     },
     {
       "id": "slope-39-juskila",
@@ -555,7 +611,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 820
     }
   ]
 }

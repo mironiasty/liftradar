@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "aurdal-valdres",
   "country": "no",
-  "fetched_at": "2026-11-22T08:40:36.262353+01:00",
-  "updated_at": "2026-11-20T08:44:51+01:00",
+  "fetched_at": "2026-11-22T13:40:33.015519+01:00",
+  "updated_at": "2026-11-22T09:42:52+01:00",
   "source": "https://api.fnugg.no/search?size=200",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "other",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "other",
       "status": "open",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -70,7 +75,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-2-skogsvingen-begynner-beginner",
@@ -79,7 +85,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-3-turisten-lett-easy",
@@ -88,7 +95,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-4-vardinlypa-begynner-beginner",
@@ -97,7 +105,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1910
     },
     {
       "id": "slope-5-kneika-middels-medium",
@@ -106,7 +115,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 840
     },
     {
       "id": "slope-6-s-lypa-middels-medium",
@@ -115,7 +125,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 430
     },
     {
       "id": "slope-7-brtahenget-ekspert-expert",
@@ -124,7 +135,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-8-ruudlypa-ekspert-expert",
@@ -133,7 +145,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 420
     },
     {
       "id": "slope-9-cruiser-lypa-begynner-beginner",
@@ -142,7 +155,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1390
     },
     {
       "id": "slope-11-terrengpark",
@@ -151,7 +165,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-13-fjellparklypa-lett-easy",
@@ -160,7 +175,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-14-fjellstllypa-middels-medium",
@@ -169,7 +185,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "open",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-15-danebulypa-begynner-beginner",
@@ -178,7 +195,8 @@
       "difficulty": "easy",
       "colour": "green",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     }
   ]
 }

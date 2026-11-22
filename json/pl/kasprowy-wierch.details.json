@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kasprowy-wierch",
   "country": "pl",
-  "fetched_at": "2026-11-22T08:40:36.257651+01:00",
+  "fetched_at": "2026-11-22T13:40:33.010711+01:00",
   "updated_at": null,
-  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
+  "source": "https://www.pkl.pl/trasy-narciarskie.html",
   "lifts": [
     {
       "id": "lift-kolej-kasprowy-wierch",
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1990,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1160,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1740,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -48,7 +51,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-trasa-narciarska-w-kotle-goryczkowym",
@@ -57,7 +61,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": null
     },
     {
       "id": "slope-nartostrada-z-hali-goryczkowej",
@@ -66,7 +71,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 3500
+      "length_m": 3500,
+      "map_length_m": 2910
     }
   ]
 }

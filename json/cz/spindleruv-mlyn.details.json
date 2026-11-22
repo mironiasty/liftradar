@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "spindleruv-mlyn",
   "country": "cz",
-  "fetched_at": "2026-11-22T08:40:36.257280+01:00",
+  "fetched_at": "2026-11-22T13:40:33.010307+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/skiareal-spindleruv-mlyn-sjezdove-i-bezecke-lyzo",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1170,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 130,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 940,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1930,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1450,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1610,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 720,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1130,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1440,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -202,7 +219,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 220
     },
     {
       "id": "slope-cervena",
@@ -211,7 +229,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 1400
     },
     {
       "id": "slope-lesni",
@@ -220,7 +239,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 640
     },
     {
       "id": "slope-medvedin-cerna",
@@ -229,7 +249,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 1130
     },
     {
       "id": "slope-treninkova",
@@ -238,7 +259,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": 1100
     },
     {
       "id": "slope-turisticka",
@@ -247,7 +269,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1350
+      "length_m": 1350,
+      "map_length_m": 60
     },
     {
       "id": "slope-cvicna-louka",
@@ -256,7 +279,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 140
     },
     {
       "id": "slope-vodovodni-cesta-vrcholova",
@@ -265,7 +289,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 1870
     },
     {
       "id": "slope-labska",
@@ -274,7 +299,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1770
+      "length_m": 1770,
+      "map_length_m": 1550
     },
     {
       "id": "slope-davidovky",
@@ -283,7 +309,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1360
     },
     {
       "id": "slope-vodovodni-cesta",
@@ -292,7 +319,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": 1500
     },
     {
       "id": "slope-prehradni",
@@ -301,7 +329,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1750
+      "length_m": 1750,
+      "map_length_m": 1360
     },
     {
       "id": "slope-hromovka-i",
@@ -310,7 +339,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1540
+      "length_m": 1540,
+      "map_length_m": 1470
     },
     {
       "id": "slope-hromovka-ii",
@@ -319,7 +349,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 680
     },
     {
       "id": "slope-turisticka-2",
@@ -328,7 +359,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": 2900
     },
     {
       "id": "slope-cervena-fis",
@@ -337,7 +369,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1950
+      "length_m": 1950,
+      "map_length_m": 1850
     },
     {
       "id": "slope-fis-world-cup",
@@ -346,7 +379,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1375
+      "length_m": 1375,
+      "map_length_m": 150
     },
     {
       "id": "slope-stoh",
@@ -355,7 +389,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 1350
+      "length_m": 1350,
+      "map_length_m": 1160
     },
     {
       "id": "slope-horal",
@@ -364,7 +399,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-hriste",
@@ -373,7 +409,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 690
+      "length_m": 690,
+      "map_length_m": 770
     },
     {
       "id": "slope-maly-hank",
@@ -382,7 +419,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 270
+      "length_m": 270,
+      "map_length_m": 470
     },
     {
       "id": "slope-slovan",
@@ -391,7 +429,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 250
+      "length_m": 250,
+      "map_length_m": null
     }
   ]
 }

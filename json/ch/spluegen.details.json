@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "spluegen",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254264+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007784+01:00",
   "updated_at": "2026-11-19T16:35:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=86&saison=1&ref=contentBox",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1000,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1310,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 520,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 730,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 1010
     },
     {
       "id": "slope-2-2-blachtaboda",
@@ -101,7 +109,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1240
     },
     {
       "id": "slope-3-3-funpiste",
@@ -110,7 +119,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 240
     },
     {
       "id": "slope-4-4-tanatz",
@@ -119,7 +129,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 570
     },
     {
       "id": "slope-5-5-troglipiste",
@@ -128,7 +139,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 620
     },
     {
       "id": "slope-5a-5a-troglipiste-freeride",
@@ -137,7 +149,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 730
     },
     {
       "id": "slope-6a-6a-tanatz-bodmenstafel-talpiste",
@@ -146,7 +159,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3400
+      "length_m": 3400,
+      "map_length_m": 2160
     },
     {
       "id": "slope-6b-6b-bodmenstafel-tal-talpiste",
@@ -155,7 +169,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1140
     },
     {
       "id": "slope-7-7-tamboalp",
@@ -164,7 +179,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 560
     },
     {
       "id": "slope-8-8-tanatz-traverse",
@@ -173,7 +189,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 760
     },
     {
       "id": "slope-9-9-sesselpiste",
@@ -182,7 +199,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": 1830
     },
     {
       "id": "slope-10-10-alpetli",
@@ -191,7 +209,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2200
+      "length_m": 2200,
+      "map_length_m": 930
     },
     {
       "id": "slope-11-11-kanonenrohr-traverse",
@@ -200,7 +219,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1600
     },
     {
       "id": "slope-12-12-lattenstafel",
@@ -209,7 +229,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 690
     },
     {
       "id": "slope-13-13-bodmenstafel",
@@ -218,7 +239,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 1450
     },
     {
       "id": "slope-14-14-huscherabach",
@@ -227,7 +249,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 760
     }
   ]
 }

@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "san-martino-di-castrozza",
   "country": "it",
-  "fetched_at": "2026-11-22T08:40:36.255863+01:00",
-  "updated_at": "2026-11-22T07:00:07.130401+01:00",
+  "fetched_at": "2026-11-22T13:40:33.008242+01:00",
+  "updated_at": "2026-11-22T13:00:12.258355+01:00",
   "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 230,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 990,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1120,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2020,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1580,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1070,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 580,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 670,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 890,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 230,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 230,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1610,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 680,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 700,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -200,6 +217,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1330,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -211,6 +229,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 880,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -222,6 +241,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -233,6 +253,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -244,6 +265,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -255,6 +277,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2350,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -266,6 +289,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -279,7 +303,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 207
+      "length_m": 207,
+      "map_length_m": 270
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216250",
@@ -288,7 +313,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 995
+      "length_m": 995,
+      "map_length_m": 1020
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216257",
@@ -297,7 +323,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 560
+      "length_m": 560,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216251",
@@ -306,7 +333,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1250
+      "length_m": 1250,
+      "map_length_m": 1340
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216252",
@@ -315,7 +343,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 995
+      "length_m": 995,
+      "map_length_m": 1390
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216253",
@@ -324,7 +353,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1080
+      "length_m": 1080,
+      "map_length_m": 1150
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216255",
@@ -333,7 +363,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 778
+      "length_m": 778,
+      "map_length_m": 830
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216256",
@@ -342,7 +373,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1360
+      "length_m": 1360,
+      "map_length_m": 1640
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_1780284",
@@ -351,7 +383,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1460
+      "length_m": 1460,
+      "map_length_m": 1690
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_76410630",
@@ -360,7 +393,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 207
+      "length_m": 207,
+      "map_length_m": 1260
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216258",
@@ -369,7 +403,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 676
+      "length_m": 676,
+      "map_length_m": 510
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216259",
@@ -378,7 +413,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2110
+      "length_m": 2110,
+      "map_length_m": 1630
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216262",
@@ -387,7 +423,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1390
+      "length_m": 1390,
+      "map_length_m": 790
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216263",
@@ -396,7 +433,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1050
+      "length_m": 1050,
+      "map_length_m": 850
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216264",
@@ -405,7 +443,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1980
+      "length_m": 1980,
+      "map_length_m": 1930
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_1702286381",
@@ -414,7 +453,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 5000
+      "length_m": 5000,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216266",
@@ -423,7 +463,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 880
+      "length_m": 880,
+      "map_length_m": 900
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216267",
@@ -432,7 +473,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 473
+      "length_m": 473,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216268",
@@ -441,7 +483,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 724
+      "length_m": 724,
+      "map_length_m": 860
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216285",
@@ -450,7 +493,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1320
+      "length_m": 1320,
+      "map_length_m": 1460
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216269",
@@ -459,7 +503,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1030
+      "length_m": 1030,
+      "map_length_m": 1260
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216270",
@@ -468,7 +513,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1410
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216271",
@@ -477,7 +523,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 244
+      "length_m": 244,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216272",
@@ -486,7 +533,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 244
+      "length_m": 244,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_2813810",
@@ -495,7 +543,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 970
+      "length_m": 970,
+      "map_length_m": 2150
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216274",
@@ -504,7 +553,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1350
+      "length_m": 1350,
+      "map_length_m": 1350
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216275",
@@ -513,7 +563,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1460
+      "length_m": 1460,
+      "map_length_m": 1550
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216276",
@@ -522,7 +573,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 710
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216277",
@@ -531,7 +583,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 750
+      "length_m": 750,
+      "map_length_m": 780
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216278",
@@ -540,7 +593,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1350
+      "length_m": 1350,
+      "map_length_m": 960
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216279",
@@ -549,7 +603,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 260
+      "length_m": 260,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216280",
@@ -558,7 +613,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 679
+      "length_m": 679,
+      "map_length_m": 530
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216281",
@@ -567,7 +623,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 935
+      "length_m": 935,
+      "map_length_m": 1190
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216283",
@@ -576,7 +633,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1680
+      "length_m": 1680,
+      "map_length_m": 2770
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216282",
@@ -585,7 +643,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1040
+      "length_m": 1040,
+      "map_length_m": 1220
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216284",
@@ -594,7 +653,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 1540
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216260",
@@ -603,7 +663,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 810
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216286",
@@ -612,7 +673,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2410
+      "length_m": 2410,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216273",
@@ -621,7 +683,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 193
+      "length_m": 193,
+      "map_length_m": null
     }
   ]
 }

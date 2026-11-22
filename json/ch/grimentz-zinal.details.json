@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grimentz-zinal",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253942+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007407+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=56&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1410,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1890,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 900,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1800,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1710,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 670,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1020,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1540,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1330,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1070,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1250,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1280,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 660,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 190,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -200,6 +217,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 100,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -211,6 +229,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 50,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -222,6 +241,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -233,6 +253,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -246,7 +267,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 5470
     },
     {
       "id": "slope-02-avoin",
@@ -255,7 +277,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 6000
+      "length_m": 6000,
+      "map_length_m": 320
     },
     {
       "id": "slope-10-becs",
@@ -264,7 +287,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 870
     },
     {
       "id": "slope-17-bonvin",
@@ -273,7 +297,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 1710
     },
     {
       "id": "slope-05-chache",
@@ -282,7 +307,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": null
     },
     {
       "id": "slope-37-combe",
@@ -291,7 +317,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 2150
     },
     {
       "id": "slope-15a-croix",
@@ -300,7 +327,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1660
     },
     {
       "id": "slope-36-ecole",
@@ -309,7 +337,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 710
     },
     {
       "id": "slope-03-marenda",
@@ -318,7 +347,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": null
     },
     {
       "id": "slope-08-panorama",
@@ -327,7 +357,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": null
     },
     {
       "id": "slope-07-tsarva",
@@ -336,7 +367,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": null
     },
     {
       "id": "slope-06-visivi",
@@ -345,7 +377,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1410
     },
     {
       "id": "slope-14c-abc",
@@ -354,7 +387,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 540
     },
     {
       "id": "slope-48a-aigle",
@@ -363,7 +397,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 6000
+      "length_m": 6000,
+      "map_length_m": 4970
     },
     {
       "id": "slope-34-angle",
@@ -372,7 +407,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 980
     },
     {
       "id": "slope-42-chiesso",
@@ -381,7 +417,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1170
     },
     {
       "id": "slope-47-coupe-du-monde",
@@ -390,7 +427,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1070
     },
     {
       "id": "slope-44-crete",
@@ -399,7 +437,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 1840
     },
     {
       "id": "slope-46-durand",
@@ -408,7 +447,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1470
     },
     {
       "id": "slope-01-foret",
@@ -417,7 +457,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4300
+      "length_m": 4300,
+      "map_length_m": 100
     },
     {
       "id": "slope-38-gouilles",
@@ -426,7 +467,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1140
     },
     {
       "id": "slope-35-goulet",
@@ -435,7 +477,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 520
     },
     {
       "id": "slope-31-arete",
@@ -444,7 +487,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 680
     },
     {
       "id": "slope-07a-lacs",
@@ -453,7 +497,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-04-pachio",
@@ -462,7 +507,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": null
     },
     {
       "id": "slope-39-skiathlon",
@@ -471,7 +517,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-14b-tsa-inferieure",
@@ -480,7 +527,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 1320
     },
     {
       "id": "slope-14a-tsa-superieure",
@@ -489,7 +537,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1730
     },
     {
       "id": "slope-40-tsarmettaz",
@@ -498,7 +547,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 750
     },
     {
       "id": "slope-12-tsayet",
@@ -507,7 +557,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4800
+      "length_m": 4800,
+      "map_length_m": 2000
     },
     {
       "id": "slope-48b-aigle",
@@ -516,7 +567,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 590
     },
     {
       "id": "slope-41-barthelemy",
@@ -525,7 +577,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 830
     },
     {
       "id": "slope-30-chamois",
@@ -534,7 +587,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 8000
+      "length_m": 8000,
+      "map_length_m": 7770
     },
     {
       "id": "slope-33-col",
@@ -543,7 +597,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 940
     },
     {
       "id": "slope-32-face",
@@ -552,7 +607,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 370
     },
     {
       "id": "slope-13b-les-couloirs-inferieure",
@@ -561,7 +617,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1170
     },
     {
       "id": "slope-13a-les-couloirs-superieure",
@@ -570,7 +627,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 910
     },
     {
       "id": "slope-15-les-crets",
@@ -579,7 +637,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 370
     },
     {
       "id": "slope-16b-lona-inferieure",
@@ -588,7 +647,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 4200
+      "length_m": 4200,
+      "map_length_m": 3210
     },
     {
       "id": "slope-16a-lona-superieure",
@@ -597,7 +657,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 4200
+      "length_m": 4200,
+      "map_length_m": 1340
     },
     {
       "id": "slope-01a-meyes",
@@ -606,7 +667,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": null
     },
     {
       "id": "slope-25-abondance",
@@ -615,7 +677,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1400
     },
     {
       "id": "slope-26-st-jean",
@@ -624,7 +687,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 2600
     },
     {
       "id": "slope-54-freeride-zinal",
@@ -633,7 +697,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-05a-lona",
@@ -642,7 +707,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-43-pylone-6",
@@ -651,7 +717,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 620
     },
     {
       "id": "slope-45-tsigere",
@@ -660,7 +727,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 960
     }
   ]
 }

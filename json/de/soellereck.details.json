@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "soellereck",
   "country": "de",
-  "fetched_at": "2026-11-22T08:40:36.260541+01:00",
+  "fetched_at": "2026-11-22T13:40:33.014418+01:00",
   "updated_at": null,
   "source": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2310,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 950,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 590,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 400,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 520,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 2774
+      "length_m": 2774,
+      "map_length_m": null
     },
     {
       "id": "slope-druckeberger",
@@ -101,7 +109,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-panoramahang",
@@ -110,7 +119,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 630
+      "length_m": 630,
+      "map_length_m": null
     },
     {
       "id": "slope-schrattenwang",
@@ -119,7 +129,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 930
+      "length_m": 930,
+      "map_length_m": 510
     },
     {
       "id": "slope-hexenschuss",
@@ -128,7 +139,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 690
+      "length_m": 690,
+      "map_length_m": null
     },
     {
       "id": "slope-ochsenhofle",
@@ -137,7 +149,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 630
+      "length_m": 630,
+      "map_length_m": 710
     },
     {
       "id": "slope-slalomhang",
@@ -146,7 +159,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 330
+      "length_m": 330,
+      "map_length_m": null
     },
     {
       "id": "slope-himmelfahrt",
@@ -155,7 +169,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 920
+      "length_m": 920,
+      "map_length_m": null
     },
     {
       "id": "slope-hollenritt",
@@ -164,7 +179,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-wannebe",
@@ -173,7 +189,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 570
+      "length_m": 570,
+      "map_length_m": null
     },
     {
       "id": "slope-sollis-home-run",
@@ -182,7 +199,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 530
+      "length_m": 530,
+      "map_length_m": null
     },
     {
       "id": "slope-zauberwald",
@@ -191,7 +209,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1340
+      "length_m": 1340,
+      "map_length_m": 1200
     },
     {
       "id": "slope-sollis-winterwelt",
@@ -200,7 +219,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 170
+      "length_m": 170,
+      "map_length_m": 150
     }
   ]
 }

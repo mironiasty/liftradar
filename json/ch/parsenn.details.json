@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "parsenn",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.255712+01:00",
+  "fetched_at": "2026-11-22T13:40:33.008077+01:00",
   "updated_at": null,
   "source": "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "funicular",
       "status": "open",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "funicular",
       "status": "open",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "cable_car",
       "status": "open",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "open",
       "length_m": null,
+      "map_length_m": 1990,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "open",
       "length_m": null,
+      "map_length_m": 2320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 3630,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1750,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1620,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1620,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 380,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1070,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1180,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1960,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 990,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1090,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +205,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1560,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -200,6 +217,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -213,7 +231,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 2110
     },
     {
       "id": "129",
@@ -222,7 +241,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "open",
-      "length_m": 4500
+      "length_m": 4500,
+      "map_length_m": 2700
     },
     {
       "id": "123",
@@ -231,7 +251,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2920
+      "length_m": 2920,
+      "map_length_m": 2250
     },
     {
       "id": "139",
@@ -240,7 +261,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1080
+      "length_m": 1080,
+      "map_length_m": 920
     },
     {
       "id": "153",
@@ -249,7 +271,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 1280
     },
     {
       "id": "187",
@@ -258,7 +281,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3400
+      "length_m": 3400,
+      "map_length_m": 2320
     },
     {
       "id": "189",
@@ -267,7 +291,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 3260
+      "length_m": 3260,
+      "map_length_m": 2430
     },
     {
       "id": "193",
@@ -276,7 +301,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": null
     },
     {
       "id": "197",
@@ -285,7 +311,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": null
     },
     {
       "id": "199",
@@ -294,7 +321,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1150
     },
     {
       "id": "125",
@@ -303,7 +331,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1840
     },
     {
       "id": "201",
@@ -312,7 +341,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 500
     },
     {
       "id": "127",
@@ -321,7 +351,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 3340
+      "length_m": 3340,
+      "map_length_m": 2420
     },
     {
       "id": "131",
@@ -330,7 +361,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 5400
+      "length_m": 5400,
+      "map_length_m": 3260
     },
     {
       "id": "133",
@@ -339,7 +371,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1910
     },
     {
       "id": "135",
@@ -348,7 +381,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 470
     },
     {
       "id": "137",
@@ -357,7 +391,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1650
+      "length_m": 1650,
+      "map_length_m": 940
     },
     {
       "id": "141",
@@ -366,7 +401,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 1140
     },
     {
       "id": "143",
@@ -375,7 +411,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 8000
+      "length_m": 8000,
+      "map_length_m": 7560
     },
     {
       "id": "145",
@@ -384,7 +421,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3200
+      "length_m": 3200,
+      "map_length_m": 2460
     },
     {
       "id": "147",
@@ -393,7 +431,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 7560
     },
     {
       "id": "149",
@@ -402,7 +441,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 1150
     },
     {
       "id": "151",
@@ -411,7 +451,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 7400
+      "length_m": 7400,
+      "map_length_m": 5110
     },
     {
       "id": "155",
@@ -420,7 +461,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1340
     },
     {
       "id": "195",
@@ -429,7 +471,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1850
     },
     {
       "id": "181",
@@ -438,7 +481,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 5320
+      "length_m": 5320,
+      "map_length_m": 4730
     },
     {
       "id": "183",
@@ -447,7 +491,8 @@
       "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 6020
+      "length_m": 6020,
+      "map_length_m": null
     },
     {
       "id": "185",
@@ -456,7 +501,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 8400
+      "length_m": 8400,
+      "map_length_m": 6010
     },
     {
       "id": "159",
@@ -465,7 +511,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2600
+      "length_m": 2600,
+      "map_length_m": 1680
     },
     {
       "id": "161",
@@ -474,7 +521,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "163",
@@ -483,7 +531,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 1170
     },
     {
       "id": "165",
@@ -492,7 +541,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2140
+      "length_m": 2140,
+      "map_length_m": 1540
     },
     {
       "id": "167",
@@ -501,7 +551,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2120
+      "length_m": 2120,
+      "map_length_m": 400
     },
     {
       "id": "169",
@@ -510,7 +561,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1330
     },
     {
       "id": "171",
@@ -519,7 +571,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 1300
     },
     {
       "id": "173",
@@ -528,7 +581,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3810
+      "length_m": 3810,
+      "map_length_m": 2270
     },
     {
       "id": "175",
@@ -537,7 +591,8 @@
       "difficulty": "other",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 3100
+      "length_m": 3100,
+      "map_length_m": null
     },
     {
       "id": "177",
@@ -546,7 +601,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 5600
+      "length_m": 5600,
+      "map_length_m": 3710
     }
   ]
 }

@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "saas-grund",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254216+01:00",
-  "updated_at": "2026-11-22T08:31:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007729+01:00",
+  "updated_at": "2026-11-22T13:31:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=206&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 910,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 850,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 160,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -114,7 +123,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1430
     },
     {
       "id": "slope-1a-gletscher-hohkraut",
@@ -123,7 +133,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 2900
     },
     {
       "id": "slope-2-weissmiespiste",
@@ -132,7 +143,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 5000
+      "length_m": 5000,
+      "map_length_m": 2960
     },
     {
       "id": "slope-2a-talli",
@@ -141,7 +153,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 590
     },
     {
       "id": "slope-3-kreuzboden",
@@ -150,7 +163,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 980
     },
     {
       "id": "slope-4-sandiger-boden",
@@ -159,7 +173,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1380
     },
     {
       "id": "slope-5-snowland",
@@ -168,7 +183,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 310
     },
     {
       "id": "slope-6-trift",
@@ -177,7 +193,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 1620
     },
     {
       "id": "slope-7-talabfahrt-saas-grund",
@@ -186,7 +203,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 4800
+      "length_m": 4800,
+      "map_length_m": 820
     },
     {
       "id": "slope-8-talabfahrt-saas-balen",
@@ -195,7 +213,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 2100
+      "length_m": 2100,
+      "map_length_m": 2220
     },
     {
       "id": "slope-9-ziebel",
@@ -204,7 +223,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 180
     },
     {
       "id": "slope-10-bodu-saas-balen",
@@ -213,7 +233,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 310
     },
     {
       "id": "slope-hohkraut-gelb",
@@ -222,7 +243,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 2140
     }
   ]
 }

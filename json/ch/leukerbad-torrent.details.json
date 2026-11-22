@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "leukerbad-torrent",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.254116+01:00",
-  "updated_at": "2026-11-22T08:31:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007607+01:00",
+  "updated_at": "2026-11-22T13:30:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=135&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1840,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1010,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1240,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1160,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -92,7 +99,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1360
     },
     {
       "id": "slope-1a-rennpiste",
@@ -101,7 +109,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 860
     },
     {
       "id": "slope-2-kumme",
@@ -110,7 +119,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 1330
     },
     {
       "id": "slope-3-rinderhalde",
@@ -119,7 +129,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2900
+      "length_m": 2900,
+      "map_length_m": 1500
     },
     {
       "id": "slope-3a-reservoir",
@@ -128,7 +139,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": 270
     },
     {
       "id": "slope-4-alter-stafel-fis",
@@ -137,7 +149,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 940
     },
     {
       "id": "slope-5-schwalbennest",
@@ -146,7 +159,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 780
     },
     {
       "id": "slope-7-torrenthotel",
@@ -155,7 +169,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 660
     },
     {
       "id": "slope-8-plampulet",
@@ -164,7 +179,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2900
+      "length_m": 2900,
+      "map_length_m": 1320
     },
     {
       "id": "slope-9-lingelen",
@@ -173,7 +189,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1360
     },
     {
       "id": "slope-11-torrentalp",
@@ -182,7 +199,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": null
     },
     {
       "id": "slope-12-planedri",
@@ -191,7 +209,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 3070
     },
     {
       "id": "slope-13-waldpiste-fis",
@@ -200,7 +219,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 1650
     },
     {
       "id": "slope-14-flaschenhalde",
@@ -209,7 +229,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1360
     },
     {
       "id": "slope-15-talabfahrt-nach-leukerbad",
@@ -218,7 +239,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 7700
+      "length_m": 7700,
+      "map_length_m": null
     },
     {
       "id": "slope-16-talstation",
@@ -227,7 +249,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 2000
+      "length_m": 2000,
+      "map_length_m": 1040
     },
     {
       "id": "slope-20-freeride-direttissima",
@@ -236,7 +259,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 520
     },
     {
       "id": "slope-21-freeride-tschantamaria",
@@ -245,7 +269,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 3600
+      "length_m": 3600,
+      "map_length_m": 420
     },
     {
       "id": "slope-22-freeride-torrentstafel",
@@ -254,7 +279,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 3700
+      "length_m": 3700,
+      "map_length_m": 1580
     }
   ]
 }

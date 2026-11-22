@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "arosa",
   "country": "ch",
-  "fetched_at": "2026-11-22T08:40:36.253727+01:00",
-  "updated_at": "2026-11-22T08:30:00+01:00",
+  "fetched_at": "2026-11-22T13:40:33.007156+01:00",
+  "updated_at": "2026-11-22T13:36:00+01:00",
   "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=67&saison=1&ref=contentBox",
   "lifts": [
     {
@@ -13,6 +13,7 @@
       "type": "cable_car",
       "status": "open",
       "length_m": null,
+      "map_length_m": 1240,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "cable_car",
       "status": "open",
       "length_m": null,
+      "map_length_m": 1960,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "gondola",
       "status": "open",
       "length_m": null,
+      "map_length_m": 3120,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1690,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "open",
       "length_m": null,
+      "map_length_m": 1250,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2150,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 680,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 960,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 720,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 440,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 380,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -169,7 +183,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-1-hintere-piste-oberer-teil",
@@ -178,7 +193,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 2070
     },
     {
       "id": "slope-1a-hintere-piste-unterer-teil",
@@ -187,7 +203,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": null
     },
     {
       "id": "slope-1b-skibob-piste",
@@ -196,7 +213,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": null
     },
     {
       "id": "slope-1h-heimfahrtspiste-robinson",
@@ -205,7 +223,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1300
     },
     {
       "id": "slope-2-mittlere-piste",
@@ -214,7 +233,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 990
     },
     {
       "id": "slope-2a-munggaegg",
@@ -223,7 +243,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 800
+      "length_m": 800,
+      "map_length_m": 420
     },
     {
       "id": "slope-2b-herrenbachli-hundschopf-alpenblick",
@@ -232,7 +253,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1430
     },
     {
       "id": "slope-2c-alpenblick-hornli-express-tal",
@@ -241,7 +263,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 1200
     },
     {
       "id": "slope-3-direttisima",
@@ -250,7 +273,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1290
     },
     {
       "id": "slope-3a-piste-3",
@@ -259,7 +283,8 @@
       "difficulty": "ski_route",
       "colour": "yellow",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": null
     },
     {
       "id": "slope-4-skiclub",
@@ -268,7 +293,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 1160
     },
     {
       "id": "slope-5-hornli-traverse",
@@ -277,7 +303,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "open",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 1550
     },
     {
       "id": "slope-5a-strada-oberer-teil",
@@ -286,7 +313,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "open",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 310
     },
     {
       "id": "slope-5b-zufahrt-sb-hornli-talstation",
@@ -295,7 +323,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "open",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 400
     },
     {
       "id": "slope-5c-strada-unterer-teil",
@@ -304,7 +333,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 1140
     },
     {
       "id": "slope-5d-sbp-tal-carmenna-tal",
@@ -313,7 +343,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1100
+      "length_m": 1100,
+      "map_length_m": 1160
     },
     {
       "id": "slope-5e-klempen-alpentobel",
@@ -322,7 +353,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 850
     },
     {
       "id": "slope-6-sbp-berg-oberer-carmennahang-unterer-carmennahang-zufahrt-sbp-tal",
@@ -331,7 +363,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 2600
+      "length_m": 2600,
+      "map_length_m": 1790
     },
     {
       "id": "slope-6a-emsla",
@@ -340,7 +373,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1700
+      "length_m": 1700,
+      "map_length_m": 800
     },
     {
       "id": "slope-7-obersasspiste",
@@ -349,7 +383,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 790
     },
     {
       "id": "slope-8-weisshorn-carmennaberg",
@@ -358,7 +393,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 490
     },
     {
       "id": "slope-8a-carmennaberg-carmennahutte",
@@ -367,7 +403,8 @@
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 1730
     },
     {
       "id": "slope-9-carmenna-berg-carmenna-mitte",
@@ -376,7 +413,8 @@
       "difficulty": "other",
       "colour": "red_black",
       "status": "closed",
-      "length_m": 2300
+      "length_m": 2300,
+      "map_length_m": 2900
     },
     {
       "id": "slope-9a-carmenna-mitte-briggerhang-traverse-ried-berg",
@@ -385,7 +423,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 1450
     },
     {
       "id": "slope-9b-carmenna-mitte-emsla",
@@ -394,7 +433,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 370
     },
     {
       "id": "slope-9c-pgs",
@@ -403,7 +443,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 540
     },
     {
       "id": "slope-9d-donauwellen",
@@ -412,7 +453,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-9e-kollerhupf-verlangerung",
@@ -421,7 +463,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": null
     },
     {
       "id": "slope-10-weisshorngipfel-sattelhutte-law-mitte",
@@ -430,7 +473,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 3700
+      "length_m": 3700,
+      "map_length_m": 3430
     },
     {
       "id": "slope-10a-traxloch-kreuzung-hintere-hutte",
@@ -439,7 +483,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 1260
     },
     {
       "id": "slope-10b-kreuzung-hintere-hutte-ried-tal",
@@ -448,7 +493,8 @@
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": null
     },
     {
       "id": "slope-11-leichte-maran-oberer-teil",
@@ -457,7 +503,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2500
+      "length_m": 2500,
+      "map_length_m": 2650
     },
     {
       "id": "slope-11a-leichte-maran-unterer-teil",
@@ -466,7 +513,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 2800
+      "length_m": 2800,
+      "map_length_m": 2750
     },
     {
       "id": "slope-11h-heimfahrtspiste-valsana",
@@ -475,7 +523,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 1280
     },
     {
       "id": "slope-12-diamond-slope",
@@ -484,7 +533,8 @@
       "difficulty": "other",
       "colour": "black_blue",
       "status": "closed",
-      "length_m": 2400
+      "length_m": 2400,
+      "map_length_m": 1430
     },
     {
       "id": "slope-13-ried-berg-gondelbahn-kulm-tal",
@@ -493,7 +543,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 940
     },
     {
       "id": "slope-13a-carmenna-tal-hornli-express-tal",
@@ -502,7 +553,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 630
     },
     {
       "id": "slope-13b-kulmwiese",
@@ -511,7 +563,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 780
     },
     {
       "id": "slope-14-gondelbahn-kulm-berg-tschuggenhutte-ried-tal",
@@ -520,7 +573,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": 1660
     },
     {
       "id": "slope-14a-gondelbahn-kulm-berg-ried-berg",
@@ -529,7 +583,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 700
+      "length_m": 700,
+      "map_length_m": 310
     },
     {
       "id": "slope-14h-heimfahrtspiste-tschuggen",
@@ -538,7 +593,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": 160
     },
     {
       "id": "slope-15-tomelisteilhang",
@@ -547,7 +603,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 920
     },
     {
       "id": "slope-15a-law-mittelstation-tomeli-tal-vetter",
@@ -556,7 +613,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 3000
+      "length_m": 3000,
+      "map_length_m": 2310
     },
     {
       "id": "slope-16-pratschli-pisten",
@@ -565,7 +623,8 @@
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
-      "length_m": 1400
+      "length_m": 1400,
+      "map_length_m": 780
     }
   ]
 }

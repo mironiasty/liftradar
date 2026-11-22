@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "palenica",
   "country": "pl",
-  "fetched_at": "2026-11-22T08:40:36.257677+01:00",
+  "fetched_at": "2026-11-22T13:40:33.010741+01:00",
   "updated_at": null,
-  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
+  "source": "https://www.pkl.pl/trasy-narciarskie.html",
   "lifts": [
     {
       "id": "lift-palenica",
@@ -13,6 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 780,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 320,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 260,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -81,7 +87,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1000
+      "length_m": 1000,
+      "map_length_m": null
     },
     {
       "id": "slope-palenica-ii-tzw-rodzinna",
@@ -90,7 +97,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": null
     },
     {
       "id": "slope-szafranowka-i",
@@ -99,7 +107,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-szafranowka-ii",
@@ -108,7 +117,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": null
     },
     {
       "id": "slope-polana-do-nauki",
@@ -117,7 +127,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 40
+      "length_m": 40,
+      "map_length_m": null
     }
   ]
 }

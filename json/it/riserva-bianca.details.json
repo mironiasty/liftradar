@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "riserva-bianca",
   "country": "it",
-  "fetched_at": "2026-11-22T08:40:36.256395+01:00",
+  "fetched_at": "2026-11-22T13:40:33.009299+01:00",
   "updated_at": null,
   "source": "https://riservabianca.it/impianti-piste",
   "lifts": [
@@ -13,6 +13,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 90,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -24,6 +25,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2700,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -35,6 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1150,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -46,6 +49,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1340,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -57,6 +61,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1230,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -68,6 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1110,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -79,6 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 2270,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -90,6 +97,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1770,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -101,6 +109,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 290,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,6 +121,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1120,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -123,6 +133,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 50,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -134,6 +145,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 590,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -145,6 +157,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 710,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -156,6 +169,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 1590,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -167,6 +181,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 540,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -178,6 +193,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
+      "map_length_m": 380,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -191,7 +207,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3470
+      "length_m": 3470,
+      "map_length_m": 570
     },
     {
       "id": "slope-baracca-verde",
@@ -200,7 +217,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-pian-del-sole",
@@ -209,7 +227,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 1250
     },
     {
       "id": "slope-alpetta",
@@ -218,7 +237,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": 770
     },
     {
       "id": "slope-alpetta-olimpica",
@@ -227,7 +247,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1900
+      "length_m": 1900,
+      "map_length_m": null
     },
     {
       "id": "slope-alpetta-olimpica-2",
@@ -236,7 +257,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 1420
     },
     {
       "id": "slope-olimpica-giacomo-marro",
@@ -245,7 +267,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1600
+      "length_m": 1600,
+      "map_length_m": 1680
     },
     {
       "id": "slope-laghetti",
@@ -254,7 +277,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1800
+      "length_m": 1800,
+      "map_length_m": 1030
     },
     {
       "id": "slope-belvedere",
@@ -263,7 +287,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1680
+      "length_m": 1680,
+      "map_length_m": 810
     },
     {
       "id": "slope-raccordo-sole-belvedere",
@@ -272,7 +297,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": 530
     },
     {
       "id": "slope-lagone",
@@ -281,7 +307,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 680
+      "length_m": 680,
+      "map_length_m": 1010
     },
     {
       "id": "slope-lagone-belvedere",
@@ -290,7 +317,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1500
+      "length_m": 1500,
+      "map_length_m": 590
     },
     {
       "id": "slope-panice-snowpark",
@@ -299,7 +327,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1480
+      "length_m": 1480,
+      "map_length_m": 1670
     },
     {
       "id": "slope-pancani",
@@ -308,7 +337,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": null
     },
     {
       "id": "slope-pian-del-leone",
@@ -317,7 +347,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 2440
     },
     {
       "id": "slope-pancani-agonistica",
@@ -326,7 +357,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 900
+      "length_m": 900,
+      "map_length_m": 630
     },
     {
       "id": "slope-pancani-cabanaira",
@@ -335,7 +367,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1440
+      "length_m": 1440,
+      "map_length_m": null
     },
     {
       "id": "slope-cabanaira-taglio-niculin",
@@ -344,7 +377,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 610
     },
     {
       "id": "slope-cabanaira",
@@ -353,7 +387,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": 510
     },
     {
       "id": "slope-cresta",
@@ -362,7 +397,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1440
+      "length_m": 1440,
+      "map_length_m": 2190
     },
     {
       "id": "slope-cresta-plateau",
@@ -371,7 +407,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-carosello",
@@ -380,7 +417,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 480
+      "length_m": 480,
+      "map_length_m": 690
     },
     {
       "id": "slope-bebe",
@@ -389,7 +427,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 300
+      "length_m": 300,
+      "map_length_m": null
     },
     {
       "id": "slope-eugenio-segre",
@@ -398,7 +437,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1540
+      "length_m": 1540,
+      "map_length_m": 950
     },
     {
       "id": "slope-vallone-dei-pastori",
@@ -407,7 +447,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1594
+      "length_m": 1594,
+      "map_length_m": null
     },
     {
       "id": "slope-vallone-dei-pastori-2",
@@ -416,7 +457,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 1310
     },
     {
       "id": "slope-colle-di-tenda-plateau",
@@ -425,7 +467,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 500
+      "length_m": 500,
+      "map_length_m": 690
     },
     {
       "id": "slope-guido-machetto",
@@ -434,7 +477,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1350
+      "length_m": 1350,
+      "map_length_m": 840
     },
     {
       "id": "slope-gorba",
@@ -443,7 +487,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 870
+      "length_m": 870,
+      "map_length_m": 550
     },
     {
       "id": "slope-stradina-gorba",
@@ -452,7 +497,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 400
+      "length_m": 400,
+      "map_length_m": null
     },
     {
       "id": "slope-giorgio-armand",
@@ -461,7 +507,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 870
+      "length_m": 870,
+      "map_length_m": 660
     },
     {
       "id": "slope-del-colle",
@@ -470,7 +517,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 3540
+      "length_m": 3540,
+      "map_length_m": null
     },
     {
       "id": "slope-strada-forti",
@@ -479,7 +527,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 5200
+      "length_m": 5200,
+      "map_length_m": 3920
     },
     {
       "id": "slope-pernante-limonetto",
@@ -488,7 +537,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 980
+      "length_m": 980,
+      "map_length_m": 1940
     },
     {
       "id": "slope-pernante-alta",
@@ -497,7 +547,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 385
+      "length_m": 385,
+      "map_length_m": 470
     },
     {
       "id": "slope-pernante-centrale",
@@ -506,7 +557,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 2700
+      "length_m": 2700,
+      "map_length_m": 850
     },
     {
       "id": "slope-pernante-agonistica",
@@ -515,7 +567,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 1300
+      "length_m": 1300,
+      "map_length_m": 830
     },
     {
       "id": "slope-morel",
@@ -524,7 +577,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 1200
+      "length_m": 1200,
+      "map_length_m": null
     },
     {
       "id": "slope-morel-2",
@@ -533,7 +587,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": null
+      "length_m": null,
+      "map_length_m": 860
     },
     {
       "id": "slope-morel-diretta",
@@ -542,7 +597,8 @@
       "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": 280
     },
     {
       "id": "slope-morel-agonistica",
@@ -551,7 +607,8 @@
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 600
+      "length_m": 600,
+      "map_length_m": null
     },
     {
       "id": "slope-tapis-roulant-1400-riservato-scuole-sci",
@@ -560,7 +617,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 35
+      "length_m": 35,
+      "map_length_m": null
     },
     {
       "id": "slope-gegia",
@@ -569,7 +627,8 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 305
+      "length_m": 305,
+      "map_length_m": 650
     }
   ]
 }
