@@ -14,6 +14,7 @@ import { z } from "zod";
 /** @typedef {import("../types/history").PastRunsOfOneResortForGraphs} ResortHistory */
 /** @typedef {import("../types/stats").DailyTotalsPerCountryAndRegion} Stats */
 /** @typedef {import("../types/groups").GroupsOfResortsListedSeparately} Groups */
+/** @typedef {import("../types/resort-details").ExperimentalEveryLiftAndSlopeOfOneResort} Details */
 
 const INSTRUCTIONS = `LiftRadar: the status of ski resorts across Europe, from the resorts' own reports, updated twice a day \
 (about 08:40 and 13:40 CET). null means the source doesn't publish the value; status is open, closed or \
@@ -196,6 +197,69 @@ function createServer(env, origin) {
       const resort = await read(`/json/${country}/${id}.json`);
       if (!resort) return notFound(country, id);
       return json({ ...resort, page: `${SITE}/resort?r=${country}/${id}` });
+    },
+  );
+
+  server.registerTool(
+    "get_resort_lifts",
+    {
+      title: "One ski resort's lifts and slopes",
+      description:
+        "Every lift and slope of one resort, one by one, as its source lists them: name, status, lift type or slope " +
+        "difficulty, and length, capacity and altitudes where the source gives them. Only for resorts whose source " +
+        "lists them one by one; get_resort has the totals for all.",
+      inputSchema: {
+        country,
+        id: resortId,
+        status: z
+          .enum(["open", "closed", "preparation", "unknown"])
+          .optional()
+          .describe("Only lifts and slopes with this status"),
+      },
+      annotations: READ_ONLY,
+    },
+    async ({ country, id, status }) => {
+      const details = /** @type {Details | null} */ (await read(`/json/${country}/${id}.details.json`));
+      if (!details) {
+        if (!(await read(`/json/${country}/${id}.json`))) return notFound(country, id);
+        return {
+          isError: true,
+          content: [
+            {
+              type: /** @type {const} */ ("text"),
+              text: `${country}/${id}'s source doesn't list its lifts and slopes one by one. get_resort has its totals.`,
+            },
+          ],
+        };
+      }
+      /** @param {{status: string}} item */
+      const shown = (item) => !status || item.status === status;
+      return json({
+        country,
+        id,
+        fetched_at: details.fetched_at,
+        updated_at: details.updated_at,
+        source: details.source,
+        lifts: details.lifts.filter(shown).map((l) => ({
+          name: l.name,
+          ref: l.ref,
+          type: l.type,
+          status: l.status,
+          length_m: l.length_m,
+          capacity_per_hour: l.capacity_per_hour,
+          bottom_m: l.bottom_m,
+          top_m: l.top_m,
+        })),
+        slopes: details.slopes.filter(shown).map((s) => ({
+          name: s.name,
+          ref: s.ref,
+          difficulty: s.difficulty,
+          colour: s.colour ?? null,
+          status: s.status,
+          length_m: s.length_m,
+        })),
+        page: `${SITE}/resort?r=${country}/${id}`,
+      });
     },
   );
 
