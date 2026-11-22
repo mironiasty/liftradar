@@ -7,8 +7,10 @@ and slopes one by one (infosnow, Lumiplan, ...; their ids are made from the name
 which have coordinates. An item is matched to the OpenStreetMap lines in and around its resort (within NEARBY_KM of
 the resort's own lifts) by its number (`ref`, or the code its name starts with), its name with lift-type words left out, its lift type or
 slope difficulty and, for lifts, the length and the altitudes of its stations. The best pairs go first, each
-lift and slope once; a slope takes every OSM segment with its name and number. About 85% of the lifts and 78%
-of the slopes match, nearly all correctly (docs/plans/2026-11-13-lift-details.md in liftradar-fetcher).
+lift and slope once; a slope takes every OSM segment with its name and number. A resort's own lines go to its own
+list first; a neighbour's list (whose map may show them too) only gets those still unlinked afterwards, and only
+with a known status. About 82% of the lifts and 72% of the slopes match, nearly all correctly
+(docs/plans/2026-11-13-lift-details.md in liftradar-fetcher).
 
 ski_tiles.py calls `link` while it builds the tiles. To link tiles that are already built (e.g. to try it out):
 
@@ -216,8 +218,12 @@ def start(feature: dict) -> list | None:
     return feature["poly"][0][0] if feature.get("poly") else None
 
 
-def nearby(features: list[dict], key: str) -> list[dict]:
-    """The resort's own lifts or runs, and the others within NEARBY_KM of them (a map may cover more)."""
+def nearby(features: list[dict], key: str, listed: set[str], neighbours: bool) -> list[dict]:
+    """The lifts or runs within NEARBY_KM of the resort's own (a map may cover more). First (`neighbours` false)
+    the resort's own and those of resorts without a details file of their own (`listed`); then the still unlinked
+    ones of the listed resorts around it. A resort's own list goes first, as a neighbour's map often shows its
+    lifts without a status (SkiWelt's map has KitzSki's, all "unknown"), but a lift OSM gives to one resort may be
+    in the other's list only (Seiser Alm's Mont Sëuc gondola, in Val Gardena's)."""
     own = [start(f) for f in features if f.get("lr") == key]
     own = [p for p in own if p]
     if not own:
@@ -226,7 +232,13 @@ def nearby(features: list[dict], key: str) -> list[dict]:
     pad_lon = pad_lat / math.cos(math.radians(own[0][1]))
     west, east = min(p[0] for p in own) - pad_lon, max(p[0] for p in own) + pad_lon
     south, north = min(p[1] for p in own) - pad_lat, max(p[1] for p in own) + pad_lat
-    return [f for f in features if (p := start(f)) and west < p[0] < east and south < p[1] < north]
+
+    def wanted(f: dict) -> bool:
+        if neighbours:
+            return f.get("lr") != key and f.get("lr") in listed and not f.get("item")
+        return f.get("lr") == key or f.get("lr") not in listed
+
+    return [f for f in features if (p := start(f)) and west < p[0] < east and south < p[1] < north and wanted(f)]
 
 
 def best_pairs(items: list[dict], candidates: list, kind: str, key: str, first) -> dict[int, int]:
@@ -246,25 +258,27 @@ def best_pairs(items: list[dict], candidates: list, kind: str, key: str, first) 
     return pairs
 
 
-def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:
-    """Set `item` on the lifts and runs (tile dicts; the same lift may be several dicts, one per tile) that match
-    an item of a details file. Returns the counts, per resort and in all."""
-    lifts = [f for f in lifts if f.get("status", "operating") == "operating" and f.get("c")]
-    runs = [f for f in runs if "downhill" in (f.get("uses") or [])]
-    counts = {"lifts": [0, 0], "slopes": [0, 0], "resorts": {}}
-    for path in sorted(Path(details_dir).glob("*/*.details.json")):
-        details = json.loads(path.read_text(encoding="utf-8"))
-        key = f"{details['country']}/{details['id']}"
-
-        # Lifts: one OSM lift each, by its OSM id (the same lift is in several tiles).
-        by_osm = defaultdict(list)
-        for f in nearby(lifts, key):
-            by_osm[f.get("osm") or id(f)].append(f)
-        candidates = list(by_osm.values())
-        pairs = best_pairs(details["lifts"], candidates, "lifts", key, lambda c: c[0])
-        for a, b in pairs.items():
-            for f in candidates[b]:
-                f["item"] = f"{key}/{details['lifts'][a]['id']}"
+def link_items(
+    items: list[dict], features: list[dict], kind: str, key: str, listed: set[str], neighbours: bool, done: set[int]
+) -> None:
+    """Link the resort's lifts or slopes (`items`) not linked yet (`done`, their indexes, updated) to the lines
+    nearby. A neighbour's line only takes an item with a known status."""
+    todo = [a for a, item in enumerate(items) if a not in done and not (neighbours and item["status"] == "unknown")]
+    groups = defaultdict(list)
+    for f in nearby(features, key, listed, neighbours):
+        if kind == "lifts":
+            # One OSM lift each, by its OSM id (the same lift is in several tiles).
+            groups[f.get("osm") or id(f)].append(f)
+        elif f.get("name") or f.get("ref"):
+            # Every OSM segment with the slope's name and number.
+            groups[(f.get("name"), f.get("ref"), f.get("lr"))].append(f)
+    candidates = list(groups.values())
+    pairs = best_pairs([items[a] for a in todo], candidates, kind, key, lambda c: c[0])
+    for i, b in pairs.items():
+        done.add(todo[i])
+        for f in candidates[b]:
+            f["item"] = f"{key}/{items[todo[i]]['id']}"
+    if kind == "lifts":
         # A lift OSM has in sections ("Fimbabahn I", "II") with one number: the other sections too.
         linked = {(c[0].get("ref"), c[0].get("lr")): c[0]["item"] for c in candidates if c[0].get("item")}
         for c in candidates:
@@ -272,22 +286,32 @@ def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:
                 for f in c:
                     f["item"] = item
 
-        # Slopes: every OSM segment with the slope's name and number.
-        groups = defaultdict(list)
-        for f in nearby(runs, key):
-            if f.get("name") or f.get("ref"):
-                groups[(f.get("name"), f.get("ref"), f.get("lr"))].append(f)
-        candidates = list(groups.values())
-        slope_pairs = best_pairs(details["slopes"], candidates, "slopes", key, lambda c: c[0])
-        for a, b in slope_pairs.items():
-            for f in candidates[b]:
-                f["item"] = f"{key}/{details['slopes'][a]['id']}"
 
-        counts["lifts"][0] += len(pairs)
+def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:
+    """Set `item` on the lifts and runs (tile dicts; the same lift may be several dicts, one per tile) that match
+    an item of a details file. Returns the counts, per resort and in all."""
+    lifts = [f for f in lifts if f.get("status", "operating") == "operating" and f.get("c")]
+    runs = [f for f in runs if "downhill" in (f.get("uses") or [])]
+    files = [
+        json.loads(path.read_text(encoding="utf-8")) for path in sorted(Path(details_dir).glob("*/*.details.json"))
+    ]
+    listed = {f"{details['country']}/{details['id']}" for details in files}
+    done = {key: (set(), set()) for key in listed}  # the indexes of the linked lifts and slopes
+    for neighbours in (False, True):
+        for details in files:
+            key = f"{details['country']}/{details['id']}"
+            link_items(details["lifts"], lifts, "lifts", key, listed, neighbours, done[key][0])
+            link_items(details["slopes"], runs, "slopes", key, listed, neighbours, done[key][1])
+
+    counts = {"lifts": [0, 0], "slopes": [0, 0], "resorts": {}}
+    for details in files:
+        key = f"{details['country']}/{details['id']}"
+        lm, sm = (len(d) for d in done[key])
+        counts["lifts"][0] += lm
         counts["lifts"][1] += len(details["lifts"])
-        counts["slopes"][0] += len(slope_pairs)
+        counts["slopes"][0] += sm
         counts["slopes"][1] += len(details["slopes"])
-        counts["resorts"][key] = (len(pairs), len(details["lifts"]), len(slope_pairs), len(details["slopes"]))
+        counts["resorts"][key] = (lm, len(details["lifts"]), sm, len(details["slopes"]))
     return counts
 
 

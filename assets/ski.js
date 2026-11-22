@@ -55,8 +55,18 @@ const SKI_LIFT_TYPES = {
 };
 // Experimental: the status of a lift or piste linked to its resort's details file (`item`), in its tooltip.
 const SKI_STATES = { open: t("open"), closed: t("closed"), preparation: t("in preparation") };
-// How much a closed lift or piste (or one in preparation) is faded, on top of its own opacity.
-const CLOSED_OPACITY = 0.25;
+// How a lift or piste of a resort with statuses is drawn (`look`), on top of its own width and opacity:
+// open ones wide, on a light edge; closed ones (and those in preparation) thin and dashed; those whose
+// status isn't known (not linked, or the source doesn't say) thin and faint. Lifts also get a dot on
+// each station: green when running, a red ring when not. Resorts without statuses are drawn as before.
+const SKI_LOOKS = {
+  open: { width: 1.4, opacity: 1 },
+  closed: { width: 0.7, opacity: 0.8 },
+  unknown: { width: 0.8, opacity: 0.5 },
+};
+const OPEN_COLOR = "#2e9e3f";
+const CLOSED_COLOR = "#d62828";
+const CASING = darkMode() ? "#111" : "#fff";
 const SKI_DIFFICULTIES = {
   novice: t("novice"),
   easy: t("easy"),
@@ -149,10 +159,13 @@ function skiFeatures(tile, highlight, names) {
         dashed: offPiste || !downhill || tunnel,
         shared: downhill && !offPiste && !tunnel && !grey(run) ? sharedColor(run, tile.runs) : null,
         width: downhill ? 2.5 : 1.5,
+        baseWidth: downhill ? 2.5 : 1.5,
         opacity: fade(run) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
         base: fade(run) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
         item: run.item ?? "",
         state: "",
+        look: "",
+        dash: offPiste || !downhill || tunnel,
         name: run.name ?? "",
         lr: run.lr ?? "",
         tunnel,
@@ -169,10 +182,14 @@ function skiFeatures(tile, highlight, names) {
       lr: lift.lr ?? "",
       color: grey(lift) ? UNLISTED : gone ? "#888" : INK,
       dashed: gone || tunnel,
+      dash: gone || tunnel,
+      width: 2.5,
+      baseWidth: 2.5,
       opacity: fade(lift) * (tunnel ? 0.55 : 1),
       base: fade(lift) * (tunnel ? 0.55 : 1),
       item: lift.item ?? "",
       state: "",
+      look: "",
       name: lift.name ?? "",
       kind: [SKI_LIFT_TYPES[lift.type] ?? t("Lift"), gone ? t("out of service") : "", tunnel ? t("in a tunnel") : ""]
         .filter(Boolean)
@@ -181,6 +198,14 @@ function skiFeatures(tile, highlight, names) {
     };
     lifts.push({ type: "Feature", id: lift.osm, geometry: { type: "LineString", coordinates: lift.c }, properties });
     stations.push({ type: "Feature", id: lift.osm, geometry: { type: "Point", coordinates: lift.c[0] }, properties });
+    // The top station: drawn only when the lift's status is known.
+    const top = { ...properties, top: true };
+    stations.push({
+      type: "Feature",
+      id: lift.osm,
+      geometry: { type: "Point", coordinates: lift.c.at(-1) },
+      properties: top,
+    });
   }
   return { runs, lifts, stations };
 }
@@ -199,7 +224,18 @@ function skiLabel({ properties: p }) {
 // tooltips (otherwise those the tiles give); minZoom, from where they're drawn; tips: false for
 // no tooltips (the map page, where a click on the area shows the resort). Resolves once the
 // tiles of the first view are drawn.
-function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SKI_MIN_ZOOM, tips = true } = {}) {
+// onStates: called when the statuses of a resort in view have loaded (for a legend).
+function skiLayers(
+  map,
+  ski,
+  {
+    highlight = null,
+    names = new Map(),
+    minZoom = SKI_MIN_ZOOM,
+    tips = true,
+    onStates = /** @type {(() => void) | null} */ (null),
+  } = {},
+) {
   const empty = { type: "FeatureCollection", features: [] };
   map.addSource("ski-runs", { type: "geojson", data: empty, attribution: SKI_ATTRIBUTION });
   map.addSource("ski-lifts", { type: "geojson", data: empty });
@@ -238,19 +274,34 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
   // Under a stretch two pistes share, the harder one's colour as its edges (sharedColor).
   line("ski-runs-shared", "ski-runs", ["all", isLine, ["has", "shared"], ["!=", ["get", "shared"], null]], {
     "line-color": ["get", "shared"],
-    "line-width": 5.5,
+    "line-width": ["+", ["get", "width"], 3],
   });
-  line("ski-runs", "ski-runs", ["all", isLine, ["!", ["get", "dashed"]]]);
-  line("ski-runs-dashed", "ski-runs", ["all", isLine, ["get", "dashed"]], { "line-dasharray": [2, 2] });
-  line("ski-lifts", "ski-lifts", ["!", ["get", "dashed"]]);
-  line("ski-lifts-dashed", "ski-lifts", ["get", "dashed"], { "line-dasharray": [1.5, 2] });
+  // Open lifts and pistes on a light edge (SKI_LOOKS).
+  const isOpen = ["==", ["get", "look"], "open"];
+  const edge = { "line-color": CASING, "line-width": ["+", ["get", "width"], 3], "line-opacity": ["get", "base"] };
+  line("ski-runs-open", "ski-runs", ["all", isLine, isOpen], edge);
+  line("ski-runs", "ski-runs", ["all", isLine, ["!", ["get", "dash"]]]);
+  line("ski-runs-dashed", "ski-runs", ["all", isLine, ["get", "dash"]], { "line-dasharray": [2, 2] });
+  line("ski-lifts-open", "ski-lifts", isOpen, edge);
+  line("ski-lifts", "ski-lifts", ["!", ["get", "dash"]]);
+  line("ski-lifts-dashed", "ski-lifts", ["get", "dash"], { "line-dasharray": [1.5, 2] });
+  const known = ["in", ["get", "look"], ["literal", ["open", "closed"]]];
+  const byLook = (open, closed, other) => ["match", ["get", "look"], "open", open, "closed", closed, other];
   map.addLayer(
     {
       id: "ski-stations",
       type: "circle",
       source: "ski-stations",
       minzoom: minZoom,
-      paint: { "circle-radius": 2.5, "circle-color": ["get", "color"], "circle-opacity": ["get", "opacity"] },
+      filter: ["any", ["!", ["has", "top"]], known],
+      paint: {
+        "circle-radius": byLook(4.5, 3.5, 2.5),
+        "circle-color": byLook(OPEN_COLOR, CASING, ["get", "color"]),
+        "circle-stroke-color": byLook(CASING, CLOSED_COLOR, CASING),
+        "circle-stroke-width": byLook(1.5, 2, 0),
+        "circle-opacity": ["case", known, ["get", "base"], ["get", "opacity"]],
+        "circle-stroke-opacity": ["get", "base"],
+      },
     },
     before,
   );
@@ -281,13 +332,25 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
   const drawn = new Set();
   const draw = (key) => map.getSource(sources[key]).setData({ type: "FeatureCollection", features: data[key] });
 
-  // Experimental: lifts and pistes linked to a resort's details file get its status, and are faded when closed.
+  // Experimental: lifts and pistes linked to a resort's details file get its status, and its look (SKI_LOOKS).
   const states = new Map(); // "<country>/<id>/<item id>" -> status
+  const withStates = new Set(); // the resorts whose details are loaded
   const asked = new Set();
   const restyle = (f) => {
     const p = f.properties;
     p.state = states.get(p.item) ?? "";
-    p.opacity = p.base * (p.state === "closed" || p.state === "preparation" ? CLOSED_OPACITY : 1);
+    p.look =
+      p.state === "open"
+        ? "open"
+        : p.state === "closed" || p.state === "preparation"
+          ? "closed"
+          : withStates.has(p.lr)
+            ? "unknown"
+            : "";
+    const look = SKI_LOOKS[p.look] ?? { width: 1, opacity: 1 };
+    p.opacity = p.base * look.opacity;
+    p.width = p.baseWidth * look.width;
+    p.dash = p.dashed || p.look === "closed";
   };
   /** @param {SkiTile} tile */
   const loadStates = (tile) => {
@@ -300,10 +363,12 @@ function skiLayers(map, ski, { highlight = null, names = new Map(), minZoom = SK
         .then((details) => {
           if (!details) return;
           for (const i of [...details.lifts, ...details.slopes]) states.set(`${resort}/${i.id}`, i.status);
+          withStates.add(resort);
           for (const key of Object.keys(data)) {
             data[key].forEach(restyle);
             draw(key);
           }
+          onStates?.();
         })
         .catch(() => asked.delete(resort));
     }

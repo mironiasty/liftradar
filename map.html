@@ -72,6 +72,10 @@
   .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
   .seg button:disabled { cursor: default; opacity: .45; }
   .hint { margin: 6px 0 0; color: var(--muted); font-size: .78rem; }
+  .legend { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; --edge: #fff; }
+  .legend li { display: flex; align-items: center; gap: 8px; }
+  .legend svg { width: 34px; height: 14px; flex: none; }
+  @media (prefers-color-scheme: dark) { .legend { --edge: #111; } }
   .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
     min-width: 22px; padding: 0 5px; box-sizing: border-box; color: #fff; font: 600 11px/1 system-ui, sans-serif;
     border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; }
@@ -166,6 +170,15 @@
       <div class="chips" id="metrics" role="group" aria-labelledby="label-title"></div>
       <div class="seg" id="mode" role="group" aria-label="Open or total"></div>
       <p class="hint" id="hint"></p>
+      <div id="ski-legend" hidden>
+        <h2 data-i18n>Lifts and slopes</h2>
+        <ul class="legend">
+          <li><svg viewBox="0 0 34 14" aria-hidden="true"><path d="M4 10 L28 4" stroke="var(--edge)" stroke-width="6.5" stroke-linecap="round"/><path d="M4 10 L28 4" stroke="var(--fg)" stroke-width="3.5" stroke-linecap="round"/><circle cx="28" cy="4" r="3.6" fill="#2e9e3f" stroke="var(--edge)" stroke-width="1.5"/></svg><span data-i18n>Open</span></li>
+          <li><svg viewBox="0 0 34 14" aria-hidden="true"><path d="M4 10 L28 4" stroke="var(--fg)" stroke-width="1.8" stroke-dasharray="3 3" opacity=".8"/><circle cx="28" cy="4" r="3" fill="var(--edge)" stroke="#d62828" stroke-width="1.8"/></svg><span data-i18n>Closed or in preparation</span></li>
+          <li><svg viewBox="0 0 34 14" aria-hidden="true"><path d="M4 10 L28 4" stroke="var(--fg)" stroke-width="2" stroke-linecap="round" opacity=".5"/></svg><span data-i18n>Status not known</span></li>
+        </ul>
+        <p class="hint" data-i18n>From the resorts' own lists, as of their last update.</p>
+      </div>
     </div>
   </details>
 </div>
