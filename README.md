@@ -58,8 +58,8 @@ workers.dev and the addresses with filters aren't taken for duplicates.
 
 ## App links
 
-The phone apps (TrailRider's repo, `apps/liftradar`) open `https://liftradar.eu/resort?r=<country>/<id>[&view=3d]`
-when the site vouches for them. `.well-known/apple-app-site-association` does it for iOS (the company team's app
+The phone apps (TrailRider's repo, `apps/liftradar`) open `https://liftradar.eu/resort?r=<country>/<id>[&view=3d]`,
+the 3D page (`/3d?r=…`), both in each language (`/pl/resort`…) and as `.html`, when the site vouches for them. `.well-known/apple-app-site-association` does it for iOS (the company team's app
 ID, `85CCW66723.eu.liftradar.app`; `_headers` serves it as JSON), once the app has the Associated Domains
 capability. Android's `.well-known/assetlinks.json` names the app (`eu.liftradar.app`) by the SHA-256 fingerprint of
 the key Google Play signs it with (Play Console, the app signing key's certificate); Android checks it when the app
