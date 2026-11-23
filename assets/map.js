@@ -1,6 +1,7 @@
 // map.html: every resort with a location as a marker, coloured by status;
 // the number on a marker is the value chosen in the options panel (open lifts
-// by default). A click shows the report.
+// by default). A click shows the report. The panel's filters (status, country and region, size)
+// choose which resorts show, apart from what the markers show; they're kept in the address.
 // Resorts with a ski area in the ski tiles (assets/ski.js) also show it, and the pistes and lifts
 // appear when zoomed in (before that, the lifts joining an area's parts show as lines in its colour);
 // from there, the area takes the marker's place: hovering it names the
@@ -217,6 +218,7 @@ function show(map, [index, ski]) {
     });
   }
 
+  /** @type {Marker[]} */
   const markers = [];
   for (const r of resorts) {
     const status = statusKey(r);
@@ -229,16 +231,14 @@ function show(map, [index, ski]) {
       e.stopPropagation();
       openPopup(r, marker.getLngLat());
     });
-    markers.push({ marker, element, r, status, area: Boolean(ski?.resorts.has(skiKey(r))) });
+    markers.push({ marker, element, r, status, area: Boolean(ski?.resorts.has(skiKey(r))), passes: true });
   }
-  // Shown: the markers of the statuses chosen with the chips (all when none is), except, where the
-  // pistes show, those of resorts with an area.
-  const shown = new Set();
+  // Shown: the markers of the resorts that pass the filters, except, where the pistes show, those of
+  // resorts with an area.
   const showMarkers = () => {
     const zoomedIn = map.getZoom() >= SKI_MIN_ZOOM;
-    for (const { element, status, area } of markers) {
-      const visible = (!shown.size || shown.has(status)) && !(zoomedIn && area);
-      element.style.display = visible ? "" : "none";
+    for (const { element, area, passes } of markers) {
+      element.style.display = passes && !(zoomedIn && area) ? "" : "none";
     }
   };
   // Redrawn only when the zoom crosses that line, not on every frame of a zoom.
@@ -249,7 +249,6 @@ function show(map, [index, ski]) {
     showMarkers();
     showLegend();
   });
-  showMarkers();
 
   const setLabels = (choice) => {
     for (const { element, r, status } of markers) element.textContent = labelText(r, status, choice);
@@ -282,34 +281,399 @@ function show(map, [index, ski]) {
     } catch {}
   };
   choose({});
+
+  // The filters, from the address; a country or region asked for there is where the map opens
+  // (unless ?r= asks for a resort).
+  const filter = readFilter();
+  const applyFilter = (fit = false) => {
+    const active = filterActive(filter);
+    for (const m of markers) m.passes = passes(filter, m);
+    showMarkers();
+    if (ski) {
+      const keys = markers.filter((m) => m.passes && m.area).map((m) => skiKey(m.r));
+      const areaFilter = active ? ["in", ["get", "key"], ["literal", keys]] : null;
+      for (const layer of ["ski-areas-fill", "ski-areas-line", "ski-areas-links"]) map.setFilter(layer, areaFilter);
+    }
+    if (fit)
+      fitTo(
+        map,
+        markers.filter((m) => m.passes),
+      );
+    writeFilter(filter);
+    controls.update();
+  };
+  const controls = filterPanel(markers, filter, applyFilter);
+  applyFilter(false);
+  if (!WANTED && (filter.countries.size || filter.regions.size))
+    fitTo(
+      map,
+      markers.filter((m) => m.passes),
+      0,
+    );
+
   // map.html?r=at/soelden: the map opened there (startView), with the resort's report open.
   const focus = markers.find(({ r }) => skiKey(r) === WANTED);
   if (focus) openPopup(focus.r, focus.marker.getLngLat());
+}
 
-  // Statuses chosen with the chips; none chosen shows every resort.
-  const filters = document.getElementById("filters");
-  const showStatuses = () => {
-    showMarkers();
-    const filter = shown.size ? ["in", ["get", "status"], ["literal", [...shown]]] : null;
-    if (!ski) return;
-    for (const layer of ["ski-areas-fill", "ski-areas-line", "ski-areas-links"]) map.setFilter(layer, filter);
-  };
-  for (const [status, { label }] of Object.entries(STATUS)) {
-    const total = resorts.filter((r) => statusKey(r) === status).length;
-    if (!total) continue;
-    const chip = button("chip", "", () => {
-      shown.has(status) ? shown.delete(status) : shown.add(status);
-      chip.setAttribute("aria-pressed", shown.has(status));
-      showStatuses();
-    });
-    chip.setAttribute("aria-pressed", false);
-    chip.append(
-      el("span", { class: "dot", style: `--c:${color(status)}` }),
-      capitalized(label),
-      el("span", { class: "count" }, String(total)),
-    );
-    filters.append(chip);
+/**
+ * @typedef {{ marker: import("maplibre-gl").Marker, element: HTMLElement, r: IndexResort, status: string,
+ *   area: boolean, passes: boolean }} Marker
+ * @typedef {{ status: Set<string>, countries: Set<string>, regions: Set<string>,
+ *   sizes: Record<string, [number, number]> }} MapFilter
+ */
+
+// The sizes the map can be filtered by, all of the whole area (whether a resort is open is the status's
+// filter). The sliders go by these steps rather than evenly: most resorts are small (half have 7 lifts or
+// fewer, the largest 85), so even steps would leave them all in the slider's first quarter. A slider's
+// last place is "no upper limit".
+const SIZES = {
+  lifts: { label: t("Lifts"), value: (r) => r.lifts?.total, steps: [0, 3, 5, 10, 15, 20, 30, 40, 60] },
+  slopes: { label: t("Slopes"), value: (r) => r.slopes?.total, steps: [0, 5, 10, 15, 20, 30, 50, 80, 120] },
+  km: { label: t("Slope km"), value: (r) => r.slopes?.total_km, steps: [0, 5, 10, 20, 40, 60, 100, 150, 200] },
+};
+/** @returns {[number, number]} */
+const anySize = (key) => [0, SIZES[key].steps.length];
+const sizeActive = (filter, key) => filter.sizes[key][0] > 0 || filter.sizes[key][1] < SIZES[key].steps.length;
+const regionKey = (r) => `${r.country}:${r.region ?? ""}`;
+
+/** @param {MapFilter} filter */
+function filterActive(filter) {
+  return (
+    filter.status.size > 0 ||
+    filter.countries.size > 0 ||
+    filter.regions.size > 0 ||
+    Object.keys(SIZES).some((key) => sizeActive(filter, key))
+  );
+}
+
+// Whether a resort passes the filters, leaving one of them out ("status", "place", a size's key or "sizes"): the
+// counts beside each choice are of the resorts the other filters leave.
+/**
+ * @param {MapFilter} filter
+ * @param {Marker} m
+ * @param {string} [except]
+ */
+function passes(filter, { r, status }, except = "") {
+  if (except !== "status" && filter.status.size && !filter.status.has(status)) return false;
+  if (
+    except !== "place" &&
+    (filter.countries.size || filter.regions.size) &&
+    !filter.countries.has(r.country) &&
+    !filter.regions.has(regionKey(r))
+  )
+    return false;
+  for (const [key, { value, steps }] of Object.entries(SIZES)) {
+    if (except === "sizes" || key === except || !sizeActive(filter, key)) continue;
+    const v = value(r);
+    const [low, high] = filter.sizes[key];
+    // A resort without the value can't be said to be in the range.
+    if (v === null || v === undefined || v < steps[low] || (high < steps.length && v > steps[high])) return false;
   }
+  return true;
+}
+
+// "any", "10+", "≤ 40" or "10–40".
+function sizeText(key, [low, high]) {
+  const { steps } = SIZES[key];
+  if (high === steps.length) return low ? `${steps[low]}+` : t("any");
+  return low ? `${steps[low]}–${steps[high]}` : `≤ ${steps[high]}`;
+}
+
+// The filters in the address, so a filtered map can be linked to: map.html?status=open&country=at,ch
+// &region=it:Lombardia&lifts=10-40 (sizes as from-to, either end left out when open).
+/** @returns {MapFilter} */
+function readFilter() {
+  const params = new URLSearchParams(location.search);
+  const list = (name) => (params.get(name) ?? "").split(",").filter(Boolean);
+  /** @type {MapFilter} */
+  const filter = {
+    status: new Set(list("status").filter((s) => STATUS[s])),
+    countries: new Set(list("country")),
+    regions: new Set(params.getAll("region")),
+    sizes: {},
+  };
+  for (const [key, { steps }] of Object.entries(SIZES)) {
+    const [from, to] = (params.get(key) ?? "-").split("-");
+    const low = from ? steps.indexOf(Number(from)) : 0;
+    const high = to ? steps.indexOf(Number(to)) : steps.length;
+    filter.sizes[key] = low >= 0 && high > low ? [low, high] : anySize(key);
+  }
+  return filter;
+}
+
+/** @param {MapFilter} filter */
+function writeFilter(filter) {
+  const params = new URLSearchParams(location.search);
+  const set = (name, values) => (values.length ? params.set(name, values.join(",")) : params.delete(name));
+  set("status", [...filter.status]);
+  set("country", [...filter.countries]);
+  params.delete("region");
+  for (const region of filter.regions) params.append("region", region);
+  for (const [key, { steps }] of Object.entries(SIZES)) {
+    const [low, high] = filter.sizes[key];
+    set(key, sizeActive(filter, key) ? [`${low ? steps[low] : ""}-${high < steps.length ? steps[high] : ""}`] : []);
+  }
+  const query = params.toString();
+  history.replaceState(history.state, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
+}
+
+// The map moved to the resorts shown (after choosing a country or region).
+/**
+ * @param {import("maplibre-gl").Map} map
+ * @param {Marker[]} shown
+ */
+function fitTo(map, shown, duration = 600) {
+  if (!shown.length) return;
+  const bounds = new maplibregl.LngLatBounds();
+  for (const { marker } of shown) bounds.extend(marker.getLngLat());
+  map.fitBounds(bounds, { padding: 50, maxZoom: 10, duration });
+}
+
+// The filter part of the options panel, and the active filters above the map, each removable on its own.
+// Changing a filter calls apply (with true when the map should move to what's left); update() then
+// redraws the counts and choices.
+/**
+ * @param {Marker[]} markers
+ * @param {MapFilter} filter
+ * @param {(fit?: boolean) => void} apply
+ */
+function filterPanel(markers, filter, apply) {
+  const updates = [];
+  /** @type {Map<string, Marker[]>} */
+  const byCountry = new Map();
+  for (const m of markers) byCountry.set(m.r.country, [...(byCountry.get(m.r.country) ?? []), m]);
+  const countries = [...byCountry.keys()].sort((a, b) => countryName(a).localeCompare(countryName(b), LANG));
+
+  // Status.
+  const statusGroup = /** @type {HTMLElement} */ (document.getElementById("filters"));
+  for (const [status, { label }] of Object.entries(STATUS)) {
+    if (!markers.some((m) => m.status === status)) continue;
+    const count = el("span", { class: "count" });
+    const chip = button("chip", "", () => {
+      filter.status.has(status) ? filter.status.delete(status) : filter.status.add(status);
+      apply();
+    });
+    chip.append(el("span", { class: "dot", style: `--c:${color(status)}` }), capitalized(label), count);
+    statusGroup.append(chip);
+    updates.push(() => {
+      chip.setAttribute("aria-pressed", String(filter.status.has(status)));
+      count.textContent = String(markers.filter((m) => m.status === status && passes(filter, m, "status")).length);
+    });
+  }
+
+  // Countries, each with its regions under it. A country chosen whole is in filter.countries; some of its
+  // regions, in filter.regions (a country with all its regions chosen goes back to being chosen whole).
+  const places = /** @type {HTMLElement} */ (document.getElementById("places"));
+  const search = /** @type {HTMLInputElement} */ (document.getElementById("place-search"));
+  /** @type {{ row: HTMLElement, text: string, regions: { row: HTMLElement, text: string }[], open: (on?: boolean) => void }[]} */
+  const rows = [];
+  for (const country of countries) {
+    const regions = [...new Set(byCountry.get(country)?.map((m) => m.r.region ?? ""))].sort((a, b) =>
+      a.localeCompare(b, LANG),
+    );
+    const regionKeys = regions.map((region) => `${country}:${region}`);
+    const box = el("input", { type: "checkbox" });
+    const count = el("span", { class: "count" });
+    const expand = el("button", {
+      type: "button",
+      class: "expand",
+      "aria-expanded": "false",
+      "aria-label": t("Regions of {country}", { country: countryName(country) }),
+    });
+    const list = el("ul", { class: "regions" });
+    list.hidden = true;
+    /** @param {boolean} [on] */
+    const open = (on = list.hidden) => {
+      list.hidden = !on;
+      expand.setAttribute("aria-expanded", String(on));
+    };
+    // Opened, the country goes to the top of the list, its regions under it in view.
+    expand.addEventListener("click", () => {
+      open();
+      if (!list.hidden) places.scrollTo({ top: row.offsetTop - places.offsetTop, behavior: "smooth" });
+    });
+    box.addEventListener("change", () => {
+      for (const key of regionKeys) filter.regions.delete(key);
+      box.checked ? filter.countries.add(country) : filter.countries.delete(country);
+      apply(true);
+    });
+    const regionRows = regions.map((region, i) => {
+      const key = regionKeys[i];
+      const regionBox = el("input", { type: "checkbox" });
+      const regionCount = el("span", { class: "count" });
+      regionBox.addEventListener("change", () => {
+        if (filter.countries.delete(country)) for (const other of regionKeys) filter.regions.add(other);
+        regionBox.checked ? filter.regions.add(key) : filter.regions.delete(key);
+        if (regionKeys.every((k) => filter.regions.has(k))) {
+          for (const k of regionKeys) filter.regions.delete(k);
+          filter.countries.add(country);
+        }
+        apply(true);
+      });
+      const row = el("li", {}, el("label", {}, regionBox, el("span", { class: "name" }, region)), regionCount);
+      list.append(row);
+      updates.push(() => {
+        regionBox.checked = filter.countries.has(country) || filter.regions.has(key);
+        regionCount.textContent = String(
+          markers.filter((m) => m.r.country === country && (m.r.region ?? "") === region && passes(filter, m, "place"))
+            .length,
+        );
+      });
+      return { row, text: fold(region) };
+    });
+    const row = el(
+      "li",
+      {},
+      el(
+        "div",
+        { class: "place" },
+        el(
+          "label",
+          {},
+          box,
+          el("span", { class: "flag", "data-country": country, "aria-hidden": "true" }),
+          el("span", { class: "name" }, countryName(country)),
+        ),
+        count,
+        expand,
+      ),
+      list,
+    );
+    places.append(row);
+    rows.push({ row, text: fold(countryName(country)), regions: regionRows, open });
+    updates.push(() => {
+      const some = regionKeys.some((k) => filter.regions.has(k));
+      box.checked = filter.countries.has(country);
+      box.indeterminate = !box.checked && some;
+      count.textContent = String(markers.filter((m) => m.r.country === country && passes(filter, m, "place")).length);
+      if (some) open(true);
+    });
+  }
+  // The search narrows the list: a country that matches with all its regions (closed), otherwise the
+  // regions that match, under their country.
+  search.addEventListener("input", () => {
+    const wanted = fold(search.value.trim());
+    for (const { row, text, regions, open } of rows) {
+      const whole = !wanted || text.includes(wanted);
+      let any = false;
+      for (const region of regions) {
+        const match = whole || region.text.includes(wanted);
+        region.row.hidden = !match;
+        any ||= match;
+      }
+      row.hidden = !any;
+      open(Boolean(wanted) && !whole);
+    }
+    // Cleared, the countries with some regions chosen open again.
+    if (!wanted) for (const update of updates) update();
+  });
+
+  // Sizes: a slider with two handles each.
+  const sizes = /** @type {HTMLElement} */ (document.getElementById("sizes"));
+  const sizeHint = /** @type {HTMLElement} */ (document.getElementById("size-hint"));
+  for (const [key, { label, steps }] of Object.entries(SIZES)) {
+    const output = el("output", {});
+    const range = el("div", { class: "range" });
+    const handle = (name) =>
+      /** @type {HTMLInputElement} */ (
+        el("input", { type: "range", min: "0", max: String(steps.length), step: "1", "aria-label": name })
+      );
+    const low = handle(t("{name}, from", { name: label }));
+    const high = handle(t("{name}, up to", { name: label }));
+    range.append(low, high);
+    // The handles never cross: the one moved stops one step short of the other.
+    /** @param {HTMLInputElement} moved */
+    const read = (moved) => {
+      let [from, to] = [Number(low.value), Number(high.value)];
+      if (from >= to && moved === high) to = from + 1;
+      else if (from >= to) from = to - 1;
+      filter.sizes[key] = [Math.max(0, from), Math.min(steps.length, to)];
+      apply();
+    };
+    low.addEventListener("input", () => read(low));
+    high.addEventListener("input", () => read(high));
+    sizes.append(el("div", { class: "size" }, el("div", { class: "size-head" }, el("span", {}, label), output), range));
+    updates.push(() => {
+      const [from, to] = filter.sizes[key];
+      low.value = String(from);
+      high.value = String(to);
+      output.textContent = sizeText(key, [from, to]);
+      output.classList.toggle("on", sizeActive(filter, key));
+      range.style.setProperty("--low", `${(100 * from) / steps.length}%`);
+      range.style.setProperty("--high", `${(100 * to) / steps.length}%`);
+      // At the right end, the lower handle on top, so the two can be told apart.
+      low.style.zIndex = from >= steps.length - 1 ? "2" : "";
+    });
+  }
+  updates.push(() => {
+    const active = Object.keys(SIZES).filter((key) => sizeActive(filter, key));
+    const missing = markers.filter(
+      (m) => passes(filter, m, "sizes") && active.some((key) => SIZES[key].value(m.r) == null),
+    ).length;
+    sizeHint.textContent = missing ? t("{n} resorts without this size hidden", { n: missing }) : "";
+  });
+
+  // The count on the filters' button, and "Clear", while a filter is on.
+  const shown = /** @type {HTMLElement} */ (document.getElementById("shown"));
+  const clear = /** @type {HTMLButtonElement} */ (document.getElementById("clear"));
+  clear.addEventListener("click", () => {
+    clearFilter(filter);
+    apply();
+  });
+  updates.push(() => {
+    const count = markers.filter((m) => m.passes).length;
+    shown.textContent = t("{shown} of {total}", { shown: count, total: markers.length });
+    shown.hidden = clear.hidden = !filterActive(filter);
+  });
+
+  // The active filters over the map, each with a button to remove it.
+  const bar = /** @type {HTMLElement} */ (document.getElementById("active-filters"));
+  const removable = (text, remove, flag = "") => {
+    const chip = button("chip on", "", () => {
+      remove();
+      apply();
+    });
+    chip.setAttribute("aria-label", t("Remove filter: {name}", { name: text }));
+    if (flag) chip.append(el("span", { class: "flag", "data-country": flag, "aria-hidden": "true" }));
+    chip.append(text, el("span", { class: "x", "aria-hidden": "true" }, "×"));
+    return chip;
+  };
+  updates.push(() => {
+    const chips = [];
+    for (const status of filter.status)
+      chips.push(removable(capitalized(STATUS[status].label), () => filter.status.delete(status)));
+    for (const country of filter.countries)
+      chips.push(removable(countryName(country), () => filter.countries.delete(country), country));
+    for (const key of filter.regions) {
+      const [country, region] = [key.slice(0, key.indexOf(":")), key.slice(key.indexOf(":") + 1)];
+      chips.push(removable(region, () => filter.regions.delete(key), country));
+    }
+    for (const key of Object.keys(SIZES))
+      if (sizeActive(filter, key))
+        chips.push(
+          removable(
+            `${SIZES[key].label} ${sizeText(key, filter.sizes[key])}`,
+            () => (filter.sizes[key] = anySize(key)),
+          ),
+        );
+    bar.replaceChildren(...chips);
+    bar.hidden = !chips.length;
+  });
+
+  return {
+    update: () => {
+      for (const update of updates) update();
+    },
+  };
+}
+
+/** @param {MapFilter} filter */
+function clearFilter(filter) {
+  filter.status.clear();
+  filter.countries.clear();
+  filter.regions.clear();
+  for (const key of Object.keys(SIZES)) filter.sizes[key] = anySize(key);
 }
 
 function button(className, text, onClick) {
@@ -318,9 +682,14 @@ function button(className, text, onClick) {
   return node;
 }
 
-// The panel starts collapsed on small screens.
-const panel = document.getElementById("panel");
-if (matchMedia("(max-width: 640px)").matches) panel.open = false;
+// The filters' and the options' panels: one open at a time, the filters at first, none on small screens.
+/** @type {NodeListOf<HTMLDetailsElement>} */
+const panels = document.querySelectorAll(".panels details");
+for (const panel of panels)
+  panel.addEventListener("toggle", () => {
+    if (panel.open) for (const other of panels) if (other !== panel) other.open = false;
+  });
+if (matchMedia("(max-width: 640px)").matches) for (const panel of panels) panel.open = false;
 
 // map.html?r=at/soelden (the link on a resort's page): zoomed in on that resort.
 const WANTED = new URLSearchParams(location.search).get("r");

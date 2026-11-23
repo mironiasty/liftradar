@@ -44,17 +44,24 @@
   .map-wrap { flex: 1; position: relative; min-height: 300px; }
   #map { position: absolute; inset: 0; }
 
-  /* Options panel over the map; collapsed to its title on small screens. */
-  .panel { position: absolute; top: 10px; right: 10px; z-index: 1000; width: min(300px, calc(100% - 70px));
-    background: var(--bg); color: var(--fg); border-radius: 12px; box-shadow: 0 2px 14px rgba(0,0,0,.22); font-size: .85rem; }
-  .panel:not([open]) { width: auto; }
-  .panel summary { display: flex; align-items: center; justify-content: space-between; padding: 9px 12px;
-    cursor: pointer; font-weight: 600; list-style: none; user-select: none; }
+  /* The filters and the map options: two buttons over the map, each opening its panel under them, one at a
+     time (both closed at first on small screens). The panel scrolls within the map. */
+  .panels { position: absolute; top: 10px; right: 10px; bottom: 10px; left: 52px; z-index: 1000; display: flex;
+    justify-content: flex-end; align-items: flex-start; gap: 8px; pointer-events: none; }
+  .panel { color: var(--fg); font-size: .85rem; }
+  .panel summary { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 12px; background: var(--bg);
+    box-shadow: 0 2px 14px rgba(0,0,0,.22); cursor: pointer; font-weight: 600; white-space: nowrap; list-style: none;
+    user-select: none; pointer-events: auto; }
   .panel summary::-webkit-details-marker { display: none; }
   .panel summary::after { content: ""; width: 7px; height: 7px; border: solid var(--muted); border-width: 0 2px 2px 0;
-    transform: rotate(45deg); margin: -3px 2px 0 14px; transition: transform .15s; }
+    transform: rotate(45deg); margin: -3px 2px 0 4px; transition: transform .15s; }
   .panel[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
-  .panel-body { padding: 0 12px 12px; }
+  .panel-body { position: absolute; top: 46px; right: 0; box-sizing: border-box; width: min(300px, 100%); max-height: calc(100% - 46px);
+    padding: 12px; overflow-y: auto; overscroll-behavior: contain; border-radius: 12px; background: var(--bg);
+    box-shadow: 0 2px 14px rgba(0,0,0,.22); pointer-events: auto; }
+  /* On the filters' button while a filter is on: how many resorts it leaves. */
+  .badge-count { padding: 1px 7px; border-radius: 999px; background: var(--accent); color: var(--bg); font-size: .75rem;
+    font-weight: 600; font-variant-numeric: tabular-nums; }
   .panel h2 { margin: 4px 0 6px; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   .panel h2:not(:first-child) { margin-top: 12px; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -72,6 +79,60 @@
   .seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); font-weight: 500; box-shadow: 0 1px 2px rgba(0,0,0,.15); }
   .seg button:disabled { cursor: default; opacity: .45; }
   .hint { margin: 6px 0 0; color: var(--muted); font-size: .78rem; }
+  .hint:empty { display: none; }
+  .filter-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .filter-head h3 { margin-top: 0; }
+  .clear { padding: 0; border: 0; background: none; color: var(--accent); font: inherit; font-size: .78rem; font-weight: 600; cursor: pointer; }
+  .clear:hover { text-decoration: underline; }
+  .panel h3 { margin: 12px 0 6px; font-size: .78rem; font-weight: 600; }
+  .place-search { box-sizing: border-box; width: 100%; padding: 5px 9px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg); color: var(--fg); font: inherit; }
+  .place-search:focus { outline: 2px solid var(--accent); outline-offset: -1px; border-color: transparent; }
+  .places, .places ul { margin: 0; padding: 0; list-style: none; }
+  .places { max-height: 220px; margin-top: 6px; padding-right: 10px; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
+  .places .place, .places .regions li { display: flex; align-items: center; gap: 6px; min-height: 26px; }
+  .places .regions li { padding-left: 22px; }
+  .places li[hidden] { display: none; }
+  .places label { display: flex; flex: 1; align-items: center; gap: 7px; min-width: 0; cursor: pointer; }
+  .places .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .places input { flex: none; margin: 0; accent-color: var(--accent); }
+  .places .count { font-size: .78rem; }
+  .expand { flex: none; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 6px; background: none; color: var(--muted); cursor: pointer; }
+  .expand::before { content: ""; display: block; width: 6px; height: 6px; margin: 0 auto; border: solid currentColor;
+    border-width: 0 1.5px 1.5px 0; transform: rotate(-45deg); transition: transform .15s; }
+  .expand[aria-expanded="true"]::before { transform: rotate(45deg); }
+  .expand:hover { background: var(--chip); color: var(--fg); }
+  .expand:focus-visible { outline: 2px solid var(--accent); }
+  .size + .size { margin-top: 6px; }
+  .size-head { display: flex; justify-content: space-between; }
+  .size-head output { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .size-head output.on { color: var(--fg); font-weight: 600; }
+  /* Two range inputs over one track, the part between the handles filled. The handles are 16px, so
+     their centres (and the track) run 8px in from each side. */
+  .range { position: relative; height: 22px; --low: 0%; --high: 100%; }
+  .range::before { content: ""; position: absolute; left: 8px; right: 8px; top: 9px; height: 4px; border-radius: 2px;
+    background: linear-gradient(to right, var(--line) var(--low), var(--accent) var(--low), var(--accent) var(--high), var(--line) var(--high)); }
+  .range input { position: absolute; inset: 0; width: 100%; height: 22px; margin: 0; background: none; pointer-events: none;
+    -webkit-appearance: none; appearance: none; }
+  .range input::-webkit-slider-runnable-track { height: 22px; background: none; }
+  .range input::-moz-range-track { background: none; }
+  .range input::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; pointer-events: auto; box-sizing: border-box;
+    width: 16px; height: 16px; margin-top: 3px; border: 2px solid var(--accent); border-radius: 50%; background: var(--bg); cursor: grab; }
+  .range input::-moz-range-thumb { pointer-events: auto; box-sizing: border-box; width: 16px; height: 16px;
+    border: 2px solid var(--accent); border-radius: 50%; background: var(--bg); cursor: grab; }
+  .range input:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .range input:focus-visible::-moz-range-thumb { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* The active filters over the map, beside the zoom buttons, each removable. */
+  .active-filters { position: absolute; top: 10px; left: 52px; right: 300px; z-index: 999; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; }
+  .active-filters .chip { pointer-events: auto; padding: 3px 6px 3px 9px; border: 0; background: var(--bg); color: var(--fg);
+    font-size: .8rem; font-weight: 500; box-shadow: 0 1px 6px rgba(0,0,0,.25); }
+  .active-filters .x { color: var(--muted); font-size: 1rem; line-height: 1; padding: 0 2px; }
+  .active-filters .chip:hover .x { color: var(--fg); }
+  @media (max-width: 640px) {
+    .active-filters { top: auto; bottom: 30px; left: 10px; right: 10px; }
+    .panels { left: 10px; }
+    .panel-body { width: 100%; }
+  }
   .legend { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; --edge: #fff; }
   .legend li { display: flex; align-items: center; gap: 8px; }
   .legend svg { width: 34px; height: 14px; flex: none; }
@@ -161,11 +222,27 @@
 </header>
 <div class="map-wrap">
   <section id="map" aria-label="Map of ski resorts"></section>
-  <details class="panel" id="panel" open>
+  <div class="active-filters" id="active-filters" role="group" aria-label="Active filters" hidden></div>
+  <div class="panels">
+  <details class="panel" open>
+    <summary><span data-i18n>Filters</span><span class="badge-count" id="shown" aria-live="polite" hidden></span></summary>
+    <div class="panel-body">
+      <div class="filter-head">
+        <h3 id="status-title" data-i18n>Status</h3>
+        <button type="button" class="clear" id="clear" hidden data-i18n>Clear</button>
+      </div>
+      <div class="chips" id="filters" role="group" aria-labelledby="status-title"></div>
+      <h3 id="place-title" data-i18n>Country and region</h3>
+      <input type="search" id="place-search" class="place-search" placeholder="Search a country or region" aria-label="Search a country or region">
+      <ul class="places" id="places" aria-labelledby="place-title"></ul>
+      <h3 data-i18n>Size of the area</h3>
+      <div id="sizes"></div>
+      <p class="hint" id="size-hint"></p>
+    </div>
+  </details>
+  <details class="panel">
     <summary data-i18n>Map options</summary>
     <div class="panel-body">
-      <h2 id="status-title" data-i18n>Resorts</h2>
-      <div class="chips" id="filters" role="group" aria-labelledby="status-title"></div>
       <h2 id="label-title" data-i18n>Number on markers</h2>
       <div class="chips" id="metrics" role="group" aria-labelledby="label-title"></div>
       <div class="seg" id="mode" role="group" aria-label="Open or total"></div>
@@ -181,6 +258,7 @@
       </div>
     </div>
   </details>
+  </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.24.0/maplibre-gl.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/maplibre-contour@0.1.1/dist/index.min.js"></script>
