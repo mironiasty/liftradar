@@ -32,7 +32,7 @@ const METRICS = {
     hints: { open: t("Open slopes, shown for open resorts."), total: t("All slopes of the area.") },
   },
   km: {
-    label: t("Slope km"),
+    label: t("Slope length (km)"),
     open: (r) => r.slopes?.open_km,
     total: (r) => r.slopes?.total_km,
     hints: { open: t("Open slope km, shown for open resorts."), total: t("All slope km of the area.") },
@@ -330,7 +330,7 @@ function show(map, [index, ski]) {
 const SIZES = {
   lifts: { label: t("Lifts"), value: (r) => r.lifts?.total, steps: [0, 3, 5, 10, 15, 20, 30, 40, 60] },
   slopes: { label: t("Slopes"), value: (r) => r.slopes?.total, steps: [0, 5, 10, 15, 20, 30, 50, 80, 120] },
-  km: { label: t("Slope km"), value: (r) => r.slopes?.total_km, steps: [0, 5, 10, 20, 40, 60, 100, 150, 200] },
+  km: { label: t("Slope length (km)"), value: (r) => r.slopes?.total_km, steps: [0, 5, 10, 20, 40, 60, 100, 150, 200] },
 };
 /** @returns {[number, number]} */
 const anySize = (key) => [0, SIZES[key].steps.length];
