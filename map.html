@@ -140,6 +140,16 @@
   .pin { display: flex; align-items: center; justify-content: center; border-radius: 11px; height: 22px;
     min-width: 22px; padding: 0 5px; box-sizing: border-box; font: 600 11px/1 system-ui, sans-serif;
     border-width: 2px; box-shadow: 0 1px 3px rgba(0,0,0,.4); white-space: nowrap; }
+  /* The pins take the other theme's badge colours (style.css): deep fills on the light map, pale ones on the dark
+     map, so they stand out from the map rather than blend into it. */
+  .pin[data-status="open"] { --c: #86efac; --badge-bg: #14532d; --badge-line: #15803d; }
+  .pin[data-status="closed"] { --c: #fca5a5; --badge-bg: #7f1d1d; --badge-line: #b91c1c; }
+  .pin[data-status="no_report"] { --c: #cbd5e1; --badge-bg: #334155; --badge-line: #64748b; }
+  @media (prefers-color-scheme: dark) {
+    .pin[data-status="open"] { --c: #15803d; --badge-bg: #dcfce7; --badge-line: #86efac; }
+    .pin[data-status="closed"] { --c: #b91c1c; --badge-bg: #fee2e2; --badge-line: #fca5a5; }
+    .pin[data-status="no_report"] { --c: #475569; --badge-bg: #f1f5f9; --badge-line: #cbd5e1; }
+  }
   /* Resort popup: laid out like a resort card in the phone table, above every pin (they go up to z-index 2). */
   .maplibregl-popup { z-index: 3; }
   .maplibregl-popup:not(.map-tip) .maplibregl-popup-content { width: 264px; padding: 14px 16px; font: 14px/1.4 system-ui, sans-serif; }
