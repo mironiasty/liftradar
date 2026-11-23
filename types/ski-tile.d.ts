@@ -116,6 +116,10 @@ patrolled?: boolean
  * The run goes through a tunnel.
  */
 tunnel?: boolean
+/**
+ * A stretch two pistes share (its ref has both numbers, its difficulty the easier one's): the harder piste's difficulty, whose colour the maps draw along its edges.
+ */
+shared?: ("novice" | "easy" | "intermediate" | "advanced" | "expert")
 osm?: string
 /**
  * liftradar resort, <country>/<id>.

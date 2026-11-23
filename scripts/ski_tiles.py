@@ -327,6 +327,8 @@ def build(args) -> dict:
                 tiles[t]["areas"][a] = None
             tiles[t]["runs"].append((run, f["_areas"]))
 
+    shared_edges(tile_runs)
+
     # Experimental: the lifts and slopes of the resorts' details files (next to the index), for their status.
     linked = lift_links.link(Path(args.index).parent, tile_lifts, tile_runs)
     print(lift_links.summary(linked))
@@ -413,6 +415,40 @@ def build(args) -> dict:
         f"max {sizes[-1]}, total {sum(sizes) / 1e6:.1f} MB; resorts.geojson {len(resorts_text) / 1e6:.2f} MB"
     )
     return meta
+
+
+HARDER = ["novice", "easy", "intermediate", "advanced", "expert"]
+SHARED_END_M = 30
+
+
+def refs_of(run: dict) -> list[str]:
+    return [r for r in (x.strip() for x in run.get("ref", "").replace(";", ",").split(",")) if r]
+
+
+def shared_edges(runs: list) -> None:
+    """OpenSkiData makes a stretch two pistes share a run of its own, numbered for both ("22, 19") and as
+    hard as the easier, so the harder one seems to stop there. `shared` names the harder difficulty, whose
+    colour the maps draw along its edges (assets/ski-style.json): the hardest piste with one of those
+    numbers, harder than the stretch, that starts or ends within SHARED_END_M of it."""
+    by_ref = defaultdict(list)
+    for run in runs:
+        if "c" in run and len(refs := refs_of(run)) == 1:
+            by_ref[refs[0]].append(run)
+    for run in runs:
+        refs = refs_of(run)
+        if len(refs) < 2 or "c" not in run:
+            continue
+        ends = (run["c"][0], run["c"][-1])
+        hardest = run.get("difficulty")
+        rank = HARDER.index(hardest) if hardest in HARDER else -1
+        for other in (o for r in refs for o in by_ref.get(r, ())):
+            theirs = HARDER.index(other["difficulty"]) if other.get("difficulty") in HARDER else -1
+            if theirs <= rank:
+                continue
+            if any(metres(a, b) <= SHARED_END_M for a in (other["c"][0], other["c"][-1]) for b in ends):
+                hardest, rank = other["difficulty"], theirs
+        if hardest != run.get("difficulty"):
+            run["shared"] = hardest
 
 
 def insert_areas(feature: dict, indexes: list) -> dict:
