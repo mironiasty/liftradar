@@ -8,9 +8,17 @@
   --muted: #587194;
   --line: #dbe4ef;
   --accent: #0b5cad;
-  --open: #1f8a3e;
-  --closed: #6b7a8c;
-  --none: #b3bfcc;
+  /* The statuses: the text and dot colour, and a badge's background and border (opaque: the map's pins are
+     badges too). */
+  --open: #15803d;
+  --open-bg: #dcfce7;
+  --open-line: #86efac;
+  --closed: #b91c1c;
+  --closed-bg: #fee2e2;
+  --closed-line: #fca5a5;
+  --none: #475569;
+  --none-bg: #f1f5f9;
+  --none-line: #cbd5e1;
   --chip: #e8f0f9;
   --row-hover: #eef4fb;
   --warn: #9a5b00;
@@ -31,9 +39,15 @@
     --muted: #b6c8dd;
     --line: #3a5c84;
     --accent: #a9cdf6;
-    --open: #4cc36b;
-    --closed: #a2b2c5;
-    --none: #6c86a5;
+    --open: #86efac;
+    --open-bg: #14532d;
+    --open-line: #15803d;
+    --closed: #fca5a5;
+    --closed-bg: #7f1d1d;
+    --closed-line: #b91c1c;
+    --none: #cbd5e1;
+    --none-bg: #334155;
+    --none-line: #64748b;
     --chip: #33567f;
     --row-hover: #2d5079;
     --warn: #f0b45a;
@@ -45,6 +59,27 @@
 }
 html {
   background: var(--sky-bottom);
+}
+/* A status badge (data-status: open, closed or no_report): the list's pills, the map's popup, the resort's header. */
+[data-status="open"] {
+  --c: var(--open);
+  --badge-bg: var(--open-bg);
+  --badge-line: var(--open-line);
+}
+[data-status="closed"] {
+  --c: var(--closed);
+  --badge-bg: var(--closed-bg);
+  --badge-line: var(--closed-line);
+}
+[data-status="no_report"] {
+  --c: var(--none);
+  --badge-bg: var(--none-bg);
+  --badge-line: var(--none-line);
+}
+.status-badge {
+  border: 1px solid var(--badge-line);
+  background: var(--badge-bg);
+  color: var(--c);
 }
 body {
   background: linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
