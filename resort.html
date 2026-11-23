@@ -190,8 +190,12 @@
   .empty { color: var(--muted); font-size: .9rem; margin: 0; }
   /* The resort's linked ski area and ski region, with their other members. */
   .group .group-name { display: block; margin-bottom: 10px; }
-  .members { display: grid; gap: 6px; margin: 6px 0 0; padding: 0; list-style: none; font-size: .9rem; }
-  .members li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+  .members { display: grid; gap: 10px; margin: 8px 0 0; padding: 0; list-style: none; font-size: .9rem; }
+  .members li { display: flex; align-items: baseline; gap: 8px; }
+  .members li > div { min-width: 0; }
+  .members .name { display: flex; align-items: center; gap: 6px; font-weight: 600; }
+  .members .summary { margin-top: 1px; font-size: .8rem; }
+  .members .summary .fresh { font-weight: 600; }
   .members a { text-decoration: none; }
   .members a:hover { text-decoration: underline; }
 </style>

@@ -696,8 +696,68 @@ function sources(r) {
   return parts.length ? el("section", { class: "card data" }, el("h2", {}, t("Sources")), ...parts) : null;
 }
 
+// The line under a group member's name, as the apps' lists have it: open, how many lifts and km of slopes are open,
+// the snow on the mountain and the fresh snow; closed or without a report, that and how many it has.
+/** @param {IndexResort} r */
+function memberSummary(r) {
+  const status = statusKey(r);
+  const open = status === "open";
+  const { lifts, slopes, snow } = r;
+  const parts = open ? [] : [capitalized(STATUS_LABELS[status])];
+  if (lifts?.total) parts.push(t("{n} lifts", { n: open ? pair(lifts.open, lifts.total) : lifts.total }));
+  if (slopes?.total_km) {
+    parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
+  } else if (slopes?.total) {
+    parts.push(t("{n} slopes", { n: open ? pair(slopes.open, slopes.total) : slopes.total }));
+  }
+  if (open && snow.mountain_cm !== null && snow.mountain_cm !== undefined) parts.push(`${snow.mountain_cm} cm`);
+  const line = el("div", { class: "meta summary" }, parts.join(" · ") || capitalized(STATUS_LABELS[status]));
+  if (snow.fresh_cm) line.append(" ", el("span", { class: "fresh" }, `+${snow.fresh_cm}`));
+  return line;
+}
+
+// The country most of a group's members are in, the one a member from elsewhere is flagged against (Champéry and
+// Morgins in Les Portes du Soleil). Where countries are level, `own`'s (the resort whose page it is) if it is one
+// of them, else the first member's. The apps do the same (ResortGroup's mainCountry).
+/** @param {string[]} members @param {string} own */
+function mainCountry(members, own) {
+  const countries = members.map((key) => key.split("/")[0]);
+  /** @type {Map<string, number>} */
+  const counts = new Map();
+  for (const c of countries) counts.set(c, (counts.get(c) ?? 0) + 1);
+  const most = Math.max(0, ...counts.values());
+  if (counts.get(own) === most) return own;
+  return countries.find((c) => counts.get(c) === most) ?? own;
+}
+
+// A group's members (keys) in the order its card shows them, as the list starts: the open ones first, the most open
+// slopes first (then open km, open lifts); then the closed ones and those without a report, the biggest first (km of
+// slopes, then lifts); last the ones the index doesn't have. Level, as the group lists them. The apps do the same
+// (ResortGroup's ordered).
+/** @param {string[]} keys @param {Map<string, IndexResort>} resorts */
+function orderedMembers(keys, resorts) {
+  /** @param {number | null | undefined} v */
+  const n = (v) => -(v ?? -1);
+  /** @param {string} key @returns {number[]} */
+  const rank = (key) => {
+    const r = resorts.get(key);
+    if (!r) return [2];
+    return statusKey(r) === "open"
+      ? [0, n(r.slopes?.open), n(r.slopes?.open_km), n(r.lifts?.open)]
+      : [1, n(r.slopes?.total_km), n(r.lifts?.total)];
+  };
+  const ranks = new Map(keys.map((key) => [key, rank(key)]));
+  return [...keys].sort((a, b) => {
+    const x = ranks.get(a) ?? [],
+      y = ranks.get(b) ?? [];
+    for (let i = 0; i < Math.min(x.length, y.length); i++) if (x[i] !== y[i]) return x[i] - y[i];
+    return x.length - y.length;
+  });
+}
+
 // The groups the resort is in, from its linked_area and ski_region: a card for each, under the map, with the
-// group's name and the other members, by name and status from the index, each to its own page.
+// group's name and the other members, by name, status and the line of numbers from the index, each to its own
+// page, with its flag when it is in another country than most of the group; the open ones first.
 /** @param {Resort} r @param {HTMLElement} container */
 async function groupCards(r, container) {
   if (!r.linked_area && !r.ski_region) return;
@@ -712,21 +772,37 @@ async function groupCards(r, container) {
   const cards = wanted.flatMap(([id, title, membersTitle]) => {
     const group = id ? groups[id] : undefined;
     if (!group) return [];
-    const others = group.members
-      .filter((key) => key !== resortKey(r))
-      .map((key) => {
-        const [country, resortId] = key.split("/");
-        const known = resorts.get(key);
-        const dot = el("span", { class: "dot", style: `--c:${STATUS_COLORS[known ? statusKey(known) : "no_report"]}` });
-        if (known) dot.title = STATUS_LABELS[statusKey(known)];
-        return el(
-          "li",
+    const main = mainCountry(group.members, r.country);
+    const others = orderedMembers(
+      group.members.filter((key) => key !== resortKey(r)),
+      resorts,
+    ).map((key) => {
+      const [country, resortId] = key.split("/");
+      const known = resorts.get(key);
+      const dot = el("span", { class: "dot", style: `--c:${STATUS_COLORS[known ? statusKey(known) : "no_report"]}` });
+      if (known) dot.title = STATUS_LABELS[statusKey(known)];
+      const flag =
+        country === main
+          ? ""
+          : el("span", { class: "flag", "data-country": country, title: countryName(country), role: "img" });
+      if (flag) flag.setAttribute("aria-label", countryName(country));
+      return el(
+        "li",
+        {},
+        dot,
+        el(
+          "div",
           {},
-          dot,
-          el("a", { href: resortPage({ country, id: resortId }) }, known?.name ?? resortId),
-          country === r.country ? "" : el("span", { class: "meta" }, countryName(country)),
-        );
-      });
+          el(
+            "div",
+            { class: "name" },
+            el("a", { href: resortPage({ country, id: resortId }) }, known?.name ?? resortId),
+            flag,
+          ),
+          known ? memberSummary(known) : "",
+        ),
+      );
+    });
     return [
       el(
         "section",
