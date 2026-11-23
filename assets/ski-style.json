@@ -5,9 +5,9 @@
   "colors": {
     "light": {
       "boundary": "#8a5a2b",
-      "status-open": "#1f8a3e",
-      "status-closed": "#6b7a8c",
-      "status-none": "#b3bfcc",
+      "status-open": "#15803d",
+      "status-closed": "#b91c1c",
+      "status-none": "#475569",
       "piste-green": "#2e9e3f",
       "piste-blue": "#1f6fd1",
       "piste-red": "#d62828",
@@ -18,16 +18,17 @@
       "ink": "#222",
       "lift-gone": "#888",
       "grey": "#5f6670",
-      "station-open": "#2e9e3f",
-      "station-closed": "#d62828",
+      "station-open": "#15803d",
+      "station-closed": "#b91c1c",
+      "station-closed-fill": "#fee2e2",
       "casing": "#fff",
       "halo": "#fff"
     },
     "dark": {
       "boundary": "#c79a6b",
-      "status-open": "#4cc36b",
-      "status-closed": "#a2b2c5",
-      "status-none": "#6c86a5",
+      "status-open": "#86efac",
+      "status-closed": "#fca5a5",
+      "status-none": "#cbd5e1",
       "piste-green": "#2e9e3f",
       "piste-blue": "#1f6fd1",
       "piste-red": "#d62828",
@@ -38,8 +39,9 @@
       "ink": "#eee",
       "lift-gone": "#888",
       "grey": "#9aa1ab",
-      "station-open": "#2e9e3f",
-      "station-closed": "#d62828",
+      "station-open": "#86efac",
+      "station-closed": "#fca5a5",
+      "station-closed-fill": "#7f1d1d",
       "casing": "#111",
       "halo": "#000"
     }
@@ -242,7 +244,7 @@
       "filter": ["any", ["!", ["has", "top"]], "@known"],
       "paint": {
         "circle-radius": ["match", "@look", "open", 4.5, "closed", 3.5, 2.5],
-        "circle-color": ["match", "@look", "open", "@station-open", "closed", "@casing", "@liftColor"],
+        "circle-color": ["match", "@look", "open", "@station-open", "closed", "@station-closed-fill", "@liftColor"],
         "circle-stroke-color": ["match", "@look", "closed", "@station-closed", "@casing"],
         "circle-stroke-width": ["match", "@look", "open", 1.5, "closed", 2, 0],
         "circle-opacity": ["case", "@known", "@liftBase", "@liftOpacity"],
