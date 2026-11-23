@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tignes",
   "country": "fr",
-  "fetched_at": "2026-11-23T08:40:34.692282+01:00",
+  "fetched_at": "2026-11-23T13:40:33.210017+01:00",
   "updated_at": null,
   "source": "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/dynamicPoiData?lang=fr",
   "lifts": [
@@ -175,18 +175,6 @@
       "top_m": null
     },
     {
-      "id": "12104",
-      "ref": null,
-      "name": "TSD  DES MERLES",
-      "type": "chairlift",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": 1340,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "12105",
       "ref": null,
       "name": "TSD DU GRATTALU",
@@ -223,18 +211,6 @@
       "top_m": null
     },
     {
-      "id": "5315",
-      "ref": null,
-      "name": "TS DU GRAND HUIT",
-      "type": "chairlift",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": 870,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "5316",
       "ref": null,
       "name": "TK DU CHARDONNET",
@@ -266,18 +242,6 @@
       "status": "open",
       "length_m": null,
       "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "8932",
-      "ref": null,
-      "name": "FIL NEIGE REPLAT",
-      "type": "drag_lift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 270,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -331,6 +295,18 @@
       "top_m": null
     },
     {
+      "id": "12104",
+      "ref": null,
+      "name": "TSD  DES MERLES",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1340,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "5286",
       "ref": null,
       "name": "TSD DE CHAUDANNES",
@@ -379,6 +355,18 @@
       "top_m": null
     },
     {
+      "id": "5315",
+      "ref": null,
+      "name": "TS DU GRAND HUIT",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 870,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "5292",
       "ref": null,
       "name": "TK PAREI",
@@ -410,6 +398,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 120,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "8932",
+      "ref": null,
+      "name": "FIL NEIGE REPLAT",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 270,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -838,7 +838,7 @@
       "name": "GRATTALU",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 1509,
       "map_length_m": 1620
     },
@@ -848,7 +848,7 @@
       "name": "LAC",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 1435,
       "map_length_m": 1730
     },
@@ -858,7 +858,7 @@
       "name": "PREMOU",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 356,
       "map_length_m": 410
     },
@@ -888,7 +888,7 @@
       "name": "MERLES",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1136,
       "map_length_m": 1110
     },
@@ -1088,7 +1088,7 @@
       "name": "PERCE NEIGE",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 846,
       "map_length_m": 1010
     },

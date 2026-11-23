@@ -1,0 +1,430 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "diedamskopf",
+  "country": "at",
+  "fetched_at": "2026-11-23T13:40:33.202192+01:00",
+  "updated_at": "2026-11-23T13:18:13+01:00",
+  "source": "https://winter.intermaps.com/diedamskopf/data?lang=en",
+  "lifts": [
+    {
+      "id": "L_99505",
+      "ref": null,
+      "name": "A Gondelbahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 2320,
+      "map_length_m": null,
+      "capacity_per_hour": 1600,
+      "bottom_m": 845,
+      "top_m": 1668
+    },
+    {
+      "id": "L_99506",
+      "ref": null,
+      "name": "B Gondelbahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1321,
+      "map_length_m": null,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1668,
+      "top_m": 2018
+    },
+    {
+      "id": "L_99507",
+      "ref": null,
+      "name": "C Breitenalpbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 775,
+      "map_length_m": null,
+      "capacity_per_hour": 1980,
+      "bottom_m": 1467,
+      "top_m": 1737
+    },
+    {
+      "id": "L_99508",
+      "ref": null,
+      "name": "D Plateaulift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1278,
+      "map_length_m": null,
+      "capacity_per_hour": 926,
+      "bottom_m": 1746,
+      "top_m": 2050
+    },
+    {
+      "id": "L_99509",
+      "ref": null,
+      "name": "F Krüzlelift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 228,
+      "map_length_m": null,
+      "capacity_per_hour": 1028,
+      "bottom_m": 1746,
+      "top_m": 1819
+    },
+    {
+      "id": "L_99510",
+      "ref": null,
+      "name": "G Ahornlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null,
+      "capacity_per_hour": 796,
+      "bottom_m": 840,
+      "top_m": 879
+    },
+    {
+      "id": "L_99511",
+      "ref": null,
+      "name": "H Grunholzlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 653,
+      "map_length_m": null,
+      "capacity_per_hour": 1016,
+      "bottom_m": 835,
+      "top_m": 951
+    },
+    {
+      "id": "L_99537",
+      "ref": null,
+      "name": "J Förderband in Au",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 157,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_99543",
+      "ref": null,
+      "name": "E Panoramabahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1491,
+      "map_length_m": null,
+      "capacity_per_hour": 2400,
+      "bottom_m": 1640,
+      "top_m": 2058
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_99512",
+      "ref": null,
+      "name": "1 Trainingpiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1336,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99513",
+      "ref": null,
+      "name": "1a Oberdiedams",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99514",
+      "ref": null,
+      "name": "2 Steilhang",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1560,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99515",
+      "ref": null,
+      "name": "4 Falzerblick",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99516",
+      "ref": null,
+      "name": "5 Die Beste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99517",
+      "ref": null,
+      "name": "6 Familienabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2480,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99518",
+      "ref": null,
+      "name": "7 Panoramapiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 870,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99519",
+      "ref": null,
+      "name": "8 Plateau",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1480,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99520",
+      "ref": null,
+      "name": "9 Oberfelle",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1570,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99521",
+      "ref": null,
+      "name": "10 Krüzle",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 270,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99522",
+      "ref": null,
+      "name": "Trainingspiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 530,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99523",
+      "ref": null,
+      "name": "12 Schwarzwasserpiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99524",
+      "ref": null,
+      "name": "13 Die Lange",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2885,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99525",
+      "ref": null,
+      "name": "14 Panoramabahn",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 760,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99526",
+      "ref": null,
+      "name": "17 Breitenalpe",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99527",
+      "ref": null,
+      "name": "18 Nordhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99528",
+      "ref": null,
+      "name": "20 Mitteldiedams",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1580,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99529",
+      "ref": null,
+      "name": "20a Südhang",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 260,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99530",
+      "ref": null,
+      "name": "23 Ahorn",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99531",
+      "ref": null,
+      "name": "24 Grunholz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99532",
+      "ref": null,
+      "name": "24a Grunholz Rodelpiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99534",
+      "ref": null,
+      "name": "19 Sunnagehr",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99535",
+      "ref": null,
+      "name": "21 Waldabfahrt",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 6510,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99536",
+      "ref": null,
+      "name": "19 Falzer See",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1410,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99538",
+      "ref": null,
+      "name": "3a Zur Aussicht",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99539",
+      "ref": null,
+      "name": "11a Bärfalla",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 460,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99540",
+      "ref": null,
+      "name": "3 BoarderparK",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99541",
+      "ref": null,
+      "name": "9a Skiweg Krüzle",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 845,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99542",
+      "ref": null,
+      "name": "22 Unterdiedams Talabfahrt",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3868,
+      "map_length_m": null
+    },
+    {
+      "id": "R_99552",
+      "ref": null,
+      "name": "4a Abkürzung",
+      "difficulty": "other",
+      "colour": null,
+      "status": "unknown",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_101095",
+      "ref": null,
+      "name": "03 Bucklpiste",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "unknown",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ]
+}

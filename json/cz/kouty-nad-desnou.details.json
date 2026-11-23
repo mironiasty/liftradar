@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kouty-nad-desnou",
   "country": "cz",
-  "fetched_at": "2026-11-23T08:40:34.691500+01:00",
+  "fetched_at": "2026-11-23T13:40:33.209412+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/ski-areal-kouty",
   "lifts": [
@@ -53,6 +53,18 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
+    },
+    {
+      "id": "lift-detsky-pas-skolicka",
+      "ref": null,
+      "name": "Dětský pás Školička",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
     }
   ],
   "slopes": [
@@ -63,7 +75,7 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 650,
+      "length_m": 570,
       "map_length_m": null
     },
     {
@@ -93,37 +105,17 @@
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 410,
+      "length_m": 420,
       "map_length_m": null
     },
     {
-      "id": "slope-uhlirska",
+      "id": "slope-obrazek",
       "ref": null,
-      "name": "Uhlířská",
+      "name": "Obrázek",
       "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 700,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-snowpark",
-      "ref": null,
-      "name": "Snowpark",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 200,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-detsky-park-u-krmelce",
-      "ref": null,
-      "name": "Dětský park u Krmelce",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 200,
+      "length_m": 650,
       "map_length_m": null
     },
     {
@@ -137,33 +129,13 @@
       "map_length_m": null
     },
     {
-      "id": "slope-obrazkova-cesta",
-      "ref": null,
-      "name": "Obrázková cesta",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 390,
-      "map_length_m": null
-    },
-    {
       "id": "slope-freeride-pod-lanem",
       "ref": null,
-      "name": "Freeride Pod lanem",
+      "name": "Freeride pod lanem",
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
-      "length_m": 690,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-freeride-hrebenova",
-      "ref": null,
-      "name": "Freeride Hřebenová",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 630,
+      "length_m": 590,
       "map_length_m": null
     }
   ]

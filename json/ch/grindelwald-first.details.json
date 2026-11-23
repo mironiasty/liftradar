@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grindelwald-first",
   "country": "ch",
-  "fetched_at": "2026-11-23T08:40:34.688983+01:00",
+  "fetched_at": "2026-11-23T13:40:33.207490+01:00",
   "updated_at": "2026-11-20T16:10:07+01:00",
   "source": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
   "lifts": [
@@ -92,166 +92,6 @@
     }
   ],
   "slopes": [
-    {
-      "id": "grindelwald_first_track_170_5_bort_direkt",
-      "ref": null,
-      "name": "5 Bort direkt",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 2580,
-      "map_length_m": 1250
-    },
-    {
-      "id": "grindelwald_first_track_171_16_faxhubel_west",
-      "ref": null,
-      "name": "16 Faxhubel West",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1050,
-      "map_length_m": 560
-    },
-    {
-      "id": "grindelwald_first_track_172_6_schreckfeld_-_egg",
-      "ref": null,
-      "name": "6 Schreckfeld - Egg",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1070,
-      "map_length_m": 200
-    },
-    {
-      "id": "grindelwald_first_track_133_22_grindel",
-      "ref": null,
-      "name": "22 Grindel",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 4070,
-      "map_length_m": 4460
-    },
-    {
-      "id": "grindelwald_first_track_134_23_stepfi",
-      "ref": null,
-      "name": "23 Stepfi",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 6070,
-      "map_length_m": 5050
-    },
-    {
-      "id": "grindelwald_first_track_181_1_oberjoch_rot",
-      "ref": null,
-      "name": "1 Oberjoch rot",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 2110,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_first_track_174_4_tirrli",
-      "ref": null,
-      "name": "4 Tirrli",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 350,
-      "map_length_m": 170
-    },
-    {
-      "id": "grindelwald_first_track_183_7_faxhubel_ost",
-      "ref": null,
-      "name": "7 Faxhubel Ost",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1530,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_first_track_179_9_furggi",
-      "ref": null,
-      "name": "9 Furggi",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 2010,
-      "map_length_m": 2030
-    },
-    {
-      "id": "grindelwald_first_track_186_12_innerbaergel",
-      "ref": null,
-      "name": "12 Innerbärgel",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1150,
-      "map_length_m": 910
-    },
-    {
-      "id": "grindelwald_first_track_5665_2_oberjoch_steilhang",
-      "ref": null,
-      "name": "2 Oberjoch Steilhang",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_first_valleyRun_20_chapf",
-      "ref": null,
-      "name": "20 Chapf",
-      "difficulty": "other",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 2980
-    },
-    {
-      "id": "grindelwald_first_valleyRun_21_kirche",
-      "ref": null,
-      "name": "21 Kirche",
-      "difficulty": "other",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 980
-    },
-    {
-      "id": "grindelwald_first_valleyRun_21_muehlebach",
-      "ref": null,
-      "name": "21 Mühlebach",
-      "difficulty": "other",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_first_valleyRun_3_staehlisboden",
-      "ref": null,
-      "name": "22 Stählisboden",
-      "difficulty": "other",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_first_valleyRun_23_stepfi",
-      "ref": null,
-      "name": "23 Stepfi",
-      "difficulty": "other",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
     {
       "id": "grindelwald_first_track_130_21_bort_-_muehlebach",
       "ref": null,
@@ -380,6 +220,166 @@
       "colour": null,
       "status": "closed",
       "length_m": 3280,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_first_track_170_5_bort_direkt",
+      "ref": null,
+      "name": "5 Bort direkt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2580,
+      "map_length_m": 1250
+    },
+    {
+      "id": "grindelwald_first_track_171_16_faxhubel_west",
+      "ref": null,
+      "name": "16 Faxhubel West",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1050,
+      "map_length_m": 560
+    },
+    {
+      "id": "grindelwald_first_track_172_6_schreckfeld_-_egg",
+      "ref": null,
+      "name": "6 Schreckfeld - Egg",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1070,
+      "map_length_m": 200
+    },
+    {
+      "id": "grindelwald_first_valleyRun_20_chapf",
+      "ref": null,
+      "name": "20 Chapf",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 2980
+    },
+    {
+      "id": "grindelwald_first_valleyRun_21_kirche",
+      "ref": null,
+      "name": "21 Kirche",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 980
+    },
+    {
+      "id": "grindelwald_first_valleyRun_21_muehlebach",
+      "ref": null,
+      "name": "21 Mühlebach",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_3_staehlisboden",
+      "ref": null,
+      "name": "22 Stählisboden",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_first_valleyRun_23_stepfi",
+      "ref": null,
+      "name": "23 Stepfi",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_first_track_133_22_grindel",
+      "ref": null,
+      "name": "22 Grindel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4070,
+      "map_length_m": 4460
+    },
+    {
+      "id": "grindelwald_first_track_134_23_stepfi",
+      "ref": null,
+      "name": "23 Stepfi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 6070,
+      "map_length_m": 5050
+    },
+    {
+      "id": "grindelwald_first_track_181_1_oberjoch_rot",
+      "ref": null,
+      "name": "1 Oberjoch rot",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2110,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_first_track_174_4_tirrli",
+      "ref": null,
+      "name": "4 Tirrli",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": 170
+    },
+    {
+      "id": "grindelwald_first_track_183_7_faxhubel_ost",
+      "ref": null,
+      "name": "7 Faxhubel Ost",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1530,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_first_track_179_9_furggi",
+      "ref": null,
+      "name": "9 Furggi",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2010,
+      "map_length_m": 2030
+    },
+    {
+      "id": "grindelwald_first_track_186_12_innerbaergel",
+      "ref": null,
+      "name": "12 Innerbärgel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150,
+      "map_length_m": 910
+    },
+    {
+      "id": "grindelwald_first_track_5665_2_oberjoch_steilhang",
+      "ref": null,
+      "name": "2 Oberjoch Steilhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
       "map_length_m": null
     }
   ]

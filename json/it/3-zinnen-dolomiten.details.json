@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "3-zinnen-dolomiten",
   "country": "it",
-  "fetched_at": "2026-11-23T08:40:34.689147+01:00",
-  "updated_at": "2026-11-22T13:20:15.735195+01:00",
+  "fetched_at": "2026-11-23T13:40:33.207615+01:00",
+  "updated_at": "2026-11-23T13:00:10.543413+01:00",
   "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
   "lifts": [
     {
@@ -969,16 +969,6 @@
       "map_length_m": 390
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:7_183151",
-      "ref": null,
-      "name": "Sonnleiten",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1100,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:7_183150",
       "ref": null,
       "name": "Sonnleiten",
@@ -986,6 +976,16 @@
       "colour": null,
       "status": "closed",
       "length_m": 1400,
+      "map_length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183151",
+      "ref": null,
+      "name": "Sonnleiten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100,
       "map_length_m": null
     },
     {

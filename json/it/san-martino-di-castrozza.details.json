@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "san-martino-di-castrozza",
   "country": "it",
-  "fetched_at": "2026-11-23T08:40:34.689177+01:00",
-  "updated_at": "2026-11-23T07:00:08.059427+01:00",
+  "fetched_at": "2026-11-23T13:40:33.207634+01:00",
+  "updated_at": "2026-11-23T13:00:10.591336+01:00",
   "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
   "lifts": [
     {
@@ -627,16 +627,6 @@
       "map_length_m": 1190
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:9_216283",
-      "ref": null,
-      "name": "Tognola 1",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1680,
-      "map_length_m": 2770
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:9_216282",
       "ref": null,
       "name": "Tognola 1",
@@ -645,6 +635,16 @@
       "status": "closed",
       "length_m": 1040,
       "map_length_m": 1220
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:9_216283",
+      "ref": null,
+      "name": "Tognola 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1680,
+      "map_length_m": 2770
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216284",

@@ -12,15 +12,23 @@
   "linked_area": "adelboden-lenk",
   "ski_region": "skiregion-adelboden-lenk",
   "status": "closed",
-  "fetched_at": "2026-11-23T08:40:34.688020+01:00",
+  "fetched_at": "2026-11-23T13:40:33.206859+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2027-11-19",
+    "last_snowfall": "2026-11-23",
     "condition": null,
     "stations": [
+      {
+        "name": "Adelboden",
+        "elevation_m": 1350,
+        "depth_cm": 2,
+        "fresh_cm": 2,
+        "temperature_c": null,
+        "condition": null
+      },
       {
         "name": "Sillerenbühl",
         "elevation_m": 1974,
@@ -87,7 +95,7 @@
       "total_km": 2
     }
   },
-  "lifts_updated_at": "2026-11-23T08:31:00+01:00",
+  "lifts_updated_at": "2026-11-23T13:31:00+01:00",
   "details": "json/ch/adelboden.details.json",
   "avalanche": {
     "region_id": "CH-1226",

@@ -11,7 +11,7 @@
   "website": "https://www.thyon.ch",
   "linked_area": "4-vallees",
   "status": "closed",
-  "fetched_at": "2026-11-23T08:40:34.688770+01:00",
+  "fetched_at": "2026-11-23T13:40:33.207345+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,6 +22,14 @@
     "stations": [
       {
         "name": "in place",
+        "elevation_m": null,
+        "depth_cm": 80,
+        "fresh_cm": 50,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "In the ski area below",
         "elevation_m": null,
         "depth_cm": 80,
         "fresh_cm": 50,
@@ -82,7 +90,7 @@
       "total_km": 10
     }
   },
-  "lifts_updated_at": "2026-11-23T08:31:00+01:00",
+  "lifts_updated_at": "2026-11-23T13:31:00+01:00",
   "details": "json/ch/thyon.details.json",
   "avalanche": {
     "region_id": "CH-4115",

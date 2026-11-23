@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zermatt",
   "country": "ch",
-  "fetched_at": "2026-11-23T08:40:34.688905+01:00",
-  "updated_at": "2026-11-23T08:40:00+01:00",
-  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=407&saison=1&ref=contentBox",
+  "fetched_at": "2026-11-23T13:40:33.207432+01:00",
+  "updated_at": "2026-11-23T13:40:00+01:00",
+  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
   "lifts": [
     {
       "id": "lift-p1-zermatt-furi-matterhorn-express",
@@ -55,13 +55,13 @@
       "top_m": null
     },
     {
-      "id": "lift-3s-matterhorn-glacier-ride-i",
+      "id": "lift-o3-trockener-steg-matterhorn-glacier-paradise",
       "ref": null,
-      "name": "3S • Matterhorn Glacier Ride I",
-      "type": "gondola",
-      "status": "closed",
+      "name": "O3 • Trockener Steg - Matterhorn Glacier Paradise",
+      "type": "cable_car",
+      "status": "open",
       "length_m": null,
-      "map_length_m": 1690,
+      "map_length_m": 3680,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -163,13 +163,13 @@
       "top_m": null
     },
     {
-      "id": "lift-o3-trockener-steg-matterhorn-glacier-paradise",
+      "id": "lift-3s-matterhorn-glacier-ride-i",
       "ref": null,
-      "name": "O3 • Trockener Steg - Matterhorn Glacier Paradise",
-      "type": "cable_car",
+      "name": "3S • Matterhorn Glacier Ride I",
+      "type": "gondola",
       "status": "closed",
       "length_m": null,
-      "map_length_m": 3680,
+      "map_length_m": 1690,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null

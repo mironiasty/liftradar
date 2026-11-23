@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-23T08:40:34.689071+01:00",
+  "fetched_at": "2026-11-23T13:40:33.207550+01:00",
   "updated_at": "2026-11-19T16:03:45.411334+01:00",
   "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
   "lifts": [
@@ -707,16 +707,6 @@
       "map_length_m": 670
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
-      "ref": null,
-      "name": "Donarié",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 601,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215872",
       "ref": null,
       "name": "Donarié",
@@ -725,6 +715,16 @@
       "status": "closed",
       "length_m": 601,
       "map_length_m": 660
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "ref": null,
+      "name": "Donarié",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 601,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215873",
@@ -1267,16 +1267,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215930",
-      "ref": null,
-      "name": "Vertigine Bianca",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 871,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
       "ref": null,
       "name": "Vertigine Bianca",
@@ -1285,6 +1275,16 @@
       "status": "closed",
       "length_m": 871,
       "map_length_m": 680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215930",
+      "ref": null,
+      "name": "Vertigine Bianca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 871,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

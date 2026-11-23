@@ -10,25 +10,42 @@
   },
   "website": "https://www.le-corbier.com",
   "linked_area": "les-sybelles",
-  "status": "no_report",
-  "fetched_at": "2026-11-23T08:40:34.692397+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-23T13:40:33.210108+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-26",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "L OUILLON",
+        "elevation_m": 2431,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "LE CORBIER",
+        "elevation_m": 1550,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 20
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 41,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 90
   },
   "lifts_by_type": {
@@ -47,25 +64,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 25,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 12,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 4,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 5
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/le-corbier.details.json",
   "avalanche": {
     "region_id": "FR-09",
     "region": "Maurienne",
