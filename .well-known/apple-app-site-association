@@ -7,8 +7,12 @@
         ],
         "components": [
           {
+            "/": "/",
+            "comment": "The first page: the app's own first page (the app's DeepLink.swift)"
+          },
+          {
             "/": "/resort",
-            "comment": "A resort's page, ?r=<country>/<id>[&view=3d] (the app's DeepLink.swift)"
+            "comment": "A resort's page, ?r=<country>/<id>[&view=3d]"
           },
           {
             "/": "/resort/*"
@@ -24,8 +28,21 @@
             "/": "/3d.html"
           },
           {
-            "/": "/de/resort",
-            "comment": "The same pages in the site's other languages (README \"Translations\")"
+            "/": "/map",
+            "comment": "The map, on the resort when ?r=<country>/<id>"
+          },
+          {
+            "/": "/map.html"
+          },
+          {
+            "/": "/de",
+            "comment": "The same pages in the site's other languages (README \"Translations\"); listed, not /<lang>/*, so that about, stats and the like stay the site's"
+          },
+          {
+            "/": "/de/"
+          },
+          {
+            "/": "/de/resort"
           },
           {
             "/": "/de/resort.html"
@@ -35,6 +52,18 @@
           },
           {
             "/": "/de/3d.html"
+          },
+          {
+            "/": "/de/map"
+          },
+          {
+            "/": "/de/map.html"
+          },
+          {
+            "/": "/fr"
+          },
+          {
+            "/": "/fr/"
           },
           {
             "/": "/fr/resort"
@@ -49,6 +78,18 @@
             "/": "/fr/3d.html"
           },
           {
+            "/": "/fr/map"
+          },
+          {
+            "/": "/fr/map.html"
+          },
+          {
+            "/": "/it"
+          },
+          {
+            "/": "/it/"
+          },
+          {
             "/": "/it/resort"
           },
           {
@@ -61,6 +102,18 @@
             "/": "/it/3d.html"
           },
           {
+            "/": "/it/map"
+          },
+          {
+            "/": "/it/map.html"
+          },
+          {
+            "/": "/pl"
+          },
+          {
+            "/": "/pl/"
+          },
+          {
             "/": "/pl/resort"
           },
           {
@@ -71,6 +124,12 @@
           },
           {
             "/": "/pl/3d.html"
+          },
+          {
+            "/": "/pl/map"
+          },
+          {
+            "/": "/pl/map.html"
           }
         ]
       }
