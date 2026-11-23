@@ -10,46 +10,46 @@
   },
   "website": "https://www.andermatt-sedrun-disentis.ch",
   "status": "open",
-  "fetched_at": "2026-11-22T13:40:33.008004+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688947+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 38,
-    "valley_cm": 9,
-    "fresh_cm": 4,
+    "mountain_cm": 9,
+    "valley_cm": 18,
+    "fresh_cm": 29,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Gütsch (SLF)",
         "elevation_m": 2209,
-        "depth_cm": 38,
-        "fresh_cm": 4,
+        "depth_cm": 9,
+        "fresh_cm": 29,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Andermatt (SLF)",
         "elevation_m": 1440,
-        "depth_cm": 9,
-        "fresh_cm": 0,
+        "depth_cm": 18,
+        "fresh_cm": 14,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 3,
+    "open": 2,
     "total": 34
   },
   "slopes": {
-    "open": 6,
+    "open": 5,
     "total": 82,
     "open_km": null,
     "total_km": 180
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 2,
+      "open": 1,
       "total": 4
     },
     "chairlift": {
@@ -73,7 +73,7 @@
       "total_km": null
     },
     "intermediate": {
-      "open": 5,
+      "open": 4,
       "total": 35,
       "open_km": null,
       "total_km": null
@@ -85,16 +85,16 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-22T13:04:08+01:00",
+  "lifts_updated_at": "2026-11-23T07:45:16+01:00",
   "details": "json/ch/andermatt-sedrun-disentis.details.json",
   "avalanche": {
     "region_id": "CH-2223",
     "region": "Northern Urseren",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 4,
+    "danger": "high",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "high",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -104,9 +104,9 @@
       "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://winter.intermaps.com/andermatt_sedrun_disentis/data?lang=en",

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort.schema.json",
   "id": "la-thuile",
   "country": "it",
-  "name": "La Thuile - La Rosière",
+  "name": "La Thuile",
   "region": "Valle d'Aosta",
   "location": {
     "lat": 45.6971,
@@ -12,8 +12,8 @@
   "linked_area": "espace-san-bernardo",
   "ski_region": "valle-d-aosta",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.008304+01:00",
-  "status_from": "2026-11-20T16:46:47.408947+01:00",
+  "fetched_at": "2026-11-23T08:40:34.689242+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -30,7 +30,7 @@
     "open": 0,
     "total": 41,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 93
   },
   "lifts_by_type": {
     "carpet": {
@@ -55,22 +55,23 @@
       "open": 0,
       "total": 12,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 26
     },
     "intermediate": {
       "open": 0,
       "total": 20,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 50
     },
     "difficult": {
       "open": 0,
       "total": 9,
       "open_km": 0.0,
-      "total_km": null
+      "total_km": 18
     }
   },
-  "lifts_updated_at": "2026-11-20T16:00:00+01:00",
+  "lifts_updated_at": "2026-11-23T07:15:00+01:00",
+  "details": "json/it/la-thuile.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-15",
     "region": "D - VALLE DI LA THUILE",
@@ -94,23 +95,32 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-21T17:00:00+01:00",
-    "valid_from": "2026-11-22T00:00:00+01:00",
-    "valid_until": "2026-11-23T00:00:00+01:00"
+    "published_at": "2026-11-22T17:00:00+01:00",
+    "valid_from": "2026-11-23T00:00:00+01:00",
+    "valid_until": "2026-11-24T00:00:00+01:00"
   },
   "sources": [
-    "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json"
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+    "https://www.lathuile.it/it/piste-impianti",
+    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json",
+        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.lathuile.it/it/piste-impianti",
+        "attribution_required": null
+      }
+    ]
   },
-  "errors": [
-    "status: ConnectTimeout: "
-  ]
+  "errors": []
 }

@@ -11,7 +11,7 @@
   "website": "https://www.vialattea.it/",
   "linked_area": "via-lattea",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.009173+01:00",
+  "fetched_at": "2026-11-23T08:40:34.690177+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -29,7 +29,7 @@
     "open": 0,
     "total": 82,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 100
   },
   "lifts_by_type": {
     "carpet": {
@@ -75,7 +75,8 @@
   "details": "json/it/sauze-d-oulx.details.json",
   "avalanche": null,
   "sources": [
-    "https://montgenevre.com/hiver/en-direct/infos-neige/"
+    "https://montgenevre.com/hiver/en-direct/infos-neige/",
+    "https://www.skiinfo.fr/piemont/sauze-doulx/station-de-ski"
   ],
   "source_details": {
     "conditions": [
@@ -84,7 +85,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiinfo.fr/piemont/sauze-doulx/station-de-ski",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

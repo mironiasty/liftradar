@@ -10,7 +10,7 @@
   },
   "website": "https://www.yllas.fi",
   "status": "open",
-  "fetched_at": "2026-11-22T13:40:33.013859+01:00",
+  "fetched_at": "2026-11-23T08:40:34.694908+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -37,17 +37,38 @@
     "open": 3,
     "total": 63,
     "open_km": null,
-    "total_km": null
+    "total_km": 53
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 21
+    },
+    "intermediate": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 26
+    },
+    "difficult": {
+      "open": null,
+      "total": null,
+      "open_km": null,
+      "total_km": 6
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/yllas/",
     "https://ski.yllas.fi/",
     "https://opendata.fmi.fi/wfs",
-    "https://en.ilmatieteenlaitos.fi/open-data"
+    "https://en.ilmatieteenlaitos.fi/open-data",
+    "https://ski.yllas.fi/en/slopes-and-lifts/slopes-at-yllas/",
+    "https://www.skiresort.com/en/ski-resort/yllaes/"
   ],
   "source_details": {
     "conditions": [
@@ -68,7 +89,16 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://ski.yllas.fi/en/slopes-and-lifts/slopes-at-yllas/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/yllaes/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

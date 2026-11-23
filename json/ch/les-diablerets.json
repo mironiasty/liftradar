@@ -11,20 +11,28 @@
   "website": "https://www.tvgd.ch",
   "linked_area": "villars-gryon-les-diablerets",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.007563+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688524+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 44,
-    "valley_cm": null,
-    "fresh_cm": 15,
+    "mountain_cm": 75,
+    "valley_cm": 20,
+    "fresh_cm": 77,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Pierres Fendues (SLF)",
         "elevation_m": 2218,
-        "depth_cm": 44,
-        "fresh_cm": 15,
+        "depth_cm": 75,
+        "fresh_cm": 77,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "La Comballaz (SLF)",
+        "elevation_m": 1360,
+        "depth_cm": 20,
+        "fresh_cm": 20,
         "temperature_c": null,
         "condition": null
       }
@@ -82,11 +90,11 @@
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 4,
+    "danger": "high",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "high",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -94,12 +102,11 @@
     ],
     "problems": [
       "new_snow",
-      "wet_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=50&saison=1&ref=contentBox",

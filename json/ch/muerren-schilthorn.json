@@ -11,7 +11,7 @@
   "website": "https://www.schilthorn.ch",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.008050+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688991+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -46,7 +46,7 @@
     "open": 0,
     "total": 27,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 54
   },
   "lifts_by_type": {
     "cable_car": {
@@ -110,15 +110,15 @@
     "problems": [
       "new_snow",
       "persistent_weak_layers",
-      "wet_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+    "https://www.skiresort.com/en/ski-resort/schilthorn-muerren-lauterbrunnen/",
     "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
@@ -132,7 +132,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/schilthorn-muerren-lauterbrunnen/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

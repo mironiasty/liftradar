@@ -11,8 +11,8 @@
   "website": "https://www.lovevda.it/",
   "ski_region": "valle-d-aosta",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.008379+01:00",
-  "status_from": "2026-11-20T16:46:47.409074+01:00",
+  "fetched_at": "2026-11-23T08:40:34.689316+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -29,7 +29,7 @@
     "open": 0,
     "total": 9,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 12
   },
   "lifts_by_type": {
     "carpet": {
@@ -66,6 +66,7 @@
     }
   },
   "lifts_updated_at": "2026-11-20T08:00:00+01:00",
+  "details": "json/it/gressoney-saint-jean.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-08",
     "region": "B - MEDIA VALLE DEL LYS",
@@ -73,8 +74,14 @@
     "danger": "moderate",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "low",
         "lower_bound": null,
+        "upper_bound": "treeline",
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
@@ -83,23 +90,32 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-21T17:00:00+01:00",
-    "valid_from": "2026-11-22T00:00:00+01:00",
-    "valid_until": "2026-11-23T00:00:00+01:00"
+    "published_at": "2026-11-22T17:00:00+01:00",
+    "valid_from": "2026-11-23T00:00:00+01:00",
+    "valid_until": "2026-11-24T00:00:00+01:00"
   },
   "sources": [
-    "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json"
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+    "https://www.skiresort.com/en/ski-resort/gressoney-saint-jean-weissmatten/",
+    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json",
+        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/gressoney-saint-jean-weissmatten/",
+        "attribution_required": null
+      }
+    ]
   },
-  "errors": [
-    "status: ConnectTimeout: "
-  ]
+  "errors": []
 }

@@ -11,7 +11,7 @@
   "website": "https://elsigen-metsch.ch",
   "ski_region": "skiregion-adelboden-lenk",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.007327+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688269+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Elsige (SLF)",
         "elevation_m": 2143,
-        "depth_cm": 17,
-        "fresh_cm": 0,
+        "depth_cm": 18,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Adelboden (SLF)",
         "elevation_m": 1325,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 5,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       }
@@ -95,13 +95,11 @@
     ],
     "problems": [
       "new_snow",
-      "wind_slab",
-      "wet_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=112&saison=1&ref=contentBox",

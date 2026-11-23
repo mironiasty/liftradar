@@ -10,7 +10,7 @@
   },
   "website": "https://vihtiski.fi",
   "status": "open",
-  "fetched_at": "2026-11-22T13:40:33.013973+01:00",
+  "fetched_at": "2026-11-23T08:40:34.695013+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -37,7 +37,7 @@
     "open": 2,
     "total": 15,
     "open_km": null,
-    "total_km": null
+    "total_km": 4
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
@@ -66,7 +66,8 @@
     "https://ski.fi/hiihtokeskukset/vihti-ski-center/",
     "https://ski.fi/hiihtokeskukset/",
     "https://opendata.fmi.fi/wfs",
-    "https://en.ilmatieteenlaitos.fi/open-data"
+    "https://en.ilmatieteenlaitos.fi/open-data",
+    "https://www.skiresort.com/en/ski-resort/vihti-ski-center/"
   ],
   "source_details": {
     "conditions": [
@@ -87,7 +88,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/vihti-ski-center/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

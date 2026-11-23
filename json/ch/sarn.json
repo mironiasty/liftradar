@@ -10,20 +10,20 @@
   },
   "website": "https://www.sarn-heinzenberg.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.007741+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688697+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 6,
+    "mountain_cm": 14,
     "valley_cm": null,
-    "fresh_cm": 0,
+    "fresh_cm": 9,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Innerglas (SLF)",
         "elevation_m": 1820,
-        "depth_cm": 6,
-        "fresh_cm": 0,
+        "depth_cm": 14,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       }
@@ -77,11 +77,11 @@
   "avalanche": {
     "region_id": "CH-5221",
     "region": "Domleschg - Lenzerheide",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -91,9 +91,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=400&saison=1&ref=contentBox",

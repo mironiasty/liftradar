@@ -10,7 +10,7 @@
   },
   "website": "https://sierranevada.es",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.016767+01:00",
+  "fetched_at": "2026-11-23T08:40:34.697814+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,7 +26,7 @@
   },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 131,
     "open_km": null,
     "total_km": 112
   },
@@ -36,7 +36,8 @@
   "avalanche": null,
   "sources": [
     "https://sierranevada.es/es/invierno/en-pistas/",
-    "https://winter.intermaps.com/sierra_nevada/data?lang=en"
+    "https://winter.intermaps.com/sierra_nevada/data?lang=en",
+    "https://web.sierranevada.es/en/invierno/la-estaci%C3%B3n"
   ],
   "source_details": {
     "conditions": [],
@@ -47,6 +48,10 @@
       },
       {
         "url": "https://winter.intermaps.com/sierra_nevada/data?lang=en",
+        "attribution_required": null
+      },
+      {
+        "url": "https://web.sierranevada.es/en/invierno/la-estaci%C3%B3n",
         "attribution_required": null
       }
     ]

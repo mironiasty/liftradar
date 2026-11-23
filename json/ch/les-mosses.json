@@ -10,7 +10,7 @@
   },
   "website": "https://www.lesmosses.ch",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.007586+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688546+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,7 +23,7 @@
         "name": "in place",
         "elevation_m": null,
         "depth_cm": 15,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -31,7 +31,7 @@
         "name": "In the ski area below",
         "elevation_m": null,
         "depth_cm": 10,
-        "fresh_cm": 5,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -85,7 +85,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-21T08:07:00+01:00",
+  "lifts_updated_at": "2026-11-23T08:01:00+01:00",
   "details": "json/ch/les-mosses.details.json",
   "avalanche": {
     "region_id": "CH-1113",
@@ -102,12 +102,11 @@
     ],
     "problems": [
       "new_snow",
-      "wet_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=97&saison=1&ref=contentBox",

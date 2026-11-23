@@ -11,8 +11,8 @@
   "website": "https://www.courmayeur-montblanc.com",
   "ski_region": "valle-d-aosta",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.008293+01:00",
-  "status_from": "2026-11-20T16:46:47.408933+01:00",
+  "fetched_at": "2026-11-23T08:40:34.689229+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -97,18 +97,23 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-21T17:00:00+01:00",
-    "valid_from": "2026-11-22T00:00:00+01:00",
-    "valid_until": "2026-11-23T00:00:00+01:00"
+    "published_at": "2026-11-22T17:00:00+01:00",
+    "valid_from": "2026-11-23T00:00:00+01:00",
+    "valid_until": "2026-11-24T00:00:00+01:00"
   },
   "sources": [
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/courmayeur/comprensorio-courmayeur-mont-blanc/4360",
-    "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json",
+        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
@@ -119,7 +124,5 @@
       }
     ]
   },
-  "errors": [
-    "status: ConnectTimeout: "
-  ]
+  "errors": []
 }

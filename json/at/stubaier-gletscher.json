@@ -10,24 +10,24 @@
   },
   "website": "https://www.stubaier-gletscher.com",
   "status": "open",
-  "fetched_at": "2026-11-22T13:41:50.358187+01:00",
+  "fetched_at": "2026-11-23T08:41:42.155249+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 30,
-    "valley_cm": null,
+    "mountain_cm": 40,
+    "valley_cm": 10,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-21",
+    "last_snowfall": "2026-11-23",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 18,
+    "open": 16,
     "total": 25
   },
   "slopes": {
-    "open": 15,
+    "open": 13,
     "total": 36,
-    "open_km": 35.0,
+    "open_km": 32.0,
     "total_km": 108
   },
   "lifts_by_type": {
@@ -40,11 +40,11 @@
       "total": 7
     },
     "drag_lift": {
-      "open": 6,
+      "open": 5,
       "total": 10
     },
     "gondola": {
-      "open": 5,
+      "open": 4,
       "total": 5
     }
   },
@@ -56,15 +56,15 @@
       "total_km": 31
     },
     "easy": {
-      "open": 9,
+      "open": 8,
       "total": 17,
-      "open_km": 25.8,
+      "open_km": 24.4,
       "total_km": 39
     },
     "intermediate": {
-      "open": 6,
+      "open": 5,
       "total": 11,
-      "open_km": 9.1,
+      "open_km": 7.5,
       "total_km": 24
     },
     "difficult": {
@@ -74,7 +74,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-22T12:04:45+01:00",
+  "lifts_updated_at": "2026-11-23T08:36:41+01:00",
   "details": "json/at/stubaier-gletscher.details.json",
   "avalanche": null,
   "sources": [

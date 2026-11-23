@@ -11,7 +11,7 @@
   "website": "https://www.vigiljoch.com/",
   "ski_region": "suedtirol-skiarena",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.008602+01:00",
+  "fetched_at": "2026-11-23T08:40:34.689565+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,13 +25,19 @@
     "open": 0,
     "total": 2
   },
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 2
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2025-11-04T14:42:03.367000+01:00",
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI28AC06BDE728421B90958330F11ABBE0"
+    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI28AC06BDE728421B90958330F11ABBE0",
+    "https://www.skiresort.com/en/ski-resort/vigiljoch-monte-san-vigilio-lana/"
   ],
   "source_details": {
     "conditions": [
@@ -40,7 +46,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/vigiljoch-monte-san-vigilio-lana/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

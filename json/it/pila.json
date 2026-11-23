@@ -11,8 +11,8 @@
   "website": "https://pila.it",
   "ski_region": "valle-d-aosta",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.008310+01:00",
-  "status_from": "2026-11-20T16:46:47.408962+01:00",
+  "fetched_at": "2026-11-23T08:40:34.689250+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -77,8 +77,14 @@
     "danger": "moderate",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "low",
         "lower_bound": null,
+        "upper_bound": "treeline",
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
@@ -87,18 +93,23 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-21T17:00:00+01:00",
-    "valid_from": "2026-11-22T00:00:00+01:00",
-    "valid_until": "2026-11-23T00:00:00+01:00"
+    "published_at": "2026-11-22T17:00:00+01:00",
+    "valid_from": "2026-11-23T00:00:00+01:00",
+    "valid_until": "2026-11-24T00:00:00+01:00"
   },
   "sources": [
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/pila/stazione-di-pila/4194",
-    "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json",
+        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
@@ -109,7 +120,5 @@
       }
     ]
   },
-  "errors": [
-    "status: ConnectTimeout: "
-  ]
+  "errors": []
 }

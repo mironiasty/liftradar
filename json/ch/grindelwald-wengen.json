@@ -11,7 +11,7 @@
   "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.008030+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688971+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -46,7 +46,7 @@
     "open": 0,
     "total": 60,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 102
   },
   "lifts_by_type": {
     "cable_car": {
@@ -112,17 +112,15 @@
       }
     ],
     "problems": [
-      "new_snow",
-      "wind_slab",
-      "wet_snow",
-      "gliding_snow"
+      "new_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+    "https://www.skiresort.com/en/ski-resort/kleine-scheidegg-maennlichen-grindelwald-wengen/",
     "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
@@ -136,7 +134,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/kleine-scheidegg-maennlichen-grindelwald-wengen/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

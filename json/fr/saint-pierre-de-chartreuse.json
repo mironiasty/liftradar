@@ -10,7 +10,7 @@
   },
   "website": "https://www.ski-alpin-chartreuse.com",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.012984+01:00",
+  "fetched_at": "2026-11-23T08:40:34.693960+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": null,
     "total": 7,
     "open_km": null,
-    "total_km": null
+    "total_km": 7
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
@@ -36,29 +36,35 @@
   "avalanche": {
     "region_id": "FR-07",
     "region": "Chartreuse",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
+        "upper_bound": 1500,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 1500,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-21T16:00:00+01:00",
-    "valid_from": "2026-11-21T16:00:00+01:00",
-    "valid_until": "2026-11-22T18:00:00+01:00"
+    "published_at": "2026-11-22T16:00:00+01:00",
+    "valid_from": "2026-11-22T16:00:00+01:00",
+    "valid_until": "2026-11-23T18:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/alpes-du-nord/saint-pierre-de-chartreuse/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json"
+    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-22/2026-11-22-FR.json",
+        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json",
         "attribution_required": null
       }
     ],

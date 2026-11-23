@@ -10,7 +10,7 @@
   },
   "website": "https://www.leysin.ch",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.007615+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688574+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,16 @@
       {
         "name": "Col de Bretaye (SLF)",
         "elevation_m": 1780,
-        "depth_cm": 28,
-        "fresh_cm": 8,
+        "depth_cm": 37,
+        "fresh_cm": 47,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Leysin (SLF)",
         "elevation_m": 1300,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 7,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       }
@@ -89,7 +89,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-22T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-23T08:31:00+01:00",
   "details": "json/ch/leysin.details.json",
   "avalanche": {
     "region_id": "CH-1113",
@@ -106,12 +106,11 @@
     ],
     "problems": [
       "new_snow",
-      "wet_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=32&saison=1&ref=contentBox",

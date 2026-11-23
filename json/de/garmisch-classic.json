@@ -9,8 +9,8 @@
     "lon": 11.0935
   },
   "website": "https://zugspitze.de",
-  "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.014392+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-23T08:40:34.695440+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,78 +20,22 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 19
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
-    "total": 24,
-    "open_km": 0.0,
+    "open": null,
+    "total": null,
+    "open_km": null,
     "total_km": 40
   },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 1
-    },
-    "chairlift": {
-      "open": 0,
-      "total": 4
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 8
-    },
-    "gondola": {
-      "open": 0,
-      "total": 5
-    },
-    "other": {
-      "open": 0,
-      "total": 1
-    }
-  },
-  "slopes_by_difficulty": {
-    "ski_route": {
-      "open": 0,
-      "total": 1,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "easy": {
-      "open": 0,
-      "total": 9,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 9,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "difficult": {
-      "open": 0,
-      "total": 5,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
-  "lifts_updated_at": "2026-11-08T17:04:01+01:00",
-  "details": "json/de/garmisch-classic.details.json",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/zugspitzbahn_garmisch/data?lang=en",
     "https://zugspitze.de/de/Unsere-Bergwelten/Winter/Skigebiet-Garmisch-Classic"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://winter.intermaps.com/zugspitzbahn_garmisch/data?lang=en",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://zugspitze.de/de/Unsere-Bergwelten/Winter/Skigebiet-Garmisch-Classic",

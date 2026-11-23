@@ -12,14 +12,14 @@
   "linked_area": "matterhorn-ski-paradise",
   "ski_region": "valle-d-aosta",
   "status": "open",
-  "fetched_at": "2026-11-22T13:40:33.008281+01:00",
-  "status_from": "2026-11-20T16:46:47.408916+01:00",
+  "fetched_at": "2026-11-23T08:40:34.689217+01:00",
+  "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 110,
+    "valley_cm": 0,
     "fresh_cm": null,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "farinosa",
     "stations": []
   },
   "lifts": {
@@ -27,7 +27,7 @@
     "total": 23
   },
   "slopes": {
-    "open": 11,
+    "open": 13,
     "total": 69,
     "open_km": null,
     "total_km": 157
@@ -56,7 +56,7 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 3,
+      "open": 5,
       "total": 19,
       "open_km": null,
       "total_km": null
@@ -74,7 +74,8 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-20T15:55:00+01:00",
+  "lifts_updated_at": "2026-11-22T13:58:00+01:00",
+  "details": "json/it/breuil-cervinia.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-20",
     "region": "D - CERVINIA E ALTA VALPELLINE",
@@ -98,18 +99,23 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-21T17:00:00+01:00",
-    "valid_from": "2026-11-22T00:00:00+01:00",
-    "valid_until": "2026-11-23T00:00:00+01:00"
+    "published_at": "2026-11-22T17:00:00+01:00",
+    "valid_from": "2026-11-23T00:00:00+01:00",
+    "valid_until": "2026-11-24T00:00:00+01:00"
   },
   "sources": [
+    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/breuil-cervinia/comprensorio-di-breuil-cervinia-valtournenche-zermatt/2612",
-    "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-22/2026-11-22_AINEVA_en_CAAMLv6.json",
+        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
         "attribution_required": null
       }
     ],
@@ -120,7 +126,5 @@
       }
     ]
   },
-  "errors": [
-    "status: ConnectTimeout: "
-  ]
+  "errors": []
 }

@@ -10,21 +10,21 @@
   },
   "website": "https://www.verbier.ch",
   "linked_area": "4-vallees",
-  "status": "open",
-  "fetched_at": "2026-11-22T13:40:33.007884+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-23T08:40:34.688836+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 102,
-    "valley_cm": 5,
-    "fresh_cm": 13,
-    "last_snowfall": "2026-11-22",
-    "condition": "mainly: spring snow / partially: wet",
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-11-23",
+    "condition": null,
     "stations": [
       {
         "name": "Verbier",
         "elevation_m": 1500,
         "depth_cm": 5,
-        "fresh_cm": 3,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -39,21 +39,21 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 102,
-        "fresh_cm": 13,
+        "depth_cm": 124,
+        "fresh_cm": 49,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 6,
+    "open": 0,
     "total": 17
   },
   "slopes": {
-    "open": 5,
+    "open": 0,
     "total": 28,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -66,7 +66,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 3,
+      "open": 0,
       "total": 6
     },
     "drag_lift": {
@@ -74,41 +74,41 @@
       "total": 3
     },
     "gondola": {
-      "open": 2,
+      "open": 0,
       "total": 4
     },
     "other": {
-      "open": 1,
+      "open": 0,
       "total": 1
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 1,
+      "open": 0,
       "total": 10,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 3,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": 1,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-22T13:41:00+01:00",
+  "lifts_updated_at": "2026-11-23T08:41:00+01:00",
   "details": "json/ch/verbier.details.json",
   "avalanche": {
     "region_id": "CH-4115",
@@ -128,9 +128,9 @@
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=31&saison=1&ref=contentBox",

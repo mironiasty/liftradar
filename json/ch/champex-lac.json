@@ -10,7 +10,7 @@
   },
   "website": "https://www.saint-bernard.ch/fr/destination/champex-lac-26/",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.007237+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688178+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -88,11 +88,11 @@
   "avalanche": {
     "region_id": "CH-4113",
     "region": "Val d'Entremont - Val Ferret",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 4,
+    "danger": "high",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "high",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -100,12 +100,11 @@
     ],
     "problems": [
       "new_snow",
-      "wet_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=82&saison=1&ref=contentBox",

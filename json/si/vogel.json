@@ -10,7 +10,7 @@
   },
   "website": "https://vogel.si",
   "status": "no_report",
-  "fetched_at": "2026-11-22T13:40:33.017020+01:00",
+  "fetched_at": "2026-11-23T08:40:34.698053+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,7 +26,7 @@
   },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 20,
     "open_km": null,
     "total_km": 22
   },
@@ -71,7 +71,8 @@
   "sources": [
     "https://vogel.si/naprave-proge-zima/",
     "https://vogel.si/",
-    "https://www.skiresort.com/en/ski-resort/vogel-bohinj/"
+    "https://www.skiresort.com/en/ski-resort/vogel-bohinj/",
+    "https://www.skiinfo.fr/slovenie/vogel/station-de-ski"
   ],
   "source_details": {
     "conditions": [
@@ -87,6 +88,10 @@
       },
       {
         "url": "https://www.skiresort.com/en/ski-resort/vogel-bohinj/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiinfo.fr/slovenie/vogel/station-de-ski",
         "attribution_required": null
       }
     ]

@@ -10,11 +10,11 @@
   },
   "website": "https://ounasvaara.fi",
   "status": "open",
-  "fetched_at": "2026-11-22T13:40:33.014034+01:00",
+  "fetched_at": "2026-11-23T08:40:34.695082+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 16,
+    "valley_cm": 15,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -22,7 +22,7 @@
       {
         "name": "Rovaniemi lentoasema (FMI)",
         "elevation_m": null,
-        "depth_cm": 16,
+        "depth_cm": 15,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -37,7 +37,7 @@
     "open": 3,
     "total": 11,
     "open_km": null,
-    "total_km": null
+    "total_km": 6
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
@@ -66,7 +66,8 @@
     "https://ski.fi/hiihtokeskukset/ounasvaara/",
     "https://ounasvaara.fi/",
     "https://opendata.fmi.fi/wfs",
-    "https://en.ilmatieteenlaitos.fi/open-data"
+    "https://en.ilmatieteenlaitos.fi/open-data",
+    "https://www.skiresort.com/en/ski-resort/ounasvaara-rovaniemi/"
   ],
   "source_details": {
     "conditions": [
@@ -87,7 +88,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.skiresort.com/en/ski-resort/ounasvaara-rovaniemi/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

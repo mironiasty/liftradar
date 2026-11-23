@@ -10,20 +10,20 @@
   },
   "website": "https://www.chaeserrugg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-22T13:40:33.007213+01:00",
+  "fetched_at": "2026-11-23T08:40:34.688155+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-10-25",
+    "last_snowfall": "2026-11-23",
     "condition": null,
     "stations": [
       {
-        "name": "Unterwasser Iltios (SLF)",
-        "elevation_m": 1340,
-        "depth_cm": 3,
-        "fresh_cm": 1,
+        "name": "Chäserrugg",
+        "elevation_m": 2262,
+        "depth_cm": 40,
+        "fresh_cm": 25,
         "temperature_c": null,
         "condition": null
       }
@@ -91,51 +91,36 @@
       "total_km": 7
     }
   },
-  "lifts_updated_at": "2026-11-20T16:18:00+01:00",
+  "lifts_updated_at": "2026-11-23T07:59:00+01:00",
   "details": "json/ch/chaeserrugg.details.json",
   "avalanche": {
     "region_id": "CH-3222",
     "region": "Alpstein - Alvier",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "wind_slab"
+      "new_snow"
     ],
-    "published_at": "2026-11-22T08:00:00+01:00",
-    "valid_from": "2026-11-22T08:00:00+01:00",
-    "valid_until": "2026-11-22T17:00:00+01:00"
+    "published_at": "2026-11-23T08:00:00+01:00",
+    "valid_from": "2026-11-23T08:00:00+01:00",
+    "valid_until": "2026-11-23T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=78&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
     "https://aws.slf.ch/api/bulletin/caaml/en/json"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=78&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
         "attribution_required": null
       },
       {
