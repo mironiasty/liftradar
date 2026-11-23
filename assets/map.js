@@ -126,7 +126,7 @@ function popup(r, status, in3d) {
       "div",
       { class: "head" },
       el("a", { class: "name", href: resortPage(r) }, r.name),
-      el("span", { class: "status-pill", style: `--c:${color(status)}` }, capitalized(label)),
+      el("span", { class: "status-pill status-badge", "data-status": status }, capitalized(label)),
     ),
     el("div", { class: "where" }, [r.region, countryName(r.country)].filter(Boolean).join(" · ")),
   );
@@ -220,7 +220,7 @@ function show(map, [index, ski]) {
   const markers = [];
   for (const r of resorts) {
     const status = statusKey(r);
-    const element = el("div", { class: "pin", title: r.name, style: `background:${color(status)}` });
+    const element = el("div", { class: "pin status-badge", title: r.name, "data-status": status });
     element.style.zIndex = status === "open" ? OPEN_ON_TOP : 0;
     element.addEventListener("mouseenter", () => (element.style.zIndex = OPEN_ON_TOP + 1));
     element.addEventListener("mouseleave", () => (element.style.zIndex = status === "open" ? OPEN_ON_TOP : 0));

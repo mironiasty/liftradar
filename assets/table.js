@@ -76,7 +76,7 @@ function nameCell(r) {
     {},
     el("a", { class: "name", href: resortPage(r) }, r.name),
     " ",
-    el("span", { class: "status-pill", style: `--c:${color}` }, label),
+    el("span", { class: "status-pill status-badge", "data-status": status }, label),
   );
   if (status !== "open") text.append(el("div", { class: "sub-line status-line" }, label));
   return el(

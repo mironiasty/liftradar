@@ -285,8 +285,8 @@ function header(r) {
           { class: "facts" },
           el(
             "span",
-            { class: "status" },
-            el("span", { class: "dot", style: `--c:${STATUS_COLORS[status]}` }),
+            { class: "status status-badge", "data-status": status },
+            el("span", { class: "dot" }),
             STATUS_LABELS[status],
           ),
           el("span", {}, ...where),
