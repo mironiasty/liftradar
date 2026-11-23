@@ -87,7 +87,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | What | Where it comes from |
 |---|---|
 | Tirol resorts | [Tirol Snow Card](https://www.snowcard.tirol.at/skigebiete) resort reports |
-| Salzburg resorts; Dachstein Gletscher, Feuerkogel | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
+| Salzburg resorts; Feuerkogel | [SalzburgerLand snow report](https://www.salzburgerland.com/de/schneebericht/) |
 | Hintertux, Sölden, Kitzsteinhorn, Kaunertal, Pitztal | The resorts' own websites (snow measuring stations; last snowfall for Hintertux and Sölden), instead of the regional report |
 | Carinthia | [Kärnten snow report](https://www.kaernten.at/golf/service/wetter/schneeberichte) (Kärnten Werbung, tourism board) |
 | Schladming 4-Berge-Skischaukel (Planai, Hochwurzen, Hauser Kaibling, Reiteralm, added up), Galsterberg, Ramsau am Dachstein | [Schladming-Dachstein](https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter) tourism board: each area's page of lifts and slopes with their state. No report time |
@@ -117,7 +117,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Winterberg, Sudelfeld, Brauneck, Spitzingsee, Großer Arber, Ofterschwang, Bolsterlang, Fichtelberg, Zugspitze, Garmisch-Classic, Feldberg, Hohenbogen | Their Intermaps slope map (lifts and slopes); Winterberg's replaces the Wintersport-Arena's counts, the others have only their map (no snow depth) |
 | Fellhorn - Kanzelwand, Nebelhorn, Söllereck | The [status page](https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/) of their operator, the Oberstdorf · Kleinwalsertal Bergbahnen: every lift and slope with its state and length. No report time |
 | Balderschwang | Its own [lift](https://www.skigebiet-balderschwang.de/lifte/) and [slope](https://www.skigebiet-balderschwang.de/pisten/) pages: every lift and slope with its state. No report time |
-| Other German resorts (37) | No source yet: listed as "no report", without a size. Outdooractive, where many of them enter their report, isn't used: its terms allow private use only |
+| Other German resorts (36) | No source yet: listed as "no report", without a size. Outdooractive, where many of them enter their report, isn't used: its terms allow private use only |
 | Snow depth of Finnish resorts | Nearest [FMI](https://en.ilmatieteenlaitos.fi/open-data) weather station measuring snow depth (Finnish Meteorological Institute, CC BY 4.0), as the valley depth |
 | Norwegian resorts | [Fnugg](https://fnugg.no) (the Norwegian ski resorts' association, Norske Alpinanlegg og Fjelldestinasjoner): every lift and slope with its state, and the report each resort enters (snow depth, new snow, conditions). No slope lengths; km from skiresort.com. Fnugg's weather (from Yr) isn't used. Its terms ask for a credit and link next to the data, which the resort pages, map and table show |
 | Tryvann, Kongsberg, Drammen, Vierli, Grefsenkollen, Haglebu, Savalen, Blomlia | Not on Fnugg: listed as "no report", with their size from skiresort.com |
@@ -161,7 +161,7 @@ Font-Romeu, Ax 3 Domaines, Auron, Orcières, Chamrousse, Les Orres, La Chapelle-
 ones), and the areas
 with fewer than 3 lifts. Not covered yet in Finland: Levi's own lift list (ski.fi's
 block is used), Paljakka, Koli and the smaller hills; Finland has no avalanche ratings to read. Not
-covered yet in Germany: a live status for the 37 areas outside the Sauerland without a current
+covered yet in Germany: a live status for the 36 areas outside the Sauerland without a current
 slope map or a page we read (most of the Allgäu and of Upper Bavaria, the Black Forest, the Harz, Saxony, Thuringia), St.
 Englmar, Mitterfirmiansreut and other Bavarian Forest areas, Wasserkuppe, Erbeskopf, Hoherodskopf,
 single-lift areas and the areas under 3 km of slopes; the German uplands have no avalanche service. Not covered yet in Czechia:
