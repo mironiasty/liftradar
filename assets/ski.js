@@ -6,16 +6,22 @@
 const SKI_URL = "/ski/v1";
 const SKI_ATTRIBUTION =
   '<a href="https://openskimap.org">OpenSkiData</a> (ODbL, © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors)';
-// Pistes and lifts appear from this zoom: below it they're only clutter, and many tiles.
+// How the maps draw the tiles, here and in the apps: colours, layers and what decides them (README "Ski map
+// style"). This file only turns the tiles into features for them, and adds the lifts' and pistes' statuses.
+const SKI_STYLE_URL = "/assets/ski-style.json";
+// Pistes and lifts appear from this zoom (the style's minZoom): below it they're only clutter, and many tiles.
 const SKI_MIN_ZOOM = 11;
 
-// { build, resorts: Map of "<country>/<id>" to its feature }, or null without the tiles.
+// { build, resorts: Map of "<country>/<id>" to its feature, style: assets/ski-style.json }, or null
+// without the tiles (or that file).
 async function loadSki() {
   try {
-    const meta = await (await fetch(`${SKI_URL}/meta.json`, { cache: "no-cache" })).json();
+    const [meta, style] = await Promise.all(
+      [`${SKI_URL}/meta.json`, SKI_STYLE_URL].map(async (url) => (await fetch(url, { cache: "no-cache" })).json()),
+    );
     const response = await fetch(`${SKI_URL}/${meta.resorts}?b=${meta.build}`);
     const collection = await response.json();
-    return { build: meta.build, resorts: new Map(collection.features.map((f) => [f.properties.id, f])) };
+    return { build: meta.build, resorts: new Map(collection.features.map((f) => [f.properties.id, f])), style };
   } catch {
     return null;
   }
@@ -55,18 +61,6 @@ const SKI_LIFT_TYPES = {
 };
 // Experimental: the status of a lift or piste linked to its resort's details file (`item`), in its tooltip.
 const SKI_STATES = { open: t("open"), closed: t("closed"), preparation: t("in preparation") };
-// How a lift or piste of a resort with statuses is drawn (`look`), on top of its own width and opacity:
-// open ones wide, on a light edge; closed ones (and those in preparation) thin and dashed; those whose
-// status isn't known (not linked, or the source doesn't say) thin and faint. Lifts also get a dot on
-// each station: green when running, a red ring when not. Resorts without statuses are drawn as before.
-const SKI_LOOKS = {
-  open: { width: 1.4, opacity: 1 },
-  closed: { width: 0.7, opacity: 0.8 },
-  unknown: { width: 0.8, opacity: 0.5 },
-};
-const OPEN_COLOR = "#2e9e3f";
-const CLOSED_COLOR = "#d62828";
-const CASING = darkMode() ? "#111" : "#fff";
 const SKI_DIFFICULTIES = {
   novice: t("novice"),
   easy: t("easy"),
@@ -76,20 +70,31 @@ const SKI_DIFFICULTIES = {
   freeride: t("freeride"),
   extreme: t("extreme"),
 };
-// Piste colours by the country's convention: Europe, North America, Japan.
-const PISTE_COLORS = {
-  europe: { novice: "#2e9e3f", easy: "#1f6fd1", intermediate: "#d62828", advanced: "#111", expert: "#111" },
-  north_america: { novice: "#2e9e3f", easy: "#2e9e3f", intermediate: "#1f6fd1", advanced: "#111", expert: "#111" },
-  japan: { novice: "#2e9e3f", easy: "#2e9e3f", intermediate: "#d62828", advanced: "#111", expert: "#111" },
-};
-// Black pistes and lifts are light on the dark map.
-const INK = darkMode() ? "#eee" : "#222";
-if (darkMode()) for (const colors of Object.values(PISTE_COLORS)) colors.advanced = colors.expert = INK;
-const OFF_PISTE = "#ef8a00";
-const NORDIC = "#7a5cc7";
-// On the map, the lifts and pistes of areas liftradar has no resort for: grey, and a little faint.
-const UNLISTED = darkMode() ? "#9aa1ab" : "#5f6670";
-const UNLISTED_OPACITY = 0.7;
+// A run's use on the map, the first of these it has; runs with none of them aren't drawn.
+const SKI_USES = ["downhill", "nordic", "skitour", "sled"];
+
+// The style's layers with its names ("@ink", "@runColor") replaced by the theme's colours and its
+// definitions, the minZoom of those that start with the pistes (the style's minZoom) set to minZoom.
+function skiStyleLayers(style, minZoom) {
+  const names = { ...style.defs, ...style.colors[darkMode() ? "dark" : "light"] };
+  const resolve = (v) =>
+    typeof v === "string" && v.startsWith("@") && v.slice(1) in names
+      ? resolve(names[v.slice(1)])
+      : Array.isArray(v)
+        ? v.map(resolve)
+        : v && typeof v === "object"
+          ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, resolve(x)]))
+          : v;
+  return style.layers.map((layer) => {
+    const resolved = resolve(layer);
+    if (resolved.minzoom === style.minZoom) resolved.minzoom = minZoom;
+    return resolved;
+  });
+}
+
+// Without the keys whose value is missing: the style's ["has", …] would take them for set.
+const skiProperties = (properties) =>
+  Object.fromEntries(Object.entries(properties).filter(([, v]) => v != null && v !== false));
 
 function tileOf([lon, lat]) {
   const n = 1024; // zoom 10
@@ -97,115 +102,68 @@ function tileOf([lon, lat]) {
   return [Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.asinh(Math.tan(rad)) / Math.PI) / 2) * n)];
 }
 
-const HARDER = ["novice", "easy", "intermediate", "advanced", "expert"];
-const refsOf = (run) => (run.ref ?? "").split(/\s*[,;]\s*/).filter(Boolean);
-const apartM = (a, b) => Math.hypot((a[0] - b[0]) * Math.cos((a[1] * Math.PI) / 180), a[1] - b[1]) * 111320;
-
-// OpenSkiData makes a stretch two pistes share a run of its own, numbered for both ("22, 19") and as
-// hard as the easier, so the harder one seems to stop there. Its colour edges the stretch instead:
-// the hardest piste with one of those numbers that starts or ends within 30 m of it.
-function sharedColor(run, runs) {
-  const refs = refsOf(run);
-  if (refs.length < 2 || !run.c) return null;
-  const ends = [run.c[0], run.c.at(-1)];
-  let hardest = run.difficulty;
-  for (const other of runs) {
-    const theirs = refsOf(other);
-    if (theirs.length !== 1 || !refs.includes(theirs[0]) || !other.c) continue;
-    if (HARDER.indexOf(other.difficulty) <= HARDER.indexOf(hardest)) continue;
-    if ([other.c[0], other.c.at(-1)].some((a) => ends.some((b) => apartM(a, b) <= 30))) hardest = other.difficulty;
-  }
-  return hardest === run.difficulty ? null : (PISTE_COLORS[run.conv ?? "europe"][hardest] ?? null);
-}
-
-// A tile's runs and lifts as GeoJSON features, with what the layers and tooltips need.
-/** @param {SkiTile} tile */
-function skiFeatures(tile, highlight, names) {
+// A tile's runs and lifts as GeoJSON features, with the properties assets/ski-style.json reads (its
+// "sources"), and for the tooltips their kind and resort's name.
+/** @param {SkiTile} tile @param {Map<string, string>} names */
+function skiFeatures(tile, names) {
   for (const area of tile.areas) if (area.lr && !names.has(area.lr.id)) names.set(area.lr.id, area.lr.name);
   const runs = [];
   const lifts = [];
   const stations = [];
-  // With a highlight, every other resort's are faded; without (the map), those of no resort liftradar has
-  // are grey (UNLISTED).
-  const faded = (f) => highlight && f.lr !== highlight;
-  const grey = (f) => !highlight && !f.lr;
-  const fade = (f) => (grey(f) ? UNLISTED_OPACITY : faded(f) ? 0.35 : 1);
   for (const run of tile.runs) {
-    const uses = run.uses ?? [];
-    const downhill = uses.includes("downhill");
-    if (!downhill && !uses.includes("nordic") && !uses.includes("skitour") && !uses.includes("sled")) continue;
-    const offPiste = run.difficulty === "freeride" || run.difficulty === "extreme";
-    const kind = downhill
-      ? [t("Piste"), SKI_DIFFICULTIES[run.difficulty]].filter(Boolean).join(", ")
-      : uses.includes("nordic")
-        ? t("Cross-country trail")
-        : uses.includes("skitour")
-          ? t("Ski touring route")
-          : t("Sledding run");
-    // A run in a tunnel is drawn faint and dashed, as tunnels are on maps: it doesn't go over the hill.
-    const tunnel = Boolean(run.tunnel);
+    const use = SKI_USES.find((u) => run.uses?.includes(u));
+    if (!use) continue;
+    const kind =
+      use === "downhill"
+        ? [t("Piste"), SKI_DIFFICULTIES[run.difficulty]].filter(Boolean).join(", ")
+        : use === "nordic"
+          ? t("Cross-country trail")
+          : use === "skitour"
+            ? t("Ski touring route")
+            : t("Sledding run");
     runs.push({
       type: "Feature",
       id: run.osm,
       geometry: run.c ? { type: "LineString", coordinates: run.c } : { type: "Polygon", coordinates: run.poly },
-      properties: {
-        color: grey(run)
-          ? UNLISTED
-          : !downhill
-            ? NORDIC
-            : offPiste
-              ? OFF_PISTE
-              : (PISTE_COLORS[run.conv ?? "europe"][run.difficulty] ?? "#777"),
-        dashed: offPiste || !downhill || tunnel,
-        shared: downhill && !offPiste && !tunnel && !grey(run) ? sharedColor(run, tile.runs) : null,
-        width: downhill ? 2.5 : 1.5,
-        baseWidth: downhill ? 2.5 : 1.5,
-        opacity: fade(run) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
-        base: fade(run) * (downhill ? 0.9 : 0.7) * (tunnel ? 0.55 : 1),
-        item: run.item ?? "",
-        state: "",
-        look: "",
-        dash: offPiste || !downhill || tunnel,
-        name: run.name ?? "",
-        lr: run.lr ?? "",
-        tunnel,
-        kind: tunnel ? `${kind}, ${t("in a tunnel")}` : kind,
-        resort: names.get(run.lr) ?? "",
-      },
+      properties: skiProperties({
+        use,
+        difficulty: run.difficulty,
+        conv: run.conv,
+        name: run.name,
+        lr: run.lr,
+        item: run.item,
+        tunnel: run.tunnel,
+        shared: run.shared,
+        kind: run.tunnel ? `${kind}, ${t("in a tunnel")}` : kind,
+        resort: run.lr && names.get(run.lr),
+      }),
     });
   }
   for (const lift of tile.lifts) {
     const gone = Boolean(lift.status && lift.status !== "operating");
-    const tunnel = Boolean(lift.tunnel);
-    const properties = {
-      type: lift.type ?? "",
-      lr: lift.lr ?? "",
-      color: grey(lift) ? UNLISTED : gone ? "#888" : INK,
-      dashed: gone || tunnel,
-      dash: gone || tunnel,
-      width: 2.5,
-      baseWidth: 2.5,
-      opacity: fade(lift) * (tunnel ? 0.55 : 1),
-      base: fade(lift) * (tunnel ? 0.55 : 1),
-      item: lift.item ?? "",
-      state: "",
-      look: "",
-      name: lift.name ?? "",
-      kind: [SKI_LIFT_TYPES[lift.type] ?? t("Lift"), gone ? t("out of service") : "", tunnel ? t("in a tunnel") : ""]
+    const properties = skiProperties({
+      type: lift.type,
+      name: lift.name,
+      status: lift.status,
+      tunnel: lift.tunnel,
+      lr: lift.lr,
+      item: lift.item,
+      kind: [
+        SKI_LIFT_TYPES[lift.type] ?? t("Lift"),
+        gone ? t("out of service") : "",
+        lift.tunnel ? t("in a tunnel") : "",
+      ]
         .filter(Boolean)
         .join(", "),
-      resort: names.get(lift.lr) ?? "",
-    };
-    lifts.push({ type: "Feature", id: lift.osm, geometry: { type: "LineString", coordinates: lift.c }, properties });
-    stations.push({ type: "Feature", id: lift.osm, geometry: { type: "Point", coordinates: lift.c[0] }, properties });
-    // The top station: drawn only when the lift's status is known.
-    const top = { ...properties, top: true };
-    stations.push({
-      type: "Feature",
-      id: lift.osm,
-      geometry: { type: "Point", coordinates: lift.c.at(-1) },
-      properties: top,
+      resort: lift.lr && names.get(lift.lr),
     });
+    const line = { type: "LineString", coordinates: lift.c };
+    lifts.push({ type: "Feature", id: lift.osm, geometry: line, properties });
+    // A station at each end: the style draws the top one only when the lift's status is known.
+    const start = { type: "Point", coordinates: lift.c[0] };
+    stations.push({ type: "Feature", id: lift.osm, geometry: start, properties: { ...properties } });
+    const top = { type: "Point", coordinates: lift.c.at(-1) };
+    stations.push({ type: "Feature", id: lift.osm, geometry: top, properties: { ...properties, top: true } });
   }
   return { runs, lifts, stations };
 }
@@ -218,12 +176,13 @@ function skiLabel({ properties: p }) {
   return box;
 }
 
-// Pistes and lifts of the tiles in view, under the labels. With highlight (a resort's key), that
-// resort's are drawn strong and the others faded, and without, those of areas liftradar has no resort
-// for are grey; names maps resort keys to the names shown in the
-// tooltips (otherwise those the tiles give); minZoom, from where they're drawn; tips: false for
-// no tooltips (the map page, where a click on the area shows the resort). Resolves once the
-// tiles of the first view are drawn.
+// The ski style's sources and layers (assets/ski-style.json), under the labels, and the pistes and lifts
+// of the tiles in view in them. With highlight (a resort's key), that resort's are drawn strong and the
+// others faded, and without, those of areas liftradar has no resort for are grey; names maps resort keys
+// to the names shown in the tooltips (otherwise those the tiles give); minZoom, from where they're drawn;
+// tips: false for no tooltips (the map page, where a click on the area shows the resort). The resorts'
+// outlines go in the source "ski-areas" and their links in "ski-links" (the map page fills them).
+// Resolves once the tiles of the first view are drawn.
 // onStates: called when the statuses of a resort in view have loaded (for a legend).
 function skiLayers(
   map,
@@ -237,93 +196,15 @@ function skiLayers(
   } = {},
 ) {
   const empty = { type: "FeatureCollection", features: [] };
-  map.addSource("ski-runs", { type: "geojson", data: empty, attribution: SKI_ATTRIBUTION });
-  map.addSource("ski-lifts", { type: "geojson", data: empty });
-  map.addSource("ski-stations", { type: "geojson", data: empty });
+  for (const id of Object.keys(ski.style.sources)) {
+    map.addSource(id, { type: "geojson", data: empty, ...(id === "ski-runs" && { attribution: SKI_ATTRIBUTION }) });
+  }
+  map.setGlobalStateProperty("highlight", highlight ?? "");
+  map.setGlobalStateProperty("picked", "");
   const before = firstLabel(map);
-  const line = (id, source, filter, extra = {}) =>
-    map.addLayer(
-      {
-        id,
-        type: "line",
-        source,
-        minzoom: minZoom,
-        filter,
-        layout: { "line-cap": "round", "line-join": "round" },
-        paint: {
-          "line-color": ["get", "color"],
-          "line-opacity": ["get", "opacity"],
-          "line-width": ["coalesce", ["get", "width"], 2.5],
-          ...extra,
-        },
-      },
-      before,
-    );
-  map.addLayer(
-    {
-      id: "ski-run-areas",
-      type: "fill",
-      source: "ski-runs",
-      minzoom: minZoom,
-      filter: ["==", ["geometry-type"], "Polygon"],
-      paint: { "fill-color": ["get", "color"], "fill-opacity": ["*", ["get", "opacity"], 0.2] },
-    },
-    before,
-  );
-  const isLine = ["==", ["geometry-type"], "LineString"];
-  // Under a stretch two pistes share, the harder one's colour as its edges (sharedColor).
-  line("ski-runs-shared", "ski-runs", ["all", isLine, ["has", "shared"], ["!=", ["get", "shared"], null]], {
-    "line-color": ["get", "shared"],
-    "line-width": ["+", ["get", "width"], 3],
-  });
-  // Open lifts and pistes on a light edge (SKI_LOOKS).
-  const isOpen = ["==", ["get", "look"], "open"];
-  const edge = { "line-color": CASING, "line-width": ["+", ["get", "width"], 3], "line-opacity": ["get", "base"] };
-  line("ski-runs-open", "ski-runs", ["all", isLine, isOpen], edge);
-  line("ski-runs", "ski-runs", ["all", isLine, ["!", ["get", "dash"]]]);
-  line("ski-runs-dashed", "ski-runs", ["all", isLine, ["get", "dash"]], { "line-dasharray": [2, 2] });
-  line("ski-lifts-open", "ski-lifts", isOpen, edge);
-  line("ski-lifts", "ski-lifts", ["!", ["get", "dash"]]);
-  line("ski-lifts-dashed", "ski-lifts", ["get", "dash"], { "line-dasharray": [1.5, 2] });
-  const known = ["in", ["get", "look"], ["literal", ["open", "closed"]]];
-  const byLook = (open, closed, other) => ["match", ["get", "look"], "open", open, "closed", closed, other];
-  map.addLayer(
-    {
-      id: "ski-stations",
-      type: "circle",
-      source: "ski-stations",
-      minzoom: minZoom,
-      filter: ["any", ["!", ["has", "top"]], known],
-      paint: {
-        "circle-radius": byLook(4.5, 3.5, 2.5),
-        "circle-color": byLook(OPEN_COLOR, CASING, ["get", "color"]),
-        "circle-stroke-color": byLook(CASING, CLOSED_COLOR, CASING),
-        "circle-stroke-width": byLook(1.5, 2, 0),
-        "circle-opacity": ["case", known, ["get", "base"], ["get", "opacity"]],
-        "circle-stroke-opacity": ["get", "base"],
-      },
-    },
-    before,
-  );
-  map.addLayer({
-    id: "ski-lift-names",
-    type: "symbol",
-    source: "ski-lifts",
-    minzoom: 13,
-    layout: {
-      "symbol-placement": "line",
-      "text-field": ["get", "name"],
-      "text-font": MAP_FONT,
-      "text-size": 11,
-      "text-offset": [0, -0.8],
-    },
-    paint: {
-      "text-color": INK,
-      "text-halo-color": darkMode() ? "#000" : "#fff",
-      "text-halo-width": 1.2,
-      "text-opacity": ["get", "opacity"],
-    },
-  });
+  for (const layer of skiStyleLayers(ski.style, minZoom)) {
+    map.addLayer(layer, layer.metadata?.["above-labels"] ? undefined : before);
+  }
   if (tips) hoverTip(map, ["ski-runs", "ski-runs-dashed", "ski-run-areas", "ski-lifts", "ski-lifts-dashed"], skiLabel);
 
   const data = { runs: [], lifts: [], stations: [] };
@@ -332,25 +213,16 @@ function skiLayers(
   const drawn = new Set();
   const draw = (key) => map.getSource(sources[key]).setData({ type: "FeatureCollection", features: data[key] });
 
-  // Experimental: lifts and pistes linked to a resort's details file get its status, and its look (SKI_LOOKS).
+  // Experimental: lifts and pistes linked to a resort's details file get its status (`state`), and the
+  // others of a resort with statuses "unknown"; the style draws each by it.
   const states = new Map(); // "<country>/<id>/<item id>" -> status
   const withStates = new Set(); // the resorts whose details are loaded
   const asked = new Set();
   const restyle = (f) => {
     const p = f.properties;
-    p.state = states.get(p.item) ?? "";
-    p.look =
-      p.state === "open"
-        ? "open"
-        : p.state === "closed" || p.state === "preparation"
-          ? "closed"
-          : withStates.has(p.lr)
-            ? "unknown"
-            : "";
-    const look = SKI_LOOKS[p.look] ?? { width: 1, opacity: 1 };
-    p.opacity = p.base * look.opacity;
-    p.width = p.baseWidth * look.width;
-    p.dash = p.dashed || p.look === "closed";
+    const state = states.get(p.item) ?? (withStates.has(p.lr) ? "unknown" : null);
+    if (state) p.state = state;
+    else delete p.state;
   };
   /** @param {SkiTile} tile */
   const loadStates = (tile) => {
@@ -362,7 +234,8 @@ function skiLayers(
         .then((response) => (response.ok ? /** @type {Promise<ResortDetails>} */ (response.json()) : null))
         .then((details) => {
           if (!details) return;
-          for (const i of [...details.lifts, ...details.slopes]) states.set(`${resort}/${i.id}`, i.status);
+          for (const i of [...details.lifts, ...details.slopes])
+            if (i.status) states.set(`${resort}/${i.id}`, i.status);
           withStates.add(resort);
           for (const key of Object.keys(data)) {
             data[key].forEach(restyle);
@@ -376,12 +249,12 @@ function skiLayers(
 
   const add = (tile) => {
     loadStates(tile);
-    for (const [key, list] of Object.entries(skiFeatures(tile, highlight, names))) {
+    for (const [key, list] of Object.entries(skiFeatures(tile, names))) {
       for (const f of list) {
         // A line crossing tiles is in each of them, whole. Its OSM id alone isn't enough:
         // OpenSkiData splits some ways into several runs, which share it.
         const line = f.geometry.type === "Polygon" ? f.geometry.coordinates[0] : f.geometry.coordinates;
-        const id = `${key}:${f.id}:${line[0]}:${line.length}`;
+        const id = `${key}:${f.id}:${line[0]}:${line.length}:${f.properties.top ?? ""}`;
         if (drawn.has(id)) continue;
         drawn.add(id);
         restyle(f);

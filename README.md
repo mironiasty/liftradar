@@ -311,8 +311,9 @@ once a day; its own vector tiles may not be used directly.
   status; see below), `areas` (indexes in this tile's `areas`) and `c`, the line simplified to 5 m as
   `[lon, lat, elevation]`. `runs`: every piste and trail, with `uses` (downhill, nordic, skitour,
   sled…), `difficulty`, `conv` (the colour convention when not European: `north_america`, `japan`),
-  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `tunnel`, `osm` (not unique: OpenSkiData
-  splits some ways into several runs), `lr`, `areas`, and `c`
+  `name`, `ref`, `grooming`, `lit`, `oneway`, `gladed`, `patrolled`, `tunnel`, `shared` (on a stretch two pistes
+  share, numbered for both and as hard as the easier: the harder one's difficulty, whose colour edges it on the maps),
+  `osm` (not unique: OpenSkiData splits some ways into several runs), `lr`, `areas`, and `c`
   (`[lon, lat]`) or, for a piste drawn as an area, `poly` (polygon rings). Empty values are left out.
   OpenSkiData makes runs of a ski route relation's members, the lifts the route rides included (Saalbach's
   "The Challenge", the Sellaronda): a run made only from relations loses each segment lying along a lift
@@ -325,8 +326,7 @@ and, for lifts, length and altitudes, as there's no shared id; about 82% of lift
 own lines go to its own list first, and a neighbour's list (SkiWelt's map also shows KitzSki's lifts, without a
 status) gets only those left unlinked, and only its items with a known status. The map
 and resort pages load the details of the resorts in view: open lifts and pistes wide on a light edge, closed ones thin and
-dashed, those without a known status thin and faint, and a green or red dot on each lift station (`SKI_LOOKS` in
-`assets/ski.js`); the map's options panel then shows a legend. Run it on built tiles
+dashed, those without a known status thin and faint, and a green or red dot on each lift station ([Ski map style](#ski-map-style)); the map's options panel then shows a legend. Run it on built tiles
 with `python3 scripts/lift_links.py ../liftradar-data/json ski`.
 
 It then measures them, for `lengths.json`: a lift is its OSM lines (its sections) along the slope; a slope its
@@ -389,6 +389,25 @@ lifts.
 Lifts, pistes and ski areas: data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL),
 Skimap.org, Who's On First, © Mapterhorn. The tiles are a derived database under the
 [ODbL](https://opendatacommons.org/licenses/odbl/), as public as the rest of the data.
+
+## Ski map style
+
+`assets/ski-style.json` is how the maps draw the ski tiles, on the site (`assets/ski.js`) and in the phone apps
+(TrailRider's repo, `apps/liftradar`), which fetch it from `https://liftradar.eu/assets/ski-style.json`: change the
+look there and the apps follow, without a release of their own. It holds MapLibre layers whose values may name
+`colors` (one set per theme) and `defs` (expressions, which may name others) as `"@name"`; a client replaces each with
+its value, the theme's colours first, then adds the layers under the base map's labels (those with
+`metadata["above-labels"]` on top). `sources` lists the GeoJSON sources the client fills, and with which
+properties: the resorts' outlines and their links, and the tiles' runs, lifts and lift stations with their fields as
+the tiles have them, plus `state`, the status from the details file (`unknown` for the others of a resort with
+statuses). Two values come from the client as MapLibre's global state: `picked`, the resort hovered or tapped,
+and `highlight`, the resort of a resort page or 3D view (its lines strong, the others faded). `minZoom` is
+where the pistes and lifts start; the site's resort page draws them from further out.
+
+The apps put their own roads under the first layer whose id starts with `ski-` (and their town names between the
+ski style and the basemap's labels): keep that prefix on every layer. `node scripts/ski-style-check.mjs` (in `npm run check`) checks every name and that the result is a valid
+style. Keep to expressions MapLibre Native supports as well as MapLibre GL JS, and to the properties `sources`
+lists: the apps fill only those. A change that older apps can't draw needs a new file (and `version`), not an edit.
 
 ## 3D engine
 

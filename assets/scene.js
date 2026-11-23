@@ -1594,10 +1594,17 @@ async function show() {
   // The lifts the models draw aren't also lines on the ground; nothing outside the box.
   /** @type {Expression} */
   const ground = ["!", ["in", ["get", "type"], ["literal", AERIAL]]];
-  for (const id of ["ski-runs", "ski-runs-dashed", "ski-lifts", "ski-lifts-dashed", "ski-stations", "ski-lift-names"]) {
-    // The layers' filters in ski.js are expressions.
+  // Every line and dot of the ski style (assets/ski-style.json), the open ones' edges included.
+  const skiLines = map
+    .getStyle()
+    .layers.filter(
+      (l) => "source" in l && ["ski-runs", "ski-lifts", "ski-stations"].includes(l.source) && l.id !== "ski-run-areas",
+    )
+    .map((l) => l.id);
+  for (const id of skiLines) {
+    // The style's filters are expressions.
     const filter = /** @type {Expression | undefined} */ (map.getFilter(id));
-    const lift = id.startsWith("ski-lift") || id === "ski-stations";
+    const lift = map.getLayer(id)?.source !== "ski-runs";
     /** @type {Expression} */
     const mine = ["all", ["==", ["get", "lr"], KEY], within];
     /** @type {Expression} */

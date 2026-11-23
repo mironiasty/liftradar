@@ -213,6 +213,16 @@
             "description": "The run goes through a tunnel.",
             "type": "boolean"
           },
+          "shared": {
+            "description": "A stretch two pistes share (its ref has both numbers, its difficulty the easier one's): the harder piste's difficulty, whose colour the maps draw along its edges.",
+            "enum": [
+              "novice",
+              "easy",
+              "intermediate",
+              "advanced",
+              "expert"
+            ]
+          },
           "osm": {
             "type": "string"
           },

@@ -1,0 +1,273 @@
+{
+  "$comment": "How the maps draw the ski tiles, on the site (assets/ski.js) and in the apps: README \"Ski map style\".",
+  "version": 1,
+  "minZoom": 11,
+  "colors": {
+    "light": {
+      "boundary": "#8a5a2b",
+      "status-open": "#1f8a3e",
+      "status-closed": "#6b7a8c",
+      "status-none": "#b3bfcc",
+      "piste-green": "#2e9e3f",
+      "piste-blue": "#1f6fd1",
+      "piste-red": "#d62828",
+      "piste-black": "#111",
+      "piste-other": "#777",
+      "off-piste": "#ef8a00",
+      "nordic": "#7a5cc7",
+      "ink": "#222",
+      "lift-gone": "#888",
+      "grey": "#5f6670",
+      "station-open": "#2e9e3f",
+      "station-closed": "#d62828",
+      "casing": "#fff",
+      "halo": "#fff"
+    },
+    "dark": {
+      "boundary": "#c79a6b",
+      "status-open": "#4cc36b",
+      "status-closed": "#a2b2c5",
+      "status-none": "#6c86a5",
+      "piste-green": "#2e9e3f",
+      "piste-blue": "#1f6fd1",
+      "piste-red": "#d62828",
+      "piste-black": "#eee",
+      "piste-other": "#777",
+      "off-piste": "#ef8a00",
+      "nordic": "#7a5cc7",
+      "ink": "#eee",
+      "lift-gone": "#888",
+      "grey": "#9aa1ab",
+      "station-open": "#2e9e3f",
+      "station-closed": "#d62828",
+      "casing": "#111",
+      "halo": "#000"
+    }
+  },
+  "state": {
+    "picked": { "default": "" },
+    "highlight": { "default": "" }
+  },
+  "defs": {
+    "picked": ["==", ["get", "key"], ["coalesce", ["global-state", "picked"], ""]],
+    "highlight": ["coalesce", ["global-state", "highlight"], ""],
+    "other": ["all", ["!=", "@highlight", ""], ["!=", ["coalesce", ["get", "lr"], ""], "@highlight"]],
+    "unlisted": ["all", ["==", "@highlight", ""], ["!", ["has", "lr"]]],
+    "fade": ["case", "@unlisted", 0.7, "@other", 0.35, 1],
+    "statusColor": ["match", ["get", "status"], "open", "@status-open", "closed", "@status-closed", "@status-none"],
+
+    "look": [
+      "match",
+      ["coalesce", ["get", "state"], ""],
+      "open",
+      "open",
+      ["closed", "preparation"],
+      "closed",
+      "",
+      "",
+      "unknown"
+    ],
+    "closed": ["==", "@look", "closed"],
+    "known": ["match", "@look", ["open", "closed"], true, false],
+    "lookWidth": ["match", "@look", "open", 1.4, "closed", 0.7, "unknown", 0.8, 1],
+    "lookOpacity": ["match", "@look", "open", 1, "closed", 0.8, "unknown", 0.5, 1],
+    "tunnel": ["==", ["get", "tunnel"], true],
+    "isLine": ["==", ["geometry-type"], "LineString"],
+
+    "downhill": ["==", ["get", "use"], "downhill"],
+    "offPiste": ["match", ["coalesce", ["get", "difficulty"], ""], ["freeride", "extreme"], true, false],
+    "pisteColor": [
+      "match",
+      ["var", "difficulty"],
+      "novice",
+      "@piste-green",
+      "easy",
+      ["match", ["coalesce", ["get", "conv"], ""], ["north_america", "japan"], "@piste-green", "@piste-blue"],
+      "intermediate",
+      ["match", ["coalesce", ["get", "conv"], ""], "north_america", "@piste-blue", "@piste-red"],
+      ["advanced", "expert"],
+      "@piste-black",
+      "@piste-other"
+    ],
+    "runColor": [
+      "case",
+      "@unlisted",
+      "@grey",
+      ["!", "@downhill"],
+      "@nordic",
+      "@offPiste",
+      "@off-piste",
+      ["let", "difficulty", ["coalesce", ["get", "difficulty"], ""], "@pisteColor"]
+    ],
+    "runDashed": ["any", "@offPiste", ["!", "@downhill"], "@tunnel", "@closed"],
+    "runBase": ["*", "@fade", ["case", "@downhill", 0.9, 0.7], ["case", "@tunnel", 0.55, 1]],
+    "runOpacity": ["*", "@runBase", "@lookOpacity"],
+    "runWidth": ["*", ["case", "@downhill", 2.5, 1.5], "@lookWidth"],
+
+    "gone": ["all", ["has", "status"], ["!=", ["get", "status"], "operating"]],
+    "liftColor": ["case", "@unlisted", "@grey", "@gone", "@lift-gone", "@ink"],
+    "liftDashed": ["any", "@gone", "@tunnel", "@closed"],
+    "liftBase": ["*", "@fade", ["case", "@tunnel", 0.55, 1]],
+    "liftOpacity": ["*", "@liftBase", "@lookOpacity"],
+    "liftWidth": ["*", 2.5, "@lookWidth"]
+  },
+  "sources": {
+    "ski-areas": "resorts.geojson's outlines of the resorts shown: key (<country>/<id>), status (open, closed, no_report)",
+    "ski-links": "each of those outlines' links, a MultiLineString, with the same properties",
+    "ski-runs": "the tiles' runs: use (downhill, nordic, skitour or sled, the first it has), and difficulty, conv, name, lr, item, tunnel, shared as the tile has them; state",
+    "ski-lifts": "the tiles' lifts: type, name, status, tunnel, lr, item as the tile has them; state",
+    "ski-stations": "a point at each lift's start, and one at its end with top: true; the lift's properties"
+  },
+  "layers": [
+    {
+      "id": "ski-areas-fill",
+      "type": "fill",
+      "source": "ski-areas",
+      "paint": {
+        "fill-color": "@statusColor",
+        "fill-opacity": ["step", ["zoom"], ["case", "@picked", 0.45, 0.25], 11, ["case", "@picked", 0.12, 0]]
+      }
+    },
+    {
+      "id": "ski-areas-line",
+      "type": "line",
+      "source": "ski-areas",
+      "paint": {
+        "line-color": "@boundary",
+        "line-width": ["case", "@picked", 3, 1.5],
+        "line-dasharray": [3, 2]
+      }
+    },
+    {
+      "id": "ski-areas-links",
+      "type": "line",
+      "source": "ski-links",
+      "maxzoom": 11,
+      "layout": { "line-cap": "round" },
+      "paint": {
+        "line-color": "@statusColor",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 8, ["case", "@picked", 2.5, 1.5], 11, ["case", "@picked", 4.5, 3]]
+      }
+    },
+    {
+      "id": "ski-run-areas",
+      "type": "fill",
+      "source": "ski-runs",
+      "minzoom": 11,
+      "filter": ["==", ["geometry-type"], "Polygon"],
+      "paint": { "fill-color": "@runColor", "fill-opacity": ["*", "@runOpacity", 0.2] }
+    },
+    {
+      "id": "ski-runs-shared",
+      "type": "line",
+      "source": "ski-runs",
+      "minzoom": 11,
+      "filter": ["all", "@isLine", ["has", "shared"], "@downhill", ["!", "@offPiste"], ["!", "@tunnel"], ["!", "@unlisted"]],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": ["let", "difficulty", ["get", "shared"], "@pisteColor"],
+        "line-opacity": "@runOpacity",
+        "line-width": ["+", "@runWidth", 3]
+      }
+    },
+    {
+      "id": "ski-runs-open",
+      "type": "line",
+      "source": "ski-runs",
+      "minzoom": 11,
+      "filter": ["all", "@isLine", ["==", "@look", "open"]],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "@casing", "line-opacity": "@runBase", "line-width": ["+", "@runWidth", 3] }
+    },
+    {
+      "id": "ski-runs",
+      "type": "line",
+      "source": "ski-runs",
+      "minzoom": 11,
+      "filter": ["all", "@isLine", ["!", "@runDashed"]],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "@runColor", "line-opacity": "@runOpacity", "line-width": "@runWidth" }
+    },
+    {
+      "id": "ski-runs-dashed",
+      "type": "line",
+      "source": "ski-runs",
+      "minzoom": 11,
+      "filter": ["all", "@isLine", "@runDashed"],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "@runColor",
+        "line-opacity": "@runOpacity",
+        "line-width": "@runWidth",
+        "line-dasharray": [2, 2]
+      }
+    },
+    {
+      "id": "ski-lifts-open",
+      "type": "line",
+      "source": "ski-lifts",
+      "minzoom": 11,
+      "filter": ["==", "@look", "open"],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "@casing", "line-opacity": "@liftBase", "line-width": ["+", "@liftWidth", 3] }
+    },
+    {
+      "id": "ski-lifts",
+      "type": "line",
+      "source": "ski-lifts",
+      "minzoom": 11,
+      "filter": ["!", "@liftDashed"],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "@liftColor", "line-opacity": "@liftOpacity", "line-width": "@liftWidth" }
+    },
+    {
+      "id": "ski-lifts-dashed",
+      "type": "line",
+      "source": "ski-lifts",
+      "minzoom": 11,
+      "filter": "@liftDashed",
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "@liftColor",
+        "line-opacity": "@liftOpacity",
+        "line-width": "@liftWidth",
+        "line-dasharray": [1.5, 2]
+      }
+    },
+    {
+      "id": "ski-stations",
+      "type": "circle",
+      "source": "ski-stations",
+      "minzoom": 11,
+      "filter": ["any", ["!", ["has", "top"]], "@known"],
+      "paint": {
+        "circle-radius": ["match", "@look", "open", 4.5, "closed", 3.5, 2.5],
+        "circle-color": ["match", "@look", "open", "@station-open", "closed", "@casing", "@liftColor"],
+        "circle-stroke-color": ["match", "@look", "closed", "@station-closed", "@casing"],
+        "circle-stroke-width": ["match", "@look", "open", 1.5, "closed", 2, 0],
+        "circle-opacity": ["case", "@known", "@liftBase", "@liftOpacity"],
+        "circle-stroke-opacity": "@liftBase"
+      }
+    },
+    {
+      "id": "ski-lift-names",
+      "type": "symbol",
+      "source": "ski-lifts",
+      "minzoom": 13,
+      "metadata": { "above-labels": true },
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": ["coalesce", ["get", "name"], ""],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 11,
+        "text-offset": [0, -0.8]
+      },
+      "paint": {
+        "text-color": "@ink",
+        "text-halo-color": "@halo",
+        "text-halo-width": 1.2,
+        "text-opacity": "@liftOpacity"
+      }
+    }
+  ]
+}
