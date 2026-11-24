@@ -233,9 +233,10 @@ function skiLayers(
       fetch(`/json/${resort}.details.json`, { cache: "no-cache" })
         .then((response) => (response.ok ? /** @type {Promise<ResortDetails>} */ (response.json()) : null))
         .then((details) => {
-          if (!details) return;
-          // Files with only the resort's bottom and top have no lists.
-          for (const i of [...(details.lifts ?? []), ...(details.slopes ?? [])])
+          // A file with only the resort's bottom and top has no lists: as if there were none, so its lines aren't
+          // all shown as unknown.
+          if (!details?.lifts || !details.slopes) return;
+          for (const i of [...details.lifts, ...details.slopes])
             if (i.status) states.set(`${resort}/${i.id}`, i.status);
           withStates.add(resort);
           for (const key of Object.keys(data)) {
