@@ -2,16 +2,16 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tignes",
   "country": "fr",
-  "fetched_at": "2026-11-23T13:40:33.210017+01:00",
+  "fetched_at": "2026-11-24T08:40:40.150097+01:00",
   "updated_at": null,
-  "source": "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/dynamicPoiData?lang=fr",
+  "source": "https://www.lumiplan.com",
   "lifts": [
     {
       "id": "5333",
       "ref": null,
       "name": "FUNICULAIRE",
       "type": "funicular",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 3600,
       "capacity_per_hour": null,
@@ -888,7 +888,7 @@
       "name": "MERLES",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "open",
+      "status": "closed",
       "length_m": 1136,
       "map_length_m": 1110
     },

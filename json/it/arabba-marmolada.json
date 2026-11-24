@@ -12,7 +12,7 @@
   "linked_area": "sella-ronda",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207609+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145990+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -74,13 +74,13 @@
   "details": "json/it/arabba-marmolada.details.json",
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+    "https://opendatahub.com",
     "https://www.dolomitisuperski.com"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+        "url": "https://opendatahub.com",
         "attribution_required": null
       },
       {

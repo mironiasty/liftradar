@@ -10,7 +10,7 @@
   },
   "website": "https://www.annaberg.info",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.204074+01:00",
+  "fetched_at": "2026-11-24T08:40:40.140601+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,10 +20,13 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 6
+  },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 12,
     "open_km": null,
     "total_km": 13
   },
@@ -32,13 +35,18 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiresort.info/ski-resort/annaberg/"
+    "https://www.skiresort.info/ski-resort/annaberg/",
+    "https://www.annaberg.info/"
   ],
   "source_details": {
     "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/annaberg/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.annaberg.info/",
         "attribution_required": null
       }
     ]

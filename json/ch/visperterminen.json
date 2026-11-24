@@ -10,7 +10,7 @@
   },
   "website": "https://www.heidadorf.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207417+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145684+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Chiematte (SLF)",
         "elevation_m": 2205,
-        "depth_cm": 67,
-        "fresh_cm": 39,
+        "depth_cm": 96,
+        "fresh_cm": 27,
         "temperature_c": null,
         "condition": null
       }
@@ -88,29 +88,19 @@
       "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=229&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=229&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -118,7 +108,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

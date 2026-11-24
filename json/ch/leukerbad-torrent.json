@@ -10,7 +10,7 @@
   },
   "website": "https://www.leukerbad.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207210+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145251+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Trubelboden (SLF)",
         "elevation_m": 2459,
-        "depth_cm": 129,
-        "fresh_cm": 44,
+        "depth_cm": 144,
+        "fresh_cm": 20,
         "temperature_c": null,
         "condition": null
       }
@@ -83,16 +83,16 @@
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-11-23T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-24T08:30:00+01:00",
   "details": "json/ch/leukerbad-torrent.details.json",
   "avalanche": {
     "region_id": "CH-4211",
     "region": "Leukerbad - Lötschental",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -103,29 +103,19 @@
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=135&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=135&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -133,7 +123,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

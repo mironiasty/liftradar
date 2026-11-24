@@ -9,14 +9,14 @@
     "lon": 11.6885
   },
   "website": "https://www.skilagorai.it",
-  "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207789+01:00",
-  "status_from": null,
+  "status": "no_report",
+  "fetched_at": "2026-11-24T08:40:40.146305+01:00",
+  "status_from": "2026-11-20T16:46:47.409217+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-03-15",
+    "last_snowfall": null,
     "condition": null,
     "stations": []
   },
@@ -27,7 +27,7 @@
   "slopes": {
     "open": null,
     "total": null,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 12
   },
   "lifts_by_type": {
@@ -44,35 +44,30 @@
     "easy": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 5
     },
     "intermediate": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 6
     },
     "difficult": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 1
     }
   },
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.visittrentino.info/it/meteo/bollettino-neve-sci-alpino/trentino",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "trentino: LookupError: no entry named Funivie Lagorai (Passo Brocon)"
+  ]
 }

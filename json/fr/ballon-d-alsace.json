@@ -10,7 +10,7 @@
   },
   "website": "https://www.ballondalsace.fr/",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.211256+01:00",
+  "fetched_at": "2026-11-24T08:40:40.151983+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,20 +28,25 @@
     "open": null,
     "total": 14,
     "open_km": null,
-    "total_km": null
+    "total_km": 5
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/vosges/le-ballon-dalsace/station-de-ski"
+    "https://www.skiinfo.fr/vosges/le-ballon-dalsace/station-de-ski",
+    "https://www.ballondalsace.fr/bulletin-neige/"
   ],
   "source_details": {
     "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/vosges/le-ballon-dalsace/station-de-ski",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.ballondalsace.fr/bulletin-neige/",
         "attribution_required": null
       }
     ]

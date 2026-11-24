@@ -2,16 +2,16 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "stubaier-gletscher",
   "country": "at",
-  "fetched_at": "2026-11-23T13:41:55.347111+01:00",
-  "updated_at": "2026-11-23T10:53:14+01:00",
-  "source": "https://winter.intermaps.com/stubaier_gletscher/data?lang=en",
+  "fetched_at": "2026-11-24T08:41:58.402097+01:00",
+  "updated_at": "2026-11-24T08:11:09+01:00",
+  "source": "https://winter.intermaps.com/stubaier_gletscher?lang=en",
   "lifts": [
     {
       "id": "L_40034",
       "ref": null,
       "name": "Gamsgarten I",
       "type": "gondola",
-      "status": "open",
+      "status": "closed",
       "length_m": 1906,
       "map_length_m": 1970,
       "capacity_per_hour": 2400,
@@ -316,7 +316,7 @@
       "colour": null,
       "status": "open",
       "length_m": 3200,
-      "map_length_m": 1480
+      "map_length_m": 1610
     },
     {
       "id": "R_40055",
@@ -326,7 +326,7 @@
       "colour": null,
       "status": "open",
       "length_m": 2360,
-      "map_length_m": 1050
+      "map_length_m": 1240
     },
     {
       "id": "R_40056",
@@ -466,7 +466,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 2090,
-      "map_length_m": 1150
+      "map_length_m": 920
     },
     {
       "id": "R_40071",
@@ -476,7 +476,7 @@
       "colour": null,
       "status": "open",
       "length_m": 1590,
-      "map_length_m": 780
+      "map_length_m": 1100
     },
     {
       "id": "R_40072",
@@ -486,7 +486,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 4890,
-      "map_length_m": null
+      "map_length_m": 2430
     },
     {
       "id": "R_40073",
@@ -496,7 +496,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 14540,
-      "map_length_m": 5860
+      "map_length_m": 7790
     },
     {
       "id": "R_40074",
@@ -506,7 +506,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1390,
-      "map_length_m": null
+      "map_length_m": 730
     },
     {
       "id": "R_40075",
@@ -586,7 +586,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 870,
-      "map_length_m": 960
+      "map_length_m": 810
     },
     {
       "id": "R_40113",
@@ -606,7 +606,7 @@
       "colour": null,
       "status": "open",
       "length_m": 2690,
-      "map_length_m": null
+      "map_length_m": 1560
     },
     {
       "id": "R_40196",
@@ -616,7 +616,7 @@
       "colour": null,
       "status": "open",
       "length_m": 550,
-      "map_length_m": 480
+      "map_length_m": 440
     },
     {
       "id": "R_40198",
@@ -626,7 +626,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 2110,
-      "map_length_m": null
+      "map_length_m": 790
     },
     {
       "id": "R_40199",
@@ -636,7 +636,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 2410,
-      "map_length_m": 1350
+      "map_length_m": 1680
     },
     {
       "id": "R_40201",
@@ -646,7 +646,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 240,
-      "map_length_m": 420
+      "map_length_m": 410
     },
     {
       "id": "R_40204",
@@ -666,7 +666,7 @@
       "colour": null,
       "status": "open",
       "length_m": 1880,
-      "map_length_m": null
+      "map_length_m": 220
     }
   ]
 }

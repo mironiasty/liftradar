@@ -11,20 +11,20 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "open",
-  "fetched_at": "2026-11-23T13:40:33.207510+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145844+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 43,
+    "mountain_cm": 58,
     "valley_cm": null,
-    "fresh_cm": 10,
+    "fresh_cm": 25,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Weissfluhjoch",
         "elevation_m": 2663,
-        "depth_cm": 43,
-        "fresh_cm": 10,
+        "depth_cm": 58,
+        "fresh_cm": 25,
         "temperature_c": null,
         "condition": null
       }
@@ -107,23 +107,23 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+    "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
     "https://www.skiresort.com/en/ski-resort/parsenn-davos-klosters/",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+        "url": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

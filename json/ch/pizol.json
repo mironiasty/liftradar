@@ -10,7 +10,7 @@
   },
   "website": "https://pizol.com",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207276+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145419+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -45,7 +45,7 @@
     "open": 0,
     "total": 40,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 50
   },
   "lifts_by_type": {
     "carpet": {
@@ -91,7 +91,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-23T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-24T08:30:00+01:00",
   "details": "json/ch/pizol.details.json",
   "avalanche": {
     "region_id": "CH-3224",
@@ -108,28 +108,35 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=47&saison=1&ref=contentBox",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://infosnow.ch/portal/",
+    "https://pizol.com/",
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=47&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://pizol.com/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

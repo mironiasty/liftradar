@@ -11,7 +11,7 @@
   "website": "https://www.avoriaz.com",
   "linked_area": "portes-du-soleil",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.210733+01:00",
+  "fetched_at": "2026-11-24T08:40:40.151139+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,7 +65,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-23T13:40:21+01:00",
+  "lifts_updated_at": "2026-11-24T08:40:44+01:00",
   "details": "json/fr/avoriaz.details.json",
   "avalanche": {
     "region_id": "FR-01",
@@ -87,23 +87,23 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-22T16:00:00+01:00",
-    "valid_from": "2026-11-22T16:00:00+01:00",
-    "valid_until": "2026-11-23T18:00:00+01:00"
+    "published_at": "2026-11-23T16:00:00+01:00",
+    "valid_from": "2026-11-23T16:00:00+01:00",
+    "valid_until": "2026-11-24T18:00:00+01:00"
   },
   "sources": [
-    "https://winter.intermaps.com/portes_du_soleil/data?lang=en",
+    "https://winter.intermaps.com/portes_du_soleil?lang=en",
     "https://www.skiinfo.fr/alpes-du-nord/avoriaz/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json"
+    "https://meteofrance.com/meteo-montagne"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://winter.intermaps.com/portes_du_soleil/data?lang=en",
+        "url": "https://winter.intermaps.com/portes_du_soleil?lang=en",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json",
+        "url": "https://meteofrance.com/meteo-montagne",
         "attribution_required": null
       }
     ],

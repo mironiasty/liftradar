@@ -10,7 +10,7 @@
   },
   "website": "https://www.fagerfjell.no/",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.213773+01:00",
+  "fetched_at": "2026-11-24T08:40:40.156011+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -57,16 +57,11 @@
   "lifts_updated_at": "2026-04-13T09:49:31+02:00",
   "avalanche": null,
   "sources": [
-    "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/fagerfjell/",
     "https://www.skiresort.com/en/ski-resort/fagerfjell/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://api.fnugg.no/search?size=200",
-        "attribution_required": true
-      },
       {
         "url": "https://fnugg.no/fagerfjell/",
         "attribution_required": true

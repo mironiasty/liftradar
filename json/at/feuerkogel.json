@@ -10,7 +10,7 @@
   },
   "website": "https://www.feuerkogel.info",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:37.951386+01:00",
+  "fetched_at": "2026-11-24T08:40:46.508859+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,8 +25,8 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
-    "total": null,
+    "open": 0,
+    "total": 15,
     "open_km": 0.0,
     "total_km": 11
   },
@@ -51,11 +51,12 @@
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-11-23T04:07:00+01:00",
+  "lifts_updated_at": "2026-11-24T04:08:00+01:00",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/de/schneebericht/",
-    "https://www.skiresort.com/en/ski-resort/feuerkogel-ebensee/"
+    "https://www.skiresort.com/en/ski-resort/feuerkogel-ebensee/",
+    "https://www.feuerkogel.info/de/winter/lift-pistenstatus"
   ],
   "source_details": {
     "conditions": [
@@ -67,6 +68,10 @@
     "resort_info": [
       {
         "url": "https://www.skiresort.com/en/ski-resort/feuerkogel-ebensee/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.feuerkogel.info/de/winter/lift-pistenstatus",
         "attribution_required": null
       }
     ]

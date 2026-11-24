@@ -11,7 +11,7 @@
   "website": "https://www.grand-massif.com",
   "linked_area": "grand-massif",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.210290+01:00",
+  "fetched_at": "2026-11-24T08:40:40.150497+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -27,12 +27,48 @@
   },
   "slopes": {
     "open": null,
-    "total": 27,
+    "total": 23,
     "open_km": null,
     "total_km": 24
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 5
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 16,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 5,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 2,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": {
     "region_id": "FR-01",
@@ -54,23 +90,23 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-22T16:00:00+01:00",
-    "valid_from": "2026-11-22T16:00:00+01:00",
-    "valid_until": "2026-11-23T18:00:00+01:00"
+    "published_at": "2026-11-23T16:00:00+01:00",
+    "valid_from": "2026-11-23T16:00:00+01:00",
+    "valid_until": "2026-11-24T18:00:00+01:00"
   },
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=morillon&lang=fr&isSoir=false",
+    "https://www.lumiplan.com",
     "https://www.skiinfo.fr/alpes-du-nord/morillon/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json"
+    "https://meteofrance.com/meteo-montagne"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=morillon&lang=fr&isSoir=false",
+        "url": "https://www.lumiplan.com",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json",
+        "url": "https://meteofrance.com/meteo-montagne",
         "attribution_required": null
       }
     ],

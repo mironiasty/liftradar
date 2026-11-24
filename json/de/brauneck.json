@@ -10,7 +10,7 @@
   },
   "website": "https://www.brauneck-bergbahn.de",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212442+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154400+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": 0,
     "total": 24,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 34
   },
   "lifts_by_type": {
     "carpet": {
@@ -76,16 +76,22 @@
   "details": "json/de/brauneck.details.json",
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/brauneck/data?lang=en"
+    "https://winter.intermaps.com/brauneck?lang=en",
+    "https://www.brauneck-bergbahn.de/de/bewertung-skigebiet-brauneck.html"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://winter.intermaps.com/brauneck/data?lang=en",
+        "url": "https://winter.intermaps.com/brauneck?lang=en",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.brauneck-bergbahn.de/de/bewertung-skigebiet-brauneck.html",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

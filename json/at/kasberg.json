@@ -9,8 +9,8 @@
     "lon": 13.9982
   },
   "website": "https://www.kasberg.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.202288+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-24T08:40:40.138914+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,25 +20,80 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 10
+  },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 20,
+    "open_km": 0.0,
     "total_km": 23
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 13
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 8
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-11-23T15:03:48+01:00",
+  "details": "json/at/kasberg.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.skiresort.info/ski-resort/kasberg-gruenau-im-almtal/"
+    "https://winter.intermaps.com/kasberg_gruenau?lang=en",
+    "https://www.skiresort.info/ski-resort/kasberg-gruenau-im-almtal/",
+    "https://kasberg.at/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://winter.intermaps.com/kasberg_gruenau?lang=en",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/kasberg-gruenau-im-almtal/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://kasberg.at/",
         "attribution_required": null
       }
     ]

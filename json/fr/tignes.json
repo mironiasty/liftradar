@@ -11,12 +11,12 @@
   "website": "https://www.tignes.net",
   "linked_area": "tignes-val-d-isere",
   "status": "open",
-  "fetched_at": "2026-11-23T13:40:33.210017+01:00",
+  "fetched_at": "2026-11-24T08:40:40.150097+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 200,
     "valley_cm": 116,
-    "fresh_cm": 40,
+    "fresh_cm": 50,
     "last_snowfall": "2026-11-23",
     "condition": "Fraîche",
     "stations": [
@@ -24,7 +24,7 @@
         "name": "Grande Motte",
         "elevation_m": 3032,
         "depth_cm": 200,
-        "fresh_cm": 40,
+        "fresh_cm": 50,
         "temperature_c": null,
         "condition": "Fraîche"
       },
@@ -32,18 +32,18 @@
         "name": "Tignes Lac",
         "elevation_m": 2100,
         "depth_cm": 116,
-        "fresh_cm": 30,
+        "fresh_cm": 38,
         "temperature_c": null,
         "condition": "Fraîche"
       }
     ]
   },
   "lifts": {
-    "open": 11,
+    "open": 12,
     "total": 37
   },
   "slopes": {
-    "open": 14,
+    "open": 13,
     "total": 82,
     "open_km": null,
     "total_km": 150
@@ -66,7 +66,7 @@
       "total": 7
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
@@ -82,7 +82,7 @@
       "total_km": null
     },
     "intermediate": {
-      "open": 2,
+      "open": 1,
       "total": 21,
       "open_km": null,
       "total_km": null
@@ -99,67 +99,34 @@
   "avalanche": {
     "region_id": "FR-06",
     "region": "Haute-Tarentaise",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
         "level": "considerable",
         "lower_bound": null,
-        "upper_bound": 2400,
-        "period": "later"
-      },
-      {
-        "level": "high",
-        "lower_bound": 2400,
         "upper_bound": null,
-        "period": "earlier"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": null,
-        "upper_bound": 2400,
-        "period": "later"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": 2400,
-        "upper_bound": null,
-        "period": "later"
+        "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-22T16:00:00+01:00",
-    "valid_from": "2026-11-22T16:00:00+01:00",
-    "valid_until": "2026-11-23T18:00:00+01:00"
+    "published_at": "2026-11-23T16:00:00+01:00",
+    "valid_from": "2026-11-23T16:00:00+01:00",
+    "valid_until": "2026-11-24T18:00:00+01:00"
   },
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=tignes&lang=fr&isSoir=false",
-    "https://public.lumiplay.link/interactive-map/v1/map/name/Tignes-Val-d-isere",
-    "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/dynamicPoiData?lang=fr",
-    "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/staticPoiData?lang=fr",
+    "https://www.lumiplan.com",
     "https://www.skiinfo.fr/alpes-du-nord/tignes/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json"
+    "https://meteofrance.com/meteo-montagne"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=tignes&lang=fr&isSoir=false",
+        "url": "https://www.lumiplan.com",
         "attribution_required": null
       },
       {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/name/Tignes-Val-d-isere",
-        "attribution_required": null
-      },
-      {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/dynamicPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
-        "url": "https://public.lumiplay.link/interactive-map/v1/map/2c0c9c6c-8f92-47e1-9840-c150288250ff/staticPoiData?lang=fr",
-        "attribution_required": null
-      },
-      {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json",
+        "url": "https://meteofrance.com/meteo-montagne",
         "attribution_required": null
       }
     ],

@@ -10,7 +10,7 @@
   },
   "website": "https://www.suomutunturi.fi",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212279+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154142+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": 0,
     "total": 11,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 14
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
@@ -36,7 +36,8 @@
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/suomutunturi/",
-    "https://www.suomutunturi.fi/"
+    "https://www.suomutunturi.fi/",
+    "https://www.suomutunturi.fi/rinteet/"
   ],
   "source_details": {
     "conditions": [
@@ -49,7 +50,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.suomutunturi.fi/rinteet/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

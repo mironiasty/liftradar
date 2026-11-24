@@ -10,7 +10,7 @@
   },
   "website": "https://mujkralicak.cz",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.209394+01:00",
+  "fetched_at": "2026-11-24T08:40:40.149096+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -60,14 +60,36 @@
   },
   "lifts_updated_at": null,
   "details": "json/cz/kralicak.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "CZ-06",
+    "region": "Jeseníky",
+    "danger_level": null,
+    "danger": null,
+    "ratings": [
+      {
+        "level": "no_snow",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-24T07:44:00+01:00",
+    "valid_from": "2026-11-24T07:44:00+01:00",
+    "valid_until": "2026-11-25T07:44:00+01:00"
+  },
   "sources": [
-    "https://www.kudyznudy.cz/aktivity/sjezdove-lyzovani-snowboarding-bezecke-lyzovani"
+    "https://www.kudyznudy.cz/aktivity/sjezdove-lyzovani-snowboarding-bezecke-lyzovani",
+    "https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.kudyznudy.cz/aktivity/sjezdove-lyzovani-snowboarding-bezecke-lyzovani",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.horskasluzba.cz/cz/pocasi-na-horach/lavinova-predpoved",
         "attribution_required": null
       }
     ],

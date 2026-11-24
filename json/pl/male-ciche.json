@@ -10,7 +10,7 @@
   },
   "website": "https://visitmalopolska.pl/en/obiekt/-/poi/stacja-narciarska-male-ciche",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.209821+01:00",
+  "fetched_at": "2026-11-24T08:40:40.149787+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,7 +26,7 @@
   },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 6,
     "open_km": null,
     "total_km": 4
   },
@@ -36,7 +36,8 @@
   "avalanche": null,
   "sources": [
     "https://visitmalopolska.pl/en/obiekt/-/poi/stacja-narciarska-male-ciche",
-    "https://openskimap.org/"
+    "https://openskimap.org/",
+    "https://psnit.pl/stacja-maleciche/"
   ],
   "source_details": {
     "conditions": [],
@@ -47,6 +48,10 @@
       },
       {
         "url": "https://openskimap.org/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://psnit.pl/stacja-maleciche/",
         "attribution_required": null
       }
     ]

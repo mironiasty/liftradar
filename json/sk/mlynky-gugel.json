@@ -1,0 +1,50 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "mlynky-gugel",
+  "country": "sk",
+  "name": "Ski Mlynky - Gugel",
+  "region": "Košický kraj",
+  "location": {
+    "lat": 48.8509,
+    "lon": 20.4018
+  },
+  "website": "https://www.skimlynky.eu",
+  "status": "no_report",
+  "fetched_at": "2026-11-24T08:40:40.153493+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": null,
+    "total": 6,
+    "open_km": null,
+    "total_km": 5
+  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
+  "avalanche": null,
+  "sources": [
+    "https://slovakia.travel/ski-mlynky-gugel"
+  ],
+  "source_details": {
+    "conditions": [],
+    "resort_info": [
+      {
+        "url": "https://slovakia.travel/ski-mlynky-gugel",
+        "attribution_required": null
+      }
+    ]
+  },
+  "errors": []
+}

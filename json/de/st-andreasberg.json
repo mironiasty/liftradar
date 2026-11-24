@@ -10,7 +10,7 @@
   },
   "website": "https://www.alberti-lift.de",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.212915+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154987+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,16 +20,31 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 4
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.harzinfo.de/erlebnisse/wintersport/skigebiet/st-andreasberg-matthias-schmidt-berg"
+  ],
   "source_details": {
     "conditions": [],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.harzinfo.de/erlebnisse/wintersport/skigebiet/st-andreasberg-matthias-schmidt-berg",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

@@ -11,7 +11,7 @@
   "website": "https://www.schilthorn.ch",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207497+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145821+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,7 +23,7 @@
       {
         "name": "Schilthorn",
         "elevation_m": 2970,
-        "depth_cm": 17,
+        "depth_cm": 0,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -92,7 +92,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-22T13:20:06+01:00",
+  "lifts_updated_at": "2026-11-24T07:15:05+01:00",
   "details": "json/ch/muerren-schilthorn.details.json",
   "avalanche": {
     "region_id": "CH-1234",
@@ -112,23 +112,23 @@
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+    "https://www.jungfrau.ch/de-ch/live/pistendaten/",
     "https://www.skiresort.com/en/ski-resort/schilthorn-muerren-lauterbrunnen/",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+        "url": "https://www.jungfrau.ch/de-ch/live/pistendaten/",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

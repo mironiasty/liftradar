@@ -9,8 +9,8 @@
     "lon": 15.0876
   },
   "website": "https://www.scgace.si",
-  "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.214691+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-24T08:40:40.157402+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,41 +25,37 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 6,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 8
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 4,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-23T08:07:09+02:00",
+  "lifts_updated_at": "2026-11-23T20:23:18+01:00",
+  "details": "json/si/gace.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.scgace.si/api/snowphone?type=workCondition",
-    "https://www.scgace.si/api/snowphone?type=info",
+    "https://www.scgace.si/skiinfo",
     "https://www.skiresort.com/en/ski-resort/gace/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.scgace.si/api/snowphone?type=workCondition",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.scgace.si/api/snowphone?type=info",
+        "url": "https://www.scgace.si/skiinfo",
         "attribution_required": null
       }
     ],

@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "carezza",
   "country": "it",
-  "fetched_at": "2026-11-23T13:40:33.207603+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145977+01:00",
   "updated_at": "2026-11-01T19:02:30.948539+01:00",
-  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "source": "https://opendatahub.com",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:5_496",
@@ -245,16 +245,6 @@
       "map_length_m": 220
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:5_182272",
-      "ref": null,
-      "name": "König Laurin - Tierser Seite",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1600,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:5_2637508",
       "ref": null,
       "name": "König Laurin - Tierser Seite",
@@ -263,6 +253,16 @@
       "status": "closed",
       "length_m": 1050,
       "map_length_m": 1300
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182272",
+      "ref": null,
+      "name": "König Laurin - Tierser Seite",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:5_182295",
@@ -292,7 +292,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 515,
-      "map_length_m": 360
+      "map_length_m": 440
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:5_182282",
@@ -302,7 +302,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 600,
-      "map_length_m": 440
+      "map_length_m": 360
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:5_6556598",
@@ -375,16 +375,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:5_182274",
-      "ref": null,
-      "name": "Tschein",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1220,
-      "map_length_m": 2440
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:5_2637838",
       "ref": null,
       "name": "Tschein",
@@ -393,6 +383,16 @@
       "status": "closed",
       "length_m": 4000,
       "map_length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:5_182274",
+      "ref": null,
+      "name": "Tschein",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1220,
+      "map_length_m": 2440
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:5_182280",
@@ -442,7 +442,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1500,
-      "map_length_m": 920
+      "map_length_m": 380
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:5_182271",
@@ -452,7 +452,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 800,
-      "map_length_m": 380
+      "map_length_m": 920
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:5_1772021482",

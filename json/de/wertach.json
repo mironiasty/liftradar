@@ -10,7 +10,7 @@
   },
   "website": "https://www.buron-familienspass.de",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.212658+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154696+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,16 +20,31 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
-  "slopes": null,
+  "lifts": {
+    "open": 0,
+    "total": 2
+  },
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 7
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.schneehoehen.de/skigebiete/info/buron-lifte-wertach"
+  ],
   "source_details": {
     "conditions": [],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.schneehoehen.de/skigebiete/info/buron-lifte-wertach",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

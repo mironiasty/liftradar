@@ -10,7 +10,7 @@
   },
   "website": "https://www.schatzalp.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207537+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145891+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,16 @@
       {
         "name": "Weissfluhjoch (SLF)",
         "elevation_m": 2536,
-        "depth_cm": 39,
-        "fresh_cm": 10,
+        "depth_cm": 59,
+        "fresh_cm": 27,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Weissfluhjoch (SLF)",
         "elevation_m": 2536,
-        "depth_cm": 49,
-        "fresh_cm": 10,
+        "depth_cm": 68,
+        "fresh_cm": 21,
         "temperature_c": null,
         "condition": null
       }
@@ -98,29 +98,19 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
         "attribution_required": null
       },
       {
@@ -128,7 +118,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

@@ -10,7 +10,7 @@
   },
   "website": "https://www.flimslaax.com",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207155+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145150+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "La Fuorcla (SLF)",
         "elevation_m": 2325,
-        "depth_cm": 46,
-        "fresh_cm": 34,
+        "depth_cm": 76,
+        "fresh_cm": 35,
         "temperature_c": null,
         "condition": null
       }
@@ -37,7 +37,7 @@
     "open": 0,
     "total": 144,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 216
   },
   "lifts_by_type": {
     "cable_car": {
@@ -87,7 +87,7 @@
       "total_km": 34
     }
   },
-  "lifts_updated_at": "2026-11-23T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-24T08:30:00+01:00",
   "details": "json/ch/laax.details.json",
   "avalanche": {
     "region_id": "CH-5124",
@@ -104,31 +104,23 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=200&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.flimslaax.com/ski-snowboard",
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=200&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -136,11 +128,16 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.flimslaax.com/ski-snowboard",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

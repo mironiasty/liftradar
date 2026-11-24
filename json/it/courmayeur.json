@@ -11,7 +11,7 @@
   "website": "https://www.courmayeur-montblanc.com",
   "ski_region": "valle-d-aosta",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.207670+01:00",
+  "fetched_at": "2026-11-24T08:40:40.146092+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -77,17 +77,17 @@
   "avalanche": {
     "region_id": "IT-23-AO-22",
     "region": "D - VAL VENY",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": 2300,
         "period": "all_day"
       },
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": 2300,
         "upper_bound": null,
         "period": "all_day"
@@ -97,14 +97,14 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-22T17:00:00+01:00",
-    "valid_from": "2026-11-23T00:00:00+01:00",
-    "valid_until": "2026-11-24T00:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-24T00:00:00+01:00",
+    "valid_until": "2026-11-25T00:00:00+01:00"
   },
   "sources": [
     "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/courmayeur/comprensorio-courmayeur-mont-blanc/4360",
-    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it"
   ],
   "source_details": {
     "conditions": [
@@ -113,7 +113,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
+        "url": "https://bollettini.aineva.it",
         "attribution_required": null
       }
     ],

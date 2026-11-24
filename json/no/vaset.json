@@ -10,7 +10,7 @@
   },
   "website": "https://www.vasetskiheiser.no",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.213474+01:00",
+  "fetched_at": "2026-11-24T08:40:40.155624+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -54,16 +54,11 @@
   "details": "json/no/vaset.details.json",
   "avalanche": null,
   "sources": [
-    "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/vaset/",
     "https://www.skiresort.com/en/ski-resort/vaset/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://api.fnugg.no/search?size=200",
-        "attribution_required": true
-      },
       {
         "url": "https://fnugg.no/vaset/",
         "attribution_required": true

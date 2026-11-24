@@ -10,29 +10,29 @@
   },
   "website": "https://www.tvgd.ch",
   "linked_area": "villars-gryon-les-diablerets",
-  "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.207183+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-24T08:40:40.145198+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 75,
-    "valley_cm": 20,
-    "fresh_cm": 77,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Pierres Fendues (SLF)",
         "elevation_m": 2218,
-        "depth_cm": 75,
-        "fresh_cm": 77,
+        "depth_cm": 113,
+        "fresh_cm": 27,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "La Comballaz (SLF)",
         "elevation_m": 1360,
-        "depth_cm": 20,
-        "fresh_cm": 20,
+        "depth_cm": 16,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       }
@@ -43,9 +43,9 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 11,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 25
   },
   "lifts_by_type": {
@@ -68,33 +68,34 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 17
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 8
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-10-25T17:17:00+01:00",
+  "lifts_updated_at": "2026-11-23T17:03:00+01:00",
+  "details": "json/ch/les-diablerets.details.json",
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -104,29 +105,19 @@
       "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=50&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=50&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -134,7 +125,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

@@ -10,19 +10,19 @@
   },
   "website": "https://www.obersaxen-mundaun.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207262+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145364+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-23",
     "condition": null,
     "stations": [
       {
         "name": "Snow depth valley",
         "elevation_m": 1281,
-        "depth_cm": 1,
+        "depth_cm": 25,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -30,7 +30,7 @@
       {
         "name": "Snow depth measuring station Miraniga",
         "elevation_m": 1420,
-        "depth_cm": 2,
+        "depth_cm": 30,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -38,7 +38,7 @@
       {
         "name": "Snow depth peak",
         "elevation_m": 2310,
-        "depth_cm": 3,
+        "depth_cm": 40,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -85,7 +85,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-23T10:24:00+01:00",
+  "lifts_updated_at": "2026-11-23T15:36:00+01:00",
   "details": "json/ch/obersaxen-mundaun.details.json",
   "avalanche": {
     "region_id": "CH-5214",
@@ -104,23 +104,23 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=53&saison=1&ref=contentBox",
+    "https://infosnow.ch/portal/",
     "https://www.skiresort.info/ski-resort/obersaxen-mundaun-val-lumnezia/",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=53&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

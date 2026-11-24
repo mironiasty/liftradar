@@ -10,7 +10,7 @@
   },
   "website": "https://vangski.no/alpint/hamar-alpinsenter/",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.213777+01:00",
+  "fetched_at": "2026-11-24T08:40:40.156018+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": null,
     "total": 5,
     "open_km": null,
-    "total_km": null
+    "total_km": 1
   },
   "lifts_by_type": {
     "other": {
@@ -59,21 +59,22 @@
   "lifts_updated_at": "2026-04-21T15:17:16+02:00",
   "avalanche": null,
   "sources": [
-    "https://api.fnugg.no/search?size=200",
-    "https://fnugg.no/hamarlierberget/"
+    "https://fnugg.no/hamarlierberget/",
+    "https://vangski.no/alpint/hamar-alpinsenter/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://api.fnugg.no/search?size=200",
-        "attribution_required": true
-      },
       {
         "url": "https://fnugg.no/hamarlierberget/",
         "attribution_required": true
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://vangski.no/alpint/hamar-alpinsenter/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "val-thorens",
   "country": "fr",
-  "fetched_at": "2026-11-23T13:40:33.209983+01:00",
+  "fetched_at": "2026-11-24T08:40:40.150042+01:00",
   "updated_at": null,
-  "source": "https://public.lumiplay.link/interactive-map/v1/map/bd632c91-6957-494d-95a8-6a72eb87e341/dynamicPoiData?lang=fr",
+  "source": "https://www.lumiplan.com",
   "lifts": [
     {
       "id": "6974",
@@ -191,7 +191,7 @@
       "ref": null,
       "name": "Plein Sud.",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1800,
       "capacity_per_hour": null,
@@ -227,7 +227,7 @@
       "ref": null,
       "name": "Thorens",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 790,
       "capacity_per_hour": null,
@@ -470,7 +470,7 @@
       "name": "Campagnols",
       "difficulty": "easy",
       "colour": "green",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 250
     },
@@ -490,7 +490,7 @@
       "name": "Musaraigne",
       "difficulty": "easy",
       "colour": "green",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 230
     },
@@ -910,7 +910,7 @@
       "name": "Face Nord",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1370
     },
@@ -980,7 +980,7 @@
       "name": "Asters",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1332,
       "map_length_m": 990
     },

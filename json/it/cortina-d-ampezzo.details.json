@@ -2,22 +2,10 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-23T13:40:33.207550+01:00",
-  "updated_at": "2026-11-19T16:03:45.411334+01:00",
-  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "fetched_at": "2026-11-24T08:40:40.145908+01:00",
+  "updated_at": "2026-11-24T04:03:07.099137+01:00",
+  "source": "https://opendatahub.com",
   "lifts": [
-    {
-      "id": "urn:odhactivitypoi:dss:lift:1_217",
-      "ref": null,
-      "name": "5 Torri",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
     {
       "id": "urn:odhactivitypoi:dss:lift:1_218",
       "ref": null,
@@ -26,6 +14,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1360,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_217",
+      "ref": null,
+      "name": "5 Torri",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -517,16 +517,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
-      "ref": null,
-      "name": "Cacciatori",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 680,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215848",
       "ref": null,
       "name": "Cacciatori",
@@ -535,6 +525,16 @@
       "status": "closed",
       "length_m": 545,
       "map_length_m": 1430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 680,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_13503193",
@@ -714,7 +714,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 601,
-      "map_length_m": 660
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
@@ -724,7 +724,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 601,
-      "map_length_m": null
+      "map_length_m": 660
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215873",
@@ -1167,16 +1167,6 @@
       "map_length_m": 980
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1681714202",
-      "ref": null,
-      "name": "Stries",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215922",
       "ref": null,
       "name": "Stries",
@@ -1184,6 +1174,16 @@
       "colour": null,
       "status": "closed",
       "length_m": 1737,
+      "map_length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1681714202",
+      "ref": null,
+      "name": "Stries",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
       "map_length_m": null
     },
     {
@@ -1274,7 +1274,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 871,
-      "map_length_m": 680
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215930",
@@ -1284,7 +1284,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 871,
-      "map_length_m": null
+      "map_length_m": 680
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

@@ -11,7 +11,7 @@
   "website": "https://www.lovevda.it/",
   "ski_region": "valle-d-aosta",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207713+01:00",
+  "fetched_at": "2026-11-24T08:40:40.146167+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -81,17 +81,16 @@
       }
     ],
     "problems": [
-      "wind_slab",
-      "new_snow"
+      "wind_slab"
     ],
-    "published_at": "2026-11-22T17:00:00+01:00",
-    "valid_from": "2026-11-23T00:00:00+01:00",
-    "valid_until": "2026-11-24T00:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-24T00:00:00+01:00",
+    "valid_until": "2026-11-25T00:00:00+01:00"
   },
   "sources": [
     "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.skiresort.com/en/ski-resort/brusson-estoul/",
-    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it"
   ],
   "source_details": {
     "conditions": [
@@ -100,7 +99,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
+        "url": "https://bollettini.aineva.it",
         "attribution_required": null
       }
     ],

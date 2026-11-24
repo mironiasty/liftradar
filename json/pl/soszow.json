@@ -11,7 +11,7 @@
   "website": "https://wislaskiarena.pl",
   "ski_region": "wispass",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.209884+01:00",
+  "fetched_at": "2026-11-24T08:40:40.149890+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -27,7 +27,7 @@
   },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 6,
     "open_km": null,
     "total_km": 4
   },
@@ -36,13 +36,18 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://openskimap.org/"
+    "https://openskimap.org/",
+    "https://wislaskiarena.pl/trasy-i-wyciagi/"
   ],
   "source_details": {
     "conditions": [],
     "resort_info": [
       {
         "url": "https://openskimap.org/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://wislaskiarena.pl/trasy-i-wyciagi/",
         "attribution_required": null
       }
     ]

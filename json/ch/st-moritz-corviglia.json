@@ -11,7 +11,7 @@
   "website": "https://www.mountains.ch",
   "ski_region": "engadin-st-moritz",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207338+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145542+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Valetta (SLF)",
         "elevation_m": 2512,
-        "depth_cm": 17,
-        "fresh_cm": 4,
+        "depth_cm": 13,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "St.Moritz (SLF)",
         "elevation_m": 1850,
-        "depth_cm": 8,
-        "fresh_cm": 6,
+        "depth_cm": 7,
+        "fresh_cm": 1,
         "temperature_c": null,
         "condition": null
       }
@@ -119,29 +119,19 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=41&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=41&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -149,7 +139,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

@@ -11,7 +11,7 @@
   "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207480+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145798+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -112,25 +112,26 @@
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+    "https://www.jungfrau.ch/de-ch/live/pistendaten/",
     "https://www.skiresort.com/en/ski-resort/kleine-scheidegg-maennlichen-grindelwald-wengen/",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+        "url": "https://www.jungfrau.ch/de-ch/live/pistendaten/",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

@@ -11,7 +11,7 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207520+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145858+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,8 +23,8 @@
       {
         "name": "Jakobshorn",
         "elevation_m": 2590,
-        "depth_cm": 6,
-        "fresh_cm": 0,
+        "depth_cm": 40,
+        "fresh_cm": 11,
         "temperature_c": null,
         "condition": null
       }
@@ -99,22 +99,22 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://api.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+        "url": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

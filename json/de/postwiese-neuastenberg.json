@@ -10,7 +10,7 @@
   },
   "website": "https://www.postwiese.de",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212363+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154268+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,13 +24,19 @@
     "open": 0,
     "total": 10
   },
-  "slopes": null,
+  "slopes": {
+    "open": 0,
+    "total": 16,
+    "open_km": null,
+    "total_km": 10
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen"
+    "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen",
+    "https://www.winterberg.de/aktivitaeten-erlebnisse/winter/skifahren-snowboarden/postwiese-neuastenberg/"
   ],
   "source_details": {
     "conditions": [
@@ -39,7 +45,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.winterberg.de/aktivitaeten-erlebnisse/winter/skifahren-snowboarden/postwiese-neuastenberg/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

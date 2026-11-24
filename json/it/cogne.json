@@ -10,8 +10,8 @@
   },
   "website": "https://www.visitcogne.it",
   "ski_region": "valle-d-aosta",
-  "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.207722+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-24T08:40:40.146185+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,9 +26,9 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 8,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 8
   },
   "lifts_by_type": {
@@ -47,25 +47,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-07T08:20:00+02:00",
+  "lifts_updated_at": "2026-11-23T08:20:00+01:00",
+  "details": "json/it/cogne.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-12",
     "region": "C - VAL DI COGNE AYMAVILLES",
@@ -86,17 +87,16 @@
       }
     ],
     "problems": [
-      "wind_slab",
-      "new_snow"
+      "wind_slab"
     ],
-    "published_at": "2026-11-22T17:00:00+01:00",
-    "valid_from": "2026-11-23T00:00:00+01:00",
-    "valid_until": "2026-11-24T00:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-24T00:00:00+01:00",
+    "valid_until": "2026-11-25T00:00:00+01:00"
   },
   "sources": [
     "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.skiresort.com/en/ski-resort/cogne-gran-paradiso/",
-    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it"
   ],
   "source_details": {
     "conditions": [
@@ -105,7 +105,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
+        "url": "https://bollettini.aineva.it",
         "attribution_required": null
       }
     ],

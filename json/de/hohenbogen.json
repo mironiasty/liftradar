@@ -10,7 +10,7 @@
   },
   "website": "https://hohenbogen.de",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212491+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154471+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": 0,
     "total": 11,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 6
   },
   "lifts_by_type": {
     "chairlift": {
@@ -70,16 +70,22 @@
   "details": "json/de/hohenbogen.details.json",
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/hohenbogen/data?lang=en"
+    "https://winter.intermaps.com/hohenbogen?lang=en",
+    "https://www.snowtrex.de/deutschland/hohenwarth/skigebiet.html"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://winter.intermaps.com/hohenbogen/data?lang=en",
+        "url": "https://winter.intermaps.com/hohenbogen?lang=en",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.snowtrex.de/deutschland/hohenwarth/skigebiet.html",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

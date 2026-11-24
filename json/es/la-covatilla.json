@@ -10,7 +10,7 @@
   },
   "website": "https://www.sierradebejar-lacovatilla.com",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.214576+01:00",
+  "fetched_at": "2026-11-24T08:40:40.157229+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,10 +20,13 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 4
+  },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 24,
     "open_km": null,
     "total_km": 18
   },
@@ -32,13 +35,18 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiresort.com/en/ski-resort/la-covatilla-sierra-de-bejar/"
+    "https://www.skiresort.com/en/ski-resort/la-covatilla-sierra-de-bejar/",
+    "https://www.sierradebejar-lacovatilla.com/"
   ],
   "source_details": {
     "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/en/ski-resort/la-covatilla-sierra-de-bejar/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.sierradebejar-lacovatilla.com/",
         "attribution_required": null
       }
     ]

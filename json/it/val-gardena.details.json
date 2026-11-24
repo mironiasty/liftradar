@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "val-gardena",
   "country": "it",
-  "fetched_at": "2026-11-23T13:40:33.207575+01:00",
-  "updated_at": "2026-11-19T16:03:28.936423+01:00",
-  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "fetched_at": "2026-11-24T08:40:40.145948+01:00",
+  "updated_at": "2026-11-23T16:00:13.252003+01:00",
+  "source": "https://opendatahub.com",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:4_383",
@@ -913,16 +913,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:4_216112",
-      "ref": null,
-      "name": "Dantercepies",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 3000,
-      "map_length_m": 640
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:4_216114",
       "ref": null,
       "name": "Dantercepies",
@@ -931,6 +921,16 @@
       "status": "closed",
       "length_m": 700,
       "map_length_m": 100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:4_216112",
+      "ref": null,
+      "name": "Dantercepies",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": 640
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:4_216113",
@@ -1380,7 +1380,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 800,
-      "map_length_m": 310
+      "map_length_m": 880
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:4_216177",
@@ -1390,7 +1390,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1500,
-      "map_length_m": 880
+      "map_length_m": 310
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:4_436693",

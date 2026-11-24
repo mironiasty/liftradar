@@ -11,7 +11,7 @@
   "website": "https://www.skipasscortina.com",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207550+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145908+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -69,18 +69,18 @@
       "total_km": 13
     }
   },
-  "lifts_updated_at": "2026-11-19T16:03:45.411334+01:00",
+  "lifts_updated_at": "2026-11-24T04:03:07.099137+01:00",
   "details": "json/it/cortina-d-ampezzo.details.json",
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+    "https://opendatahub.com",
     "https://www.dolomitisuperski.com",
     "https://skipasscortina.com/EN/page8-the-consortium"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+        "url": "https://opendatahub.com",
         "attribution_required": null
       },
       {

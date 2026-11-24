@@ -10,7 +10,7 @@
   },
   "website": "https://www.saalfelden.at",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:37.951117+01:00",
+  "fetched_at": "2026-11-24T08:40:46.508415+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,13 +24,19 @@
     "open": 0,
     "total": 2
   },
-  "slopes": null,
+  "slopes": {
+    "open": 0,
+    "total": 6,
+    "open_km": null,
+    "total_km": 9
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-23T00:06:00+01:00",
+  "lifts_updated_at": "2026-11-24T00:05:00+01:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.ski-mariaalm.at/de/"
   ],
   "source_details": {
     "conditions": [
@@ -39,7 +45,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.ski-mariaalm.at/de/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

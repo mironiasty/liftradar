@@ -10,7 +10,7 @@
   },
   "website": "https://www.dachstein.at",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:37.950437+01:00",
+  "fetched_at": "2026-11-24T08:40:46.507385+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,13 +24,19 @@
     "open": 0,
     "total": 11
   },
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": 46,
+    "open_km": null,
+    "total_km": 51
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-05-01T14:57:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.salzburgerland.com/de/schneebericht/"
+    "https://www.salzburgerland.com/de/schneebericht/",
+    "https://www.dachstein.at/de/winter/pistenplan-geoeffnete-anlagen"
   ],
   "source_details": {
     "conditions": [
@@ -39,7 +45,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.dachstein.at/de/winter/pistenplan-geoeffnete-anlagen",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

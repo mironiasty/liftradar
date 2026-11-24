@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zermatt",
   "country": "ch",
-  "fetched_at": "2026-11-23T13:40:33.207432+01:00",
-  "updated_at": "2026-11-23T13:40:00+01:00",
-  "source": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=405&saison=1&ref=contentBox",
+  "fetched_at": "2026-11-24T08:40:40.145711+01:00",
+  "updated_at": "2026-11-24T08:41:00+01:00",
+  "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
       "id": "lift-p1-zermatt-furi-matterhorn-express",
@@ -55,13 +55,13 @@
       "top_m": null
     },
     {
-      "id": "lift-o3-trockener-steg-matterhorn-glacier-paradise",
+      "id": "lift-3s-matterhorn-glacier-ride-i",
       "ref": null,
-      "name": "O3 • Trockener Steg - Matterhorn Glacier Paradise",
-      "type": "cable_car",
+      "name": "3S • Matterhorn Glacier Ride I",
+      "type": "gondola",
       "status": "open",
       "length_m": null,
-      "map_length_m": 3680,
+      "map_length_m": 1690,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -71,9 +71,9 @@
       "ref": null,
       "name": "3S • Matterhorn Glacier Ride II",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
-      "map_length_m": 1760,
+      "map_length_m": 2240,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -83,7 +83,7 @@
       "ref": null,
       "name": "V • Furggsattel",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2590,
       "capacity_per_hour": null,
@@ -163,13 +163,13 @@
       "top_m": null
     },
     {
-      "id": "lift-3s-matterhorn-glacier-ride-i",
+      "id": "lift-o3-trockener-steg-matterhorn-glacier-paradise",
       "ref": null,
-      "name": "3S • Matterhorn Glacier Ride I",
-      "type": "gondola",
+      "name": "O3 • Trockener Steg - Matterhorn Glacier Paradise",
+      "type": "cable_car",
       "status": "closed",
       "length_m": null,
-      "map_length_m": 1690,
+      "map_length_m": 3680,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -476,7 +476,7 @@
       "name": "72 • Furggsattel",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 2100,
       "map_length_m": 1730
     },
@@ -486,7 +486,7 @@
       "name": "73 • Gandegg",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1800,
       "map_length_m": 1980
     },
@@ -496,7 +496,7 @@
       "name": "80 • Testa Grigia",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 3500,
       "map_length_m": 1830
     },
@@ -506,7 +506,7 @@
       "name": "81 • Fiererpiste",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1400,
       "map_length_m": 1390
     },
@@ -536,7 +536,7 @@
       "name": "85.1 • Matterhorn Glacier Paradise",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 2300,
       "map_length_m": null
     },
@@ -546,7 +546,7 @@
       "name": "85.2 • Matterhorn Glacier Paradise",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1400,
       "map_length_m": null
     },
@@ -556,7 +556,7 @@
       "name": "87 • Verbindungspiste",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 600,
       "map_length_m": 670
     },
@@ -566,7 +566,7 @@
       "name": "88 • Testa II",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 1400,
       "map_length_m": 760
     },
@@ -858,7 +858,7 @@
       "colour": "red",
       "status": "closed",
       "length_m": 300,
-      "map_length_m": 980
+      "map_length_m": null
     },
     {
       "id": "slope-4-brunnjeschbord",
@@ -948,7 +948,7 @@
       "colour": "red",
       "status": "closed",
       "length_m": 1300,
-      "map_length_m": 1740
+      "map_length_m": null
     },
     {
       "id": "slope-11-rotweng-oben",

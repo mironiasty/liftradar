@@ -10,7 +10,7 @@
   },
   "website": "https://www.vicheres.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207403+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145656+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -90,11 +90,11 @@
   "avalanche": {
     "region_id": "CH-4113",
     "region": "Val d'Entremont - Val Ferret",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -104,22 +104,22 @@
       "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://infosnow.ch/portal/",
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=81&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

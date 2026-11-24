@@ -11,7 +11,7 @@
   "website": "https://www.jasna.sk",
   "ski_region": "tatry-mountain-resorts",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212050+01:00",
+  "fetched_at": "2026-11-24T08:40:40.153190+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -68,40 +68,28 @@
       }
     ],
     "problems": [
-      "wind_slab",
-      "persistent_weak_layers"
+      "wind_slab"
     ],
-    "published_at": "2026-11-22T17:00:00+01:00",
-    "valid_from": "2026-11-23T00:00:00+01:00",
-    "valid_until": "2026-11-24T00:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-24T00:00:00+01:00",
+    "valid_until": "2026-11-25T00:00:00+01:00"
   },
   "sources": [
-    "https://laravel.jasna.sk/api/jasna/lanovky?lang=sk",
-    "https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk",
-    "https://web.archive.org/web/20260210100143/https://laravel.jasna.sk/api/jasna/lanovky?lang=hu",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-SK.json"
+    "https://www.jasna.sk",
+    "https://www.laviny.sk"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://laravel.jasna.sk/api/jasna/lanovky?lang=sk",
+        "url": "https://www.jasna.sk",
         "attribution_required": null
       },
       {
-        "url": "https://laravel.jasna.sk/api/jasna/snehove-zjazdovky?lang=sk",
-        "attribution_required": null
-      },
-      {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-SK.json",
+        "url": "https://www.laviny.sk",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://web.archive.org/web/20260210100143/https://laravel.jasna.sk/api/jasna/lanovky?lang=hu",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

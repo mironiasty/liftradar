@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "san-martino-di-castrozza",
   "country": "it",
-  "fetched_at": "2026-11-23T13:40:33.207634+01:00",
-  "updated_at": "2026-11-23T13:00:10.591336+01:00",
-  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "fetched_at": "2026-11-24T08:40:40.146030+01:00",
+  "updated_at": "2026-11-24T07:00:07.390762+01:00",
+  "source": "https://opendatahub.com",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:9_638",
@@ -634,7 +634,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1040,
-      "map_length_m": 1220
+      "map_length_m": 2770
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216283",
@@ -644,7 +644,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1680,
-      "map_length_m": 2770
+      "map_length_m": 1220
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:9_216284",

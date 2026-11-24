@@ -10,7 +10,7 @@
   },
   "website": "https://hohebracht.com",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212359+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154258+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,13 +24,19 @@
     "open": 0,
     "total": 2
   },
-  "slopes": null,
+  "slopes": {
+    "open": null,
+    "total": null,
+    "open_km": null,
+    "total_km": 1
+  },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen"
+    "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen",
+    "https://www.snow-online.de/skigebiet/hohe-bracht-lennestadt.html"
   ],
   "source_details": {
     "conditions": [
@@ -39,7 +45,12 @@
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.snow-online.de/skigebiet/hohe-bracht-lennestadt.html",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

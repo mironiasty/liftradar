@@ -10,7 +10,7 @@
   },
   "website": "https://www.gala-alpin.no",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.213354+01:00",
+  "fetched_at": "2026-11-24T08:40:40.155438+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -66,16 +66,11 @@
   "details": "json/no/gala.details.json",
   "avalanche": null,
   "sources": [
-    "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/gala/",
     "https://www.skiresort.com/en/ski-resort/gaalaa/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://api.fnugg.no/search?size=200",
-        "attribution_required": true
-      },
       {
         "url": "https://fnugg.no/gala/",
         "attribution_required": true

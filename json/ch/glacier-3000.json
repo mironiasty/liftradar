@@ -10,15 +10,15 @@
   },
   "website": "https://www.glacier3000.ch",
   "ski_region": "gstaad",
-  "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207063+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-24T08:40:40.144977+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 65,
+    "valley_cm": 65,
     "fresh_cm": null,
     "last_snowfall": "2026-11-15",
-    "condition": null,
+    "condition": "powder",
     "stations": [
       {
         "name": "in place",
@@ -39,26 +39,26 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 11
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 17,
-    "open_km": 0.0,
+    "open_km": 0.5,
     "total_km": 32
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 0,
+      "open": 2,
       "total": 3
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 5
     }
   },
@@ -70,9 +70,9 @@
       "total_km": 10
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": 0.5,
       "total_km": 6
     },
     "difficult": {
@@ -88,16 +88,16 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-23T12:12:00+01:00",
+  "lifts_updated_at": "2026-11-24T08:32:00+01:00",
   "details": "json/ch/glacier-3000.details.json",
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -107,22 +107,22 @@
       "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=104&saison=1&ref=contentBox",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://infosnow.ch/portal/",
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=104&saison=1&ref=contentBox",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

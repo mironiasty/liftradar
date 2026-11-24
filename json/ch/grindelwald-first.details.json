@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grindelwald-first",
   "country": "ch",
-  "fetched_at": "2026-11-23T13:40:33.207490+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145810+01:00",
   "updated_at": "2026-11-20T16:10:07+01:00",
-  "source": "https://www.jungfrau.ch/api/live-data/resort?locale=de",
+  "source": "https://www.jungfrau.ch/de-ch/live/pistendaten/",
   "lifts": [
     {
       "id": "grindelwald_first_lift_9_baergelegg",
@@ -110,7 +110,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 2580,
-      "map_length_m": 2310
+      "map_length_m": null
     },
     {
       "id": "grindelwald_first_track_173_3_uesserbaergel",
@@ -330,7 +330,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 2110,
-      "map_length_m": null
+      "map_length_m": 2310
     },
     {
       "id": "grindelwald_first_track_174_4_tirrli",

@@ -10,7 +10,7 @@
   },
   "website": "https://pirineu365.cat/portaine/inici/",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.214401+01:00",
+  "fetched_at": "2026-11-24T08:40:40.156971+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,7 +20,10 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 9
+  },
   "slopes": {
     "open": null,
     "total": 25,
@@ -51,24 +54,29 @@
     "valid_until": "2026-12-01T23:59:59.999999+01:00"
   },
   "sources": [
-    "https://api.pirineu365.cat/api/v1/web/stations/19/report?days_offset=0&format=json&language=es",
+    "https://pirineu365.cat/infoneu-pirineu365/",
     "https://pirineu365.cat/ca/portaine/estacio/planol-pistes/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-ES-CT.json"
+    "https://pirineu365.cat/es/portaine/estacion/mapa-de-pistas/",
+    "https://www.icgc.cat"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://api.pirineu365.cat/api/v1/web/stations/19/report?days_offset=0&format=json&language=es",
+        "url": "https://pirineu365.cat/infoneu-pirineu365/",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-ES-CT.json",
+        "url": "https://www.icgc.cat",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
         "url": "https://pirineu365.cat/ca/portaine/estacio/planol-pistes/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://pirineu365.cat/es/portaine/estacion/mapa-de-pistas/",
         "attribution_required": null
       }
     ]

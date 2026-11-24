@@ -10,10 +10,10 @@
   },
   "website": "https://www.pitztaler-gletscher.at",
   "status": "open",
-  "fetched_at": "2026-11-23T13:40:33.201241+01:00",
+  "fetched_at": "2026-11-24T08:40:40.137887+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 70,
+    "mountain_cm": 120,
     "valley_cm": 10,
     "fresh_cm": null,
     "last_snowfall": null,
@@ -22,7 +22,7 @@
       {
         "name": "Tirols höchste Aussicht 3440",
         "elevation_m": null,
-        "depth_cm": 70,
+        "depth_cm": 120,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -30,7 +30,7 @@
       {
         "name": "Bergstation Gletscherexpress",
         "elevation_m": null,
-        "depth_cm": 60,
+        "depth_cm": 110,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -113,12 +113,12 @@
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-11-22T12:47:14+01:00",
+  "lifts_updated_at": "2026-11-23T16:23:23+01:00",
   "details": "json/at/pitztal.details.json",
   "avalanche": null,
   "sources": [
     "https://www.pitztaler-gletscher.at/wetter",
-    "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
+    "https://winter.intermaps.com/pitztaler_gletscher?lang=en",
     "https://www.pitztaler-gletscher.at/en/winter/one-ski-area"
   ],
   "source_details": {
@@ -128,7 +128,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://winter.intermaps.com/pitztaler_gletscher/data?lang=en",
+        "url": "https://winter.intermaps.com/pitztaler_gletscher?lang=en",
         "attribution_required": null
       }
     ],

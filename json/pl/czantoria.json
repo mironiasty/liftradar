@@ -10,7 +10,7 @@
   },
   "website": "https://www.czantoria.net",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.209921+01:00",
+  "fetched_at": "2026-11-24T08:40:40.149952+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,7 +26,7 @@
   },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 2,
     "open_km": null,
     "total_km": 5
   },
@@ -35,13 +35,18 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://openskimap.org/"
+    "https://openskimap.org/",
+    "https://www.czantoria.net/dla-narciarzy/"
   ],
   "source_details": {
     "conditions": [],
     "resort_info": [
       {
         "url": "https://openskimap.org/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.czantoria.net/dla-narciarzy/",
         "attribution_required": null
       }
     ]

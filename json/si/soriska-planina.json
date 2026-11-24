@@ -10,7 +10,7 @@
   },
   "website": "https://www.soriska-planina.si",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.214673+01:00",
+  "fetched_at": "2026-11-24T08:40:40.157385+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -54,22 +54,17 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-23T10:00:16+01:00",
+  "lifts_updated_at": "2026-11-24T05:00:16+01:00",
   "details": "json/si/soriska-planina.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.soriska-planina.si/api/snowphone?type=workCondition",
-    "https://www.soriska-planina.si/api/snowphone?type=info",
+    "https://www.soriska-planina.si/info",
     "https://www.skiresort.com/en/ski-resort/soriska-planina/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.soriska-planina.si/api/snowphone?type=workCondition",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.soriska-planina.si/api/snowphone?type=info",
+        "url": "https://www.soriska-planina.si/info",
         "attribution_required": null
       }
     ],

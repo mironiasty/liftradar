@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "alpe-lusia-san-pellegrino",
   "country": "it",
-  "fetched_at": "2026-11-23T13:40:33.207651+01:00",
-  "updated_at": "2026-10-29T13:02:11.610725+01:00",
-  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "fetched_at": "2026-11-24T08:40:40.146059+01:00",
+  "updated_at": "2026-11-23T21:20:12.146775+01:00",
+  "source": "https://opendatahub.com",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:11_663",
@@ -481,7 +481,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:11_1790601952",
+      "id": "urn:odhactivitypoi:dss:slope:11_1790664911",
       "ref": null,
       "name": "Falcade X-Cross",
       "difficulty": "intermediate",
@@ -491,7 +491,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:11_1790664911",
+      "id": "urn:odhactivitypoi:dss:slope:11_1790601952",
       "ref": null,
       "name": "Falcade X-Cross",
       "difficulty": "intermediate",

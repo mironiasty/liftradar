@@ -10,11 +10,11 @@
   },
   "website": "https://www.tahko.com",
   "status": "open",
-  "fetched_at": "2026-11-23T13:40:33.212131+01:00",
+  "fetched_at": "2026-11-24T08:40:40.153918+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 13,
+    "valley_cm": 11,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -22,7 +22,7 @@
       {
         "name": "Rautavaara Ylä-Luosta (FMI)",
         "elevation_m": null,
-        "depth_cm": 13,
+        "depth_cm": 11,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -46,7 +46,6 @@
   "sources": [
     "https://ski.fi/hiihtokeskukset/tahko/",
     "https://www.tahkomountain.fi/",
-    "https://opendata.fmi.fi/wfs",
     "https://en.ilmatieteenlaitos.fi/open-data",
     "https://www.skiresort.com/en/ski-resort/tahko/"
   ],
@@ -58,10 +57,6 @@
       },
       {
         "url": "https://www.tahkomountain.fi/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://opendata.fmi.fi/wfs",
         "attribution_required": null
       },
       {

@@ -10,7 +10,7 @@
   },
   "website": "https://www.elm.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207024+01:00",
+  "fetched_at": "2026-11-24T08:40:40.144914+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Chüebodensee (SLF)",
         "elevation_m": 2058,
-        "depth_cm": 38,
-        "fresh_cm": 30,
+        "depth_cm": 77,
+        "fresh_cm": 46,
         "temperature_c": null,
         "condition": null
       }
@@ -82,11 +82,11 @@
   "avalanche": {
     "region_id": "CH-3113",
     "region": "Southern Glarus-Sernftal",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -94,31 +94,22 @@
     ],
     "problems": [
       "new_snow",
-      "persistent_weak_layers"
+      "persistent_weak_layers",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=65&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=65&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -126,7 +117,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

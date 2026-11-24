@@ -11,7 +11,7 @@
   "website": "https://www.gstaad.ch",
   "ski_region": "gstaad",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207099+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145045+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Obere Meiel (SLF)",
         "elevation_m": 2097,
-        "depth_cm": 90,
-        "fresh_cm": 63,
+        "depth_cm": 122,
+        "fresh_cm": 24,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Saanenmöser (SLF)",
         "elevation_m": 1390,
-        "depth_cm": 28,
-        "fresh_cm": 20,
+        "depth_cm": 26,
+        "fresh_cm": 3,
         "temperature_c": null,
         "condition": null
       }
@@ -86,7 +86,7 @@
       "total_km": 14
     }
   },
-  "lifts_updated_at": "2026-11-20T16:27:00+01:00",
+  "lifts_updated_at": "2026-11-23T16:15:00+01:00",
   "details": "json/ch/gstaad.details.json",
   "avalanche": {
     "region_id": "CH-1222",
@@ -105,29 +105,19 @@
       "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=39&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=39&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -135,7 +125,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

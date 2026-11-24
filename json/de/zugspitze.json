@@ -10,7 +10,7 @@
   },
   "website": "https://zugspitze.de",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212480+01:00",
+  "fetched_at": "2026-11-24T08:40:40.154461+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": 0,
     "total": 13,
     "open_km": 0.0,
-    "total_km": null
+    "total_km": 20
   },
   "lifts_by_type": {
     "chairlift": {
@@ -66,16 +66,22 @@
   "details": "json/de/zugspitze.details.json",
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/zugspitzplatt/data?lang=en"
+    "https://winter.intermaps.com/zugspitzplatt?lang=en",
+    "https://zugspitze.de/anlagen"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://winter.intermaps.com/zugspitzplatt/data?lang=en",
+        "url": "https://winter.intermaps.com/zugspitzplatt?lang=en",
         "attribution_required": null
       }
     ],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://zugspitze.de/anlagen",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": []
 }

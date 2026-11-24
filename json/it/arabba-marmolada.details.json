@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "arabba-marmolada",
   "country": "it",
-  "fetched_at": "2026-11-23T13:40:33.207609+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145990+01:00",
   "updated_at": "2026-10-20T14:20:34.680586+02:00",
-  "source": "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?source=dss&active=true&pagesize=5000&fields=Id,Shortname,IsOpen,Mapping.dss,Ratings.Difficulty,DistanceLength,GpsPoints.position.Latitude,GpsPoints.position.Longitude,_Meta.LastUpdate",
+  "source": "https://opendatahub.com",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:6_186022",
@@ -533,16 +533,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:6_65186381",
-      "ref": null,
-      "name": "Rientro",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 5218,
-      "map_length_m": 1100
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:6_612505",
       "ref": null,
       "name": "Rientro",
@@ -550,6 +540,16 @@
       "colour": null,
       "status": "closed",
       "length_m": 1294,
+      "map_length_m": 1100
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:6_65186381",
+      "ref": null,
+      "name": "Rientro",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5218,
       "map_length_m": null
     },
     {

@@ -10,7 +10,7 @@
   },
   "website": "https://www.tavascan.net",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.214603+01:00",
+  "fetched_at": "2026-11-24T08:40:40.157269+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,10 +20,13 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 3
+  },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 7,
     "open_km": null,
     "total_km": 5
   },
@@ -52,18 +55,23 @@
   },
   "sources": [
     "https://www.skiresort.com/en/ski-resort/pleta-del-prat-tavascan/",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-ES-CT.json"
+    "https://www.spain.info/es/esquiar/estacion-esqui-tavascan/",
+    "https://www.icgc.cat"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-ES-CT.json",
+        "url": "https://www.icgc.cat",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/en/ski-resort/pleta-del-prat-tavascan/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.spain.info/es/esquiar/estacion-esqui-tavascan/",
         "attribution_required": null
       }
     ]

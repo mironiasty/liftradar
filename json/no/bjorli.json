@@ -10,7 +10,7 @@
   },
   "website": "https://www.bjorli.no/",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.213388+01:00",
+  "fetched_at": "2026-11-24T08:40:40.155496+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -66,16 +66,11 @@
   "details": "json/no/bjorli.details.json",
   "avalanche": null,
   "sources": [
-    "https://api.fnugg.no/search?size=200",
     "https://fnugg.no/bjorli/",
     "https://www.skiresort.com/en/ski-resort/bjorli/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://api.fnugg.no/search?size=200",
-        "attribution_required": true
-      },
       {
         "url": "https://fnugg.no/bjorli/",
         "attribution_required": true

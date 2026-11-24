@@ -10,7 +10,7 @@
   },
   "website": "https://www.soerenberg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207317+01:00",
+  "fetched_at": "2026-11-24T08:40:40.145503+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,16 @@
       {
         "name": "Rotschalp (SLF)",
         "elevation_m": 1875,
-        "depth_cm": 27,
-        "fresh_cm": 33,
+        "depth_cm": 69,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Sörenberg (SLF)",
         "elevation_m": 1150,
-        "depth_cm": 3,
-        "fresh_cm": 3,
+        "depth_cm": 4,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +85,7 @@
       "total_km": 7
     }
   },
-  "lifts_updated_at": "2026-11-23T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-24T08:30:00+01:00",
   "details": "json/ch/soerenberg.details.json",
   "avalanche": {
     "region_id": "CH-2121",
@@ -101,31 +101,22 @@
       }
     ],
     "problems": [
-      "new_snow"
+      "new_snow",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-23T08:00:00+01:00",
-    "valid_from": "2026-11-23T08:00:00+01:00",
-    "valid_until": "2026-11-23T17:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=177&saison=1&ref=contentBox",
-    "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-    "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+    "https://infosnow.ch/portal/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://aws.slf.ch/api/bulletin/caaml/en/json"
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/?type=ajax-raw&tab=map-1/dlg-sys&lang=en&e=177&saison=1&ref=contentBox",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/imis/daily-snow",
-        "attribution_required": null
-      },
-      {
-        "url": "https://measurement-api.slf.ch/public/api/study-plot/measurements",
+        "url": "https://infosnow.ch/portal/",
         "attribution_required": null
       },
       {
@@ -133,7 +124,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://aws.slf.ch/api/bulletin/caaml/en/json",
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

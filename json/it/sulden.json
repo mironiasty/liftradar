@@ -11,7 +11,7 @@
   "website": "https://www.seilbahnensulden.it",
   "ski_region": "suedtirol-skiarena",
   "status": "open",
-  "fetched_at": "2026-11-23T13:40:33.207827+01:00",
+  "fetched_at": "2026-11-24T08:40:40.146389+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 35,
@@ -74,21 +74,21 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-21T06:52:11+01:00",
+  "lifts_updated_at": "2026-11-23T19:45:17+01:00",
   "details": "json/it/sulden.details.json",
   "avalanche": null,
   "sources": [
-    "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI28F1AE811BE8418DBCCACBAA604272C8",
-    "https://winter.intermaps.com/sulden/data?lang=en"
+    "https://opendatahub.com",
+    "https://winter.intermaps.com/sulden?lang=en"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://tourism.api.opendatahub.com/v1/Weather/SnowReport?lang=en&skiareaid=SKI28F1AE811BE8418DBCCACBAA604272C8",
+        "url": "https://opendatahub.com",
         "attribution_required": null
       },
       {
-        "url": "https://winter.intermaps.com/sulden/data?lang=en",
+        "url": "https://winter.intermaps.com/sulden?lang=en",
         "attribution_required": null
       }
     ],

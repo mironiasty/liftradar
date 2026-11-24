@@ -1,0 +1,542 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "brandnertal",
+  "country": "at",
+  "fetched_at": "2026-11-24T08:40:40.138792+01:00",
+  "updated_at": "2026-11-23T13:26:42+01:00",
+  "source": "https://winter.intermaps.com/brandnertal?lang=en",
+  "lifts": [
+    {
+      "id": "L_106431",
+      "ref": null,
+      "name": "Panoramabahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1584,
+      "map_length_m": null,
+      "capacity_per_hour": 802,
+      "bottom_m": 1404,
+      "top_m": 1674
+    },
+    {
+      "id": "L_106432",
+      "ref": null,
+      "name": "Dorfbahn Brand",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1119,
+      "map_length_m": null,
+      "capacity_per_hour": 1700,
+      "bottom_m": 1011,
+      "top_m": 1401
+    },
+    {
+      "id": "L_106433",
+      "ref": null,
+      "name": "Palüdbahn Brand",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1692,
+      "map_length_m": null,
+      "capacity_per_hour": 1400,
+      "bottom_m": 1070,
+      "top_m": 1608
+    },
+    {
+      "id": "L_106434",
+      "ref": null,
+      "name": "Einhornbahn I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": 900,
+      "bottom_m": 914,
+      "top_m": 1200
+    },
+    {
+      "id": "L_106435",
+      "ref": null,
+      "name": "Niggenkopfbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": 1441,
+      "bottom_m": 1273,
+      "top_m": 1596
+    },
+    {
+      "id": "L_106436",
+      "ref": null,
+      "name": "Melkbodenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 290,
+      "map_length_m": null,
+      "capacity_per_hour": 800,
+      "bottom_m": 1580,
+      "top_m": 1630
+    },
+    {
+      "id": "L_106437",
+      "ref": null,
+      "name": "Faregglift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 388,
+      "map_length_m": null,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1576,
+      "top_m": 1683
+    },
+    {
+      "id": "L_106438",
+      "ref": null,
+      "name": "Schedlerhoflift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 285,
+      "map_length_m": null,
+      "capacity_per_hour": 888,
+      "bottom_m": 1000,
+      "top_m": 1060
+    },
+    {
+      "id": "L_106439",
+      "ref": null,
+      "name": "Tannlegerlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 363,
+      "map_length_m": null,
+      "capacity_per_hour": 720,
+      "bottom_m": 1480,
+      "top_m": 1567
+    },
+    {
+      "id": "L_106465",
+      "ref": null,
+      "name": "Glattjochbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": 2005,
+      "bottom_m": 1601,
+      "top_m": 1976
+    },
+    {
+      "id": "L_106466",
+      "ref": null,
+      "name": "Gulmabahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": 2018,
+      "bottom_m": 1401,
+      "top_m": 1799
+    },
+    {
+      "id": "L_106467",
+      "ref": null,
+      "name": "Förderband",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 50,
+      "map_length_m": null,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1609,
+      "top_m": 1614
+    },
+    {
+      "id": "L_106543",
+      "ref": null,
+      "name": "Loischkopfbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1708,
+      "map_length_m": null,
+      "capacity_per_hour": 2700,
+      "bottom_m": 1170,
+      "top_m": 1800
+    },
+    {
+      "id": "L_107468",
+      "ref": null,
+      "name": "Lünerseebahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 783,
+      "map_length_m": null,
+      "capacity_per_hour": 475,
+      "bottom_m": 1568,
+      "top_m": 1970
+    },
+    {
+      "id": "L_141250",
+      "ref": null,
+      "name": "Förderband Bürserberg",
+      "type": "carpet",
+      "status": "unknown",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_106440",
+      "ref": null,
+      "name": "1 Familienabfahrt Niggenkopfbahn II-Tannleger-Eggen*",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106441",
+      "ref": null,
+      "name": "10 Melkbodenlift Berg-Melkbodenlift Tal*",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106442",
+      "ref": null,
+      "name": "13 Schedlerhoflift Berg-Schedlerhoflift Tal*",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106443",
+      "ref": null,
+      "name": "23a Loischkopfbahn Berg – Loischkopfbahn Mittelstation",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106444",
+      "ref": null,
+      "name": "24 Loischkopfbahn Mittelstation – Loischkopfbahn Tal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106445",
+      "ref": null,
+      "name": "25 Faregglift Berg-Tannlegerlift Tal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106446",
+      "ref": null,
+      "name": "26 Loischkopfbahn Berg –Panoramabahn Berg – Loischkopfbahn Mittelstation",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3400,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106447",
+      "ref": null,
+      "name": "28 Faregglift Berg-Faregglift Tal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106448",
+      "ref": null,
+      "name": "3 Tannlegerlift Berg - Tannlegerlift Tal*",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106449",
+      "ref": null,
+      "name": "7 Glattjochbahn Berg-Glattjochbahn Tal*",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106450",
+      "ref": null,
+      "name": "8 Glattjochbahn Berg - Niggenkopfbahn II Berg*",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106451",
+      "ref": null,
+      "name": "11 Palüdbahn Berg-Palüdbahn Tal*",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106452",
+      "ref": null,
+      "name": "19 Loischkopfbahn Berg – Faregglift Tal – Loischkopfbahn Tal",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106453",
+      "ref": null,
+      "name": "2 Gulmabahn Berg - Eggen*",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106454",
+      "ref": null,
+      "name": "20 Einhornbahn I Berg-Einhornbahn I Tal*",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106455",
+      "ref": null,
+      "name": "21 Loischkopfbahn Berg – Loischkopfbahn Tal",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106456",
+      "ref": null,
+      "name": "22 Loischkopfbahn Mittelstation – Loischkopfbahn Tal",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106457",
+      "ref": null,
+      "name": "4 Eggen - Brand Tal*",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106458",
+      "ref": null,
+      "name": "5 Gulmabahn Tal - Glattjoch Tal*",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106459",
+      "ref": null,
+      "name": "6 a/b Glattjochbahn Berg - Glattjochbahn Tal*",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5400,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106460",
+      "ref": null,
+      "name": "18 Loischkopfbahn Berg – Loischkopfbahn Mittelstation",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106461",
+      "ref": null,
+      "name": "Skiroute 14",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106462",
+      "ref": null,
+      "name": "Skiroute 15a",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1850,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106463",
+      "ref": null,
+      "name": "Skiroute 16",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106464",
+      "ref": null,
+      "name": "Skiroute 17",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106468",
+      "ref": null,
+      "name": "23b Loischkopfbahn Berg – Loischkopfbahn Mittelstation",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106469",
+      "ref": null,
+      "name": "23 Loischkopfbahn Mittelstation – Loischkopfbahn Tal",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 5000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106470",
+      "ref": null,
+      "name": "Skiroute 11a",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106471",
+      "ref": null,
+      "name": "Skiroute 27",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106507",
+      "ref": null,
+      "name": "9 Glattjochbahn Berg - Lorenzital-Tannlegerlift Tal",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4100,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106508",
+      "ref": null,
+      "name": "15b Palüdalpe",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1850,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106548",
+      "ref": null,
+      "name": "18 Einhornbahn II Berg – Einhornbahn II Tal",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "unknown",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_106549",
+      "ref": null,
+      "name": "18 Loischkopfbahn Mittelstation – Loischkopfbahn Tal",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "unknown",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_142876",
+      "ref": null,
+      "name": "21a Loischkopfbahn Berg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_142877",
+      "ref": null,
+      "name": "21b Loischkopfbahn Tal",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ]
+}

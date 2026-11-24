@@ -11,7 +11,7 @@
   "website": "https://www.vt.sk",
   "ski_region": "tatry-mountain-resorts",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.212091+01:00",
+  "fetched_at": "2026-11-24T08:40:40.153258+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -44,18 +44,13 @@
   "details": "json/sk/stary-smokovec.details.json",
   "avalanche": null,
   "sources": [
-    "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
-    "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
+    "https://www.vt.sk",
     "https://www.skiresort.info/ski-resort/stary-smokovec-hrebienok/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://laravel.jasna.sk/api/vt/lanovky?lang=sk",
-        "attribution_required": null
-      },
-      {
-        "url": "https://laravel.jasna.sk/api/vt/snehove-zjazdovky?lang=sk",
+        "url": "https://www.vt.sk",
         "attribution_required": null
       }
     ],

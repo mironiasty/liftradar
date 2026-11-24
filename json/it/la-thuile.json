@@ -12,7 +12,7 @@
   "linked_area": "espace-san-bernardo",
   "ski_region": "valle-d-aosta",
   "status": "closed",
-  "fetched_at": "2026-11-23T13:40:33.207676+01:00",
+  "fetched_at": "2026-11-24T08:40:40.146101+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -70,22 +70,22 @@
       "total_km": 18
     }
   },
-  "lifts_updated_at": "2026-11-23T13:15:00+01:00",
+  "lifts_updated_at": "2026-11-24T06:45:00+01:00",
   "details": "json/it/la-thuile.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-15",
     "region": "D - VALLE DI LA THUILE",
-    "danger_level": 4,
-    "danger": "high",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": 2300,
         "period": "all_day"
       },
       {
-        "level": "high",
+        "level": "considerable",
         "lower_bound": 2300,
         "upper_bound": null,
         "period": "all_day"
@@ -95,14 +95,14 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-22T17:00:00+01:00",
-    "valid_from": "2026-11-23T00:00:00+01:00",
-    "valid_until": "2026-11-24T00:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-24T00:00:00+01:00",
+    "valid_until": "2026-11-25T00:00:00+01:00"
   },
   "sources": [
     "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
     "https://www.lathuile.it/it/piste-impianti",
-    "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json"
+    "https://bollettini.aineva.it"
   ],
   "source_details": {
     "conditions": [
@@ -111,7 +111,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it/albina_files/2026-11-23/2026-11-23_AINEVA_en_CAAMLv6.json",
+        "url": "https://bollettini.aineva.it",
         "attribution_required": null
       }
     ],

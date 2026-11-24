@@ -10,7 +10,7 @@
   },
   "website": "https://www.hautacam.com/",
   "status": "no_report",
-  "fetched_at": "2026-11-23T13:40:33.210692+01:00",
+  "fetched_at": "2026-11-24T08:40:40.151079+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -28,7 +28,7 @@
     "open": null,
     "total": 20,
     "open_km": null,
-    "total_km": null
+    "total_km": 20
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
@@ -47,29 +47,34 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-22T16:00:00+01:00",
-    "valid_from": "2026-11-22T16:00:00+01:00",
-    "valid_until": "2026-11-23T18:00:00+01:00"
+    "published_at": "2026-11-23T17:00:00+01:00",
+    "valid_from": "2026-11-23T17:00:00+01:00",
+    "valid_until": "2026-11-24T18:00:00+01:00"
   },
   "sources": [
-    "https://bulletinv3.lumiplan.pro/bulletin.php?station=hautacam&lang=fr&isSoir=false",
+    "https://www.lumiplan.com",
     "https://www.skiinfo.fr/pyrenees/hautacam/station-de-ski",
-    "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json"
+    "https://hautacam.com/fr/station-de-ski",
+    "https://meteofrance.com/meteo-montagne"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://bulletinv3.lumiplan.pro/bulletin.php?station=hautacam&lang=fr&isSoir=false",
+        "url": "https://www.lumiplan.com",
         "attribution_required": null
       },
       {
-        "url": "https://static.avalanche.report/eaws_bulletins/2026-11-23/2026-11-23-FR.json",
+        "url": "https://meteofrance.com/meteo-montagne",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/pyrenees/hautacam/station-de-ski",
+        "attribution_required": null
+      },
+      {
+        "url": "https://hautacam.com/fr/station-de-ski",
         "attribution_required": null
       }
     ]
