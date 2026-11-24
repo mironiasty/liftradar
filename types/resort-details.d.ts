@@ -8,7 +8,14 @@ export type FetchedAt = string
  * When the source last updated the statuses
  */
 export type UpdatedAt = (string | null)
-export type Source = string
+/**
+ * The page listing the lifts and slopes; null without them
+ */
+export type Source = (string | null)
+/**
+ * Null when the resort's sources don't list them, or this run couldn't read them
+ */
+export type Lifts = (DetailsLift[] | null)
 /**
  * The source's id, stable between runs; where the source has none, made from the name
  */
@@ -37,7 +44,10 @@ export type BottomM = (number | null)
  * Elevation of the mountain station
  */
 export type TopM = (number | null)
-export type Lifts = DetailsLift[]
+/**
+ * Null as `lifts`
+ */
+export type Slopes = (DetailsSlope[] | null)
 /**
  * The source's id, stable between runs; where the source has none, made from the name
  */
@@ -58,11 +68,15 @@ export type LengthM1 = (number | null)
  * Its length on the map: its OpenStreetMap lines (OpenSkiData, © OpenStreetMap contributors, ODbL), measured along the slope by liftradar's weekly ski tiles, where they're matched to it; a slope's covers only its segments drawn as lines. Resorts often give longer slope lengths than their map
  */
 export type MapLengthM1 = (number | null)
-export type Slopes = DetailsSlope[]
+export type Lat = number
+export type Lon = number
+export type ElevationM = number
 
 /**
  * Experimental: every lift and slope of one resort with its status, from its slope map or from the source
- * that lists them one by one. `unknown` items are listed but left out of the resort file's counts.
+ * that lists them one by one, and the resort's bottom and top. `unknown` items are listed but left out of the
+ * resort file's counts. Every resort the ski tiles know has a file; `lifts` and `slopes` only those whose
+ * sources list them (the resort file's `details` points to those).
  */
 export interface ExperimentalEveryLiftAndSlopeOfOneResort {
 $schema: $Schema
@@ -73,6 +87,14 @@ updated_at: UpdatedAt
 source: Source
 lifts: Lifts
 slopes: Slopes
+/**
+ * The lowest point of the resort's lifts on the map: OpenSkiData's lines and elevations (© OpenStreetMap contributors, ODbL), from liftradar's weekly ski tiles. Null when the tiles have no lifts for the resort
+ */
+bottom: (ResortEnd | null)
+/**
+ * The highest point of the resort's lifts on the map: OpenSkiData's lines and elevations (© OpenStreetMap contributors, ODbL), from liftradar's weekly ski tiles. Null when the tiles have no lifts for the resort
+ */
+top: (ResortEnd | null)
 }
 /**
  * One lift as the source lists it.
@@ -101,4 +123,12 @@ colour: Colour
 status: Status1
 length_m: LengthM1
 map_length_m: MapLengthM1
+}
+/**
+ * The lowest or highest point of a resort's lifts on the map.
+ */
+export interface ResortEnd {
+lat: Lat
+lon: Lon
+elevation_m: ElevationM
 }

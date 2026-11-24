@@ -291,7 +291,9 @@ def link_items(
 
 
 def load_details(details_dir: Path) -> list[dict]:
-    return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(Path(details_dir).glob("*/*.details.json"))]
+    """The details files that list lifts and slopes: the others only have the resort's bottom and top."""
+    files = (json.loads(p.read_text(encoding="utf-8")) for p in sorted(Path(details_dir).glob("*/*.details.json")))
+    return [d for d in files if d.get("lifts") is not None and d.get("slopes") is not None]
 
 
 def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:

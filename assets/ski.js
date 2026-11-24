@@ -234,7 +234,8 @@ function skiLayers(
         .then((response) => (response.ok ? /** @type {Promise<ResortDetails>} */ (response.json()) : null))
         .then((details) => {
           if (!details) return;
-          for (const i of [...details.lifts, ...details.slopes])
+          // Files with only the resort's bottom and top have no lists.
+          for (const i of [...(details.lifts ?? []), ...(details.slopes ?? [])])
             if (i.status) states.set(`${resort}/${i.id}`, i.status);
           withStates.add(resort);
           for (const key of Object.keys(data)) {

@@ -221,7 +221,8 @@ function createServer(env, origin) {
     },
     async ({ country, id, status }) => {
       const details = /** @type {Details | null} */ (await read(`/json/${country}/${id}.details.json`));
-      if (!details) {
+      // Every resort the ski tiles know has a details file, with lists only when its sources give them.
+      if (!details?.lifts || !details.slopes) {
         if (!(await read(`/json/${country}/${id}.json`))) return notFound(country, id);
         return {
           isError: true,
