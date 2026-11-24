@@ -291,7 +291,9 @@ def link_items(
 
 
 def load_details(details_dir: Path) -> list[dict]:
-    return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(Path(details_dir).glob("*/*.details.json"))]
+    """The details files that list lifts and slopes: the others only have the resort's bottom and top."""
+    files = (json.loads(p.read_text(encoding="utf-8")) for p in sorted(Path(details_dir).glob("*/*.details.json")))
+    return [d for d in files if d.get("lifts") is not None and d.get("slopes") is not None]
 
 
 def link(details_dir: Path, lifts: list[dict], runs: list[dict]) -> dict:
@@ -448,6 +450,34 @@ def write_lengths(out: Path, measured: dict, data_time: str | None) -> str:
     body = {"data_time": data_time, "resorts": measured}
     text = json.dumps(body, ensure_ascii=False, separators=(",", ":")) + "\n"
     (out / LENGTHS_FILE).write_text(text, encoding="utf-8")
+    return text
+
+
+ELEVATIONS_FILE = "elevations.json"
+# Lifts kept on the map for old tracks, but no longer the resort's.
+GONE = {"disused", "abandoned"}
+
+
+def elevations(lifts: list[dict]) -> dict:
+    """Each resort's lowest and highest point on its lifts (`lr`), `[lon, lat, elevation]`: its bottom and top, for
+    elevations.json. Resorts whose lifts have no elevations are left out."""
+    ends = {}
+    for lift in lifts:
+        if not (key := lift.get("lr")) or lift.get("status") in GONE:
+            continue
+        for point in lift.get("c") or []:
+            if len(point) < 3:
+                continue
+            low, high = ends.get(key, (point, point))
+            ends[key] = (point if point[2] < low[2] else low, point if point[2] > high[2] else high)
+    return {key: {"bottom": low, "top": high} for key, (low, high) in sorted(ends.items())}
+
+
+def write_elevations(out: Path, found: dict, data_time: str | None) -> str:
+    """Write elevations.json next to the tiles (README "Ski tiles"); returns its text."""
+    body = {"data_time": data_time, "resorts": found}
+    text = json.dumps(body, ensure_ascii=False, separators=(",", ":")) + "\n"
+    (out / ELEVATIONS_FILE).write_text(text, encoding="utf-8")
     return text
 
 

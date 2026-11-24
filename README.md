@@ -295,11 +295,15 @@ hash of the files, so a week without changes publishes nothing. OpenSkiData may 
 once a day; its own vector tiles may not be used directly.
 
 - `ski/v1/meta.json`: `build` (add `?b=<build>` to the other URLs, to skip stale caches), `built_at`,
-  `data_time` (OpenSkiData's build), `zoom`, `resorts` and `lengths` (the files below), the counts, the
+  `data_time` (OpenSkiData's build), `zoom`, `resorts`, `lengths` and `elevations` (the files below), the counts, the
   attribution and the license.
 - `ski/v1/lengths.json` (experimental): `data_time`, and `resorts`, `{"<country>/<id>": {"lifts": {<item id>:
   metres}, "slopes": {…}}}`, the length on the map of each lift and slope of the details files that
   `lift_links.py` matched (below), rounded to 10 m. liftradar-fetcher reads it every run, as the details' `map_length_m`.
+- `ski/v1/elevations.json` (experimental): `data_time`, and `resorts`, `{"<country>/<id>": {"bottom": [lon, lat,
+  elevation], "top": […]}}`, the lowest and highest point of the resort's lifts (`lr`, disused and abandoned ones
+  left out), from OpenSkiData's elevations. liftradar-fetcher reads it every run, for the details' `bottom` and
+  `top` and the weather forecast's points.
 - `ski/v1/resorts.geojson`: a feature per liftradar resort with lifts there, `id` `<country>/<id>`:
   its outline (the geometry), `point` (`[lon, lat]`, its marker), and `lifts`, `runs` (downhill),
   `km` (of downhill runs drawn as lines) and `areas` (the OpenSkiData areas' names) as OpenSkiData

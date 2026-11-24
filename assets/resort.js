@@ -66,7 +66,7 @@ const SLOPE_COLOURS = {
 
 /**
  * The slope's swatch and its title: its own colour when the source gives one, else its difficulty's.
- * @param {ResortDetails["slopes"][number]} s
+ * @param {DetailsSlope} s
  */
 function slopeSwatch(s) {
   const [difficulty, fallback] = DIFFICULTIES[s.difficulty] ?? [label(s.difficulty), "var(--muted)"];
@@ -415,7 +415,8 @@ function itemState(status) {
 
 /** @param {ResortDetails} d */
 function liftList(d) {
-  const rows = byStatus(d.lifts).map((l) =>
+  const lifts = d.lifts ?? []; // null only in files with just the bottom and top, which `details` doesn't point to
+  const rows = byStatus(lifts).map((l) =>
     el(
       "tr",
       {},
@@ -425,19 +426,19 @@ function liftList(d) {
       itemLength(l),
     ),
   );
-  return withMapNote(d.lifts, itemTable([t("Status"), t("Type"), t("Name"), t("Length")], rows));
+  return withMapNote(lifts, itemTable([t("Status"), t("Type"), t("Name"), t("Length")], rows));
 }
 
 // Slopes open first (then in preparation, closed, unknown), and within each the easiest first: by difficulty,
 // then by the slope's own colour (green before blue), then by name.
 const DIFFICULTY_ORDER = Object.keys(DIFFICULTIES);
 const COLOUR_ORDER = ["green", "blue", "yellow", "orange", "red", "black"];
-/** @param {ResortDetails["slopes"][number]} s */
+/** @param {DetailsSlope} s */
 const colourRank = (s) => {
   const i = COLOUR_ORDER.indexOf((s.colour ?? "").split("_")[0]);
   return i === -1 ? COLOUR_ORDER.length : i;
 };
-/** @param {ResortDetails["slopes"]} slopes */
+/** @param {DetailsSlope[]} slopes */
 function sortedSlopes(slopes) {
   const status = Object.keys(ITEM_STATUS);
   /** @param {string} key @param {string[]} order */
@@ -453,7 +454,8 @@ function sortedSlopes(slopes) {
 
 /** @param {ResortDetails} d */
 function slopeList(d) {
-  const rows = sortedSlopes(d.slopes).map((s) => {
+  const slopes = d.slopes ?? [];
+  const rows = sortedSlopes(slopes).map((s) => {
     const { colour, title } = slopeSwatch(s);
     return el(
       "tr",
@@ -463,7 +465,7 @@ function slopeList(d) {
       itemLength(s),
     );
   });
-  return withMapNote(d.slopes, itemTable([t("Status"), t("Name"), t("Length")], rows));
+  return withMapNote(slopes, itemTable([t("Status"), t("Name"), t("Length")], rows));
 }
 
 // The counts of some slopes from the details file, as in the resort's slopes_by_difficulty; km only when every one
@@ -567,7 +569,7 @@ function breakdown(r) {
     if (easy && byDifficulty.easy && r.details) {
       load()
         .then((d) => {
-          const listed = d.slopes.filter((s) => s.difficulty === "easy" && s.status !== "unknown");
+          const listed = (d.slopes ?? []).filter((s) => s.difficulty === "easy" && s.status !== "unknown");
           const green = listed.filter((s) => s.colour === "green");
           const blue = listed.filter((s) => s.colour !== "green");
           if (!green.length || listed.length !== easy.total) return;
