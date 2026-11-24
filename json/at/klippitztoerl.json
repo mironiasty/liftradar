@@ -9,8 +9,8 @@
     "lon": 14.6741
   },
   "website": "https://www.klippitz.at",
-  "status": "closed",
-  "fetched_at": "2026-11-24T08:40:40.140650+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-24T13:40:37.301684+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,64 +20,22 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 6
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
-    "total": 13,
-    "open_km": 0.0,
+    "open": null,
+    "total": null,
+    "open_km": null,
     "total_km": 28
   },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 2
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 3
-    },
-    "other": {
-      "open": 0,
-      "total": 1
-    }
-  },
-  "slopes_by_difficulty": {
-    "ski_route": {
-      "open": 0,
-      "total": 1,
-      "open_km": 0.0,
-      "total_km": 3
-    },
-    "easy": {
-      "open": 0,
-      "total": 9,
-      "open_km": 0.0,
-      "total_km": null
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 3,
-      "open_km": 0.0,
-      "total_km": 6
-    }
-  },
-  "lifts_updated_at": "2026-11-10T11:30:05+01:00",
-  "details": "json/at/klippitztoerl.details.json",
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/klippitztoerl?lang=en",
     "https://www.skiresort.info/ski-resort/klippitztoerl/"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://winter.intermaps.com/klippitztoerl?lang=en",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiresort.info/ski-resort/klippitztoerl/",

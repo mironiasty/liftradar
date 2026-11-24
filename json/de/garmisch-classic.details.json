@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "garmisch-classic",
   "country": "de",
-  "fetched_at": "2026-11-24T08:40:40.154492+01:00",
-  "updated_at": "2026-11-24T08:41:20+01:00",
+  "fetched_at": "2026-11-24T13:40:37.312950+01:00",
+  "updated_at": "2026-11-24T13:18:51+01:00",
   "source": "https://winter.intermaps.com/zugspitzbahn_garmisch?lang=en",
   "lifts": [
     {
@@ -70,6 +70,18 @@
       "id": "L_34369",
       "ref": null,
       "name": "K Längenfelderbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_34370",
+      "ref": null,
+      "name": "B Kreuzwankl",
       "type": "chairlift",
       "status": "closed",
       "length_m": null,

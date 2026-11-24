@@ -11,7 +11,7 @@
   "website": "https://www.hohsaas.ch",
   "ski_region": "saastal",
   "status": "closed",
-  "fetched_at": "2026-11-24T08:40:40.145449+01:00",
+  "fetched_at": "2026-11-24T13:40:37.305718+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,6 +24,14 @@
         "name": "Gibidum (SLF)",
         "elevation_m": 2680,
         "depth_cm": 38,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Saas Fee (SLF)",
+        "elevation_m": 1790,
+        "depth_cm": 23,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -74,7 +82,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T08:30:00+01:00",
+  "lifts_updated_at": "2026-11-24T13:39:00+01:00",
   "details": "json/ch/saas-grund.details.json",
   "avalanche": {
     "region_id": "CH-4223",

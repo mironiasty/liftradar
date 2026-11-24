@@ -10,25 +10,42 @@
   },
   "website": "https://www.la-norma.fr",
   "ski_region": "haute-maurienne-vanoise",
-  "status": "no_report",
-  "fetched_at": "2026-11-24T08:40:40.150311+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-24T13:40:37.309440+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2025-04-02",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Front de Neige La Norma",
+        "elevation_m": 1350,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Norma 2",
+        "elevation_m": 2750,
+        "depth_cm": 60,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 13
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 30,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 65
   },
   "lifts_by_type": {
@@ -51,25 +68,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 15,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 13,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/la-norma.details.json",
   "avalanche": {
     "region_id": "FR-11",
     "region": "Haute-Maurienne",

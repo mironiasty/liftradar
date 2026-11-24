@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tignes",
   "country": "fr",
-  "fetched_at": "2026-11-24T08:40:40.150097+01:00",
+  "fetched_at": "2026-11-24T13:40:37.309243+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com",
   "lifts": [
@@ -122,6 +122,18 @@
       "status": "open",
       "length_m": null,
       "map_length_m": 260,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5225",
+      "ref": null,
+      "name": "TSD  DES TUFS",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1610,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -437,18 +449,6 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
-    },
-    {
-      "id": "5225",
-      "ref": null,
-      "name": "TSD  DES TUFS",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1610,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
     }
   ],
   "slopes": [
@@ -528,7 +528,7 @@
       "name": "DOUBLE M",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 2950,
       "map_length_m": 3300
     },
@@ -838,7 +838,7 @@
       "name": "GRATTALU",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "open",
+      "status": "closed",
       "length_m": 1509,
       "map_length_m": 1620
     },

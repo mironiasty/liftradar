@@ -9,8 +9,8 @@
     "lon": 6.766
   },
   "website": "https://www.sunnmorsalpane.no",
-  "status": "no_report",
-  "fetched_at": "2026-11-24T08:40:40.155527+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-24T13:40:37.313835+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 14,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 16
   },
   "lifts_by_type": {
@@ -38,19 +38,20 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 9,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-21T22:30:07+02:00",
+  "lifts_updated_at": "2026-11-24T13:23:48+01:00",
+  "details": "json/no/sunnmorsalpane.details.json",
   "avalanche": {
     "region_id": "NO-3024",
     "region": "Sunnmøre",

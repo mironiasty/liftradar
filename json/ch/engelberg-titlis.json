@@ -9,13 +9,13 @@
     "lon": 8.4013
   },
   "website": "https://www.titlis.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-24T08:40:40.145780+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-24T13:40:37.305983+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 60,
+    "valley_cm": 18,
+    "fresh_cm": 31,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -38,18 +38,18 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 20
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 26,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 82
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 0,
+      "open": 1,
       "total": 5
     },
     "carpet": {
@@ -57,7 +57,7 @@
       "total": 1
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 6
     },
     "drag_lift": {
@@ -69,7 +69,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 2
     }
   },
@@ -81,9 +81,9 @@
       "total_km": 14
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
@@ -95,7 +95,7 @@
     "other": {
       "open": 0,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },

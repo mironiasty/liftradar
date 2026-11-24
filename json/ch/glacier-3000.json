@@ -11,20 +11,20 @@
   "website": "https://www.glacier3000.ch",
   "ski_region": "gstaad",
   "status": "open",
-  "fetched_at": "2026-11-24T08:40:40.144977+01:00",
+  "fetched_at": "2026-11-24T13:40:37.305396+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 65,
     "valley_cm": 65,
-    "fresh_cm": null,
-    "last_snowfall": "2026-11-15",
+    "fresh_cm": 25,
+    "last_snowfall": "2026-11-24",
     "condition": "powder",
     "stations": [
       {
         "name": "in place",
         "elevation_m": null,
         "depth_cm": 65,
-        "fresh_cm": null,
+        "fresh_cm": 25,
         "temperature_c": null,
         "condition": null
       },
@@ -88,7 +88,7 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-24T08:32:00+01:00",
+  "lifts_updated_at": "2026-11-24T13:08:00+01:00",
   "details": "json/ch/glacier-3000.details.json",
   "avalanche": {
     "region_id": "CH-1114",
