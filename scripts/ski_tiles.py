@@ -375,6 +375,9 @@ def build(args) -> dict:
     digest.update(resorts_text.encode())
     new.mkdir(parents=True, exist_ok=True)
     digest.update(lift_links.write_lengths(new, map_lengths, args.data_time).encode())
+    resort_elevations = lift_links.elevations(tile_lifts)
+    print(f"bottom and top of {len(resort_elevations)} resorts")
+    digest.update(lift_links.write_elevations(new, resort_elevations, args.data_time).encode())
 
     counts = {
         "tiles": len(tiles),
@@ -395,6 +398,7 @@ def build(args) -> dict:
         "tiles": f"{ZOOM}/{{x}}/{{y}}.json",
         "resorts": "resorts.geojson",
         "lengths": lift_links.LENGTHS_FILE,
+        "elevations": lift_links.ELEVATIONS_FILE,
         "counts": counts,
         "attribution": ATTRIBUTION,
         "license": "ODbL-1.0",
