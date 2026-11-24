@@ -711,7 +711,8 @@ function memberSummary(r) {
     parts.push(t("{n} slopes", { n: open ? pair(slopes.open, slopes.total) : slopes.total }));
   }
   if (open && snow.mountain_cm !== null && snow.mountain_cm !== undefined) parts.push(`${snow.mountain_cm} cm`);
-  const line = el("div", { class: "meta summary" }, parts.join(" · ") || capitalized(STATUS_LABELS[status]));
+  // Not "summary": the page's key numbers have that class, a grid that would put the fresh snow on a line of its own.
+  const line = el("div", { class: "meta numbers" }, parts.join(" · ") || capitalized(STATUS_LABELS[status]));
   if (snow.fresh_cm) line.append(" ", el("span", { class: "fresh" }, `+${snow.fresh_cm}`));
   return line;
 }
