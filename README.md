@@ -18,8 +18,8 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   - `json/stats.json`: daily totals per country and region over the last 365 days (resorts
     tracked and open; open lifts, slopes and km, of open resorts only), for `stats.html`.
   - `json/groups.json`: the groups of resorts listed separately (linked ski areas, passes and
-    regions) by id, which a member's `linked_area` and `ski_region` give (in its report and the index);
-    the site doesn't read it yet.
+    regions) by id, which a member's `linked_area` and `ski_region` give (in its report and the index),
+    for the resort page's group cards and `area.html`.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
     (open lifts and slopes, snow, status), one list per value, for the resort page's graphs.
   - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every
@@ -36,7 +36,9 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
     (`st-anton-am-arlberg`, `lech-zuers`, `warth-schroecken`) are gone.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
-  its history), `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
+  its history), `area.html?g=<group>` (a linked ski area or a pass from `json/groups.json`: its totals, its
+  resorts ranked and on the map, its lifts and slopes, and its season so far, summed from the members' files),
+  `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
   current data), `about.html` (what the values mean, and their caveats) and `privacy.html` (the privacy policy
   of the site and the phone apps, the URL the app stores ask for: keep it in step with what they download), plain
   static pages that load the JSON in the browser. No build step locally.
@@ -71,7 +73,8 @@ is installed or updated, and then opens those links in the app without asking. A
 ## Sitemap
 
 `scripts/sitemap.mjs` writes `sitemap.xml` on deploy, from the site as it goes out: every page in every language,
-each resort's page, and its 3D map when the ski tiles have its area, at the addresses without `.html`. Translations
+each resort's page, and its 3D map when the ski tiles have its area, and each group's `area.html` page, at the
+addresses without `.html`. Translations
 with `noindex` (still partly in English) are left out. `robots.txt` points to it; Cloudflare adds its own lines to it.
 
 ## About the data

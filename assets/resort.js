@@ -109,7 +109,6 @@ const HISTORY_DAYS = 30;
 
 const page = document.getElementById("page");
 const label = (text) => text.replaceAll("_", " ");
-const present = (v) => v !== null && v !== undefined;
 
 function fail(message) {
   page.replaceChildren(el("p", {}, message, " ", el("a", { href: "./" }, t("See all resorts"))));
@@ -298,20 +297,6 @@ function header(r) {
     unchanged ? el("p", { class: "meta stale" }, unchanged) : "",
     note ? el("p", { class: "meta" }, note) : "",
   );
-}
-
-// Back to the list of all resorts, with the filters and order it had in this tab.
-function backLink() {
-  let list = "";
-  try {
-    list = sessionStorage.getItem(LIST_KEY) ?? "";
-  } catch {}
-  const link = el("a", { class: "pill back", href: `./${list}` });
-  link.innerHTML =
-    '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"' +
-    ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>' +
-    t("All resorts");
-  return link;
 }
 
 /** @param {Station[]} list */
@@ -764,66 +749,6 @@ function sources(r) {
   return parts.length ? el("section", { class: "card data" }, el("h2", {}, t("Sources")), ...parts) : null;
 }
 
-// The line under a group member's name, as the apps' lists have it: open, how many lifts and km of slopes are open,
-// the snow on the mountain and the fresh snow; closed or without a report, that and how many it has.
-/** @param {IndexResort} r */
-function memberSummary(r) {
-  const status = statusKey(r);
-  const open = status === "open";
-  const { lifts, slopes, snow } = r;
-  const parts = open ? [] : [capitalized(STATUS_LABELS[status])];
-  if (lifts?.total) parts.push(t("{n} lifts", { n: open ? pair(lifts.open, lifts.total) : lifts.total }));
-  if (slopes?.total_km) {
-    parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
-  } else if (slopes?.total) {
-    parts.push(t("{n} slopes", { n: open ? pair(slopes.open, slopes.total) : slopes.total }));
-  }
-  if (open && snow.mountain_cm !== null && snow.mountain_cm !== undefined) parts.push(`${snow.mountain_cm} cm`);
-  // Not "summary": the page's key numbers have that class, a grid that would put the fresh snow on a line of its own.
-  const line = el("div", { class: "meta numbers" }, parts.join(" · ") || capitalized(STATUS_LABELS[status]));
-  if (snow.fresh_cm) line.append(" ", el("span", { class: "fresh" }, `+${snow.fresh_cm}`));
-  return line;
-}
-
-// The country most of a group's members are in, the one a member from elsewhere is flagged against (Champéry and
-// Morgins in Les Portes du Soleil). Where countries are level, `own`'s (the resort whose page it is) if it is one
-// of them, else the first member's. The apps do the same (ResortGroup's mainCountry).
-/** @param {string[]} members @param {string} own */
-function mainCountry(members, own) {
-  const countries = members.map((key) => key.split("/")[0]);
-  /** @type {Map<string, number>} */
-  const counts = new Map();
-  for (const c of countries) counts.set(c, (counts.get(c) ?? 0) + 1);
-  const most = Math.max(0, ...counts.values());
-  if (counts.get(own) === most) return own;
-  return countries.find((c) => counts.get(c) === most) ?? own;
-}
-
-// A group's members (keys) in the order its card shows them, as the list starts: the open ones first, the most open
-// slopes first (then open km, open lifts); then the closed ones and those without a report, the biggest first (km of
-// slopes, then lifts); last the ones the index doesn't have. Level, as the group lists them. The apps do the same
-// (ResortGroup's ordered).
-/** @param {string[]} keys @param {Map<string, IndexResort>} resorts */
-function orderedMembers(keys, resorts) {
-  /** @param {number | null | undefined} v */
-  const n = (v) => -(v ?? -1);
-  /** @param {string} key @returns {number[]} */
-  const rank = (key) => {
-    const r = resorts.get(key);
-    if (!r) return [2];
-    return statusKey(r) === "open"
-      ? [0, n(r.slopes?.open), n(r.slopes?.open_km), n(r.lifts?.open)]
-      : [1, n(r.slopes?.total_km), n(r.lifts?.total)];
-  };
-  const ranks = new Map(keys.map((key) => [key, rank(key)]));
-  return [...keys].sort((a, b) => {
-    const x = ranks.get(a) ?? [],
-      y = ranks.get(b) ?? [];
-    for (let i = 0; i < Math.min(x.length, y.length); i++) if (x[i] !== y[i]) return x[i] - y[i];
-    return x.length - y.length;
-  });
-}
-
 // The groups the resort is in, from its linked_area and ski_region: a card for each, under the map, with the
 // group's name and the other members, by name, status and the line of numbers from the index, each to its own
 // page, with its flag when it is in another country than most of the group; the open ones first.
@@ -849,7 +774,12 @@ async function groupCards(r, container) {
       const [country, resortId] = key.split("/");
       const known = resorts.get(key);
       const dot = el("span", { class: "dot", style: `--c:${STATUS_COLORS[known ? statusKey(known) : "no_report"]}` });
-      if (known) dot.title = STATUS_LABELS[statusKey(known)];
+      if (known) {
+        dot.title = STATUS_LABELS[statusKey(known)];
+        // Named for screen readers: the colour alone doesn't say it.
+        dot.setAttribute("role", "img");
+        dot.setAttribute("aria-label", STATUS_LABELS[statusKey(known)]);
+      }
       const flag =
         country === main
           ? ""
@@ -877,7 +807,7 @@ async function groupCards(r, container) {
         "section",
         { class: "card group" },
         el("h2", {}, title),
-        el("strong", { class: "group-name" }, group.name),
+        el("a", { class: "group-name", href: areaPage(/** @type {string} */ (id)) }, group.name),
         others.length ? el("div", { class: "meta" }, membersTitle) : "",
         others.length ? el("ul", { class: "members" }, ...others) : "",
       ),
@@ -1281,123 +1211,6 @@ async function historyChart(r, container, collected) {
     chart(t("Open lifts"), "", "var(--open)", series("lifts_open")),
     chart(t("Open slopes"), "", "var(--open)", series("slopes_open")),
   );
-}
-
-// Nice upper bound for the y axis: 1, 2 or 5 times a power of ten.
-function niceMax(v) {
-  if (v <= 0) return 1;
-  const power = 10 ** Math.floor(Math.log10(v));
-  return [1, 2, 5, 10].map((m) => m * power).find((m) => m >= v) ?? 10 * power;
-}
-
-// A step line (values hold until the next run), redrawn when its box resizes.
-function chart(title, unit, colour, points) {
-  const box = el("div", { class: "chart" }, el("h3", {}, title));
-  const known = points.filter((p) => present(p.v));
-  if (known.length < 2) {
-    box.append(el("p", { class: "empty" }, t("Not enough runs yet.")));
-    return box;
-  }
-  const svgNS = "http://www.w3.org/2000/svg";
-  const svg = document.createElementNS(svgNS, "svg");
-  const tip = el("div", { class: "tip", hidden: "" });
-  box.append(svg, tip);
-  const node = (tag, attributes) => {
-    const n = document.createElementNS(svgNS, tag);
-    for (const [k, v] of Object.entries(attributes)) n.setAttribute(k, v);
-    return n;
-  };
-  const format = (v) => `${Math.round(v * 10) / 10}${unit ? ` ${unit}` : ""}`;
-  const H = 150,
-    top = 10,
-    bottom = 20,
-    left = 34,
-    right = 10;
-
-  const draw = () => {
-    const W = box.clientWidth;
-    if (!W) return;
-    svg.replaceChildren();
-    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-    const t0 = points[0].t.getTime(),
-      t1 = Math.max(points.at(-1).t.getTime(), t0 + 1);
-    const max = niceMax(Math.max(...known.map((p) => p.v)));
-    const x = (t) => left + ((t.getTime() - t0) / (t1 - t0)) * (W - left - right);
-    const y = (v) => top + (1 - v / max) * (H - top - bottom);
-    for (const v of [0, max / 2, max]) {
-      svg.append(node("line", { class: "grid", x1: left, x2: W - right, y1: y(v), y2: y(v) }));
-      const text = node("text", { class: "axis", x: left - 6, y: y(v) + 3, "text-anchor": "end" });
-      text.textContent = String(v);
-      svg.append(text);
-    }
-    for (const [t, anchor] of [
-      [points[0].t, "start"],
-      [points.at(-1).t, "end"],
-    ]) {
-      const text = node("text", { class: "axis", x: x(t), y: H - 4, "text-anchor": anchor });
-      text.textContent = t.toLocaleDateString(DATE_LOCALE, {
-        timeZone: "Europe/Vienna",
-        day: "numeric",
-        month: "short",
-      });
-      svg.append(text);
-    }
-    let d = "",
-      previous = null;
-    for (const p of points) {
-      if (!present(p.v)) {
-        previous = null;
-        continue;
-      }
-      d += previous ? ` H${x(p.t)} V${y(p.v)}` : ` M${x(p.t)} ${y(p.v)}`;
-      previous = p;
-    }
-    svg.append(node("path", { d, fill: "none", stroke: colour, "stroke-width": 2, "stroke-linejoin": "round" }));
-    const last = known.at(-1);
-    svg.append(
-      node("circle", { cx: x(last.t), cy: y(last.v), r: 4, fill: colour, stroke: "var(--bg)", "stroke-width": 2 }),
-    );
-
-    // Hover: the value in force at the pointer (the latest run before it).
-    const cursor = node("line", {
-      x1: 0,
-      x2: 0,
-      y1: top,
-      y2: H - bottom,
-      stroke: "var(--muted)",
-      "stroke-dasharray": "2 3",
-      visibility: "hidden",
-    });
-    const dot = node("circle", { r: 4, fill: colour, stroke: "var(--bg)", "stroke-width": 2, visibility: "hidden" });
-    const hit = node("rect", { x: left, y: 0, width: W - left - right, height: H, fill: "transparent" });
-    svg.append(cursor, dot, hit);
-    const hide = () => {
-      cursor.setAttribute("visibility", "hidden");
-      dot.setAttribute("visibility", "hidden");
-      tip.hidden = true;
-    };
-    hit.addEventListener("pointermove", (event) => {
-      const px = event.clientX - svg.getBoundingClientRect().left;
-      const p = [...points].reverse().find((q) => x(q.t) <= px + 1) ?? points[0];
-      if (!present(p.v)) return hide();
-      for (const [n, k, v] of [
-        [cursor, "x1", x(p.t)],
-        [cursor, "x2", x(p.t)],
-        [dot, "cx", x(p.t)],
-        [dot, "cy", y(p.v)],
-      ])
-        n.setAttribute(k, v);
-      cursor.setAttribute("visibility", "visible");
-      dot.setAttribute("visibility", "visible");
-      tip.hidden = false;
-      tip.textContent = `${format(p.v)} · ${viennaTime(p.t.toISOString(), { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}`;
-      tip.style.left = `${x(p.t)}px`;
-      tip.style.top = `${y(p.v) + box.querySelector("h3").offsetHeight - 6}px`;
-    });
-    hit.addEventListener("pointerleave", hide);
-  };
-  new ResizeObserver(draw).observe(box);
-  return box;
 }
 
 async function show() {
