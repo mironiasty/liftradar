@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Writes <site>/sitemap.xml on deploy (pages.yml), after the translated pages, from the site as it goes out:
+// Writes <site>/sitemap.xml in the build (build.mjs), after the translated pages, from the site as it goes out:
 //
 //   node scripts/sitemap.mjs _site
 //
@@ -28,7 +28,7 @@ const prefix = (language) => (language === "en" ? "" : `/${language}`);
 /** @type {Index} */
 const index = readJson("json", "index.json");
 const keys = index.resorts.map((r) => `${r.country}/${r.id}`);
-// The ski tiles may be missing (pages.yml goes on without them): then there are no 3D maps to list.
+// The ski tiles may be missing (the build goes on without them): then there are no 3D maps to list.
 let areas = new Set();
 if (existsSync(join(out, "ski", "v1", "meta.json"))) {
   const meta = readJson("ski", "v1", "meta.json");

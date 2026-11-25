@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Generates the translated pages from the English ones, on deploy (pages.yml) or to try them locally:
+// Generates the translated pages from the English ones, in the build (scripts/build.mjs); the dev server
+// (scripts/serve.mjs) translates each page as it's asked for, with translatePage:
 //
-//   node scripts/translate.mjs _site     writes _site/pl/*.html for each i18n/<language>.json
+//   node scripts/translate.mjs <dir>     writes <dir>/pl/*.html for each i18n/<language>.json
 //   node scripts/translate.mjs --check   lists what's missing or unused, and fails on a broken translation
 //
 // i18n/<language>.json maps English to the translation, so anything missing stays English; a plural
@@ -17,9 +18,10 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const PAGES = ["index", "map", "3d", "resort", "stats", "about", "api", "sources", "privacy", "404"].map(
-  (name) => `${name}.html`,
-);
+// The site's pages: every .html at the top of the repo (the build copies and translates the same list).
+export const PAGES = readdirSync(root)
+  .filter((file) => file.endsWith(".html"))
+  .sort();
 const ENGLISH_ONLY = "This part of the page is available in English only.";
 
 const read = (...path) => readFileSync(join(root, ...path), "utf8");
@@ -54,7 +56,15 @@ function replaceMarked(html, replace) {
   return result + html.slice(position);
 }
 
-function translatePage(page, language, strings, seen) {
+// The languages, from i18n/<language>.json, each with its strings.
+export const languages = () =>
+  readdirSync(join(root, "i18n")).map((file) => ({
+    language: file.replace(/\.json$/, ""),
+    strings: JSON.parse(read("i18n", file)),
+  }));
+
+/** Page (e.g. "about.html") in the language; seen collects the keys used and missing, for --check. */
+export function translatePage(page, language, strings, seen = { used: new Set(), missing: new Set() }) {
   const lookup = (key) => {
     seen.used.add(key);
     if (!(key in strings)) seen.missing.add(key);
@@ -122,30 +132,31 @@ function brokenStrings(strings) {
   );
 }
 
-const check = process.argv[2] === "--check";
-const out = process.argv[2];
-if (!out) {
-  console.error("Usage: translate.mjs <output directory> | --check");
-  process.exit(2);
-}
+// Run as a script, not imported (by build.mjs and serve.mjs).
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  const check = process.argv[2] === "--check";
+  const out = process.argv[2];
+  if (!out) {
+    console.error("Usage: translate.mjs <output directory> | --check");
+    process.exit(2);
+  }
 
-let failed = false;
-for (const file of readdirSync(join(root, "i18n"))) {
-  const language = file.replace(/\.json$/, "");
-  const strings = JSON.parse(read("i18n", file));
-  const seen = { used: new Set(), missing: new Set() };
-  if (!check) mkdirSync(join(out, language), { recursive: true });
-  for (const page of PAGES) {
-    const html = translatePage(page, language, strings, seen);
-    if (!check) writeFileSync(join(out, language, page), html);
+  let failed = false;
+  for (const { language, strings } of languages()) {
+    const seen = { used: new Set(), missing: new Set() };
+    if (!check) mkdirSync(join(out, language), { recursive: true });
+    for (const page of PAGES) {
+      const html = translatePage(page, language, strings, seen);
+      if (!check) writeFileSync(join(out, language, page), html);
+    }
+    if (check) {
+      const broken = brokenStrings(strings);
+      const unused = Object.keys(strings).filter((key) => !seen.used.has(key));
+      for (const key of seen.missing) console.warn(`${language}: not translated, stays English: ${key}`);
+      for (const key of unused) console.warn(`${language}: unused: ${key}`);
+      for (const text of broken) console.error(`${language}: placeholders or tags differ: ${text}`);
+      failed ||= broken.length > 0;
+    }
   }
-  if (check) {
-    const broken = brokenStrings(strings);
-    const unused = Object.keys(strings).filter((key) => !seen.used.has(key));
-    for (const key of seen.missing) console.warn(`${language}: not translated, stays English: ${key}`);
-    for (const key of unused) console.warn(`${language}: unused: ${key}`);
-    for (const text of broken) console.error(`${language}: placeholders or tags differ: ${text}`);
-    failed ||= broken.length > 0;
-  }
+  process.exit(failed ? 1 : 0);
 }
-process.exit(failed ? 1 : 0);

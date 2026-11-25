@@ -2,8 +2,8 @@
 // repo as viewer-<commit> (viewer.tar.gz) and pinned in engine.json by its tag and sha256. Downloads
 // the pinned archive, checks it, and unpacks it into <site>/engine/<tag>/, so each version has its
 // own address and can be cached for good; the pin goes to <site>/engine.json too, for the page to
-// know which to load (not under /engine/, cached for good). Locally (README "3D engine") and on
-// deploy (pages.yml):
+// know which to load (not under /engine/, cached for good). Locally (README "3D engine", and npm run
+// dev when it's missing) and in the build (build.mjs):
 //   node scripts/engine.mjs [site]      (site: where the pages are, this folder when left out)
 // An engine change reaches the site only when engine.json's pin moves.
 import { execFileSync } from "node:child_process";

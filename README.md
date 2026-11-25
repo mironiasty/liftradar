@@ -47,7 +47,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `scripts/mini_map.py` from Terrain Tiles and Natural Earth (see the script); the page adds the
   resort dots from the data. Redraw them only if resorts appear outside their frame.
 
-`.github/workflows/pages.yml` combines both, generates the translated pages (see [Translations](#translations)), minifies `assets/*.js` and `*.css` with esbuild, compacts `json/index.json` with jq, and deploys to the Cloudflare Worker `liftradar`
+`.github/workflows/pages.yml` combines both with `scripts/build.mjs` (as `npm run build` does locally, see [Running locally](#running-locally)), which adds the 3D engine, generates the translated pages (see [Translations](#translations)) and the sitemap, minifies `assets/*.js` and `*.css` with esbuild, compacts `json/index.json` and versions the asset links, and deploys to the Cloudflare Worker `liftradar`
 (the files, plus the MCP server at `/mcp`, see [MCP](#mcp); `wrangler.jsonc`; needs the `CLOUDFLARE_API_TOKEN` and
 `CLOUDFLARE_ACCOUNT_ID` secrets), on every push to `main` and after every data update. It's
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
@@ -184,22 +184,31 @@ marker at their `location`, with no OpenSkiData lift within 3 km.
 
 ## Running locally
 
-Put the data next to the pages and serve the folder:
+The pages need the data (the `data` branch) next to them. Check it out once, beside this folder:
 
 ```sh
-git worktree add ../liftradar-data data   # once
-for part in json history schema; do ln -sfn ../liftradar-data/$part .; done
-# optional: the ski tiles, built as in "Ski tiles" (or unpacked from the release ski-latest)
-node scripts/engine.mjs                         # optional: the 3D engine (see "3D engine")
-python3 -m http.server 8000                     # http://localhost:8000
+git worktree add ../liftradar-data data   # once; git -C ../liftradar-data pull for newer data
+npm install                               # once
 ```
 
-(The links are git-ignored.)
-
-To see the translated pages too, generate them (git-ignored) and open e.g. <http://localhost:8000/pl/>:
+Then, to work on the pages:
 
 ```sh
-node scripts/translate.mjs .
+npm run dev -- --data ../liftradar-data   # http://localhost:8000
+```
+
+It serves the repo as it is (`scripts/serve.mjs`): an edit shows on reload, `/de/`, `/fr/`, `/it/` and `/pl/`
+translated as they're asked for, `/about` as `about.html` and missing addresses as `404.html`, as on Cloudflare.
+It unpacks the 3D engine first if it isn't here yet (see [3D engine](#3d-engine)). Without `--data` it reads
+`json/`, `history/`, `schema/` and `ski/` from this folder, where you can link them instead (git-ignored):
+`for part in json history schema; do ln -sfn ../liftradar-data/$part .; done`. The ski tiles are optional: built
+as in [Ski tiles](#ski-tiles), or unpacked from the release `ski-latest`, into the data's `ski/`.
+
+To see exactly what's deployed, build it, then serve the build with the MCP server, as Cloudflare does:
+
+```sh
+npm run build -- --data ../liftradar-data  # into _site/ (git-ignored), as pages.yml does
+npm run preview                            # http://localhost:8787, /mcp included
 ```
 
 Static checks, also run on every push (`.github/workflows/checks.yml`):
@@ -276,11 +285,10 @@ It reads the data with the same types as the pages, so `npm run check` fails whe
 what it finds (`npm run check` runs it, or `node --test worker/mcp.test.js`): a tool's change goes there too.
 After a fetcher change, check its tools too; `api.html` documents it ("MCP").
 
-To try it locally, with the data linked as in [Running locally](#running-locally):
+To try it locally, on a build as in [Running locally](#running-locally):
 
 ```sh
-mkdir -p /tmp/lr-site && cp -R api.html 404.html openapi.json json history /tmp/lr-site/
-npx wrangler dev --assets /tmp/lr-site
+npm run build -- --data ../liftradar-data && npm run preview
 npx @modelcontextprotocol/inspector   # then connect to http://localhost:8787/mcp (Streamable HTTP)
 ```
 
