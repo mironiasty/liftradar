@@ -461,7 +461,11 @@ To move the site to a newer engine:
 ## Scripts
 
 The pages load `assets/common.js` and then their own script, sharing its top-level names: a
-name that's new there also goes in `javascript.globals` in `biome.json`. The map and resort pages
+name that's new there also goes in `javascript.globals` in `biome.json`. The resort page's script is in four, by
+job: `resort-lists.js` (lifts by type, slopes by difficulty, every lift and slope), `resort-map.js`, `resort-weather.js`,
+then `resort.js`, which shows the resort with them (its `show()` runs as it loads, so it comes last). A name one of
+them takes from another goes in those globals too, and the file that defines it marks it
+`// biome-ignore lint/correctness/noUnusedVariables` with the file that uses it. The map and resort pages
 also load MapLibre GL JS 5 (from cdnjs; version 6 is only an ES module there), maplibre-contour
 (jsDelivr), `assets/basemap.js` (the base map: OpenFreeMap's Positron, or Fiord in dark mode, with
 labels in the page's language, peaks, and hillshading and contours from Terrain Tiles) and

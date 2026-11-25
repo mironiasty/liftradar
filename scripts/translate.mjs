@@ -96,7 +96,7 @@ export function translatePage(page, language, strings, seen = { used: new Set(),
     html = html.replace("<title", '<meta name="robots" content="noindex">\n<title');
   }
 
-  const scripts = [...html.matchAll(/src="\/assets\/([a-z]+\.js)"/g)].map((match) => match[1]);
+  const scripts = [...html.matchAll(/src="\/assets\/([a-z0-9-]+\.js)"/g)].map((match) => match[1]);
   if (scripts.length) {
     const used = {};
     for (const key of scripts.flatMap(scriptStrings)) {
