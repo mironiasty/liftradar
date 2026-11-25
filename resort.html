@@ -142,6 +142,43 @@
   .chart .tip { position: absolute; pointer-events: none; padding: 4px 8px; border-radius: 6px; background: var(--fg); color: var(--bg);
     font-size: .78rem; white-space: nowrap; transform: translate(-50%, -100%); }
 
+  /* Weather forecast (Open-Meteo): now at the chosen elevation, then a column per day. */
+  .weather .card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-bottom: 14px; }
+  .weather .card-head h2 { margin: 0; }
+  .points { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--chip); }
+  .points button { padding: 5px 12px; border: 0; border-radius: 999px; background: none; color: var(--muted);
+    font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; }
+  .points button small { font-weight: 500; }
+  .points button[aria-selected="true"] { background: var(--bg); color: var(--fg); box-shadow: var(--shadow); }
+  .weather-icon { display: inline-flex; color: var(--muted); }
+  .weather-icon .sun { stroke: var(--star); }
+  .weather-icon .cloud { fill: var(--bg); }
+  .weather-icon .drop { stroke: var(--accent); }
+  .weather-icon .flake { stroke: var(--accent); stroke-width: 1.4; }
+  .weather-icon .bolt { stroke: var(--star); }
+  .now { display: flex; align-items: center; gap: 14px; padding-bottom: 14px; margin-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .now > div:nth-child(2) { flex: 1; min-width: 0; }
+  .now-temp { font-size: 2.2rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .now .week { text-align: right; }
+  .now .label { color: var(--muted); font-size: .7rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+  .week-snow { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .week-snow small { font-size: .85rem; font-weight: 500; color: var(--muted); }
+  /* Seven columns; on a phone they scroll sideways rather than squeeze. */
+  .days { display: grid; grid-template-columns: repeat(7, minmax(64px, 1fr)); gap: 4px; overflow-x: auto; padding-top: 8px; }
+  .day { display: grid; justify-items: center; gap: 4px; padding: 8px 2px; border-radius: 12px; text-align: center; font-variant-numeric: tabular-nums; }
+  .day:first-child { background: var(--chip); }
+  .day .weekday { font-weight: 700; font-size: .9rem; }
+  .day .date { font-size: .75rem; margin-top: -4px; }
+  .day .temps { font-size: .9rem; white-space: nowrap; }
+  .day .temps span { color: var(--muted); }
+  /* Snowfall: a bar on the week's scale, the amount under it. */
+  .snowfall { display: grid; grid-template-rows: 36px auto; justify-items: center; align-items: end; gap: 2px; width: 100%; }
+  .snowfall .bar { width: 14px; border-radius: 4px 4px 2px 2px; background: var(--accent); opacity: .85; }
+  .snowfall .amount { font-size: .8rem; color: var(--muted); white-space: nowrap; }
+  .snowfall.some .amount { color: var(--accent); font-weight: 700; }
+  .day .gusts { font-size: .72rem; white-space: nowrap; }
+  .weather .credit { margin: 12px 0 0; font-size: .78rem; }
+  .weather .credit a { color: inherit; }
   #map { height: 360px; border-radius: var(--radius); box-shadow: var(--shadow); }
   /* Above the map: the way to the resort's 3D map, there while the map still loads. A tinted card: the diorama on
      the accent, what it is and what's in it, and an arrow that moves on hover. */
