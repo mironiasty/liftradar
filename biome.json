@@ -73,6 +73,8 @@
       "orderedMembers",
       "backLink",
       "areaPage",
+      "countryPagePath",
+      "COUNTRY_SLUGS",
       "label",
       "meter",
       "mapItems",
@@ -95,7 +97,7 @@
   },
   "overrides": [
     {
-      "includes": ["assets/common.js", "assets/ski.js", "assets/basemap.js"],
+      "includes": ["assets/common.js", "assets/countries.js", "assets/ski.js", "assets/basemap.js"],
       "linter": {
         "rules": {
           "correctness": {

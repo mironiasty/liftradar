@@ -142,11 +142,11 @@ function statusNote(r) {
 /** @param {Resort} r */
 function header(r) {
   const status = statusKey(r);
-  // The region and country open the list of all resorts filtered to them.
+  // The region opens the list of all resorts filtered to it, the country its own page.
   const filterLink = (text, params) => el("a", { class: "where", href: `./?${new URLSearchParams(params)}` }, text);
   const where = [
     r.region ? filterLink(r.region, { country: r.country, region: r.region }) : null,
-    filterLink(countryName(r.country), { country: r.country }),
+    el("a", { class: "where", href: countryPagePath(r.country) }, countryName(r.country)),
   ]
     .filter((link) => link !== null)
     .flatMap((link, i) => (i ? [" · ", link] : [link]));

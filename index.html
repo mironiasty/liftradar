@@ -104,6 +104,7 @@
     <select id="sort" class="mobile-only" aria-label="Sort by"></select>
     <div class="chips" id="status" role="group" aria-label="Status"></div>
     <span class="muted" id="count" aria-live="polite"></span>
+    <a id="country-page" href="./" hidden></a>
   </div>
   <div class="table">
   <table>
@@ -122,6 +123,25 @@
   <p class="credit" id="fnugg-credit" data-i18n>Norwegian snow and lift data provided by <a href="https://fnugg.no">fnugg</a>.</p>
   <p class="empty" id="empty" hidden><span data-i18n>No resorts match.</span> <button type="button" id="reset" class="chip" data-i18n>Show all</button></p>
   </div>
+  <nav class="countries" aria-label="Countries">
+    <h2 data-i18n>Ski resorts by country</h2>
+    <ul>
+      <li><a class="country" href="/andorra"><span class="flag" data-country="ad" aria-hidden="true"></span>Andorra</a></li>
+      <li><a class="country" href="/austria"><span class="flag" data-country="at" aria-hidden="true"></span>Austria</a></li>
+      <li><a class="country" href="/bulgaria"><span class="flag" data-country="bg" aria-hidden="true"></span>Bulgaria</a></li>
+      <li><a class="country" href="/czechia"><span class="flag" data-country="cz" aria-hidden="true"></span>Czechia</a></li>
+      <li><a class="country" href="/finland"><span class="flag" data-country="fi" aria-hidden="true"></span>Finland</a></li>
+      <li><a class="country" href="/france"><span class="flag" data-country="fr" aria-hidden="true"></span>France</a></li>
+      <li><a class="country" href="/germany"><span class="flag" data-country="de" aria-hidden="true"></span>Germany</a></li>
+      <li><a class="country" href="/italy"><span class="flag" data-country="it" aria-hidden="true"></span>Italy</a></li>
+      <li><a class="country" href="/norway"><span class="flag" data-country="no" aria-hidden="true"></span>Norway</a></li>
+      <li><a class="country" href="/poland"><span class="flag" data-country="pl" aria-hidden="true"></span>Poland</a></li>
+      <li><a class="country" href="/slovakia"><span class="flag" data-country="sk" aria-hidden="true"></span>Slovakia</a></li>
+      <li><a class="country" href="/slovenia"><span class="flag" data-country="si" aria-hidden="true"></span>Slovenia</a></li>
+      <li><a class="country" href="/spain"><span class="flag" data-country="es" aria-hidden="true"></span>Spain</a></li>
+      <li><a class="country" href="/switzerland"><span class="flag" data-country="ch" aria-hidden="true"></span>Switzerland</a></li>
+    </ul>
+  </nav>
   <details class="notes">
     <summary data-i18n>How to read the numbers</summary>
     <ul class="muted">
@@ -180,6 +200,7 @@
       </div>
   </footer>
 </main>
+<script src="/assets/countries.js"></script>
 <script src="/assets/common.js"></script>
 <script src="/assets/table.js"></script>
 </body>

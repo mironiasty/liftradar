@@ -876,3 +876,36 @@ button.fav:focus-visible {
 .flag[data-country="sk"] {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h9v2H0z'/%3E%3Cpath fill='%230b4ea2' d='M0 2h9v2H0z'/%3E%3Cpath fill='%23ee1c25' d='M0 4h9v2H0z'/%3E%3Cpath fill='%23ee1c25' stroke='%23fff' stroke-width='.2' d='M1.6 1.3h2.2v1.9q0 1.2-1.1 1.6q-1.1-.4-1.1-1.6z'/%3E%3Cpath fill='%23fff' d='M2.55 1.6h.3v2.4h-.3zM2.25 2h.9v.25h-.9zM2.05 2.55h1.3v.25h-1.3z'/%3E%3Cpath fill='%230b4ea2' d='M1.8 4q.45-.5.9-.2q.45-.3.9.2q-.35.5-.9.75q-.55-.25-.9-.75z'/%3E%3C/svg%3E");
 }
+
+/* Each country's page (the home page under the table, a country's page under it): a flag and its name each. */
+.countries {
+  margin: 28px 0 8px;
+}
+.countries h2 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+.countries ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.countries a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  color: var(--fg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.countries a:hover {
+  text-decoration: underline;
+}

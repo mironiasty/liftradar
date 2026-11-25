@@ -324,6 +324,15 @@ summary:focus-visible {
 #count {
   margin-left: auto;
 }
+/* The chosen country's page, after the count. */
+#country-page {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+#country-page:hover {
+  text-decoration: underline;
+}
 /* When the data was fetched (the chip is in style.css), over the search so the country and region fit beside it. */
 .updated-row {
   display: flex;

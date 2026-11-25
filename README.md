@@ -38,6 +38,7 @@ Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany,
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
   its history), `area.html?g=<group>` (a linked ski area or a pass from `json/groups.json`: its totals, its
   resorts ranked and on the map, its lifts and slopes, and its season so far, summed from the members' files),
+  each country's page (`/austria`, `/de/oesterreich`…, a country at a glance; see [Country pages](#country-pages)),
   `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
   current data), `about.html` (what the values mean, and their caveats) and `privacy.html` (the privacy policy
   of the site and the phone apps, the URL the app stores ask for: keep it in step with what they download), plain
@@ -274,6 +275,26 @@ translation always stay there.
 Another language needs its own `i18n/<language>.json`, an entry in `LANGUAGES` in `assets/lang.js`, a link in
 the language menu of each page's header, its `hreflang` alternates, and a line in `.gitignore`; `<html lang>` then
 sets the dates, numbers and country names.
+
+## Country pages
+
+Each country has a page of its own in each language, at an address in that language: `/austria`, `/de/oesterreich`,
+`/fr/autriche`, `/it/austria`, `/pl/austria` (the slugs are in `assets/countries.js`, which the pages load to link to
+them and the scripts read: a new country needs its line there). `scripts/countries.mjs` builds them on deploy, after
+the translations, from `scripts/country.html` (the template, translated as the other pages) and `json/index.json`:
+each with its title and description (the country's name, how many resorts, how many open), its canonical address,
+language alternates and `x-default` (before `lang.js`, which sends a visitor to their language's version by them), its
+breadcrumbs as JSON-LD, the header's Table, Map and Stats links filtered to the country, and, for search engines, the
+heading, that sentence, the records and numbers (with the ski tiles' elevations when the build has them), every resort
+by region as plain links, and the other countries' pages. `assets/country.js` then draws the page:
+how much is open, a resort of the day (one of the open resorts, else of all, picked by a hash of the day in Vienna
+and the country), the records (the biggest ski area, the most lifts, the highest lift and the biggest vertical drop,
+the last two from the ski tiles' `elevations.json`), the country in numbers (totals and medians of the resorts we
+follow), the regions with their resorts, the linked areas and passes from
+`json/groups.json`, a map and the season so far from `json/stats.json`. `npm run dev` builds a page as it's asked for;
+`npm run check` builds them from made-up resorts, to validate them and count their strings. The sitemap lists them,
+and the table, the resort and area pages and the home page's list of countries link to them. A link to
+`/<English slug>` in a page goes to the country's page in the page's language once translated (`translate.mjs`).
 
 ## MCP
 

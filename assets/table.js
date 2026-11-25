@@ -10,6 +10,8 @@ const fnuggCreditLine = document.getElementById("fnugg-credit");
 const regionSelect = document.getElementById("region");
 const statusGroup = document.getElementById("status");
 const count = document.getElementById("count");
+// The chosen country's own page (country.html), linked beside the count.
+const countryPage = document.getElementById("country-page");
 const empty = document.getElementById("empty");
 const favoritesSection = document.getElementById("favorites");
 const favoriteCards = document.getElementById("fav-cards");
@@ -176,6 +178,11 @@ function filter() {
   empty.hidden = shown > 0;
   // fnugg's credit, with its data: all countries, or Norway.
   fnuggCreditLine.hidden = Boolean(country) && country !== "no";
+  countryPage.hidden = !country;
+  if (country) {
+    countryPage.href = countryPagePath(country);
+    countryPage.textContent = t("{country} at a glance →", { country: countryName(country) });
+  }
   saveState();
 }
 

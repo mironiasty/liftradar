@@ -76,7 +76,9 @@ optional("The 3D engine", () => node("engine.mjs", out));
 
 // Before the asset links are versioned: these pages have the same links.
 node("translate.mjs", out);
-// After the translated pages and the ski tiles: it lists them (README "Sitemap").
+// Each country's page in each language, from the data's index (README "Country pages").
+node("countries.mjs", out);
+// After the translated pages, the country pages and the ski tiles: it lists them (README "Sitemap").
 node("sitemap.mjs", out);
 
 // Cloudflare redirects about.html to /about (307), and search engines report every page reached through one: the
