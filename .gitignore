@@ -14,3 +14,7 @@ node_modules/
 .wrangler/
 # The built site (scripts/build.mjs)
 /_site
+# Claude Code, per machine: other sessions' worktrees, dev server configs, local settings
+/.claude/worktrees/
+/.claude/launch.json
+/.claude/settings.local.json
