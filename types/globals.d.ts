@@ -25,6 +25,10 @@ type SlopeCounts = import("./resort").SlopeCounts;
 type ResortDetails = import("./resort-details").ExperimentalEveryLiftAndSlopeOfOneResort;
 type DetailsLift = import("./resort-details").DetailsLift;
 type DetailsSlope = import("./resort-details").DetailsSlope;
+// json/<country>/<id>.weather.json (experimental): Open-Meteo's forecast at the resort's bottom and top.
+type ResortWeather = import("./resort-weather").ExperimentalTheWeatherForecastForOneResort;
+type WeatherPoint = import("./resort-weather").WeatherPoint;
+type WeatherDay = import("./resort-weather").WeatherDay;
 // json/groups.json.
 type Groups = import("./groups").GroupsOfResortsListedSeparately;
 // history/<country>/<id>.json.
