@@ -18,6 +18,12 @@
   Cache-Control: public, max-age=604800
 /ski/v1/meta.json
   Cache-Control: public, max-age=3600
+# The pages' scripts and styles: their links carry ?v=<commit> (pages.yml, which fails on a link without it),
+# so a new version has a new address. The rest of /assets/ (ski-style.json, the images) keeps the default.
+/assets/*.js
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
 # The 3D engine: each version at its own address (/engine/<tag>/), never changed once released.
 /engine/*
   Cache-Control: public, max-age=31536000, immutable

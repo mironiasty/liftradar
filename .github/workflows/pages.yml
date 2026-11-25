@@ -95,12 +95,16 @@ jobs:
           mv index.min.json _site/json/index.json
 
       # Without a version in the URL, a new page can run with the previous version's
-      # scripts from a cache on the way.
+      # scripts from a cache on the way. _headers caches them for a year, so a link left
+      # without one (a name the pattern doesn't match) would keep a file frozen: fail instead.
       - name: Version the asset links
         run: |
           version=$(git -C site rev-parse --short HEAD)
           sed -i -E "s#(assets/[a-z]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html _site/*/*.html
           grep -o 'assets/[^"]*' _site/*.html _site/*/*.html
+          if grep -nE 'assets/[^"?]+\.(js|css)"' _site/*.html _site/*/*.html; then
+            echo "Asset links without ?v= (above): widen the pattern"; exit 1
+          fi
 
       # An assets-only Worker (wrangler.jsonc), uploaded from here: the site is combined
       # from two branches, so Cloudflare's own Git builds can't make it.
