@@ -10,8 +10,8 @@
   },
   "website": "https://pratonevoso.com/",
   "linked_area": "mondole-ski",
-  "status": "no_report",
-  "fetched_at": "2026-11-25T08:40:40.498481+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-25T13:40:42.984427+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,9 +26,9 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 14,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 35
   },
   "lifts_by_type": {
@@ -38,34 +38,39 @@
     },
     "chairlift": {
       "open": 0,
-      "total": 2
+      "total": 1
     },
     "gondola": {
+      "open": 0,
+      "total": 1
+    },
+    "other": {
       "open": 0,
       "total": 1
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-12T16:07:00+02:00",
+  "lifts_updated_at": "2026-11-14T14:38:00+01:00",
+  "details": "json/it/prato-nevoso.details.json",
   "avalanche": null,
   "sources": [
     "https://www.pratonevoso.com/inverno/live/aperture/",

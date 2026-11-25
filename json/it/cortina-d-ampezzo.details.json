@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-25T08:40:40.497323+01:00",
-  "updated_at": "2026-11-24T16:00:15.095887+01:00",
+  "fetched_at": "2026-11-25T13:40:42.982877+01:00",
+  "updated_at": "2026-11-25T10:00:08.459943+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
     {
@@ -13,7 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": 1360,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -25,7 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1360,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -517,16 +517,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215848",
-      "ref": null,
-      "name": "Cacciatori",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 545,
-      "map_length_m": 1430
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_30683525",
       "ref": null,
       "name": "Cacciatori",
@@ -534,6 +524,16 @@
       "colour": null,
       "status": "closed",
       "length_m": 680,
+      "map_length_m": 1430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215848",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 545,
       "map_length_m": null
     },
     {
@@ -707,7 +707,7 @@
       "map_length_m": 670
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215872",
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -717,7 +717,7 @@
       "map_length_m": 660
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "id": "urn:odhactivitypoi:dss:slope:1_215872",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -1034,7 +1034,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 656,
-      "map_length_m": 1470
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215911",
@@ -1044,7 +1044,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 656,
-      "map_length_m": null
+      "map_length_m": 1470
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215912",
@@ -1274,7 +1274,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 871,
-      "map_length_m": 680
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215930",
@@ -1284,7 +1284,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 871,
-      "map_length_m": null
+      "map_length_m": 680
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

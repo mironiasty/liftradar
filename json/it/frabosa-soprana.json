@@ -10,8 +10,8 @@
   },
   "website": "https://frabosaski.it/",
   "linked_area": "mondole-ski",
-  "status": "no_report",
-  "fetched_at": "2026-11-25T08:40:40.498496+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-25T13:40:42.984457+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,12 +23,12 @@
   },
   "lifts": {
     "open": 0,
-    "total": 8
+    "total": 7
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 13,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 20
   },
   "lifts_by_type": {
@@ -42,30 +42,31 @@
     },
     "drag_lift": {
       "open": 0,
-      "total": 2
+      "total": 1
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
-      "total": 6,
-      "open_km": null,
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
-      "total": 6,
-      "open_km": null,
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-12T16:07:00+02:00",
+  "lifts_updated_at": "2026-11-14T14:38:00+01:00",
+  "details": "json/it/frabosa-soprana.details.json",
   "avalanche": null,
   "sources": [
     "https://www.pratonevoso.com/inverno/live/aperture/",

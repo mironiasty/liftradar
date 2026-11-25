@@ -10,13 +10,13 @@
   },
   "website": "https://www.matterhornparadise.ch",
   "linked_area": "matterhorn-ski-paradise",
-  "status": "closed",
-  "fetched_at": "2026-11-25T08:40:40.496471+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-25T13:40:42.980121+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 63,
+    "valley_cm": 5,
+    "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -39,13 +39,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 8,
     "total": 36
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 84,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 200
   },
   "lifts_by_type": {
@@ -66,11 +66,11 @@
       "total": 2
     },
     "gondola": {
-      "open": 0,
+      "open": 4,
       "total": 9
     },
     "other": {
-      "open": 0,
+      "open": 4,
       "total": 4
     }
   },
@@ -78,13 +78,13 @@
     "easy": {
       "open": 0,
       "total": 12,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 3,
       "total": 48,
-      "open_km": 0.0,
+      "open_km": 4.0,
       "total_km": 99
     },
     "difficult": {
@@ -96,11 +96,11 @@
     "ski_route": {
       "open": 0,
       "total": 16,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T08:40:00+01:00",
+  "lifts_updated_at": "2026-11-25T13:40:00+01:00",
   "details": "json/ch/zermatt.details.json",
   "avalanche": {
     "region_id": "CH-4222",

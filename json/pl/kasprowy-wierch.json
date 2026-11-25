@@ -10,7 +10,7 @@
   },
   "website": "https://www.pkl.pl",
   "status": "closed",
-  "fetched_at": "2026-11-25T08:40:40.500665+01:00",
+  "fetched_at": "2026-11-25T13:40:42.987570+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -56,10 +56,38 @@
   },
   "lifts_updated_at": null,
   "details": "json/pl/kasprowy-wierch.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "PL-12",
+    "region": "Polskie Tatry",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": 1700,
+        "upper_bound": null,
+        "period": "all_day"
+      },
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 1700,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab",
+      "new_snow"
+    ],
+    "published_at": "2026-11-24T17:15:53+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T20:00:00+01:00"
+  },
   "sources": [
     "https://www.pkl.pl/koleje-i-wyciagi.html",
-    "https://www.pkl.pl/trasy-narciarskie.html"
+    "https://www.pkl.pl/trasy-narciarskie.html",
+    "https://lawiny.topr.pl"
   ],
   "source_details": {
     "conditions": [
@@ -69,6 +97,10 @@
       },
       {
         "url": "https://www.pkl.pl/trasy-narciarskie.html",
+        "attribution_required": null
+      },
+      {
+        "url": "https://lawiny.topr.pl",
         "attribution_required": null
       }
     ],

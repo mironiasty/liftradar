@@ -9,9 +9,9 @@
     "lon": -5.7873
   },
   "website": "https://www.valgrande-pajares.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-25T08:40:40.510242+01:00",
-  "status_from": "2026-11-22T08:40:36.263231+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-25T13:40:42.999938+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 7
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 38,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 23
   },
   "lifts_by_type": {
@@ -50,32 +50,38 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 20,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 8
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 15,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 13
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 3
     }
   },
   "lifts_updated_at": null,
+  "details": "json/es/valgrande-pajares.details.json",
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.valgrande-pajares.com/parte-de-nieve-meteo/"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.valgrande-pajares.com/parte-de-nieve-meteo/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
-  "errors": [
-    "status: ConnectError: [Errno -3] Temporary failure in name resolution"
-  ]
+  "errors": []
 }

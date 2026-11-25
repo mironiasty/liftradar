@@ -10,7 +10,7 @@
   },
   "website": "https://nosal.pl",
   "status": "no_report",
-  "fetched_at": "2026-11-25T08:40:40.501046+01:00",
+  "fetched_at": "2026-11-25T13:40:42.988201+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,12 +33,45 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "PL-12",
+    "region": "Polskie Tatry",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": 1700,
+        "upper_bound": null,
+        "period": "all_day"
+      },
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 1700,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab",
+      "new_snow"
+    ],
+    "published_at": "2026-11-24T17:15:53+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T20:00:00+01:00"
+  },
   "sources": [
-    "https://www.skiresort.com/en/ski-resort/nosal-bystre/"
+    "https://www.skiresort.com/en/ski-resort/nosal-bystre/",
+    "https://lawiny.topr.pl"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://lawiny.topr.pl",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/en/ski-resort/nosal-bystre/",

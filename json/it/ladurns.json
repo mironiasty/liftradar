@@ -11,29 +11,29 @@
   "website": "https://www.ladurns.it",
   "ski_region": "suedtirol-skiarena",
   "status": "closed",
-  "fetched_at": "2026-11-25T08:40:40.497970+01:00",
+  "fetched_at": "2026-11-25T13:40:42.983783+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-25",
     "condition": null,
     "stations": [
       {
         "name": "Montain Station Ladurns",
         "elevation_m": null,
-        "depth_cm": null,
-        "fresh_cm": null,
-        "temperature_c": null,
+        "depth_cm": 20,
+        "fresh_cm": 5,
+        "temperature_c": -3.0,
         "condition": null
       },
       {
         "name": "Vally Station Ladurns",
         "elevation_m": null,
-        "depth_cm": null,
-        "fresh_cm": null,
-        "temperature_c": null,
+        "depth_cm": 5,
+        "fresh_cm": 5,
+        "temperature_c": -1.0,
         "condition": null
       }
     ]
@@ -50,7 +50,7 @@
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-25T00:20:54.813000+01:00",
+  "lifts_updated_at": "2026-11-25T09:23:33.470000+01:00",
   "avalanche": null,
   "sources": [
     "https://opendatahub.com",

@@ -2,11 +2,227 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "frabosa-soprana",
   "country": "it",
-  "fetched_at": "2026-11-25T08:40:40.498496+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-25T13:40:42.984457+01:00",
+  "updated_at": "2026-11-14T14:38:00+01:00",
+  "source": "https://www.pratonevoso.com/inverno/live/aperture/",
+  "lifts": [
+    {
+      "id": "lift-mongrosso-baby",
+      "ref": null,
+      "name": "Mongrosso Baby",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mongrosso-burrino",
+      "ref": null,
+      "name": "Mongrosso Burrino",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-burrino-malanotte",
+      "ref": null,
+      "name": "Burrino Malanotte",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-prel-malanotte",
+      "ref": null,
+      "name": "Prel Malanotte",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-moro",
+      "ref": null,
+      "name": "Moro",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-paskireaux-doppia",
+      "ref": null,
+      "name": "Paskireaux Doppia",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-campetto-baby",
+      "ref": null,
+      "name": "Campetto Baby",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-baby-frabolandia",
+      "ref": null,
+      "name": "Baby Frabolandia",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-malanotte-bassa",
+      "ref": null,
+      "name": "Malanotte Bassa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-malanotte-alta",
+      "ref": null,
+      "name": "Malanotte Alta",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-muro-malanotte",
+      "ref": null,
+      "name": "Muro Malanotte",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-pian-d-le-pre",
+      "ref": null,
+      "name": "Pian d le Pre",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-muro-bauzano",
+      "ref": null,
+      "name": "Muro Bauzano",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-chiotti",
+      "ref": null,
+      "name": "Chiotti",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-monte-moro-plateau",
+      "ref": null,
+      "name": "Monte Moro Plateau",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lusera",
+      "ref": null,
+      "name": "Lusera",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-passau",
+      "ref": null,
+      "name": "Passau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-paskireaux",
+      "ref": null,
+      "name": "Paskireaux",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campetto",
+      "ref": null,
+      "name": "Campetto",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-pian-brun",
+      "ref": null,
+      "name": "Pian Brun",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 44.28445,
     "lon": 7.80685,

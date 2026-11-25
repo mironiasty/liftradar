@@ -9,13 +9,13 @@
     "lon": 7.3947
   },
   "website": "https://www.anzere.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-25T08:40:40.495107+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-25T13:40:42.978165+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 158,
+    "valley_cm": 37,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Donin du Jour (SLF)",
         "elevation_m": 2385,
         "depth_cm": 158,
-        "fresh_cm": null,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       },
@@ -42,9 +42,9 @@
     "total": 12
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 35,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 58
   },
   "lifts_by_type": {
@@ -67,38 +67,37 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 13,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 1
     }
   },
   "lifts_updated_at": "2026-11-11T09:14:00+01:00",
-  "details": "json/ch/anzere.details.json",
   "avalanche": {
     "region_id": "CH-4121",
     "region": "Montana",

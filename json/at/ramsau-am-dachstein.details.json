@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ramsau-am-dachstein",
   "country": "at",
-  "fetched_at": "2026-11-25T08:40:40.491155+01:00",
+  "fetched_at": "2026-11-25T13:40:42.971444+01:00",
   "updated_at": null,
   "source": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/rittisberg-ramsau-am-dachstein_resort_6320",
   "lifts": [
@@ -139,6 +139,16 @@
       "ref": null,
       "name": "Kalilift",
       "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-rittisbahn-3",
+      "ref": null,
+      "name": "Rittisbahn (3)",
+      "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
       "length_m": null,

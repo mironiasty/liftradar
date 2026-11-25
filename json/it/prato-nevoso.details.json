@@ -2,11 +2,213 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "prato-nevoso",
   "country": "it",
-  "fetched_at": "2026-11-25T08:40:40.498481+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-25T13:40:42.984427+01:00",
+  "updated_at": "2026-11-14T14:38:00+01:00",
+  "source": "https://www.pratonevoso.com/inverno/live/aperture/",
+  "lifts": [
+    {
+      "id": "lift-traski-1",
+      "ref": null,
+      "name": "Traski 1",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-traski-2",
+      "ref": null,
+      "name": "Traski 2",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-blu-8",
+      "ref": null,
+      "name": "Blu 8",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-caudano",
+      "ref": null,
+      "name": "Caudano",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-la-rossa-panoramica",
+      "ref": null,
+      "name": "La Rossa Panoramica",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-prel",
+      "ref": null,
+      "name": "Prel",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-plateau",
+      "ref": null,
+      "name": "Plateau",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-arfel",
+      "ref": null,
+      "name": "Arfel",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-caudano",
+      "ref": null,
+      "name": "Caudano",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tre-bis",
+      "ref": null,
+      "name": "Tre bis",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-training",
+      "ref": null,
+      "name": "Training",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-genzianella",
+      "ref": null,
+      "name": "Genzianella",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-azzurra",
+      "ref": null,
+      "name": "Azzurra",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-easy",
+      "ref": null,
+      "name": "Easy",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-balma",
+      "ref": null,
+      "name": "Balma",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-ontano",
+      "ref": null,
+      "name": "Ontano",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-seirasso",
+      "ref": null,
+      "name": "Seirasso",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-variante-seirasso",
+      "ref": null,
+      "name": "Variante Seirasso",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-alpet-bis",
+      "ref": null,
+      "name": "Alpet bis",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 44.25551,
     "lon": 7.78044,

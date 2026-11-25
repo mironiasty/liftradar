@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "silvretta-montafon",
   "country": "at",
-  "fetched_at": "2026-11-25T08:40:40.490515+01:00",
-  "updated_at": "2026-11-25T06:38:47+01:00",
+  "fetched_at": "2026-11-25T13:40:42.970513+01:00",
+  "updated_at": "2026-11-25T13:13:15+01:00",
   "source": "https://winter.intermaps.com/silvretta_montafon?lang=en",
   "lifts": [
     {
@@ -11,7 +11,7 @@
       "ref": null,
       "name": "Valisera Bahn I",
       "type": "gondola",
-      "status": "closed",
+      "status": "preparation",
       "length_m": 2128,
       "map_length_m": 2190,
       "capacity_per_hour": 2800,
@@ -23,7 +23,7 @@
       "ref": null,
       "name": "Valisera Bahn II",
       "type": "gondola",
-      "status": "closed",
+      "status": "preparation",
       "length_m": 1964,
       "map_length_m": 1990,
       "capacity_per_hour": 2800,
@@ -311,7 +311,7 @@
       "ref": null,
       "name": "Madrisella Bahn",
       "type": "chairlift",
-      "status": "closed",
+      "status": "preparation",
       "length_m": 1530,
       "map_length_m": 1560,
       "capacity_per_hour": 3000,
@@ -335,7 +335,7 @@
       "ref": null,
       "name": "Sonnen Bahn",
       "type": "chairlift",
-      "status": "closed",
+      "status": "preparation",
       "length_m": 590,
       "map_length_m": 620,
       "capacity_per_hour": 3000,
@@ -514,7 +514,7 @@
       "name": "40",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "preparation",
       "length_m": 3505,
       "map_length_m": 10400
     },
@@ -604,7 +604,7 @@
       "name": "40",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "preparation",
       "length_m": 2934,
       "map_length_m": 50
     },
@@ -634,7 +634,7 @@
       "name": "34",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "preparation",
       "length_m": 995,
       "map_length_m": 660
     },
@@ -1467,6 +1467,26 @@
       "status": "closed",
       "length_m": 30,
       "map_length_m": 940
+    },
+    {
+      "id": "R_143391",
+      "ref": "19",
+      "name": "19",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 980,
+      "map_length_m": null
+    },
+    {
+      "id": "R_143608",
+      "ref": "R14",
+      "name": "R14",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "unknown",
+      "length_m": 590,
+      "map_length_m": null
     }
   ],
   "bottom": {
