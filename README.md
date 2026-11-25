@@ -422,7 +422,8 @@ its value, the theme's colours first, then adds the layers under the base map's 
 properties: the resorts' outlines and their links, and the tiles' runs, lifts and lift stations with their fields as
 the tiles have them, plus `state`, the status from the details file (`unknown` for the others of a resort with
 statuses). Two values come from the client as MapLibre's global state: `picked`, the resort hovered or tapped,
-and `highlight`, the resort of a resort page or 3D view (its lines strong, the others faded). `minZoom` is
+and `highlight`, the resort of a resort page or 3D view (its lines strong, the others faded), or the resorts of a ski
+area's page as `|at/a|at/b|` (each found in it, so a single key works as before). `minZoom` is
 where the pistes and lifts start; the site's resort page draws them from further out.
 
 The apps put their own roads under the first layer whose id starts with `ski-` (and their town names between the
