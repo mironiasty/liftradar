@@ -297,7 +297,7 @@ function median(values) {
 }
 
 // The country in numbers, from the resorts we follow: their slopes and lifts in all, the typical resort (the
-// median), its top station, and how many reach 2,000 m or have under 10 km of slopes.
+// median), its top station, and how many reach about that height or have under 10 km of slopes.
 /** @param {IndexResort[]} resorts @param {Map<string, [number, number]>} elevations */
 function numbers(resorts, elevations) {
   const s = totals(resorts);
@@ -305,6 +305,9 @@ function numbers(resorts, elevations) {
   const lifts = median(resorts.map((r) => r.lifts?.total));
   const tops = resorts.map((r) => elevations.get(resortKey(r))?.[1]);
   const top = median(tops);
+  // The height counted against: the typical top station to the nearest 500 m, so that about half the resorts
+  // reach it, in Finland (500 m) as in Switzerland (2,500 m).
+  const reach = Math.max(500, Math.round((top ?? 0) / 500) * 500);
   const sized = resorts.filter((r) => r.slopes?.total_km);
   /** @type {[string, string | null, string | null][]} */
   const rows = [
@@ -317,8 +320,8 @@ function numbers(resorts, elevations) {
     ],
     [t("Typical top station"), top ? `${number.format(top)} m` : null, null],
     [
-      t("Resorts reaching 2,000 m"),
-      top ? String(tops.filter((v) => present(v) && v >= 2000).length) : null,
+      t("Resorts reaching {m} m", { m: number.format(reach) }),
+      top ? String(tops.filter((v) => present(v) && v >= reach).length) : null,
       top ? t("of {n}", { n: tops.filter(present).length }) : null,
     ],
     [
