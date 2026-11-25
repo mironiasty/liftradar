@@ -15,7 +15,7 @@ import { createServer } from "node:http";
 import { dirname, extname, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import { countryPageFor, countryPaths } from "./countries.mjs";
+import { countryPageFor, countryPaths, readElevations } from "./countries.mjs";
 import { languages, PAGES, translatePage } from "./translate.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -69,7 +69,7 @@ function find(path) {
   // A country's page (/austria, /de/oesterreich), built from the data's index as the build does.
   if (countryPaths().some((p) => p.path === path.replace(/\.html$/, ""))) {
     const index = JSON.parse(readFileSync(join(data, "json", "index.json"), "utf8"));
-    const html = countryPageFor(path, index);
+    const html = countryPageFor(path, index, readElevations(data));
     return html && { body: html, type: TYPES[".html"] };
   }
   const language = languages().find((l) => l.language === top);

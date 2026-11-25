@@ -116,7 +116,7 @@ function header(code, resorts, index) {
       "p",
       { class: "intro" },
       t(
-        "{country}: {n} ski resorts, {open} of them open today. Open lifts and slopes, snow depth and avalanche danger, region by region, updated twice a day.",
+        "{country}: {n} ski resorts, {open} of them open today. Open lifts and slopes, the records and every resort, region by region, updated twice a day.",
         { country: countryName(code), n: resorts.length, open: resorts.filter(isOpen).length },
       ),
     ),
@@ -125,22 +125,19 @@ function header(code, resorts, index) {
       { class: "facts" },
       el("span", {}, t("{n} resorts", { n: resorts.length })),
       regions ? el("span", {}, t("{n} regions", { n: regions })) : "",
-      el("a", { class: "where", href: `./?${new URLSearchParams({ country: code })}` }, t("In the table")),
-      el("a", { class: "where", href: `stats.html?${new URLSearchParams({ country: code })}` }, t("Stats")),
       updatedPill(index),
     ),
   );
 }
 
+// How much is open: resorts and km of slopes, larger, then lifts and the regions with a resort open.
 /** @param {IndexResort[]} resorts */
 function tiles(resorts) {
   const s = totals(resorts);
   const share = (/** @type {number} */ open, /** @type {number} */ total) =>
     total ? t("{share}% open", { share: Math.round((100 * open) / total) }) : null;
-  const snow = highest(resorts, (r) => r.snow.mountain_cm, true);
-  const fresh = highest(resorts, (r) => r.snow.fresh_cm, true);
-  const danger = resorts.reduce((most, r) => Math.max(most, r.avalanche?.danger_level ?? 0), 0);
-  const dangerOf = resorts.find((r) => r.avalanche?.danger_level === danger)?.avalanche;
+  const regions = byRegion(resorts).filter(([name]) => name);
+  const regionsOpen = regions.filter(([, members]) => members.some(isOpen)).length;
   return el(
     "div",
     { class: "summary" },
@@ -166,30 +163,9 @@ function tiles(resorts) {
       "div",
       { class: "tiles" },
       s.km ? tile(t("Lifts"), pair(s.liftsOpen, s.lifts), meter(s.liftsOpen, s.lifts)) : "",
-      tile(
-        t("Mountain"),
-        snow ? [String(snow.v), el("small", {}, " cm")] : "–",
-        snow ? el("div", { class: "note" }, resortLink(snow.r)) : null,
-      ),
-      tile(
-        t("Fresh snow"),
-        fresh ? el("span", { class: "fresh" }, `+${fresh.v}`, el("small", {}, " cm")) : "–",
-        fresh ? el("div", { class: "note" }, resortLink(fresh.r)) : null,
-      ),
-      tile(
-        t("Avalanche danger"),
-        danger && dangerOf?.danger
-          ? [
-              el("span", { class: `badge lvl${danger}` }, String(danger)),
-              el(
-                "span",
-                { class: "danger", style: `--chars:${dangerName(dangerOf.danger).length}` },
-                dangerName(dangerOf.danger),
-              ),
-            ]
-          : "–",
-        danger ? t("highest in the country") : null,
-      ),
+      regions.length > 1
+        ? tile(t("Regions with a resort open"), pair(regionsOpen, regions.length), meter(regionsOpen, regions.length))
+        : "",
     ),
   );
 }
@@ -207,6 +183,19 @@ async function loadElevations() {
   } catch {
     return new Map();
   }
+}
+
+// A resort's status and how much of its lifts and slopes is open (without its snow, as memberSummary has it).
+/** @param {IndexResort} r */
+function openLine(r) {
+  const open = isOpen(r);
+  const { lifts, slopes } = r;
+  const parts = [capitalized(STATUS_LABELS[statusKey(r)])];
+  if (lifts?.total) parts.push(t("{n} lifts", { n: open ? pair(lifts.open, lifts.total) : lifts.total }));
+  if (slopes?.total_km) {
+    parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
+  }
+  return parts.join(" · ");
 }
 
 // FNV-1a: the same day and country always pick the same resort, anywhere.
@@ -252,7 +241,7 @@ function resortOfTheDay(code, resorts, elevations) {
         {},
         el("a", { class: "pick-name", href: resortPage(r) }, r.name),
         el("div", { class: "meta" }, r.region ?? ""),
-        memberSummary(r),
+        el("div", { class: "meta numbers" }, openLine(r)),
       ),
     ),
     facts.length
@@ -262,15 +251,7 @@ function resortOfTheDay(code, resorts, elevations) {
           ...facts.map(([title, value]) => el("div", {}, el("dt", {}, title), el("dd", {}, value))),
         )
       : "",
-    el(
-      "p",
-      { class: "meta" },
-      open.length
-        ? t("A different open resort every day, picked by the date.")
-        : t("No resort is open yet: a different one every day until they are."),
-      " ",
-      heights ? el("a", { href: `3d.html?r=${key}` }, t("See it in 3D →")) : "",
-    ),
+    heights ? el("a", { class: "more", href: `3d.html?r=${key}` }, t("See it in 3D →")) : "",
   );
 }
 
@@ -285,9 +266,6 @@ function records(resorts, elevations) {
     const [bottom, high] = [height(r, 0), height(r, 1)];
     return present(bottom) && present(high) ? high - bottom : null;
   });
-  const sizes = resorts.map((r) => r.slopes?.total_km).filter((v) => present(v) && v > 0);
-  sizes.sort((a, b) => (a ?? 0) - (b ?? 0));
-  const median = sizes.length ? (sizes[Math.floor(sizes.length / 2)] ?? null) : null;
   /** @type {[string, { v: number, r: IndexResort } | null, (v: number) => string][]} */
   const rows = [
     [t("Biggest ski area"), km, (v) => t("{km} km of slopes", { km: number.format(v) })],
@@ -308,14 +286,69 @@ function records(resorts, elevations) {
       );
     });
   if (!items.length) return null;
+  return el("section", { class: "card records" }, el("h2", {}, t("Records")), el("ul", {}, ...items));
+}
+
+// The middle value of those known (the upper of the two middle ones), or null.
+/** @param {(number | null | undefined)[]} values */
+function median(values) {
+  const known = /** @type {number[]} */ (values.filter((v) => present(v) && v > 0)).sort((a, b) => a - b);
+  return known.length ? known[Math.floor(known.length / 2)] : null;
+}
+
+// The country in numbers, from the resorts we follow: their slopes and lifts in all, the typical resort (the
+// median), its top station, and how many reach 2,000 m or have under 10 km of slopes.
+/** @param {IndexResort[]} resorts @param {Map<string, [number, number]>} elevations */
+function numbers(resorts, elevations) {
+  const s = totals(resorts);
+  const km = median(resorts.map((r) => r.slopes?.total_km));
+  const lifts = median(resorts.map((r) => r.lifts?.total));
+  const tops = resorts.map((r) => elevations.get(resortKey(r))?.[1]);
+  const top = median(tops);
+  const sized = resorts.filter((r) => r.slopes?.total_km);
+  /** @type {[string, string | null, string | null][]} */
+  const rows = [
+    [t("Slopes in all"), s.km ? `${number.format(s.km)} km` : null, null],
+    [t("Lifts in all"), s.lifts ? number.format(s.lifts) : null, null],
+    [
+      t("Typical resort"),
+      km ? t("{km} km of slopes", { km: number.format(km) }) : null,
+      lifts ? t("{n} lifts", { n: lifts }) : null,
+    ],
+    [t("Typical top station"), top ? `${number.format(top)} m` : null, null],
+    [
+      t("Resorts reaching 2,000 m"),
+      top ? String(tops.filter((v) => present(v) && v >= 2000).length) : null,
+      top ? t("of {n}", { n: tops.filter(present).length }) : null,
+    ],
+    [
+      t("Resorts under 10 km of slopes"),
+      sized.length ? String(sized.filter((r) => (r.slopes?.total_km ?? 0) < 10).length) : null,
+      sized.length ? t("of {n}", { n: sized.length }) : null,
+    ],
+  ];
+  const items = rows
+    .filter(([, value]) => value)
+    .map(([title, value, note]) =>
+      el(
+        "li",
+        {},
+        el("span", { class: "label" }, title),
+        el("span", { class: "value" }, value ?? ""),
+        note ? el("span", { class: "who" }, note) : "",
+      ),
+    );
+  if (!items.length) return null;
   return el(
     "section",
     { class: "card records" },
-    el("h2", {}, t("Records")),
+    el("h2", {}, t("In numbers")),
     el("ul", {}, ...items),
-    median
-      ? el("p", { class: "meta" }, t("A typical resort here has {km} km of slopes.", { km: number.format(median) }))
-      : "",
+    el(
+      "p",
+      { class: "meta" },
+      t("Based on the {n} resorts we monitor here; typical is the median.", { n: resorts.length }),
+    ),
   );
 }
 
@@ -527,7 +560,11 @@ async function show() {
         "div",
         { class: "stack" },
         tiles(resorts),
-        ...[resortOfTheDay(code, resorts, elevations), records(resorts, elevations)].filter((card) => card !== null),
+        ...[
+          resortOfTheDay(code, resorts, elevations),
+          records(resorts, elevations),
+          numbers(resorts, elevations),
+        ].filter((card) => card !== null),
         regionsCard(code, resorts),
         el("section", { class: "card" }, el("h2", {}, t("This season")), chartsBox),
       ),
@@ -538,7 +575,11 @@ async function show() {
           "div",
           { class: "map-box" },
           mapBox,
-          el("a", { class: "map-link", href: "map.html" }, t("Map of all resorts →")),
+          el(
+            "a",
+            { class: "map-link", href: `map.html?${new URLSearchParams({ country: code })}` },
+            t("{country} on the map →", { country: countryName(code) }),
+          ),
         ),
         ...[groupsCard(code, groups)].filter((card) => card !== null),
       ),

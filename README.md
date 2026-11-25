@@ -282,12 +282,15 @@ Each country has a page of its own in each language, at an address in that langu
 `/fr/autriche`, `/it/austria`, `/pl/austria` (the slugs are in `assets/countries.js`, which the pages load to link to
 them and the scripts read: a new country needs its line there). `scripts/countries.mjs` builds them on deploy, after
 the translations, from `scripts/country.html` (the template, translated as the other pages) and `json/index.json`:
-each with its title and description (the country's name, how many resorts, how many open), its canonical address and
-language alternates (before `lang.js`, which sends a visitor to their language's version by them), and, for search
-engines, the heading, that sentence and every resort by region as plain links. `assets/country.js` then draws the page:
+each with its title and description (the country's name, how many resorts, how many open), its canonical address,
+language alternates and `x-default` (before `lang.js`, which sends a visitor to their language's version by them), its
+breadcrumbs as JSON-LD, the header's Table, Map and Stats links filtered to the country, and, for search engines, the
+heading, that sentence, the records and numbers (with the ski tiles' elevations when the build has them), every resort
+by region as plain links, and the other countries' pages. `assets/country.js` then draws the page:
 how much is open, a resort of the day (one of the open resorts, else of all, picked by a hash of the day in Vienna
 and the country), the records (the biggest ski area, the most lifts, the highest lift and the biggest vertical drop,
-the last two from the ski tiles' `elevations.json`), the regions with their resorts, the linked areas and passes from
+the last two from the ski tiles' `elevations.json`), the country in numbers (totals and medians of the resorts we
+follow), the regions with their resorts, the linked areas and passes from
 `json/groups.json`, a map and the season so far from `json/stats.json`. `npm run dev` builds a page as it's asked for;
 `npm run check` builds them from made-up resorts, to validate them and count their strings. The sitemap lists them,
 and the table, the resort and area pages and the home page's list of countries link to them. A link to

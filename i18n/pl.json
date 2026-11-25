@@ -445,19 +445,15 @@
     "other": "{n} regionu"
   },
   "In the table": "W tabeli",
-  "highest in the country": "najwyższe w kraju",
   "Top|elevation": "Najwyżej",
   "Vertical drop": "Przewyższenie",
   "Resort of the day": "Ośrodek dnia",
-  "A different open resort every day, picked by the date.": "Codziennie inny otwarty ośrodek, wybrany według daty.",
-  "No resort is open yet: a different one every day until they are.": "Żaden ośrodek nie jest jeszcze otwarty: do tego czasu codziennie inny.",
   "See it in 3D →": "Zobacz w 3D →",
   "Biggest ski area": "Największy ośrodek",
   "Most lifts": "Najwięcej wyciągów",
   "Highest lift": "Najwyższy wyciąg",
   "Biggest vertical drop": "Największe przewyższenie",
   "Records": "Rekordy",
-  "A typical resort here has {km} km of slopes.": "Typowy ośrodek ma tu {km} km tras.",
   "{open} of {n} open": "{open} z {n} otwartych",
   "Regions and resorts": "Regiony i ośrodki",
   "Linked ski areas and passes": "Połączone tereny i karnety",
@@ -465,12 +461,28 @@
   "Could not load the country ({message}).": "Nie udało się wczytać kraju ({message}).",
   "{country} at a glance →": "{country} w skrócie →",
   "{country}: ski resorts, open lifts and snow": "{country}: ośrodki narciarskie, otwarte wyciągi i śnieg",
-  "{country}: {n} ski resorts, {open} of them open today. Open lifts and slopes, snow depth and avalanche danger, region by region, updated twice a day.": {
-    "one": "{country}: {n} ośrodek narciarski, dziś otwartych {open}. Otwarte wyciągi i trasy, pokrywa śnieżna i zagrożenie lawinowe, region po regionie, aktualizowane dwa razy dziennie.",
-    "few": "{country}: {n} ośrodki narciarskie, dziś otwartych {open}. Otwarte wyciągi i trasy, pokrywa śnieżna i zagrożenie lawinowe, region po regionie, aktualizowane dwa razy dziennie.",
-    "many": "{country}: {n} ośrodków narciarskich, dziś otwartych {open}. Otwarte wyciągi i trasy, pokrywa śnieżna i zagrożenie lawinowe, region po regionie, aktualizowane dwa razy dziennie.",
-    "other": "{country}: {n} ośrodka narciarskiego, dziś otwartych {open}. Otwarte wyciągi i trasy, pokrywa śnieżna i zagrożenie lawinowe, region po regionie, aktualizowane dwa razy dziennie."
-  },
   "Ski resorts by country": "Ośrodki narciarskie według krajów",
-  "Countries": "Kraje"
+  "Countries": "Kraje",
+  "Regions with a resort open": "Regiony z otwartym ośrodkiem",
+  "In numbers": "W liczbach",
+  "Slopes in all": "Tras łącznie",
+  "Lifts in all": "Wyciągów łącznie",
+  "Typical resort": "Typowy ośrodek",
+  "Typical top station": "Typowa górna stacja",
+  "Resorts reaching 2,000 m": "Ośrodki sięgające 2000 m",
+  "Resorts under 10 km of slopes": "Ośrodki poniżej 10 km tras",
+  "of {n}": "z {n}",
+  "{country} on the map →": "{country} na mapie →",
+  "Based on the {n} resorts we monitor here; typical is the median.": {
+    "one": "Na podstawie {n} monitorowanego tu ośrodka; typowy to mediana.",
+    "few": "Na podstawie {n} monitorowanych tu ośrodków; typowy to mediana.",
+    "many": "Na podstawie {n} monitorowanych tu ośrodków; typowy to mediana.",
+    "other": "Na podstawie {n} monitorowanego tu ośrodka; typowy to mediana."
+  },
+  "{country}: {n} ski resorts, {open} of them open today. Open lifts and slopes, the records and every resort, region by region, updated twice a day.": {
+    "one": "{country}: {n} ośrodek narciarski, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie.",
+    "few": "{country}: {n} ośrodki narciarskie, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie.",
+    "many": "{country}: {n} ośrodków narciarskich, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie.",
+    "other": "{country}: {n} ośrodka narciarskiego, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie."
+  }
 }
