@@ -465,7 +465,10 @@ name that's new there also goes in `javascript.globals` in `biome.json`. The map
 also load MapLibre GL JS 5 (from cdnjs; version 6 is only an ES module there), maplibre-contour
 (jsDelivr), `assets/basemap.js` (the base map: OpenFreeMap's Positron, or Fiord in dark mode, with
 labels in the page's language, peaks, and hillshading and contours from Terrain Tiles) and
-`assets/ski.js` (outlines, points, pistes and lifts from the ski tiles).
+`assets/ski.js` (outlines, points, pistes and lifts from the ski tiles). Each file from a CDN carries its
+`integrity` hash (three.js's, and the `three.core.js` it imports, in `3d.html`'s import map), so the browser refuses
+anything else: a new version needs its new hash, from cdnjs's page of the file or
+`curl -s <url> | openssl dgst -sha384 -binary | openssl base64 -A`.
 
 `3d.html` also loads `assets/scene.js`, an ES module (it still sees the shared names). Where the browser
 has WebGPU it draws the resort with TrailRider's engine (see "3D engine"): the realistic map from the
