@@ -81,6 +81,14 @@ html {
   background: var(--badge-bg);
   color: var(--c);
 }
+/* The status pill's dot (the list on phones, the map's popup, the 3D page's panel); each page sizes its pill. */
+.status-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c);
+}
 body {
   background: linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
   color: var(--fg);

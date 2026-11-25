@@ -100,7 +100,7 @@ jobs:
       - name: Version the asset links
         run: |
           version=$(git -C site rev-parse --short HEAD)
-          sed -i -E "s#(assets/[a-z]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html _site/*/*.html
+          sed -i -E "s#(assets/[a-z0-9-]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html _site/*/*.html
           grep -o 'assets/[^"]*' _site/*.html _site/*/*.html
           if grep -nE 'assets/[^"?]+\.(js|css)"' _site/*.html _site/*/*.html; then
             echo "Asset links without ?v= (above): widen the pattern"; exit 1
