@@ -102,8 +102,23 @@ function tileOf([lon, lat]) {
   return [Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.asinh(Math.tan(rad)) / Math.PI) / 2) * n)];
 }
 
+// A lift's stations' heights, lowest first (not every lift is drawn from its bottom station), and the difference:
+// "2668 → 2751 m (83 m)", or null without them.
+/** @param {number[][]} c */
+function liftHeights(c) {
+  const ends = liftEnds(c);
+  return ends && `${ends[0]} → ${ends[1]} m (${ends[1] - ends[0]} m)`;
+}
+
+// The heights of a lift's line's two ends, lowest first, or null without them.
+/** @param {number[][]} c @returns {[number, number] | null} */
+function liftEnds(c) {
+  const [a, b] = [c[0][2], c[c.length - 1][2]];
+  return a === undefined || b === undefined ? null : [Math.round(Math.min(a, b)), Math.round(Math.max(a, b))];
+}
+
 // A tile's runs and lifts as GeoJSON features, with the properties assets/ski-style.json reads (its
-// "sources"), and for the tooltips their kind and resort's name.
+// "sources"), and for the tooltips their kind, heights and resort's name.
 /** @param {SkiTile} tile @param {Map<string, string>} names */
 function skiFeatures(tile, names) {
   for (const area of tile.areas) if (area.lr && !names.has(area.lr.id)) names.set(area.lr.id, area.lr.name);
@@ -155,6 +170,7 @@ function skiFeatures(tile, names) {
       ]
         .filter(Boolean)
         .join(", "),
+      heights: liftHeights(lift.c),
       resort: lift.lr && names.get(lift.lr),
     });
     const line = { type: "LineString", coordinates: lift.c };
@@ -171,6 +187,7 @@ function skiFeatures(tile, names) {
 function skiLabel({ properties: p }) {
   const box = el("div", {}, el("b", {}, p.name || p.kind));
   if (p.name) box.append(el("div", {}, p.kind));
+  if (p.heights) box.append(el("div", {}, p.heights));
   if (SKI_STATES[p.state]) box.append(el("div", {}, capitalized(SKI_STATES[p.state])));
   if (p.resort) box.append(el("div", { class: "sub" }, p.resort));
   return box;
@@ -182,7 +199,7 @@ function skiLabel({ properties: p }) {
 // to the names shown in the tooltips (otherwise those the tiles give); minZoom, from where they're drawn;
 // tips: false for no tooltips (the map page, where a click on the area shows the resort). The resorts'
 // outlines go in the source "ski-areas" and their links in "ski-links" (the map page fills them).
-// Resolves once the tiles of the first view are drawn.
+// Resolves once the tiles of the first view are drawn, with the features of every tile loaded (it grows as more load).
 // onStates: called when the statuses of a resort in view have loaded (for a legend).
 function skiLayers(
   map,
@@ -288,10 +305,10 @@ function skiLayers(
     return fetches;
   };
   map.on("moveend", update);
-  return Promise.all(update());
+  return Promise.all(update()).then(() => data);
 }
 
-// The pistes and lifts over the map, when there are ski tiles. Resolves once those in view are drawn.
+// The pistes and lifts over the map, when there are ski tiles. Resolves once those in view are drawn (see skiLayers).
 function addPistes(map, ski, options = {}) {
-  return ski ? skiLayers(map, ski, options) : Promise.resolve();
+  return ski ? skiLayers(map, ski, options) : Promise.resolve(null);
 }

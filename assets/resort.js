@@ -357,8 +357,8 @@ function stations(list) {
 }
 
 // Every lift or slope with its status, open ones first, from the experimental `details` file.
-/** @param {string[]} heads @param {HTMLElement[]} rows */
-function itemTable(heads, rows) {
+/** @param {string[]} heads @param {HTMLElement[]} rows @param {number} numbers how many of the last columns hold numbers */
+function itemTable(heads, rows, numbers = 1) {
   return el(
     "div",
     { class: "scroll" },
@@ -368,7 +368,7 @@ function itemTable(heads, rows) {
       el(
         "thead",
         {},
-        el("tr", {}, ...heads.map((h, i) => el("th", { class: i === heads.length - 1 ? "num" : "" }, h))),
+        el("tr", {}, ...heads.map((h, i) => el("th", { class: i >= heads.length - numbers ? "num" : "" }, h))),
       ),
       el("tbody", {}, ...rows),
     ),
@@ -384,10 +384,19 @@ function itemLength(item) {
   return el("td", { class: "num", title: MAP_NOTE() }, `≈ ${item.map_length_m} m`);
 }
 
-/** @param {{ length_m: number | null, map_length_m?: number | null }[]} items @param {HTMLElement} table */
-function withMapNote(items, table) {
-  if (!items.some((i) => !i.length_m && i.map_length_m)) return table;
-  return el("div", {}, table, el("p", { class: "meta", style: "margin:8px 0 0" }, MAP_NOTE()));
+const BOTH_NOTE = () => t("≈ length and height difference on the OpenStreetMap map, where the resort gives none");
+const HEIGHT_NOTE = () => t("≈ height difference on the OpenStreetMap map, where the resort gives none");
+// The table, with a note under it when some of its lengths or heights are from the map.
+/**
+ * @param {{ length_m: number | null, map_length_m?: number | null }[]} items @param {HTMLElement} table
+ * @param {boolean} heightsFromMap
+ */
+function withMapNote(items, table, heightsFromMap = false) {
+  const lengthsFromMap = items.some((i) => !i.length_m && i.map_length_m);
+  const note =
+    lengthsFromMap && heightsFromMap ? BOTH_NOTE() : lengthsFromMap ? MAP_NOTE() : heightsFromMap ? HEIGHT_NOTE() : "";
+  if (!note) return table;
+  return el("div", {}, table, el("p", { class: "meta", style: "margin:8px 0 0" }, note));
 }
 
 /** @template {{ status: string }} T @param {T[]} list */
@@ -413,20 +422,56 @@ function itemState(status) {
   );
 }
 
+// A lift's or slope's name, after what goes before it; once the resort map has drawn it, a button that shows
+// it there.
+/** @param {ResortDetails} d @param {{ id: string, name: string }} item @param {(HTMLElement | string)[]} before */
+function itemName(d, item, ...before) {
+  const cell = el("td", {}, ...before, item.name);
+  const key = `${d.country}/${d.id}/${item.id}`;
+  mapItems.then((onMap) => {
+    if (!onMap?.items.has(key)) return;
+    const button = el("button", { type: "button", class: "on-map", "aria-pressed": "false" }, item.name);
+    button.addEventListener("click", () => onMap.show(key, button));
+    cell.replaceChildren(...before, button);
+  });
+  return cell;
+}
+
 /** @param {ResortDetails} d */
-function liftList(d) {
+async function liftList(d) {
   const lifts = d.lifts ?? []; // null only in files with just the bottom and top, which `details` doesn't point to
-  const rows = byStatus(lifts).map((l) =>
-    el(
+  // How far each lift climbs: by its stations' heights where the source gives them (few do), else ≈ by its line on
+  // the map, as the lengths. The list waits a little for the map to have drawn, rather than show without them.
+  const onMap = await Promise.race([mapItems, new Promise((resolve) => setTimeout(resolve, 3000, null))]);
+  /** @param {import("../types/resort-details").DetailsLift} l */
+  const rise = (l) => {
+    if (l.bottom_m && l.top_m) return { m: Math.abs(l.top_m - l.bottom_m), map: false };
+    const m = onMap?.rise(`${d.country}/${d.id}/${l.id}`);
+    return m === null || m === undefined ? null : { m, map: true };
+  };
+  const rises = new Map(lifts.map((l) => [l, rise(l)]));
+  const shown = [...rises.values()].some(Boolean);
+  const rows = byStatus(lifts).map((l) => {
+    const r = rises.get(l);
+    return el(
       "tr",
       {},
       itemState(l.status),
       el("td", {}, el("span", { class: "lift" }, liftIcon(l.type), LIFT_TYPE[l.type] ?? label(l.type))),
-      el("td", {}, l.name),
+      itemName(d, l),
+      ...(shown
+        ? [
+            r?.map
+              ? el("td", { class: "num", title: HEIGHT_NOTE() }, `≈ ${r.m} m`)
+              : el("td", { class: "num" }, r ? `${r.m} m` : "–"),
+          ]
+        : []),
       itemLength(l),
-    ),
-  );
-  return withMapNote(lifts, itemTable([t("Status"), t("Type"), t("Name"), t("Length")], rows));
+    );
+  });
+  const heads = [t("Status"), t("Type"), t("Name"), ...(shown ? [t("Vertical")] : []), t("Length")];
+  const fromMap = [...rises.values()].some((r) => r?.map);
+  return withMapNote(lifts, itemTable(heads, rows, shown ? 2 : 1), fromMap);
 }
 
 // Slopes open first (then in preparation, closed, unknown), and within each the easiest first: by difficulty,
@@ -461,7 +506,7 @@ function slopeList(d) {
       "tr",
       {},
       itemState(s.status),
-      el("td", {}, el("span", { class: "diff", style: `--c:${colour}`, title }), s.name),
+      itemName(d, s, el("span", { class: "diff", style: `--c:${colour}`, title })),
       itemLength(s),
     );
   });
@@ -501,7 +546,10 @@ function breakdown(r) {
   /** @type {HTMLElement[]} */
   const buttons = [];
   // A pill at the bottom of the card, under its column, that opens its list in a card of its own, closing the other.
-  /** @param {string} id @param {string} text @param {string} title @param {(d: ResortDetails) => HTMLElement} list */
+  /**
+   * @param {string} id @param {string} text @param {string} title
+   * @param {(d: ResortDetails) => HTMLElement | Promise<HTMLElement>} list
+   */
   const more = (id, text, title, list) => {
     if (!r.details) return [];
     const panel = el("section", { class: "card", id, hidden: "" }, el("h2", {}, title));
@@ -524,7 +572,8 @@ function breakdown(r) {
       const loader = liftLoader({ small: true });
       panel.append(loader);
       load()
-        .then((d) => loader.replaceWith(list(d)))
+        .then((d) => list(d))
+        .then((node) => loader.replaceWith(node))
         .catch(() => loader.replaceWith(el("p", { class: "empty" }, t("The list could not load."))));
     });
     return [];
@@ -820,6 +869,81 @@ async function groupCards(r, container) {
   container.replaceWith(...cards);
 }
 
+// The resort map's lifts and pistes linked to the lists (their `item`), once drawn, and how to show one of them
+// there: null without a map or ski tiles.
+/**
+ * @typedef {{ items: Set<string>, show: (key: string, button: HTMLElement) => void, clear: () => void,
+ *   rise: (key: string) => number | null } | null} MapItems
+ */
+/** @type {(value: MapItems) => void} */
+let mapItemsReady = () => {};
+/** @type {Promise<MapItems>} */
+const mapItems = new Promise((resolve) => {
+  mapItemsReady = resolve;
+});
+
+// A lift or piste picked in a list: a wide band under its line, and the map moved onto it.
+// From the features of every tile loaded (skiLayers), not those the map has in view: one picked out of view
+// wouldn't be found, and one partly in view only partly.
+/**
+ * @param {import("maplibre-gl").Map} map @param {HTMLElement} container
+ * @param {{ runs: import("geojson").Feature[], lifts: import("geojson").Feature[] } | null} features
+ * @returns {MapItems}
+ */
+function pickOnMap(map, container, features) {
+  if (!features) return null;
+  const sources = ["ski-runs", "ski-lifts"].filter((id) => map.getSource(id));
+  const linked = () => [...features.lifts, ...features.runs].filter((f) => f.properties?.item);
+  const items = new Set(linked().map((f) => f.properties?.item));
+  if (!items.size) return null;
+  for (const id of sources) {
+    map.addLayer(
+      {
+        id: `picked-${id}`,
+        type: "line",
+        source: id,
+        filter: ["==", ["get", "item"], ""],
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": cssColor("--accent"), "line-width": 16, "line-opacity": 0.55, "line-blur": 2 },
+      },
+      // Under the lifts and pistes themselves.
+      map.getLayer("ski-run-areas") ? "ski-run-areas" : undefined,
+    );
+  }
+  /** @type {HTMLElement | null} */
+  let picked = null;
+  /** @type {import("maplibre-gl").FilterSpecification} */
+  const none = ["==", ["get", "item"], ""];
+  return {
+    items,
+    // How far a lift's line on the map climbs, from its ends' heights.
+    rise(key) {
+      const line = features.lifts.find((f) => f.properties?.item === key)?.geometry;
+      const ends = line?.type === "LineString" ? liftEnds(line.coordinates) : null;
+      return ends && ends[1] - ends[0];
+    },
+    clear() {
+      picked?.setAttribute("aria-pressed", "false");
+      picked = null;
+      for (const id of sources) map.setFilter(`picked-${id}`, none);
+    },
+    show(key, button) {
+      const off = picked === button;
+      picked?.setAttribute("aria-pressed", "false");
+      picked = off ? null : button;
+      button.setAttribute("aria-pressed", String(!off));
+      /** @type {import("maplibre-gl").FilterSpecification} */
+      const filter = ["==", ["get", "item"], off ? "" : key];
+      for (const id of sources) map.setFilter(`picked-${id}`, filter);
+      if (off) return;
+      const bounds = new maplibregl.LngLatBounds();
+      for (const f of linked()) if (f.properties?.item === key) bounds.extend(geometryBounds(f.geometry));
+      if (!bounds.isEmpty()) map.fitBounds(bounds, { padding: 40, maxZoom: 14 });
+      container.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    },
+  };
+}
+
 // Resort map: only this resort's area (or point), with its pistes and lifts strong and the
 // neighbours' faded; "Map of all resorts" shows the other resorts. The wheel zooms it only
 // once it has been clicked, so the page scrolls past it. Shown once it has drawn the base map, the
@@ -872,6 +996,26 @@ async function resortMap(r, container) {
     loading,
   ]);
   map.once("click", () => map.scrollZoom.enable());
+  /** @type {MapItems} */
+  let onMap = null;
+  // Back to the view the map opened at, once it has moved (zoomed, dragged, or onto a lift picked in a list),
+  // and nothing picked.
+  const home = { center: map.getCenter(), zoom: map.getZoom() };
+  const label = t("Show the whole resort");
+  const reset = el("button", { type: "button", class: "map-reset", title: label, "aria-label": label });
+  reset.innerHTML =
+    '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"' +
+    ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+  const resetBox = el("div", { class: "maplibregl-ctrl maplibregl-ctrl-group", hidden: "" }, reset);
+  map.addControl({ onAdd: () => resetBox, onRemove: () => resetBox.remove() }, "top-right");
+  reset.addEventListener("click", () => {
+    onMap?.clear();
+    map.easeTo(home);
+  });
+  map.on("moveend", () => {
+    const off = map.project(home.center).dist(map.project(map.getCenter()));
+    resetBox.hidden = Math.abs(map.getZoom() - home.zoom) < 0.05 && off < 20;
+  });
   const area = ski?.resorts.get(skiKey(r));
   if (area) {
     map.addSource("area", { type: "geojson", data: area });
@@ -893,6 +1037,10 @@ async function resortMap(r, container) {
     minZoom: Math.min(SKI_MIN_ZOOM, Math.floor(map.getZoom())),
   });
   const drawn = pistes.then(() => !map.loaded() && new Promise((resolve) => map.once("idle", resolve)));
+  Promise.all([pistes, drawn]).then(([features]) => {
+    onMap = pickOnMap(map, container, features);
+    mapItemsReady(onMap);
+  });
   await Promise.race([drawn, new Promise((resolve) => setTimeout(resolve, 4000))]);
   container.classList.remove("loading");
   loader.remove();
@@ -1291,6 +1439,7 @@ async function show() {
     ),
   );
   resortMap(r, mapBox).catch(() => {
+    mapItemsReady(null);
     mapBox.classList.remove("loading");
     mapBox.replaceChildren(el("p", { class: "empty" }, t("The map could not load.")));
   });

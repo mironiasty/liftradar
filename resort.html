@@ -111,6 +111,14 @@
   .bars .lift { display: flex; align-items: center; gap: 8px; }
   .lift-icon { display: inline-flex; flex: none; color: var(--muted); }
   .diff { display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 2px; background: var(--c); }
+  /* A lift's or slope's name in the lists that shows it on the map. */
+  button.on-map { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer;
+    text-decoration: underline dotted; text-underline-offset: 3px; }
+  button.on-map:hover, button.on-map[aria-pressed="true"] { color: var(--accent); }
+  button.on-map[aria-pressed="true"] { font-weight: 600; text-decoration-style: solid; }
+  /* The map's button back to the whole resort, shown once the map has moved. */
+  .maplibregl-ctrl-group[hidden] { display: none; }
+  .map-reset { display: grid; place-items: center; color: var(--fg); }
 
   /* Every lift and slope (the experimental details file). */
   /* The pills to every lift and slope: a row at the bottom, each centred under its column, side by side once the
