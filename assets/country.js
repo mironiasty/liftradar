@@ -38,6 +38,9 @@ function tile(title, value, ...notes) {
 
 const isOpen = (/** @type {IndexResort} */ r) => statusKey(r) === "open";
 
+// A number kept on the line of what follows it ("293 km", "69 lifts"): no "km" or "m" alone on the next line.
+const glued = (/** @type {string} */ text) => text.replace(/(\d) /g, "$1\u00a0");
+
 // Open lifts, slopes and km of the open resorts, out of all the resorts' (those that give them), as the area page.
 /** @param {IndexResort[]} resorts */
 function totals(resorts) {
@@ -153,7 +156,7 @@ function tiles(resorts) {
       s.km
         ? tile(
             t("Slopes"),
-            [pair(Math.round(s.kmOpen), Math.round(s.km)), el("small", {}, " km")],
+            [pair(Math.round(s.kmOpen), Math.round(s.km)), el("small", {}, "\u00a0km")],
             meter(s.kmOpen, s.km),
             share(s.kmOpen, s.km),
           )
@@ -195,7 +198,7 @@ function openLine(r) {
   if (slopes?.total_km) {
     parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
   }
-  return parts.join(" · ");
+  return glued(parts.join(" · "));
 }
 
 // FNV-1a: the same day and country always pick the same resort, anywhere.
@@ -222,10 +225,10 @@ function resortOfTheDay(code, resorts, elevations) {
   const r = /** @type {IndexResort} */ (resorts.find((x) => resortKey(x) === key));
   const heights = elevations.get(key);
   const facts = [
-    r.slopes?.total_km ? [t("Slopes"), `${number.format(r.slopes.total_km)} km`] : null,
+    r.slopes?.total_km ? [t("Slopes"), `${number.format(r.slopes.total_km)}\u00a0km`] : null,
     r.lifts?.total ? [t("Lifts"), String(r.lifts.total)] : null,
-    heights ? [t("Top|elevation"), `${number.format(heights[1])} m`] : null,
-    heights ? [t("Vertical drop"), `${number.format(heights[1] - heights[0])} m`] : null,
+    heights ? [t("Top|elevation"), `${number.format(heights[1])}\u00a0m`] : null,
+    heights ? [t("Vertical drop"), `${number.format(heights[1] - heights[0])}\u00a0m`] : null,
   ].filter((fact) => fact !== null);
   const status = statusKey(r);
   return el(
@@ -281,7 +284,7 @@ function records(resorts, elevations) {
         "li",
         {},
         el("span", { class: "label" }, title),
-        el("span", { class: "value" }, format(v)),
+        el("span", { class: "value" }, glued(format(v))),
         el("span", { class: "who" }, resortLink(r), r.region ? el("span", { class: "meta" }, ` · ${r.region}`) : ""),
       );
     });
@@ -336,9 +339,9 @@ function numbers(resorts, elevations) {
       el(
         "li",
         {},
-        el("span", { class: "label" }, title),
-        el("span", { class: "value" }, value ?? ""),
-        note ? el("span", { class: "who" }, note) : "",
+        el("span", { class: "label" }, glued(title)),
+        el("span", { class: "value" }, glued(value ?? "")),
+        note ? el("span", { class: "who" }, glued(note)) : "",
       ),
     );
   if (!items.length) return null;
@@ -398,7 +401,7 @@ function regionsCard(code, resorts) {
         {},
         el("span", { class: "region-name" }, name || t("Other")),
         el("span", { class: "n" }, t("{open} of {n} open", { open: s.open, n: members.length })),
-        el("span", { class: "km" }, s.km ? `${number.format(s.km)} km` : ""),
+        el("span", { class: "km" }, s.km ? `${number.format(s.km)}\u00a0km` : ""),
         meter(s.open, members.length),
       ),
       list,

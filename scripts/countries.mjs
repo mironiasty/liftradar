@@ -20,6 +20,8 @@ const TEMPLATE = "scripts/country.html";
 
 const escaped = (text) =>
   String(text).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+// A number kept on the line of what follows it ("293 km"), as country.js does.
+const glued = (text) => String(text).replace(/(\d) /g, "$1\u00a0");
 const prefix = (language) => (language === "en" ? "" : `/${language}`);
 
 // As t() in assets/common.js: the translation, its plural form chosen by {n}, with its {names} filled in.
@@ -160,7 +162,7 @@ export function countryPage(code, language, strings, resorts, { seen = null, ele
           "  <ul>",
           ...records.map(
             ([label, { v, r }, format]) =>
-              `    <li><span class="label">${escaped(label)}</span> <span class="value">${escaped(format(v))}</span> <span class="who">${link(r)}</span></li>`,
+              `    <li><span class="label">${escaped(label)}</span> <span class="value">${escaped(glued(format(v)))}</span> <span class="who">${link(r)}</span></li>`,
           ),
           "  </ul>",
           "</section>",
@@ -173,7 +175,7 @@ export function countryPage(code, language, strings, resorts, { seen = null, ele
           "  <ul>",
           ...numbers.map(
             ([label, value]) =>
-              `    <li><span class="label">${escaped(label)}</span> <span class="value">${escaped(value)}</span></li>`,
+              `    <li><span class="label">${escaped(label)}</span> <span class="value">${escaped(glued(value))}</span></li>`,
           ),
           "  </ul>",
           `  <p class="meta">${escaped(t("Based on the {n} resorts we monitor here; typical is the median.", { n: resorts.length }))}</p>`,
