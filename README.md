@@ -1,6 +1,6 @@
 # liftradar
 
-Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway, Spain, Slovenia and Andorra, published at
+Snow conditions for ski resorts in Austria, Switzerland, Italy, France, Germany, Czechia, Slovakia, Poland, Finland, Norway, Spain, Slovenia, Andorra and Bulgaria, published at
 [liftradar.eu](https://liftradar.eu).
 
 - **Data** (branch `data`): `json/<country>/<resort>.json`, `json/index.json`, `json/stats.json`, `json/groups.json`,
@@ -131,6 +131,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Soriška planina, Gače | The report their own sites show: every slope (and Soriška's lifts; Gače's lift counts) with its state for each day of the week, snow, report time |
 | Rogla, Kope, Cerkno, Velika planina, Ribniško Pohorje | No status read: listed as "no report", with the operator's size, otherwise skiresort.com's. Rogla's report is behind a login built into its site, Kope's under a path its robots.txt excludes. Snežni telefon (7S), where most Slovenian resorts enter their report, is a commercial portal and isn't used |
 | Grandvalira, Ordino Arcalís, Pal Arinsal (Andorra) | Each resort's own "Estat de pistes" page ([Grandvalira](https://www.grandvalira.com/ca/estacio/estat-de-pistes), [Ordino Arcalís](https://www.ordinoarcalis.com/ca/estacio/estat-de-pistes), [Pal Arinsal](https://www.palarinsal.com/ca/estacio/comunicat-neu)): every lift and slope of each sector with its state, the snow depth range and the update time |
+| Bansko, Borovets, Pamporovo, Vitosha and 8 smaller Bulgarian areas | **Size only** (no live status yet): Borovets' lift and slope counts from [its operator](https://www.borovets-bg.com/), the others' lifts and km from skiresort.com. Bansko's, Borovets' and Vitosha's own sites show each lift's state, to be read once they're in season |
 | Kasprowy Wierch, Jaworzyna Krynicka, Palenica, Mosorny Groń | [Polskie Koleje Linowe](https://www.pkl.pl/trasy-narciarskie.html) (PKL, the lift company): every lift and slope with snow cover (no report time) |
 | Zieleniec | [zieleniec.pl](https://zieleniec.pl/zima/aktualne-warunki): every lift and slope with snow cover (no report time). The site refuses the fetcher's servers for now, so only the area's size is published |
 | Jasná, Tatranská Lomnica, Štrbské Pleso, Starý Smokovec, Szczyrk | [TMR](https://www.jasna.sk)'s lift and slope tables, as its sites show them: every lift and slope with its state. No report time. Outside the season the lift tables list only the summer lifts, so the lift total is the area's size until a slope opens |

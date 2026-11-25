@@ -832,6 +832,9 @@ button.fav:focus-visible {
 .flag[data-country="at"] {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23c8102e' d='M0 0h3v3H0z'/%3E%3Cpath fill='%23fff' d='M0 1h3v1H0z'/%3E%3C/svg%3E");
 }
+.flag[data-country="bg"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 3' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' d='M0 0h3v1H0z'/%3E%3Cpath fill='%2300966e' d='M0 1h3v1H0z'/%3E%3Cpath fill='%23d62612' d='M0 2h3v1H0z'/%3E%3C/svg%3E");
+}
 .flag[data-country="ch"] {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20' preserveAspectRatio='none'%3E%3Cpath fill='%23da291c' d='M0 0h30v20H0z'/%3E%3Cpath fill='%23fff' d='M13 4h4v12h-4zM9 8h12v4H9z'/%3E%3C/svg%3E");
 }
