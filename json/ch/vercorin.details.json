@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "vercorin",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305878+01:00",
-  "updated_at": "2026-11-23T10:02:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496382+01:00",
+  "updated_at": "2026-11-24T15:49:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -256,5 +256,15 @@
       "length_m": 900,
       "map_length_m": 460
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.26772,
+    "lon": 7.51185,
+    "elevation_m": 514
+  },
+  "top": {
+    "lat": 46.22527,
+    "lon": 7.53177,
+    "elevation_m": 2369
+  }
 }

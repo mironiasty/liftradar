@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "val-thorens",
   "country": "fr",
-  "fetched_at": "2026-11-24T13:40:37.309196+01:00",
+  "fetched_at": "2026-11-25T08:40:40.501516+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com",
   "lifts": [
@@ -11,7 +11,7 @@
       "ref": null,
       "name": "Cime Caron",
       "type": "cable_car",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2060,
       "capacity_per_hour": null,
@@ -131,7 +131,7 @@
       "ref": null,
       "name": "Musaraigne.",
       "type": "carpet",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 220,
       "capacity_per_hour": null,
@@ -227,7 +227,7 @@
       "ref": null,
       "name": "Thorens",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 790,
       "capacity_per_hour": null,
@@ -470,7 +470,7 @@
       "name": "Campagnols",
       "difficulty": "easy",
       "colour": "green",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 250
     },
@@ -490,7 +490,7 @@
       "name": "Musaraigne",
       "difficulty": "easy",
       "colour": "green",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 230
     },
@@ -790,7 +790,7 @@
       "name": "Accès balcons",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": null
     },
@@ -820,7 +820,7 @@
       "name": "Corniche",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "open",
+      "status": "closed",
       "length_m": 1520,
       "map_length_m": 1510
     },
@@ -1034,5 +1034,15 @@
       "length_m": 1167,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.20768,
+    "lon": 6.54615,
+    "elevation_m": 885
+  },
+  "top": {
+    "lat": 45.25559,
+    "lon": 6.59993,
+    "elevation_m": 3221
+  }
 }

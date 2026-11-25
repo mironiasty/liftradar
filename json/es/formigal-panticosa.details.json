@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "formigal-panticosa",
   "country": "es",
-  "fetched_at": "2026-11-24T13:40:37.315117+01:00",
-  "updated_at": "2026-11-24T13:23:55+01:00",
+  "fetched_at": "2026-11-25T08:40:40.510179+01:00",
+  "updated_at": "2026-11-25T07:01:17+01:00",
   "source": "https://winter.intermaps.com/formigal?lang=en",
   "lifts": [
     {
@@ -1830,5 +1830,15 @@
       "length_m": null,
       "map_length_m": 820
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 42.77407,
+    "lon": -0.3705,
+    "elevation_m": 1502
+  },
+  "top": {
+    "lat": 42.76084,
+    "lon": -0.41509,
+    "elevation_m": 2264
+  }
 }

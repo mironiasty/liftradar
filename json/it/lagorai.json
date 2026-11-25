@@ -10,7 +10,7 @@
   },
   "website": "https://www.skilagorai.it",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.306406+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497845+01:00",
   "status_from": "2026-11-20T16:46:47.409217+01:00",
   "snow": {
     "mountain_cm": null,
@@ -62,10 +62,17 @@
   },
   "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.trentino.com/it/sport-e-tempo-libero/sport-invernali/aree-sciistiche-nel-trentino/area-sci-lagorai-passo-brocon/"
+  ],
   "source_details": {
     "conditions": [],
-    "resort_info": []
+    "resort_info": [
+      {
+        "url": "https://www.trentino.com/it/sport-e-tempo-libero/sport-invernali/aree-sciistiche-nel-trentino/area-sci-lagorai-passo-brocon/",
+        "attribution_required": null
+      }
+    ]
   },
   "errors": [
     "trentino: LookupError: no entry named Funivie Lagorai (Passo Brocon)"

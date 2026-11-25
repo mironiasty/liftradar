@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "skiwelt",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:35.415002+01:00",
-  "updated_at": "2026-11-24T03:45:29+01:00",
+  "fetched_at": "2026-11-25T08:41:45.934407+01:00",
+  "updated_at": "2026-11-24T22:45:44+01:00",
   "source": "https://winter.intermaps.com/skiwelt?lang=en",
   "lifts": [
     {
@@ -4162,5 +4162,15 @@
       "length_m": 638,
       "map_length_m": 640
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.44558,
+    "lon": 12.16091,
+    "elevation_m": 609
+  },
+  "top": {
+    "lat": 47.40282,
+    "lon": 12.24988,
+    "elevation_m": 1865
+  }
 }

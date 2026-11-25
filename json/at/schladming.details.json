@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "schladming",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.301749+01:00",
+  "fetched_at": "2026-11-25T08:40:40.491104+01:00",
   "updated_at": null,
-  "source": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/planai_resort_6324",
+  "source": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/hochwurzen_resort_6325",
   "lifts": [
     {
       "id": "lift-marchenwiesebahn",
@@ -954,7 +954,7 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": 2910
+      "map_length_m": 3540
     },
     {
       "id": "slope-obertalabfahrt",
@@ -1456,5 +1456,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.41152,
+    "lon": 13.77956,
+    "elevation_m": 723
+  },
+  "top": {
+    "lat": 47.37382,
+    "lon": 13.77838,
+    "elevation_m": 2004
+  }
 }

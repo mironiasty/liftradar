@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "hochficht",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.300254+01:00",
+  "fetched_at": "2026-11-25T08:40:40.490936+01:00",
   "updated_at": "2026-11-24T13:18:59+01:00",
   "source": "https://winter.intermaps.com/hochficht?lang=en",
   "lifts": [
@@ -256,5 +256,15 @@
       "length_m": 600,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 48.73843,
+    "lon": 13.88585,
+    "elevation_m": 857
+  },
+  "top": {
+    "lat": 48.73691,
+    "lon": 13.92047,
+    "elevation_m": 1332
+  }
 }

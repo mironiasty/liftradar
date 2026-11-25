@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "gerlitzen",
   "country": "at",
-  "fetched_at": "2026-11-24T13:42:09.132489+01:00",
-  "updated_at": "2026-11-23T09:03:47+01:00",
+  "fetched_at": "2026-11-25T08:42:23.404884+01:00",
+  "updated_at": "2026-11-25T04:36:46+01:00",
   "source": "https://winter.intermaps.com/gerlitzen?lang=en",
   "lifts": [
     {
@@ -95,7 +95,7 @@
       "ref": "H",
       "name": "Neugarten 8er-Carving-Jet",
       "type": "chairlift",
-      "status": "open",
+      "status": "closed",
       "length_m": 1400,
       "map_length_m": 1360,
       "capacity_per_hour": null,
@@ -336,7 +336,7 @@
       "name": "10 Neugartenabfahrt",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "open",
+      "status": "closed",
       "length_m": 2000,
       "map_length_m": 1400
     },
@@ -476,7 +476,7 @@
       "name": "12 Neugarten Speed Abfahrt",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "open",
+      "status": "closed",
       "length_m": 2100,
       "map_length_m": 1370
     },
@@ -650,5 +650,15 @@
       "length_m": 2400,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.65951,
+    "lon": 13.90158,
+    "elevation_m": 522
+  },
+  "top": {
+    "lat": 46.69517,
+    "lon": 13.91468,
+    "elevation_m": 1908
+  }
 }

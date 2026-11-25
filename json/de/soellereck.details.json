@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "soellereck",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312982+01:00",
+  "fetched_at": "2026-11-25T08:40:40.507168+01:00",
   "updated_at": null,
   "source": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
   "lifts": [
@@ -222,5 +222,15 @@
       "length_m": 170,
       "map_length_m": 150
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.40274,
+    "lon": 10.24605,
+    "elevation_m": 946
+  },
+  "top": {
+    "lat": 47.37856,
+    "lon": 10.24117,
+    "elevation_m": 1445
+  }
 }

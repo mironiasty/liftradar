@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "fellhorn-kanzelwand",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312960+01:00",
+  "fetched_at": "2026-11-25T08:40:40.507140+01:00",
   "updated_at": null,
   "source": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
   "lifts": [
@@ -444,5 +444,15 @@
       "length_m": 1700,
       "map_length_m": 1630
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.35249,
+    "lon": 10.26282,
+    "elevation_m": 918
+  },
+  "top": {
+    "lat": 47.34816,
+    "lon": 10.21603,
+    "elevation_m": 1965
+  }
 }

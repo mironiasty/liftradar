@@ -1,0 +1,94 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-weather.schema.json",
+  "id": "cervena-voda",
+  "country": "cz",
+  "fetched_at": "2026-11-25T08:42:59+01:00",
+  "source": "https://open-meteo.com/",
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "points": [
+    {
+      "name": "resort",
+      "lat": 50.0403,
+      "lon": 16.7429,
+      "elevation_m": 525,
+      "now": {
+        "time": "2026-11-25T08:45:00+01:00",
+        "temperature_c": -3.0,
+        "weather_code": 1,
+        "wind_kmh": 7.7
+      },
+      "days": [
+        {
+          "date": "2026-11-25",
+          "weather_code": 48,
+          "temperature_max_c": -0.2,
+          "temperature_min_c": -4.7,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 19.8,
+          "sunshine_h": 6.0
+        },
+        {
+          "date": "2026-11-26",
+          "weather_code": 71,
+          "temperature_max_c": -0.2,
+          "temperature_min_c": -4.5,
+          "snowfall_cm": 1.2,
+          "precipitation_mm": 1.7,
+          "wind_gusts_max_kmh": 26.3,
+          "sunshine_h": 5.0
+        },
+        {
+          "date": "2026-11-27",
+          "weather_code": 77,
+          "temperature_max_c": -1.9,
+          "temperature_min_c": -3.4,
+          "snowfall_cm": 1.4,
+          "precipitation_mm": 2.1,
+          "wind_gusts_max_kmh": 33.5,
+          "sunshine_h": 0.5
+        },
+        {
+          "date": "2026-11-28",
+          "weather_code": 3,
+          "temperature_max_c": -0.3,
+          "temperature_min_c": -6.1,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 37.1,
+          "sunshine_h": 7.8
+        },
+        {
+          "date": "2026-11-29",
+          "weather_code": 1,
+          "temperature_max_c": -2.0,
+          "temperature_min_c": -8.8,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 40.2,
+          "sunshine_h": 7.8
+        },
+        {
+          "date": "2026-11-30",
+          "weather_code": 2,
+          "temperature_max_c": -0.9,
+          "temperature_min_c": -5.4,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 35.1,
+          "sunshine_h": 7.8
+        },
+        {
+          "date": "2026-12-01",
+          "weather_code": 1,
+          "temperature_max_c": 0.8,
+          "temperature_min_c": -5.8,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 22.3,
+          "sunshine_h": 7.8
+        }
+      ]
+    }
+  ]
+}

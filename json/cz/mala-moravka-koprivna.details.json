@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "mala-moravka-koprivna",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308583+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500546+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/ski-areal-koprivna-jeseniky",
   "lifts": [
@@ -64,5 +64,15 @@
       "length_m": 930,
       "map_length_m": 610
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.02901,
+    "lon": 17.31179,
+    "elevation_m": 694
+  },
+  "top": {
+    "lat": 50.03277,
+    "lon": 17.29636,
+    "elevation_m": 879
+  }
 }

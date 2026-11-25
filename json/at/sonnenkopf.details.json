@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "sonnenkopf",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.300159+01:00",
+  "fetched_at": "2026-11-25T08:40:40.490777+01:00",
   "updated_at": "2026-11-16T08:45:27+01:00",
   "source": "https://winter.intermaps.com/sonnenkopf?lang=en",
   "lifts": [
@@ -358,5 +358,15 @@
       "length_m": 700,
       "map_length_m": 730
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.12854,
+    "lon": 10.0562,
+    "elevation_m": 999
+  },
+  "top": {
+    "lat": 47.1014,
+    "lon": 10.08064,
+    "elevation_m": 2287
+  }
 }

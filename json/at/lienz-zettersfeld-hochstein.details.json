@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "lienz-zettersfeld-hochstein",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:47.934039+01:00",
-  "updated_at": "2026-11-20T09:47:29+01:00",
+  "fetched_at": "2026-11-25T08:41:59.770242+01:00",
+  "updated_at": "2026-11-24T14:00:25+01:00",
   "source": "https://winter.intermaps.com/lienz_zettersfeld?lang=en",
   "lifts": [
     {
@@ -322,5 +322,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.83086,
+    "lon": 12.75341,
+    "elevation_m": 681
+  },
+  "top": {
+    "lat": 46.87821,
+    "lon": 12.78886,
+    "elevation_m": 2271
+  }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "beskid-sport-arena",
   "country": "pl",
-  "fetched_at": "2026-11-24T13:40:37.308732+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500805+01:00",
   "updated_at": null,
   "source": "https://beskidsportarena.pl/szczyrk-wyciagi-narciarskie-i-kolej-linowa/",
   "lifts": [
@@ -84,5 +84,15 @@
       "length_m": 200,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.72113,
+    "lon": 19.00337,
+    "elevation_m": 594
+  },
+  "top": {
+    "lat": 49.71614,
+    "lon": 18.99695,
+    "elevation_m": 835
+  }
 }

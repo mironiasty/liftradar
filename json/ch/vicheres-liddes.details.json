@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "vicheres-liddes",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305888+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496404+01:00",
   "updated_at": "2026-11-20T10:45:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -198,5 +198,15 @@
       "length_m": 1300,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.99071,
+    "lon": 7.16225,
+    "elevation_m": 1595
+  },
+  "top": {
+    "lat": 45.97561,
+    "lon": 7.1443,
+    "elevation_m": 2266
+  }
 }

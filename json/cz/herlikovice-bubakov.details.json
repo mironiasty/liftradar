@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "herlikovice-bubakov",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308265+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500030+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/ski-areal-herlikovice-bubakov",
   "lifts": [
@@ -192,5 +192,15 @@
       "length_m": 1530,
       "map_length_m": 1210
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.65387,
+    "lon": 15.60472,
+    "elevation_m": 526
+  },
+  "top": {
+    "lat": 50.65807,
+    "lon": 15.57535,
+    "elevation_m": 1005
+  }
 }

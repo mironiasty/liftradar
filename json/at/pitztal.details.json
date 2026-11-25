@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pitztal",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.299313+01:00",
-  "updated_at": "2026-11-23T16:23:23+01:00",
+  "fetched_at": "2026-11-25T08:40:40.488519+01:00",
+  "updated_at": "2026-11-25T08:38:19+01:00",
   "source": "https://winter.intermaps.com/pitztaler_gletscher?lang=en",
   "lifts": [
     {
@@ -35,7 +35,7 @@
       "ref": null,
       "name": "Mittelbergbahn",
       "type": "gondola",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 2480,
       "capacity_per_hour": 2100,
@@ -400,7 +400,7 @@
       "name": "Hoher Rain",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 4401,
       "map_length_m": 1270
     },
@@ -514,5 +514,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.96861,
+    "lon": 10.86985,
+    "elevation_m": 1674
+  },
+  "top": {
+    "lat": 46.91279,
+    "lon": 10.86247,
+    "elevation_m": 3424
+  }
 }

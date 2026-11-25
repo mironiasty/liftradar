@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "arolla",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305182+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495130+01:00",
   "updated_at": "2026-11-21T09:12:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -250,5 +250,15 @@
       "length_m": 800,
       "map_length_m": 630
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.02079,
+    "lon": 7.48121,
+    "elevation_m": 1982
+  },
+  "top": {
+    "lat": 46.03005,
+    "lon": 7.45043,
+    "elevation_m": 2883
+  }
 }

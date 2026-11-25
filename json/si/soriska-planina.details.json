@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "soriska-planina",
   "country": "si",
-  "fetched_at": "2026-11-24T13:40:37.315451+01:00",
-  "updated_at": "2026-11-24T05:00:16+01:00",
+  "fetched_at": "2026-11-25T08:40:40.510692+01:00",
+  "updated_at": "2026-11-25T05:00:15+01:00",
   "source": "https://www.soriska-planina.si/info",
   "lifts": [
     {
@@ -148,5 +148,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.2411,
+    "lon": 14.00927,
+    "elevation_m": 1283
+  },
+  "top": {
+    "lat": 46.23031,
+    "lon": 14.00621,
+    "elevation_m": 1540
+  }
 }

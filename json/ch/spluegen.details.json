@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "spluegen",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305770+01:00",
-  "updated_at": "2026-11-23T15:14:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496211+01:00",
+  "updated_at": "2026-11-25T08:25:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -252,5 +252,15 @@
       "length_m": 1400,
       "map_length_m": 760
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.54883,
+    "lon": 9.32116,
+    "elevation_m": 1484
+  },
+  "top": {
+    "lat": 46.51977,
+    "lon": 9.31481,
+    "elevation_m": 2211
+  }
 }

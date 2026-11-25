@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ski-arlberg",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.301725+01:00",
+  "fetched_at": "2026-11-25T08:40:40.491077+01:00",
   "updated_at": null,
   "source": "https://www.skiarlberg.at/de/live-info/table/lifts?regionId=164&loadMore=1&orderState=ASC",
   "lifts": [
@@ -463,6 +463,54 @@
       "top_m": null
     },
     {
+      "id": "lift-hasensprungbahn",
+      "ref": null,
+      "name": "Hasensprungbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 840,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-petersbodenbahn",
+      "ref": null,
+      "name": "Petersbodenbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1110,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-rotschrofenbahn",
+      "ref": null,
+      "name": "Rotschrofenbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1260,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ubungslift-oberlech",
+      "ref": null,
+      "name": "Übungslift Oberlech",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 460,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "lift-auenfeldjet",
       "ref": null,
       "name": "Auenfeldjet",
@@ -523,18 +571,6 @@
       "top_m": null
     },
     {
-      "id": "lift-hasensprungbahn",
-      "ref": null,
-      "name": "Hasensprungbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 840,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "lift-hexenbodenbahn",
       "ref": null,
       "name": "Hexenbodenbahn",
@@ -590,30 +626,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 980,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-petersbodenbahn",
-      "ref": null,
-      "name": "Petersbodenbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1110,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-rotschrofenbahn",
-      "ref": null,
-      "name": "Rotschrofenbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1260,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -794,18 +806,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 410,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-ubungslift-oberlech",
-      "ref": null,
-      "name": "Übungslift Oberlech",
-      "type": "drag_lift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -1839,6 +1839,16 @@
       "map_length_m": 730
     },
     {
+      "id": "slope-241-bergeralpe",
+      "ref": null,
+      "name": "241 Bergeralpe",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1090
+    },
+    {
       "id": "slope-120-hexenboden-standard",
       "ref": null,
       "name": "120 Hexenboden Standard",
@@ -2549,16 +2559,6 @@
       "map_length_m": 1250
     },
     {
-      "id": "slope-241-bergeralpe",
-      "ref": null,
-      "name": "241 Bergeralpe",
-      "difficulty": "ski_route",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1090
-    },
-    {
       "id": "slope-242-muttamahd",
       "ref": null,
       "name": "242 Muttamahd",
@@ -2789,16 +2789,6 @@
       "map_length_m": 430
     },
     {
-      "id": "slope-274-wartherhorn",
-      "ref": null,
-      "name": "274 Wartherhorn",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
       "id": "slope-274-rennstrecke-wartherhorn",
       "ref": null,
       "name": "274 Rennstrecke Wartherhorn",
@@ -2807,6 +2797,16 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 610
+    },
+    {
+      "id": "slope-274-wartherhorn",
+      "ref": null,
+      "name": "274 Wartherhorn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "slope-275-kleinhornle",
@@ -3028,5 +3028,15 @@
       "length_m": null,
       "map_length_m": 2710
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.13474,
+    "lon": 10.273,
+    "elevation_m": 1282
+  },
+  "top": {
+    "lat": 47.15757,
+    "lon": 10.21301,
+    "elevation_m": 2805
+  }
 }

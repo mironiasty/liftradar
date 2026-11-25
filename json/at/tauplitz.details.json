@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tauplitz",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.300237+01:00",
-  "updated_at": "2026-11-23T09:15:46+01:00",
+  "fetched_at": "2026-11-25T08:40:40.490909+01:00",
+  "updated_at": "2026-11-24T15:10:40+01:00",
   "source": "https://winter.intermaps.com/tauplitz?lang=en",
   "lifts": [
     {
@@ -590,5 +590,15 @@
       "length_m": 800,
       "map_length_m": 960
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.56254,
+    "lon": 14.01242,
+    "elevation_m": 922
+  },
+  "top": {
+    "lat": 47.59753,
+    "lon": 13.95402,
+    "elevation_m": 1961
+  }
 }

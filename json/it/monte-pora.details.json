@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "monte-pora",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.307229+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498402+01:00",
   "updated_at": null,
   "source": "https://www.montepora.com/impianti/",
   "lifts": [
@@ -332,5 +332,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.90167,
+    "lon": 10.10601,
+    "elevation_m": 1375
+  },
+  "top": {
+    "lat": 45.8857,
+    "lon": 10.10847,
+    "elevation_m": 1866
+  }
 }

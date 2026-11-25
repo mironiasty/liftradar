@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "engstligenalp",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305367+01:00",
-  "updated_at": "2026-11-23T14:51:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495442+01:00",
+  "updated_at": "2026-11-25T04:00:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -214,5 +214,15 @@
       "length_m": 100,
       "map_length_m": 110
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.45917,
+    "lon": 7.56643,
+    "elevation_m": 1398
+  },
+  "top": {
+    "lat": 46.43092,
+    "lon": 7.58045,
+    "elevation_m": 2367
+  }
 }

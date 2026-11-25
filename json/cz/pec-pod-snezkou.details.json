@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pec-pod-snezkou",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308301+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500087+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-pec-pod-snezkou",
   "lifts": [
@@ -376,5 +376,15 @@
       "length_m": 600,
       "map_length_m": 610
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.69015,
+    "lon": 15.76764,
+    "elevation_m": 708
+  },
+  "top": {
+    "lat": 50.73536,
+    "lon": 15.74044,
+    "elevation_m": 1588
+  }
 }

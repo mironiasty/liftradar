@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "gitschberg-jochtal",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306214+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497512+01:00",
   "updated_at": "2026-11-07T19:00:09.009796+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
@@ -486,5 +486,15 @@
       "length_m": 500,
       "map_length_m": 940
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.83551,
+    "lon": 11.63037,
+    "elevation_m": 1305
+  },
+  "top": {
+    "lat": 46.85922,
+    "lon": 11.68697,
+    "elevation_m": 2497
+  }
 }

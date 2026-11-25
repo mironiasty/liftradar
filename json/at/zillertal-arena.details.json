@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zillertal-arena",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:40.334856+01:00",
+  "fetched_at": "2026-11-25T08:41:52.464369+01:00",
   "updated_at": "2026-11-23T08:30:10+01:00",
   "source": "https://winter.intermaps.com/zillertalarena?lang=en",
   "lifts": [
@@ -1502,5 +1502,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.23719,
+    "lon": 11.89944,
+    "elevation_m": 572
+  },
+  "top": {
+    "lat": 47.25367,
+    "lon": 11.97721,
+    "elevation_m": 2501
+  }
 }

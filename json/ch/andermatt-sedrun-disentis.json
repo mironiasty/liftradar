@@ -10,28 +10,28 @@
   },
   "website": "https://www.andermatt-sedrun-disentis.ch",
   "status": "open",
-  "fetched_at": "2026-11-24T13:40:37.305969+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497115+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 53,
-    "valley_cm": 33,
-    "fresh_cm": 18,
+    "mountain_cm": 26,
+    "valley_cm": 26,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Gütsch (SLF)",
         "elevation_m": 2209,
-        "depth_cm": 53,
-        "fresh_cm": 18,
+        "depth_cm": 26,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Andermatt (SLF)",
         "elevation_m": 1440,
-        "depth_cm": 33,
-        "fresh_cm": 17,
+        "depth_cm": 26,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +85,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T13:02:00+01:00",
+  "lifts_updated_at": "2026-11-25T07:33:03+01:00",
   "details": "json/ch/andermatt-sedrun-disentis.details.json",
   "avalanche": {
     "region_id": "CH-2223",
@@ -101,13 +101,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://winter.intermaps.com/andermatt_sedrun_disentis?lang=en",

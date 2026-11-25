@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "obersaxen-mundaun",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305676+01:00",
-  "updated_at": "2026-11-23T15:36:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496048+01:00",
+  "updated_at": "2026-11-25T05:51:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -91,6 +91,18 @@
       "top_m": null
     },
     {
+      "id": "lift-a9-skiforderband-chummenbuhl",
+      "ref": null,
+      "name": "A9 • Skiförderband Chummenbühl",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "lift-b1-valata-cuolm-sura",
       "ref": null,
       "name": "B1 • Valata - Cuolm Sura",
@@ -146,6 +158,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 220,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b7-skiforderband-cuolm-sura",
+      "ref": null,
+      "name": "B7 • Skiförderband Cuolm Sura",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -678,5 +702,15 @@
       "length_m": null,
       "map_length_m": 1660
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.7615,
+    "lon": 9.1382,
+    "elevation_m": 1245
+  },
+  "top": {
+    "lat": 46.709,
+    "lon": 9.10016,
+    "elevation_m": 2269
+  }
 }

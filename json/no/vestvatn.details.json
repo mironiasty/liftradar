@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "vestvatn",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.314326+01:00",
+  "fetched_at": "2026-11-25T08:40:40.509536+01:00",
   "updated_at": "2026-11-18T13:24:41+01:00",
   "source": "https://fnugg.no/vestvatn/",
   "lifts": [
@@ -82,5 +82,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 67.07508,
+    "lon": 14.97294,
+    "elevation_m": 176
+  },
+  "top": {
+    "lat": 67.0744,
+    "lon": 14.94507,
+    "elevation_m": 486
+  }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "stuhleck",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.300245+01:00",
+  "fetched_at": "2026-11-25T08:40:40.490923+01:00",
   "updated_at": "2026-11-18T16:13:52+01:00",
   "source": "https://winter.intermaps.com/stuhleck?lang=en",
   "lifts": [
@@ -362,5 +362,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.61477,
+    "lon": 15.75765,
+    "elevation_m": 778
+  },
+  "top": {
+    "lat": 47.57368,
+    "lon": 15.78857,
+    "elevation_m": 1767
+  }
 }

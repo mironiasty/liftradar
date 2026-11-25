@@ -2,22 +2,10 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306084+01:00",
-  "updated_at": "2026-11-24T04:03:07.099137+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497323+01:00",
+  "updated_at": "2026-11-24T16:00:15.095887+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
-    {
-      "id": "urn:odhactivitypoi:dss:lift:1_217",
-      "ref": null,
-      "name": "5 Torri",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
     {
       "id": "urn:odhactivitypoi:dss:lift:1_218",
       "ref": null,
@@ -26,6 +14,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1360,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_217",
+      "ref": null,
+      "name": "5 Torri",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -517,16 +517,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
-      "ref": null,
-      "name": "Cacciatori",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 680,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215848",
       "ref": null,
       "name": "Cacciatori",
@@ -535,6 +525,16 @@
       "status": "closed",
       "length_m": 545,
       "map_length_m": 1430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 680,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_13503193",
@@ -707,7 +707,7 @@
       "map_length_m": 670
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "id": "urn:odhactivitypoi:dss:slope:1_215872",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -717,7 +717,7 @@
       "map_length_m": 660
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215872",
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -1027,16 +1027,6 @@
       "map_length_m": 960
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215911",
-      "ref": null,
-      "name": "Rosà",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 656,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_1767515762",
       "ref": null,
       "name": "Rosà",
@@ -1045,6 +1035,16 @@
       "status": "closed",
       "length_m": 656,
       "map_length_m": 1470
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215911",
+      "ref": null,
+      "name": "Rosà",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 656,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215912",
@@ -1267,7 +1267,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215930",
+      "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
       "ref": null,
       "name": "Vertigine Bianca",
       "difficulty": "difficult",
@@ -1277,7 +1277,7 @@
       "map_length_m": 680
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
+      "id": "urn:odhactivitypoi:dss:slope:1_215930",
       "ref": null,
       "name": "Vertigine Bianca",
       "difficulty": "difficult",
@@ -1306,5 +1306,15 @@
       "length_m": 1751,
       "map_length_m": 1820
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.55892,
+    "lon": 12.4193,
+    "elevation_m": 859
+  },
+  "top": {
+    "lat": 46.55175,
+    "lon": 12.06764,
+    "elevation_m": 3177
+  }
 }

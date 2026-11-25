@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "gol",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.314201+01:00",
+  "fetched_at": "2026-11-25T08:40:40.509347+01:00",
   "updated_at": "2026-11-17T11:32:31+01:00",
   "source": "https://fnugg.no/gol/",
   "lifts": [
@@ -182,5 +182,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 60.70776,
+    "lon": 8.91379,
+    "elevation_m": 438
+  },
+  "top": {
+    "lat": 60.70922,
+    "lon": 8.88024,
+    "elevation_m": 873
+  }
 }

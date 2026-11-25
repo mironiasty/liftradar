@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "obereggen",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306188+01:00",
-  "updated_at": "2026-10-09T22:25:27.618580+02:00",
+  "fetched_at": "2026-11-25T08:40:40.497470+01:00",
+  "updated_at": "2026-11-24T21:20:12.799385+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
     {
@@ -157,16 +157,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:8_182260",
-      "ref": null,
-      "name": "Laner",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 750,
-      "map_length_m": 670
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:8_182261",
       "ref": null,
       "name": "Maierl",
@@ -306,5 +296,15 @@
       "length_m": 400,
       "map_length_m": 30
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.38291,
+    "lon": 11.52494,
+    "elevation_m": 1539
+  },
+  "top": {
+    "lat": 46.3635,
+    "lon": 11.54832,
+    "elevation_m": 2163
+  }
 }

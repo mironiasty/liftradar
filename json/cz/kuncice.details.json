@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kuncice",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308403+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500252+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-kuncice-skitech-jeseniky",
   "lifts": [
@@ -126,5 +126,15 @@
       "length_m": 900,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.18259,
+    "lon": 16.93886,
+    "elevation_m": 571
+  },
+  "top": {
+    "lat": 50.1888,
+    "lon": 16.93194,
+    "elevation_m": 750
+  }
 }

@@ -9,12 +9,12 @@
     "lon": 25.2996
   },
   "website": "https://himos.fi",
-  "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.312448+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-25T08:40:40.506328+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": null,
+    "valley_cm": 5,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -31,21 +31,40 @@
   },
   "lifts": {
     "open": 0,
-    "total": 17
+    "total": 15
   },
   "slopes": {
-    "open": 0,
-    "total": 26,
-    "open_km": 0.0,
+    "open": null,
+    "total": 21,
+    "open_km": null,
     "total_km": 13
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 7,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 8,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/hiihtokeskukset/himos/",
-    "https://himos.fi/",
+    "https://ski.fi/hiihtokeskukset/",
     "https://en.ilmatieteenlaitos.fi/open-data",
     "https://www.skiresort.com/en/ski-resort/himos/"
   ],
@@ -56,7 +75,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://himos.fi/",
+        "url": "https://ski.fi/hiihtokeskukset/",
         "attribution_required": null
       },
       {
@@ -71,5 +90,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ReadTimeout: "
+  ]
 }

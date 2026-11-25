@@ -11,13 +11,13 @@
   "website": "https://www.verbier.ch",
   "linked_area": "4-vallees",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305868+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496364+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-24",
+    "last_snowfall": "2026-11-25",
     "condition": null,
     "stations": [
       {
@@ -39,8 +39,8 @@
       {
         "name": "Lac des Vaux",
         "elevation_m": 2550,
-        "depth_cm": 117,
-        "fresh_cm": 16,
+        "depth_cm": 113,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       }
@@ -108,7 +108,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T13:41:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:42:00+01:00",
   "details": "json/ch/verbier.details.json",
   "avalanche": {
     "region_id": "CH-4115",
@@ -124,13 +124,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

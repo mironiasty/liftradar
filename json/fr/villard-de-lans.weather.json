@@ -1,0 +1,178 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-weather.schema.json",
+  "id": "villard-de-lans",
+  "country": "fr",
+  "fetched_at": "2026-11-25T08:42:59+01:00",
+  "source": "https://open-meteo.com/",
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "points": [
+    {
+      "name": "bottom",
+      "lat": 45.06642,
+      "lon": 5.55181,
+      "elevation_m": 1001,
+      "now": {
+        "time": "2026-11-25T08:30:00+01:00",
+        "temperature_c": 1.9,
+        "weather_code": 61,
+        "wind_kmh": 0.7
+      },
+      "days": [
+        {
+          "date": "2026-11-25",
+          "weather_code": 95,
+          "temperature_max_c": 6.4,
+          "temperature_min_c": 0.9,
+          "snowfall_cm": 1.0,
+          "precipitation_mm": 52.1,
+          "wind_gusts_max_kmh": 41.8,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-26",
+          "weather_code": 80,
+          "temperature_max_c": 3.7,
+          "temperature_min_c": 1.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 1.7,
+          "wind_gusts_max_kmh": 23.8,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-27",
+          "weather_code": 45,
+          "temperature_max_c": 2.2,
+          "temperature_min_c": -2.3,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 32.4,
+          "sunshine_h": 8.9
+        },
+        {
+          "date": "2026-11-28",
+          "weather_code": 0,
+          "temperature_max_c": 3.9,
+          "temperature_min_c": -3.7,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 24.5,
+          "sunshine_h": 8.9
+        },
+        {
+          "date": "2026-11-29",
+          "weather_code": 3,
+          "temperature_max_c": 5.9,
+          "temperature_min_c": -0.5,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 25.2,
+          "sunshine_h": 5.5
+        },
+        {
+          "date": "2026-11-30",
+          "weather_code": 3,
+          "temperature_max_c": 4.0,
+          "temperature_min_c": 0.8,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 13.0,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-12-01",
+          "weather_code": 3,
+          "temperature_max_c": 5.1,
+          "temperature_min_c": -0.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 14.0,
+          "sunshine_h": 8.4
+        }
+      ]
+    },
+    {
+      "name": "top",
+      "lat": 45.00135,
+      "lon": 5.55314,
+      "elevation_m": 2055,
+      "now": {
+        "time": "2026-11-25T08:30:00+01:00",
+        "temperature_c": -1.8,
+        "weather_code": 73,
+        "wind_kmh": 1.8
+      },
+      "days": [
+        {
+          "date": "2026-11-25",
+          "weather_code": 95,
+          "temperature_max_c": -1.1,
+          "temperature_min_c": -3.0,
+          "snowfall_cm": 51.0,
+          "precipitation_mm": 73.6,
+          "wind_gusts_max_kmh": 89.3,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-26",
+          "weather_code": 86,
+          "temperature_max_c": -3.0,
+          "temperature_min_c": -4.8,
+          "snowfall_cm": 2.8,
+          "precipitation_mm": 5.2,
+          "wind_gusts_max_kmh": 63.4,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-27",
+          "weather_code": 3,
+          "temperature_max_c": -4.2,
+          "temperature_min_c": -11.0,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 51.5,
+          "sunshine_h": 8.9
+        },
+        {
+          "date": "2026-11-28",
+          "weather_code": 0,
+          "temperature_max_c": -2.4,
+          "temperature_min_c": -12.9,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 29.5,
+          "sunshine_h": 8.9
+        },
+        {
+          "date": "2026-11-29",
+          "weather_code": 3,
+          "temperature_max_c": -1.1,
+          "temperature_min_c": -6.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 24.8,
+          "sunshine_h": 5.5
+        },
+        {
+          "date": "2026-11-30",
+          "weather_code": 3,
+          "temperature_max_c": -2.9,
+          "temperature_min_c": -6.0,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 13.0,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-12-01",
+          "weather_code": 3,
+          "temperature_max_c": -1.8,
+          "temperature_min_c": -7.0,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 14.0,
+          "sunshine_h": 8.4
+        }
+      ]
+    }
+  ]
+}

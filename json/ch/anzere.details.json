@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "anzere",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305168+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495107+01:00",
   "updated_at": "2026-11-11T09:14:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -502,5 +502,15 @@
       "length_m": 5400,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.29782,
+    "lon": 7.39958,
+    "elevation_m": 1516
+  },
+  "top": {
+    "lat": 46.3265,
+    "lon": 7.4019,
+    "elevation_m": 2411
+  }
 }

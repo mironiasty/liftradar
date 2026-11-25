@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "riserva-bianca",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.307210+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498376+01:00",
   "updated_at": null,
   "source": "https://riservabianca.it/impianti-piste",
   "lifts": [
@@ -630,5 +630,15 @@
       "length_m": 305,
       "map_length_m": 650
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 44.19832,
+    "lon": 7.58211,
+    "elevation_m": 1052
+  },
+  "top": {
+    "lat": 44.15585,
+    "lon": 7.59597,
+    "elevation_m": 2054
+  }
 }

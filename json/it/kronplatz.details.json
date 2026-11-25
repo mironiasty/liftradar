@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kronplatz",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306099+01:00",
-  "updated_at": "2026-11-23T17:20:12.958551+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497347+01:00",
+  "updated_at": "2026-11-24T16:00:16.147995+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
     {
@@ -820,7 +820,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 7000,
-      "map_length_m": 5960
+      "map_length_m": 360
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:2_11016427",
@@ -830,7 +830,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 300,
-      "map_length_m": 360
+      "map_length_m": 5960
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:2_3349",
@@ -930,7 +930,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 600,
-      "map_length_m": 520
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:2_3279",
@@ -940,7 +940,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1300,
-      "map_length_m": null
+      "map_length_m": 520
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:2_404586812",
@@ -963,7 +963,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:2_1763650880",
+      "id": "urn:odhactivitypoi:dss:slope:2_404586813",
       "ref": null,
       "name": "Verbindung St. Vigil",
       "difficulty": "easy",
@@ -973,7 +973,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:2_404586813",
+      "id": "urn:odhactivitypoi:dss:slope:2_1763650880",
       "ref": null,
       "name": "Verbindung St. Vigil",
       "difficulty": "easy",
@@ -992,5 +992,15 @@
       "length_m": 650,
       "map_length_m": 670
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.79024,
+    "lon": 11.97811,
+    "elevation_m": 925
+  },
+  "top": {
+    "lat": 46.73839,
+    "lon": 11.95928,
+    "elevation_m": 2273
+  }
 }

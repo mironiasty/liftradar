@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "elm",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305347+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495403+01:00",
   "updated_at": "2026-11-24T10:06:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -240,5 +240,15 @@
       "length_m": 1000,
       "map_length_m": 1630
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.91365,
+    "lon": 9.16242,
+    "elevation_m": 1016
+  },
+  "top": {
+    "lat": 46.93346,
+    "lon": 9.13261,
+    "elevation_m": 2100
+  }
 }

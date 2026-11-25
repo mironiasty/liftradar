@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tusten",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313910+01:00",
+  "fetched_at": "2026-11-25T08:40:40.508957+01:00",
   "updated_at": "2026-11-12T10:25:08+01:00",
   "source": "https://fnugg.no/tusten/",
   "lifts": [
@@ -156,5 +156,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 62.76509,
+    "lon": 7.27085,
+    "elevation_m": 119
+  },
+  "top": {
+    "lat": 62.77955,
+    "lon": 7.25028,
+    "elevation_m": 661
+  }
 }

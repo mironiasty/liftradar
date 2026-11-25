@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pizol",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305697+01:00",
-  "updated_at": "2026-11-24T13:30:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496084+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -71,7 +71,7 @@
       "ref": null,
       "name": "F • SAC-Lift",
       "type": "drag_lift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 720,
       "capacity_per_hour": null,
@@ -83,7 +83,7 @@
       "ref": null,
       "name": "G • 4er-Sessel Gaffia - Pizolhütte",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1440,
       "capacity_per_hour": null,
@@ -95,7 +95,7 @@
       "ref": null,
       "name": "H • 4er-Sessel Furt - Gaffia",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1330,
       "capacity_per_hour": null,
@@ -119,7 +119,7 @@
       "ref": null,
       "name": "J • Gondelbahn Wangs - Maienberg - Furt",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 3260,
       "capacity_per_hour": null,
@@ -218,7 +218,7 @@
       "name": "6 • Gaffia - Furt",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 4500,
       "map_length_m": 1800
     },
@@ -288,7 +288,7 @@
       "name": "10 • Twärchamm-Piste",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 1300,
       "map_length_m": 1360
     },
@@ -368,7 +368,7 @@
       "name": "15 • Valeis",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1300,
       "map_length_m": 2130
     },
@@ -388,7 +388,7 @@
       "name": "17 • Adler Piste",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": 1500,
       "map_length_m": null
     },
@@ -552,5 +552,15 @@
       "length_m": 1000,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.01718,
+    "lon": 9.47343,
+    "elevation_m": 489
+  },
+  "top": {
+    "lat": 46.97952,
+    "lon": 9.42703,
+    "elevation_m": 2250
+  }
 }

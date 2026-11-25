@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "feldberg",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312936+01:00",
+  "fetched_at": "2026-11-25T08:40:40.507103+01:00",
   "updated_at": "2026-11-17T20:55:18+01:00",
   "source": "https://winter.intermaps.com/feldberg?lang=en",
   "lifts": [
@@ -324,5 +324,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.85608,
+    "lon": 8.00486,
+    "elevation_m": 932
+  },
+  "top": {
+    "lat": 47.86521,
+    "lon": 8.02504,
+    "elevation_m": 1446
+  }
 }

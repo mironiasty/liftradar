@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "visperterminen",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305909+01:00",
-  "updated_at": "2026-11-20T10:00:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496438+01:00",
+  "updated_at": "2026-11-24T22:00:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -198,5 +198,15 @@
       "length_m": 1000,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.25829,
+    "lon": 7.90441,
+    "elevation_m": 1379
+  },
+  "top": {
+    "lat": 46.24982,
+    "lon": 7.93797,
+    "elevation_m": 2310
+  }
 }

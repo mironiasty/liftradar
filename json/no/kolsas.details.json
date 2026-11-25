@@ -1,0 +1,110 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "kolsas",
+  "country": "no",
+  "fetched_at": "2026-11-25T08:40:40.509089+01:00",
+  "updated_at": "2026-11-24T17:12:49+01:00",
+  "source": "https://fnugg.no/kolsaas/",
+  "lifts": [
+    {
+      "id": "lift-kolsas-i-tallerken",
+      "ref": null,
+      "name": "Kolsås I - Tallerken",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kolsas-ii-t-krok",
+      "ref": null,
+      "name": "Kolsås II - T-krok",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mygghenget-tallerken",
+      "ref": null,
+      "name": "Mygghenget - Tallerken",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-knttebandet-skiband",
+      "ref": null,
+      "name": "Knøttebåndet - Skibånd",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-knttebakken",
+      "ref": null,
+      "name": "Knøttebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-mygghenget",
+      "ref": null,
+      "name": "Mygghenget",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kolsasbakken-v",
+      "ref": null,
+      "name": "Kolsåsbakken V",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kolsasbakken-stinebakken",
+      "ref": null,
+      "name": "Kolsåsbakken Ø-Stinebakken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
+  "bottom": {
+    "lat": 59.93674,
+    "lon": 10.52664,
+    "elevation_m": 213
+  },
+  "top": {
+    "lat": 59.931,
+    "lon": 10.52079,
+    "elevation_m": 341
+  }
+}

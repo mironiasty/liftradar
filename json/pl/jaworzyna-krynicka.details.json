@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "jaworzyna-krynicka",
   "country": "pl",
-  "fetched_at": "2026-11-24T13:40:37.308668+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500689+01:00",
   "updated_at": null,
-  "source": "https://www.pkl.pl/trasy-narciarskie.html",
+  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
   "lifts": [
     {
       "id": "lift-a-gondola-trasa-nr-1",
@@ -278,5 +278,15 @@
       "length_m": 250,
       "map_length_m": 840
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.41952,
+    "lon": 20.92573,
+    "elevation_m": 642
+  },
+  "top": {
+    "lat": 49.41844,
+    "lon": 20.8954,
+    "elevation_m": 1108
+  }
 }

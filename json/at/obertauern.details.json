@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "obertauern",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:41.773565+01:00",
-  "updated_at": "2026-11-24T12:25:47+01:00",
+  "fetched_at": "2026-11-25T08:40:46.144185+01:00",
+  "updated_at": "2026-11-25T08:08:48+01:00",
   "source": "https://winter.intermaps.com/obertauern?lang=en",
   "lifts": [
     {
@@ -1180,5 +1180,15 @@
       "length_m": null,
       "map_length_m": 850
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.24096,
+    "lon": 13.57217,
+    "elevation_m": 1628
+  },
+  "top": {
+    "lat": 47.23927,
+    "lon": 13.54806,
+    "elevation_m": 2297
+  }
 }

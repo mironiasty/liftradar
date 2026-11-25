@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "gace",
   "country": "si",
-  "fetched_at": "2026-11-24T13:40:37.315464+01:00",
+  "fetched_at": "2026-11-25T08:40:40.510713+01:00",
   "updated_at": "2026-11-23T20:23:18+01:00",
   "source": "https://www.scgace.si/skiinfo",
   "lifts": [],
@@ -67,5 +67,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.66555,
+    "lon": 15.0905,
+    "elevation_m": 679
+  },
+  "top": {
+    "lat": 45.65298,
+    "lon": 15.08677,
+    "elevation_m": 964
+  }
 }

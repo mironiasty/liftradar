@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "bormio",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306565+01:00",
-  "updated_at": "2026-11-24T13:39:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498107+01:00",
+  "updated_at": "2026-11-25T08:40:00+01:00",
   "source": "https://www.bormio.eu/it/live-info/impianti-e-piste",
   "lifts": [
     {
@@ -772,5 +772,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.46214,
+    "lon": 10.37244,
+    "elevation_m": 1197
+  },
+  "top": {
+    "lat": 46.4205,
+    "lon": 10.41102,
+    "elevation_m": 3010
+  }
 }

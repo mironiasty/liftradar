@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "la-berra",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305500+01:00",
-  "updated_at": "2026-11-24T04:01:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495718+01:00",
+  "updated_at": "2026-11-25T04:00:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -180,5 +180,15 @@
       "length_m": 3000,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.68661,
+    "lon": 7.15498,
+    "elevation_m": 1038
+  },
+  "top": {
+    "lat": 46.67771,
+    "lon": 7.17864,
+    "elevation_m": 1633
+  }
 }

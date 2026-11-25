@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "fuentes-de-invierno",
   "country": "es",
-  "fetched_at": "2026-11-24T13:40:37.315183+01:00",
+  "fetched_at": "2026-11-25T08:40:40.510259+01:00",
   "updated_at": null,
   "source": "https://www.fuentesdeinvierno.com/es/parte-meteorologico.html",
   "lifts": [
@@ -218,5 +218,15 @@
       "length_m": null,
       "map_length_m": 280
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 43.06232,
+    "lon": -5.39417,
+    "elevation_m": 1492
+  },
+  "top": {
+    "lat": 43.04957,
+    "lon": -5.40376,
+    "elevation_m": 1949
+  }
 }

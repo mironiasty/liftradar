@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ofterschwang-gunzesried",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312838+01:00",
-  "updated_at": "2026-11-24T09:22:13+01:00",
+  "fetched_at": "2026-11-25T08:40:40.506979+01:00",
+  "updated_at": "2026-11-24T14:10:37+01:00",
   "source": "https://winter.intermaps.com/ofterschwang?lang=en",
   "lifts": [
     {
@@ -262,5 +262,15 @@
       "length_m": 500,
       "map_length_m": 200
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.49749,
+    "lon": 10.23285,
+    "elevation_m": 880
+  },
+  "top": {
+    "lat": 47.49374,
+    "lon": 10.21223,
+    "elevation_m": 1403
+  }
 }

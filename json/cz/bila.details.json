@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "bila",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308474+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500364+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/ski-vitkovice-bila",
   "lifts": [
@@ -182,5 +182,15 @@
       "length_m": 90,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.44472,
+    "lon": 18.45955,
+    "elevation_m": 536
+  },
+  "top": {
+    "lat": 49.43603,
+    "lon": 18.46386,
+    "elevation_m": 767
+  }
 }

@@ -10,7 +10,7 @@
   },
   "website": "https://www.spluegen.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305770+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496211+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,7 +31,7 @@
         "name": "Splügen (SLF)",
         "elevation_m": 1470,
         "depth_cm": 10,
-        "fresh_cm": 6,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -91,16 +91,16 @@
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-11-23T15:14:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:25:00+01:00",
   "details": "json/ch/spluegen.details.json",
   "avalanche": {
     "region_id": "CH-5223",
     "region": "Rheinwald",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -110,9 +110,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

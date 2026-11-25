@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "weissensee",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.301715+01:00",
-  "updated_at": "2026-11-24T11:21:34+01:00",
+  "fetched_at": "2026-11-25T08:40:40.491063+01:00",
+  "updated_at": "2026-11-25T04:37:01+01:00",
   "source": "https://winter.intermaps.com/weissensee?lang=en",
   "lifts": [
     {
@@ -154,5 +154,15 @@
       "length_m": 550,
       "map_length_m": 620
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.7136,
+    "lon": 13.28501,
+    "elevation_m": 932
+  },
+  "top": {
+    "lat": 46.69672,
+    "lon": 13.31568,
+    "elevation_m": 1365
+  }
 }

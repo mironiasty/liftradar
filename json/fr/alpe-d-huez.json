@@ -10,20 +10,20 @@
   },
   "website": "https://www.alpedhuez.com",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.310171+01:00",
+  "fetched_at": "2026-11-25T08:40:40.503455+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 140,
-    "valley_cm": 30,
-    "fresh_cm": 50,
-    "last_snowfall": "2026-11-23",
+    "valley_cm": 40,
+    "fresh_cm": 10,
+    "last_snowfall": "2026-11-25",
     "condition": "Fraiche",
     "stations": [
       {
         "name": "Alpe d'Huez",
         "elevation_m": 1800,
-        "depth_cm": 60,
-        "fresh_cm": 50,
+        "depth_cm": 70,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": "Fraiche"
       },
@@ -31,7 +31,7 @@
         "name": "Pic Blanc",
         "elevation_m": 3300,
         "depth_cm": 140,
-        "fresh_cm": 50,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraiche"
       },
@@ -39,15 +39,15 @@
         "name": "Villard",
         "elevation_m": 1650,
         "depth_cm": 10,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraiche"
       },
       {
         "name": "Auris",
         "elevation_m": 1600,
-        "depth_cm": 12,
-        "fresh_cm": 12,
+        "depth_cm": 15,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": "Fraiche"
       },
@@ -55,15 +55,15 @@
         "name": "Oz",
         "elevation_m": 1350,
         "depth_cm": 12,
-        "fresh_cm": 12,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraiche"
       },
       {
         "name": "Vaujany – Montfrais",
         "elevation_m": 1250,
-        "depth_cm": 30,
-        "fresh_cm": 30,
+        "depth_cm": 40,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": "Fraiche"
       },
@@ -71,7 +71,7 @@
         "name": "Dôme des Rousses",
         "elevation_m": 2810,
         "depth_cm": 50,
-        "fresh_cm": 40,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraiche"
       }
@@ -97,22 +97,16 @@
     "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
-        "lower_bound": null,
-        "upper_bound": 2200,
-        "period": "all_day"
-      },
-      {
         "level": "considerable",
-        "lower_bound": 2200,
+        "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
+    "published_at": "2026-11-24T16:00:00+01:00",
+    "valid_from": "2026-11-24T16:00:00+01:00",
+    "valid_until": "2026-11-25T18:00:00+01:00"
   },
   "sources": [
     "https://live.aten-altitude.com/alpehuez/",

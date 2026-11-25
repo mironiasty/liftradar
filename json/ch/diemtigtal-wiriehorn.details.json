@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "diemtigtal-wiriehorn",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305328+01:00",
-  "updated_at": "2026-11-24T13:30:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495367+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -198,5 +198,15 @@
       "length_m": 800,
       "map_length_m": 810
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.61198,
+    "lon": 7.53185,
+    "elevation_m": 996
+  },
+  "top": {
+    "lat": 46.58928,
+    "lon": 7.53881,
+    "elevation_m": 1755
+  }
 }

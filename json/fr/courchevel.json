@@ -11,7 +11,7 @@
   "website": "https://www.courchevel.com",
   "linked_area": "les-3-vallees",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.309168+01:00",
+  "fetched_at": "2026-11-25T08:40:40.501470+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -74,37 +74,15 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "FR-10",
-    "region": "Vanoise",
-    "danger_level": 3,
-    "danger": "considerable",
-    "ratings": [
-      {
-        "level": "considerable",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/courchevel/station-de-ski",
-    "https://meteofrance.com/meteo-montagne"
+    "https://www.skiinfo.fr/alpes-du-nord/courchevel/station-de-ski"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.lumiplan.com",
-        "attribution_required": null
-      },
-      {
-        "url": "https://meteofrance.com/meteo-montagne",
         "attribution_required": null
       }
     ],

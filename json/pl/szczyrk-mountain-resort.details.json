@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "szczyrk-mountain-resort",
   "country": "pl",
-  "fetched_at": "2026-11-24T13:40:37.308718+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500782+01:00",
   "updated_at": null,
   "source": "https://www.szczyrkowski.pl",
   "lifts": [],
@@ -217,5 +217,15 @@
       "length_m": 500,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.71687,
+    "lon": 19.03727,
+    "elevation_m": 495
+  },
+  "top": {
+    "lat": 49.68543,
+    "lon": 19.03082,
+    "elevation_m": 1244
+  }
 }

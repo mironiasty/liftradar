@@ -10,7 +10,7 @@
   },
   "website": "https://www.savoiegrandrevard.com/",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.310726+01:00",
+  "fetched_at": "2026-11-25T08:40:40.504334+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -36,20 +36,26 @@
   "avalanche": {
     "region_id": "FR-04",
     "region": "Bauges",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
         "level": "moderate",
         "lower_bound": null,
+        "upper_bound": 1700,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 1700,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
+    "published_at": "2026-11-24T16:00:00+01:00",
+    "valid_from": "2026-11-24T16:00:00+01:00",
+    "valid_until": "2026-11-25T18:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/alpes-du-nord/savoie-grand-revard/station-de-ski",

@@ -10,7 +10,7 @@
   },
   "website": "https://www.belalp.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305208+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495166+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -19,6 +19,14 @@
     "last_snowfall": "2026-11-24",
     "condition": null,
     "stations": [
+      {
+        "name": "Chiematte",
+        "elevation_m": 2205,
+        "depth_cm": 45,
+        "fresh_cm": 45,
+        "temperature_c": null,
+        "condition": null
+      },
       {
         "name": "Belalp",
         "elevation_m": 2554,
@@ -93,7 +101,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-24T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:30:00+01:00",
   "details": "json/ch/belalp.details.json",
   "avalanche": {
     "region_id": "CH-4214",
@@ -109,13 +117,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

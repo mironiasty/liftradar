@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kitzsteinhorn",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.299282+01:00",
-  "updated_at": "2026-11-24T12:31:25+01:00",
+  "fetched_at": "2026-11-25T08:40:40.488476+01:00",
+  "updated_at": "2026-11-24T20:55:36+01:00",
   "source": "https://winter.intermaps.com/kitzsteinhorn?lang=en",
   "lifts": [
     {
@@ -614,5 +614,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.27374,
+    "lon": 12.75667,
+    "elevation_m": 765
+  },
+  "top": {
+    "lat": 47.18924,
+    "lon": 12.68517,
+    "elevation_m": 3026
+  }
 }

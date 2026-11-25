@@ -10,7 +10,7 @@
   },
   "website": "https://www.chamonix.com",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.309551+01:00",
+  "fetched_at": "2026-11-25T08:40:40.502046+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -47,7 +47,7 @@
         "name": "Brévent",
         "elevation_m": 2525,
         "depth_cm": 150,
-        "fresh_cm": 80,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       },
@@ -55,7 +55,7 @@
         "name": "Flégère",
         "elevation_m": 2385,
         "depth_cm": 142,
-        "fresh_cm": 80,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       },
@@ -63,7 +63,7 @@
         "name": "Balme Tour-Vallorcine",
         "elevation_m": 2270,
         "depth_cm": 145,
-        "fresh_cm": 80,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       },
@@ -79,7 +79,7 @@
         "name": "Grands Montets",
         "elevation_m": 2765,
         "depth_cm": 150,
-        "fresh_cm": 60,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       }
@@ -144,16 +144,22 @@
     "danger": "considerable",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
+        "upper_bound": 1800,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 1800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
+    "published_at": "2026-11-24T16:00:00+01:00",
+    "valid_from": "2026-11-24T16:00:00+01:00",
+    "valid_until": "2026-11-25T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com",

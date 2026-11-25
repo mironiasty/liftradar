@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "brauneck",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312849+01:00",
+  "fetched_at": "2026-11-25T08:40:40.506996+01:00",
   "updated_at": "2026-11-19T13:32:15+01:00",
   "source": "https://winter.intermaps.com/brauneck?lang=en",
   "lifts": [
@@ -476,5 +476,15 @@
       "length_m": null,
       "map_length_m": 590
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.67615,
+    "lon": 11.55353,
+    "elevation_m": 715
+  },
+  "top": {
+    "lat": 47.6556,
+    "lon": 11.50118,
+    "elevation_m": 1596
+  }
 }

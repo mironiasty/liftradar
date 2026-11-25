@@ -10,7 +10,7 @@
   },
   "website": "https://www.ski-altastenberg.de",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.312687+01:00",
+  "fetched_at": "2026-11-25T08:40:40.506736+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,26 +22,60 @@
   },
   "lifts": {
     "open": 0,
-    "total": 7
+    "total": 6
   },
   "slopes": {
     "open": 0,
-    "total": 12,
-    "open_km": null,
+    "total": 11,
+    "open_km": 0.0,
     "total_km": 8
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-11-24T21:01:49+01:00",
+  "details": "json/de/altastenberg.details.json",
   "avalanche": null,
   "sources": [
     "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen",
+    "https://winter.intermaps.com/winterberg?lang=en",
     "https://www.winterberg.de/aktivitaeten-erlebnisse/winter/skifahren-snowboarden/skiliftkarussell-altastenberg/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.wintersport-arena.de/skifahren-boarden/skigebiete-und-schneehoehen",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/winterberg?lang=en",
         "attribution_required": null
       }
     ],

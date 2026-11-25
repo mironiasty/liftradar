@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "balderschwang",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312989+01:00",
+  "fetched_at": "2026-11-25T08:40:40.507178+01:00",
   "updated_at": null,
   "source": "https://www.skigebiet-balderschwang.de/lifte/",
   "lifts": [
@@ -490,5 +490,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.46047,
+    "lon": 10.09337,
+    "elevation_m": 1002
+  },
+  "top": {
+    "lat": 47.44206,
+    "lon": 10.11037,
+    "elevation_m": 1487
+  }
 }

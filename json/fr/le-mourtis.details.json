@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "le-mourtis",
   "country": "fr",
-  "fetched_at": "2026-11-24T13:40:37.310162+01:00",
+  "fetched_at": "2026-11-25T08:40:40.503439+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com",
   "lifts": [
@@ -308,5 +308,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 42.91066,
+    "lon": 0.77459,
+    "elevation_m": 1386
+  },
+  "top": {
+    "lat": 42.90009,
+    "lon": 0.77472,
+    "elevation_m": 1794
+  }
 }

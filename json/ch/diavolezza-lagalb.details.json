@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "diavolezza-lagalb",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305317+01:00",
-  "updated_at": "2026-11-24T13:30:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495349+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -198,5 +198,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.44165,
+    "lon": 9.98272,
+    "elevation_m": 2083
+  },
+  "top": {
+    "lat": 46.41064,
+    "lon": 9.97091,
+    "elevation_m": 3003
+  }
 }

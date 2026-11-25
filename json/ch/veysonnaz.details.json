@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "veysonnaz",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305816+01:00",
-  "updated_at": "2026-11-24T13:30:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496277+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -85,7 +85,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1760,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -218,5 +218,15 @@
       "length_m": 1300,
       "map_length_m": 3640
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.19553,
+    "lon": 7.34299,
+    "elevation_m": 1357
+  },
+  "top": {
+    "lat": 46.14488,
+    "lon": 7.35419,
+    "elevation_m": 2650
+  }
 }

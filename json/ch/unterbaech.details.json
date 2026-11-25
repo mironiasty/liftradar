@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "unterbaech",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305845+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496330+01:00",
   "updated_at": "2026-11-19T09:21:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -212,5 +212,15 @@
       "length_m": 1000,
       "map_length_m": 720
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.30327,
+    "lon": 7.80107,
+    "elevation_m": 636
+  },
+  "top": {
+    "lat": 46.23701,
+    "lon": 7.77465,
+    "elevation_m": 2432
+  }
 }

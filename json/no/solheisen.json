@@ -9,8 +9,8 @@
     "lon": 8.4494
   },
   "website": "https://solheisen.no/",
-  "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.314060+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-25T08:40:40.509165+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 3
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 8,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 6
   },
   "lifts_by_type": {
@@ -38,26 +38,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-11-10T17:19:11+01:00",
-  "details": "json/no/solheisen.details.json",
   "avalanche": {
     "region_id": "NO-3032",
     "region": "Hallingdal",
@@ -72,9 +71,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T00:00:00+01:00",
-    "valid_from": "2026-11-24T00:00:00+01:00",
-    "valid_until": "2026-11-24T23:59:59+01:00"
+    "published_at": "2026-11-25T00:00:00+01:00",
+    "valid_from": "2026-11-25T00:00:00+01:00",
+    "valid_until": "2026-11-25T23:59:59+01:00"
   },
   "sources": [
     "https://fnugg.no/solheisen/",

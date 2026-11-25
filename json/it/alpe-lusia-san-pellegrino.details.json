@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "alpe-lusia-san-pellegrino",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306223+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497528+01:00",
   "updated_at": "2026-11-23T21:20:12.146775+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
@@ -481,7 +481,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:11_1790664911",
+      "id": "urn:odhactivitypoi:dss:slope:11_1790601952",
       "ref": null,
       "name": "Falcade X-Cross",
       "difficulty": "intermediate",
@@ -491,7 +491,7 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:11_1790601952",
+      "id": "urn:odhactivitypoi:dss:slope:11_1790664911",
       "ref": null,
       "name": "Falcade X-Cross",
       "difficulty": "intermediate",
@@ -900,5 +900,15 @@
       "length_m": 3000,
       "map_length_m": 2660
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.34937,
+    "lon": 11.85928,
+    "elevation_m": 1216
+  },
+  "top": {
+    "lat": 46.36711,
+    "lon": 11.79333,
+    "elevation_m": 2513
+  }
 }

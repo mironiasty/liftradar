@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "scuol",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305750+01:00",
-  "updated_at": "2026-11-24T13:30:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496178+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -412,5 +412,15 @@
       "length_m": 10000,
       "map_length_m": 6310
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.79532,
+    "lon": 10.28913,
+    "elevation_m": 1292
+  },
+  "top": {
+    "lat": 46.84339,
+    "lon": 10.26916,
+    "elevation_m": 2794
+  }
 }

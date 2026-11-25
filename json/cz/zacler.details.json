@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zacler",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308334+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500141+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-zacler-prkenny-dul",
   "lifts": [
@@ -114,5 +114,15 @@
       "length_m": 80,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.6426,
+    "lon": 15.90646,
+    "elevation_m": 522
+  },
+  "top": {
+    "lat": 50.6425,
+    "lon": 15.88644,
+    "elevation_m": 828
+  }
 }

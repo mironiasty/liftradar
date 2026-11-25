@@ -10,15 +10,15 @@
   },
   "website": "https://www.glacier3000.ch",
   "ski_region": "gstaad",
-  "status": "open",
-  "fetched_at": "2026-11-24T13:40:37.305396+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-25T08:40:40.495499+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 65,
-    "valley_cm": 65,
-    "fresh_cm": 25,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": "2026-11-24",
-    "condition": "powder",
+    "condition": null,
     "stations": [
       {
         "name": "in place",
@@ -39,26 +39,26 @@
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 0,
     "total": 11
   },
   "slopes": {
-    "open": 1,
+    "open": 0,
     "total": 17,
-    "open_km": 0.5,
+    "open_km": 0.0,
     "total_km": 32
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 2,
+      "open": 0,
       "total": 3
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 3
     },
     "drag_lift": {
-      "open": 1,
+      "open": 0,
       "total": 5
     }
   },
@@ -70,9 +70,9 @@
       "total_km": 10
     },
     "intermediate": {
-      "open": 1,
+      "open": 0,
       "total": 4,
-      "open_km": 0.5,
+      "open_km": 0.0,
       "total_km": 6
     },
     "difficult": {
@@ -88,7 +88,7 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-24T13:08:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:37:00+01:00",
   "details": "json/ch/glacier-3000.details.json",
   "avalanche": {
     "region_id": "CH-1114",
@@ -105,11 +105,12 @@
     ],
     "problems": [
       "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

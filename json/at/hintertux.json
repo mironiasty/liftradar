@@ -11,40 +11,15 @@
   "website": "https://www.hintertuxergletscher.at",
   "ski_region": "zillertal",
   "status": "open",
-  "fetched_at": "2026-11-24T13:40:37.299097+01:00",
+  "fetched_at": "2026-11-25T08:40:40.488335+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 65,
-    "valley_cm": 30,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-22",
-    "condition": "grippy/hard powder",
-    "stations": [
-      {
-        "name": "Gefrorene Wand",
-        "elevation_m": 3250,
-        "depth_cm": 65,
-        "fresh_cm": null,
-        "temperature_c": -10.3,
-        "condition": "grippy/hard powder"
-      },
-      {
-        "name": "Tuxer Fernerhaus",
-        "elevation_m": 2660,
-        "depth_cm": 50,
-        "fresh_cm": null,
-        "temperature_c": -6.3,
-        "condition": "grippy/hard powder"
-      },
-      {
-        "name": "Sommerbergalm",
-        "elevation_m": 2100,
-        "depth_cm": 30,
-        "fresh_cm": null,
-        "temperature_c": -2.6,
-        "condition": "grippy"
-      }
-    ]
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
   },
   "lifts": {
     "open": 17,
@@ -53,7 +28,7 @@
   "slopes": {
     "open": 13,
     "total": 32,
-    "open_km": 46.0,
+    "open_km": null,
     "total_km": 64
   },
   "lifts_by_type": {
@@ -104,21 +79,11 @@
   "details": "json/at/hintertux.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.hintertuxergletscher.at/en/information/currently/weather/",
-    "https://www.hintertuxergletscher.at/en/",
     "https://winter.intermaps.com/hintertuxer_gletscher?lang=en",
     "https://www.hintertuxergletscher.at/en/information/about-us/interesting-facts/"
   ],
   "source_details": {
     "conditions": [
-      {
-        "url": "https://www.hintertuxergletscher.at/en/information/currently/weather/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.hintertuxergletscher.at/en/",
-        "attribution_required": null
-      },
       {
         "url": "https://winter.intermaps.com/hintertuxer_gletscher?lang=en",
         "attribution_required": null
@@ -131,5 +96,8 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "snow: ConnectError: [Errno -3] Temporary failure in name resolution",
+    "status: ConnectError: [Errno -3] Temporary failure in name resolution"
+  ]
 }

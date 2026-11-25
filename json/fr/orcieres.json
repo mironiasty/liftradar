@@ -10,7 +10,7 @@
   },
   "website": "https://www.orcieres.com",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.310315+01:00",
+  "fetched_at": "2026-11-25T08:40:40.503694+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -36,26 +36,26 @@
   "avalanche": {
     "region_id": "FR-19",
     "region": "Champsaur",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 4,
+    "danger": "high",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
-        "upper_bound": 2500,
+        "upper_bound": 2400,
         "period": "all_day"
       },
       {
-        "level": "considerable",
-        "lower_bound": 2500,
+        "level": "high",
+        "lower_bound": 2400,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
+    "published_at": "2026-11-24T16:00:00+01:00",
+    "valid_from": "2026-11-24T16:00:00+01:00",
+    "valid_until": "2026-11-25T18:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/alpes-du-sud/orcieres/station-de-ski",

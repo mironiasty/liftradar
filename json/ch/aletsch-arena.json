@@ -10,28 +10,28 @@
   },
   "website": "https://www.aletscharena.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.306026+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497198+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 76,
-    "valley_cm": 68,
-    "fresh_cm": 11,
+    "mountain_cm": 71,
+    "valley_cm": 69,
+    "fresh_cm": 9,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Flesch (SLF)",
         "elevation_m": 2500,
-        "depth_cm": 76,
-        "fresh_cm": 11,
+        "depth_cm": 71,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Kühboden (SLF)",
         "elevation_m": 2210,
-        "depth_cm": 68,
-        "fresh_cm": 0,
+        "depth_cm": 69,
+        "fresh_cm": 3,
         "temperature_c": null,
         "condition": null
       }
@@ -105,7 +105,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:40:00+01:00",
   "avalanche": {
     "region_id": "CH-4214",
     "region": "Riederalp",
@@ -120,13 +120,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://www.aletscharena.ch/hier-jetzt/live/statusbericht/statusbericht-winter",

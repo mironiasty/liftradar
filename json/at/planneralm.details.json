@@ -1,0 +1,314 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "planneralm",
+  "country": "at",
+  "fetched_at": "2026-11-25T08:40:40.490896+01:00",
+  "updated_at": "2026-11-25T08:24:35+01:00",
+  "source": "https://winter.intermaps.com/planneralm?lang=en",
+  "lifts": [
+    {
+      "id": "L_18069",
+      "ref": null,
+      "name": "Gläserbodenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null,
+      "capacity_per_hour": 1200,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_18070",
+      "ref": null,
+      "name": "Plannereckbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1100,
+      "map_length_m": null,
+      "capacity_per_hour": 1600,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_18071",
+      "ref": null,
+      "name": "Plannerjet",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 922,
+      "map_length_m": null,
+      "capacity_per_hour": 1802,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_18072",
+      "ref": null,
+      "name": "Kleiner Rotbühellift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 476,
+      "map_length_m": null,
+      "capacity_per_hour": 950,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_18073",
+      "ref": null,
+      "name": "Übungslift Zauberteppich",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 95,
+      "map_length_m": null,
+      "capacity_per_hour": 360,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_22700",
+      "ref": null,
+      "name": "Seillift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_18074",
+      "ref": "1",
+      "name": "1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18075",
+      "ref": "2",
+      "name": "2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18076",
+      "ref": "3",
+      "name": "Plannereck Piste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18077",
+      "ref": "3",
+      "name": "Eck Leitn",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18078",
+      "ref": "3a",
+      "name": "3a",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18079",
+      "ref": "4",
+      "name": "Rotbühel Piste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18080",
+      "ref": "4",
+      "name": "4b",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18081",
+      "ref": "4a",
+      "name": "4a",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18082",
+      "ref": "5",
+      "name": "Jet Leitn",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18083",
+      "ref": "6",
+      "name": "6",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18084",
+      "ref": "7",
+      "name": "Gläserboden Piste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18085",
+      "ref": "7a",
+      "name": "7er Umfahrung",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18086",
+      "ref": "7b",
+      "name": "Jet Traverse",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18087",
+      "ref": "7",
+      "name": "Gläser Leitn",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18088",
+      "ref": "8",
+      "name": "Die Versteckte",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400,
+      "map_length_m": null
+    },
+    {
+      "id": "R_18125",
+      "ref": "4b",
+      "name": "Rotbühel Piste kl.",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_22694",
+      "ref": "6",
+      "name": "Panorama Piste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_22695",
+      "ref": "3b",
+      "name": "3b",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_22696",
+      "ref": "6a",
+      "name": "Dornbusch Traverse",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_22697",
+      "ref": "6b",
+      "name": "Kid´s Rodeo",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "R_22698",
+      "ref": "1",
+      "name": "Gstemmer Schleife klein",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_22699",
+      "ref": null,
+      "name": "Übungspiste / Kinderland",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null
+    }
+  ],
+  "bottom": {
+    "lat": 47.40585,
+    "lon": 14.20092,
+    "elevation_m": 1589
+  },
+  "top": {
+    "lat": 47.39144,
+    "lon": 14.20295,
+    "elevation_m": 1954
+  }
+}

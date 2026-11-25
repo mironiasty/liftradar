@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "sestriere",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306603+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498165+01:00",
   "updated_at": null,
   "source": "https://montgenevre.com/hiver/en-direct/infos-neige/",
   "lifts": [
@@ -1066,5 +1066,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 44.98817,
+    "lon": 6.91823,
+    "elevation_m": 1599
+  },
+  "top": {
+    "lat": 44.9541,
+    "lon": 6.92163,
+    "elevation_m": 2798
+  }
 }

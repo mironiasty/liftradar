@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "saas-grund",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305718+01:00",
-  "updated_at": "2026-11-24T13:39:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496123+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -246,5 +246,15 @@
       "length_m": null,
       "map_length_m": 2140
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.12812,
+    "lon": 7.93856,
+    "elevation_m": 1553
+  },
+  "top": {
+    "lat": 46.13974,
+    "lon": 7.99104,
+    "elevation_m": 3142
+  }
 }

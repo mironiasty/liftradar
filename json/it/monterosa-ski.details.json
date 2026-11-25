@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "monterosa-ski",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306271+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497622+01:00",
   "updated_at": "2026-11-24T08:00:00+01:00",
   "source": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
   "lifts": [
@@ -976,5 +976,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.85329,
+    "lon": 7.93513,
+    "elevation_m": 1207
+  },
+  "top": {
+    "lat": 45.89051,
+    "lon": 7.85717,
+    "elevation_m": 3268
+  }
 }

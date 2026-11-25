@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "galsterberg",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.301773+01:00",
+  "fetched_at": "2026-11-25T08:40:40.491135+01:00",
   "updated_at": null,
   "source": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/galsterberg_resort_6328",
   "lifts": [
@@ -186,5 +186,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.4051,
+    "lon": 13.86382,
+    "elevation_m": 1136
+  },
+  "top": {
+    "lat": 47.37615,
+    "lon": 13.86566,
+    "elevation_m": 1976
+  }
 }

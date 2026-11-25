@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "trysil",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313577+01:00",
+  "fetched_at": "2026-11-25T08:40:40.508108+01:00",
   "updated_at": "2026-11-14T14:16:13+01:00",
   "source": "https://fnugg.no/trysil/",
   "lifts": [
@@ -1188,5 +1188,15 @@
       "length_m": null,
       "map_length_m": 790
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 61.3281,
+    "lon": 12.2222,
+    "elevation_m": 407
+  },
+  "top": {
+    "lat": 61.30852,
+    "lon": 12.16949,
+    "elevation_m": 1109
+  }
 }

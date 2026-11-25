@@ -10,7 +10,7 @@
   },
   "website": "https://www.laberra.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305500+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495718+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Fochsen (SLF)",
         "elevation_m": 1707,
-        "depth_cm": 88,
-        "fresh_cm": 25,
+        "depth_cm": 85,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       }
@@ -67,12 +67,32 @@
       "total_km": 12
     }
   },
-  "lifts_updated_at": "2026-11-24T04:01:00+01:00",
+  "lifts_updated_at": "2026-11-25T04:00:00+01:00",
   "details": "json/ch/la-berra.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "CH-1122",
+    "region": "Gruyère",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab"
+    ],
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
+  },
   "sources": [
     "https://infosnow.ch/portal/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
   ],
   "source_details": {
     "conditions": [
@@ -82,6 +102,10 @@
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

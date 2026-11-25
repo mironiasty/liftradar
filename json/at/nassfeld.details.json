@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "nassfeld",
   "country": "at",
-  "fetched_at": "2026-11-24T13:42:09.333492+01:00",
-  "updated_at": "2026-11-24T13:39:36+01:00",
+  "fetched_at": "2026-11-25T08:42:23.433145+01:00",
+  "updated_at": "2026-11-24T16:29:31+01:00",
   "source": "https://winter.intermaps.com/nassfeld?lang=en",
   "lifts": [
     {
@@ -846,5 +846,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.61147,
+    "lon": 13.27936,
+    "elevation_m": 612
+  },
+  "top": {
+    "lat": 46.56435,
+    "lon": 13.22675,
+    "elevation_m": 1999
+  }
 }

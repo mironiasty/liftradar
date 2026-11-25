@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kitzbuehel",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:45.867374+01:00",
-  "updated_at": "2026-11-23T09:19:23+01:00",
+  "fetched_at": "2026-11-25T08:41:57.895655+01:00",
+  "updated_at": "2026-11-24T17:35:45+01:00",
   "source": "https://winter.intermaps.com/kitzski?lang=en",
   "lifts": [
     {
@@ -2238,5 +2238,15 @@
       "length_m": 535,
       "map_length_m": 210
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.45018,
+    "lon": 12.39485,
+    "elevation_m": 762
+  },
+  "top": {
+    "lat": 47.32086,
+    "lon": 12.34849,
+    "elevation_m": 1992
+  }
 }

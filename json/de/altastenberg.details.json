@@ -1,0 +1,204 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "altastenberg",
+  "country": "de",
+  "fetched_at": "2026-11-25T08:40:40.506736+01:00",
+  "updated_at": "2026-11-24T21:01:49+01:00",
+  "source": "https://winter.intermaps.com/winterberg?lang=en",
+  "lifts": [
+    {
+      "id": "L_60454",
+      "ref": "41",
+      "name": "41 Kapellenhang",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_60455",
+      "ref": "42",
+      "name": "42 Brüchetalhang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_60456",
+      "ref": "43",
+      "name": "43 Westfalenhang II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_60457",
+      "ref": "44",
+      "name": "44 Westfalenhang I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_60458",
+      "ref": "45",
+      "name": "45 Steilhang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_60459",
+      "ref": "46",
+      "name": "46 Schwedenhang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_64240",
+      "ref": "44a",
+      "name": "Westfalenhang I",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64253",
+      "ref": "44c",
+      "name": "Westfalenhang I",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64255",
+      "ref": "44b",
+      "name": "Talabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64256",
+      "ref": "44d",
+      "name": "FIS-Slalom-Abfahrt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64259",
+      "ref": "43b",
+      "name": "Westfalenhang II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64261",
+      "ref": "43a",
+      "name": "Westfalenhang II",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64263",
+      "ref": "42b",
+      "name": "Brüchetalhang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64265",
+      "ref": "42a",
+      "name": "Brüchetalhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64269",
+      "ref": "41",
+      "name": "Kapellenhang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750,
+      "map_length_m": null
+    },
+    {
+      "id": "R_64272",
+      "ref": "45",
+      "name": "Steilhang",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    },
+    {
+      "id": "R_109863",
+      "ref": "46",
+      "name": "Schwedenhang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null
+    }
+  ],
+  "bottom": {
+    "lat": 51.19064,
+    "lon": 8.45414,
+    "elevation_m": 635
+  },
+  "top": {
+    "lat": 51.18543,
+    "lon": 8.46188,
+    "elevation_m": 778
+  }
+}

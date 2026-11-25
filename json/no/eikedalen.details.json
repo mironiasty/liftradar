@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "eikedalen",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313703+01:00",
+  "fetched_at": "2026-11-25T08:40:40.508666+01:00",
   "updated_at": "2026-11-12T13:37:16+01:00",
   "source": "https://fnugg.no/eikedalen/",
   "lifts": [
@@ -224,5 +224,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 60.40405,
+    "lon": 5.91553,
+    "elevation_m": 454
+  },
+  "top": {
+    "lat": 60.41972,
+    "lon": 5.90538,
+    "elevation_m": 909
+  }
 }

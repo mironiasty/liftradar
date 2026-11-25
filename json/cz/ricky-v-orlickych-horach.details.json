@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ricky-v-orlickych-horach",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308358+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500187+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/ricky-v-orlickych-horach",
   "lifts": [
@@ -106,5 +106,15 @@
       "length_m": 160,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.22554,
+    "lon": 16.45989,
+    "elevation_m": 740
+  },
+  "top": {
+    "lat": 50.23325,
+    "lon": 16.4493,
+    "elevation_m": 986
+  }
 }

@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "moosalp",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305646+01:00",
-  "updated_at": "2026-11-23T08:42:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495999+01:00",
+  "updated_at": "2026-11-24T20:18:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -424,5 +424,15 @@
       "length_m": 1100,
       "map_length_m": 1080
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.27742,
+    "lon": 7.82347,
+    "elevation_m": 1478
+  },
+  "top": {
+    "lat": 46.23832,
+    "lon": 7.81149,
+    "elevation_m": 2530
+  }
 }

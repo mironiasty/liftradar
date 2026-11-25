@@ -9,8 +9,8 @@
     "lon": 7.3336
   },
   "website": "https://www.haukelifjell.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.313792+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-25T08:40:40.508790+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 13,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 15
   },
   "lifts_by_type": {
@@ -38,25 +38,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-04-26T08:53:08+02:00",
+  "lifts_updated_at": "2026-11-24T13:53:33+01:00",
+  "details": "json/no/haukelifjell.details.json",
   "avalanche": {
     "region_id": "NO-3035",
     "region": "Vest-Telemark",
@@ -71,9 +72,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T00:00:00+01:00",
-    "valid_from": "2026-11-24T00:00:00+01:00",
-    "valid_until": "2026-11-24T23:59:59+01:00"
+    "published_at": "2026-11-25T00:00:00+01:00",
+    "valid_from": "2026-11-25T00:00:00+01:00",
+    "valid_until": "2026-11-25T23:59:59+01:00"
   },
   "sources": [
     "https://fnugg.no/haukelifjell/",

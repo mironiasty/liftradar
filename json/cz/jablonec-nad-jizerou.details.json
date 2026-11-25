@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "jablonec-nad-jizerou",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308211+01:00",
+  "fetched_at": "2026-11-25T08:40:40.499952+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/ski-areal-kamenec-jablonec-nad-jizerou",
   "lifts": [
@@ -104,5 +104,15 @@
       "length_m": 35,
       "map_length_m": 260
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.70123,
+    "lon": 15.42304,
+    "elevation_m": 454
+  },
+  "top": {
+    "lat": 50.69356,
+    "lon": 15.41714,
+    "elevation_m": 680
+  }
 }

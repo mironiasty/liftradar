@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "bolsterlang",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312826+01:00",
+  "fetched_at": "2026-11-25T08:40:40.506949+01:00",
   "updated_at": "2026-11-24T09:20:15+01:00",
   "source": "https://winter.intermaps.com/hoernerbahn?lang=en",
   "lifts": [
@@ -208,5 +208,15 @@
       "length_m": 600,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.45716,
+    "lon": 10.23118,
+    "elevation_m": 886
+  },
+  "top": {
+    "lat": 47.46529,
+    "lon": 10.20112,
+    "elevation_m": 1663
+  }
 }

@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liftradar.eu/schema/resort-weather.schema.json",
+  "$defs": {
+    "WeatherDay": {
+      "additionalProperties": false,
+      "description": "One day of the forecast, local to the resort.",
+      "properties": {
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "weather_code": {
+          "anyOf": [
+            {
+              "description": "WMO weather interpretation code, as Open-Meteo gives it",
+              "maximum": 99,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weather Code"
+        },
+        "temperature_max_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temperature Max C"
+        },
+        "temperature_min_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temperature Min C"
+        },
+        "snowfall_cm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Snowfall Cm"
+        },
+        "precipitation_mm": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Precipitation Mm"
+        },
+        "wind_gusts_max_kmh": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wind Gusts Max Kmh"
+        },
+        "sunshine_h": {
+          "anyOf": [
+            {
+              "maximum": 24,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sunshine H"
+        }
+      },
+      "required": [
+        "date",
+        "weather_code",
+        "temperature_max_c",
+        "temperature_min_c",
+        "snowfall_cm",
+        "precipitation_mm",
+        "wind_gusts_max_kmh",
+        "sunshine_h"
+      ],
+      "title": "WeatherDay",
+      "type": "object"
+    },
+    "WeatherNow": {
+      "additionalProperties": false,
+      "description": "The model's current conditions (Open-Meteo's `current`, a 15-minute value).",
+      "properties": {
+        "time": {
+          "format": "date-time",
+          "title": "Time",
+          "type": "string"
+        },
+        "temperature_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Temperature C"
+        },
+        "weather_code": {
+          "anyOf": [
+            {
+              "description": "WMO weather interpretation code, as Open-Meteo gives it",
+              "maximum": 99,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weather Code"
+        },
+        "wind_kmh": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wind Kmh"
+        }
+      },
+      "required": [
+        "time",
+        "temperature_c",
+        "weather_code",
+        "wind_kmh"
+      ],
+      "title": "WeatherNow",
+      "type": "object"
+    },
+    "WeatherPoint": {
+      "additionalProperties": false,
+      "description": "The forecast for one point of the resort: its bottom and top, or the resort's location alone when its\nelevations aren't known.",
+      "properties": {
+        "name": {
+          "enum": [
+            "bottom",
+            "top",
+            "resort"
+          ],
+          "title": "Name",
+          "type": "string"
+        },
+        "lat": {
+          "description": "The point asked for",
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Lon",
+          "type": "number"
+        },
+        "elevation_m": {
+          "description": "The elevation the forecast is for (Open-Meteo corrects it to it)",
+          "title": "Elevation M",
+          "type": "integer"
+        },
+        "now": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/WeatherNow"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "days": {
+          "items": {
+            "$ref": "#/$defs/WeatherDay"
+          },
+          "title": "Days",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "lat",
+        "lon",
+        "elevation_m",
+        "now",
+        "days"
+      ],
+      "title": "WeatherPoint",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Experimental: Open-Meteo's forecast for one resort, at its bottom and top. A model forecast, not the\nresort's report. Weather data by Open-Meteo.com (https://open-meteo.com/), CC BY 4.0.",
+  "properties": {
+    "$schema": {
+      "const": "https://liftradar.eu/schema/resort-weather.schema.json",
+      "default": "https://liftradar.eu/schema/resort-weather.schema.json",
+      "title": "$Schema",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9-]+$",
+      "title": "Id",
+      "type": "string"
+    },
+    "country": {
+      "pattern": "^[a-z]{2}$",
+      "title": "Country",
+      "type": "string"
+    },
+    "fetched_at": {
+      "format": "date-time",
+      "title": "Fetched At",
+      "type": "string"
+    },
+    "source": {
+      "const": "https://open-meteo.com/",
+      "default": "https://open-meteo.com/",
+      "title": "Source",
+      "type": "string"
+    },
+    "attribution": {
+      "const": "Weather data by Open-Meteo.com (CC BY 4.0)",
+      "default": "Weather data by Open-Meteo.com (CC BY 4.0)",
+      "title": "Attribution",
+      "type": "string"
+    },
+    "points": {
+      "items": {
+        "$ref": "#/$defs/WeatherPoint"
+      },
+      "minItems": 1,
+      "title": "Points",
+      "type": "array"
+    }
+  },
+  "required": [
+    "$schema",
+    "id",
+    "country",
+    "fetched_at",
+    "source",
+    "attribution",
+    "points"
+  ],
+  "title": "Experimental: the weather forecast for one resort",
+  "type": "object",
+  "x-experimental": true
+}

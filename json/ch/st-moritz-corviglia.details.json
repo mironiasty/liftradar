@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "st-moritz-corviglia",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305793+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496246+01:00",
   "updated_at": "2026-11-16T13:26:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -624,5 +624,15 @@
       "length_m": 3600,
       "map_length_m": 710
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.51311,
+    "lon": 9.85421,
+    "elevation_m": 1733
+  },
+  "top": {
+    "lat": 46.50541,
+    "lon": 9.78771,
+    "elevation_m": 3021
+  }
 }

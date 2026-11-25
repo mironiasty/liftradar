@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "gstaad",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305446+01:00",
-  "updated_at": "2026-11-24T13:08:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495592+01:00",
+  "updated_at": "2026-11-25T08:17:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -1090,5 +1090,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.55103,
+    "lon": 7.37443,
+    "elevation_m": 944
+  },
+  "top": {
+    "lat": 46.45974,
+    "lon": 7.20458,
+    "elevation_m": 2157
+  }
 }

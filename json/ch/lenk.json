@@ -12,7 +12,7 @@
   "linked_area": "adelboden-lenk",
   "ski_region": "skiregion-adelboden-lenk",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305548+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495819+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,8 +24,8 @@
       {
         "name": "Trüttlisbergpass (SLF)",
         "elevation_m": 1970,
-        "depth_cm": 60,
-        "fresh_cm": 14,
+        "depth_cm": 56,
+        "fresh_cm": 8,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +85,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T13:37:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:30:00+01:00",
   "details": "json/ch/lenk.details.json",
   "avalanche": {
     "region_id": "CH-1224",
@@ -102,11 +102,12 @@
     ],
     "problems": [
       "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

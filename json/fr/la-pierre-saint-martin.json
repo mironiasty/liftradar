@@ -10,7 +10,7 @@
   },
   "website": "https://www.lapierrestmartin.com",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.309915+01:00",
+  "fetched_at": "2026-11-25T08:40:40.503086+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -68,20 +68,38 @@
   "avalanche": {
     "region_id": "FR-64",
     "region": "Pays Basque",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
+        "upper_bound": 1700,
+        "period": "later"
+      },
+      {
+        "level": "low",
+        "lower_bound": 1700,
         "upper_bound": null,
-        "period": "all_day"
+        "period": "earlier"
+      },
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 1700,
+        "period": "later"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 1700,
+        "upper_bound": null,
+        "period": "later"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
+    "published_at": "2026-11-24T16:00:00+01:00",
+    "valid_from": "2026-11-24T16:00:00+01:00",
+    "valid_until": "2026-11-25T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com",

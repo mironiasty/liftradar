@@ -10,7 +10,7 @@
   },
   "website": "https://moosalp.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305646+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495999+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,8 +22,8 @@
       {
         "name": "Chiematte (SLF)",
         "elevation_m": 2205,
-        "depth_cm": 96,
-        "fresh_cm": 27,
+        "depth_cm": 90,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       }
@@ -69,7 +69,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-23T08:42:00+01:00",
+  "lifts_updated_at": "2026-11-24T20:18:00+01:00",
   "details": "json/ch/moosalp.details.json",
   "avalanche": {
     "region_id": "CH-4221",
@@ -85,12 +85,12 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zieleniec",
   "country": "pl",
-  "fetched_at": "2026-11-24T13:40:37.308707+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500761+01:00",
   "updated_at": null,
   "source": "https://zieleniec.pl/zima/aktualne-warunki",
   "lifts": [
@@ -850,5 +850,15 @@
       "length_m": 120,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.34233,
+    "lon": 16.39487,
+    "elevation_m": 739
+  },
+  "top": {
+    "lat": 50.33162,
+    "lon": 16.38172,
+    "elevation_m": 1016
+  }
 }

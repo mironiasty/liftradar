@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "la-clusaz",
   "country": "fr",
-  "fetched_at": "2026-11-24T13:40:37.309478+01:00",
+  "fetched_at": "2026-11-25T08:40:40.501940+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com",
   "lifts": [
@@ -944,5 +944,15 @@
       "length_m": 2303,
       "map_length_m": 1250
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.90377,
+    "lon": 6.42293,
+    "elevation_m": 1028
+  },
+  "top": {
+    "lat": 45.89664,
+    "lon": 6.50152,
+    "elevation_m": 2476
+  }
 }

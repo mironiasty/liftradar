@@ -11,7 +11,7 @@
   "website": "https://skipass-pds-ch.ch",
   "linked_area": "portes-du-soleil",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305261+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495261+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,8 +23,8 @@
       {
         "name": "Les Collines (SLF)",
         "elevation_m": 2022,
-        "depth_cm": 75,
-        "fresh_cm": 13,
+        "depth_cm": 69,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       }
@@ -84,7 +84,7 @@
       "total_km": 4
     }
   },
-  "lifts_updated_at": "2026-11-24T12:45:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:30:00+01:00",
   "details": "json/ch/champery.details.json",
   "avalanche": {
     "region_id": "CH-1312",
@@ -101,11 +101,12 @@
     ],
     "problems": [
       "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

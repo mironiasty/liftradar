@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ramsau-am-dachstein",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.301789+01:00",
+  "fetched_at": "2026-11-25T08:40:40.491155+01:00",
   "updated_at": null,
   "source": "https://www.schladming-dachstein.at/de/info-und-service/betriebszeiten-bergbahnen-winter/rittisberg-ramsau-am-dachstein_resort_6320",
   "lifts": [
@@ -204,5 +204,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.40846,
+    "lon": 13.63656,
+    "elevation_m": 1131
+  },
+  "top": {
+    "lat": 47.41977,
+    "lon": 13.61361,
+    "elevation_m": 1494
+  }
 }

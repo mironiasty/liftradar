@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "saas-fee",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305708+01:00",
-  "updated_at": "2026-11-24T13:20:04+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496105+01:00",
+  "updated_at": "2026-11-25T08:28:58+01:00",
   "source": "https://winter.intermaps.com/saas_fee?lang=en",
   "lifts": [
     {
@@ -203,7 +203,7 @@
       "ref": null,
       "name": "Allalin 2",
       "type": "drag_lift",
-      "status": "closed",
+      "status": "preparation",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -227,7 +227,7 @@
       "ref": null,
       "name": "Allalin 3",
       "type": "drag_lift",
-      "status": "closed",
+      "status": "preparation",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -510,7 +510,7 @@
       "name": "19 Allalin",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "preparation",
       "length_m": 6000,
       "map_length_m": 2860
     },
@@ -624,5 +624,15 @@
       "length_m": 7000,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.09436,
+    "lon": 7.95906,
+    "elevation_m": 1673
+  },
+  "top": {
+    "lat": 46.05139,
+    "lon": 7.89805,
+    "elevation_m": 3561
+  }
 }

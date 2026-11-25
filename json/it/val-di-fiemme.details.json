@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "val-di-fiemme",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306179+01:00",
-  "updated_at": "2026-11-23T10:00:11.259802+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497457+01:00",
+  "updated_at": "2026-11-24T21:20:13.858069+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
     {
@@ -341,26 +341,6 @@
       "map_length_m": 740
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:8_184925",
-      "ref": null,
-      "name": "Campanil",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 850,
-      "map_length_m": 910
-    },
-    {
-      "id": "urn:odhactivitypoi:dss:slope:8_1765553116",
-      "ref": null,
-      "name": "Campanil",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 300,
-      "map_length_m": 910
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:8_1849210",
       "ref": null,
       "name": "Campanil",
@@ -368,17 +348,17 @@
       "colour": null,
       "status": "closed",
       "length_m": 850,
-      "map_length_m": null
+      "map_length_m": 910
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:8_1765553345",
+      "id": "urn:odhactivitypoi:dss:slope:8_184925",
       "ref": null,
-      "name": "Campanil 2",
-      "difficulty": "intermediate",
+      "name": "Campanil",
+      "difficulty": "easy",
       "colour": null,
       "status": "closed",
-      "length_m": 300,
-      "map_length_m": 610
+      "length_m": 850,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:8_184616",
@@ -961,6 +941,16 @@
       "map_length_m": null
     },
     {
+      "id": "urn:odhactivitypoi:dss:slope:8_40572339",
+      "ref": null,
+      "name": "Verbindungspiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
       "id": "urn:odhactivitypoi:dss:slope:8_40572336",
       "ref": null,
       "name": "Verbindungspiste",
@@ -981,16 +971,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:8_40572339",
-      "ref": null,
-      "name": "Verbindungspiste",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 600,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:8_184606",
       "ref": null,
       "name": "Via del Bosco",
@@ -1000,5 +980,15 @@
       "length_m": 4500,
       "map_length_m": 5990
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.28317,
+    "lon": 11.47158,
+    "elevation_m": 859
+  },
+  "top": {
+    "lat": 46.34567,
+    "lon": 11.52048,
+    "elevation_m": 2422
+  }
 }

@@ -2,127 +2,19 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "solheisen",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.314060+01:00",
-  "updated_at": "2026-11-10T17:19:11+01:00",
-  "source": "https://fnugg.no/solheisen/",
-  "lifts": [
-    {
-      "id": "lift-solheisen",
-      "ref": null,
-      "name": "Solheisen",
-      "type": "other",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-fjellheisen",
-      "ref": null,
-      "name": "Fjellheisen",
-      "type": "other",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-barneheisen",
-      "ref": null,
-      "name": "Barneheisen",
-      "type": "other",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    }
-  ],
-  "slopes": [
-    {
-      "id": "slope-harahornlypa",
-      "ref": null,
-      "name": "Harahornløypa",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-fjellheislypa",
-      "ref": null,
-      "name": "Fjellheisløypa",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-holstein",
-      "ref": null,
-      "name": "Holstein",
-      "difficulty": "difficult",
-      "colour": "black",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-kvittinga",
-      "ref": null,
-      "name": "Kvittinga",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-barnebakken",
-      "ref": null,
-      "name": "Barnebakken",
-      "difficulty": "easy",
-      "colour": "green",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-snarveien",
-      "ref": null,
-      "name": "Snarveien",
-      "difficulty": "easy",
-      "colour": "green",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-terrengparken",
-      "ref": null,
-      "name": "Terrengparken",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-funride",
-      "ref": null,
-      "name": "Funride",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    }
-  ]
+  "fetched_at": "2026-11-25T08:40:40.509165+01:00",
+  "updated_at": null,
+  "source": null,
+  "lifts": null,
+  "slopes": null,
+  "bottom": {
+    "lat": 60.92141,
+    "lon": 8.43647,
+    "elevation_m": 730
+  },
+  "top": {
+    "lat": 60.92541,
+    "lon": 8.45586,
+    "elevation_m": 1058
+  }
 }

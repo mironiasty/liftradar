@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "diedamskopf",
   "country": "at",
-  "fetched_at": "2026-11-24T13:40:37.300171+01:00",
-  "updated_at": "2026-11-23T13:18:13+01:00",
+  "fetched_at": "2026-11-25T08:40:40.490794+01:00",
+  "updated_at": "2026-11-24T16:54:22+01:00",
   "source": "https://winter.intermaps.com/diedamskopf?lang=en",
   "lifts": [
     {
@@ -426,5 +426,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.3167,
+    "lon": 10.00957,
+    "elevation_m": 838
+  },
+  "top": {
+    "lat": 47.34678,
+    "lon": 10.02761,
+    "elevation_m": 2056
+  }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "oppdal",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313624+01:00",
+  "fetched_at": "2026-11-25T08:40:40.508176+01:00",
   "updated_at": "2026-11-22T07:11:13+01:00",
   "source": "https://fnugg.no/oppdal/",
   "lifts": [
@@ -528,5 +528,15 @@
       "length_m": null,
       "map_length_m": 1170
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 62.60166,
+    "lon": 9.6856,
+    "elevation_m": 585
+  },
+  "top": {
+    "lat": 62.62861,
+    "lon": 9.65449,
+    "elevation_m": 1327
+  }
 }

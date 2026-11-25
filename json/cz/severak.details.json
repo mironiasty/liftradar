@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "severak",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308166+01:00",
+  "fetched_at": "2026-11-25T08:40:40.499871+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzarsky-areal-severak",
   "lifts": [
@@ -260,5 +260,15 @@
       "length_m": 430,
       "map_length_m": 370
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.7824,
+    "lon": 15.15804,
+    "elevation_m": 648
+  },
+  "top": {
+    "lat": 50.78779,
+    "lon": 15.13481,
+    "elevation_m": 805
+  }
 }

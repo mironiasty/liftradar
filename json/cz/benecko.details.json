@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "benecko",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308237+01:00",
+  "fetched_at": "2026-11-25T08:40:40.499990+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/skiareal-benecko",
   "lifts": [
@@ -314,5 +314,15 @@
       "length_m": 220,
       "map_length_m": 210
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.65794,
+    "lon": 15.54801,
+    "elevation_m": 668
+  },
+  "top": {
+    "lat": 50.67077,
+    "lon": 15.5626,
+    "elevation_m": 930
+  }
 }

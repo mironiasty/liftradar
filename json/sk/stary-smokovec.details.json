@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "stary-smokovec",
   "country": "sk",
-  "fetched_at": "2026-11-24T13:40:37.311895+01:00",
+  "fetched_at": "2026-11-25T08:40:40.505448+01:00",
   "updated_at": null,
   "source": "https://www.vt.sk",
   "lifts": [],
@@ -27,5 +27,15 @@
       "length_m": 75,
       "map_length_m": 70
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.1381,
+    "lon": 20.21405,
+    "elevation_m": 1011
+  },
+  "top": {
+    "lat": 49.15809,
+    "lon": 20.2246,
+    "elevation_m": 1268
+  }
 }

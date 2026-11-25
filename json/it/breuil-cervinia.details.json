@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "breuil-cervinia",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306238+01:00",
-  "updated_at": "2026-11-24T09:23:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497548+01:00",
+  "updated_at": "2026-11-24T13:49:00+01:00",
   "source": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
   "lifts": [
     {
@@ -974,5 +974,15 @@
       "length_m": null,
       "map_length_m": 1030
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.88823,
+    "lon": 7.624,
+    "elevation_m": 1558
+  },
+  "top": {
+    "lat": 45.924,
+    "lon": 7.735,
+    "elevation_m": 3892
+  }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tatranska-lomnica",
   "country": "sk",
-  "fetched_at": "2026-11-24T13:40:37.311865+01:00",
+  "fetched_at": "2026-11-25T08:40:40.505394+01:00",
   "updated_at": null,
   "source": "https://www.vt.sk",
   "lifts": [],
@@ -157,5 +157,15 @@
       "length_m": 400,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.16499,
+    "lon": 20.27033,
+    "elevation_m": 888
+  },
+  "top": {
+    "lat": 49.19515,
+    "lon": 20.21347,
+    "elevation_m": 2605
+  }
 }

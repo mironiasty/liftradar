@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "bonneval-sur-arc",
   "country": "fr",
-  "fetched_at": "2026-11-24T13:40:37.309469+01:00",
+  "fetched_at": "2026-11-25T08:40:40.501927+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com",
   "lifts": [
@@ -388,5 +388,15 @@
       "length_m": null,
       "map_length_m": 910
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 45.37282,
+    "lon": 7.05128,
+    "elevation_m": 1794
+  },
+  "top": {
+    "lat": 45.35183,
+    "lon": 7.0581,
+    "elevation_m": 2948
+  }
 }

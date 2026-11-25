@@ -9,14 +9,14 @@
     "lon": 11.38
   },
   "website": "https://www.serlesbahnen.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-24T13:41:53.700569+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-25T08:42:05.676221+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-02-20",
     "condition": null,
     "stations": []
   },
@@ -25,22 +25,50 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 7,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 6
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-01T16:08:00+01:00",
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-11-24T15:12:01+01:00",
+  "details": "json/at/serlesbahnen-mieders.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.snowcard.tirol.at/skigebiet/Serlesbahnen%20Mieders_80"
+    "https://www.snowcard.tirol.at/skigebiet/Serlesbahnen%20Mieders_80",
+    "https://winter.intermaps.com/serlesbahnen?lang=en"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/skigebiet/Serlesbahnen%20Mieders_80",
+        "attribution_required": null
+      },
+      {
+        "url": "https://winter.intermaps.com/serlesbahnen?lang=en",
         "attribution_required": null
       }
     ],

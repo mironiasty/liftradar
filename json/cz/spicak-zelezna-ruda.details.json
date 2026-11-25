@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "spicak-zelezna-ruda",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308516+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500439+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/sportovni-areal-spicak",
   "lifts": [
@@ -264,5 +264,15 @@
       "length_m": 411,
       "map_length_m": 550
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.16139,
+    "lon": 13.22169,
+    "elevation_m": 835
+  },
+  "top": {
+    "lat": 49.1726,
+    "lon": 13.20906,
+    "elevation_m": 1200
+  }
 }

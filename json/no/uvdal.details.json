@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "uvdal",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313820+01:00",
-  "updated_at": "2026-04-11T10:22:22+02:00",
+  "fetched_at": "2026-11-25T08:40:40.508837+01:00",
+  "updated_at": "2026-11-24T21:48:20+01:00",
   "source": "https://fnugg.no/uvdal/",
   "lifts": [
     {
@@ -23,7 +23,7 @@
       "ref": null,
       "name": "Stolheisen",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1040,
       "capacity_per_hour": null,
@@ -74,7 +74,7 @@
       "name": "Bjønneparken",
       "difficulty": "easy",
       "colour": "green",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -114,7 +114,7 @@
       "name": "Slafenhenget",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -134,7 +134,7 @@
       "name": "Bjønnesvingen",
       "difficulty": "intermediate",
       "colour": "red",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -154,7 +154,7 @@
       "name": "Bjønneløypa",
       "difficulty": "difficult",
       "colour": "black",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -174,7 +174,7 @@
       "name": "Bjønnesvingen",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -348,5 +348,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 60.30048,
+    "lon": 8.53905,
+    "elevation_m": 648
+  },
+  "top": {
+    "lat": 60.28165,
+    "lon": 8.52304,
+    "elevation_m": 1206
+  }
 }

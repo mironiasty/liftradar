@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "stubaier-gletscher",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:55.172964+01:00",
-  "updated_at": "2026-11-24T10:18:56+01:00",
+  "fetched_at": "2026-11-25T08:42:08.611529+01:00",
+  "updated_at": "2026-11-25T08:19:52+01:00",
   "source": "https://winter.intermaps.com/stubaier_gletscher?lang=en",
   "lifts": [
     {
@@ -299,7 +299,7 @@
       "ref": null,
       "name": "Zauberteppich Eisgrat",
       "type": "carpet",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 310,
       "capacity_per_hour": null,
@@ -544,7 +544,7 @@
       "name": "28 Skiweg Mutterberg",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 1690,
       "map_length_m": 1060
     },
@@ -554,7 +554,7 @@
       "name": "34 Fernau",
       "difficulty": "ski_route",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 5610,
       "map_length_m": 2870
     },
@@ -668,5 +668,15 @@
       "length_m": 1880,
       "map_length_m": 220
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.01327,
+    "lon": 11.16218,
+    "elevation_m": 1692
+  },
+  "top": {
+    "lat": 46.98059,
+    "lon": 11.10435,
+    "elevation_m": 3208
+  }
 }

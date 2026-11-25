@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "meran-2000",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306468+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497940+01:00",
   "updated_at": "2026-11-24T09:30:40+01:00",
   "source": "https://winter.intermaps.com/meran?lang=en",
   "lifts": [
@@ -214,5 +214,15 @@
       "length_m": null,
       "map_length_m": 1320
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.67108,
+    "lon": 11.21011,
+    "elevation_m": 645
+  },
+  "top": {
+    "lat": 46.69106,
+    "lon": 11.30293,
+    "elevation_m": 2295
+  }
 }

@@ -10,7 +10,7 @@
   },
   "website": "https://www.obersaxen-mundaun.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305676+01:00",
+  "fetched_at": "2026-11-25T08:40:40.496048+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -47,7 +47,7 @@
   },
   "lifts": {
     "open": 0,
-    "total": 15
+    "total": 17
   },
   "slopes": {
     "open": 0,
@@ -56,6 +56,10 @@
     "total_km": 120
   },
   "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
     "chairlift": {
       "open": 0,
       "total": 9
@@ -85,7 +89,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-23T15:36:00+01:00",
+  "lifts_updated_at": "2026-11-25T05:51:00+01:00",
   "details": "json/ch/obersaxen-mundaun.details.json",
   "avalanche": {
     "region_id": "CH-5214",
@@ -104,9 +108,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

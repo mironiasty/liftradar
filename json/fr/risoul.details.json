@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "risoul",
   "country": "fr",
-  "fetched_at": "2026-11-24T13:40:37.309753+01:00",
+  "fetched_at": "2026-11-25T08:40:40.502331+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com",
   "lifts": [
@@ -640,5 +640,15 @@
       "length_m": 939,
       "map_length_m": 990
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 44.62479,
+    "lon": 6.6295,
+    "elevation_m": 1854
+  },
+  "top": {
+    "lat": 44.5953,
+    "lon": 6.64687,
+    "elevation_m": 2548
+  }
 }

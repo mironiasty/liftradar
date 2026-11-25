@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "champery",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305261+01:00",
-  "updated_at": "2026-11-24T12:45:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495261+01:00",
+  "updated_at": "2026-11-25T08:30:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -426,7 +426,7 @@
       "colour": "blue",
       "status": "closed",
       "length_m": 700,
-      "map_length_m": 150
+      "map_length_m": 510
     },
     {
       "id": "slope-26-vautna",
@@ -448,5 +448,15 @@
       "length_m": 300,
       "map_length_m": 10
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.17498,
+    "lon": 6.87121,
+    "elevation_m": 1036
+  },
+  "top": {
+    "lat": 46.19201,
+    "lon": 6.81575,
+    "elevation_m": 2249
+  }
 }

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-weather.schema.json",
+  "id": "hautacam",
+  "country": "fr",
+  "fetched_at": "2026-11-25T08:42:59+01:00",
+  "source": "https://open-meteo.com/",
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "points": [
+    {
+      "name": "resort",
+      "lat": 42.9705,
+      "lon": -0.005,
+      "elevation_m": 1581,
+      "now": {
+        "time": "2026-11-25T08:45:00+01:00",
+        "temperature_c": 0.4,
+        "weather_code": 3,
+        "wind_kmh": 0.5
+      },
+      "days": [
+        {
+          "date": "2026-11-25",
+          "weather_code": 73,
+          "temperature_max_c": 2.7,
+          "temperature_min_c": -0.4,
+          "snowfall_cm": 1.9,
+          "precipitation_mm": 15.6,
+          "wind_gusts_max_kmh": 48.6,
+          "sunshine_h": 3.6
+        },
+        {
+          "date": "2026-11-26",
+          "weather_code": 75,
+          "temperature_max_c": 0.3,
+          "temperature_min_c": -5.0,
+          "snowfall_cm": 8.8,
+          "precipitation_mm": 36.4,
+          "wind_gusts_max_kmh": 28.4,
+          "sunshine_h": 0.2
+        },
+        {
+          "date": "2026-11-27",
+          "weather_code": 3,
+          "temperature_max_c": 5.7,
+          "temperature_min_c": -8.3,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 13.0,
+          "sunshine_h": 8.1
+        },
+        {
+          "date": "2026-11-28",
+          "weather_code": 1,
+          "temperature_max_c": 9.3,
+          "temperature_min_c": -2.7,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 9.7,
+          "sunshine_h": 8.0
+        },
+        {
+          "date": "2026-11-29",
+          "weather_code": 3,
+          "temperature_max_c": 6.9,
+          "temperature_min_c": -0.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 16.9,
+          "sunshine_h": 8.4
+        },
+        {
+          "date": "2026-11-30",
+          "weather_code": 3,
+          "temperature_max_c": 7.3,
+          "temperature_min_c": -1.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 15.5,
+          "sunshine_h": 8.4
+        },
+        {
+          "date": "2026-12-01",
+          "weather_code": 0,
+          "temperature_max_c": 7.4,
+          "temperature_min_c": -1.3,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 19.4,
+          "sunshine_h": 8.8
+        }
+      ]
+    }
+  ]
+}

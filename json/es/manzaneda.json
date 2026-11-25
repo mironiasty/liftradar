@@ -9,9 +9,9 @@
     "lon": -7.2979
   },
   "website": "https://www.manzaneda.com",
-  "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.315162+01:00",
-  "status_from": null,
+  "status": "no_report",
+  "fetched_at": "2026-11-25T08:40:40.510229+01:00",
+  "status_from": "2026-11-22T08:40:36.263222+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,9 +25,9 @@
     "total": 6
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 20,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 16
   },
   "lifts_by_type": {
@@ -42,32 +42,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 12
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 5
     }
   },
   "lifts_updated_at": null,
-  "details": "json/es/manzaneda.details.json",
   "avalanche": null,
-  "sources": [
-    "https://www.manzaneda.com/parte-de-nieve-webcams"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.manzaneda.com/parte-de-nieve-webcams",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ConnectError: [Errno -3] Temporary failure in name resolution"
+  ]
 }

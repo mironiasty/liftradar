@@ -11,7 +11,7 @@
   "website": "https://www.tvgd.ch",
   "linked_area": "villars-gryon-les-diablerets",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305436+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495574+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,8 +23,8 @@
       {
         "name": "Col de Bretaye (SLF)",
         "elevation_m": 1780,
-        "depth_cm": 72,
-        "fresh_cm": 21,
+        "depth_cm": 66,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       }
@@ -101,11 +101,12 @@
     ],
     "problems": [
       "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

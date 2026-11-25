@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "sansicario",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306620+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498194+01:00",
   "updated_at": null,
   "source": "https://montgenevre.com/hiver/en-direct/infos-neige/",
   "lifts": [
@@ -572,5 +572,15 @@
       "length_m": null,
       "map_length_m": 1000
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 44.94569,
+    "lon": 6.79729,
+    "elevation_m": 1361
+  },
+  "top": {
+    "lat": 44.97654,
+    "lon": 6.85969,
+    "elevation_m": 2685
+  }
 }

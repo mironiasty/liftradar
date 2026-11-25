@@ -1,0 +1,68 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "sahnehang",
+  "country": "de",
+  "fetched_at": "2026-11-25T08:40:40.506856+01:00",
+  "updated_at": "2026-11-24T21:01:49+01:00",
+  "source": "https://winter.intermaps.com/winterberg?lang=en",
+  "lifts": [
+    {
+      "id": "L_60460",
+      "ref": "47",
+      "name": "47 Sahnehang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_60461",
+      "ref": "48",
+      "name": "48 Rodellift Sahnehang",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_101152",
+      "ref": "49",
+      "name": "Zauberteppich Sahnehang",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_65002",
+      "ref": "47",
+      "name": "Sahnehang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550,
+      "map_length_m": null
+    }
+  ],
+  "bottom": {
+    "lat": 51.18434,
+    "lon": 8.47923,
+    "elevation_m": 771
+  },
+  "top": {
+    "lat": 51.18091,
+    "lon": 8.4821,
+    "elevation_m": 825
+  }
+}

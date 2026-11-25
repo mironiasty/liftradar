@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "strbske-pleso",
   "country": "sk",
-  "fetched_at": "2026-11-24T13:40:37.311879+01:00",
+  "fetched_at": "2026-11-25T08:40:40.505421+01:00",
   "updated_at": null,
   "source": "https://www.vt.sk",
   "lifts": [],
@@ -97,5 +97,15 @@
       "length_m": 360,
       "map_length_m": 240
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.12912,
+    "lon": 20.05957,
+    "elevation_m": 1378
+  },
+  "top": {
+    "lat": 49.14424,
+    "lon": 20.04015,
+    "elevation_m": 1822
+  }
 }

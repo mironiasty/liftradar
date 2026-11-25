@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grandvalira",
   "country": "ad",
-  "fetched_at": "2026-11-24T13:40:37.315677+01:00",
+  "fetched_at": "2026-11-25T08:40:40.511013+01:00",
   "updated_at": "2026-11-18T16:11:00+01:00",
   "source": "https://www.grandvalira.com/ca/estacio/estat-de-pistes",
   "lifts": [
@@ -2304,5 +2304,15 @@
       "length_m": null,
       "map_length_m": 480
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 42.53545,
+    "lon": 1.58759,
+    "elevation_m": 1322
+  },
+  "top": {
+    "lat": 42.52549,
+    "lon": 1.7238,
+    "elevation_m": 2623
+  }
 }

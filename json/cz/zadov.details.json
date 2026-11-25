@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zadov",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308505+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500416+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzovani-na-zadove",
   "lifts": [
@@ -172,5 +172,15 @@
       "length_m": 350,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.07313,
+    "lon": 13.6327,
+    "elevation_m": 888
+  },
+  "top": {
+    "lat": 49.06939,
+    "lon": 13.62073,
+    "elevation_m": 1080
+  }
 }

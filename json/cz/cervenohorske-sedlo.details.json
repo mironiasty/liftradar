@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cervenohorske-sedlo",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308450+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500325+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzovani-pro-kazdeho-na-cervenohorskem-sedle",
   "lifts": [
@@ -212,5 +212,15 @@
       "length_m": 400,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.12846,
+    "lon": 17.15928,
+    "elevation_m": 872
+  },
+  "top": {
+    "lat": 50.11916,
+    "lon": 17.16208,
+    "elevation_m": 1160
+  }
 }

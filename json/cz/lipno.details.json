@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "lipno",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308495+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500399+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzovani-a-zabava-ve-skiarealu-lipno",
   "lifts": [
@@ -264,5 +264,15 @@
       "length_m": 800,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 48.65688,
+    "lon": 14.24263,
+    "elevation_m": 708
+  },
+  "top": {
+    "lat": 48.65258,
+    "lon": 14.23242,
+    "elevation_m": 899
+  }
 }

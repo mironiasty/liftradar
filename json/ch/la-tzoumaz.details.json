@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "la-tzoumaz",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305519+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495760+01:00",
   "updated_at": "2026-11-22T07:50:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -246,5 +246,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.14481,
+    "lon": 7.23311,
+    "elevation_m": 1526
+  },
+  "top": {
+    "lat": 46.12215,
+    "lon": 7.2123,
+    "elevation_m": 2366
+  }
 }

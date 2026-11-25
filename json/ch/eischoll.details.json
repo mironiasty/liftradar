@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "eischoll",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305337+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495387+01:00",
   "updated_at": "2026-11-20T15:47:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -186,5 +186,15 @@
       "length_m": 1000,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.30322,
+    "lon": 7.80078,
+    "elevation_m": 637
+  },
+  "top": {
+    "lat": 46.27495,
+    "lon": 7.7567,
+    "elevation_m": 2135
+  }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "claviere",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.307094+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498206+01:00",
   "updated_at": null,
   "source": "https://montgenevre.com/hiver/en-direct/infos-neige/",
   "lifts": [
@@ -654,5 +654,15 @@
       "length_m": null,
       "map_length_m": 260
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 44.9461,
+    "lon": 6.7974,
+    "elevation_m": 1360
+  },
+  "top": {
+    "lat": 44.90314,
+    "lon": 6.76811,
+    "elevation_m": 2399
+  }
 }

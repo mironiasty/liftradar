@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "mosorny-gron",
   "country": "pl",
-  "fetched_at": "2026-11-24T13:40:37.308695+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500737+01:00",
   "updated_at": null,
-  "source": "https://www.pkl.pl/trasy-narciarskie.html",
+  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
   "lifts": [
     {
       "id": "lift-mosorny-gron",
@@ -50,5 +50,15 @@
       "length_m": 4600,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.61344,
+    "lon": 19.5532,
+    "elevation_m": 713
+  },
+  "top": {
+    "lat": 49.62257,
+    "lon": 19.56361,
+    "elevation_m": 1044
+  }
 }

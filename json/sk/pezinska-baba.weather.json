@@ -1,0 +1,94 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-weather.schema.json",
+  "id": "pezinska-baba",
+  "country": "sk",
+  "fetched_at": "2026-11-25T08:42:59+01:00",
+  "source": "https://open-meteo.com/",
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "points": [
+    {
+      "name": "resort",
+      "lat": 48.3486,
+      "lon": 17.1911,
+      "elevation_m": 541,
+      "now": {
+        "time": "2026-11-25T08:45:00+01:00",
+        "temperature_c": -3.4,
+        "weather_code": 3,
+        "wind_kmh": 28.5
+      },
+      "days": [
+        {
+          "date": "2026-11-25",
+          "weather_code": 77,
+          "temperature_max_c": -1.7,
+          "temperature_min_c": -4.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 1.3,
+          "wind_gusts_max_kmh": 62.6,
+          "sunshine_h": 5.9
+        },
+        {
+          "date": "2026-11-26",
+          "weather_code": 77,
+          "temperature_max_c": 0.0,
+          "temperature_min_c": -2.8,
+          "snowfall_cm": 9.4,
+          "precipitation_mm": 14.5,
+          "wind_gusts_max_kmh": 59.0,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-27",
+          "weather_code": 77,
+          "temperature_max_c": -1.4,
+          "temperature_min_c": -3.2,
+          "snowfall_cm": 2.0,
+          "precipitation_mm": 3.0,
+          "wind_gusts_max_kmh": 52.6,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-28",
+          "weather_code": 3,
+          "temperature_max_c": -1.3,
+          "temperature_min_c": -3.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 28.8,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-29",
+          "weather_code": 1,
+          "temperature_max_c": -1.0,
+          "temperature_min_c": -5.0,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 42.1,
+          "sunshine_h": 8.3
+        },
+        {
+          "date": "2026-11-30",
+          "weather_code": 0,
+          "temperature_max_c": -2.1,
+          "temperature_min_c": -6.4,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 36.0,
+          "sunshine_h": 8.2
+        },
+        {
+          "date": "2026-12-01",
+          "weather_code": 0,
+          "temperature_max_c": -1.7,
+          "temperature_min_c": -7.8,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 21.6,
+          "sunshine_h": 8.1
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "gala",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313758+01:00",
+  "fetched_at": "2026-11-25T08:40:40.508746+01:00",
   "updated_at": "2026-11-17T14:40:03+01:00",
   "source": "https://fnugg.no/gala/",
   "lifts": [
@@ -230,5 +230,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 61.50739,
+    "lon": 9.77134,
+    "elevation_m": 783
+  },
+  "top": {
+    "lat": 61.49585,
+    "lon": 9.73983,
+    "elevation_m": 1091
+  }
 }

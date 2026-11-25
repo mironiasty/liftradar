@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "val-di-fassa",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306145+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497406+01:00",
   "updated_at": "2026-11-14T09:25:14.995939+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
@@ -1092,5 +1092,15 @@
       "length_m": 2000,
       "map_length_m": 1990
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.43834,
+    "lon": 11.69362,
+    "elevation_m": 1318
+  },
+  "top": {
+    "lat": 46.43634,
+    "lon": 11.75954,
+    "elevation_m": 2435
+  }
 }

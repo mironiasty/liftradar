@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ischgl-silvretta-arena",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:43.911405+01:00",
-  "updated_at": "2026-11-24T13:41:56+01:00",
+  "fetched_at": "2026-11-25T08:41:55.335080+01:00",
+  "updated_at": "2026-11-25T08:38:13+01:00",
   "source": "https://winter.intermaps.com/silvretta_arena?lang=en",
   "lifts": [
     {
@@ -1450,5 +1450,15 @@
       "length_m": null,
       "map_length_m": 2440
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.01014,
+    "lon": 10.28801,
+    "elevation_m": 1352
+  },
+  "top": {
+    "lat": 46.97014,
+    "lon": 10.33422,
+    "elevation_m": 2868
+  }
 }

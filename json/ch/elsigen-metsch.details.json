@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "elsigen-metsch",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305357+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495422+01:00",
   "updated_at": "2026-11-24T09:55:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
@@ -298,5 +298,15 @@
       "length_m": 200,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.5291,
+    "lon": 7.60647,
+    "elevation_m": 1322
+  },
+  "top": {
+    "lat": 46.53163,
+    "lon": 7.63595,
+    "elevation_m": 2283
+  }
 }

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-weather.schema.json",
+  "id": "bellefontaine",
+  "country": "fr",
+  "fetched_at": "2026-11-25T08:42:59+01:00",
+  "source": "https://open-meteo.com/",
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "points": [
+    {
+      "name": "resort",
+      "lat": 46.5585,
+      "lon": 6.0661,
+      "elevation_m": 1029,
+      "now": {
+        "time": "2026-11-25T08:45:00+01:00",
+        "temperature_c": 3.2,
+        "weather_code": 3,
+        "wind_kmh": 9.0
+      },
+      "days": [
+        {
+          "date": "2026-11-25",
+          "weather_code": 80,
+          "temperature_max_c": 5.0,
+          "temperature_min_c": 2.4,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 9.9,
+          "wind_gusts_max_kmh": 32.4,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-11-26",
+          "weather_code": 80,
+          "temperature_max_c": 3.9,
+          "temperature_min_c": -0.9,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 1.2,
+          "wind_gusts_max_kmh": 18.7,
+          "sunshine_h": 0.3
+        },
+        {
+          "date": "2026-11-27",
+          "weather_code": 45,
+          "temperature_max_c": 1.6,
+          "temperature_min_c": -3.8,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 14.0,
+          "sunshine_h": 8.3
+        },
+        {
+          "date": "2026-11-28",
+          "weather_code": 2,
+          "temperature_max_c": 3.3,
+          "temperature_min_c": -4.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 19.1,
+          "sunshine_h": 8.8
+        },
+        {
+          "date": "2026-11-29",
+          "weather_code": 3,
+          "temperature_max_c": 6.1,
+          "temperature_min_c": -1.6,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 19.4,
+          "sunshine_h": 5.1
+        },
+        {
+          "date": "2026-11-30",
+          "weather_code": 3,
+          "temperature_max_c": 4.3,
+          "temperature_min_c": 0.2,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 16.2,
+          "sunshine_h": 0.7
+        },
+        {
+          "date": "2026-12-01",
+          "weather_code": 2,
+          "temperature_max_c": 4.8,
+          "temperature_min_c": -0.6,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 0.0,
+          "wind_gusts_max_kmh": 10.8,
+          "sunshine_h": 8.7
+        }
+      ]
+    }
+  ]
+}

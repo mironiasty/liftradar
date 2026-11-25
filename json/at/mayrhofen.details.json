@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "mayrhofen",
   "country": "at",
-  "fetched_at": "2026-11-24T13:41:37.030992+01:00",
-  "updated_at": "2026-11-24T07:58:43+01:00",
+  "fetched_at": "2026-11-25T08:41:47.712291+01:00",
+  "updated_at": "2026-11-25T08:02:57+01:00",
   "source": "https://winter.intermaps.com/mayrhofen?lang=en",
   "lifts": [
     {
@@ -1192,5 +1192,15 @@
       "length_m": null,
       "map_length_m": 2850
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.18846,
+    "lon": 11.85889,
+    "elevation_m": 616
+  },
+  "top": {
+    "lat": 47.19367,
+    "lon": 11.76387,
+    "elevation_m": 2468
+  }
 }

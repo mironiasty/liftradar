@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "rinerhorn",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.306062+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497283+01:00",
   "updated_at": null,
   "source": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
   "lifts": [
@@ -238,5 +238,15 @@
       "length_m": 2500,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.74544,
+    "lon": 9.78055,
+    "elevation_m": 1459
+  },
+  "top": {
+    "lat": 46.7285,
+    "lon": 9.81629,
+    "elevation_m": 2502
+  }
 }

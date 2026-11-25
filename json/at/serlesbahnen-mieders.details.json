@@ -1,0 +1,152 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "serlesbahnen-mieders",
+  "country": "at",
+  "fetched_at": "2026-11-25T08:42:05.676221+01:00",
+  "updated_at": "2026-11-24T15:12:01+01:00",
+  "source": "https://winter.intermaps.com/serlesbahnen?lang=en",
+  "lifts": [
+    {
+      "id": "L_105178",
+      "ref": null,
+      "name": "Gondelbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": 1200,
+      "bottom_m": 960,
+      "top_m": 1606
+    },
+    {
+      "id": "L_105179",
+      "ref": null,
+      "name": "SL Ochsenhütte",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": 1516,
+      "top_m": 1674
+    },
+    {
+      "id": "L_105180",
+      "ref": null,
+      "name": "SL Waldrasteck",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": 1432,
+      "top_m": 1611
+    },
+    {
+      "id": "L_105181",
+      "ref": null,
+      "name": "SL Lärchenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": 959,
+      "top_m": 1006
+    },
+    {
+      "id": "L_105195",
+      "ref": null,
+      "name": "Kinderland",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_105182",
+      "ref": null,
+      "name": "Waldrasteck",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105187",
+      "ref": null,
+      "name": "Ochsenschuss",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105188",
+      "ref": null,
+      "name": "Talabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2200,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105189",
+      "ref": null,
+      "name": "Übungswiese Talstation",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105190",
+      "ref": null,
+      "name": "5 Besserbrunnen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105191",
+      "ref": null,
+      "name": "3 Schneeboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105196",
+      "ref": null,
+      "name": "7 Kinderland",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
+  "bottom": {
+    "lat": 47.16358,
+    "lon": 11.38006,
+    "elevation_m": 959
+  },
+  "top": {
+    "lat": 47.14553,
+    "lon": 11.39956,
+    "elevation_m": 1680
+  }
+}

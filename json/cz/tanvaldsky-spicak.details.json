@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tanvaldsky-spicak",
   "country": "cz",
-  "fetched_at": "2026-11-24T13:40:37.308150+01:00",
+  "fetched_at": "2026-11-25T08:40:40.499846+01:00",
   "updated_at": null,
   "source": "https://www.kudyznudy.cz/aktivity/lyzovani-na-tanvaldskem-spicaku",
   "lifts": [
@@ -216,5 +216,15 @@
       "length_m": 285,
       "map_length_m": 360
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 50.75953,
+    "lon": 15.27224,
+    "elevation_m": 539
+  },
+  "top": {
+    "lat": 50.75148,
+    "lon": 15.28286,
+    "elevation_m": 807
+  }
 }

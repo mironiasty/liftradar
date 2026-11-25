@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "laax",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305529+01:00",
-  "updated_at": "2026-11-24T13:31:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495780+01:00",
+  "updated_at": "2026-11-25T08:40:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -1832,5 +1832,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.81924,
+    "lon": 9.26315,
+    "elevation_m": 1082
+  },
+  "top": {
+    "lat": 46.87784,
+    "lon": 9.15411,
+    "elevation_m": 2974
+  }
 }

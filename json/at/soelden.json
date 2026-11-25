@@ -11,57 +11,57 @@
   "website": "https://www.soelden.com",
   "ski_region": "oetztal",
   "status": "open",
-  "fetched_at": "2026-11-24T13:40:37.299258+01:00",
+  "fetched_at": "2026-11-25T08:40:40.488446+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 69,
+    "mountain_cm": 72,
     "valley_cm": 0,
-    "fresh_cm": 10,
+    "fresh_cm": 0,
     "last_snowfall": "2026-11-23",
-    "condition": "Fresh snow",
+    "condition": "Powder - grippy",
     "stations": [
       {
         "name": "Sölden",
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": 1.4,
+        "temperature_c": 4.2,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
-        "depth_cm": 18,
-        "fresh_cm": 5,
-        "temperature_c": -2.7,
-        "condition": "Fresh snow"
+        "depth_cm": 16,
+        "fresh_cm": 0,
+        "temperature_c": -2.5,
+        "condition": "Powder - grippy"
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 32,
-        "fresh_cm": 5,
-        "temperature_c": -3.9,
-        "condition": "Fresh snow"
+        "depth_cm": 35,
+        "fresh_cm": 0,
+        "temperature_c": -5.5,
+        "condition": "Powder - grippy"
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
-        "depth_cm": 69,
-        "fresh_cm": 10,
-        "temperature_c": -8.6,
-        "condition": "Fresh snow"
+        "depth_cm": 72,
+        "fresh_cm": 0,
+        "temperature_c": -6.1,
+        "condition": "Powder - grippy"
       }
     ]
   },
   "lifts": {
-    "open": 23,
+    "open": 24,
     "total": 31
   },
   "slopes": {
-    "open": 21,
+    "open": 22,
     "total": 58,
-    "open_km": 91.8,
+    "open_km": 102.5,
     "total_km": 147
   },
   "lifts_by_type": {
@@ -70,7 +70,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 9,
+      "open": 10,
       "total": 13
     },
     "drag_lift": {
@@ -106,13 +106,13 @@
       "total_km": 37
     },
     "difficult": {
-      "open": 3,
+      "open": 4,
       "total": 9,
-      "open_km": 5.3,
+      "open_km": 16.0,
       "total_km": 23
     }
   },
-  "lifts_updated_at": "2026-11-24T13:40:01+01:00",
+  "lifts_updated_at": "2026-11-25T08:38:21+01:00",
   "details": "json/at/soelden.details.json",
   "avalanche": null,
   "sources": [

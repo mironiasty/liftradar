@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "charmey",
   "country": "ch",
-  "fetched_at": "2026-11-24T13:40:37.305284+01:00",
-  "updated_at": "2026-11-24T04:01:00+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495299+01:00",
+  "updated_at": "2026-11-25T04:00:00+01:00",
   "source": "https://infosnow.ch/portal/",
   "lifts": [
     {
@@ -222,5 +222,15 @@
       "length_m": 100,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.61862,
+    "lon": 7.1689,
+    "elevation_m": 871
+  },
+  "top": {
+    "lat": 46.62646,
+    "lon": 7.20805,
+    "elevation_m": 1618
+  }
 }

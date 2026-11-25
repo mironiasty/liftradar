@@ -10,7 +10,7 @@
   },
   "website": "https://jaun-gastlosen.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305479+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495678+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,16 @@
       {
         "name": "Fochsen (SLF)",
         "elevation_m": 1707,
-        "depth_cm": 88,
-        "fresh_cm": 25,
+        "depth_cm": 85,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Jaunpass (SLF)",
         "elevation_m": 1520,
-        "depth_cm": 38,
-        "fresh_cm": 8,
+        "depth_cm": 36,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -100,11 +100,12 @@
     ],
     "problems": [
       "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

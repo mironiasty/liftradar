@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "palenica",
   "country": "pl",
-  "fetched_at": "2026-11-24T13:40:37.308679+01:00",
+  "fetched_at": "2026-11-25T08:40:40.500716+01:00",
   "updated_at": null,
-  "source": "https://www.pkl.pl/trasy-narciarskie.html",
+  "source": "https://www.pkl.pl/koleje-i-wyciagi.html",
   "lifts": [
     {
       "id": "lift-palenica",
@@ -130,5 +130,15 @@
       "length_m": 40,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 49.42492,
+    "lon": 20.4804,
+    "elevation_m": 453
+  },
+  "top": {
+    "lat": 49.41414,
+    "lon": 20.4766,
+    "elevation_m": 732
+  }
 }

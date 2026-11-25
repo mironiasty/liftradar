@@ -252,10 +252,39 @@
       ],
       "title": "DetailsSlope",
       "type": "object"
+    },
+    "ResortEnd": {
+      "additionalProperties": false,
+      "description": "The lowest or highest point of a resort's lifts on the map.",
+      "properties": {
+        "lat": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Lat",
+          "type": "number"
+        },
+        "lon": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Lon",
+          "type": "number"
+        },
+        "elevation_m": {
+          "title": "Elevation M",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "lat",
+        "lon",
+        "elevation_m"
+      ],
+      "title": "ResortEnd",
+      "type": "object"
     }
   },
   "additionalProperties": false,
-  "description": "Experimental: every lift and slope of one resort with its status, from its slope map or from the source\nthat lists them one by one. `unknown` items are listed but left out of the resort file's counts.",
+  "description": "Experimental: every lift and slope of one resort with its status, from its slope map or from the source\nthat lists them one by one, and the resort's bottom and top. `unknown` items are listed but left out of the\nresort file's counts. Every resort the ski tiles know has a file; `lifts` and `slopes` only those whose\nsources list them (the resort file's `details` points to those).",
   "properties": {
     "$schema": {
       "const": "https://liftradar.eu/schema/resort-details.schema.json",
@@ -293,23 +322,74 @@
       "title": "Updated At"
     },
     "source": {
-      "pattern": "^https?://\\S+$",
-      "title": "Source",
-      "type": "string"
+      "anyOf": [
+        {
+          "pattern": "^https?://\\S+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The page listing the lifts and slopes; null without them",
+      "title": "Source"
     },
     "lifts": {
-      "items": {
-        "$ref": "#/$defs/DetailsLift"
-      },
-      "title": "Lifts",
-      "type": "array"
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/DetailsLift"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Null when the resort's sources don't list them, or this run couldn't read them",
+      "title": "Lifts"
     },
     "slopes": {
-      "items": {
-        "$ref": "#/$defs/DetailsSlope"
-      },
-      "title": "Slopes",
-      "type": "array"
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/DetailsSlope"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Null as `lifts`",
+      "title": "Slopes"
+    },
+    "bottom": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ResortEnd"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The lowest point of the resort's lifts on the map: OpenSkiData's lines and elevations (© OpenStreetMap contributors, ODbL), from liftradar's weekly ski tiles. Null when the tiles have no lifts for the resort"
+    },
+    "top": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ResortEnd"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The highest point of the resort's lifts on the map: OpenSkiData's lines and elevations (© OpenStreetMap contributors, ODbL), from liftradar's weekly ski tiles. Null when the tiles have no lifts for the resort"
     }
   },
   "required": [
@@ -320,7 +400,9 @@
     "updated_at",
     "source",
     "lifts",
-    "slopes"
+    "slopes",
+    "bottom",
+    "top"
   ],
   "title": "Experimental: every lift and slope of one resort",
   "type": "object",

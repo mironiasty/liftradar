@@ -10,7 +10,7 @@
   },
   "website": "https://www.lesorres.com",
   "status": "no_report",
-  "fetched_at": "2026-11-24T13:40:37.310262+01:00",
+  "fetched_at": "2026-11-25T08:40:40.503600+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -36,26 +36,26 @@
   "avalanche": {
     "region_id": "FR-20",
     "region": "Embrunais-Parpaillon",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "low",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": 2200,
         "period": "all_day"
       },
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": 2200,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
+    "published_at": "2026-11-24T16:00:00+01:00",
+    "valid_from": "2026-11-24T16:00:00+01:00",
+    "valid_until": "2026-11-25T18:00:00+01:00"
   },
   "sources": [
     "https://www.lesorres.com/",

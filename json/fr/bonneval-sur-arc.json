@@ -11,7 +11,7 @@
   "website": "https://www.bonneval-sur-arc.com",
   "ski_region": "haute-maurienne-vanoise",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.309469+01:00",
+  "fetched_at": "2026-11-25T08:40:40.501927+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,7 +24,7 @@
         "name": "Station Village",
         "elevation_m": 1800,
         "depth_cm": 50,
-        "fresh_cm": 20,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Humide"
       },
@@ -32,7 +32,7 @@
         "name": "Sommet des Pistes",
         "elevation_m": 3000,
         "depth_cm": 120,
-        "fresh_cm": 40,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       }
@@ -80,37 +80,15 @@
   },
   "lifts_updated_at": null,
   "details": "json/fr/bonneval-sur-arc.details.json",
-  "avalanche": {
-    "region_id": "FR-11",
-    "region": "Haute-Maurienne",
-    "danger_level": 3,
-    "danger": "considerable",
-    "ratings": [
-      {
-        "level": "considerable",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [],
-    "published_at": "2026-11-23T16:00:00+01:00",
-    "valid_from": "2026-11-23T16:00:00+01:00",
-    "valid_until": "2026-11-24T18:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
     "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/bonneval-sur-arc/station-de-ski",
-    "https://meteofrance.com/meteo-montagne"
+    "https://www.skiinfo.fr/alpes-du-nord/bonneval-sur-arc/station-de-ski"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.lumiplan.com",
-        "attribution_required": null
-      },
-      {
-        "url": "https://meteofrance.com/meteo-montagne",
         "attribution_required": null
       }
     ],

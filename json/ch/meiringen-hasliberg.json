@@ -10,7 +10,7 @@
   },
   "website": "https://www.meiringen-hasliberg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-24T13:40:37.305627+01:00",
+  "fetched_at": "2026-11-25T08:40:40.495966+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,16 @@
       {
         "name": "Hasliberg (SLF)",
         "elevation_m": 1825,
-        "depth_cm": 52,
-        "fresh_cm": 10,
+        "depth_cm": 44,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Schönbüel (SLF)",
         "elevation_m": 1777,
-        "depth_cm": 80,
-        "fresh_cm": 32,
+        "depth_cm": 75,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +85,7 @@
       "total_km": 11
     }
   },
-  "lifts_updated_at": "2026-11-24T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-25T08:30:00+01:00",
   "details": "json/ch/meiringen-hasliberg.details.json",
   "avalanche": {
     "region_id": "CH-1244",
@@ -102,11 +102,12 @@
     ],
     "problems": [
       "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-23T17:00:00+01:00",
-    "valid_from": "2026-11-23T17:00:00+01:00",
-    "valid_until": "2026-11-24T17:00:00+01:00"
+    "published_at": "2026-11-24T17:00:00+01:00",
+    "valid_from": "2026-11-24T17:00:00+01:00",
+    "valid_until": "2026-11-25T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/portal/",

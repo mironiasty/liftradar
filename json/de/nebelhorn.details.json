@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "nebelhorn",
   "country": "de",
-  "fetched_at": "2026-11-24T13:40:37.312970+01:00",
+  "fetched_at": "2026-11-25T08:40:40.507156+01:00",
   "updated_at": null,
   "source": "https://www.ok-bergbahnen.com/skigebiete/status-anlagen-pisten-wege/",
   "lifts": [
@@ -222,5 +222,15 @@
       "length_m": 2700,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 47.40479,
+    "lon": 10.28576,
+    "elevation_m": 823
+  },
+  "top": {
+    "lat": 47.42179,
+    "lon": 10.3426,
+    "elevation_m": 2213
+  }
 }

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "aprica",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.307219+01:00",
+  "fetched_at": "2026-11-25T08:40:40.498389+01:00",
   "updated_at": null,
   "source": "https://www.apricaonline.com/it/situazione-neve-e-piste",
   "lifts": [
@@ -478,5 +478,15 @@
       "length_m": 400,
       "map_length_m": 410
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.15523,
+    "lon": 10.16636,
+    "elevation_m": 1157
+  },
+  "top": {
+    "lat": 46.12406,
+    "lon": 10.16668,
+    "elevation_m": 2254
+  }
 }

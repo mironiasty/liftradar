@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "moelltaler-gletscher",
   "country": "at",
-  "fetched_at": "2026-11-24T13:42:10.133124+01:00",
-  "updated_at": "2026-11-24T07:45:08+01:00",
+  "fetched_at": "2026-11-25T08:42:23.690244+01:00",
+  "updated_at": "2026-11-25T07:34:52+01:00",
   "source": "https://winter.intermaps.com/moelltaler_gletscher?lang=en",
   "lifts": [
     {
@@ -95,7 +95,7 @@
       "ref": null,
       "name": "Alteck",
       "type": "chairlift",
-      "status": "open",
+      "status": "closed",
       "length_m": 851,
       "map_length_m": 850,
       "capacity_per_hour": 2014,
@@ -252,7 +252,7 @@
       "name": "13 Alteck Racing Piste",
       "difficulty": "difficult",
       "colour": null,
-      "status": "open",
+      "status": "closed",
       "length_m": 1000,
       "map_length_m": 970
     },
@@ -262,7 +262,7 @@
       "name": "14 Alteck 2",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "open",
+      "status": "closed",
       "length_m": 1000,
       "map_length_m": 1540
     },
@@ -316,5 +316,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.98106,
+    "lon": 13.05093,
+    "elevation_m": 1228
+  },
+  "top": {
+    "lat": 47.03942,
+    "lon": 13.02051,
+    "elevation_m": 3084
+  }
 }

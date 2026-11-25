@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "turracher-hoehe",
   "country": "at",
-  "fetched_at": "2026-11-24T13:42:09.447478+01:00",
+  "fetched_at": "2026-11-25T08:42:23.356521+01:00",
   "updated_at": "2026-11-23T09:25:33+01:00",
   "source": "https://winter.intermaps.com/turracher_hoehe?lang=en",
   "lifts": [
@@ -600,5 +600,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.94157,
+    "lon": 13.89013,
+    "elevation_m": 1392
+  },
+  "top": {
+    "lat": 46.91561,
+    "lon": 13.85588,
+    "elevation_m": 2193
+  }
 }

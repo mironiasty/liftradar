@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "orsta",
   "country": "no",
-  "fetched_at": "2026-11-24T13:40:37.313878+01:00",
+  "fetched_at": "2026-11-25T08:40:40.508913+01:00",
   "updated_at": "2026-11-22T22:29:57+01:00",
   "source": "https://fnugg.no/orsta/",
   "lifts": [
@@ -166,5 +166,15 @@
       "length_m": null,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 62.15121,
+    "lon": 6.28704,
+    "elevation_m": 320
+  },
+  "top": {
+    "lat": 62.17136,
+    "lon": 6.28954,
+    "elevation_m": 872
+  }
 }

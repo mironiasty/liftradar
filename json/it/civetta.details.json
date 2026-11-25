@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "civetta",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306231+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497538+01:00",
   "updated_at": "2026-11-24T10:00:08.768957+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
@@ -764,5 +764,15 @@
       "length_m": 1105,
       "map_length_m": 1300
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.40524,
+    "lon": 12.02323,
+    "elevation_m": 984
+  },
+  "top": {
+    "lat": 46.42378,
+    "lon": 12.04547,
+    "elevation_m": 2078
+  }
 }

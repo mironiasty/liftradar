@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "seiser-alm",
   "country": "it",
-  "fetched_at": "2026-11-24T13:40:37.306136+01:00",
+  "fetched_at": "2026-11-25T08:40:40.497392+01:00",
   "updated_at": "2026-11-19T10:00:10.833291+01:00",
   "source": "https://opendatahub.com",
   "lifts": [
@@ -922,5 +922,15 @@
       "length_m": 580,
       "map_length_m": null
     }
-  ]
+  ],
+  "bottom": {
+    "lat": 46.54021,
+    "lon": 11.56374,
+    "elevation_m": 1012
+  },
+  "top": {
+    "lat": 46.51451,
+    "lon": 11.63756,
+    "elevation_m": 2221
+  }
 }
