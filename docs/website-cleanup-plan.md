@@ -3,8 +3,8 @@
 Response to [issue #91](https://github.com/mironiasty/liftradar/issues/91) (Tim Maurice Bayer's proposal), checked
 against `main` at 4a821dea (2026-11-25). Each step is its own PR with no change in behaviour.
 
-**Status (2026-11-25):** A, B and C are merged and deployed; the CDN hashes from "Small extras" are in
-#97. D, E and F are open.
+**Status (2026-11-25):** A, B, C and E are done; the CDN hashes from "Small extras" are in #97. D and F
+are open.
 
 ## Order
 
@@ -14,7 +14,7 @@ against `main` at 4a821dea (2026-11-25). Each step is its own PR with no change 
 | B | Page CSS out of `<style>`: shared rules into `style.css`, the rest into `assets/<page>.css` | 1 | take, dedupe rather than only move | done, #95 (merged only what was identical) |
 | C | `scripts/build.mjs` (what `pages.yml` does), `npm run build` / `preview` / `dev`, one list of pages | 3 (first half) | take | done, #96 |
 | D | Website into `web/`, ski-tile pipeline into its own folder | 3 (second half) | take after C, optional | open |
-| E | Split `resort.js` by job (now 7 jobs, weather included) | 4 | take, widen the `[a-z]+` patterns in the same PR | open (#95 widened the deploy's pattern) |
+| E | Split `resort.js` by job (now 7 jobs, weather included) | 4 | take, widen the `[a-z]+` patterns in the same PR | done, #100 |
 | F | Named keys for long translations, keeping stale-translation detection | 5 | take only with a fingerprint | open |
 | — | Vite | 6 | not now | — |
 
@@ -101,6 +101,12 @@ Same PR: widen `[a-z]+\.js` in `translate.mjs` (two places: the page's scripts a
 in `pages.yml` (or `build.mjs` after C), add the files to `types/pages/resort.json` and new names to `biome.json`
 globals. With A in place the 4 extra requests are cached. `scene.js` (1,632 lines) next, only where a split
 follows a clear seam.
+
+**Done (#100):** after #98 moved the chart and the group helpers to `common.js`, `resort.js` was 1,287 lines with
+five jobs. The history was one 25-line function, and `groupCards()` is one of the page's cards, so both stayed in
+`resort.js` (476 lines); the rest went to `resort-lists.js` (445), `resort-map.js` (182) and `resort-weather.js`
+(189). Nine names cross files. Only `translate.mjs`'s pattern needed widening: the `STRINGS` insertion matches
+`common.js` alone, and #95 had widened the deploy's.
 
 ## F. Translations (issue step 5)
 
