@@ -51,6 +51,14 @@ const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;
 // A group's page (area.html): a linked ski area or a pass and its members, e.g. area.html?g=sella-ronda.
 /** @param {string} id the group's key in json/groups.json */
 const areaPage = (id) => `area.html?g=${id}`;
+// A country's page in the page's language (countries.js), e.g. /austria or /de/oesterreich; the table filtered to
+// the country for one without a page.
+/** @param {string} code */
+function countryPagePath(code) {
+  const slug = COUNTRY_SLUGS[code]?.[LANG];
+  if (!slug) return `./?${new URLSearchParams({ country: code })}`;
+  return `${LANG === "en" ? "" : `/${LANG}`}/${slug}`;
+}
 // The resort and 3D pages are the same HTML for every resort until their script runs: once it has the resort,
 // this gives the page its own address for search engines (its canonical, and its translations' in the
 // page's <link rel="alternate">), so they aren't taken for duplicates of each other. Those are the addresses

@@ -18,8 +18,15 @@
   // Without storage, this still lets the menu go to English.
   const fromThisSite = document.referrer.startsWith(`${location.origin}/`);
   const wanted = chosen !== null && LANGUAGES.includes(chosen) ? chosen : fromThisSite ? null : browser;
-  if (document.documentElement.lang === "en" && wanted && wanted !== "en")
-    location.replace(`/${wanted}${location.pathname}${location.search}${location.hash}`);
+  if (document.documentElement.lang === "en" && wanted && wanted !== "en") {
+    // A page whose translations have addresses of their own (a country's: /austria, /de/oesterreich) names them
+    // before this script; the others are the same address one folder down.
+    const alternate = /** @type {HTMLLinkElement | null} */ (
+      document.querySelector(`link[rel="alternate"][hreflang="${wanted}"]`)
+    );
+    const path = alternate ? new URL(alternate.href).pathname : `/${wanted}${location.pathname}`;
+    location.replace(`${path}${location.search}${location.hash}`);
+  }
 
   // A language in the menu is remembered, and keeps the resort, filters and order of the address.
   document.addEventListener("click", (event) => {

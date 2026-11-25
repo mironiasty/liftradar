@@ -156,7 +156,8 @@ function tiles(group, members) {
   );
 }
 
-// The regions and countries the group's resorts are in, each to the list of all resorts filtered to it.
+// The regions and countries the group's resorts are in: a region to the list of all resorts filtered to it, a
+// country to its own page.
 /** @param {IndexResort[]} members */
 function places(members) {
   const filterLink = (text, params) => el("a", { class: "where", href: `./?${new URLSearchParams(params)}` }, text);
@@ -166,7 +167,7 @@ function places(members) {
     ...regions.map((r) =>
       filterLink(/** @type {string} */ (r.region), { country: r.country, region: /** @type {string} */ (r.region) }),
     ),
-    ...countries.map((c) => filterLink(countryName(c), { country: c })),
+    ...countries.map((c) => el("a", { class: "where", href: countryPagePath(c) }, countryName(c))),
   ].flatMap((link, i) => (i ? [" · ", link] : [link]));
 }
 

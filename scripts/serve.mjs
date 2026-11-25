@@ -6,7 +6,7 @@
 // --data: where json/, history/, schema/ and ski/ are (the data branch); this folder when left out, where README
 //         "Running locally" links them.
 // Each request reads the files again, so an edit shows on reload. /de/, /fr/, /it/ and /pl/ are translated as they're
-// asked for, from i18n/. As on Cloudflare, /about serves about.html, and a missing file 404.html. Only this computer
+// asked for, from i18n/, and the country pages built (scripts/countries.mjs). As on Cloudflare, /about serves about.html, and a missing file 404.html. Only this computer
 // can reach it. The 3D engine is unpacked first when it isn't here yet.
 
 import { execFileSync } from "node:child_process";
@@ -15,6 +15,7 @@ import { createServer } from "node:http";
 import { dirname, extname, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
+import { countryPageFor, countryPaths } from "./countries.mjs";
 import { languages, PAGES, translatePage } from "./translate.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -64,6 +65,12 @@ function find(path) {
   if (DATA_PARTS.includes(top)) {
     const found = file(data, path);
     return found && { body: readFileSync(found), type: TYPES[extname(found)] };
+  }
+  // A country's page (/austria, /de/oesterreich), built from the data's index as the build does.
+  if (countryPaths().some((p) => p.path === path.replace(/\.html$/, ""))) {
+    const index = JSON.parse(readFileSync(join(data, "json", "index.json"), "utf8"));
+    const html = countryPageFor(path, index);
+    return html && { body: html, type: TYPES[".html"] };
   }
   const language = languages().find((l) => l.language === top);
   const rest = language ? path.slice(top.length + 1) : path;

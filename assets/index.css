@@ -324,6 +324,15 @@ summary:focus-visible {
 #count {
   margin-left: auto;
 }
+/* The chosen country's page, after the count. */
+#country-page {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+#country-page:hover {
+  text-decoration: underline;
+}
 /* When the data was fetched (the chip is in style.css), over the search so the country and region fit beside it. */
 .updated-row {
   display: flex;
@@ -660,4 +669,37 @@ tr:hover a.name {
 }
 .notes li {
   margin: 4px 0;
+}
+
+/* Each country's page, under the table: a flag and its name each. */
+.countries {
+  margin: 28px 0 8px;
+}
+.countries h2 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+.countries ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.countries a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  color: var(--fg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.countries a:hover {
+  text-decoration: underline;
 }

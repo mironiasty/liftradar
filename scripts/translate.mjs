@@ -16,6 +16,9 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { runInNewContext } from "node:vm";
+// Imported by it too: it only uses this module's functions once both are loaded.
+import { writeCountryPages } from "./countries.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 // The site's pages: every .html at the top of the repo (the build copies and translates the same list).
@@ -56,6 +59,10 @@ function replaceMarked(html, replace) {
   return result + html.slice(position);
 }
 
+// Each country's page address by language, {at: {en: "austria", de: "oesterreich", ...}}, from assets/countries.js,
+// which the pages load too (README "Country pages").
+export const countrySlugs = () => runInNewContext(`${read("assets", "countries.js")}; COUNTRY_SLUGS`);
+
 // The languages, from i18n/<language>.json, each with its strings.
 export const languages = () =>
   readdirSync(join(root, "i18n")).map((file) => ({
@@ -63,15 +70,18 @@ export const languages = () =>
     strings: JSON.parse(read("i18n", file)),
   }));
 
-/** Page (e.g. "about.html") in the language; seen collects the keys used and missing, for --check. */
-export function translatePage(page, language, strings, seen = { used: new Set(), missing: new Set() }) {
+/**
+ * Page (e.g. "about.html") in the language; seen collects the keys used and missing, for --check. source is the
+ * page's HTML when it isn't the file as it is (a country page, from its template: scripts/countries.mjs).
+ */
+export function translatePage(page, language, strings, seen = { used: new Set(), missing: new Set() }, source = null) {
   const lookup = (key) => {
     seen.used.add(key);
     if (!(key in strings)) seen.missing.add(key);
     return strings[key];
   };
   const prefix = `/${language}/`;
-  let html = replaceMarked(read(page), (tag, key, inner) => {
+  let html = replaceMarked(source ?? read(page), (tag, key, inner) => {
     const text = lookup(key || squeeze(inner));
     return tag.replace(/\sdata-i18n(="[^"]*")?/, "") + (text ?? inner);
   });
@@ -98,6 +108,23 @@ export function translatePage(page, language, strings, seen = { used: new Set(),
   html = html.replace(' aria-current="true"', "");
   html = html.replace(new RegExp(`(<a [^>]*hreflang="${language}"[^>]*)>`), '$1 aria-current="true">');
   html = html.replace(/(<summary class="pill lang"[^>]*>)EN</, `$1${language.toUpperCase()}<`);
+  // A link to a country's page (href="/austria") goes to its page in this language (/de/oesterreich), and a list's
+  // link (class "country") says the country's name in it.
+  const slugs = Object.entries(countrySlugs());
+  const names = new Intl.DisplayNames([language], { type: "region" });
+  html = html.replace(/(<a [^>]*href=")\/([a-z-]+)("[^>]*>)/g, (link, start, slug, end) => {
+    const found = slugs.find(([, bySlug]) => bySlug.en === slug);
+    return found ? `${start}/${language}/${found[1][language] ?? slug}${end}` : link;
+  });
+  html = html.replace(
+    /(<a class="country" href="[^"]*">(?:<span [^>]*><\/span>)?)([^<]+)(<\/a>)/g,
+    (link, start, name, end) => {
+      const found = slugs.find(
+        ([code]) => new Intl.DisplayNames(["en"], { type: "region" }).of(code.toUpperCase()) === name,
+      );
+      return found ? `${start}${names.of(found[0].toUpperCase())}${end}` : link;
+    },
+  );
   // 404.html is served for any missing path, so its links are absolute.
   if (page === "404.html") html = html.replace(/<a href="\/([^"]*)"/g, `<a href="${prefix}$1"`);
 
@@ -153,17 +180,22 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   }
 
   let failed = false;
-  for (const { language, strings } of languages()) {
-    const seen = { used: new Set(), missing: new Set() };
+  const all = languages();
+  const seen = Object.fromEntries(all.map(({ language }) => [language, { used: new Set(), missing: new Set() }]));
+  for (const { language, strings } of all) {
     if (!check) mkdirSync(join(out, language), { recursive: true });
     for (const page of PAGES) {
-      const html = translatePage(page, language, strings, seen);
+      const html = translatePage(page, language, strings, seen[language]);
       if (!check) writeFileSync(join(out, language, page), html);
     }
-    if (check) {
+  }
+  if (check) {
+    // The country pages' strings too, from their template and made-up resorts (countries.mjs).
+    writeCountryPages(null, null, { sample: true, seen });
+    for (const { language, strings } of all) {
       const broken = brokenStrings(strings);
-      const unused = Object.keys(strings).filter((key) => !seen.used.has(key));
-      for (const key of seen.missing) console.warn(`${language}: not translated, stays English: ${key}`);
+      const unused = Object.keys(strings).filter((key) => !seen[language].used.has(key));
+      for (const key of seen[language].missing) console.warn(`${language}: not translated, stays English: ${key}`);
       for (const key of unused) console.warn(`${language}: unused: ${key}`);
       for (const text of broken) console.error(`${language}: placeholders or tags differ: ${text}`);
       failed ||= broken.length > 0;
