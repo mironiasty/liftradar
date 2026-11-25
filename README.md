@@ -77,6 +77,17 @@ each resort's page, and its 3D map when the ski tiles have its area, and each gr
 addresses without `.html`. Translations
 with `noindex` (still partly in English) are left out. `robots.txt` points to it; Cloudflare adds its own lines to it.
 
+## Social preview
+
+Each page's `<head>` has a `description` and Open Graph tags, for the card a link shows on social media and in
+chats; the translations get theirs from `i18n/<language>.json`, and `og:url` follows the canonical. Crawlers don't
+run scripts, so the resort, area and country pages show the site's card, not the resort's. The image,
+`assets/og.png` (1200×630), is drawn in `scripts/og-image.svg`; after changing it:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars --window-size=1200,630 --screenshot="$PWD/assets/og.png" "file://$PWD/scripts/og-image.svg"
+```
+
 ## About the data
 
 What readers need to know (timing, status, snow, lifts and slopes, avalanche danger, the map,

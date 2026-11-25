@@ -81,8 +81,19 @@ export function translatePage(page, language, strings, seen = { used: new Set(),
     // A " in the translation (Polish „…", say) would end the attribute.
     return text ? ` ${name}="${text.replaceAll('"', "&quot;")}"` : attribute;
   });
+  // The social preview's texts (description, og:title, og:description, og:image:alt).
+  html = html.replace(
+    /(<meta (?:name|property)="(?:description|og:title|og:description|og:image:alt)" content=")([^"]+)"/g,
+    (meta, start, value) => {
+      const text = lookup(value);
+      return text ? `${start}${text.replaceAll('"', "&quot;")}"` : meta;
+    },
+  );
   // Each language is its own page for search engines (resort.js sets the resort page's from its address).
-  html = html.replace('<link rel="canonical" href="https://liftradar.eu/', `$&${language}/`);
+  html = html.replace(
+    /(<link rel="canonical" href="|<meta property="og:url" content=")https:\/\/liftradar\.eu\//g,
+    `$&${language}/`,
+  );
   // The menu's links are the same on every page version: only the current language differs.
   html = html.replace(' aria-current="true"', "");
   html = html.replace(new RegExp(`(<a [^>]*hreflang="${language}"[^>]*)>`), '$1 aria-current="true">');
