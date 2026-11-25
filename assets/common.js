@@ -43,6 +43,8 @@ async function loadGroups() {
 const resortPath = (r) => `/json/${r.country}/${r.id}.json`;
 /** @param {{ country: string, id: string }} r */
 const historyPath = (r) => `/history/${r.country}/${r.id}.json`;
+// Experimental: Open-Meteo's forecast for the resort, a file of its own (no file: no forecast).
+const weatherPath = (r) => `/json/${r.country}/${r.id}.weather.json`;
 // The resort's page (resort.html), e.g. resort.html?r=at/soelden.
 /** @param {{ country: string, id: string }} r */
 const resortPage = (r) => `resort.html?r=${r.country}/${r.id}`;

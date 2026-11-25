@@ -154,6 +154,7 @@ history, and a section for developers) is on the site: [About the data](https://
 | Avalanche danger, Slovenian Alps and Prealps | [ARSO](https://meteo.arso.gov.si/met/sl/avalanche/) (Slovenian Environment Agency), from the same EAWS bulletin files; Pohorje and Gače aren't rated |
 | Avalanche danger, French Alps and Pyrenees | [Météo-France](https://meteofrance.com/meteo-montagne) mountain bulletin (by massif), from the same EAWS bulletin files |
 | Open km of Kitzsteinhorn and Kaunertal | Slope lengths © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
+| Weather forecast on the resort pages (experimental) | [Open-Meteo](https://open-meteo.com/) (CC BY 4.0), `json/<country>/<id>.weather.json` |
 | Ski-area outlines, pistes and lifts on the map | [OpenSkiData](https://openskidata.org) (ODbL), © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (the ski tiles, not the data) |
 
 The Snow Card, SalzburgerLand and Kärnten pages show the report each resort submits to iSKI;
