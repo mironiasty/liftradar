@@ -474,6 +474,8 @@ async function areaMap(members, container) {
     );
   }
   const pistes = addPistes(map, ski, {
+    // The group's resorts strong, their neighbours faded, as the resort page's map does with its resort.
+    highlight: members.map(skiKey),
     names: new Map(members.map((r) => [skiKey(r), r.name])),
     // From the zoom the map opens at, down to 10: a large pass's whole map would be many tiles.
     minZoom: Math.max(10, Math.min(SKI_MIN_ZOOM, Math.floor(map.getZoom()))),

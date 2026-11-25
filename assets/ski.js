@@ -194,8 +194,8 @@ function skiLabel({ properties: p }) {
 }
 
 // The ski style's sources and layers (assets/ski-style.json), under the labels, and the pistes and lifts
-// of the tiles in view in them. With highlight (a resort's key), that resort's are drawn strong and the
-// others faded, and without, those of areas liftradar has no resort for are grey; names maps resort keys
+// of the tiles in view in them. With highlight (a resort's key, or several, as a ski area's page has), those
+// resorts' are drawn strong and the others faded, and without, those of areas liftradar has no resort for are grey; names maps resort keys
 // to the names shown in the tooltips (otherwise those the tiles give); minZoom, from where they're drawn;
 // tips: false for no tooltips (the map page, where a click on the area shows the resort). The resorts'
 // outlines go in the source "ski-areas" and their links in "ski-links" (the map page fills them).
@@ -205,7 +205,7 @@ function skiLayers(
   map,
   ski,
   {
-    highlight = null,
+    highlight = /** @type {string | string[] | null} */ (null),
     names = new Map(),
     minZoom = SKI_MIN_ZOOM,
     tips = true,
@@ -216,7 +216,11 @@ function skiLayers(
   for (const id of Object.keys(ski.style.sources)) {
     map.addSource(id, { type: "geojson", data: empty, ...(id === "ski-runs" && { attribution: SKI_ATTRIBUTION }) });
   }
-  map.setGlobalStateProperty("highlight", highlight ?? "");
+  // Several resorts as "|at/a|at/b|", which the style finds each of in (README "Ski map style").
+  map.setGlobalStateProperty(
+    "highlight",
+    Array.isArray(highlight) ? (highlight.length ? `|${highlight.join("|")}|` : "") : (highlight ?? ""),
+  );
   map.setGlobalStateProperty("picked", "");
   const before = firstLabel(map);
   for (const layer of skiStyleLayers(ski.style, minZoom)) {
