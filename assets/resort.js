@@ -437,12 +437,29 @@ function itemName(d, item, ...before) {
   return cell;
 }
 
+/** @param {import("../types/resort-details").DetailsLift} l */
+const hasHeights = (l) => Boolean(l.bottom_m && l.top_m);
+
+// How far each lift climbs: by its stations' heights where the source gives them (few do), else ≈ by its line on
+// the map, as the lengths. Shown at once with the source's; once the map has drawn (if ever), again with the map's
+// for the lifts the source gives none.
 /** @param {ResortDetails} d */
-async function liftList(d) {
+function liftList(d) {
   const lifts = d.lifts ?? []; // null only in files with just the bottom and top, which `details` doesn't point to
-  // How far each lift climbs: by its stations' heights where the source gives them (few do), else ≈ by its line on
-  // the map, as the lengths. The list waits a little for the map to have drawn, rather than show without them.
-  const onMap = await Promise.race([mapItems, new Promise((resolve) => setTimeout(resolve, 3000, null))]);
+  const box = el("div", {}, liftTable(d, lifts, null));
+  if (!lifts.every(hasHeights))
+    mapItems.then((onMap) => {
+      if (onMap && lifts.some((l) => !hasHeights(l) && onMap.rise(`${d.country}/${d.id}/${l.id}`) !== null))
+        box.replaceChildren(liftTable(d, lifts, onMap));
+    });
+  return box;
+}
+
+/**
+ * @param {ResortDetails} d @param {import("../types/resort-details").DetailsLift[]} lifts
+ * @param {MapItems} onMap
+ */
+function liftTable(d, lifts, onMap) {
   /** @param {import("../types/resort-details").DetailsLift} l */
   const rise = (l) => {
     if (l.bottom_m && l.top_m) return { m: Math.abs(l.top_m - l.bottom_m), map: false };
@@ -916,11 +933,15 @@ function pickOnMap(map, container, features) {
   const none = ["==", ["get", "item"], ""];
   return {
     items,
-    // How far a lift's line on the map climbs, from its ends' heights.
+    // How far a lift climbs on the map: from the lowest to the highest end of its lines. A lift with a middle
+    // station can be two lines (its sections) linked to the one item, as its length is their sum.
     rise(key) {
-      const line = features.lifts.find((f) => f.properties?.item === key)?.geometry;
-      const ends = line?.type === "LineString" ? liftEnds(line.coordinates) : null;
-      return ends && ends[1] - ends[0];
+      const ends = features.lifts
+        .filter((f) => f.properties?.item === key && f.geometry.type === "LineString")
+        .map((f) => liftEnds(/** @type {import("geojson").LineString} */ (f.geometry).coordinates))
+        .filter((e) => e !== null);
+      if (!ends.length) return null;
+      return Math.max(...ends.map((e) => e[1])) - Math.min(...ends.map((e) => e[0]));
     },
     clear() {
       picked?.setAttribute("aria-pressed", "false");
