@@ -12,6 +12,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import shapely
+from lift_links import NOT_COUNTED
 from shapely.geometry import LineString, Point, box, mapping
 
 M_PER_DEG = 111_320
@@ -30,11 +31,6 @@ ISLAND_M2 = 50_000  # and pieces smaller than this,
 OUTLINE_SIMPLIFY_M = 15  # and simplified
 LINK_END_M = 250  # a lift's stretch outside the outline links two of its parts when it ends this near both
 # (a station can lie that far out: the outline loses a lift's thin end with the strips)
-# Rack railways (OpenSkiData's "railway": the Bayerische Zugspitzbahn, the Tramway du Mont-Blanc, the
-# Wendelsteinbahn) keep their resort in the tiles, for a GPS track that rides them, but aren't counted
-# among its lifts or drawn in its outline: they're mapped as dozens of segments, most of them far below
-# the area.
-NOT_COUNTED = {"railway"}
 OVERRIDES = Path(__file__).with_name("ski_overrides.json")
 GENERIC = {"ski", "skigebiet", "area", "sci", "comprensorio", "bergbahnen", "der", "und", "and", "san", "skiarena"}
 GENERIC |= {"skiregion", "domaine", "station", "les", "the", "skicentrum", "skicenter", "alpinsenter", "lifte"}
@@ -101,6 +97,11 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
     keys = {f"{r['country']}/{r['id']}": r for r in resorts if r.get("location")}
     here = {k: (r["location"]["lon"], r["location"]["lat"]) for k, r in keys.items()}
     anchor = here | {k: tuple(p) for k, p in overrides.get("points", {}).items() if k in here}
+    # An override for a resort the index no longer has (renamed, taken off, without a location) is left out: its
+    # lifts would go to a resort without a name or a point, and the build would stop.
+    for kind in ("claims", "features"):
+        for k in overrides.get(kind, {}).keys() - keys.keys():
+            print(f"ski_overrides.json: no resort {k} in the index, its {kind!r} left out")
     size = defaultdict(int)
     for f in lifts:
         for a in f["_areas"]:
@@ -136,6 +137,8 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
         if not named or not by_name.get(a):
             claims[a].add(k)
     for k, refs in overrides.get("claims", {}).items():
+        if k not in keys:
+            continue
         for a, area in areas.items():
             if any(area_matches(area, ref) for ref in refs):
                 claims[a].add(k)
@@ -144,6 +147,13 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
         for a, area in areas.items():
             if any(area_matches(area, ref) for ref in refs):
                 claims[a].discard(k)
+    # A reference that finds no area does nothing: OpenSkiData renamed or merged the area, or (in ski_split_check.py,
+    # whose tiles keep only an area's first OSM id) it names another of its OSM ids.
+    for kind in ("claims", "ignore"):
+        for k, refs in overrides.get(kind, {}).items():
+            for ref in refs:
+                if not any(area_matches(area, ref) for area in areas.values()):
+                    print(f"ski_overrides.json: {kind} {k} {ref!r} matches no ski area")
 
     def claimed(f):
         return next((a for a in f["_areas"] if claims.get(a)), None)
@@ -183,7 +193,7 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
                 trees[a] = shapely.STRtree([lines[i] for i in lifts_in[a]])
             run_lr[j] = lift_lr[lifts_in[a][int(trees[a].nearest(f["_geom"].centroid))]]
     # Single lifts and runs OpenSkiData puts in the wrong area (ski_overrides.json "features": OSM ids).
-    moved = {ref: k for k, refs in overrides.get("features", {}).items() for ref in refs}
+    moved = {ref: k for k, refs in overrides.get("features", {}).items() if k in keys for ref in refs}
     for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
         for i, f in enumerate(features):
             sources = (f.get("properties") or {}).get("sources") or []
@@ -347,5 +357,7 @@ def map_point(here: tuple, geom, lift_coords: list, to_m, to_deg) -> list:
         a, b = coords[0], coords[-1]
         low = a if len(a) < 3 or len(b) < 3 or (a[2] or 0) <= (b[2] or 0) else b
         bottoms.append(low[:2])
+    if not bottoms:  # downhill runs but no lift counted (all railways, say): its own location
+        return [round(here[0], 5), round(here[1], 5)]
     best = min(bottoms, key=lambda c: to_m(Point(c)).distance(Point(0, 0)))
     return [round(best[0], 5), round(best[1], 5)]

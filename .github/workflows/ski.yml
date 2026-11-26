@@ -67,12 +67,16 @@ jobs:
               "https://tiles.openskimap.org/geojson/$f.geojson"
           done
 
+      # The last build, whose counts the new one mustn't fall far below. Without it (the first build, or GitHub
+      # failing) only ski_tiles.py's MIN_* floors apply: the run says so.
       - name: Previous build
         id: previous
         run: |
           if gh release download ski-latest -R "$GITHUB_REPOSITORY" -p ski.tar.gz -D previous; then
             tar xzf previous/ski.tar.gz -C previous ski/v1/meta.json
             echo "build=$(jq -r .build previous/ski/v1/meta.json)" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::No previous build to compare the counts with: only the MIN_* floors apply"
           fi
 
       - name: Build the tiles
@@ -94,5 +98,11 @@ jobs:
           gh release view ski-latest -R "$GITHUB_REPOSITORY" > /dev/null 2>&1 ||
             gh release create ski-latest -R "$GITHUB_REPOSITORY" --latest=false --title "Ski tiles" \
               --notes "The tiles at liftradar.eu/ski/, rebuilt by ski.yml. Data from OpenSkiData / OpenSkiMap.org, © OpenStreetMap contributors (ODbL)."
-          gh release upload ski-latest ski.tar.gz -R "$GITHUB_REPOSITORY" --clobber
+          # --clobber deletes the old archive before uploading the new one: an upload failing after that would leave
+          # every deploy without /ski/ until the next one, so it's tried three times.
+          for try in 1 2 3; do
+            gh release upload ski-latest ski.tar.gz -R "$GITHUB_REPOSITORY" --clobber && break
+            if [ "$try" = 3 ]; then exit 1; fi
+            sleep 30
+          done
           gh workflow run pages.yml -R "$GITHUB_REPOSITORY" --ref main

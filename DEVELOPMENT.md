@@ -278,7 +278,7 @@ once a day; its own vector tiles may not be used directly.
   `lift_links.py` matched (below), rounded to 10 m. liftradar-fetcher reads it every run, as the details' `map_length_m`.
 - `ski/v1/elevations.json` (experimental): `data_time`, and `resorts`, `{"<country>/<id>": {"bottom": [lon, lat,
   elevation], "top": […]}}`, the lowest and highest point of the resort's lifts (`lr`, disused and abandoned ones
-  left out), from OpenSkiData's elevations. liftradar-fetcher reads it every run, for the details' `bottom` and
+  and rack railways left out), from OpenSkiData's elevations. liftradar-fetcher reads it every run, for the details' `bottom` and
   `top` and the weather forecast's points.
 - `ski/v1/resorts.geojson`: a feature per liftradar resort with lifts there, `id` `<country>/<id>`:
   its outline (the geometry), `point` (`[lon, lat]`, its marker), and `lifts`, `runs` (downhill),
@@ -354,7 +354,8 @@ the base's rules and with its own (`.github/workflows/ski-assign.yml`), and list
 count changes in the run's summary.
 
 The script fails, keeping the last tiles, if the lifts, runs, areas or assigned lifts or runs drop by
-more than 15%. To build the tiles locally (about 290 MB to download, a minute and 3.5 GB of memory)
+more than 15%, or below the `MIN_*` floors in `ski_tiles.py` (all that's checked when the last build can't be read: the
+run warns). To build the tiles locally (about 290 MB to download, a minute and 3.5 GB of memory)
 and see them on the map:
 
 ```sh
