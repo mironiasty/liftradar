@@ -2,12 +2,13 @@ __pycache__/
 node_modules/
 
 # Local data links (see DEVELOPMENT.md)
-/json
-/history
-/schema
-/ski
-# The 3D engine, unpacked by scripts/engine.mjs
-/engine
+/web/json
+/web/history
+/web/schema
+/web/ski
+# The 3D engine and the copy of its pin, unpacked by scripts/engine.mjs
+/web/engine
+/web/engine.json
 # The translated pages npm run check validates (scripts/translate.mjs)
 /.check
 *.tsbuildinfo

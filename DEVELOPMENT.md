@@ -45,7 +45,9 @@ and the short way to run it, is in the [README](README.md).
   `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
   current data), `about.html` (what the values mean, and their caveats) and `privacy.html` (the privacy policy
   of the site and the phone apps, the URL the app stores ask for: keep it in step with what they download), plain
-  static pages that load the JSON in the browser. No build step locally.
+  static pages that load the JSON in the browser. No build step locally. Everything the site serves is in `web/`
+  (the pages, `assets/`, `.well-known/`, `_headers`, `robots.txt`, `openapi.json`), at the address it has there:
+  `about.html` and `assets/…` below are `web/about.html` and `web/assets/…` in the repo.
   The ski-area outlines, the resorts' points and the pistes and lifts on the map come from the ski
   tiles at `/ski/`, built weekly and not kept in git; see [Ski tiles](#ski-tiles).
   `assets/mini-map-light.webp`, `mini-map-dark.webp` and `mini-map.svg` are the shaded relief
@@ -89,7 +91,7 @@ run scripts, so the resort, area and country pages show the site's card, not the
 `assets/og.png` (1200×630, also the README's header), is drawn in `scripts/og-image.svg`; after changing it:
 
 ```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars --window-size=1200,630 --screenshot="$PWD/assets/og.png" "file://$PWD/scripts/og-image.svg"
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars --window-size=1200,630 --screenshot="$PWD/web/assets/og.png" "file://$PWD/scripts/og-image.svg"
 ```
 
 ## About the data
@@ -131,11 +133,12 @@ Then, to work on the pages:
 npm run dev -- --data ../liftradar-data   # http://localhost:8000
 ```
 
-It serves the repo as it is (`scripts/serve.mjs`): an edit shows on reload, `/de/`, `/fr/`, `/it/` and `/pl/`
+It serves `web/` as it is (`scripts/serve.mjs`): an edit shows on reload, `/de/`, `/fr/`, `/it/` and `/pl/`
 translated as they're asked for, `/about` as `about.html` and missing addresses as `404.html`, as on Cloudflare.
 It unpacks the 3D engine first if it isn't here yet (see [3D engine](#3d-engine)). Without `--data` it reads
-`json/`, `history/`, `schema/` and `ski/` from this folder, where you can link them instead (git-ignored):
-`for part in json history schema; do ln -sfn ../liftradar-data/$part .; done`. The ski tiles are optional: built
+`json/`, `history/`, `schema/` and `ski/` from `web/`, where you can link them instead (git-ignored):
+`for part in json history schema; do ln -sfn ../../liftradar-data/$part web/; done`. With them there, any static
+server works too, without the translations (`python3 -m http.server -d web`). The ski tiles are optional: built
 as in [Ski tiles](#ski-tiles), or unpacked from the release `ski-latest`, into the data's `ski/`.
 
 To see exactly what's deployed, build it, then serve the build with the MCP server, as Cloudflare does:
@@ -352,7 +355,7 @@ for f in lifts runs ski_areas; do
 done
 uv run --no-project --with shapely --with ijson python3 scripts/ski_tiles.py ../osd/ski_areas.geojson \
   ../osd/lifts.geojson ../osd/runs.geojson ../liftradar-data/json/index.json ../osd/ski
-ln -sfn ../osd/ski .   # git-ignored, like the data links
+ln -sfn ../../osd/ski web/   # git-ignored, like the data links
 ```
 
 Without `ski/`, the pages show the markers at the resorts' locations, without outlines, pistes or
@@ -389,7 +392,7 @@ browser has WebGPU (`assets/scene.js` loads the version `/engine.json` pins). It
 publishes it with `npm run viewer -- --release` on this repo's release `viewer-<commit>` as
 `viewer.tar.gz` (`viewer.js`, the engine's WebAssembly beside it, and its types, `viewer.d.ts`).
 `engine.json` pins one by its `tag` and the archive's `sha256`; `scripts/engine.mjs` downloads that,
-checks it and unpacks it into `engine/<tag>/` (git-ignored), and every deploy does the same into the
+checks it and unpacks it into `web/engine/<tag>/`, with a copy of the pin in `web/engine.json` (both git-ignored), and every deploy does the same into the
 site, so each version has its own address, cached for good (`_headers`). A new engine reaches the site
 only when the pin moves. Without it (GitHub failing) the deploy goes on without `/engine/`.
 
@@ -400,15 +403,15 @@ To move the site to a newer engine:
    says) and the viewer, publishes them on this repo's pre-release `viewer-<commit>` (`gh`, logged in with
    write access here; never the repo's "Latest", which stays the ski tiles'), and prints the pin. Without
    `--release` it only builds and packs, to try. The releases so far: `gh release list`.
-2. Put that pin in `engine.json`, and run `node scripts/engine.mjs` to fetch it into `engine/<tag>/`.
-3. Compare the new `engine/<tag>/viewer.d.ts` with `types/viewer.d.ts`, the copy `assets/scene.js` is type
+2. Put that pin in `engine.json`, and run `node scripts/engine.mjs` to fetch it into `web/engine/<tag>/`.
+3. Compare the new `web/engine/<tag>/viewer.d.ts` with `types/viewer.d.ts`, the copy `assets/scene.js` is type
    checked against: if they differ, copy it over, and `npm run check` points at what in `scene.js` no longer
    fits the viewer's options or calls.
 4. Open `3d.html?r=<country>/<id>` in a browser with WebGPU, with the data from liftradar.eu (`json/`,
    `history/` and `ski/` aren't on `main`), `npm run check`, and commit `engine.json` ("3D map:
    TrailRider's engine at <commit>", what changed in it), with `types/viewer.d.ts` if it changed. The deploy
    fetches the engine; the old versions stay on GitHub, so moving the pin back is a revert. Old
-   `engine/<tag>/` folders here can be deleted.
+   `web/engine/<tag>/` folders here can be deleted.
 
 ## Scripts
 

@@ -3,7 +3,7 @@
 //
 //   node scripts/serve.mjs [--data <dir>] [--port 8000]
 //
-// --data: where json/, history/, schema/ and ski/ are (the data branch); this folder when left out, where DEVELOPMENT.md
+// --data: where json/, history/, schema/ and ski/ are (the data branch); web/ when left out, where DEVELOPMENT.md
 //         "Running locally" links them.
 // Each request reads the files again, so an edit shows on reload. /de/, /fr/, /it/ and /pl/ are translated as they're
 // asked for, from i18n/, and the country pages built (scripts/countries.mjs). As on Cloudflare, /about serves about.html, and a missing file 404.html. Only this computer
@@ -19,8 +19,9 @@ import { countryPageFor, countryPaths, readElevations } from "./countries.mjs";
 import { languages, PAGES, translatePage } from "./translate.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const web = join(root, "web");
 const { values } = parseArgs({ options: { data: { type: "string" }, port: { type: "string", default: "8000" } } });
-const data = resolve(values.data ?? root);
+const data = resolve(values.data ?? web);
 const DATA_PARTS = ["json", "history", "schema", "ski"];
 const TYPES = {
   ".html": "text/html; charset=utf-8",
@@ -44,7 +45,7 @@ for (const part of DATA_PARTS.slice(0, 3)) {
   if (!existsSync(join(data, part))) console.warn(`No ${part}/ in ${data}: the pages will find no data (see --data)`);
 }
 const { tag } = JSON.parse(readFileSync(join(root, "engine.json"), "utf8"));
-if (!existsSync(join(root, "engine", tag))) {
+if (!existsSync(join(web, "engine", tag))) {
   try {
     execFileSync(process.execPath, [join(root, "scripts", "engine.mjs")], { stdio: "inherit" });
   } catch {
@@ -77,11 +78,11 @@ function find(path) {
   let page = rest === "/" ? "index.html" : rest.slice(1);
   if (!page.includes("/") && !page.endsWith(".html") && PAGES.includes(`${page}.html`)) page += ".html";
   if (PAGES.includes(page)) {
-    const html = language ? translatePage(page, language.language, language.strings) : readFileSync(join(root, page));
+    const html = language ? translatePage(page, language.language, language.strings) : readFileSync(join(web, page));
     return { body: html, type: TYPES[".html"] };
   }
   if (language) return null;
-  const found = file(root, path);
+  const found = file(web, path);
   return found && { body: readFileSync(found), type: TYPES[extname(found)] ?? "application/octet-stream" };
 }
 

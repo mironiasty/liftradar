@@ -13,7 +13,7 @@ The page draws the resorts on top, using the frame stored on the SVG's root elem
     x = (lon - west) * k * scale,  y = (north - lat) * scale
 
     uv run --no-project --with shapely --with numpy --with pillow \\
-        python3 scripts/mini_map.py ne_50m_admin_0_countries.geojson assets
+        python3 scripts/mini_map.py ne_50m_admin_0_countries.geojson web/assets
 """
 
 import io

@@ -5,7 +5,7 @@
 //   node scripts/build.mjs [--data <dir>] [--out <dir>]
 //
 // --data: where json/, history/ and schema/ are (the data branch), with ski/ if the ski tiles are there too
-//         (DEVELOPMENT.md "Ski tiles"); this folder when left out, where DEVELOPMENT.md "Running locally" links them.
+//         (DEVELOPMENT.md "Ski tiles"); web/ when left out, where DEVELOPMENT.md "Running locally" links them.
 // --out:  the folder to build into, emptied first; _site when left out, as wrangler.jsonc reads it.
 //
 // The steps that only make the site smaller or faster (the 3D engine, minifying, compacting the index) warn and
@@ -19,13 +19,15 @@ import { parseArgs } from "node:util";
 import { PAGES } from "./translate.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const web = join(root, "web");
 const { values } = parseArgs({ options: { data: { type: "string" }, out: { type: "string" } } });
-const data = resolve(values.data ?? root);
+const data = resolve(values.data ?? web);
 const out = resolve(values.out ?? join(root, "_site"));
 
-// What the site serves besides the pages, and what it takes from the data.
-const SITE_FILES = ["openapi.json", "robots.txt", "_headers", "assets", ".well-known"];
+// What the site takes from the data. The site itself is all of web/, but for what DEVELOPMENT.md "Running locally"
+// links or unpacks there (git-ignored): the data, the ski tiles and the 3D engine, which come in below.
 const DATA_PARTS = ["json", "history", "schema"];
+const LOCAL = [...DATA_PARTS, "ski", "engine", "engine.json"];
 
 const node = (script, ...args) =>
   execFileSync(process.execPath, [join(root, "scripts", script), ...args], { stdio: "inherit" });
@@ -62,7 +64,10 @@ for (const part of DATA_PARTS) {
 }
 rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
-for (const file of [...PAGES, ...SITE_FILES]) cpSync(join(root, file), join(out, file), { recursive: true });
+for (const file of readdirSync(web)) {
+  if (LOCAL.includes(file) || (file.startsWith(".") && file !== ".well-known")) continue;
+  cpSync(join(web, file), join(out, file), { recursive: true });
+}
 for (const part of DATA_PARTS) cpSync(join(data, part), join(out, part), { recursive: true, dereference: true });
 // Without the ski tiles (not built yet, or GitHub failing) the site goes out without /ski/, which apps handle.
 if (existsSync(join(data, "ski"))) cpSync(join(data, "ski"), join(out, "ski"), { recursive: true, dereference: true });
@@ -71,7 +76,7 @@ else console.warn(`No ski/ in ${data}: the site goes out without the ski tiles`)
 // The 3D engine (DEVELOPMENT.md "3D engine"), into /engine/<tag>/: the pinned one copied when it's unpacked here already,
 // else downloaded. Without it, 3d.html shows the diorama it falls back to.
 const engine = join("engine", JSON.parse(readFileSync(join(root, "engine.json"), "utf8")).tag);
-if (existsSync(join(root, engine))) cpSync(join(root, engine), join(out, engine), { recursive: true });
+if (existsSync(join(web, engine))) cpSync(join(web, engine), join(out, engine), { recursive: true });
 optional("The 3D engine", () => node("engine.mjs", out));
 
 // Before the asset links are versioned: these pages have the same links.

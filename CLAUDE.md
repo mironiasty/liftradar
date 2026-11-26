@@ -1,6 +1,6 @@
 # liftradar
 
-The website (branch `main`: plain static pages, no build step) for the data that
+The website (branch `main`: plain static pages in `web/`, no build step) for the data that
 **liftradar-fetcher** publishes to this repo's `data` branch. liftradar-fetcher is checked out next to
 this one at `../liftradar-fetcher`; its `src/liftradar_fetcher/models.py` defines the data format, and its
 README documents every source in detail.
@@ -10,6 +10,7 @@ running locally, translations, country pages, MCP, ski tiles, 3D engine, scripts
 the section you're changing first, and keep it up to date in the same change.
 
 - Never edit the `data` branch by hand: every fetch run replaces it.
+- `web/` is everything the site serves, at the address it has there; the pages and `assets/` named below are in it.
 - `about.html` and `sources.html` are the public description of liftradar-fetcher's output. Keep them
   in sync with what the fetcher does; when in doubt, check `../liftradar-fetcher/README.md` and the code
   there. `about.html` keeps to what a reader needs: per-source detail goes in that README's "Data details".
@@ -27,7 +28,7 @@ the section you're changing first, and keep it up to date in the same change.
 - `worker/mcp.js` is the MCP server at `/mcp` (DEVELOPMENT.md "MCP"), the Worker's only script: its tools read the same
   files, so after a fetcher change check them too, and keep `api.html` ("MCP") in step with them.
 - TrailRider's 3D engine reaches the site as a release pinned in `engine.json` (DEVELOPMENT.md "3D engine"),
-  unpacked into `engine/` by `scripts/engine.mjs`: move the pin, never edit what's unpacked.
+  unpacked into `web/engine/` by `scripts/engine.mjs`: move the pin, never edit what's unpacked.
 - Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
   these checks, for `scripts/build.mjs` (what `pages.yml` deploys: `npm run build`, then `npm run preview` to serve
   it with `/mcp`), for `npm run dev` (the repo served as it is, translations included), and for the MCP server's

@@ -1,4 +1,4 @@
-// What assets/*.js use without defining it: the libraries the pages load from a CDN, and short names for
+// What web/assets/*.js use without defining it: the libraries the pages load from a CDN, and short names for
 // the data's types (generated from its schemas next to this file) to use in JSDoc, e.g. /** @param {Resort} r */.
 
 declare const maplibregl: typeof import("maplibre-gl");

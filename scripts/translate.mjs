@@ -21,8 +21,9 @@ import { runInNewContext } from "node:vm";
 import { writeCountryPages } from "./countries.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-// The site's pages: every .html at the top of the repo (the build copies and translates the same list).
-export const PAGES = readdirSync(root)
+const web = join(root, "web");
+// The site's pages: every .html in web/ (the build copies and translates the same list).
+export const PAGES = readdirSync(web)
   .filter((file) => file.endsWith(".html"))
   .sort();
 const ENGLISH_ONLY = "This part of the page is available in English only.";
@@ -30,9 +31,9 @@ const ENGLISH_ONLY = "This part of the page is available in English only.";
 const read = (...path) => readFileSync(join(root, ...path), "utf8");
 const squeeze = (text) => text.trim().replace(/\s+/g, " ");
 
-// The t("...") strings of an assets/*.js file.
+// The t("...") strings of an web/assets/*.js file.
 const scriptStrings = (name) =>
-  [...read("assets", name).matchAll(/\bt\(\s*("(?:[^"\\]|\\.)*")/g)].map((match) => JSON.parse(match[1]));
+  [...read("web", "assets", name).matchAll(/\bt\(\s*("(?:[^"\\]|\\.)*")/g)].map((match) => JSON.parse(match[1]));
 
 // Calls replace(openingTag, tagName, explicitKey, innerHtml) for each data-i18n element, for its replacement.
 function replaceMarked(html, replace) {
@@ -59,9 +60,9 @@ function replaceMarked(html, replace) {
   return result + html.slice(position);
 }
 
-// Each country's page address by language, {at: {en: "austria", de: "oesterreich", ...}}, from assets/countries.js,
+// Each country's page address by language, {at: {en: "austria", de: "oesterreich", ...}}, from web/assets/countries.js,
 // which the pages load too (DEVELOPMENT.md "Country pages").
-export const countrySlugs = () => runInNewContext(`${read("assets", "countries.js")}; COUNTRY_SLUGS`);
+export const countrySlugs = () => runInNewContext(`${read("web", "assets", "countries.js")}; COUNTRY_SLUGS`);
 
 // The languages, from i18n/<language>.json, each with its strings.
 export const languages = () =>
@@ -81,7 +82,7 @@ export function translatePage(page, language, strings, seen = { used: new Set(),
     return strings[key];
   };
   const prefix = `/${language}/`;
-  let html = replaceMarked(source ?? read(page), (tag, key, inner) => {
+  let html = replaceMarked(source ?? read("web", page), (tag, key, inner) => {
     const text = lookup(key || squeeze(inner));
     return tag.replace(/\sdata-i18n(="[^"]*")?/, "") + (text ?? inner);
   });

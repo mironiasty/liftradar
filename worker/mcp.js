@@ -128,7 +128,7 @@ function createServer(env, origin) {
     async ({ country, status, name, min_snow_cm, min_lifts_open, near, sort, limit }) => {
       const index = /** @type {Index} */ (await read("/json/index.json"));
       const words = name && fold(name);
-      // As the site's search (assets/table.js): the names of its linked ski area and ski region too, so
+      // As the site's search (web/assets/table.js): the names of its linked ski area and ski region too, so
       // "3 Vallées" finds their resorts. Without groups.json, only the resort's own names.
       const file = /** @type {Groups | null} */ (words ? await read("/json/groups.json").catch(() => null) : null);
       const groups = file?.groups ?? {};
@@ -361,7 +361,7 @@ function notFound(country, id) {
   };
 }
 
-// Names compared without case and marks, as the site's search does (assets/common.js): "bialka" finds
+// Names compared without case and marks, as the site's search does (web/assets/common.js): "bialka" finds
 // "Białka Tatrzańska". The letters NFD doesn't take apart are mapped by hand.
 /** @type {Record<string, string>} */
 const LETTERS = { ł: "l", ø: "o", đ: "d", ß: "ss", æ: "ae", œ: "oe", ı: "i", ħ: "h", þ: "th" };
