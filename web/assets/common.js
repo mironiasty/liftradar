@@ -38,7 +38,7 @@ async function loadGroups() {
   return (await response.json()).groups;
 }
 
-// Same path layout as liftradar-fetcher's models.resort_path() and history_path().
+// Same path layout as liftradar-fetcher's resort_path() and history_path() (core/paths.py).
 /** @param {{ country: string, id: string }} r */
 const resortPath = (r) => `/json/${r.country}/${r.id}.json`;
 /** @param {{ country: string, id: string }} r */
