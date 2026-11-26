@@ -10,7 +10,7 @@ The format is in DEVELOPMENT.md, "Ski tiles".
     for f in lifts runs ski_areas; do
       curl --compressed -o $f.geojson https://tiles.openskimap.org/geojson/$f.geojson
     done
-    uv run --no-project --with shapely --with ijson python3 scripts/ski_tiles.py ski_areas.geojson lifts.geojson \
+    uv run --no-project --with shapely --with ijson python3 ski-tiles/ski_tiles.py ski_areas.geojson lifts.geojson \
         runs.geojson ../liftradar-data/json/index.json ski
 
 OpenSkiData may be downloaded at most once a day (.github/workflows/ski.yml does it weekly).

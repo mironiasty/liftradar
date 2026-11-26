@@ -38,7 +38,7 @@ an area OSM doesn't mark as disused may have closed years ago. The **Type** colu
 
 - **Inside a listed resort, probably**: Balme - Vallorcine, La Poya and Vormaine (Chamonix's Lumiplan
   bulletin), Queyras' Abriès, Ceillac and Arvieux (the Queyras resort, bulletin `queyras-alpin`). Check that
-  the bulletin's lifts include them; if so, add `claims` in `scripts/ski_overrides.json` so the map gives
+  the bulletin's lifts include them; if so, add `claims` in `ski-tiles/ski_overrides.json` so the map gives
   them to that resort.
 - Espace Haute Maurienne Vanoise: Aussois and Bonneval are listed; Val Cenis is the gap, see below.
 

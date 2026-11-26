@@ -5,9 +5,9 @@
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "preview": "npx --yes wrangler@4.155.0 dev",
-    "check": "biome check && node scripts/translate.mjs --check && node scripts/translate.mjs .check && node scripts/countries.mjs .check --sample && html-validate 'web/*.html' '.check/*/*.html' && node scripts/types.mjs --check && node scripts/ski-style-check.mjs && tsc -b jsconfig.json --force && node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test worker/mcp.test.js && uvx ruff@0.17.3 check scripts && uvx ruff@0.17.3 format --check scripts",
+    "check": "biome check && node scripts/translate.mjs --check && node scripts/translate.mjs .check && node scripts/countries.mjs .check --sample && html-validate 'web/*.html' '.check/*/*.html' && node scripts/types.mjs --check && node scripts/ski-style-check.mjs && tsc -b jsconfig.json --force && node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test worker/mcp.test.js && uvx ruff@0.17.3 check scripts ski-tiles && uvx ruff@0.17.3 format --check scripts ski-tiles",
     "types": "node scripts/types.mjs",
-    "format": "biome format --write && uvx ruff@0.17.3 format scripts"
+    "format": "biome format --write && uvx ruff@0.17.3 format scripts ski-tiles"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",

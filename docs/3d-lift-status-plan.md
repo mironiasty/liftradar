@@ -7,7 +7,7 @@ Plan from 22 November 2026. Nothing is built yet.
 - The 2D map and the resort page show each lift's and piste's status (#69): open lines wide on a light edge,
   closed ones thin and dashed, unknown ones thin and faint, a green dot or red ring on each lift station. The
   statuses come from `json/<country>/<id>.details.json`, linked to the tiles' lines by `item`
-  (`scripts/lift_links.py`).
+  (`ski-tiles/lift_links.py`).
 - `3d.html` draws a resort in two ways:
   - **TrailRider's engine** (WebGPU; most visitors). It is pinned in `engine.json` and built in `../trailrider`
     (`core/trailrider-core`, `web/src/viewer.ts`). It reads the ski tiles itself, but **not `item`**
