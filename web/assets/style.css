@@ -98,25 +98,36 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-/* Pages with a footer end in the peaks, across the whole width and never cropped: their height follows the width
-   (the drawing is 10:1). They rise behind the footer's lower half. */
+/* Pages with a footer have the peaks at the foot of the window, always in view while the page scrolls over them,
+   across the whole width and never cropped: their height follows the width (the drawing is 10:1). At the end of the
+   page they rise behind the footer's lower half. A fixed layer rather than background-attachment: fixed, which
+   iOS Safari ignores; isolation keeps it above the body's sky and below its content. */
 body:has(.site-footer) {
   box-sizing: border-box;
   padding-bottom: calc(5vw + 8px);
-  background:
-    var(--peaks) center bottom / 100% auto no-repeat,
-    linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
+  background: linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
+  isolation: isolate;
+}
+body:has(.site-footer)::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 10vw;
+  background: var(--peaks) center bottom / 100% auto no-repeat;
+  pointer-events: none;
 }
 /* Narrower, they keep a height of 110px and show their right end, with the big peak. */
 @media (max-width: 1100px) {
   body:has(.site-footer) {
     padding-bottom: 56px;
-    background-position:
-      right bottom,
-      0 0;
-    background-size:
-      1100px 110px,
-      auto;
+  }
+  body:has(.site-footer)::before {
+    height: 110px;
+    background-position: right bottom;
+    background-size: 1100px 110px;
   }
 }
 h1,
