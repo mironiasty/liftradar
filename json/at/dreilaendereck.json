@@ -9,8 +9,8 @@
     "lon": 13.718
   },
   "website": "https://www.3laendereck.at",
-  "status": "closed",
-  "fetched_at": "2026-11-25T13:42:33.818417+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-26T08:42:12.623434+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,39 +20,36 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 7
-  },
+  "lifts": null,
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 12,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 14
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-24T16:27:45+01:00",
+  "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-    "https://www.skiresort.com/en/ski-resort/arnoldstein-dreilaendereck/",
-    "https://www.3laendereck.at/de/winter/ski-und-wintererlebnis"
+    "https://www.kaernten.at/",
+    "https://www.skiresort.com/",
+    "https://www.3laendereck.at/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "url": "https://www.kaernten.at/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/arnoldstein-dreilaendereck/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       },
       {
-        "url": "https://www.3laendereck.at/de/winter/ski-und-wintererlebnis",
+        "url": "https://www.3laendereck.at/",
         "attribution_required": null
       }
     ]

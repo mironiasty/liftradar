@@ -9,8 +9,8 @@
     "lon": 8.0646
   },
   "website": "https://visitrauland.com/rauland-skisenter/",
-  "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.998428+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-26T08:40:39.169318+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 12
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 28,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 21
   },
   "lifts_by_type": {
@@ -42,26 +42,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 15,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-11-12T06:01:29+01:00",
-  "details": "json/no/rauland.details.json",
   "avalanche": {
     "region_id": "NO-3035",
     "region": "Vest-Telemark",
@@ -76,14 +75,14 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T00:00:00+01:00",
-    "valid_from": "2026-11-25T00:00:00+01:00",
-    "valid_until": "2026-11-25T23:59:59+01:00"
+    "published_at": "2026-11-26T00:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-26T23:59:59+01:00"
   },
   "sources": [
     "https://fnugg.no/rauland/",
-    "https://www.skiresort.com/en/ski-resort/rauland-skisenter/",
-    "https://www.varsom.no/en/avalanches/avalanche-warnings/"
+    "https://www.skiresort.com/",
+    "https://www.varsom.no/"
   ],
   "source_details": {
     "conditions": [
@@ -92,13 +91,13 @@
         "attribution_required": true
       },
       {
-        "url": "https://www.varsom.no/en/avalanches/avalanche-warnings/",
+        "url": "https://www.varsom.no/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/rauland-skisenter/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

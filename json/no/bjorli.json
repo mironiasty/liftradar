@@ -9,30 +9,30 @@
     "lon": 8.2129
   },
   "website": "https://www.bjorli.no/",
-  "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.998630+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-26T08:40:39.169513+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 45,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Faste og fine forhold",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 6
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 11,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 20
   },
   "lifts_by_type": {
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 6
     }
   },
@@ -40,34 +40,34 @@
     "easy": {
       "open": 0,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": 1,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
       "open": 0,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T13:19:54+01:00",
+  "lifts_updated_at": "2026-11-26T08:37:22+01:00",
   "details": "json/no/bjorli.details.json",
   "avalanche": null,
   "sources": [
     "https://fnugg.no/bjorli/",
-    "https://www.skiresort.com/en/ski-resort/bjorli/"
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
@@ -78,7 +78,7 @@
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/bjorli/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

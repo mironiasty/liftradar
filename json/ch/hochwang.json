@@ -10,19 +10,19 @@
   },
   "website": "https://arosalenzerheide.swiss",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.978886+01:00",
+  "fetched_at": "2026-11-26T08:40:39.156912+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 44,
-    "valley_cm": 26,
-    "fresh_cm": 2,
+    "mountain_cm": 42,
+    "valley_cm": 23,
+    "fresh_cm": 4,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Hanengretji (SLF)",
         "elevation_m": 2455,
-        "depth_cm": 44,
+        "depth_cm": 42,
         "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
@@ -30,8 +30,8 @@
       {
         "name": "Arosa (SLF)",
         "elevation_m": 1845,
-        "depth_cm": 26,
-        "fresh_cm": 1,
+        "depth_cm": 23,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       }
@@ -81,11 +81,11 @@
   "avalanche": {
     "region_id": "CH-5122",
     "region": "Schanfigg",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -95,27 +95,22 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://infosnow.ch/",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

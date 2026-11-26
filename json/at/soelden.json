@@ -11,51 +11,51 @@
   "website": "https://www.soelden.com",
   "ski_region": "oetztal",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.966157+01:00",
+  "fetched_at": "2026-11-26T08:40:39.147404+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 69,
+    "mountain_cm": 82,
     "valley_cm": 0,
-    "fresh_cm": 0,
-    "last_snowfall": "2026-11-23",
-    "condition": "Powder - grippy",
+    "fresh_cm": 10,
+    "last_snowfall": "2026-11-26",
+    "condition": "Fresh snow",
     "stations": [
       {
         "name": "Sölden",
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": 7.3,
+        "temperature_c": 1.5,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
-        "depth_cm": 16,
-        "fresh_cm": 0,
-        "temperature_c": -0.1,
-        "condition": "Powder - grippy"
+        "depth_cm": 25,
+        "fresh_cm": 5,
+        "temperature_c": -4.1,
+        "condition": "Fresh snow"
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 34,
-        "fresh_cm": 0,
-        "temperature_c": -3.2,
-        "condition": "Powder - grippy"
+        "depth_cm": 41,
+        "fresh_cm": 5,
+        "temperature_c": -3.9,
+        "condition": "Fresh snow"
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
-        "depth_cm": 69,
-        "fresh_cm": 0,
-        "temperature_c": -5.1,
-        "condition": "Powder - grippy"
+        "depth_cm": 82,
+        "fresh_cm": 10,
+        "temperature_c": -6.3,
+        "condition": "Fresh snow"
       }
     ]
   },
   "lifts": {
-    "open": 24,
+    "open": 23,
     "total": 31
   },
   "slopes": {
@@ -82,7 +82,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 8,
+      "open": 7,
       "total": 8
     }
   },
@@ -112,31 +112,25 @@
       "total_km": 23
     }
   },
-  "lifts_updated_at": "2026-11-25T13:40:01+01:00",
+  "lifts_updated_at": "2026-11-26T08:33:30+01:00",
   "details": "json/at/soelden.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.soelden.com/en/live-information/snow-report",
-    "https://winter.intermaps.com/soelden?lang=en",
-    "https://www.soelden.com/en/activities/winter/skiing-snowboarding/ski-area-information"
+    "https://www.soelden.com/",
+    "https://www.intermaps.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.soelden.com/en/live-information/snow-report",
+        "url": "https://www.soelden.com/",
         "attribution_required": null
       },
       {
-        "url": "https://winter.intermaps.com/soelden?lang=en",
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.soelden.com/en/activities/winter/skiing-snowboarding/ski-area-information",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

@@ -11,7 +11,7 @@
   "website": "https://www.avoriaz.com",
   "linked_area": "portes-du-soleil",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.993081+01:00",
+  "fetched_at": "2026-11-26T08:40:39.165815+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,51 +65,45 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T13:40:31+01:00",
+  "lifts_updated_at": "2026-11-26T08:39:57+01:00",
   "details": "json/fr/avoriaz.details.json",
   "avalanche": {
     "region_id": "FR-01",
     "region": "Chablais",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 1800,
-        "period": "all_day"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": 1800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T16:00:00+01:00",
-    "valid_from": "2026-11-24T16:00:00+01:00",
-    "valid_until": "2026-11-25T18:00:00+01:00"
+    "published_at": "2026-11-25T16:00:00+01:00",
+    "valid_from": "2026-11-25T16:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
   },
   "sources": [
-    "https://winter.intermaps.com/portes_du_soleil?lang=en",
-    "https://www.skiinfo.fr/alpes-du-nord/avoriaz/station-de-ski",
-    "https://meteofrance.com/meteo-montagne"
+    "https://www.intermaps.com/",
+    "https://www.skiinfo.fr/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://winter.intermaps.com/portes_du_soleil?lang=en",
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       },
       {
-        "url": "https://meteofrance.com/meteo-montagne",
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/avoriaz/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

@@ -11,7 +11,7 @@
   "website": "https://www.tignes.net",
   "linked_area": "tignes-val-d-isere",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.989022+01:00",
+  "fetched_at": "2026-11-26T08:40:39.163788+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 200,
@@ -43,7 +43,7 @@
     "total": 37
   },
   "slopes": {
-    "open": 18,
+    "open": 19,
     "total": 82,
     "open_km": null,
     "total_km": 150
@@ -88,29 +88,57 @@
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": 1,
       "total": 18,
-      "open_km": 0.0,
+      "open_km": 1.5,
       "total_km": 19
     }
   },
   "lifts_updated_at": null,
   "details": "json/fr/tignes.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-06",
+    "region": "Haute-Tarentaise",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
+  },
   "sources": [
-    "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/tignes/station-de-ski"
+    "https://www.lumiplan.com/",
+    "https://www.skiinfo.fr/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/tignes/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

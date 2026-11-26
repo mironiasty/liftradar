@@ -10,28 +10,28 @@
   },
   "website": "https://www.aletscharena.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.982685+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158033+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 71,
-    "valley_cm": 69,
-    "fresh_cm": 9,
+    "mountain_cm": 76,
+    "valley_cm": 65,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Flesch (SLF)",
         "elevation_m": 2500,
-        "depth_cm": 71,
-        "fresh_cm": 9,
+        "depth_cm": 76,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Kühboden (SLF)",
         "elevation_m": 2210,
-        "depth_cm": 69,
-        "fresh_cm": 3,
+        "depth_cm": 65,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       }
@@ -105,7 +105,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-26T08:40:00+01:00",
   "avalanche": {
     "region_id": "CH-4214",
     "region": "Riederalp",
@@ -124,39 +124,34 @@
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://www.aletscharena.ch/hier-jetzt/live/statusbericht/statusbericht-winter",
+    "https://www.aletscharena.ch/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.valais.ch/de/erleben/aktivitaeten/ski-snowboard/skigebiete/aletsch-arena",
-    "https://www.skiresort.com/en/ski-resort/aletsch-arena-riederalp-bettmeralp-fiesch-eggishorn/",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.valais.ch/",
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.aletscharena.ch/hier-jetzt/live/statusbericht/statusbericht-winter",
+        "url": "https://www.aletscharena.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
         "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
-        "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.valais.ch/de/erleben/aktivitaeten/ski-snowboard/skigebiete/aletsch-arena",
+        "url": "https://www.valais.ch/",
         "attribution_required": null
       },
       {
-        "url": "https://www.skiresort.com/en/ski-resort/aletsch-arena-riederalp-bettmeralp-fiesch-eggishorn/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

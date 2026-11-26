@@ -2,11 +2,171 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cari",
   "country": "ch",
-  "fetched_at": "2026-11-25T13:40:42.978323+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-26T08:40:39.156457+01:00",
+  "updated_at": "2026-11-25T14:22:45+01:00",
+  "source": "https://www.intermaps.com/",
+  "lifts": [
+    {
+      "id": "L_A11624",
+      "ref": null,
+      "name": "Carì-Brusada",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_C11626",
+      "ref": null,
+      "name": "Brusada-Lago di Carì",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_D11765",
+      "ref": null,
+      "name": "Tappeto mobile",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_E15240",
+      "ref": null,
+      "name": "Tappeto mobile in paese",
+      "type": "other",
+      "status": "unknown",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_1011670",
+      "ref": null,
+      "name": "Collegamento",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_1111671",
+      "ref": null,
+      "name": "Stabbio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_911669",
+      "ref": null,
+      "name": "Canalone",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 4000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_611666",
+      "ref": null,
+      "name": "Bosco",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_711667",
+      "ref": null,
+      "name": "Lago",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_811668",
+      "ref": null,
+      "name": "Valletta",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_111660",
+      "ref": null,
+      "name": "Betulin",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_211661",
+      "ref": null,
+      "name": "Lago",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_311662",
+      "ref": null,
+      "name": "Pista FIS",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_411664",
+      "ref": null,
+      "name": "Brüsada",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_511665",
+      "ref": null,
+      "name": "Pista Eva",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 46.49419,
     "lon": 8.81676,

@@ -11,7 +11,7 @@
   "website": "https://www.la-norma.fr",
   "ski_region": "haute-maurienne-vanoise",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.989421+01:00",
+  "fetched_at": "2026-11-26T08:40:39.164134+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -88,21 +88,49 @@
   },
   "lifts_updated_at": null,
   "details": "json/fr/la-norma.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-11",
+    "region": "Haute-Maurienne",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
+  },
   "sources": [
-    "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/la-norma/station-de-ski"
+    "https://www.lumiplan.com/",
+    "https://www.skiinfo.fr/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/la-norma/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

@@ -11,12 +11,12 @@
   "website": "https://www.hintertuxergletscher.at",
   "ski_region": "zillertal",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.965924+01:00",
+  "fetched_at": "2026-11-26T08:40:39.147213+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 65,
     "valley_cm": 30,
-    "fresh_cm": null,
+    "fresh_cm": 10,
     "last_snowfall": "2026-11-25",
     "condition": "grippy/hard powder",
     "stations": [
@@ -24,16 +24,16 @@
         "name": "Gefrorene Wand",
         "elevation_m": 3250,
         "depth_cm": 65,
-        "fresh_cm": null,
-        "temperature_c": -6.5,
+        "fresh_cm": 10,
+        "temperature_c": -7.0,
         "condition": "grippy/hard powder"
       },
       {
         "name": "Tuxer Fernerhaus",
         "elevation_m": 2660,
         "depth_cm": 50,
-        "fresh_cm": null,
-        "temperature_c": -1.3,
+        "fresh_cm": 10,
+        "temperature_c": -5.0,
         "condition": "grippy/hard powder"
       },
       {
@@ -41,7 +41,7 @@
         "elevation_m": 2100,
         "depth_cm": 30,
         "fresh_cm": null,
-        "temperature_c": -0.4,
+        "temperature_c": -3.4,
         "condition": "grippy"
       }
     ]
@@ -100,36 +100,25 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T12:17:54+01:00",
+  "lifts_updated_at": "2026-11-25T14:52:57+01:00",
   "details": "json/at/hintertux.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.hintertuxergletscher.at/en/information/currently/weather/",
-    "https://www.hintertuxergletscher.at/en/",
-    "https://winter.intermaps.com/hintertuxer_gletscher?lang=en",
-    "https://www.hintertuxergletscher.at/en/information/about-us/interesting-facts/"
+    "https://www.hintertuxergletscher.at/",
+    "https://www.intermaps.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.hintertuxergletscher.at/en/information/currently/weather/",
+        "url": "https://www.hintertuxergletscher.at/",
         "attribution_required": null
       },
       {
-        "url": "https://www.hintertuxergletscher.at/en/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://winter.intermaps.com/hintertuxer_gletscher?lang=en",
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.hintertuxergletscher.at/en/information/about-us/interesting-facts/",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

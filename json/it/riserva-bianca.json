@@ -10,7 +10,7 @@
   },
   "website": "https://riservabianca.it/",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.984317+01:00",
+  "fetched_at": "2026-11-26T08:40:39.160026+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -70,14 +70,44 @@
   },
   "lifts_updated_at": null,
   "details": "json/it/riserva-bianca.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-21-CN-02",
+    "region": "Alpi Marittime Occidentali",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2000,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2000,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab"
+    ],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
+  },
   "sources": [
-    "https://riservabianca.it/impianti-piste"
+    "https://riservabianca.it/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://riservabianca.it/impianti-piste",
+        "url": "https://riservabianca.it/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/",
         "attribution_required": null
       }
     ],

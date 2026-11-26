@@ -10,28 +10,28 @@
   },
   "website": "https://www.val-muestair.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.979880+01:00",
+  "fetched_at": "2026-11-26T08:40:39.157710+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 29,
-    "valley_cm": 5,
-    "fresh_cm": 1,
+    "mountain_cm": 30,
+    "valley_cm": 7,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Murtaröl (SLF)",
         "elevation_m": 2359,
-        "depth_cm": 29,
-        "fresh_cm": 0,
+        "depth_cm": 30,
+        "fresh_cm": 6,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Sta.Maria (SLF)",
         "elevation_m": 1387,
-        "depth_cm": 5,
-        "fresh_cm": 1,
+        "depth_cm": 7,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       }
@@ -83,11 +83,11 @@
   "avalanche": {
     "region_id": "CH-7231",
     "region": "Val Müstair",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -97,34 +97,29 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
+    "https://infosnow.ch/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.skiresort.info/ski-resort/minschuns-val-muestair-tschierv/",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
         "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
-        "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.info/ski-resort/minschuns-val-muestair-tschierv/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

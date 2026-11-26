@@ -11,7 +11,7 @@
   "website": "https://www.kitzsteinhorn.at",
   "ski_region": "ski-alpin-card",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.966243+01:00",
+  "fetched_at": "2026-11-26T08:40:39.147437+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 60,
@@ -100,33 +100,28 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T09:47:31+01:00",
+  "lifts_updated_at": "2026-11-26T08:30:35+01:00",
   "details": "json/at/kitzsteinhorn.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.kitzsteinhorn.at/en/winter/information/weather-webcams",
-    "https://winter.intermaps.com/kitzsteinhorn?lang=en",
-    "https://www.openstreetmap.org/copyright",
-    "https://www.kitzsteinhorn.at/en/winter/kitzsteinhorn-ski-board"
+    "https://www.kitzsteinhorn.at/",
+    "https://www.intermaps.com/",
+    "https://www.openstreetmap.org/copyright"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.kitzsteinhorn.at/en/winter/information/weather-webcams",
+        "url": "https://www.kitzsteinhorn.at/",
         "attribution_required": null
       },
       {
-        "url": "https://winter.intermaps.com/kitzsteinhorn?lang=en",
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
         "url": "https://www.openstreetmap.org/copyright",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.kitzsteinhorn.at/en/winter/kitzsteinhorn-ski-board",
         "attribution_required": null
       }
     ]

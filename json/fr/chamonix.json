@@ -10,7 +10,7 @@
   },
   "website": "https://www.chamonix.com",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.989588+01:00",
+  "fetched_at": "2026-11-26T08:40:39.164350+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -19,14 +19,6 @@
     "last_snowfall": "2026-11-25",
     "condition": null,
     "stations": [
-      {
-        "name": "Chamonix",
-        "elevation_m": 1035,
-        "depth_cm": null,
-        "fresh_cm": 3,
-        "temperature_c": null,
-        "condition": null
-      },
       {
         "name": "Aiguille du Midi",
         "elevation_m": 3842,
@@ -146,40 +138,40 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 1800,
+        "upper_bound": 2500,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 1800,
+        "lower_bound": 2500,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T16:00:00+01:00",
-    "valid_from": "2026-11-24T16:00:00+01:00",
-    "valid_until": "2026-11-25T18:00:00+01:00"
+    "published_at": "2026-11-25T16:00:00+01:00",
+    "valid_from": "2026-11-25T16:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
   },
   "sources": [
-    "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/chamonix/station-de-ski",
-    "https://meteofrance.com/meteo-montagne"
+    "https://www.lumiplan.com/",
+    "https://www.skiinfo.fr/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
         "attribution_required": null
       },
       {
-        "url": "https://meteofrance.com/meteo-montagne",
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/chamonix/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

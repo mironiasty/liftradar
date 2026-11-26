@@ -11,7 +11,7 @@
   "website": "https://www.bormioski.eu",
   "ski_region": "alta-valtellina",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.983936+01:00",
+  "fetched_at": "2026-11-26T08:40:39.159130+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -73,28 +73,23 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-26T08:40:00+01:00",
   "details": "json/it/bormio.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.bormio.eu/it/live-info/impianti-e-piste",
-    "https://www.skiresort.info/ski-resort/bormio-cima-bianca/",
-    "https://www.skiresort.info/ski-resort/cima-piazzi-san-colombano-isolaccia-oga/"
+    "https://www.bormio.eu/",
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.bormio.eu/it/live-info/impianti-e-piste",
+        "url": "https://www.bormio.eu/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.info/ski-resort/bormio-cima-bianca/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.skiresort.info/ski-resort/cima-piazzi-san-colombano-isolaccia-oga/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zermatt",
   "country": "ch",
-  "fetched_at": "2026-11-25T13:40:42.980121+01:00",
-  "updated_at": "2026-11-25T13:40:00+01:00",
-  "source": "https://infosnow.ch/portal/",
+  "fetched_at": "2026-11-26T08:40:39.157842+01:00",
+  "updated_at": "2026-11-26T08:40:00+01:00",
+  "source": "https://infosnow.ch/",
   "lifts": [
     {
       "id": "lift-p1-zermatt-furi-matterhorn-express",
@@ -13,7 +13,7 @@
       "type": "gondola",
       "status": "open",
       "length_m": null,
-      "map_length_m": 1720,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -59,7 +59,7 @@
       "ref": null,
       "name": "3S • Matterhorn Glacier Ride I",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1690,
       "capacity_per_hour": null,
@@ -71,7 +71,7 @@
       "ref": null,
       "name": "3S • Matterhorn Glacier Ride II",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2240,
       "capacity_per_hour": null,
@@ -145,7 +145,7 @@
       "type": "cable_car",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1720,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null

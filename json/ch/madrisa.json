@@ -11,7 +11,7 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.982785+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158089+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Madrisa (SLF)",
         "elevation_m": 2147,
-        "depth_cm": 45,
-        "fresh_cm": 0,
+        "depth_cm": 39,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Klosters KW (SLF)",
         "elevation_m": 1190,
-        "depth_cm": 25,
-        "fresh_cm": 0,
+        "depth_cm": 20,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       }
@@ -112,27 +112,22 @@
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.davos.ch/",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+        "url": "https://www.davos.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

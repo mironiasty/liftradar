@@ -10,7 +10,7 @@
   },
   "website": "https://www.montealpet.com/",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.984831+01:00",
+  "fetched_at": "2026-11-26T08:40:39.160482+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,25 +33,48 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-21-CN-01",
+    "region": "Alpi Cozie Sud di confine",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
+  },
   "sources": [
-    "https://www.montealpet.com/info-neve/",
-    "https://www.skiresort.com/en/ski-resort/sangiacomo-cardini-monte-alpet/",
-    "https://www.piemonteitalia.eu/it/sport/comprensori-sciistici/stazioni/sangiacomo-di-roburent"
+    "https://www.montealpet.com/",
+    "https://www.skiresort.com/",
+    "https://www.piemonteitalia.eu/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://bollettini.aineva.it/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
-        "url": "https://www.montealpet.com/info-neve/",
+        "url": "https://www.montealpet.com/",
         "attribution_required": null
       },
       {
-        "url": "https://www.skiresort.com/en/ski-resort/sangiacomo-cardini-monte-alpet/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       },
       {
-        "url": "https://www.piemonteitalia.eu/it/sport/comprensori-sciistici/stazioni/sangiacomo-di-roburent",
+        "url": "https://www.piemonteitalia.eu/",
         "attribution_required": null
       }
     ]

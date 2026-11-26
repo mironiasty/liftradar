@@ -12,7 +12,7 @@
   "linked_area": "matterhorn-ski-paradise",
   "ski_region": "valle-d-aosta",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.983105+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158455+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -74,7 +74,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T11:27:00+01:00",
+  "lifts_updated_at": "2026-11-26T08:02:00+01:00",
   "details": "json/it/breuil-cervinia.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-20",
@@ -85,45 +85,40 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2300,
+        "upper_bound": 2000,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2300,
+        "lower_bound": 2000,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
+      "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-25T00:00:00+01:00",
-    "valid_until": "2026-11-26T00:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
   },
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
-    "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/breuil-cervinia/comprensorio-di-breuil-cervinia-valtournenche-zermatt/2612",
-    "https://bollettini.aineva.it"
+    "https://www.lovevda.it/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "url": "https://www.lovevda.it/",
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it",
+        "url": "https://bollettini.aineva.it/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/breuil-cervinia/comprensorio-di-breuil-cervinia-valtournenche-zermatt/2612",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

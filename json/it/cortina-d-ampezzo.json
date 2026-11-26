@@ -11,7 +11,7 @@
   "website": "https://www.skipasscortina.com",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.982877+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158147+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -71,26 +71,57 @@
   },
   "lifts_updated_at": "2026-11-25T10:00:08.459943+01:00",
   "details": "json/it/cortina-d-ampezzo.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-34-BL-02",
+    "region": "Ampezzo - Cadore",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": "treeline",
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": "treeline",
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "new_snow",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
+  },
   "sources": [
-    "https://opendatahub.com",
-    "https://www.dolomitisuperski.com",
-    "https://skipasscortina.com/EN/page8-the-consortium"
+    "https://opendatahub.com/",
+    "https://www.dolomitisuperski.com/",
+    "https://skipasscortina.com/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://opendatahub.com",
+        "url": "https://opendatahub.com/",
         "attribution_required": null
       },
       {
-        "url": "https://www.dolomitisuperski.com",
+        "url": "https://www.dolomitisuperski.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://skipasscortina.com/EN/page8-the-consortium",
+        "url": "https://skipasscortina.com/",
         "attribution_required": null
       }
     ]

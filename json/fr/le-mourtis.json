@@ -10,7 +10,7 @@
   },
   "website": "https://www.haute-garonne-montagne.com/stations/le-mourtis-hiver/",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.992976+01:00",
+  "fetched_at": "2026-11-26T08:40:39.165779+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -69,40 +69,58 @@
   "avalanche": {
     "region_id": "FR-69",
     "region": "Couserans",
-    "danger_level": 1,
-    "danger": "low",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "later"
+      },
+      {
+        "level": "low",
+        "lower_bound": 2300,
         "upper_bound": null,
-        "period": "all_day"
+        "period": "earlier"
+      },
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "later"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2300,
+        "upper_bound": null,
+        "period": "later"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T16:00:00+01:00",
-    "valid_from": "2026-11-24T16:00:00+01:00",
-    "valid_until": "2026-11-25T18:00:00+01:00"
+    "published_at": "2026-11-25T16:00:00+01:00",
+    "valid_from": "2026-11-25T16:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
   },
   "sources": [
-    "https://www.lumiplan.com",
-    "https://www.skiresort.com/en/ski-resort/le-mourtis/",
-    "https://meteofrance.com/meteo-montagne"
+    "https://www.lumiplan.com/",
+    "https://www.skiresort.com/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
         "attribution_required": null
       },
       {
-        "url": "https://meteofrance.com/meteo-montagne",
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/le-mourtis/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

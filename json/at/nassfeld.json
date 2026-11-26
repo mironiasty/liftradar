@@ -10,13 +10,13 @@
   },
   "website": "https://www.nassfeld.at",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:42:32.564896+01:00",
+  "fetched_at": "2026-11-26T08:42:12.357799+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-19",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": []
   },
@@ -68,21 +68,21 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T12:02:58+01:00",
+  "lifts_updated_at": "2026-11-26T07:53:59+01:00",
   "details": "json/at/nassfeld.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.kaernten.at/golf/service/wetter/schneeberichte",
-    "https://winter.intermaps.com/nassfeld?lang=en"
+    "https://www.kaernten.at/",
+    "https://www.intermaps.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.kaernten.at/golf/service/wetter/schneeberichte",
+        "url": "https://www.kaernten.at/",
         "attribution_required": null
       },
       {
-        "url": "https://winter.intermaps.com/nassfeld?lang=en",
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       }
     ],

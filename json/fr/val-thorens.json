@@ -11,7 +11,7 @@
   "website": "https://www.valthorens.com",
   "linked_area": "les-3-vallees",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.988896+01:00",
+  "fetched_at": "2026-11-26T08:40:39.163715+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 165,
@@ -39,11 +39,11 @@
     ]
   },
   "lifts": {
-    "open": 14,
+    "open": 15,
     "total": 23
   },
   "slopes": {
-    "open": 33,
+    "open": 34,
     "total": 75,
     "open_km": null,
     "total_km": 150
@@ -54,11 +54,11 @@
       "total": 1
     },
     "carpet": {
-      "open": 3,
+      "open": 1,
       "total": 3
     },
     "chairlift": {
-      "open": 4,
+      "open": 5,
       "total": 9
     },
     "drag_lift": {
@@ -66,7 +66,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 6,
+      "open": 8,
       "total": 9
     }
   },
@@ -78,7 +78,7 @@
       "total_km": null
     },
     "intermediate": {
-      "open": 7,
+      "open": 8,
       "total": 26,
       "open_km": null,
       "total_km": null
@@ -92,21 +92,49 @@
   },
   "lifts_updated_at": null,
   "details": "json/fr/val-thorens.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-10",
+    "region": "Vanoise",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2500,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2500,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
+  },
   "sources": [
-    "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/val-thorens/station-de-ski"
+    "https://www.lumiplan.com/",
+    "https://www.skiinfo.fr/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/val-thorens/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

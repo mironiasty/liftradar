@@ -11,7 +11,7 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.982754+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158071+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -85,11 +85,11 @@
   "avalanche": {
     "region_id": "CH-5123",
     "region": "Davos",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -99,22 +99,22 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.davos.ch/",
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+        "url": "https://www.davos.ch/",
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],

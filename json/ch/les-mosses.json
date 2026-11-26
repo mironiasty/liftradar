@@ -10,7 +10,7 @@
   },
   "website": "https://www.lesmosses.ch",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.979180+01:00",
+  "fetched_at": "2026-11-26T08:40:39.157167+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -85,49 +85,48 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T08:09:00+01:00",
+  "lifts_updated_at": "2026-11-26T07:59:00+01:00",
   "details": "json/ch/les-mosses.details.json",
   "avalanche": {
     "region_id": "CH-1113",
     "region": "Aigle - Leysin",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
-    "https://www.skiresort.info/ski-resort/les-mosses-la-lecherette/",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://infosnow.ch/",
+    "https://www.skiresort.com/",
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.info/ski-resort/les-mosses-la-lecherette/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

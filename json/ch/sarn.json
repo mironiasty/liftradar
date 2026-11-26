@@ -10,20 +10,20 @@
   },
   "website": "https://www.sarn-heinzenberg.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.979534+01:00",
+  "fetched_at": "2026-11-26T08:40:39.157482+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 17,
+    "mountain_cm": 18,
     "valley_cm": null,
-    "fresh_cm": 0,
+    "fresh_cm": 7,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Innerglas (SLF)",
         "elevation_m": 1820,
-        "depth_cm": 17,
-        "fresh_cm": 0,
+        "depth_cm": 18,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       }
@@ -77,11 +77,11 @@
   "avalanche": {
     "region_id": "CH-5221",
     "region": "Domleschg - Lenzerheide",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -91,34 +91,29 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
+    "https://infosnow.ch/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.skiresort.info/ski-resort/sarn-heinzenberg/",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
         "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
-        "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.info/ski-resort/sarn-heinzenberg/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

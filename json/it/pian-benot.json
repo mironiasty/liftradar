@@ -10,7 +10,7 @@
   },
   "website": "https://www.pianbenot.it/",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.986348+01:00",
+  "fetched_at": "2026-11-26T08:40:39.161647+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,46 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-21-TO-04",
+    "region": "Alpi Cozie",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2300,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab"
+    ],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
+  },
   "sources": [
-    "https://www.skiinfo.fr/piemont/usseglio/station-de-ski"
+    "https://www.skiinfo.fr/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://bollettini.aineva.it/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/piemont/usseglio/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

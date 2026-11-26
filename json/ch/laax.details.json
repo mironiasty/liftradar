@@ -2,18 +2,18 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "laax",
   "country": "ch",
-  "fetched_at": "2026-11-25T13:40:42.979080+01:00",
-  "updated_at": "2026-11-25T13:30:00+01:00",
-  "source": "https://infosnow.ch/portal/",
+  "fetched_at": "2026-11-26T08:40:39.157032+01:00",
+  "updated_at": "2026-11-26T08:30:00+01:00",
+  "source": "https://infosnow.ch/",
   "lifts": [
     {
-      "id": "lift-mughels-lift",
+      "id": "lift-sl-mughelslift",
       "ref": null,
-      "name": "Mughels Lift",
+      "name": "SL • Mughelslift",
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": 170,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -235,13 +235,13 @@
       "top_m": null
     },
     {
-      "id": "lift-sb6-alp-dado",
+      "id": "lift-sb6-alp-dado-crest-la-siala",
       "ref": null,
-      "name": "SB6 • Alp Dado",
+      "name": "SB6 • Alp Dado - Crest La Siala",
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": 1610,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -295,9 +295,9 @@
       "top_m": null
     },
     {
-      "id": "lift-sl-vorab-glacier",
+      "id": "lift-sl-vorab",
       "ref": null,
-      "name": "SL • Vorab Glacier",
+      "name": "SL • Vorab",
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
@@ -1783,9 +1783,9 @@
       "map_length_m": 4040
     },
     {
-      "id": "slope-kl-flims-winter-wonderland-flims",
+      "id": "slope-kl-1-winter-wonderland-flims",
       "ref": null,
-      "name": "KL FLIMS • Winter Wonderland Flims",
+      "name": "KL 1 • Winter Wonderland Flims",
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
@@ -1793,19 +1793,19 @@
       "map_length_m": null
     },
     {
-      "id": "slope-kl-laax-winter-wonderland-laax-murschetg",
+      "id": "slope-kl-2-winter-wonderland-laax-murschetg",
       "ref": null,
-      "name": "KL LAAX • Winter Wonderland Laax-Murschetg",
+      "name": "KL 2 • Winter Wonderland Laax-Murschetg",
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
       "length_m": 400,
-      "map_length_m": 90
+      "map_length_m": null
     },
     {
-      "id": "slope-kl-falera-winter-wonderland-falera",
+      "id": "slope-kl-3-winter-wonderland-falera",
       "ref": null,
-      "name": "KL FALERA • Winter Wonderland Falera",
+      "name": "KL 3 • Winter Wonderland Falera",
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",
@@ -1813,9 +1813,9 @@
       "map_length_m": null
     },
     {
-      "id": "slope-kl-nagens-training-ground-nagens",
+      "id": "slope-kl-4-training-ground-nagens",
       "ref": null,
-      "name": "KL NAGENS • Training ground Nagens",
+      "name": "KL 4 • Training ground Nagens",
       "difficulty": "easy",
       "colour": "blue",
       "status": "closed",

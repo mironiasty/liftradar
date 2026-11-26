@@ -11,7 +11,7 @@
   "website": "https://pila.it",
   "ski_region": "valle-d-aosta",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.983194+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158513+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -90,34 +90,28 @@
       }
     ],
     "problems": [
-      "new_snow"
+      "wind_slab"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-25T00:00:00+01:00",
-    "valid_until": "2026-11-26T00:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
   },
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
-    "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/pila/stazione-di-pila/4194",
-    "https://bollettini.aineva.it"
+    "https://www.lovevda.it/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "url": "https://www.lovevda.it/",
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it",
+        "url": "https://bollettini.aineva.it/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/pila/stazione-di-pila/4194",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

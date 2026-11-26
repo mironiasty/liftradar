@@ -9,8 +9,8 @@
     "lon": 10.0256
   },
   "website": "https://www.diedamskopf.at",
-  "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.970970+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-26T08:40:39.148808+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,13 +21,13 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 9
   },
   "slopes": {
-    "open": 0,
+    "open": 9,
     "total": 29,
-    "open_km": 0.0,
+    "open_km": 11.4,
     "total_km": 40
   },
   "lifts_by_type": {
@@ -36,11 +36,11 @@
       "total": 1
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 2
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "gondola": {
@@ -56,41 +56,41 @@
       "total_km": 12
     },
     "easy": {
-      "open": 0,
+      "open": 4,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": 6.3,
       "total_km": 16
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": 1.7,
       "total_km": 7
     },
     "difficult": {
-      "open": 0,
+      "open": 4,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": 3.4,
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-25T11:23:49+01:00",
+  "lifts_updated_at": "2026-11-26T08:29:44+01:00",
   "details": "json/at/diedamskopf.details.json",
   "avalanche": null,
   "sources": [
-    "https://winter.intermaps.com/diedamskopf?lang=en",
-    "https://www.skiresort.com/en/ski-resort/diedamskopf-schoppernau/"
+    "https://www.intermaps.com/",
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://winter.intermaps.com/diedamskopf?lang=en",
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/diedamskopf-schoppernau/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

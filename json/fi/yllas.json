@@ -10,11 +10,11 @@
   },
   "website": "https://www.yllas.fi",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.996340+01:00",
+  "fetched_at": "2026-11-26T08:40:39.167735+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 8,
+    "valley_cm": 12,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -22,7 +22,7 @@
       {
         "name": "Kittilä Pakatti (FMI)",
         "elevation_m": null,
-        "depth_cm": 8,
+        "depth_cm": 12,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -63,16 +63,15 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://ski.fi/hiihtokeskukset/yllas/",
+    "https://ski.fi/",
     "https://ski.yllas.fi/",
     "https://en.ilmatieteenlaitos.fi/open-data",
-    "https://ski.yllas.fi/en/slopes-and-lifts/slopes-at-yllas/",
-    "https://www.skiresort.com/en/ski-resort/yllaes/"
+    "https://www.skiresort.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://ski.fi/hiihtokeskukset/yllas/",
+        "url": "https://ski.fi/",
         "attribution_required": null
       },
       {
@@ -86,11 +85,7 @@
     ],
     "resort_info": [
       {
-        "url": "https://ski.yllas.fi/en/slopes-and-lifts/slopes-at-yllas/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.skiresort.com/en/ski-resort/yllaes/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

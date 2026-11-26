@@ -11,7 +11,7 @@
   "website": "https://www.courmayeur-montblanc.com",
   "ski_region": "valle-d-aosta",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.983140+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158481+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -83,45 +83,40 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2300,
+        "upper_bound": 2000,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2300,
+        "lower_bound": 2000,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
+      "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-25T00:00:00+01:00",
-    "valid_until": "2026-11-26T00:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
   },
   "sources": [
-    "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
-    "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/courmayeur/comprensorio-courmayeur-mont-blanc/4360",
-    "https://bollettini.aineva.it"
+    "https://www.lovevda.it/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lovevda.it/it/prima-di-partire/bollettino-neve-sci-discesa",
+        "url": "https://www.lovevda.it/",
         "attribution_required": null
       },
       {
-        "url": "https://bollettini.aineva.it",
+        "url": "https://bollettini.aineva.it/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.lovevda.it/it/banca-dati/5/sci-di-discesa/courmayeur/comprensorio-courmayeur-mont-blanc/4360",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

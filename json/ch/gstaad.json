@@ -11,7 +11,7 @@
   "website": "https://www.gstaad.ch",
   "ski_region": "gstaad",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.978798+01:00",
+  "fetched_at": "2026-11-26T08:40:39.156868+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Obere Meiel (SLF)",
         "elevation_m": 2097,
-        "depth_cm": 112,
-        "fresh_cm": 0,
+        "depth_cm": 108,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Saanenmöser (SLF)",
         "elevation_m": 1390,
-        "depth_cm": 23,
-        "fresh_cm": 0,
+        "depth_cm": 20,
+        "fresh_cm": 1,
         "temperature_c": null,
         "condition": null
       }
@@ -86,47 +86,41 @@
       "total_km": 14
     }
   },
-  "lifts_updated_at": "2026-11-25T11:49:00+01:00",
+  "lifts_updated_at": "2026-11-25T16:24:00+01:00",
   "details": "json/ch/gstaad.details.json",
   "avalanche": {
     "region_id": "CH-1222",
     "region": "Gstaad",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://infosnow.ch/",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

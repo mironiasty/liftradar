@@ -10,7 +10,7 @@
   },
   "website": "https://www.ski-kranjska-gora.com",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:43.000227+01:00",
+  "fetched_at": "2026-11-26T08:40:39.171014+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,24 +33,43 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "SI-7",
+    "region": "Central Julian Alps",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "new_snow"
+    ],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
+  },
   "sources": [
-    "https://www.ski-kranjska-gora.com/sl/zima/naprave-in-proge",
-    "https://www.ski-kranjska-gora.com/sl/zima/o-nas"
+    "https://www.ski-kranjska-gora.com/",
+    "https://meteo.arso.gov.si/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.ski-kranjska-gora.com/sl/zima/naprave-in-proge",
+        "url": "https://www.ski-kranjska-gora.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://meteo.arso.gov.si/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://www.ski-kranjska-gora.com/sl/zima/o-nas",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

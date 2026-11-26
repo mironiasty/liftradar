@@ -10,7 +10,7 @@
   },
   "website": "https://www.soriska-planina.si",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:43.000298+01:00",
+  "fetched_at": "2026-11-26T08:40:39.171075+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -54,23 +54,48 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T10:00:16+01:00",
+  "lifts_updated_at": "2026-11-26T05:00:16+01:00",
   "details": "json/si/soriska-planina.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "SI-8",
+    "region": "Eastern Julian Alps",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "new_snow"
+    ],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
+  },
   "sources": [
-    "https://www.soriska-planina.si/info",
-    "https://www.skiresort.com/en/ski-resort/soriska-planina/"
+    "https://www.soriska-planina.si/",
+    "https://www.skiresort.com/",
+    "https://meteo.arso.gov.si/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.soriska-planina.si/info",
+        "url": "https://www.soriska-planina.si/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://meteo.arso.gov.si/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/soriska-planina/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

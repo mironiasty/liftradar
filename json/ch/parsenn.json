@@ -11,10 +11,10 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.982720+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158049+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 56,
+    "mountain_cm": 52,
     "valley_cm": null,
     "fresh_cm": 0,
     "last_snowfall": null,
@@ -23,7 +23,7 @@
       {
         "name": "Weissfluhjoch",
         "elevation_m": 2663,
-        "depth_cm": 56,
+        "depth_cm": 52,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -77,15 +77,15 @@
     },
     "difficult": {
       "open": 0,
-      "total": 5,
+      "total": 4,
       "open_km": 0.0,
-      "total_km": 16
+      "total_km": 15
     },
     "other": {
       "open": 0,
-      "total": 9,
+      "total": 10,
       "open_km": 0.0,
-      "total_km": 30
+      "total_km": 31
     }
   },
   "lifts_updated_at": null,
@@ -93,11 +93,11 @@
   "avalanche": {
     "region_id": "CH-5123",
     "region": "Davos",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -107,29 +107,29 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
-    "https://www.skiresort.com/en/ski-resort/parsenn-davos-klosters/",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.davos.ch/",
+    "https://www.skiresort.com/",
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.davos.ch/entdecken/berge-in-davos-klosters/wintersportbericht/anlagen-und-pistenbericht",
+        "url": "https://www.davos.ch/",
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/parsenn-davos-klosters/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

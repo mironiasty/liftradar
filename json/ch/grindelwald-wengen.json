@@ -11,7 +11,7 @@
   "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.982592+01:00",
+  "fetched_at": "2026-11-26T08:40:39.157979+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -101,44 +101,43 @@
   "avalanche": {
     "region_id": "CH-1242",
     "region": "Grindelwald",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://www.jungfrau.ch/de-ch/live/pistendaten/",
-    "https://www.skiresort.com/en/ski-resort/kleine-scheidegg-maennlichen-grindelwald-wengen/",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.jungfrau.ch/",
+    "https://www.skiresort.com/",
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.jungfrau.ch/de-ch/live/pistendaten/",
+        "url": "https://www.jungfrau.ch/",
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiresort.com/en/ski-resort/kleine-scheidegg-maennlichen-grindelwald-wengen/",
+        "url": "https://www.skiresort.com/",
         "attribution_required": null
       }
     ]

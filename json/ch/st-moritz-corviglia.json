@@ -11,7 +11,7 @@
   "website": "https://www.mountains.ch",
   "ski_region": "engadin-st-moritz",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.979745+01:00",
+  "fetched_at": "2026-11-26T08:40:39.157595+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,16 +23,16 @@
       {
         "name": "Valetta (SLF)",
         "elevation_m": 2512,
-        "depth_cm": 13,
-        "fresh_cm": 0,
+        "depth_cm": 18,
+        "fresh_cm": 8,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "St.Moritz (SLF)",
         "elevation_m": 1850,
-        "depth_cm": 8,
-        "fresh_cm": 2,
+        "depth_cm": 20,
+        "fresh_cm": 13,
         "temperature_c": null,
         "condition": null
       }
@@ -100,7 +100,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-16T13:26:00+01:00",
+  "lifts_updated_at": "2026-11-25T21:35:00+01:00",
   "details": "json/ch/st-moritz-corviglia.details.json",
   "avalanche": {
     "region_id": "CH-7114",
@@ -119,27 +119,22 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://infosnow.ch/",
+    "https://www.slf.ch/en/services-and-products/slf-data-service"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
         "attribution_required": null
       }
     ],

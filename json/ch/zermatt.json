@@ -11,20 +11,20 @@
   "website": "https://www.matterhornparadise.ch",
   "linked_area": "matterhorn-ski-paradise",
   "status": "open",
-  "fetched_at": "2026-11-25T13:40:42.980121+01:00",
+  "fetched_at": "2026-11-26T08:40:39.157842+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 63,
+    "mountain_cm": 64,
     "valley_cm": 5,
-    "fresh_cm": 2,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
-        "depth_cm": 63,
-        "fresh_cm": 2,
+        "depth_cm": 64,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
@@ -32,14 +32,14 @@
         "name": "Zermatt (SLF)",
         "elevation_m": 1600,
         "depth_cm": 5,
-        "fresh_cm": 1,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 8,
+    "open": 10,
     "total": 36
   },
   "slopes": {
@@ -66,7 +66,7 @@
       "total": 2
     },
     "gondola": {
-      "open": 4,
+      "open": 6,
       "total": 9
     },
     "other": {
@@ -100,7 +100,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-26T08:40:00+01:00",
   "details": "json/ch/zermatt.details.json",
   "avalanche": {
     "region_id": "CH-4222",
@@ -119,34 +119,29 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-24T17:00:00+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T17:00:00+01:00"
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T17:00:00+01:00"
   },
   "sources": [
-    "https://infosnow.ch/portal/",
+    "https://infosnow.ch/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.zermatt.ch/en/unique/International-Ski-Area",
-    "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+    "https://www.zermatt.ch/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://infosnow.ch/portal/",
+        "url": "https://infosnow.ch/",
         "attribution_required": null
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
         "attribution_required": null
-      },
-      {
-        "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/",
-        "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.zermatt.ch/en/unique/International-Ski-Area",
+        "url": "https://www.zermatt.ch/",
         "attribution_required": null
       }
     ]

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-weather.schema.json",
   "id": "fjellhaugen",
   "country": "no",
-  "fetched_at": "2026-11-25T13:43:12+01:00",
+  "fetched_at": "2026-11-26T08:42:42+01:00",
   "source": "https://open-meteo.com/",
   "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
   "points": [
@@ -12,80 +12,80 @@
       "lon": 6.065,
       "elevation_m": 505,
       "now": {
-        "time": "2026-11-25T13:45:00+01:00",
-        "temperature_c": -1.2,
+        "time": "2026-11-26T08:30:00+01:00",
+        "temperature_c": -4.8,
         "weather_code": 0,
-        "wind_kmh": 9.4
+        "wind_kmh": 7.9
       },
       "days": [
         {
-          "date": "2026-11-25",
-          "weather_code": 0,
-          "temperature_max_c": -1.2,
-          "temperature_min_c": -6.7,
-          "snowfall_cm": 0.0,
-          "precipitation_mm": 0.0,
-          "wind_gusts_max_kmh": 34.6,
-          "sunshine_h": 5.7
-        },
-        {
           "date": "2026-11-26",
-          "weather_code": 0,
-          "temperature_max_c": -0.7,
-          "temperature_min_c": -7.3,
+          "weather_code": 1,
+          "temperature_max_c": 0.5,
+          "temperature_min_c": -5.8,
           "snowfall_cm": 0.0,
           "precipitation_mm": 0.0,
-          "wind_gusts_max_kmh": 30.2,
+          "wind_gusts_max_kmh": 31.0,
           "sunshine_h": 5.5
         },
         {
           "date": "2026-11-27",
           "weather_code": 3,
-          "temperature_max_c": 0.6,
-          "temperature_min_c": -5.6,
+          "temperature_max_c": 0.8,
+          "temperature_min_c": -0.8,
           "snowfall_cm": 0.0,
           "precipitation_mm": 0.0,
-          "wind_gusts_max_kmh": 52.2,
-          "sunshine_h": 3.1
+          "wind_gusts_max_kmh": 46.4,
+          "sunshine_h": 3.8
         },
         {
           "date": "2026-11-28",
           "weather_code": 73,
-          "temperature_max_c": -0.9,
-          "temperature_min_c": -5.3,
+          "temperature_max_c": 2.2,
+          "temperature_min_c": -1.7,
           "snowfall_cm": 1.3,
-          "precipitation_mm": 1.8,
-          "wind_gusts_max_kmh": 40.7,
-          "sunshine_h": 0.0
+          "precipitation_mm": 2.0,
+          "wind_gusts_max_kmh": 50.0,
+          "sunshine_h": 0.9
         },
         {
           "date": "2026-11-29",
           "weather_code": 85,
-          "temperature_max_c": 1.2,
-          "temperature_min_c": -1.5,
-          "snowfall_cm": 3.7,
-          "precipitation_mm": 6.7,
-          "wind_gusts_max_kmh": 41.4,
-          "sunshine_h": 0.0
+          "temperature_max_c": 0.9,
+          "temperature_min_c": -1.7,
+          "snowfall_cm": 5.4,
+          "precipitation_mm": 8.3,
+          "wind_gusts_max_kmh": 46.8,
+          "sunshine_h": 0.1
         },
         {
           "date": "2026-11-30",
           "weather_code": 85,
-          "temperature_max_c": 4.7,
-          "temperature_min_c": 0.5,
-          "snowfall_cm": 1.5,
-          "precipitation_mm": 15.1,
-          "wind_gusts_max_kmh": 50.8,
-          "sunshine_h": 0.0
+          "temperature_max_c": 4.2,
+          "temperature_min_c": -1.7,
+          "snowfall_cm": 1.6,
+          "precipitation_mm": 3.5,
+          "wind_gusts_max_kmh": 49.0,
+          "sunshine_h": 0.2
         },
         {
           "date": "2026-12-01",
-          "weather_code": 80,
-          "temperature_max_c": 4.9,
-          "temperature_min_c": 3.3,
+          "weather_code": 81,
+          "temperature_max_c": 5.5,
+          "temperature_min_c": 3.1,
           "snowfall_cm": 0.0,
-          "precipitation_mm": 53.0,
-          "wind_gusts_max_kmh": 50.8,
+          "precipitation_mm": 44.3,
+          "wind_gusts_max_kmh": 50.0,
+          "sunshine_h": 0.0
+        },
+        {
+          "date": "2026-12-02",
+          "weather_code": 80,
+          "temperature_max_c": 4.7,
+          "temperature_min_c": 1.0,
+          "snowfall_cm": 0.0,
+          "precipitation_mm": 19.4,
+          "wind_gusts_max_kmh": 47.2,
           "sunshine_h": 0.0
         }
       ]

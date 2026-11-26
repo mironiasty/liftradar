@@ -10,7 +10,7 @@
   },
   "website": "https://www.alpedhuez.com",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.993011+01:00",
+  "fetched_at": "2026-11-26T08:40:39.165790+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 150,
@@ -97,41 +97,47 @@
     "danger": "considerable",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
+        "upper_bound": 2000,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2000,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T16:00:00+01:00",
-    "valid_from": "2026-11-24T16:00:00+01:00",
-    "valid_until": "2026-11-25T18:00:00+01:00"
+    "published_at": "2026-11-25T16:00:00+01:00",
+    "valid_from": "2026-11-25T16:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
   },
   "sources": [
-    "https://live.aten-altitude.com/alpehuez/",
-    "https://www.skiinfo.fr/alpes-du-nord/alpe-dhuez/station-de-ski",
-    "https://skipass.alpedhuez.com/hiver/domaine-skiable/",
-    "https://meteofrance.com/meteo-montagne"
+    "https://live.aten-altitude.com/",
+    "https://www.skiinfo.fr/",
+    "https://skipass.alpedhuez.com/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://live.aten-altitude.com/alpehuez/",
+        "url": "https://live.aten-altitude.com/",
         "attribution_required": null
       },
       {
-        "url": "https://meteofrance.com/meteo-montagne",
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/alpe-dhuez/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       },
       {
-        "url": "https://skipass.alpedhuez.com/hiver/domaine-skiable/",
+        "url": "https://skipass.alpedhuez.com/",
         "attribution_required": null
       }
     ]

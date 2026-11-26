@@ -2,11 +2,227 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "bosco-gurin",
   "country": "ch",
-  "fetched_at": "2026-11-25T13:40:42.978309+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-26T08:40:39.156433+01:00",
+  "updated_at": "2026-11-25T14:46:00+01:00",
+  "source": "https://infosnow.ch/",
+  "lifts": [
+    {
+      "id": "lift-a-ritzberg",
+      "ref": null,
+      "name": "A • Ritzberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-sonnenberg",
+      "ref": null,
+      "name": "B • Sonnenberg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-stafla",
+      "ref": null,
+      "name": "C • Stafla",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-grossalp",
+      "ref": null,
+      "name": "D • Grossalp",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-guriner-furka",
+      "ref": null,
+      "name": "E • Guriner Furka",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-tappeto-mobile",
+      "ref": null,
+      "name": "F • Tappeto mobile",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-tappeto-mobile-rossboda",
+      "ref": null,
+      "name": "G • Tappeto mobile Rossboda",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-meschar",
+      "ref": null,
+      "name": "1 • Meschar",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 4000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2-sandiga-boda",
+      "ref": null,
+      "name": "2 • Sandiga Boda",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-putschtschi",
+      "ref": null,
+      "name": "3 • Putschtschi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-gelturtschi",
+      "ref": null,
+      "name": "4 • Gelturtschi",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-naatscha",
+      "ref": null,
+      "name": "5 • Naatscha",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-stafla",
+      "ref": null,
+      "name": "6 • Stafla",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-stafla-2",
+      "ref": null,
+      "name": "6 • Stafla",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-7-im-starne",
+      "ref": null,
+      "name": "7 • im Stärne",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-8-zum-stagdtschi",
+      "ref": null,
+      "name": "8 • zum Stägdtschi",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-9-kramegg",
+      "ref": null,
+      "name": "9 • Kramegg",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-10-starna",
+      "ref": null,
+      "name": "10 • Starna",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-11-bosco",
+      "ref": null,
+      "name": "11 • Bosco",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-12-boda",
+      "ref": null,
+      "name": "12 • Boda",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 46.31514,
     "lon": 8.48775,

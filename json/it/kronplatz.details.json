@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kronplatz",
   "country": "it",
-  "fetched_at": "2026-11-25T13:40:42.982910+01:00",
-  "updated_at": "2026-11-24T16:00:16.147995+01:00",
-  "source": "https://opendatahub.com",
+  "fetched_at": "2026-11-26T08:40:39.158171+01:00",
+  "updated_at": "2026-11-25T17:20:14.901634+01:00",
+  "source": "https://opendatahub.com/",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:2_284",
@@ -813,16 +813,6 @@
       "map_length_m": 2370
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:2_3297",
-      "ref": null,
-      "name": "Ried",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 7000,
-      "map_length_m": 360
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:2_11016427",
       "ref": null,
       "name": "Ried",
@@ -831,6 +821,16 @@
       "status": "closed",
       "length_m": 300,
       "map_length_m": 5960
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_3297",
+      "ref": null,
+      "name": "Ried",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 7000,
+      "map_length_m": 360
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:2_3349",
@@ -923,16 +923,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:2_1778593535",
-      "ref": null,
-      "name": "Trasse",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 600,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:2_3279",
       "ref": null,
       "name": "Trasse",
@@ -941,6 +931,16 @@
       "status": "closed",
       "length_m": 1300,
       "map_length_m": 520
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:2_1778593535",
+      "ref": null,
+      "name": "Trasse",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:2_404586812",

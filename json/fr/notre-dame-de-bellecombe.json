@@ -11,7 +11,7 @@
   "website": "https://www.notredamedebellecombe.com",
   "linked_area": "espace-diamant",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.989117+01:00",
+  "fetched_at": "2026-11-26T08:40:39.163906+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -62,14 +62,36 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "FR-05",
+    "region": "Beaufortain",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-25T17:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
+  },
   "sources": [
-    "https://www.lumiplan.com"
+    "https://www.lumiplan.com/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],

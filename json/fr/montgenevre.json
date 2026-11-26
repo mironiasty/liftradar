@@ -11,7 +11,7 @@
   "website": "https://montgenevre.com",
   "linked_area": "via-lattea",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.993047+01:00",
+  "fetched_at": "2026-11-26T08:40:39.165804+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -84,32 +84,26 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T16:00:00+01:00",
-    "valid_from": "2026-11-24T16:00:00+01:00",
-    "valid_until": "2026-11-25T18:00:00+01:00"
+    "published_at": "2026-11-25T16:00:00+01:00",
+    "valid_from": "2026-11-25T16:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
   },
   "sources": [
-    "https://montgenevre.com/hiver/en-direct/infos-neige/",
     "https://montgenevre.com/",
-    "https://meteofrance.com/meteo-montagne"
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://montgenevre.com/hiver/en-direct/infos-neige/",
+        "url": "https://montgenevre.com/",
         "attribution_required": null
       },
       {
-        "url": "https://meteofrance.com/meteo-montagne",
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://montgenevre.com/",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

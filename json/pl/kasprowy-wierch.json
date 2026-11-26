@@ -10,7 +10,7 @@
   },
   "website": "https://www.pkl.pl",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.987570+01:00",
+  "fetched_at": "2026-11-26T08:40:39.162728+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -80,27 +80,22 @@
       "wind_slab",
       "new_snow"
     ],
-    "published_at": "2026-11-24T17:15:53+01:00",
-    "valid_from": "2026-11-24T17:00:00+01:00",
-    "valid_until": "2026-11-25T20:00:00+01:00"
+    "published_at": "2026-11-25T17:14:00+01:00",
+    "valid_from": "2026-11-25T17:14:00+01:00",
+    "valid_until": "2026-11-26T20:00:00+01:00"
   },
   "sources": [
-    "https://www.pkl.pl/koleje-i-wyciagi.html",
-    "https://www.pkl.pl/trasy-narciarskie.html",
-    "https://lawiny.topr.pl"
+    "https://www.pkl.pl/",
+    "https://lawiny.topr.pl/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.pkl.pl/koleje-i-wyciagi.html",
+        "url": "https://www.pkl.pl/",
         "attribution_required": null
       },
       {
-        "url": "https://www.pkl.pl/trasy-narciarskie.html",
-        "attribution_required": null
-      },
-      {
-        "url": "https://lawiny.topr.pl",
+        "url": "https://lawiny.topr.pl/",
         "attribution_required": null
       }
     ],

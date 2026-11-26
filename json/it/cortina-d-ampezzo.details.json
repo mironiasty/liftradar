@@ -2,9 +2,9 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-25T13:40:42.982877+01:00",
+  "fetched_at": "2026-11-26T08:40:39.158147+01:00",
   "updated_at": "2026-11-25T10:00:08.459943+01:00",
-  "source": "https://opendatahub.com",
+  "source": "https://opendatahub.com/",
   "lifts": [
     {
       "id": "urn:odhactivitypoi:dss:lift:1_218",
@@ -517,16 +517,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
-      "ref": null,
-      "name": "Cacciatori",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 680,
-      "map_length_m": 1430
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215848",
       "ref": null,
       "name": "Cacciatori",
@@ -534,6 +524,16 @@
       "colour": null,
       "status": "closed",
       "length_m": 545,
+      "map_length_m": 1430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_30683525",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 680,
       "map_length_m": null
     },
     {
@@ -707,7 +707,7 @@
       "map_length_m": 670
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "id": "urn:odhactivitypoi:dss:slope:1_215872",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -717,7 +717,7 @@
       "map_length_m": 660
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215872",
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -1027,16 +1027,6 @@
       "map_length_m": 960
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1767515762",
-      "ref": null,
-      "name": "Rosà",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 656,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215911",
       "ref": null,
       "name": "Rosà",
@@ -1045,6 +1035,16 @@
       "status": "closed",
       "length_m": 656,
       "map_length_m": 1470
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1767515762",
+      "ref": null,
+      "name": "Rosà",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 656,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215912",
@@ -1267,16 +1267,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
-      "ref": null,
-      "name": "Vertigine Bianca",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 871,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215930",
       "ref": null,
       "name": "Vertigine Bianca",
@@ -1285,6 +1275,16 @@
       "status": "closed",
       "length_m": 871,
       "map_length_m": 680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
+      "ref": null,
+      "name": "Vertigine Bianca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 871,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

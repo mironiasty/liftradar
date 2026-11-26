@@ -11,7 +11,7 @@
   "website": "https://www.grand-massif.com",
   "linked_area": "grand-massif",
   "status": "no_report",
-  "fetched_at": "2026-11-25T13:40:42.989649+01:00",
+  "fetched_at": "2026-11-26T08:40:39.164383+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -37,46 +37,40 @@
   "avalanche": {
     "region_id": "FR-01",
     "region": "Chablais",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 1800,
-        "period": "all_day"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": 1800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-24T16:00:00+01:00",
-    "valid_from": "2026-11-24T16:00:00+01:00",
-    "valid_until": "2026-11-25T18:00:00+01:00"
+    "published_at": "2026-11-25T16:00:00+01:00",
+    "valid_from": "2026-11-25T16:00:00+01:00",
+    "valid_until": "2026-11-26T18:00:00+01:00"
   },
   "sources": [
-    "https://www.lumiplan.com",
-    "https://www.skiinfo.fr/alpes-du-nord/samoens/station-de-ski",
-    "https://meteofrance.com/meteo-montagne"
+    "https://www.lumiplan.com/",
+    "https://www.skiinfo.fr/",
+    "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com",
+        "url": "https://www.lumiplan.com/",
         "attribution_required": null
       },
       {
-        "url": "https://meteofrance.com/meteo-montagne",
+        "url": "https://meteofrance.com/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/alpes-du-nord/samoens/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]

@@ -11,7 +11,7 @@
   "website": "https://www.vialattea.it/",
   "linked_area": "via-lattea",
   "status": "closed",
-  "fetched_at": "2026-11-25T13:40:42.984021+01:00",
+  "fetched_at": "2026-11-26T08:40:39.159225+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -73,21 +73,52 @@
   },
   "lifts_updated_at": null,
   "details": "json/it/sauze-d-oulx.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-21-TO-03",
+    "region": "Alpi Graie",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2300,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2300,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "new_snow"
+    ],
+    "published_at": "2026-11-25T17:00:00+01:00",
+    "valid_from": "2026-11-26T00:00:00+01:00",
+    "valid_until": "2026-11-27T00:00:00+01:00"
+  },
   "sources": [
-    "https://montgenevre.com/hiver/en-direct/infos-neige/",
-    "https://www.skiinfo.fr/piemont/sauze-doulx/station-de-ski"
+    "https://montgenevre.com/",
+    "https://www.skiinfo.fr/",
+    "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
       {
-        "url": "https://montgenevre.com/hiver/en-direct/infos-neige/",
+        "url": "https://montgenevre.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://bollettini.aineva.it/",
         "attribution_required": null
       }
     ],
     "resort_info": [
       {
-        "url": "https://www.skiinfo.fr/piemont/sauze-doulx/station-de-ski",
+        "url": "https://www.skiinfo.fr/",
         "attribution_required": null
       }
     ]
