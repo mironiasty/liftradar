@@ -152,7 +152,7 @@ Static checks, also run on every push (`.github/workflows/checks.yml`):
 
 ```sh
 npm install        # once
-npm run check      # Biome (JS, CSS), html-validate (translated pages too), the type check, the MCP test, ruff (scripts/, ski-tiles/)
+npm run check      # Biome (JS, CSS), the links the build stops on, html-validate (translated pages too), the type check, the MCP test, ruff (scripts/, ski-tiles/)
 npm run format     # format the JS, the CSS and the Python (scripts/, ski-tiles/); HTML is validated but not formatted
 ```
 

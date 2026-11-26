@@ -3,6 +3,7 @@
 // pages.yml runs it before uploading the folder to Cloudflare; locally, `npm run build` (then `npm run preview`):
 //
 //   node scripts/build.mjs [--data <dir>] [--out <dir>]
+//   node scripts/build.mjs --check      the links the build stops on, in web/ as it is (npm run check)
 //
 // --data: where json/, history/ and schema/ are (the data branch), with ski/ if the ski tiles are there too
 //         (DEVELOPMENT.md "Ski tiles"); web/ when left out, where DEVELOPMENT.md "Running locally" links them.
@@ -20,7 +21,9 @@ import { PAGES } from "./translate.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const web = join(root, "web");
-const { values } = parseArgs({ options: { data: { type: "string" }, out: { type: "string" } } });
+const { values } = parseArgs({
+  options: { data: { type: "string" }, out: { type: "string" }, check: { type: "boolean" } },
+});
 const data = resolve(values.data ?? web);
 const out = resolve(values.out ?? join(root, "_site"));
 
@@ -52,6 +55,34 @@ const html = () => [
 const rewrite = (paths, change) => {
   for (const path of paths) writeFileSync(path, change(readFileSync(path, "utf8")));
 };
+
+// Cloudflare redirects about.html to /about (307), and search engines report every page reached through one: the
+// links go straight to the address it serves (index.html is "/", and 404.html is never linked). Quoted names only, so
+// comments and other sites' links stay. Locally, `npm run dev` serves the .html as it is in the repo.
+const linked = PAGES.map((page) => page.replace(/\.html$/, "")).filter((name) => name !== "index" && name !== "404");
+const pageLink = new RegExp(`(["\`](/([a-z]{2}/)?)?)(${linked.join("|")})\\.html`, "g");
+// A link to an .html page that isn't one of PAGES, once theirs are rewritten.
+const pageLinkLeft = (text) => /["`](\/([a-z]{2}\/)?)?[a-z0-9]+\.html/.test(text.replace(pageLink, "$1$4"));
+// The pages' scripts and styles with ?v=<commit>, and a link this pattern doesn't reach (a name with "_", say).
+const versioned = (text, version) => text.replace(/(assets\/[a-z0-9-]+\.(js|css))"/g, `$1?v=${version}"`);
+const unversionedLeft = (text) => /assets\/[^"?]+\.(js|css)"/.test(versioned(text, "check"));
+
+// Both stop the build below, and a deploy after every data update with it: `npm run check` finds them first, in
+// the files as they are (the pages, their scripts, and the country pages' template).
+if (values.check) {
+  const pages = [...files(web, (f) => f.endsWith(".html")), join(root, "scripts", "country.html")];
+  const sources = [...pages, ...files(join(web, "assets"), (f) => f.endsWith(".js"))];
+  const problems = [
+    ...sources
+      .filter((path) => pageLinkLeft(readFileSync(path, "utf8")))
+      .map((p) => `a link to an .html page that isn't in PAGES: ${p}`),
+    ...pages
+      .filter((path) => unversionedLeft(readFileSync(path, "utf8")))
+      .map((p) => `an asset link ?v= wouldn't reach: ${p}`),
+  ];
+  for (const problem of problems) console.error(problem);
+  process.exit(problems.length ? 1 : 0);
+}
 
 // The site and the data in one folder. cpSync follows the links DEVELOPMENT.md "Running locally" makes.
 // The folder is emptied first: never one holding the repo or the data, and in the repo only _site.
@@ -86,16 +117,9 @@ node("countries.mjs", out);
 // After the translated pages, the country pages and the ski tiles: it lists them (DEVELOPMENT.md "Sitemap").
 node("sitemap.mjs", out);
 
-// Cloudflare redirects about.html to /about (307), and search engines report every page reached through one: the
-// links go straight to the address it serves (index.html is "/", and 404.html is never linked). Quoted names only, so
-// comments and other sites' links stay. Locally, `npm run dev` serves the .html as it is in the repo.
-const linked = PAGES.map((page) => page.replace(/\.html$/, "")).filter((name) => name !== "index" && name !== "404");
-const pageLink = new RegExp(`(["\`](/([a-z]{2}/)?)?)(${linked.join("|")})\\.html`, "g");
 const scripts = files(join(out, "assets"), (f) => f.endsWith(".js"));
 rewrite([...html(), ...scripts], (text) => text.replace(pageLink, "$1$4"));
-const left = [...html(), ...scripts].filter((path) =>
-  /["`](\/([a-z]{2}\/)?)?[a-z0-9]+\.html/.test(readFileSync(path, "utf8")),
-);
+const left = [...html(), ...scripts].filter((path) => pageLinkLeft(readFileSync(path, "utf8")));
 if (left.length) throw new Error(`Links to .html pages left in ${left.join(", ")}: add the page to PAGES`);
 
 // Scripts keep their top-level names (esbuild leaves them alone when not bundling): the pages share them from
@@ -120,7 +144,7 @@ optional("Compacting the resort index", () => {
 // Without a version in the URL, a new page can run with the previous version's scripts from a cache on the way.
 // _headers caches them for a year, so a link left without one would keep a file frozen: stop instead.
 const version = execFileSync("git", ["-C", root, "rev-parse", "--short", "HEAD"], { encoding: "utf8" }).trim();
-rewrite(html(), (text) => text.replace(/(assets\/[a-z0-9-]+\.(js|css))"/g, `$1?v=${version}"`));
-const unversioned = html().filter((path) => /assets\/[^"?]+\.(js|css)"/.test(readFileSync(path, "utf8")));
+rewrite(html(), (text) => versioned(text, version));
+const unversioned = html().filter((path) => unversionedLeft(readFileSync(path, "utf8")));
 if (unversioned.length) throw new Error(`Asset links without ?v= in ${unversioned.join(", ")}: widen the pattern`);
 console.log(`Built ${out} (assets ?v=${version})`);
