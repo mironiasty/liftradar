@@ -1,3 +1,5 @@
+[![LiftRadar: status of ski resorts across Europe](assets/og.png)](https://liftradar.eu)
+
 # liftradar
 
 The website of [liftradar.eu](https://liftradar.eu): which ski resorts are open, and how much of each (lifts, slopes,
