@@ -3,8 +3,7 @@
 Response to [issue #91](https://github.com/mironiasty/liftradar/issues/91) (Tim Maurice Bayer's proposal), checked
 against `main` at 4a821dea (2026-11-25). Each step is its own PR with no change in behaviour.
 
-**Status (2026-11-26):** A, B, C, D and E are done; the CDN hashes from "Small extras" are in #97. F is
-open.
+**Status (2026-11-26):** all done (A–F); the CDN hashes from "Small extras" are in #97. Vite stays "not now".
 
 ## Order
 
@@ -15,7 +14,7 @@ open.
 | C | `scripts/build.mjs` (what `pages.yml` does), `npm run build` / `preview` / `dev`, one list of pages | 3 (first half) | take | done, #96 |
 | D | Website into `web/`, ski-tile pipeline into its own folder | 3 (second half) | take after C, optional | done, #110 (D1 `web/`) and D2 `ski-tiles/` |
 | E | Split `resort.js` by job (now 7 jobs, weather included) | 4 | take, widen the `[a-z]+` patterns in the same PR | done, #100 |
-| F | Named keys for long translations, keeping stale-translation detection | 5 | take only with a fingerprint | open |
+| F | Named keys for long translations, keeping stale-translation detection | 5 | take only with a fingerprint | done |
 | — | Vite | 6 | not now | — |
 
 ## A. Caching (issue step 2)
@@ -179,6 +178,12 @@ So: named keys (`data-i18n="about-…"`, already supported) for the long paragra
 English text stored with each translation (e.g. `{"about-sources": {"text": "…", "en": "<short hash>"}}`), and
 `translate.mjs --check` reports translations whose English has changed since. A typo fix can then be marked as
 "no re-translation needed" by updating the hash. Short UI strings keep English as key.
+
+**Done:** the 38 blocks over 200 characters (index's footer, about, api, sources, privacy) are named
+`<page>-<topic>`; their translations moved to `{"text", "en"}` with the same text, so the translated pages came out
+byte for byte the same. `--check` warns on an outdated translation (it stays shown meanwhile), and fails on a long
+block without a name or a named translation without `en`; `translate.mjs --accept <name>…` re-stamps the fingerprints
+after a typo fix. A tag or `{placeholder}` check compares a named translation with the block's English.
 
 ## Vite (issue step 6)
 
