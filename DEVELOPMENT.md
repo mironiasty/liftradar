@@ -61,7 +61,7 @@ and the short way to run it, is in the [README](README.md).
 also at <https://liftradar.liftradar.workers.dev>. `_headers` lets any origin read `json/`,
 `history/`, `schema/` and `openapi.json`, and `404.html` is served for missing files. Cloudflare redirects `about.html` to `/about` (and so on), keeping the query string: the deploy rewrites
 the links to the pages without `.html`, so search engines don't reach them through a redirect. Every page but
-`404.html` has a canonical address on liftradar.eu (the resort and 3D pages set theirs, with `?r=`, in `setResortAddress()`), so the copy on
+`404.html` has a canonical address on liftradar.eu (the resort and 3D pages set theirs, with `?r=`, and the ski area page with `?g=`, in `setPageAddress()`), so the copy on
 workers.dev and the addresses with filters aren't taken for duplicates.
 
 ## App links

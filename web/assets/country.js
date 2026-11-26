@@ -15,83 +15,12 @@ function fail(message) {
 // The page's country, which scripts/countries.mjs puts on its <main> (DEVELOPMENT.md "Country pages").
 const requested = () => document.querySelector("main").dataset.country ?? null;
 
-/** @param {number | null | undefined} open @param {number | null | undefined} total */
-function meter(open, total) {
-  if (!present(open) || !total) return el("div", { class: "meter", "aria-hidden": "true" });
-  return el(
-    "div",
-    { class: "meter", "aria-hidden": "true" },
-    el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` }),
-  );
-}
-
-/** @param {string} title @param {any} value @param {...(string | HTMLElement | null)} notes */
-function tile(title, value, ...notes) {
-  return el(
-    "div",
-    { class: "tile" },
-    el("div", { class: "label" }, title),
-    el("div", { class: "value" }, ...[value].flat()),
-    ...notes.filter(Boolean).map((note) => (typeof note === "string" ? el("div", { class: "note" }, note) : note)),
-  );
-}
-
 const isOpen = (/** @type {IndexResort} */ r) => statusKey(r) === "open";
 
 // A number kept on the line of what follows it ("293 km", "69 lifts"): no "km" or "m" alone on the next line.
 const glued = (/** @type {string} */ text) => text.replace(/(\d) /g, "$1\u00a0");
 
-// Open lifts, slopes and km of the open resorts, out of all the resorts' (those that give them), as the area page.
-/** @param {IndexResort[]} resorts */
-function totals(resorts) {
-  const sum = (/** @type {(r: IndexResort) => number | null | undefined} */ value, onlyOpen = false) =>
-    resorts
-      .filter((r) => !onlyOpen || isOpen(r))
-      .map(value)
-      .reduce((/** @type {number} */ a, b) => a + (b ?? 0), 0);
-  return {
-    open: resorts.filter(isOpen).length,
-    liftsOpen: sum((r) => r.lifts?.open, true),
-    lifts: sum((r) => r.lifts?.total),
-    kmOpen: sum((r) => r.slopes?.open_km, true),
-    km: sum((r) => r.slopes?.total_km),
-  };
-}
-
-// The resort with the highest value, and the value; only among the open ones when `onlyOpen` (a closed resort's
-// snow is often last season's).
-/**
- * @param {IndexResort[]} resorts
- * @param {(r: IndexResort) => number | null | undefined} value
- * @returns {{ v: number, r: IndexResort } | null}
- */
-function highest(resorts, value, onlyOpen = false) {
-  let best = /** @type {{ v: number, r: IndexResort } | null} */ (null);
-  for (const r of resorts) {
-    const v = value(r);
-    if ((!onlyOpen || isOpen(r)) && present(v) && v > 0 && (!best || v > best.v)) best = { v, r };
-  }
-  return best;
-}
-
 const resortLink = (/** @type {IndexResort} */ r) => el("a", { href: resortPage(r) }, r.name);
-
-// When the data was read, as the pill over the home page's table: clicked, it says when we read the reports.
-/** @param {Index} index */
-function updatedPill(index) {
-  const clock = el("span", { class: "clock", "aria-hidden": "true" });
-  clock.innerHTML =
-    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"' +
-    ' stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
-  const menu = el(
-    "details",
-    { class: "updated-menu" },
-    el("summary", { class: "updated" }, clock, el("span", {}, updatedText(index))),
-    el("div", {}, t("We read the reports twice a day, at about 08:40 and 13:40 CET.")),
-  );
-  closeOnOutside(/** @type {HTMLDetailsElement} */ (menu));
-  return menu;
-}
 
 // The regions the resorts are in, by name (resorts without one under "Other").
 /** @param {IndexResort[]} resorts @returns {[string, IndexResort[]][]} */
@@ -136,8 +65,8 @@ function header(code, resorts, index) {
 // How much is open: resorts and km of slopes, larger, then lifts and the regions with a resort open.
 /** @param {IndexResort[]} resorts */
 function tiles(resorts) {
-  const s = totals(resorts);
-  const share = (/** @type {number} */ open, /** @type {number} */ total) =>
+  const s = openTotals(resorts);
+  const share = (/** @type {number} */ open, /** @type {number | null} */ total) =>
     total ? t("{share}% open", { share: Math.round((100 * open) / total) }) : null;
   const regions = byRegion(resorts).filter(([name]) => name);
   const regionsOpen = regions.filter(([, members]) => members.some(isOpen)).length;
@@ -188,19 +117,6 @@ async function loadElevations() {
   }
 }
 
-// A resort's status and how much of its lifts and slopes is open (without its snow, as memberSummary has it).
-/** @param {IndexResort} r */
-function openLine(r) {
-  const open = isOpen(r);
-  const { lifts, slopes } = r;
-  const parts = [capitalized(STATUS_LABELS[statusKey(r)])];
-  if (lifts?.total) parts.push(t("{n} lifts", { n: open ? pair(lifts.open, lifts.total) : lifts.total }));
-  if (slopes?.total_km) {
-    parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
-  }
-  return glued(parts.join(" · "));
-}
-
 // FNV-1a: the same day and country always pick the same resort, anywhere.
 /** @param {string} text */
 function hash(text) {
@@ -244,7 +160,7 @@ function resortOfTheDay(code, resorts, elevations) {
         {},
         el("a", { class: "pick-name", href: resortPage(r) }, r.name),
         el("div", { class: "meta" }, r.region ?? ""),
-        el("div", { class: "meta numbers" }, openLine(r)),
+        el("div", { class: "meta numbers" }, glued(statusLine(r))),
       ),
     ),
     facts.length
@@ -303,7 +219,7 @@ function median(values) {
 // median), its top station, and how many reach about that height or have under 10 km of slopes.
 /** @param {IndexResort[]} resorts @param {Map<string, [number, number]>} elevations */
 function numbers(resorts, elevations) {
-  const s = totals(resorts);
+  const s = openTotals(resorts);
   const km = median(resorts.map((r) => r.slopes?.total_km));
   const lifts = median(resorts.map((r) => r.lifts?.total));
   const tops = resorts.map((r) => elevations.get(resortKey(r))?.[1]);
@@ -363,8 +279,8 @@ function numbers(resorts, elevations) {
 /** @param {string} code @param {IndexResort[]} resorts */
 function regionsCard(code, resorts) {
   const regions = byRegion(resorts)
-    .map(([name, members]) => ({ name, members, s: totals(members) }))
-    .sort((a, b) => b.s.open - a.s.open || b.s.km - a.s.km || a.name.localeCompare(b.name, LANG));
+    .map(([name, members]) => ({ name, members, s: openTotals(members) }))
+    .sort((a, b) => b.s.open - a.s.open || (b.s.km ?? 0) - (a.s.km ?? 0) || a.name.localeCompare(b.name, LANG));
   const single = regions.length === 1;
   const items = regions.map(({ name, members, s }) => {
     const byKey = new Map(members.map((r) => [resortKey(r), r]));

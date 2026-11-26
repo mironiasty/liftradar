@@ -68,7 +68,7 @@ const color = (status) => cssColor(STATUS[status].color);
 const ALL_RESORTS = { bounds: [-7.3, 37.1, 29.2, 70.1], fitBoundsOptions: { padding: 30 } };
 
 // A bar for the open share, for open resorts: elsewhere open counts are 0 or not reported.
-function meter(open, total, active) {
+function openBar(open, total, active) {
   if (!active || open === null || open === undefined || !total) return [];
   const bar = el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` });
   return [el("div", { class: "meter", title: t("{share}% open", { share: Math.round((100 * open) / total) }) }, bar)];
@@ -95,7 +95,7 @@ function popup(r, status, in3d) {
     snow.fresh_cm ? el("span", { class: "fresh" }, `+${snow.fresh_cm} cm`) : `${snow.fresh_cm} cm`,
   );
   const liftCount = pair(lifts?.open, lifts?.total);
-  add(t("Lifts"), liftCount, liftCount, ...meter(lifts?.open, lifts?.total, active));
+  add(t("Lifts"), liftCount, liftCount, ...openBar(lifts?.open, lifts?.total, active));
   const counts = pair(slopes?.open, slopes?.total);
   const km = pair(slopes?.open_km, slopes?.total_km, " km");
   if (counts === "–") add(t("Slopes"), km);
@@ -104,7 +104,7 @@ function popup(r, status, in3d) {
       t("Slopes"),
       counts,
       counts,
-      ...meter(slopes?.open, slopes?.total, active),
+      ...openBar(slopes?.open, slopes?.total, active),
       ...(km === "–" ? [] : [el("div", { class: "sub" }, km)]),
     );
   if (avalanche?.danger_level)
@@ -143,7 +143,7 @@ function popup(r, status, in3d) {
     const cube = el("span", { class: "cube", "aria-hidden": "true" });
     cube.innerHTML =
       '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>';
-    actions.append(el("a", { class: "action", href: `3d.html?r=${skiKey(r)}` }, cube, t("3D map")));
+    actions.append(el("a", { class: "action", href: `3d.html?r=${resortKey(r)}` }, cube, t("3D map")));
   }
   content.append(el("div", { class: "foot" }, t("Checked {time}", { time })), actions);
   return content;
@@ -153,13 +153,13 @@ function popup(r, status, in3d) {
 // at the resorts' locations, without areas, pistes or lifts.
 function show(map, [index, ski]) {
   const resorts = index.resorts.filter((r) => skiPoint(r, ski));
-  const byKey = new Map(resorts.map((r) => [skiKey(r), r]));
+  const byKey = new Map(resorts.map((r) => [resortKey(r), r]));
   // The legend of the lifts' and pistes' statuses: once a resort in view has them, where the pistes show.
   const legend = document.getElementById("ski-legend");
   let withStates = false;
   const showLegend = () => (legend.hidden = !(withStates && map.getZoom() >= SKI_MIN_ZOOM));
   addPistes(map, ski, {
-    names: new Map(index.resorts.map((r) => [skiKey(r), r.name])),
+    names: new Map(index.resorts.map((r) => [resortKey(r), r.name])),
     tips: false,
     onStates: () => {
       withStates = true;
@@ -171,7 +171,7 @@ function show(map, [index, ski]) {
   // their resort's status colour, as assets/ski-style.json draws them: filled when zoomed out, only an
   // outline where the pistes show (filled faintly when hovered), so they stay visible. Clickable at every zoom.
   const areas = resorts
-    .map((r) => ski?.resorts.get(skiKey(r)))
+    .map((r) => ski?.resorts.get(resortKey(r)))
     .filter(Boolean)
     .map((f) => ({ ...f, properties: { key: f.properties.id, status: statusKey(byKey.get(f.properties.id)) } }));
   const links = areas
@@ -208,7 +208,7 @@ function show(map, [index, ski]) {
     if (map.getContainer().clientWidth < 500) map.jumpTo({ center: at, offset: [0, 120] });
     opened = new maplibregl.Popup({ maxWidth: "296px", offset: 14 })
       .setLngLat(at)
-      .setDOMContent(popup(r, statusKey(r), Boolean(ski?.resorts.has(skiKey(r)))))
+      .setDOMContent(popup(r, statusKey(r), Boolean(ski?.resorts.has(resortKey(r)))))
       .addTo(map);
   };
   for (const layer of layers) {
@@ -231,7 +231,7 @@ function show(map, [index, ski]) {
       e.stopPropagation();
       openPopup(r, marker.getLngLat());
     });
-    markers.push({ marker, element, r, status, area: Boolean(ski?.resorts.has(skiKey(r))), passes: true });
+    markers.push({ marker, element, r, status, area: Boolean(ski?.resorts.has(resortKey(r))), passes: true });
   }
   // Shown: the markers of the resorts that pass the filters, except, where the pistes show, those of
   // resorts with an area.
@@ -290,7 +290,7 @@ function show(map, [index, ski]) {
     for (const m of markers) m.passes = passes(filter, m);
     showMarkers();
     if (ski) {
-      const keys = markers.filter((m) => m.passes && m.area).map((m) => skiKey(m.r));
+      const keys = markers.filter((m) => m.passes && m.area).map((m) => resortKey(m.r));
       const areaFilter = active ? ["in", ["get", "key"], ["literal", keys]] : null;
       for (const layer of ["ski-areas-fill", "ski-areas-line", "ski-areas-links"]) map.setFilter(layer, areaFilter);
     }
@@ -312,7 +312,7 @@ function show(map, [index, ski]) {
     );
 
   // map.html?r=at/soelden: the map opened there (startView), with the resort's report open.
-  const focus = markers.find(({ r }) => skiKey(r) === WANTED);
+  const focus = markers.find(({ r }) => resortKey(r) === WANTED);
   if (focus) openPopup(focus.r, focus.marker.getLngLat());
 }
 
@@ -700,7 +700,7 @@ const WANTED = new URLSearchParams(location.search).get("r");
 function resortView([index, ski]) {
   const area = ski?.resorts.get(WANTED);
   if (area) return { bounds: geometryBounds(area.geometry), fitBoundsOptions: { padding: 30, maxZoom: 12 } };
-  const wanted = index.resorts.find((r) => skiKey(r) === WANTED);
+  const wanted = index.resorts.find((r) => resortKey(r) === WANTED);
   return wanted && skiPoint(wanted, ski) ? { center: skiPoint(wanted, ski), zoom: 12 } : ALL_RESORTS;
 }
 

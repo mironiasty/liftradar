@@ -96,7 +96,7 @@ function nameCell(r) {
 
 // "open/total" with a bar for the open share, for open resorts: elsewhere open
 // counts are 0 or not reported.
-function meter(open, total, active) {
+function openMeter(open, total, active) {
   const cell = el("div", {}, pair(open, total));
   if (active && open !== null && open !== undefined && total) {
     const bar = el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` });
@@ -111,7 +111,7 @@ function meter(open, total, active) {
 function slopesCell(slopes, active) {
   const km = pair(slopes?.open_km, slopes?.total_km, " km");
   const counts = pair(slopes?.open, slopes?.total);
-  const cell = value(t("Slopes"), counts === "–" ? km : counts, meter(slopes?.open, slopes?.total, active));
+  const cell = value(t("Slopes"), counts === "–" ? km : counts, openMeter(slopes?.open, slopes?.total, active));
   if (km !== "–") cell.append(el("div", { class: "sub-line" }, km));
   return cell;
 }
@@ -143,7 +143,7 @@ function row(r) {
     value(t("Mountain"), dash(mountain, " cm"), el("span", { class: mountain ? "big" : "" }, dash(mountain, " cm"))),
     value(t("Valley"), dash(valley, " cm")),
     value(t("Fresh"), dash(fresh, " cm"), fresh ? el("span", { class: "fresh" }, `+${fresh} cm`) : dash(fresh, " cm")),
-    value(t("Lifts"), pair(r.lifts?.open, r.lifts?.total), meter(r.lifts?.open, r.lifts?.total, active)),
+    value(t("Lifts"), pair(r.lifts?.open, r.lifts?.total), openMeter(r.lifts?.open, r.lifts?.total, active)),
     slopesCell(r.slopes, active),
   );
   // The whole row opens the resort's page; the name is the link for keyboards and new tabs. The star doesn't.

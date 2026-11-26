@@ -97,7 +97,7 @@ async function resortMap(r, container) {
   // Above the map, as soon as the ski tiles say the resort has an area (the 3D map needs it, which the resorts
   // without one lack), rather than once the map has drawn.
   loading.then((ski) => {
-    if (!ski?.resorts.has(skiKey(r))) return;
+    if (!ski?.resorts.has(resortKey(r))) return;
     // A block of land cut out with its peaks, seen from above at an angle: the 3D map's diorama. The block's
     // sides in two shades, the ridges in the accent.
     const icon = el("span", { class: "icon", "aria-hidden": "true" });
@@ -106,7 +106,7 @@ async function resortMap(r, container) {
     container.before(
       el(
         "a",
-        { class: "map-3d", href: `3d.html?r=${skiKey(r)}` },
+        { class: "map-3d", href: `3d.html?r=${resortKey(r)}` },
         icon,
         el(
           "span",
@@ -120,7 +120,7 @@ async function resortMap(r, container) {
   });
   // Opened on the area when there is one, rather than moving there once it's known.
   const view = loading.then((ski) => {
-    const area = ski?.resorts.get(skiKey(r));
+    const area = ski?.resorts.get(resortKey(r));
     if (!area) return start;
     return { bounds: geometryBounds(area.geometry), fitBoundsOptions: { padding: 20, maxZoom: 14 } };
   });
@@ -153,7 +153,7 @@ async function resortMap(r, container) {
     const off = map.project(home.center).dist(map.project(map.getCenter()));
     resetBox.hidden = Math.abs(map.getZoom() - home.zoom) < 0.05 && off < 20;
   });
-  const area = ski?.resorts.get(skiKey(r));
+  const area = ski?.resorts.get(resortKey(r));
   if (area) {
     map.addSource("area", { type: "geojson", data: area });
     map.addLayer(
@@ -168,8 +168,8 @@ async function resortMap(r, container) {
     );
   }
   const pistes = addPistes(map, ski, {
-    highlight: skiKey(r),
-    names: new Map([[skiKey(r), r.name]]),
+    highlight: resortKey(r),
+    names: new Map([[resortKey(r), r.name]]),
     // From the zoom the map opens at, however large the resort: its lifts and pistes are always shown.
     minZoom: Math.min(SKI_MIN_ZOOM, Math.floor(map.getZoom())),
   });

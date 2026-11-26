@@ -1355,7 +1355,7 @@ async function show() {
   const section = /** @type {HTMLElement} */ (document.getElementById("map"));
   section.append(sceneLoader);
   const [index, ski] = await Promise.all([loadIndex(), loadSki()]);
-  const r = index.resorts.find((x) => skiKey(x) === KEY);
+  const r = index.resorts.find((x) => resortKey(x) === KEY);
   if (!r || !ski) throw new Error(KEY);
   const area = ski.resorts.get(KEY);
   const center = skiPoint(r, ski);
@@ -1370,7 +1370,7 @@ async function show() {
   document.getElementById("updated").textContent = updatedText(index);
   document.getElementById("title").textContent = r.name;
   document.title = `${r.name} – ${t("3D map")} – LiftRadar`;
-  setResortAddress(r);
+  setPageAddress(`r=${resortKey(r)}`);
   const status = statusKey(r);
   const summary = () =>
     el(

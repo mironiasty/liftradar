@@ -31,21 +31,6 @@ function requested() {
   return match ? { country: match[1], id: match[2] } : null;
 }
 
-function meter(open, total) {
-  if (!present(open) || !total) return el("div", { class: "meter" });
-  return el("div", { class: "meter" }, el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` }));
-}
-
-function tile(title, value, ...notes) {
-  return el(
-    "div",
-    { class: "tile" },
-    el("div", { class: "label" }, title),
-    el("div", { class: "value" }, ...[value].flat()),
-    ...notes.filter(Boolean).map((note) => (typeof note === "string" ? el("div", { class: "note" }, note) : note)),
-  );
-}
-
 const cm = (v) => (present(v) ? [String(v), el("small", {}, " cm")] : "–");
 
 /** @param {Resort} r */
@@ -414,7 +399,7 @@ async function show() {
   /** @type {Resort} */
   const r = await response.json();
   document.title = `${r.name} – LiftRadar`;
-  setResortAddress(r);
+  setPageAddress(`r=${resortKey(r)}`);
 
   const mapBox = el("div", { id: "map", role: "region", "aria-label": t("Map of {name}", { name: r.name }) });
   const historyBox = el("div", { class: "charts" }, liftLoader({ small: true }));
