@@ -2,7 +2,7 @@
 
 The website (branch `main`: plain static pages in `web/`, no build step) for the data that
 **liftradar-fetcher** publishes to this repo's `data` branch. liftradar-fetcher is checked out next to
-this one at `../liftradar-fetcher`; its `src/liftradar_fetcher/models.py` defines the data format, and its
+this one at `../liftradar-fetcher`; its `src/liftradar_fetcher/models/` defines the data format, and its
 README documents every source in detail.
 
 `README.md` is the short overview for visitors; how this repo works (what's in the data and the site, deploy,
