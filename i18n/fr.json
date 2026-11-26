@@ -237,9 +237,12 @@
   "About the Data – LiftRadar": "À propos des données – LiftRadar",
   "This part of the page is available in English only.": "Cette partie de la page n'est disponible qu'en anglais.",
   "Data Sources – LiftRadar": "Sources des données – LiftRadar",
-  "Every page in the current data": "Toutes les pages des données actuelles",
+  "Every source in the current data": "Toutes les sources des données actuelles",
   "How values are calculated, and their caveats: <a href=\"about.html\">About the data</a>.": "Comment les valeurs sont calculées, et leurs limites : <a href=\"about.html\">À propos des données</a>.",
-  "{pages} pages on {sites} websites, used for {n} resorts.": "{pages} pages sur {sites} sites, utilisées pour {n} stations.",
+  "{n} websites": {
+    "one": "{n} site",
+    "other": "{n} sites"
+  },
   "Not Found – LiftRadar": "Introuvable – LiftRadar",
   "Page not found": "Page introuvable",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "Il n'y a rien à cette adresse. <a href=\"/\">Toutes les stations →</a>",
@@ -416,12 +419,12 @@
   "Resort information": "Informations sur la station",
   "Current conditions": "Conditions actuelles",
   "sources-kinds": {
-    "text": "Les pages de conditions actuelles donnent l'état, les remontées, les pistes, la neige et le danger d'avalanche ; les pages d'informations sur la station donnent ce qui ne change pas, comme la taille du domaine skiable. « Mention de la source obligatoire » signale une source dont les conditions demandent d'être citée ; pour les autres, nous ne l'avons pas encore vérifié, supposez donc que c'est le cas.",
-    "en": "19e4bb75"
+    "text": "Les sources de conditions actuelles donnent l'état, les remontées, les pistes, la neige et le danger d'avalanche ; les sources d'informations sur la station donnent ce qui ne change pas, comme la taille du domaine skiable. Chacune est nommée par son site, où vous trouverez les mêmes données. « Mention de la source obligatoire » signale une source dont les conditions demandent d'être citée ; pour les autres, nous ne l'avons pas encore vérifié, supposez donc que c'est le cas.",
+    "en": "38588686"
   },
   "api-source-details": {
-    "text": "<code>source_details</code> liste les pages dont un bulletin est issu : les pages publiques où l'on peut lire les mêmes données, et non les adresses où LiftRadar les récupère. <code>conditions</code> donnent les valeurs actuelles, <code>resort_info</code> seulement ce qui ne change pas (la taille du domaine skiable). <code>attribution_required</code> vaut <code>true</code> si les conditions de la source demandent d'être citée, <code>false</code> sinon et <code>null</code> si nous ne l'avons pas vérifié : traitez-le comme <code>true</code>. <code>sources</code> est obsolète : il liste les mêmes pages en simples URL et sera supprimé.",
-    "en": "9435e062"
+    "text": "<code>source_details</code> liste les sources dont un bulletin est issu, chacune une fois, par la page d'accueil de son site, où l'on trouve les mêmes données (et non les adresses où LiftRadar les récupère) ; une page est donnée à la place s'il s'agit d'une page de crédits ou de licence, ou si les conditions de la source demandent un lien vers elle (la page de la station sur Fnugg). <code>conditions</code> donnent les valeurs actuelles, <code>resort_info</code> seulement ce qui ne change pas (la taille du domaine skiable). <code>attribution_required</code> vaut <code>true</code> si les conditions de la source demandent d'être citée, <code>false</code> sinon et <code>null</code> si nous ne l'avons pas vérifié : traitez-le comme <code>true</code>. <code>sources</code> est obsolète : il liste les mêmes adresses en simples URL et sera supprimé.",
+    "en": "83ac53c5"
   },
   "in preparation": "en préparation",
   "unknown": "inconnu",

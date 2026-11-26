@@ -237,9 +237,12 @@
   "About the Data – LiftRadar": "Informazioni sui dati – LiftRadar",
   "This part of the page is available in English only.": "Questa parte della pagina è disponibile solo in inglese.",
   "Data Sources – LiftRadar": "Fonti dei dati – LiftRadar",
-  "Every page in the current data": "Tutte le pagine nei dati attuali",
+  "Every source in the current data": "Tutte le fonti nei dati attuali",
   "How values are calculated, and their caveats: <a href=\"about.html\">About the data</a>.": "Come vengono calcolati i valori e i loro limiti: <a href=\"about.html\">Informazioni sui dati</a>.",
-  "{pages} pages on {sites} websites, used for {n} resorts.": "{pages} pagine su {sites} siti, usate per {n} stazioni.",
+  "{n} websites": {
+    "one": "{n} sito",
+    "other": "{n} siti"
+  },
   "Not Found – LiftRadar": "Non trovata – LiftRadar",
   "Page not found": "Pagina non trovata",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "A questo indirizzo non c'è nulla. <a href=\"/\">Tutte le stazioni →</a>",
@@ -416,12 +419,12 @@
   "Resort information": "Informazioni sulla località",
   "Current conditions": "Condizioni attuali",
   "sources-kinds": {
-    "text": "Le pagine delle condizioni attuali danno stato, impianti, piste, neve e pericolo valanghe; le pagine con le informazioni sulla località danno ciò che non cambia, come le dimensioni del comprensorio. «Citazione della fonte richiesta» indica una fonte i cui termini chiedono di essere citata; per le altre non l'abbiamo ancora verificato, quindi supponete che la chiedano.",
-    "en": "19e4bb75"
+    "text": "Le fonti delle condizioni attuali danno stato, impianti, piste, neve e pericolo valanghe; le fonti con le informazioni sulla località danno ciò che non cambia, come le dimensioni del comprensorio. Ognuna è indicata con il suo sito, dove trovate gli stessi dati. «Citazione della fonte richiesta» indica una fonte i cui termini chiedono di essere citata; per le altre non l'abbiamo ancora verificato, quindi supponete che la chiedano.",
+    "en": "38588686"
   },
   "api-source-details": {
-    "text": "<code>source_details</code> elenca le pagine da cui è stato creato un bollettino: le pagine pubbliche dove si possono leggere gli stessi dati, non gli indirizzi da cui LiftRadar li legge. <code>conditions</code> danno i valori attuali, <code>resort_info</code> solo ciò che non cambia (le dimensioni del comprensorio). <code>attribution_required</code> è <code>true</code> se i termini della fonte chiedono di citarla, <code>false</code> se non lo chiedono e <code>null</code> se non l'abbiamo ancora verificato: trattatelo come <code>true</code>. <code>sources</code> è deprecato: elenca le stesse pagine come semplici URL e verrà rimosso.",
-    "en": "9435e062"
+    "text": "<code>source_details</code> elenca le fonti da cui è stato creato un bollettino, ognuna una volta, con la pagina iniziale del suo sito, dove si trovano gli stessi dati (non gli indirizzi da cui LiftRadar li legge); al suo posto una pagina, se è una pagina di crediti o di licenza o se i termini della fonte chiedono un link a essa (la pagina della località su Fnugg). <code>conditions</code> danno i valori attuali, <code>resort_info</code> solo ciò che non cambia (le dimensioni del comprensorio). <code>attribution_required</code> è <code>true</code> se i termini della fonte chiedono di citarla, <code>false</code> se non lo chiedono e <code>null</code> se non l'abbiamo ancora verificato: trattatelo come <code>true</code>. <code>sources</code> è deprecato: elenca gli stessi indirizzi come semplici URL e verrà rimosso.",
+    "en": "83ac53c5"
   },
   "in preparation": "in preparazione",
   "unknown": "sconosciuto",

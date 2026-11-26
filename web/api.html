@@ -152,10 +152,12 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
     <li data-i18n="api-times"><code>fetched_at</code> is when we read the report and <code>lifts_updated_at</code> is the resort's own report
       time, <code>null</code> if its source has none. <code>status_from</code> is set when the latest run couldn't read
       the report, and gives the time of the run the values come from.</li>
-    <li data-i18n="api-source-details"><code>source_details</code> lists the pages a report was built from: the public pages where you can read
-      the same data, not the addresses LiftRadar reads it from. <code>conditions</code> give current values, <code>resort_info</code> only what stays the same (the size of the ski area). <code>attribution_required</code>
+    <li data-i18n="api-source-details"><code>source_details</code> lists the sources a report was built from, each once, by its website's home
+      page, where you can find the same data (not the addresses LiftRadar reads it from); a page is listed instead where
+      it's a credit or licence page, or where the source's terms ask for a link to it (the resort's page at Fnugg).
+      <code>conditions</code> give current values, <code>resort_info</code> only what stays the same (the size of the ski area). <code>attribution_required</code>
       is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code>
-      where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as
+      where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same addresses as
       plain URLs, and will be removed.</li>
     <li data-i18n="api-linked-area"><code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs
       (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link

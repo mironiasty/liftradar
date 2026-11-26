@@ -242,9 +242,14 @@
   "About the Data – LiftRadar": "O danych – LiftRadar",
   "This part of the page is available in English only.": "Ta część strony jest dostępna tylko po angielsku.",
   "Data Sources – LiftRadar": "Źródła danych – LiftRadar",
-  "Every page in the current data": "Wszystkie strony w bieżących danych",
+  "Every source in the current data": "Wszystkie źródła w bieżących danych",
   "How values are calculated, and their caveats: <a href=\"about.html\">About the data</a>.": "Jak obliczane są wartości i jakie mają ograniczenia: <a href=\"about.html\">O danych</a>.",
-  "{pages} pages on {sites} websites, used for {n} resorts.": "{pages} stron w {sites} serwisach, użytych dla {n} ośrodków.",
+  "{n} websites": {
+    "one": "{n} serwis",
+    "few": "{n} serwisy",
+    "many": "{n} serwisów",
+    "other": "{n} serwisu"
+  },
   "Not Found – LiftRadar": "Nie znaleziono – LiftRadar",
   "Page not found": "Nie znaleziono strony",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "Pod tym adresem nic nie ma. <a href=\"/\">Wszystkie ośrodki →</a>",
@@ -421,12 +426,12 @@
   "Resort information": "Informacje o ośrodku",
   "Current conditions": "Aktualne warunki",
   "sources-kinds": {
-    "text": "Strony z aktualnymi warunkami podają status, wyciągi, trasy, śnieg i zagrożenie lawinowe; strony z informacjami o ośrodku podają to, co się nie zmienia, np. wielkość obszaru narciarskiego. „Wymagane podanie źródła” oznacza źródło, którego warunki wymagają jego wskazania; w pozostałych jeszcze tego nie sprawdziliśmy, więc załóż, że tak jest.",
-    "en": "19e4bb75"
+    "text": "Źródła z aktualnymi warunkami podają status, wyciągi, trasy, śnieg i zagrożenie lawinowe; źródła z informacjami o ośrodku podają to, co się nie zmienia, np. wielkość obszaru narciarskiego. Każde jest podane jako jego serwis, gdzie znajdziesz te same dane. „Wymagane podanie źródła” oznacza źródło, którego warunki wymagają jego wskazania; w pozostałych jeszcze tego nie sprawdziliśmy, więc załóż, że tak jest.",
+    "en": "38588686"
   },
   "api-source-details": {
-    "text": "<code>source_details</code> wymienia strony, z których powstał raport: publiczne strony, na których można przeczytać te same dane, a nie adresy, z których pobiera je LiftRadar. <code>conditions</code> dają aktualne wartości, <code>resort_info</code> tylko to, co się nie zmienia (wielkość obszaru narciarskiego). <code>attribution_required</code> to <code>true</code>, gdy warunki źródła wymagają jego wskazania, <code>false</code>, gdy nie, i <code>null</code>, gdy jeszcze tego nie sprawdziliśmy: traktuj to jak <code>true</code>. <code>sources</code> jest przestarzałe: wymienia te same strony jako zwykłe adresy URL i zostanie usunięte.",
-    "en": "9435e062"
+    "text": "<code>source_details</code> wymienia źródła, z których powstał raport, każde raz, jako stronę główną jego serwisu, na którym można znaleźć te same dane (a nie adresy, z których pobiera je LiftRadar); zamiast niej podana jest konkretna strona, gdy jest to strona z podziękowaniem lub licencją albo gdy warunki źródła wymagają linku do niej (strona ośrodka w Fnugg). <code>conditions</code> dają aktualne wartości, <code>resort_info</code> tylko to, co się nie zmienia (wielkość obszaru narciarskiego). <code>attribution_required</code> to <code>true</code>, gdy warunki źródła wymagają jego wskazania, <code>false</code>, gdy nie, i <code>null</code>, gdy jeszcze tego nie sprawdziliśmy: traktuj to jak <code>true</code>. <code>sources</code> jest przestarzałe: wymienia te same adresy jako zwykłe adresy URL i zostanie usunięte.",
+    "en": "83ac53c5"
   },
   "in preparation": "w przygotowaniu",
   "unknown": "nieznany",

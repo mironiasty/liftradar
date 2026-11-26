@@ -42,7 +42,7 @@ and the short way to run it, is in the [README](README.md).
   its history), `area.html?g=<group>` (a linked ski area or a pass from `json/groups.json`: its totals, its
   resorts ranked and on the map, its lifts and slopes, and its season so far, summed from the members' files),
   each country's page (`/austria`, `/de/oesterreich`…, a country at a glance; see [Country pages](#country-pages)),
-  `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every URL in the
+  `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every website in the
   current data), `about.html` (what the values mean, and their caveats) and `privacy.html` (the privacy policy
   of the site and the phone apps, the URL the app stores ask for: keep it in step with what they download), plain
   static pages that load the JSON in the browser. No build step locally. Everything the site serves is in `web/`
@@ -103,11 +103,11 @@ history, and a section for developers) is on the site: [About the data](https://
 (`resort.schema.json`, `index.schema.json`, `history.schema.json`, `stats.schema.json`).
 
 Where each resort's data comes from is on [Sources](https://liftradar.eu/sources.html) (`sources.html`, which lists
-every URL in the current data) and, with what isn't covered yet, in `../liftradar-fetcher/README.md`, "Sources".
+every website in the current data) and, with what isn't covered yet, in `../liftradar-fetcher/README.md`, "Sources".
 
-Each file's `source_details` lists the public pages of the sources used for that report (never the addresses the fetcher
-reads: an API, a JSON file), as pages with current conditions and pages with the
-resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
+Each file's `source_details` lists the sources used for that report, each once, by its website's home page (never the
+addresses the fetcher reads: an API, a JSON file; a page only for credit and licence pages and the resort's Fnugg page),
+as sources with current conditions and sources with the resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
 the site shows them on `sources.html` and the resort page, and falls back to the deprecated `sources` (plain URLs) for
 data published before `source_details`.
 

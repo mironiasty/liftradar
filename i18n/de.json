@@ -236,9 +236,12 @@
   "About the Data – LiftRadar": "Über die Daten – LiftRadar",
   "This part of the page is available in English only.": "Dieser Teil der Seite ist nur auf Englisch verfügbar.",
   "Data Sources – LiftRadar": "Datenquellen – LiftRadar",
-  "Every page in the current data": "Alle Seiten in den aktuellen Daten",
+  "Every source in the current data": "Alle Quellen in den aktuellen Daten",
   "How values are calculated, and their caveats: <a href=\"about.html\">About the data</a>.": "Wie die Werte berechnet werden und was dabei zu beachten ist: <a href=\"about.html\">Über die Daten</a>.",
-  "{pages} pages on {sites} websites, used for {n} resorts.": "{pages} Seiten auf {sites} Websites, verwendet für {n} Skigebiete.",
+  "{n} websites": {
+    "one": "{n} Website",
+    "other": "{n} Websites"
+  },
   "Not Found – LiftRadar": "Nicht gefunden – LiftRadar",
   "Page not found": "Seite nicht gefunden",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "Unter dieser Adresse gibt es nichts. <a href=\"/\">Alle Skigebiete →</a>",
@@ -415,12 +418,12 @@
   "Resort information": "Informationen zum Skigebiet",
   "Current conditions": "Aktuelle Bedingungen",
   "sources-kinds": {
-    "text": "Seiten mit aktuellen Bedingungen liefern Status, Lifte, Pisten, Schnee und Lawinengefahr; Seiten mit Skigebietsinformationen liefern, was gleich bleibt, etwa die Größe des Skigebiets. „Quellenangabe erforderlich“ kennzeichnet eine Quelle, deren Bedingungen eine Nennung verlangen; bei den anderen haben wir das noch nicht geprüft, gehen Sie also davon aus, dass sie eine verlangen.",
-    "en": "19e4bb75"
+    "text": "Quellen mit aktuellen Bedingungen liefern Status, Lifte, Pisten, Schnee und Lawinengefahr; Quellen mit Skigebietsinformationen liefern, was gleich bleibt, etwa die Größe des Skigebiets. Jede ist mit ihrer Website genannt, wo Sie dieselben Daten finden. „Quellenangabe erforderlich“ kennzeichnet eine Quelle, deren Bedingungen eine Nennung verlangen; bei den anderen haben wir das noch nicht geprüft, gehen Sie also davon aus, dass sie eine verlangen.",
+    "en": "38588686"
   },
   "api-source-details": {
-    "text": "<code>source_details</code> listet die Seiten, aus denen ein Bericht erstellt wurde: die öffentlichen Seiten, auf denen dieselben Daten zu lesen sind, nicht die Adressen, von denen LiftRadar sie abruft. <code>conditions</code> liefern aktuelle Werte, <code>resort_info</code> nur, was gleich bleibt (die Größe des Skigebiets). <code>attribution_required</code> ist <code>true</code>, wenn die Bedingungen der Quelle eine Nennung verlangen, <code>false</code>, wenn nicht, und <code>null</code>, wenn wir es noch nicht geprüft haben: behandeln Sie es als <code>true</code>. <code>sources</code> ist veraltet: es listet dieselben Seiten als einfache URLs und wird entfernt.",
-    "en": "9435e062"
+    "text": "<code>source_details</code> listet die Quellen, aus denen ein Bericht erstellt wurde, jede einmal, mit der Startseite ihrer Website, auf der dieselben Daten zu finden sind (nicht die Adressen, von denen LiftRadar sie abruft); stattdessen eine Seite, wenn es eine Seite mit Quellenangabe oder Lizenz ist oder die Bedingungen der Quelle einen Link darauf verlangen (die Seite des Skigebiets bei Fnugg). <code>conditions</code> liefern aktuelle Werte, <code>resort_info</code> nur, was gleich bleibt (die Größe des Skigebiets). <code>attribution_required</code> ist <code>true</code>, wenn die Bedingungen der Quelle eine Nennung verlangen, <code>false</code>, wenn nicht, und <code>null</code>, wenn wir es noch nicht geprüft haben: behandeln Sie es als <code>true</code>. <code>sources</code> ist veraltet: es listet dieselben Adressen als einfache URLs und wird entfernt.",
+    "en": "83ac53c5"
   },
   "in preparation": "in Vorbereitung",
   "unknown": "unbekannt",
