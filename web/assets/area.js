@@ -35,79 +35,13 @@ function requested() {
   return /^[a-z0-9][a-z0-9-]*$/.test(id) ? id : null;
 }
 
-// As setResortAddress (common.js): the page's own address for search engines, once it knows the group.
-/** @param {string} id */
-function setAreaAddress(id) {
-  const links = /** @type {NodeListOf<HTMLLinkElement>} */ (
-    document.querySelectorAll('link[rel="alternate"][hreflang]')
-  );
-  for (const link of links) link.href += `?g=${id}`;
-  const own = [...links].find((link) => link.hreflang === document.documentElement.lang);
-  if (own) document.head.append(el("link", { rel: "canonical", href: own.href }));
-}
-
-/** @param {number | null | undefined} open @param {number | null | undefined} total */
-function meter(open, total) {
-  if (!present(open) || !total) return el("div", { class: "meter", "aria-hidden": "true" });
-  return el(
-    "div",
-    { class: "meter", "aria-hidden": "true" },
-    el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` }),
-  );
-}
-
-/** @param {string} title @param {any} value @param {...(string | HTMLElement | null)} notes */
-function tile(title, value, ...notes) {
-  return el(
-    "div",
-    { class: "tile" },
-    el("div", { class: "label" }, title),
-    el("div", { class: "value" }, ...[value].flat()),
-    ...notes.filter(Boolean).map((note) => (typeof note === "string" ? el("div", { class: "note" }, note) : note)),
-  );
-}
-
-/**
- * The group's totals: open lifts, slopes and km of its open resorts, out of all its resorts' (those that give them).
- * @param {IndexResort[]} members
- */
-function totals(members) {
-  const sum = (/** @type {(r: IndexResort) => number | null | undefined} */ value, onlyOpen = false) => {
-    const values = members
-      .filter((r) => !onlyOpen || statusKey(r) === "open")
-      .map(value)
-      .filter(present);
-    return values.length ? values.reduce((a, b) => a + b, 0) : null;
-  };
-  return {
-    open: members.filter((r) => statusKey(r) === "open").length,
-    liftsOpen: sum((r) => r.lifts?.open, true) ?? 0,
-    lifts: sum((r) => r.lifts?.total),
-    slopesOpen: sum((r) => r.slopes?.open, true) ?? 0,
-    slopes: sum((r) => r.slopes?.total),
-    kmOpen: sum((r) => r.slopes?.open_km, true) ?? 0,
-    km: sum((r) => r.slopes?.total_km),
-  };
-}
-
-// The highest value among the open resorts, and whose it is (closed resorts' snow is often last season's).
-/** @param {IndexResort[]} members @param {(r: IndexResort) => number | null | undefined} value */
-function highest(members, value) {
-  let best = /** @type {{ v: number, r: IndexResort } | null} */ (null);
-  for (const r of members) {
-    const v = value(r);
-    if (statusKey(r) === "open" && present(v) && v > 0 && (!best || v > best.v)) best = { v, r };
-  }
-  return best;
-}
-
 /** @param {Groups["groups"][string]} group @param {IndexResort[]} members */
 function tiles(group, members) {
-  const s = totals(members);
+  const s = openTotals(members);
   const share = (open, total) =>
     s.open && total ? t("{share}% open", { share: Math.round((100 * open) / total) }) : null;
-  const snow = highest(members, (r) => r.snow.mountain_cm);
-  const fresh = highest(members, (r) => r.snow.fresh_cm);
+  const snow = highest(members, (r) => r.snow.mountain_cm, true);
+  const fresh = highest(members, (r) => r.snow.fresh_cm, true);
   const danger = members.reduce((most, r) => Math.max(most, r.avalanche?.danger_level ?? 0), 0);
   const dangerOf = members.find((r) => r.avalanche?.danger_level === danger)?.avalanche;
   // A linked area leads with its km, as it sells itself; a pass with how many of its resorts are open.
@@ -171,23 +105,6 @@ function places(members) {
   ].flatMap((link, i) => (i ? [" · ", link] : [link]));
 }
 
-// When the data was read, as the pill over the home page's table: clicked, it says when we read the reports.
-/** @param {Index} index */
-function updatedPill(index) {
-  const clock = el("span", { class: "clock", "aria-hidden": "true" });
-  clock.innerHTML =
-    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"' +
-    ' stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
-  const menu = el(
-    "details",
-    { class: "updated-menu" },
-    el("summary", { class: "updated" }, clock, el("span", {}, updatedText(index))),
-    el("div", {}, t("We read the reports twice a day, at about 08:40 and 13:40 CET.")),
-  );
-  closeOnOutside(/** @type {HTMLDetailsElement} */ (menu));
-  return menu;
-}
-
 /** @param {Groups["groups"][string]} group @param {IndexResort[]} members @param {Index} index */
 function header(group, members, index) {
   const kind = group.kind === "linked" ? t("Linked ski area") : t("Ski region");
@@ -212,22 +129,6 @@ function header(group, members, index) {
         : t("Resorts that share a ski pass or an operator, but aren't linked by lifts."),
     ),
   );
-}
-
-// The line under a resort's name: its status, then its lifts and slopes, open of all while it's open.
-/** @param {IndexResort} r */
-function memberLine(r) {
-  const status = statusKey(r);
-  const open = status === "open";
-  const { lifts, slopes } = r;
-  const parts = [capitalized(STATUS_LABELS[status])];
-  if (lifts?.total) parts.push(t("{n} lifts", { n: open ? pair(lifts.open, lifts.total) : lifts.total }));
-  if (slopes?.total_km) {
-    parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
-  } else if (slopes?.total) {
-    parts.push(t("{n} slopes", { n: open ? pair(slopes.open, slopes.total) : slopes.total }));
-  }
-  return parts.join(" · ");
 }
 
 // A resort's lifts and slopes in the list, each over a bar of how much of it is open (empty unless the resort is):
@@ -272,13 +173,13 @@ function memberCard(group, resorts) {
             class: "area-bar",
             role: "img",
             // What the bar shows, in words: each resort's line, as in the list under it.
-            "aria-label": `${t("Open slopes by resort")}: ${known.map((r) => `${r.name}, ${memberLine(r)}`).join("; ")}`,
+            "aria-label": `${t("Open slopes by resort")}: ${known.map((r) => `${r.name}, ${statusLine(r)}`).join("; ")}`,
           },
           ...known.map((r) => {
             const open = statusKey(r) === "open" ? (r.slopes?.total_km ? r.slopes.open_km : r.lifts?.open) : 0;
             const part = el(
               "span",
-              { style: `flex:${size(r)}`, title: `${r.name}: ${memberLine(r)}` },
+              { style: `flex:${size(r)}`, title: `${r.name}: ${statusLine(r)}` },
               el("i", { style: `width:${Math.min(100, (100 * (open ?? 0)) / size(r))}%` }),
             );
             return part;
@@ -443,7 +344,7 @@ async function areaMap(members, container) {
   const view = loading.then((ski) => {
     const bounds = new maplibregl.LngLatBounds();
     for (const r of members) {
-      const area = ski?.resorts.get(skiKey(r));
+      const area = ski?.resorts.get(resortKey(r));
       if (area) bounds.extend(geometryBounds(area.geometry));
       else if (r.location) bounds.extend([r.location.lon, r.location.lat]);
     }
@@ -461,7 +362,7 @@ async function areaMap(members, container) {
     loading,
   ]);
   map.once("click", () => map.scrollZoom.enable());
-  const areas = members.map((r) => ski?.resorts.get(skiKey(r))).filter((area) => area !== undefined);
+  const areas = members.map((r) => ski?.resorts.get(resortKey(r))).filter((area) => area !== undefined);
   if (areas.length) {
     map.addSource("areas", { type: "geojson", data: { type: "FeatureCollection", features: areas } });
     map.addLayer(
@@ -476,8 +377,8 @@ async function areaMap(members, container) {
   }
   const pistes = addPistes(map, ski, {
     // The group's resorts strong, their neighbours faded, as the resort page's map does with its resort.
-    highlight: members.map(skiKey),
-    names: new Map(members.map((r) => [skiKey(r), r.name])),
+    highlight: members.map(resortKey),
+    names: new Map(members.map((r) => [resortKey(r), r.name])),
     // From the zoom the map opens at, down to 10: a large pass's whole map would be many tiles.
     minZoom: Math.max(10, Math.min(SKI_MIN_ZOOM, Math.floor(map.getZoom()))),
   });
@@ -573,7 +474,7 @@ async function show() {
   const group = groups[id];
   if (!group) return fail(t("There's no such ski area."));
   document.title = `${group.name} – LiftRadar`;
-  setAreaAddress(id);
+  setPageAddress(`g=${id}`);
   /** @type {Map<string, IndexResort>} */
   const resorts = new Map(
     index.resorts.filter((r) => group.members.includes(resortKey(r))).map((r) => [resortKey(r), r]),

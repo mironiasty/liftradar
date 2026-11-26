@@ -59,16 +59,16 @@ function countryPagePath(code) {
   if (!slug) return `./?${new URLSearchParams({ country: code })}`;
   return `${LANG === "en" ? "" : `/${LANG}`}/${slug}`;
 }
-// The resort and 3D pages are the same HTML for every resort until their script runs: once it has the resort,
-// this gives the page its own address for search engines (its canonical, and its translations' in the
-// page's <link rel="alternate">), so they aren't taken for duplicates of each other. Those are the addresses
-// Cloudflare serves, without .html.
-/** @param {{ country: string, id: string }} r */
-function setResortAddress(r) {
+// The resort, 3D and ski area pages are the same HTML for every resort or area until their script runs: once it
+// knows which (query: "r=at/soelden", "g=les-3-vallees"), this gives the page its own address for search engines
+// (its canonical, and its translations' in the page's <link rel="alternate">), so they aren't taken for duplicates
+// of each other. Those are the addresses Cloudflare serves, without .html.
+/** @param {string} query */
+function setPageAddress(query) {
   const links = /** @type {NodeListOf<HTMLLinkElement>} */ (
     document.querySelectorAll('link[rel="alternate"][hreflang]')
   );
-  for (const link of links) link.href += `?r=${r.country}/${r.id}`;
+  for (const link of links) link.href += `?${query}`;
   const own = [...links].find((link) => link.hreflang === document.documentElement.lang);
   if (own) document.head.append(el("link", { rel: "canonical", href: own.href }));
 }
@@ -247,6 +247,23 @@ function updatedText(index) {
   return t("Updated {time}", { time: formatted });
 }
 
+// When the data was read, as the pill over the home page's table: clicked, it says when we read the reports.
+/** @param {Index} index */
+function updatedPill(index) {
+  const clock = el("span", { class: "clock", "aria-hidden": "true" });
+  clock.innerHTML =
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"' +
+    ' stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+  const menu = el(
+    "details",
+    { class: "updated-menu" },
+    el("summary", { class: "updated" }, clock, el("span", {}, updatedText(index))),
+    el("div", {}, t("We read the reports twice a day, at about 08:40 and 13:40 CET.")),
+  );
+  closeOnOutside(/** @type {HTMLDetailsElement} */ (menu));
+  return menu;
+}
+
 // A <details> popover closes on a click elsewhere and on Escape, like the language menu.
 /** @param {HTMLDetailsElement} details */
 function closeOnOutside(details) {
@@ -353,20 +370,33 @@ function liftLoader({ caption = true, small = false } = {}) {
 
 // Shared by the resort and area pages: a ski area's members, and the step charts of their history.
 
-// The line under a group member's name, as the apps' lists have it: open, how many lifts and km of slopes are open,
-// the snow on the mountain and the fresh snow; closed or without a report, that and how many it has.
-/** @param {IndexResort} r */
-function memberSummary(r) {
-  const status = statusKey(r);
-  const open = status === "open";
-  const { lifts, slopes, snow } = r;
-  const parts = open ? [] : [capitalized(STATUS_LABELS[status])];
+// A resort's lifts and slopes in words: how many are open of all while it's open, else how many it has.
+/** @param {IndexResort} r @returns {string[]} */
+function liftsAndSlopes(r) {
+  const open = statusKey(r) === "open";
+  const { lifts, slopes } = r;
+  const parts = [];
   if (lifts?.total) parts.push(t("{n} lifts", { n: open ? pair(lifts.open, lifts.total) : lifts.total }));
   if (slopes?.total_km) {
     parts.push(open ? pair(slopes.open_km, slopes.total_km, " km") : t("{km} km of slopes", { km: slopes.total_km }));
   } else if (slopes?.total) {
     parts.push(t("{n} slopes", { n: open ? pair(slopes.open, slopes.total) : slopes.total }));
   }
+  return parts;
+}
+
+// A resort's status, then its lifts and slopes: the ski area and country pages' lines and tooltips.
+/** @param {IndexResort} r */
+const statusLine = (r) => [capitalized(STATUS_LABELS[statusKey(r)]), ...liftsAndSlopes(r)].join(" · ");
+
+// The line under a group member's name, as the apps' lists have it: open, how many lifts and km of slopes are open,
+// the snow on the mountain and the fresh snow; closed or without a report, that and how many it has.
+/** @param {IndexResort} r */
+function memberSummary(r) {
+  const status = statusKey(r);
+  const open = status === "open";
+  const { snow } = r;
+  const parts = [...(open ? [] : [capitalized(STATUS_LABELS[status])]), ...liftsAndSlopes(r)];
   if (open && snow.mountain_cm !== null && snow.mountain_cm !== undefined) parts.push(`${snow.mountain_cm} cm`);
   // Not "summary": the page's key numbers have that class, a grid that would put the fresh snow on a line of its own.
   const line = el("div", { class: "meta numbers" }, parts.join(" · ") || capitalized(STATUS_LABELS[status]));
@@ -542,4 +572,67 @@ function chart(title, unit, colour, points) {
   };
   new ResizeObserver(draw).observe(box);
   return box;
+}
+
+// The key numbers' tiles on the resort, ski area and country pages: a label, the value, and notes under it.
+
+/** @param {number | null | undefined} open @param {number | null | undefined} total */
+function meter(open, total) {
+  if (!present(open) || !total) return el("div", { class: "meter", "aria-hidden": "true" });
+  return el(
+    "div",
+    { class: "meter", "aria-hidden": "true" },
+    el("span", { style: `width:${Math.min(100, (100 * open) / total)}%` }),
+  );
+}
+
+/** @param {string} title @param {any} value @param {...(string | HTMLElement | null | undefined)} notes */
+function tile(title, value, ...notes) {
+  return el(
+    "div",
+    { class: "tile" },
+    el("div", { class: "label" }, title),
+    el("div", { class: "value" }, ...[value].flat()),
+    ...notes.filter(Boolean).map((note) => (typeof note === "string" ? el("div", { class: "note" }, note) : note)),
+  );
+}
+
+/**
+ * Resorts' totals: how many are open, and the open lifts, slopes and km of the open ones out of all the resorts'
+ * (of those that give them: null when none does).
+ * @param {IndexResort[]} resorts
+ */
+function openTotals(resorts) {
+  const sum = (/** @type {(r: IndexResort) => number | null | undefined} */ value, onlyOpen = false) => {
+    const values = resorts
+      .filter((r) => !onlyOpen || statusKey(r) === "open")
+      .map(value)
+      .filter(present);
+    return values.length ? values.reduce((a, b) => a + b, 0) : null;
+  };
+  return {
+    open: resorts.filter((r) => statusKey(r) === "open").length,
+    liftsOpen: sum((r) => r.lifts?.open, true) ?? 0,
+    lifts: sum((r) => r.lifts?.total),
+    slopesOpen: sum((r) => r.slopes?.open, true) ?? 0,
+    slopes: sum((r) => r.slopes?.total),
+    kmOpen: sum((r) => r.slopes?.open_km, true) ?? 0,
+    km: sum((r) => r.slopes?.total_km),
+  };
+}
+
+// The resort with the highest value, and the value; only among the open ones when `onlyOpen` (a closed resort's
+// snow is often last season's).
+/**
+ * @param {IndexResort[]} resorts
+ * @param {(r: IndexResort) => number | null | undefined} value
+ * @returns {{ v: number, r: IndexResort } | null}
+ */
+function highest(resorts, value, onlyOpen = false) {
+  let best = /** @type {{ v: number, r: IndexResort } | null} */ (null);
+  for (const r of resorts) {
+    const v = value(r);
+    if ((!onlyOpen || statusKey(r) === "open") && present(v) && v > 0 && (!best || v > best.v)) best = { v, r };
+  }
+  return best;
 }

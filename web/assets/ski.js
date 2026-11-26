@@ -27,12 +27,9 @@ async function loadSki() {
   }
 }
 
-/** @param {{ country: string, id: string }} r */
-const skiKey = (r) => `${r.country}/${r.id}`;
-
 // The resort's point on the map, [lon, lat]: in its ski area when the tiles have one.
 function skiPoint(r, ski) {
-  const point = ski?.resorts.get(skiKey(r))?.properties.point;
+  const point = ski?.resorts.get(resortKey(r))?.properties.point;
   if (point) return point;
   return r.location ? [r.location.lon, r.location.lat] : null;
 }
