@@ -50,6 +50,9 @@ MAX_DROP = 0.15
 MIN_LIFTS = 25000  # about 32,000 in November 2026
 MIN_RUNS = 180000  # about 231,000 in November 2026
 MIN_AREAS = 6000  # downhill areas, or with lifts: about 7,100 in November 2026
+# The lifts and runs given to a resort, without a previous build to compare with too (it couldn't be read, say).
+MIN_LIFTS_LR = 9000  # about 11,100 in November 2026
+MIN_RUNS_LR = 50000  # about 62,600 in November 2026
 M_PER_DEG = 111_320
 
 
@@ -378,6 +381,8 @@ def build(args) -> dict:
     resort_elevations = lift_links.elevations(tile_lifts)
     print(f"bottom and top of {len(resort_elevations)} resorts")
     digest.update(lift_links.write_elevations(new, resort_elevations, args.data_time).encode())
+    # The schema and the attribution go out with the tiles too: a change to either is a new build.
+    digest.update(SCHEMA.read_bytes() + ATTRIBUTION.encode())
 
     counts = {
         "tiles": len(tiles),
@@ -470,6 +475,10 @@ def check(counts: dict, previous: str | None) -> list[str]:
         problems.append(f"{counts['runs']} runs, fewer than {MIN_RUNS}")
     if counts["areas"] < MIN_AREAS:
         problems.append(f"{counts['areas']} areas, fewer than {MIN_AREAS}")
+    if counts["lifts_lr"] < MIN_LIFTS_LR:
+        problems.append(f"{counts['lifts_lr']} lifts given to a resort, fewer than {MIN_LIFTS_LR}")
+    if counts["runs_lr"] < MIN_RUNS_LR:
+        problems.append(f"{counts['runs_lr']} runs given to a resort, fewer than {MIN_RUNS_LR}")
     if previous and Path(previous).exists():
         before = json.loads(Path(previous).read_text(encoding="utf-8"))["counts"]
         for key in ("lifts", "runs", "areas", "lifts_lr", "runs_lr"):

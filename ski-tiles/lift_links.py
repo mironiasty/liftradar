@@ -18,6 +18,9 @@ details' `map_length_m` (DEVELOPMENT.md "Ski tiles").
 ski_tiles.py calls `link` and `lengths` while it builds the tiles. To link tiles that are already built (e.g. to try it out):
 
     python3 ski-tiles/lift_links.py ../liftradar-data/json ski
+
+Its lengths are measured on the tiles' simplified lines, so they come out a little shorter than the build's, which
+measures the full ones: for trying the matching out, not for lengths.json on the site.
 """
 
 import argparse
@@ -454,16 +457,22 @@ def write_lengths(out: Path, measured: dict, data_time: str | None) -> str:
 
 
 ELEVATIONS_FILE = "elevations.json"
+# Rack railways (OpenSkiData's "railway": the Bayerische Zugspitzbahn, the Tramway du Mont-Blanc, the
+# Wendelsteinbahn) keep their resort in the tiles, for a GPS track that rides them, but aren't counted
+# among its lifts (ski_resorts.py), drawn in its outline or taken for its bottom and top: they're mapped as dozens
+# of segments, most of them far below the area.
+NOT_COUNTED = {"railway"}
 # Lifts kept on the map for old tracks, but no longer the resort's.
 GONE = {"disused", "abandoned"}
 
 
 def elevations(lifts: list[dict]) -> dict:
     """Each resort's lowest and highest point on its lifts (`lr`), `[lon, lat, elevation]`: its bottom and top, for
-    elevations.json. Resorts whose lifts have no elevations are left out."""
+    elevations.json. Resorts whose lifts have no elevations are left out, and so are rack railways, which keep their
+    resort in the tiles but often start far below its area (the Bayerische Zugspitzbahn in Garmisch, at 706 m)."""
     ends = {}
     for lift in lifts:
-        if not (key := lift.get("lr")) or lift.get("status") in GONE:
+        if not (key := lift.get("lr")) or lift.get("status") in GONE or lift.get("type") in NOT_COUNTED:
             continue
         for point in lift.get("c") or []:
             if len(point) < 3:

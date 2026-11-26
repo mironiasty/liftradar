@@ -15,7 +15,8 @@ json/index.json; the rules it checks are ski_resorts.py's (DEVELOPMENT.md, "Ski 
   `git show origin/main:ski-tiles/ski_overrides.json`) to compare with a run on those overrides:
   without it the comparison is with the tiles, which were built from an older index, so a few
   resorts change for that reason alone. Runs aren't in it (their share follows the lifts'), so
-  check the map once the tiles are built.
+  check the map once the tiles are built. The tiles keep only an area's first OSM id: a claim
+  naming another of its ids is listed as matching no ski area here, though it does in the build.
 """
 
 import argparse
