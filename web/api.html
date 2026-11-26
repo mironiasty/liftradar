@@ -73,7 +73,7 @@
     </nav>
   </header>
   <h1 data-i18n>API</h1>
-  <p data-i18n>All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>,
+  <p data-i18n="api-intro">All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>,
     readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.</p>
   <p data-i18n>AI assistants can read the same data through the <a href="#mcp">MCP server</a>, also with no key.</p>
   <p data-i18n>For code generators and API tools, every file is described in <a href="/openapi.json">OpenAPI 3.1</a>.</p>
@@ -92,7 +92,7 @@
 
   <h2 id="mcp">MCP</h2>
   <pre><code>https://liftradar.eu/mcp</code></pre>
-  <p data-i18n>For AI assistants, the same data is an <a href="https://modelcontextprotocol.io">MCP</a> server, with no key:
+  <p data-i18n="api-mcp">For AI assistants, the same data is an <a href="https://modelcontextprotocol.io">MCP</a> server, with no key:
     add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find
     resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its lifts and
     slopes one by one, its history and the daily stats.</p>
@@ -100,24 +100,24 @@
 
   <h2 id="resorts" data-i18n>All resorts</h2>
   <pre><code>GET https://liftradar.eu/json/index.json</code></pre>
-  <p data-i18n>Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level,
+  <p data-i18n="api-resorts">Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level,
     location and the <a href="#groups">groups</a> it's in (<a href="/schema/index.schema.json">schema</a>). Each resort's <code>country</code> and <code>id</code> give the
     address of its full report.</p>
 
   <h2 id="resort" data-i18n>One resort</h2>
   <pre><code>GET https://liftradar.eu/json/&lt;country&gt;/&lt;id&gt;.json</code></pre>
-  <p data-i18n>One resort's full report (<a href="/schema/resort.schema.json">schema</a>): everything in the list, plus snow
+  <p data-i18n="api-resort">One resort's full report (<a href="/schema/resort.schema.json">schema</a>): everything in the list, plus snow
     stations, lifts by type, slopes by difficulty, the avalanche bulletin and the reports it was built from. For example
     <a href="/json/at/hintertux.json"><code>json/at/hintertux.json</code></a>. The <code>id</code> is in the address of each
     resort's page on this site.</p>
-  <p data-i18n><code>country</code> is the ISO code in lower case: <code>ad</code>, <code>at</code>, <code>ch</code>, <code>cz</code>,
+  <p data-i18n="api-ids"><code>country</code> is the ISO code in lower case: <code>ad</code>, <code>at</code>, <code>ch</code>, <code>cz</code>,
     <code>de</code>, <code>es</code>, <code>fi</code>, <code>fr</code>, <code>it</code>, <code>no</code>, <code>pl</code>,
     <code>si</code>, <code>sk</code>. These addresses stay: when resorts merge, the old ones keep working as copies of the new one's.</p>
   <pre><code>curl -s https://liftradar.eu/json/at/hintertux.json | jq '{status, snow: .snow.mountain_cm, lifts}'</code></pre>
 
   <h2 id="history" data-i18n>History</h2>
   <pre><code>GET https://liftradar.eu/history/&lt;country&gt;/&lt;id&gt;.json</code></pre>
-  <p data-i18n>The key numbers of every run over the last 365 days, one list per value: <code>time</code>, <code>status</code>,
+  <p data-i18n="api-history">The key numbers of every run over the last 365 days, one list per value: <code>time</code>, <code>status</code>,
     open and total lifts and slopes, open km and snow depths (<a href="/schema/history.schema.json">schema</a>). Data has
     been collected since 24 October 2026.</p>
 
@@ -128,7 +128,7 @@
 
   <h2 id="groups" data-i18n>Resort groups</h2>
   <pre><code>GET https://liftradar.eu/json/groups.json</code></pre>
-  <p data-i18n>The groups of resorts we list separately, by id: ski areas linked by lifts and runs (<code>linked</code>,
+  <p data-i18n="api-groups">The groups of resorts we list separately, by id: ski areas linked by lifts and runs (<code>linked</code>,
     e.g. Les 3 Vallées) and passes or regions whose areas aren't linked (<code>region</code>, e.g. Dolomiti Superski),
     each with its name, website and members as <code>&lt;country&gt;/&lt;id&gt;</code>
     (<a href="/schema/groups.schema.json">schema</a>).</p>
@@ -137,7 +137,7 @@
   <pre><code>GET https://liftradar.eu/ski/v1/10/&lt;x&gt;/&lt;y&gt;.json
 GET https://liftradar.eu/ski/v1/resorts.geojson
 GET https://liftradar.eu/ski/v1/meta.json</code></pre>
-  <p data-i18n>The lifts, pistes and ski areas of OpenSkiData in map tiles (XYZ, zoom 10), each with its resort here when it
+  <p data-i18n="api-ski-map">The lifts, pistes and ski areas of OpenSkiData in map tiles (XYZ, zoom 10), each with its resort here when it
     has one (<a href="/ski/v1/tile.schema.json">schema</a>), and each resort's outline and point on the map. The build and
     counts are in <code>meta.json</code>. Rebuilt weekly, under the
     <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a>: data from OpenSkiData, © OpenStreetMap contributors.</p>
@@ -146,18 +146,18 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
   <ul>
     <li data-i18n><code>null</code> means the source doesn't publish the value. <code>status</code> is never <code>null</code>:
       it's <code>open</code>, <code>closed</code> or <code>no_report</code>.</li>
-    <li data-i18n>With <code>no_report</code>, <code>lifts.open</code> is 0 and <code>slopes.open</code> is <code>null</code>. With
+    <li data-i18n="api-no-report">With <code>no_report</code>, <code>lifts.open</code> is 0 and <code>slopes.open</code> is <code>null</code>. With
       <code>closed</code>, the snow depths and <code>condition</code> are <code>null</code>;
       <code>last_snowfall</code> and station measurements stay.</li>
-    <li data-i18n><code>fetched_at</code> is when we read the report and <code>lifts_updated_at</code> is the resort's own report
+    <li data-i18n="api-times"><code>fetched_at</code> is when we read the report and <code>lifts_updated_at</code> is the resort's own report
       time, <code>null</code> if its source has none. <code>status_from</code> is set when the latest run couldn't read
       the report, and gives the time of the run the values come from.</li>
-    <li data-i18n><code>source_details</code> lists the pages a report was built from: the public pages where you can read
+    <li data-i18n="api-source-details"><code>source_details</code> lists the pages a report was built from: the public pages where you can read
       the same data, not the addresses LiftRadar reads it from. <code>conditions</code> give current values, <code>resort_info</code> only what stays the same (the size of the ski area). <code>attribution_required</code>
       is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code>
       where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as
       plain URLs, and will be removed.</li>
-    <li data-i18n><code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs
+    <li data-i18n="api-linked-area"><code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs
       (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link
       (<code>dolomiti-superski</code>); look them up in <a href="#groups"><code>json/groups.json</code></a>. Both are left
       out for a resort that isn't in such a group.</li>
@@ -166,7 +166,7 @@ GET https://liftradar.eu/ski/v1/meta.json</code></pre>
   <p data-i18n>What the numbers mean, and where they can mislead, is on <a href="about.html">About the data</a>.</p>
 
   <h2 id="polling" data-i18n>Polling</h2>
-  <p data-i18n>The data changes twice a day, at about 08:40 and 13:40 CET, so there's no point reading it more often
+  <p data-i18n="api-polling">The data changes twice a day, at about 08:40 and 13:40 CET, so there's no point reading it more often
     than hourly. The files have an <code>ETag</code>: send <code>If-None-Match</code> and an unchanged file costs nothing.
     Questions, or a use we should know about: miron [at] liftradar.eu.</p>
 

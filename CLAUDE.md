@@ -19,7 +19,9 @@ the section you're changing first, and keep it up to date in the same change.
 - `/de/`, `/fr/`, `/it/` and `/pl/` are generated on deploy from the English pages and `i18n/<language>.json`
   (DEVELOPMENT.md "Translations"). Always edit the English, and translate in the same change: after editing text marked
   `data-i18n` or in `t("…")`, including `about.html`, `npm run check` lists what's missing in each language and the
-  old entries to replace.
+  old entries to replace. A block over 200 characters has a name (`data-i18n="about-…"`): after editing one, `npm run
+  check` lists its translations as outdated; update them, or `node scripts/translate.mjs --accept <name>` when the
+  change doesn't touch the meaning (a typo).
 - Users poll `json/<country>/<id>.json` directly: those URLs are a public
   contract.
 - The data's fields are type checked (DEVELOPMENT.md "Type check"): when a page reads a new part of the data, give

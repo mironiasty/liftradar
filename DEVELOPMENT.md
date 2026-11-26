@@ -178,8 +178,8 @@ The site is written in English; `/de/`, `/fr/`, `/it/` and `/pl/` are generated 
 `scripts/translate.mjs`, from `i18n/<language>.json`, which map English to each language. The data stays at the root, and isn't translated (`condition`
 is in the source's language). What can be translated:
 
-- In the HTML, an element marked `data-i18n` (its inner HTML is the key), and `aria-label`, `placeholder`,
-  `title` and `alt`.
+- In the HTML, an element marked `data-i18n` (its inner HTML is the key, or the name it's given), and
+  `aria-label`, `placeholder`, `title` and `alt`.
 - In the scripts, `t("…")`, with a literal string, `{names}` for values, and an object of plural forms in the
   dictionary. Text after a `|` isn't shown in English: it tells apart words that need two translations.
 - `<div lang="en">` marks what stays English for now (the source lists in `sources.html`).
@@ -187,7 +187,16 @@ is in the source's language). What can be translated:
 Always edit the English; never the generated pages. Each marked block's English text is its key in the
 dictionary, so a changed block shows in English until it's translated, and can't show an outdated translation.
 `npm run check` lists what's missing and what's no longer used (the old text's entry, to replace), and fails
-if a translation loses a `{name}` or a tag. It also generates the translated pages (as below) and validates them
+if a translation loses a `{name}` or a tag.
+
+A block over 200 characters (the long paragraphs of the text pages) has a name instead, `data-i18n="about-sources"`
+(the page and what the block is about), so a small edit doesn't mean pasting the whole paragraph again in each
+dictionary. Its translation records the English it was made from, as a fingerprint:
+`"about-sources": {"text": "Jede Zahl …", "en": "46873d6a"}`. After the English changes, the old translation
+still shows, and `npm run check` lists it as outdated: update the translation and its `en` (or, when the change
+doesn't touch the meaning, a typo, say, `node scripts/translate.mjs --accept about-sources` updates the
+fingerprints in every language). `npm run check` fails on a block over 200 characters without a name, and on a
+named block's translation without `en`. It also generates the translated pages (as below) and validates them
 with the English ones.
 
 `assets/lang.js` sends visitors arriving on an English page to the translation their browser prefers. The
