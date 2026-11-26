@@ -1,5 +1,5 @@
 {
-  // Type check of assets/*.js (npm run check), one project per page, as the pages load the scripts: they
+  // Type check of web/assets/*.js (npm run check), one project per page, as the pages load the scripts: they
   // share their top-level names. The pages load the files as they are, so this only checks; see DEVELOPMENT.md "Type check".
   "files": [],
   "references": [

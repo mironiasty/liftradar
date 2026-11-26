@@ -1,4 +1,4 @@
-[![LiftRadar: status of ski resorts across Europe](assets/og.png)](https://liftradar.eu)
+[![LiftRadar: status of ski resorts across Europe](web/assets/og.png)](https://liftradar.eu)
 
 # liftradar
 

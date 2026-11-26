@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Builds each country's page from scripts/country.html, at its own address in each language (DEVELOPMENT.md "Country pages"):
-// /austria, /de/oesterreich, /fr/autriche… (assets/countries.js). Each page comes with its title, description,
+// /austria, /de/oesterreich, /fr/autriche… (web/assets/countries.js). Each page comes with its title, description,
 // language alternates and what search engines read without running scripts (the country's resorts, region by
-// region), from json/index.json; assets/country.js then draws the page from the data.
+// region), from json/index.json; web/assets/country.js then draws the page from the data.
 //
 //   node scripts/countries.mjs <site directory>            from <dir>/json/index.json, in the build (build.mjs)
 //   node scripts/countries.mjs <directory> --sample        from made-up resorts, for npm run check (English in en/)
@@ -24,7 +24,7 @@ const escaped = (text) =>
 const glued = (text) => String(text).replace(/(\d) /g, "$1\u00a0");
 const prefix = (language) => (language === "en" ? "" : `/${language}`);
 
-// As t() in assets/common.js: the translation, its plural form chosen by {n}, with its {names} filled in.
+// As t() in web/assets/common.js: the translation, its plural form chosen by {n}, with its {names} filled in.
 function translator(language, strings, seen) {
   return (text, values = {}) => {
     seen?.used.add(text);
@@ -266,7 +266,7 @@ export function writeCountryPages(out, index, { sample: made = false, seen = {},
   const shown = made ? codes : [...new Set((index?.resorts ?? []).map((r) => r.country))];
   if (index) {
     const missing = [...new Set(index.resorts.map((r) => r.country))].filter((c) => !codes.includes(c));
-    for (const code of missing) console.warn(`No page for ${code}: add its addresses to assets/countries.js`);
+    for (const code of missing) console.warn(`No page for ${code}: add its addresses to web/assets/countries.js`);
   }
   let written = 0;
   for (const { language, strings } of [{ language: "en", strings: {} }, ...languages()]) {

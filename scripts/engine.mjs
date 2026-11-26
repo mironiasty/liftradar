@@ -4,7 +4,7 @@
 // own address and can be cached for good; the pin goes to <site>/engine.json too, for the page to
 // know which to load (not under /engine/, cached for good). Locally (DEVELOPMENT.md "3D engine", and npm run
 // dev when it's missing) and in the build (build.mjs):
-//   node scripts/engine.mjs [site]      (site: where the pages are, this folder when left out)
+//   node scripts/engine.mjs [site]      (site: where the pages are, web/ when left out)
 // An engine change reaches the site only when engine.json's pin moves.
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -14,10 +14,10 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const site = resolve(process.argv[2] ?? root);
+const site = resolve(process.argv[2] ?? join(root, "web"));
 const { tag, sha256 } = JSON.parse(readFileSync(join(root, "engine.json"), "utf8"));
 const out = join(site, "engine", tag);
-// Which version the page loads (assets/scene.js): the pin itself, at the top of the site.
+// Which version the page loads (web/assets/scene.js): the pin itself, at the top of the site.
 writeFileSync(join(site, "engine.json"), `${JSON.stringify({ tag, sha256 }, null, 2)}\n`);
 if (existsSync(join(out, "viewer.js"))) {
   console.log(`engine ${tag}: already in ${out}`);

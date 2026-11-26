@@ -218,7 +218,7 @@ function itemName(d, item, ...before) {
   return cell;
 }
 
-/** @param {import("../types/resort-details").DetailsLift} l */
+/** @param {import("../../types/resort-details").DetailsLift} l */
 const hasHeights = (l) => Boolean(l.bottom_m && l.top_m);
 
 // How far each lift climbs: by its stations' heights where the source gives them (few do), else ≈ by its line on
@@ -237,11 +237,11 @@ function liftList(d) {
 }
 
 /**
- * @param {ResortDetails} d @param {import("../types/resort-details").DetailsLift[]} lifts
+ * @param {ResortDetails} d @param {import("../../types/resort-details").DetailsLift[]} lifts
  * @param {MapItems} onMap
  */
 function liftTable(d, lifts, onMap) {
-  /** @param {import("../types/resort-details").DetailsLift} l */
+  /** @param {import("../../types/resort-details").DetailsLift} l */
   const rise = (l) => {
     if (l.bottom_m && l.top_m) return { m: Math.abs(l.top_m - l.bottom_m), map: false };
     const m = onMap?.rise(`${d.country}/${d.id}/${l.id}`);

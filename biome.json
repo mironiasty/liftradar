@@ -1,7 +1,14 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.4/schema.json",
   "files": {
-    "includes": ["assets/*.js", "assets/*.css", "scripts/*.mjs", "worker/*.js", "types/globals.d.ts", "!!**/.claude"]
+    "includes": [
+      "web/assets/*.js",
+      "web/assets/*.css",
+      "scripts/*.mjs",
+      "worker/*.js",
+      "types/globals.d.ts",
+      "!!**/.claude"
+    ]
   },
   "formatter": {
     "indentStyle": "space",
@@ -97,7 +104,7 @@
   },
   "overrides": [
     {
-      "includes": ["assets/common.js", "assets/countries.js", "assets/ski.js", "assets/basemap.js"],
+      "includes": ["web/assets/common.js", "web/assets/countries.js", "web/assets/ski.js", "web/assets/basemap.js"],
       "linter": {
         "rules": {
           "correctness": {

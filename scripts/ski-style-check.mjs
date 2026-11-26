@@ -1,9 +1,9 @@
-// Checks assets/ski-style.json (DEVELOPMENT.md "Ski map style"), which the site and the apps read: every "@name" is a colour
+// Checks web/assets/ski-style.json (DEVELOPMENT.md "Ski map style"), which the site and the apps read: every "@name" is a colour
 // of both themes or a definition, and the layers, with the names replaced as the clients do, are a valid MapLibre style.
 import { readFileSync } from "node:fs";
 import { validateStyleMin } from "@maplibre/maplibre-gl-style-spec";
 
-const style = JSON.parse(readFileSync(new URL("../assets/ski-style.json", import.meta.url), "utf8"));
+const style = JSON.parse(readFileSync(new URL("../web/assets/ski-style.json", import.meta.url), "utf8"));
 const problems = [];
 const light = Object.keys(style.colors.light).sort().join();
 if (light !== Object.keys(style.colors.dark).sort().join()) problems.push("light and dark name different colours");
@@ -40,7 +40,7 @@ for (const theme of ["light", "dark"]) {
 }
 
 if (problems.length) {
-  console.error(`assets/ski-style.json:\n  ${[...new Set(problems)].join("\n  ")}`);
+  console.error(`web/assets/ski-style.json:\n  ${[...new Set(problems)].join("\n  ")}`);
   process.exit(1);
 }
-console.log(`assets/ski-style.json: ${style.layers.length} layers, valid`);
+console.log(`web/assets/ski-style.json: ${style.layers.length} layers, valid`);

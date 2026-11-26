@@ -1045,7 +1045,7 @@ function orbitControls(map) {
 
 /** The names over the engine's land that are written (places', lifts', slopes'), as last chosen in this browser. */
 const NAME_LAYERS = "liftradar.names";
-/** @returns {import("../types/viewer").LabelLayers} */
+/** @returns {import("../../types/viewer").LabelLayers} */
 function nameLayers() {
   const all = { places: true, lifts: true, pistes: true };
   try {
@@ -1054,7 +1054,7 @@ function nameLayers() {
     return all;
   }
 }
-/** @param {import("../types/viewer").LabelLayers} layers */
+/** @param {import("../../types/viewer").LabelLayers} layers */
 function keepNameLayers(layers) {
   try {
     localStorage.setItem(NAME_LAYERS, JSON.stringify(layers));
@@ -1074,7 +1074,7 @@ const GEAR =
 /**
  * A name over the engine's land: a place's in a pale pill (larger for a village or bigger), a lift's
  * after a small gondola, a slope's after a dot in its colour on the signs.
- * @param {import("../types/viewer").MapLabel} label
+ * @param {import("../../types/viewer").MapLabel} label
  */
 function nameOverLand({ kind, name, x, y, major, colour }) {
   const style = `left:${x}px;top:${y}px`;
@@ -1094,12 +1094,12 @@ function nameOverLand({ kind, name, x, y, major, colour }) {
  * engine isn't there or can't draw the resort: the diorama instead.
  * @param {HTMLElement} section
  * @param {string} key
- * @returns {Promise<import("../types/viewer").MountedResort | null>}
+ * @returns {Promise<import("../../types/viewer").MountedResort | null>}
  */
 async function mountEngine(section, key) {
   try {
     const pin = await (await fetch("/engine.json")).json();
-    /** @type {typeof import("../types/viewer")} */
+    /** @type {typeof import("../../types/viewer")} */
     const viewer = await import(`/engine/${pin.tag}/viewer.js`);
     if (!(await viewer.supported())) return null;
     const canvas = el("canvas", { class: "engine" });
@@ -1136,7 +1136,7 @@ async function mountEngine(section, key) {
       node.addEventListener("click", onClick);
       return node;
     };
-    /** @type {import("../types/viewer").MountedResort | null} */
+    /** @type {import("../../types/viewer").MountedResort | null} */
     let view = null;
     const compass = button("compass", t("Face north"), () => view?.faceNorth());
     const needle = /** @type {HTMLElement} */ (compass.firstElementChild);
@@ -1201,7 +1201,7 @@ async function mountEngine(section, key) {
 /**
  * What the engine says was clicked, as a small card at the click: a lift's name, type and number,
  * seats, capacity, length and climb; a piste's name or number, difficulty and length.
- * @param {import("../types/viewer").Picked} picked
+ * @param {import("../../types/viewer").Picked} picked
  */
 function pickedCard(picked) {
   const number = (n) => Math.round(n).toLocaleString(LANG);
@@ -1243,7 +1243,7 @@ const clock = (hour) => `${Math.floor(hour)}:${String(Math.round((hour % 1) * 60
 
 /**
  * A slider for where the sun is over the engine's view, by the hour today: from sunrise to sunset there.
- * @param {import("../types/viewer").MountedResort} engine
+ * @param {import("../../types/viewer").MountedResort} engine
  */
 function sunSlider(engine) {
   const [from, to] = engineDaylight;
@@ -1394,7 +1394,7 @@ async function show() {
     // by the zoom: the places' from afar, every lift's closer, every slope's closer still; the choice kept
     // in this browser), and the sun's hour.
     const layers = nameLayers();
-    /** @param {keyof import("../types/viewer").LabelLayers} key @param {string} label */
+    /** @param {keyof import("../../types/viewer").LabelLayers} key @param {string} label */
     const layer = (key, label) => {
       const pill = el("button", { type: "button", "aria-pressed": String(layers[key]) }, label);
       pill.addEventListener("click", () => {

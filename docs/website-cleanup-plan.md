@@ -3,8 +3,8 @@
 Response to [issue #91](https://github.com/mironiasty/liftradar/issues/91) (Tim Maurice Bayer's proposal), checked
 against `main` at 4a821dea (2026-11-25). Each step is its own PR with no change in behaviour.
 
-**Status (2026-11-25):** A, B, C and E are done; the CDN hashes from "Small extras" are in #97. D and F
-are open.
+**Status (2026-11-26):** A, B, C, E and D1 (`web/`) are done; the CDN hashes from "Small extras" are in #97.
+D2 and F are open.
 
 ## Order
 
@@ -13,7 +13,7 @@ are open.
 | A | Cache rules for versioned assets, plus a guard that every asset link is versioned | 2 | take, with the guard | done, #94 |
 | B | Page CSS out of `<style>`: shared rules into `style.css`, the rest into `assets/<page>.css` | 1 | take, dedupe rather than only move | done, #95 (merged only what was identical) |
 | C | `scripts/build.mjs` (what `pages.yml` does), `npm run build` / `preview` / `dev`, one list of pages | 3 (first half) | take | done, #96 |
-| D | Website into `web/`, ski-tile pipeline into its own folder | 3 (second half) | take after C, optional | open |
+| D | Website into `web/`, ski-tile pipeline into its own folder | 3 (second half) | take after C, optional | D1 `web/` done; D2 `ski-tiles/` open |
 | E | Split `resort.js` by job (now 7 jobs, weather included) | 4 | take, widen the `[a-z]+` patterns in the same PR | done, #100 |
 | F | Named keys for long translations, keeping stale-translation detection | 5 | take only with a fingerprint | open |
 | — | Vite | 6 | not now | — |
@@ -77,14 +77,71 @@ Write them to a temporary or build folder instead.
 
 ## D. `web/` folder (issue step 3, second half)
 
-Worth it for a clean root, but only after C, and as its own PR, because it touches more than code: this
-CLAUDE.md, `../liftradar-fetcher/CLAUDE.md` (its checklist names site paths), the README, `jsconfig.json` /
-`types/pages/*.json`, `biome.json`, `.gitignore`. Git follows the renames, so history is fine.
+Worth it for a clean root, now that C is in. Two PRs, each with no change in behaviour; planned 2026-11-26
+against `main` at 29ebcade (#107). Git follows the renames, so history is fine: keep the `git mv` in a commit of its
+own and the path fixes in the next, so the review and `git log --follow` stay readable.
 
-If we do it, also give the Python ski-tile pipeline its own folder (`scripts/ski_*.py`, `lift_links.py`,
-`mini_map.py`, `ski_overrides.json`, `ski-tile.schema.json`): it is tooling for `ski.yml`, not the website, and
-today sits next to the site's own scripts. (Done separately: the old mockups in `design/` and `missing-sizes.csv`
-are gone, and the plans in `docs/` are committed.)
+### What goes where
+
+- **`web/`**: what is served. The 10 `*.html` pages, `assets/`, `.well-known/`, `_headers`, `robots.txt`,
+  `openapi.json`.
+- **Stays at the root**: `i18n/` (input of the build, not served; TrailRider's `tools/i18n.mjs` points at
+  `liftradar/i18n`), `engine.json` (the pin), `scripts/`, `types/`, `worker/`, `docs/`, the config files.
+  `scripts/country.html` stays too: in `web/`, `PAGES` (every `*.html` there) would take it for a page and serve it
+  at `/country`.
+- **Local links into `web/`** (git-ignored): `web/json`, `web/history`, `web/schema`, `web/ski`, and the engine in
+  `web/engine/` with its copy `web/engine.json`. Then `web/` runs under any static server
+  (`python3 -m http.server -d web`), and `--data` defaults to `web/`. Today `engine.mjs` overwrites the pin at the
+  root with the same content; after the move the pin and its copy are different files.
+
+### D1. The website into `web/`
+
+1. `git mv` the files above.
+2. Scripts:
+   - `translate.mjs`: a `repo` and a `web` folder; `PAGES` and `read("assets", …)` from `web/`, `i18n/` from the
+     root.
+   - `build.mjs`: copy `web/` whole, without the data links and `engine` (no more `SITE_FILES` list); `--data`
+     defaults to `web/`.
+   - `serve.mjs`: pages and files from `web/`, the engine checked in `web/engine`, `--data` defaults to `web/`.
+   - `engine.mjs`: the site folder defaults to `web/` (the pin is still read from the root).
+   - `ski-style-check.mjs`: `../web/assets/ski-style.json`. `types.mjs`: the schemas from `web/schema`.
+3. Types: `types/pages/*.json` (9 files) `../../assets/` → `../../web/assets/`; the JSDoc `import("../types/…")` in
+   `scene.js` and `resort-lists.js` → `../../types/…`.
+4. Config: `biome.json` `includes` and `overrides` → `web/assets/*`; `package.json` `html-validate 'web/*.html'`;
+   `.gitignore` the links and the engine under `/web/`. `wrangler.jsonc` and `pages.yml`'s build call stay (still
+   `_site`): only comments change.
+5. Docs: `README.md` (its header image `assets/og.png` → `web/assets/og.png`), `DEVELOPMENT.md` (every path, the
+   `ln -sfn` command, which now links into `web/`, the og-image command), `CLAUDE.md`, comments in `worker/mcp.js`.
+6. Outside this repo: the checklist in `../liftradar-fetcher/CLAUDE.md` names site paths (`assets/common.js`,
+   `index.html`, `about.html`…): a commit there. Locally: the `site` entry in `.claude/launch.json`, and the data
+   links made again.
+
+Check: `npm run build` on real data before and after, and compare the `_site` trees (file list and contents, with
+`?v=…` stripped): they should be identical. Then `npm run check`, `npm run dev` through the pages in all five
+languages, `npm run preview` with `/mcp`. The addresses and the deploy don't change, so `json/<country>/<id>.json`
+is safe.
+
+### D2. The ski-tile pipeline into `ski-tiles/`
+
+`ski_tiles.py`, `ski_resorts.py`, `lift_links.py`, `ski_split_check.py`, `ski_overrides.json`,
+`ski-tile.schema.json`. Not `ski/`: that's the data's name. `mini_map.py` and `og-image.svg` stay in `scripts/`:
+they make the site's images.
+
+- `ski.yml` and `ski-assign.yml` (their `paths` filters and calls), ruff in `npm run check` (`scripts ski-tiles`),
+  `types.mjs` (the tiles' schema), `DEVELOPMENT.md`, the fetcher's `CLAUDE.md` (`ski_overrides.json`).
+- Catch: `ski-assign.yml` runs `ski_split_check.py` on both sides, `base` and `site`, and in the PR that moves it
+  `base` still has the old layout. Pick the folder for each side (`ski-tiles` when it's there, else `scripts`),
+  and drop that once it's merged.
+- Its own PR, as it touches other workflows than the deploy.
+
+### Order and risks
+
+- Open #57 changes `assets/`: merge or close it before D1, or rebase it after (git follows the renames). The
+  Dependabot PRs don't collide.
+- Start from a fresh `main`.
+
+(Done separately: the old mockups in `design/` and `missing-sizes.csv` are gone, and the plans in `docs/` are
+committed.)
 
 ## E. Split `resort.js` (issue step 4)
 

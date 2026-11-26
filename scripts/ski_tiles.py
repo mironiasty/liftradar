@@ -432,7 +432,7 @@ def refs_of(run: dict) -> list[str]:
 def shared_edges(runs: list) -> None:
     """OpenSkiData makes a stretch two pistes share a run of its own, numbered for both ("22, 19") and as
     hard as the easier, so the harder one seems to stop there. `shared` names the harder difficulty, whose
-    colour the maps draw along its edges (assets/ski-style.json): the hardest piste with one of those
+    colour the maps draw along its edges (web/assets/ski-style.json): the hardest piste with one of those
     numbers, harder than the stretch, that starts or ends within SHARED_END_M of it."""
     by_ref = defaultdict(list)
     for run in runs:
