@@ -13,7 +13,7 @@ with a known status. About 82% of the lifts and 72% of the slopes match, nearly 
 (docs/plans/2026-11-13-lift-details.md in liftradar-fetcher).
 
 `lengths` then measures the linked lifts and slopes on the map, for lengths.json, which liftradar-fetcher reads as the
-details' `map_length_m` (README "Ski tiles").
+details' `map_length_m` (DEVELOPMENT.md "Ski tiles").
 
 ski_tiles.py calls `link` and `lengths` while it builds the tiles. To link tiles that are already built (e.g. to try it out):
 
@@ -446,7 +446,7 @@ LENGTHS_FILE = "lengths.json"
 
 
 def write_lengths(out: Path, measured: dict, data_time: str | None) -> str:
-    """Write lengths.json next to the tiles (README "Ski tiles"); returns its text."""
+    """Write lengths.json next to the tiles (DEVELOPMENT.md "Ski tiles"); returns its text."""
     body = {"data_time": data_time, "resorts": measured}
     text = json.dumps(body, ensure_ascii=False, separators=(",", ":")) + "\n"
     (out / LENGTHS_FILE).write_text(text, encoding="utf-8")
@@ -474,7 +474,7 @@ def elevations(lifts: list[dict]) -> dict:
 
 
 def write_elevations(out: Path, found: dict, data_time: str | None) -> str:
-    """Write elevations.json next to the tiles (README "Ski tiles"); returns its text."""
+    """Write elevations.json next to the tiles (DEVELOPMENT.md "Ski tiles"); returns its text."""
     body = {"data_time": data_time, "resorts": found}
     text = json.dumps(body, ensure_ascii=False, separators=(",", ":")) + "\n"
     (out / ELEVATIONS_FILE).write_text(text, encoding="utf-8")

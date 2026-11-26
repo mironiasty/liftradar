@@ -12,7 +12,7 @@ function fail(message) {
   page.replaceChildren(el("p", {}, message, " ", el("a", { href: "./" }, t("See all resorts"))));
 }
 
-// The page's country, which scripts/countries.mjs puts on its <main> (README "Country pages").
+// The page's country, which scripts/countries.mjs puts on its <main> (DEVELOPMENT.md "Country pages").
 const requested = () => document.querySelector("main").dataset.country ?? null;
 
 /** @param {number | null | undefined} open @param {number | null | undefined} total */

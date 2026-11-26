@@ -1,4 +1,4 @@
-// Checks assets/ski-style.json (README "Ski map style"), which the site and the apps read: every "@name" is a colour
+// Checks assets/ski-style.json (DEVELOPMENT.md "Ski map style"), which the site and the apps read: every "@name" is a colour
 // of both themes or a definition, and the layers, with the names replaced as the clients do, are a valid MapLibre style.
 import { readFileSync } from "node:fs";
 import { validateStyleMin } from "@maplibre/maplibre-gl-style-spec";

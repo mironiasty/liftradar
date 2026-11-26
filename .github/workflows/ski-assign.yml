@@ -1,6 +1,6 @@
 name: Ski assignment
 
-# A pull request that changes how lifts are given to resorts (README "Ski tiles": ski_resorts.py and
+# A pull request that changes how lifts are given to resorts (DEVELOPMENT.md "Ski tiles": ski_resorts.py and
 # ski_overrides.json) lists the resorts whose lift count on the map changes, so the review sees them
 # before the tiles are built. ski_split_check.py --assign runs on the latest tiles (the release
 # ski-latest) and index, once with the base's rules and once with the change's, with the change's

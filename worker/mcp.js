@@ -1,4 +1,4 @@
-// The MCP server at https://liftradar.eu/mcp (README "MCP"), for AI assistants: a few tools over the same JSON
+// The MCP server at https://liftradar.eu/mcp (DEVELOPMENT.md "MCP"), for AI assistants: a few tools over the same JSON
 // files the site and the API serve. The rest of the site stays static: wrangler.jsonc sends only /mcp here
 // (assets.run_worker_first), and the tools read the files from the assets (env.ASSETS), so they always match
 // the site's data. Stateless: every request gets a new server, with no sessions to keep.

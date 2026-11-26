@@ -5,7 +5,7 @@ Writes `<out>/v1/10/{x}/{y}.json` (XYZ tiles at zoom 10, only those with lifts, 
 and runs), `<out>/v1/meta.json` and `<out>/v1/tile.schema.json`. Each lift and run gets the
 liftradar resort it belongs to (`lr`, "<country>/<id>"), when there is one (ski_resorts.py), and
 the item of a details file it matches (`item`, experimental; lift_links.py).
-The format is in README, "Ski tiles".
+The format is in DEVELOPMENT.md, "Ski tiles".
 
     for f in lifts runs ski_areas; do
       curl --compressed -o $f.geojson https://tiles.openskimap.org/geojson/$f.geojson

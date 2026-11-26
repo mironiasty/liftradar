@@ -1,12 +1,12 @@
 // Shared by the map and the resort page: each resort's outline and map point, and the pistes and
 // lifts drawn over the map, from the ski tiles (/ski/v1/, built weekly from OpenSkiData by
-// .github/workflows/ski.yml; README "Ski tiles"). Without them (not built yet, or locally) the
+// .github/workflows/ski.yml; DEVELOPMENT.md "Ski tiles"). Without them (not built yet, or locally) the
 // pages show the resorts at their location, without outlines, pistes or lifts.
 
 const SKI_URL = "/ski/v1";
 const SKI_ATTRIBUTION =
   '<a href="https://openskimap.org">OpenSkiData</a> (ODbL, © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors)';
-// How the maps draw the tiles, here and in the apps: colours, layers and what decides them (README "Ski map
+// How the maps draw the tiles, here and in the apps: colours, layers and what decides them (DEVELOPMENT.md "Ski map
 // style"). This file only turns the tiles into features for them, and adds the lifts' and pistes' statuses.
 const SKI_STYLE_URL = "/assets/ski-style.json";
 // Pistes and lifts appear from this zoom (the style's minZoom): below it they're only clutter, and many tiles.
@@ -216,7 +216,7 @@ function skiLayers(
   for (const id of Object.keys(ski.style.sources)) {
     map.addSource(id, { type: "geojson", data: empty, ...(id === "ski-runs" && { attribution: SKI_ATTRIBUTION }) });
   }
-  // Several resorts as "|at/a|at/b|", which the style finds each of in (README "Ski map style").
+  // Several resorts as "|at/a|at/b|", which the style finds each of in (DEVELOPMENT.md "Ski map style").
   map.setGlobalStateProperty(
     "highlight",
     Array.isArray(highlight) ? (highlight.length ? `|${highlight.join("|")}|` : "") : (highlight ?? ""),

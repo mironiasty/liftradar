@@ -30,7 +30,7 @@ jobs:
           ref: data
           path: data
 
-      # The ski tiles (README "Ski tiles"), built weekly by ski.yml into a release asset, next to the
+      # The ski tiles (DEVELOPMENT.md "Ski tiles"), built weekly by ski.yml into a release asset, next to the
       # data for the build. Without it (not built yet, or GitHub failing) the site goes out without
       # /ski/, which apps handle.
       - name: Add the ski tiles
@@ -49,11 +49,11 @@ jobs:
           cache-dependency-path: site/package-lock.json
 
       # esbuild for the build, and the MCP server's packages, bundled into the Worker by wrangler at
-      # the deploy (README "MCP").
+      # the deploy (DEVELOPMENT.md "MCP").
       - name: Install packages
         run: npm ci --prefix site
 
-      # The site and the data combined into _site/, as `npm run build` does locally (README
+      # The site and the data combined into _site/, as `npm run build` does locally (DEVELOPMENT.md
       # "Running locally"): the 3D engine, the translated pages, the sitemap, minified, the asset
       # links versioned.
       - name: Build

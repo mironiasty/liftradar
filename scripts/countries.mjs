@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Builds each country's page from scripts/country.html, at its own address in each language (README "Country pages"):
+// Builds each country's page from scripts/country.html, at its own address in each language (DEVELOPMENT.md "Country pages"):
 // /austria, /de/oesterreich, /fr/autriche… (assets/countries.js). Each page comes with its title, description,
 // language alternates and what search engines read without running scripts (the country's resorts, region by
 // region), from json/index.json; assets/country.js then draws the page from the data.

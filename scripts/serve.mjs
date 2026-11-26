@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-// Serves the site from the repo as it is, unbuilt, for working on it (README "Running locally"): `npm run dev`.
+// Serves the site from the repo as it is, unbuilt, for working on it (DEVELOPMENT.md "Running locally"): `npm run dev`.
 //
 //   node scripts/serve.mjs [--data <dir>] [--port 8000]
 //
-// --data: where json/, history/, schema/ and ski/ are (the data branch); this folder when left out, where README
+// --data: where json/, history/, schema/ and ski/ are (the data branch); this folder when left out, where DEVELOPMENT.md
 //         "Running locally" links them.
 // Each request reads the files again, so an edit shows on reload. /de/, /fr/, /it/ and /pl/ are translated as they're
 // asked for, from i18n/, and the country pages built (scripts/countries.mjs). As on Cloudflare, /about serves about.html, and a missing file 404.html. Only this computer

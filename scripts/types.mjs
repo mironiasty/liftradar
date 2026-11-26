@@ -1,6 +1,6 @@
 // TypeScript types of the data the pages read, generated from its JSON Schemas into types/, for the
 // type check of assets/*.js (jsconfig.json). The fetcher's schemas are read from schema/ (linked to the data,
-// README "Running locally"), the ski tiles' from scripts/ski-tile.schema.json.
+// DEVELOPMENT.md "Running locally"), the ski tiles' from scripts/ski-tile.schema.json.
 //
 //   node scripts/types.mjs           write types/*.d.ts
 //   node scripts/types.mjs --check   fail when they differ from the schemas (skipped without schema/)

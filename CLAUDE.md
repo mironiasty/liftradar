@@ -5,6 +5,10 @@ The website (branch `main`: plain static pages, no build step) for the data that
 this one at `../liftradar-fetcher`; its `src/liftradar_fetcher/models.py` defines the data format, and its
 README documents every source in detail.
 
+`README.md` is the short overview for visitors; how this repo works (what's in the data and the site, deploy,
+running locally, translations, country pages, MCP, ski tiles, 3D engine, scripts) is in `DEVELOPMENT.md`: read
+the section you're changing first, and keep it up to date in the same change.
+
 - Never edit the `data` branch by hand: every fetch run replaces it.
 - `about.html` and `sources.html` are the public description of liftradar-fetcher's output. Keep them
   in sync with what the fetcher does; when in doubt, check `../liftradar-fetcher/README.md` and the code
@@ -12,17 +16,17 @@ README documents every source in detail.
 - `../liftradar-fetcher/CLAUDE.md` has the full checklist of what to update here after a fetcher
   change, and which fields each page reads.
 - `/de/`, `/fr/`, `/it/` and `/pl/` are generated on deploy from the English pages and `i18n/<language>.json`
-  (README "Translations"). Always edit the English, and translate in the same change: after editing text marked
+  (DEVELOPMENT.md "Translations"). Always edit the English, and translate in the same change: after editing text marked
   `data-i18n` or in `t("…")`, including `about.html`, `npm run check` lists what's missing in each language and the
   old entries to replace.
 - Users poll `json/<country>/<id>.json` directly: those URLs are a public
   contract.
-- The data's fields are type checked (README "Type check"): when a page reads a new part of the data, give
+- The data's fields are type checked (DEVELOPMENT.md "Type check"): when a page reads a new part of the data, give
   it its type in JSDoc (`/** @param {Resort} r */`) rather than leaving it `any`; after the fetcher's schema
   changes, `npm run types`.
-- `worker/mcp.js` is the MCP server at `/mcp` (README "MCP"), the Worker's only script: its tools read the same
+- `worker/mcp.js` is the MCP server at `/mcp` (DEVELOPMENT.md "MCP"), the Worker's only script: its tools read the same
   files, so after a fetcher change check them too, and keep `api.html` ("MCP") in step with them.
-- TrailRider's 3D engine reaches the site as a release pinned in `engine.json` (README "3D engine"),
+- TrailRider's 3D engine reaches the site as a release pinned in `engine.json` (DEVELOPMENT.md "3D engine"),
   unpacked into `engine/` by `scripts/engine.mjs`: move the pin, never edit what's unpacked.
 - Run `npm run check` before committing (`npm run format` fixes the formatting). `package.json` is for
   these checks, for `scripts/build.mjs` (what `pages.yml` deploys: `npm run build`, then `npm run preview` to serve
