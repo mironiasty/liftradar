@@ -103,7 +103,7 @@ history, and a section for developers) is on the site: [About the data](https://
 (`resort.schema.json`, `index.schema.json`, `history.schema.json`, `stats.schema.json`).
 
 Where each resort's data comes from is on [Sources](https://liftradar.eu/sources.html) (`sources.html`, which lists
-every website in the current data) and, with what isn't covered yet, in `../liftradar-fetcher/README.md`, "Sources".
+every website in the current data) and, with what isn't covered yet, in `../liftradar-fetcher/docs/sources/` (one file per country).
 
 Each file's `source_details` lists the sources used for that report, each once, by its website's home page (never the
 addresses the fetcher reads: an API, a JSON file; a page only for credit and licence pages and the resort's Fnugg page),

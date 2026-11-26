@@ -77,7 +77,7 @@ OnTheSnow, has its 2026/27 prices.
 - **digisnow.app**: the widgets load their configuration from `<station>.digisnow.app/v1/widget/config/…` (JSON,
   layout only) and the states over MQTT (`wss.mqtt.digibox.app`, topics `DigiSnow/<station>/assets/all` and others),
   not over HTTP, with credentials written into the widget's script. Kept for later (decided 2026-11-18): the
-  details and what to check first are in liftradar-fetcher's README, "To do", France. Ask Lumiplan before using
+  details and what to check first are in liftradar-fetcher's `docs/todo.md`, France. Ask Lumiplan before using
   it.
 
 ## Added 2026-11-18: Italy ≥ 15 km
