@@ -27,7 +27,7 @@ separate commit per country.
 
 1. **Wave 1, now (Nov 2026): A and B ≥ 15 km, plus the unlisted French resorts.** 26 + 15 resorts, and Avoriaz,
    Saint-Lary, Val Cenis and the other big French ones. These are the gaps a reader notices. Many already
-   have leads in the fetcher README "To do" (Aramón's `partes/parteNieve` for Cerler, Javalambre,
+   have leads in the fetcher's `docs/todo.md` (Aramón's `partes/parteNieve` for Cerler, Javalambre,
    Valdelinares; Masella's `estado-pistas`; Skimore for Vierli; the Garmisch/Oberstdorf/Feldberg list).
 2. **Wave 2, early Dec: re-run B, and sweep C.** Most sites publish their first real report between late
    November and mid December. On 2026-12-15, list every group C resort still `no_report`, biggest first:
@@ -84,7 +84,7 @@ with at least 15 km, plus the unlisted French resorts. Each result is in the tab
 | Valdesquí | `valdesqui.es/valdesqui-hoy/` | every lift and slope, open/closed icon, counts and km |
 | Alto Campoo | `altocampoo.com/partes/parte-de-nieve-<dd-mm-yyyy>/` | update time, every slope with state, km by colour |
 | Beskid Sport Arena | `beskidsportarena.pl/szczyrk-trasy-narciarskie/` | 4 slopes, Otwarta/Zamknięta |
-| Jasná, Tatranská Lomnica, Szczyrk | TMR's `laravel.jasna.sk/api/<area>/{lanovky,snehove-zjazdovky}` | already planned (fetcher README To do); all six tables answer |
+| Jasná, Tatranská Lomnica, Szczyrk | TMR's `laravel.jasna.sk/api/<area>/{lanovky,snehove-zjazdovky}` | already planned (fetcher's `docs/todo.md`); all six tables answer |
 | Montgenèvre (not listed yet) | `montgenevre.com/hiver/en-direct/infos-neige/` | Lumiplan's digisnow rendered into the page: update time, open/total slopes by colour for Montgenèvre and the Voie Lactée, each slope and lift |
 
 **Waiting for the season (re-check mid December):** all 15 of group B except Baqueira. Their sources work
@@ -117,7 +117,7 @@ show nothing new: re-check in December.
 ## Implemented (2026-11-15, liftradar-fetcher, not committed yet)
 
 All read live, tested against pages saved on 15.11.2026 (before the season: everything closed). Each
-parser's open state is from the page's legend or code, not seen yet: the fetcher README "To do" lists
+parser's open state is from the page's legend or code, not seen yet: the fetcher's `docs/todo.md` lists
 what to check in December.
 
 | Resort(s) | Source as built | Notes |
