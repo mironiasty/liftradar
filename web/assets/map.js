@@ -389,7 +389,8 @@ function readFilter() {
   /** @type {MapFilter} */
   const filter = {
     status: new Set(list("status").filter((s) => STATUS[s])),
-    countries: new Set(list("country")),
+    // Country codes only: anything else (?country=aut) would stop the page in countryName().
+    countries: new Set(list("country").filter((c) => /^[a-z]{2}$/.test(c))),
     regions: new Set(params.getAll("region")),
     sizes: {},
   };
