@@ -10,13 +10,13 @@
     "format": "biome format --write && uvx ruff@0.17.3 format scripts ski-tiles"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.4",
-    "@maplibre/maplibre-gl-style-spec": "24.10.0",
+    "@biomejs/biome": "2.6.8",
+    "@maplibre/maplibre-gl-style-spec": "26.8.0",
     "@types/three": "0.187.0",
     "esbuild": "0.28.2",
-    "html-validate": "11.17.0",
+    "html-validate": "11.21.1",
     "json-schema-to-typescript": "16.0.0",
-    "maplibre-gl": "5.24.0",
+    "maplibre-gl": "6.19.0",
     "typescript": "7.0.2"
   },
   "dependencies": {
