@@ -15,6 +15,13 @@ const countryPage = document.getElementById("country-page");
 const empty = document.getElementById("empty");
 const favoritesSection = document.getElementById("favorites");
 const favoriteCards = document.getElementById("fav-cards");
+const more = document.getElementById("more");
+const moreButton = document.getElementById("show-more");
+// The first rows the filters leave, and as many again with each "Show more"; the filters search every row, and
+// a change to them starts again from the first rows.
+const PAGE = 50;
+let limit = PAGE;
+let lastFilter = "";
 let rows = [];
 const values = new Map();
 // What the search looks in, by row: the resort's name and those of its linked ski area and ski region (from
@@ -157,6 +164,8 @@ function row(r) {
 function filter() {
   const query = fold(search.value.trim());
   const region = regionSelect.value;
+  const chosen = [query, country, region, ...shownStatuses].join("\n");
+  if (chosen !== lastFilter) [limit, lastFilter] = [PAGE, chosen];
   let shown = 0;
   // A chip counts the resorts the other filters leave, whichever statuses are chosen.
   const totals = {};
@@ -167,9 +176,12 @@ function filter() {
       (!country || v.country === country) &&
       (!region || v.regionName === region);
     if (matches) totals[v.status] = (totals[v.status] ?? 0) + 1;
-    tr.hidden = !matches || (shownStatuses.size > 0 && !shownStatuses.has(v.status));
-    if (!tr.hidden) shown++;
+    const passes = matches && (shownStatuses.size === 0 || shownStatuses.has(v.status));
+    if (passes) shown++;
+    tr.hidden = !passes || shown > limit;
   }
+  more.hidden = shown <= limit;
+  moreButton.textContent = t("Show {n} more", { n: Math.min(PAGE, shown - limit) });
   for (const [status, node] of statusCounts) node.textContent = String(totals[status] ?? 0);
   searchClear.hidden = !search.value;
   const filtered = query || country || region || shownStatuses.size;
@@ -298,7 +310,8 @@ function sort() {
   }
   const chosen = SORTS.findIndex(([k, asc]) => k === key && asc === ascending);
   if (chosen >= 0) sortSelect.value = String(chosen);
-  saveState();
+  // The first rows of the new order (filter saves the state).
+  filter();
 }
 
 for (const button of document.querySelectorAll("th button")) {
@@ -310,6 +323,10 @@ for (const button of document.querySelectorAll("th button")) {
   });
 }
 search.addEventListener("input", filter);
+moreButton.addEventListener("click", () => {
+  limit += PAGE;
+  filter();
+});
 searchClear.addEventListener("click", () => {
   search.value = "";
   filter();
@@ -415,7 +432,6 @@ Promise.all([loadIndex(), loadGroups().catch(() => ({}))])
     }
     fillFilters(index.resorts);
     sort();
-    filter();
     miniMap(index.resorts).catch(() => {});
   })
   .catch((error) => {
