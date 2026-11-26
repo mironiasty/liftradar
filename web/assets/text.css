@@ -1,0 +1,62 @@
+/* The text pages' own styles (about, api, privacy, 404), after style.css. */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+h1 {
+  margin: 28px 0 4px;
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 32px 0 6px;
+  scroll-margin-top: 16px;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin: 6px 0;
+}
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.toc li {
+  margin: 0;
+}
+dt {
+  margin-top: 10px;
+  font-weight: 600;
+}
+dd {
+  margin: 0;
+}
+code {
+  overflow-wrap: anywhere;
+}
+h3 {
+  font-size: 1rem;
+  margin: 22px 0 4px;
+}
+pre {
+  overflow-x: auto;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  font-size: 0.85rem;
+}
+pre code {
+  overflow-wrap: normal;
+}
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 16px;
+}

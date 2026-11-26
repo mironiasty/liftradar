@@ -1,0 +1,138 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "85CCW66723.eu.liftradar.app"
+        ],
+        "components": [
+          {
+            "/": "/",
+            "comment": "The first page: the app's own first page (the app's DeepLink.swift)"
+          },
+          {
+            "/": "/resort",
+            "comment": "A resort's page, ?r=<country>/<id>[&view=3d]"
+          },
+          {
+            "/": "/resort/*"
+          },
+          {
+            "/": "/resort.html"
+          },
+          {
+            "/": "/3d",
+            "comment": "A resort in 3D, ?r=<country>/<id>: the app's 3D view"
+          },
+          {
+            "/": "/3d.html"
+          },
+          {
+            "/": "/map",
+            "comment": "The map, on the resort when ?r=<country>/<id>"
+          },
+          {
+            "/": "/map.html"
+          },
+          {
+            "/": "/de",
+            "comment": "The same pages in the site's other languages (DEVELOPMENT.md \"Translations\"); listed, not /<lang>/*, so that about, stats and the like stay the site's"
+          },
+          {
+            "/": "/de/"
+          },
+          {
+            "/": "/de/resort"
+          },
+          {
+            "/": "/de/resort.html"
+          },
+          {
+            "/": "/de/3d"
+          },
+          {
+            "/": "/de/3d.html"
+          },
+          {
+            "/": "/de/map"
+          },
+          {
+            "/": "/de/map.html"
+          },
+          {
+            "/": "/fr"
+          },
+          {
+            "/": "/fr/"
+          },
+          {
+            "/": "/fr/resort"
+          },
+          {
+            "/": "/fr/resort.html"
+          },
+          {
+            "/": "/fr/3d"
+          },
+          {
+            "/": "/fr/3d.html"
+          },
+          {
+            "/": "/fr/map"
+          },
+          {
+            "/": "/fr/map.html"
+          },
+          {
+            "/": "/it"
+          },
+          {
+            "/": "/it/"
+          },
+          {
+            "/": "/it/resort"
+          },
+          {
+            "/": "/it/resort.html"
+          },
+          {
+            "/": "/it/3d"
+          },
+          {
+            "/": "/it/3d.html"
+          },
+          {
+            "/": "/it/map"
+          },
+          {
+            "/": "/it/map.html"
+          },
+          {
+            "/": "/pl"
+          },
+          {
+            "/": "/pl/"
+          },
+          {
+            "/": "/pl/resort"
+          },
+          {
+            "/": "/pl/resort.html"
+          },
+          {
+            "/": "/pl/3d"
+          },
+          {
+            "/": "/pl/3d.html"
+          },
+          {
+            "/": "/pl/map"
+          },
+          {
+            "/": "/pl/map.html"
+          }
+        ]
+      }
+    ]
+  }
+}

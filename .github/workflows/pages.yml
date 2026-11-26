@@ -21,93 +21,51 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
           path: site
 
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
           ref: data
           path: data
 
-      - name: Combine site and data
-        run: |
-          mkdir _site
-          cp -R site/index.html site/about.html site/api.html site/map.html site/3d.html site/resort.html site/sources.html site/privacy.html site/stats.html site/404.html site/openapi.json site/robots.txt site/_headers site/assets site/.well-known _site/
-          for part in json history schema; do cp -R "data/$part" _site/; done
-
-      # The ski tiles (README "Ski tiles"), built weekly by ski.yml into a release asset. Without
-      # it (not built yet, or GitHub failing) the site goes out without /ski/, which apps handle.
+      # The ski tiles (DEVELOPMENT.md "Ski tiles"), built weekly by ski.yml into a release asset, next to the
+      # data for the build. Without it (not built yet, or GitHub failing) the site goes out without
+      # /ski/, which apps handle.
       - name: Add the ski tiles
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release download ski-latest -R "$GITHUB_REPOSITORY" -p ski.tar.gz -D ski-archive
-          tar xzf ski-archive/ski.tar.gz -C _site
-          jq -c '{build, counts}' _site/ski/v1/meta.json
+          tar xzf ski-archive/ski.tar.gz -C data
+          jq -c '{build, counts}' data/ski/v1/meta.json
 
-      # The 3D engine (README "3D engine"): TrailRider's viewer, pinned in engine.json, into
-      # /engine/<tag>/. Without it (GitHub failing) the site goes out without it, and 3d.html
-      # shows the diorama it falls back to.
-      - name: Add the 3D engine
-        continue-on-error: true
-        run: node site/scripts/engine.mjs _site
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
 
-      # Before the asset links are versioned: these pages have the same links.
-      - name: Generate the translated pages
-        run: node site/scripts/translate.mjs _site
-
-      # After the translated pages and the ski tiles: it lists them (README "Sitemap").
-      - name: Write the sitemap
-        run: node site/scripts/sitemap.mjs _site
-
-      # Cloudflare redirects about.html to /about (307), and search engines report every page reached
-      # through one: the links go straight to the address it serves. Only here: python3 -m http.server,
-      # used locally, needs the .html. Quoted names only, so comments and other sites' links stay.
-      - name: Link to the addresses without .html
-        run: |
-          sed -i -E 's#(["`](/([a-z]{2}/)?)?)(map|3d|resort|stats|about|api|sources|privacy)\.html#\1\4#g' \
-            _site/*.html _site/*/*.html _site/assets/*.js
-          if grep -nE '["`](/([a-z]{2}/)?)?[a-z0-9]+\.html' _site/*.html _site/*/*.html _site/assets/*.js; then
-            echo "Links to .html pages left (above): add the page to the list"; exit 1
-          fi
-
-      # The MCP server's packages, bundled into the Worker by wrangler at the deploy (README "MCP"),
-      # and esbuild for the next step.
+      # esbuild for the build, and the MCP server's packages, bundled into the Worker by wrangler at
+      # the deploy (DEVELOPMENT.md "MCP").
       - name: Install packages
         run: npm ci --prefix site
 
-      # Scripts keep their top-level names (esbuild leaves them alone when not bundling):
-      # the pages share them from common.js. A failure here only costs a few kilobytes,
-      # so it doesn't hold back new data: the unminified files stay valid.
-      - name: Minify scripts and styles
-        continue-on-error: true
-        run: |
-          site/node_modules/.bin/esbuild _site/assets/*.js _site/assets/*.css --minify --outdir=_site/assets --allow-overwrite
-
-      # The same data without its indentation; only the deployed copy, the data branch
-      # stays readable. A failure leaves the file as it was.
-      - name: Compact the resort index
-        continue-on-error: true
-        run: |
-          jq -c . _site/json/index.json > index.min.json
-          mv index.min.json _site/json/index.json
-
-      # Without a version in the URL, a new page can run with the previous version's
-      # scripts from a cache on the way.
-      - name: Version the asset links
-        run: |
-          version=$(git -C site rev-parse --short HEAD)
-          sed -i -E "s#(assets/[a-z]+\.(js|css))\"#\1?v=$version\"#g" _site/*.html _site/*/*.html
-          grep -o 'assets/[^"]*' _site/*.html _site/*/*.html
+      # The site and the data combined into _site/, as `npm run build` does locally (DEVELOPMENT.md
+      # "Running locally"): the 3D engine, the translated pages, the sitemap, minified, the asset
+      # links versioned.
+      - name: Build
+        run: node site/scripts/build.mjs --data data --out _site
 
       # An assets-only Worker (wrangler.jsonc), uploaded from here: the site is combined
-      # from two branches, so Cloudflare's own Git builds can't make it.
+      # from two branches, so Cloudflare's own Git builds can't make it. wrangler is the one
+      # in package.json (installed above), so Dependabot moves it with the other packages.
       - name: Deploy to Cloudflare
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4.155.0"
-          command: deploy --config site/wrangler.jsonc --assets _site
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: site/node_modules/.bin/wrangler deploy --config site/wrangler.jsonc --assets _site

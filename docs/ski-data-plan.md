@@ -47,7 +47,7 @@ pochodzą z OpenSkiData, a liftradar.eu tnie je raz w tygodniu na statyczne kafe
 **Gdzie:** repozytorium `liftradar` (strona, gałąź `main`), bo tam są już `assets/areas.geojson`
 i skrypty OSM. `liftradar-fetcher` zostaje bez zmian.
 
-### A1. Skrypt `scripts/ski_tiles.py`
+### A1. Skrypt `ski-tiles/ski_tiles.py`
 
 Wejście: `ski_areas.geojson`, `lifts.geojson`, `../liftradar-data/json/index.json` i
 `assets/areas.geojson`. Wyjście: katalog `ski/`.
@@ -104,7 +104,7 @@ Wejście: `ski_areas.geojson`, `lifts.geojson`, `../liftradar-data/json/index.js
   bo obszar dzielony przez kilka ośrodków liftradar rozdziela się na poziomie wyciągów.
 - `ski/v1/meta.json` zawiera czas budowy, znacznik czasu danych OSM, zoom, liczby obiektów i
   atrybucję. Aplikacja dokleja z niego `?b=<build>`, żeby nie dostawać starych plików z cache.
-- Schemat: `scripts/ski-tile.schema.json`, publikowany jako `ski/v1/tile.schema.json` (katalog
+- Schemat: `ski-tiles/ski-tile.schema.json`, publikowany jako `ski/v1/tile.schema.json` (katalog
   `schema/` pochodzi z gałęzi `data`).
 
 ### A3. Aktualizacja raz w tygodniu
@@ -228,7 +228,7 @@ Każdy wyciąg i trasa OpenSkiData dostaje ośrodek liftradar (`lr`), niezależn
 2. Ośrodek połączony z kilkoma sektorami liftradar: podział wyciągów według najbliższej
    `location` sektora (jak dziś Woronoj w `resort_areas.py`, ale na wyciągach). Trasy idą za
    najbliższym wyciągiem.
-3. Ręczne poprawki w `scripts/ski_overrides.json` (zamiast `SHARED` i `EXCLUDE`), według
+3. Ręczne poprawki w `ski-tiles/ski_overrides.json` (zamiast `SHARED` i `EXCLUDE`), według
    identyfikatorów OSM, bo te z OpenSkiData zmieniają się codziennie.
 
 ### A+2. `ski/v1/resorts.geojson`
@@ -257,8 +257,8 @@ z Alp przekroczą około 0,5 MB, trasy idą do osobnych plików albo na z12.
 
 ### A+ zrobione (6 listopada 2026)
 
-- `scripts/ski_resorts.py` (przynależność, obrysy, punkty), `scripts/ski_overrides.json` (poprawki:
-  `claims`, `ignore`, `points`), `scripts/ski_tiles.py` (trasy w kafelkach, `resorts.geojson`,
+- `ski-tiles/ski_resorts.py` (przynależność, obrysy, punkty), `ski-tiles/ski_overrides.json` (poprawki:
+  `claims`, `ignore`, `points`), `ski-tiles/ski_tiles.py` (trasy w kafelkach, `resorts.geojson`,
   strumieniowe czytanie przez `ijson`: 3,4 GB pamięci, około 45 s).
 - Wynik: 720 z 731 ośrodków z obrysem i punktem; 8 042 przypisane wyciągi wobec 7 421 zgłoszonych
   w 630 ośrodkach; 7 830 kafelków, 106 MB (największy 624 kB, po gzipie 147 kB), archiwum 25 MB.

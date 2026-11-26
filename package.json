@@ -1,19 +1,24 @@
 {
   "private": true,
-  "description": "Static checks (with a type check of assets/*.js and worker/mcp.js), minifying on deploy, and the MCP server's packages (worker/mcp.js, bundled by wrangler): pages work unbuilt, as they are in the repo.",
+  "description": "Static checks (with a type check of web/assets/*.js and worker/mcp.js) and the MCP server's test; the build (scripts/build.mjs, which pages.yml runs to deploy), the dev server (scripts/serve.mjs), a preview of the build with the MCP server, and the deploy (wrangler, which pages.yml runs too); the MCP server's packages (worker/mcp.js, bundled by wrangler): pages work unbuilt, as they are in web/.",
   "scripts": {
-    "check": "biome check && html-validate '*.html' && node scripts/translate.mjs --check && node scripts/types.mjs --check && tsc -b jsconfig.json --force && uvx ruff@0.17.3 check scripts && uvx ruff@0.17.3 format --check scripts",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "wrangler dev",
+    "check": "biome check && node scripts/translate.mjs --check && node scripts/translate.mjs .check && node scripts/countries.mjs .check --sample && html-validate 'web/*.html' '.check/*/*.html' && node scripts/types.mjs --check && node scripts/ski-style-check.mjs && tsc -b jsconfig.json --force && node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test worker/mcp.test.js && uvx ruff@0.17.3 check scripts ski-tiles && uvx ruff@0.17.3 format --check scripts ski-tiles",
     "types": "node scripts/types.mjs",
-    "format": "biome format --write && uvx ruff@0.17.3 format scripts"
+    "format": "biome format --write && uvx ruff@0.17.3 format scripts ski-tiles"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",
+    "@maplibre/maplibre-gl-style-spec": "24.10.0",
     "@types/three": "0.187.0",
     "esbuild": "0.28.2",
     "html-validate": "11.17.0",
     "json-schema-to-typescript": "16.0.0",
     "maplibre-gl": "5.24.0",
-    "typescript": "7.0.2"
+    "typescript": "7.0.2",
+    "wrangler": "4.163.0"
   },
   "dependencies": {
     "@cfworker/json-schema": "4.1.6",

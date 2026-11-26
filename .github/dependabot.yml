@@ -1,0 +1,37 @@
+# Version updates: once a month, one pull request per ecosystem, no release younger than a week.
+# Security updates (on in the repository's settings) come as soon as there is an advisory, whatever
+# the schedule and cooldown say: what matters most is @modelcontextprotocol/sdk, behind the public /mcp.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    groups:
+      npm:
+        patterns: ["*"]
+    # maplibre-gl is here only for the types of the MapLibre GL JS the pages load from cdnjs (5:
+    # version 6 is only an ES module there, DEVELOPMENT.md), and the style spec checks the ski style
+    # for that version: both move to 6 by hand, with the pages (an advisory still shows in the alerts).
+    ignore:
+      - dependency-name: maplibre-gl
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@maplibre/maplibre-gl-style-spec"
+        update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: npm
+
+  # The workflows' actions are pinned to commits; this moves the pins and their "# vX.Y.Z" comments.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: actions

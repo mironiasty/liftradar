@@ -1,0 +1,351 @@
+"""Which liftradar resort each OpenSkiData lift and run belongs to, and each resort's outline and map point.
+
+Used by ski_tiles.py; the rules are in DEVELOPMENT.md, "Ski tiles". Distances are in metres, in a flat
+projection around each point: fine for the few kilometres compared here.
+"""
+
+import json
+import math
+import re
+import unicodedata
+from collections import defaultdict
+from pathlib import Path
+
+import shapely
+from shapely.geometry import LineString, Point, box, mapping
+
+M_PER_DEG = 111_320
+NEAR_M = 3000  # a resort claims the nearest ski area with a lift within this
+NEAR_NAMED_M = 8000  # or the ones within this whose name matches its own best
+SECTOR_M = 6000  # in an area shared by several resorts, a lift goes to the nearest (within this for a resort
+# that claimed the area only as its nearest)
+LONE_M = 1000  # a lift without a ski area goes to a resort whose point is within this
+ADOPT_LIFT_M = 200  # a lift in no claimed area joins the resort with a lift station within this,
+ADOPT_RUN_M = 50  # and a run the one with a run or lift end within this
+LIFT_BUFFER_M = 60  # the outline: lifts and downhill runs widened by these,
+RUN_BUFFER_M = 50
+CLOSE_M = 150  # the gaps between them closed,
+OPEN_M = 70  # strips narrower than twice this removed (a lift alone across a valley),
+ISLAND_M2 = 50_000  # and pieces smaller than this,
+OUTLINE_SIMPLIFY_M = 15  # and simplified
+LINK_END_M = 250  # a lift's stretch outside the outline links two of its parts when it ends this near both
+# (a station can lie that far out: the outline loses a lift's thin end with the strips)
+# Rack railways (OpenSkiData's "railway": the Bayerische Zugspitzbahn, the Tramway du Mont-Blanc, the
+# Wendelsteinbahn) keep their resort in the tiles, for a GPS track that rides them, but aren't counted
+# among its lifts or drawn in its outline: they're mapped as dozens of segments, most of them far below
+# the area.
+NOT_COUNTED = {"railway"}
+OVERRIDES = Path(__file__).with_name("ski_overrides.json")
+GENERIC = {"ski", "skigebiet", "area", "sci", "comprensorio", "bergbahnen", "der", "und", "and", "san", "skiarena"}
+GENERIC |= {"skiregion", "domaine", "station", "les", "the", "skicentrum", "skicenter", "alpinsenter", "lifte"}
+GENERIC |= {"nad", "pod", "sur", "del", "dei", "della", "von", "bei", "skiareal", "areal", "resort"}
+
+
+def words(text: str | None) -> set[str]:
+    """The name's words, lowercase without accents ("Sölden" matches "solden"), without generic ones."""
+    folded = "".join(c for c in unicodedata.normalize("NFD", text or "") if not unicodedata.combining(c)).casefold()
+    return {w for w in re.split(r"[^a-z0-9]+", folded) if len(w) > 2 and w not in GENERIC}
+
+
+def around(here: tuple, radius: float):
+    """A box of about radius metres around a (lon, lat) point."""
+    dy = radius / M_PER_DEG
+    dx = dy / math.cos(math.radians(here[1]))
+    return box(here[0] - dx, here[1] - dy, here[0] + dx, here[1] + dy)
+
+
+def projector(here: tuple):
+    """Functions to and from local metres around a (lon, lat) point."""
+    k = math.cos(math.radians(here[1])) * M_PER_DEG
+
+    def to_m(geom):
+        return shapely.transform(geom, lambda c: (c - here) * (k, M_PER_DEG))
+
+    def to_deg(geom):
+        return shapely.transform(geom, lambda c: c / (k, M_PER_DEG) + here)
+
+    return to_m, to_deg
+
+
+def distance(here: tuple, line) -> float:
+    """Metres from a (lon, lat) point to a geometry in degrees."""
+    to_m, _ = projector(here)
+    return to_m(line).distance(Point(0, 0))
+
+
+def load_overrides() -> dict:
+    if not OVERRIDES.exists():
+        return {}
+    return json.loads(OVERRIDES.read_text(encoding="utf-8"))
+
+
+def area_matches(area: dict, ref: str) -> bool:
+    """An override's reference to an OpenSkiData area: an OSM id, a Wikidata id or the exact name."""
+    return ref in area["osm"] or ref == area["wd"] or ref == area["name"]
+
+
+def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, dict]:
+    """The liftradar resort ("<country>/<id>") of each lift and run, by their index.
+
+    Each resort claims ski areas: those near it whose name matches its own best (or at all,
+    within NEAR_M), and the nearest one with a lift within NEAR_M unless another resort claimed
+    that one by name (ski-tiles/ski_overrides.json adds or removes claims, moves single lifts and runs
+    by their OSM id, and clips a resort to a box).
+    A lift or run then goes to the smallest of its areas that was claimed: an area that is a
+    sector of a bigger one claimed by another resort stays with its own resort, and an area a
+    ski pass groups (Ski amadé, Les Portes du Soleil) only counts when a resort claims it. In an
+    area claimed by several resorts, a lift goes to the nearest of them (within SECTOR_M for a
+    resort that only claimed it as its nearest), and a run with the nearest of that area's lifts.
+    """
+    overrides = load_overrides()
+    keys = {f"{r['country']}/{r['id']}": r for r in resorts if r.get("location")}
+    here = {k: (r["location"]["lon"], r["location"]["lat"]) for k, r in keys.items()}
+    anchor = here | {k: tuple(p) for k, p in overrides.get("points", {}).items() if k in here}
+    size = defaultdict(int)
+    for f in lifts:
+        for a in f["_areas"]:
+            size[a] += 1
+    for f in lifts + runs:
+        f["_areas"].sort(key=lambda a: (size.get(a, 0), a))  # smallest first
+    lines = [LineString([c[:2] for c in f["_coords"]]) for f in lifts]
+    tree = shapely.STRtree(lines)
+
+    claims = defaultdict(set)  # area -> resorts
+    by_name = defaultdict(set)  # area -> the resorts that claimed it by name
+    nearest = {}
+    for k, p in here.items():
+        found: dict[str, float] = {}  # area -> distance to its nearest lift
+        for i in tree.query(around(p, NEAR_NAMED_M)):
+            d = distance(p, lines[int(i)])
+            for a in lifts[int(i)]["_areas"]:
+                found[a] = min(d, found.get(a, math.inf))
+        own = words(keys[k]["name"]) | words(keys[k]["id"])
+        overlap = {a: len(words(areas[a]["name"]) & own) for a, d in found.items() if d <= NEAR_NAMED_M}
+        best = max(overlap.values(), default=0)
+        for a, n in overlap.items():
+            # The best match, and any other match in reach (Alpe Lusia - San Pellegrino).
+            if n and (n == best or found[a] <= NEAR_M):
+                claims[a].add(k)
+                by_name[a].add(k)
+        if close := [(d, size[a], a) for a, d in found.items() if d <= NEAR_M]:
+            nearest[k] = min(close)[2]
+    # The nearest area too, unless another resort claimed it by name (Shuttleberg, by Snow Space
+    # Salzburg's point); a resort without a name match takes it in any case, as a sector.
+    for k, a in nearest.items():
+        named = any(k in v for v in by_name.values())
+        if not named or not by_name.get(a):
+            claims[a].add(k)
+    for k, refs in overrides.get("claims", {}).items():
+        for a, area in areas.items():
+            if any(area_matches(area, ref) for ref in refs):
+                claims[a].add(k)
+                by_name[a].add(k)
+    for k, refs in overrides.get("ignore", {}).items():
+        for a, area in areas.items():
+            if any(area_matches(area, ref) for ref in refs):
+                claims[a].discard(k)
+
+    def claimed(f):
+        return next((a for a in f["_areas"] if claims.get(a)), None)
+
+    lift_lr: dict[int, str] = {}
+    for i, f in enumerate(lifts):
+        a = f["_home"] = claimed(f)
+        if a:
+            claimants = claims[a]
+            if len(claimants) == 1:
+                lift_lr[i] = next(iter(claimants))
+            else:
+                options = [(distance(anchor[k], lines[i]), k) for k in claimants]
+                options = [(d, k) for d, k in options if k in by_name[a] or d <= SECTOR_M]
+                if options:
+                    lift_lr[i] = min(options)[1]
+        elif not f["_areas"]:
+            start = f["_coords"][0]
+            options = [(distance(p, lines[i]), k) for k, p in here.items() if abs(p[1] - start[1]) < 0.05]
+            if options := [o for o in options if o[0] <= LONE_M]:
+                lift_lr[i] = min(options)[1]
+
+    lifts_in = defaultdict(list)  # area -> its assigned lifts, for the runs of shared areas
+    for i, k in lift_lr.items():
+        if a := lifts[i]["_home"]:
+            lifts_in[a].append(i)
+    trees = {}
+    run_lr: dict[int, str] = {}
+    for j, f in enumerate(runs):
+        a = f["_home"] = claimed(f)
+        if not a:
+            continue
+        if len(claims[a]) == 1:
+            run_lr[j] = next(iter(claims[a]))
+        elif lifts_in[a]:
+            if a not in trees:
+                trees[a] = shapely.STRtree([lines[i] for i in lifts_in[a]])
+            run_lr[j] = lift_lr[lifts_in[a][int(trees[a].nearest(f["_geom"].centroid))]]
+    # Single lifts and runs OpenSkiData puts in the wrong area (ski_overrides.json "features": OSM ids).
+    moved = {ref: k for k, refs in overrides.get("features", {}).items() for ref in refs}
+    for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
+        for i, f in enumerate(features):
+            sources = (f.get("properties") or {}).get("sources") or []
+            if k := next((moved[s["id"]] for s in sources if s.get("id") in moved), None):
+                assigned[i] = k
+    adopt(lifts, runs, lift_lr, run_lr)
+    # A resort that has only part of its ski area (ski_overrides.json "clip": [west, south, east, north]):
+    # its lifts and runs outside that box go to no resort.
+    for k, (w, s, e, n) in overrides.get("clip", {}).items():
+        for features, assigned in ((lifts, lift_lr), (runs, run_lr)):
+            for i in [i for i, r in assigned.items() if r == k]:
+                c = features[i]["_geom"].centroid
+                if not (w <= c.x <= e and s <= c.y <= n):
+                    del assigned[i]
+    return lift_lr, run_lr
+
+
+def adopt(lifts: list, runs: list, lift_lr: dict, run_lr: dict) -> None:
+    """Lifts and runs in ski areas none of which a resort claimed (a wider area only, such as
+    "Stubai" around the Stubaier Gletscher, for a lift its outline leaves out) join the resort whose
+    lift stations are next to theirs (for a run: its lifts' or runs' ends), in two rounds, for a run
+    leading to another; not further, or a wider area's other resorts would join too."""
+
+    def orphans(features, assigned):
+        return [i for i, f in enumerate(features) if i not in assigned and f["_areas"] and f["_home"] is None]
+
+    def ends(f):
+        coords = (
+            f["_coords"]
+            if "_coords" in f
+            else list(f["_geom"].exterior.coords if f["_geom"].geom_type == "Polygon" else f["_geom"].coords)
+        )
+        return [coords[0][:2], coords[-1][:2]]
+
+    def join(features, assigned, sources, reach):
+        points = []
+        keys = []
+        for others, done in sources:
+            for i, k in done.items():
+                for end in ends(others[i]):
+                    points.append(Point(end))
+                    keys.append(k)
+        if not points:
+            return
+        tree = shapely.STRtree(points)
+        found = {}
+        for i in orphans(features, assigned):
+            best = None
+            for end in ends(features[i]):
+                for j in tree.query(around(end, reach)):
+                    d = distance(end, points[int(j)])
+                    if d <= reach and (best is None or d < best[0]):
+                        best = (d, keys[int(j)])
+            if best:
+                found[i] = best[1]
+        assigned.update(found)
+
+    join(lifts, lift_lr, [(lifts, lift_lr)], ADOPT_LIFT_M)
+    for _ in range(2):
+        join(runs, run_lr, [(lifts, lift_lr), (runs, run_lr)], ADOPT_RUN_M)
+
+
+def outlines(resorts: list, lifts: list, runs: list, lift_lr: dict, run_lr: dict, areas: dict) -> list:
+    """A feature per resort with lifts: outline, map point and counts (ski/v1/resorts.geojson)."""
+    members = defaultdict(lambda: ([], []))
+    for i, k in lift_lr.items():
+        members[k][0].append(i)
+    for j, k in run_lr.items():
+        members[k][1].append(j)
+    features = []
+    for r in resorts:
+        k = f"{r['country']}/{r['id']}"
+        if k not in members or not r.get("location"):
+            continue
+        lift_ids, run_ids = members[k]
+        lift_ids = [i for i in lift_ids if lifts[i]["properties"].get("liftType") not in NOT_COUNTED]
+        here = (r["location"]["lon"], r["location"]["lat"])
+        to_m, to_deg = projector(here)
+        pieces = [to_m(LineString([c[:2] for c in lifts[i]["_coords"]])).buffer(LIFT_BUFFER_M) for i in lift_ids]
+        downhill = [j for j in run_ids if "downhill" in (runs[j]["properties"].get("uses") or [])]
+        if not lift_ids and not downhill:  # only a railway
+            continue
+        run_pieces = []
+        for j in downhill:
+            g = to_m(runs[j]["_geom"])
+            run_pieces.append(g if g.geom_type in ("Polygon", "MultiPolygon") else g.buffer(RUN_BUFFER_M))
+        geom = shape_outline(shapely.union_all(pieces + run_pieces), shapely.union_all(run_pieces))
+        km = sum(to_m(runs[j]["_geom"]).length for j in downhill if runs[j]["_geom"].geom_type == "LineString") / 1000
+        lines = [to_m(LineString([c[:2] for c in lifts[i]["_coords"]])) for i in lift_ids]
+        point = map_point(here, geom, [lifts[i]["_coords"] for i in lift_ids], to_m, to_deg)
+        outline = json.loads(json.dumps(mapping(to_deg(geom))), parse_float=lambda f: round(float(f), 5))
+        bridges = [[[round(x, 5), round(y, 5)] for x, y in to_deg(b).coords] for b in links(geom, lines)]
+        names = sorted({areas[a]["name"] for i in lift_ids if (a := lifts[i]["_home"]) and areas[a]["name"]})
+        features.append(
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": k,
+                    "point": point,
+                    "lifts": len(lift_ids),
+                    "runs": len(downhill),
+                    "km": round(km, 1),
+                    "areas": names,
+                    **({"links": bridges} if bridges else {}),
+                },
+                "geometry": outline,
+            }
+        )
+    return features
+
+
+def shape_outline(geom, runs):
+    """Lifts and runs widened and merged into an area: gaps closed, then strips narrower than
+    OPEN_M (a long cable car or train across a valley) removed, but not those of the runs (widened, `runs`): a
+    piste alone is skied however narrow (Zermatt's valley runs, Hintertux's Schwarze Pfanne). Then islands under
+    ISLAND_M2 removed, unless that would leave nothing (a small area of one lift and run), and the holes filled."""
+    closed = geom.buffer(CLOSE_M).buffer(-CLOSE_M)
+    opened = shapely.union_all([closed.buffer(-OPEN_M).buffer(OPEN_M), runs])
+    parts = [p for p in getattr(opened, "geoms", [opened]) if p.area >= ISLAND_M2]
+    if not parts:
+        parts = sorted(getattr(closed, "geoms", [closed]), key=lambda p: -p.area)[:1]
+    return fill_holes(shapely.union_all(parts)).simplify(OUTLINE_SIMPLIFY_M)
+
+
+def links(geom, lines: list) -> list:
+    """The stretches of the lifts outside the outline that join two of its parts (a cable car
+    across a valley, removed by shape_outline), so the parts show as one area: each must end
+    near two different parts, not out in the open or back on the part it left."""
+    parts = getattr(geom, "geoms", [geom])
+    if len(parts) < 2:
+        return []
+    found = []
+    for line in lines:
+        outside = line.difference(geom)
+        for piece in getattr(outside, "geoms", [outside]):
+            if piece.is_empty or piece.geom_type != "LineString":
+                continue
+            ends = [Point(piece.coords[0]), Point(piece.coords[-1])]
+            near = [{i for i, p in enumerate(parts) if p.distance(e) <= LINK_END_M} for e in ends]
+            if near[0] and near[1] and len(near[0] | near[1]) > 1:
+                found.append(piece)
+    return found
+
+
+def fill_holes(geom):
+    """Every hole filled: what pistes and lifts go round is part of the area (the Weiße Ring around Lech and
+    Zürs, a lone piste's loop), and its border would otherwise run along both sides of them."""
+    filled = [shapely.Polygon(p.exterior) for p in getattr(geom, "geoms", [geom]) if not p.is_empty]
+    return shapely.union_all(filled)
+
+
+def map_point(here: tuple, geom, lift_coords: list, to_m, to_deg) -> list:
+    """The resort's point on the map: its location when that's in the outline; otherwise the
+    bottom station nearest to it in the outline's part nearest to it, where the area starts."""
+    if geom.buffer(1).contains(Point(0, 0)):
+        return [round(here[0], 5), round(here[1], 5)]
+    main = min(getattr(geom, "geoms", [geom]), key=lambda p: p.distance(Point(0, 0))).buffer(LIFT_BUFFER_M)
+    inside = [c for c in lift_coords if main.intersects(to_m(LineString([x[:2] for x in c])))]
+    bottoms = []
+    for coords in inside or lift_coords:
+        a, b = coords[0], coords[-1]
+        low = a if len(a) < 3 or len(b) < 3 or (a[2] or 0) <= (b[2] or 0) else b
+        bottoms.append(low[:2])
+    best = min(bottoms, key=lambda c: to_m(Point(c)).distance(Point(0, 0)))
+    return [round(best[0], 5), round(best[1], 5)]

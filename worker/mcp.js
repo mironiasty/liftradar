@@ -1,4 +1,4 @@
-// The MCP server at https://liftradar.eu/mcp (README "MCP"), for AI assistants: a few tools over the same JSON
+// The MCP server at https://liftradar.eu/mcp (DEVELOPMENT.md "MCP"), for AI assistants: a few tools over the same JSON
 // files the site and the API serve. The rest of the site stays static: wrangler.jsonc sends only /mcp here
 // (assets.run_worker_first), and the tools read the files from the assets (env.ASSETS), so they always match
 // the site's data. Stateless: every request gets a new server, with no sessions to keep.
@@ -13,10 +13,12 @@ import { z } from "zod";
 /** @typedef {import("../types/index").IndexResort} IndexResort */
 /** @typedef {import("../types/history").PastRunsOfOneResortForGraphs} ResortHistory */
 /** @typedef {import("../types/stats").DailyTotalsPerCountryAndRegion} Stats */
+/** @typedef {import("../types/groups").GroupsOfResortsListedSeparately} Groups */
+/** @typedef {import("../types/resort-details").ExperimentalEveryLiftAndSlopeOfOneResort} Details */
 
 const INSTRUCTIONS = `LiftRadar: the status of ski resorts across Europe, from the resorts' own reports, updated twice a day \
-(about 08:40 and 13:40 Vienna time). null means the source doesn't publish the value; status is open, closed or \
-no_report. Times are ISO 8601 with the Vienna offset. LiftRadar is not an official source: reports can be late or \
+(about 08:40 and 13:40 CET). null means the source doesn't publish the value; status is open, closed or \
+no_report. Times are ISO 8601 with the Central European offset (+01:00, +02:00 in summer). LiftRadar is not an official source: reports can be late or \
 wrong, so tell users to check the resort's own website before they go. What the values mean: \
 https://liftradar.eu/about.html. Start with search_resorts: its country and id address a resort in the other tools.`;
 
@@ -101,7 +103,13 @@ function createServer(env, origin) {
       inputSchema: {
         country: country.optional(),
         status: z.enum(["open", "closed", "no_report"]).optional().describe("open: the resort reports lifts running"),
-        name: z.string().min(2).optional().describe("Part of the resort's name or region, any case, accents optional"),
+        name: z
+          .string()
+          .min(2)
+          .optional()
+          .describe(
+            "Part of the resort's name or region, or of its linked ski area or ski region (e.g. Dolomiti Superski), any case, accents optional",
+          ),
         min_snow_cm: z.number().min(0).optional().describe("Minimum snow depth on the mountain, in cm"),
         min_lifts_open: z.number().int().min(0).optional(),
         near: z
@@ -120,10 +128,17 @@ function createServer(env, origin) {
     async ({ country, status, name, min_snow_cm, min_lifts_open, near, sort, limit }) => {
       const index = /** @type {Index} */ (await read("/json/index.json"));
       const words = name && fold(name);
+      // As the site's search (web/assets/table.js): the names of its linked ski area and ski region too, so
+      // "3 Vallées" finds their resorts. Without groups.json, only the resort's own names.
+      const file = /** @type {Groups | null} */ (words ? await read("/json/groups.json").catch(() => null) : null);
+      const groups = file?.groups ?? {};
+      /** @param {IndexResort} r */
+      const searched = (r) =>
+        [r.name, r.region, ...[r.linked_area, r.ski_region].map((id) => id && groups[id]?.name)].join("\n");
       let found = index.resorts
         .filter((r) => !country || r.country === country)
         .filter((r) => !status || r.status === status)
-        .filter((r) => !words || fold(`${r.name} ${r.region ?? ""}`).includes(words))
+        .filter((r) => !words || fold(searched(r)).includes(words))
         .filter((r) => min_snow_cm === undefined || (r.snow.mountain_cm ?? -1) >= min_snow_cm)
         .filter((r) => min_lifts_open === undefined || (r.lifts?.open ?? -1) >= min_lifts_open)
         .map((r) => ({ r, km: near && r.location ? distanceKm(near, r.location) : null }))
@@ -182,6 +197,73 @@ function createServer(env, origin) {
       const resort = await read(`/json/${country}/${id}.json`);
       if (!resort) return notFound(country, id);
       return json({ ...resort, page: `${SITE}/resort?r=${country}/${id}` });
+    },
+  );
+
+  server.registerTool(
+    "get_resort_lifts",
+    {
+      title: "One ski resort's lifts and slopes",
+      description:
+        "Every lift and slope of one resort, one by one, as its source lists them: name, status, lift type or slope " +
+        "difficulty, and length, capacity and altitudes where the source gives them; map_length_m is the length on " +
+        "the OpenStreetMap map where it's matched there (resorts' slopes often run longer than their map's). Only " +
+        "for resorts whose source lists them one by one; get_resort has the totals for all.",
+      inputSchema: {
+        country,
+        id: resortId,
+        status: z
+          .enum(["open", "closed", "preparation", "unknown"])
+          .optional()
+          .describe("Only lifts and slopes with this status"),
+      },
+      annotations: READ_ONLY,
+    },
+    async ({ country, id, status }) => {
+      const details = /** @type {Details | null} */ (await read(`/json/${country}/${id}.details.json`));
+      // Every resort the ski tiles know has a details file, with lists only when its sources give them.
+      if (!details?.lifts || !details.slopes) {
+        if (!(await read(`/json/${country}/${id}.json`))) return notFound(country, id);
+        return {
+          isError: true,
+          content: [
+            {
+              type: /** @type {const} */ ("text"),
+              text: `${country}/${id}'s source doesn't list its lifts and slopes one by one. get_resort has its totals.`,
+            },
+          ],
+        };
+      }
+      /** @param {{status: string}} item */
+      const shown = (item) => !status || item.status === status;
+      return json({
+        country,
+        id,
+        fetched_at: details.fetched_at,
+        updated_at: details.updated_at,
+        source: details.source,
+        lifts: details.lifts.filter(shown).map((l) => ({
+          name: l.name,
+          ref: l.ref,
+          type: l.type,
+          status: l.status,
+          length_m: l.length_m,
+          map_length_m: l.map_length_m ?? null,
+          capacity_per_hour: l.capacity_per_hour,
+          bottom_m: l.bottom_m,
+          top_m: l.top_m,
+        })),
+        slopes: details.slopes.filter(shown).map((s) => ({
+          name: s.name,
+          ref: s.ref,
+          difficulty: s.difficulty,
+          colour: s.colour ?? null,
+          status: s.status,
+          length_m: s.length_m,
+          map_length_m: s.map_length_m ?? null,
+        })),
+        page: `${SITE}/resort?r=${country}/${id}`,
+      });
     },
   );
 
@@ -279,7 +361,7 @@ function notFound(country, id) {
   };
 }
 
-// Names compared without case and marks, as the site's search does (assets/common.js): "bialka" finds
+// Names compared without case and marks, as the site's search does (web/assets/common.js): "bialka" finds
 // "Białka Tatrzańska". The letters NFD doesn't take apart are mapped by hand.
 /** @type {Record<string, string>} */
 const LETTERS = { ł: "l", ø: "o", đ: "d", ß: "ss", æ: "ae", œ: "oe", ı: "i", ħ: "h", þ: "th" };

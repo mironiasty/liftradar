@@ -1,4 +1,4 @@
-// What assets/*.js use without defining it: the libraries the pages load from a CDN, and short names for
+// What web/assets/*.js use without defining it: the libraries the pages load from a CDN, and short names for
 // the data's types (generated from its schemas next to this file) to use in JSDoc, e.g. /** @param {Resort} r */.
 
 declare const maplibregl: typeof import("maplibre-gl");
@@ -20,6 +20,15 @@ type SourceRef = import("./resort").SourceRef;
 type Station = import("./resort").Station;
 type Avalanche = import("./resort").Avalanche;
 type DangerRating = import("./resort").DangerRating;
+type SlopeCounts = import("./resort").SlopeCounts;
+// json/<country>/<id>.details.json (experimental): every lift and slope, for resorts with `details`.
+type ResortDetails = import("./resort-details").ExperimentalEveryLiftAndSlopeOfOneResort;
+type DetailsLift = import("./resort-details").DetailsLift;
+type DetailsSlope = import("./resort-details").DetailsSlope;
+// json/<country>/<id>.weather.json (experimental): Open-Meteo's forecast at the resort's bottom and top.
+type ResortWeather = import("./resort-weather").ExperimentalTheWeatherForecastForOneResort;
+type WeatherPoint = import("./resort-weather").WeatherPoint;
+type WeatherDay = import("./resort-weather").WeatherDay;
 // json/groups.json.
 type Groups = import("./groups").GroupsOfResortsListedSeparately;
 // history/<country>/<id>.json.

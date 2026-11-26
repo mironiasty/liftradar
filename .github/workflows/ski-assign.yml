@@ -1,0 +1,70 @@
+name: Ski assignment
+
+# A pull request that changes how lifts are given to resorts (DEVELOPMENT.md "Ski tiles": ski_resorts.py and
+# ski_overrides.json) lists the resorts whose lift count on the map changes, so the review sees them
+# before the tiles are built. ski_split_check.py --assign runs on the latest tiles (the release
+# ski-latest) and index, once with the base's rules and once with the change's, with the change's
+# checker for both: the difference is the change's alone. Lifts only: runs follow them.
+on:
+  pull_request:
+    paths:
+      - ski-tiles/ski_resorts.py
+      - ski-tiles/ski_overrides.json
+      - ski-tiles/ski_split_check.py
+      - .github/workflows/ski-assign.yml
+
+permissions:
+  contents: read
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          path: site
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+
+      # Only the index: the data branch's archive is large.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: data
+          path: data
+          sparse-checkout: json/index.json
+          sparse-checkout-cone-mode: false
+
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+
+      - name: The latest tiles
+        run: |
+          gh release download ski-latest -R "$GITHUB_REPOSITORY" -p ski.tar.gz
+          tar xzf ski.tar.gz
+
+      - name: Lifts per resort, before and after
+        run: |
+          # A base from before the pipeline moved to ski-tiles/ (only the pull request that moved it) has it in scripts/.
+          base=base/ski-tiles
+          [ -d "$base" ] || base=base/scripts
+          cp site/ski-tiles/ski_split_check.py "$base/"
+          for dir in "$base" site/ski-tiles; do
+            side=${dir%%/*}
+            uv run --no-project --with shapely==2.2.0 python3 "$dir/ski_split_check.py" \
+              ski data/json/index.json --assign > "$side.txt"
+          done
+          diff base.txt site.txt > changes.txt || true
+          {
+            echo "### Resorts whose lift count changes (tiles → base, then → this change)"
+            echo '```diff'
+            if [ -s changes.txt ]; then grep '^[<>]' changes.txt | sed 's/^</-/; s/^>/+/'; else echo "no change"; fi
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"

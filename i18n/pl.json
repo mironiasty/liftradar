@@ -23,13 +23,31 @@
   "No resorts match.": "Brak pasujących ośrodków.",
   "Show all": "Pokaż wszystkie",
   "How to read the numbers": "Jak czytać liczby",
-  "Updated twice a day, at about 08:40 and 13:40 Vienna time. &ldquo;Checked&rdquo; on the map and resort pages is when we last read a report; the resort's last change can be days older while nothing opens or closes, and is highlighted after 7 days.": "Aktualizacja dwa razy dziennie, około 8:40 i 13:40 czasu wiedeńskiego. &bdquo;Sprawdzono&rdquo; na mapie i na stronach ośrodków to moment, w którym ostatnio odczytaliśmy raport; ostatnia zmiana przez ośrodek może być o kilka dni starsza, gdy nic się nie otwiera ani nie zamyka, a po 7 dniach jest wyróżniana.",
+  "index-updated": {
+    "text": "Aktualizacja dwa razy dziennie, około 8:40 i 13:40 CET. &bdquo;Sprawdzono&rdquo; na mapie i na stronach ośrodków to moment, w którym ostatnio odczytaliśmy raport; ostatnia zmiana przez ośrodek może być o kilka dni starsza, gdy nic się nie otwiera ani nie zamyka, a po 7 dniach jest wyróżniana.",
+    "en": "834d326b"
+  },
   "Ski areas spanning several villages (e.g. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) are listed once; their snow depths are from the village that reported last.": "Tereny narciarskie obejmujące kilka miejscowości (np. SkiWelt, Zillertal Arena, KitzSki, Snow Space Salzburg) są wymienione raz; grubość śniegu pochodzi z miejscowości, która zgłosiła ją jako ostatnia.",
-  "Closed resorts show nothing open and no snow depths: their reports often still carry last season's values. &ldquo;No report&rdquo; means the resort hasn't reported for 14 days, or we couldn't read its report for over 2 days (until then, a resort whose report couldn't be read keeps its last status and numbers). Trentino, Dolomiti Superski, Livigno, Ski Arlberg, PKL, Zieleniec, TMR, French (Lumiplan, ATEN), Czech and Finnish reports carry no report time, so their open/closed is always taken as current (Spanish and Slovenian resorts are open when a slope is, and Formigal-Panticosa only with a lift running too; most Slovenian sources carry no report time either; Norwegian resorts are open when a slope is, while fnugg flags them open or their report is under 14 days old and a lift runs); (Finnish resorts without a live status of their own use the block they fill in on ski.fi, dated by the day); the Sauerland's overview (Wintersport-Arena) carries no report time either; French resorts count lifts and slopes scheduled to open later that day as open, and show &ldquo;No report&rdquo; while their slopes are outside the season. Some Polish areas, two small Austrian ones, the 11 Spanish ones we don't read yet (Baqueira Beret, which refuses automated clients, and others), six Slovenian ones (Rogla, Kope, Cerkno ...) and eight Norwegian ones (Tryvann, Kongsberg, Drammen ...) are listed with their size only for now, and most German areas outside the Sauerland without even that.": "Zamknięte ośrodki nie pokazują nic otwartego ani grubości śniegu: ich raporty często zawierają jeszcze wartości z poprzedniego sezonu. &bdquo;Brak raportu&rdquo; oznacza, że ośrodek nie przesłał raportu od 14 dni albo nie mogliśmy go odczytać przez ponad 2 dni (do tego czasu ośrodek, którego raportu nie udało się odczytać, zachowuje ostatni stan i liczby). Raporty z Trentino, Dolomiti Superski, Livigno, Ski Arlberg, PKL, Zieleńca, TMR, Francji (Lumiplan, ATEN), Czech i Finlandii nie podają godziny raportu, więc ich stan otwarcia jest zawsze uznawany za aktualny (ośrodki hiszpańskie i słoweńskie są otwarte, gdy otwarta jest trasa, a Formigal-Panticosa dodatkowo tylko przy działającym wyciągu; większość źródeł słoweńskich także nie podaje godziny raportu; ośrodki norweskie są otwarte, gdy otwarta jest trasa, a poza tym gdy fnugg oznacza je jako otwarte albo ich raport ma mniej niż 14 dni i działa wyciąg); (ośrodki fińskie bez własnego stanu na żywo korzystają z formularza wypełnianego na ski.fi, datowanego z dokładnością do dnia); przegląd Sauerlandu (Wintersport-Arena) także nie podaje godziny raportu; ośrodki francuskie liczą jako otwarte wyciągi i trasy, które mają zostać otwarte później tego dnia, a poza sezonem swoich tras pokazują &bdquo;Brak raportu&rdquo;. Niektóre polskie tereny, dwa małe austriackie, 11 hiszpańskich, których jeszcze nie odczytujemy (Baqueira Beret, która blokuje automatycznych klientów, i inne), sześć słoweńskich (Rogla, Kope, Cerkno ...) oraz osiem norweskich (Tryvann, Kongsberg, Drammen ...) są na razie wymienione tylko z rozmiarem, a większość niemieckich poza Sauerlandem nawet bez niego.",
-  "Total slope km is the ski area's size: the one advertised by the resort, otherwise OnTheSnow's or skiresort.com's, and for sectors of a linked area (e.g. St. Anton, Verbier) the sum of the operator's slope lengths. For about 20 resorts without one, and the German ones, it's the sum of the slope lengths the resort reports, which can be too low.": "Łączna długość tras to rozmiar terenu narciarskiego: podany przez ośrodek, a w jego braku przez OnTheSnow lub skiresort.com, a dla sektorów połączonych terenów (np. St. Anton, Verbier) suma długości tras operatora. Dla około 20 ośrodków bez takiej wartości i dla ośrodków niemieckich to suma długości tras zgłaszanych przez ośrodek, która może być zbyt niska.",
-  "Open km are summed from slope lengths (the resort's slope map or infosnow, or OpenStreetMap for Kitzsteinhorn and Kaunertal, which runs low); lift and slope counts from slope maps include practice lifts and carpets.": "Otwarte kilometry są sumą długości tras (z mapy tras ośrodka lub infosnow, a dla Kitzsteinhorn i Kaunertal z OpenStreetMap, co daje zaniżone wartości); liczby wyciągów i tras z map tras obejmują wyciągi szkoleniowe i taśmy.",
-  "Most Swiss resorts don't report snow depths: theirs are measured at the nearest SLF stations (open ground, not pistes), so they can differ from what the resort would report. Finnish resorts' valley depth is the nearest FMI weather station's natural snow, not the depth on the slopes.": "Większość szwajcarskich ośrodków nie podaje grubości śniegu: jest ona mierzona na najbliższych stacjach SLF (na otwartym terenie, nie na trasach), więc może się różnić od tego, co podałby ośrodek. W ośrodkach fińskich grubość w dolinie to naturalny śnieg na najbliższej stacji pogodowej FMI, a nie grubość na trasach.",
-  "Slope counts of SalzburgerLand and Trentino resorts are the area's size, not reported; Livigno shows lifts only. Most resorts in Vorarlberg, Styria, Upper and Lower Austria have only their slope map: lifts and slopes, no snow depth.": "Liczby tras ośrodków z SalzburgerLand i Trentino to rozmiar terenu, a nie wartości z raportu; Livigno pokazuje tylko wyciągi. Większość ośrodków w Vorarlbergu, Styrii oraz Górnej i Dolnej Austrii ma tylko mapę tras: wyciągi i trasy, bez grubości śniegu.",
+  "index-closed": {
+    "text": "Zamknięte ośrodki nie pokazują nic otwartego ani grubości śniegu: ich raporty często zawierają jeszcze wartości z poprzedniego sezonu. &bdquo;Brak raportu&rdquo; oznacza, że ośrodek nie przesłał raportu od 14 dni albo nie mogliśmy go odczytać przez ponad 2 dni (do tego czasu ośrodek, którego raportu nie udało się odczytać, zachowuje ostatni stan i liczby). Raporty z Trentino, Dolomiti Superski, Livigno, Ski Arlberg, PKL, Zieleńca, TMR, Francji (Lumiplan, ATEN), Czech i Finlandii nie podają godziny raportu, więc ich stan otwarcia jest zawsze uznawany za aktualny (ośrodki hiszpańskie i słoweńskie są otwarte, gdy otwarta jest trasa, a Formigal-Panticosa dodatkowo tylko przy działającym wyciągu; większość źródeł słoweńskich także nie podaje godziny raportu; ośrodki norweskie są otwarte, gdy otwarta jest trasa, a poza tym gdy fnugg oznacza je jako otwarte albo ich raport ma mniej niż 14 dni i działa wyciąg); (ośrodki fińskie bez własnego stanu na żywo korzystają z formularza wypełnianego na ski.fi, datowanego z dokładnością do dnia); przegląd Sauerlandu (Wintersport-Arena) także nie podaje godziny raportu; ośrodki francuskie liczą jako otwarte wyciągi i trasy, które mają zostać otwarte później tego dnia, a poza sezonem swoich tras pokazują &bdquo;Brak raportu&rdquo;. Niektóre polskie tereny, dwa małe austriackie, 11 hiszpańskich, których jeszcze nie odczytujemy (Baqueira Beret, która blokuje automatycznych klientów, i inne), sześć słoweńskich (Rogla, Kope, Cerkno ...), osiem norweskich (Tryvann, Kongsberg, Drammen ...) oraz bułgarskie (Bansko, Borovets, Pamporovo ...) są na razie wymienione tylko z rozmiarem, a większość niemieckich poza Sauerlandem nawet bez niego.",
+    "en": "e89a83ce"
+  },
+  "index-slope-km": {
+    "text": "Łączna długość tras to rozmiar terenu narciarskiego: podany przez ośrodek, a w jego braku przez OnTheSnow lub skiresort.com, a dla sektorów połączonych terenów (np. St. Anton, Verbier) suma długości tras operatora. Dla około 20 ośrodków bez takiej wartości i dla ośrodków niemieckich to suma długości tras zgłaszanych przez ośrodek, która może być zbyt niska.",
+    "en": "eee81018"
+  },
+  "index-open-km": {
+    "text": "Otwarte kilometry są sumą długości tras (z mapy tras ośrodka lub infosnow, a dla Kitzsteinhorn i Kaunertal z OpenStreetMap, co daje zaniżone wartości); liczby wyciągów i tras z map tras obejmują wyciągi szkoleniowe i taśmy.",
+    "en": "23424c8e"
+  },
+  "index-swiss-snow": {
+    "text": "Większość szwajcarskich ośrodków nie podaje grubości śniegu: jest ona mierzona na najbliższych stacjach SLF (na otwartym terenie, nie na trasach), więc może się różnić od tego, co podałby ośrodek. W ośrodkach fińskich grubość w dolinie to naturalny śnieg na najbliższej stacji pogodowej FMI, a nie grubość na trasach.",
+    "en": "0e1211ab"
+  },
+  "index-area-counts": {
+    "text": "Liczby tras ośrodków z SalzburgerLand i Trentino to rozmiar terenu, a nie wartości z raportu; Livigno pokazuje tylko wyciągi. Większość ośrodków w Vorarlbergu, Styrii oraz Górnej i Dolnej Austrii ma tylko mapę tras: wyciągi i trasy, bez grubości śniegu.",
+    "en": "a5bf6d39"
+  },
   "Data sources": "Źródła danych",
   "Contact: miron [at] liftradar.eu": "Kontakt: miron [at] liftradar.eu",
   "GitHub": "GitHub",
@@ -71,7 +89,24 @@
   "Map – LiftRadar": "Mapa – LiftRadar",
   "Table": "Tabela",
   "Map options": "Opcje mapy",
-  "Resorts": "Ośrodki",
+  "Filters": "Filtry",
+  "Clear": "Wyczyść",
+  "Country and region": "Kraj i region",
+  "Size of the area": "Wielkość ośrodka",
+  "Active filters": "Aktywne filtry",
+  "Search a country or region": "Szukaj kraju lub regionu",
+  "any": "dowolnie",
+  "Regions of {country}": "Regiony: {country}",
+  "{name}, from": "{name}, od",
+  "{name}, up to": "{name}, do",
+  "{n} resorts without this size hidden": {
+    "one": "{n} ośrodek bez tej wartości ukryty",
+    "few": "{n} ośrodki bez tej wartości ukryte",
+    "many": "{n} ośrodków bez tej wartości ukrytych",
+    "other": "{n} ośrodka bez tej wartości ukrytego"
+  },
+  "{shown} of {total}": "{shown} z {total}",
+  "Remove filter: {name}": "Usuń filtr: {name}",
   "Number on markers": "Liczba na znacznikach",
   "Map of ski resorts": "Mapa ośrodków narciarskich",
   "Open or total": "Otwarte lub wszystkie",
@@ -79,7 +114,7 @@
   "All lifts of the area.": "Wszystkie wyciągi terenu.",
   "Open slopes, shown for open resorts.": "Otwarte trasy, pokazywane dla otwartych ośrodków.",
   "All slopes of the area.": "Wszystkie trasy terenu.",
-  "Slope km": "Km tras",
+  "Slope length (km)": "Długość tras (km)",
   "Open slope km, shown for open resorts.": "Kilometry otwartych tras, pokazywane dla otwartych ośrodków.",
   "All slope km of the area.": "Wszystkie kilometry tras terenu.",
   "Snow": "Śnieg",
@@ -102,9 +137,16 @@
   "Funiculars": "Koleje linowo-terenowe",
   "Other": "Inne",
   "Easy": "Łatwe",
+  "Very easy": "Bardzo łatwe",
   "Intermediate": "Średnie",
   "Difficult": "Trudne",
   "Ski routes": "Trasy nieratrakowane",
+  "Green": "Zielona",
+  "Blue": "Niebieska",
+  "Red": "Czerwona",
+  "Black": "Czarna",
+  "Yellow": "Żółta",
+  "Orange": "Pomarańczowa",
   "morning": "rano",
   "afternoon": "po południu",
   "new snow": "nowy śnieg",
@@ -158,13 +200,17 @@
   "There's no such resort.": "Nie ma takiego ośrodka.",
   "Map of {name}": "Mapa: {name}",
   "Last {n} days": "Ostatnie {n} dni",
-  "Collected since 24 October 2026.": "Dane zbierane od 24 października 2026.",
+  "We read the reports twice a day, at about 08:40 and 13:40 CET.": "Raporty odczytujemy dwa razy dziennie, około 8:40 i 13:40 CET.",
+  "Collected since {date}.": "Dane zbierane od {date}.",
   "Map of all resorts →": "Mapa wszystkich ośrodków →",
   "Official website": "Oficjalna strona",
   "Linked ski area": "Połączony teren narciarski",
   "Linked resorts": "Połączone ośrodki",
   "Ski region": "Region narciarski",
   "Other resorts in the region": "Inne ośrodki w regionie",
+  "{n} lifts": "{n} wyciągów",
+  "{n} slopes": "{n} tras",
+  "{km} km of slopes": "{km} km tras",
   "No history ({message}).": "Brak historii ({message}).",
   "Could not load the resort ({message}).": "Nie udało się wczytać ośrodka ({message}).",
   "Stats – LiftRadar": "Statystyki – LiftRadar",
@@ -196,9 +242,14 @@
   "About the Data – LiftRadar": "O danych – LiftRadar",
   "This part of the page is available in English only.": "Ta część strony jest dostępna tylko po angielsku.",
   "Data Sources – LiftRadar": "Źródła danych – LiftRadar",
-  "Every page in the current data": "Wszystkie strony w bieżących danych",
+  "Every source in the current data": "Wszystkie źródła w bieżących danych",
   "How values are calculated, and their caveats: <a href=\"about.html\">About the data</a>.": "Jak obliczane są wartości i jakie mają ograniczenia: <a href=\"about.html\">O danych</a>.",
-  "{pages} pages on {sites} websites, used for {n} resorts.": "{pages} stron w {sites} serwisach, użytych dla {n} ośrodków.",
+  "{n} websites": {
+    "one": "{n} serwis",
+    "few": "{n} serwisy",
+    "many": "{n} serwisów",
+    "other": "{n} serwisu"
+  },
   "Not Found – LiftRadar": "Nie znaleziono – LiftRadar",
   "Page not found": "Nie znaleziono strony",
   "There's nothing at this address. <a href=\"/\">All resorts →</a>": "Pod tym adresem nic nie ma. <a href=\"/\">Wszystkie ośrodki →</a>",
@@ -208,20 +259,32 @@
   "Lifts and slopes": "Wyciągi i trasy",
   "History": "Historia",
   "For developers": "Dla programistów",
-  "Every number starts with a report published by the resorts, by their regional or national reporting service, or by their slope map. LiftRadar reads those reports and puts them in one format. The full list is on <a href=\"sources.html\">Data sources</a>, and each resort's page links to the reports it was built from.": "Każda liczba pochodzi z raportu publikowanego przez ośrodki, ich regionalny lub krajowy serwis raportów albo z mapy tras. LiftRadar odczytuje te raporty i sprowadza je do jednego formatu. Pełna lista znajduje się na stronie <a href=\"sources.html\">Źródła danych</a>, a strona każdego ośrodka zawiera linki do raportów, z których powstała.",
+  "about-sources": {
+    "text": "Każda liczba pochodzi z raportu publikowanego przez ośrodki, ich regionalny lub krajowy serwis raportów albo z mapy tras. LiftRadar odczytuje te raporty i sprowadza je do jednego formatu. Pełna lista znajduje się na stronie <a href=\"sources.html\">Źródła danych</a>, a strona każdego ośrodka zawiera linki do raportów, z których powstała.",
+    "en": "46873d6a"
+  },
   "Not every resort has a live report. Some have no source we can read yet, or one whose terms don't allow it. We list them with their size and &ldquo;No report&rdquo;, or leave them out.": "Nie każdy ośrodek ma raport na żywo. Niektóre nie mają źródła, które umiemy już odczytać, albo ich źródło nie pozwala na to w swoim regulaminie. Takie ośrodki pokazujemy z rozmiarem i stanem &bdquo;Brak raportu&rdquo; albo pomijamy.",
-  "We read every report twice a day, at about 08:40 and 13:40 Vienna time, all year. Resort pages show two times:": "Każdy raport odczytujemy dwa razy dziennie, około 8:40 i 13:40 czasu wiedeńskiego, przez cały rok. Strony ośrodków podają dwa czasy:",
+  "We read every report twice a day, at about 08:40 and 13:40 CET (CEST in summer), all year. Resort pages show two times:": "Każdy raport odczytujemy dwa razy dziennie, około 8:40 i 13:40 CET (latem CEST), przez cały rok. Strony ośrodków podają dwa czasy:",
   "Checked": "Sprawdzono",
   "When we last read the resort's report.": "Kiedy ostatnio odczytaliśmy raport ośrodka.",
   "Resort's last change": "Ostatnia zmiana przez ośrodek",
   "When the resort last updated it. Reporting systems can refresh this daily without any number changing, and slope maps can keep it for days while the same lifts stay open.": "Kiedy ośrodek ostatnio go zaktualizował. Systemy raportowania mogą odświeżać ten czas codziennie, choć żadna liczba się nie zmienia, a mapy tras mogą go nie zmieniać przez wiele dni, gdy otwarte są te same wyciągi.",
-  "They're highlighted when an open resort's report couldn't be read in the latest run, or is more than 7 days old. Many sources give no report time at all, in France, Finland, Czechia and Spain among others. There we can't tell an old report from a current one, so a resort that stops updating can still read as open.": "Czasy są wyróżniane, gdy raportu otwartego ośrodka nie udało się odczytać przy ostatnim pobraniu albo ma on ponad 7 dni. Wiele źródeł w ogóle nie podaje godziny raportu, między innymi we Francji, Finlandii, Czechach i Hiszpanii. Nie możemy tam odróżnić starego raportu od aktualnego, więc ośrodek, który przestał się aktualizować, może nadal wyglądać na otwarty.",
+  "about-stale": {
+    "text": "Czasy są wyróżniane, gdy raportu otwartego ośrodka nie udało się odczytać przy ostatnim pobraniu albo ma on ponad 7 dni. Wiele źródeł w ogóle nie podaje godziny raportu, między innymi we Francji, Finlandii, Czechach i Hiszpanii. Nie możemy tam odróżnić starego raportu od aktualnego, więc ośrodek, który przestał się aktualizować, może nadal wyglądać na otwarty.",
+    "en": "c6bf147a"
+  },
   "Open|status": "Otwarty",
-  "The resort reports that it's open. In most countries it needs at least one open slope, because lifts also run for hikers outside the season, and a running lift, because some reports show slopes open before any lift runs. French resorts count what's scheduled to open later that day, and some show everything closed overnight, so they can read closed in the morning and open at midday.": "Ośrodek zgłasza, że jest otwarty. W większości krajów wymagana jest co najmniej jedna otwarta trasa, bo poza sezonem wyciągi kursują też dla turystów pieszych, oraz działający wyciąg, bo niektóre raporty pokazują otwarte trasy, zanim ruszy jakikolwiek wyciąg. Ośrodki francuskie liczą to, co ma zostać otwarte później tego dnia, a niektóre pokazują nocą wszystko jako zamknięte, więc rano mogą wyglądać na zamknięte, a w południe na otwarte.",
+  "about-status-open": {
+    "text": "Ośrodek zgłasza, że jest otwarty. W większości krajów wymagana jest co najmniej jedna otwarta trasa, bo poza sezonem wyciągi kursują też dla turystów pieszych, oraz działający wyciąg, bo niektóre raporty pokazują otwarte trasy, zanim ruszy jakikolwiek wyciąg. Ośrodki francuskie liczą to, co ma zostać otwarte później tego dnia, a niektóre pokazują nocą wszystko jako zamknięte, więc rano mogą wyglądać na zamknięte, a w południe na otwarte.",
+    "en": "94eea0c1"
+  },
   "Closed": "Zamknięty",
   "The resort reports that it's closed. We show 0 open lifts, slopes and km, and no snow depths, because closed resorts' reports often still carry last season's numbers.": "Ośrodek zgłasza, że jest zamknięty. Pokazujemy 0 otwartych wyciągów, tras i kilometrów oraz nie podajemy grubości śniegu, bo raporty zamkniętych ośrodków często zawierają jeszcze liczby z poprzedniego sezonu.",
   "No report": "Brak raportu",
-  "The resort hasn't reported for 14 days (for example before the season), we couldn't read its report for more than 2 days, or we don't read a live status for it yet. Only the area's size is kept. A 0 here means &ldquo;not reported&rdquo;, not that every lift is closed.": "Ośrodek nie przesłał raportu od 14 dni (na przykład przed sezonem), nie mogliśmy odczytać jego raportu przez ponad 2 dni albo jeszcze nie odczytujemy jego stanu na żywo. Zachowany jest tylko rozmiar terenu. 0 oznacza tu &bdquo;brak danych&rdquo;, a nie to, że wszystkie wyciągi są zamknięte.",
+  "about-status-no-report": {
+    "text": "Ośrodek nie przesłał raportu od 14 dni (na przykład przed sezonem), nie mogliśmy odczytać jego raportu przez ponad 2 dni albo jeszcze nie odczytujemy jego stanu na żywo. Zachowany jest tylko rozmiar terenu. 0 oznacza tu &bdquo;brak danych&rdquo;, a nie to, że wszystkie wyciągi są zamknięte.",
+    "en": "ad41772e"
+  },
   "When a resort's site is down or has changed, it keeps its last status, lifts and slopes for up to 2 days.": "Gdy strona ośrodka nie działa lub się zmieniła, ośrodek zachowuje ostatni stan, wyciągi i trasy przez maksymalnie 2 dni.",
   "<b>Mountain</b> and <b>valley</b> are the highest and lowest depth a resort reports, on its slopes or at its measuring stations. They aren't always comparable between countries:": "<b>Góra</b> i <b>dolina</b> to największa i najmniejsza grubość śniegu zgłaszana przez ośrodek, na trasach lub w punktach pomiarowych. Wartości z różnych krajów nie zawsze można porównywać:",
   "<b>Switzerland:</b> most resorts don't report depths, so we use the nearest SLF stations. These measure open ground, not pistes, and can be a few km from the ski area.": "<b>Szwajcaria:</b> większość ośrodków nie podaje grubości śniegu, więc korzystamy z najbliższych stacji SLF. Mierzą one otwarty teren, a nie trasy, i mogą być kilka kilometrów od terenu narciarskiego.",
@@ -229,19 +292,43 @@
   "<b>No depth:</b> resorts read only from a slope map have none, and neither do a few others.": "<b>Brak grubości:</b> nie mają jej ośrodki odczytywane tylko z mapy tras oraz kilka innych.",
   "Regional reports keep a resort's old values until it clears them, so check the date of the last snowfall.": "Raporty regionalne zachowują stare wartości ośrodka, dopóki ich nie usunie, więc sprawdzaj datę ostatniego opadu.",
   "<b>One ski area is one resort.</b> Linked villages reported separately, such as those of the SkiWelt, appear once under the area's name. Their snow depths are those of the village that reported last.": "<b>Jeden teren narciarski to jeden ośrodek.</b> Połączone miejscowości raportowane osobno, na przykład te ze SkiWelt, pojawiają się raz, pod nazwą terenu. Grubość śniegu pochodzi z miejscowości, która zgłosiła ją jako ostatnia.",
-  "<b>Total slope km</b> is usually the size the resort advertises, or else OnTheSnow's or skiresort.com's figure. Resorts count this differently, some with ski routes. Where no size is published we add up the reported slope lengths, which can be far too low.": "<b>Łączna długość tras</b> to zwykle rozmiar podawany przez ośrodek, a w jego braku wartość z OnTheSnow lub skiresort.com. Ośrodki liczą to różnie, niektóre razem z trasami nieratrakowanymi. Gdy rozmiar nie jest publikowany, sumujemy zgłoszone długości tras, co może dać wartość znacznie zaniżoną.",
+  "about-slope-km": {
+    "text": "<b>Łączna długość tras</b> to zwykle rozmiar podawany przez ośrodek, a w jego braku wartość z OnTheSnow lub skiresort.com. Ośrodki liczą to różnie, niektóre razem z trasami nieratrakowanymi. Gdy rozmiar nie jest publikowany, sumujemy zgłoszone długości tras, co może dać wartość znacznie zaniżoną.",
+    "en": "d5d70815"
+  },
   "<b>Open km</b> is the length of the open slopes, added up. It's only as complete as the source, so it can run low, and some open resorts don't have it.": "<b>Otwarte km</b> to suma długości otwartych tras. Jest tak kompletna jak źródło, więc może być zaniżona, a niektóre otwarte ośrodki jej nie mają.",
-  "<b>Lift and slope counts</b> can differ from the advertised ones, because slope maps include practice lifts and carpets: the SkiWelt map lists 147 lifts, the area advertises 81. Some resorts report lifts only.": "<b>Liczby wyciągów i tras</b> mogą się różnić od reklamowanych, bo mapy tras obejmują wyciągi szkoleniowe i taśmy: mapa SkiWelt wymienia 147 wyciągów, a teren reklamuje 81. Niektóre ośrodki podają tylko wyciągi.",
-  "<b>Lift types and slope difficulties</b> appear where a source lists them. Slope colours follow each country's system, so French green and blue are both &ldquo;easy&rdquo;. Km per difficulty don't add up to the total km.": "<b>Typy wyciągów i trudność tras</b> pojawiają się tam, gdzie podaje je źródło. Kolory tras są zgodne z systemem danego kraju, więc francuskie zielone i niebieskie to &bdquo;łatwe&rdquo;. Kilometry według trudności nie sumują się do łącznej długości.",
-  "The level (1&ndash;5) is the highest of the day in the resort's warning region, from the official avalanche service listed on <a href=\"sources.html\">Data sources</a>. It's a summary for one point per resort, so a resort spanning two regions shows only one. Read the full bulletin before going off-piste.": "Stopień (1&ndash;5) to najwyższy stopień danego dnia w regionie ostrzegawczym ośrodka, według oficjalnej służby lawinowej wymienionej na stronie <a href=\"sources.html\">Źródła danych</a>. To podsumowanie dla jednego punktu na ośrodek, więc ośrodek leżący w dwóch regionach pokazuje tylko jeden. Przed wyjściem poza trasy przeczytaj pełny komunikat.",
-  "It's missing outside the season, when no bulletin is valid, and where we have none to read: Austria outside Tirol, Finland, Sicily, the Apennines, and lower ranges elsewhere, such as the German uplands, the Vosges or Slovenia's Pohorje.": "Nie ma go poza sezonem, gdy nie obowiązuje żaden komunikat, oraz tam, gdzie nie mamy czego odczytać: w Austrii poza Tyrolem, w Finlandii, na Sycylii, w Apeninach i w niższych pasmach gdzie indziej, takich jak niemieckie góry średnie, Wogezy czy słoweńskie Pohorje.",
+  "about-counts": {
+    "text": "<b>Liczby wyciągów i tras</b> mogą się różnić od reklamowanych, bo mapy tras obejmują wyciągi szkoleniowe i taśmy: mapa SkiWelt wymienia 147 wyciągów, a teren reklamuje 81. Niektóre ośrodki podają tylko wyciągi.",
+    "en": "d5a4b230"
+  },
+  "about-types": {
+    "text": "<b>Typy wyciągów i trudność tras</b> pojawiają się tam, gdzie podaje je źródło. Kolory tras są zgodne z systemem danego kraju, więc francuskie zielone i niebieskie to &bdquo;łatwe&rdquo;. Kilometry według trudności nie sumują się do łącznej długości.",
+    "en": "f563cdad"
+  },
+  "about-avalanche-level": {
+    "text": "Stopień (1&ndash;5) to najwyższy stopień danego dnia w regionie ostrzegawczym ośrodka, według oficjalnej służby lawinowej wymienionej na stronie <a href=\"sources.html\">Źródła danych</a>. To podsumowanie dla jednego punktu na ośrodek, więc ośrodek leżący w dwóch regionach pokazuje tylko jeden. Przed wyjściem poza trasy przeczytaj pełny komunikat.",
+    "en": "bd9804c7"
+  },
+  "about-avalanche-missing": {
+    "text": "Nie ma go poza sezonem, gdy nie obowiązuje żaden komunikat, oraz tam, gdzie nie mamy czego odczytać: w Austrii poza Tyrolem, w Finlandii, w Bułgarii, na Sycylii, w Apeninach i w niższych pasmach gdzie indziej, takich jak niemieckie góry średnie, Wogezy czy słoweńskie Pohorje.",
+    "en": "d7831e2f"
+  },
   "Each resort is one point, which marks the area, not a lift station. Its region is the one that point lies in, so an area spanning a border is listed under one side.": "Każdy ośrodek to jeden punkt, który oznacza teren, a nie stację wyciągu. Jego region to ten, w którym leży ten punkt, więc teren na granicy jest przypisany do jednej strony.",
-  "On the map, a resort's outline and marker come from its lifts and pistes in OpenSkiData, rebuilt every week: the marker is at the resort's point when that's in its area, and otherwise at the bottom station nearest to it. 898 of the 910 resorts have an outline; the others are only a marker. Where neighbouring resorts share a linked area, the split between them is approximate. Zoomed in, the map shows the pistes and lifts.": "Na mapie obrys i znacznik ośrodka pochodzą z jego wyciągów i tras w OpenSkiData, przebudowywanych co tydzień: znacznik stoi w punkcie ośrodka, jeśli leży on w jego terenie, a w przeciwnym razie przy najbliższej dolnej stacji. Obrys ma 898 z 910 ośrodków, pozostałe mają tylko znacznik. Gdy sąsiednie ośrodki dzielą połączony teren, podział między nimi jest przybliżony. Po przybliżeniu mapa pokazuje trasy i wyciągi.",
+  "about-map-outlines": {
+    "text": "Na mapie obrys i znacznik ośrodka pochodzą z jego wyciągów i tras w OpenSkiData, przebudowywanych co tydzień: znacznik stoi w punkcie ośrodka, jeśli leży on w jego terenie, a w przeciwnym razie przy najbliższej dolnej stacji. Obrys ma 921 z 933 ośrodków, pozostałe mają tylko znacznik. Gdy sąsiednie ośrodki dzielą połączony teren, podział między nimi jest przybliżony. Po przybliżeniu mapa pokazuje trasy i wyciągi.",
+    "en": "2bd684f0"
+  },
   "Data has been collected since 24 October 2026, and nothing earlier exists. Resort pages show the key numbers of the last 365 days.": "Dane są zbierane od 24 października 2026 i wcześniejszych nie ma. Strony ośrodków pokazują najważniejsze liczby z ostatnich 365 dni.",
   "<code>null</code> means the source doesn't publish the value. <code>status</code> is never <code>null</code>: it's <code>open</code>, <code>closed</code> or <code>no_report</code>.": "<code>null</code> oznacza, że źródło nie publikuje danej wartości. <code>status</code> nigdy nie jest <code>null</code>: to <code>open</code>, <code>closed</code> lub <code>no_report</code>.",
-  "With <code>no_report</code>, <code>lifts.open</code> is 0 and <code>slopes.open</code> is <code>null</code>. With <code>closed</code>, the snow depths and <code>condition</code> are <code>null</code>; <code>last_snowfall</code> and station measurements stay.": "Przy <code>no_report</code> pole <code>lifts.open</code> ma wartość 0, a <code>slopes.open</code> to <code>null</code>. Przy <code>closed</code> grubości śniegu i <code>condition</code> to <code>null</code>; <code>last_snowfall</code> i pomiary ze stacji pozostają.",
-  "<code>fetched_at</code> is when we read the report and <code>lifts_updated_at</code> is the resort's own report time, <code>null</code> if its source has none. <code>status_from</code> is set when the latest run couldn't read the report, and gives the time of the run the values come from.": "<code>fetched_at</code> to czas odczytania raportu, a <code>lifts_updated_at</code> to czas raportu podany przez ośrodek lub <code>null</code>, jeśli źródło go nie ma. <code>status_from</code> jest ustawiane, gdy ostatnie pobranie nie mogło odczytać raportu, i podaje czas pobrania, z którego pochodzą wartości.",
-  "Times are ISO 8601 with the Vienna offset. <code>condition</code> is in the source's language.": "Czasy są w formacie ISO 8601 z przesunięciem dla Wiednia. <code>condition</code> jest w języku źródła.",
+  "api-no-report": {
+    "text": "Przy <code>no_report</code> pole <code>lifts.open</code> ma wartość 0, a <code>slopes.open</code> to <code>null</code>. Przy <code>closed</code> grubości śniegu i <code>condition</code> to <code>null</code>; <code>last_snowfall</code> i pomiary ze stacji pozostają.",
+    "en": "c3e00c08"
+  },
+  "api-times": {
+    "text": "<code>fetched_at</code> to czas odczytania raportu, a <code>lifts_updated_at</code> to czas raportu podany przez ośrodek lub <code>null</code>, jeśli źródło go nie ma. <code>status_from</code> jest ustawiane, gdy ostatnie pobranie nie mogło odczytać raportu, i podaje czas pobrania, z którego pochodzą wartości.",
+    "en": "c5c11bf8"
+  },
+  "Times are ISO 8601 with the Central European offset (+01:00, +02:00 in summer). <code>condition</code> is in the source's language.": "Czasy są w formacie ISO 8601 z przesunięciem środkowoeuropejskim (+01:00, latem +02:00). <code>condition</code> jest w języku źródła.",
   "Language": "Język",
   "Chairlift": "Wyciąg krzesełkowy",
   "Gondola": "Kolej gondolowa",
@@ -270,6 +357,7 @@
   "Close": "Zamknij",
   "The map could not load.": "Nie udało się wczytać mapy.",
   "See the resort in 3D": "Zobacz ośrodek w 3D",
+  "Show the whole resort": "Pokaż cały ośrodek",
   "Every lift and piste on the real terrain": "Każdy wyciąg i każda trasa na prawdziwym terenie",
   "3D map – LiftRadar": "Mapa 3D – LiftRadar",
   "3D map": "Mapa 3D",
@@ -287,30 +375,73 @@
   "API": "API",
   "All the data is free to read as JSON: the files, their format and how to poll them are on <a href=\"api.html\">API</a>.": "Wszystkie dane są dostępne bezpłatnie w formacie JSON: pliki, ich format i sposób odpytywania opisuje strona <a href=\"api.html\">API</a>.",
   "For code generators and API tools, every file is described in <a href=\"/openapi.json\">OpenAPI 3.1</a>.": "Dla generatorów kodu i narzędzi do API każdy plik jest opisany w <a href=\"/openapi.json\">OpenAPI 3.1</a>.",
-  "For AI assistants, the same data is an <a href=\"https://modelcontextprotocol.io\">MCP</a> server, with no key: add the address above as a remote server (Streamable HTTP) in Claude, Cursor or any other MCP client. Its tools find resorts by country, status, snow, open lifts or distance from a point, and read one resort's report, its history and the daily stats.": "Dla asystentów AI te same dane są dostępne jako serwer <a href=\"https://modelcontextprotocol.io\">MCP</a>, bez klucza: dodaj powyższy adres jako serwer zdalny (Streamable HTTP) w Claude, Cursor lub innym kliencie MCP. Jego narzędzia wyszukują ośrodki według kraju, statusu, śniegu, otwartych wyciągów lub odległości od punktu oraz odczytują raport ośrodka, jego historię i dzienne statystyki.",
+  "Only the addresses on this page, and the MCP server's tools, are a stable API. The site's pages also read other files, which can change or disappear at any time, without notice.": "Stabilnym API są tylko adresy z tej strony i narzędzia serwera MCP. Strony serwisu czytają też inne pliki, które mogą się zmienić lub zniknąć w każdej chwili, bez uprzedzenia.",
+  "api-mcp": {
+    "text": "Dla asystentów AI te same dane są dostępne jako serwer <a href=\"https://modelcontextprotocol.io\">MCP</a>, bez klucza: dodaj powyższy adres jako serwer zdalny (Streamable HTTP) w Claude, Cursor lub innym kliencie MCP. Jego narzędzia wyszukują ośrodki według kraju, statusu, śniegu, otwartych wyciągów lub odległości od punktu oraz odczytują raport ośrodka, jego wyciągi i trasy pojedynczo, jego historię i dzienne statystyki.",
+    "en": "18437498"
+  },
   "API – LiftRadar": "API – LiftRadar",
-  "All the data is free to read as JSON, with no key and no sign-up: plain files on <code>https://liftradar.eu</code>, readable from any site (CORS allows any origin). The format is defined by the JSON Schema of each file.": "Wszystkie dane są dostępne bezpłatnie w formacie JSON, bez klucza i bez rejestracji: to zwykłe pliki na <code>https://liftradar.eu</code>, które można czytać z dowolnej strony (CORS zezwala na każde źródło). Format każdego pliku określa jego JSON Schema.",
+  "api-intro": {
+    "text": "Wszystkie dane są dostępne bezpłatnie w formacie JSON, bez klucza i bez rejestracji: to zwykłe pliki na <code>https://liftradar.eu</code>, które można czytać z dowolnej strony (CORS zezwala na każde źródło). Format każdego pliku określa jego JSON Schema.",
+    "en": "5a6ad516"
+  },
   "AI assistants can read the same data through the <a href=\"#mcp\">MCP server</a>, also with no key.": "Asystenci AI mogą czytać te same dane przez <a href=\"#mcp\">serwer MCP</a>, również bez klucza.",
   "One resort": "Jeden ośrodek",
   "Pistes and lifts": "Trasy i wyciągi",
   "Villages and roads": "Miejscowości i drogi",
   "Reading the values": "Jak czytać wartości",
   "Polling": "Odpytywanie",
-  "Every resort with its main values: status, snow depths, open lifts and slopes, avalanche level, location and the <a href=\"#groups\">groups</a> it's in (<a href=\"/schema/index.schema.json\">schema</a>). Each resort's <code>country</code> and <code>id</code> give the address of its full report.": "Wszystkie ośrodki z głównymi wartościami: stanem, grubością śniegu, otwartymi wyciągami i trasami, stopniem zagrożenia lawinowego, położeniem i <a href=\"#groups\">grupami</a>, do których należy (<a href=\"/schema/index.schema.json\">schemat</a>). <code>country</code> i <code>id</code> ośrodka dają adres jego pełnego raportu.",
-  "One resort's full report (<a href=\"/schema/resort.schema.json\">schema</a>): everything in the list, plus snow stations, lifts by type, slopes by difficulty, the avalanche bulletin and the reports it was built from. For example <a href=\"/json/at/hintertux.json\"><code>json/at/hintertux.json</code></a>. The <code>id</code> is in the address of each resort's page on this site.": "Pełny raport jednego ośrodka (<a href=\"/schema/resort.schema.json\">schemat</a>): wszystko, co na liście, a do tego stacje pomiaru śniegu, wyciągi według rodzaju, trasy według trudności, komunikat lawinowy i raporty, z których powstał. Na przykład <a href=\"/json/at/hintertux.json\"><code>json/at/hintertux.json</code></a>. <code>id</code> jest w adresie strony każdego ośrodka na tej witrynie.",
-  "<code>country</code> is the ISO code in lower case: <code>at</code>, <code>ch</code>, <code>cz</code>, <code>de</code>, <code>es</code>, <code>fi</code>, <code>fr</code>, <code>it</code>, <code>no</code>, <code>pl</code>, <code>si</code>, <code>sk</code>. These addresses stay: when resorts merge, the old ones keep working as copies of the new one's.": "<code>country</code> to kod ISO małymi literami: <code>at</code>, <code>ch</code>, <code>cz</code>, <code>de</code>, <code>es</code>, <code>fi</code>, <code>fr</code>, <code>it</code>, <code>no</code>, <code>pl</code>, <code>si</code>, <code>sk</code>. Te adresy się nie zmieniają: gdy ośrodki się łączą, stare dalej działają jako kopie raportu nowego.",
-  "The key numbers of every run over the last 365 days, one list per value: <code>time</code>, <code>status</code>, open and total lifts and slopes, open km and snow depths (<a href=\"/schema/history.schema.json\">schema</a>). Data has been collected since 24 October 2026.": "Najważniejsze liczby z każdego pobrania z ostatnich 365 dni, jedna lista na wartość: <code>time</code>, <code>status</code>, otwarte i wszystkie wyciągi i trasy, otwarte km i grubość śniegu (<a href=\"/schema/history.schema.json\">schemat</a>). Dane zbieramy od 24 października 2026.",
+  "api-resorts": {
+    "text": "Wszystkie ośrodki z głównymi wartościami: stanem, grubością śniegu, otwartymi wyciągami i trasami, stopniem zagrożenia lawinowego, położeniem i <a href=\"#groups\">grupami</a>, do których należy (<a href=\"/schema/index.schema.json\">schemat</a>). <code>country</code> i <code>id</code> ośrodka dają adres jego pełnego raportu.",
+    "en": "e78d759e"
+  },
+  "api-resort": {
+    "text": "Pełny raport jednego ośrodka (<a href=\"/schema/resort.schema.json\">schemat</a>): wszystko, co na liście, a do tego stacje pomiaru śniegu, wyciągi według rodzaju, trasy według trudności, komunikat lawinowy i raporty, z których powstał. Na przykład <a href=\"/json/at/hintertux.json\"><code>json/at/hintertux.json</code></a>. <code>id</code> jest w adresie strony każdego ośrodka na tej witrynie.",
+    "en": "219bc3b3"
+  },
+  "api-ids": {
+    "text": "<code>country</code> to kod ISO małymi literami: <code>ad</code>, <code>at</code>, <code>ch</code>, <code>cz</code>, <code>de</code>, <code>es</code>, <code>fi</code>, <code>fr</code>, <code>it</code>, <code>no</code>, <code>pl</code>, <code>si</code>, <code>sk</code>. Te adresy się nie zmieniają: gdy ośrodki się łączą, stare dalej działają jako kopie raportu nowego.",
+    "en": "d096be61"
+  },
+  "api-history": {
+    "text": "Najważniejsze liczby z każdego pobrania z ostatnich 365 dni, jedna lista na wartość: <code>time</code>, <code>status</code>, otwarte i wszystkie wyciągi i trasy, otwarte km i grubość śniegu (<a href=\"/schema/history.schema.json\">schemat</a>). Dane zbieramy od 24 października 2026.",
+    "en": "9e6c43fb"
+  },
   "Daily totals per country and region over the last 365 days: resorts tracked and open, and their open lifts, slopes and km (<a href=\"/schema/stats.schema.json\">schema</a>).": "Dzienne sumy dla krajów i regionów z ostatnich 365 dni: śledzone i otwarte ośrodki oraz ich otwarte wyciągi, trasy i km (<a href=\"/schema/stats.schema.json\">schemat</a>).",
   "Resort groups": "Grupy ośrodków",
-  "The groups of resorts we list separately, by id: ski areas linked by lifts and runs (<code>linked</code>, e.g. Les 3 Vallées) and passes or regions whose areas aren't linked (<code>region</code>, e.g. Dolomiti Superski), each with its name, website and members as <code>&lt;country&gt;/&lt;id&gt;</code> (<a href=\"/schema/groups.schema.json\">schema</a>).": "Grupy ośrodków, które podajemy osobno, według id: tereny narciarskie połączone wyciągami i trasami (<code>linked</code>, np. Les 3 Vallées) oraz karnety lub regiony, których ośrodki nie są połączone (<code>region</code>, np. Dolomiti Superski), każda z nazwą, stroną i członkami jako <code>&lt;country&gt;/&lt;id&gt;</code> (<a href=\"/schema/groups.schema.json\">schemat</a>).",
-  "The lifts, pistes and ski areas of OpenSkiData in map tiles (XYZ, zoom 10), each with its resort here when it has one (<a href=\"/ski/v1/tile.schema.json\">schema</a>), and each resort's outline and point on the map. The build and counts are in <code>meta.json</code>. Rebuilt weekly, under the <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL</a>: data from OpenSkiData, © OpenStreetMap contributors.": "Wyciągi, trasy i ośrodki z OpenSkiData w kafelkach mapy (XYZ, zoom 10), każdy z ośrodkiem z naszej listy, jeśli taki ma (<a href=\"/ski/v1/tile.schema.json\">schemat</a>), oraz obrys i punkt każdego ośrodka na mapie. Wersja i liczby są w <code>meta.json</code>. Przebudowywane co tydzień, na licencji <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL</a>: dane z OpenSkiData, © współtwórcy OpenStreetMap.",
+  "api-groups": {
+    "text": "Grupy ośrodków, które podajemy osobno, według id: tereny narciarskie połączone wyciągami i trasami (<code>linked</code>, np. Les 3 Vallées) oraz karnety lub regiony, których ośrodki nie są połączone (<code>region</code>, np. Dolomiti Superski), każda z nazwą, stroną i członkami jako <code>&lt;country&gt;/&lt;id&gt;</code> (<a href=\"/schema/groups.schema.json\">schemat</a>).",
+    "en": "fdaf689d"
+  },
+  "api-ski-map": {
+    "text": "Wyciągi, trasy i ośrodki z OpenSkiData w kafelkach mapy (XYZ, zoom 10), każdy z ośrodkiem z naszej listy, jeśli taki ma (<a href=\"/ski/v1/tile.schema.json\">schemat</a>), oraz obrys i punkt każdego ośrodka na mapie. Wersja i liczby są w <code>meta.json</code>. Przebudowywane co tydzień, na licencji <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL</a>: dane z OpenSkiData, © współtwórcy OpenStreetMap.",
+    "en": "1d22b59b"
+  },
   "What the numbers mean, and where they can mislead, is on <a href=\"about.html\">About the data</a>.": "Co oznaczają liczby i kiedy mogą wprowadzać w błąd, opisuje strona <a href=\"about.html\">O danych</a>.",
-  "The data changes twice a day, at about 08:40 and 13:40 Vienna time, so there's no point reading it more often than hourly. The files have an <code>ETag</code>: send <code>If-None-Match</code> and an unchanged file costs nothing. Questions, or a use we should know about: miron [at] liftradar.eu.": "Dane zmieniają się dwa razy dziennie, około 08:40 i 13:40 czasu wiedeńskiego, więc nie ma sensu czytać ich częściej niż co godzinę. Pliki mają <code>ETag</code>: wyślij <code>If-None-Match</code>, a niezmieniony plik nic nie kosztuje. Pytania albo zastosowanie, o którym warto nam wiedzieć: miron [at] liftradar.eu.",
+  "api-polling": {
+    "text": "Dane zmieniają się dwa razy dziennie, około 08:40 i 13:40 CET, więc nie ma sensu czytać ich częściej niż co godzinę. Pliki mają <code>ETag</code>: wyślij <code>If-None-Match</code>, a niezmieniony plik nic nie kosztuje. Pytania albo zastosowanie, o którym warto nam wiedzieć: miron [at] liftradar.eu.",
+    "en": "0d1642e6"
+  },
   "credit required": "wymagane podanie źródła",
   "Resort information": "Informacje o ośrodku",
   "Current conditions": "Aktualne warunki",
-  "Pages with current conditions give the status, lifts, slopes, snow and avalanche danger; pages with resort information give what stays the same, such as the size of the ski area. “Credit required” marks a source whose terms ask for a credit; for the others we haven't checked yet, so assume they do.": "Strony z aktualnymi warunkami podają status, wyciągi, trasy, śnieg i zagrożenie lawinowe; strony z informacjami o ośrodku podają to, co się nie zmienia, np. wielkość obszaru narciarskiego. „Wymagane podanie źródła” oznacza źródło, którego warunki wymagają jego wskazania; w pozostałych jeszcze tego nie sprawdziliśmy, więc załóż, że tak jest.",
-  "<code>source_details</code> lists the pages a report was built from: <code>conditions</code> give current values, <code>resort_info</code> only what stays the same (the size of the ski area). <code>attribution_required</code> is <code>true</code> where the source's terms ask for a credit, <code>false</code> where they don't and <code>null</code> where we haven't checked: treat it as <code>true</code>. <code>sources</code> is deprecated: it lists the same pages as plain URLs, and will be removed.": "<code>source_details</code> wymienia strony, z których powstał raport: <code>conditions</code> dają aktualne wartości, <code>resort_info</code> tylko to, co się nie zmienia (wielkość obszaru narciarskiego). <code>attribution_required</code> to <code>true</code>, gdy warunki źródła wymagają jego wskazania, <code>false</code>, gdy nie, i <code>null</code>, gdy jeszcze tego nie sprawdziliśmy: traktuj to jak <code>true</code>. <code>sources</code> jest przestarzałe: wymienia te same strony jako zwykłe adresy URL i zostanie usunięte.",
+  "sources-kinds": {
+    "text": "Źródła z aktualnymi warunkami podają status, wyciągi, trasy, śnieg i zagrożenie lawinowe; źródła z informacjami o ośrodku podają to, co się nie zmienia, np. wielkość obszaru narciarskiego. Każde jest podane jako jego serwis, gdzie znajdziesz te same dane. „Wymagane podanie źródła” oznacza źródło, którego warunki wymagają jego wskazania; w pozostałych jeszcze tego nie sprawdziliśmy, więc załóż, że tak jest.",
+    "en": "38588686"
+  },
+  "api-source-details": {
+    "text": "<code>source_details</code> wymienia źródła, z których powstał raport, każde raz, jako stronę główną jego serwisu, na którym można znaleźć te same dane (a nie adresy, z których pobiera je LiftRadar); zamiast niej podana jest konkretna strona, gdy jest to strona z podziękowaniem lub licencją albo gdy warunki źródła wymagają linku do niej (strona ośrodka w Fnugg). <code>conditions</code> dają aktualne wartości, <code>resort_info</code> tylko to, co się nie zmienia (wielkość obszaru narciarskiego). <code>attribution_required</code> to <code>true</code>, gdy warunki źródła wymagają jego wskazania, <code>false</code>, gdy nie, i <code>null</code>, gdy jeszcze tego nie sprawdziliśmy: traktuj to jak <code>true</code>. <code>sources</code> jest przestarzałe: wymienia te same adresy jako zwykłe adresy URL i zostanie usunięte.",
+    "en": "83ac53c5"
+  },
+  "in preparation": "w przygotowaniu",
+  "unknown": "nieznany",
+  "All lifts": "Wszystkie wyciągi",
+  "All slopes": "Wszystkie trasy",
+  "The list could not load.": "Nie udało się wczytać listy.",
+  "Name": "Nazwa",
+  "Type": "Rodzaj",
+  "Length": "Długość",
+  "Vertical": "Przewyższenie",
   "Your favourites": "Twoje ulubione",
   "Add to favourites": "Dodaj do ulubionych",
   "Remove from favourites": "Usuń z ulubionych",
@@ -330,29 +461,147 @@
   "Privacy Policy – LiftRadar": "Polityka prywatności – LiftRadar",
   "Privacy policy": "Polityka prywatności",
   "LiftRadar: the website liftradar.eu and the Android and iOS apps. Effective 17 November 2026.": "LiftRadar: strona liftradar.eu oraz aplikacje na Androida i iOS. Obowiązuje od 17 listopada 2026.",
-  "In short: LiftRadar has no accounts, ads, analytics or cookies, and doesn't collect your personal data. Your favourite resorts and settings stay on your device. To show the data and the maps, your browser or the app downloads files from liftradar.eu and from the services listed below.": "Krótko: LiftRadar nie ma kont, reklam, analityki ani ciasteczek i nie zbiera Twoich danych osobowych. Ulubione ośrodki i ustawienia zostają na Twoim urządzeniu. Żeby pokazać dane i mapy, przeglądarka albo aplikacja pobiera pliki z liftradar.eu i z serwisów opisanych niżej.",
+  "privacy-intro": {
+    "text": "Krótko: LiftRadar nie ma kont, reklam, analityki ani ciasteczek i nie zbiera Twoich danych osobowych. Ulubione ośrodki i ustawienia zostają na Twoim urządzeniu. Żeby pokazać dane i mapy, przeglądarka albo aplikacja pobiera pliki z liftradar.eu i z serwisów opisanych niżej.",
+    "en": "97df1984"
+  },
   "Who is responsible": "Kto odpowiada za dane",
   "Miron Pawlik, who makes LiftRadar. Contact: miron [at] liftradar.eu.": "Miron Pawlik, twórca LiftRadaru. Kontakt: miron [at] liftradar.eu.",
   "On your device": "Na Twoim urządzeniu",
-  "Your favourite resorts, the language you picked and the map's settings are kept only on your device: in the browser's storage (localStorage) on the website, and in the app's own storage in the apps. They are never sent anywhere.": "Ulubione ośrodki, wybrany język i ustawienia mapy są zapisywane wyłącznie na Twoim urządzeniu: na stronie w pamięci przeglądarki (localStorage), w aplikacjach w ich własnej pamięci. Nigdzie ich nie wysyłamy.",
+  "privacy-device": {
+    "text": "Ulubione ośrodki, wybrany język i ustawienia mapy są zapisywane wyłącznie na Twoim urządzeniu: na stronie w pamięci przeglądarki (localStorage), w aplikacjach w ich własnej pamięci. Nigdzie ich nie wysyłamy.",
+    "en": "4eb6f75d"
+  },
   "The apps keep a copy of the files they last downloaded, so they open without a signal.": "Aplikacje trzymają kopię ostatnio pobranych plików, żeby otwierały się bez zasięgu.",
   "All of it goes when you clear the site's data in your browser or uninstall the app.": "Wszystko to znika po wyczyszczeniu danych strony w przeglądarce albo odinstalowaniu aplikacji.",
   "What your device downloads": "Co pobiera Twoje urządzenie",
-  "Each request tells the server your IP address, details of your browser or app, and what it asks for. For map tiles, that is which part of the map you are looking at. These services follow their own policies:": "Każde zapytanie przekazuje serwerowi Twój adres IP, informacje o przeglądarce lub aplikacji i to, o co prosi, a przy kafelkach mapy to, jaki fragment mapy oglądasz. Te serwisy stosują własne zasady:",
+  "privacy-requests": {
+    "text": "Każde zapytanie przekazuje serwerowi Twój adres IP, informacje o przeglądarce lub aplikacji i to, o co prosi, a przy kafelkach mapy to, jaki fragment mapy oglądasz. Te serwisy stosują własne zasady:",
+    "en": "154691b0"
+  },
   "The resort data, the ski maps and the pages: liftradar.eu, served by Cloudflare (<a href=\"https://www.cloudflare.com/privacypolicy/\">Cloudflare's privacy policy</a>).": "Dane ośrodków, mapy narciarskie i strony: liftradar.eu, serwowane przez Cloudflare (<a href=\"https://www.cloudflare.com/privacypolicy/\">polityka prywatności Cloudflare</a>).",
   "The base map: <a href=\"https://openfreemap.org\">OpenFreeMap</a>.": "Mapa podkładowa: <a href=\"https://openfreemap.org\">OpenFreeMap</a>.",
-  "The land in 3D: elevation tiles from Terrain Tiles on Amazon Web Services (<a href=\"https://aws.amazon.com/privacy/\">AWS privacy notice</a>), and on the website also from <a href=\"https://mapterhorn.com\">Mapterhorn</a>.": "Teren w 3D: kafelki wysokości z Terrain Tiles w Amazon Web Services (<a href=\"https://aws.amazon.com/privacy/\">informacja o prywatności AWS</a>), a na stronie także z <a href=\"https://mapterhorn.com\">Mapterhorn</a>.",
+  "privacy-terrain": {
+    "text": "Teren w 3D: kafelki wysokości z Terrain Tiles w Amazon Web Services (<a href=\"https://aws.amazon.com/privacy/\">informacja o prywatności AWS</a>), a na stronie także z <a href=\"https://mapterhorn.com\">Mapterhorn</a>.",
+    "en": "a2956524"
+  },
   "On the website, the map's scripts from cdnjs (Cloudflare) and <a href=\"https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net\">jsDelivr</a>.": "Na stronie skrypty mapy z cdnjs (Cloudflare) i <a href=\"https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net\">jsDelivr</a>.",
   "Website hosting": "Hosting strony",
-  "Like any web server, Cloudflare sees the IP address and technical details of requests, including those to the API and the MCP server, and makes aggregate traffic statistics from them. We use no cookies and no tracking scripts, and keep no logs of our own.": "Jak każdy serwer WWW, Cloudflare widzi adres IP i techniczne szczegóły zapytań, także do API i serwera MCP, i tworzy z nich zbiorcze statystyki ruchu. Nie używamy ciasteczek ani skryptów śledzących i nie prowadzimy własnych logów.",
+  "privacy-hosting": {
+    "text": "Jak każdy serwer WWW, Cloudflare widzi adres IP i techniczne szczegóły zapytań, także do API i serwera MCP, i tworzy z nich zbiorcze statystyki ruchu. Nie używamy ciasteczek ani skryptów śledzących i nie prowadzimy własnych logów.",
+    "en": "1c207a48"
+  },
   "Phone apps": "Aplikacje",
-  "The apps ask only for internet access. They have no access to your location, contacts, photos or files. The app stores (App Store, Google Play) may collect their own data about installs and crashes under their own terms.": "Aplikacje proszą tylko o dostęp do internetu. Nie mają dostępu do Twojej lokalizacji, kontaktów, zdjęć ani plików. Sklepy z aplikacjami (App Store, Google Play) mogą zbierać własne dane o instalacjach i awariach na swoich zasadach.",
+  "privacy-apps": {
+    "text": "Aplikacje proszą tylko o dostęp do internetu. Nie mają dostępu do Twojej lokalizacji, kontaktów, zdjęć ani plików. Sklepy z aplikacjami (App Store, Google Play) mogą zbierać własne dane o instalacjach i awariach na swoich zasadach.",
+    "en": "91e10d8a"
+  },
   "Your rights": "Twoje prawa",
-  "We don't keep your personal data, so there is usually nothing to hand over or delete. If you have questions or want to use your rights under the GDPR (access, correction, erasure, objection), write to the address above. You can also complain to your data protection authority (in Poland, the President of the Personal Data Protection Office, UODO).": "Nie przechowujemy Twoich danych osobowych, więc zwykle nie ma czego wydać ani usunąć. Jeśli masz pytania albo chcesz skorzystać z praw z RODO (dostęp, sprostowanie, usunięcie, sprzeciw), napisz na adres powyżej. Możesz też złożyć skargę do organu ochrony danych (w Polsce do Prezesa Urzędu Ochrony Danych Osobowych, UODO).",
+  "privacy-rights": {
+    "text": "Nie przechowujemy Twoich danych osobowych, więc zwykle nie ma czego wydać ani usunąć. Jeśli masz pytania albo chcesz skorzystać z praw z RODO (dostęp, sprostowanie, usunięcie, sprzeciw), napisz na adres powyżej. Możesz też złożyć skargę do organu ochrony danych (w Polsce do Prezesa Urzędu Ochrony Danych Osobowych, UODO).",
+    "en": "b5c616c6"
+  },
   "Children": "Dzieci",
   "LiftRadar isn't aimed at children and doesn't knowingly collect children's data.": "LiftRadar nie jest skierowany do dzieci i świadomie nie zbiera danych dzieci.",
   "Changes": "Zmiany",
   "If this policy changes, the new version will appear on this page with a new date.": "Jeśli ta polityka się zmieni, nowa wersja pojawi się na tej stronie z nową datą.",
   "Get the app": "Pobierz aplikację",
-  "<code>linked_area</code> is the id of the ski area a resort shares with others, linked by lifts and runs (<code>les-3-vallees</code>), and <code>ski_region</code> that of the pass or region it shares without a link (<code>dolomiti-superski</code>); look them up in <a href=\"#groups\"><code>json/groups.json</code></a>. Both are left out for a resort that isn't in such a group.": "<code>linked_area</code> to id terenu narciarskiego, który ośrodek dzieli z innymi, połączonego wyciągami i trasami (<code>les-3-vallees</code>), a <code>ski_region</code> to id karnetu lub regionu, który dzieli z nimi bez połączenia (<code>dolomiti-superski</code>); szczegóły są w <a href=\"#groups\"><code>json/groups.json</code></a>. Ośrodek spoza takiej grupy nie ma tych pól."
+  "api-linked-area": {
+    "text": "<code>linked_area</code> to id terenu narciarskiego, który ośrodek dzieli z innymi, połączonego wyciągami i trasami (<code>les-3-vallees</code>), a <code>ski_region</code> to id karnetu lub regionu, który dzieli z nimi bez połączenia (<code>dolomiti-superski</code>); szczegóły są w <a href=\"#groups\"><code>json/groups.json</code></a>. Ośrodek spoza takiej grupy nie ma tych pól.",
+    "en": "a94b88b9"
+  },
+  "Closed or in preparation": "Zamknięte lub w przygotowaniu",
+  "Status not known": "Stan nieznany",
+  "From the resorts' own lists, as of their last update.": "Z list samych ośrodków, według ich ostatniej aktualizacji.",
+  "≈ length on the OpenStreetMap map, where the resort gives none": "≈ długość zmierzona na mapie OpenStreetMap, gdy ośrodek jej nie podaje",
+  "≈ height difference on the OpenStreetMap map, where the resort gives none": "≈ przewyższenie zmierzone na mapie OpenStreetMap, gdy ośrodek go nie podaje",
+  "≈ length and height difference on the OpenStreetMap map, where the resort gives none": "≈ długość i przewyższenie zmierzone na mapie OpenStreetMap, gdy ośrodek ich nie podaje",
+  "<b>Lengths with &asymp;</b> in a resort's list of lifts and slopes are measured on the OpenStreetMap map, where the resort gives none. Resorts' own slope lengths often run longer than the map's.": "<b>Długości z &asymp;</b> na liście wyciągów i tras ośrodka są zmierzone na mapie OpenStreetMap, gdy ośrodek ich nie podaje. Ośrodki często podają dłuższe trasy, niż wychodzi z mapy.",
+  "Clear|weather": "Bezchmurnie",
+  "Partly cloudy": "Częściowe zachmurzenie",
+  "Overcast": "Pochmurno",
+  "Fog": "Mgła",
+  "Drizzle": "Mżawka",
+  "Rain": "Deszcz",
+  "Thunderstorm": "Burza",
+  "Top": "Góra",
+  "Bottom": "Dół",
+  "Today": "Dziś",
+  "Snowfall": "Opad śniegu",
+  "Strongest gusts": "Najsilniejsze porywy",
+  "wind {speed} km/h": "wiatr {speed} km/h",
+  "at {time}": "o {time}",
+  "Snow in 7 days": "Śnieg w 7 dni",
+  "Weather forecast": "Prognoza pogody",
+  "A model forecast for the resort, not its own report. Updated {time}.": "Prognoza z modelu pogody dla ośrodka, a nie jego własny raport. Aktualizacja: {time}.",
+  "Weather data by Open-Meteo.com": "Dane pogodowe: Open-Meteo.com",
+  "Weather": "Pogoda",
+  "about-weather": {
+    "text": "Strony ośrodków pokazują 7-dniową prognozę z <a href=\"https://open-meteo.com/\">Open-Meteo</a>, pobieraną razem z raportami: prognozę modelu pogody dla górnej i dolnej części ośrodka albo, gdy ich nie znamy, dla samego jego położenia. To nie jest raport ośrodka. Bieżące warunki też pochodzą z modelu, z chwili pobrania prognozy, a dni są liczone w strefie czasowej ośrodka.",
+    "en": "a48c7450"
+  },
+  "Could not load the ski area ({message}).": "Nie udało się wczytać terenu narciarskiego ({message}).",
+  "No ski area given.": "Nie podano terenu narciarskiego.",
+  "One ski area: its resorts are linked by lifts and runs, and sold as one.": "Jeden teren narciarski: jego ośrodki łączą wyciągi i trasy, a karnet jest wspólny.",
+  "Open slopes (km)": "Otwarte trasy (km)",
+  "Open slopes by resort": "Otwarte trasy według ośrodka",
+  "Related areas": "Powiązane tereny",
+  "Resorts in the area": "Ośrodki na tym terenie",
+  "Resorts open": "Otwarte ośrodki",
+  "Resorts that share a ski pass or an operator, but aren't linked by lifts.": "Ośrodki ze wspólnym karnetem lub operatorem, ale niepołączone wyciągami.",
+  "There's no such ski area.": "Nie ma takiego terenu narciarskiego.",
+  "This season": "Ten sezon",
+  "Where to ski today": "Gdzie dziś na narty",
+  "highest in the area": "najwyższe na tym terenie",
+  "{n} of these resorts": "{n} z tych ośrodków",
+  "{title}: {value} on {date}, since {start}": "{title}: {value} w dniu {date}, od {start}",
+  "Which ski resorts are open across Europe: lifts, slopes, snow depths and weather from the resorts' own reports, updated twice a day.": "Które ośrodki narciarskie w Europie są otwarte: wyciągi, trasy, grubość śniegu i pogoda z raportów samych ośrodków, aktualizowane dwa razy dziennie.",
+  "LiftRadar: a cable car cabin over snowy peaks": "LiftRadar: kabina kolejki linowej nad zaśnieżonymi szczytami",
+  "{n} regions": {
+    "one": "{n} region",
+    "few": "{n} regiony",
+    "many": "{n} regionów",
+    "other": "{n} regionu"
+  },
+  "In the table": "W tabeli",
+  "Top|elevation": "Najwyżej",
+  "Vertical drop": "Przewyższenie",
+  "Resort of the day": "Ośrodek dnia",
+  "See it in 3D →": "Zobacz w 3D →",
+  "Biggest ski area": "Największy ośrodek",
+  "Most lifts": "Najwięcej wyciągów",
+  "Highest lift": "Najwyższy wyciąg",
+  "Biggest vertical drop": "Największe przewyższenie",
+  "Records": "Rekordy",
+  "{open} of {n} open": "{open} z {n} otwartych",
+  "Regions and resorts": "Regiony i ośrodki",
+  "Linked ski areas and passes": "Połączone tereny i karnety",
+  "We don't cover that country.": "Nie obejmujemy tego kraju.",
+  "Could not load the country ({message}).": "Nie udało się wczytać kraju ({message}).",
+  "{country} at a glance →": "{country} w skrócie →",
+  "{country}: ski resorts, open lifts and snow": "{country}: ośrodki narciarskie, otwarte wyciągi i śnieg",
+  "Ski resorts by country": "Ośrodki narciarskie według krajów",
+  "Countries": "Kraje",
+  "Regions with a resort open": "Regiony z otwartym ośrodkiem",
+  "In numbers": "W liczbach",
+  "Slopes in all": "Tras łącznie",
+  "Lifts in all": "Wyciągów łącznie",
+  "Typical resort": "Typowy ośrodek",
+  "Typical top station": "Typowa górna stacja",
+  "Resorts under 10 km of slopes": "Ośrodki poniżej 10 km tras",
+  "of {n}": "z {n}",
+  "{country} on the map →": "{country} na mapie →",
+  "Based on the {n} resorts we monitor here; typical is the median.": {
+    "one": "Na podstawie {n} monitorowanego tu ośrodka; typowy to mediana.",
+    "few": "Na podstawie {n} monitorowanych tu ośrodków; typowy to mediana.",
+    "many": "Na podstawie {n} monitorowanych tu ośrodków; typowy to mediana.",
+    "other": "Na podstawie {n} monitorowanego tu ośrodka; typowy to mediana."
+  },
+  "{country}: {n} ski resorts, {open} of them open today. Open lifts and slopes, the records and every resort, region by region, updated twice a day.": {
+    "one": "{country}: {n} ośrodek narciarski, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie.",
+    "few": "{country}: {n} ośrodki narciarskie, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie.",
+    "many": "{country}: {n} ośrodków narciarskich, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie.",
+    "other": "{country}: {n} ośrodka narciarskiego, dziś otwartych {open}. Otwarte wyciągi i trasy, rekordy i każdy ośrodek, region po regionie, aktualizowane dwa razy dziennie."
+  },
+  "Resorts reaching {m} m": "Ośrodki sięgające {m} m"
 }

@@ -1,7 +1,7 @@
 name: Ski tiles
 
 # Lifts, runs and ski areas from OpenSkiData, cut into the static tiles at /ski/, with each
-# resort's outline and map point (README "Ski tiles").
+# resort's outline and map point (DEVELOPMENT.md "Ski tiles").
 # Built weekly (lifts change little, and OpenSkiData may be downloaded at most once a day): on
 # Mondays at 03:00 UTC, started by the Cloudflare Worker liftradar-trigger (liftradar-fetcher's
 # deploy/trigger/), as GitHub's own schedule skips runs; and when the scripts or their fixes
@@ -11,10 +11,11 @@ on:
   push:
     branches: [main]
     paths:
-      - scripts/ski_tiles.py
-      - scripts/ski_resorts.py
-      - scripts/ski_overrides.json
-      - scripts/ski-tile.schema.json
+      - ski-tiles/ski_tiles.py
+      - ski-tiles/ski_resorts.py
+      - ski-tiles/lift_links.py
+      - ski-tiles/ski_overrides.json
+      - ski-tiles/ski-tile.schema.json
       - .github/workflows/ski.yml
   workflow_dispatch:
 
@@ -33,23 +34,25 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
           path: site
 
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
           ref: data
           path: data
 
-      - uses: astral-sh/setup-uv@v10.3.2
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
 
       # At most one download a day, however often this runs: the day's files are cached.
       - name: Date
         id: date
         run: echo "day=$(date -u +%F)" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/cache@v6
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         id: cache
         with:
           path: osd
@@ -78,7 +81,7 @@ jobs:
           modified=$(grep -i '^last-modified:' osd/lifts.headers | cut -d' ' -f2- | tr -d '\r')
           previous=()
           if [ -f previous/ski/v1/meta.json ]; then previous=(--previous previous/ski/v1/meta.json); fi
-          uv run --no-project --with shapely==2.2.0 --with ijson==3.4.0 python3 site/scripts/ski_tiles.py \
+          uv run --no-project --with shapely==2.2.0 --with ijson==3.4.0 python3 site/ski-tiles/ski_tiles.py \
             osd/ski_areas.geojson osd/lifts.geojson osd/runs.geojson data/json/index.json ski \
             --data-time "$(date -u -d "$modified" +%FT%TZ)" "${previous[@]}"
           echo "build=$(jq -r .build ski/v1/meta.json)" >> "$GITHUB_OUTPUT"

@@ -38,7 +38,7 @@ an area OSM doesn't mark as disused may have closed years ago. The **Type** colu
 
 - **Inside a listed resort, probably**: Balme - Vallorcine, La Poya and Vormaine (Chamonix's Lumiplan
   bulletin), Queyras' Abriès, Ceillac and Arvieux (the Queyras resort, bulletin `queyras-alpin`). Check that
-  the bulletin's lifts include them; if so, add `claims` in `scripts/ski_overrides.json` so the map gives
+  the bulletin's lifts include them; if so, add `claims` in `ski-tiles/ski_overrides.json` so the map gives
   them to that resort.
 - Espace Haute Maurienne Vanoise: Aussois and Bonneval are listed; Val Cenis is the gap, see below.
 
@@ -73,7 +73,7 @@ OnTheSnow, has its 2026/27 prices.
   Superbagnères, Roc d'Enfer, Guzet, Chabanon, Hirmentaz - Les Habères, Cambre d'Aze, Pralognan-la-Vanoise,
   Montclar, Gréolières-les-Neiges, L'Audibergue, Ancelle, Aillons-Margériaz, Sainte-Anne la Condamine, Le Semnoz,
   Les Brasses, Les Monts d'Olmes, Roubion, Pelvoux-Vallouise. Lifts and slopes from the resort's own site where it
-  gives them, otherwise OnTheSnow's; km only where the resort gives it.
+  gives them, otherwise OnTheSnow's; km the same way, otherwise skiresort.com's (filled in 22.11.2026).
 - **digisnow.app**: the widgets load their configuration from `<station>.digisnow.app/v1/widget/config/…` (JSON,
   layout only) and the states over MQTT (`wss.mqtt.digibox.app`, topics `DigiSnow/<station>/assets/all` and others),
   not over HTTP, with credentials written into the widget's script. Kept for later (decided 2026-11-18): the

@@ -1,19 +1,21 @@
 #!/usr/bin/env node
-// Writes <site>/sitemap.xml on deploy (pages.yml), after the translated pages, from the site as it goes out:
+// Writes <site>/sitemap.xml in the build (build.mjs), after the translated pages, from the site as it goes out:
 //
 //   node scripts/sitemap.mjs _site
 //
 // Every page in every language, at the address Cloudflare serves (without .html): the pages themselves,
-// each resort's page, and its 3D map when the ski tiles have its area (as the pages link to it). A page
-// version with noindex (a translation still partly in English) is left out. robots.txt points here.
+// each resort's page, and its 3D map when the ski tiles have its area (as the pages link to it), each ski
+// area's page (json/groups.json) and each country's page. A page version with noindex (a translation still partly in English) is left out. robots.txt points here.
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { countryPaths } from "./countries.mjs";
 
 const SITE = "https://liftradar.eu";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-// index.html is the home page, "/"; the resort and 3D pages are listed per resort.
+// index.html is the home page, "/"; the resort and 3D pages are listed per resort, the area page per group, the
+// country page per country.
 const PAGES = ["index", "map", "stats", "about", "api", "sources", "privacy"];
 
 const out = process.argv[2];
@@ -28,7 +30,10 @@ const prefix = (language) => (language === "en" ? "" : `/${language}`);
 /** @type {Index} */
 const index = readJson("json", "index.json");
 const keys = index.resorts.map((r) => `${r.country}/${r.id}`);
-// The ski tiles may be missing (pages.yml goes on without them): then there are no 3D maps to list.
+const countries = [...new Set(index.resorts.map((r) => r.country))];
+// Each linked ski area's and pass's page (area.html).
+const groups = Object.keys(readJson("json", "groups.json").groups);
+// The ski tiles may be missing (the build goes on without them): then there are no 3D maps to list.
 let areas = new Set();
 if (existsSync(join(out, "ski", "v1", "meta.json"))) {
   const meta = readJson("ski", "v1", "meta.json");
@@ -44,7 +49,11 @@ for (const language of languages) {
   }
   for (const key of keys) urls.push(`${SITE}${prefix(language)}/resort?r=${key}`);
   for (const key of keys.filter((k) => areas.has(k))) urls.push(`${SITE}${prefix(language)}/3d?r=${key}`);
+  for (const id of groups) urls.push(`${SITE}${prefix(language)}/area?g=${id}`);
 }
+
+// The country pages built (countries.mjs): those of the countries with resorts.
+for (const { code, path } of countryPaths()) if (countries.includes(code)) urls.push(`${SITE}${path}`);
 
 const entries = urls.map((url) => `  <url><loc>${url}</loc></url>`).join("\n");
 writeFileSync(
