@@ -62,6 +62,36 @@ the links to the pages without `.html`, so search engines don't reach them throu
 `404.html` has a canonical address on liftradar.eu (the resort and 3D pages set theirs, with `?r=`, in `setResortAddress()`), so the copy on
 workers.dev and the addresses with filters aren't taken for duplicates.
 
+## App links
+
+The phone apps (TrailRider's repo, `apps/liftradar`) open the site's pages they can show, when the site vouches for
+them: the first page (`/`), `/resort?r=<country>/<id>[&view=3d]`, the 3D page (`/3d?r=…`) and the map (`/map[?r=…]`),
+in each language (`/pl/`, `/pl/resort`…) and as `.html`. Not the site's other pages (about, stats, the API, the JSON
+files), which a link still opens in the browser. `.well-known/apple-app-site-association` does it for iOS (the company team's app
+ID, `85CCW66723.eu.liftradar.app`; `_headers` serves it as JSON), once the app has the Associated Domains
+capability. Android's `.well-known/assetlinks.json` names the app (`eu.liftradar.app`) by the SHA-256 fingerprint of
+the key Google Play signs it with (Play Console, the app signing key's certificate); Android checks it when the app
+is installed or updated, and then opens those links in the app without asking. A build signed with another key
+(the upload key, a debug build) isn't covered and opens them in the browser.
+
+## Sitemap
+
+`scripts/sitemap.mjs` writes `sitemap.xml` on deploy, from the site as it goes out: every page in every language,
+each resort's page, and its 3D map when the ski tiles have its area, and each group's `area.html` page, at the
+addresses without `.html`. Translations
+with `noindex` (still partly in English) are left out. `robots.txt` points to it; Cloudflare adds its own lines to it.
+
+## Social preview
+
+Each page's `<head>` has a `description` and Open Graph tags, for the card a link shows on social media and in
+chats; the translations get theirs from `i18n/<language>.json`, and `og:url` follows the canonical. Crawlers don't
+run scripts, so the resort, area and country pages show the site's card, not the resort's. The image,
+`assets/og.png` (1200×630, also the README's header), is drawn in `scripts/og-image.svg`; after changing it:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars --window-size=1200,630 --screenshot="$PWD/assets/og.png" "file://$PWD/scripts/og-image.svg"
+```
+
 ## About the data
 
 What readers need to know (timing, status, snow, lifts and slopes, avalanche danger, the map,
