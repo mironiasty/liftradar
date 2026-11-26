@@ -555,7 +555,7 @@ function sourcesCard(members) {
   ];
   const parts = kinds.flatMap(([title, kind], i) => {
     /** @type {Map<string, SourceRef>} */
-    const pages = new Map(members.flatMap((r) => sourceDetails(r)[kind].map((ref) => [ref.url, ref])));
+    const pages = new Map(members.flatMap((r) => r.source_details[kind].map((ref) => [ref.url, ref])));
     if (!pages.size) return [];
     return [
       el("div", i ? { class: "meta", style: "margin-top:12px" } : { class: "meta" }, title),

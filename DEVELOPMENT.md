@@ -108,8 +108,8 @@ every website in the current data) and, with what isn't covered yet, in `../lift
 Each file's `source_details` lists the sources used for that report, each once, by its website's home page (never the
 addresses the fetcher reads: an API, a JSON file; a page only for credit and licence pages and the resort's Fnugg page),
 as sources with current conditions and sources with the resort's fixed information, each with `attribution_required` (`true` for Fnugg, `null`, not checked, for the rest);
-the site shows them on `sources.html` and the resort page, and falls back to the deprecated `sources` (plain URLs) for
-data published before `source_details`.
+the site shows them on `sources.html`, the resort page and the area page. The deprecated `sources` (the same URLs,
+plain) isn't read by the site any more.
 
 ### Areas
 

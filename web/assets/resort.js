@@ -294,7 +294,7 @@ function data(r) {
 
 /** @param {Resort} r */
 function sources(r) {
-  const { conditions, resort_info } = sourceDetails(r);
+  const { conditions, resort_info } = r.source_details;
   /** @type {[string, SourceRef[]][]} */
   const groups = [
     [t("Current conditions"), conditions],

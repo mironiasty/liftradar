@@ -14,7 +14,7 @@ function sourcesOf(index, kind) {
   /** @type {Map<string, { ref: SourceRef, names: Set<string> }>} */
   const sites = new Map();
   for (const r of index.resorts) {
-    for (const ref of sourceDetails(r)[kind]) {
+    for (const ref of r.source_details[kind]) {
       const site = siteOf(ref.url);
       const found = sites.get(site);
       if (!found) sites.set(site, { ref, names: new Set([r.name]) });
