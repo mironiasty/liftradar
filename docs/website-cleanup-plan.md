@@ -3,8 +3,8 @@
 Response to [issue #91](https://github.com/mironiasty/liftradar/issues/91) (Tim Maurice Bayer's proposal), checked
 against `main` at 4a821dea (2026-11-25). Each step is its own PR with no change in behaviour.
 
-**Status (2026-11-26):** A, B, C, E and D1 (`web/`) are done; the CDN hashes from "Small extras" are in #97.
-D2 and F are open.
+**Status (2026-11-26):** A, B, C, D and E are done; the CDN hashes from "Small extras" are in #97. F is
+open.
 
 ## Order
 
@@ -13,7 +13,7 @@ D2 and F are open.
 | A | Cache rules for versioned assets, plus a guard that every asset link is versioned | 2 | take, with the guard | done, #94 |
 | B | Page CSS out of `<style>`: shared rules into `style.css`, the rest into `assets/<page>.css` | 1 | take, dedupe rather than only move | done, #95 (merged only what was identical) |
 | C | `scripts/build.mjs` (what `pages.yml` does), `npm run build` / `preview` / `dev`, one list of pages | 3 (first half) | take | done, #96 |
-| D | Website into `web/`, ski-tile pipeline into its own folder | 3 (second half) | take after C, optional | D1 `web/` done; D2 `ski-tiles/` open |
+| D | Website into `web/`, ski-tile pipeline into its own folder | 3 (second half) | take after C, optional | done, #110 (D1 `web/`) and D2 `ski-tiles/` |
 | E | Split `resort.js` by job (now 7 jobs, weather included) | 4 | take, widen the `[a-z]+` patterns in the same PR | done, #100 |
 | F | Named keys for long translations, keeping stale-translation detection | 5 | take only with a fingerprint | open |
 | — | Vite | 6 | not now | — |

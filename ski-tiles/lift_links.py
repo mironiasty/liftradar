@@ -17,7 +17,7 @@ details' `map_length_m` (DEVELOPMENT.md "Ski tiles").
 
 ski_tiles.py calls `link` and `lengths` while it builds the tiles. To link tiles that are already built (e.g. to try it out):
 
-    python3 scripts/lift_links.py ../liftradar-data/json ski
+    python3 ski-tiles/lift_links.py ../liftradar-data/json ski
 """
 
 import argparse

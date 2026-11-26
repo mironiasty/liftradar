@@ -8,9 +8,9 @@ name: Ski assignment
 on:
   pull_request:
     paths:
-      - scripts/ski_resorts.py
-      - scripts/ski_overrides.json
-      - scripts/ski_split_check.py
+      - ski-tiles/ski_resorts.py
+      - ski-tiles/ski_overrides.json
+      - ski-tiles/ski_split_check.py
       - .github/workflows/ski-assign.yml
 
 permissions:
@@ -52,9 +52,13 @@ jobs:
 
       - name: Lifts per resort, before and after
         run: |
-          cp site/scripts/ski_split_check.py base/scripts/
-          for side in base site; do
-            uv run --no-project --with shapely==2.2.0 python3 "$side/scripts/ski_split_check.py" \
+          # A base from before the pipeline moved to ski-tiles/ (only the pull request that moved it) has it in scripts/.
+          base=base/ski-tiles
+          [ -d "$base" ] || base=base/scripts
+          cp site/ski-tiles/ski_split_check.py "$base/"
+          for dir in "$base" site/ski-tiles; do
+            side=${dir%%/*}
+            uv run --no-project --with shapely==2.2.0 python3 "$dir/ski_split_check.py" \
               ski data/json/index.json --assign > "$side.txt"
           done
           diff base.txt site.txt > changes.txt || true

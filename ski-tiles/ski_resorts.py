@@ -89,7 +89,7 @@ def assign(resorts: list, areas: dict, lifts: list, runs: list) -> tuple[dict, d
 
     Each resort claims ski areas: those near it whose name matches its own best (or at all,
     within NEAR_M), and the nearest one with a lift within NEAR_M unless another resort claimed
-    that one by name (scripts/ski_overrides.json adds or removes claims, moves single lifts and runs
+    that one by name (ski-tiles/ski_overrides.json adds or removes claims, moves single lifts and runs
     by their OSM id, and clips a resort to a box).
     A lift or run then goes to the smallest of its areas that was claimed: an area that is a
     sector of a bigger one claimed by another resort stays with its own resort, and an area a

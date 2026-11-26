@@ -3,16 +3,16 @@
 Reads built ski tiles (`<ski>/v1`, from the release ski-latest or ski_tiles.py) and liftradar's
 json/index.json; the rules it checks are ski_resorts.py's (DEVELOPMENT.md, "Ski tiles").
 
-    uv run --no-project --with shapely python3 scripts/ski_split_check.py ski ../liftradar-data/json/index.json
+    uv run --no-project --with shapely python3 ski-tiles/ski_split_check.py ski ../liftradar-data/json/index.json
 
 - With no option: each resort whose lift count on the map is far from its report's (map counts
   include practice lifts and carpets, so only large gaps are listed), and each area several
   resorts share.
 - `--lifts at/planai ...`: those resorts' lifts on the map, by name.
 - `--assign`: runs ski_resorts.assign() again on the tiles' lifts, with the current
-  scripts/ski_overrides.json and the index's resorts, and lists the resorts whose lift count
+  ski-tiles/ski_overrides.json and the index's resorts, and lists the resorts whose lift count
   changes. This needs no OpenSkiData download. Add `--before <overrides.json>` (e.g. from
-  `git show origin/main:scripts/ski_overrides.json`) to compare with a run on those overrides:
+  `git show origin/main:ski-tiles/ski_overrides.json`) to compare with a run on those overrides:
   without it the comparison is with the tiles, which were built from an older index, so a few
   resorts change for that reason alone. Runs aren't in it (their share follows the lifts'), so
   check the map once the tiles are built.
