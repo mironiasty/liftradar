@@ -1,6 +1,6 @@
 """Which liftradar resort each OpenSkiData lift and run belongs to, and each resort's outline and map point.
 
-Used by ski_tiles.py; the rules are in README, "Ski tiles". Distances are in metres, in a flat
+Used by ski_tiles.py; the rules are in DEVELOPMENT.md, "Ski tiles". Distances are in metres, in a flat
 projection around each point: fine for the few kilometres compared here.
 """
 

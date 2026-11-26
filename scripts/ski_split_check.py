@@ -1,7 +1,7 @@
 """Find resorts whose share of OpenSkiData's lifts looks wrong, and check a fix to ski_overrides.json.
 
 Reads built ski tiles (`<ski>/v1`, from the release ski-latest or ski_tiles.py) and liftradar's
-json/index.json; the rules it checks are ski_resorts.py's (README, "Ski tiles").
+json/index.json; the rules it checks are ski_resorts.py's (DEVELOPMENT.md, "Ski tiles").
 
     uv run --no-project --with shapely python3 scripts/ski_split_check.py ski ../liftradar-data/json/index.json
 

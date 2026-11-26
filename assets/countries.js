@@ -1,4 +1,4 @@
-// Each country's page, by language: liftradar.eu/austria, /de/oesterreich, /fr/autriche… (README "Country pages").
+// Each country's page, by language: liftradar.eu/austria, /de/oesterreich, /fr/autriche… (DEVELOPMENT.md "Country pages").
 // The pages link to them (countryPagePath in common.js); scripts/countries.mjs reads this file to build them, so it
 // holds only this one value. A country without its line here has no page: add one with the country.
 /** @type {Record<string, Record<string, string>>} */

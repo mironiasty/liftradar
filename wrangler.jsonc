@@ -1,7 +1,7 @@
 // Cloudflare: a Worker serving the site combined with the data, as
 // scripts/build.mjs builds it in _site/ (pages.yml passes its own with --assets,
 // as the directory is relative to this file; npm run preview serves this one). Its script, worker/mcp.js, only
-// answers /mcp (the MCP server, README "MCP"): every other address is a file.
+// answers /mcp (the MCP server, DEVELOPMENT.md "MCP"): every other address is a file.
 {
   "name": "liftradar",
   "compatibility_date": "2026-10-01",

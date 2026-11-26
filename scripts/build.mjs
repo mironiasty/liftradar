@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Builds the site as it's deployed: the pages and the data, combined into one folder (README "Running locally").
+// Builds the site as it's deployed: the pages and the data, combined into one folder (DEVELOPMENT.md "Running locally").
 // pages.yml runs it before uploading the folder to Cloudflare; locally, `npm run build` (then `npm run preview`):
 //
 //   node scripts/build.mjs [--data <dir>] [--out <dir>]
 //
 // --data: where json/, history/ and schema/ are (the data branch), with ski/ if the ski tiles are there too
-//         (README "Ski tiles"); this folder when left out, where README "Running locally" links them.
+//         (DEVELOPMENT.md "Ski tiles"); this folder when left out, where DEVELOPMENT.md "Running locally" links them.
 // --out:  the folder to build into, emptied first; _site when left out, as wrangler.jsonc reads it.
 //
 // The steps that only make the site smaller or faster (the 3D engine, minifying, compacting the index) warn and
@@ -51,7 +51,7 @@ const rewrite = (paths, change) => {
   for (const path of paths) writeFileSync(path, change(readFileSync(path, "utf8")));
 };
 
-// The site and the data in one folder. cpSync follows the links README "Running locally" makes.
+// The site and the data in one folder. cpSync follows the links DEVELOPMENT.md "Running locally" makes.
 // The folder is emptied first: never one holding the repo or the data, and in the repo only _site.
 const holds = (dir, inner) => inner === dir || inner.startsWith(dir + sep);
 if (holds(out, root) || holds(out, data) || (holds(root, out) && out !== join(root, "_site"))) {
@@ -68,7 +68,7 @@ for (const part of DATA_PARTS) cpSync(join(data, part), join(out, part), { recur
 if (existsSync(join(data, "ski"))) cpSync(join(data, "ski"), join(out, "ski"), { recursive: true, dereference: true });
 else console.warn(`No ski/ in ${data}: the site goes out without the ski tiles`);
 
-// The 3D engine (README "3D engine"), into /engine/<tag>/: the pinned one copied when it's unpacked here already,
+// The 3D engine (DEVELOPMENT.md "3D engine"), into /engine/<tag>/: the pinned one copied when it's unpacked here already,
 // else downloaded. Without it, 3d.html shows the diorama it falls back to.
 const engine = join("engine", JSON.parse(readFileSync(join(root, "engine.json"), "utf8")).tag);
 if (existsSync(join(root, engine))) cpSync(join(root, engine), join(out, engine), { recursive: true });
@@ -76,9 +76,9 @@ optional("The 3D engine", () => node("engine.mjs", out));
 
 // Before the asset links are versioned: these pages have the same links.
 node("translate.mjs", out);
-// Each country's page in each language, from the data's index (README "Country pages").
+// Each country's page in each language, from the data's index (DEVELOPMENT.md "Country pages").
 node("countries.mjs", out);
-// After the translated pages, the country pages and the ski tiles: it lists them (README "Sitemap").
+// After the translated pages, the country pages and the ski tiles: it lists them (DEVELOPMENT.md "Sitemap").
 node("sitemap.mjs", out);
 
 // Cloudflare redirects about.html to /about (307), and search engines report every page reached through one: the

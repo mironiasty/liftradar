@@ -60,7 +60,7 @@ function replaceMarked(html, replace) {
 }
 
 // Each country's page address by language, {at: {en: "austria", de: "oesterreich", ...}}, from assets/countries.js,
-// which the pages load too (README "Country pages").
+// which the pages load too (DEVELOPMENT.md "Country pages").
 export const countrySlugs = () => runInNewContext(`${read("assets", "countries.js")}; COUNTRY_SLUGS`);
 
 // The languages, from i18n/<language>.json, each with its strings.

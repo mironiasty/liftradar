@@ -1,4 +1,4 @@
-// 3d.html?r=<country>/<id>: the resort in 3D. Drawn by TrailRider's engine (README "3D engine",
+// 3d.html?r=<country>/<id>: the resort in 3D. Drawn by TrailRider's engine (DEVELOPMENT.md "3D engine",
 // docs/3d-engine-plan.md) where the browser has WebGPU: the realistic map, every lift as what it is.
 // Elsewhere, or when the engine can't load, as a diorama: a box around it cut out of Mapterhorn's
 // terrain and floating on the page's background, with its own pistes draped on it, and the lifts as simple models drawn by three.js
