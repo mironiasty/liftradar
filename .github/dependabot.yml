@@ -12,6 +12,14 @@ updates:
     groups:
       npm:
         patterns: ["*"]
+    # maplibre-gl is here only for the types of the MapLibre GL JS the pages load from cdnjs (5:
+    # version 6 is only an ES module there, DEVELOPMENT.md), and the style spec checks the ski style
+    # for that version: both move to 6 by hand, with the pages (an advisory still shows in the alerts).
+    ignore:
+      - dependency-name: maplibre-gl
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@maplibre/maplibre-gl-style-spec"
+        update-types: ["version-update:semver-major"]
     commit-message:
       prefix: npm
 
