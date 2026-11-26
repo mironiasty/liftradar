@@ -9,8 +9,8 @@
     "lon": 13.718
   },
   "website": "https://www.3laendereck.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T08:42:12.623434+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-26T13:42:30.896807+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,16 +20,19 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 12,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 14
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_updated_at": "2026-11-26T10:30:10+01:00",
   "avalanche": null,
   "sources": [
     "https://www.kaernten.at/",

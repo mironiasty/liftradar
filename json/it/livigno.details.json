@@ -2,11 +2,48 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "livigno",
   "country": "it",
-  "fetched_at": "2026-11-26T08:40:39.159180+01:00",
+  "fetched_at": "2026-11-26T13:40:39.212915+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.livigno.eu/",
+  "lifts": [
+    {
+      "id": "lift-valandrea-vetta",
+      "ref": null,
+      "name": "VALANDREA-VETTA",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-livigno-tagliede",
+      "ref": null,
+      "name": "LIVIGNO-TAGLIEDE",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tagliede-costaccia",
+      "ref": null,
+      "name": "TAGLIEDE - COSTACCIA",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [],
   "bottom": {
     "lat": 46.54814,
     "lon": 10.13773,

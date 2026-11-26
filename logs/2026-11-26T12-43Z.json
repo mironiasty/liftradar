@@ -1,0 +1,119 @@
+{
+  "time": "2026-11-26T13:43:08+01:00",
+  "resorts": [
+    {
+      "id": "nesselwaengle-im-tannheimer-tal",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:29.236521+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "niederthai",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:30.478387+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Niederthai_89'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "rangger-koepfl",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-23T08:41:38.649397+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Rangger%20K%C3%B6pfl_2555'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "lagorai",
+      "country": "it",
+      "status": "no_report",
+      "status_from": "2026-11-20T16:46:47.409217+01:00",
+      "errors": [
+        "trentino: LookupError: no entry named Funivie Lagorai (Passo Brocon)"
+      ]
+    },
+    {
+      "id": "abetone",
+      "country": "it",
+      "status": "closed",
+      "status_from": "2026-11-26T08:40:39.160096+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://www.multipassabetone.it/stato-impianti'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+      ]
+    },
+    {
+      "id": "praded",
+      "country": "cz",
+      "status": "closed",
+      "status_from": "2026-11-26T08:40:39.162297+01:00",
+      "errors": [
+        "status: ReadTimeout: "
+      ]
+    },
+    {
+      "id": "le-corbier",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-23T13:40:33.210108+01:00",
+      "errors": [
+        "status: LookupError: no resort named Le Corbier in the map"
+      ]
+    },
+    {
+      "id": "la-toussuire",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-23T08:40:34.692406+01:00",
+      "errors": [
+        "status: LookupError: no resort named La Toussuire in the map"
+      ]
+    },
+    {
+      "id": "saint-sorlin-d-arves",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-23T08:40:34.692424+01:00",
+      "errors": [
+        "status: LookupError: no resort named Saint Sorlin in the map"
+      ]
+    },
+    {
+      "id": "saint-colomban-des-villards",
+      "country": "fr",
+      "status": "no_report",
+      "status_from": "2026-11-23T08:40:34.692435+01:00",
+      "errors": [
+        "status: LookupError: no resort named Saint Colomban in the map"
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://ski.salla.fi/aukioloajat-talvi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "golte",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-11T16:22:47.960389+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.golte.si/zima/smucanje/proge/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    }
+  ],
+  "warnings": [
+    "bad-kleinkirchheim: not on the Kärnten list (no recent report, or renamed: Bad Kleinkirchheim)",
+    "ankogel-mallnitz: not on the Kärnten list (no recent report, or renamed: Ankogel / Mallnitz)",
+    "koralpe: not on the Kärnten list (no recent report, or renamed: Koralpe)",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only"
+  ]
+}

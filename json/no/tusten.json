@@ -9,8 +9,8 @@
     "lon": 7.2731
   },
   "website": "https://www.tusten.no",
-  "status": "closed",
-  "fetched_at": "2026-11-26T08:40:39.169629+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-26T13:40:39.220403+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 4
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 10,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 15
   },
   "lifts_by_type": {
@@ -42,26 +42,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-11-12T10:25:08+01:00",
-  "details": "json/no/tusten.details.json",
   "avalanche": {
     "region_id": "NO-3023",
     "region": "Romsdal",

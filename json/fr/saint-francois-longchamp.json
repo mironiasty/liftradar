@@ -10,25 +10,42 @@
   },
   "website": "https://www.saintfrancoislongchamp.com",
   "linked_area": "grand-domaine",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T08:40:39.163976+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-26T13:40:39.215574+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-25",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Station",
+        "elevation_m": 1650,
+        "depth_cm": 30,
+        "fresh_cm": 10,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      },
+      {
+        "name": "Altitude",
+        "elevation_m": 2550,
+        "depth_cm": 70,
+        "fresh_cm": 30,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 15
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 37,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 70
   },
   "lifts_by_type": {
@@ -47,25 +64,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 25,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 9,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 4
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/saint-francois-longchamp.details.json",
   "avalanche": {
     "region_id": "FR-10",
     "region": "Vanoise",

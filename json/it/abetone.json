@@ -10,8 +10,8 @@
   },
   "website": "https://multipassabetone.it/",
   "status": "closed",
-  "fetched_at": "2026-11-26T08:40:39.160096+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-26T13:40:39.213099+01:00",
+  "status_from": "2026-11-26T08:40:39.160096+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -69,19 +69,13 @@
     }
   },
   "lifts_updated_at": null,
-  "details": "json/it/abetone.details.json",
   "avalanche": null,
-  "sources": [
-    "https://www.multipassabetone.it/"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.multipassabetone.it/",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: HTTPStatusError: Server error '500 Internal Server Error' for url 'https://www.multipassabetone.it/stato-impianti'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500"
+  ]
 }

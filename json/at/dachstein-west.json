@@ -10,7 +10,7 @@
   },
   "website": "https://www.dachstein.at",
   "status": "no_report",
-  "fetched_at": "2026-11-26T08:40:44.220882+01:00",
+  "fetched_at": "2026-11-26T13:40:44.821360+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,26 +22,74 @@
   },
   "lifts": {
     "open": 0,
-    "total": 11
+    "total": 21
   },
   "slopes": {
-    "open": null,
-    "total": 46,
+    "open": 0,
+    "total": 52,
     "open_km": null,
     "total_km": 51
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-05-01T14:57:00+02:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 9
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 6,
+      "open_km": null,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 16,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 27,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-26T10:02:40+01:00",
+  "details": "json/at/dachstein-west.details.json",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/",
+    "https://www.intermaps.com/",
     "https://www.dachstein.at/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.salzburgerland.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       }
     ],

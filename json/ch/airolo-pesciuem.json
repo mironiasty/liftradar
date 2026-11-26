@@ -10,12 +10,12 @@
   },
   "website": "https://www.airolo.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-26T08:40:39.156295+01:00",
+  "fetched_at": "2026-11-26T13:40:39.210611+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 31,
-    "valley_cm": null,
-    "fresh_cm": 12,
+    "valley_cm": 40,
+    "fresh_cm": 15,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -24,6 +24,14 @@
         "elevation_m": 2268,
         "depth_cm": 31,
         "fresh_cm": 12,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Pesciüm (SLF)",
+        "elevation_m": 1770,
+        "depth_cm": 40,
+        "fresh_cm": 15,
         "temperature_c": null,
         "condition": null
       }

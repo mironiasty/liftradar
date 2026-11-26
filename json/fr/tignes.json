@@ -11,28 +11,28 @@
   "website": "https://www.tignes.net",
   "linked_area": "tignes-val-d-isere",
   "status": "open",
-  "fetched_at": "2026-11-26T08:40:39.163788+01:00",
+  "fetched_at": "2026-11-26T13:40:39.215461+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 200,
-    "valley_cm": 116,
-    "fresh_cm": null,
-    "last_snowfall": "2026-11-23",
+    "mountain_cm": 190,
+    "valley_cm": 98,
+    "fresh_cm": 10,
+    "last_snowfall": "2026-11-25",
     "condition": "Fraîche",
     "stations": [
       {
         "name": "Grande Motte",
         "elevation_m": 3032,
-        "depth_cm": 200,
-        "fresh_cm": null,
+        "depth_cm": 190,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": "Fraîche"
       },
       {
         "name": "Tignes Lac",
         "elevation_m": 2100,
-        "depth_cm": 116,
-        "fresh_cm": null,
+        "depth_cm": 98,
+        "fresh_cm": 8,
         "temperature_c": null,
         "condition": "Fraîche"
       }
@@ -43,7 +43,7 @@
     "total": 37
   },
   "slopes": {
-    "open": 19,
+    "open": 21,
     "total": 82,
     "open_km": null,
     "total_km": 150
@@ -76,7 +76,7 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 16,
+      "open": 17,
       "total": 43,
       "open_km": null,
       "total_km": null
@@ -88,9 +88,9 @@
       "total_km": null
     },
     "difficult": {
-      "open": 1,
+      "open": 2,
       "total": 18,
-      "open_km": 1.5,
+      "open_km": 2.4,
       "total_km": 19
     }
   },

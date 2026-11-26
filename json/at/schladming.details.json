@@ -2,22 +2,10 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "schladming",
   "country": "at",
-  "fetched_at": "2026-11-26T08:40:39.149182+01:00",
+  "fetched_at": "2026-11-26T13:40:39.207545+01:00",
   "updated_at": null,
   "source": "https://www.schladming-dachstein.at/",
   "lifts": [
-    {
-      "id": "lift-planai-west",
-      "ref": null,
-      "name": "Planai West",
-      "type": "gondola",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": 2480,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
     {
       "id": "lift-marchenwiesebahn",
       "ref": null,
@@ -62,6 +50,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1260,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-planai-west",
+      "ref": null,
+      "name": "Planai West",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 2480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null

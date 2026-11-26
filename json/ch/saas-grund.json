@@ -11,7 +11,7 @@
   "website": "https://www.hohsaas.ch",
   "ski_region": "saastal",
   "status": "closed",
-  "fetched_at": "2026-11-26T08:40:39.157462+01:00",
+  "fetched_at": "2026-11-26T13:40:39.211915+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,6 +25,14 @@
         "elevation_m": 2680,
         "depth_cm": 40,
         "fresh_cm": 6,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Saas Fee (SLF)",
+        "elevation_m": 1790,
+        "depth_cm": 23,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -74,7 +82,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T08:31:00+01:00",
+  "lifts_updated_at": "2026-11-26T13:31:00+01:00",
   "details": "json/ch/saas-grund.details.json",
   "avalanche": {
     "region_id": "CH-4223",

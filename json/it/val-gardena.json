@@ -12,44 +12,44 @@
   "linked_area": "sella-ronda",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-26T08:40:39.158212+01:00",
+  "fetched_at": "2026-11-26T13:40:39.212355+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-22",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": [
       {
-        "name": "Valley station",
-        "elevation_m": null,
-        "depth_cm": 20,
-        "fresh_cm": 5,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
         "name": "Mountain station",
         "elevation_m": null,
-        "depth_cm": 25,
-        "fresh_cm": 5,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Mountain station",
-        "elevation_m": null,
-        "depth_cm": 25,
-        "fresh_cm": 5,
+        "depth_cm": 80,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Valley station",
         "elevation_m": null,
-        "depth_cm": 20,
-        "fresh_cm": 5,
+        "depth_cm": 40,
+        "fresh_cm": 7,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Mountain station",
+        "elevation_m": null,
+        "depth_cm": 80,
+        "fresh_cm": 10,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Valley station",
+        "elevation_m": null,
+        "depth_cm": 40,
+        "fresh_cm": 7,
         "temperature_c": null,
         "condition": null
       }
@@ -111,7 +111,7 @@
       "total_km": 18
     }
   },
-  "lifts_updated_at": "2026-11-23T16:00:13.252003+01:00",
+  "lifts_updated_at": "2026-11-26T10:01:30.519683+01:00",
   "details": "json/it/val-gardena.details.json",
   "avalanche": null,
   "sources": [

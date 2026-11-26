@@ -10,8 +10,8 @@
   },
   "website": "https://montgenevre.com",
   "linked_area": "via-lattea",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T08:40:39.165804+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-26T13:40:39.216632+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,9 +26,9 @@
     "total": 22
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 49,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 95
   },
   "lifts_by_type": {
@@ -51,25 +51,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 23,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 17,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 9,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/montgenevre.details.json",
   "avalanche": {
     "region_id": "FR-13",
     "region": "Thabor",

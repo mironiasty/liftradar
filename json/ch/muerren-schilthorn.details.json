@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "muerren-schilthorn",
   "country": "ch",
-  "fetched_at": "2026-11-26T08:40:39.158019+01:00",
-  "updated_at": "2026-11-26T07:25:05+01:00",
+  "fetched_at": "2026-11-26T13:40:39.212240+01:00",
+  "updated_at": "2026-11-26T08:50:05+01:00",
   "source": "https://www.jungfrau.ch/",
   "lifts": [
     {
@@ -11,7 +11,7 @@
       "ref": null,
       "name": "Lauterbrunnen – Mürren",
       "type": "funicular",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -83,7 +83,7 @@
       "ref": null,
       "name": "Riggli",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1020,
       "capacity_per_hour": null,
@@ -107,7 +107,7 @@
       "ref": null,
       "name": "Lauterbrunnen – Grütschalp",
       "type": "cable_car",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -143,7 +143,7 @@
       "ref": null,
       "name": "Mürren – Birg",
       "type": "cable_car",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2770,
       "capacity_per_hour": null,
@@ -165,14 +165,94 @@
   ],
   "slopes": [
     {
-      "id": "muerren_schilthorn_valleyRun_3_lauterbrunnen",
+      "id": "muerren_schilthorn_track_1_10_schilthorn_abfahrt",
       "ref": null,
-      "name": "3 Lauterbrunnen",
-      "difficulty": "other",
+      "name": "10 Schilthorn Abfahrt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "open",
+      "length_m": 1930,
+      "map_length_m": 1570
+    },
+    {
+      "id": "muerren_schilthorn_track_3_16_kanonenrohr_-_muerren",
+      "ref": null,
+      "name": "16 Kanonenrohr - Mürren",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null,
+      "length_m": 1670,
+      "map_length_m": 1200
+    },
+    {
+      "id": "muerren_schilthorn_track_60_12_bond",
+      "ref": null,
+      "name": "12 Bond",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 510,
+      "map_length_m": 390
+    },
+    {
+      "id": "muerren_schilthorn_track_331_9_buckelpiste",
+      "ref": null,
+      "name": "9 Buckelpiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1030,
       "map_length_m": null
+    },
+    {
+      "id": "muerren_schilthorn_track_333_15b_fis",
+      "ref": null,
+      "name": "15b FIS",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1160,
+      "map_length_m": null
+    },
+    {
+      "id": "muerren_schilthorn_track_74_14_muttleren",
+      "ref": null,
+      "name": "14 Muttleren",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": 460
+    },
+    {
+      "id": "muerren_schilthorn_track_75_21_kandahar",
+      "ref": null,
+      "name": "21 Kandahar",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1160,
+      "map_length_m": 950
+    },
+    {
+      "id": "muerren_schilthorn_track_61_9_direttissima",
+      "ref": null,
+      "name": "9 Direttissima",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 940,
+      "map_length_m": 500
+    },
+    {
+      "id": "muerren_schilthorn_track_69_17_fis",
+      "ref": null,
+      "name": "17 FIS",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1090,
+      "map_length_m": 840
     },
     {
       "id": "muerren_schilthorn_track_5_5_palace-run",
@@ -260,7 +340,7 @@
       "name": "11 Engetal",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 3850,
       "map_length_m": 2130
     },
@@ -345,94 +425,14 @@
       "map_length_m": 1200
     },
     {
-      "id": "muerren_schilthorn_track_1_10_schilthorn_abfahrt",
+      "id": "muerren_schilthorn_valleyRun_3_lauterbrunnen",
       "ref": null,
-      "name": "10 Schilthorn Abfahrt",
-      "difficulty": "difficult",
+      "name": "3 Lauterbrunnen",
+      "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 1930,
-      "map_length_m": 1570
-    },
-    {
-      "id": "muerren_schilthorn_track_3_16_kanonenrohr_-_muerren",
-      "ref": null,
-      "name": "16 Kanonenrohr - Mürren",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1670,
-      "map_length_m": 1200
-    },
-    {
-      "id": "muerren_schilthorn_track_60_12_bond",
-      "ref": null,
-      "name": "12 Bond",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 510,
-      "map_length_m": 390
-    },
-    {
-      "id": "muerren_schilthorn_track_331_9_buckelpiste",
-      "ref": null,
-      "name": "9 Buckelpiste",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1030,
+      "length_m": null,
       "map_length_m": null
-    },
-    {
-      "id": "muerren_schilthorn_track_333_15b_fis",
-      "ref": null,
-      "name": "15b FIS",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1160,
-      "map_length_m": null
-    },
-    {
-      "id": "muerren_schilthorn_track_74_14_muttleren",
-      "ref": null,
-      "name": "14 Muttleren",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 900,
-      "map_length_m": 460
-    },
-    {
-      "id": "muerren_schilthorn_track_75_21_kandahar",
-      "ref": null,
-      "name": "21 Kandahar",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1160,
-      "map_length_m": 950
-    },
-    {
-      "id": "muerren_schilthorn_track_61_9_direttissima",
-      "ref": null,
-      "name": "9 Direttissima",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 940,
-      "map_length_m": 500
-    },
-    {
-      "id": "muerren_schilthorn_track_69_17_fis",
-      "ref": null,
-      "name": "17 FIS",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1090,
-      "map_length_m": 840
     }
   ],
   "bottom": {

@@ -11,19 +11,27 @@
   "website": "https://engstligenalp.ch",
   "ski_region": "skiregion-adelboden-lenk",
   "status": "closed",
-  "fetched_at": "2026-11-26T08:40:39.156699+01:00",
+  "fetched_at": "2026-11-26T13:40:39.210844+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-21",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": [
       {
+        "name": "in place",
+        "elevation_m": null,
+        "depth_cm": 5,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
         "name": "In the ski area below",
         "elevation_m": null,
-        "depth_cm": 50,
+        "depth_cm": 40,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -31,7 +39,7 @@
       {
         "name": "In the ski area above",
         "elevation_m": null,
-        "depth_cm": 60,
+        "depth_cm": 53,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -84,7 +92,7 @@
       "total_km": 2
     }
   },
-  "lifts_updated_at": "2026-11-26T04:00:00+01:00",
+  "lifts_updated_at": "2026-11-26T12:01:00+01:00",
   "details": "json/ch/engstligenalp.details.json",
   "avalanche": {
     "region_id": "CH-1227",

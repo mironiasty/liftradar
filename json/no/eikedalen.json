@@ -9,8 +9,8 @@
     "lon": 5.9162
   },
   "website": "https://www.eikedalen.no",
-  "status": "closed",
-  "fetched_at": "2026-11-26T08:40:39.169379+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-26T13:40:39.220178+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 8
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 12,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 15
   },
   "lifts_by_type": {
@@ -42,20 +42,19 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-11-12T13:37:16+01:00",
-  "details": "json/no/eikedalen.details.json",
   "avalanche": {
     "region_id": "NO-3031",
     "region": "Voss",
