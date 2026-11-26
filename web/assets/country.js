@@ -547,7 +547,12 @@ async function show() {
   const code = requested();
   if (!code) return fail(t("We don't cover that country."));
   page.replaceChildren(liftLoader());
-  const [index, groups, elevations] = await Promise.all([loadIndex(), loadGroups(), loadElevations()]);
+  // Without the groups, only their card is missing (as on the home page).
+  const [index, groups, elevations] = await Promise.all([
+    loadIndex(),
+    loadGroups().catch(() => ({})),
+    loadElevations(),
+  ]);
   const resorts = index.resorts.filter((r) => r.country === code);
   if (!resorts.length) return fail(t("We don't cover that country."));
 

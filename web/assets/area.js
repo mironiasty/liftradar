@@ -396,7 +396,8 @@ async function seasonCharts(group, container, until) {
   const start = new Date(Date.UTC(now.getUTCMonth() < 8 ? now.getUTCFullYear() - 1 : now.getUTCFullYear(), 8, 1, 12));
   /** @type {string[]} */
   const days = [];
-  for (let d = start; d <= now; d = new Date(d.getTime() + 864e5)) days.push(day(d));
+  // By date, not time: the morning run (07:40 UTC) is before the 12:00 these days are counted at.
+  for (let d = start; day(d) <= day(now); d = new Date(d.getTime() + 864e5)) days.push(day(d));
   // Per resort, its values by day (the day's last run).
   const byDay = histories.map((runs) => {
     /** @type {Map<string, { lifts: number, km: number | null }>} */

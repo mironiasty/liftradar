@@ -328,7 +328,8 @@ function colourCount(slopes) {
 }
 
 // The lifts by type and slopes by difficulty, then, for a resort with a `details` file, a card for each list that
-// its "Details" button opens. The file is read on the first click, once for both; without it, the counts stand.
+// its "Details" button opens. The file is read once for both, on the first click (or for the very easy slopes, below);
+// without it, the counts stand, and a failed read is tried again on the next click.
 /** @param {Resort} r @returns {HTMLElement[]} */
 // biome-ignore lint/correctness/noUnusedVariables: resort.js uses it
 function breakdown(r) {
@@ -338,10 +339,15 @@ function breakdown(r) {
   /** @type {Promise<ResortDetails> | undefined} */
   let details;
   const load = () =>
-    (details ??= fetch(`/${r.details}`, { cache: "no-cache" }).then((response) => {
-      if (!response.ok) throw new Error(response.statusText);
-      return response.json();
-    }));
+    (details ??= fetch(`/${r.details}`, { cache: "no-cache" })
+      .then((response) => {
+        if (!response.ok) throw new Error(response.statusText);
+        return response.json();
+      })
+      .catch((error) => {
+        details = undefined;
+        throw error;
+      }));
   /** @type {HTMLElement[]} */
   const buttons = [];
   // A pill at the bottom of the card, under its column, that opens its list in a card of its own, closing the other.
@@ -368,12 +374,16 @@ function breakdown(r) {
       }
       if (!open || filled) return;
       filled = true;
+      panel.querySelector(".failed")?.remove();
       const loader = liftLoader({ small: true });
       panel.append(loader);
       load()
         .then((d) => list(d))
         .then((node) => loader.replaceWith(node))
-        .catch(() => loader.replaceWith(el("p", { class: "empty" }, t("The list could not load."))));
+        .catch(() => {
+          filled = false;
+          loader.replaceWith(el("p", { class: "empty failed" }, t("The list could not load.")));
+        });
     });
     return [];
   };
