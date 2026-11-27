@@ -10,19 +10,27 @@
   },
   "website": "https://pizol.com",
   "status": "open",
-  "fetched_at": "2026-11-27T08:40:39.049936+01:00",
+  "fetched_at": "2026-11-27T13:40:43.503955+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 15,
+    "mountain_cm": 40,
     "valley_cm": 60,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-20",
+    "last_snowfall": "2026-11-26",
     "condition": "powder",
     "stations": [
       {
         "name": "Furt (1522m) / Pardiel (1633m)",
         "elevation_m": null,
-        "depth_cm": 15,
+        "depth_cm": 40,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Bad Ragaz (488m) / Wangs (536m)",
+        "elevation_m": null,
+        "depth_cm": 5,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -91,7 +99,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
+  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
   "details": "json/ch/pizol.details.json",
   "avalanche": {
     "region_id": "CH-3224",

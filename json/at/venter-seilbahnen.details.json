@@ -2,11 +2,121 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "venter-seilbahnen",
   "country": "at",
-  "fetched_at": "2026-11-27T08:42:13.730311+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T13:42:08.963484+01:00",
+  "updated_at": "2026-11-27T13:40:33+01:00",
+  "source": "https://www.intermaps.com/",
+  "lifts": [
+    {
+      "id": "L_98422",
+      "ref": null,
+      "name": "DSL Wildspitze",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1040,
+      "map_length_m": null,
+      "capacity_per_hour": 570,
+      "bottom_m": 1900,
+      "top_m": 2354
+    },
+    {
+      "id": "L_98423",
+      "ref": null,
+      "name": "Schlepplift Gampen",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 190,
+      "map_length_m": null,
+      "capacity_per_hour": 727,
+      "bottom_m": 1900,
+      "top_m": 1936
+    },
+    {
+      "id": "L_98424",
+      "ref": null,
+      "name": "Schlepplift Ochsenkopf",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 440,
+      "map_length_m": null,
+      "capacity_per_hour": 448,
+      "bottom_m": 1910,
+      "top_m": 2019
+    },
+    {
+      "id": "L_98425",
+      "ref": null,
+      "name": "Sesselbahn Wildes Mannle",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 920,
+      "map_length_m": null,
+      "capacity_per_hour": 1565,
+      "bottom_m": 2354,
+      "top_m": 2664
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_98426",
+      "ref": null,
+      "name": "Piste Nr. 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_98428",
+      "ref": null,
+      "name": "Piste Nr. 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_98430",
+      "ref": null,
+      "name": "Piste Nr. 3a",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_98431",
+      "ref": null,
+      "name": "Piste Nr. 4",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_98432",
+      "ref": null,
+      "name": "Piste Nr. 5a",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_98433",
+      "ref": null,
+      "name": "Piste Nr. 5b",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 46.8602,
     "lon": 10.915,

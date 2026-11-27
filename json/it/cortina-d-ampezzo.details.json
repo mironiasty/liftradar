@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-27T08:40:39.050609+01:00",
-  "updated_at": "2026-11-26T21:24:26.673911+01:00",
+  "fetched_at": "2026-11-27T13:40:43.505140+01:00",
+  "updated_at": "2026-11-27T13:20:33.616939+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
     {
@@ -517,16 +517,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215848",
-      "ref": null,
-      "name": "Cacciatori",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 545,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_30683525",
       "ref": null,
       "name": "Cacciatori",
@@ -535,6 +525,16 @@
       "status": "closed",
       "length_m": 680,
       "map_length_m": 1430
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215848",
+      "ref": null,
+      "name": "Cacciatori",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 545,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_13503193",
@@ -707,7 +707,7 @@
       "map_length_m": 670
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "id": "urn:odhactivitypoi:dss:slope:1_215872",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -717,7 +717,7 @@
       "map_length_m": 660
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215872",
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -735,16 +735,6 @@
       "status": "closed",
       "length_m": 2843,
       "map_length_m": 2370
-    },
-    {
-      "id": "urn:odhactivitypoi:dss:slope:1_215874",
-      "ref": null,
-      "name": "Falzarego",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 2183,
-      "map_length_m": 240
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215868",
@@ -835,16 +825,6 @@
       "status": "closed",
       "length_m": 860,
       "map_length_m": null
-    },
-    {
-      "id": "urn:odhactivitypoi:dss:slope:1_215886",
-      "ref": null,
-      "name": "Mazzorana",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1437,
-      "map_length_m": 1620
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215888",
@@ -1034,7 +1014,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 656,
-      "map_length_m": 1470
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215911",
@@ -1044,7 +1024,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 656,
-      "map_length_m": null
+      "map_length_m": 1470
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215912",
@@ -1217,16 +1197,6 @@
       "map_length_m": 2260
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215927",
-      "ref": null,
-      "name": "Tofanina",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 3418,
-      "map_length_m": 3820
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_215928",
       "ref": null,
       "name": "Tondi Normale",
@@ -1267,16 +1237,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215930",
-      "ref": null,
-      "name": "Vertigine Bianca",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 871,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
       "ref": null,
       "name": "Vertigine Bianca",
@@ -1285,6 +1245,16 @@
       "status": "closed",
       "length_m": 871,
       "map_length_m": 680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215930",
+      "ref": null,
+      "name": "Vertigine Bianca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 871,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

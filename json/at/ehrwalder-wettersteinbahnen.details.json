@@ -2,11 +2,233 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "ehrwalder-wettersteinbahnen",
   "country": "at",
-  "fetched_at": "2026-11-27T08:41:54.075024+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T13:41:51.517462+01:00",
+  "updated_at": "2026-11-27T09:09:14+01:00",
+  "source": "https://www.intermaps.com/",
+  "lifts": [
+    {
+      "id": "L_28140",
+      "ref": null,
+      "name": "1 Sunracer",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1373,
+      "map_length_m": null,
+      "capacity_per_hour": 1600,
+      "bottom_m": 1040,
+      "top_m": 1320
+    },
+    {
+      "id": "L_28160",
+      "ref": null,
+      "name": "4 Skischullift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 240,
+      "map_length_m": null,
+      "capacity_per_hour": 900,
+      "bottom_m": 1000,
+      "top_m": 1030
+    },
+    {
+      "id": "L_28161",
+      "ref": null,
+      "name": "F Pisten-Förderband 120m",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 120,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_28162",
+      "ref": null,
+      "name": "2 Wettersteinbahn",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1600,
+      "map_length_m": null,
+      "capacity_per_hour": 1300,
+      "bottom_m": 1070,
+      "top_m": 1490
+    },
+    {
+      "id": "L_28163",
+      "ref": null,
+      "name": "Ü Förderbänder Skischule",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_28141",
+      "ref": null,
+      "name": "2 Sonnenhang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28142",
+      "ref": null,
+      "name": "3 Familienabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28143",
+      "ref": null,
+      "name": "4 Racing-S",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28144",
+      "ref": null,
+      "name": "5 Waldabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28145",
+      "ref": null,
+      "name": "6 Wettersteinabfahrt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2100,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28146",
+      "ref": null,
+      "name": "7 Bärengrubenabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28147",
+      "ref": null,
+      "name": "8 Brückenabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28148",
+      "ref": null,
+      "name": "19 Skiroute Talstation Zugspitzbahn",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28150",
+      "ref": null,
+      "name": "1 Confetti-Piste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28151",
+      "ref": null,
+      "name": "9 Weißlähn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28165",
+      "ref": null,
+      "name": "11 Lähngrabenschuss",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28166",
+      "ref": null,
+      "name": "12 Hirschsprung",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28167",
+      "ref": null,
+      "name": "15 Gamskarabfahrt",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28168",
+      "ref": null,
+      "name": "14 Dorfabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2900,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28171",
+      "ref": null,
+      "name": "16 Hansebrandboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700,
+      "map_length_m": null
+    },
+    {
+      "id": "R_28172",
+      "ref": null,
+      "name": "10 Panoramaabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1100,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 47.39887,
     "lon": 10.92425,

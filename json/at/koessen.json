@@ -10,7 +10,7 @@
   },
   "website": "https://skisport.com/hochkoessen/de/",
   "status": "closed",
-  "fetched_at": "2026-11-27T08:42:03.669408+01:00",
+  "fetched_at": "2026-11-27T13:41:59.393646+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,13 +26,50 @@
   },
   "slopes": {
     "open": 0,
-    "total": 14,
+    "total": 15,
     "open_km": 0.0,
     "total_km": 22
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-25T14:03:00+01:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 9
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": "2026-11-25T14:03:58+01:00",
+  "details": "json/at/koessen.details.json",
   "avalanche": {
     "region_id": "AT-07-06",
     "region": "Kaiser Mountains - Waidring Alps",
@@ -53,12 +90,17 @@
   },
   "sources": [
     "https://www.snowcard.tirol.at/",
+    "https://www.intermaps.com/",
     "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       },
       {

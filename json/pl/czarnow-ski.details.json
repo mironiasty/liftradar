@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "czarnow-ski",
   "country": "pl",
-  "fetched_at": "2026-11-27T08:40:39.053262+01:00",
+  "fetched_at": "2026-11-27T13:40:43.509956+01:00",
   "updated_at": null,
   "source": "https://czarnow-ski.pl/",
   "lifts": [],
@@ -15,7 +15,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 800,
-      "map_length_m": null
+      "map_length_m": 720
     },
     {
       "id": "slope-trasa-widokowa",
@@ -25,7 +25,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 700,
-      "map_length_m": null
+      "map_length_m": 690
     },
     {
       "id": "slope-trasa-rodzinna",
@@ -35,7 +35,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1000,
-      "map_length_m": null
+      "map_length_m": 870
     },
     {
       "id": "slope-baby-lift-wiktorek",
@@ -48,6 +48,14 @@
       "map_length_m": null
     }
   ],
-  "bottom": null,
-  "top": null
+  "bottom": {
+    "lat": 50.79229,
+    "lon": 15.93408,
+    "elevation_m": 572
+  },
+  "top": {
+    "lat": 50.78945,
+    "lon": 15.92555,
+    "elevation_m": 714
+  }
 }

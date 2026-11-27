@@ -11,7 +11,7 @@
   "website": "https://www.oetztal.com",
   "ski_region": "oetztal",
   "status": "closed",
-  "fetched_at": "2026-11-27T08:42:13.730311+01:00",
+  "fetched_at": "2026-11-27T13:42:08.963484+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,9 +31,32 @@
     "open_km": 0.0,
     "total_km": 15
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-27T05:36:00+01:00",
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 9
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 6
+    }
+  },
+  "lifts_updated_at": "2026-11-27T13:40:33+01:00",
+  "details": "json/at/venter-seilbahnen.details.json",
   "avalanche": {
     "region_id": "AT-07-20",
     "region": "Weißkugel Group",
@@ -63,12 +86,17 @@
   },
   "sources": [
     "https://www.snowcard.tirol.at/",
+    "https://www.intermaps.com/",
     "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       },
       {

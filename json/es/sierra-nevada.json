@@ -10,8 +10,8 @@
   },
   "website": "https://sierranevada.es",
   "status": "closed",
-  "fetched_at": "2026-11-27T08:40:39.058598+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-27T13:40:43.521775+01:00",
+  "status_from": "2026-11-27T08:40:39.058598+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -69,7 +69,6 @@
     }
   },
   "lifts_updated_at": "2026-11-26T08:25:59+01:00",
-  "details": "json/es/sierra-nevada.details.json",
   "avalanche": null,
   "sources": [
     "https://sierranevada.es/",
@@ -89,5 +88,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: unknown state 'Prevision' of 'Tc. Al-Andalus' (format changed?)"
+  ]
 }

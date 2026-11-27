@@ -9,9 +9,9 @@
     "lon": 21.9342
   },
   "website": "https://www.kiczeraski.pl",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T08:40:39.053247+01:00",
-  "status_from": "2026-11-26T08:40:39.163640+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T13:40:43.509938+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,14 +25,28 @@
     "total": 3
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 5,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 4
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/kiczera-ski.details.json",
   "avalanche": null,
   "sources": [
     "https://www.kiczeraski.pl/"
@@ -46,7 +60,5 @@
     ],
     "resort_info": []
   },
-  "errors": [
-    "status: ValueError: slope : unknown state icon '' (layout changed?)"
-  ]
+  "errors": []
 }

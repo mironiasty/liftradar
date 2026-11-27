@@ -10,7 +10,7 @@
   },
   "website": "https://www.wetterstein-bahnen.at",
   "status": "closed",
-  "fetched_at": "2026-11-27T08:41:54.075024+01:00",
+  "fetched_at": "2026-11-27T13:41:51.517462+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -30,9 +30,48 @@
     "open_km": 0.0,
     "total_km": 20
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-25T04:34:00+01:00",
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": 14
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-11-27T09:09:14+01:00",
+  "details": "json/at/ehrwalder-wettersteinbahnen.details.json",
   "avalanche": {
     "region_id": "AT-07-03",
     "region": "Mieming Mountains",
@@ -62,12 +101,17 @@
   },
   "sources": [
     "https://www.snowcard.tirol.at/",
+    "https://www.intermaps.com/",
     "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       },
       {

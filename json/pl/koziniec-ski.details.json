@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "koziniec-ski",
   "country": "pl",
-  "fetched_at": "2026-11-27T08:40:39.052811+01:00",
+  "fetched_at": "2026-11-27T13:40:43.509264+01:00",
   "updated_at": null,
   "source": "https://tatrysuperski.pl/",
   "lifts": [
@@ -171,6 +171,14 @@
       "map_length_m": null
     }
   ],
-  "bottom": null,
-  "top": null
+  "bottom": {
+    "lat": 49.36725,
+    "lon": 20.13209,
+    "elevation_m": 771
+  },
+  "top": {
+    "lat": 49.3706,
+    "lon": 20.13863,
+    "elevation_m": 896
+  }
 }

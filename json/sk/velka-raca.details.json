@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "velka-raca",
   "country": "sk",
-  "fetched_at": "2026-11-27T08:40:39.055853+01:00",
+  "fetched_at": "2026-11-27T13:40:43.517609+01:00",
   "updated_at": "2026-11-19T08:08:00+01:00",
   "source": "https://www.snowparadise.sk/",
   "lifts": [
@@ -13,7 +13,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": 1200,
-      "map_length_m": null,
+      "map_length_m": 1200,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -25,7 +25,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": 750,
-      "map_length_m": null,
+      "map_length_m": 760,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -37,7 +37,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": 1650,
-      "map_length_m": null,
+      "map_length_m": 1650,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -49,7 +49,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": 600,
-      "map_length_m": null,
+      "map_length_m": 580,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -61,7 +61,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": 100,
-      "map_length_m": null,
+      "map_length_m": 190,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -73,7 +73,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": 140,
-      "map_length_m": null,
+      "map_length_m": 140,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -112,7 +112,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1300,
-      "map_length_m": null
+      "map_length_m": 2030
     },
     {
       "id": "slope-2a-kosariska-ii-a",
@@ -122,7 +122,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 500,
-      "map_length_m": null
+      "map_length_m": 770
     },
     {
       "id": "slope-2b-kosariska-ii-b",
@@ -132,7 +132,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 900,
-      "map_length_m": null
+      "map_length_m": 630
     },
     {
       "id": "slope-3-hladka",
@@ -142,7 +142,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 600,
-      "map_length_m": null
+      "map_length_m": 410
     },
     {
       "id": "slope-4-marguska-i",
@@ -152,7 +152,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 900,
-      "map_length_m": null
+      "map_length_m": 720
     },
     {
       "id": "slope-5-marguska-ii",
@@ -162,7 +162,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1260,
-      "map_length_m": null
+      "map_length_m": 740
     },
     {
       "id": "slope-6-tomanova",
@@ -172,7 +172,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1100,
-      "map_length_m": null
+      "map_length_m": 880
     },
     {
       "id": "slope-7-konektor-na-laliky",
@@ -182,7 +182,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1200,
-      "map_length_m": null
+      "map_length_m": 960
     },
     {
       "id": "slope-8-hreben",
@@ -192,7 +192,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 450,
-      "map_length_m": null
+      "map_length_m": 620
     },
     {
       "id": "slope-9-strma",
@@ -202,7 +202,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1000,
-      "map_length_m": null
+      "map_length_m": 580
     },
     {
       "id": "slope-10a-pretekarska-a",
@@ -212,7 +212,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 1048,
-      "map_length_m": null
+      "map_length_m": 600
     },
     {
       "id": "slope-10b-pretekarska-b",
@@ -222,7 +222,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 800,
-      "map_length_m": null
+      "map_length_m": 1140
     },
     {
       "id": "slope-11-traverz-na-margusku",
@@ -232,7 +232,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 450,
-      "map_length_m": null
+      "map_length_m": 200
     },
     {
       "id": "slope-12-traverz-na-laliky",
@@ -242,7 +242,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 450,
-      "map_length_m": null
+      "map_length_m": 400
     },
     {
       "id": "slope-13-traverz-na-tomanovu",
@@ -252,7 +252,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 350,
-      "map_length_m": null
+      "map_length_m": 280
     },
     {
       "id": "slope-14-freeride-zone-1",

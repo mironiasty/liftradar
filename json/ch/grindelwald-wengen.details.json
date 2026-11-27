@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grindelwald-wengen",
   "country": "ch",
-  "fetched_at": "2026-11-27T08:40:39.050517+01:00",
-  "updated_at": "2026-11-25T11:15:05+01:00",
+  "fetched_at": "2026-11-27T13:40:43.504958+01:00",
+  "updated_at": "2026-11-27T12:10:05+01:00",
   "source": "https://www.jungfrau.ch/",
   "lifts": [
     {
@@ -261,114 +261,54 @@
   ],
   "slopes": [
     {
-      "id": "grindelwald_wengen_track_129_45_lauberhorn-start_-_hanneggbruecke",
+      "id": "grindelwald_wengen_valleyRun_3_holenstein",
       "ref": null,
-      "name": "45 Lauberhorn-Start - Hanneggbrücke",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 3290,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_wengen_track_100_1_gratbort",
-      "ref": null,
-      "name": "1 Gratbort",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 620,
-      "map_length_m": 1540
-    },
-    {
-      "id": "grindelwald_wengen_track_116_27_oh_-_god",
-      "ref": null,
-      "name": "27 Oh - God",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 900,
-      "map_length_m": null
-    },
-    {
-      "id": "grindelwald_wengen_track_117_32_black_-_rock",
-      "ref": null,
-      "name": "32 Black - Rock",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 2160,
-      "map_length_m": 1900
-    },
-    {
-      "id": "grindelwald_wengen_track_118_31_schwarzen",
-      "ref": null,
-      "name": "31 Schwarzen",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1600,
-      "map_length_m": 1430
-    },
-    {
-      "id": "grindelwald_wengen_track_122_41_stoeckipiste",
-      "ref": null,
-      "name": "41 Stöckipiste",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1700,
-      "map_length_m": 1420
-    },
-    {
-      "id": "grindelwald_wengen_track_128_45_lauberhorn_weltcupstrecke",
-      "ref": null,
-      "name": "45 Lauberhorn Weltcupstrecke",
-      "difficulty": "difficult",
+      "name": "3 Grindelwald Grund via Holenstein➔Aspen",
+      "difficulty": "other",
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": 5120
-    },
-    {
-      "id": "grindelwald_wengen_track_127_47_lauberhorn_weltcup_slalom",
-      "ref": null,
-      "name": "47 Lauberhorn Weltcup Slalom",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1020,
-      "map_length_m": 740
-    },
-    {
-      "id": "grindelwald_wengen_track_125_45_hanneggbruecke_-_innerwengen",
-      "ref": null,
-      "name": "45 Hanneggbrücke - Innerwengen",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1370,
       "map_length_m": null
     },
     {
-      "id": "grindelwald_wengen_track_135_41a_einfahrtspiste",
+      "id": "grindelwald_wengen_valleyRun_21_aspen",
       "ref": null,
-      "name": "41a Einfahrtspiste",
-      "difficulty": "difficult",
+      "name": "21 Grindelwald Grund via Tschuggen➔Aspen",
+      "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 550,
-      "map_length_m": 540
+      "length_m": null,
+      "map_length_m": null
     },
     {
-      "id": "grindelwald_wengen_track_136_1_grathula",
+      "id": "grindelwald_wengen_valleyRun_22_mettlen",
       "ref": null,
-      "name": "1 Grathula",
-      "difficulty": "difficult",
+      "name": "22 Grindelwald Grund via Mettlen➔Brandegg",
+      "difficulty": "other",
       "colour": null,
       "status": "closed",
-      "length_m": 650,
-      "map_length_m": 690
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "grindelwald_wengen_valleyRun_36_wengen",
+      "ref": null,
+      "name": "36 Wengen",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 40
+    },
+    {
+      "id": "grindelwald_wengen_track_36_bumps",
+      "ref": null,
+      "name": "36 Bumps",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
     },
     {
       "id": "grindelwald_wengen_track_1_3_holenstein_-_grindelwald_grund",
@@ -811,54 +751,114 @@
       "map_length_m": null
     },
     {
-      "id": "grindelwald_wengen_track_36_bumps",
+      "id": "grindelwald_wengen_track_129_45_lauberhorn-start_-_hanneggbruecke",
       "ref": null,
-      "name": "36 Bumps",
-      "difficulty": "other",
+      "name": "45 Lauberhorn-Start - Hanneggbrücke",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null,
+      "length_m": 3290,
       "map_length_m": null
     },
     {
-      "id": "grindelwald_wengen_valleyRun_3_holenstein",
+      "id": "grindelwald_wengen_track_100_1_gratbort",
       "ref": null,
-      "name": "3 Grindelwald Grund via Holenstein➔Aspen",
-      "difficulty": "other",
+      "name": "1 Gratbort",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null,
+      "length_m": 620,
+      "map_length_m": 1540
+    },
+    {
+      "id": "grindelwald_wengen_track_116_27_oh_-_god",
+      "ref": null,
+      "name": "27 Oh - God",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
       "map_length_m": null
     },
     {
-      "id": "grindelwald_wengen_valleyRun_21_aspen",
+      "id": "grindelwald_wengen_track_117_32_black_-_rock",
       "ref": null,
-      "name": "21 Grindelwald Grund via Tschuggen➔Aspen",
-      "difficulty": "other",
+      "name": "32 Black - Rock",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2160,
+      "map_length_m": 1900
+    },
+    {
+      "id": "grindelwald_wengen_track_118_31_schwarzen",
+      "ref": null,
+      "name": "31 Schwarzen",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600,
+      "map_length_m": 1430
+    },
+    {
+      "id": "grindelwald_wengen_track_122_41_stoeckipiste",
+      "ref": null,
+      "name": "41 Stöckipiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700,
+      "map_length_m": 1420
+    },
+    {
+      "id": "grindelwald_wengen_track_128_45_lauberhorn_weltcupstrecke",
+      "ref": null,
+      "name": "45 Lauberhorn Weltcupstrecke",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
       "length_m": null,
+      "map_length_m": 5120
+    },
+    {
+      "id": "grindelwald_wengen_track_127_47_lauberhorn_weltcup_slalom",
+      "ref": null,
+      "name": "47 Lauberhorn Weltcup Slalom",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1020,
+      "map_length_m": 740
+    },
+    {
+      "id": "grindelwald_wengen_track_125_45_hanneggbruecke_-_innerwengen",
+      "ref": null,
+      "name": "45 Hanneggbrücke - Innerwengen",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1370,
       "map_length_m": null
     },
     {
-      "id": "grindelwald_wengen_valleyRun_22_mettlen",
+      "id": "grindelwald_wengen_track_135_41a_einfahrtspiste",
       "ref": null,
-      "name": "22 Grindelwald Grund via Mettlen➔Brandegg",
-      "difficulty": "other",
+      "name": "41a Einfahrtspiste",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null,
-      "map_length_m": null
+      "length_m": 550,
+      "map_length_m": 540
     },
     {
-      "id": "grindelwald_wengen_valleyRun_36_wengen",
+      "id": "grindelwald_wengen_track_136_1_grathula",
       "ref": null,
-      "name": "36 Wengen",
-      "difficulty": "other",
+      "name": "1 Grathula",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
-      "length_m": null,
-      "map_length_m": 40
+      "length_m": 650,
+      "map_length_m": 690
     }
   ],
   "bottom": {

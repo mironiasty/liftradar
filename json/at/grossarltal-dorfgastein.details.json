@@ -2,10 +2,34 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grossarltal-dorfgastein",
   "country": "at",
-  "fetched_at": "2026-11-27T08:40:44.534543+01:00",
+  "fetched_at": "2026-11-27T13:40:48.518549+01:00",
   "updated_at": null,
   "source": "https://www.salzburgerland.com/",
   "lifts": [
+    {
+      "id": "lift-36-gipfelbahn-fulseck-i",
+      "ref": null,
+      "name": "36 Gipfelbahn Fulseck I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1370,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-37-gipfelbahn-fulseck-ii",
+      "ref": null,
+      "name": "37 Gipfelbahn Fulseck II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1920,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
     {
       "id": "lift-39-wengerhochalmbahn",
       "ref": null,
@@ -73,7 +97,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 910,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -85,7 +109,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1910,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -97,7 +121,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1000,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -109,7 +133,7 @@
       "type": "gondola",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 2430,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -157,7 +181,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 20,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -187,7 +211,7 @@
       "top_m": null
     },
     {
-      "id": "lift-36-gipfelbahn-fulseck-i",
+      "id": "lift-36-gipfelbahn-fulseck-i-2",
       "ref": null,
       "name": "36 Gipfelbahn Fulseck I",
       "type": "gondola",
@@ -199,7 +223,7 @@
       "top_m": null
     },
     {
-      "id": "lift-37-gipfelbahn-fulseck-ii",
+      "id": "lift-37-gipfelbahn-fulseck-ii-2",
       "ref": null,
       "name": "37 Gipfelbahn Fulseck II",
       "type": "gondola",
@@ -217,7 +241,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 2090,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -229,7 +253,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1050,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -241,7 +265,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 690,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -253,7 +277,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -263,6 +287,54 @@
       "ref": null,
       "name": "44 Rauchleiten",
       "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 220,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-51-panoramabahn-i-2",
+      "ref": null,
+      "name": "51 Panoramabahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-52-panoramabahn-ii-2",
+      "ref": null,
+      "name": "52 Panoramabahn II",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-61-kieserlbahn-i-2",
+      "ref": null,
+      "name": "61 Kieserlbahn I",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-62-kieserlbahn-ii-2",
+      "ref": null,
+      "name": "62 Kieserlbahn II",
+      "type": "gondola",
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
@@ -277,7 +349,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1580,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -289,7 +361,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1000,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -301,7 +373,7 @@
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 1030,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -313,7 +385,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 300,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -325,7 +397,7 @@
       "type": "drag_lift",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 420,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -337,7 +409,7 @@
       "type": "carpet",
       "status": "closed",
       "length_m": null,
-      "map_length_m": null,
+      "map_length_m": 190,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -352,7 +424,7 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 4430
     },
     {
       "id": "slope-fischbacherwiese",
@@ -362,177 +434,7 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-1a-skiweg",
-      "ref": null,
-      "name": "1a Skiweg",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-2-standard",
-      "ref": null,
-      "name": "2 Standard",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-3-familien",
-      "ref": null,
-      "name": "3 Familien",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-3a-familien",
-      "ref": null,
-      "name": "3a Familien",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-3b-familien",
-      "ref": null,
-      "name": "3b Familien",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-4-finstergrube",
-      "ref": null,
-      "name": "4 Finstergrube",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-4a-ortsabfahrt-und-panoramabahn",
-      "ref": null,
-      "name": "4a Ortsabfahrt und Panoramabahn",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-5-rsl-hochbrand",
-      "ref": null,
-      "name": "5 RSL Hochbrand",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-5a-rsl-rodelberg",
-      "ref": null,
-      "name": "5a RSL Rodelberg",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-6-rsl-harbach",
-      "ref": null,
-      "name": "6 RSL Harbach",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-6a-hedegg",
-      "ref": null,
-      "name": "6a Hedegg",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-7-larchenhang",
-      "ref": null,
-      "name": "7 Lärchenhang",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-8-sennleiten-1-2",
-      "ref": null,
-      "name": "8 Sennleiten 1+2",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-9-rsl-kreuzkogel",
-      "ref": null,
-      "name": "9 RSL Kreuzkogel",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-10-himmelreich",
-      "ref": null,
-      "name": "10 Himmelreich",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-11-roslehenalm",
-      "ref": null,
-      "name": "11 Roslehenalm",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-12-skiroute-kreuzkogel",
-      "ref": null,
-      "name": "12 Skiroute Kreuzkogel",
-      "difficulty": "ski_route",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
+      "map_length_m": 580
     },
     {
       "id": "slope-fulseck-gipfelexpress",
@@ -542,7 +444,7 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1820
     },
     {
       "id": "slope-mittelstation-wengerhochalmbahn",
@@ -552,7 +454,27 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 790
+    },
+    {
+      "id": "slope-1a-skiweg",
+      "ref": null,
+      "name": "1a Skiweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 990
+    },
+    {
+      "id": "slope-2-standard",
+      "ref": null,
+      "name": "2 Standard",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1160
     },
     {
       "id": "slope-wengerhochalmbahn-talstation",
@@ -562,7 +484,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1450
+    },
+    {
+      "id": "slope-3-familien",
+      "ref": null,
+      "name": "3 Familien",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1770
     },
     {
       "id": "slope-grabnerabfahrt",
@@ -572,7 +504,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1350
+    },
+    {
+      "id": "slope-3a-familien",
+      "ref": null,
+      "name": "3a Familien",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 2220
     },
     {
       "id": "slope-schuhflickerpiste",
@@ -592,7 +534,27 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 350
+    },
+    {
+      "id": "slope-3b-familien",
+      "ref": null,
+      "name": "3b Familien",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 2160
+    },
+    {
+      "id": "slope-4-finstergrube",
+      "ref": null,
+      "name": "4 Finstergrube",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1250
     },
     {
       "id": "slope-kuhhageralm",
@@ -602,7 +564,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1950
+    },
+    {
+      "id": "slope-4a-ortsabfahrt-und-panoramabahn",
+      "ref": null,
+      "name": "4a Ortsabfahrt und Panoramabahn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 2210
     },
     {
       "id": "slope-gletscherabfahrt",
@@ -612,7 +584,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1460
+    },
+    {
+      "id": "slope-5-rsl-hochbrand",
+      "ref": null,
+      "name": "5 RSL Hochbrand",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1400
     },
     {
       "id": "slope-gruberwald",
@@ -622,7 +604,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1100
+    },
+    {
+      "id": "slope-5a-rsl-rodelberg",
+      "ref": null,
+      "name": "5a RSL Rodelberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1260
     },
     {
       "id": "slope-fis-wengeralm",
@@ -632,7 +624,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1190
+    },
+    {
+      "id": "slope-6-rsl-harbach",
+      "ref": null,
+      "name": "6 RSL Harbach",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1560
     },
     {
       "id": "slope-familienabfahrt-kristall",
@@ -642,7 +644,17 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 2070
+    },
+    {
+      "id": "slope-6a-hedegg",
+      "ref": null,
+      "name": "6a Hedegg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1270
     },
     {
       "id": "slope-familienabfahrt-brandalm",
@@ -652,7 +664,7 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 2350
     },
     {
       "id": "slope-familienabfahrt-muhlwinkel",
@@ -662,7 +674,27 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 1730
+    },
+    {
+      "id": "slope-7-larchenhang",
+      "ref": null,
+      "name": "7 Lärchenhang",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 580
+    },
+    {
+      "id": "slope-8-sennleiten-1-2",
+      "ref": null,
+      "name": "8 Sennleiten 1+2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1800
     },
     {
       "id": "slope-familienabfahrt-gruberwaldweg",
@@ -675,6 +707,16 @@
       "map_length_m": null
     },
     {
+      "id": "slope-9-rsl-kreuzkogel",
+      "ref": null,
+      "name": "9 RSL Kreuzkogel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1060
+    },
+    {
       "id": "slope-buckelpiste",
       "ref": null,
       "name": "Buckelpiste",
@@ -682,7 +724,7 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 360
     },
     {
       "id": "slope-heumoospiste",
@@ -692,13 +734,43 @@
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": null
+      "map_length_m": 250
+    },
+    {
+      "id": "slope-10-himmelreich",
+      "ref": null,
+      "name": "10 Himmelreich",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1530
+    },
+    {
+      "id": "slope-11-roslehenalm",
+      "ref": null,
+      "name": "11 Roslehenalm",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 3540
     },
     {
       "id": "slope-gratabfahrt",
       "ref": null,
       "name": "Gratabfahrt",
       "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 700
+    },
+    {
+      "id": "slope-12-skiroute-kreuzkogel",
+      "ref": null,
+      "name": "12 Skiroute Kreuzkogel",
+      "difficulty": "ski_route",
       "colour": null,
       "status": "closed",
       "length_m": null,
@@ -716,6 +788,386 @@
     },
     {
       "id": "slope-adrenalien",
+      "ref": null,
+      "name": "Adrenalien",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 400
+    },
+    {
+      "id": "slope-1-skiweg-2",
+      "ref": null,
+      "name": "1 Skiweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fischbacherwiese-2",
+      "ref": null,
+      "name": "Fischbacherwiese",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fulseck-gipfelexpress-2",
+      "ref": null,
+      "name": "Fulseck - Gipfelexpress",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-mittelstation-wengerhochalmbahn-2",
+      "ref": null,
+      "name": "Mittelstation-Wengerhochalmbahn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-1a-skiweg-2",
+      "ref": null,
+      "name": "1a Skiweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2-standard-2",
+      "ref": null,
+      "name": "2 Standard",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-wengerhochalmbahn-talstation-2",
+      "ref": null,
+      "name": "Wengerhochalmbahn - Talstation",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-familien-2",
+      "ref": null,
+      "name": "3 Familien",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-grabnerabfahrt-2",
+      "ref": null,
+      "name": "Grabnerabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3a-familien-2",
+      "ref": null,
+      "name": "3a Familien",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-schuhflickerpiste-2",
+      "ref": null,
+      "name": "Schuhflickerpiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fulseck-2",
+      "ref": null,
+      "name": "Fulseck",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3b-familien-2",
+      "ref": null,
+      "name": "3b Familien",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-finstergrube-2",
+      "ref": null,
+      "name": "4 Finstergrube",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kuhhageralm-2",
+      "ref": null,
+      "name": "Kühhageralm",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4a-ortsabfahrt-und-panoramabahn-2",
+      "ref": null,
+      "name": "4a Ortsabfahrt und Panoramabahn",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-gletscherabfahrt-2",
+      "ref": null,
+      "name": "Gletscherabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-rsl-hochbrand-2",
+      "ref": null,
+      "name": "5 RSL Hochbrand",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-gruberwald-2",
+      "ref": null,
+      "name": "Gruberwald",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5a-rsl-rodelberg-2",
+      "ref": null,
+      "name": "5a RSL Rodelberg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fis-wengeralm-2",
+      "ref": null,
+      "name": "FIS Wengeralm",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-rsl-harbach-2",
+      "ref": null,
+      "name": "6 RSL Harbach",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familienabfahrt-kristall-2",
+      "ref": null,
+      "name": "Familienabfahrt Kristall",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6a-hedegg-2",
+      "ref": null,
+      "name": "6a Hedegg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familienabfahrt-brandalm-2",
+      "ref": null,
+      "name": "Familienabfahrt Brandalm",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familienabfahrt-muhlwinkel-2",
+      "ref": null,
+      "name": "Familienabfahrt Mühlwinkel",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-7-larchenhang-2",
+      "ref": null,
+      "name": "7 Lärchenhang",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-8-sennleiten-1-2-2",
+      "ref": null,
+      "name": "8 Sennleiten 1+2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familienabfahrt-gruberwaldweg-2",
+      "ref": null,
+      "name": "Familienabfahrt Gruberwaldweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-9-rsl-kreuzkogel-2",
+      "ref": null,
+      "name": "9 RSL Kreuzkogel",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-buckelpiste-2",
+      "ref": null,
+      "name": "Buckelpiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-heumoospiste-2",
+      "ref": null,
+      "name": "Heumoospiste",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-10-himmelreich-2",
+      "ref": null,
+      "name": "10 Himmelreich",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-11-roslehenalm-2",
+      "ref": null,
+      "name": "11 Roslehenalm",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-gratabfahrt-2",
+      "ref": null,
+      "name": "Gratabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-12-skiroute-kreuzkogel-2",
+      "ref": null,
+      "name": "12 Skiroute Kreuzkogel",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-gastis-schneepark-2",
+      "ref": null,
+      "name": "Gastis Schneepark",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-adrenalien-2",
       "ref": null,
       "name": "Adrenalien",
       "difficulty": "difficult",

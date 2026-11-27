@@ -10,8 +10,8 @@
   },
   "website": "https://www.livigno.eu",
   "ski_region": "alta-valtellina",
-  "status": "closed",
-  "fetched_at": "2026-11-27T08:40:39.051145+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-27T13:40:43.506154+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,27 +23,17 @@
   },
   "lifts": {
     "open": 0,
-    "total": 3
+    "total": 32
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 78,
     "open_km": null,
     "total_km": 115
   },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 1
-    },
-    "gondola": {
-      "open": 0,
-      "total": 2
-    }
-  },
+  "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "details": "json/it/livigno.details.json",
   "avalanche": null,
   "sources": [
     "https://www.livigno.eu/"

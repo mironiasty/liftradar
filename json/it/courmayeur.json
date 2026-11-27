@@ -10,8 +10,8 @@
   },
   "website": "https://www.courmayeur-montblanc.com",
   "ski_region": "valle-d-aosta",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T08:40:39.050761+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T13:40:43.505429+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,58 +22,59 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
-    "total": 18
+    "open": 10,
+    "total": 20
   },
   "slopes": {
-    "open": null,
-    "total": 45,
+    "open": 14,
+    "total": 39,
     "open_km": null,
     "total_km": 43
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "carpet": {
-      "open": 0,
-      "total": 1
+      "open": 2,
+      "total": 3
     },
     "chairlift": {
-      "open": 0,
-      "total": 8
+      "open": 3,
+      "total": 7
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "gondola": {
-      "open": 0,
-      "total": 2
+      "open": 3,
+      "total": 3
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
-      "total": 13,
+      "open": 3,
+      "total": 11,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
-      "total": 26,
+      "open": 10,
+      "total": 23,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": null,
-      "total": 6,
+      "open": 1,
+      "total": 5,
       "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-30T08:00:00+01:00",
+  "lifts_updated_at": "2026-11-27T11:54:00+01:00",
+  "details": "json/it/courmayeur.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-22",
     "region": "D - VAL VENY",

@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "harenda",
   "country": "pl",
-  "fetched_at": "2026-11-27T08:40:39.052833+01:00",
+  "fetched_at": "2026-11-27T13:40:43.509297+01:00",
   "updated_at": null,
   "source": "https://tatrysuperski.pl/",
   "lifts": [
@@ -163,6 +163,14 @@
       "map_length_m": null
     }
   ],
-  "bottom": null,
-  "top": null
+  "bottom": {
+    "lat": 49.32112,
+    "lon": 19.98029,
+    "elevation_m": 771
+  },
+  "top": {
+    "lat": 49.32498,
+    "lon": 19.97617,
+    "elevation_m": 963
+  }
 }

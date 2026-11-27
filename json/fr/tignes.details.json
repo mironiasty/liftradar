@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tignes",
   "country": "fr",
-  "fetched_at": "2026-11-27T08:40:39.053595+01:00",
+  "fetched_at": "2026-11-27T13:40:43.510642+01:00",
   "updated_at": null,
   "source": "https://www.lumiplan.com/",
   "lifts": [
@@ -91,6 +91,18 @@
       "top_m": null
     },
     {
+      "id": "5220",
+      "ref": null,
+      "name": "TSD DE FRESSE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1930,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "5221",
       "ref": null,
       "name": "TSD DU BOLLIN",
@@ -98,6 +110,18 @@
       "status": "open",
       "length_m": null,
       "map_length_m": 590,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5222",
+      "ref": null,
+      "name": "TSD DU PAQUIS",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1640,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -419,33 +443,9 @@
       "ref": null,
       "name": "FIL NEIGE REPLAT",
       "type": "drag_lift",
-      "status": "open",
+      "status": "closed",
       "length_m": null,
       "map_length_m": 270,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "5220",
-      "ref": null,
-      "name": "TSD DE FRESSE",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1930,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "5222",
-      "ref": null,
-      "name": "TSD DU PAQUIS",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1640,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null

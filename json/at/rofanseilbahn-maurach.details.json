@@ -2,11 +2,121 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "rofanseilbahn-maurach",
   "country": "at",
-  "fetched_at": "2026-11-27T08:42:08.717966+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T13:42:04.183337+01:00",
+  "updated_at": "2026-11-27T10:14:17+01:00",
+  "source": "https://www.intermaps.com/",
+  "lifts": [
+    {
+      "id": "L_105135",
+      "ref": null,
+      "name": "A Rofanseilbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_105136",
+      "ref": null,
+      "name": "B DSL Mauritz",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_105137",
+      "ref": null,
+      "name": "C DSL Rofan",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_105138",
+      "ref": null,
+      "name": "D Wasserboden I+II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "R_105139",
+      "ref": null,
+      "name": "1 Rotspitz",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105140",
+      "ref": null,
+      "name": "1a Waldabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105141",
+      "ref": null,
+      "name": "2 Rofanabfahrt",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105142",
+      "ref": null,
+      "name": "3 Übungsgelände Wasserboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105143",
+      "ref": null,
+      "name": "3a Heimgrubenabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "R_105152",
+      "ref": null,
+      "name": "4 Skiroute",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 47.42449,
     "lon": 11.75132,

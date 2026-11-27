@@ -1,0 +1,103 @@
+{
+  "time": "2026-11-27T13:42:58+01:00",
+  "resorts": [
+    {
+      "id": "nesselwaengle-im-tannheimer-tal",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:29.236521+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "niederthai",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:30.478387+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Niederthai_89'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "rangger-koepfl",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-23T08:41:38.649397+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Rangger%20K%C3%B6pfl_2555'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "beskid-sport-arena",
+      "country": "pl",
+      "status": "closed",
+      "status_from": "2026-11-26T08:40:39.162882+01:00",
+      "errors": [
+        "status: HTTPStatusError: Server error '502 Bad Gateway' for url 'https://beskidsportarena.pl/szczyrk-wyciagi-narciarskie-i-kolej-linowa'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://ski.salla.fi/aukioloajat-talvi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "sierra-nevada",
+      "country": "es",
+      "status": "closed",
+      "status_from": "2026-11-27T08:40:39.058598+01:00",
+      "errors": [
+        "status: ValueError: unknown state 'Prevision' of 'Tc. Al-Andalus' (format changed?)"
+      ]
+    },
+    {
+      "id": "astun-candanchu",
+      "country": "es",
+      "status": "no_report",
+      "status_from": "2026-11-27T08:40:39.058609+01:00",
+      "errors": [
+        "status: KeyError: 'parte'"
+      ]
+    },
+    {
+      "id": "golte",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-11T16:22:47.960389+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.golte.si/zima/smucanje/proge/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    }
+  ],
+  "warnings": [
+    "bad-kleinkirchheim: not on the Kärnten list (no recent report, or renamed: Bad Kleinkirchheim)",
+    "ankogel-mallnitz: not on the Kärnten list (no recent report, or renamed: Ankogel / Mallnitz)",
+    "koralpe: not on the Kärnten list (no recent report, or renamed: Koralpe)",
+    "gol: open before its opening day (2026-11-28): closed",
+    "vestvatn: open before its opening day (2027-01-02): closed",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "vitosha: status: HTTPStatusError: Client error '404 Not Found' for url 'https://skivitosha.com/information/liftsslopes'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404; listed with its size only",
+    "weather: ReadTimeout for 50 points",
+    "weather: ReadTimeout for 50 points",
+    "weather: ReadTimeout for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 46 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: ReadTimeout for 50 points"
+  ]
+}

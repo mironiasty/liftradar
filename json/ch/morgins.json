@@ -10,13 +10,13 @@
   },
   "website": "https://www.regiondentsdumidi.ch",
   "linked_area": "portes-du-soleil",
-  "status": "closed",
-  "fetched_at": "2026-11-27T08:40:39.049895+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-27T13:40:43.503903+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 75,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 6,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -35,9 +35,9 @@
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 31,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 46
   },
   "lifts_by_type": {
@@ -60,26 +60,25 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": null,
       "total": 18,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": null,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": null,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-11-13T10:29:00+01:00",
-  "details": "json/ch/morgins.details.json",
   "avalanche": {
     "region_id": "CH-1312",
     "region": "Monthey - Val d'Illiez",

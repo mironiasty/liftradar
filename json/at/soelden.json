@@ -11,51 +11,51 @@
   "website": "https://www.soelden.com",
   "ski_region": "oetztal",
   "status": "open",
-  "fetched_at": "2026-11-27T08:40:39.045208+01:00",
+  "fetched_at": "2026-11-27T13:40:43.494220+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 86,
     "valley_cm": 0,
-    "fresh_cm": 0,
+    "fresh_cm": 4,
     "last_snowfall": "2026-11-26",
-    "condition": "Powder - grippy",
+    "condition": "Fresh snow",
     "stations": [
       {
         "name": "Sölden",
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": -3.7,
+        "temperature_c": -1.9,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
-        "depth_cm": 32,
-        "fresh_cm": 0,
-        "temperature_c": -6.9,
-        "condition": "Powder - grippy"
+        "depth_cm": 31,
+        "fresh_cm": 2,
+        "temperature_c": -4.6,
+        "condition": "Fresh snow"
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
         "depth_cm": 46,
-        "fresh_cm": 0,
-        "temperature_c": -10.8,
-        "condition": "Powder - grippy"
+        "fresh_cm": 2,
+        "temperature_c": -8.4,
+        "condition": "Fresh snow"
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
         "depth_cm": 86,
-        "fresh_cm": 0,
-        "temperature_c": -11.5,
-        "condition": "Powder - grippy"
+        "fresh_cm": 4,
+        "temperature_c": -10.1,
+        "condition": "Fresh snow"
       }
     ]
   },
   "lifts": {
-    "open": 24,
+    "open": 25,
     "total": 31
   },
   "slopes": {
@@ -70,7 +70,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 10,
+      "open": 11,
       "total": 13
     },
     "drag_lift": {
@@ -112,7 +112,7 @@
       "total_km": 23
     }
   },
-  "lifts_updated_at": "2026-11-27T08:40:01+01:00",
+  "lifts_updated_at": "2026-11-27T13:40:58+01:00",
   "details": "json/at/soelden.details.json",
   "avalanche": {
     "region_id": "AT-07-20",

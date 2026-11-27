@@ -2,11 +2,129 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "hallingskarvet",
   "country": "no",
-  "fetched_at": "2026-11-27T08:40:39.057890+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T13:40:43.520382+01:00",
+  "updated_at": "2026-11-27T13:24:41+01:00",
+  "source": "https://fnugg.no/hallingskarvet/",
+  "lifts": [
+    {
+      "id": "lift-hovedheis",
+      "ref": null,
+      "name": "Hovedheis",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-begynnerheis",
+      "ref": null,
+      "name": "Begynnerheis",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fjellheis",
+      "ref": null,
+      "name": "Fjellheis",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-begynneromradet",
+      "ref": null,
+      "name": "Begynnerområdet",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bittelypa",
+      "ref": null,
+      "name": "Bitteløypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-super-g",
+      "ref": null,
+      "name": "Super-G",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-johanlypa",
+      "ref": null,
+      "name": "Johanløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nonstllypa",
+      "ref": null,
+      "name": "Nonstølløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-parken",
+      "ref": null,
+      "name": "Parken",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fjellheisen-knutebakken",
+      "ref": null,
+      "name": "Fjellheisen (Knutebakken)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fjellheisen-livslpet",
+      "ref": null,
+      "name": "Fjellheisen (Livsløpet)",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 60.64654,
     "lon": 8.02849,

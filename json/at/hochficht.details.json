@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "hochficht",
   "country": "at",
-  "fetched_at": "2026-11-27T08:40:39.046051+01:00",
-  "updated_at": "2026-11-26T18:11:10+01:00",
+  "fetched_at": "2026-11-27T13:40:43.495610+01:00",
+  "updated_at": "2026-11-27T13:33:29+01:00",
   "source": "https://www.intermaps.com/",
   "lifts": [
     {
@@ -83,7 +83,7 @@
       "ref": null,
       "name": "R1 Reischlbergbahn I",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": 422,
       "map_length_m": 460,
       "capacity_per_hour": null,
@@ -95,7 +95,7 @@
       "ref": null,
       "name": "R2 Reischlbergbahn II",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": 998,
       "map_length_m": 1040,
       "capacity_per_hour": null,
@@ -110,6 +110,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 80,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "L_144715",
+      "ref": null,
+      "name": "Fichtl‘s Mountain Jukebox",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -162,7 +174,7 @@
       "name": "3 Hochwaldabfahrt",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 2300,
       "map_length_m": 1580
     },
@@ -254,6 +266,36 @@
       "colour": null,
       "status": "closed",
       "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_101993",
+      "ref": "5a",
+      "name": "Fichtl Kids Park",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null
+    },
+    {
+      "id": "R_142229",
+      "ref": "12",
+      "name": "12 Verbindungsweg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "R_142231",
+      "ref": "6a",
+      "name": "6a Fichtl Junior Park",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 200,
       "map_length_m": null
     }
   ],

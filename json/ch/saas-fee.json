@@ -11,11 +11,11 @@
   "website": "https://www.saas-fee.ch",
   "ski_region": "saastal",
   "status": "open",
-  "fetched_at": "2026-11-27T08:40:39.049946+01:00",
+  "fetched_at": "2026-11-27T13:40:43.503966+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 44,
-    "valley_cm": null,
+    "valley_cm": 22,
     "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
@@ -27,11 +27,19 @@
         "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
+      },
+      {
+        "name": "Saas Fee (SLF)",
+        "elevation_m": 1790,
+        "depth_cm": 22,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 6,
+    "open": 7,
     "total": 23
   },
   "slopes": {
@@ -46,7 +54,7 @@
       "total": 2
     },
     "drag_lift": {
-      "open": 2,
+      "open": 3,
       "total": 12
     },
     "funicular": {
@@ -84,7 +92,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-27T08:09:56+01:00",
+  "lifts_updated_at": "2026-11-27T13:11:59+01:00",
   "details": "json/ch/saas-fee.details.json",
   "avalanche": {
     "region_id": "CH-4223",

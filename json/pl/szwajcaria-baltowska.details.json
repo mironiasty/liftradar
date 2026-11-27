@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "szwajcaria-baltowska",
   "country": "pl",
-  "fetched_at": "2026-11-27T08:40:39.053274+01:00",
+  "fetched_at": "2026-11-27T13:40:43.509998+01:00",
   "updated_at": null,
   "source": "https://szwajcariabaltowska.pl/",
   "lifts": [],
@@ -15,7 +15,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 350,
-      "map_length_m": null
+      "map_length_m": 330
     },
     {
       "id": "slope-trasa-2",
@@ -25,7 +25,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 570,
-      "map_length_m": null
+      "map_length_m": 320
     },
     {
       "id": "slope-trasa-3",
@@ -35,7 +35,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 700,
-      "map_length_m": null
+      "map_length_m": 420
     },
     {
       "id": "slope-trasa-4",
@@ -45,7 +45,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 500,
-      "map_length_m": null
+      "map_length_m": 460
     },
     {
       "id": "slope-trasa-5",
@@ -58,6 +58,14 @@
       "map_length_m": null
     }
   ],
-  "bottom": null,
-  "top": null
+  "bottom": {
+    "lat": 51.01409,
+    "lon": 21.55105,
+    "elevation_m": 148
+  },
+  "top": {
+    "lat": 51.01188,
+    "lon": 21.5462,
+    "elevation_m": 217
+  }
 }

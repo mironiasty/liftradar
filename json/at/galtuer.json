@@ -11,7 +11,7 @@
   "website": "https://www.galtuer.com",
   "ski_region": "silvretta-skipass",
   "status": "closed",
-  "fetched_at": "2026-11-27T08:41:55.678096+01:00",
+  "fetched_at": "2026-11-27T13:41:52.308102+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -27,13 +27,52 @@
   },
   "slopes": {
     "open": 0,
-    "total": 25,
+    "total": 26,
     "open_km": 0.0,
     "total_km": 42
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-25T16:25:00+01:00",
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "ski_route": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "easy": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-27T10:44:51+01:00",
+  "details": "json/at/galtuer.details.json",
   "avalanche": {
     "region_id": "AT-07-12",
     "region": "Silvretta East",
@@ -63,12 +102,17 @@
   },
   "sources": [
     "https://www.snowcard.tirol.at/",
+    "https://www.intermaps.com/",
     "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.intermaps.com/",
         "attribution_required": null
       },
       {

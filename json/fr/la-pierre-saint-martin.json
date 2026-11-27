@@ -9,25 +9,42 @@
     "lon": -0.7395
   },
   "website": "https://www.lapierrestmartin.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T08:40:39.054206+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T13:40:43.515347+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-27",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Pied de piste",
+        "elevation_m": 1527,
+        "depth_cm": 25,
+        "fresh_cm": 25,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      },
+      {
+        "name": "Sommet",
+        "elevation_m": 2153,
+        "depth_cm": 30,
+        "fresh_cm": 30,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 11
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 26,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 29
   },
   "lifts_by_type": {
@@ -46,25 +63,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 18,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/la-pierre-saint-martin.details.json",
   "avalanche": {
     "region_id": "FR-64",
     "region": "Pays Basque",

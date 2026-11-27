@@ -10,8 +10,8 @@
   },
   "website": "https://www.jasna.sk",
   "ski_region": "tatry-mountain-resorts",
-  "status": "closed",
-  "fetched_at": "2026-11-27T08:40:39.055725+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T13:40:43.517446+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,27 +22,44 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
-    "total": 20
+    "open": 8,
+    "total": 21
   },
   "slopes": {
-    "open": 0,
+    "open": 9,
     "total": 40,
-    "open_km": 0.0,
+    "open_km": 11.0,
     "total_km": 51
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 3,
+      "total": 8
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 5,
+      "total": 5
+    },
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 7,
       "total": 20,
-      "open_km": 0.0,
+      "open_km": 10.0,
       "total_km": 28
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": 1.0,
       "total_km": 18
     },
     "difficult": {

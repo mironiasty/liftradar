@@ -2,11 +2,62 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "kiczera-ski",
   "country": "pl",
-  "fetched_at": "2026-11-27T08:40:39.053247+01:00",
+  "fetched_at": "2026-11-27T13:40:43.509938+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.kiczeraski.pl/",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-trasa-gowna",
+      "ref": null,
+      "name": "Trasa główna",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-pod-wyciagiem",
+      "ref": null,
+      "name": "Trasa pod wyciągiem",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-okrezna",
+      "ref": null,
+      "name": "Trasa okrężna",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-dla-poczatkujacych",
+      "ref": null,
+      "name": "Trasa dla początkujących",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 150,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-dla-poczatkujacych-obok-wypozyczalni",
+      "ref": null,
+      "name": "Trasa dla początkujących obok wypożyczalni",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.49909,
     "lon": 21.93329,
