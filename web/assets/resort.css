@@ -971,3 +971,83 @@ a.external::after {
 .members a:hover {
   text-decoration: underline;
 }
+
+/* What changed (resort-timeline.js): the season's events, newest first, on a line with a dot each. */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6.5em minmax(0, 1fr);
+  gap: 12px;
+  padding: 0 0 14px 22px;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0.45em;
+  bottom: -0.45em;
+  width: 2px;
+  background: var(--line);
+}
+.timeline li:last-child::before {
+  display: none;
+}
+.timeline li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--c, var(--none-line));
+  box-shadow: 0 0 0 3px var(--bg);
+}
+.timeline time {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+.timeline strong {
+  display: block;
+  font-weight: 600;
+}
+.timeline .meta {
+  font-variant-numeric: tabular-nums;
+}
+.timeline .tl-open,
+.timeline .tl-high {
+  --c: var(--open);
+}
+.timeline .tl-closed {
+  --c: var(--closed);
+}
+.timeline .tl-snow {
+  --c: var(--accent);
+}
+.timeline .tl-list {
+  --c: var(--warn);
+}
+.timeline .tl-minor strong {
+  font-weight: 400;
+  color: var(--muted);
+}
+.tl-more {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+@media (max-width: 520px) {
+  .timeline li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+}

@@ -361,14 +361,18 @@ async function groupCards(r, container) {
   container.replaceWith(...cards);
 }
 
-// History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run).
-/** @param {Resort} r */
+// History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run),
+// which also gives the "What changed" card (resort-timeline.js).
 // `collected` says since when: the history starts with the resort's first run (it keeps a year).
-/** @param {Resort} r @param {HTMLElement} container @param {HTMLElement} collected */
-async function historyChart(r, container, collected) {
+/** @param {Resort} r @returns {Promise<ResortHistory["runs"]>} */
+async function loadHistory(r) {
   const response = await fetch(historyPath(r), { cache: "no-cache" });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  const runs = /** @type {ResortHistory} */ (await response.json()).runs;
+  return /** @type {ResortHistory} */ (await response.json()).runs;
+}
+
+/** @param {ResortHistory["runs"]} runs @param {HTMLElement} container @param {HTMLElement} collected */
+function historyChart(runs, container, collected) {
   if (runs.time.length) {
     // A month's name, so English reads "24 October 2026" rather than the Austrian "24. Oktober 2026".
     const date = new Date(runs.time[0]).toLocaleDateString(LANG === "en" ? "en-GB" : DATE_LOCALE, {
@@ -408,6 +412,8 @@ async function show() {
   const groupsBox = el("div", { hidden: "" });
   // Filled by weatherCard once the forecast is in.
   const weatherBox = el("section", { class: "card weather", hidden: "" });
+  // Filled by timelineCard once the history is in.
+  const timelineBox = el("section", { class: "card", hidden: "" });
   const main = el(
     "div",
     { class: "stack" },
@@ -416,6 +422,7 @@ async function show() {
     weatherBox,
     ...[stations(r.snow.stations), avalanche(r.avalanche)].filter(Boolean),
     el("section", { class: "card" }, el("h2", {}, t("Last {n} days", { n: HISTORY_DAYS })), historyBox, collected),
+    timelineBox,
   );
   page.replaceChildren(
     header(r),
@@ -455,9 +462,15 @@ async function show() {
   });
   groupCards(r, groupsBox).catch(() => groupsBox.remove());
   weatherCard(r, weatherBox).catch(() => weatherBox.remove());
-  historyChart(r, historyBox, collected).catch((error) =>
-    historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error))),
-  );
+  loadHistory(r)
+    .then((runs) => {
+      historyChart(runs, historyBox, collected);
+      timelineCard(runs, timelineBox);
+    })
+    .catch((error) => {
+      timelineBox.remove();
+      historyBox.replaceChildren(el("p", { class: "empty" }, t("No history ({message}).", error)));
+    });
 }
 
 show().catch((error) => fail(t("Could not load the resort ({message}).", error)));
