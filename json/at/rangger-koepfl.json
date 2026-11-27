@@ -10,7 +10,7 @@
   },
   "website": "https://www.rangger-koepfl.at",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:42:58.959607+01:00",
+  "fetched_at": "2026-11-27T08:43:03.688611+01:00",
   "status_from": "2026-11-23T08:41:38.649397+01:00",
   "snow": {
     "mountain_cm": null,
@@ -33,10 +33,43 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-11-23T04:09:00+01:00",
-  "avalanche": null,
-  "sources": [],
+  "avalanche": {
+    "region_id": "AT-07-09",
+    "region": "Grieskogel Mountains",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2400,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2400,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
+  "sources": [
+    "https://avalanche.report/"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://avalanche.report/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
   "errors": [

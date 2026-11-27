@@ -2,10 +2,34 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "aprica",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213072+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051289+01:00",
   "updated_at": null,
   "source": "https://www.apricaonline.com/",
   "lifts": [
+    {
+      "id": "lift-aprica-malga-palabione",
+      "ref": null,
+      "name": "APRICA - MALGA PALABIONE",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1500,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-stella-alpina",
+      "ref": null,
+      "name": "STELLA ALPINA",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1300,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
     {
       "id": "lift-aprica-malga-magnolta",
       "ref": null,
@@ -38,30 +62,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 690,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-aprica-malga-palabione",
-      "ref": null,
-      "name": "APRICA - MALGA PALABIONE",
-      "type": "gondola",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1500,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-stella-alpina",
-      "ref": null,
-      "name": "STELLA ALPINA",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -189,6 +189,16 @@
   ],
   "slopes": [
     {
+      "id": "slope-lago-palabione",
+      "ref": null,
+      "name": "Lago Palabione",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 2200,
+      "map_length_m": 1500
+    },
+    {
       "id": "slope-piana-dei-galli",
       "ref": null,
       "name": "Piana dei Galli",
@@ -287,16 +297,6 @@
       "status": "closed",
       "length_m": 600,
       "map_length_m": 3040
-    },
-    {
-      "id": "slope-lago-palabione",
-      "ref": null,
-      "name": "Lago Palabione",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": 2200,
-      "map_length_m": 1500
     },
     {
       "id": "slope-salina",

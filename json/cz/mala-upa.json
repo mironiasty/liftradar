@@ -10,7 +10,7 @@
   },
   "website": "https://www.skimu.cz",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.214494+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052389+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,5 +65,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "avalanche: KeyError: 'mainValue'"
+  ]
 }

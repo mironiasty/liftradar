@@ -11,7 +11,7 @@
   "website": "https://www.larosiere.net",
   "linked_area": "espace-san-bernardo",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215497+01:00",
+  "fetched_at": "2026-11-27T08:40:39.054468+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,15 +21,50 @@
     "condition": null,
     "stations": []
   },
-  "lifts": null,
+  "lifts": {
+    "open": 0,
+    "total": 20
+  },
   "slopes": {
     "open": null,
-    "total": null,
+    "total": 40,
     "open_km": null,
     "total_km": 64
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 10
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 21,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 15,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": {
     "region_id": "FR-06",
@@ -51,12 +86,12 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
-    "https://www.lumiplan.com/",
+    "https://www.larosiere.ski/",
     "https://www.larosiere.net/",
     "https://www.lathuile.it/",
     "https://meteofrance.com/"
@@ -64,7 +99,7 @@
   "source_details": {
     "conditions": [
       {
-        "url": "https://www.lumiplan.com/",
+        "url": "https://www.larosiere.ski/",
         "attribution_required": null
       },
       {

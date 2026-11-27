@@ -10,7 +10,7 @@
   },
   "website": "https://www.vividevero.it",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213851+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052058+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -36,18 +36,18 @@
   "avalanche": {
     "region_id": "IT-21-VB-02",
     "region": "Alpi Lepontine Nord",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": 2300,
+        "upper_bound": "treeline",
         "period": "all_day"
       },
       {
-        "level": "moderate",
-        "lower_bound": 2300,
+        "level": "considerable",
+        "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
@@ -55,9 +55,9 @@
     "problems": [
       "wind_slab"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",

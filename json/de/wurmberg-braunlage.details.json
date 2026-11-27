@@ -2,11 +2,213 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "wurmberg-braunlage",
   "country": "de",
-  "fetched_at": "2026-11-26T13:40:39.219644+01:00",
+  "fetched_at": "2026-11-27T08:40:39.056828+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.wurmberg-seilbahn.de/",
+  "lifts": [
+    {
+      "id": "lift-a-wurmbergseilbahn",
+      "ref": null,
+      "name": "A Wurmbergseilbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-hexenexpress",
+      "ref": null,
+      "name": "C Hexenexpress",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-hexenlift",
+      "ref": null,
+      "name": "D Hexenlift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-nordlifte",
+      "ref": null,
+      "name": "E Nordlifte",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-zauberteppich",
+      "ref": null,
+      "name": "Zauberteppich",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-panoramaabfahrt",
+      "ref": null,
+      "name": "Panoramaabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-obere-groe-wurmbergabfahrt",
+      "ref": null,
+      "name": "Obere große Wurmbergabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nordhang",
+      "ref": null,
+      "name": "Nordhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-hexenhang",
+      "ref": null,
+      "name": "Hexenhang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-walpurgishang",
+      "ref": null,
+      "name": "Walpurgishang",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-hexenrittpiste",
+      "ref": null,
+      "name": "Hexenrittpiste",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-sonnenhang",
+      "ref": null,
+      "name": "Sonnenhang",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-untere-groe-wurmbergabfahrt",
+      "ref": null,
+      "name": "Untere große Wurmbergabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-talabfahrt-braunlage",
+      "ref": null,
+      "name": "Talabfahrt Braunlage",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiroute-hexenritt",
+      "ref": null,
+      "name": "Skiroute Hexenritt",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiroute-schanzenauslauf",
+      "ref": null,
+      "name": "Skiroute Schanzenauslauf",
+      "difficulty": "ski_route",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiweg-hexenritt",
+      "ref": null,
+      "name": "Skiweg Hexenritt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-oberer-skiweg",
+      "ref": null,
+      "name": "Oberer Skiweg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiweg-mittelstation",
+      "ref": null,
+      "name": "Skiweg Mittelstation",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 51.7319,
     "lon": 10.6129,

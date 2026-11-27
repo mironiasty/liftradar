@@ -10,7 +10,7 @@
   },
   "website": "https://www.tourmaletpicdumidi.com",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.216107+01:00",
+  "fetched_at": "2026-11-27T08:40:39.054153+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,56 @@
   },
   "lifts": {
     "open": 0,
-    "total": 27
+    "total": 29
   },
   "slopes": {
     "open": null,
-    "total": 58,
+    "total": 51,
     "open_km": null,
     "total_km": 100
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 4
+    },
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 13
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 33,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": null,
+      "total": 14,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": null,
+      "total": 4,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": {
     "region_id": "FR-66",
@@ -47,9 +87,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T16:00:00+01:00",
+    "valid_from": "2026-11-26T16:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com/",

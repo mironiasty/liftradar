@@ -2,11 +2,303 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "alpe-di-mera",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213383+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T08:40:39.051601+01:00",
+  "updated_at": "2026-11-27T08:00:00+01:00",
+  "source": "https://www.skiinfo.fr/",
+  "lifts": [
+    {
+      "id": "lift-scopello-mera",
+      "ref": null,
+      "name": "SCOPELLO-MERA",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tapis-roulant-alpe-di-mera",
+      "ref": null,
+      "name": "TAPIS ROULANT ALPE DI MERA",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-camparient",
+      "ref": null,
+      "name": "CAMPARIENT",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bimella",
+      "ref": null,
+      "name": "BIMELLA",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-campo",
+      "ref": null,
+      "name": "CAMPO",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-bimella",
+      "ref": null,
+      "name": "BIMELLA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-colma",
+      "ref": null,
+      "name": "COLMA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-autostrada",
+      "ref": null,
+      "name": "AUTOSTRADA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-capricorno",
+      "ref": null,
+      "name": "CAPRICORNO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tapis-camparient",
+      "ref": null,
+      "name": "TAPIS CAMPARIENT",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-rientro-capricorno",
+      "ref": null,
+      "name": "RIENTRO CAPRICORNO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-rasto",
+      "ref": null,
+      "name": "RASTO'",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trogo",
+      "ref": null,
+      "name": "TROGO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-pianaccia",
+      "ref": null,
+      "name": "PIANACCIA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-raccordo-pianaccia-alto",
+      "ref": null,
+      "name": "RACCORDO PIANACCIA ALTO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-mera-scopello",
+      "ref": null,
+      "name": "MERA/SCOPELLO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-camparient-alto",
+      "ref": null,
+      "name": "CAMPARIENT ALTO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-camparient-basso",
+      "ref": null,
+      "name": "CAMPARIENT BASSO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-var-camparient-basso",
+      "ref": null,
+      "name": "VAR. CAMPARIENT BASSO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-canalone-alto",
+      "ref": null,
+      "name": "CANALONE ALTO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-canalone-basso",
+      "ref": null,
+      "name": "CANALONE BASSO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-primavera",
+      "ref": null,
+      "name": "PRIMAVERA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-raccordo-primavera",
+      "ref": null,
+      "name": "RACCORDO PRIMAVERA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campo",
+      "ref": null,
+      "name": "CAMPO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-azzurri",
+      "ref": null,
+      "name": "AZZURRI",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-scoiattolo",
+      "ref": null,
+      "name": "SCOIATTOLO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-boschetto",
+      "ref": null,
+      "name": "BOSCHETTO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-baita",
+      "ref": null,
+      "name": "BAITA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 45.76698,
     "lon": 8.08609,

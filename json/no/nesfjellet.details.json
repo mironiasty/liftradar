@@ -2,11 +2,235 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "nesfjellet",
   "country": "no",
-  "fetched_at": "2026-11-26T13:40:39.220254+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T08:40:39.057610+01:00",
+  "updated_at": "2026-10-21T15:32:26+02:00",
+  "source": "https://fnugg.no/nesfjellet/",
+  "lifts": [
+    {
+      "id": "lift-nesfjellet-ekspressen",
+      "ref": null,
+      "name": "Nesfjellet-Ekspressen",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tyrihans",
+      "ref": null,
+      "name": "Tyrihans",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tusse",
+      "ref": null,
+      "name": "Tusse",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-nessy",
+      "ref": null,
+      "name": "Nessy",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-panorama",
+      "ref": null,
+      "name": "Panorama",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snreven",
+      "ref": null,
+      "name": "Snøreven",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-tverrlia",
+      "ref": null,
+      "name": "Tverrlia",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-rodegard",
+      "ref": null,
+      "name": "Rodegard",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-natten",
+      "ref": null,
+      "name": "Natten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-barneomradet",
+      "ref": null,
+      "name": "Barneområdet",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tilbringeren",
+      "ref": null,
+      "name": "Tilbringeren",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-returen",
+      "ref": null,
+      "name": "Returen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-sndre",
+      "ref": null,
+      "name": "Søndre",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nordre",
+      "ref": null,
+      "name": "Nordre",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-frikjring-upreppet",
+      "ref": null,
+      "name": "Frikjøring (Upreppet)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-turisten",
+      "ref": null,
+      "name": "Turisten",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skogslypa-upreppet",
+      "ref": null,
+      "name": "Skogsløypa (Upreppet)",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-syningen",
+      "ref": null,
+      "name": "Syningen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-revelkka",
+      "ref": null,
+      "name": "Reveløkka",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tusseparken",
+      "ref": null,
+      "name": "Tusseparken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-parken",
+      "ref": null,
+      "name": "Parken",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 60.54217,
     "lon": 9.03242,

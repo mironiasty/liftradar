@@ -9,8 +9,8 @@
     "lon": 27.2184
   },
   "website": "https://pyha.fi",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218584+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.056341+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -30,40 +30,58 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 9
   },
   "slopes": {
-    "open": null,
-    "total": 15,
+    "open": 2,
+    "total": 18,
     "open_km": null,
     "total_km": 14
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 1,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 1,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "other": {
+      "open": 0,
+      "total": 3
+    }
+  },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
-      "total": 10,
+      "open": 1,
+      "total": 13,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
-      "total_km": null
+      "open_km": 0.0,
+      "total_km": 2
     },
     "difficult": {
-      "open": null,
+      "open": 1,
       "total": 3,
-      "open_km": null,
-      "total_km": null
+      "open_km": 1.2,
+      "total_km": 3
     }
   },
-  "lifts_updated_at": null,
+  "lifts_updated_at": "2026-11-27T09:10:00+01:00",
   "avalanche": null,
   "sources": [
     "https://ski.fi/",
+    "https://www.panoraama.com/",
     "https://en.ilmatieteenlaitos.fi/open-data",
     "https://www.skiresort.com/"
   ],
@@ -71,6 +89,10 @@
     "conditions": [
       {
         "url": "https://ski.fi/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.panoraama.com/",
         "attribution_required": null
       },
       {

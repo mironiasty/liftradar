@@ -10,28 +10,28 @@
   },
   "website": "https://www.tschiertschen.ch",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212041+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050063+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 33,
-    "valley_cm": 23,
-    "fresh_cm": 5,
+    "mountain_cm": 47,
+    "valley_cm": 36,
+    "fresh_cm": 18,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Plang Bi (SLF)",
         "elevation_m": 2495,
-        "depth_cm": 33,
-        "fresh_cm": 5,
+        "depth_cm": 47,
+        "fresh_cm": 16,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Arosa (SLF)",
         "elevation_m": 1845,
-        "depth_cm": 23,
-        "fresh_cm": 4,
+        "depth_cm": 36,
+        "fresh_cm": 18,
         "temperature_c": null,
         "condition": null
       }
@@ -91,11 +91,11 @@
   "avalanche": {
     "region_id": "CH-5122",
     "region": "Schanfigg",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -105,9 +105,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

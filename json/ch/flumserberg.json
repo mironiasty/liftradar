@@ -9,20 +9,20 @@
     "lon": 9.2803
   },
   "website": "https://www.flumserberg.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.211494+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.049602+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 40,
+    "valley_cm": 90,
+    "fresh_cm": 10,
     "last_snowfall": "2026-11-26",
-    "condition": null,
+    "condition": "powder",
     "stations": [
       {
         "name": "Tannenheim",
         "elevation_m": null,
-        "depth_cm": 30,
+        "depth_cm": 40,
         "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
@@ -30,7 +30,7 @@
       {
         "name": "Tannenboden",
         "elevation_m": null,
-        "depth_cm": 50,
+        "depth_cm": 60,
         "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
@@ -38,7 +38,7 @@
       {
         "name": "Maschgenkamm",
         "elevation_m": null,
-        "depth_cm": 80,
+        "depth_cm": 90,
         "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
@@ -46,18 +46,18 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": 6,
     "total": 55,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 65
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 8
     },
     "drag_lift": {
@@ -65,21 +65,21 @@
       "total": 5
     },
     "gondola": {
-      "open": 0,
+      "open": 3,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 3,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": 4.0,
       "total_km": 14
     },
     "intermediate": {
-      "open": 0,
+      "open": 3,
       "total": 32,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
@@ -91,11 +91,11 @@
     "ski_route": {
       "open": 0,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
   "details": "json/ch/flumserberg.details.json",
   "avalanche": {
     "region_id": "CH-3223",
@@ -111,12 +111,12 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

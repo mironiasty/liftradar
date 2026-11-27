@@ -10,8 +10,8 @@
   },
   "website": "https://www.artesina.it/",
   "linked_area": "mondole-ski",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213182+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.051395+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,14 +26,53 @@
     "total": 12
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 22,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 39
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 8
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 9,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/it/artesina.details.json",
   "avalanche": {
     "region_id": "IT-21-CN-01",
     "region": "Alpi Cozie Sud di confine",
@@ -48,16 +87,21 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",
+    "https://www.artesina.it/",
     "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
+      {
+        "url": "https://www.artesina.it/",
+        "attribution_required": null
+      },
       {
         "url": "https://bollettini.aineva.it/",
         "attribution_required": null

@@ -10,8 +10,8 @@
   },
   "website": "https://www.skipasscortina.com",
   "ski_region": "dolomiti-superski",
-  "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.212319+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.050609+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,13 +22,13 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 34
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 89,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 120
   },
   "lifts_by_type": {
@@ -37,7 +37,7 @@
       "total": 4
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 22
     },
     "drag_lift": {
@@ -53,13 +53,13 @@
     "easy": {
       "open": 0,
       "total": 36,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 40,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
@@ -69,13 +69,13 @@
       "total_km": 13
     }
   },
-  "lifts_updated_at": "2026-11-25T10:00:08.459943+01:00",
+  "lifts_updated_at": "2026-11-26T21:24:26.673911+01:00",
   "details": "json/it/cortina-d-ampezzo.details.json",
   "avalanche": {
     "region_id": "IT-34-BL-02",
     "region": "Ampezzo - Cadore",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
@@ -84,19 +84,18 @@
         "period": "all_day"
       },
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
       "wind_slab"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://opendatahub.com/",

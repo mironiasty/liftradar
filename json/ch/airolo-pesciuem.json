@@ -9,29 +9,29 @@
     "lon": 8.6067
   },
   "website": "https://www.airolo.ch",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.210611+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.049378+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 31,
-    "valley_cm": 40,
-    "fresh_cm": 15,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Vallascia (SLF)",
         "elevation_m": 2268,
-        "depth_cm": 31,
-        "fresh_cm": 12,
+        "depth_cm": 34,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Pesciüm (SLF)",
         "elevation_m": 1770,
-        "depth_cm": 40,
-        "fresh_cm": 15,
+        "depth_cm": 38,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -42,9 +42,9 @@
     "total": 9
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 21,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 30
   },
   "lifts_by_type": {
@@ -67,21 +67,21 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 14,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
@@ -103,13 +103,14 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",
     "https://www.slf.ch/en/services-and-products/slf-data-service",
+    "https://www.airolo.ch/",
     "https://www.skiresort.com/"
   ],
   "source_details": {
@@ -120,6 +121,10 @@
       },
       {
         "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.airolo.ch/",
         "attribution_required": null
       }
     ],

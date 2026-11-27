@@ -10,8 +10,8 @@
   },
   "website": "http://www.cienkownarty.pl",
   "ski_region": "wispass",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215270+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.053223+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,26 +26,34 @@
     "total": 6
   },
   "slopes": {
-    "open": null,
-    "total": 8,
-    "open_km": null,
+    "open": 0,
+    "total": 5,
+    "open_km": 0.0,
     "total_km": 6
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/cienkow.details.json",
   "avalanche": null,
   "sources": [
     "http://www.cienkownarty.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "http://www.cienkownarty.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

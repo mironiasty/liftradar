@@ -10,7 +10,7 @@
   },
   "website": "https://www.velikaplanina.si",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221827+01:00",
+  "fetched_at": "2026-11-27T08:40:39.059181+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -52,38 +52,12 @@
     }
   },
   "lifts_updated_at": null,
-  "avalanche": {
-    "region_id": "SI-3",
-    "region": "Kamnik Alps",
-    "danger_level": 1,
-    "danger": "low",
-    "ratings": [
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": null,
-        "period": "all_day"
-      }
-    ],
-    "problems": [
-      "wind_slab",
-      "new_snow"
-    ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
-  },
+  "avalanche": null,
   "sources": [
-    "https://www.skiresort.com/",
-    "https://meteo.arso.gov.si/"
+    "https://www.skiresort.com/"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://meteo.arso.gov.si/",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/",

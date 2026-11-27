@@ -9,8 +9,8 @@
     "lon": 14.0661
   },
   "website": "https://roccaraso.net/",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213158+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.051370+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,23 +22,66 @@
   },
   "lifts": {
     "open": 0,
-    "total": 24
+    "total": 23
   },
   "slopes": {
-    "open": null,
-    "total": 67,
-    "open_km": null,
-    "total_km": 81
+    "open": 0,
+    "total": 68,
+    "open_km": 0.0,
+    "total_km": 83
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 10
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 25,
+      "open_km": 0.0,
+      "total_km": 31
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 27,
+      "open_km": 0.0,
+      "total_km": 34
+    },
+    "difficult": {
+      "open": 0,
+      "total": 16,
+      "open_km": 0.0,
+      "total_km": 19
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/it/roccaraso.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/"
+    "https://www.skiinfo.fr/",
+    "https://roccaraso.net/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://roccaraso.net/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/",

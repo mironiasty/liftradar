@@ -10,20 +10,28 @@
   },
   "website": "https://www.klewenalp.ch",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.211630+01:00",
+  "fetched_at": "2026-11-27T08:40:39.049705+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-13",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": [
       {
+        "name": "Stockhütte",
+        "elevation_m": 1284,
+        "depth_cm": 30,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
         "name": "Klewenalp",
         "elevation_m": 1600,
-        "depth_cm": 4,
-        "fresh_cm": null,
+        "depth_cm": 50,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       }
@@ -81,7 +89,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
   "details": "json/ch/klewenalp-stockhuette.details.json",
   "avalanche": {
     "region_id": "CH-2124",
@@ -97,12 +105,12 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

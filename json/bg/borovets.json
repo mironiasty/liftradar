@@ -9,8 +9,8 @@
     "lon": 23.6074
   },
   "website": "https://www.borovets-bg.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221956+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.059277+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +25,48 @@
     "total": 12
   },
   "slopes": {
-    "open": null,
-    "total": 31,
-    "open_km": null,
+    "open": 0,
+    "total": 24,
+    "open_km": 0.0,
     "total_km": 58
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 24,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/bg/borovets.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.borovets-bg.com/",
+    "https://borovets-bg.com/",
     "https://www.skiresort.com/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.borovets-bg.com/",
+        "url": "https://borovets-bg.com/",
         "attribution_required": null
-      },
+      }
+    ],
+    "resort_info": [
       {
         "url": "https://www.skiresort.com/",
         "attribution_required": null

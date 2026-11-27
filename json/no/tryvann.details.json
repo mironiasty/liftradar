@@ -2,11 +2,319 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tryvann",
   "country": "no",
-  "fetched_at": "2026-11-26T13:40:39.221122+01:00",
+  "fetched_at": "2026-11-27T08:40:39.058400+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://skimore.no/",
+  "lifts": [
+    {
+      "id": "lift-a-tryvann-ekspress",
+      "ref": null,
+      "name": "A Tryvann Ekspress",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-kleiva",
+      "ref": null,
+      "name": "B Kleiva",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-hyttli-tryvann",
+      "ref": null,
+      "name": "C Hyttli Tryvann",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-hyttli-wyller",
+      "ref": null,
+      "name": "C Hyttli Wyller",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-wyller-ekspress",
+      "ref": null,
+      "name": "D Wyller ekspress",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-big-air-arena",
+      "ref": null,
+      "name": "E Big Air Arena",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-tarn-1",
+      "ref": null,
+      "name": "G Tårn 1",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-tarn-2",
+      "ref": null,
+      "name": "H Tårn 2",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-tarnbakken",
+      "ref": null,
+      "name": "01 Tårnbakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-02-tryvannskleiva",
+      "ref": null,
+      "name": "02 Tryvannskleiva",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-03-vestkleiva",
+      "ref": null,
+      "name": "03 Vestkleiva",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-04-hyttlibakken",
+      "ref": null,
+      "name": "04 Hyttlibakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-04-rdparken",
+      "ref": null,
+      "name": "04 Rødparken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-05-murstadbakken",
+      "ref": null,
+      "name": "05 Murstadbakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-06-heiskneika",
+      "ref": null,
+      "name": "06 Heiskneika",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-07-eriksensvingen",
+      "ref": null,
+      "name": "07 Eriksensvingen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-08-blaparken",
+      "ref": null,
+      "name": "08 Blåparken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-09-skiveien",
+      "ref": null,
+      "name": "09 Skiveien",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-10-halfpipe",
+      "ref": null,
+      "name": "10 Halfpipe",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-11-wyllerlinken",
+      "ref": null,
+      "name": "11 Wyllerlinken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-12-wyllerlypa",
+      "ref": null,
+      "name": "12 Wyllerløypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-13-heimdal",
+      "ref": null,
+      "name": "13 Heimdal",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-14-tyr",
+      "ref": null,
+      "name": "14 Tyr",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-15-ull",
+      "ref": null,
+      "name": "15 Ull",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-16-big-air-arena",
+      "ref": null,
+      "name": "16 Big Air Arena",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-17-elglypa",
+      "ref": null,
+      "name": "17 Elgløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-18-revekneika",
+      "ref": null,
+      "name": "18 Revekneika",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-19-ekornbakken",
+      "ref": null,
+      "name": "19 Ekornbakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-20-knttesletta",
+      "ref": null,
+      "name": "20 Knøttesletta",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 59.99001,
     "lon": 10.63193,

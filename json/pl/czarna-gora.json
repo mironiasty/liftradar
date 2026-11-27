@@ -9,8 +9,8 @@
     "lon": 16.8432
   },
   "website": "https://czarnagora.pl",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215007+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.053145+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +25,55 @@
     "total": 9
   },
   "slopes": {
-    "open": null,
-    "total": 19,
-    "open_km": null,
+    "open": 0,
+    "total": 17,
+    "open_km": 0.0,
     "total_km": 12
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 11,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 7
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
+  "lifts_updated_at": "2026-11-19T15:31:00+01:00",
+  "details": "json/pl/czarna-gora.details.json",
   "avalanche": null,
   "sources": [
     "https://czarnagora.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://czarnagora.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

@@ -2,11 +2,163 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "orava-snow",
   "country": "sk",
-  "fetched_at": "2026-11-26T13:40:39.218307+01:00",
+  "fetched_at": "2026-11-27T08:40:39.055870+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.oravasnow.sk/",
+  "lifts": [
+    {
+      "id": "lift-stvorsedacka-lehotska",
+      "ref": null,
+      "name": "Štvorsedačka Lehotská",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-stvorsedacka-kohutik",
+      "ref": null,
+      "name": "Štvorsedačka Kohútik",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tatrapoma-f",
+      "ref": null,
+      "name": "Tatrapoma F",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-lyziarska-skola",
+      "ref": null,
+      "name": "Lyžiarská škola",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 70,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tatrapoma-s",
+      "ref": null,
+      "name": "Tatrapoma S",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-bucina",
+      "ref": null,
+      "name": "Bučina",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kohutik-1",
+      "ref": null,
+      "name": "Kohútik 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kohutik-2",
+      "ref": null,
+      "name": "Kohútik 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kohutik-3",
+      "ref": null,
+      "name": "Kohútik 3",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lehotska-1",
+      "ref": null,
+      "name": "Lehotská 1",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1350,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lehotska-2",
+      "ref": null,
+      "name": "Lehotská 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1250,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lehotska-3a",
+      "ref": null,
+      "name": "Lehotská 3A",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lehotska-3b",
+      "ref": null,
+      "name": "Lehotská 3B",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lyziarska-skolka",
+      "ref": null,
+      "name": "Lyžiarska škôlka",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 70,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.38584,
     "lon": 19.17978,

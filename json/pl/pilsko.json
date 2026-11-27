@@ -9,8 +9,8 @@
     "lon": 19.343
   },
   "website": "https://pilsko.org",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215060+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.053188+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,46 @@
   },
   "lifts": {
     "open": 0,
-    "total": 7
+    "total": 6
   },
   "slopes": {
-    "open": null,
-    "total": 8,
-    "open_km": null,
+    "open": 0,
+    "total": 7,
+    "open_km": 0.0,
     "total_km": 13
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 13
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/pilsko.details.json",
   "avalanche": null,
   "sources": [
     "https://pilsko.org/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://pilsko.org/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

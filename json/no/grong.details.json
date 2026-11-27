@@ -2,11 +2,251 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grong",
   "country": "no",
-  "fetched_at": "2026-11-26T13:40:39.220363+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T08:40:39.057717+01:00",
+  "updated_at": "2026-10-27T11:14:18+01:00",
+  "source": "https://fnugg.no/grong/",
+  "lifts": [
+    {
+      "id": "lift-juniorheisen",
+      "ref": null,
+      "name": "Juniorheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-familieheisen",
+      "ref": null,
+      "name": "Familieheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-paradisheisen",
+      "ref": null,
+      "name": "Paradisheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-olaheisen",
+      "ref": null,
+      "name": "Olaheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-barneland",
+      "ref": null,
+      "name": "Barneland",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familiebakken",
+      "ref": null,
+      "name": "Familiebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-super-n-a-mellomavstigning-attkanten",
+      "ref": null,
+      "name": "Super'n #A (Mellomavstigning - Åttkanten)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-super-n-b-top-mellomavstigning",
+      "ref": null,
+      "name": "Super'n #B (Top - Mellomavstigning)",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-parken",
+      "ref": null,
+      "name": "Parken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-geitfjellypa",
+      "ref": null,
+      "name": "Geitfjelløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-sirituvlypa",
+      "ref": null,
+      "name": "Sirituvløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-staker-n",
+      "ref": null,
+      "name": "Staker`n",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-koffertsvingen",
+      "ref": null,
+      "name": "Koffertsvingen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-overfart-nord",
+      "ref": null,
+      "name": "Overfart Nord",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-overfart-sr",
+      "ref": null,
+      "name": "Overfart Sør",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bekkefaret",
+      "ref": null,
+      "name": "Bekkefaret",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-appelsinsvingen",
+      "ref": null,
+      "name": "Appelsinsvingen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nordlypa",
+      "ref": null,
+      "name": "Nordløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-eksperten",
+      "ref": null,
+      "name": "Eksperten",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-omkroken",
+      "ref": null,
+      "name": "Omkroken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-saulisvingen",
+      "ref": null,
+      "name": "Saulisvingen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-turisten",
+      "ref": null,
+      "name": "Turisten",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-hyttelypa-attkanten-familiebakken",
+      "ref": null,
+      "name": "Hytteløypa Åttkanten - Familiebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 64.39713,
     "lon": 12.31839,

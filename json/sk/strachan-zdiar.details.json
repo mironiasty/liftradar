@@ -2,11 +2,131 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "strachan-zdiar",
   "country": "sk",
-  "fetched_at": "2026-11-26T13:40:39.218229+01:00",
+  "fetched_at": "2026-11-27T08:40:39.055806+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://tatrysuperski.pl/",
+  "lifts": [
+    {
+      "id": "5fd382d9fd450b284be0b990",
+      "ref": null,
+      "name": "Sun Kids",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 65,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd382d8fd450b284be0b96c",
+      "ref": null,
+      "name": "TATRALIFT TS 4",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 803,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd382d8fd450b284be0b978",
+      "ref": null,
+      "name": "TATRAPOMA P2",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 320,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd382d9fd450b284be0b984",
+      "ref": null,
+      "name": "TATRAPOMA P3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 305,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "5fd382d6fd450b284be0b950",
+      "ref": null,
+      "name": "Zjazdovka č. 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 803,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd382d6fd450b284be0b954",
+      "ref": null,
+      "name": "Zjazdovka č. 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd382d7fd450b284be0b958",
+      "ref": null,
+      "name": "Zjazdovka č. 3 Jump Track",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 450,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd382d7fd450b284be0b95c",
+      "ref": null,
+      "name": "Zjazdovka č. 4 Ski Cross \"Fun&Crazy\"",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 550,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd382d7fd450b284be0b960",
+      "ref": null,
+      "name": "Zjazdovka č. 5",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 305,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd382d7fd450b284be0b964",
+      "ref": null,
+      "name": "Zjazdovka č. 6 \"Čarovný les\"",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd382d7fd450b284be0b968",
+      "ref": null,
+      "name": "Zjazdovka č. 7",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 320,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.27129,
     "lon": 20.31006,

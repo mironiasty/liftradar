@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "zugspitze",
   "country": "de",
-  "fetched_at": "2026-11-26T13:40:39.219240+01:00",
-  "updated_at": "2026-11-24T11:38:51+01:00",
+  "fetched_at": "2026-11-27T08:40:39.056698+01:00",
+  "updated_at": "2026-11-26T16:47:52+01:00",
   "source": "https://www.intermaps.com/",
   "lifts": [
     {
@@ -11,7 +11,7 @@
       "ref": null,
       "name": "Seilbahn Zugspitze",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 4450,
       "capacity_per_hour": null,
@@ -23,7 +23,7 @@
       "ref": "D",
       "name": "Gletscherbahn",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 980,
       "capacity_per_hour": null,
@@ -35,7 +35,7 @@
       "ref": null,
       "name": "A 6er Sesselbahn Sonnenkar",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 950,
       "capacity_per_hour": null,
@@ -47,7 +47,7 @@
       "ref": null,
       "name": "Zahnradbahn",
       "type": "funicular",
-      "status": "closed",
+      "status": "open",
       "length_m": 19000,
       "map_length_m": null,
       "capacity_per_hour": 720,
@@ -71,7 +71,7 @@
       "ref": null,
       "name": "C 6er Sesselbahn Wetterwandeck",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1530,
       "capacity_per_hour": null,
@@ -158,7 +158,7 @@
       "name": "3 Weißes Tal",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1400
     },
@@ -198,7 +198,7 @@
       "name": "7 Wetterwandeck West",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 500
     },
@@ -208,7 +208,7 @@
       "name": "8 Wetterwandeck",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1740
     },
@@ -224,9 +224,9 @@
     }
   ],
   "bottom": {
-    "lat": 47.4898,
-    "lon": 11.09639,
-    "elevation_m": 706
+    "lat": 47.45659,
+    "lon": 10.99217,
+    "elevation_m": 996
   },
   "top": {
     "lat": 47.42132,

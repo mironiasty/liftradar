@@ -2,11 +2,62 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "nowa-osada",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215300+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053241+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://nowaosada.pl/",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-czerwona",
+      "ref": null,
+      "name": "Czerwona",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-zota-bike-park-nowus",
+      "ref": null,
+      "name": "Żółta – Bike Park Nowuś",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-niebieska",
+      "ref": null,
+      "name": "Niebieska",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-czarna",
+      "ref": null,
+      "name": "Czarna",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-czerwona-2",
+      "ref": null,
+      "name": "Czerwona",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.6367,
     "lon": 18.88981,

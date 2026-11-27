@@ -9,15 +9,15 @@
     "lon": 9.3868
   },
   "website": "https://pizol.com",
-  "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.211890+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.049936+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 15,
+    "valley_cm": 60,
     "fresh_cm": null,
     "last_snowfall": "2026-11-20",
-    "condition": null,
+    "condition": "powder",
     "stations": [
       {
         "name": "Furt (1522m) / Pardiel (1633m)",
@@ -38,13 +38,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 12
   },
   "slopes": {
-    "open": 0,
+    "open": 5,
     "total": 40,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 50
   },
   "lifts_by_type": {
@@ -53,29 +53,29 @@
       "total": 1
     },
     "chairlift": {
-      "open": 0,
+      "open": 2,
       "total": 4
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 5
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 2
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 3,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": 7.4,
       "total_km": 20
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
@@ -91,7 +91,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-26T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
   "details": "json/ch/pizol.details.json",
   "avalanche": {
     "region_id": "CH-3224",
@@ -107,13 +107,13 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

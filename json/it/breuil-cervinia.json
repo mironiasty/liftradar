@@ -11,70 +11,70 @@
   "website": "https://www.cervinia.it",
   "linked_area": "matterhorn-ski-paradise",
   "ski_region": "valle-d-aosta",
-  "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.212494+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.050750+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 120,
-    "valley_cm": 0,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
-    "condition": "farinosa",
+    "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 11,
+    "open": 0,
     "total": 23
   },
   "slopes": {
-    "open": 11,
+    "open": 0,
     "total": 69,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 157
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 2,
+      "open": 0,
       "total": 2
     },
     "carpet": {
-      "open": 2,
+      "open": 0,
       "total": 4
     },
     "chairlift": {
-      "open": 4,
+      "open": 0,
       "total": 13
     },
     "drag_lift": {
-      "open": 1,
+      "open": 0,
       "total": 1
     },
     "gondola": {
-      "open": 2,
+      "open": 0,
       "total": 3
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 5,
+      "open": 0,
       "total": 19,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": 6,
+      "open": 0,
       "total": 41,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 9,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T10:41:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:28:00+01:00",
   "details": "json/it/breuil-cervinia.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-20",
@@ -85,23 +85,23 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2000,
+        "upper_bound": 2300,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2000,
+        "lower_bound": 2300,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
       "wind_slab",
-      "new_snow"
+      "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://www.lovevda.it/",

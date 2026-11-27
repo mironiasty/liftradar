@@ -2,11 +2,199 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "malino-brdo",
   "country": "sk",
-  "fetched_at": "2026-11-26T13:40:39.218339+01:00",
+  "fetched_at": "2026-11-27T08:40:39.055862+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skipark.sk/",
+  "lifts": [
+    {
+      "id": "lift-a-8-kld-kabinkova-lanovka",
+      "ref": null,
+      "name": "A 8 KLD Kabínková lanovka",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 1770,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-b-4-sld-sedackova-lanovka",
+      "ref": null,
+      "name": "B 4 SLD Sedačková lanovka",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1120,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-c-h-210-zalomena-poma",
+      "ref": null,
+      "name": "C H 210 Zalomená poma",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d-h-130-poma",
+      "ref": null,
+      "name": "D H 130 Poma",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-e-lv-p1-detsky-vlek",
+      "ref": null,
+      "name": "E LV P1 Detský vlek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 180,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-f-lv-p2-detsky-vlek",
+      "ref": null,
+      "name": "F LV P2 Detský vlek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 190,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-g-lv-p3-detsky-vlek",
+      "ref": null,
+      "name": "G LV P3 Detský vlek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 210,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-lv-p4-detska-skolka",
+      "ref": null,
+      "name": "H LV P4 Detská škôlka",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 40,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1a-hlavna-malino-brdo",
+      "ref": null,
+      "name": "1a Hlavná - Malinô Brdo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-1b-hlavna-udolna-st-8kld",
+      "ref": null,
+      "name": "1b Hlavná - údolná st. 8KLD",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2-vyhliadkova",
+      "ref": null,
+      "name": "2 Vyhliadková",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1250,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-mala-mulda",
+      "ref": null,
+      "name": "3 Malá Mulda",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-majstrovska",
+      "ref": null,
+      "name": "4 Majstrovská",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-vlkolinska",
+      "ref": null,
+      "name": "5 Vlkolínska",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-pretekarska",
+      "ref": null,
+      "name": "6 Pretekárska",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-7-malinova",
+      "ref": null,
+      "name": "7 Malinová",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 190,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-8-detska",
+      "ref": null,
+      "name": "8 Detská",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 210,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.06968,
     "lon": 19.27237,

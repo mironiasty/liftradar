@@ -9,8 +9,8 @@
     "lon": 20.1602
   },
   "website": "https://www.jurgowski.pl",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215185+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.052793+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,62 @@
   },
   "lifts": {
     "open": 0,
-    "total": 7
+    "total": 8
   },
   "slopes": {
-    "open": null,
-    "total": 9,
-    "open_km": null,
-    "total_km": 5
+    "open": 0,
+    "total": 10,
+    "open_km": 0.0,
+    "total_km": 6
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "other": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/jurgow-ski.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.jurgowski.pl/"
+    "https://tatrysuperski.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.jurgowski.pl/",
+        "url": "https://tatrysuperski.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

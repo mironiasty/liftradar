@@ -9,47 +9,47 @@
     "lon": 8.4013
   },
   "website": "https://www.titlis.ch",
-  "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.212207+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.050505+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 31,
-    "valley_cm": 13,
-    "fresh_cm": 3,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Titlisboden (SLF)",
         "elevation_m": 2149,
-        "depth_cm": 31,
-        "fresh_cm": 3,
+        "depth_cm": 44,
+        "fresh_cm": 12,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Engelberg (SLF)",
         "elevation_m": 1023,
-        "depth_cm": 13,
-        "fresh_cm": 0,
+        "depth_cm": 21,
+        "fresh_cm": 11,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 0,
     "total": 20
   },
   "slopes": {
-    "open": 1,
+    "open": 0,
     "total": 26,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 82
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 0,
       "total": 5
     },
     "carpet": {
@@ -57,7 +57,7 @@
       "total": 1
     },
     "chairlift": {
-      "open": 1,
+      "open": 0,
       "total": 6
     },
     "drag_lift": {
@@ -69,7 +69,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 2,
+      "open": 0,
       "total": 2
     }
   },
@@ -81,9 +81,9 @@
       "total_km": 14
     },
     "intermediate": {
-      "open": 1,
+      "open": 0,
       "total": 14,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
@@ -95,7 +95,7 @@
     "other": {
       "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
@@ -115,13 +115,13 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://www.titlis.ch/",

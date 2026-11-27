@@ -2,11 +2,133 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "varingskollen",
   "country": "no",
-  "fetched_at": "2026-11-26T13:40:39.220344+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-27T08:40:39.057700+01:00",
+  "updated_at": "2026-11-27T08:38:16+01:00",
+  "source": "https://fnugg.no/varingskollen/",
+  "lifts": [
+    {
+      "id": "lift-barneheisen",
+      "ref": null,
+      "name": "Barneheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-stavheisen",
+      "ref": null,
+      "name": "Stavheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hakkebakkeheisen",
+      "ref": null,
+      "name": "Hakkebakkeheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-parkheisen",
+      "ref": null,
+      "name": "Parkheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-olaheisen",
+      "ref": null,
+      "name": "Olaheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-barnebakken",
+      "ref": null,
+      "name": "Barnebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trollparken",
+      "ref": null,
+      "name": "Trollparken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-hakkebakken",
+      "ref": null,
+      "name": "Hakkebakken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-terrengparken",
+      "ref": null,
+      "name": "Terrengparken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olalypa",
+      "ref": null,
+      "name": "Olaløypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-karilypa",
+      "ref": null,
+      "name": "Kariløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 60.10558,
     "lon": 10.84496,

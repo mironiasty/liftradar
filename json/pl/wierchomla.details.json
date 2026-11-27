@@ -2,11 +2,111 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "wierchomla",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215150+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053196+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.wierchomla.com.pl/",
+  "lifts": [
+    {
+      "id": "lift-wierchomla-1",
+      "ref": null,
+      "name": "Wierchomla 1",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-toczek",
+      "ref": null,
+      "name": "Toczek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-polanki",
+      "ref": null,
+      "name": "Polanki",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-stonoga",
+      "ref": null,
+      "name": "Stonoga",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-tor-playcross",
+      "ref": null,
+      "name": "Tor Playcross",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-wierchomla-1",
+      "ref": null,
+      "name": "Wierchomla 1",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-toczek",
+      "ref": null,
+      "name": "Toczek",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-polanki",
+      "ref": null,
+      "name": "Polanki",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stonoga",
+      "ref": null,
+      "name": "Stonoga",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 110,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.42893,
     "lon": 20.8221,

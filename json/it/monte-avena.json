@@ -10,7 +10,7 @@
   },
   "website": "https://www.dolomiti.it/it/impianti-di-risalita/monte-avena",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213652+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051867+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -36,8 +36,8 @@
   "avalanche": {
     "region_id": "IT-34-BL-06",
     "region": "Vette Feltrine, Visentin, Grappa",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
@@ -46,19 +46,18 @@
         "period": "all_day"
       },
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
       "wind_slab"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",

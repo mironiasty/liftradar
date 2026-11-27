@@ -11,28 +11,28 @@
   "website": "https://www.kronplatz.com",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.212331+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050621+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-25",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": [
       {
-        "name": "Valley station",
+        "name": "Mountain station",
         "elevation_m": null,
-        "depth_cm": 5,
-        "fresh_cm": 5,
+        "depth_cm": 40,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       },
       {
-        "name": "Mountain station",
+        "name": "Valley station",
         "elevation_m": null,
-        "depth_cm": 30,
-        "fresh_cm": 10,
+        "depth_cm": 10,
+        "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
       }
@@ -84,11 +84,38 @@
   },
   "lifts_updated_at": "2026-11-26T09:20:23.952376+01:00",
   "details": "json/it/kronplatz.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-32-BZ-19",
+    "region": "Prags Dolomites",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
     "https://www.dolomitisuperski.com/",
-    "https://www.kronplatz.com/"
+    "https://www.kronplatz.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -98,6 +125,10 @@
       },
       {
         "url": "https://www.dolomitisuperski.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

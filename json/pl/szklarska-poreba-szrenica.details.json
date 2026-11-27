@@ -2,11 +2,159 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "szklarska-poreba-szrenica",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215028+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053178+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://skiarenaszrenica.pl/",
+  "lifts": [
+    {
+      "id": "lift-szrenica-i",
+      "ref": null,
+      "name": "Szrenica I",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-szrenica-ii",
+      "ref": null,
+      "name": "Szrenica II",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-karkonosz-express",
+      "ref": null,
+      "name": "Karkonosz Express",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sciana",
+      "ref": null,
+      "name": "Ściana",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-swiateczny-kamien",
+      "ref": null,
+      "name": "Świąteczny Kamień",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hala-szrenicka-i",
+      "ref": null,
+      "name": "Hala Szrenicka I",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hala-szrenicka-ii",
+      "ref": null,
+      "name": "Hala Szrenicka II",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-baby-lift",
+      "ref": null,
+      "name": "Baby lift",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-fis",
+      "ref": null,
+      "name": "FIS",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lolobrygida",
+      "ref": null,
+      "name": "LOLOBRYGIDA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-sniezynka",
+      "ref": null,
+      "name": "ŚNIEŻYNKA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-puchatek",
+      "ref": null,
+      "name": "PUCHATEK",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-hala-szrenicka",
+      "ref": null,
+      "name": "HALA SZRENICKA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 50.81767,
     "lon": 15.51973,

@@ -9,8 +9,8 @@
     "lon": 20.2258
   },
   "website": "https://www.strednica.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218196+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055794+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,17 +22,40 @@
   },
   "lifts": {
     "open": 0,
-    "total": 10
+    "total": 7
   },
   "slopes": {
-    "open": null,
-    "total": 11,
-    "open_km": null,
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
     "total_km": 4
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/sk/strednica-zdiar.details.json",
   "avalanche": {
     "region_id": "SK-01",
     "region": "Vysoké Tatry - východ",
@@ -53,30 +76,29 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
-    "https://slovakia.travel/",
+    "https://tatrysuperski.pl/",
     "https://www.laviny.sk/"
   ],
   "source_details": {
     "conditions": [
       {
+        "url": "https://tatrysuperski.pl/",
+        "attribution_required": null
+      },
+      {
         "url": "https://www.laviny.sk/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://slovakia.travel/",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

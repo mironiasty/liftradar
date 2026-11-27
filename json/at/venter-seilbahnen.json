@@ -11,7 +11,7 @@
   "website": "https://www.oetztal.com",
   "ski_region": "oetztal",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:42:13.515583+01:00",
+  "fetched_at": "2026-11-27T08:42:13.730311+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,46 @@
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-26T05:55:00+01:00",
-  "avalanche": null,
+  "lifts_updated_at": "2026-11-27T05:36:00+01:00",
+  "avalanche": {
+    "region_id": "AT-07-20",
+    "region": "Weißkugel Group",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
-    "https://www.snowcard.tirol.at/"
+    "https://www.snowcard.tirol.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

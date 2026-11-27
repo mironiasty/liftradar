@@ -10,7 +10,7 @@
   },
   "website": "https://www.serfaus-fiss-ladis.at",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:42:09.033132+01:00",
+  "fetched_at": "2026-11-27T08:42:10.105115+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,46 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-11-26T08:38:00+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-13",
+    "region": "Samnaun Mountains",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
-    "https://www.serfaus-fiss-ladis.at/"
+    "https://www.serfaus-fiss-ladis.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

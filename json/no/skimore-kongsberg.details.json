@@ -2,11 +2,127 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "skimore-kongsberg",
   "country": "no",
-  "fetched_at": "2026-11-26T13:40:39.221151+01:00",
+  "fetched_at": "2026-11-27T08:40:39.058409+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://skimore.no/",
+  "lifts": [
+    {
+      "id": "lift-familieheisen",
+      "ref": null,
+      "name": "Familieheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-slv-ekspressen",
+      "ref": null,
+      "name": "Sølv Ekspressen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-eksperten",
+      "ref": null,
+      "name": "Eksperten",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familie-omradet",
+      "ref": null,
+      "name": "Familie Området",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kongsberg-parken",
+      "ref": null,
+      "name": "Kongsberg Parken",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nedre-konningen",
+      "ref": null,
+      "name": "Nedre Konningen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nedre-ormen-lange",
+      "ref": null,
+      "name": "Nedre Ormen Lange",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-slalomen",
+      "ref": null,
+      "name": "Slalomen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-turisten",
+      "ref": null,
+      "name": "Turisten",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-vre-konningen-parken",
+      "ref": null,
+      "name": "Øvre Konningen-Parken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-vre-ormen-lange",
+      "ref": null,
+      "name": "Øvre Ormen Lange",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 59.66284,
     "lon": 9.62058,

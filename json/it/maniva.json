@@ -10,7 +10,7 @@
   },
   "website": "https://www.manivaski.it/",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213431+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051649+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -35,10 +35,16 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/"
+    "https://www.skiinfo.fr/",
+    "https://www.manivaski.it/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.manivaski.it/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/",

@@ -10,7 +10,7 @@
   },
   "website": "https://www.leitariegos.net",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221542+01:00",
+  "fetched_at": "2026-11-27T08:40:39.058681+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,55 @@
   },
   "lifts": {
     "open": 0,
-    "total": 8
+    "total": 7
   },
   "slopes": {
     "open": null,
-    "total": 18,
+    "total": 16,
     "open_km": null,
-    "total_km": 9
+    "total_km": 8
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": null,
+      "total": 11,
+      "open_km": null,
+      "total_km": 5
+    },
+    "intermediate": {
+      "open": null,
+      "total": 5,
+      "open_km": null,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-04-05T12:00:00+02:00",
   "avalanche": null,
   "sources": [
-    "https://www.leitariegos.net/"
+    "https://www.nieveleonleitariegos.com/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.leitariegos.net/",
+        "url": "https://www.nieveleonleitariegos.com/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

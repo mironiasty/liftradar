@@ -10,25 +10,25 @@
   },
   "website": "https://www.saalbach.com/de/winter",
   "ski_region": "ski-alpin-card",
-  "status": "closed",
-  "fetched_at": "2026-11-26T13:40:44.842378+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:44.535095+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 40,
+    "valley_cm": 30,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 8,
     "total": 73
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 156,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 270
   },
   "lifts_by_type": {
@@ -37,15 +37,15 @@
       "total": 2
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 22
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 17
     },
     "gondola": {
-      "open": 0,
+      "open": 6,
       "total": 32
     }
   },
@@ -53,13 +53,13 @@
     "ski_route": {
       "open": 0,
       "total": 18,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "easy": {
-      "open": 0,
+      "open": 3,
       "total": 79,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
@@ -71,11 +71,11 @@
     "difficult": {
       "open": 0,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T13:25:18+01:00",
+  "lifts_updated_at": "2026-11-27T08:34:19+01:00",
   "details": "json/at/skicircus-saalbach.details.json",
   "avalanche": null,
   "sources": [

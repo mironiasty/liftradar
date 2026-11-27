@@ -10,8 +10,8 @@
   },
   "website": "https://www.schwemmalm.com",
   "ski_region": "suedtirol-skiarena",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212802+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.051035+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,23 +26,96 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 15,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 28
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
-  "avalanche": null,
+  "details": "json/it/schwemmalm.details.json",
+  "avalanche": {
+    "region_id": "IT-32-BZ-15",
+    "region": "Ulten Valley",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
-    "https://www.skiresort.com/"
+    "https://www.merano-suedtirol.it/",
+    "https://www.skiresort.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://opendatahub.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.merano-suedtirol.it/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

@@ -9,8 +9,8 @@
     "lon": 5.5662
   },
   "website": "https://www.gresse-en-vercors.fr",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.217208+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055124+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,47 +22,67 @@
   },
   "lifts": {
     "open": 0,
-    "total": 11
+    "total": 10
   },
   "slopes": {
-    "open": null,
-    "total": 25,
-    "open_km": null,
+    "open": 0,
+    "total": 26,
+    "open_km": 0.0,
     "total_km": 22
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 8
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 26,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/fr/gresse-en-vercors.details.json",
   "avalanche": {
     "region_id": "FR-14",
     "region": "Vercors",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2000,
-        "period": "all_day"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": 2000,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T16:00:00+01:00",
-    "valid_from": "2026-11-25T16:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",
+    "https://gresse-en-vercors.fr/",
     "https://meteofrance.com/"
   ],
   "source_details": {
     "conditions": [
+      {
+        "url": "https://gresse-en-vercors.fr/",
+        "attribution_required": null
+      },
       {
         "url": "https://meteofrance.com/",
         "attribution_required": null

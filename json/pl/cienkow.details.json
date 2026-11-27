@@ -2,11 +2,62 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cienkow",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215270+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053223+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "http://www.cienkownarty.pl/",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-trasa-1",
+      "ref": null,
+      "name": "Trasa 1",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-2",
+      "ref": null,
+      "name": "Trasa 2",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-3",
+      "ref": null,
+      "name": "Trasa 3",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-4",
+      "ref": null,
+      "name": "Trasa 4",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-5",
+      "ref": null,
+      "name": "Trasa 5",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.63375,
     "lon": 18.93049,

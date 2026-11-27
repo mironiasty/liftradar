@@ -2,11 +2,273 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "oberjoch",
   "country": "de",
-  "fetched_at": "2026-11-26T13:40:39.219412+01:00",
+  "fetched_at": "2026-11-27T08:40:39.056799+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.bergbahnen-hindelang-oberjoch.de/",
+  "lifts": [
+    {
+      "id": "lift-iselerbahn",
+      "ref": null,
+      "name": "Iselerbahn",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-wiedhagbahn",
+      "ref": null,
+      "name": "Wiedhagbahn",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-grenzwiesbahn",
+      "ref": null,
+      "name": "Grenzwiesbahn",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-idealhanglift",
+      "ref": null,
+      "name": "Idealhanglift",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-schwandenbahn",
+      "ref": null,
+      "name": "Schwandenbahn",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-grenzwiesen",
+      "ref": null,
+      "name": "Grenzwiesen",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kuhgund-ost",
+      "ref": null,
+      "name": "Kühgund Ost",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kuhgund-west",
+      "ref": null,
+      "name": "Kühgund West",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kuhgund-zubringer",
+      "ref": null,
+      "name": "Kühgund Zubringer",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-wiedhag-osthang",
+      "ref": null,
+      "name": "Wiedhag Osthang",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-wiedhagtrasse",
+      "ref": null,
+      "name": "Wiedhagtrasse",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-wiedhag-steilhang",
+      "ref": null,
+      "name": "Wiedhag Steilhang",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-gund",
+      "ref": null,
+      "name": "Gund",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-damenhang",
+      "ref": null,
+      "name": "Damenhang",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-standard",
+      "ref": null,
+      "name": "Standard",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-alpines-tz-allgau",
+      "ref": null,
+      "name": "Alpines TZ Allgäu",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-idealhang",
+      "ref": null,
+      "name": "Idealhang",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-waldschneise",
+      "ref": null,
+      "name": "Waldschneise",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-schwanden",
+      "ref": null,
+      "name": "Schwanden",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-zubringer",
+      "ref": null,
+      "name": "Zubringer",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-easypark",
+      "ref": null,
+      "name": "Easypark",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-wiedhagalpe",
+      "ref": null,
+      "name": "Wiedhagalpe",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-iselerkar",
+      "ref": null,
+      "name": "Iselerkar",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-steilschneise",
+      "ref": null,
+      "name": "Steilschneise",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-ochsenalpe",
+      "ref": null,
+      "name": "Ochsenalpe",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 47.51288,
     "lon": 10.40435,

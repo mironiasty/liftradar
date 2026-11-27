@@ -10,11 +10,11 @@
   },
   "website": "https://www.stubaier-gletscher.com",
   "status": "open",
-  "fetched_at": "2026-11-26T13:42:12.818469+01:00",
+  "fetched_at": "2026-11-27T08:42:13.382902+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 50,
-    "valley_cm": 10,
+    "mountain_cm": 80,
+    "valley_cm": 20,
     "fresh_cm": null,
     "last_snowfall": "2026-11-26",
     "condition": null,
@@ -74,13 +74,40 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-26T11:26:43+01:00",
+  "lifts_updated_at": "2026-11-27T08:37:57+01:00",
   "details": "json/at/stubaier-gletscher.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-22",
+    "region": "Stubai Alps Central",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.intermaps.com/",
-    "https://www.stubaier-gletscher.com/"
+    "https://www.stubaier-gletscher.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -90,6 +117,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

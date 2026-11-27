@@ -2,11 +2,235 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "corno-alle-scale",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213874+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052075+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skiinfo.fr/",
+  "lifts": [
+    {
+      "id": "lift-seggiovia-cavone-rocce",
+      "ref": null,
+      "name": "SEGGIOVIA CAVONE-ROCCE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-pian-di-pattane-rocce",
+      "ref": null,
+      "name": "SEGGIOVIA PIAN DI PATTANE-ROCCE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-rocce-corno-alle-scale",
+      "ref": null,
+      "name": "SEGGIOVIA ROCCE-CORNO ALLE SCALE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tappeto-maestri",
+      "ref": null,
+      "name": "TAPPETO MAESTRI",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tappeto-campo-scuola",
+      "ref": null,
+      "name": "TAPPETO CAMPO SCUOLA",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-direttissima",
+      "ref": null,
+      "name": "DIRETTISSIMA",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-cavone",
+      "ref": null,
+      "name": "CAVONE",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campetti",
+      "ref": null,
+      "name": "CAMPETTI",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-blu",
+      "ref": null,
+      "name": "BLU",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tomba-1",
+      "ref": null,
+      "name": "TOMBA 1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tomba-2",
+      "ref": null,
+      "name": "TOMBA 2",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-raccordo-tomba-polla",
+      "ref": null,
+      "name": "RACCORDO TOMBA - POLLA",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cornaccio",
+      "ref": null,
+      "name": "CORNACCIO",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-polla",
+      "ref": null,
+      "name": "POLLA",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campo-scuola-maestri",
+      "ref": null,
+      "name": "CAMPO SCUOLA MAESTRI",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campo-scuola",
+      "ref": null,
+      "name": "CAMPO SCUOLA",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-allenamento",
+      "ref": null,
+      "name": "ALLENAMENTO",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stadio-slalom",
+      "ref": null,
+      "name": "STADIO SLALOM",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-direttissima",
+      "ref": null,
+      "name": "DIRETTISSIMA",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-direttissima-2",
+      "ref": null,
+      "name": "DIRETTISSIMA",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-del-sole",
+      "ref": null,
+      "name": "DEL SOLE",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 44.13162,
     "lon": 10.81183,

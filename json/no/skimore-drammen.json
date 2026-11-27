@@ -9,8 +9,8 @@
     "lon": 10.1244
   },
   "website": "https://www.skimore.no/drammen",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221169+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.058419+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,23 +22,48 @@
   },
   "lifts": {
     "open": 0,
-    "total": 3
+    "total": 1
   },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 4,
+    "open_km": 0.0,
     "total_km": 4
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/no/skimore-drammen.details.json",
   "avalanche": null,
   "sources": [
+    "https://skimore.no/",
     "https://www.skiresort.com/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://skimore.no/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/",

@@ -10,7 +10,7 @@
   },
   "website": "https://www.muttereralm.at",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:42:04.251747+01:00",
+  "fetched_at": "2026-11-27T08:42:05.555258+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,16 +33,47 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-11-16T17:13:00+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-14-04",
+    "region": "Kalkkögel",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2400,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2400,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.skiresort.com/",
-    "https://www.innsbruck.info/"
+    "https://www.innsbruck.info/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

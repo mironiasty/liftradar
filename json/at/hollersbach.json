@@ -10,7 +10,7 @@
   },
   "website": "https://www.kitzski.at",
   "status": "open",
-  "fetched_at": "2026-11-26T13:42:00.300220+01:00",
+  "fetched_at": "2026-11-27T08:42:03.658383+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,30 +21,30 @@
     "stations": []
   },
   "lifts": {
-    "open": 2,
+    "open": 6,
     "total": 69
   },
   "slopes": {
-    "open": 2,
+    "open": 4,
     "total": 137,
     "open_km": 0.0,
     "total_km": 233
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 1,
       "total": 6
     },
     "chairlift": {
-      "open": 1,
+      "open": 2,
       "total": 33
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 14
     },
     "gondola": {
-      "open": 1,
+      "open": 2,
       "total": 16
     }
   },
@@ -56,7 +56,7 @@
       "total_km": null
     },
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 61,
       "open_km": null,
       "total_km": null
@@ -68,19 +68,37 @@
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": 1,
       "total": 18,
       "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T09:02:24+01:00",
+  "lifts_updated_at": "2026-11-27T08:39:59+01:00",
   "details": "json/at/kitzbuehel.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-18",
+    "region": "Kitzbühel Alps Wildseeloder",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.intermaps.com/",
-    "https://press.kitzski.at/"
+    "https://press.kitzski.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -90,6 +108,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

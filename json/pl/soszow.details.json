@@ -2,11 +2,121 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "soszow",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215286+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053233+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://wislaskiarena.pl/",
+  "lifts": [
+    {
+      "id": "lift-h0",
+      "ref": null,
+      "name": "H0",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 815,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h1",
+      "ref": null,
+      "name": "H1",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 600,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h4",
+      "ref": null,
+      "name": "H4",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h3",
+      "ref": null,
+      "name": "H3",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 130,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-czerwona",
+      "ref": null,
+      "name": "1 Czerwona",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2-niebieska",
+      "ref": null,
+      "name": "2 Niebieska",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-niebieska",
+      "ref": null,
+      "name": "3 Niebieska",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-czarna",
+      "ref": null,
+      "name": "4 Czarna",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-czerwono-niebieska",
+      "ref": null,
+      "name": "5 Czerwono-niebieska",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1200,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-niebieska",
+      "ref": null,
+      "name": "6 Niebieska",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 690,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.64482,
     "lon": 18.8178,

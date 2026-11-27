@@ -9,8 +9,8 @@
     "lon": 13.0374
   },
   "website": "https://geisskopf.de",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.219553+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.056786+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -18,27 +18,83 @@
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Geißkopf, Berg",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": 0,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Geißkopf, Tal",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 8
   },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
     "total_km": 8
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-25T08:42:00+01:00",
+  "details": "json/de/geisskopf.details.json",
   "avalanche": null,
   "sources": [
+    "https://sdds4.intermaps.com/",
     "https://www.snowtrex.de/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://sdds4.intermaps.com/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.snowtrex.de/",

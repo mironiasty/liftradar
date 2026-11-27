@@ -2,11 +2,89 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "laskowa-kamionna",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215216+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053204+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.laskowa-ski.pl/",
+  "lifts": [
+    {
+      "id": "lift-ts-4",
+      "ref": null,
+      "name": "TS-4",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1550,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-h-180",
+      "ref": null,
+      "name": "H-180",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 1250,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-stokfisz",
+      "ref": null,
+      "name": "STOKFISZ",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 240,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-trasa-1",
+      "ref": null,
+      "name": "Trasa 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-2",
+      "ref": null,
+      "name": "Trasa 2",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-3",
+      "ref": null,
+      "name": "Trasa 3",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-4",
+      "ref": null,
+      "name": "Trasa 4",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.77715,
     "lon": 20.42023,

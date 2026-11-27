@@ -12,7 +12,7 @@
   "linked_area": "sella-ronda",
   "ski_region": "dolomiti-superski",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.212393+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050670+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -70,13 +70,13 @@
       "total_km": 9
     }
   },
-  "lifts_updated_at": "2026-11-24T19:00:10.231689+01:00",
+  "lifts_updated_at": "2026-11-26T19:00:10.702592+01:00",
   "details": "json/it/arabba-marmolada.details.json",
   "avalanche": {
     "region_id": "IT-34-BL-01",
     "region": "Agordino, Zoldano",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "low",
@@ -85,19 +85,18 @@
         "period": "all_day"
       },
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "new_snow",
       "wind_slab"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://opendatahub.com/",

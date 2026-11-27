@@ -11,20 +11,20 @@
   "website": "https://www.matterhornparadise.ch",
   "linked_area": "matterhorn-ski-paradise",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.212148+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050446+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 64,
+    "mountain_cm": 62,
     "valley_cm": 5,
-    "fresh_cm": 0,
+    "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
-        "depth_cm": 64,
-        "fresh_cm": 0,
+        "depth_cm": 62,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       },
@@ -43,7 +43,7 @@
     "total": 36
   },
   "slopes": {
-    "open": 5,
+    "open": 10,
     "total": 84,
     "open_km": null,
     "total_km": 200
@@ -76,15 +76,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 12,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 5,
+      "open": 8,
       "total": 48,
-      "open_km": 7.9,
+      "open_km": 16.2,
       "total_km": 99
     },
     "difficult": {
@@ -100,7 +100,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:40:00+01:00",
   "details": "json/ch/zermatt.details.json",
   "avalanche": {
     "region_id": "CH-4222",
@@ -119,9 +119,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

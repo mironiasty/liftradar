@@ -11,37 +11,37 @@
   "website": "https://www.pfelders.info",
   "ski_region": "suedtirol-skiarena",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.212791+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051024+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-19",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": [
       {
-        "name": "Pfelders town",
-        "elevation_m": null,
-        "depth_cm": 5,
-        "fresh_cm": 5,
-        "temperature_c": -0.7,
-        "condition": null
-      },
-      {
         "name": "Grünboden",
         "elevation_m": null,
-        "depth_cm": 10,
-        "fresh_cm": 10,
-        "temperature_c": -1.8,
+        "depth_cm": 37,
+        "fresh_cm": 25,
+        "temperature_c": -6.3,
         "condition": null
       },
       {
         "name": "Pfelders Karjoch",
         "elevation_m": null,
-        "depth_cm": 18,
-        "fresh_cm": 18,
-        "temperature_c": -5.0,
+        "depth_cm": 50,
+        "fresh_cm": 30,
+        "temperature_c": -9.0,
+        "condition": null
+      },
+      {
+        "name": "Pfelders town",
+        "elevation_m": null,
+        "depth_cm": 25,
+        "fresh_cm": 20,
+        "temperature_c": -8.6,
         "condition": null
       }
     ]
@@ -58,16 +58,47 @@
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-20T08:18:57.890000+01:00",
-  "avalanche": null,
+  "lifts_updated_at": "2026-11-27T08:12:45.177000+01:00",
+  "avalanche": {
+    "region_id": "IT-32-BZ-07-01",
+    "region": "Upper Passeier Valley",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
-    "https://www.skiresort.com/"
+    "https://www.skiresort.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://opendatahub.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

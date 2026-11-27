@@ -9,8 +9,8 @@
     "lon": 7.9421
   },
   "website": "https://www.skilifte-todtnauberg.de",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.219819+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.056808+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +22,7 @@
   },
   "lifts": {
     "open": 0,
-    "total": 5
+    "total": 6
   },
   "slopes": {
     "open": null,
@@ -30,21 +30,31 @@
     "open_km": null,
     "total_km": 16
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 5
+    }
+  },
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
+  "details": "json/de/todtnauberg.details.json",
   "avalanche": null,
   "sources": [
     "https://www.skilifte-todtnauberg.de/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://www.skilifte-todtnauberg.de/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

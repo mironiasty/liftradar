@@ -2,11 +2,65 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "skimore-drammen",
   "country": "no",
-  "fetched_at": "2026-11-26T13:40:39.221169+01:00",
+  "fetched_at": "2026-11-27T08:40:39.058419+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://skimore.no/",
+  "lifts": [
+    {
+      "id": "lift-ekspressheisen",
+      "ref": null,
+      "name": "Ekspressheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-01-aronslypa",
+      "ref": null,
+      "name": "01 Aronsløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-02-juvtraseen",
+      "ref": null,
+      "name": "02 Juvtraseen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-03-parken",
+      "ref": null,
+      "name": "03 Parken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-04-shantylypa",
+      "ref": null,
+      "name": "04 Shantyløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 59.76274,
     "lon": 10.12427,

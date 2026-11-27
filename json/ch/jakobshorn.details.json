@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "jakobshorn",
   "country": "ch",
-  "fetched_at": "2026-11-26T13:40:39.212275+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050566+01:00",
   "updated_at": null,
   "source": "https://www.davos.ch/",
   "lifts": [
@@ -11,7 +11,7 @@
       "ref": null,
       "name": "Davos - Ischalp | 1. Sektion Pendelbahn",
       "type": "cable_car",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -23,7 +23,7 @@
       "ref": null,
       "name": "Jschalp - Jakobshorn | 2. Sektion Pendelbahn",
       "type": "cable_car",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1040,
       "capacity_per_hour": null,
@@ -35,7 +35,7 @@
       "ref": null,
       "name": "Güggel – Jakobshorn | Pendelbahn",
       "type": "cable_car",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 260,
       "capacity_per_hour": null,
@@ -47,7 +47,7 @@
       "ref": null,
       "name": "Clavadeler Bubble | 6er Sesselbahn",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1910,
       "capacity_per_hour": null,
@@ -59,7 +59,7 @@
       "ref": null,
       "name": "Jatz Quattro | 4er Sesselbahn",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1300,
       "capacity_per_hour": null,
@@ -71,9 +71,45 @@
       "ref": null,
       "name": "Usser Isch-Express | 4er-Sesselbahn",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 970,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "59",
+      "ref": null,
+      "name": "Carjöl – Carjöler Rank | 2er Sesselbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 510,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "73",
+      "ref": null,
+      "name": "Carjöler Rank – Fuxägufer | 2er Sesselbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1480,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "61",
+      "ref": null,
+      "name": "Jatz Junior | Skilift",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 390,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -89,45 +125,59 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
-    },
-    {
-      "id": "59",
-      "ref": null,
-      "name": "Carjöl – Carjöler Rank | 2er Sesselbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 510,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "73",
-      "ref": null,
-      "name": "Carjöler Rank – Fuxägufer | 2er Sesselbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1480,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "61",
-      "ref": null,
-      "name": "Jatz Junior | Skilift",
-      "type": "drag_lift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 390,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
     }
   ],
   "slopes": [
+    {
+      "id": "105",
+      "ref": null,
+      "name": "Jakobshorn Nord",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "open",
+      "length_m": 1500,
+      "map_length_m": 670
+    },
+    {
+      "id": "107",
+      "ref": null,
+      "name": "Usser Isch",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 2500,
+      "map_length_m": 2170
+    },
+    {
+      "id": "111",
+      "ref": null,
+      "name": "Jakobshorn Standard",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 6000,
+      "map_length_m": 3210
+    },
+    {
+      "id": "113",
+      "ref": null,
+      "name": "Clavadeler Piste",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 4500,
+      "map_length_m": 2250
+    },
+    {
+      "id": "93",
+      "ref": null,
+      "name": "Jatzpiste",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": 2000,
+      "map_length_m": 1210
+    },
     {
       "id": "89",
       "ref": null,
@@ -169,26 +219,6 @@
       "map_length_m": 3830
     },
     {
-      "id": "105",
-      "ref": null,
-      "name": "Jakobshorn Nord",
-      "difficulty": "difficult",
-      "colour": "black",
-      "status": "closed",
-      "length_m": 1500,
-      "map_length_m": 670
-    },
-    {
-      "id": "107",
-      "ref": null,
-      "name": "Usser Isch",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": 2500,
-      "map_length_m": 2170
-    },
-    {
       "id": "109",
       "ref": null,
       "name": "Usser Isch",
@@ -199,26 +229,6 @@
       "map_length_m": 320
     },
     {
-      "id": "111",
-      "ref": null,
-      "name": "Jakobshorn Standard",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 6000,
-      "map_length_m": 3210
-    },
-    {
-      "id": "113",
-      "ref": null,
-      "name": "Clavadeler Piste",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 4500,
-      "map_length_m": 2250
-    },
-    {
       "id": "91",
       "ref": null,
       "name": "Gämpen - Davos | Talabfahrt",
@@ -227,16 +237,6 @@
       "status": "closed",
       "length_m": 5400,
       "map_length_m": 3320
-    },
-    {
-      "id": "93",
-      "ref": null,
-      "name": "Jatzpiste",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": 2000,
-      "map_length_m": 1210
     },
     {
       "id": "95",

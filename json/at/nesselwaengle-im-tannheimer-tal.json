@@ -10,7 +10,7 @@
   },
   "website": "https://www.tannheimertal.com",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:42:58.958192+01:00",
+  "fetched_at": "2026-11-27T08:43:03.687334+01:00",
   "status_from": "2026-11-11T11:32:29.236521+01:00",
   "snow": {
     "mountain_cm": null,
@@ -33,12 +33,44 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-08-20T11:45:00+02:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-01",
+    "region": "Allgäu Alps East",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2400,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2400,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
-    "https://www.skiresort.com/"
+    "https://www.skiresort.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://avalanche.report/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/",

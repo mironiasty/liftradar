@@ -10,7 +10,7 @@
   },
   "website": "https://jochgrimm.com",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212821+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051054+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,37 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-10-21T17:21:47.357000+02:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-32-BZ-17",
+    "region": "Dolomites of Fiemme North",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
-    "https://oclini.com/"
+    "https://oclini.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://opendatahub.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

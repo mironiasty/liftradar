@@ -9,8 +9,8 @@
     "lon": 20.1877
   },
   "website": "https://skitelgart.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218130+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055893+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -18,16 +18,25 @@
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Ski Telgárt",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 8
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 9,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 7
   },
   "lifts_by_type": null,
@@ -35,16 +44,16 @@
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
-    "https://skitelgart.sk/"
+    "https://www.skitelgart.sk/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://skitelgart.sk/",
+        "url": "https://www.skitelgart.sk/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

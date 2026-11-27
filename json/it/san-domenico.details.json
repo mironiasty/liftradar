@@ -2,11 +2,265 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "san-domenico",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213281+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051501+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skiinfo.fr/",
+  "lifts": [
+    {
+      "id": "lift-gbk8-san-domenico-alpe-ciamporino",
+      "ref": null,
+      "name": "GBK8 San Domenico – Alpe Ciamporino",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cf4-ciamporino",
+      "ref": null,
+      "name": "CF4 Ciamporino",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-cd4-ciamporino-dosso",
+      "ref": null,
+      "name": "CD4 Ciamporino – Dosso",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sbk6-bondolero",
+      "ref": null,
+      "name": "SBK6 Bondolero",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tappeto-1",
+      "ref": null,
+      "name": "Tappeto 1",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tappeto-2",
+      "ref": null,
+      "name": "Tappeto 2",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-diei-1",
+      "ref": null,
+      "name": "Diei 1",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-diei-1-variante",
+      "ref": null,
+      "name": "Diei 1 variante",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-diei-2",
+      "ref": null,
+      "name": "Diei 2",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campo-scuola",
+      "ref": null,
+      "name": "Campo Scuola",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-diei-3",
+      "ref": null,
+      "name": "Diei 3",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-baby",
+      "ref": null,
+      "name": "Baby",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-salarioli",
+      "ref": null,
+      "name": "Salarioli",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-il-dosso",
+      "ref": null,
+      "name": "Il Dosso",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lo-stadio",
+      "ref": null,
+      "name": "Lo Stadio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-la-valletta",
+      "ref": null,
+      "name": "La Valletta",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-la-sella",
+      "ref": null,
+      "name": "La Sella",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-diei-4",
+      "ref": null,
+      "name": "Diei 4",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bondolero-4",
+      "ref": null,
+      "name": "Bondolero 4",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-piani-di-bondolero-2",
+      "ref": null,
+      "name": "Piani di Bondolero 2",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-piani-di-bondolero-1",
+      "ref": null,
+      "name": "Piani di Bondolero 1",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bondolero-3",
+      "ref": null,
+      "name": "Bondolero 3",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bondolero-2",
+      "ref": null,
+      "name": "Bondolero 2",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bondolero-1",
+      "ref": null,
+      "name": "Bondolero 1",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 46.24946,
     "lon": 8.18819,

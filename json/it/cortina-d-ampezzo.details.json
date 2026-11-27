@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.212319+01:00",
-  "updated_at": "2026-11-25T10:00:08.459943+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050609+01:00",
+  "updated_at": "2026-11-26T21:24:26.673911+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
     {
@@ -143,7 +143,7 @@
       "ref": null,
       "name": "Falzarego",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 470,
       "capacity_per_hour": null,
@@ -524,7 +524,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 545,
-      "map_length_m": 1430
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_30683525",
@@ -534,7 +534,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 680,
-      "map_length_m": null
+      "map_length_m": 1430
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_13503193",
@@ -707,7 +707,7 @@
       "map_length_m": 670
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215872",
+      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -717,7 +717,7 @@
       "map_length_m": 660
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1703176754",
+      "id": "urn:odhactivitypoi:dss:slope:1_215872",
       "ref": null,
       "name": "Donarié",
       "difficulty": "easy",
@@ -902,7 +902,7 @@
       "name": "Ovest",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 510,
       "map_length_m": 540
     },
@@ -1027,7 +1027,7 @@
       "map_length_m": 960
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215911",
+      "id": "urn:odhactivitypoi:dss:slope:1_1767515762",
       "ref": null,
       "name": "Rosà",
       "difficulty": "easy",
@@ -1037,7 +1037,7 @@
       "map_length_m": 1470
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_1767515762",
+      "id": "urn:odhactivitypoi:dss:slope:1_215911",
       "ref": null,
       "name": "Rosà",
       "difficulty": "easy",
@@ -1274,7 +1274,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 871,
-      "map_length_m": 680
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
@@ -1284,7 +1284,7 @@
       "colour": null,
       "status": "closed",
       "length_m": 871,
-      "map_length_m": null
+      "map_length_m": 680
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

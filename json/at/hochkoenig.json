@@ -10,8 +10,8 @@
   },
   "website": "https://www.hochkoenig.at",
   "ski_region": "ski-amade",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:44.821519+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:44.534520+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,39 +23,64 @@
   },
   "lifts": {
     "open": 0,
-    "total": 34
+    "total": 36
   },
   "slopes": {
-    "open": null,
-    "total": 63,
-    "open_km": null,
+    "open": 0,
+    "total": 61,
+    "open_km": 0.0,
     "total_km": 120
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 3
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 10
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 17
+    },
+    "gondola": {
+      "open": 0,
+      "total": 6
+    }
+  },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
-      "total": null,
-      "open_km": null,
+      "open": 0,
+      "total": 25,
+      "open_km": 0.0,
       "total_km": 52
     },
     "intermediate": {
-      "open": null,
-      "total": null,
-      "open_km": null,
+      "open": 0,
+      "total": 23,
+      "open_km": 0.0,
       "total_km": 41
     },
     "difficult": {
-      "open": null,
-      "total": null,
-      "open_km": null,
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
       "total_km": 27
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-08T22:59:00+01:00",
+  "lifts_updated_at": null,
+  "details": "json/at/hochkoenig.details.json",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/",
+    "https://www.skiamade.com/",
     "https://www.hochkoenig.at/",
     "https://www.skiinfo.fr/",
     "https://www.skiresort.com/"
@@ -64,6 +89,10 @@
     "conditions": [
       {
         "url": "https://www.salzburgerland.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiamade.com/",
         "attribution_required": null
       }
     ],

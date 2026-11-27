@@ -9,29 +9,37 @@
     "lon": 7.3947
   },
   "website": "https://www.anzere.ch",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.210628+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.049393+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 156,
-    "valley_cm": 34,
-    "fresh_cm": 2,
-    "last_snowfall": null,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": "2026-11-27",
     "condition": null,
     "stations": [
       {
+        "name": "Pas de Maimbré",
+        "elevation_m": 2362,
+        "depth_cm": null,
+        "fresh_cm": 160,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
         "name": "Donin du Jour (SLF)",
         "elevation_m": 2385,
-        "depth_cm": 156,
-        "fresh_cm": 2,
+        "depth_cm": 150,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Montana (SLF)",
         "elevation_m": 1590,
-        "depth_cm": 34,
-        "fresh_cm": 0,
+        "depth_cm": 33,
+        "fresh_cm": 1,
         "temperature_c": null,
         "condition": null
       }
@@ -42,9 +50,9 @@
     "total": 12
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 35,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 58
   },
   "lifts_by_type": {
@@ -67,57 +75,58 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 10,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 13,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 6,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "ski_route": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-11-11T09:14:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:13:00+01:00",
+  "details": "json/ch/anzere.details.json",
   "avalanche": {
     "region_id": "CH-4121",
     "region": "Montana",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "gliding_snow",
-      "wind_slab"
+      "wind_slab",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

@@ -10,14 +10,14 @@
   },
   "website": "https://www.see.at",
   "ski_region": "silvretta-skipass",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:42:08.325906+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:42:10.090226+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-03-30",
     "condition": null,
     "stations": []
   },
@@ -26,22 +26,53 @@
     "total": 10
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 26,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 43
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-11T16:53:00+01:00",
-  "avalanche": null,
+  "lifts_updated_at": "2026-11-26T17:11:00+01:00",
+  "avalanche": {
+    "region_id": "AT-07-13",
+    "region": "Samnaun Mountains",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
-    "https://www.snowcard.tirol.at/"
+    "https://www.snowcard.tirol.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

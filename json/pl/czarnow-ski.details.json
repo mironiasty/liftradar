@@ -1,0 +1,53 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "czarnow-ski",
+  "country": "pl",
+  "fetched_at": "2026-11-27T08:40:39.053262+01:00",
+  "updated_at": null,
+  "source": "https://czarnow-ski.pl/",
+  "lifts": [],
+  "slopes": [
+    {
+      "id": "slope-trasa-alpejska",
+      "ref": null,
+      "name": "Trasa Alpejska",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-widokowa",
+      "ref": null,
+      "name": "Trasa Widokowa",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-rodzinna",
+      "ref": null,
+      "name": "Trasa Rodzinna",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-baby-lift-wiktorek",
+      "ref": null,
+      "name": "Baby lift WIKTOREK",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 60,
+      "map_length_m": null
+    }
+  ],
+  "bottom": null,
+  "top": null
+}

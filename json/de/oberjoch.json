@@ -9,8 +9,8 @@
     "lon": 10.413
   },
   "website": "https://www.badhindelang.de",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.219412+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.056799+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,42 @@
   },
   "lifts": {
     "open": 0,
-    "total": 6
+    "total": 5
   },
   "slopes": {
-    "open": null,
-    "total": 19,
-    "open_km": null,
+    "open": 0,
+    "total": 20,
+    "open_km": 0.0,
     "total_km": 32
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 20,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/de/oberjoch.details.json",
   "avalanche": null,
   "sources": [
     "https://www.bergbahnen-hindelang-oberjoch.de/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://www.bergbahnen-hindelang-oberjoch.de/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

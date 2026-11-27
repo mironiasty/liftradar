@@ -11,28 +11,20 @@
   "website": "https://www.meran2000.com",
   "ski_region": "suedtirol-skiarena",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.212756+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050995+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-25",
+    "last_snowfall": "2026-11-27",
     "condition": null,
     "stations": [
       {
         "name": "2.300 m - Kesselberg",
         "elevation_m": 2300,
         "depth_cm": 20,
-        "fresh_cm": 3,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "1.600 m - Falzeben in Avelengo",
-        "elevation_m": 1600,
-        "depth_cm": 20,
-        "fresh_cm": 3,
+        "fresh_cm": 15,
         "temperature_c": null,
         "condition": null
       },
@@ -40,7 +32,15 @@
         "name": "2.000 m - Summit station Piffing",
         "elevation_m": 2000,
         "depth_cm": 20,
-        "fresh_cm": 3,
+        "fresh_cm": 15,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "1.600 m - Falzeben in Avelengo",
+        "elevation_m": 1600,
+        "depth_cm": 20,
+        "fresh_cm": 15,
         "temperature_c": null,
         "condition": null
       }
@@ -90,13 +90,40 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T09:30:40+01:00",
+  "lifts_updated_at": "2026-11-27T08:39:51+01:00",
   "details": "json/it/meran-2000.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-32-BZ-08-01",
+    "region": "Hirzer Range",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
     "https://www.intermaps.com/",
-    "https://www.skiresort.com/"
+    "https://www.skiresort.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -106,6 +133,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

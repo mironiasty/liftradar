@@ -2,11 +2,325 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "campitello-matese",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213447+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051662+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skiinfo.fr/",
+  "lifts": [
+    {
+      "id": "lift-seggiovia-capo-dacqua",
+      "ref": null,
+      "name": "Seggiovia Capo D’Acqua",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-del-caprio-per-sciatori",
+      "ref": null,
+      "name": "Seggiovia Del Caprio Per Sciatori",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-anfiteatro",
+      "ref": null,
+      "name": "Seggiovia Anfiteatro",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-nastro-trasportatore",
+      "ref": null,
+      "name": "Nastro Trasportatore",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-la-piana-lavarelle",
+      "ref": null,
+      "name": "Seggiovia La Piana/ Lavarelle",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sciovia-s-nicola",
+      "ref": null,
+      "name": "Sciovia S.Nicola",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-capo-dacqua",
+      "ref": null,
+      "name": "Capo d’Acqua",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-capo-dacqua-est",
+      "ref": null,
+      "name": "Capo d’Acqua Est",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cresta-plattner",
+      "ref": null,
+      "name": "Cresta Plattner",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lupo-grigio",
+      "ref": null,
+      "name": "Lupo Grigio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lupo-bianco",
+      "ref": null,
+      "name": "Lupo Bianco",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cristallo-ovest",
+      "ref": null,
+      "name": "Cristallo ovest",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cristallo",
+      "ref": null,
+      "name": "Cristallo",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-del-caprio",
+      "ref": null,
+      "name": "Del Caprio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-del-caprio-est",
+      "ref": null,
+      "name": "Del Caprio est",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-scuola",
+      "ref": null,
+      "name": "Scuola",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lavarelle",
+      "ref": null,
+      "name": "Lavarelle",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olimpica",
+      "ref": null,
+      "name": "Olimpica",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olimpica-ovest",
+      "ref": null,
+      "name": "Olimpica Ovest",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olimpica-est",
+      "ref": null,
+      "name": "Olimpica Est",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-san-nicola",
+      "ref": null,
+      "name": "San Nicola",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-capo-dacqua-lupo-grigio",
+      "ref": null,
+      "name": "Capo d’Acqua- Lupo Grigio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cresta-plattner-lupo-grigio",
+      "ref": null,
+      "name": "Cresta Plattner – Lupo Grigio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cristallo-lupo-grigio",
+      "ref": null,
+      "name": "Cristallo- Lupo Grigio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-cristallo-lupo-grigio-2",
+      "ref": null,
+      "name": "Cristallo- Lupo Grigio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-del-caprio-olimpic",
+      "ref": null,
+      "name": "Del Caprio- Olimpic",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olimpica-del-caprio",
+      "ref": null,
+      "name": "Olimpica- Del Caprio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olimpica-est-del-caprio",
+      "ref": null,
+      "name": "Olimpica est- Del Caprio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lavarelle-olimpica",
+      "ref": null,
+      "name": "Lavarelle- Olimpica",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-san-nicola-lavarelle",
+      "ref": null,
+      "name": "San Nicola- Lavarelle",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 41.46407,
     "lon": 14.38758,

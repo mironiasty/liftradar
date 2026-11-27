@@ -9,8 +9,8 @@
     "lon": 6.9637
   },
   "website": "https://www.orskogfjellet.no/",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.220595+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.057930+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 3
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 7,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 6
   },
   "lifts_by_type": {
@@ -42,27 +42,27 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
@@ -81,9 +81,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-26T00:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-26T23:59:59+01:00"
+    "published_at": "2026-11-27T00:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-27T23:59:59+01:00"
   },
   "sources": [
     "https://fnugg.no/orskogfjell/",

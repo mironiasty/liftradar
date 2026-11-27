@@ -9,8 +9,8 @@
     "lon": 9.98
   },
   "website": "https://skilifte-kreuzberg.de",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.219711+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.056838+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -18,11 +18,20 @@
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Gipfelstation Kreuzberg",
+        "elevation_m": null,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
     "open": 0,
-    "total": 4
+    "total": 3
   },
   "slopes": {
     "open": null,
@@ -30,15 +39,27 @@
     "open_km": null,
     "total_km": 13
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
+  "details": "json/de/kreuzberg-bischofsheim.details.json",
   "avalanche": null,
   "sources": [
+    "https://skilifte-kreuzberg.de/",
     "https://de.wikipedia.org/wiki/Skigebiet_Kreuzberg"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://skilifte-kreuzberg.de/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://de.wikipedia.org/wiki/Skigebiet_Kreuzberg",

@@ -2,11 +2,111 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "czarny-gron",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215247+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053212+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.czarnygron.pl/",
+  "lifts": [
+    {
+      "id": "lift-kolej-4-osobowa-dolna",
+      "ref": null,
+      "name": "Kolej 4-osobowa (dolna)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kolej-6-osobowa-gorna",
+      "ref": null,
+      "name": "Kolej 6-osobowa (górna)",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-polko-cwiczebne",
+      "ref": null,
+      "name": "Pólko ćwiczebne",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-polana-pingwina-przy-hotelu",
+      "ref": null,
+      "name": "Polana Pingwina (przy hotelu)",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-trasa-czerwona",
+      "ref": null,
+      "name": "Trasa czerwona",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-trasa-niebieska",
+      "ref": null,
+      "name": "Trasa niebieska",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nartostrada-2a",
+      "ref": null,
+      "name": "Nartostrada 2A",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-polko-cwiczebne",
+      "ref": null,
+      "name": "Pólko ćwiczebne",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 80,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-polana-pingwina",
+      "ref": null,
+      "name": "Polana Pingwina",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 80,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.77479,
     "lon": 19.39603,

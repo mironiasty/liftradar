@@ -2,11 +2,259 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "schwemmalm",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.212802+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051035+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://opendatahub.com/",
+  "lifts": [
+    {
+      "id": "lift-breiteben",
+      "ref": null,
+      "name": "Breiteben",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-forderband-bergstation",
+      "ref": null,
+      "name": "Förderband Bergstation",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-forderband-schwemmy-kinderland",
+      "ref": null,
+      "name": "Förderband Schwemmy Kinderland",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-forderband-skischule",
+      "ref": null,
+      "name": "Förderband Skischule",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mutegg",
+      "ref": null,
+      "name": "Mutegg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-schwemmalmbahn",
+      "ref": null,
+      "name": "Schwemmalmbahn",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-schwemmeregg",
+      "ref": null,
+      "name": "Schwemmeregg",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ubungslift",
+      "ref": null,
+      "name": "Übungslift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-asmol",
+      "ref": null,
+      "name": "Asmol",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-asmol-2",
+      "ref": null,
+      "name": "Asmol 2",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-breitlahner",
+      "ref": null,
+      "name": "Breitlahner",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-dreimandler",
+      "ref": null,
+      "name": "Dreimandler",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-freeride-mutegg",
+      "ref": null,
+      "name": "Freeride Mutegg",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kircheler",
+      "ref": null,
+      "name": "Kircheler",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-mutegg",
+      "ref": null,
+      "name": "Mutegg",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-schwemmeregg",
+      "ref": null,
+      "name": "Schwemmeregg",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-sinkmoos",
+      "ref": null,
+      "name": "Sinkmoos",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiweg-asmol-schwemmalm",
+      "ref": null,
+      "name": "Skiweg Asmol-Schwemmalm",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiweg-schwemmalm-breiteben",
+      "ref": null,
+      "name": "Skiweg Schwemmalm-Breiteben",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiweg-schwemmeregg",
+      "ref": null,
+      "name": "Skiweg Schwemmeregg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skiweg-st-moritz",
+      "ref": null,
+      "name": "Skiweg St. Moritz",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-training-schwemmalm",
+      "ref": null,
+      "name": "Training Schwemmalm",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-ubungspiste",
+      "ref": null,
+      "name": "Übungspiste",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 46.52813,
     "lon": 10.95549,

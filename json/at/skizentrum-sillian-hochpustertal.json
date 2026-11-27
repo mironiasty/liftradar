@@ -10,7 +10,7 @@
   },
   "website": "https://www.hochpustertal-ski.at",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:42:11.146670+01:00",
+  "fetched_at": "2026-11-27T08:42:11.839611+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,45 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-08-31T07:33:00+02:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-27",
+    "region": "Deferegger Alps East",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
-    "https://www.tirol.at/"
+    "https://www.tirol.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

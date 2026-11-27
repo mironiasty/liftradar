@@ -9,9 +9,9 @@
     "lon": 11.6885
   },
   "website": "https://www.skilagorai.it",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212693+01:00",
-  "status_from": "2026-11-20T16:46:47.409217+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.051336+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -25,48 +25,26 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
-    "total_km": 12
+    "open": 0,
+    "total": 12,
+    "open_km": 0.0,
+    "total_km": 10
   },
-  "lifts_by_type": {
-    "chairlift": {
-      "open": 0,
-      "total": 3
-    },
-    "carpet": {
-      "open": 0,
-      "total": 1
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": null,
-      "open_km": null,
-      "total_km": 5
-    },
-    "intermediate": {
-      "open": null,
-      "total": null,
-      "open_km": null,
-      "total_km": 6
-    },
-    "difficult": {
-      "open": null,
-      "total": null,
-      "open_km": null,
-      "total_km": 1
-    }
-  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
+    "https://www.skilagorai.it/",
     "https://www.trentino.com/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.skilagorai.it/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.trentino.com/",
@@ -74,7 +52,5 @@
       }
     ]
   },
-  "errors": [
-    "trentino: LookupError: no entry named Funivie Lagorai (Passo Brocon)"
-  ]
+  "errors": []
 }

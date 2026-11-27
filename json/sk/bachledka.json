@@ -9,8 +9,8 @@
     "lon": 20.3072
   },
   "website": "https://www.bachledka.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218177+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055784+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,66 @@
   },
   "lifts": {
     "open": 0,
-    "total": 7
+    "total": 11
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 12,
-    "open_km": null,
-    "total_km": 14
+    "open_km": 0.0,
+    "total_km": 13
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 7
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 2
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/sk/bachledka.details.json",
   "avalanche": null,
   "sources": [
-    "https://slovakia.travel/"
+    "https://tatrysuperski.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://slovakia.travel/",
+        "url": "https://tatrysuperski.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

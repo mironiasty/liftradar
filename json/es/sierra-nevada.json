@@ -9,8 +9,8 @@
     "lon": -3.3991
   },
   "website": "https://sierranevada.es",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221368+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.058598+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,67 @@
   },
   "lifts": {
     "open": 0,
-    "total": 24
+    "total": 23
   },
   "slopes": {
-    "open": null,
-    "total": 131,
-    "open_km": null,
+    "open": 0,
+    "total": 143,
+    "open_km": 0.0,
     "total_km": 112
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 14
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 81,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 55,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
+  "lifts_updated_at": "2026-11-26T08:25:59+01:00",
+  "details": "json/es/sierra-nevada.details.json",
   "avalanche": null,
   "sources": [
     "https://sierranevada.es/",
     "https://www.intermaps.com/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://sierranevada.es/",
         "attribution_required": null
-      },
+      }
+    ],
+    "resort_info": [
       {
         "url": "https://www.intermaps.com/",
         "attribution_required": null

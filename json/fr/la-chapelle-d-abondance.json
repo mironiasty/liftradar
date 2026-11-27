@@ -11,7 +11,7 @@
   "website": "https://www.haute-savoie-tourisme.org/loisirs/lieux-sportifs/stations-ski/4826027-domaine-skiable-la-chapelle-liberte-espace-liberte",
   "linked_area": "portes-du-soleil",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.217906+01:00",
+  "fetched_at": "2026-11-27T08:40:39.055713+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -41,16 +41,22 @@
     "danger": "moderate",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "low",
         "lower_bound": null,
+        "upper_bound": 1800,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 1800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T16:00:00+01:00",
-    "valid_from": "2026-11-25T16:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T16:00:00+01:00",
+    "valid_from": "2026-11-26T16:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",

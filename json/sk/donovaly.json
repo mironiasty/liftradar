@@ -9,8 +9,8 @@
     "lon": 19.2247
   },
   "website": "https://www.parksnow.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218034+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055824+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +25,59 @@
     "total": 16
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 18,
-    "open_km": null,
-    "total_km": 11
+    "open_km": 0.0,
+    "total_km": 12
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 14
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/sk/donovaly.details.json",
   "avalanche": null,
   "sources": [
-    "https://slovakia.travel/"
+    "https://www.parksnow.sk/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://slovakia.travel/",
+        "url": "https://www.parksnow.sk/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

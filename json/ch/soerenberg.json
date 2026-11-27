@@ -10,7 +10,7 @@
   },
   "website": "https://www.soerenberg.ch",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.211962+01:00",
+  "fetched_at": "2026-11-27T08:40:39.049994+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,16 +22,8 @@
       {
         "name": "Rotschalp (SLF)",
         "elevation_m": 1875,
-        "depth_cm": 69,
-        "fresh_cm": null,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Sörenberg (SLF)",
-        "elevation_m": 1150,
-        "depth_cm": 8,
-        "fresh_cm": 5,
+        "depth_cm": 64,
+        "fresh_cm": 9,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +77,7 @@
       "total_km": 7
     }
   },
-  "lifts_updated_at": "2026-11-26T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
   "details": "json/ch/soerenberg.details.json",
   "avalanche": {
     "region_id": "CH-2121",
@@ -101,12 +93,12 @@
       }
     ],
     "problems": [
-      "wind_slab",
+      "new_snow",
       "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

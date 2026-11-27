@@ -2,11 +2,129 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "oravice",
   "country": "sk",
-  "fetched_at": "2026-11-26T13:40:39.218369+01:00",
+  "fetched_at": "2026-11-27T08:40:39.055814+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://tatrysuperski.pl/",
+  "lifts": [
+    {
+      "id": "5fd3d7fadffbed5f3776fda8",
+      "ref": null,
+      "name": "LANOVÁ DRÁHA ORAVICE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1050,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3d7fbdffbed5f3776fdc0",
+      "ref": null,
+      "name": "PÁS SUNKID",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 100,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3d7fbdffbed5f3776fdb4",
+      "ref": null,
+      "name": "TANIERIKOVÝ VLEK BOBROVEC",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "5fd3d7f9dffbed5f3776fd88",
+      "ref": null,
+      "name": "Zjazdovka 1A Family",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1850,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7f9dffbed5f3776fd8c",
+      "ref": null,
+      "name": "Zjazdovka 1B Family",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1650,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7f9dffbed5f3776fd90",
+      "ref": null,
+      "name": "Zjazdovka 1C Family",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1750,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7f9dffbed5f3776fd94",
+      "ref": null,
+      "name": "Zjazdovka 1D Family",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1850,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7fadffbed5f3776fd98",
+      "ref": null,
+      "name": "Zjazdovka 2 FIS",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1350,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7fadffbed5f3776fd9c",
+      "ref": null,
+      "name": "Zjazdovka 3A Meander",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7fadffbed5f3776fda0",
+      "ref": null,
+      "name": "Zjazdovka 3B Meander",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3d7fadffbed5f3776fda4",
+      "ref": null,
+      "name": "Zjazdovka 4 Vilma",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1050,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.30101,
     "lon": 19.74907,

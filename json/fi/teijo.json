@@ -9,12 +9,12 @@
     "lon": 22.954
   },
   "website": "https://www.meriteijo.fi/ourslopesarewaiting",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218690+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.056429+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
-    "valley_cm": 0,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
@@ -34,29 +34,29 @@
     "total": 5
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 11,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 3
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 8,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
@@ -64,12 +64,17 @@
   "avalanche": null,
   "sources": [
     "https://ski.fi/",
+    "https://www.meriteijo.fi/",
     "https://en.ilmatieteenlaitos.fi/open-data"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://ski.fi/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.meriteijo.fi/",
         "attribution_required": null
       },
       {

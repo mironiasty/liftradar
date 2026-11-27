@@ -11,7 +11,7 @@
   "website": "https://www.schoeneben.it",
   "ski_region": "suedtirol-skiarena",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.212977+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051201+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -71,15 +71,46 @@
   },
   "lifts_updated_at": "2026-11-24T15:51:58+01:00",
   "details": "json/it/schoeneben-haideralm.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-32-BZ-02-01",
+    "region": "Langtaufers",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.intermaps.com/",
-    "https://www.skiresort.com/"
+    "https://www.skiresort.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

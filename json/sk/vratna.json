@@ -9,8 +9,8 @@
     "lon": 19.0361
   },
   "website": "https://www.vratna.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218449+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055878+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 14
   },
   "slopes": {
-    "open": null,
-    "total": 16,
-    "open_km": null,
+    "open": 0,
+    "total": 15,
+    "open_km": 0.0,
     "total_km": 14
   },
   "lifts_by_type": null,
@@ -47,18 +47,23 @@
       }
     ],
     "problems": [
-      "wind_slab"
+      "new_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
+    "https://www.vratna.sk/",
     "https://slovakia.travel/",
     "https://www.laviny.sk/"
   ],
   "source_details": {
     "conditions": [
+      {
+        "url": "https://www.vratna.sk/",
+        "attribution_required": null
+      },
       {
         "url": "https://www.laviny.sk/",
         "attribution_required": null

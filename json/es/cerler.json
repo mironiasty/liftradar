@@ -9,8 +9,8 @@
     "lon": 0.5384
   },
   "website": "https://www.aramon.com/cerler",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221464+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.058707+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +25,26 @@
     "total": 19
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 74,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 81
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_updated_at": "2026-11-26T13:51:00+01:00",
   "avalanche": null,
   "sources": [
     "https://www.aramon.com/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://www.aramon.com/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

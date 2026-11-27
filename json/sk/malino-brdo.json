@@ -9,8 +9,8 @@
     "lon": 19.2725
   },
   "website": "https://skipark.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218339+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055862+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,14 +25,47 @@
     "total": 8
   },
   "slopes": {
-    "open": null,
-    "total": 8,
-    "open_km": null,
-    "total_km": 12
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
+    "total_km": 10
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 6
+    },
+    "other": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/sk/malino-brdo.details.json",
   "avalanche": {
     "region_id": "SK-06",
     "region": "Veľká Fatra",
@@ -47,29 +80,28 @@
       }
     ],
     "problems": [
-      "wind_slab"
+      "new_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
-    "https://slovakia.travel/",
+    "https://www.skipark.sk/",
     "https://www.laviny.sk/"
   ],
   "source_details": {
     "conditions": [
       {
+        "url": "https://www.skipark.sk/",
+        "attribution_required": null
+      },
+      {
         "url": "https://www.laviny.sk/",
         "attribution_required": null
       }
     ],
-    "resort_info": [
-      {
-        "url": "https://slovakia.travel/",
-        "attribution_required": null
-      }
-    ]
+    "resort_info": []
   },
   "errors": []
 }

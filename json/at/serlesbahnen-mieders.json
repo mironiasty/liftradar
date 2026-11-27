@@ -10,7 +10,7 @@
   },
   "website": "https://www.serlesbahnen.at",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:42:09.057526+01:00",
+  "fetched_at": "2026-11-27T08:42:10.457490+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -56,10 +56,37 @@
   },
   "lifts_updated_at": "2026-11-24T15:12:01+01:00",
   "details": "json/at/serlesbahnen-mieders.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-14-05",
+    "region": "Serles Ridge",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2400,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2400,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
-    "https://www.intermaps.com/"
+    "https://www.intermaps.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -69,6 +96,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

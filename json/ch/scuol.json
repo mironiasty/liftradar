@@ -10,28 +10,28 @@
   },
   "website": "https://www.bergbahnen-scuol.ch",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.211949+01:00",
+  "fetched_at": "2026-11-27T08:40:39.049981+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-27",
     "condition": null,
     "stations": [
       {
-        "name": "Schlivèra (SLF)",
-        "elevation_m": 2350,
-        "depth_cm": 49,
-        "fresh_cm": 2,
+        "name": "Snow depth in the valley",
+        "elevation_m": 1250,
+        "depth_cm": 13,
+        "fresh_cm": 8,
         "temperature_c": null,
         "condition": null
       },
       {
-        "name": "Motta Naluns (SLF)",
-        "elevation_m": 2150,
-        "depth_cm": 40,
-        "fresh_cm": 9,
+        "name": "Motta Naluns",
+        "elevation_m": 2146,
+        "depth_cm": 48,
+        "fresh_cm": 13,
         "temperature_c": null,
         "condition": null
       }
@@ -85,7 +85,7 @@
       "total_km": 10
     }
   },
-  "lifts_updated_at": "2026-11-26T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
   "details": "json/ch/scuol.details.json",
   "avalanche": {
     "region_id": "CH-7124",
@@ -104,13 +104,13 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service"
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
@@ -119,7 +119,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],

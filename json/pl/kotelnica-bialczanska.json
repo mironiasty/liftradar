@@ -9,8 +9,8 @@
     "lon": 20.1051
   },
   "website": "https://bialkatatrzanska.pl",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.214988+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.052774+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,56 @@
   },
   "lifts": {
     "open": 0,
-    "total": 10
+    "total": 22
   },
   "slopes": {
-    "open": null,
-    "total": 10,
-    "open_km": null,
-    "total_km": 14
+    "open": 0,
+    "total": 28,
+    "open_km": 0.0,
+    "total_km": 21
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 9
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 9
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 23,
+      "open_km": 0.0,
+      "total_km": 17
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/kotelnica-bialczanska.details.json",
   "avalanche": null,
   "sources": [
-    "https://visitmalopolska.pl/"
+    "https://bialkatatrzanska.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://visitmalopolska.pl/",
+        "url": "https://bialkatatrzanska.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

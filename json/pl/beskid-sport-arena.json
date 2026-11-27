@@ -10,8 +10,8 @@
   },
   "website": "https://beskidsportarena.pl",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.214964+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-27T08:40:39.052750+01:00",
+  "status_from": "2026-11-26T08:40:39.162882+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -55,20 +55,13 @@
     }
   },
   "lifts_updated_at": null,
-  "details": "json/pl/beskid-sport-arena.details.json",
   "avalanche": null,
   "sources": [
-    "https://beskidsportarena.pl/",
     "https://slaskie.travel/",
     "https://www.skiinfo.fr/"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://beskidsportarena.pl/",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://slaskie.travel/",
@@ -80,5 +73,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://beskidsportarena.pl/szczyrk-trasy-narciarskie/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  ]
 }

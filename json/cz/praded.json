@@ -10,8 +10,8 @@
   },
   "website": "https://www.figura.cz",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.214619+01:00",
-  "status_from": "2026-11-26T08:40:39.162297+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052501+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -57,13 +57,21 @@
     }
   },
   "lifts_updated_at": null,
+  "details": "json/cz/praded.details.json",
   "avalanche": null,
-  "sources": [],
+  "sources": [
+    "https://www.kudyznudy.cz/"
+  ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.kudyznudy.cz/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": []
   },
   "errors": [
-    "status: ReadTimeout: "
+    "avalanche: KeyError: 'mainValue'"
   ]
 }

@@ -9,8 +9,8 @@
     "lon": 11.2286
   },
   "website": "https://www.familienparadies-kranzberg.de",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.219877+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.056821+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,34 @@
   },
   "lifts": {
     "open": 0,
-    "total": 8
+    "total": 7
   },
-  "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
-    "total_km": 15
+  "slopes": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 6
+    }
   },
-  "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": null,
+  "details": "json/de/kranzberg-mittenwald.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.snowtrex.de/"
+    "https://www.familienparadies-kranzberg.de/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.snowtrex.de/",
+        "url": "https://www.familienparadies-kranzberg.de/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

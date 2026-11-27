@@ -11,28 +11,20 @@
   "website": "https://www.saas-fee.ch",
   "ski_region": "saastal",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.211901+01:00",
+  "fetched_at": "2026-11-27T08:40:39.049946+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 40,
-    "valley_cm": 23,
-    "fresh_cm": 6,
+    "mountain_cm": 44,
+    "valley_cm": null,
+    "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Gibidum (SLF)",
         "elevation_m": 2680,
-        "depth_cm": 40,
-        "fresh_cm": 6,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Saas Fee (SLF)",
-        "elevation_m": 1790,
-        "depth_cm": 23,
-        "fresh_cm": 0,
+        "depth_cm": 44,
+        "fresh_cm": 2,
         "temperature_c": null,
         "condition": null
       }
@@ -43,9 +35,9 @@
     "total": 23
   },
   "slopes": {
-    "open": 6,
+    "open": 7,
     "total": 34,
-    "open_km": 26.3,
+    "open_km": 32.3,
     "total_km": 100
   },
   "lifts_by_type": {
@@ -80,9 +72,9 @@
       "total_km": 32
     },
     "intermediate": {
-      "open": 5,
+      "open": 6,
       "total": 16,
-      "open_km": 19.3,
+      "open_km": 25.3,
       "total_km": 55
     },
     "difficult": {
@@ -92,7 +84,7 @@
       "total_km": 5
     }
   },
-  "lifts_updated_at": "2026-11-26T13:29:51+01:00",
+  "lifts_updated_at": "2026-11-27T08:09:56+01:00",
   "details": "json/ch/saas-fee.details.json",
   "avalanche": {
     "region_id": "CH-4223",
@@ -111,9 +103,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

@@ -10,7 +10,7 @@
   },
   "website": "https://www.chamonix.com",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.215783+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053880+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -39,7 +39,7 @@
         "name": "Brévent",
         "elevation_m": 2525,
         "depth_cm": 180,
-        "fresh_cm": 2,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       },
@@ -55,7 +55,7 @@
         "name": "Balme Tour-Vallorcine",
         "elevation_m": 2270,
         "depth_cm": 125,
-        "fresh_cm": 1,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": "Fraîche"
       },
@@ -138,20 +138,20 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2500,
+        "upper_bound": 2700,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2500,
+        "lower_bound": 2700,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T16:00:00+01:00",
-    "valid_from": "2026-11-25T16:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T16:00:00+01:00",
+    "valid_from": "2026-11-26T16:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com/",

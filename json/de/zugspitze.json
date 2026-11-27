@@ -9,8 +9,8 @@
     "lon": 10.9903
   },
   "website": "https://zugspitze.de",
-  "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.219240+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.056698+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,18 +21,18 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 5,
     "total": 7
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 13,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 20
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 0,
+      "open": 2,
       "total": 2
     },
     "drag_lift": {
@@ -40,29 +40,29 @@
       "total": 2
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 2
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-24T11:38:51+01:00",
+  "lifts_updated_at": "2026-11-26T16:47:52+01:00",
   "details": "json/de/zugspitze.details.json",
   "avalanche": null,
   "sources": [

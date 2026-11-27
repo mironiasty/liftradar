@@ -1,0 +1,83 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort.schema.json",
+  "id": "harenda",
+  "country": "pl",
+  "name": "Harenda (Zakopane)",
+  "region": "Małopolskie",
+  "location": {
+    "lat": 49.323,
+    "lon": 19.9769
+  },
+  "website": "https://www.harendazakopane.pl",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.052833+01:00",
+  "status_from": null,
+  "snow": {
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
+    "last_snowfall": null,
+    "condition": null,
+    "stations": []
+  },
+  "lifts": {
+    "open": 0,
+    "total": 7
+  },
+  "slopes": {
+    "open": 0,
+    "total": 7,
+    "open_km": 0.0,
+    "total_km": 5
+  },
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 4
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": null,
+  "details": "json/pl/harenda.details.json",
+  "avalanche": null,
+  "sources": [
+    "https://tatrysuperski.pl/"
+  ],
+  "source_details": {
+    "conditions": [
+      {
+        "url": "https://tatrysuperski.pl/",
+        "attribution_required": null
+      }
+    ],
+    "resort_info": []
+  },
+  "errors": []
+}

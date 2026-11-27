@@ -9,8 +9,8 @@
     "lon": 9.3584
   },
   "website": "https://www.madesimo.eu",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213051+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.051269+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,24 +21,76 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
-    "total": 11
+    "open": 2,
+    "total": 13
   },
   "slopes": {
-    "open": null,
-    "total": 34,
+    "open": 3,
+    "total": 40,
     "open_km": null,
     "total_km": 40
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "cable_car": {
+      "open": 0,
+      "total": 1
+    },
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 1,
+      "total": 9
+    },
+    "funicular": {
+      "open": 0,
+      "total": 1
+    },
+    "gondola": {
+      "open": 1,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 1,
+      "total": 20,
+      "open_km": null,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 2,
+      "total": 17,
+      "open_km": null,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": null,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/it/madesimo.details.json",
   "avalanche": null,
   "sources": [
+    "https://www.intermaps.com/",
+    "https://www.skiareavalchiavenna.it/",
     "https://www.madesimo.eu/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.skiareavalchiavenna.it/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.madesimo.eu/",

@@ -9,8 +9,8 @@
     "lon": 13.6797
   },
   "website": "https://www.grosseck-speiereck.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:44.842051+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:44.534888+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,36 +25,51 @@
     "total": 10
   },
   "slopes": {
-    "open": null,
-    "total": 21,
-    "open_km": null,
+    "open": 0,
+    "total": 20,
+    "open_km": 0.0,
     "total_km": 50
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": null,
-      "total": null,
-      "open_km": null,
-      "total_km": 26
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 4
     },
-    "intermediate": {
-      "open": null,
-      "total": null,
-      "open_km": null,
-      "total_km": 17
+    "drag_lift": {
+      "open": 0,
+      "total": 4
     },
-    "difficult": {
-      "open": null,
-      "total": null,
-      "open_km": null,
-      "total_km": 7
+    "gondola": {
+      "open": 0,
+      "total": 2
     }
   },
-  "lifts_updated_at": "2026-11-02T08:33:00+01:00",
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 24
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 24
+    },
+    "difficult": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
+  "lifts_updated_at": null,
+  "details": "json/at/mauterndorf-grosseck-speiereck.details.json",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/",
+    "https://www.speiereck.at/",
     "https://www.skiresort.com/",
     "https://www.skiinfo.fr/"
   ],
@@ -62,6 +77,10 @@
     "conditions": [
       {
         "url": "https://www.salzburgerland.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.speiereck.at/",
         "attribution_required": null
       }
     ],

@@ -11,7 +11,7 @@
   "website": "https://www.vigiljoch.com/",
   "ski_region": "suedtirol-skiarena",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212834+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051061+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -34,15 +34,46 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2025-11-04T14:42:03.367000+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-32-BZ-15",
+    "region": "Ulten Valley",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
-    "https://www.skiresort.com/"
+    "https://www.skiresort.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://opendatahub.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

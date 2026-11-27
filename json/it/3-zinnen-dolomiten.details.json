@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "3-zinnen-dolomiten",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.212401+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050682+01:00",
   "updated_at": "2026-11-23T13:00:10.543413+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
@@ -331,18 +331,6 @@
       "top_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:lift:7_560",
-      "ref": null,
-      "name": "Waldheim",
-      "type": "drag_lift",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": 460,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:lift:7_561",
       "ref": null,
       "name": "Waldheim",
@@ -350,6 +338,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_560",
+      "ref": null,
+      "name": "Waldheim",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null

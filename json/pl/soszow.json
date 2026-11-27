@@ -10,8 +10,8 @@
   },
   "website": "https://wislaskiarena.pl",
   "ski_region": "wispass",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215286+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.053233+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,34 +23,58 @@
   },
   "lifts": {
     "open": 0,
-    "total": 5
+    "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 6,
-    "open_km": null,
-    "total_km": 6
+    "open_km": 0.0,
+    "total_km": 7
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 3
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 4
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/soszow.details.json",
   "avalanche": null,
   "sources": [
-    "https://openskimap.org/",
     "https://wislaskiarena.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
-      {
-        "url": "https://openskimap.org/",
-        "attribution_required": null
-      },
+    "conditions": [
       {
         "url": "https://wislaskiarena.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

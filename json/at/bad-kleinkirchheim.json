@@ -9,25 +9,25 @@
     "lon": 13.7984
   },
   "website": "https://www.badkleinkirchheim.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:44.862146+01:00",
-  "status_from": "2026-11-11T11:32:47.498268+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:46.503284+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": []
   },
   "lifts": {
     "open": 0,
-    "total": 24
+    "total": 23
   },
   "slopes": {
-    "open": null,
-    "total": 39,
-    "open_km": null,
+    "open": 0,
+    "total": 36,
+    "open_km": 0.0,
     "total_km": 103
   },
   "lifts_by_type": {
@@ -41,7 +41,7 @@
     },
     "drag_lift": {
       "open": 0,
-      "total": 10
+      "total": 9
     },
     "gondola": {
       "open": 0,
@@ -49,36 +49,38 @@
     }
   },
   "slopes_by_difficulty": {
-    "ski_route": {
-      "open": null,
-      "total": 5,
-      "open_km": null,
-      "total_km": null
-    },
     "easy": {
-      "open": null,
-      "total": 10,
-      "open_km": null,
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 20,
-      "open_km": null,
-      "total_km": 52
+      "open_km": 0.0,
+      "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 4,
-      "open_km": null,
-      "total_km": 8
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-01T16:12:16+01:00",
+  "lifts_updated_at": null,
+  "details": "json/at/bad-kleinkirchheim.details.json",
   "avalanche": null,
   "sources": [
     "https://www.kaernten.at/",
-    "https://www.intermaps.com/"
+    "https://www.intermaps.com/",
+    "https://www.badkleinkirchheim.com/"
   ],
   "source_details": {
     "conditions": [
@@ -88,6 +90,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.badkleinkirchheim.com/",
         "attribution_required": null
       }
     ],

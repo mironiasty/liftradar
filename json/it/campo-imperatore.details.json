@@ -2,11 +2,159 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "campo-imperatore",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213703+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051912+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skiinfo.fr/",
+  "lifts": [
+    {
+      "id": "lift-funivia-del-gran-sasso-ditalia",
+      "ref": null,
+      "name": "Funivia del Gran Sasso D’Italia",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-esaposto-fontari",
+      "ref": null,
+      "name": "Seggiovia Esaposto Fontari",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-quadriposto-scindarella",
+      "ref": null,
+      "name": "Seggiovia Quadriposto Scindarella",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-genziana",
+      "ref": null,
+      "name": "Genziana",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-genziana-variante",
+      "ref": null,
+      "name": "Genziana variante",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 650,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-osservatorio",
+      "ref": null,
+      "name": "Osservatorio",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 750,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-del-parco",
+      "ref": null,
+      "name": "Del Parco",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-narciso",
+      "ref": null,
+      "name": "Narciso",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 720,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-mirtillo",
+      "ref": null,
+      "name": "Mirtillo",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 720,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-aquila-bianca",
+      "ref": null,
+      "name": "Aquila Bianca",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1150,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-variante-aquila-bianca",
+      "ref": null,
+      "name": "Variante Aquila Bianca",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 620,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-snow-park",
+      "ref": null,
+      "name": "Snow Park",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campo-scuola",
+      "ref": null,
+      "name": "Campo Scuola",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-compressione",
+      "ref": null,
+      "name": "Compressione",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 42.42645,
     "lon": 13.52846,

@@ -11,7 +11,7 @@
   "website": "https://www.avoriaz.com",
   "linked_area": "portes-du-soleil",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.216645+01:00",
+  "fetched_at": "2026-11-27T08:40:39.054457+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -65,7 +65,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T13:39:36+01:00",
+  "lifts_updated_at": "2026-11-27T08:40:02+01:00",
   "details": "json/fr/avoriaz.details.json",
   "avalanche": {
     "region_id": "FR-01",
@@ -74,16 +74,22 @@
     "danger": "moderate",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "low",
         "lower_bound": null,
+        "upper_bound": 1800,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 1800,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T16:00:00+01:00",
-    "valid_from": "2026-11-25T16:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T16:00:00+01:00",
+    "valid_from": "2026-11-26T16:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
     "https://www.intermaps.com/",

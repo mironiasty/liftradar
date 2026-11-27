@@ -11,7 +11,7 @@
   "website": "https://www.gurgl.com",
   "ski_region": "oetztal",
   "status": "open",
-  "fetched_at": "2026-11-26T13:42:05.864507+01:00",
+  "fetched_at": "2026-11-27T08:42:07.763771+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 71,
@@ -22,7 +22,7 @@
     "stations": []
   },
   "lifts": {
-    "open": 15,
+    "open": 14,
     "total": 26
   },
   "slopes": {
@@ -41,7 +41,7 @@
       "total": 6
     },
     "drag_lift": {
-      "open": 2,
+      "open": 1,
       "total": 6
     },
     "gondola": {
@@ -75,13 +75,40 @@
       "total_km": 15
     }
   },
-  "lifts_updated_at": "2026-11-26T13:38:26+01:00",
+  "lifts_updated_at": "2026-11-27T08:39:43+01:00",
   "details": "json/at/obergurgl-hochgurgl.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-21",
+    "region": "Gurgler Group",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.intermaps.com/",
-    "https://www.gurgl.com/"
+    "https://www.gurgl.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -91,6 +118,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

@@ -2,11 +2,235 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pescasseroli",
   "country": "it",
-  "fetched_at": "2026-11-26T13:40:39.213521+01:00",
+  "fetched_at": "2026-11-27T08:40:39.051739+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skiinfo.fr/",
+  "lifts": [
+    {
+      "id": "lift-seggiovia-quadriposto-orsa-maggiore",
+      "ref": null,
+      "name": "Seggiovia quadriposto ORSA MAGGIORE",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-biposto-orsetta",
+      "ref": null,
+      "name": "Seggiovia biposto ORSETTA",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tappeto-mobile-coperto-campo-scuola",
+      "ref": null,
+      "name": "Tappeto mobile coperto CAMPO SCUOLA",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-sciovia-raccordo",
+      "ref": null,
+      "name": "Sciovia RACCORDO",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-seggiovia-triposto-stazzo-monte-ceraso",
+      "ref": null,
+      "name": "Seggiovia triposto STAZZO - MONTE CERASO",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tappeto-mobile-pista-bob",
+      "ref": null,
+      "name": "Tappeto mobile pista BOB",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-direttissima",
+      "ref": null,
+      "name": "DIRETTISSIMA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1328,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-aquila",
+      "ref": null,
+      "name": "AQUILA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 610,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-campo-scuola",
+      "ref": null,
+      "name": "CAMPO SCUOLA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-orsetta",
+      "ref": null,
+      "name": "ORSETTA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 201,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-sole",
+      "ref": null,
+      "name": "SOLE",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 794,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-raccordo",
+      "ref": null,
+      "name": "RACCORDO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 640,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-vallone",
+      "ref": null,
+      "name": "VALLONE",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 491,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stazzetto",
+      "ref": null,
+      "name": "STAZZETTO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 632,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-camoscio",
+      "ref": null,
+      "name": "CAMOSCIO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 486,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stradello",
+      "ref": null,
+      "name": "STRADELLO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 383,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lupo",
+      "ref": null,
+      "name": "LUPO",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 782,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-volpe",
+      "ref": null,
+      "name": "VOLPE",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 798,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-variante-volpe",
+      "ref": null,
+      "name": "VARIANTE VOLPE",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 175,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-panoramica",
+      "ref": null,
+      "name": "PANORAMICA",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 491,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lince",
+      "ref": null,
+      "name": "LINCE",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 450,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 41.81549,
     "lon": 13.76275,

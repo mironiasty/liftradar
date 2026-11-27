@@ -8,9 +8,9 @@
     "lat": 50.363,
     "lon": 12.9299
   },
-  "website": "https://www.klinovec.cz",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.214802+01:00",
+  "website": "https://novakojachymov.cz/",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.052668+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,10 +25,10 @@
     "total": 3
   },
   "slopes": {
-    "open": null,
-    "total": 7,
-    "open_km": null,
-    "total_km": 4
+    "open": 0,
+    "total": 8,
+    "open_km": 0.0,
+    "total_km": 5
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
@@ -38,13 +38,13 @@
     "https://novakojachymov.cz/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://novakojachymov.cz/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

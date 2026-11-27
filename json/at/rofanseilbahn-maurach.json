@@ -10,7 +10,7 @@
   },
   "website": "https://www.rofanseilbahn.at",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:42:06.332837+01:00",
+  "fetched_at": "2026-11-27T08:42:08.717966+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,15 +33,37 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-11-08T16:26:00+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-05",
+    "region": "Brandenberg Alps",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
-    "https://www.tirol.at/"
+    "https://www.tirol.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

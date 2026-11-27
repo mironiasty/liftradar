@@ -9,8 +9,8 @@
     "lon": -5.358
   },
   "website": "https://www.turismocastillayleon.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221577+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.058671+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,26 +25,65 @@
     "total": 15
   },
   "slopes": {
-    "open": null,
-    "total": 35,
-    "open_km": null,
-    "total_km": 23
+    "open": 0,
+    "total": 32,
+    "open_km": 0.0,
+    "total_km": 34
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 4
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 4
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 7
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 14,
+      "open_km": 0.0,
+      "total_km": 10
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 13,
+      "open_km": 0.0,
+      "total_km": 14
+    },
+    "difficult": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": 5
+    },
+    "ski_route": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 4
+    }
+  },
+  "lifts_updated_at": "2026-11-20T12:00:00+01:00",
+  "details": "json/es/san-isidro.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.san-isidro.net/"
+    "https://www.nieveleonsanisidro.com/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://www.san-isidro.net/",
+        "url": "https://www.nieveleonsanisidro.com/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

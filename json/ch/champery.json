@@ -11,7 +11,7 @@
   "website": "https://skipass-pds-ch.ch",
   "linked_area": "portes-du-soleil",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.210727+01:00",
+  "fetched_at": "2026-11-27T08:40:39.049481+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -92,28 +92,28 @@
       "total_km": 4
     }
   },
-  "lifts_updated_at": "2026-11-26T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:30:00+01:00",
   "details": "json/ch/champery.details.json",
   "avalanche": {
     "region_id": "CH-1312",
     "region": "Monthey - Val d'Illiez",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "gliding_snow",
-      "wind_slab"
+      "wind_slab",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

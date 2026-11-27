@@ -11,14 +11,14 @@
   "website": "https://www.skiresort.cz",
   "ski_region": "skiresort-cerna-hora-pec",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.214450+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052358+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 80,
     "valley_cm": 60,
     "fresh_cm": null,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "zmrzlý",
     "stations": []
   },
   "lifts": {
@@ -84,5 +84,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "avalanche: KeyError: 'mainValue'"
+  ]
 }

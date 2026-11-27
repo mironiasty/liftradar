@@ -2,10 +2,34 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "schladming",
   "country": "at",
-  "fetched_at": "2026-11-26T13:40:39.207545+01:00",
+  "fetched_at": "2026-11-27T08:40:39.046158+01:00",
   "updated_at": null,
   "source": "https://www.schladming-dachstein.at/",
   "lifts": [
+    {
+      "id": "lift-larchkogelbahn",
+      "ref": null,
+      "name": "Lärchkogelbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1260,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-planai-west",
+      "ref": null,
+      "name": "Planai West",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 2480,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
     {
       "id": "lift-marchenwiesebahn",
       "ref": null,
@@ -14,6 +38,30 @@
       "status": "open",
       "length_m": null,
       "map_length_m": 710,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-burgstallalmbahn",
+      "ref": null,
+      "name": "Burgstallalmbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1040,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fritz-blitz",
+      "ref": null,
+      "name": "Fritz-Blitz",
+      "type": "carpet",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 90,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -38,30 +86,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1690,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-larchkogelbahn",
-      "ref": null,
-      "name": "Lärchkogelbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1260,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-planai-west",
-      "ref": null,
-      "name": "Planai West",
-      "type": "gondola",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 2480,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -127,18 +151,6 @@
       "top_m": null
     },
     {
-      "id": "lift-burgstallalmbahn",
-      "ref": null,
-      "name": "Burgstallalmbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1040,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "lift-mitterhausalm-i",
       "ref": null,
       "name": "Mitterhausalm I",
@@ -158,18 +170,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1160,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-fritz-blitz",
-      "ref": null,
-      "name": "Fritz-Blitz",
-      "type": "carpet",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 90,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -597,6 +597,36 @@
   ],
   "slopes": [
     {
+      "id": "slope-wm-herrenstrecke-oben",
+      "ref": null,
+      "name": "WM Herrenstrecke oben",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 4350
+    },
+    {
+      "id": "slope-wm-startstrecke",
+      "ref": null,
+      "name": "WM Startstrecke",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 440
+    },
+    {
+      "id": "slope-larchkogelabfahrt",
+      "ref": null,
+      "name": "Lärchkogelabfahrt",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1980
+    },
+    {
       "id": "slope-marchenwieseabfahrt",
       "ref": null,
       "name": "Märchenwieseabfahrt",
@@ -617,14 +647,34 @@
       "map_length_m": 690
     },
     {
-      "id": "slope-wm-herrenstrecke-oben",
+      "id": "slope-weitmoosmittelabfahrt",
       "ref": null,
-      "name": "WM Herrenstrecke oben",
+      "name": "Weitmoosmittelabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 3340
+    },
+    {
+      "id": "slope-larchkogel-sudabfahrt",
+      "ref": null,
+      "name": "Lärchkogel Südabfahrt",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 390
+    },
+    {
+      "id": "slope-burgstallalmabfahrt",
+      "ref": null,
+      "name": "Burgstallalmabfahrt",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
-      "map_length_m": 4350
+      "map_length_m": 280
     },
     {
       "id": "slope-wm-herrenstrecke-unten",
@@ -635,16 +685,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 4350
-    },
-    {
-      "id": "slope-wm-startstrecke",
-      "ref": null,
-      "name": "WM Startstrecke",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 440
     },
     {
       "id": "slope-wm-damenstrecke-oben",
@@ -707,16 +747,6 @@
       "map_length_m": 1570
     },
     {
-      "id": "slope-larchkogelabfahrt",
-      "ref": null,
-      "name": "Lärchkogelabfahrt",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1980
-    },
-    {
       "id": "slope-jagerabfahrt",
       "ref": null,
       "name": "Jagerabfahrt",
@@ -745,36 +775,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 480
-    },
-    {
-      "id": "slope-weitmoosmittelabfahrt",
-      "ref": null,
-      "name": "Weitmoosmittelabfahrt",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 3340
-    },
-    {
-      "id": "slope-larchkogel-sudabfahrt",
-      "ref": null,
-      "name": "Lärchkogel Südabfahrt",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 390
-    },
-    {
-      "id": "slope-burgstallalmabfahrt",
-      "ref": null,
-      "name": "Burgstallalmabfahrt",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 280
     },
     {
       "id": "slope-burgstallalm-ostabfahrt",

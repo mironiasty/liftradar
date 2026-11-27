@@ -9,8 +9,8 @@
     "lon": 8.1925
   },
   "website": "https://www.san-domenico.com/",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.213281+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.051501+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,32 +22,53 @@
   },
   "lifts": {
     "open": 0,
-    "total": 7
+    "total": 6
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 18,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 33
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 2
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 3
+    },
+    "gondola": {
+      "open": 0,
+      "total": 1
+    }
+  },
+  "slopes_by_difficulty": {
+    "other": {
+      "open": 0,
+      "total": 18,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/it/san-domenico.details.json",
   "avalanche": {
     "region_id": "IT-21-VB-02",
     "region": "Alpi Lepontine Nord",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": 2300,
+        "upper_bound": "treeline",
         "period": "all_day"
       },
       {
-        "level": "moderate",
-        "lower_bound": 2300,
+        "level": "considerable",
+        "lower_bound": "treeline",
         "upper_bound": null,
         "period": "all_day"
       }
@@ -55,16 +76,21 @@
     "problems": [
       "wind_slab"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-26T00:00:00+01:00",
-    "valid_until": "2026-11-27T00:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-27T00:00:00+01:00",
+    "valid_until": "2026-11-28T00:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",
+    "https://www.san-domenico.com/",
     "https://bollettini.aineva.it/"
   ],
   "source_details": {
     "conditions": [
+      {
+        "url": "https://www.san-domenico.com/",
+        "attribution_required": null
+      },
       {
         "url": "https://bollettini.aineva.it/",
         "attribution_required": null

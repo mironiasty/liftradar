@@ -9,8 +9,8 @@
     "lon": 1.476
   },
   "website": "https://www.palarinsal.com/",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221928+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.059257+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,9 +25,9 @@
     "total": 25
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 47,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 63
   },
   "lifts_by_type": {
@@ -50,25 +50,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 26,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 17,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 4,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-12T10:22:00+01:00",
+  "lifts_updated_at": "2026-11-26T15:23:00+01:00",
+  "details": "json/ad/pal-arinsal.details.json",
   "avalanche": {
     "region_id": "AD-02",
     "region": "Center Area",
@@ -83,9 +84,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T00:00:00+01:00",
-    "valid_from": "2026-11-25T16:00:00+01:00",
-    "valid_until": "2026-11-26T15:59:59+01:00"
+    "published_at": "2026-11-26T00:00:00+01:00",
+    "valid_from": "2026-11-26T16:00:00+01:00",
+    "valid_until": "2026-11-27T15:59:59+01:00"
   },
   "sources": [
     "https://www.palarinsal.com/",

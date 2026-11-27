@@ -11,57 +11,57 @@
   "website": "https://www.soelden.com",
   "ski_region": "oetztal",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.206532+01:00",
+  "fetched_at": "2026-11-27T08:40:39.045208+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 86,
     "valley_cm": 0,
-    "fresh_cm": 10,
+    "fresh_cm": 0,
     "last_snowfall": "2026-11-26",
-    "condition": "Fresh snow",
+    "condition": "Powder - grippy",
     "stations": [
       {
         "name": "Sölden",
         "elevation_m": 1363,
         "depth_cm": 0,
         "fresh_cm": 0,
-        "temperature_c": -0.5,
+        "temperature_c": -3.7,
         "condition": null
       },
       {
         "name": "Gaislachkogl",
         "elevation_m": 2110,
         "depth_cm": 32,
-        "fresh_cm": 5,
-        "temperature_c": -5.0,
-        "condition": "Fresh snow"
+        "fresh_cm": 0,
+        "temperature_c": -6.9,
+        "condition": "Powder - grippy"
       },
       {
         "name": "Giggijoch",
         "elevation_m": 2525,
-        "depth_cm": 42,
-        "fresh_cm": 5,
-        "temperature_c": -3.3,
-        "condition": "Fresh snow"
+        "depth_cm": 46,
+        "fresh_cm": 0,
+        "temperature_c": -10.8,
+        "condition": "Powder - grippy"
       },
       {
         "name": "Glacier",
         "elevation_m": 3000,
         "depth_cm": 86,
-        "fresh_cm": 10,
-        "temperature_c": -4.5,
-        "condition": "Fresh snow"
+        "fresh_cm": 0,
+        "temperature_c": -11.5,
+        "condition": "Powder - grippy"
       }
     ]
   },
   "lifts": {
-    "open": 23,
+    "open": 24,
     "total": 31
   },
   "slopes": {
-    "open": 22,
+    "open": 25,
     "total": 58,
-    "open_km": 102.5,
+    "open_km": 108.0,
     "total_km": 147
   },
   "lifts_by_type": {
@@ -70,7 +70,7 @@
       "total": 2
     },
     "chairlift": {
-      "open": 9,
+      "open": 10,
       "total": 13
     },
     "drag_lift": {
@@ -94,9 +94,9 @@
       "total_km": 7
     },
     "easy": {
-      "open": 12,
+      "open": 14,
       "total": 21,
-      "open_km": 62.2,
+      "open_km": 63.8,
       "total_km": 78
     },
     "intermediate": {
@@ -106,18 +106,45 @@
       "total_km": 37
     },
     "difficult": {
-      "open": 4,
+      "open": 5,
       "total": 9,
-      "open_km": 16.0,
+      "open_km": 19.9,
       "total_km": 23
     }
   },
-  "lifts_updated_at": "2026-11-26T13:39:36+01:00",
+  "lifts_updated_at": "2026-11-27T08:40:01+01:00",
   "details": "json/at/soelden.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-20",
+    "region": "Weißkugel Group",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.soelden.com/",
-    "https://www.intermaps.com/"
+    "https://www.intermaps.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -127,6 +154,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

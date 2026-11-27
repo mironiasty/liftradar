@@ -11,7 +11,7 @@
   "website": "https://www.dreizinnen.com",
   "ski_region": "dolomiti-superski",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.212401+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050682+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 50,
@@ -88,11 +88,38 @@
   },
   "lifts_updated_at": "2026-11-23T13:00:10.543413+01:00",
   "details": "json/it/3-zinnen-dolomiten.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "IT-32-BZ-20",
+    "region": "Sexten Dolomites",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2200,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2200,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "wind_slab",
+      "persistent_weak_layers"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://opendatahub.com/",
     "https://www.dolomitisuperski.com/",
-    "https://www.dreizinnen.com/"
+    "https://www.dreizinnen.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -102,6 +129,10 @@
       },
       {
         "url": "https://www.dolomitisuperski.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

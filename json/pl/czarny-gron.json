@@ -10,8 +10,8 @@
   },
   "website": "https://www.czarnygron.pl",
   "ski_region": "grupa-pingwina",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215247+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.053212+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -26,26 +26,56 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
-    "total": 6,
-    "open_km": null,
+    "open": 0,
+    "total": 5,
+    "open_km": 0.0,
     "total_km": 3
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "other": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 2
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    },
+    "other": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/czarny-gron.details.json",
   "avalanche": null,
   "sources": [
     "https://www.czarnygron.pl/",
     "https://openskimap.org/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://www.czarnygron.pl/",
         "attribution_required": null
-      },
+      }
+    ],
+    "resort_info": [
       {
         "url": "https://openskimap.org/",
         "attribution_required": null

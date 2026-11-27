@@ -9,8 +9,8 @@
     "lon": 9.6096
   },
   "website": "https://kongsberg.skimore.no",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.221151+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.058409+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,24 +22,55 @@
   },
   "lifts": {
     "open": 0,
-    "total": 5
+    "total": 2
   },
   "slopes": {
-    "open": null,
-    "total": null,
-    "open_km": null,
+    "open": 0,
+    "total": 9,
+    "open_km": 0.0,
     "total_km": 12
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/no/skimore-kongsberg.details.json",
   "avalanche": null,
   "sources": [
+    "https://skimore.no/",
     "https://www.skiresort.com/",
     "https://kongsberg.skimore.no/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://skimore.no/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://www.skiresort.com/",

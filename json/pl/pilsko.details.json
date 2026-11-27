@@ -2,11 +2,155 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "pilsko",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215060+01:00",
+  "fetched_at": "2026-11-27T08:40:39.053188+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://pilsko.org/",
+  "lifts": [
+    {
+      "id": "lift-jontek-buczynka",
+      "ref": null,
+      "name": "Jontek – Buczynka",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1456,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-kamienna-solisko",
+      "ref": null,
+      "name": "Kamienna – Solisko",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-polana-strugi-hala-szczawiny",
+      "ref": null,
+      "name": "Polana Strugi- Hala Szczawiny",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1564,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hala-szczawiny-hala-miziowa",
+      "ref": null,
+      "name": "Hala Szczawiny-Hala Miziowa",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 913,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-hala-miziowa-pilsko",
+      "ref": null,
+      "name": "Hala Miziowa-Pilsko",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 670,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-paj",
+      "ref": null,
+      "name": "„Płaj”",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 80,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-buczynka-kamienna",
+      "ref": null,
+      "name": "1 Buczynka-Kamienna",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2500,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-1a-solisko-kamienna",
+      "ref": null,
+      "name": "1a Solisko – Kamienna",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 730,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-solisko-kamienna-stok-sportowy",
+      "ref": null,
+      "name": "3 Solisko – Kamienna – stok sportowy",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 730,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-buczynka-hala-szczawiny",
+      "ref": null,
+      "name": "4 Buczynka – Hala Szczawiny",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1800,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-pilsko-hala-szczawiny",
+      "ref": null,
+      "name": "5 Pilsko-Hala Szczawiny",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3364,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5a-pilsko-hala-miziowa",
+      "ref": null,
+      "name": "5a Pilsko – Hala Miziowa",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-hala-miziowa-buczynka",
+      "ref": null,
+      "name": "6 Hala Miziowa – Buczynka",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2100,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.56613,
     "lon": 19.35026,

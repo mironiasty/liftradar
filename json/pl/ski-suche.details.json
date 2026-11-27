@@ -1,0 +1,100 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "ski-suche",
+  "country": "pl",
+  "fetched_at": "2026-11-27T08:40:39.052855+01:00",
+  "updated_at": null,
+  "source": "https://tatrysuperski.pl/",
+  "lifts": [
+    {
+      "id": "5fd38155a539d93aea5772a0",
+      "ref": null,
+      "name": "Kolej Krzesełkowa",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 640,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38155a539d93aea5772ac",
+      "ref": null,
+      "name": "Orczyk Duży",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38156a539d93aea5772b8",
+      "ref": null,
+      "name": "Taśma",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 60,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "5fd38155a539d93aea577294",
+      "ref": null,
+      "name": "Trasa Dyzio",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38154a539d93aea57728c",
+      "ref": null,
+      "name": "Trasa Rodzinna",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38154a539d93aea577290",
+      "ref": null,
+      "name": "Trasa Sportowa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38154a539d93aea577284",
+      "ref": null,
+      "name": "Trasa Sucha Grapa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 740,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38154a539d93aea577288",
+      "ref": null,
+      "name": "Trasa Zielona Mila",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    }
+  ],
+  "bottom": null,
+  "top": null
+}

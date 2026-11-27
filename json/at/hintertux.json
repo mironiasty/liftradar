@@ -11,12 +11,12 @@
   "website": "https://www.hintertuxergletscher.at",
   "ski_region": "zillertal",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.206416+01:00",
+  "fetched_at": "2026-11-27T08:40:39.045061+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 65,
     "valley_cm": 30,
-    "fresh_cm": 20,
+    "fresh_cm": null,
     "last_snowfall": "2026-11-26",
     "condition": "grippy/hard powder",
     "stations": [
@@ -24,36 +24,36 @@
         "name": "Gefrorene Wand",
         "elevation_m": 3250,
         "depth_cm": 65,
-        "fresh_cm": 20,
-        "temperature_c": -6.3,
+        "fresh_cm": null,
+        "temperature_c": -12.1,
         "condition": "grippy/hard powder"
       },
       {
         "name": "Tuxer Fernerhaus",
         "elevation_m": 2660,
         "depth_cm": 50,
-        "fresh_cm": 20,
-        "temperature_c": -4.6,
+        "fresh_cm": null,
+        "temperature_c": -9.4,
         "condition": "grippy/hard powder"
       },
       {
         "name": "Sommerbergalm",
         "elevation_m": 2100,
         "depth_cm": 30,
-        "fresh_cm": 20,
-        "temperature_c": -5.8,
+        "fresh_cm": null,
+        "temperature_c": -7.2,
         "condition": "grippy"
       }
     ]
   },
   "lifts": {
-    "open": 17,
+    "open": 18,
     "total": 21
   },
   "slopes": {
-    "open": 14,
+    "open": 17,
     "total": 32,
-    "open_km": 46.0,
+    "open_km": 52.0,
     "total_km": 64
   },
   "lifts_by_type": {
@@ -62,7 +62,7 @@
       "total": 3
     },
     "chairlift": {
-      "open": 3,
+      "open": 4,
       "total": 6
     },
     "drag_lift": {
@@ -82,13 +82,13 @@
       "total_km": 16
     },
     "easy": {
-      "open": 7,
+      "open": 9,
       "total": 11,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 7,
+      "open": 8,
       "total": 12,
       "open_km": null,
       "total_km": null
@@ -100,12 +100,39 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T10:14:35+01:00",
+  "lifts_updated_at": "2026-11-26T16:29:30+01:00",
   "details": "json/at/hintertux.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-23-02",
+    "region": "Zillertal Alps Northwest",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.hintertuxergletscher.at/",
-    "https://www.intermaps.com/"
+    "https://www.intermaps.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -115,6 +142,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

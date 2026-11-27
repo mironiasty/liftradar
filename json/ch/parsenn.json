@@ -11,42 +11,42 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.212265+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050555+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 52,
+    "mountain_cm": 56,
     "valley_cm": null,
-    "fresh_cm": 0,
+    "fresh_cm": 10,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Weissfluhjoch",
-        "elevation_m": 2663,
-        "depth_cm": 52,
-        "fresh_cm": 0,
+        "elevation_m": 2536,
+        "depth_cm": 56,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 5,
+    "open": 9,
     "total": 18
   },
   "slopes": {
-    "open": 2,
+    "open": 6,
     "total": 38,
     "open_km": null,
     "total_km": 96
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 1,
+      "open": 4,
       "total": 4
     },
     "chairlift": {
-      "open": 2,
+      "open": 3,
       "total": 6
     },
     "drag_lift": {
@@ -64,15 +64,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 1,
+      "open": 3,
       "total": 7,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 1,
+      "open": 2,
       "total": 17,
-      "open_km": 3.0,
+      "open_km": 4.7,
       "total_km": 48
     },
     "difficult": {
@@ -82,9 +82,9 @@
       "total_km": 15
     },
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": 1.1,
       "total_km": 31
     }
   },
@@ -93,11 +93,11 @@
   "avalanche": {
     "region_id": "CH-5123",
     "region": "Davos",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -107,9 +107,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://www.davos.ch/",

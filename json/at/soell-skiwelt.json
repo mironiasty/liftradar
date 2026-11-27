@@ -10,7 +10,7 @@
   },
   "website": "https://www.skiwelt.at",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:41:49.145559+01:00",
+  "fetched_at": "2026-11-27T08:41:52.381892+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -74,13 +74,31 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-26T03:45:36+01:00",
+  "lifts_updated_at": "2026-11-27T03:45:37+01:00",
   "details": "json/at/skiwelt.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-17-02",
+    "region": "Kitzbühel Alps Brixental",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.intermaps.com/",
-    "https://media.skiwelt.at/"
+    "https://media.skiwelt.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -90,6 +108,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

@@ -9,13 +9,13 @@
     "lon": 8.0747
   },
   "website": "https://www.aletscharena.ch",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212254+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.050544+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 76,
-    "valley_cm": 65,
-    "fresh_cm": 7,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -23,14 +23,14 @@
         "name": "Flesch (SLF)",
         "elevation_m": 2500,
         "depth_cm": 76,
-        "fresh_cm": 7,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Kühboden (SLF)",
         "elevation_m": 2210,
-        "depth_cm": 65,
+        "depth_cm": 68,
         "fresh_cm": 5,
         "temperature_c": null,
         "condition": null
@@ -42,9 +42,9 @@
     "total": 35
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 118,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 104
   },
   "lifts_by_type": {
@@ -75,37 +75,38 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 55,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 42
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 48,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 50
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 4,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 12
     },
     "ski_route": {
-      "open": null,
+      "open": 0,
       "total": 10,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 1,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:40:00+01:00",
+  "details": "json/ch/aletsch-arena.details.json",
   "avalanche": {
     "region_id": "CH-4214",
     "region": "Riederalp",
@@ -124,9 +125,9 @@
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://www.aletscharena.ch/",

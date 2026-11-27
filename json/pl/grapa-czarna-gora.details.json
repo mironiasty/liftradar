@@ -2,11 +2,171 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grapa-czarna-gora",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215131+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052784+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://tatrysuperski.pl/",
+  "lifts": [
+    {
+      "id": "5fd38140a539d93aea57704c",
+      "ref": null,
+      "name": "Kolej",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3813fa539d93aea577040",
+      "ref": null,
+      "name": "Orczyk Duży",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3813fa539d93aea577034",
+      "ref": null,
+      "name": "Orczyk mały",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 120,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38140a539d93aea577058",
+      "ref": null,
+      "name": "Taśma",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 40,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "5fd3813fa539d93aea577028",
+      "ref": null,
+      "name": "GS Sport",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813fa539d93aea57702c",
+      "ref": null,
+      "name": "SL Sport",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 700,
+      "map_length_m": null
+    },
+    {
+      "id": "674d5b0079d8d31558845896",
+      "ref": null,
+      "name": "Snowcross",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813fa539d93aea577030",
+      "ref": null,
+      "name": "Snowtubing",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 70,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813ea539d93aea577014",
+      "ref": null,
+      "name": "Trasa 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813ea539d93aea577018",
+      "ref": null,
+      "name": "Trasa 2",
+      "difficulty": "intermediate",
+      "colour": "blue_red",
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813ea539d93aea57701c",
+      "ref": null,
+      "name": "Trasa 3",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813ea539d93aea577020",
+      "ref": null,
+      "name": "Trasa 3a",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813ea539d93aea577024",
+      "ref": null,
+      "name": "Trasa 4",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 120,
+      "map_length_m": null
+    },
+    {
+      "id": "674d5ab379d8d3155884588a",
+      "ref": null,
+      "name": "Trasa 7",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 40,
+      "map_length_m": null
+    },
+    {
+      "id": "674d5acc79d8d3155884588e",
+      "ref": null,
+      "name": "Trasa 8",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 80,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.38615,
     "lon": 20.11559,

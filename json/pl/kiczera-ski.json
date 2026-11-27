@@ -10,8 +10,8 @@
   },
   "website": "https://www.kiczeraski.pl",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215373+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-27T08:40:39.053247+01:00",
+  "status_from": "2026-11-26T08:40:39.163640+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -38,13 +38,15 @@
     "https://www.kiczeraski.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
         "url": "https://www.kiczeraski.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: slope : unknown state icon '' (layout changed?)"
+  ]
 }

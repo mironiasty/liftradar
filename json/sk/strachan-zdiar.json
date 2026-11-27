@@ -9,8 +9,8 @@
     "lon": 20.2925
   },
   "website": "https://www.skicentrumstrachan.sk",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218229+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.055806+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,29 +22,56 @@
   },
   "lifts": {
     "open": 0,
-    "total": 3
+    "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 7,
-    "open_km": null,
-    "total_km": 5
+    "open_km": 0.0,
+    "total_km": 4
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 2,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/sk/strachan-zdiar.details.json",
   "avalanche": null,
   "sources": [
-    "https://slovakia.travel/"
+    "https://tatrysuperski.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://slovakia.travel/",
+        "url": "https://tatrysuperski.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

@@ -11,7 +11,7 @@
   "website": "https://www.mayrhofen.at",
   "ski_region": "zillertal",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:41:49.215766+01:00",
+  "fetched_at": "2026-11-27T08:41:52.403894+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -75,13 +75,40 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-26T07:58:25+01:00",
+  "lifts_updated_at": "2026-11-27T08:15:24+01:00",
   "details": "json/at/mayrhofen.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-23-01",
+    "region": "Zillertal Alps Northeast",
+    "danger_level": 3,
+    "danger": "considerable",
+    "ratings": [
+      {
+        "level": "moderate",
+        "lower_bound": null,
+        "upper_bound": 2600,
+        "period": "all_day"
+      },
+      {
+        "level": "considerable",
+        "lower_bound": 2600,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.intermaps.com/",
-    "https://www.mayrhofen.at/"
+    "https://www.mayrhofen.at/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
@@ -91,6 +118,10 @@
       },
       {
         "url": "https://www.intermaps.com/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

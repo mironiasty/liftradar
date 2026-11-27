@@ -11,13 +11,13 @@
   "website": "https://www.glacier3000.ch",
   "ski_region": "gstaad",
   "status": "open",
-  "fetched_at": "2026-11-26T13:40:39.211518+01:00",
+  "fetched_at": "2026-11-27T08:40:39.049614+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 65,
     "valley_cm": 65,
-    "fresh_cm": null,
-    "last_snowfall": "2026-11-24",
+    "fresh_cm": 15,
+    "last_snowfall": "2026-11-27",
     "condition": "powder",
     "stations": [
       {
@@ -32,20 +32,20 @@
         "name": "In the ski area above",
         "elevation_m": null,
         "depth_cm": 65,
-        "fresh_cm": null,
+        "fresh_cm": 15,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 5,
     "total": 11
   },
   "slopes": {
-    "open": 1,
+    "open": 5,
     "total": 17,
-    "open_km": 0.5,
+    "open_km": 5.2,
     "total_km": 32
   },
   "lifts_by_type": {
@@ -58,21 +58,21 @@
       "total": 3
     },
     "drag_lift": {
-      "open": 1,
+      "open": 2,
       "total": 5
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 3,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": 4.4,
       "total_km": 10
     },
     "intermediate": {
-      "open": 1,
+      "open": 2,
       "total": 4,
-      "open_km": 0.5,
+      "open_km": 0.8,
       "total_km": 6
     },
     "difficult": {
@@ -88,28 +88,28 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-26T12:23:00+01:00",
+  "lifts_updated_at": "2026-11-27T08:34:00+01:00",
   "details": "json/ch/glacier-3000.details.json",
   "avalanche": {
     "region_id": "CH-1114",
     "region": "Bex - Villars",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
-        "level": "considerable",
+        "level": "moderate",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [
-      "gliding_snow",
-      "wind_slab"
+      "wind_slab",
+      "gliding_snow"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

@@ -10,7 +10,7 @@
   },
   "website": "https://www.haute-garonne-montagne.com/stations/le-mourtis-hiver/",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.216607+01:00",
+  "fetched_at": "2026-11-27T08:40:39.054425+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -73,34 +73,16 @@
     "danger": "moderate",
     "ratings": [
       {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": 2300,
-        "period": "later"
-      },
-      {
-        "level": "low",
-        "lower_bound": 2300,
-        "upper_bound": null,
-        "period": "earlier"
-      },
-      {
-        "level": "low",
-        "lower_bound": null,
-        "upper_bound": 2300,
-        "period": "later"
-      },
-      {
         "level": "moderate",
-        "lower_bound": 2300,
+        "lower_bound": null,
         "upper_bound": null,
-        "period": "later"
+        "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-25T16:00:00+01:00",
-    "valid_from": "2026-11-25T16:00:00+01:00",
-    "valid_until": "2026-11-26T18:00:00+01:00"
+    "published_at": "2026-11-26T16:00:00+01:00",
+    "valid_from": "2026-11-26T16:00:00+01:00",
+    "valid_until": "2026-11-27T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com/",

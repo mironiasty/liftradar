@@ -9,8 +9,8 @@
     "lon": 12.4276
   },
   "website": "https://www.bergbahnen-stjohann.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:42:11.878317+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:42:12.390953+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,23 +25,83 @@
     "total": 9
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 18,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 40
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-10-27T11:45:00+01:00",
-  "avalanche": null,
+  "lifts_by_type": {
+    "chairlift": {
+      "open": 0,
+      "total": 2
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    },
+    "gondola": {
+      "open": 0,
+      "total": 5
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 10,
+      "open_km": 0.0,
+      "total_km": 22
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": 18
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": 1
+    }
+  },
+  "lifts_updated_at": null,
+  "details": "json/at/st-johann-in-tirol.details.json",
+  "avalanche": {
+    "region_id": "AT-07-18",
+    "region": "Kitzbühel Alps Wildseeloder",
+    "danger_level": 1,
+    "danger": "low",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
-    "https://www.kitzbueheler-alpen.com/"
+    "https://www.bergbahnen-stjohann.at/",
+    "https://www.kitzbueheler-alpen.com/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.bergbahnen-stjohann.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

@@ -9,8 +9,8 @@
     "lon": 10.1471
   },
   "website": "https://www.apricaonline.com/",
-  "status": "closed",
-  "fetched_at": "2026-11-26T13:40:39.213072+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-27T08:40:39.051289+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,14 +21,14 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 15
   },
   "slopes": {
-    "open": 0,
-    "total": 29,
-    "open_km": 0.0,
-    "total_km": 50
+    "open": 1,
+    "total": 30,
+    "open_km": null,
+    "total_km": null
   },
   "lifts_by_type": {
     "carpet": {
@@ -36,7 +36,7 @@
       "total": 4
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "drag_lift": {
@@ -44,7 +44,7 @@
       "total": 5
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 2
     }
   },
@@ -56,9 +56,9 @@
       "total_km": 27
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": 2.2,
       "total_km": 16
     },
     "difficult": {
@@ -66,6 +66,12 @@
       "total": 6,
       "open_km": 0.0,
       "total_km": 8
+    },
+    "other": {
+      "open": 0,
+      "total": 1,
+      "open_km": null,
+      "total_km": null
     }
   },
   "lifts_updated_at": null,

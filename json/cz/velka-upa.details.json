@@ -2,11 +2,91 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "velka-upa",
   "country": "cz",
-  "fetched_at": "2026-11-26T13:40:39.214825+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052655+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://www.skiresort.cz/",
+  "lifts": [
+    {
+      "id": "lift-d1-portasky",
+      "ref": null,
+      "name": "D1 Portášky",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 1470,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d2-hofer",
+      "ref": null,
+      "name": "D2 Hofer",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 905,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d3-modrin",
+      "ref": null,
+      "name": "D3 Modřín",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 530,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-d4-sagasserovy-boudy",
+      "ref": null,
+      "name": "D4 Sagasserovy boudy",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1d-portasky",
+      "ref": null,
+      "name": "1d Portášky",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1600,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2d-modrin",
+      "ref": null,
+      "name": "2d Modřín",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 550,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3d-sagasserovy-boudy",
+      "ref": null,
+      "name": "3d Sagasserovy boudy",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 250,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 50.69031,
     "lon": 15.76838,

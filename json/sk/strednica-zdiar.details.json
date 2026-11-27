@@ -2,11 +2,187 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "strednica-zdiar",
   "country": "sk",
-  "fetched_at": "2026-11-26T13:40:39.218196+01:00",
+  "fetched_at": "2026-11-27T08:40:39.055794+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://tatrysuperski.pl/",
+  "lifts": [
+    {
+      "id": "674860f8c5e7c26608d916e8",
+      "ref": null,
+      "name": "A - A SLD TATRALIFT",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 442,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "674860c4c5e7c26608d916e4",
+      "ref": null,
+      "name": "B - B LV H-60",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 310,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "67486082c5e7c26608d916e0",
+      "ref": null,
+      "name": "C - C1 LV H60 (ľavý)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 348,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "67486038c5e7c26608d916dc",
+      "ref": null,
+      "name": "C - C2 LV H60 (pravý)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 348,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "67485fc6c5e7c26608d916d4",
+      "ref": null,
+      "name": "D - D1 LV F-10 (ľavý)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 347,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "67485f6bc5e7c26608d916d0",
+      "ref": null,
+      "name": "D - D2 LV F-10 (pravý)",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 347,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "67485d31c5e7c26608d916c4",
+      "ref": null,
+      "name": "E - LV F-10",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 315,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "6748653bc5e7c26608d9174c",
+      "ref": null,
+      "name": "1a - Strednica A1",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 665,
+      "map_length_m": null
+    },
+    {
+      "id": "67486518c5e7c26608d91748",
+      "ref": null,
+      "name": "1b - Strednica A2",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 665,
+      "map_length_m": null
+    },
+    {
+      "id": "674864ebc5e7c26608d91744",
+      "ref": null,
+      "name": "2a - Strednica 2a",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 310,
+      "map_length_m": null
+    },
+    {
+      "id": "674864bdc5e7c26608d91740",
+      "ref": null,
+      "name": "2b - Strednica 2b",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 310,
+      "map_length_m": null
+    },
+    {
+      "id": "67486491c5e7c26608d91738",
+      "ref": null,
+      "name": "3a - Strednica 3A",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 348,
+      "map_length_m": null
+    },
+    {
+      "id": "6748646cc5e7c26608d91734",
+      "ref": null,
+      "name": "3b - Strednica 3b",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 348,
+      "map_length_m": null
+    },
+    {
+      "id": "67486446c5e7c26608d91730",
+      "ref": null,
+      "name": "4a - Strednica 4a",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "67486423c5e7c26608d9172c",
+      "ref": null,
+      "name": "4b - Strednica 4b",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": null
+    },
+    {
+      "id": "67486400c5e7c26608d91728",
+      "ref": null,
+      "name": "5 - Strednica 5",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 310,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.26917,
     "lon": 20.22844,

@@ -9,8 +9,8 @@
     "lon": 20.1179
   },
   "website": "https://www.grapa.ski",
-  "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.215131+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-27T08:40:39.052784+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -25,31 +25,53 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
-    "total": 4,
-    "open_km": null,
+    "open": 0,
+    "total": 11,
+    "open_km": 0.0,
     "total_km": 5
   },
-  "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "lifts_by_type": {
+    "carpet": {
+      "open": 0,
+      "total": 1
+    },
+    "chairlift": {
+      "open": 0,
+      "total": 1
+    },
+    "drag_lift": {
+      "open": 0,
+      "total": 2
+    }
+  },
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": 3
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 3,
+      "open_km": 0.0,
+      "total_km": 3
+    }
+  },
   "lifts_updated_at": null,
+  "details": "json/pl/grapa-czarna-gora.details.json",
   "avalanche": null,
   "sources": [
-    "https://visitmalopolska.pl/",
-    "https://www.skiinfo.fr/"
+    "https://tatrysuperski.pl/"
   ],
   "source_details": {
-    "conditions": [],
-    "resort_info": [
+    "conditions": [
       {
-        "url": "https://visitmalopolska.pl/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.skiinfo.fr/",
+        "url": "https://tatrysuperski.pl/",
         "attribution_required": null
       }
-    ]
+    ],
+    "resort_info": []
   },
   "errors": []
 }

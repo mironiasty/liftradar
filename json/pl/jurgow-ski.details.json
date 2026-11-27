@@ -2,11 +2,209 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "jurgow-ski",
   "country": "pl",
-  "fetched_at": "2026-11-26T13:40:39.215185+01:00",
+  "fetched_at": "2026-11-27T08:40:39.052793+01:00",
   "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "source": "https://tatrysuperski.pl/",
+  "lifts": [
+    {
+      "id": "5fd38159a539d93aea57730a",
+      "ref": null,
+      "name": "Gronicek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 900,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38159a539d93aea577316",
+      "ref": null,
+      "name": "Hawranek",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38158a539d93aea5772f2",
+      "ref": null,
+      "name": "Hawrań",
+      "type": "other",
+      "status": "closed",
+      "length_m": 1000,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38159a539d93aea577322",
+      "ref": null,
+      "name": "Kubuś",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 120,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38158a539d93aea5772fe",
+      "ref": null,
+      "name": "Murań",
+      "type": "other",
+      "status": "closed",
+      "length_m": 950,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3815aa539d93aea57733a",
+      "ref": null,
+      "name": "Przenośnik Taśmowy G",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 100,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "6954e3a3e107292d3184887b",
+      "ref": null,
+      "name": "Przenośnik Taśmowy I",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": 100,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3815aa539d93aea57732e",
+      "ref": null,
+      "name": "Wierchowy",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 370,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "5fd38157a539d93aea5772d2",
+      "ref": null,
+      "name": "Trasa 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 720,
+      "map_length_m": null
+    },
+    {
+      "id": "6954e459e107292d3184888b",
+      "ref": null,
+      "name": "Trasa 10",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 100,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772d6",
+      "ref": null,
+      "name": "Trasa 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 1300,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772da",
+      "ref": null,
+      "name": "Trasa 3",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": 1050,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772de",
+      "ref": null,
+      "name": "Trasa 4",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 300,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772e2",
+      "ref": null,
+      "name": "Trasa 5",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772e6",
+      "ref": null,
+      "name": "Trasa 6",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 500,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772ea",
+      "ref": null,
+      "name": "Trasa 7",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 200,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38158a539d93aea5772ee",
+      "ref": null,
+      "name": "Trasa 8",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": 150,
+      "map_length_m": null
+    },
+    {
+      "id": "6527f80182e727360b2e228b",
+      "ref": null,
+      "name": "Trasa 9",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": 800,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 49.31793,
     "lon": 20.15545,

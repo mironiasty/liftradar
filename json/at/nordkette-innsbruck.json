@@ -10,7 +10,7 @@
   },
   "website": "https://nordkette.com",
   "status": "closed",
-  "fetched_at": "2026-11-26T13:42:05.679719+01:00",
+  "fetched_at": "2026-11-27T08:42:07.747546+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -33,17 +33,48 @@
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
   "lifts_updated_at": "2026-11-17T11:56:00+01:00",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "AT-07-04-01",
+    "region": "Karwendel Mountains West",
+    "danger_level": 2,
+    "danger": "moderate",
+    "ratings": [
+      {
+        "level": "low",
+        "lower_bound": null,
+        "upper_bound": 2400,
+        "period": "all_day"
+      },
+      {
+        "level": "moderate",
+        "lower_bound": 2400,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [
+      "persistent_weak_layers",
+      "wind_slab"
+    ],
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
+  },
   "sources": [
     "https://www.snowcard.tirol.at/",
     "https://www.tirol.at/",
     "https://www.skiresort.com/",
-    "https://www.skiinfo.fr/"
+    "https://www.skiinfo.fr/",
+    "https://avalanche.report/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.snowcard.tirol.at/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://avalanche.report/",
         "attribution_required": null
       }
     ],

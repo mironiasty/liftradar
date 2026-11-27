@@ -10,7 +10,7 @@
   },
   "website": "https://pikkusyote.fi",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.218678+01:00",
+  "fetched_at": "2026-11-27T08:40:39.056422+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,27 +31,33 @@
   },
   "lifts": {
     "open": 0,
-    "total": 4
+    "total": 5
   },
   "slopes": {
     "open": null,
-    "total": 11,
+    "total": 13,
     "open_km": null,
     "total_km": 10
   },
-  "lifts_by_type": null,
+  "lifts_by_type": {
+    "other": {
+      "open": 0,
+      "total": 5
+    }
+  },
   "slopes_by_difficulty": {
     "easy": {
       "open": null,
-      "total": 11,
+      "total": 13,
       "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": null,
+  "lifts_updated_at": "2026-04-13T10:38:00+02:00",
   "avalanche": null,
   "sources": [
     "https://ski.fi/",
+    "https://www.panoraama.com/",
     "https://en.ilmatieteenlaitos.fi/open-data",
     "https://www.skiresort.com/"
   ],
@@ -59,6 +65,10 @@
     "conditions": [
       {
         "url": "https://ski.fi/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.panoraama.com/",
         "attribution_required": null
       },
       {

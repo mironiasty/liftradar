@@ -11,12 +11,12 @@
   "website": "https://www.zuozski.ch",
   "ski_region": "engadin-st-moritz",
   "status": "no_report",
-  "fetched_at": "2026-11-26T13:40:39.212167+01:00",
+  "fetched_at": "2026-11-27T08:40:39.050466+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 48,
-    "valley_cm": 18,
-    "fresh_cm": 9,
+    "valley_cm": 22,
+    "fresh_cm": 10,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -24,15 +24,15 @@
         "name": "Porta d'Es-cha (SLF)",
         "elevation_m": 2727,
         "depth_cm": 48,
-        "fresh_cm": 9,
+        "fresh_cm": 4,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Zuoz (SLF)",
         "elevation_m": 1710,
-        "depth_cm": 18,
-        "fresh_cm": 7,
+        "depth_cm": 22,
+        "fresh_cm": 10,
         "temperature_c": null,
         "condition": null
       }
@@ -86,11 +86,11 @@
   "avalanche": {
     "region_id": "CH-7113",
     "region": "Zuoz",
-    "danger_level": 2,
-    "danger": "moderate",
+    "danger_level": 3,
+    "danger": "considerable",
     "ratings": [
       {
-        "level": "moderate",
+        "level": "considerable",
         "lower_bound": null,
         "upper_bound": null,
         "period": "all_day"
@@ -100,9 +100,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-25T17:00:00+01:00",
-    "valid_from": "2026-11-25T17:00:00+01:00",
-    "valid_until": "2026-11-26T17:00:00+01:00"
+    "published_at": "2026-11-26T17:00:00+01:00",
+    "valid_from": "2026-11-26T17:00:00+01:00",
+    "valid_until": "2026-11-27T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",
