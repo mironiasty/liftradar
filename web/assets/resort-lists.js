@@ -203,10 +203,24 @@ function itemState(status) {
   );
 }
 
+// The number the resort's map gives a lift or slope ("7a", "C30"), before its name, unless the name starts with it
+// ("35 - Rot").
+/** @param {{ name: string, ref?: string | null }} item */
+function itemRef(item) {
+  const ref = item.ref?.trim();
+  if (!ref) return [];
+  const start = item.name
+    .trim()
+    .toLowerCase()
+    .match(/^[a-z]{0,2}\d{1,3}[a-z]?\b/)?.[0];
+  return start === ref.toLowerCase() ? [] : [el("span", { class: "ref" }, ref)];
+}
+
 // A lift's or slope's name, after what goes before it; once the resort map has drawn it, a button that shows
 // it there.
-/** @param {ResortDetails} d @param {{ id: string, name: string }} item @param {(HTMLElement | string)[]} before */
+/** @param {ResortDetails} d @param {{ id: string, name: string, ref?: string | null }} item @param {(HTMLElement | string)[]} before */
 function itemName(d, item, ...before) {
+  before = [...before, ...itemRef(item)];
   const cell = el("td", {}, ...before, item.name);
   const key = `${d.country}/${d.id}/${item.id}`;
   mapItems.then((onMap) => {
