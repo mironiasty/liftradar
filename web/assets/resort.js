@@ -362,7 +362,7 @@ async function groupCards(r, container) {
 }
 
 // History: the latest HISTORY_DAYS of runs, from the resort's history file (one list per value, an entry per run),
-// which also gives the "What changed" card (resort-timeline.js).
+// which also gives the "Change history" card (resort-timeline.js).
 // `collected` says since when: the history starts with the resort's first run (it keeps a year).
 /** @param {Resort} r @returns {Promise<ResortHistory["runs"]>} */
 async function loadHistory(r) {

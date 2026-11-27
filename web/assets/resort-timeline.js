@@ -1,12 +1,14 @@
-// The resort page's "What changed": the season so far as events, worked out from the resort's history file
+// The resort page's "Change history": the season so far as events, worked out from the resort's history file
 // (history/<country>/<id>.json, the key numbers of every run). Shown by resort.js, which loads after this file.
 //
-// It compares each day's last run with the day before, then keeps what a reader cares about and folds the rest:
+// It compares each day with the day before, a row per day that changed. A day is its run with the most open (lifts,
+// then slopes): the other run of the day is ignored, so a morning not yet updated doesn't count as a closing.
+// The rows a reader cares about stand out:
 // - opening, and closing (a closure of one day between open days is minor: weather, wind),
 // - the most lifts or slopes open so far this season (against every earlier open day),
 // - a change in how many lifts or slopes the resort lists,
 // - fresh snow of TIMELINE_SNOW_CM or more, once (sources repeat the same value for days).
-// The other changes of open lifts and slopes are minor: consecutive minor days become one row with their range.
+// The other changes of open lifts and slopes are minor, shown quieter.
 // Days without a report (no_report, or no status) are skipped: they say nothing about the resort.
 
 const TIMELINE_SNOW_CM = 10;
@@ -14,14 +16,24 @@ const TIMELINE_SNOW_CM = 10;
 const TIMELINE_ROWS = 8;
 
 /**
- * One day: its date in Vienna and its last run with a report.
+ * One day: its date in Vienna and its run with a report that has the most open.
  * @typedef {{ day: string, status: string, lifts_open: number|null, lifts_total: number|null,
- *   slopes_open: number|null, slopes_total: number|null, slopes_open_km: number|null, fresh: number, detail?: string }} TimelineDay
+ *   slopes_open: number|null, slopes_total: number|null, slopes_open_km: number|null, fresh: number }} TimelineDay
  */
 /**
- * @typedef {{ day: string, until?: string, kind: "open"|"closed"|"high"|"snow"|"list"|"minor",
- *   title: string, detail: string }} TimelineEvent
+ * A row. `title` is the event in words: the summary's latest event, and the row's tooltip. The row shows it short:
+ * `label` as text, or the `change` of open lifts and slopes, a `list` change or `snow` with icons; then the open
+ * numbers of `state`, with what reached the season's most in `best` in bold.
+ * @typedef {{ day: string, kind: "open"|"closed"|"high"|"snow"|"list"|"minor", title: string, label?: string,
+ *   change?: TimelineChange, state?: TimelineDay, best?: { lifts: boolean, slopes: boolean },
+ *   list?: { what: "lifts"|"slopes", from: number, to: number }, snow?: number }} TimelineEvent
  */
+/** @typedef {{ lifts: number, slopes: number }} TimelineChange */
+
+// How open a run is, to pick a day's run: open before closed, then lifts, then slopes.
+/** @param {TimelineDay} d */
+const timelineOpenness = (d) =>
+  (d.status === "open" ? 1e8 : 0) + ((d.lifts_open ?? -1) + 1) * 1e4 + ((d.slopes_open ?? -1) + 1);
 
 /** @param {ResortHistory["runs"]} runs @returns {TimelineDay[]} */
 function timelineDays(runs) {
@@ -34,7 +46,8 @@ function timelineDays(runs) {
     fresh.set(day, Math.max(fresh.get(day) ?? 0, runs.fresh_cm[i] ?? 0));
     const status = runs.status[i];
     if (status !== "open" && status !== "closed") return;
-    days.set(day, {
+    /** @type {TimelineDay} */
+    const run = {
       day,
       // Open without a lift running (a source's slip, or a slope open for walkers) isn't an opening.
       status: status === "open" && runs.lifts_open[i] === 0 ? "closed" : status,
@@ -44,7 +57,10 @@ function timelineDays(runs) {
       slopes_total: runs.slopes_total[i],
       slopes_open_km: runs.slopes_open_km[i],
       fresh: 0,
-    });
+    };
+    const kept = days.get(day);
+    // The day's run with the most open; on a tie the later one, its lists the newer.
+    if (!kept || timelineOpenness(run) >= timelineOpenness(kept)) days.set(day, run);
   });
   // Snow can fall on a day without a report; it's kept on the next day with one.
   let carried = 0;
@@ -98,20 +114,22 @@ function openLine(d, lifts, slopes, best) {
   if (best?.slopes) return t("{list} open, the most slopes this season", { list });
   return t("{list} open", { list });
 }
-/** @param {TimelineDay} d */
-const openNumbers = (d) => openLine(d, d.lifts_open, d.slopes_open);
 
-// "Opened 2 lifts and 1 slope", "Closed 1 lift", "Opened 3 slopes, closed 1 lift": the change since the day
-// before, or null when the open lifts and slopes stayed the same. With `only`, just those that grew.
-/** @param {TimelineDay} d @param {TimelineDay} prev @param {{ lifts: boolean, slopes: boolean }} [only] */
-function changeTitle(d, prev, only) {
+// How many more (or fewer) lifts and slopes are open than the day before. With `only`, just those that grew.
+/** @param {TimelineDay} d @param {TimelineDay} prev @param {{ lifts: boolean, slopes: boolean }} [only]
+ * @returns {TimelineChange} */
+function timelineChange(d, prev, only) {
   const delta = (/** @type {"lifts"|"slopes"} */ what) => {
     const now = d[`${what}_open`];
     const before = prev[`${what}_open`];
     return now === null || before === null || (only && !only[what]) ? 0 : now - before;
   };
-  const lifts = delta("lifts");
-  const slopes = delta("slopes");
+  return { lifts: delta("lifts"), slopes: delta("slopes") };
+}
+
+// "Opened 2 lifts and 1 slope", "Closed 1 lift", "Opened 3 slopes, closed 1 lift", or null without a change.
+/** @param {TimelineChange} change */
+function changeTitle({ lifts, slopes }) {
   const phrase = (/** @type {(n: number) => boolean} */ keep) =>
     [keep(lifts) && liftCount(Math.abs(lifts)), keep(slopes) && slopesActed(Math.abs(slopes))].filter(
       (p) => typeof p === "string",
@@ -129,45 +147,23 @@ function changeTitle(d, prev, only) {
 function timelineEvents(days) {
   /** @type {TimelineEvent[]} */
   const events = [];
-  // Kept apart, so a snowfall doesn't split a run of minor days in two; merged by date at the end.
+  // Kept apart and merged by date at the end, so snow comes after the day's other events.
   /** @type {TimelineEvent[]} */
   const snow = [];
-  /** @type {(TimelineDay & { title: string })[]} the minor days not yet folded into a row */
-  let minor = [];
-  const flushMinor = () => {
-    if (!minor.length) return;
-    const first = minor[0];
-    const last = minor[minor.length - 1];
-    if (minor.length === 1) {
-      events.push({ day: first.day, kind: "minor", title: first.title, detail: first.detail ?? "" });
-    } else {
-      const open = minor.filter((d) => d.status === "open");
-      const closed = minor.length - open.length;
-      const range = (/** @type {"lifts_open"|"slopes_open"} */ key) => {
-        const values = open.map((d) => d[key]).filter((v) => v !== null);
-        if (!values.length) return null;
-        const low = Math.min(...values);
-        const high = Math.max(...values);
-        return low === high ? low : `${low}–${high}`;
-      };
-      const parts = [
-        openLine({ ...last, slopes_open_km: null }, range("lifts_open"), range("slopes_open")),
-        closed === 1 ? t("closed for 1 day") : closed ? t("closed for {n} days", { n: closed }) : "",
-      ];
-      events.push({
-        day: first.day,
-        until: last.day,
-        kind: "minor",
-        title: t("Small changes from day to day"),
-        detail: parts.filter(Boolean).join(" · "),
-      });
-    }
-    minor = [];
+  const add = (/** @type {TimelineEvent} */ event) => events.push(event);
+  // A change of open lifts and slopes; null without one.
+  /** @param {TimelineEvent["kind"]} kind @param {TimelineDay} d @param {TimelineChange} change
+   * @param {{ lifts: boolean, slopes: boolean }} [best] */
+  const changed = (kind, d, change, best) => {
+    const title = changeTitle(change);
+    if (!title) return false;
+    add({ day: d.day, kind, title, change, state: d, best });
+    return true;
   };
-  const add = (/** @type {TimelineEvent} */ event) => {
-    flushMinor();
-    events.push(event);
-  };
+  // A row in words, with the open numbers when it's open.
+  /** @param {TimelineEvent["kind"]} kind @param {TimelineDay} d @param {string} label */
+  const said = (kind, d, label) =>
+    add({ day: d.day, kind, title: label, label, state: d.status === "open" ? d : undefined });
 
   let maxLifts = -1;
   let maxSlopes = -1;
@@ -183,7 +179,7 @@ function timelineEvents(days) {
           d.lifts_total > prev.lifts_total
             ? t("The lift list grew from {from} to {to}", values)
             : t("The lift list shrank from {from} to {to}", values);
-        add({ day: d.day, kind: "list", title, detail: "" });
+        add({ day: d.day, kind: "list", title, list: { what: "lifts", ...values } });
       }
       if (prev.slopes_total !== null && d.slopes_total !== null && prev.slopes_total !== d.slopes_total) {
         const values = { from: prev.slopes_total, to: d.slopes_total };
@@ -191,49 +187,40 @@ function timelineEvents(days) {
           d.slopes_total > prev.slopes_total
             ? t("The slope list grew from {from} to {to}", values)
             : t("The slope list shrank from {from} to {to}", values);
-        add({ day: d.day, kind: "list", title, detail: "" });
+        add({ day: d.day, kind: "list", title, list: { what: "slopes", ...values } });
       }
     }
     if (d.status === "open") {
       const liftsHigh = maxLifts >= 0 && d.lifts_open !== null && d.lifts_open > maxLifts;
       const slopesHigh = maxSlopes >= 0 && d.slopes_open !== null && d.slopes_open > maxSlopes;
+      const best = { lifts: liftsHigh, slopes: slopesHigh };
       if (!prev) {
-        add({ day: d.day, kind: "open", title: t("Already open when we started tracking it"), detail: openNumbers(d) });
+        said("open", d, t("Already open when we started tracking it"));
       } else if (prev.status !== "open") {
-        // Reopening after one closed day is part of the small changes, unless it's a new high.
-        if (days[i - 2]?.status === "open" && !liftsHigh && !slopesHigh) {
-          minor.push({ ...d, title: t("Open again"), detail: openNumbers(d) });
-        } else {
-          const title = maxLifts < 0 ? t("Opened for the season") : t("Open again");
-          add({ day: d.day, kind: "open", title, detail: openNumbers(d) });
-        }
-      } else if (liftsHigh || slopesHigh) {
-        // The title names only what grew to a new high.
-        const title = changeTitle(d, prev, { lifts: liftsHigh, slopes: slopesHigh }) ?? t("Open again");
-        add({
-          day: d.day,
-          kind: "high",
-          title,
-          detail: openLine(d, d.lifts_open, d.slopes_open, { lifts: liftsHigh, slopes: slopesHigh }),
-        });
-      } else {
-        const title = changeTitle(d, prev);
-        if (title) minor.push({ ...d, title, detail: openNumbers(d) });
+        // Reopening after one closed day is a small change, unless it's a new high.
+        if (days[i - 2]?.status === "open" && !liftsHigh && !slopesHigh) said("minor", d, t("Open again"));
+        else
+          said(
+            liftsHigh || slopesHigh ? "high" : "open",
+            d,
+            maxLifts < 0 ? t("Opened for the season") : t("Open again"),
+          );
+      } else if (!(liftsHigh || slopesHigh) || !changed("high", d, timelineChange(d, prev), best)) {
+        changed("minor", d, timelineChange(d, prev));
       }
       maxLifts = Math.max(maxLifts, d.lifts_open ?? 0);
       maxSlopes = Math.max(maxSlopes, d.slopes_open ?? 0);
     } else if (prev?.status === "open") {
       // One closed day between open days: minor. The last day can't tell yet, so it counts as closed.
-      if (next?.status === "open") minor.push({ ...d, title: t("Closed for a day"), detail: "" });
-      else add({ day: d.day, kind: "closed", title: t("Closed|resort"), detail: "" });
+      if (next?.status === "open") said("minor", d, t("Closed for a day"));
+      else said("closed", d, t("Closed|resort"));
     }
     // Fresh snow, once per value: sources keep the last snowfall for days.
     if (d.fresh >= TIMELINE_SNOW_CM && d.fresh !== lastSnow) {
-      snow.push({ day: d.day, kind: "snow", title: t("{n} cm of fresh snow", { n: d.fresh }), detail: "" });
+      snow.push({ day: d.day, kind: "snow", title: t("{n} cm of fresh snow", { n: d.fresh }), snow: d.fresh });
     }
     lastSnow = d.fresh;
   });
-  flushMinor();
   // Stable: on the same day, snow comes after the day's other events (above them, newest first).
   return [...events, ...snow].sort((a, b) => a.day.localeCompare(b.day));
 }
@@ -246,18 +233,78 @@ const timelineDate = (day) =>
     timeZone: "UTC",
   });
 
+// Small icons in the text's colour: a gondola (as in "Lifts by type"), a slope with its flag, a snowflake.
+const TIMELINE_ICONS = {
+  lifts: LIFT_ICONS.gondola,
+  slopes:
+    '<path d="M2.5 20.5h19L2.5 7.5z" fill="currentColor" fill-opacity=".25"/><path d="M8 11.3V2.5l6.5 2.7L8 7.8"/>',
+  snow: '<path d="M12 12L12 2.5M12 5.8L9.7 3.5M12 5.8L14.3 3.5M12 12L3.8 7.3M6.6 8.9L3.5 9.7M6.6 8.9L5.8 5.8M12 12L3.8 16.8M6.6 15.1L5.8 18.2M6.6 15.1L3.5 14.3M12 12L12 21.5M12 18.2L14.3 20.5M12 18.2L9.7 20.5M12 12L20.2 16.8M17.4 15.1L20.5 14.3M17.4 15.1L18.2 18.2M12 12L20.2 7.2M17.4 8.9L18.2 5.8M17.4 8.9L20.5 9.7"/>',
+};
+/** @param {keyof typeof TIMELINE_ICONS} name */
+function timelineIcon(name) {
+  const icon = el("span", { class: "tl-icon", "aria-hidden": "true" });
+  icon.innerHTML =
+    '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"' +
+    ` stroke-linecap="round" stroke-linejoin="round">${TIMELINE_ICONS[name]}</svg>`;
+  return icon;
+}
+
+// "+2 [lift] −1 [slope]"
+/** @param {TimelineChange} change */
+function changeChips(change) {
+  return /** @type {const} */ (["lifts", "slopes"])
+    .filter((what) => change[what])
+    .map((what) => {
+      const n = change[what];
+      return el(
+        "span",
+        { class: n > 0 ? "tl-chip tl-up" : "tl-chip tl-down" },
+        `${n > 0 ? "+" : "−"}${Math.abs(n)}`,
+        timelineIcon(what),
+      );
+    });
+}
+
+// "[lift] 12/23 · [slope] 8/33 · 9.3 km", what reached the season's most in bold.
+/** @param {TimelineDay} d @param {{ lifts: boolean, slopes: boolean }} [best] */
+function stateChips(d, best) {
+  const parts = [];
+  for (const what of /** @type {const} */ (["lifts", "slopes"])) {
+    const open = d[`${what}_open`];
+    if (open === null) continue;
+    const total = d[`${what}_total`];
+    const number = total === null ? `${open}` : `${open}/${total}`;
+    parts.push(el("span", { class: "tl-chip" }, timelineIcon(what), best?.[what] ? el("b", {}, number) : number));
+  }
+  if (d.slopes_open_km) parts.push(el("span", { class: "tl-km" }, `${d.slopes_open_km.toLocaleString(LANG)} km`));
+  return parts;
+}
+
 /** @param {TimelineEvent} e */
 function timelineRow(e) {
-  const date = e.until ? `${timelineDate(e.day)} – ${timelineDate(e.until)}` : timelineDate(e.day);
+  /** @type {(Node|string)[]} */
+  let main = [];
+  if (e.label) main = [el("span", { class: "tl-label" }, e.label)];
+  else if (e.change) main = changeChips(e.change);
+  else if (e.list)
+    main = [el("span", { class: "tl-chip" }, timelineIcon(e.list.what), `${e.list.from} → ${e.list.to}`)];
+  else if (e.snow) main = [el("span", { class: "tl-chip" }, timelineIcon("snow"), `${e.snow} cm`)];
+  const state = e.state ? stateChips(e.state, e.best) : [];
+  // The row in words: its tooltip, and what screen readers read (the chips are icons).
+  const s = e.state;
+  const numbers = s && openLine(s, s.lifts_open, s.slopes_open, e.best);
+  const words = numbers ? `${e.title}: ${numbers}` : e.title;
   return el(
     "li",
-    { class: `tl-${e.kind}` },
-    el("time", { datetime: e.day }, date),
-    el("div", {}, el("strong", {}, e.title), e.detail ? el("span", { class: "meta" }, e.detail) : ""),
+    { class: `tl-${e.kind}`, title: words },
+    el("time", { datetime: e.day }, timelineDate(e.day)),
+    el("span", { class: "tl-main", "aria-hidden": "true" }, ...main),
+    state.length ? el("span", { class: "tl-state", "aria-hidden": "true" }, ...state) : "",
+    el("span", { class: "tl-words" }, words),
   );
 }
 
-// Fills the card with the season's events, newest first; hides it when there are none.
+// Fills the card with the season's events, newest first, folded under its heading; hides it when there are none.
 /** @param {ResortHistory["runs"]} runs @param {HTMLElement} card */
 // biome-ignore lint/correctness/noUnusedVariables: resort.js uses it
 function timelineCard(runs, card) {
@@ -274,14 +321,29 @@ function timelineCard(runs, card) {
       more.remove();
     });
   }
+  // Closed by default: a heading to click, with the latest event beside it.
+  const chevron = el("span", { class: "tl-chevron", "aria-hidden": "true" });
+  chevron.innerHTML =
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"' +
+    ' stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
   card.replaceChildren(
-    el("h2", {}, t("What changed")),
-    list,
-    more,
     el(
-      "p",
-      { class: "meta", style: "margin:10px 0 0" },
-      t("Each day's last report against the day before, from our reads twice a day."),
+      "details",
+      { class: "tl-box" },
+      el(
+        "summary",
+        {},
+        el("h2", {}, t("Change history")),
+        el("span", { class: "meta tl-latest" }, `${timelineDate(events[0].day)}: ${events[0].title}`),
+        chevron,
+      ),
+      list,
+      more,
+      el(
+        "p",
+        { class: "meta", style: "margin:10px 0 0" },
+        t("Each day against the day before, from our reads twice a day: of the day's two, the one with more open."),
+      ),
     ),
   );
   card.hidden = false;

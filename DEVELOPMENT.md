@@ -24,7 +24,7 @@ and the short way to run it, is in the [README](README.md).
     regions) by id, which a member's `linked_area` and `ski_region` give (in its report and the index),
     for the resort page's group cards and `area.html`.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
-    (open lifts and slopes, snow, status), one list per value, for the resort page's graphs and its "What changed" timeline
+    (open lifts and slopes, snow, status), one list per value, for the resort page's graphs and its "Change history" timeline (folded by default)
     (`assets/resort-timeline.js`: openings, closings, season highs, list changes and snowfalls, worked out day by day).
   - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every
     run, one JSON object per line, with the full report when it changed. Until 29 October
