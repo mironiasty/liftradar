@@ -24,7 +24,8 @@ and the short way to run it, is in the [README](README.md).
     regions) by id, which a member's `linked_area` and `ski_region` give (in its report and the index),
     for the resort page's group cards and `area.html`.
   - `history/<country>/<resort>.json`: the key numbers of every run over the last 365 days
-    (open lifts and slopes, snow, status), one list per value, for the resort page's graphs.
+    (open lifts and slopes, snow, status), one list per value, for the resort page's graphs and its "Change history" timeline (folded by default)
+    (`assets/resort-timeline.js`: openings, closings, season highs, list changes and snowfalls, worked out day by day).
   - `archive/<country>/<resort>/<season>.jsonl` (e.g. `2026-27.jsonl`, from 1 July): every
     run, one JSON object per line, with the full report when it changed. Until 29 October
     2026 the archive was a file per changed report plus an `index.json` per resort, served by
@@ -39,7 +40,7 @@ and the short way to run it, is in the [README](README.md).
     (`st-anton-am-arlberg`, `lech-zuers`, `warth-schroecken`) are gone.
 - **Website** (branch `main`, this): `index.html` (table), `map.html` (map),
   `resort.html?r=<country>/<resort>` (one resort: all its data, its area on the map and
-  its history), `area.html?g=<group>` (a linked ski area or a pass from `json/groups.json`: its totals, its
+  its history, as graphs and as a timeline of what changed), `area.html?g=<group>` (a linked ski area or a pass from `json/groups.json`: its totals, its
   resorts ranked and on the map, its lifts and slopes, and its season so far, summed from the members' files),
   each country's page (`/austria`, `/de/oesterreich`…, a country at a glance; see [Country pages](#country-pages)),
   `3d.html?r=<country>/<resort>` (the resort in 3D, as a diorama), `api.html` (the JSON files, for developers, with `openapi.json`: the same in OpenAPI 3.1, referring to the JSON Schemas by URL, so keep its paths and descriptions in step with `api.html`), `sources.html` (data sources, incl. every website in the

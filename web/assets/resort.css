@@ -971,3 +971,170 @@ a.external::after {
 .members a:hover {
   text-decoration: underline;
 }
+
+/* Change history (resort-timeline.js): the season's events, newest first, one line each on a line with a dot each:
+   the date, the change (icons and numbers, or words), then what's open. */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+.timeline li {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 4px 12px;
+  padding: 0 0 7px 20px;
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0.5em;
+  bottom: -0.5em;
+  width: 2px;
+  background: var(--line);
+}
+.timeline li:last-child::before {
+  display: none;
+}
+.timeline li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c, var(--none-line));
+  box-shadow: 0 0 0 3px var(--bg);
+}
+.timeline time {
+  flex: none;
+  width: 4.2em;
+  color: var(--muted);
+}
+.tl-main {
+  flex: none;
+  min-width: 5.5em;
+  display: inline-flex;
+  gap: 8px;
+  font-weight: 600;
+}
+.tl-label {
+  white-space: nowrap;
+}
+.tl-state {
+  min-width: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  color: var(--muted);
+}
+.tl-state b {
+  color: var(--open);
+}
+.tl-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+.tl-icon {
+  display: inline-flex;
+  align-self: center;
+}
+.tl-up {
+  color: var(--open);
+}
+.tl-down {
+  color: var(--closed);
+}
+.tl-words {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.timeline .tl-open,
+.timeline .tl-high {
+  --c: var(--open);
+}
+.timeline .tl-closed {
+  --c: var(--closed);
+}
+.timeline .tl-snow {
+  --c: var(--accent);
+}
+.timeline .tl-list {
+  --c: var(--warn);
+}
+/* The small changes: quieter, a smaller dot. */
+.timeline .tl-minor .tl-main {
+  font-weight: 400;
+}
+.timeline .tl-minor .tl-label {
+  color: var(--muted);
+}
+.timeline .tl-minor::after {
+  left: 1px;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+}
+.tl-box > summary {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.tl-box > summary::-webkit-details-marker {
+  display: none;
+}
+.tl-box > summary h2 {
+  margin: 0;
+  flex: none;
+}
+.tl-box[open] > summary {
+  margin-bottom: 12px;
+}
+.tl-latest {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tl-box[open] .tl-latest {
+  visibility: hidden;
+}
+.tl-chevron {
+  margin-left: auto;
+  align-self: center;
+  display: flex;
+  color: var(--muted);
+}
+.tl-chevron svg {
+  transition: transform 0.15s;
+}
+.tl-box[open] .tl-chevron svg {
+  transform: rotate(180deg);
+}
+.tl-more {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+/* A phone: the km go, so the line fits. */
+@media (max-width: 420px) {
+  .tl-km {
+    display: none;
+  }
+}
