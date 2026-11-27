@@ -50,6 +50,11 @@ GENERIC = re.compile(
     r"skiroute|ski route|route|nr|no|verbindung|verbindungspiste|skiweg|schiweg|umfahrung|ubungshang|"
     r"ubungsgelande|ubungslift|uebungslift|variante|pisten|skipiste|mountain|valley|station|berg|tal|mitte)\b"
 )
+# Piste colours, as some maps name a slope only by its number and colour.
+COLOURS = {
+    "rot", "rote", "blau", "blaue", "schwarz", "schwarze", "grun", "red", "blue", "black", "green",
+    "rossa", "blu", "nera", "verde", "rouge", "bleue", "noire", "verte",
+}  # fmt: skip
 ROMAN = re.compile(r"\b(i{1,3}|iv|v|vi{0,3}|[1-9])\b$")
 CODE = re.compile(r"^\s*([A-Za-z]{0,2}\d{1,3}[a-z]?|[IVX]{1,4}|[A-Z])[.)]?(\s+(?=\S)|$)")
 NUMBER = re.compile(r"\b(?:nr\.?|no\.?|piste|pista|skiroute)\s*(\d{1,3}[a-z]?)\b", re.IGNORECASE)
@@ -190,8 +195,11 @@ def score(item: dict, feature: dict, kind: str) -> float | None:
     na, nb = leading_number(item["name"]), leading_number(feature.get("name"))
     if na and nb and na != nb:
         return None
-    if ref and core(feature.get("name"))[0] and core(item["name"])[0] and names < 0.3:
-        ref = False  # same number, unrelated names: often a neighbour's slope with the same numbering
+    mine = core(item["name"])[0]
+    if ref and core(feature.get("name"))[0] and mine and mine not in COLOURS and names < 0.3:
+        # Same number, unrelated names: often a neighbour's slope with the same numbering. A name that is only the
+        # slope's colour ("35 - Rot", Pitztal: "Family Cross" in OSM) names nothing to compare.
+        ref = False
     s = names + (0.6 if ref else 0)
 
     if kind == "lifts":

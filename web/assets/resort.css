@@ -392,6 +392,14 @@ th {
   border-radius: 2px;
   background: var(--c);
 }
+/* The lift's or slope's number on the resort's map, before its name. */
+.ref {
+  display: inline-block;
+  min-width: 2.2em;
+  margin-right: 6px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
 /* A lift's or slope's name in the lists that shows it on the map. */
 button.on-map {
   padding: 0;
