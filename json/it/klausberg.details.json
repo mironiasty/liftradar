@@ -2,10 +2,34 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "klausberg",
   "country": "it",
-  "fetched_at": "2026-11-28T08:40:43.298301+01:00",
+  "fetched_at": "2026-11-28T13:40:36.519995+01:00",
   "updated_at": null,
   "source": "https://opendatahub.com/",
   "lifts": [
+    {
+      "id": "F4CFC09C5570CF49B106547F93BFEEB6",
+      "ref": null,
+      "name": "Steinhauslift",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 380,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "D79CC988C4550E570ECCB12BEA769BCD",
+      "ref": null,
+      "name": "Sonnen",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1480,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
     {
       "id": "42D89E01FD39E649CA774C0C71B13749",
       "ref": null,
@@ -19,9 +43,45 @@
       "top_m": null
     },
     {
+      "id": "63C80C2DBE7EEE9EE17E9022875085DA",
+      "ref": null,
+      "name": "K-Express",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "6F9BA1E349E64F0DD5AFD6F08542B366",
       "ref": null,
       "name": "Kids Area | Magic carpet",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "2F629EABD944A6FF7FFB35BA5B73FD3D",
+      "ref": null,
+      "name": "Bruggerlift",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 340,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "B64B19AEBA1410C60AE8BE29787FEA67",
+      "ref": null,
+      "name": "Klausiland | Magic carpet (81m)",
       "type": "carpet",
       "status": "closed",
       "length_m": null,
@@ -43,66 +103,6 @@
       "top_m": null
     },
     {
-      "id": "D79CC988C4550E570ECCB12BEA769BCD",
-      "ref": null,
-      "name": "Sonnen",
-      "type": "gondola",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1480,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "B64B19AEBA1410C60AE8BE29787FEA67",
-      "ref": null,
-      "name": "Klausiland | Magic carpet (81m)",
-      "type": "carpet",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "63C80C2DBE7EEE9EE17E9022875085DA",
-      "ref": null,
-      "name": "K-Express",
-      "type": "gondola",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "2F629EABD944A6FF7FFB35BA5B73FD3D",
-      "ref": null,
-      "name": "Bruggerlift",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 340,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "CDA0F8B85AE39DDF2A498326FC1DFCC0",
-      "ref": null,
-      "name": "Klausiland | Magic carpet (21m)",
-      "type": "carpet",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "3F10AD51ED7BB39423C60F3DC29EE612",
       "ref": null,
       "name": "Klaussee I | K1",
@@ -110,18 +110,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1240,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "F4CFC09C5570CF49B106547F93BFEEB6",
-      "ref": null,
-      "name": "Steinhauslift",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 380,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -137,59 +125,21 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
+    },
+    {
+      "id": "CDA0F8B85AE39DDF2A498326FC1DFCC0",
+      "ref": null,
+      "name": "Klausiland | Magic carpet (21m)",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
     }
   ],
   "slopes": [
-    {
-      "id": "B85259778058681A48DF5F3EC0C8A00E",
-      "ref": null,
-      "name": "Gamsboden | K2",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 350
-    },
-    {
-      "id": "75435BAD0144E034E529806384D0E6DD",
-      "ref": null,
-      "name": "Baurschaft | Sonnen",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1150
-    },
-    {
-      "id": "ADD5C414FE727F69CAFFA07B5B246684",
-      "ref": null,
-      "name": "Skiweg Moaregg | Sonnen",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 830
-    },
-    {
-      "id": "399BBEB6FC9908E883C1BB0504545267",
-      "ref": null,
-      "name": "Murmelweg | K2",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "B15BB2C560495851B7736F8FEE0821F9",
-      "ref": null,
-      "name": "Snowpark K2 | Upper Park",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
     {
       "id": "FAA7970D1A2AE4EBE985E0AC40A1837D",
       "ref": null,
@@ -199,216 +149,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": null
-    },
-    {
-      "id": "4E0093FDDADE648BE8152F5C21E71CD0",
-      "ref": null,
-      "name": "Dino Funline | Almboden",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1650
-    },
-    {
-      "id": "5B9BA6CBB0F71F170ABA636506024FA5",
-      "ref": null,
-      "name": "Kristall | Sonnen",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 360
-    },
-    {
-      "id": "6A1020D9736A567BC424C529213BB76A",
-      "ref": null,
-      "name": "S-Line | Sonnen",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 370
-    },
-    {
-      "id": "95ABEBF8A66E143A3DD29C6F29348D93",
-      "ref": null,
-      "name": "Lärchen | Sonnen",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 780
-    },
-    {
-      "id": "F35EF502DBD480709B29370BF310EEAA",
-      "ref": null,
-      "name": "Weissnbachl | Valley run",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 450
-    },
-    {
-      "id": "E92408301085FA07691CA8310881E9EE",
-      "ref": null,
-      "name": "Brugger",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 760
-    },
-    {
-      "id": "410B67685363A608B1E46AAA713886B4",
-      "ref": null,
-      "name": "Panorama 2",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 780
-    },
-    {
-      "id": "6173C5AA37CF479EC402BA31645EC6FA",
-      "ref": null,
-      "name": "Klaussee II | K2",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 330
-    },
-    {
-      "id": "9E850BF56CA05D6B23B7319C48BF2253",
-      "ref": null,
-      "name": "Sattelhorn | K2",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 790
-    },
-    {
-      "id": "A9C10E98347E78CD040230C5D0E1A6CC",
-      "ref": null,
-      "name": "Kids ski world | Klausiland",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "26CFB410FD96C7E4ABDD7C607BA9C3D7",
-      "ref": null,
-      "name": "Family 3 | Panorama",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1550
-    },
-    {
-      "id": "C46ADF6533D5D82E443FC3D870B3FD04",
-      "ref": null,
-      "name": "Slope to the valley Klausberg",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "E076FD2425DF4B1C0075590B6BA2AF74",
-      "ref": null,
-      "name": "Almboden",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 830
-    },
-    {
-      "id": "44C5562ADD296C25A3BBDCA7038F54E4",
-      "ref": null,
-      "name": "Kernaweg | Panorama",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 760
-    },
-    {
-      "id": "3CCA3F457911A93571F6D894C727F404",
-      "ref": null,
-      "name": "Panorama 1",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 640
-    },
-    {
-      "id": "9975B0F7FBD97ECB8DC92AC8B58B5C13",
-      "ref": null,
-      "name": "Family 1 | Panorama",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 860
-    },
-    {
-      "id": "EFADC80B00C3C572D2C5C832992BD346",
-      "ref": null,
-      "name": "Speedline | K2",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "4523D4A0E283519733AE3AB0E86A6784",
-      "ref": null,
-      "name": "Hosenscheisserweg | K2",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "5D9308C21A6BF974C997628A7C082D4B",
-      "ref": null,
-      "name": "Sonnen 1",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1240
-    },
-    {
-      "id": "3B5C9124E1A3CF9E200DFB8557138D39",
-      "ref": null,
-      "name": "Abendleite | Almboden",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 830
-    },
-    {
-      "id": "21CEF94C1E9BBF258ACD8BA59C2ECEA5",
-      "ref": null,
-      "name": "Enzenberg | Valley run",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 300
     },
     {
       "id": "C0D0652B097AA2E2683165FBA81CB15A",
@@ -421,14 +161,144 @@
       "map_length_m": 640
     },
     {
-      "id": "2F661C83160D93041E6C0A5C8489CC68",
+      "id": "6173C5AA37CF479EC402BA31645EC6FA",
       "ref": null,
-      "name": "Dureck | K2",
+      "name": "Klaussee II | K2",
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
       "length_m": null,
+      "map_length_m": 330
+    },
+    {
+      "id": "A9C10E98347E78CD040230C5D0E1A6CC",
+      "ref": null,
+      "name": "Kids ski world | Klausiland",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "75435BAD0144E034E529806384D0E6DD",
+      "ref": null,
+      "name": "Baurschaft | Sonnen",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1150
+    },
+    {
+      "id": "E076FD2425DF4B1C0075590B6BA2AF74",
+      "ref": null,
+      "name": "Almboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
       "map_length_m": 830
+    },
+    {
+      "id": "4E0093FDDADE648BE8152F5C21E71CD0",
+      "ref": null,
+      "name": "Dino Funline | Almboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1650
+    },
+    {
+      "id": "5D9308C21A6BF974C997628A7C082D4B",
+      "ref": null,
+      "name": "Sonnen 1",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1240
+    },
+    {
+      "id": "26CFB410FD96C7E4ABDD7C607BA9C3D7",
+      "ref": null,
+      "name": "Family 3 | Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1550
+    },
+    {
+      "id": "399BBEB6FC9908E883C1BB0504545267",
+      "ref": null,
+      "name": "Murmelweg | K2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "9975B0F7FBD97ECB8DC92AC8B58B5C13",
+      "ref": null,
+      "name": "Family 1 | Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 860
+    },
+    {
+      "id": "B15BB2C560495851B7736F8FEE0821F9",
+      "ref": null,
+      "name": "Snowpark K2 | Upper Park",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "5B9BA6CBB0F71F170ABA636506024FA5",
+      "ref": null,
+      "name": "Kristall | Sonnen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 360
+    },
+    {
+      "id": "383F5EF8D9F314268C0D37E14173A14F",
+      "ref": null,
+      "name": "Family 2 | Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 490
+    },
+    {
+      "id": "F35EF502DBD480709B29370BF310EEAA",
+      "ref": null,
+      "name": "Weissnbachl | Valley run",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 450
+    },
+    {
+      "id": "B85259778058681A48DF5F3EC0C8A00E",
+      "ref": null,
+      "name": "Gamsboden | K2",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 350
     },
     {
       "id": "BF80CD54857E9BF21F555C69A5714D79",
@@ -441,14 +311,74 @@
       "map_length_m": 240
     },
     {
-      "id": "75B4247C7A1BE92AB65AFD50C33B625A",
+      "id": "44C5562ADD296C25A3BBDCA7038F54E4",
       "ref": null,
-      "name": "Snowpark K2 | Lower Park",
+      "name": "Kernaweg | Panorama",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 760
+    },
+    {
+      "id": "4523D4A0E283519733AE3AB0E86A6784",
+      "ref": null,
+      "name": "Hosenscheisserweg | K2",
       "difficulty": "intermediate",
       "colour": null,
       "status": "closed",
       "length_m": null,
       "map_length_m": null
+    },
+    {
+      "id": "C46ADF6533D5D82E443FC3D870B3FD04",
+      "ref": null,
+      "name": "Slope to the valley Klausberg",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "ADD5C414FE727F69CAFFA07B5B246684",
+      "ref": null,
+      "name": "Skiweg Moaregg | Sonnen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 830
+    },
+    {
+      "id": "410B67685363A608B1E46AAA713886B4",
+      "ref": null,
+      "name": "Panorama 2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 780
+    },
+    {
+      "id": "6A1020D9736A567BC424C529213BB76A",
+      "ref": null,
+      "name": "S-Line | Sonnen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 370
+    },
+    {
+      "id": "3CCA3F457911A93571F6D894C727F404",
+      "ref": null,
+      "name": "Panorama 1",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 640
     },
     {
       "id": "1D8DFBC453ABB9F1D9CD64CD4A6D8CDB",
@@ -461,6 +391,76 @@
       "map_length_m": 2660
     },
     {
+      "id": "95ABEBF8A66E143A3DD29C6F29348D93",
+      "ref": null,
+      "name": "Lärchen | Sonnen",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 780
+    },
+    {
+      "id": "75B4247C7A1BE92AB65AFD50C33B625A",
+      "ref": null,
+      "name": "Snowpark K2 | Lower Park",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "EFADC80B00C3C572D2C5C832992BD346",
+      "ref": null,
+      "name": "Speedline | K2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "E92408301085FA07691CA8310881E9EE",
+      "ref": null,
+      "name": "Brugger",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 760
+    },
+    {
+      "id": "9E850BF56CA05D6B23B7319C48BF2253",
+      "ref": null,
+      "name": "Sattelhorn | K2",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 790
+    },
+    {
+      "id": "2F661C83160D93041E6C0A5C8489CC68",
+      "ref": null,
+      "name": "Dureck | K2",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 830
+    },
+    {
+      "id": "3B5C9124E1A3CF9E200DFB8557138D39",
+      "ref": null,
+      "name": "Abendleite | Almboden",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 830
+    },
+    {
       "id": "E2B4918F2D09E289FFA2D33CEE26027B",
       "ref": null,
       "name": "Goasleitn | Steinhauslift",
@@ -471,14 +471,14 @@
       "map_length_m": 760
     },
     {
-      "id": "383F5EF8D9F314268C0D37E14173A14F",
+      "id": "21CEF94C1E9BBF258ACD8BA59C2ECEA5",
       "ref": null,
-      "name": "Family 2 | Panorama",
-      "difficulty": "easy",
+      "name": "Enzenberg | Valley run",
+      "difficulty": "difficult",
       "colour": null,
       "status": "closed",
       "length_m": null,
-      "map_length_m": 490
+      "map_length_m": 300
     }
   ],
   "bottom": {

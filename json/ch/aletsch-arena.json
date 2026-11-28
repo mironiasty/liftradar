@@ -9,13 +9,13 @@
     "lon": 8.0747
   },
   "website": "https://www.aletscharena.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.297896+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T13:40:36.519662+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 74,
+    "valley_cm": 68,
+    "fresh_cm": 2,
     "last_snowfall": null,
     "condition": null,
     "stations": [
@@ -38,18 +38,18 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 6,
     "total": 35
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 118,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 104
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 0,
+      "open": 3,
       "total": 5
     },
     "carpet": {
@@ -57,7 +57,7 @@
       "total": 1
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 8
     },
     "drag_lift": {
@@ -69,43 +69,43 @@
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 5
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 55,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 42
     },
     "intermediate": {
       "open": 0,
       "total": 48,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 50
     },
     "difficult": {
       "open": 0,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 12
     },
     "ski_route": {
       "open": 0,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
       "open": 0,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-28T08:40:00+01:00",
+  "lifts_updated_at": "2026-11-28T13:40:00+01:00",
   "details": "json/ch/aletsch-arena.details.json",
   "avalanche": {
     "region_id": "CH-4214",

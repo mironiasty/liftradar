@@ -9,8 +9,8 @@
     "lon": 10.7758
   },
   "website": "https://www.doganaccia2000.it/",
-  "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.299469+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-28T13:40:36.520849+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,46 +22,23 @@
   },
   "lifts": {
     "open": 0,
-    "total": 6
+    "total": 5
   },
   "slopes": {
-    "open": 0,
-    "total": 11,
-    "open_km": 0.0,
+    "open": null,
+    "total": 10,
+    "open_km": null,
     "total_km": 15
   },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 2
-    },
-    "other": {
-      "open": 0,
-      "total": 4
-    }
-  },
-  "slopes_by_difficulty": {
-    "other": {
-      "open": 0,
-      "total": 11,
-      "open_km": 0.0,
-      "total_km": null
-    }
-  },
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
-  "details": "json/it/doganaccia.details.json",
   "avalanche": null,
   "sources": [
-    "https://www.skiinfo.fr/",
-    "https://doganaccia2000.it/"
+    "https://www.skiinfo.fr/"
   ],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://doganaccia2000.it/",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": [
       {
         "url": "https://www.skiinfo.fr/",
@@ -69,5 +46,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "live: ValueError: no lifts on Doganaccia's page (layout changed?)"
+  ]
 }

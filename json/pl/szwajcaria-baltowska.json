@@ -10,8 +10,8 @@
   },
   "website": "https://szwajcariabaltowska.pl",
   "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.300880+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-28T13:40:36.521857+01:00",
+  "status_from": "2026-11-27T08:40:39.053274+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -40,7 +40,6 @@
     }
   },
   "lifts_updated_at": null,
-  "details": "json/pl/szwajcaria-baltowska.details.json",
   "avalanche": null,
   "sources": [
     "https://szwajcariabaltowska.pl/",
@@ -60,5 +59,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no slope boxes (layout changed?)"
+  ]
 }

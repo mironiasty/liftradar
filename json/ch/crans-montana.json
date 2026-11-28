@@ -9,15 +9,15 @@
     "lon": 7.4808
   },
   "website": "https://www.crans-montana.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.296816+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T13:40:36.518847+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 120,
+    "valley_cm": 20,
     "fresh_cm": null,
     "last_snowfall": "2026-11-25",
-    "condition": null,
+    "condition": "mainly: powder / partially: hard",
     "stations": [
       {
         "name": "in place",
@@ -46,22 +46,22 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 24
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 73,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 140
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 7
     },
     "drag_lift": {
@@ -69,7 +69,7 @@
       "total": 9
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 3
     },
     "other": {
@@ -79,15 +79,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 3,
       "total": 16,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
       "open": 0,
       "total": 36,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
@@ -99,17 +99,17 @@
     "ski_route": {
       "open": 0,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
       "open": 0,
       "total": 4,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-28T08:33:00+01:00",
+  "lifts_updated_at": "2026-11-28T13:31:00+01:00",
   "details": "json/ch/crans-montana.details.json",
   "avalanche": {
     "region_id": "CH-4121",

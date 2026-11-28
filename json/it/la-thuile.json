@@ -11,25 +11,25 @@
   "website": "https://www.lathuile.it",
   "linked_area": "espace-san-bernardo",
   "ski_region": "valle-d-aosta",
-  "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.298125+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T13:40:36.519851+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 80,
+    "valley_cm": 70,
     "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 17
   },
   "slopes": {
-    "open": 0,
+    "open": 6,
     "total": 41,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 93
   },
   "lifts_by_type": {
@@ -38,39 +38,39 @@
       "total": 4
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 9
     },
     "drag_lift": {
-      "open": 0,
+      "open": 2,
       "total": 2
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 2
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 5,
       "total": 12,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 26
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 20,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 50
     },
     "difficult": {
       "open": 0,
       "total": 9,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 18
     }
   },
-  "lifts_updated_at": "2026-11-28T07:45:00+01:00",
+  "lifts_updated_at": "2026-11-28T01:30:00+01:00",
   "details": "json/it/la-thuile.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-15",

@@ -9,30 +9,30 @@
     "lon": 9.7654
   },
   "website": "https://www.gala-alpin.no",
-  "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.306261+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T13:40:36.525450+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 66,
+    "valley_cm": 60,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Faste og fine forhold",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 6
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 15,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 20
   },
   "lifts_by_type": {
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 6
     }
   },
@@ -40,29 +40,29 @@
     "easy": {
       "open": 0,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
       "open": 0,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-25T14:09:03+01:00",
+  "lifts_updated_at": "2026-11-28T11:31:39+01:00",
   "details": "json/no/gala.details.json",
   "avalanche": null,
   "sources": [

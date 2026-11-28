@@ -10,7 +10,7 @@
   },
   "website": "https://www.ostruzna.cz",
   "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.300204+01:00",
+  "fetched_at": "2026-11-28T13:40:36.521361+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -52,14 +52,36 @@
   },
   "lifts_updated_at": null,
   "details": "json/cz/ostruzna.details.json",
-  "avalanche": null,
+  "avalanche": {
+    "region_id": "CZ-06",
+    "region": "Jeseníky",
+    "danger_level": null,
+    "danger": null,
+    "ratings": [
+      {
+        "level": "no_rating",
+        "lower_bound": null,
+        "upper_bound": null,
+        "period": "all_day"
+      }
+    ],
+    "problems": [],
+    "published_at": "2026-11-28T08:48:01+01:00",
+    "valid_from": "2026-11-28T08:48:01+01:00",
+    "valid_until": "2026-11-29T08:48:01+01:00"
+  },
   "sources": [
-    "https://www.kudyznudy.cz/"
+    "https://www.kudyznudy.cz/",
+    "https://www.horskasluzba.cz/"
   ],
   "source_details": {
     "conditions": [
       {
         "url": "https://www.kudyznudy.cz/",
+        "attribution_required": null
+      },
+      {
+        "url": "https://www.horskasluzba.cz/",
         "attribution_required": null
       }
     ],

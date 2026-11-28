@@ -10,25 +10,42 @@
   },
   "website": "https://www.lessaisies.com",
   "linked_area": "espace-diamant",
-  "status": "no_report",
-  "fetched_at": "2026-11-28T08:40:43.301317+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-28T13:40:36.522144+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-23",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Sommet de Brichou",
+        "elevation_m": 1900,
+        "depth_cm": 0,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "Col des Saisies",
+        "elevation_m": 1650,
+        "depth_cm": 66,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      }
+    ]
   },
   "lifts": {
     "open": 0,
     "total": 30
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 89,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 77
   },
   "lifts_by_type": {
@@ -51,25 +68,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 64,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 20,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": 6
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/les-saisies.details.json",
   "avalanche": {
     "region_id": "FR-05",
     "region": "Beaufortain",

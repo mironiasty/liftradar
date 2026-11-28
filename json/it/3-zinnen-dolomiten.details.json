@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "3-zinnen-dolomiten",
   "country": "it",
-  "fetched_at": "2026-11-28T08:40:43.298036+01:00",
-  "updated_at": "2026-11-27T17:20:38.261134+01:00",
+  "fetched_at": "2026-11-28T13:40:36.519773+01:00",
+  "updated_at": "2026-11-28T09:20:13.250169+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
     {
@@ -331,18 +331,6 @@
       "top_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:lift:7_560",
-      "ref": null,
-      "name": "Waldheim",
-      "type": "drag_lift",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": 460,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:lift:7_561",
       "ref": null,
       "name": "Waldheim",
@@ -350,6 +338,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_560",
+      "ref": null,
+      "name": "Waldheim",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 460,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -844,7 +844,7 @@
       "name": "Raut Vierschach",
       "difficulty": "difficult",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 3310,
       "map_length_m": 1550
     },
@@ -1139,16 +1139,6 @@
       "map_length_m": 580
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:7_301103",
-      "ref": null,
-      "name": "Variante Family Drei Zinnen",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "open",
-      "length_m": 600,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:7_28554915",
       "ref": null,
       "name": "Variante Family Drei Zinnen",
@@ -1156,6 +1146,16 @@
       "colour": null,
       "status": "open",
       "length_m": 630,
+      "map_length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301103",
+      "ref": null,
+      "name": "Variante Family Drei Zinnen",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
+      "length_m": 600,
       "map_length_m": null
     },
     {

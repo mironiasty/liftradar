@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "skimore-kongsberg",
   "country": "no",
-  "fetched_at": "2026-11-28T08:40:43.307257+01:00",
+  "fetched_at": "2026-11-28T13:40:36.526109+01:00",
   "updated_at": null,
   "source": "https://skimore.no/",
   "lifts": [
@@ -10,6 +10,18 @@
       "id": "lift-familieheisen",
       "ref": null,
       "name": "Familieheisen",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-skiband",
+      "ref": null,
+      "name": "Skibånd",
       "type": "other",
       "status": "open",
       "length_m": null,

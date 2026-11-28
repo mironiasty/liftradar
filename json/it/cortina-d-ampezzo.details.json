@@ -2,22 +2,10 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "cortina-d-ampezzo",
   "country": "it",
-  "fetched_at": "2026-11-28T08:40:43.297959+01:00",
+  "fetched_at": "2026-11-28T13:40:36.519711+01:00",
   "updated_at": "2026-11-27T13:20:33.616939+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
-    {
-      "id": "urn:odhactivitypoi:dss:lift:1_218",
-      "ref": null,
-      "name": "5 Torri",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
     {
       "id": "urn:odhactivitypoi:dss:lift:1_217",
       "ref": null,
@@ -26,6 +14,18 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 1360,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:1_218",
+      "ref": null,
+      "name": "5 Torri",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -1237,16 +1237,6 @@
       "map_length_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:1_215930",
-      "ref": null,
-      "name": "Vertigine Bianca",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 871,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:1_1771490254",
       "ref": null,
       "name": "Vertigine Bianca",
@@ -1255,6 +1245,16 @@
       "status": "closed",
       "length_m": 871,
       "map_length_m": 680
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:1_215930",
+      "ref": null,
+      "name": "Vertigine Bianca",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 871,
+      "map_length_m": null
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:1_215932",

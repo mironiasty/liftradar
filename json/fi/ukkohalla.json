@@ -10,7 +10,7 @@
   },
   "website": "https://ukkohalla.fi",
   "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.304697+01:00",
+  "fetched_at": "2026-11-28T13:40:36.524388+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -22,7 +22,7 @@
       {
         "name": "Puolanka Paljakka (FMI)",
         "elevation_m": null,
-        "depth_cm": 22,
+        "depth_cm": 21,
         "fresh_cm": null,
         "temperature_c": null,
         "condition": null
@@ -31,16 +31,35 @@
   },
   "lifts": {
     "open": 0,
-    "total": 5
+    "total": 4
   },
   "slopes": {
     "open": 0,
-    "total": 16,
+    "total": 17,
     "open_km": 0.0,
     "total_km": 14
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
@@ -71,5 +90,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no 'Rinteet' or 'Hissit' counter (page layout changed?)"
+  ]
 }

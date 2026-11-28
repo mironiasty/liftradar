@@ -2,58 +2,10 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "courmayeur",
   "country": "it",
-  "fetched_at": "2026-11-28T08:40:43.298116+01:00",
-  "updated_at": "2026-11-28T07:10:00+01:00",
+  "fetched_at": "2026-11-28T13:40:36.519844+01:00",
+  "updated_at": "2026-11-28T08:00:00+01:00",
   "source": "https://www.lovevda.it/",
   "lifts": [
-    {
-      "id": "lift-courmayeur",
-      "ref": null,
-      "name": "Courmayeur",
-      "type": "cable_car",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-arp",
-      "ref": null,
-      "name": "Arp",
-      "type": "cable_car",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-val-veny",
-      "ref": null,
-      "name": "Val Veny",
-      "type": "cable_car",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-youla",
-      "ref": null,
-      "name": "Youla",
-      "type": "cable_car",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
     {
       "id": "lift-aretu",
       "ref": null,
@@ -67,10 +19,10 @@
       "top_m": null
     },
     {
-      "id": "lift-dzeleuna",
+      "id": "lift-prato",
       "ref": null,
-      "name": "Dzeleuna",
-      "type": "chairlift",
+      "name": "Prato",
+      "type": "carpet",
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
@@ -79,10 +31,22 @@
       "top_m": null
     },
     {
-      "id": "lift-pra-neyron",
+      "id": "lift-chiecco",
       "ref": null,
-      "name": "Pra Neyron",
-      "type": "chairlift",
+      "name": "Chiecco",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-le-greye",
+      "ref": null,
+      "name": "Le Greye",
+      "type": "drag_lift",
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
@@ -115,9 +79,57 @@
       "top_m": null
     },
     {
+      "id": "lift-dzeleuna",
+      "ref": null,
+      "name": "Dzeleuna",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "lift-peindeint",
       "ref": null,
       "name": "Peindeint",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-dolonne",
+      "ref": null,
+      "name": "Dolonne",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-arp",
+      "ref": null,
+      "name": "Arp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-pra-neyron",
+      "ref": null,
+      "name": "Pra Neyron",
       "type": "chairlift",
       "status": "closed",
       "length_m": null,
@@ -139,6 +151,18 @@
       "top_m": null
     },
     {
+      "id": "lift-maison-vieille",
+      "ref": null,
+      "name": "Maison Vieille",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "lift-checrouit",
       "ref": null,
       "name": "Checrouit",
@@ -151,34 +175,10 @@
       "top_m": null
     },
     {
-      "id": "lift-dolonne",
+      "id": "lift-val-veny",
       "ref": null,
-      "name": "Dolonne",
-      "type": "gondola",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-maison-vieille",
-      "ref": null,
-      "name": "Maison Vieille",
-      "type": "gondola",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-chiecco",
-      "ref": null,
-      "name": "Chiecco",
-      "type": "drag_lift",
+      "name": "Val Veny",
+      "type": "cable_car",
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
@@ -187,10 +187,22 @@
       "top_m": null
     },
     {
-      "id": "lift-le-greye",
+      "id": "lift-courmayeur",
       "ref": null,
-      "name": "Le Greye",
-      "type": "drag_lift",
+      "name": "Courmayeur",
+      "type": "cable_car",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-youla",
+      "ref": null,
+      "name": "Youla",
+      "type": "cable_car",
       "status": "closed",
       "length_m": null,
       "map_length_m": null,
@@ -209,159 +221,13 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
-    },
-    {
-      "id": "lift-tappeto-maison-vieille",
-      "ref": null,
-      "name": "Tappeto Maison Vieille",
-      "type": "carpet",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-tappeto-tzaly",
-      "ref": null,
-      "name": "Tappeto Tzaly",
-      "type": "carpet",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "lift-prato",
-      "ref": null,
-      "name": "Prato",
-      "type": "carpet",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
     }
   ],
   "slopes": [
     {
-      "id": "slope-6-pra-neyron",
+      "id": "slope-1-gigante",
       "ref": null,
-      "name": "6 - Pra Neyron",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-10-tzaly",
-      "ref": null,
-      "name": "10 - Tzaly",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-15-maison-vieille",
-      "ref": null,
-      "name": "15 - Maison Vieille",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-17-chiecco",
-      "ref": null,
-      "name": "17 - Chiecco",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-22-courba",
-      "ref": null,
-      "name": "22 - Courba",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-30-racc-piste-plan-checrouit",
-      "ref": null,
-      "name": "30 - Racc. piste Plan Checrouit",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "open",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-2-val-veny",
-      "ref": null,
-      "name": "2 - Val Veny",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-3-chetif",
-      "ref": null,
-      "name": "3 - Chetif",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-4-campetto-prato",
-      "ref": null,
-      "name": "4 - Campetto Prato",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-9-diagonale-peindeint",
-      "ref": null,
-      "name": "9 - Diagonale Peindeint",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-28-variante-verde",
-      "ref": null,
-      "name": "28 - Variante Verde",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-7-dzeleuna",
-      "ref": null,
-      "name": "7 - Dzeleuna",
+      "name": "1 Gigante",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
@@ -369,9 +235,19 @@
       "map_length_m": null
     },
     {
-      "id": "slope-11-le-greye",
+      "id": "slope-10-tzaly",
       "ref": null,
-      "name": "11 - Le Greye",
+      "name": "10 Tzaly",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-11-les-greyes",
+      "ref": null,
+      "name": "11 Les Greyes",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -381,7 +257,7 @@
     {
       "id": "slope-12-lavechon",
       "ref": null,
-      "name": "12 - Lavechon",
+      "name": "12 Lavechon",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -391,7 +267,7 @@
     {
       "id": "slope-13-checrouit",
       "ref": null,
-      "name": "13 - Checrouit",
+      "name": "13 Checrouit",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -399,9 +275,19 @@
       "map_length_m": null
     },
     {
-      "id": "slope-14-f-brignone",
+      "id": "slope-13a-checrouit-variante",
       "ref": null,
-      "name": "14 - F. Brignone",
+      "name": "13A Checrouit variante",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-14-federica-brignone",
+      "ref": null,
+      "name": "14 Federica Brignone",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -409,11 +295,21 @@
       "map_length_m": null
     },
     {
-      "id": "slope-14a-f-brignone",
+      "id": "slope-14a-federica-brignone",
       "ref": null,
-      "name": "14A - F. Brignone",
+      "name": "14A Federica Brignone",
       "difficulty": "intermediate",
       "colour": "red",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-15-maison-vielle",
+      "ref": null,
+      "name": "15 Maison Vielle",
+      "difficulty": "easy",
+      "colour": "blue",
       "status": "open",
       "length_m": null,
       "map_length_m": null
@@ -421,7 +317,7 @@
     {
       "id": "slope-16-stadio-slalom",
       "ref": null,
-      "name": "16 - Stadio Slalom",
+      "name": "16 Stadio Slalom",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
@@ -429,9 +325,9 @@
       "map_length_m": null
     },
     {
-      "id": "slope-16b-stadio-slalom",
+      "id": "slope-16a-stadio-slalom-a",
       "ref": null,
-      "name": "16B - Stadio Slalom",
+      "name": "16A Stadio Slalom A",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
@@ -439,9 +335,9 @@
       "map_length_m": null
     },
     {
-      "id": "slope-25-dolonne",
+      "id": "slope-16b-stadio-slalom-b",
       "ref": null,
-      "name": "25 - Dolonne",
+      "name": "16B Stadio Slalom B",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
@@ -449,41 +345,11 @@
       "map_length_m": null
     },
     {
-      "id": "slope-29-pista-del-cervo",
+      "id": "slope-17-chiecco",
       "ref": null,
-      "name": "29 - Pista del Cervo",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-31-canalino",
-      "ref": null,
-      "name": "31 - Canalino",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-26-snow-park",
-      "ref": null,
-      "name": "26 - Snow Park",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-1-gigante",
-      "ref": null,
-      "name": "1 - Gigante",
-      "difficulty": "intermediate",
-      "colour": "red",
+      "name": "17 Chiecco",
+      "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": null,
       "map_length_m": null
@@ -491,7 +357,7 @@
     {
       "id": "slope-18-internazionale",
       "ref": null,
-      "name": "18 - Internazionale",
+      "name": "18 Internazionale",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -501,7 +367,7 @@
     {
       "id": "slope-19-comba-moretta",
       "ref": null,
-      "name": "19 - Comba Moretta",
+      "name": "19 Comba Moretta",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -509,19 +375,29 @@
       "map_length_m": null
     },
     {
-      "id": "slope-19-20-raccordo",
+      "id": "slope-19-20-raccordo-19-20",
       "ref": null,
-      "name": "19 –> 20 - Raccordo",
+      "name": "19-20 Raccordo 19-20",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2-val-veny",
+      "ref": null,
+      "name": "2 Val Veny",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
       "length_m": null,
       "map_length_m": null
     },
     {
       "id": "slope-20-lazey",
       "ref": null,
-      "name": "20 - Lazey",
+      "name": "20 Lazey",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -531,7 +407,7 @@
     {
       "id": "slope-21-youla",
       "ref": null,
-      "name": "21 - Youla",
+      "name": "21 Youla",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
@@ -539,9 +415,9 @@
       "map_length_m": null
     },
     {
-      "id": "slope-21-20-raccordo",
+      "id": "slope-21-20-raccordo-2120",
       "ref": null,
-      "name": "21 –> 20 - Raccordo",
+      "name": "21-20 Raccordo 21–20",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "open",
@@ -549,9 +425,9 @@
       "map_length_m": null
     },
     {
-      "id": "slope-21a-youla",
+      "id": "slope-21a-youla-variante",
       "ref": null,
-      "name": "21A - Youla",
+      "name": "21A Youla variante",
       "difficulty": "intermediate",
       "colour": "red",
       "status": "closed",
@@ -559,51 +435,11 @@
       "map_length_m": null
     },
     {
-      "id": "slope-27-lassy",
+      "id": "slope-22-courba",
       "ref": null,
-      "name": "27 - Lassy",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-27a-lassy",
-      "ref": null,
-      "name": "27A - Lassy",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-32-arp-rossa",
-      "ref": null,
-      "name": "32 - Arp Rossa",
-      "difficulty": "intermediate",
-      "colour": "red",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-5-pista-dell-orso",
-      "ref": null,
-      "name": "5 - Pista dell'Orso",
-      "difficulty": "difficult",
-      "colour": "black",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null
-    },
-    {
-      "id": "slope-8-diretta",
-      "ref": null,
-      "name": "8 - Diretta",
-      "difficulty": "difficult",
-      "colour": "black",
+      "name": "22 Courba",
+      "difficulty": "easy",
+      "colour": "blue",
       "status": "closed",
       "length_m": null,
       "map_length_m": null
@@ -611,7 +447,7 @@
     {
       "id": "slope-23-des-eves",
       "ref": null,
-      "name": "23 - Des Eves",
+      "name": "23 Des Eves",
       "difficulty": "difficult",
       "colour": "black",
       "status": "closed",
@@ -621,7 +457,7 @@
     {
       "id": "slope-24-rocce-bianche",
       "ref": null,
-      "name": "24 - Rocce Bianche",
+      "name": "24 Rocce Bianche",
       "difficulty": "difficult",
       "colour": "black",
       "status": "open",
@@ -629,11 +465,211 @@
       "map_length_m": null
     },
     {
-      "id": "slope-33-arp-nera",
+      "id": "slope-25-dolonne",
       "ref": null,
-      "name": "33 - Arp Nera",
+      "name": "25 Dolonne",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-26-snowpark",
+      "ref": null,
+      "name": "26 Snowpark",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-27-lassy",
+      "ref": null,
+      "name": "27 Lassy",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-27a-lassy-variante",
+      "ref": null,
+      "name": "27A Lassy variante",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-28-variante-verde",
+      "ref": null,
+      "name": "28 Variante Verde",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-29-pista-del-cervo",
+      "ref": null,
+      "name": "29 Pista del Cervo",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2a-val-veny-variante",
+      "ref": null,
+      "name": "2A Val Veny variante",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-chetif",
+      "ref": null,
+      "name": "3 Chetif",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-30-raccordo-piste-plan-checrouit",
+      "ref": null,
+      "name": "30 Raccordo Piste Plan Checrouit",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-31-canalino",
+      "ref": null,
+      "name": "31 Canalino",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-31a-canalino-variante",
+      "ref": null,
+      "name": "31A Canalino variante",
       "difficulty": "difficult",
       "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-32-arp-rossa",
+      "ref": null,
+      "name": "32 Arp rossa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-33-arp-nera",
+      "ref": null,
+      "name": "33 Arp Nera",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-campetto-prato",
+      "ref": null,
+      "name": "4 Campetto Prato",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-pista-dell-orso",
+      "ref": null,
+      "name": "5 Pista Dell Orso",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-pra-neyron",
+      "ref": null,
+      "name": "6 Pra Neyron",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6a-pra-neyron-variante",
+      "ref": null,
+      "name": "6A Pra Neyron variante",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-7-dzeleuna",
+      "ref": null,
+      "name": "7 Dzeleuna",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-8-diretta",
+      "ref": null,
+      "name": "8 Diretta",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-9-diagonale-peindent",
+      "ref": null,
+      "name": "9 Diagonale Peindent",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-9-2-raccordo-9-2",
+      "ref": null,
+      "name": "9-2 Raccordo 9 – 2",
+      "difficulty": "intermediate",
+      "colour": "red",
       "status": "closed",
       "length_m": null,
       "map_length_m": null

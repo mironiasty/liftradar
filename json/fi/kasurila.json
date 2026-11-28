@@ -10,7 +10,7 @@
   },
   "website": "https://www.kasurila.com",
   "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.304882+01:00",
+  "fetched_at": "2026-11-28T13:40:36.524511+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -35,17 +35,29 @@
   },
   "slopes": {
     "open": 0,
-    "total": 8,
+    "total": 9,
     "open_km": 0.0,
     "total_km": 5
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 5,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 4,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
     "https://ski.fi/",
-    "https://www.kasurila.com/",
     "https://en.ilmatieteenlaitos.fi/open-data",
     "https://www.skiresort.com/"
   ],
@@ -53,10 +65,6 @@
     "conditions": [
       {
         "url": "https://ski.fi/",
-        "attribution_required": null
-      },
-      {
-        "url": "https://www.kasurila.com/",
         "attribution_required": null
       },
       {
@@ -71,5 +79,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)"
+  ]
 }

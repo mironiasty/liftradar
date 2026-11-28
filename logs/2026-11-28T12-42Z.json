@@ -1,0 +1,232 @@
+{
+  "time": "2026-11-28T13:42:44+01:00",
+  "resorts": [
+    {
+      "id": "nesselwaengle-im-tannheimer-tal",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:29.236521+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Nesselw%C3%A4ngle%20im%20Tannheimer%20Tal_2547'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "niederthai",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-11T11:32:30.478387+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Niederthai_89'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "rangger-koepfl",
+      "country": "at",
+      "status": "no_report",
+      "status_from": "2026-11-23T08:41:38.649397+01:00",
+      "errors": [
+        "snowcard: HTTPStatusError: Client error '404 Not Found' for url 'https://www.snowcard.tirol.at/skigebiet/Rangger%20K%C3%B6pfl_2555'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+      ]
+    },
+    {
+      "id": "maniva",
+      "country": "it",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "live: ValueError: no lift and slope tables on Maniva's live page"
+      ]
+    },
+    {
+      "id": "lizzola",
+      "country": "it",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "live: ValueError: no lifts on Lizzola's page (layout changed?)"
+      ]
+    },
+    {
+      "id": "doganaccia",
+      "country": "it",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "live: ValueError: no lifts on Doganaccia's page (layout changed?)"
+      ]
+    },
+    {
+      "id": "corno-alle-scale",
+      "country": "it",
+      "status": "no_report",
+      "status_from": null,
+      "errors": [
+        "live: ValueError: no lifts on Corno alle Scale's page (layout changed?)"
+      ]
+    },
+    {
+      "id": "czarna-gora",
+      "country": "pl",
+      "status": "closed",
+      "status_from": "2026-11-27T08:40:39.053145+01:00",
+      "errors": [
+        "status: ValueError: unknown state 'Dziś otwarte' (layout changed?)"
+      ]
+    },
+    {
+      "id": "czarnow-ski",
+      "country": "pl",
+      "status": "closed",
+      "status_from": "2026-11-27T08:40:39.053262+01:00",
+      "errors": [
+        "status: ValueError: unknown state 'OD 28.11 OTWARTA NA 3/4 DŁUGOŚCI' (layout changed?)"
+      ]
+    },
+    {
+      "id": "szwajcaria-baltowska",
+      "country": "pl",
+      "status": "closed",
+      "status_from": "2026-11-27T08:40:39.053274+01:00",
+      "errors": [
+        "status: ValueError: no slope boxes (layout changed?)"
+      ]
+    },
+    {
+      "id": "himos",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no 'Avoimet rinteet' or 'Avoimet hissit' counter (page layout changed?)"
+      ]
+    },
+    {
+      "id": "salla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://ski.salla.fi/aukioloajat-talvi/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "ukkohalla",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no 'Rinteet' or 'Hissit' counter (page layout changed?)"
+      ]
+    },
+    {
+      "id": "vuokatti",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no slopes or lifts listed (layout changed?)"
+      ]
+    },
+    {
+      "id": "ounasvaara",
+      "country": "fi",
+      "status": "open",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no 'rinnettä auki' or 'hissiä auki' counter (page layout changed?)"
+      ]
+    },
+    {
+      "id": "riihivuori",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no 'Rinteet' or 'Hissit' counter (page layout changed?)"
+      ]
+    },
+    {
+      "id": "suomutunturi",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ValueError: no 'Avoimet rinteet' or 'Avoimet hissit' counter (page layout changed?)"
+      ]
+    },
+    {
+      "id": "kasurila",
+      "country": "fi",
+      "status": "closed",
+      "status_from": null,
+      "errors": [
+        "status: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)"
+      ]
+    },
+    {
+      "id": "astun-candanchu",
+      "country": "es",
+      "status": "no_report",
+      "status_from": "2026-11-27T08:40:39.058609+01:00",
+      "errors": [
+        "status: ValueError: unknown state 'Parcialmente abierta' of 'Maribeles' (format changed?)"
+      ]
+    },
+    {
+      "id": "golte",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-11T16:22:47.960389+01:00",
+      "errors": [
+        "status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.golte.si/zima/smucanje/proge/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+      ]
+    },
+    {
+      "id": "stari-vrh",
+      "country": "si",
+      "status": "no_report",
+      "status_from": "2026-11-28T08:40:43.308028+01:00",
+      "errors": [
+        "status: KeyError: 'Naprave'"
+      ]
+    }
+  ],
+  "warnings": [
+    "bad-kleinkirchheim: not on the Kärnten list (no recent report, or renamed: Bad Kleinkirchheim)",
+    "ankogel-mallnitz: not on the Kärnten list (no recent report, or renamed: Ankogel / Mallnitz)",
+    "koralpe: not on the Kärnten list (no recent report, or renamed: Koralpe)",
+    "baqueira-beret: status: HTTPStatusError: Client error '403 Forbidden' for url 'https://www.baqueira.es/bb-content/headless/spotlio/baqueira'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403; listed with its size only",
+    "vestvatn: open before its opening day (2027-01-02): closed",
+    "vitosha: status: HTTPStatusError: Client error '404 Not Found' for url 'https://skivitosha.com/information/liftsslopes'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404; listed with its size only",
+    "weather: ReadTimeout for 50 points",
+    "weather: ReadTimeout for 50 points",
+    "weather: ReadTimeout for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 46 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 50 points",
+    "weather: HTTP 503 for 9 points"
+  ]
+}

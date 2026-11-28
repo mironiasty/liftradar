@@ -10,7 +10,7 @@
   },
   "website": "https://himos.fi",
   "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.304673+01:00",
+  "fetched_at": "2026-11-28T13:40:36.524371+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,16 +31,35 @@
   },
   "lifts": {
     "open": 0,
-    "total": 17
+    "total": 15
   },
   "slopes": {
     "open": 0,
-    "total": 26,
+    "total": 21,
     "open_km": 0.0,
     "total_km": 13
   },
   "lifts_by_type": null,
-  "slopes_by_difficulty": null,
+  "slopes_by_difficulty": {
+    "easy": {
+      "open": 0,
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "intermediate": {
+      "open": 0,
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
+    },
+    "difficult": {
+      "open": 0,
+      "total": 8,
+      "open_km": 0.0,
+      "total_km": null
+    }
+  },
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
@@ -71,5 +90,7 @@
       }
     ]
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no 'Avoimet rinteet' or 'Avoimet hissit' counter (page layout changed?)"
+  ]
 }

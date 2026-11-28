@@ -10,7 +10,7 @@
   },
   "website": "https://vuokatti.fi",
   "status": "closed",
-  "fetched_at": "2026-11-28T08:40:43.304749+01:00",
+  "fetched_at": "2026-11-28T13:40:36.524423+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -31,33 +31,35 @@
   },
   "lifts": {
     "open": 0,
-    "total": 10
+    "total": 9
   },
   "slopes": {
     "open": 0,
-    "total": 17,
+    "total": 14,
     "open_km": 0.0,
-    "total_km": 11
+    "total_km": null
   },
-  "lifts_by_type": {
-    "carpet": {
+  "lifts_by_type": null,
+  "slopes_by_difficulty": {
+    "easy": {
       "open": 0,
-      "total": 2
+      "total": 7,
+      "open_km": 0.0,
+      "total_km": null
     },
-    "chairlift": {
+    "intermediate": {
       "open": 0,
-      "total": 2
+      "total": 6,
+      "open_km": 0.0,
+      "total_km": null
     },
-    "drag_lift": {
+    "difficult": {
       "open": 0,
-      "total": 5
-    },
-    "other": {
-      "open": 0,
-      "total": 1
+      "total": 1,
+      "open_km": 0.0,
+      "total_km": null
     }
   },
-  "slopes_by_difficulty": null,
   "lifts_updated_at": null,
   "avalanche": null,
   "sources": [
@@ -82,5 +84,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: no slopes or lifts listed (layout changed?)"
+  ]
 }
