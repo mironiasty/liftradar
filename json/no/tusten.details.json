@@ -2,11 +2,161 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tusten",
   "country": "no",
-  "fetched_at": "2026-11-27T13:40:43.520138+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-28T08:40:43.306448+01:00",
+  "updated_at": "2026-11-28T07:43:26+01:00",
+  "source": "https://fnugg.no/tusten/",
+  "lifts": [
+    {
+      "id": "lift-sparebanken-mre-heisen-tallerkenheisen-491-meter",
+      "ref": null,
+      "name": "Sparebanken møre heisen (Tallerkenheisen) 491 meter",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-t-kroken-479-meter",
+      "ref": null,
+      "name": "T-kroken 479 meter",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-brenthaugheisen-1110-meter",
+      "ref": null,
+      "name": "Brenthaugheisen 1110 meter",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-langheisen-1649-meter",
+      "ref": null,
+      "name": "Langheisen 1649 meter",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-sparebanken-mre-familieomrade",
+      "ref": null,
+      "name": "Sparebanken møre familieområde",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-terrengparken",
+      "ref": null,
+      "name": "Terrengparken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lyslypa",
+      "ref": null,
+      "name": "Lysløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-terrengpark-vre",
+      "ref": null,
+      "name": "Terrengpark øvre",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-utforlypa",
+      "ref": null,
+      "name": "Utforløypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-ole-hendens-vei",
+      "ref": null,
+      "name": "Ole Hendens vei",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-botnlypa",
+      "ref": null,
+      "name": "Botnløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-langtrekket",
+      "ref": null,
+      "name": "Langtrekket",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-lille-fjella",
+      "ref": null,
+      "name": "Lille Fjella",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skogslypa",
+      "ref": null,
+      "name": "Skogsløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 62.76509,
     "lon": 7.27085,

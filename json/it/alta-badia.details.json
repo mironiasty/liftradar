@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "alta-badia",
   "country": "it",
-  "fetched_at": "2026-11-27T13:40:43.505188+01:00",
-  "updated_at": "2026-11-27T13:20:34.935562+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297982+01:00",
+  "updated_at": "2026-11-27T21:20:16.686194+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
     {
@@ -47,7 +47,7 @@
       "ref": null,
       "name": "Baby La Crusc",
       "type": "drag_lift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 280,
       "capacity_per_hour": null,
@@ -335,7 +335,7 @@
       "ref": null,
       "name": "La Crusc 1",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2160,
       "capacity_per_hour": null,
@@ -618,7 +618,7 @@
       "name": "Baby La Crusc",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 450,
       "map_length_m": null
     },
@@ -628,7 +628,7 @@
       "name": "Baby La Crusc - La Crusc 1",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 450,
       "map_length_m": null
     },
@@ -1168,7 +1168,7 @@
       "name": "La Crusc 1",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 2450,
       "map_length_m": 250
     },
@@ -1178,7 +1178,7 @@
       "name": "La Crusc 1 - Baby La Crusc",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 100,
       "map_length_m": null
     },
@@ -1473,6 +1473,16 @@
       "map_length_m": 1300
     },
     {
+      "id": "urn:odhactivitypoi:dss:slope:3_215747",
+      "ref": null,
+      "name": "Seggiovia Pralongiá",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "closed",
+      "length_m": 651,
+      "map_length_m": 1240
+    },
+    {
       "id": "urn:odhactivitypoi:dss:slope:3_64461767",
       "ref": null,
       "name": "Seggiovia Pralongiá",
@@ -1491,16 +1501,6 @@
       "status": "closed",
       "length_m": 1290,
       "map_length_m": 800
-    },
-    {
-      "id": "urn:odhactivitypoi:dss:slope:3_215747",
-      "ref": null,
-      "name": "Seggiovia Pralongiá",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 651,
-      "map_length_m": 1240
     },
     {
       "id": "urn:odhactivitypoi:dss:slope:3_215748",

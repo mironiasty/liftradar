@@ -9,8 +9,8 @@
     "lon": 14.1712
   },
   "website": "https://www.simonhoehe.at",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.495743+01:00",
+  "status": "no_report",
+  "fetched_at": "2026-11-28T08:40:43.292602+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -20,53 +20,15 @@
     "condition": null,
     "stations": []
   },
-  "lifts": {
-    "open": 0,
-    "total": 8
-  },
-  "slopes": {
-    "open": 0,
-    "total": 10,
-    "open_km": 0.0,
-    "total_km": 7
-  },
-  "lifts_by_type": {
-    "carpet": {
-      "open": 0,
-      "total": 2
-    },
-    "drag_lift": {
-      "open": 0,
-      "total": 6
-    }
-  },
-  "slopes_by_difficulty": {
-    "easy": {
-      "open": 0,
-      "total": 6,
-      "open_km": 0.0,
-      "total_km": 5
-    },
-    "intermediate": {
-      "open": 0,
-      "total": 4,
-      "open_km": 0.0,
-      "total_km": 3
-    }
-  },
-  "lifts_updated_at": "2026-11-13T14:30:10+01:00",
-  "details": "json/at/simonhoehe.details.json",
+  "lifts": null,
+  "slopes": null,
+  "lifts_by_type": null,
+  "slopes_by_difficulty": null,
+  "lifts_updated_at": null,
   "avalanche": null,
-  "sources": [
-    "https://www.intermaps.com/"
-  ],
+  "sources": [],
   "source_details": {
-    "conditions": [
-      {
-        "url": "https://www.intermaps.com/",
-        "attribution_required": null
-      }
-    ],
+    "conditions": [],
     "resort_info": []
   },
   "errors": []

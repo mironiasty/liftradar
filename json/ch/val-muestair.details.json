@@ -2,11 +2,231 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "val-muestair",
   "country": "ch",
-  "fetched_at": "2026-11-27T13:40:43.504290+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-28T08:40:43.297443+01:00",
+  "updated_at": "2026-11-27T22:26:00+01:00",
+  "source": "https://infosnow.ch/",
+  "lifts": [
+    {
+      "id": "lift-vallatscha",
+      "ref": null,
+      "name": "Vallatscha",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ubungslift",
+      "ref": null,
+      "name": "Übungslift",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-minschuns",
+      "ref": null,
+      "name": "Minschuns",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-era-sot",
+      "ref": null,
+      "name": "Era Sot",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-1-minschuns",
+      "ref": null,
+      "name": "1 • Minschuns",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-1a-pista-urs-imboden",
+      "ref": null,
+      "name": "1a • Pista Urs Imboden",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-1b-minschuns",
+      "ref": null,
+      "name": "1b • Minschuns",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-2-crap-nair",
+      "ref": null,
+      "name": "2 • Crap Nair",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-3-marmels",
+      "ref": null,
+      "name": "3 • Marmels",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-4-funtauna-da-s-carl",
+      "ref": null,
+      "name": "4 • Funtauna da S-carl",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-5-vallatscha",
+      "ref": null,
+      "name": "5 • Vallatscha",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-6-valbella",
+      "ref": null,
+      "name": "6 • Valbella",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-verbindungsstuck-5-zu-6",
+      "ref": null,
+      "name": "Verbindungsstück 5 zu 6",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-7-crap-alb",
+      "ref": null,
+      "name": "7 • Crap Alb",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-8-motta-lischa",
+      "ref": null,
+      "name": "8 • Motta Lischa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-9-era-sot",
+      "ref": null,
+      "name": "9 • Era Sot",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-10-tschierv",
+      "ref": null,
+      "name": "10 • Tschierv",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-talabfahrt-minschunsabzw-minschuns",
+      "ref": null,
+      "name": "Talabfahrt Minschuns–Abzw. Minschuns",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-talabfahrt-abzw-minschunstschierv",
+      "ref": null,
+      "name": "Talabfahrt Abzw. Minschuns–Tschierv",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-12-minschunsalp-champatschlu",
+      "ref": null,
+      "name": "12 • Minschuns–Alp Champatsch–Lü",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-minschuns-minschuns-juata-unmarkiert",
+      "ref": null,
+      "name": "Minschuns - Minschuns Juata (unmarkiert)",
+      "difficulty": "ski_route",
+      "colour": "yellow",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 46.6375,
     "lon": 10.32416,

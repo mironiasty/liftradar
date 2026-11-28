@@ -9,58 +9,59 @@
     "lon": 10.0873
   },
   "website": "https://www.skeikampen.no/",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.519802+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.306146+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 60,
+    "valley_cm": 60,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Nysnø og nypreparert",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 5,
     "total": 11
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 21,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 21
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 2,
       "total": 2
     },
     "other": {
-      "open": 0,
+      "open": 3,
       "total": 9
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 3,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-10-26T12:12:37+01:00",
+  "lifts_updated_at": "2026-11-28T08:17:28+01:00",
+  "details": "json/no/skeikampen.details.json",
   "avalanche": null,
   "sources": [
     "https://fnugg.no/skeikampen/",

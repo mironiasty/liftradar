@@ -10,28 +10,36 @@
   },
   "website": "https://www.crans-montana.ch",
   "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503443+01:00",
+  "fetched_at": "2026-11-28T08:40:43.296816+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-12",
+    "last_snowfall": "2026-11-25",
     "condition": null,
     "stations": [
       {
-        "name": "Donin du Jour (SLF)",
-        "elevation_m": 2385,
-        "depth_cm": 150,
-        "fresh_cm": 4,
+        "name": "in place",
+        "elevation_m": 1500,
+        "depth_cm": 20,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
       {
-        "name": "Montana (SLF)",
-        "elevation_m": 1590,
-        "depth_cm": 33,
-        "fresh_cm": 1,
+        "name": "In the ski area below",
+        "elevation_m": 2200,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
+        "name": "In the ski area above",
+        "elevation_m": 3000,
+        "depth_cm": 120,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -101,7 +109,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:33:00+01:00",
   "details": "json/ch/crans-montana.details.json",
   "avalanche": {
     "region_id": "CH-4121",
@@ -120,14 +128,14 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.mycma.ch/"
+    "https://www.mycma.ch/",
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
@@ -136,7 +144,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],

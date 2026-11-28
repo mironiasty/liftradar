@@ -9,30 +9,30 @@
     "lon": 12.3837
   },
   "website": "https://www.hochpustertal-ski.at",
-  "status": "open",
-  "fetched_at": "2026-11-27T13:42:06.794759+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-28T08:42:05.462065+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 40,
-    "valley_cm": 20,
+    "mountain_cm": null,
+    "valley_cm": null,
     "fresh_cm": null,
     "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 4,
+    "open": 0,
     "total": 7
   },
   "slopes": {
-    "open": 4,
+    "open": 0,
     "total": 13,
     "open_km": 0.0,
     "total_km": 22
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-27T12:30:00+01:00",
+  "lifts_updated_at": "2026-11-27T14:02:00+01:00",
   "avalanche": {
     "region_id": "AT-07-27",
     "region": "Deferegger Alps East",
@@ -55,9 +55,9 @@
     "problems": [
       "wind_slab"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.snowcard.tirol.at/",

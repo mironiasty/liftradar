@@ -11,13 +11,13 @@
   "website": "https://www.altabadia.org",
   "linked_area": "sella-ronda",
   "ski_region": "dolomiti-superski",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.505188+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.297982+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 45,
+    "valley_cm": 30,
+    "fresh_cm": 20,
     "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": [
@@ -40,13 +40,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 47
   },
   "slopes": {
-    "open": 0,
+    "open": 4,
     "total": 110,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 130
   },
   "lifts_by_type": {
@@ -55,7 +55,7 @@
       "total": 24
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 11
     },
     "funicular": {
@@ -63,15 +63,15 @@
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 11
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 4,
       "total": 82,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
@@ -87,7 +87,7 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-27T13:20:34.935562+01:00",
+  "lifts_updated_at": "2026-11-27T21:20:16.686194+01:00",
   "details": "json/it/alta-badia.details.json",
   "avalanche": {
     "region_id": "IT-32-BZ-18-02",
@@ -112,9 +112,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://opendatahub.com/",

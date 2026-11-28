@@ -10,12 +10,12 @@
   },
   "website": "https://www.flumserberg.ch",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.503549+01:00",
+  "fetched_at": "2026-11-28T08:40:43.296912+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 40,
     "valley_cm": 90,
-    "fresh_cm": 10,
+    "fresh_cm": null,
     "last_snowfall": "2026-11-26",
     "condition": "powder",
     "stations": [
@@ -23,7 +23,7 @@
         "name": "Tannenheim",
         "elevation_m": null,
         "depth_cm": 40,
-        "fresh_cm": 5,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -31,7 +31,7 @@
         "name": "Tannenboden",
         "elevation_m": null,
         "depth_cm": 60,
-        "fresh_cm": 5,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -39,25 +39,25 @@
         "name": "Maschgenkamm",
         "elevation_m": null,
         "depth_cm": 90,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 4,
+    "open": 9,
     "total": 17
   },
   "slopes": {
-    "open": 6,
+    "open": 17,
     "total": 55,
     "open_km": null,
     "total_km": 65
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 1,
+      "open": 5,
       "total": 8
     },
     "drag_lift": {
@@ -65,19 +65,19 @@
       "total": 5
     },
     "gondola": {
-      "open": 3,
+      "open": 4,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 3,
+      "open": 4,
       "total": 11,
-      "open_km": 4.0,
+      "open_km": 4.3,
       "total_km": 14
     },
     "intermediate": {
-      "open": 3,
+      "open": 13,
       "total": 32,
       "open_km": null,
       "total_km": null
@@ -95,7 +95,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T13:30:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:30:00+01:00",
   "details": "json/ch/flumserberg.details.json",
   "avalanche": {
     "region_id": "CH-3223",
@@ -111,12 +111,12 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

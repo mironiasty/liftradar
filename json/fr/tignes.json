@@ -11,39 +11,39 @@
   "website": "https://www.tignes.net",
   "linked_area": "tignes-val-d-isere",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.510642+01:00",
+  "fetched_at": "2026-11-28T08:40:43.301283+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 190,
-    "valley_cm": 95,
-    "fresh_cm": 4,
+    "mountain_cm": 180,
+    "valley_cm": 91,
+    "fresh_cm": null,
     "last_snowfall": "2026-11-26",
-    "condition": "Fraîche",
+    "condition": "Douce",
     "stations": [
       {
         "name": "Grande Motte",
         "elevation_m": 3032,
-        "depth_cm": 190,
-        "fresh_cm": 4,
+        "depth_cm": 180,
+        "fresh_cm": null,
         "temperature_c": null,
-        "condition": "Fraîche"
+        "condition": "Douce"
       },
       {
         "name": "Tignes Lac",
         "elevation_m": 2100,
-        "depth_cm": 95,
-        "fresh_cm": 2,
+        "depth_cm": 91,
+        "fresh_cm": null,
         "temperature_c": null,
-        "condition": "Fraîche"
+        "condition": "Douce"
       }
     ]
   },
   "lifts": {
-    "open": 15,
+    "open": 16,
     "total": 37
   },
   "slopes": {
-    "open": 21,
+    "open": 23,
     "total": 82,
     "open_km": null,
     "total_km": 150
@@ -58,7 +58,7 @@
       "total": 5
     },
     "chairlift": {
-      "open": 9,
+      "open": 10,
       "total": 20
     },
     "drag_lift": {
@@ -82,7 +82,7 @@
       "total_km": null
     },
     "intermediate": {
-      "open": 2,
+      "open": 4,
       "total": 21,
       "open_km": null,
       "total_km": null
@@ -105,20 +105,20 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2500,
+        "upper_bound": 2000,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 2500,
+        "lower_bound": 2000,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T18:00:00+01:00"
+    "published_at": "2026-11-27T16:00:00+01:00",
+    "valid_from": "2026-11-27T16:00:00+01:00",
+    "valid_until": "2026-11-28T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com/",

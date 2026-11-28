@@ -10,39 +10,39 @@
   },
   "website": "https://www.titlis.ch",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.504936+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297855+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 44,
-    "valley_cm": 21,
-    "fresh_cm": 12,
+    "mountain_cm": 42,
+    "valley_cm": 19,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Titlisboden (SLF)",
         "elevation_m": 2149,
-        "depth_cm": 44,
-        "fresh_cm": 12,
+        "depth_cm": 42,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Engelberg (SLF)",
         "elevation_m": 1023,
-        "depth_cm": 21,
-        "fresh_cm": 11,
+        "depth_cm": 19,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 5,
+    "open": 6,
     "total": 20
   },
   "slopes": {
-    "open": 3,
+    "open": 8,
     "total": 26,
     "open_km": null,
     "total_km": 82
@@ -57,7 +57,7 @@
       "total": 1
     },
     "chairlift": {
-      "open": 1,
+      "open": 2,
       "total": 6
     },
     "drag_lift": {
@@ -81,7 +81,7 @@
       "total_km": 14
     },
     "intermediate": {
-      "open": 3,
+      "open": 8,
       "total": 14,
       "open_km": null,
       "total_km": null
@@ -115,13 +115,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.titlis.ch/",

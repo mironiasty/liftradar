@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "jakobshorn",
   "country": "ch",
-  "fetched_at": "2026-11-27T13:40:43.505070+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297919+01:00",
   "updated_at": null,
   "source": "https://www.davos.ch/",
   "lifts": [
@@ -79,6 +79,18 @@
       "top_m": null
     },
     {
+      "id": "69",
+      "ref": null,
+      "name": "Bräma Jet | 4er Sesselbahn",
+      "type": "chairlift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": 1520,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
       "id": "59",
       "ref": null,
       "name": "Carjöl – Carjöler Rank | 2er Sesselbahn",
@@ -113,21 +125,19 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
-    },
-    {
-      "id": "69",
-      "ref": null,
-      "name": "Bräma Jet | 4er Sesselbahn",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1520,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
     }
   ],
   "slopes": [
+    {
+      "id": "103",
+      "ref": null,
+      "name": "Traverse",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 4200,
+      "map_length_m": 3830
+    },
     {
       "id": "105",
       "ref": null,
@@ -147,6 +157,16 @@
       "status": "open",
       "length_m": 2500,
       "map_length_m": 2170
+    },
+    {
+      "id": "109",
+      "ref": null,
+      "name": "Usser Isch",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "open",
+      "length_m": 1000,
+      "map_length_m": 320
     },
     {
       "id": "111",
@@ -169,6 +189,16 @@
       "map_length_m": 2250
     },
     {
+      "id": "91",
+      "ref": null,
+      "name": "Gämpen - Davos | Talabfahrt",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 5400,
+      "map_length_m": 3320
+    },
+    {
       "id": "93",
       "ref": null,
       "name": "Jatzpiste",
@@ -179,22 +209,12 @@
       "map_length_m": 1210
     },
     {
-      "id": "91",
-      "ref": null,
-      "name": "Gämpen - Davos | Talabfahrt",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 5400,
-      "map_length_m": 3320
-    },
-    {
       "id": "115",
       "ref": null,
       "name": "Davos Vertical | Talabfahrt",
       "difficulty": "difficult",
       "colour": "black",
-      "status": "closed",
+      "status": "open",
       "length_m": 1400,
       "map_length_m": 1080
     },
@@ -227,26 +247,6 @@
       "status": "closed",
       "length_m": 5400,
       "map_length_m": 3510
-    },
-    {
-      "id": "103",
-      "ref": null,
-      "name": "Traverse",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 4200,
-      "map_length_m": 3830
-    },
-    {
-      "id": "109",
-      "ref": null,
-      "name": "Usser Isch",
-      "difficulty": "difficult",
-      "colour": "black",
-      "status": "closed",
-      "length_m": 1000,
-      "map_length_m": 320
     },
     {
       "id": "95",

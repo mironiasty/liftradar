@@ -10,7 +10,7 @@
   },
   "website": "https://www.vividevero.it",
   "status": "no_report",
-  "fetched_at": "2026-11-27T13:40:43.507815+01:00",
+  "fetched_at": "2026-11-28T08:40:43.299523+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -42,12 +42,12 @@
       {
         "level": "low",
         "lower_bound": null,
-        "upper_bound": "treeline",
+        "upper_bound": 2300,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": "treeline",
+        "lower_bound": 2300,
         "upper_bound": null,
         "period": "all_day"
       }
@@ -55,9 +55,9 @@
     "problems": [
       "wind_slab"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-27T00:00:00+01:00",
-    "valid_until": "2026-11-28T00:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-28T00:00:00+01:00",
+    "valid_until": "2026-11-29T00:00:00+01:00"
   },
   "sources": [
     "https://www.skiinfo.fr/",

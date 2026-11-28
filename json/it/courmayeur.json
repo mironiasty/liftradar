@@ -11,7 +11,7 @@
   "website": "https://www.courmayeur-montblanc.com",
   "ski_region": "valle-d-aosta",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.505429+01:00",
+  "fetched_at": "2026-11-28T08:40:43.298116+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -73,23 +73,17 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T11:54:00+01:00",
+  "lifts_updated_at": "2026-11-28T07:10:00+01:00",
   "details": "json/it/courmayeur.details.json",
   "avalanche": {
     "region_id": "IT-23-AO-22",
     "region": "D - VAL VENY",
-    "danger_level": 3,
-    "danger": "considerable",
+    "danger_level": 2,
+    "danger": "moderate",
     "ratings": [
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 2300,
-        "period": "all_day"
-      },
-      {
-        "level": "considerable",
-        "lower_bound": 2300,
         "upper_bound": null,
         "period": "all_day"
       }
@@ -98,9 +92,9 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-27T00:00:00+01:00",
-    "valid_until": "2026-11-28T00:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-28T00:00:00+01:00",
+    "valid_until": "2026-11-29T00:00:00+01:00"
   },
   "sources": [
     "https://www.lovevda.it/",

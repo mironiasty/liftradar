@@ -9,30 +9,47 @@
     "lon": -0.0588
   },
   "website": "https://luz-ardiden.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T13:40:43.515336+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.302012+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
-    "last_snowfall": null,
-    "condition": null,
-    "stations": []
+    "mountain_cm": 40,
+    "valley_cm": 30,
+    "fresh_cm": 40,
+    "last_snowfall": "2026-11-27",
+    "condition": "Fraîche",
+    "stations": [
+      {
+        "name": "Pied de piste",
+        "elevation_m": 1730,
+        "depth_cm": 30,
+        "fresh_cm": 30,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      },
+      {
+        "name": "Sommet",
+        "elevation_m": 2500,
+        "depth_cm": 40,
+        "fresh_cm": 40,
+        "temperature_c": null,
+        "condition": "Fraîche"
+      }
+    ]
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 9
   },
   "slopes": {
-    "open": null,
+    "open": 2,
     "total": 29,
     "open_km": null,
     "total_km": 60
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 2,
       "total": 2
     },
     "chairlift": {
@@ -46,25 +63,26 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 2,
       "total": 11,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 15,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
       "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/luz-ardiden.details.json",
   "avalanche": {
     "region_id": "FR-66",
     "region": "Haute-Bigorre",
@@ -79,9 +97,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-26T16:00:00+01:00",
-    "valid_from": "2026-11-26T16:00:00+01:00",
-    "valid_until": "2026-11-27T18:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com/",

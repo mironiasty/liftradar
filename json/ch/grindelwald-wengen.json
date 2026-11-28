@@ -11,7 +11,7 @@
   "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.504958+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297867+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,8 +23,8 @@
       {
         "name": "Männlichen",
         "elevation_m": 2230,
-        "depth_cm": 0,
-        "fresh_cm": 0,
+        "depth_cm": 30,
+        "fresh_cm": 15,
         "temperature_c": null,
         "condition": null
       },
@@ -96,7 +96,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T12:10:05+01:00",
+  "lifts_updated_at": "2026-11-27T16:20:04+01:00",
   "details": "json/ch/grindelwald-wengen.details.json",
   "avalanche": {
     "region_id": "CH-1242",
@@ -112,12 +112,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
+      "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.jungfrau.ch/",

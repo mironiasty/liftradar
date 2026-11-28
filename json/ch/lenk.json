@@ -11,15 +11,15 @@
   "website": "https://www.adelboden-lenk.ch",
   "linked_area": "adelboden-lenk",
   "ski_region": "skiregion-adelboden-lenk",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503763+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.297091+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 52,
+    "valley_cm": 5,
     "fresh_cm": null,
     "last_snowfall": "2026-11-26",
-    "condition": null,
+    "condition": "powder",
     "stations": [
       {
         "name": "in place",
@@ -40,13 +40,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 4,
     "total": 18
   },
   "slopes": {
-    "open": 0,
+    "open": 7,
     "total": 39,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 72
   },
   "lifts_by_type": {
@@ -55,7 +55,7 @@
       "total": 3
     },
     "chairlift": {
-      "open": 0,
+      "open": 2,
       "total": 4
     },
     "drag_lift": {
@@ -63,21 +63,21 @@
       "total": 7
     },
     "gondola": {
-      "open": 0,
+      "open": 2,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 5,
       "total": 19,
-      "open_km": 0.0,
+      "open_km": 9.6,
       "total_km": 41
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": 1.7,
       "total_km": 26
     },
     "difficult": {
@@ -87,13 +87,13 @@
       "total_km": 3
     },
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:30:00+01:00",
   "details": "json/ch/lenk.details.json",
   "avalanche": {
     "region_id": "CH-1224",
@@ -112,9 +112,9 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

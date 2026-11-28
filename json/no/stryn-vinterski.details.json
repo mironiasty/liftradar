@@ -2,11 +2,131 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "stryn-vinterski",
   "country": "no",
-  "fetched_at": "2026-11-27T13:40:43.520208+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-28T08:40:43.306498+01:00",
+  "updated_at": "2025-02-19T10:21:13+01:00",
+  "source": "https://fnugg.no/strynvinterski/",
+  "lifts": [
+    {
+      "id": "lift-hovedtrekket",
+      "ref": null,
+      "name": "Hovedtrekket",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-steindalstrekket",
+      "ref": null,
+      "name": "Steindalstrekket",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-juniortrekket",
+      "ref": null,
+      "name": "Juniortrekket",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-tautrekket",
+      "ref": null,
+      "name": "Tautrekket",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-hovudtrase",
+      "ref": null,
+      "name": "Hovudtrase",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-rundlypa",
+      "ref": null,
+      "name": "Rundløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-nakkjen",
+      "ref": null,
+      "name": "Nakkjen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stsida-steindalen",
+      "ref": null,
+      "name": "Østsida Steindalen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-vestsida-steindalen",
+      "ref": null,
+      "name": "Vestsida Steindalen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-juniortrekket",
+      "ref": null,
+      "name": "Juniortrekket",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tautrekket",
+      "ref": null,
+      "name": "Tautrekket",
+      "difficulty": "other",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 61.92214,
     "lon": 6.6927,

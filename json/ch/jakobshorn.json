@@ -11,41 +11,41 @@
   "website": "https://www.davosklostersmountains.ch",
   "ski_region": "davos-klosters",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.505070+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297919+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 52,
-    "valley_cm": 28,
-    "fresh_cm": 14,
+    "mountain_cm": 50,
+    "valley_cm": 25,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Luksch Alp (SLF)",
         "elevation_m": 2290,
-        "depth_cm": 52,
-        "fresh_cm": 14,
+        "depth_cm": 50,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
       {
         "name": "Davos Flüelastr. (SLF)",
         "elevation_m": 1560,
-        "depth_cm": 28,
-        "fresh_cm": 9,
+        "depth_cm": 25,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 9,
+    "open": 10,
     "total": 10
   },
   "slopes": {
-    "open": 5,
+    "open": 9,
     "total": 17,
-    "open_km": 16.5,
+    "open_km": 28.5,
     "total_km": 53
   },
   "lifts_by_type": {
@@ -54,7 +54,7 @@
       "total": 3
     },
     "chairlift": {
-      "open": 5,
+      "open": 6,
       "total": 6
     },
     "drag_lift": {
@@ -64,9 +64,9 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 2,
+      "open": 4,
       "total": 5,
-      "open_km": 10.5,
+      "open_km": 20.1,
       "total_km": 26
     },
     "intermediate": {
@@ -76,9 +76,9 @@
       "total_km": 9
     },
     "difficult": {
-      "open": 1,
+      "open": 3,
       "total": 4,
-      "open_km": 1.5,
+      "open_km": 3.9,
       "total_km": 8
     },
     "other": {
@@ -107,9 +107,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.davos.ch/",

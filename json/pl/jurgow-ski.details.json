@@ -2,10 +2,22 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "jurgow-ski",
   "country": "pl",
-  "fetched_at": "2026-11-27T13:40:43.509226+01:00",
+  "fetched_at": "2026-11-28T08:40:43.300390+01:00",
   "updated_at": null,
   "source": "https://tatrysuperski.pl/",
   "lifts": [
+    {
+      "id": "5fd38158a539d93aea5772fe",
+      "ref": null,
+      "name": "Murań",
+      "type": "other",
+      "status": "open",
+      "length_m": 950,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
     {
       "id": "5fd38159a539d93aea57730a",
       "ref": null,
@@ -55,18 +67,6 @@
       "top_m": null
     },
     {
-      "id": "5fd38158a539d93aea5772fe",
-      "ref": null,
-      "name": "Murań",
-      "type": "other",
-      "status": "closed",
-      "length_m": 950,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "5fd3815aa539d93aea57733a",
       "ref": null,
       "name": "Przenośnik Taśmowy G",
@@ -110,8 +110,18 @@
       "name": "Trasa 1",
       "difficulty": "easy",
       "colour": "blue",
-      "status": "closed",
+      "status": "open",
       "length_m": 720,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd38157a539d93aea5772d6",
+      "ref": null,
+      "name": "Trasa 2",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 1300,
       "map_length_m": null
     },
     {
@@ -122,16 +132,6 @@
       "colour": "blue",
       "status": "closed",
       "length_m": 100,
-      "map_length_m": null
-    },
-    {
-      "id": "5fd38157a539d93aea5772d6",
-      "ref": null,
-      "name": "Trasa 2",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 1300,
       "map_length_m": null
     },
     {

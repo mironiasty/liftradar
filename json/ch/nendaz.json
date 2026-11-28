@@ -10,12 +10,12 @@
   },
   "website": "https://www.nendaz.ch",
   "linked_area": "4-vallees",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503918+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.297226+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 15,
+    "valley_cm": 60,
     "fresh_cm": null,
     "last_snowfall": "2026-11-22",
     "condition": null,
@@ -47,13 +47,13 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 3,
     "total": 18
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 23,
-    "open_km": 0.0,
+    "open_km": 9.8,
     "total_km": 48
   },
   "lifts_by_type": {
@@ -66,7 +66,7 @@
       "total": 3
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "drag_lift": {
@@ -74,25 +74,25 @@
       "total": 7
     },
     "funicular": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 3
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": 2.1,
       "total_km": 6
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 12,
-      "open_km": 0.0,
+      "open_km": 7.7,
       "total_km": 33
     },
     "difficult": {
@@ -108,7 +108,7 @@
       "total_km": 6
     }
   },
-  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:31:00+01:00",
   "details": "json/ch/nendaz.details.json",
   "avalanche": {
     "region_id": "CH-4115",
@@ -127,9 +127,9 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

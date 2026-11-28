@@ -11,27 +11,19 @@
   "website": "https://www.matterhornparadise.ch",
   "linked_area": "matterhorn-ski-paradise",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.504804+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297798+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 62,
-    "valley_cm": 5,
-    "fresh_cm": 2,
+    "mountain_cm": 58,
+    "valley_cm": null,
+    "fresh_cm": 0,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Triftchumme (SLF)",
         "elevation_m": 2752,
-        "depth_cm": 62,
-        "fresh_cm": 2,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Zermatt (SLF)",
-        "elevation_m": 1600,
-        "depth_cm": 5,
+        "depth_cm": 58,
         "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
@@ -39,7 +31,7 @@
     ]
   },
   "lifts": {
-    "open": 12,
+    "open": 13,
     "total": 36
   },
   "slopes": {
@@ -54,11 +46,11 @@
       "total": 6
     },
     "chairlift": {
-      "open": 1,
+      "open": 2,
       "total": 10
     },
     "drag_lift": {
-      "open": 1,
+      "open": 0,
       "total": 5
     },
     "funicular": {
@@ -66,7 +58,7 @@
       "total": 2
     },
     "gondola": {
-      "open": 6,
+      "open": 7,
       "total": 9
     },
     "other": {
@@ -76,15 +68,15 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 2,
+      "open": 3,
       "total": 12,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 11,
+      "open": 10,
       "total": 48,
-      "open_km": 20.2,
+      "open_km": 17.5,
       "total_km": 99
     },
     "difficult": {
@@ -100,7 +92,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T13:40:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:41:00+01:00",
   "details": "json/ch/zermatt.details.json",
   "avalanche": {
     "region_id": "CH-4222",
@@ -119,9 +111,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

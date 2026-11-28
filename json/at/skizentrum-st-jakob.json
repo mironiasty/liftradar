@@ -9,14 +9,14 @@
     "lon": 12.3787
   },
   "website": "https://www.stjakob-ski.at",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T13:42:07.175531+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-28T08:42:05.472160+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": []
   },
@@ -25,14 +25,14 @@
     "total": 7
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 19,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 17
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-07-21T15:20:00+02:00",
+  "lifts_updated_at": "2026-11-27T15:06:00+01:00",
   "avalanche": {
     "region_id": "AT-07-27",
     "region": "Deferegger Alps East",
@@ -55,9 +55,9 @@
     "problems": [
       "wind_slab"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.snowcard.tirol.at/",

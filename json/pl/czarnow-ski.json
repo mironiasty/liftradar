@@ -10,8 +10,8 @@
   },
   "website": "https://czarnow-ski.pl",
   "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.509956+01:00",
-  "status_from": null,
+  "fetched_at": "2026-11-28T08:40:43.300869+01:00",
+  "status_from": "2026-11-27T08:40:39.053262+01:00",
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -46,7 +46,6 @@
     }
   },
   "lifts_updated_at": null,
-  "details": "json/pl/czarnow-ski.details.json",
   "avalanche": null,
   "sources": [
     "https://czarnow-ski.pl/"
@@ -60,5 +59,7 @@
     ],
     "resort_info": []
   },
-  "errors": []
+  "errors": [
+    "status: ValueError: unknown state 'OD 28.11 OTWARTA NA 3/4 DŁUGOŚCI' (layout changed?)"
+  ]
 }

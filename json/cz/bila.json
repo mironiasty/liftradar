@@ -9,30 +9,30 @@
     "lon": 18.4224
   },
   "website": "https://www.skibila.cz",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.508686+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.300062+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 25,
+    "valley_cm": 10,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "prachový",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 7
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 9,
-    "open_km": 0.0,
+    "open_km": 0.1,
     "total_km": 6
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "chairlift": {
@@ -40,15 +40,15 @@
       "total": 1
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 3
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": 0.1,
       "total_km": 4
     },
     "intermediate": {

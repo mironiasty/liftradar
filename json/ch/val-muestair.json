@@ -9,29 +9,21 @@
     "lon": 10.3354
   },
   "website": "https://www.val-muestair.ch",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T13:40:43.504290+01:00",
+  "status": "closed",
+  "fetched_at": "2026-11-28T08:40:43.297443+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": 43,
-    "valley_cm": 10,
-    "fresh_cm": 17,
+    "mountain_cm": null,
+    "valley_cm": null,
+    "fresh_cm": null,
     "last_snowfall": null,
     "condition": null,
     "stations": [
       {
         "name": "Murtaröl (SLF)",
         "elevation_m": 2359,
-        "depth_cm": 43,
-        "fresh_cm": 17,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Sta.Maria (SLF)",
-        "elevation_m": 1387,
-        "depth_cm": 10,
-        "fresh_cm": 5,
+        "depth_cm": 39,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       }
@@ -42,9 +34,9 @@
     "total": 4
   },
   "slopes": {
-    "open": null,
+    "open": 0,
     "total": 17,
-    "open_km": null,
+    "open_km": 0.0,
     "total_km": 18
   },
   "lifts_by_type": {
@@ -55,31 +47,32 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 7,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 0,
       "total": 5,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 3,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     },
     "ski_route": {
-      "open": null,
+      "open": 0,
       "total": 2,
-      "open_km": null,
+      "open_km": 0.0,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-05-18T11:27:00+02:00",
+  "lifts_updated_at": "2026-11-27T22:26:00+01:00",
+  "details": "json/ch/val-muestair.details.json",
   "avalanche": {
     "region_id": "CH-7231",
     "region": "Val Müstair",
@@ -97,9 +90,9 @@
       "wind_slab",
       "persistent_weak_layers"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

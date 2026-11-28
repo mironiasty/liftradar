@@ -10,30 +10,30 @@
   },
   "website": "https://www.pontedilegnotonale.com",
   "ski_region": "skirama",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.505663+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.298237+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 30,
+    "valley_cm": 80,
     "fresh_cm": null,
-    "last_snowfall": "2026-03-22",
+    "last_snowfall": "2026-11-26",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 5,
     "total": 29
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 46,
-    "open_km": 0.0,
+    "open_km": 5.0,
     "total_km": 100
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 0,
+      "open": 3,
       "total": 17
     },
     "drag_lift": {
@@ -41,11 +41,11 @@
       "total": 2
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 6
     },
     "carpet": {
-      "open": 0,
+      "open": 1,
       "total": 4
     }
   },
@@ -53,13 +53,13 @@
     "easy": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": 1.0,
       "total_km": 24
     },
     "intermediate": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": 4.0,
       "total_km": 60
     },
     "difficult": {

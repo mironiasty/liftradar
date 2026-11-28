@@ -10,30 +10,30 @@
   },
   "website": "https://www.ski-optimal.at",
   "ski_region": "zillertal",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:41:55.604082+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:41:51.550769+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 33,
+    "valley_cm": 5,
     "fresh_cm": null,
     "last_snowfall": "2026-10-24",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 9,
     "total": 38
   },
   "slopes": {
-    "open": 0,
+    "open": 11,
     "total": 50,
-    "open_km": 0.0,
+    "open_km": 36.8,
     "total_km": 91
   },
   "lifts_by_type": null,
   "slopes_by_difficulty": null,
-  "lifts_updated_at": "2026-11-26T17:33:00+01:00",
+  "lifts_updated_at": "2026-11-27T15:44:00+01:00",
   "avalanche": {
     "region_id": "AT-07-16",
     "region": "Tuxer Alps East",
@@ -57,9 +57,9 @@
       "persistent_weak_layers",
       "wind_slab"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.snowcard.tirol.at/",

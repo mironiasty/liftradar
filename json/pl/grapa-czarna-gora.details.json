@@ -2,7 +2,7 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "grapa-czarna-gora",
   "country": "pl",
-  "fetched_at": "2026-11-27T13:40:43.509208+01:00",
+  "fetched_at": "2026-11-28T08:40:43.300377+01:00",
   "updated_at": null,
   "source": "https://tatrysuperski.pl/",
   "lifts": [
@@ -11,8 +11,32 @@
       "ref": null,
       "name": "Kolej",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": 1000,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd3813fa539d93aea577034",
+      "ref": null,
+      "name": "Orczyk mały",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": 120,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "5fd38140a539d93aea577058",
+      "ref": null,
+      "name": "Taśma",
+      "type": "carpet",
+      "status": "open",
+      "length_m": 40,
       "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
@@ -29,33 +53,39 @@
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
-    },
-    {
-      "id": "5fd3813fa539d93aea577034",
-      "ref": null,
-      "name": "Orczyk mały",
-      "type": "drag_lift",
-      "status": "closed",
-      "length_m": 120,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "5fd38140a539d93aea577058",
-      "ref": null,
-      "name": "Taśma",
-      "type": "carpet",
-      "status": "closed",
-      "length_m": 40,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
     }
   ],
   "slopes": [
+    {
+      "id": "5fd3813ea539d93aea577014",
+      "ref": null,
+      "name": "Trasa 1",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 1000,
+      "map_length_m": null
+    },
+    {
+      "id": "5fd3813ea539d93aea577024",
+      "ref": null,
+      "name": "Trasa 4",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 120,
+      "map_length_m": null
+    },
+    {
+      "id": "674d5ab379d8d3155884588a",
+      "ref": null,
+      "name": "Trasa 7",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "open",
+      "length_m": 40,
+      "map_length_m": null
+    },
     {
       "id": "5fd3813fa539d93aea577028",
       "ref": null,
@@ -97,16 +127,6 @@
       "map_length_m": null
     },
     {
-      "id": "5fd3813ea539d93aea577014",
-      "ref": null,
-      "name": "Trasa 1",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 1000,
-      "map_length_m": null
-    },
-    {
       "id": "5fd3813ea539d93aea577018",
       "ref": null,
       "name": "Trasa 2",
@@ -134,26 +154,6 @@
       "colour": "blue",
       "status": "closed",
       "length_m": 350,
-      "map_length_m": null
-    },
-    {
-      "id": "5fd3813ea539d93aea577024",
-      "ref": null,
-      "name": "Trasa 4",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 120,
-      "map_length_m": null
-    },
-    {
-      "id": "674d5ab379d8d3155884588a",
-      "ref": null,
-      "name": "Trasa 7",
-      "difficulty": "easy",
-      "colour": "blue",
-      "status": "closed",
-      "length_m": 40,
       "map_length_m": null
     },
     {

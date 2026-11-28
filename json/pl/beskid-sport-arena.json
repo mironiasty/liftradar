@@ -10,8 +10,8 @@
   },
   "website": "https://beskidsportarena.pl",
   "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.509116+01:00",
-  "status_from": "2026-11-26T08:40:39.162882+01:00",
+  "fetched_at": "2026-11-28T08:40:43.300329+01:00",
+  "status_from": null,
   "snow": {
     "mountain_cm": null,
     "valley_cm": null,
@@ -55,13 +55,20 @@
     }
   },
   "lifts_updated_at": null,
+  "details": "json/pl/beskid-sport-arena.details.json",
   "avalanche": null,
   "sources": [
+    "https://beskidsportarena.pl/",
     "https://slaskie.travel/",
     "https://www.skiinfo.fr/"
   ],
   "source_details": {
-    "conditions": [],
+    "conditions": [
+      {
+        "url": "https://beskidsportarena.pl/",
+        "attribution_required": null
+      }
+    ],
     "resort_info": [
       {
         "url": "https://slaskie.travel/",
@@ -73,7 +80,5 @@
       }
     ]
   },
-  "errors": [
-    "status: HTTPStatusError: Server error '502 Bad Gateway' for url 'https://beskidsportarena.pl/szczyrk-wyciagi-narciarskie-i-kolej-linowa'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502"
-  ]
+  "errors": []
 }

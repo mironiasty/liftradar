@@ -9,8 +9,8 @@
     "lon": 6.1238
   },
   "website": "https://www.les2alpes.com",
-  "status": "no_report",
-  "fetched_at": "2026-11-27T13:40:43.511380+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.301753+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -21,11 +21,11 @@
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 43
   },
   "slopes": {
-    "open": null,
+    "open": 2,
     "total": 112,
     "open_km": null,
     "total_km": 220
@@ -52,7 +52,7 @@
       "total": 1
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "other": {
@@ -62,31 +62,32 @@
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": null,
+      "open": 0,
       "total": 72,
       "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": null,
+      "open": 2,
       "total": 23,
       "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": null,
+      "open": 0,
       "total": 14,
       "open_km": null,
       "total_km": null
     },
     "other": {
-      "open": null,
+      "open": 0,
       "total": 3,
       "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": null,
+  "details": "json/fr/les-2-alpes.details.json",
   "avalanche": {
     "region_id": "FR-15",
     "region": "Oisans",
@@ -96,20 +97,20 @@
       {
         "level": "moderate",
         "lower_bound": null,
-        "upper_bound": 1800,
+        "upper_bound": 2400,
         "period": "all_day"
       },
       {
         "level": "considerable",
-        "lower_bound": 1800,
+        "lower_bound": 2400,
         "upper_bound": null,
         "period": "all_day"
       }
     ],
     "problems": [],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T18:00:00+01:00"
+    "published_at": "2026-11-27T16:00:00+01:00",
+    "valid_from": "2026-11-27T16:00:00+01:00",
+    "valid_until": "2026-11-28T18:00:00+01:00"
   },
   "sources": [
     "https://www.lumiplan.com/",

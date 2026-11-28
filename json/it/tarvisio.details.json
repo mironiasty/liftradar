@@ -2,21 +2,33 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "tarvisio",
   "country": "it",
-  "fetched_at": "2026-11-27T13:40:43.506262+01:00",
+  "fetched_at": "2026-11-28T08:40:43.298553+01:00",
   "updated_at": "2026-11-16T16:27:27+01:00",
   "source": "https://www.intermaps.com/",
   "lifts": [
     {
-      "id": "L_10071943",
+      "id": "L_10071951",
       "ref": null,
-      "name": "101 Telecabina M. Lussari",
-      "type": "gondola",
+      "name": "112 Seggiovia Hütte",
+      "type": "chairlift",
       "status": "closed",
-      "length_m": 3065,
-      "map_length_m": 3110,
-      "capacity_per_hour": 1800,
-      "bottom_m": 818,
-      "top_m": 1756
+      "length_m": 1192,
+      "map_length_m": 1210,
+      "capacity_per_hour": 1200,
+      "bottom_m": 1559,
+      "top_m": 1662
+    },
+    {
+      "id": "L_10071949",
+      "ref": null,
+      "name": "110 Seggiovia Duca d'Aosta",
+      "type": "chairlift",
+      "status": "closed",
+      "length_m": 433,
+      "map_length_m": 420,
+      "capacity_per_hour": 1783,
+      "bottom_m": 750,
+      "top_m": 832
     },
     {
       "id": "L_10071944",
@@ -43,18 +55,6 @@
       "top_m": 954
     },
     {
-      "id": "L_10071946",
-      "ref": null,
-      "name": "106 Sciovia Campo Scuola",
-      "type": "drag_lift",
-      "status": "closed",
-      "length_m": 473,
-      "map_length_m": 470,
-      "capacity_per_hour": 841,
-      "bottom_m": 771,
-      "top_m": 841
-    },
-    {
       "id": "L_10071947",
       "ref": null,
       "name": "107 Seggiovia Tschopfen",
@@ -79,18 +79,6 @@
       "top_m": 989
     },
     {
-      "id": "L_10071949",
-      "ref": null,
-      "name": "110 Seggiovia Duca d'Aosta",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": 433,
-      "map_length_m": 420,
-      "capacity_per_hour": 1783,
-      "bottom_m": 750,
-      "top_m": 832
-    },
-    {
       "id": "L_10071950",
       "ref": null,
       "name": "111 Seggiovia Florianca",
@@ -103,18 +91,6 @@
       "top_m": 1661
     },
     {
-      "id": "L_10071951",
-      "ref": null,
-      "name": "112 Seggiovia Hütte",
-      "type": "chairlift",
-      "status": "closed",
-      "length_m": 1192,
-      "map_length_m": 1210,
-      "capacity_per_hour": 1200,
-      "bottom_m": 1559,
-      "top_m": 1662
-    },
-    {
       "id": "L_10071952",
       "ref": null,
       "name": "113 Seggiovia Prasnig",
@@ -125,6 +101,18 @@
       "capacity_per_hour": 1200,
       "bottom_m": 1557,
       "top_m": 1779
+    },
+    {
+      "id": "L_10071946",
+      "ref": null,
+      "name": "106 Sciovia Campo Scuola",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": 473,
+      "map_length_m": 470,
+      "capacity_per_hour": 841,
+      "bottom_m": 771,
+      "top_m": 841
     },
     {
       "id": "L_10071953",
@@ -161,39 +149,21 @@
       "capacity_per_hour": 600,
       "bottom_m": 767,
       "top_m": 789
+    },
+    {
+      "id": "L_10071943",
+      "ref": null,
+      "name": "101 Telecabina M. Lussari",
+      "type": "gondola",
+      "status": "closed",
+      "length_m": 3065,
+      "map_length_m": 3110,
+      "capacity_per_hour": 1800,
+      "bottom_m": 818,
+      "top_m": 1756
     }
   ],
   "slopes": [
-    {
-      "id": "R_10105614",
-      "ref": null,
-      "name": "1 Di Prampero bassa",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": 1870
-    },
-    {
-      "id": "R_10071956",
-      "ref": null,
-      "name": "1 Di Prampero alta",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 3700,
-      "map_length_m": 1630
-    },
-    {
-      "id": "R_10072009",
-      "ref": null,
-      "name": "1a Variante F.I.S.",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 355,
-      "map_length_m": 370
-    },
     {
       "id": "R_10072010",
       "ref": null,
@@ -205,16 +175,6 @@
       "map_length_m": 1220
     },
     {
-      "id": "R_10072011",
-      "ref": null,
-      "name": "3 Dell'Angelo",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 400,
-      "map_length_m": 610
-    },
-    {
       "id": "R_10072012",
       "ref": null,
       "name": "3a Variante dell'Angelo",
@@ -223,26 +183,6 @@
       "status": "closed",
       "length_m": 1100,
       "map_length_m": 660
-    },
-    {
-      "id": "R_10072013",
-      "ref": null,
-      "name": "4 \"B\"",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 2030,
-      "map_length_m": null
-    },
-    {
-      "id": "R_10072014",
-      "ref": null,
-      "name": "4a Variante",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 370,
-      "map_length_m": 370
     },
     {
       "id": "R_10072015",
@@ -265,46 +205,6 @@
       "map_length_m": 550
     },
     {
-      "id": "R_10072017",
-      "ref": null,
-      "name": "7 \"D\"",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 760,
-      "map_length_m": 790
-    },
-    {
-      "id": "R_10072018",
-      "ref": null,
-      "name": "8 \"C\"",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 830,
-      "map_length_m": 70
-    },
-    {
-      "id": "R_10072019",
-      "ref": null,
-      "name": "8a \"C2\"",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 460,
-      "map_length_m": 540
-    },
-    {
-      "id": "R_10072020",
-      "ref": null,
-      "name": "9 \"A\"",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 3250,
-      "map_length_m": 20
-    },
-    {
       "id": "R_10072021",
       "ref": null,
       "name": "10 Duca d'Aosta",
@@ -313,16 +213,6 @@
       "status": "closed",
       "length_m": 500,
       "map_length_m": 530
-    },
-    {
-      "id": "R_10072022",
-      "ref": null,
-      "name": "11 Florianca",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1700,
-      "map_length_m": 1750
     },
     {
       "id": "R_10072023",
@@ -335,16 +225,6 @@
       "map_length_m": 1340
     },
     {
-      "id": "R_10072024",
-      "ref": null,
-      "name": "13 Malga",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1415,
-      "map_length_m": 1430
-    },
-    {
       "id": "R_10072025",
       "ref": null,
       "name": "a Skiweg Tarvisio-Di Prampero",
@@ -355,16 +235,6 @@
       "map_length_m": 720
     },
     {
-      "id": "R_10072026",
-      "ref": null,
-      "name": "b1 Skiweg Di Prampero-Tarvisio1",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 355,
-      "map_length_m": 350
-    },
-    {
       "id": "R_10072027",
       "ref": null,
       "name": "c Skiweg dell'Angelo-B",
@@ -373,16 +243,6 @@
       "status": "closed",
       "length_m": 310,
       "map_length_m": 360
-    },
-    {
-      "id": "R_10072028",
-      "ref": null,
-      "name": "d Skiweg B - dell'Angelo",
-      "difficulty": "difficult",
-      "colour": null,
-      "status": "closed",
-      "length_m": 350,
-      "map_length_m": 370
     },
     {
       "id": "R_10072029",
@@ -413,6 +273,146 @@
       "status": "closed",
       "length_m": 580,
       "map_length_m": 590
+    },
+    {
+      "id": "R_10072011",
+      "ref": null,
+      "name": "3 Dell'Angelo",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 400,
+      "map_length_m": 610
+    },
+    {
+      "id": "R_10072017",
+      "ref": null,
+      "name": "7 \"D\"",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 760,
+      "map_length_m": 790
+    },
+    {
+      "id": "R_10072020",
+      "ref": null,
+      "name": "9 \"A\"",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3250,
+      "map_length_m": 20
+    },
+    {
+      "id": "R_10072022",
+      "ref": null,
+      "name": "11 Florianca",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1700,
+      "map_length_m": 1750
+    },
+    {
+      "id": "R_10072024",
+      "ref": null,
+      "name": "13 Malga",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1415,
+      "map_length_m": 1430
+    },
+    {
+      "id": "R_10071956",
+      "ref": null,
+      "name": "1 Di Prampero alta",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 3700,
+      "map_length_m": 1630
+    },
+    {
+      "id": "R_10072009",
+      "ref": null,
+      "name": "1a Variante F.I.S.",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 355,
+      "map_length_m": 370
+    },
+    {
+      "id": "R_10072013",
+      "ref": null,
+      "name": "4 \"B\"",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 2030,
+      "map_length_m": null
+    },
+    {
+      "id": "R_10072014",
+      "ref": null,
+      "name": "4a Variante",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 370,
+      "map_length_m": 370
+    },
+    {
+      "id": "R_10072018",
+      "ref": null,
+      "name": "8 \"C\"",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 830,
+      "map_length_m": 70
+    },
+    {
+      "id": "R_10072019",
+      "ref": null,
+      "name": "8a \"C2\"",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 460,
+      "map_length_m": 540
+    },
+    {
+      "id": "R_10072026",
+      "ref": null,
+      "name": "b1 Skiweg Di Prampero-Tarvisio1",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 355,
+      "map_length_m": 350
+    },
+    {
+      "id": "R_10072028",
+      "ref": null,
+      "name": "d Skiweg B - dell'Angelo",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": 350,
+      "map_length_m": 370
+    },
+    {
+      "id": "R_10105614",
+      "ref": null,
+      "name": "1 Di Prampero bassa",
+      "difficulty": "difficult",
+      "colour": null,
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": 1870
     }
   ],
   "bottom": {

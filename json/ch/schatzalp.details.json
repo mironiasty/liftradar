@@ -2,10 +2,22 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "schatzalp",
   "country": "ch",
-  "fetched_at": "2026-11-27T13:40:43.505116+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297945+01:00",
   "updated_at": null,
   "source": "https://www.davos.ch/",
   "lifts": [
+    {
+      "id": "209",
+      "ref": null,
+      "name": "Standseilbahn Davos Platz - Schatzalp",
+      "type": "cable_car",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
     {
       "id": "229",
       "ref": null,
@@ -26,18 +38,6 @@
       "status": "closed",
       "length_m": null,
       "map_length_m": 750,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
-      "id": "209",
-      "ref": null,
-      "name": "Standseilbahn Davos Platz - Schatzalp",
-      "type": "cable_car",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null

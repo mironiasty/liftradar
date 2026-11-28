@@ -9,58 +9,59 @@
     "lon": 6.8441
   },
   "website": "https://www.strandafjellet.no",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.519876+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.306218+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
-    "fresh_cm": null,
+    "mountain_cm": 0,
+    "valley_cm": 0,
+    "fresh_cm": 0,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Deilig vårsnø",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 3,
     "total": 7
   },
   "slopes": {
-    "open": 0,
+    "open": 3,
     "total": 19,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 25
   },
   "lifts_by_type": {
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "other": {
-      "open": 0,
+      "open": 2,
       "total": 4
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 2,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 7,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 1,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
   "lifts_updated_at": "2026-04-21T10:29:40+02:00",
+  "details": "json/no/strandafjellet.details.json",
   "avalanche": {
     "region_id": "NO-3024",
     "region": "Sunnmøre",
@@ -75,9 +76,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-27T00:00:00+01:00",
-    "valid_from": "2026-11-27T00:00:00+01:00",
-    "valid_until": "2026-11-27T23:59:59+01:00"
+    "published_at": "2026-11-28T00:00:00+01:00",
+    "valid_from": "2026-11-28T00:00:00+01:00",
+    "valid_until": "2026-11-28T23:59:59+01:00"
   },
   "sources": [
     "https://fnugg.no/stranda/",

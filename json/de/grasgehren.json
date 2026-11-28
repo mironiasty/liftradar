@@ -9,25 +9,34 @@
     "lon": 10.1765
   },
   "website": "https://www.hoernerdoerfer.de/skigebiet-berg-naturerlebnis-grasgehren-allgaeu",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.518942+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.305332+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 40,
     "valley_cm": null,
     "fresh_cm": null,
-    "last_snowfall": null,
+    "last_snowfall": "2026-11-26",
     "condition": null,
-    "stations": []
+    "stations": [
+      {
+        "name": "Grasgehren",
+        "elevation_m": null,
+        "depth_cm": 40,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      }
+    ]
   },
   "lifts": {
-    "open": 0,
+    "open": 1,
     "total": 11
   },
   "slopes": {
-    "open": 0,
+    "open": 1,
     "total": 14,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 11
   },
   "lifts_by_type": {
@@ -40,15 +49,15 @@
       "total": 2
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 7
     }
   },
   "slopes_by_difficulty": {
     "other": {
-      "open": 0,
+      "open": 1,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },

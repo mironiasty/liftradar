@@ -10,21 +10,21 @@
   },
   "website": "https://elsigen-metsch.ch",
   "ski_region": "skiregion-adelboden-lenk",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503508+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.296877+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 10,
+    "valley_cm": 45,
     "fresh_cm": null,
     "last_snowfall": "2026-11-26",
-    "condition": null,
+    "condition": "powder",
     "stations": [
       {
         "name": "in place",
         "elevation_m": null,
         "depth_cm": 10,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -32,7 +32,7 @@
         "name": "In the ski area below",
         "elevation_m": null,
         "depth_cm": 20,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -40,43 +40,43 @@
         "name": "In the ski area above",
         "elevation_m": null,
         "depth_cm": 45,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 6,
     "total": 10
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 17,
-    "open_km": 0.0,
+    "open_km": 5.0,
     "total_km": 30
   },
   "lifts_by_type": {
     "cable_car": {
-      "open": 0,
+      "open": 1,
       "total": 1
     },
     "drag_lift": {
-      "open": 0,
+      "open": 5,
       "total": 9
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": 2.5,
       "total_km": 9
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 9,
-      "open_km": 0.0,
+      "open_km": 2.5,
       "total_km": 18
     },
     "difficult": {
@@ -86,7 +86,7 @@
       "total_km": 3
     }
   },
-  "lifts_updated_at": "2026-11-27T11:55:00+01:00",
+  "lifts_updated_at": "2026-11-27T17:12:00+01:00",
   "details": "json/ch/elsigen-metsch.details.json",
   "avalanche": {
     "region_id": "CH-1226",
@@ -105,9 +105,9 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

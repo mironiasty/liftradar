@@ -1,0 +1,57 @@
+{
+  "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
+  "id": "livigno",
+  "country": "it",
+  "fetched_at": "2026-11-28T08:40:43.298488+01:00",
+  "updated_at": null,
+  "source": "https://www.livigno.eu/",
+  "lifts": [
+    {
+      "id": "lift-carosello-3000-i",
+      "ref": null,
+      "name": "CAROSELLO 3000 I",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-mottolino",
+      "ref": null,
+      "name": "MOTTOLINO",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-carosello-3000-ii",
+      "ref": null,
+      "name": "CAROSELLO 3000 II",
+      "type": "gondola",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [],
+  "bottom": {
+    "lat": 46.54814,
+    "lon": 10.13773,
+    "elevation_m": 1811
+  },
+  "top": {
+    "lat": 46.52644,
+    "lon": 10.09066,
+    "elevation_m": 2791
+  }
+}

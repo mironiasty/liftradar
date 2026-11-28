@@ -9,15 +9,15 @@
     "lon": 7.1606
   },
   "website": "https://www.ovronnaz.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503942+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.297247+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 10,
+    "valley_cm": 100,
     "fresh_cm": null,
     "last_snowfall": "2026-11-24",
-    "condition": null,
+    "condition": "powder",
     "stations": [
       {
         "name": "Ovronnaz (fond pistes)",
@@ -38,18 +38,18 @@
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 3,
     "total": 7
   },
   "slopes": {
-    "open": 0,
+    "open": 6,
     "total": 23,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 30
   },
   "lifts_by_type": {
     "chairlift": {
-      "open": 0,
+      "open": 3,
       "total": 4
     },
     "drag_lift": {
@@ -65,15 +65,15 @@
       "total_km": 4
     },
     "intermediate": {
-      "open": 0,
+      "open": 5,
       "total": 14,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": 1,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
@@ -83,7 +83,7 @@
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:31:00+01:00",
   "details": "json/ch/ovronnaz.details.json",
   "avalanche": {
     "region_id": "CH-4114",
@@ -102,9 +102,9 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

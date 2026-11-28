@@ -9,93 +9,85 @@
     "lon": 7.3947
   },
   "website": "https://www.anzere.ch",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503277+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.296665+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 150,
+    "valley_cm": 20,
     "fresh_cm": null,
-    "last_snowfall": "2026-11-27",
+    "last_snowfall": "2026-11-28",
     "condition": null,
     "stations": [
       {
+        "name": "Anzère",
+        "elevation_m": 1552,
+        "depth_cm": 20,
+        "fresh_cm": null,
+        "temperature_c": null,
+        "condition": null
+      },
+      {
         "name": "Pas de Maimbré",
         "elevation_m": 2362,
-        "depth_cm": null,
-        "fresh_cm": 160,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Donin du Jour (SLF)",
-        "elevation_m": 2385,
         "depth_cm": 150,
-        "fresh_cm": 4,
-        "temperature_c": null,
-        "condition": null
-      },
-      {
-        "name": "Montana (SLF)",
-        "elevation_m": 1590,
-        "depth_cm": 33,
-        "fresh_cm": 1,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
     ]
   },
   "lifts": {
-    "open": 0,
+    "open": 5,
     "total": 12
   },
   "slopes": {
-    "open": 0,
+    "open": 4,
     "total": 35,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 58
   },
   "lifts_by_type": {
     "carpet": {
-      "open": 0,
+      "open": 2,
       "total": 3
     },
     "chairlift": {
-      "open": 0,
+      "open": 1,
       "total": 3
     },
     "drag_lift": {
-      "open": 0,
+      "open": 1,
       "total": 4
     },
     "gondola": {
-      "open": 0,
+      "open": 1,
       "total": 2
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 10,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 2,
       "total": 13,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
-      "open": 0,
+      "open": 1,
       "total": 6,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "ski_route": {
       "open": 0,
       "total": 5,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "other": {
@@ -105,7 +97,7 @@
       "total_km": 1
     }
   },
-  "lifts_updated_at": "2026-11-27T08:13:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:11:00+01:00",
   "details": "json/ch/anzere.details.json",
   "avalanche": {
     "region_id": "CH-4121",
@@ -124,14 +116,14 @@
       "wind_slab",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",
-    "https://www.slf.ch/en/services-and-products/slf-data-service",
-    "https://www.skiresort.com/"
+    "https://www.skiresort.com/",
+    "https://www.slf.ch/"
   ],
   "source_details": {
     "conditions": [
@@ -140,7 +132,7 @@
         "attribution_required": null
       },
       {
-        "url": "https://www.slf.ch/en/services-and-products/slf-data-service",
+        "url": "https://www.slf.ch/",
         "attribution_required": null
       }
     ],

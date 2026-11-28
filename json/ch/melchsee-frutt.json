@@ -10,7 +10,7 @@
   },
   "website": "https://www.melchsee-frutt.ch",
   "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.503875+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297191+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -23,7 +23,7 @@
         "name": "Talstation Stöckalp",
         "elevation_m": 1080,
         "depth_cm": 10,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -31,7 +31,7 @@
         "name": "Melchsee-Frutt",
         "elevation_m": 1920,
         "depth_cm": 80,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       },
@@ -39,7 +39,7 @@
         "name": "Balmeregghorn",
         "elevation_m": 2225,
         "depth_cm": 80,
-        "fresh_cm": 10,
+        "fresh_cm": null,
         "temperature_c": null,
         "condition": null
       }
@@ -97,7 +97,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:31:00+01:00",
   "details": "json/ch/melchsee-frutt.details.json",
   "avalanche": {
     "region_id": "CH-2123",
@@ -113,12 +113,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
+      "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

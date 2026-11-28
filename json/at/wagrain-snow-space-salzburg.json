@@ -11,25 +11,25 @@
   "website": "https://www.snow-space.com",
   "linked_area": "snow-space-salzburg-flachauwinkl-zauchensee",
   "ski_region": "ski-amade",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:48.518732+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:47.122772+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
-    "valley_cm": null,
+    "mountain_cm": 60,
+    "valley_cm": 10,
     "fresh_cm": null,
     "last_snowfall": "2026-11-23",
     "condition": null,
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 7,
     "total": 45
   },
   "slopes": {
-    "open": 0,
+    "open": null,
     "total": 64,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 120
   },
   "lifts_by_type": null,
@@ -37,23 +37,23 @@
     "easy": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 34
     },
     "intermediate": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 83
     },
     "difficult": {
       "open": null,
       "total": null,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": 4
     }
   },
-  "lifts_updated_at": "2026-11-27T12:15:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:07:00+01:00",
   "avalanche": null,
   "sources": [
     "https://www.salzburgerland.com/",

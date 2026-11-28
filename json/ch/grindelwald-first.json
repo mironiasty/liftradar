@@ -11,7 +11,7 @@
   "website": "https://www.jungfrau.ch/de-ch/jungfrau-ski-region/",
   "ski_region": "jungfrau-ski-region",
   "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.504994+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297878+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": null,
@@ -24,7 +24,7 @@
         "name": "First",
         "elevation_m": 2168,
         "depth_cm": 50,
-        "fresh_cm": 7,
+        "fresh_cm": 0,
         "temperature_c": null,
         "condition": null
       },
@@ -88,7 +88,7 @@
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T11:10:04+01:00",
+  "lifts_updated_at": "2026-11-28T07:25:04+01:00",
   "details": "json/ch/grindelwald-first.details.json",
   "avalanche": {
     "region_id": "CH-1242",
@@ -104,12 +104,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
+      "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://www.jungfrau.ch/",

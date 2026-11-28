@@ -2,8 +2,8 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "3-zinnen-dolomiten",
   "country": "it",
-  "fetched_at": "2026-11-27T13:40:43.505281+01:00",
-  "updated_at": "2026-11-23T13:00:10.543413+01:00",
+  "fetched_at": "2026-11-28T08:40:43.298036+01:00",
+  "updated_at": "2026-11-27T17:20:38.261134+01:00",
   "source": "https://opendatahub.com/",
   "lifts": [
     {
@@ -59,7 +59,7 @@
       "ref": null,
       "name": "Drei Zinnen",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2070,
       "capacity_per_hour": null,
@@ -83,7 +83,7 @@
       "ref": null,
       "name": "Hasenkoepfl",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1470,
       "capacity_per_hour": null,
@@ -107,7 +107,7 @@
       "ref": null,
       "name": "Hawaii",
       "type": "drag_lift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -129,9 +129,9 @@
     {
       "id": "urn:odhactivitypoi:dss:lift:7_536",
       "ref": null,
-      "name": "Helmissimo Vierschach",
+      "name": "Helmissimo",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 3090,
       "capacity_per_hour": null,
@@ -141,9 +141,9 @@
     {
       "id": "urn:odhactivitypoi:dss:lift:7_534",
       "ref": null,
-      "name": "Helmjet Sexten",
+      "name": "Helmjet",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2240,
       "capacity_per_hour": null,
@@ -191,7 +191,7 @@
       "ref": null,
       "name": "Mittelstation",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1330,
       "capacity_per_hour": null,
@@ -203,7 +203,7 @@
       "ref": null,
       "name": "Porzen",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1380,
       "capacity_per_hour": null,
@@ -239,7 +239,7 @@
       "ref": null,
       "name": "Rotwand",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 2020,
       "capacity_per_hour": null,
@@ -251,7 +251,7 @@
       "ref": null,
       "name": "Rotwandwiesen",
       "type": "drag_lift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -263,7 +263,7 @@
       "ref": null,
       "name": "Signaue",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1280,
       "capacity_per_hour": null,
@@ -287,7 +287,7 @@
       "ref": null,
       "name": "Stiergarten",
       "type": "gondola",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1820,
       "capacity_per_hour": null,
@@ -311,7 +311,7 @@
       "ref": null,
       "name": "Uebungslift",
       "type": "chairlift",
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null,
       "capacity_per_hour": null,
@@ -331,18 +331,6 @@
       "top_m": null
     },
     {
-      "id": "urn:odhactivitypoi:dss:lift:7_561",
-      "ref": null,
-      "name": "Waldheim",
-      "type": "carpet",
-      "status": "closed",
-      "length_m": null,
-      "map_length_m": null,
-      "capacity_per_hour": null,
-      "bottom_m": null,
-      "top_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:lift:7_560",
       "ref": null,
       "name": "Waldheim",
@@ -350,6 +338,18 @@
       "status": "open",
       "length_m": null,
       "map_length_m": 460,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:lift:7_561",
+      "ref": null,
+      "name": "Waldheim",
+      "type": "carpet",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
       "capacity_per_hour": null,
       "bottom_m": null,
       "top_m": null
@@ -374,7 +374,7 @@
       "name": "Bad Moos - Rotwand",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1040
     },
@@ -414,7 +414,7 @@
       "name": "Connection Helmjet",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 660,
       "map_length_m": null
     },
@@ -474,7 +474,7 @@
       "name": "Drei Zinnen",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 2415,
       "map_length_m": 2460
     },
@@ -504,7 +504,7 @@
       "name": "Familienvariante Vierschach",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 310
     },
@@ -514,7 +514,7 @@
       "name": "Hahnspiel",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 777,
       "map_length_m": 400
     },
@@ -534,7 +534,7 @@
       "name": "Hahnspiel-Eck Variante",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 277,
       "map_length_m": 290
     },
@@ -554,7 +554,7 @@
       "name": "Hasenkoepfl",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 2956,
       "map_length_m": null
     },
@@ -594,7 +594,7 @@
       "name": "Helm",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1260
     },
@@ -614,7 +614,7 @@
       "name": "Helm - Stiergarten",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 3842,
       "map_length_m": 660
     },
@@ -624,7 +624,7 @@
       "name": "Helm - Vierschach",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 5786,
       "map_length_m": 3810
     },
@@ -694,7 +694,7 @@
       "name": "Kristlerhang - Sexten",
       "difficulty": "difficult",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 2785,
       "map_length_m": 30
     },
@@ -734,7 +734,7 @@
       "name": "Mittelstation",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 1420,
       "map_length_m": 1080
     },
@@ -764,7 +764,7 @@
       "name": "Moos-Sexten",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1440
     },
@@ -794,7 +794,7 @@
       "name": "Parfal",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 750
     },
@@ -814,7 +814,7 @@
       "name": "Porzen",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 1475,
       "map_length_m": 710
     },
@@ -824,7 +824,7 @@
       "name": "Porzen Variante",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 227,
       "map_length_m": 540
     },
@@ -894,7 +894,7 @@
       "name": "Rotwandwiesen",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 909,
       "map_length_m": 1270
     },
@@ -924,7 +924,7 @@
       "name": "Signaue",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 1350
     },
@@ -934,7 +934,7 @@
       "name": "Signaue II",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": 4150
     },
@@ -969,16 +969,6 @@
       "map_length_m": 390
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:7_183150",
-      "ref": null,
-      "name": "Sonnleiten",
-      "difficulty": "intermediate",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1400,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:7_183151",
       "ref": null,
       "name": "Sonnleiten",
@@ -986,6 +976,16 @@
       "colour": null,
       "status": "closed",
       "length_m": 1100,
+      "map_length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_183150",
+      "ref": null,
+      "name": "Sonnleiten",
+      "difficulty": "intermediate",
+      "colour": null,
+      "status": "closed",
+      "length_m": 1400,
       "map_length_m": null
     },
     {
@@ -1004,7 +1004,7 @@
       "name": "Stiergarten",
       "difficulty": "difficult",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 2415,
       "map_length_m": 110
     },
@@ -1014,7 +1014,7 @@
       "name": "Stiergarten - Sexten",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -1099,22 +1099,22 @@
       "map_length_m": 660
     },
     {
-      "id": "urn:odhactivitypoi:dss:slope:7_301095",
-      "ref": null,
-      "name": "Uebungslift",
-      "difficulty": "easy",
-      "colour": null,
-      "status": "closed",
-      "length_m": 1324,
-      "map_length_m": null
-    },
-    {
       "id": "urn:odhactivitypoi:dss:slope:7_183111",
       "ref": null,
       "name": "Uebungslift",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
+      "length_m": 1324,
+      "map_length_m": null
+    },
+    {
+      "id": "urn:odhactivitypoi:dss:slope:7_301095",
+      "ref": null,
+      "name": "Uebungslift",
+      "difficulty": "easy",
+      "colour": null,
+      "status": "open",
       "length_m": 1324,
       "map_length_m": null
     },
@@ -1124,7 +1124,7 @@
       "name": "Uebungslift II",
       "difficulty": "intermediate",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 500,
       "map_length_m": null
     },
@@ -1144,7 +1144,7 @@
       "name": "Variante Family Drei Zinnen",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 600,
       "map_length_m": null
     },
@@ -1154,7 +1154,7 @@
       "name": "Variante Family Drei Zinnen",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 630,
       "map_length_m": null
     },
@@ -1184,7 +1184,7 @@
       "name": "Verbindung Vierschach",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": null,
       "map_length_m": null
     },
@@ -1194,7 +1194,7 @@
       "name": "Verbindung Vierschach - Zug",
       "difficulty": "easy",
       "colour": null,
-      "status": "closed",
+      "status": "open",
       "length_m": 100,
       "map_length_m": null
     },

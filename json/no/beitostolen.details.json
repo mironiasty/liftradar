@@ -2,11 +2,327 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "beitostolen",
   "country": "no",
-  "fetched_at": "2026-11-27T13:40:43.519868+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-28T08:40:43.306210+01:00",
+  "updated_at": "2026-11-27T22:42:10+01:00",
+  "source": "https://fnugg.no/beitostolen/",
+  "lifts": [
+    {
+      "id": "lift-barne-heisen",
+      "ref": null,
+      "name": "Barne heisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bitihorn-expressen",
+      "ref": null,
+      "name": "Bitihorn-Expressen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-carlheisen",
+      "ref": null,
+      "name": "Carlheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-ola-expressen",
+      "ref": null,
+      "name": "Ola-Expressen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-skjenhaugen-kjelkeheisen",
+      "ref": null,
+      "name": "Skjenhaugen/Kjelkeheisen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-srre-knausen",
+      "ref": null,
+      "name": "Sørre Knausen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-beitoheisen-i-raudalen",
+      "ref": null,
+      "name": "Beitoheisen i Raudalen",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-barnebakken",
+      "ref": null,
+      "name": "Barnebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bekkefaret",
+      "ref": null,
+      "name": "Bekkefaret",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-carlheisbakken",
+      "ref": null,
+      "name": "Carlheisbakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-frognerbakken",
+      "ref": null,
+      "name": "Frognerbakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stikklypa",
+      "ref": null,
+      "name": "Stikkløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kjelkebakken",
+      "ref": null,
+      "name": "Kjelkebakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-knauselypa-midtre",
+      "ref": null,
+      "name": "Knauseløypa Midtre",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-knauselypa-nordre",
+      "ref": null,
+      "name": "Knauseløypa Nordre",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-knauselypa-sndre",
+      "ref": null,
+      "name": "Knauseløypa Søndre",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-knutelypa",
+      "ref": null,
+      "name": "Knuteløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-olabakken",
+      "ref": null,
+      "name": "Olabakken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fun-park",
+      "ref": null,
+      "name": "Fun park",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stolheisbakken",
+      "ref": null,
+      "name": "Stolheisbakken",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-direkten-i-raudalen",
+      "ref": null,
+      "name": "Direkten i Raudalen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-henget-i-raudalen",
+      "ref": null,
+      "name": "Henget i Raudalen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-treningslypa-i-raudalen",
+      "ref": null,
+      "name": "Treningsløypa i Raudalen",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-turisten-i-raudalen",
+      "ref": null,
+      "name": "Turisten i Raudalen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kulebakken-i-carlheisen",
+      "ref": null,
+      "name": "Kulebakken i Carlheisen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-tverrlypa-i-knausen",
+      "ref": null,
+      "name": "Tverrløypa i Knausen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-bitihorn-express",
+      "ref": null,
+      "name": "Bitihorn Express",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-parklypa",
+      "ref": null,
+      "name": "Parkløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-ski-cross",
+      "ref": null,
+      "name": "Ski Cross",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-interski-traseen",
+      "ref": null,
+      "name": "Interski-traseen",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 61.2496,
     "lon": 8.90459,

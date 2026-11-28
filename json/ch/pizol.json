@@ -10,7 +10,7 @@
   },
   "website": "https://pizol.com",
   "status": "open",
-  "fetched_at": "2026-11-27T13:40:43.503955+01:00",
+  "fetched_at": "2026-11-28T08:40:43.297258+01:00",
   "status_from": null,
   "snow": {
     "mountain_cm": 40,
@@ -52,7 +52,7 @@
   "slopes": {
     "open": 5,
     "total": 40,
-    "open_km": null,
+    "open_km": 10.2,
     "total_km": 50
   },
   "lifts_by_type": {
@@ -83,8 +83,8 @@
     "intermediate": {
       "open": 2,
       "total": 14,
-      "open_km": null,
-      "total_km": null
+      "open_km": 2.8,
+      "total_km": 21
     },
     "difficult": {
       "open": 0,
@@ -99,7 +99,7 @@
       "total_km": 8
     }
   },
-  "lifts_updated_at": "2026-11-27T13:31:00+01:00",
+  "lifts_updated_at": "2026-11-28T08:31:00+01:00",
   "details": "json/ch/pizol.details.json",
   "avalanche": {
     "region_id": "CH-3224",
@@ -115,13 +115,13 @@
       }
     ],
     "problems": [
-      "new_snow",
+      "wind_slab",
       "persistent_weak_layers",
       "gliding_snow"
     ],
-    "published_at": "2026-11-26T17:00:00+01:00",
-    "valid_from": "2026-11-26T17:00:00+01:00",
-    "valid_until": "2026-11-27T17:00:00+01:00"
+    "published_at": "2026-11-27T17:00:00+01:00",
+    "valid_from": "2026-11-27T17:00:00+01:00",
+    "valid_until": "2026-11-28T17:00:00+01:00"
   },
   "sources": [
     "https://infosnow.ch/",

@@ -10,7 +10,7 @@
   },
   "website": "https://astuncandanchu.com",
   "status": "no_report",
-  "fetched_at": "2026-11-27T13:40:43.521792+01:00",
+  "fetched_at": "2026-11-28T08:40:43.307520+01:00",
   "status_from": "2026-11-27T08:40:39.058609+01:00",
   "snow": {
     "mountain_cm": null,
@@ -85,6 +85,6 @@
     ]
   },
   "errors": [
-    "status: KeyError: 'parte'"
+    "status: ValueError: unknown state 'Parcialmente abierta' of 'Maribeles' (format changed?)"
   ]
 }

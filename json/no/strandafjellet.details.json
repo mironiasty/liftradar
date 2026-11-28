@@ -2,11 +2,287 @@
   "$schema": "https://liftradar.eu/schema/resort-details.schema.json",
   "id": "strandafjellet",
   "country": "no",
-  "fetched_at": "2026-11-27T13:40:43.519876+01:00",
-  "updated_at": null,
-  "source": null,
-  "lifts": null,
-  "slopes": null,
+  "fetched_at": "2026-11-28T08:40:43.306218+01:00",
+  "updated_at": "2026-04-21T10:29:40+02:00",
+  "source": "https://fnugg.no/stranda/",
+  "lifts": [
+    {
+      "id": "lift-roaldsheisa",
+      "ref": null,
+      "name": "Roaldsheisa",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-roaldshorn-fjelltrekk",
+      "ref": null,
+      "name": "Roaldshorn fjelltrekk",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fursetheisa",
+      "ref": null,
+      "name": "Fursetheisa",
+      "type": "other",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-egga-fjelltrekk",
+      "ref": null,
+      "name": "Egga fjelltrekk",
+      "type": "drag_lift",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-fursettrekket",
+      "ref": null,
+      "name": "Fursettrekket",
+      "type": "drag_lift",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-snkvit",
+      "ref": null,
+      "name": "Snøkvit",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    },
+    {
+      "id": "lift-bandet",
+      "ref": null,
+      "name": "Bandet",
+      "type": "other",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null,
+      "capacity_per_hour": null,
+      "bottom_m": null,
+      "top_m": null
+    }
+  ],
+  "slopes": [
+    {
+      "id": "slope-grnelypa",
+      "ref": null,
+      "name": "Grøneløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skarelypa",
+      "ref": null,
+      "name": "Skareløypa",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-raudelypa",
+      "ref": null,
+      "name": "Raudeløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-alpinisten",
+      "ref": null,
+      "name": "Alpinisten",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-familielypa",
+      "ref": null,
+      "name": "Familieløypa",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kuffertlypa-6a",
+      "ref": null,
+      "name": "Kuffertløypa 6a",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-kuffertlypa-6b",
+      "ref": null,
+      "name": "Kuffertløypa 6b",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-roaldsvegen",
+      "ref": null,
+      "name": "Roaldsvegen",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-skitreffen",
+      "ref": null,
+      "name": "Skitreffen",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-meraftalypa",
+      "ref": null,
+      "name": "Meraftaløypa",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-stien",
+      "ref": null,
+      "name": "Stien",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-world-cup-lypa",
+      "ref": null,
+      "name": "World Cup løypa",
+      "difficulty": "difficult",
+      "colour": "black",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-turisten",
+      "ref": null,
+      "name": "Turisten",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-fallet",
+      "ref": null,
+      "name": "Fallet",
+      "difficulty": "intermediate",
+      "colour": "red",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-barneparken",
+      "ref": null,
+      "name": "Barneparken",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-minialpinisten",
+      "ref": null,
+      "name": "Minialpinisten",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-snkvit",
+      "ref": null,
+      "name": "Snøkvit",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "open",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-parken",
+      "ref": null,
+      "name": "Parken",
+      "difficulty": "easy",
+      "colour": "blue",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    },
+    {
+      "id": "slope-mini-skicross",
+      "ref": null,
+      "name": "Mini skicross",
+      "difficulty": "easy",
+      "colour": "green",
+      "status": "closed",
+      "length_m": null,
+      "map_length_m": null
+    }
+  ],
   "bottom": {
     "lat": 62.29061,
     "lon": 6.8416,

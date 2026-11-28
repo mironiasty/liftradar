@@ -9,25 +9,25 @@
     "lon": 8.0646
   },
   "website": "https://visitrauland.com/rauland-skisenter/",
-  "status": "closed",
-  "fetched_at": "2026-11-27T13:40:43.519782+01:00",
+  "status": "open",
+  "fetched_at": "2026-11-28T08:40:43.306126+01:00",
   "status_from": null,
   "snow": {
-    "mountain_cm": null,
+    "mountain_cm": 50,
     "valley_cm": null,
-    "fresh_cm": null,
+    "fresh_cm": 2,
     "last_snowfall": null,
-    "condition": null,
+    "condition": "Faste og fine forhold",
     "stations": []
   },
   "lifts": {
-    "open": 0,
+    "open": 2,
     "total": 12
   },
   "slopes": {
-    "open": 0,
+    "open": 2,
     "total": 28,
-    "open_km": 0.0,
+    "open_km": null,
     "total_km": 21
   },
   "lifts_by_type": {
@@ -36,31 +36,31 @@
       "total": 1
     },
     "other": {
-      "open": 0,
+      "open": 2,
       "total": 11
     }
   },
   "slopes_by_difficulty": {
     "easy": {
-      "open": 0,
+      "open": 1,
       "total": 15,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "intermediate": {
-      "open": 0,
+      "open": 1,
       "total": 11,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     },
     "difficult": {
       "open": 0,
       "total": 2,
-      "open_km": 0.0,
+      "open_km": null,
       "total_km": null
     }
   },
-  "lifts_updated_at": "2026-11-27T09:43:22+01:00",
+  "lifts_updated_at": "2026-11-28T06:59:02+01:00",
   "details": "json/no/rauland.details.json",
   "avalanche": {
     "region_id": "NO-3035",
@@ -76,9 +76,9 @@
       }
     ],
     "problems": [],
-    "published_at": "2026-11-27T00:00:00+01:00",
-    "valid_from": "2026-11-27T00:00:00+01:00",
-    "valid_until": "2026-11-27T23:59:59+01:00"
+    "published_at": "2026-11-28T00:00:00+01:00",
+    "valid_from": "2026-11-28T00:00:00+01:00",
+    "valid_until": "2026-11-28T23:59:59+01:00"
   },
   "sources": [
     "https://fnugg.no/rauland/",
